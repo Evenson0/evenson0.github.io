@@ -1,0 +1,11 @@
+[
+  {
+    "id": "workshop-001",
+    "series": "The Mathematical Workshop",
+    "title": "Problem #1 — An Impossible Diophantine Equation",
+    "date": "2026-02-25",
+    "url": "/workshop/problem-001.html",
+    "tags": ["number theory", "parity", "modular arithmetic"],
+    "description": "Find all integer solutions of a^2 + b^2 + c^2 = a^2 b^2. The key idea: squares mod 4 + infinite descent."
+  }
+]
