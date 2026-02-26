@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evenson Auguste</title>
+  <meta name="description" content="Evenson Auguste — actuarial science, quantitative finance, and mathematical problem solving." />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">Evenson Auguste</a>
+    <nav class="nav">
+      <a href="/workshop/">Workshop</a>
+      <a href="/projects/">Projects</a>
+      <a href="/about/">About</a>
+      <button id="themeBtn" class="btn" type="button" aria-label="Toggle theme">☾</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="cardTitle">About</div>
+
+      <h1 style="margin:6px 0 10px; font-size:2rem; line-height:1.15;">
+        I’m Evenson Auguste.
+      </h1>
+
+      <p class="lead" style="margin-bottom:12px;">
+        I work in <strong>actuarial science</strong> and I’m passionate about
+        <strong>quantitative thinking</strong>: clear reasoning, probability, simulation, and writing.
+      </p>
+
+      <div class="chips" style="margin-bottom:14px;">
+        <span class="chip">Actuarial (P&C)</span>
+        <span class="chip">Quantitative finance</span>
+        <span class="chip">Probability & simulation</span>
+        <span class="chip">R / Python / Excel</span>
+        <span class="chip">Mathematical writing</span>
+      </div>
+
+      <div class="grid2" style="margin-top:0;">
+        <div class="card" style="box-shadow:none;">
+          <div class="cardTitle">What I like</div>
+          <ul class="bullets">
+            <li>Solving mathematical problems and writing clean proofs</li>
+            <li>Turning messy data into robust systems and rules</li>
+            <li>Learning through building (code, tools, reproducible workflows)</li>
+            <li>Culture: cinema, music, sports (boxing)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="box-shadow:none;">
+          <div class="cardTitle">What I do</div>
+          <ul class="bullets">
+            <li>Actuarial analysis and pricing logic</li>
+            <li>Automation and data workflows (Excel/VBA, Python, R)</li>
+            <li>Writing: structured explanations meant to teach</li>
+          </ul>
+
+          <div style="margin-top:12px;">
+            <a class="btn primary" href="/workshop/">Go to The Mathematical Workshop</a>
+          </div>
+        </div>
+      </div>
+
+      <hr style="border:0;border-top:1px solid var(--line); margin:16px 0;" />
+
+      <div class="cardTitle">Latest publication</div>
+      <div id="latestOne" class="item" style="display:none;"></div>
+      <div id="latestFallback" class="muted">Loading…</div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Evenson Auguste.</span>
+      <span class="muted">GitHub Pages · MathJax enabled</span>
+    </footer>
+  </main>
+
+  <script defer src="/assets/main.js"></script>
+
+  <script>
+    // Load the latest post automatically from posts.json
+    (function(){
+      const box = document.getElementById('latestOne');
+      const fb  = document.getElementById('latestFallback');
+
+      fetch('/posts.json')
+        .then(r => r.json())
+        .then(posts => {
+          if(!posts || !posts.length) {
+            fb.textContent = "No posts yet.";
+            return;
+          }
+          posts.sort((a,b) => (a.date < b.date ? 1 : -1));
+          const p = posts[0];
+
+          box.innerHTML = `
+            <a href="${p.url}" style="display:block;">
+              <div class="kicker">${p.series} · ${p.date}</div>
+              <div class="title">${p.title}</div>
+              <div class="desc">${p.description}</div>
+              <div style="margin-top:10px;">
+                <span class="btn primary">Read the latest</span>
+              </div>
+            </a>
+          `;
+          box.style.display = 'block';
+          fb.style.display = 'none';
+        })
+        .catch(() => {
+          fb.textContent = "Could not load posts.";
+        });
+    })();
+  </script>
+
+  <script>
+    window.MathJax = { tex: { inlineMath: [['\\(','\\)'],['$','$']] } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+</html>
