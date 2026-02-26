@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Problem #1 — An Impossible Diophantine Equation</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">Evenson Auguste <span class="muted">/ B 🏴‍☠️</span></a>
+  <nav class="nav">
+    <a href="/workshop/">Workshop</a>
+    <a href="/projects/">Projects</a>
+    <a href="/about/">About</a>
+    <button id="themeBtn" class="btn" type="button">☾</button>
+  </nav>
+</header>
+
+<main class="container">
+  <article class="card">
+    <div class="kicker muted">The Mathematical Workshop · Problem #1 · Number Theory</div>
+    <h1 style="margin-top:6px;">An Impossible Diophantine Equation</h1>
+    <p class="muted">
+      The trick is simple: squares modulo 4 + infinite descent. Once you see it, the result becomes inevitable.
+    </p>
+
+    <hr style="border:0;border-top:1px solid var(--line); margin:14px 0;" />
+
+    <h2>Problem</h2>
+    <p>Find all integer solutions \((a,b,c)\) to</p>
+    <p class="mono">$$a^2 + b^2 + c^2 = a^2 b^2.$$</p>
+
+    <h2>Key fact (mod 4)</h2>
+    <p>
+      For any integer \(n\), we have \(n^2 \equiv 0 \pmod 4\) if \(n\) is even, and \(n^2 \equiv 1 \pmod 4\) if \(n\) is odd.
+      So a sum of squares is congruent to \(0,1,2,\) or \(3\) mod 4, and it is \(0 \pmod 4\) only when <em>each</em> square is \(0 \pmod 4\).
+    </p>
+
+    <h2>Step 1: show \(a\) and \(b\) must be even</h2>
+    <p>Consider parities:</p>
+    <ul class="bullets">
+      <li>If \(a\) and \(b\) are both odd, then \(a^2b^2 \equiv 1 \pmod 4\). But \(a^2+b^2+c^2 \equiv 1+1+c^2 \equiv 2+c^2\), which is \(2\) or \(3\) mod 4, never \(1\). Contradiction.</li>
+      <li>If exactly one of \(a,b\) is odd, then \(a^2b^2\equiv 0 \pmod 4\). But \(a^2+b^2+c^2\equiv 1+0+c^2\), which is \(1\) or \(2\) mod 4, never \(0\). Contradiction.</li>
+    </ul>
+    <p>Therefore, both \(a\) and \(b\) are even.</p>
+
+    <h2>Step 2: show \(c\) is even</h2>
+    <p>
+      If \(a\) and \(b\) are even, then the right-hand side \(a^2b^2\) is divisible by 4, so the left-hand side must be divisible by 4 as well.
+      But modulo 4, this forces \(a^2 \equiv b^2 \equiv c^2 \equiv 0\), hence \(c\) is even too.
+    </p>
+
+    <h2>Step 3: infinite descent</h2>
+    <p>
+      Write \(a=2a_1\), \(b=2b_1\), \(c=2c_1\). Substitute into the equation:
+    </p>
+    <p class="mono">$$4(a_1^2+b_1^2+c_1^2)=16a_1^2b_1^2 \;\Rightarrow\; a_1^2+b_1^2+c_1^2=4a_1^2b_1^2.$$</p>
+    <p>
+      Apply the same parity argument again: it forces \(a_1,b_1,c_1\) all even. Repeating forever, we get that \(a,b,c\) are divisible by \(2^n\) for every \(n\),
+      which is only possible if \(a=b=c=0\).
+    </p>
+
+    <h2>Answer</h2>
+    <p><strong>The only integer solution is</strong> \(\boxed{(a,b,c)=(0,0,0)}\).</p>
+
+    <hr style="border:0;border-top:1px solid var(--line); margin:16px 0;" />
+    <p class="muted">
+      Takeaway: when an equation forces “all variables are even”, try <em>infinite descent</em>. It is one of the cleanest ways to kill Diophantine equations.
+    </p>
+
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+      <a class="btn" href="/workshop/">← Back to Workshop</a>
+      <a class="btn primary" href="/">Home</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <span class="muted">If you want, I can add a “Try it yourself” section + a short Python/R brute-force check.</span>
+  </footer>
+</main>
+
+<script defer src="/assets/main.js"></script>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)'],['$','$']] } };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+</html>
