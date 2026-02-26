@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Evenson Auguste</title>
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/">Evenson Auguste</a>
+  <nav class="nav">
+    <a href="/workshop/">Workshop</a>
+    <a href="/projects/">Projects</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+
+<div class="card">
+<h1>Contact</h1>
+
+<p class="muted">
+Feel free to reach out for collaboration, discussion, or academic exchange.
+</p>
+
+<form action="https://formsubmit.co/evensont96@yahoo.fr" method="POST">
+
+  <!-- disable captcha after activation -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- redirect after submit -->
+  <input type="hidden" name="_next" value="https://evenson0.github.io/contact/thanks.html">
+
+  <label>Name</label>
+  <input type="text" name="name" required>
+
+  <label>Email</label>
+  <input type="email" name="email" required>
+
+  <label>Message</label>
+  <textarea name="message" rows="6" required></textarea>
+
+  <button class="btn primary" type="submit">Send message</button>
+
+</form>
+</div>
+
+</main>
+
+</body>
+</html>
