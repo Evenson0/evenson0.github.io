@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Evenson Auguste</title>
+  <title>Evenson Auguste — Mathematical Workshop</title>
   <meta name="description" content="Evenson Auguste — actuarial science, quantitative finance, and mathematical problem solving." />
   <link rel="stylesheet" href="/assets/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
 </head>
-
 <body>
   <header class="topbar">
-    <a class="brand" href="/">Evenson Auguste</a>
+    <a class="brand" href="/">Evenson Auguste <span class="muted">/ B 🏴‍☠️</span></a>
     <nav class="nav">
       <a href="/workshop/">Workshop</a>
       <a href="/projects/">Projects</a>
@@ -21,101 +20,67 @@
   </header>
 
   <main class="container">
-    <section class="card">
-      <div class="cardTitle">About</div>
+    <section class="hero">
+      <div>
+        <h1>Math, pricing intuition, and clean reasoning.</h1>
+        <p class="lead">
+          I work at the intersection of <strong>actuarial science</strong>, <strong>quantitative finance</strong>, and
+          <strong>automation</strong> (Excel/VBA, Python, R). Here I publish mathematical solutions and applied notes with
+          a “show the idea” style.
+        </p>
 
-      <h1 style="margin:6px 0 10px; font-size:2rem; line-height:1.15;">
-        I’m Evenson Auguste.
-      </h1>
-
-      <p class="lead" style="margin-bottom:12px;">
-        I work in <strong>actuarial science</strong> and I’m passionate about
-        <strong>quantitative thinking</strong>: clear reasoning, probability, simulation, and writing.
-      </p>
-
-      <div class="chips" style="margin-bottom:14px;">
-        <span class="chip">Actuarial (P&C)</span>
-        <span class="chip">Quantitative finance</span>
-        <span class="chip">Probability & simulation</span>
-        <span class="chip">R / Python / Excel</span>
-        <span class="chip">Mathematical writing</span>
-      </div>
-
-      <div class="grid2" style="margin-top:0;">
-        <div class="card" style="box-shadow:none;">
-          <div class="cardTitle">What I like</div>
-          <ul class="bullets">
-            <li>Solving mathematical problems and writing clean proofs</li>
-            <li>Turning messy data into robust systems and rules</li>
-            <li>Learning through building (code, tools, reproducible workflows)</li>
-            <li>Culture: cinema, music, sports (boxing)</li>
-          </ul>
+        <div class="ctaRow">
+          <a class="btn primary" href="/workshop/">Enter The Mathematical Workshop</a>
+          <a class="btn" href="/workshop/problem-001.html">Read Problem #1</a>
         </div>
 
-        <div class="card" style="box-shadow:none;">
-          <div class="cardTitle">What I do</div>
-          <ul class="bullets">
-            <li>Actuarial analysis and pricing logic</li>
-            <li>Automation and data workflows (Excel/VBA, Python, R)</li>
-            <li>Writing: structured explanations meant to teach</li>
-          </ul>
-
-          <div style="margin-top:12px;">
-            <a class="btn primary" href="/workshop/">Go to The Mathematical Workshop</a>
-          </div>
+        <div class="chips">
+          <span class="chip">Actuarial (P&C)</span>
+          <span class="chip">Pricing systems</span>
+          <span class="chip">MCMC</span>
+          <span class="chip">Quant finance</span>
+          <span class="chip">R / Python</span>
         </div>
       </div>
 
-      <hr style="border:0;border-top:1px solid var(--line); margin:16px 0;" />
+      <div class="card glow">
+        <div class="cardTitle">Latest</div>
+        <div id="latest" class="list"></div>
+      </div>
+    </section>
 
-      <div class="cardTitle">Latest publication</div>
-      <div id="latestOne" class="item" style="display:none;"></div>
-      <div id="latestFallback" class="muted">Loading…</div>
+    <section class="grid2">
+      <div class="card">
+        <div class="cardTitle">What you’ll find here</div>
+        <ul class="bullets">
+          <li><strong>The Mathematical Workshop</strong>: one problem at a time, with the key idea front and center.</li>
+          <li><strong>Actuarial notes</strong>: practical insights (data quality, rating logic, systems thinking).</li>
+          <li><strong>Projects</strong>: StochActu / Bühlmann-Straub ideas, code experiments, and write-ups.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="cardTitle">Style</div>
+        <p>
+          I care about clarity. A good solution should feel <em>inevitable</em> once you see the right angle.
+          Expect short lemmas, clean structure, and minimal “magic.”
+        </p>
+        <p class="muted small">
+          Tip: the site supports LaTeX. Example:
+          <span class="mono">\(a^2+b^2+c^2=a^2b^2\)</span>
+        </p>
+      </div>
     </section>
 
     <footer class="footer">
       <span>© <span id="year"></span> Evenson Auguste.</span>
-      <span class="muted">GitHub Pages · MathJax enabled</span>
+      <span class="muted">Built on GitHub Pages · MathJax enabled.</span>
     </footer>
   </main>
 
+  <div class="bgNoise" aria-hidden="true"></div>
+
   <script defer src="/assets/main.js"></script>
-
-  <script>
-    // Load the latest post automatically from posts.json
-    (function(){
-      const box = document.getElementById('latestOne');
-      const fb  = document.getElementById('latestFallback');
-
-      fetch('/posts.json')
-        .then(r => r.json())
-        .then(posts => {
-          if(!posts || !posts.length) {
-            fb.textContent = "No posts yet.";
-            return;
-          }
-          posts.sort((a,b) => (a.date < b.date ? 1 : -1));
-          const p = posts[0];
-
-          box.innerHTML = `
-            <a href="${p.url}" style="display:block;">
-              <div class="kicker">${p.series} · ${p.date}</div>
-              <div class="title">${p.title}</div>
-              <div class="desc">${p.description}</div>
-              <div style="margin-top:10px;">
-                <span class="btn primary">Read the latest</span>
-              </div>
-            </a>
-          `;
-          box.style.display = 'block';
-          fb.style.display = 'none';
-        })
-        .catch(() => {
-          fb.textContent = "Could not load posts.";
-        });
-    })();
-  </script>
-
   <script>
     window.MathJax = { tex: { inlineMath: [['\\(','\\)'],['$','$']] } };
   </script>
