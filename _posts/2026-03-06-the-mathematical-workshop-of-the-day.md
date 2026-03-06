@@ -215,11 +215,8 @@ $$
 ***
 
 <div style="border-left:4px solid #3b82f6; padding:14px 18px; margin:22px 0; border-radius:4px;">
-
-<strong>Remark.</strong> Let $$k$$ denote the number of digits equal to $$8$$ in $$N$$. The sum of the digits of $$N$$ is $$8k$$, so the divisibility of $$N$$ by $$3$$ implies that $$8k$$ must be divisible by $$3$$. Since $$8 \equiv 2 \pmod{3}$$, this is equivalent to $$2k \equiv 0 \pmod{3}$$, and therefore $$k$$ must be a multiple of $$3$$.
-
+  <strong>Remark.</strong> Let k denote the number of digits equal to 8 in N. Since the sum of the digits of N is 8k, the condition that N be divisible by 3 implies that 8k must be divisible by 3. Since 8 is congruent to 2 modulo 3, this is equivalent to saying that 2k is congruent to 0 modulo 3, hence k must be a multiple of 3.
 </div>
-
 ---
 
 *Posted on March 6, 2026.*
