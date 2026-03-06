@@ -212,9 +212,9 @@ $$
 
 ---
 
-## Remark
+<div style="border-left:4px solid #3b82f6; padding:14px 18px; margin:22px 0; border-radius:4px;">
 
-Let $$k$$ denote the number of digits equal to $$8$$ in $$N$$. Since the sum of the digits of $$N$$ is $$8k$$, the condition that $$N$$ be divisible by $$3$$ implies that $$8k$$ must be divisible by $$3$$.
+<strong>Remark.</strong> Let $$k$$ denote the number of digits equal to $$8$$ in $$N$$. Since the sum of the digits of $$N$$ is $$8k$$, the condition that $$N$$ be divisible by $$3$$ implies that $$8k$$ must be divisible by $$3$$.
 
 Because
 
@@ -229,6 +229,8 @@ $$
 $$
 
 which implies that $$k$$ must be a multiple of $$3$$.
+
+</div>
 
 ---
 
