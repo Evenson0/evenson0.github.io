@@ -569,3 +569,10 @@ border-radius: .1em;
 .ai-inverse {
   color: #fff;
 }
+.math-note {
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 16px;
+  margin: 25px 0;
+  border-radius: 8px;
+}
