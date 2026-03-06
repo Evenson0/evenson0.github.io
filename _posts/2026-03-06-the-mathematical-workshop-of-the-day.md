@@ -13,6 +13,8 @@ tags:
 
 In this post I solve three short problems in the spirit of mathematical competitions such as the Putnam or various Olympiads. Each one is elementary, but hides a nice idea, a combinatorial observation, a clever polynomial trick, and a simple divisibility argument.
 
+<hr style="margin:50px 0;">
+
 ## Problem
 
 In a **round-robin tournament** with $$n$$ players $$P_1, P_2, \ldots, P_n$$, each player plays exactly one match against every other player.
@@ -69,7 +71,7 @@ $$
 \boxed{\sum_{k=1}^{n} W_k^2 = \sum_{k=1}^{n} L_k^2}.
 $$
 
----
+<hr style="margin:50px 0;">
 
 ## Problem
 
@@ -155,7 +157,7 @@ $$
 \boxed{P(-1) = n}.
 $$
 
----
+<hr style="margin:50px 0;">
 
 ## Problem
 
@@ -234,4 +236,4 @@ which implies that $$k$$ must be a multiple of $$3$$.
 
 ---
 
-*Posted on March 5, 2026.*
+*Posted on March 6, 2026.*
