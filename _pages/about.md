@@ -16,8 +16,7 @@ redirect_from:
 </div>
 
 
-I am an actuarial analyst working in property and casualty insurance in Montréal.  
-My background sits at the intersection of mathematics, actuarial science, and software development. I am deeply passionate about mathematics and its applications to real-world problems.
+I am an actuarial analyst working in property and casualty insurance in Montréal. My background sits at the intersection of mathematics, actuarial science, and software development. I am deeply passionate about mathematics and its applications to real-world problems.
 
 I studied mathematics with a specialization in actuarial science at the Université de Montréal, while also pursuing software engineering at Polytechnique Montréal with a focus on artificial intelligence and data science. Before coming to Canada, I completed a degree in electromechanical engineering in Haiti.
 

@@ -8,7 +8,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Evenson"
 title_separator          : #"-"
 name                     : &name "Evenson"
-description              : &description "Your Name's academic portfolio"
+description              : &description "Evenson's mathematical portfolio"
 url                      : "https://evenson0.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 # baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -79,13 +79,20 @@ author:
   #zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
+
 publication_category:
-  books:
-    title: 'Books'
+  substack:
+    title: 'Substack Articles'
+  arxiv:
+    title: 'arXiv Preprints'
+  ssrn:
+    title: 'SSRN Papers'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Papers'
   conferences:
     title: 'Conference Papers'
+  books:
+    title: 'Books'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
