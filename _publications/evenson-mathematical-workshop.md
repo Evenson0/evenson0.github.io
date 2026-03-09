@@ -31,4 +31,5 @@ The project is intended to grow gradually as new problems are solved and publish
 
 You can also find many of these problems on my blog:
 
-**https://evenson0.github.io**
+<i class="fas fa-blog"></i>
+<a href="https://evenson0.github.io/year-archive/">evenson0.github.io/year-archive</a><br>
