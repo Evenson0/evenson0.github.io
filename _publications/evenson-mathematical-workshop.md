@@ -1,12 +1,12 @@
 ---
 title: "Evenson's Mathematical Workshop"
 collection: publications
-category: book
+category: books
 permalink: /publication/evenson-mathematical-workshop
 excerpt: 'A growing collection of mathematical problems and solutions in the spirit of olympiad mathematics and classical problem solving.'
 date: 2026-03-09
 venue: 'Personal mathematical notebook'
-paperurl: 'https://evenson0.github.io/publication/evensons_mathematical_workshop.pdf'
+paperurl: 'https://evenson0.github.io/_publications/evensons_mathematical_workshop.pdf'
 citation: 'Auguste, Evenson. (2026). &quot;Evenson’s Mathematical Workshop.&quot; Personal mathematical manuscript.'
 ---
 
