@@ -19,7 +19,7 @@ Consider the following game.
 
 On a table there are **100 tokens**. Two players take turns removing tokens from the table. At each turn, a player may remove **5, 6, 7, 8, 9, or 10 tokens**, at their choice.
 
-The player who removes the **last token** wins.
+The player who removes the last token wins.
 
 The question is:
 
@@ -29,7 +29,7 @@ The question is:
 
 ## Solution
 
-The **first player** has a winning strategy.
+The first player has a winning strategy.
 
 The idea is to control the total number of tokens removed in each pair of moves.
 
@@ -75,21 +75,21 @@ $$
 90 = 6 \times 15.
 $$
 
-Each pair of moves removes **15 tokens**, so the total number of tokens decreases as
+Each pair of moves removes 15 tokens, so the total number of tokens decreases as
 
 $$
 90, 75, 60, 45, 30, 15, 0.
 $$
 
-Because the first player always completes each block of **15 tokens**, the **last token will necessarily be taken by the first player**.
+Because the first player always completes each block of 15 tokens, the last token will necessarily be taken by the first player.
 
 ---
 
 ## Conclusion
 
-The **first player wins** by following this strategy:
+The first player wins by following this strategy:
 
-1. Remove **10 tokens** on the first move.
+1. Remove 10 tokens on the first move.
 2. If the opponent removes \(n\) tokens (with \(5 \le n \le 10\)), remove \(15-n\) tokens.
 
 This ensures that the total removed in each pair of turns is always **15**, forcing the game to end with the first player taking the final token.
@@ -127,15 +127,13 @@ We will show that for any integers \(k \ge 0\) and \(0 \le m < 3^k\),
 f(3^k + m) = 2 \cdot 3^k + m.
 \]
 
-### Step 1 — A consequence of monotonicity
-
 Since \(f(n+1) > f(n)\), the function is strictly increasing. This implies that for any positive integers \(n\) and \(m\),
 
 \[
 f(n+m) \ge f(n) + m.
 \]
 
-### Step 2 — Determining \(f(1)\)
+---
 
 From the functional equation,
 
@@ -173,8 +171,6 @@ f(2) = f(f(1)) = 3.
 
 ---
 
-### Step 3 — Induction structure
-
 We prove by induction that for every nonnegative integer \(k\),
 
 \[
@@ -211,7 +207,7 @@ This completes the induction.
 
 ---
 
-### Step 4 — Filling the interval
+---
 
 Now consider the values
 
@@ -257,7 +253,7 @@ f(3^k + m) = 2\cdot 3^k + m.
 
 ---
 
-### Step 5 — Computing \(f(100)\)
+### Computing \(f(100)\)
 
 We write
 
@@ -285,8 +281,6 @@ f(100) = 2 \cdot 81 + 19 = 162 + 19 = 181.
 
 ---
 
-## Final Answer
-
 \[
-\boxed{f(100) = 181}
+f(100)=181
 \]
