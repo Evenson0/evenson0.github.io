@@ -1,5 +1,5 @@
 ---
-title: "Evenson's Mathematical Workshop"
+title: "Mathematical Workshop"
 collection: publications
 category: books
 permalink: /publication/evenson-mathematical-workshop
@@ -7,12 +7,12 @@ excerpt: 'A growing collection of mathematical problems and solutions in the spi
 date: 2026-03-09
 venue: 'Book Manuscript'
 paperurl: 'https://evenson0.github.io/files/mathematical_workshop.pdf'
-citation: 'Auguste, Evenson. (2026). &quot;Evenson’s Mathematical Workshop.&quot; Personal mathematical manuscript.'
+citation: 'Auguste, Evenson. (2026). &quot;Mathematical Workshop.&quot; Personal mathematical manuscript.'
 ---
 
 ## Description
 
-*Evenson's Mathematical Workshop* is an evolving collection of mathematical problems and solutions written in the spirit of mathematical competitions and classical problem solving.
+*Mathematical Workshop* is an evolving collection of mathematical problems and solutions written in the spirit of mathematical competitions and classical problem solving.
 
 The goal of this project is to gather and preserve the problems that I solve and publish over time on my blog.
 
