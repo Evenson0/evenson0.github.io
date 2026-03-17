@@ -1,6 +1,6 @@
 ---
 title: "List 100"
-permalink: /list100/
+permalink: /list-100/
 ---
 
 "It is not that we have a short time to live, but that we waste a lot of it." — Seneca
