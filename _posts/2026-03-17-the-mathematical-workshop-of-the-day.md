@@ -9,7 +9,7 @@ tags:
   - olympiad mathematics
 ---
 
-In this post I present three short problems centered around a common theme: extracting structure from simplicity. Each solution relies on a single decisive idea — a modular obstruction, a local optimization argument, and an invariant — illustrating how elementary tools can completely determine the outcome.
+In this post I present three short problems centered around a common theme: extracting structure from simplicity. Each solution relies on a single decisive idea - a modular obstruction, a local optimization argument, and an invariant - illustrating how elementary tools can completely determine the outcome.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
