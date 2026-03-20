@@ -18,7 +18,7 @@ Things I want to do before I die
 
 ---
 
-Progress as of March 20, 2026: 2/100.
+Progress as of March 20, 2026: 3/100.
 
 ---
 
@@ -34,7 +34,7 @@ Progress as of March 20, 2026: 2/100.
 10. ✗ Start a scholarship to support brave young kids
 11. ✗ Interview some of the greatest mathematicians of our time
 12. ✗ Write a paper in actuarial science
-13. ✗ Read 1000 books (<a href="(https://www.goodreads.com/evenson)">% done</a>)
+13. ✗ Read 1000 books (<a href="https://www.goodreads.com/user/show/193296272-evenson-auguste">% done</a>)
 14. ✗ Explore all of Canada
 15. ✗ Become ACAS  
 16. ✗ Become FCAS
