@@ -13,16 +13,33 @@ Things I want to do before I die
 
 ---
 
-Progress as of Apr 1, 2026: 2/100.
+Progress as of March 20, 2026: 2/100.
 
 ---
 
 1. ✓ Graduate with a Bachelor’s degree in Actuarial Science 
-2. ✓ Start working as an actuarial analyst (P&C / IARD)  
-3. ✗ Become ACAS  
-4. ✗ Become FCAS  
-5. ✗ Complete a Master’s degree  
-6. ✗ Complete a PhD  
+2. ✓ Start working as an actuarial analyst (P&C / IARD)
+3. ✗ Run a marathon
+4. ✗ Launch a magazine
+5. ✗ become a boxing coach
+6. ✗ Work in a bookstore or a library.
+7. ✗ Visit 100 countries (~3% done)
+8. ✗ Design and publish a game
+9. ✗ Support education in Haiti
+10. ✗ Start a scholarship to support brave young kids
+11. ✗ Interview some of the greatest mathematicians of our time
+12. ✗ Write a paper in actuarial science
+13. ✗ Read 1000 books
+14. ✗ Explore all of Canada
+15. ✗ Become ACAS  
+16. ✗ Become FCAS
+17. ✗ Go on a trip overseas with my whole family
+18. ✗ Be a writer
+19. ✗ Complete a Master’s degree
+20. ✓ Build my personal blog
+21. ✗ Work internationally (US or Europe)
+22. ✗ Pursue a career in politics
+23. ✗ Complete a PhD  
 
 <!-- 11. ✓ Start working as an actuarial analyst (P&C / IARD)  
 12. ✗ Become a senior actuarial analyst  
