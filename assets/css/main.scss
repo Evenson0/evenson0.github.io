@@ -41,14 +41,26 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 
-   body {
+/* GLOBAL FONT */
+body {
   font-family: 'Inter', sans-serif !important;
 }
-   h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title {
+  font-family: 'Playfair Display', serif !important;
 }
 
-   code, pre {
-  font-family: 'JetBrains Mono', monospace;
+/* NAVIGATION */
+.masthead,
+.site-title {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* CODE */
+code, pre {
+  font-family: 'JetBrains Mono', monospace !important;
 }
 ;
