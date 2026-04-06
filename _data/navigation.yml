@@ -28,6 +28,9 @@ main:
 
   - title: "List 100"
     url: /list-100/
+
+  - title: "Tools"
+    url: /tools/
     
    #- title: "CV"
     # url: /cv-json/
