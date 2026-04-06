@@ -11,4 +11,14 @@ I build interactive tools to explore, model, and visualize ideas in mathematics,
 
 ## Available tools
 
+<h3>Number Theory</h3>
 - [Prime Number](./prime-number/)
+- [Goldbach Conjecture](./goldbach/)
+
+---
+
+<h3>Actuarial Science</h3>
+
+---
+
+<h3>Quantitative Finance</h3>
