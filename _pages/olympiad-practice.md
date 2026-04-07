@@ -95,6 +95,19 @@ permalink: /tools/olympiad-practice/
     background: linear-gradient(135deg, #0f172a, #1d4ed8);
   }
 
+  .op-btn-back {
+  background: rgba(37,99,235,0.12);
+  border: 1px solid rgba(147,197,253,0.7);
+  font-weight: 600;
+}
+
+.op-btn-back:hover {
+  background: rgba(37,99,235,0.18);
+  box-shadow:
+    0 0 0 1px rgba(147,197,253,0.20),
+    0 8px 24px rgba(37,99,235,0.20);
+}
+
   .op-problem-box {
     margin-top: 1.5rem;
     padding: 1.3rem 1.35rem;
@@ -192,12 +205,18 @@ permalink: /tools/olympiad-practice/
   <hr class="op-rule">
 
   <div class="op-nav-box">
-    <div class="op-nav-row">
-      <a href="/tools/" class="op-btn op-btn-back">
-        Back to Tools
-      </a>
-    </div>
+  <div class="op-nav-row">
+    <a href="/tools/goldbach/" class="op-btn">
+      ← Previous
+    </a>
+    <a href="/tools/" class="op-btn op-btn-back">
+      Back to Tools
+    </a>
+    <a href="/tools/prime-number/" class="op-btn">
+      Next →
+    </a>
   </div>
+</div>
 
 </div>
 
