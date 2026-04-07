@@ -41,3 +41,92 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+.archive-card-wrap {
+  margin-bottom: 2rem;
+}
+
+/* Custom archive card style */
+
+.archive-card {
+  position: relative;
+  padding: 1.4rem 1.4rem 1.2rem 1.4rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.035),
+    rgba(255,255,255,0.02)
+  );
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.10),
+    0 0 0 1px rgba(255,255,255,0.02) inset;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+  overflow: hidden;
+}
+
+.archive-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(59,130,246,0.00) 30%,
+    rgba(59,130,246,0.08) 50%,
+    rgba(59,130,246,0.00) 70%,
+    transparent 100%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.archive-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56,189,248,0.28);
+  background: linear-gradient(
+    180deg,
+    rgba(59,130,246,0.05),
+    rgba(255,255,255,0.02)
+  );
+  box-shadow:
+    0 16px 36px rgba(0,0,0,0.18),
+    0 0 0 1px rgba(59,130,246,0.08) inset,
+    0 0 24px rgba(59,130,246,0.10);
+}
+
+.archive-card:hover::before {
+  transform: translateX(120%);
+}
+
+.archive-card-title {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  line-height: 1.2;
+}
+
+.archive-card-title a {
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.archive-card:hover .archive-card-title a {
+  text-shadow: 0 0 12px rgba(56,189,248,0.18);
+}
+
+.archive-card-meta,
+.archive-card-date {
+  color: rgba(255,255,255,0.72);
+  font-size: 0.95rem;
+}
+
+.archive-card-excerpt {
+  margin-top: 1rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.88);
+}
