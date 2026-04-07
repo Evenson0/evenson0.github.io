@@ -181,7 +181,7 @@ permalink: /tools/
 
   <hr class="lab-rule">
 
-  <h2 class="lab-section-title">Number Theory</h2>
+  <h2 class="lab-section-title">Mathematics</h2>
 
   <div class="lab-grid">
 
