@@ -166,10 +166,9 @@ permalink: /tools/goldbach/
   }
 
   .tool-btn-back:hover {
-    background: rgba(37,99,235,0.18);
-    box-shadow:
-      0 0 0 1px rgba(147,197,253,0.20),
-      0 8px 24px rgba(37,99,235,0.20);
+    background: rgba(37,99,235,0.12);
+    border: 1px solid rgba(147,197,253,0.7);
+    font-weight: 600;
   }
 
   .tool-alert {
