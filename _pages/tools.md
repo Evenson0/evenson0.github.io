@@ -1,5 +1,5 @@
 ---
-title: "Tools"
+title: "Quantitative Laboratory"
 permalink: /tools/
 ---
 
