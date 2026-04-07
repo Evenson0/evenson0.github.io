@@ -5,20 +5,15 @@ permalink: /tools/soa-fm-practice/
 
 <div style="max-width: 850px; margin: 2rem auto; padding: 2rem; border: 1px solid rgba(127,127,127,0.22); border-radius: 16px; background: inherit; color: inherit;">
 
-  <h1>SOA FM Practice</h1>
+<h1>SOA FM Practice</h1>
 
-  <p>
-    This tool presents a random financial mathematics practice problem in the style of SOA Exam FM.
-  </p>
+<p>
+  A collection of financial mathematics exercises designed in the spirit of SOA Exam FM, with a new problem selected at random each time the page is loaded.
+</p>
 
-  <p>
-    Read the question, choose an answer, and reveal the full solution.
-  </p>
-
-  <div style="margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: 4px solid #2563eb; background: rgba(37,99,235,0.08); border-radius: 10px;">
-    <strong>Random Exercise.</strong><br>
-    A problem is selected at random each time the page is loaded.
-  </div>
+<p>
+  Each exercise comes with multiple-choice options and a fully worked solution for review and self-study.
+</p>
 
   <hr style="border:none; border-top:1px solid rgba(120,120,120,0.35); margin:2rem 0;">
 
