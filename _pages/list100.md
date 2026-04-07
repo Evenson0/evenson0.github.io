@@ -3,144 +3,154 @@ title: "List 100"
 permalink: /list-100/
 ---
 
-<div style="text-align:center; margin:40px 0;">
+<style>
+  .list100-shell {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid rgba(127,127,127,0.18);
+    border-radius: 22px;
+    background: linear-gradient(
+      180deg,
+      rgba(127,127,127,0.05),
+      rgba(127,127,127,0.025)
+    );
+    box-shadow:
+      0 14px 38px rgba(0,0,0,0.10),
+      0 0 0 1px rgba(255,255,255,0.02) inset;
+    color: inherit;
+  }
 
-<p><em>“It is not that we have a short time to live, but that we waste a lot of it.”</em><br>
-<strong>— Seneca</strong></p>
+  .list100-quote {
+    text-align: center;
+    margin: 0 0 2rem 0;
+  }
+
+  .list100-quote p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .list100-intro {
+    max-width: 780px;
+    margin: 0 auto 1.8rem auto;
+    text-align: center;
+    line-height: 1.9;
+    opacity: 0.88;
+  }
+
+  .list100-progress-wrap {
+    text-align: center;
+    margin: 0 0 2.2rem 0;
+  }
+
+  .list100-progress {
+    display: inline-block;
+    padding: 12px 18px;
+    border: 1px solid rgba(127,127,127,0.22);
+    border-radius: 16px;
+    background: rgba(127,127,127,0.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  }
+
+  .list100-progress strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .list100-progress span {
+    opacity: 0.72;
+  }
+
+  .list100-rule {
+    border: none;
+    border-top: 1px solid rgba(127,127,127,0.22);
+    margin: 2rem 0;
+  }
+
+  .list100-subtitle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.01em;
+  }
+
+  .list100-list {
+    margin: 0;
+    padding-left: 1.5rem;
+    line-height: 1.95;
+  }
+
+  .list100-list li {
+    margin-bottom: 0.35rem;
+    padding-left: 0.2rem;
+  }
+
+  .list100-done {
+    font-weight: 600;
+  }
+
+  .list100-muted {
+    opacity: 0.72;
+  }
+
+  .list100-list a,
+  .list100-list a:hover,
+  .list100-list a:focus,
+  .list100-list a:active,
+  .list100-list a:visited {
+    text-decoration: none !important;
+  }
+</style>
+
+<div class="list100-shell">
+
+  <div class="list100-quote">
+    <p>
+      <em>“It is not that we have a short time to live, but that we waste a lot of it.”</em><br>
+      <strong>— Seneca</strong>
+    </p>
+  </div>
+
+  <p class="list100-intro">
+    After looking at the life calendar, I realized how limited time really is. This list is my attempt to live a life I can be fully satisfied with, by turning intentions into concrete actions.
+  </p>
+
+  <div class="list100-progress-wrap">
+    <div class="list100-progress">
+      <strong>Progress</strong>
+      <span>March 20, 2026 · 3/100</span>
+    </div>
+  </div>
+
+  <hr class="list100-rule">
+
+  <h2 class="list100-subtitle">Things I want to do before I die</h2>
+
+  <ol class="list100-list">
+    <li class="list100-done">✓ Graduate with a Bachelor’s degree in Actuarial Science</li>
+    <li class="list100-done">✓ Start working as an actuarial analyst (P&amp;C / IARD)</li>
+    <li>✗ Run a marathon</li>
+    <li>✗ Launch a magazine</li>
+    <li>✗ Become a boxing coach</li>
+    <li>✗ Work in a bookstore or a library</li>
+    <li>✗ Visit 100 countries <span class="list100-muted">(~3% done)</span></li>
+    <li>✗ Design and publish a game</li>
+    <li>✗ Support education in Haiti</li>
+    <li>✗ Start a scholarship to support brave young kids</li>
+    <li>✗ Interview some of the greatest mathematicians of our time</li>
+    <li>✗ Write a paper in actuarial science</li>
+    <li>✗ Read 1000 books (<a href="https://www.goodreads.com/user/show/193296272-evenson-auguste">% done</a>)</li>
+    <li>✗ Explore all of Canada</li>
+    <li>✗ Become ACAS</li>
+    <li>✗ Become FCAS</li>
+    <li>✗ Go on a trip overseas with my whole family</li>
+    <li>✗ Be a writer</li>
+    <li>✗ Complete a Master’s degree</li>
+    <li class="list100-done">✓ Build my personal blog</li>
+    <li>✗ Work internationally (US or Europe)</li>
+    <li>✗ Pursue a career in politics</li>
+    <li>✗ Complete a PhD</li>
+  </ol>
 
 </div>
-
-After looking at the life calendar, I realized how limited time really is. This list is my attempt to live a life I can be fully satisfied with, by turning intentions into concrete actions.
-
----
-
-Things I want to do before I die
-
----
-
-Progress as of March 20, 2026: 3/100.
-
----
-
-1. ✓ Graduate with a Bachelor’s degree in Actuarial Science 
-2. ✓ Start working as an actuarial analyst (P&C / IARD)
-3. ✗ Run a marathon
-4. ✗ Launch a magazine
-5. ✗ become a boxing coach
-6. ✗ Work in a bookstore or a library.
-7. ✗ Visit 100 countries (~3% done)
-8. ✗ Design and publish a game
-9. ✗ Support education in Haiti
-10. ✗ Start a scholarship to support brave young kids
-11. ✗ Interview some of the greatest mathematicians of our time
-12. ✗ Write a paper in actuarial science
-13. ✗ Read 1000 books (<a href="https://www.goodreads.com/user/show/193296272-evenson-auguste">% done</a>)
-14. ✗ Explore all of Canada
-15. ✗ Become ACAS  
-16. ✗ Become FCAS
-17. ✗ Go on a trip overseas with my whole family
-18. ✗ Be a writer
-19. ✗ Complete a Master’s degree
-20. ✓ Build my personal blog
-21. ✗ Work internationally (US or Europe)
-22. ✗ Pursue a career in politics
-23. ✗ Complete a PhD  
-
-<!-- 11. ✓ Start working as an actuarial analyst (P&C / IARD)  
-12. ✗ Become a senior actuarial analyst  
-13. ✗ Become actuarial manager  
-14. ✗ Design a pricing model used in production  
-15. ✗ Build a full actuarial tool used internally  
-16. ✗ Lead a pricing or reserving project  
-17. ✗ Work at a top insurance company  
-18. ✗ Work internationally (US or Europe)  
-19. ✗ Become a key decision-maker in a team  
-20. ✗ Be known for strong technical skills  
-
-21. ✗ Build a full actuarial pricing engine (Python/R)  
-22. ✗ Build a reserving tool (Chain Ladder + extensions)  
-23. ✗ Create a GitHub portfolio with 10+ serious projects  
-24. ✗ Publish an R package  
-25. ✗ Publish a Python package  
-26. ✗ Build a Shiny or Dash actuarial app  
-27. ✗ Automate data workflows (Excel + Python + SQL)  
-28. ✗ Build a Monte Carlo simulator with UI  
-29. ✗ Create reusable actuarial templates  
-30. ✗ Build a financial dashboard  
-
-31. ✓ Build a pairs trading strategy (cointegration / z-score)  
-32. ✗ Improve and generalize my trading strategy  
-33. ✗ Build a backtesting framework  
-34. ✗ Deploy a live trading system  
-35. ✗ Achieve consistent profitability  
-36. ✗ Implement Black-Scholes and extensions  
-37. ✗ Build a portfolio optimization tool  
-38. ✗ Use machine learning in trading  
-39. ✗ Reach a personal investment milestone (e.g. 100k+)  
-40. ✗ Manage my investments professionally  
-
-41. ✗ Publish a paper on arXiv  
-42. ✗ Write a paper on MCMC (Geyer-related topic)  
-43. ✗ Write a paper in actuarial science  
-44. ✗ Submit to a conference (CAS / SOA / ACFAS)  
-45. ✗ Publish on SSRN  
-46. ✗ Build a research-oriented GitHub repo  
-47. ✗ Write a survey on credibility theory  
-48. ✗ Replicate and extend a research paper  
-49. ✗ Collaborate with a professor  
-50. ✗ Present my work publicly  
-
-51. ✗ Build my personal website (clean, bilingual)  
-52. ✓ Maintain a GitHub profile  
-53. ✗ Launch my Substack seriously  
-54. ✗ Publish 50+ articles  
-55. ✗ Build “Bühlmann-Straub” as a real platform  
-56. ✗ Launch “L’Agora” magazine  
-57. ✗ Reach 1,000 readers/subscribers  
-58. ✗ Publish a flagship article that gains traction  
-59. ✗ Create a YouTube channel (math / finance)  
-60. ✗ Build a strong personal brand  
-
-61. ✗ Finish writing my novel  
-62. ✗ Publish my novel  
-63. ✗ Write a book on math or finance  
-64. ✗ Write 10 long-form essays  
-65. ✗ Develop a strong writing style  
-66. ✗ Publish on Medium or similar platforms  
-67. ✗ Be cited or referenced  
-68. ✗ Build an archive of my writings  
-69. ✗ Write about Haitian intellectual identity  
-70. ✗ Combine math and philosophy in my writing  
-
-71. ✗ Speak fluent English  
-72. ✗ Improve my spoken French clarity  
-73. ✗ Master advanced statistics  
-74. ✗ Understand stochastic calculus  
-75. ✗ Learn machine learning properly  
-76. ✗ Become strong in SQL  
-77. ✗ Master Excel/VBA at expert level  
-78. ✗ Improve public speaking  
-79. ✗ Explain complex ideas simply  
-80. ✗ Read 50+ serious books  
-
-81. ✓ Live in another country (Canada)  
-82. ✗ Travel to the US  
-83. ✗ Visit Europe (France, UK)  
-84. ✗ Attend an international conference  
-85. ✗ Live abroad again (6+ months)  
-86. ✗ Visit Haiti and contribute professionally  
-87. ✗ Build a strong professional network  
-88. ✗ Meet influential people in my field  
-89. ✗ Speak at an event  
-90. ✗ Achieve financial stability  
-
-91. ✗ Help my family financially  
-92. ✗ Support education in Haiti  
-93. ✗ Mentor students  
-94. ✗ Create opportunities for others  
-95. ✗ Build something useful for the community  
-96. ✗ Share knowledge publicly  
-97. ✗ Be recognized for my work  
-98. ✗ Leave lasting work (articles, code, research)  
-99. ✗ Build a long-term impactful project  
-100. ✗ Become someone respected in my field  -->
