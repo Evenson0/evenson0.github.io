@@ -52,9 +52,16 @@ permalink: /tools/
   }
 
   .lab-card-link {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     display: block;
+  }
+
+  .lab-card-link:hover,
+  .lab-card-link:focus,
+  .lab-card-link:active {
+    text-decoration: none !important;
+    color: inherit;
   }
 
   .lab-card {
@@ -114,6 +121,11 @@ permalink: /tools/
     transform: translateX(125%);
   }
 
+  .lab-card h3,
+  .lab-card p {
+    text-decoration: none !important;
+  }
+
   .lab-card h3 {
     margin-top: 0;
     margin-bottom: 0.7rem;
@@ -134,6 +146,12 @@ permalink: /tools/
     opacity: 0.72;
     font-weight: 600;
     letter-spacing: 0.01em;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .lab-card:hover .lab-card-cta {
+    opacity: 0.95;
+    transform: translateX(3px);
   }
 
   .lab-coming {
