@@ -56,6 +56,21 @@ permalink: /tools/financial-math-calculator/
     opacity: 0.92;
   }
 
+  .fmc-select-wrap {
+    position: relative;
+  }
+
+  .fmc-select-wrap::after {
+    content: "▾";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: 0.65;
+    font-size: 0.95rem;
+  }
+
   .fmc-input,
   .fmc-select {
     width: 100%;
@@ -73,6 +88,10 @@ permalink: /tools/financial-math-calculator/
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+  }
+
+  .fmc-select {
+    padding-right: 42px;
   }
 
   .fmc-input::placeholder {
@@ -278,15 +297,17 @@ permalink: /tools/financial-math-calculator/
   <div class="fmc-grid">
     <div class="fmc-field">
       <label for="targetVariable">What do you want to calculate?</label>
-      <select id="targetVariable" class="fmc-select"></select>
-      <div class="fmc-help">Example: choose Present Value, Effective annual rate, or Accumulated value of annuity.</div>
+      <div class="fmc-select-wrap">
+        <select id="targetVariable" class="fmc-select"></select>
+      </div>
+      <div class="fmc-help">Use the dropdown menu to choose the target quantity.</div>
     </div>
   </div>
 
   <div class="fmc-box">
     <h3 style="margin-top:0;">Known parameters</h3>
     <p class="fmc-muted">
-      Add the data you know. For each row, choose the parameter and enter its value.
+      Add the data you know. For each row, choose the parameter from the dropdown list, then enter its value.
     </p>
 
     <div id="parameterRows" class="fmc-params"></div>
@@ -512,9 +533,11 @@ function addParameterRow(selectedVar = "pv", value = "") {
   row.innerHTML = `
     <div class="fmc-field">
       <label>Parameter</label>
-      <select class="fmc-select fmc-param-name" onchange="updatePlaceholder('${rowId}')">
-        ${variableOptionsHTML(selectedVar)}
-      </select>
+      <div class="fmc-select-wrap">
+        <select class="fmc-select fmc-param-name" onchange="updatePlaceholder('${rowId}')">
+          ${variableOptionsHTML(selectedVar)}
+        </select>
+      </div>
     </div>
 
     <div class="fmc-field">
