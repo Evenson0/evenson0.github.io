@@ -7,18 +7,42 @@ Welcome to my collection of mathematical and actuarial tools.
 
 I build interactive tools to explore, model, and visualize ideas in mathematics, actuarial science, and quantitative finance.
 
----
+<hr style="border:none; border-top:1px solid rgba(127,127,127,0.25); margin:30px 0;">
 
-## Available tools
+<h2 style="margin-bottom: 18px;">Number Theory</h2>
 
-<h3>Number Theory</h3>
-- [Prime Number](./prime-number/)
-- [Goldbach Conjecture](./goldbach/)
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin-bottom:40px;">
 
----
+  <a href="/tools/prime-number/" style="text-decoration:none; color:inherit;">
+    <div style="border:1px solid rgba(127,127,127,0.22); border-radius:16px; padding:20px; background:rgba(127,127,127,0.06);">
+      <h3 style="margin-top:0; margin-bottom:10px; color:inherit;">Prime Number</h3>
+      <p style="margin:0; color:inherit; opacity:0.8; line-height:1.6;">
+        Explore primality, test integers, and interact with one of the most classical objects in number theory.
+      </p>
+      <p style="margin:14px 0 0 0; color:inherit; opacity:0.7;">Open tool →</p>
+    </div>
+  </a>
 
-<h3>Actuarial Science</h3>
+  <a href="/tools/goldbach/" style="text-decoration:none; color:inherit;">
+    <div style="border:1px solid rgba(127,127,127,0.22); border-radius:16px; padding:20px; background:rgba(127,127,127,0.06);">
+      <h3 style="margin-top:0; margin-bottom:10px; color:inherit;">Goldbach Conjecture</h3>
+      <p style="margin:0; color:inherit; opacity:0.8; line-height:1.6;">
+        Experiment with even integers and their decomposition into sums of two prime numbers.
+      </p>
+      <p style="margin:14px 0 0 0; color:inherit; opacity:0.7;">Open tool →</p>
+    </div>
+  </a>
 
----
+</div>
 
-<h3>Quantitative Finance</h3>
+<h2 style="margin-bottom: 18px;">Actuarial Science</h2>
+
+<div style="border:1px dashed rgba(127,127,127,0.22); border-radius:16px; padding:20px; margin-bottom:40px; color:inherit; opacity:0.75;">
+  Tools coming soon.
+</div>
+
+<h2 style="margin-bottom: 18px;">Quantitative Finance</h2>
+
+<div style="border:1px dashed rgba(127,127,127,0.22); border-radius:16px; padding:20px; color:inherit; opacity:0.75;">
+  Tools coming soon.
+</div>
