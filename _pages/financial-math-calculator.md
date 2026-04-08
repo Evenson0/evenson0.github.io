@@ -222,10 +222,11 @@ permalink: /tools/financial-math-calculator/
   }
 
   .fmc-result-value {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-top: 0.6rem;
-  }
+  font-size: 1.17em;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 0.35rem;
+}
 
   .fmc-step {
     padding: 0.9rem 1rem;
@@ -745,7 +746,7 @@ function renderResult(target, value, steps) {
       const block = document.createElement("div");
       block.className = "fmc-step";
       block.innerHTML = `
-        <div class="fmc-step-title">Step ${index + 1}. ${step.title}</div>
+        <div class="fmc-step-title">${steps.length === 1 ? step.title : `Step ${index + 1}. ${step.title}`}</div>
         <div>${step.latex}</div>
       `;
       stepsContainer.appendChild(block);
