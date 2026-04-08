@@ -96,17 +96,17 @@ permalink: /tools/olympiad-practice/
   }
 
   .op-btn-back {
-  background: rgba(37,99,235,0.12);
-  border: 1px solid rgba(147,197,253,0.7);
-  font-weight: 600;
-}
+    background: rgba(37,99,235,0.12);
+    border: 1px solid rgba(147,197,253,0.7);
+    font-weight: 600;
+  }
 
-.op-btn-back:hover {
-  background: rgba(37,99,235,0.18);
-  box-shadow:
-    0 0 0 1px rgba(147,197,253,0.20),
-    0 8px 24px rgba(37,99,235,0.20);
-}
+  .op-btn-back:hover {
+    background: rgba(37,99,235,0.18);
+    box-shadow:
+      0 0 0 1px rgba(147,197,253,0.20),
+      0 8px 24px rgba(37,99,235,0.20);
+  }
 
   .op-problem-box {
     margin-top: 1.5rem;
@@ -148,17 +148,12 @@ permalink: /tools/olympiad-practice/
     gap: 14px;
   }
 
-  .op-btn-back {
-    background: rgba(37,99,235,0.12);
-    border: 1px solid rgba(147,197,253,0.7);
+  .op-counter {
+    margin-top: 1rem;
+    text-align: right;
+    opacity: 0.75;
+    font-size: 0.96rem;
     font-weight: 600;
-  }
-
-  .op-btn-back:hover {
-    background: rgba(37,99,235,0.18);
-    box-shadow:
-      0 0 0 1px rgba(147,197,253,0.20),
-      0 8px 24px rgba(37,99,235,0.20);
   }
 </style>
 
@@ -202,32 +197,42 @@ permalink: /tools/olympiad-practice/
     </div>
   </div>
 
+  <div id="problemCounter" class="op-counter">Problem 0 / 0</div>
+
   <hr class="op-rule">
 
   <div class="op-nav-box">
-  <div class="op-nav-row">
-    <a href="/tools/goldbach/" class="op-btn">
-      ← Previous
-    </a>
-    <a href="/tools/" class="op-btn op-btn-back">
-      Back to Tools
-    </a>
-    <a href="/tools/prime-number/" class="op-btn">
-      Next →
-    </a>
+    <div class="op-nav-row">
+      <a href="/tools/goldbach/" class="op-btn">
+        ← Previous
+      </a>
+      <a href="/tools/" class="op-btn op-btn-back">
+        Back to Tools
+      </a>
+      <a href="/tools/prime-number/" class="op-btn">
+        Next →
+      </a>
+    </div>
   </div>
-</div>
 
 </div>
 
 <script>
 let problems = [];
 let currentProblem = null;
+let seenProblemIds = new Set();
+
+function updateProblemCounter() {
+  const total = problems.length;
+  const seen = seenProblemIds.size;
+  document.getElementById('problemCounter').innerText = `Problem ${seen} / ${total}`;
+}
 
 async function loadProblems() {
   try {
     const response = await fetch('/assets/data/olympiad-problems.json');
     problems = await response.json();
+    updateProblemCounter();
     loadRandomProblem();
   } catch (error) {
     document.getElementById('problemTitle').innerText = 'Error';
@@ -236,17 +241,35 @@ async function loadProblems() {
   }
 }
 
+function getRandomProblemIndexExcludingCurrent() {
+  if (problems.length <= 1 || !currentProblem) {
+    return Math.floor(Math.random() * problems.length);
+  }
+
+  let randomIndex;
+  do {
+    randomIndex = Math.floor(Math.random() * problems.length);
+  } while (problems[randomIndex].id === currentProblem.id);
+
+  return randomIndex;
+}
+
 function loadRandomProblem() {
   if (!problems.length) return;
 
-  const randomIndex = Math.floor(Math.random() * problems.length);
+  const randomIndex = getRandomProblemIndexExcludingCurrent();
   currentProblem = problems[randomIndex];
+
+  if (currentProblem && currentProblem.id !== undefined && currentProblem.id !== null) {
+    seenProblemIds.add(String(currentProblem.id));
+  }
 
   document.getElementById('problemTitle').innerText = currentProblem.title;
   document.getElementById('problemStatement').innerHTML = currentProblem.statement;
 
   renderSolution();
   document.getElementById('solutionBox').style.display = 'none';
+  updateProblemCounter();
 
   if (window.MathJax && MathJax.typesetPromise) {
     MathJax.typesetPromise();
