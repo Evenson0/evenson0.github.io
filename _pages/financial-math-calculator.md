@@ -347,17 +347,39 @@ permalink: /tools/financial-math-calculator/
 </div>
 
 <script>
-const PERCENT_VARIABLES = new Set(["i", "d", "delta", "j"]);
+const PERCENT_VARIABLES = new Set([
+  "i", "i1", "i2", "i3", "iNew",
+  "d", "delta", "j", "rateChange"
+]);
 
 const VARIABLES = {
   pv: { label: "Present Value (PV)", eg: "e.g. 1000" },
   fv: { label: "Future Value (FV)", eg: "e.g. 1500" },
+
   i: { label: "Effective annual rate i (%)", eg: "e.g. 5 for 5%" },
+
+  i1: { label: "Annual effective rate for year 1 (%)", eg: "e.g. 12.5" },
+  i2: { label: "Annual effective rate for year 2 (%)", eg: "e.g. 7.5" },
+  i3: { label: "Annual effective rate for year 3 (%)", eg: "e.g. 10" },
+  iNew: { label: "Adjusted annual effective rate (%)", eg: "e.g. 21.5" },
+
   d: { label: "Effective discount rate d (%)", eg: "e.g. 4.7619 for 4.7619%" },
   delta: { label: "Force of interest δ (%)", eg: "e.g. 4.879 for 4.879%" },
   j: { label: "Nominal annual rate j^(m) (%)", eg: "e.g. 6 for 6%" },
   m: { label: "Conversion frequency m", eg: "e.g. 12" },
   n: { label: "Number of periods n", eg: "e.g. 5" },
+  years: { label: "Number of years", eg: "e.g. 3" },
+
+  // rateChange is the percentage-point adjustment applied to a base annual rate.
+  // Use -5 if the next rate is 5% lower than the base rate.
+  // Use 9 if the next rate is 9% higher than the base rate.
+  rateChange: {
+    label: "Rate change from base rate (%)",
+    eg: "e.g. -5 for 5% lower, or 9 for 9% higher"
+  },
+
+  twoYearFV: { label: "Future value after 2 years", eg: "e.g. 12093.75" },
+
   payment: { label: "Periodic payment R", eg: "e.g. 100" },
   acc: { label: "Accumulated value of annuity AV", eg: "e.g. 1257.79" },
   annuityPV: { label: "Present value of annuity PV_annuity", eg: "e.g. 772.17" }
@@ -495,6 +517,131 @@ const FORMULAS = [
       `Using \\[ a_{\\overline{n}|} = \\frac{1-(1+i)^{-n}}{i}, \\qquad R=\\frac{PV_{annuity}}{a_{\\overline{n}|}} \\]
        with \\(PV_{annuity}=${formatNum(annuityPV)}\\), \\(i=${formatPercent(i)}\\), \\(n=${formatNum(n)}\\),
        we obtain \\[ R \\approx ${formatNum(result)}. \\]`
+  },
+
+  // Varying annual rates
+  {
+    output: "i2",
+    inputs: ["i1", "rateChange"],
+    name: "Second-year rate from first-year rate and rate change",
+    compute: ({ i1, rateChange }) => i1 + rateChange,
+    latex: ({ i1, rateChange }, result) =>
+      `Using \\[ i_2 = i_1 + \\text{rate change} \\]
+       with \\(i_1=${formatPercent(i1)}\\) and rate change \\(=${formatPercent(rateChange)}\\),
+       we obtain \\[ i_2 \\approx ${formatPercent(result)}. \\]`
+  },
+  {
+    output: "twoYearFV",
+    inputs: ["pv", "i1", "i2"],
+    name: "Two-year future value with varying annual rates",
+    compute: ({ pv, i1, i2 }) => pv * (1 + i1) * (1 + i2),
+    latex: ({ pv, i1, i2 }, result) =>
+      `Using \\[
+       FV_{2} = PV(1+i_1)(1+i_2)
+       \\]
+       with \\(PV=${formatNum(pv)}\\), \\(i_1=${formatPercent(i1)}\\), \\(i_2=${formatPercent(i2)}\\),
+       we obtain \\[
+       FV_{2} \\approx ${formatNum(result)}.
+       \\]`
+  },
+  {
+    output: "i1",
+    inputs: ["pv", "twoYearFV", "rateChange"],
+    name: "Solve first-year rate from two-year varying-rate accumulation",
+    compute: ({ pv, twoYearFV, rateChange }) => {
+      const A = twoYearFV / pv;
+      const b = 2 + rateChange;
+      const c = 1 + rateChange - A;
+      const disc = b * b - 4 * c;
+
+      if (disc < 0) return NaN;
+
+      const r1 = (-b + Math.sqrt(disc)) / 2;
+      const r2 = (-b - Math.sqrt(disc)) / 2;
+
+      if (r1 > -1 && r2 > -1) return Math.max(r1, r2);
+      if (r1 > -1) return r1;
+      if (r2 > -1) return r2;
+      return NaN;
+    },
+    latex: ({ pv, twoYearFV, rateChange }, result) => {
+      const A = twoYearFV / pv;
+      const b = 2 + rateChange;
+      const c = 1 + rateChange - A;
+
+      return `We solve
+      \\[
+      ${formatNum(pv)}(1+i_1)(1+i_1${rateChange >= 0 ? "+" : ""}${formatPercent(rateChange)})=${formatNum(twoYearFV)}
+      \\]
+      so that
+      \\[
+      (1+i_1)(1+i_1${rateChange >= 0 ? "+" : ""}${formatPercent(rateChange)})=${formatNum(A)}.
+      \\]
+      Expanding gives
+      \\[
+      i_1^2 + ${formatNum(b)}i_1 + ${formatNum(c)} = 0.
+      \\]
+      Keeping the valid root,
+      \\[
+      i_1 \\approx ${formatPercent(result)}.
+      \\]`;
+    }
+  },
+  {
+    output: "iNew",
+    inputs: ["i1", "rateChange"],
+    name: "Adjusted rate from base rate and rate change",
+    compute: ({ i1, rateChange }) => i1 + rateChange,
+    latex: ({ i1, rateChange }, result) =>
+      `Using \\[
+       i_{new} = i_1 + \\text{rate change}
+       \\]
+       with \\(i_1=${formatPercent(i1)}\\) and rate change \\(=${formatPercent(rateChange)}\\),
+       we obtain \\[
+       i_{new} \\approx ${formatPercent(result)}.
+       \\]`
+  },
+  {
+    output: "fv",
+    inputs: ["pv", "iNew", "years"],
+    name: "Future value from adjusted annual rate",
+    compute: ({ pv, iNew, years }) => pv * Math.pow(1 + iNew, years),
+    latex: ({ pv, iNew, years }, result) =>
+      `Using \\[
+       FV = PV(1+i_{new})^{n}
+       \\]
+       with \\(PV=${formatNum(pv)}\\), \\(i_{new}=${formatPercent(iNew)}\\), and \\(n=${formatNum(years)}\\),
+       we obtain \\[
+       FV \\approx ${formatNum(result)}.
+       \\]`
+  },
+  {
+    output: "fv",
+    inputs: ["pv", "i1", "i2"],
+    name: "Future value over 2 years with year-specific annual rates",
+    compute: ({ pv, i1, i2 }) => pv * (1 + i1) * (1 + i2),
+    latex: ({ pv, i1, i2 }, result) =>
+      `Using \\[
+       FV = PV(1+i_1)(1+i_2)
+       \\]
+       with \\(PV=${formatNum(pv)}\\), \\(i_1=${formatPercent(i1)}\\), \\(i_2=${formatPercent(i2)}\\),
+       we obtain \\[
+       FV \\approx ${formatNum(result)}.
+       \\]`
+  },
+  {
+    output: "fv",
+    inputs: ["pv", "i1", "i2", "i3"],
+    name: "Future value over 3 years with year-specific annual rates",
+    compute: ({ pv, i1, i2, i3 }) => pv * (1 + i1) * (1 + i2) * (1 + i3),
+    latex: ({ pv, i1, i2, i3 }, result) =>
+      `Using \\[
+       FV = PV(1+i_1)(1+i_2)(1+i_3)
+       \\]
+       with \\(PV=${formatNum(pv)}\\), \\(i_1=${formatPercent(i1)}\\), \\(i_2=${formatPercent(i2)}\\), \\(i_3=${formatPercent(i3)}\\),
+       we obtain \\[
+       FV \\approx ${formatNum(result)}.
+       \\]`
   }
 ];
 
@@ -572,6 +719,7 @@ function resetCalculator() {
   document.getElementById("calcResultBox").style.display = "none";
   document.getElementById("calcSteps").innerHTML = "";
   document.getElementById("parameterRows").innerHTML = "";
+
   addParameterRow("pv", "");
   addParameterRow("i", "");
   addParameterRow("n", "");
