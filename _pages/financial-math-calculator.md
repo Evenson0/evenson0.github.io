@@ -659,14 +659,41 @@ function computeTarget() {
   while (progress && derived[target] === undefined) {
     progress = false;
 
-    for (const formula of FORMULAS) {
+    const knownKeys = Object.keys(derived).filter(k => derived[k] !== undefined);
+
+    const candidateFormulas = FORMULAS.filter(formula => {
       const formulaKey = `${formula.output}|${formula.inputs.join(",")}`;
 
-      if (derived[formula.output] !== undefined) continue;
-      if (usedFormulaKeys.has(formulaKey)) continue;
+      if (derived[formula.output] !== undefined) return false;
+      if (usedFormulaKeys.has(formulaKey)) return false;
 
-      const allInputsKnown = formula.inputs.every(v => derived[v] !== undefined);
-      if (!allInputsKnown) continue;
+      return formula.inputs.every(v => derived[v] !== undefined);
+    });
+
+    if (candidateFormulas.length === 0) break;
+
+    candidateFormulas.sort((a, b) => {
+      const aExact =
+        a.inputs.length === knownKeys.length &&
+        a.inputs.every(v => knownKeys.includes(v));
+
+      const bExact =
+        b.inputs.length === knownKeys.length &&
+        b.inputs.every(v => knownKeys.includes(v));
+
+      if (a.output === target && b.output !== target) return -1;
+      if (b.output === target && a.output !== target) return 1;
+
+      if (aExact && !bExact) return -1;
+      if (bExact && !aExact) return 1;
+
+      return b.inputs.length - a.inputs.length;
+    });
+
+    let applied = false;
+
+    for (const formula of candidateFormulas) {
+      const formulaKey = `${formula.output}|${formula.inputs.join(",")}`;
 
       const inputObj = {};
       formula.inputs.forEach(v => {
@@ -683,10 +710,14 @@ function computeTarget() {
         title: formula.name,
         latex: formula.latex(inputObj, result)
       });
+
       progress = true;
+      applied = true;
 
       if (formula.output === target) break;
     }
+
+    if (!applied) break;
   }
 
   if (derived[target] === undefined) {
