@@ -360,7 +360,8 @@ const VARIABLES = {
   n: { label: "Number of periods n", eg: "e.g. 5" },
   payment: { label: "Periodic payment R", eg: "e.g. 100" },
   acc: { label: "Accumulated value of annuity AV", eg: "e.g. 1257.79" },
-  annuityPV: { label: "Present value of annuity PV_annuity", eg: "e.g. 772.17" }
+  annuityPV: { label: "Present value of annuity PV_annuity", eg: "e.g. 772.17" },
+  depositRatio: { label: "Second deposit as a fraction of the first", eg: "e.g. 0.5 for X/2" },
 };
 
 const FORMULAS = [
@@ -495,7 +496,33 @@ const FORMULAS = [
       `Using \\[ a_{\\overline{n}|} = \\frac{1-(1+i)^{-n}}{i}, \\qquad R=\\frac{PV_{annuity}}{a_{\\overline{n}|}} \\]
        with \\(PV_{annuity}=${formatNum(annuityPV)}\\), \\(i=${formatPercent(i)}\\), \\(n=${formatNum(n)}\\),
        we obtain \\[ R \\approx ${formatNum(result)}. \\]`
-  }
+  },
+{
+  output: "d",
+  inputs: ["i", "n", "depositRatio"],
+  name: "Discount rate from equal interest earned over n years",
+  compute: ({ i, n, depositRatio }) => {
+    const value = 1 + ((Math.pow(1 + i, n) - 1) / depositRatio);
+    return 1 - Math.pow(value, -1 / n);
+  },
+  latex: ({ i, n, depositRatio }, result) =>
+    `If the first fund deposits 1 unit and the second fund deposits \\(${formatNum(depositRatio)}\\) units, equality of interest gives
+    \\[
+    (1+i)^n - 1 = \\text{deposit ratio}\\left(\\left(\\frac{1}{1-d}\\right)^n - 1\\right).
+    \\]
+    Hence
+    \\[
+    \\left(\\frac{1}{1-d}\\right)^n = 1 + \\frac{(1+i)^n - 1}{${formatNum(depositRatio)}}.
+    \\]
+    Therefore
+    \\[
+    d = 1 - \\left(1 + \\frac{(1+i)^n - 1}{${formatNum(depositRatio)}}\\right)^{-1/${formatNum(n)}}.
+    \\]
+    So
+    \\[
+    d \\approx ${formatPercent(result)}.
+    \\]`
+}
 ];
 
 let parameterCounter = 0;
