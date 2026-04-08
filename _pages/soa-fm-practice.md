@@ -141,8 +141,8 @@ permalink: /tools/soa-fm-practice/
   }
 
   .fm-counter {
-    margin-top: -0.35rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: right;
     opacity: 0.75;
     font-size: 0.96rem;
     font-weight: 600;
