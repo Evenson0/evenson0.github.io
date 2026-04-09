@@ -121,12 +121,14 @@
 
 .archive-card-meta,
 .archive-card-date {
-  color: rgba(255,255,255,0.72);
+  color: inherit;
+  opacity: 0.7;
   font-size: 0.95rem;
 }
 
 .archive-card-excerpt {
   margin-top: 1rem;
   line-height: 1.75;
-  color: rgba(255,255,255,0.88);
+  color: inherit;
+  opacity: 0.9;
 }
