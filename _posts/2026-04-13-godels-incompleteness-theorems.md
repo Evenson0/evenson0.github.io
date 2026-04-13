@@ -34,7 +34,7 @@ The goal was clear. One wanted a finite or effectively describable list of axiom
 
 Behind this ambition there was also a historical anxiety. The naive beginnings of set theory had already revealed paradoxes. Russell’s paradox is the most famous example. If one allows completely unrestricted set formation, one may define the set of all sets that do not contain themselves. The natural question then becomes immediate: does this set contain itself or not? Either answer leads to contradiction. Such paradoxes made it impossible to keep treating mathematics as if its concepts were self-evidently safe.
 
-So the foundational enterprise was not only an act of ambition. It was also an act of repair. Mathematicians wanted a language and a method that would exclude ambiguity, avoid contradiction, and give mathematics a perfectly secure base.
+So the foundational enterprise was an act of repair. Mathematicians wanted a language and a method that would exclude ambiguity, avoid contradiction, and give mathematics a perfectly secure base.
 
 Gödel’s work emerged from within this movement, but it ended by showing that the formalist dream could not be completed in the way Hilbert had hoped.
 
