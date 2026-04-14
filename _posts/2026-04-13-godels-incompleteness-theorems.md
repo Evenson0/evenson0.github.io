@@ -193,4 +193,23 @@ After leaving Vienna and settling permanently in Princeton in 1940, Gödel did n
 
 ---
 
+## References
+
+1. Science étonnante, “Théorème de Gödel.”  
+   <https://sciencetonnante.wordpress.com/2016/12/09/theoreme-godel/>
+
+2. Secret Blogging Seminar, “The technical part of Gödel’s proof.”  
+   <https://sbseminar.wordpress.com/2009/12/07/the-technical-part-of-godels-proof/>
+
+3. Quanta Magazine, “How Gödel’s Proof Works.”  
+   <https://www.quantamagazine.org/how-godels-proof-works-20200714/>
+
+4. YouTube playlist on Gödel’s incompleteness theorems.  
+   <https://www.youtube.com/playlist?list=PLtzmb84AoqRRgqV5DfE_ykuGQK-vCJ_0t>
+
+5. Stanford Encyclopedia of Philosophy, “Kurt Gödel.”  
+   <https://plato.stanford.edu/entries/goedel-incompleteness/>
+
+---
+
 *Posted on April 13, 2026.*
