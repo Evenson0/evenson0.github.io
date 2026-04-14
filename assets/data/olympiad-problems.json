@@ -174,4 +174,58 @@
   "difficulty": "easy",
   "tags": ["invariants", "parity", "combinatorics", "number theory"]
 }
+,
+{
+  "id": 7,
+  "title": "Problem 7",
+  "statement": "Let \\(s(n)\\) be the sum of the digits of \\(n\\) written in base \\(10\\). Find all integers \\(n\\) such that \\[ n + s(n) + s(s(n)) = 1000. \\]",
+  "solution_steps": [
+    "Since a number and the sum of its digits are congruent modulo \\(3\\), we have \\(s(n) \\equiv n \\pmod{3}\\).",
+    "Applying the same fact again gives \\(s(s(n)) \\equiv s(n) \\equiv n \\pmod{3}\\).",
+    "Therefore \\[ n+s(n)+s(s(n)) \\equiv n+n+n = 3n \\equiv 0 \\pmod{3}. \\]",
+    "So the left-hand side must be divisible by \\(3\\).",
+    "But \\(1000 \\equiv 1 \\pmod{3}\\), which is impossible.",
+    "Hence there is no integer \\(n\\) such that \\(n+s(n)+s(s(n))=1000\\)."
+  ],
+  "answer_text": "There is no solution.",
+  "topic": "number theory",
+  "difficulty": "easy",
+  "tags": ["digit sums", "modular arithmetic", "number theory"]
+},
+{
+  "id": 8,
+  "title": "Problem 8",
+  "statement": "Let \\(\\{x_1,\\dots,x_n\\}=\\{1,2,\\dots,n\\}\\). Find the maximum of \\[ x_1x_2 + x_2x_3 + \\cdots + x_nx_1. \\]",
+  "solution_steps": [
+    "View the numbers arranged on a circle.",
+    "Suppose two adjacent pairs \\(a,b\\) and \\(c,d\\) appear in that order, with \\(a<d\\) and \\(b>c\\).",
+    "Reversing the segment between \\(b\\) and \\(c\\) increases the sum by \\[ ac + bd - ab - cd = (d-a)(b-c) > 0. \\]",
+    "Thus no such configuration can occur in an optimal arrangement.",
+    "This forces the largest elements to be adjacent in a rigid pattern. Starting from \\(n\\) and repeating the argument outward, one obtains the arrangement \\[ (1,2,4,6,\\dots,n,\\; n-1,n-3,\\dots,3). \\]",
+    "Evaluating the corresponding cyclic sum gives the maximum value \\[ \\boxed{\\frac{2n^3 + 3n^2 - 11n + 18}{6}}. \\]"
+  ],
+  "answer_text": "The maximum is \\(\\boxed{\\frac{2n^3 + 3n^2 - 11n + 18}{6}}\\).",
+  "topic": "optimization",
+  "difficulty": "medium",
+  "tags": ["optimization", "combinatorics", "arrangements", "olympiad mathematics"]
+},
+{
+  "id": 9,
+  "title": "Problem 9",
+  "statement": "Start with the set \\(\\{1,2,\\dots,n\\}\\). At each step, replace two integers \\(a \\le b\\) by \\(b-a\\). Continue until only one integer remains. Determine whether the final integer is even or odd, depending on \\(n \\pmod{4}\\).",
+  "solution_steps": [
+    "Let \\(S_j\\) be the set at step \\(j\\), and let \\(s_j\\) be the sum of its elements.",
+    "If we obtain \\(S_{j+1}\\) by replacing \\(a \\le b\\) with \\(b-a\\), then \\[ s_{j+1} = s_j - a - b + (b-a) = s_j - 2a. \\]",
+    "Thus \\(s_{j+1} \\equiv s_j \\pmod{2}\\). Therefore the parity of the sum remains invariant throughout the process.",
+    "At the end, only one integer remains, so this final integer has the same parity as the initial sum \\[ 1+2+\\cdots+n = \\frac{n(n+1)}{2}. \\]",
+    "If \\(n=4k\\), then \\[ \\frac{n(n+1)}{2}=2k(4k+1), \\] which is even.",
+    "If \\(n=4k+1\\), then \\[ \\frac{n(n+1)}{2}=(4k+1)(2k+1), \\] which is odd.",
+    "If \\(n=4k+2\\), then \\[ \\frac{n(n+1)}{2}=(2k+1)(4k+3), \\] which is odd.",
+    "If \\(n=4k+3\\), then \\[ \\frac{n(n+1)}{2}=(4k+3)(2k+2), \\] which is even."
+  ],
+  "answer_text": "The final integer is even if \\(n \\equiv 0\\) or \\(3 \\pmod{4}\\), and odd if \\(n \\equiv 1\\) or \\(2 \\pmod{4}\\).",
+  "topic": "invariants",
+  "difficulty": "easy",
+  "tags": ["invariants", "parity", "combinatorics", "number theory"]
+}
 ]
