@@ -1,4 +1,6 @@
----
+from pathlib import Path
+
+content = r"""---
 title: "The Mathematical Workshop of the Day"
 date: 2026-04-14
 permalink: /posts/2026/04/14/the/mathematical/workshop/of/the/day
@@ -30,7 +32,7 @@ Consider the quantities
 
 $$
 b-w \pmod 3
-\qquad	ext{and}\qquad
+\qquad\text{and}\qquad
 r-b \pmod 3.
 $$
 
@@ -96,22 +98,19 @@ r-b\equiv 1 \pmod 3.
 $$
 In particular,
 $$
-b
-ot\equiv w \pmod 3,
+b\not\equiv w \pmod 3,
 \qquad
-r
-ot\equiv b \pmod 3,
+r\not\equiv b \pmod 3,
 $$
 and then also
 $$
-r
-ot\equiv w \pmod 3.
+r\not\equiv w \pmod 3.
 $$
 
 Thus $$r,w,b$$ are always pairwise distinct modulo $$3$$. But if two of them were equal, they would certainly be congruent modulo $$3$$, which is impossible.
 
 $$
-oxed{	ext{No, this can never happen.}}
+\boxed{\text{No, this can never happen.}}
 $$
 
 ---
@@ -236,7 +235,7 @@ Therefore the largest element in any terminal position is either $$n$$ or $$n+1$
 It remains to show that we can reach a position with no consecutive integers. Suppose
 $$
 r,r+1,\dots,r+\ell\in S
-\qquad	ext{but}\qquad
+\qquad\text{but}\qquad
 r+\ell+1\notin S.
 $$
 Then we can replace $$r+\ell-1$$ and $$r+\ell$$ by $$r+\ell+1$$, then replace $$r+\ell-3$$ and $$r+\ell-2$$ by $$r+\ell-1$$, and continue in the same way.
@@ -266,3 +265,8 @@ The Fibonacci invariant is perfectly adapted to the move $$m,m+1\mapsto m+2$$, b
 ---
 
 *Posted on April 14, 2026.*
+"""
+
+path = Path("/mnt/data/the_mathematical_workshop_of_the_day_2026-04-14_fixed.md")
+path.write_text(content, encoding="utf-8")
+print(path)
