@@ -1,6 +1,4 @@
-from pathlib import Path
-
-content = r"""---
+---
 title: "The Mathematical Workshop of the Day"
 date: 2026-04-14
 permalink: /posts/2026/04/14/the/mathematical/workshop/of/the/day
@@ -265,8 +263,3 @@ The Fibonacci invariant is perfectly adapted to the move $$m,m+1\mapsto m+2$$, b
 ---
 
 *Posted on April 14, 2026.*
-"""
-
-path = Path("/mnt/data/the_mathematical_workshop_of_the_day_2026-04-14_fixed.md")
-path.write_text(content, encoding="utf-8")
-print(path)
