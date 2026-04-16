@@ -1,15 +1,16 @@
 ---
 layout: archive
-permalink: /workshop/
 title: "Mathematical Workshop"
+permalink: /workshop/
 author_profile: true
 ---
 
 {% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% assign workshop_posts = site.posts | where: "series", "mathematical-workshop" | sort: "date" | reverse %}
 
 <p>A recurring series of mathematical problems, short explorations, and elegant solutions.</p>
+
+{% capture written_year %}'None'{% endcapture %}
+{% assign workshop_posts = site.posts | where: "series", "mathematical-workshop" | sort: "date" | reverse %}
 
 {% for post in workshop_posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
