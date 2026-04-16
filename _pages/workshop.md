@@ -1,18 +1,21 @@
 ---
-layout: single
-title: "Mathematical Workshop"
+layout: archive
 permalink: /workshop/
+title: "Mathematical Workshop"
 author_profile: true
 ---
 
-A recurring series of mathematical problems, short explorations, and elegant solutions.
-
+{% include base_path %}
+{% capture written_year %}'None'{% endcapture %}
 {% assign workshop_posts = site.posts | where: "series", "mathematical-workshop" | sort: "date" | reverse %}
 
+<p>A recurring series of mathematical problems, short explorations, and elegant solutions.</p>
+
 {% for post in workshop_posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
-  {% if post.excerpt %}
-    <p>{{ post.excerpt }}</p>
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
+  {% include archive-single.html %}
 {% endfor %}
