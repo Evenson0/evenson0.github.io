@@ -1,7 +1,9 @@
 ---
-title: "The Mathematical Workshop of the Day"
+title: "Mathematical Workshop #2"
 date: 2026-03-10
-permalink: /posts/2026/03/10/the/mathematical/workshop/of/the/day
+permalink: /workshop/2/
+layout: single
+author_profile: true
 tags:
   - strategy
   - mathematics
@@ -10,6 +12,7 @@ tags:
   - combinatorics
   - number theory
   - olympiad mathematics
+series: mathematical-workshop
 ---
 
 In this post I solve three short problems in the spirit of mathematical competitions such as the Putnam or various Olympiads. The first is a simple combinatorial game with a clean winning strategy, the second studies a functional equation whose structure determines the values of the function, and the third is a Diophantine equation where a parity argument quickly shows that the only integer solution is the trivial one.
