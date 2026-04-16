@@ -1,12 +1,15 @@
 ---
-title: "The Mathematical Workshop of the Day"
+title: "Mathematical Workshop #3"
 date: 2026-03-17
-permalink: /posts/2026/03/17/the/mathematical/workshop/of/the/day
+permalink: /workshop/3/
+layout: single
+author_profile: true
 tags:
   - number theory
   - invariants
   - optimization
   - olympiad mathematics
+series: mathematical-workshop
 ---
 
 In this post I present three short problems centered around a common theme: extracting structure from simplicity. Each solution relies on a single decisive idea - a modular obstruction, a local optimization argument, and an invariant - illustrating how elementary tools can completely determine the outcome.
