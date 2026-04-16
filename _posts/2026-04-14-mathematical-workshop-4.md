@@ -10,6 +10,7 @@ tags:
   - modular arithmetic
   - fibonacci numbers
   - olympiad mathematics
+series: mathematical-workshop
 ---
 
 In this post I present three short problems linked by a common theme: the power of invariants. A congruence modulo $$3$$, a parity argument, and a Fibonacci-weighted sum are each enough to force the final outcome.
