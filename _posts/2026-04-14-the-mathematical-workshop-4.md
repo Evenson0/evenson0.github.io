@@ -1,7 +1,9 @@
 ---
-title: "The Mathematical Workshop of the Day"
+title: "Mathematical Workshop #4"
 date: 2026-04-14
-permalink: /posts/2026/04/14/the/mathematical/workshop/of/the/day
+permalink: /workshop/4/
+layout: single
+author_profile: true
 tags:
   - combinatorics
   - invariants
