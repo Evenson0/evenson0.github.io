@@ -1,5 +1,5 @@
 ---
-title: "The Mathematical Workshop #1"
+title: "Mathematical Workshop #1"
 date: 2026-03-06
 permalink: /workshop/1/
 tags:
