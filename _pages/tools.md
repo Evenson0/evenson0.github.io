@@ -181,42 +181,53 @@ permalink: /tools/
 
   <hr class="lab-rule">
 
-  <h2 class="lab-section-title">Mathematics</h2>
+<h2 class="lab-section-title">Mathematics</h2>
 
-<div class="lab-grid">
+  <div class="lab-grid">
 
-  <a href="/tools/prime-number/" class="lab-card-link">
-    <div class="lab-card">
-      <h3>Prime Number</h3>
-      <p class="lab-card-desc">
-        Explore primality, test integers, and interact with one of the most classical objects in number theory.
-      </p>
-      <p class="lab-card-cta">Open tool →</p>
-    </div>
-  </a>
+    <a href="/tools/prime-number/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Prime Number</h3>
+        <p class="lab-card-desc">
+          Explore primality, test integers, and interact with one of the most classical objects in number theory.
+        </p>
+        <p class="lab-card-cta">Open tool →</p>
+      </div>
+    </a>
 
-  <a href="/tools/goldbach/" class="lab-card-link">
-    <div class="lab-card">
-      <h3>Goldbach Conjecture</h3>
-      <p class="lab-card-desc">
-        Experiment with even integers and their decomposition into sums of two prime numbers.
-      </p>
-      <p class="lab-card-cta">Open tool →</p>
-    </div>
-  </a>
+    <a href="/tools/goldbach/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Goldbach Conjecture</h3>
+        <p class="lab-card-desc">
+          Experiment with even integers and their decomposition into sums of two prime numbers.
+        </p>
+        <p class="lab-card-cta">Open tool →</p>
+      </div>
+    </a>
 
-  <a href="/tools/olympiad-practice/" class="lab-card-link">
-    <div class="lab-card">
-      <h3>Olympiad Practice</h3>
-      <p class="lab-card-desc">
-        Explore randomized olympiad-style problems together with complete written solutions.
-      </p>
-      <p class="lab-card-cta">Open tool →</p>
-    </div>
-  </a>
+    <a href="/tools/olympiad-practice/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Olympiad Practice</h3>
+        <p class="lab-card-desc">
+          Explore randomized olympiad-style problems together with complete written solutions.
+        </p>
+        <p class="lab-card-cta">Open tool →</p>
+      </div>
+    </a>
 
-</div>
-  <h2 class="lab-section-title">Actuarial Science</h2>
+    <a href="/tools/monty-hall/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Monty Hall Simulation</h3>
+        <p class="lab-card-desc">
+          Interact with the famous probability puzzle, reveal doors visually, and compare the outcomes of staying versus switching.
+        </p>
+        <p class="lab-card-cta">Open tool →</p>
+      </div>
+    </a>
+
+  </div>
+
+<h2 class="lab-section-title">Actuarial Science</h2>
 
   <div class="lab-grid">
 
@@ -242,7 +253,7 @@ permalink: /tools/
 
   </div>
 
-  <h2 class="lab-section-title">Quantitative Finance</h2>
+<h2 class="lab-section-title">Quantitative Finance</h2>
 
   <div class="lab-coming">
     Tools coming soon.
