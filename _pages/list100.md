@@ -226,7 +226,7 @@ permalink: /list-100/
     <li class="list100-done">✓ Build my personal blog</li>
     <li>✗ Run a marathon</li>
     <li>✗ Launch a magazine</li>
-    <li>✗ <a href="/talks/">Give public talks on mathematics and actuarial science</a></li>
+    <li>✗ <a href="/talk#s/">Give public talks on mathematics and actuarial science</a></li>
     <li>✗ <a href="/memories">Visit every province and territory in Canada</a></li>
     <li>✗ Become a boxing coach</li>
     <li>✗ Work in a bookstore or a library</li>
