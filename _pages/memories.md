@@ -377,8 +377,8 @@ author_profile: true
     <span><i class="memories-dot memories-dot-pursued"></i> Pursued place</span>
     <span><i class="memories-dot memories-dot-awaiting"></i> Awaiting place</span>
     <span><i class="memories-triangle memories-triangle-lived"></i> Lived hike</span>
-    <span><i class="memories-triangle memories-triangle-pursued"></i> Pursued hike</span>
-    <span><i class="memories-triangle memories-triangle-awaiting"></i> Awaiting hike</span>
+    <!-- <span><i class="memories-triangle memories-triangle-pursued"></i> Pursued hike</span>
+    <span><i class="memories-triangle memories-triangle-awaiting"></i> Awaiting hike</span> -->
   </div>
 
   <h2 class="memories-section-title">Places and Trails</h2>
