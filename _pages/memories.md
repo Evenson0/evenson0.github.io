@@ -138,12 +138,25 @@ author_profile: true
     border-radius: 999px;
   }
 
-  .memories-square {
-    border-radius: 4px;
+  .memories-triangle {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid currentColor;
+    display: inline-block;
   }
 
-  .memories-circle {
-    border-radius: 999px;
+  .memories-triangle-lived {
+    color: #2563eb;
+  }
+
+  .memories-triangle-pursued {
+    color: #7c3aed;
+  }
+
+  .memories-triangle-awaiting {
+    color: #d97706;
   }
 
   .memories-section-title {
@@ -207,7 +220,7 @@ author_profile: true
     display: flex;
     flex-wrap: wrap;
     gap: 0.45rem;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.95rem;
   }
 
   .memory-tag {
@@ -251,14 +264,36 @@ author_profile: true
     color: #6d28d9;
   }
 
-  .memory-link {
-    color: #2563eb;
+  .memory-link-button,
+  .memory-link-button:visited {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.62rem 0.9rem;
+    border-radius: 999px;
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    box-shadow: 0 8px 18px rgba(37,99,235,0.22);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
   }
 
-  .memory-link:hover {
-    text-decoration: underline;
+  .memory-link-button:hover,
+  .memory-link-button:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(37,99,235,0.28);
+    opacity: 0.98;
+  }
+
+  .memory-link-button:active {
+    transform: translateY(0);
+  }
+
+  .memory-link-button .arrow {
+    font-size: 0.95em;
+    line-height: 1;
   }
 
   .leaflet-popup-content-wrapper {
@@ -285,7 +320,7 @@ author_profile: true
   }
 
   .memory-popup p {
-    margin: 0 0 0.55rem 0;
+    margin: 0 0 0.7rem 0;
     font-size: 0.92rem;
     line-height: 1.55;
   }
@@ -296,14 +331,9 @@ author_profile: true
     opacity: 0.72;
   }
 
-  .memory-popup a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  .memory-popup a:hover {
-    text-decoration: underline;
+  .memory-popup .memory-link-button {
+    padding: 0.55rem 0.82rem;
+    font-size: 0.86rem;
   }
 
   @media (max-width: 700px) {
@@ -343,10 +373,12 @@ author_profile: true
   </div>
 
   <div class="memories-legend">
-    <span><i class="memories-dot memories-dot-lived memories-circle"></i> Lived</span>
-    <span><i class="memories-dot memories-dot-pursued memories-circle"></i> Pursued</span>
-    <span><i class="memories-dot memories-dot-awaiting memories-circle"></i> Awaiting</span>
-    <span><i class="memories-dot memories-dot-lived memories-square"></i> Hike</span>
+    <span><i class="memories-dot memories-dot-lived"></i> Lived place</span>
+    <span><i class="memories-dot memories-dot-pursued"></i> Pursued place</span>
+    <span><i class="memories-dot memories-dot-awaiting"></i> Awaiting place</span>
+    <span><i class="memories-triangle memories-triangle-lived"></i> Lived hike</span>
+    <span><i class="memories-triangle memories-triangle-pursued"></i> Pursued hike</span>
+    <span><i class="memories-triangle memories-triangle-awaiting"></i> Awaiting hike</span>
   </div>
 
   <h2 class="memories-section-title">Places and Trails</h2>
@@ -594,9 +626,24 @@ author_profile: true
   }
 
   function createMarkerIcon(color, category) {
-    const shapeStyle = category === "hike"
-      ? "border-radius:4px;"
-      : "border-radius:50%;";
+    if (category === "hike") {
+      return L.divIcon({
+        className: "",
+        html: `
+          <div style="
+            width: 0;
+            height: 0;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+            border-bottom: 16px solid ${color};
+            filter: drop-shadow(0 0 0 white) drop-shadow(0 0 3px rgba(0,0,0,0.25));
+          "></div>
+        `,
+        iconSize: [18, 16],
+        iconAnchor: [9, 16],
+        popupAnchor: [0, -14]
+      });
+    }
 
     return L.divIcon({
       className: "",
@@ -604,7 +651,7 @@ author_profile: true
         <div style="
           width: 16px;
           height: 16px;
-          ${shapeStyle}
+          border-radius: 50%;
           background: ${color};
           border: 2px solid white;
           box-shadow: 0 0 0 3px rgba(0,0,0,0.12);
@@ -656,7 +703,9 @@ author_profile: true
           <div class="memory-card-tags">${buildTags(item)}</div>
           <div class="memory-card-footer">
             <span class="memory-status ${getStatusClass(item.status)}">${getStatusLabel(item.status)}</span>
-            <a class="memory-link" href="${item.url}">Open memory</a>
+            <a class="memory-link-button" href="${item.url}">
+              Open memory <span class="arrow">↗</span>
+            </a>
           </div>
         </div>
       </article>
@@ -690,7 +739,9 @@ author_profile: true
           <small>${item.location}</small>
           ${buildPopupDetails(item)}
           <p>${item.excerpt}</p>
-          <a href="${item.url}">Open memory</a>
+          <a class="memory-link-button" href="${item.url}">
+            Open memory <span class="arrow">↗</span>
+          </a>
         </div>
       `);
 
