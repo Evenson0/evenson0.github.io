@@ -150,7 +150,8 @@ permalink: /list-100/
     <li>✗ <a href="/memories/canada/">Visit every province and territory in Canada</a></li>
     <li>✗ Become a boxing coach</li>
     <li>✗ Work in a bookstore or a library</li>
-    <li>✗ Visit 100 countries <span class="list100-muted">(~3% done)</span></li>
+    <li>✗ <a href="/memories/">Visit 100 countries</a> <span class="list100-muted">(~3% done)</span></li>
+    <li class="list100-done">✓ <a href="/memories/new-york/">Visit New York City</a> <span class="list100-muted">(the most beautiful city in the world)</span></li>
     <li>✗ Design and publish a game</li>
     <li>✗ <a href="/memories/nahanni/">See Nahanni and Virginia Falls</a></li>
     <li>✗ <a href="/memories/yukon-aurora/">See the Northern Lights in the Yukon</a></li>
