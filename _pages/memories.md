@@ -54,14 +54,15 @@ author_profile: true
     font-style: italic;
   }
 
-  .memories-toolbar {
+  .memories-view-switch {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 0.75rem;
-    margin: 2rem 0 1.4rem 0;
+    margin: 0 0 1rem 0;
+    flex-wrap: wrap;
   }
 
+  .memories-view-btn,
   .memories-filter {
     border: 1px solid rgba(127,127,127,0.20);
     background: rgba(127,127,127,0.05);
@@ -73,6 +74,8 @@ author_profile: true
     font-size: 0.95rem;
   }
 
+  .memories-view-btn:hover,
+  .memories-view-btn:focus,
   .memories-filter:hover,
   .memories-filter:focus {
     transform: translateY(-1px);
@@ -80,11 +83,20 @@ author_profile: true
     box-shadow: 0 10px 24px rgba(0,0,0,0.08);
   }
 
+  .memories-view-btn.active,
   .memories-filter.active {
     background: rgba(37,99,235,0.12);
     border-color: rgba(37,99,235,0.45);
     color: #2563eb;
     font-weight: 600;
+  }
+
+  .memories-toolbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0 0 1.4rem 0;
   }
 
   .memories-map-wrap {
@@ -93,9 +105,11 @@ author_profile: true
     border-radius: 22px;
     overflow: hidden;
     box-shadow: 0 16px 34px rgba(0,0,0,0.10);
+    background: rgba(127,127,127,0.04);
   }
 
-  #memories-map {
+  #memories-map,
+  #memories-globe {
     width: 100%;
     height: 560px;
   }
@@ -310,7 +324,8 @@ author_profile: true
       padding: 1.2rem;
     }
 
-    #memories-map {
+    #memories-map,
+    #memories-globe {
       height: 430px;
     }
   }
@@ -328,6 +343,11 @@ author_profile: true
     </p>
   </div>
 
+  <div class="memories-view-switch">
+    <button class="memories-view-btn active" data-view="map">Map</button>
+    <button class="memories-view-btn" data-view="globe">Globe</button>
+  </div>
+
   <div class="memories-toolbar">
     <button class="memories-filter active" data-filter="all">All</button>
     <button class="memories-filter" data-filter="place">Places</button>
@@ -337,8 +357,12 @@ author_profile: true
     <button class="memories-filter" data-filter="awaiting">Awaiting</button>
   </div>
 
-  <div class="memories-map-wrap">
+  <div id="memories-map-wrap" class="memories-map-wrap">
     <div id="memories-map"></div>
+  </div>
+
+  <div id="memories-globe-wrap" class="memories-map-wrap" style="display:none;">
+    <div id="memories-globe"></div>
   </div>
 
   <div class="memories-legend">
@@ -352,6 +376,16 @@ author_profile: true
   <div id="memories-grid" class="memories-grid"></div>
 
 </div>
+
+<script
+  src="https://unpkg.com/three"
+  crossorigin=""
+></script>
+
+<script
+  src="https://unpkg.com/globe.gl"
+  crossorigin=""
+></script>
 
 <script
   src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -571,19 +605,14 @@ author_profile: true
     }
   ];
 
-  const map = L.map("memories-map", {
-    zoomControl: true,
-    worldCopyJump: true
-  }).setView([22, -15], 2);
+  let currentFilter = "all";
+  let globeInstance = null;
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 18,
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
-
-  const markersLayer = L.layerGroup().addTo(map);
   const grid = document.getElementById("memories-grid");
   const filterButtons = document.querySelectorAll(".memories-filter");
+  const viewButtons = document.querySelectorAll(".memories-view-btn");
+  const mapWrap = document.getElementById("memories-map-wrap");
+  const globeWrap = document.getElementById("memories-globe-wrap");
 
   function getStatusClass(status) {
     if (status === "lived") return "memory-status-lived";
@@ -650,6 +679,26 @@ author_profile: true
     return extra;
   }
 
+  function buildGlobeLabel(item) {
+    return `
+      <div style="max-width:260px;">
+        <strong>${item.title}</strong><br>
+        <span style="opacity:.8;">${item.location}</span><br><br>
+        ${item.distance ? `<strong>Distance:</strong> ${item.distance}<br>` : ""}
+        ${item.duration ? `<strong>Duration:</strong> ${item.duration}<br>` : ""}
+        ${item.difficulty ? `<strong>Difficulty:</strong> ${item.difficulty}<br>` : ""}
+        ${item.address ? `<strong>Start:</strong> ${item.address}<br><br>` : "<br>"}
+        ${item.excerpt}<br><br>
+        <span style="color:#60a5fa; font-weight:600;">Click to open</span>
+      </div>
+    `;
+  }
+
+  function getFilteredItems(filter) {
+    if (filter === "all") return memories;
+    return memories.filter(item => item.status === filter || item.category === filter);
+  }
+
   function renderGrid(items) {
     grid.innerHTML = items.map(item => `
       <article class="memory-card">
@@ -667,6 +716,18 @@ author_profile: true
       </article>
     `).join("");
   }
+
+  const map = L.map("memories-map", {
+    zoomControl: true,
+    worldCopyJump: true
+  }).setView([22, -15], 2);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
+
+  const markersLayer = L.layerGroup().addTo(map);
 
   function renderMarkers(items) {
     markersLayer.clearLayers();
@@ -691,15 +752,37 @@ author_profile: true
     });
   }
 
-  function getFilteredItems(filter) {
-    if (filter === "all") return memories;
-    return memories.filter(item => item.status === filter || item.category === filter);
+  function initGlobe() {
+    if (globeInstance) return;
+
+    globeInstance = Globe()(document.getElementById("memories-globe"))
+      .globeImageUrl("//unpkg.com/three-globe/example/img/earth-blue-marble.jpg")
+      .backgroundColor("rgba(0,0,0,0)")
+      .pointColor(d => getMarkerColor(d.status))
+      .pointLat(d => d.lat)
+      .pointLng(d => d.lng)
+      .pointRadius(d => d.category === "hike" ? 0.22 : 0.18)
+      .pointAltitude(d => d.category === "hike" ? 0.12 : 0.1)
+      .pointLabel(d => buildGlobeLabel(d))
+      .onPointClick(point => {
+        window.location.href = point.url;
+      });
+
+    globeInstance.controls().autoRotate = true;
+    globeInstance.controls().autoRotateSpeed = 0.35;
+  }
+
+  function renderGlobe(items) {
+    if (!globeInstance) return;
+    globeInstance.pointsData(items);
   }
 
   function renderAll(filter) {
+    currentFilter = filter;
     const filtered = getFilteredItems(filter);
     renderGrid(filtered);
     renderMarkers(filtered);
+    renderGlobe(filtered);
   }
 
   filterButtons.forEach(button => {
@@ -707,6 +790,27 @@ author_profile: true
       filterButtons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
       renderAll(button.dataset.filter);
+    });
+  });
+
+  viewButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      viewButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const view = button.dataset.view;
+
+      if (view === "map") {
+        mapWrap.style.display = "";
+        globeWrap.style.display = "none";
+        setTimeout(() => map.invalidateSize(), 100);
+      } else {
+        mapWrap.style.display = "none";
+        globeWrap.style.display = "";
+        initGlobe();
+        renderGlobe(getFilteredItems(currentFilter));
+        setTimeout(() => window.dispatchEvent(new Event("resize")), 100);
+      }
     });
   });
 
