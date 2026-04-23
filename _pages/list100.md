@@ -5,20 +5,35 @@ permalink: /list-100/
 
 <style>
   .list100-shell {
+    --l100-bg-1: rgba(127,127,127,0.05);
+    --l100-bg-2: rgba(127,127,127,0.025);
+    --l100-border: rgba(127,127,127,0.18);
+    --l100-border-strong: rgba(127,127,127,0.22);
+    --l100-text: inherit;
+    --l100-muted: 0.72;
+    --l100-marker: rgba(37,99,235,0.78);
+    --l100-done-text: #166534;
+    --l100-done-marker: #16a34a;
+    --l100-link-text: #1d4ed8;
+    --l100-link-bg: rgba(37,99,235,0.08);
+    --l100-link-border: rgba(37,99,235,0.16);
+    --l100-link-hover-text: #ffffff;
+    --l100-link-hover-bg-1: #2563eb;
+    --l100-link-hover-bg-2: #1d4ed8;
+    --l100-link-shadow: rgba(37,99,235,0.18);
+    --l100-progress-bg: rgba(127,127,127,0.05);
+    --l100-item-border: rgba(127,127,127,0.12);
+
     max-width: 900px;
     margin: 2rem auto;
     padding: 2rem;
-    border: 1px solid rgba(127,127,127,0.18);
+    border: 1px solid var(--l100-border);
     border-radius: 22px;
-    background: linear-gradient(
-      180deg,
-      rgba(127,127,127,0.05),
-      rgba(127,127,127,0.025)
-    );
+    background: linear-gradient(180deg, var(--l100-bg-1), var(--l100-bg-2));
     box-shadow:
       0 14px 38px rgba(0,0,0,0.10),
       0 0 0 1px rgba(255,255,255,0.02) inset;
-    color: inherit;
+    color: var(--l100-text);
   }
 
   .list100-quote {
@@ -48,9 +63,9 @@ permalink: /list-100/
   .list100-progress {
     display: inline-block;
     padding: 12px 18px;
-    border: 1px solid rgba(127,127,127,0.22);
+    border: 1px solid var(--l100-border-strong);
     border-radius: 16px;
-    background: rgba(127,127,127,0.05);
+    background: var(--l100-progress-bg);
     box-shadow: 0 6px 18px rgba(0,0,0,0.05);
   }
 
@@ -60,12 +75,12 @@ permalink: /list-100/
   }
 
   .list100-progress span {
-    opacity: 0.72;
+    opacity: var(--l100-muted);
   }
 
   .list100-rule {
     border: none;
-    border-top: 1px solid rgba(127,127,127,0.22);
+    border-top: 1px solid var(--l100-border-strong);
     margin: 2rem 0;
   }
 
@@ -83,7 +98,7 @@ permalink: /list-100/
 
   .list100-list li {
     padding: 0.72rem 0 0.88rem 0.2rem;
-    border-bottom: 1px solid rgba(127,127,127,0.12);
+    border-bottom: 1px solid var(--l100-item-border);
   }
 
   .list100-list li:last-child {
@@ -92,20 +107,20 @@ permalink: /list-100/
 
   .list100-list li::marker {
     font-weight: 700;
-    color: rgba(37,99,235,0.78);
+    color: var(--l100-marker);
   }
 
   .list100-done {
-    color: rgba(22,101,52,0.98);
+    color: var(--l100-done-text);
     font-weight: 600;
   }
 
   .list100-done::marker {
-    color: rgba(22,163,74,0.95);
+    color: var(--l100-done-marker);
   }
 
   .list100-muted {
-    opacity: 0.72;
+    opacity: var(--l100-muted);
     font-size: 0.95em;
   }
 
@@ -114,12 +129,12 @@ permalink: /list-100/
     display: inline-flex;
     align-items: center;
     gap: 0.32rem;
-    padding: 0.12rem 0.62rem;
+    padding: 0.14rem 0.62rem;
     border-radius: 999px;
     text-decoration: none;
-    color: #1d4ed8;
-    background: rgba(37,99,235,0.08);
-    border: 1px solid rgba(37,99,235,0.16);
+    color: var(--l100-link-text);
+    background: var(--l100-link-bg);
+    border: 1px solid var(--l100-link-border);
     font-weight: 600;
     transition:
       background 0.2s ease,
@@ -137,10 +152,10 @@ permalink: /list-100/
 
   .list100-list a:hover,
   .list100-list a:focus {
-    color: #fff;
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    border-color: rgba(37,99,235,0.35);
-    box-shadow: 0 8px 18px rgba(37,99,235,0.18);
+    color: var(--l100-link-hover-text);
+    background: linear-gradient(135deg, var(--l100-link-hover-bg-1), var(--l100-link-hover-bg-2));
+    border-color: transparent;
+    box-shadow: 0 8px 18px var(--l100-link-shadow);
     transform: translateY(-1px);
   }
 
@@ -160,6 +175,51 @@ permalink: /list-100/
     .list100-list li {
       padding: 0.65rem 0 0.8rem 0.1rem;
     }
+  }
+
+  /* Dark mode: browser preference */
+  @media (prefers-color-scheme: dark) {
+    .list100-shell {
+      --l100-bg-1: rgba(255,255,255,0.045);
+      --l100-bg-2: rgba(255,255,255,0.02);
+      --l100-border: rgba(255,255,255,0.12);
+      --l100-border-strong: rgba(255,255,255,0.14);
+      --l100-marker: rgba(147,197,253,0.92);
+      --l100-done-text: #86efac;
+      --l100-done-marker: #4ade80;
+      --l100-link-text: #bfdbfe;
+      --l100-link-bg: rgba(59,130,246,0.16);
+      --l100-link-border: rgba(96,165,250,0.24);
+      --l100-link-hover-text: #f8fbff;
+      --l100-link-hover-bg-1: #3b82f6;
+      --l100-link-hover-bg-2: #2563eb;
+      --l100-link-shadow: rgba(37,99,235,0.30);
+      --l100-progress-bg: rgba(255,255,255,0.035);
+      --l100-item-border: rgba(255,255,255,0.10);
+    }
+  }
+
+  /* Dark mode: site/theme toggles */
+  html.dark .list100-shell,
+  body.dark .list100-shell,
+  [data-theme="dark"] .list100-shell,
+  .dark-mode .list100-shell {
+    --l100-bg-1: rgba(255,255,255,0.045);
+    --l100-bg-2: rgba(255,255,255,0.02);
+    --l100-border: rgba(255,255,255,0.12);
+    --l100-border-strong: rgba(255,255,255,0.14);
+    --l100-marker: rgba(147,197,253,0.92);
+    --l100-done-text: #86efac;
+    --l100-done-marker: #4ade80;
+    --l100-link-text: #bfdbfe;
+    --l100-link-bg: rgba(59,130,246,0.16);
+    --l100-link-border: rgba(96,165,250,0.24);
+    --l100-link-hover-text: #f8fbff;
+    --l100-link-hover-bg-1: #3b82f6;
+    --l100-link-hover-bg-2: #2563eb;
+    --l100-link-shadow: rgba(37,99,235,0.30);
+    --l100-progress-bg: rgba(255,255,255,0.035);
+    --l100-item-border: rgba(255,255,255,0.10);
   }
 </style>
 
@@ -193,32 +253,32 @@ permalink: /list-100/
     <li class="list100-done">✓ Build my personal blog</li>
     <li>✗ Run a marathon</li>
     <li>✗ Launch a magazine</li>
-    <li>✗ <a href="/talks/">Give public talks on mathematics and actuarial science</a></li>
-    <li>✗ <a href="/memories/canada/">Visit every province and territory in Canada</a></li>
+    <li>✗ <a href="/talk#s/">Give public talks on mathematics and actuarial science</a></li>
+    <li>✗ <a href="/memories">Visit every province and territory in Canada</a></li>
     <li>✗ Become a boxing coach</li>
     <li>✗ Work in a bookstore or a library</li>
     <li>✗ <a href="/memories/">Visit 100 countries</a> <span class="list100-muted">(~3% done)</span></li>
-    <li class="list100-done">✓ <a href="/memories/new-york/">Visit New York City</a> <span class="list100-muted">(the most beautiful city in the world)</span></li>
+    <li class="list100-done">✓ <a href="/memories/">Visit New York City</a></li>
     <li>✗ Design and publish a game</li>
-    <li>✗ <a href="/memories/nahanni/">See Nahanni and Virginia Falls</a></li>
-    <li>✗ <a href="/memories/yukon-aurora/">See the Northern Lights in the Yukon</a></li>
+    <li>✗ <a href="/memories/">See Nahanni and Virginia Falls</a></li>
+    <li>✗ <a href="/memories/">See the Northern Lights in the Yukon</a></li>
     <li>✗ Support education in the world</li>
     <li>✗ Start a scholarship to support brave young kids</li>
     <li>✗ Interview some of the greatest mathematicians of our time</li>
-    <li>✗ <a href="/memories/grand-canyon/">See the Grand Canyon at sunrise</a></li>
-    <li>✗ <a href="/memories/petra/">See Petra with my own eyes</a></li>
+    <li>✗ <a href="/memories/">See the Grand Canyon at sunrise</a></li>
+    <li>✗ <a href="/memories/">See Petra with my own eyes</a></li>
     <li>✗ Write a paper in actuarial science</li>
     <li>✗ Read 1000 books (<a href="https://www.goodreads.com/user/show/193296272-evenson-auguste">10% done</a>)</li>
-    <li>✗ <a href="/memories/canada/">Visit every province and territory in Canada</a></li>
-    <li>✗ <a href="/memories/canada-hikes/">Go on unforgettable hikes in Canada</a></li>
-    <li>✗ <a href="/memories/northern-lights/">See the Northern Lights in Canada</a></li>
+    <li>✗ <a href="/memories/">Visit every province and territory in Canada</a></li>
+    <li>✗ <a href="/memories/">Go on unforgettable hikes in Canada</a></li>
+    <li>✗ <a href="/memories/">See the Northern Lights in Canada</a></li>
     <li>✗ Become ACAS</li>
-    <li>✗ <a href="/memories/machu-picchu/">Reach Machu Picchu</a></li>
-    <li>✗ <a href="/memories/galapagos/">See the Galápagos Islands</a></li>
+    <li>✗ <a href="/memories/">Reach Machu Picchu</a></li>
+    <li>✗ <a href="/memories/">See the Galápagos Islands</a></li>
     <li>✗ Become FCAS</li>
     <li>✗ Go on a trip overseas with my whole family</li>
     <li>✗ Be a writer</li>
-    <li>✗ <a href="/memories/torres-del-paine/">Trek through Torres del Paine</a></li>
+    <li>✗ <a href="/memories/">Trek through Torres del Paine</a></li>
     <li>✗ Complete a Master’s degree</li>
     <li>✗ Work internationally (US or Europe)</li>
     <li>✗ Pursue a career in politics</li>
