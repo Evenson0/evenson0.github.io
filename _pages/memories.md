@@ -105,7 +105,7 @@ author_profile: true
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
-    margin: 1rem 0 2.4rem 0;
+    margin: 1rem 0 1.2rem 0;
     font-size: 0.95rem;
     opacity: 0.84;
   }
@@ -119,20 +119,30 @@ author_profile: true
   .memories-dot {
     width: 12px;
     height: 12px;
-    border-radius: 999px;
     display: inline-block;
   }
 
   .memories-dot-lived {
     background: #2563eb;
+    border-radius: 999px;
   }
 
   .memories-dot-awaiting {
     background: #d97706;
+    border-radius: 999px;
   }
 
   .memories-dot-pursued {
     background: #7c3aed;
+    border-radius: 999px;
+  }
+
+  .memories-square {
+    border-radius: 4px;
+  }
+
+  .memories-circle {
+    border-radius: 999px;
   }
 
   .memories-section-title {
@@ -192,6 +202,22 @@ author_profile: true
     font-size: 0.96rem;
   }
 
+  .memory-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .memory-tag {
+    display: inline-block;
+    padding: 0.28rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: rgba(127,127,127,0.08);
+    border: 1px solid rgba(127,127,127,0.12);
+  }
+
   .memory-card-footer {
     display: flex;
     justify-content: space-between;
@@ -239,7 +265,7 @@ author_profile: true
   }
 
   .memory-popup {
-    max-width: 240px;
+    max-width: 250px;
   }
 
   .memory-popup-image {
@@ -265,7 +291,7 @@ author_profile: true
 
   .memory-popup small {
     display: block;
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.4rem;
     opacity: 0.72;
   }
 
@@ -295,7 +321,7 @@ author_profile: true
   <div class="memories-hero">
     <h1>Memories</h1>
     <p>
-      Some places remain in memory longer than they remain in time. This page is where I keep the traces of journeys, landscapes, monuments, and moments that felt large enough to deserve remembrance.
+      Some places remain in memory longer than they remain in time. This page is where I keep the traces of journeys, landscapes, monuments, cities, and hikes that felt large enough to deserve remembrance.
     </p>
     <p class="memories-quote">
       A map of what I have lived, what I am still pursuing, and what still waits for me somewhere in the world.
@@ -304,6 +330,8 @@ author_profile: true
 
   <div class="memories-toolbar">
     <button class="memories-filter active" data-filter="all">All</button>
+    <button class="memories-filter" data-filter="place">Places</button>
+    <button class="memories-filter" data-filter="hike">Hikes</button>
     <button class="memories-filter" data-filter="lived">Lived</button>
     <button class="memories-filter" data-filter="pursued">Pursued</button>
     <button class="memories-filter" data-filter="awaiting">Awaiting</button>
@@ -314,12 +342,13 @@ author_profile: true
   </div>
 
   <div class="memories-legend">
-    <span><i class="memories-dot memories-dot-lived"></i> Lived</span>
-    <span><i class="memories-dot memories-dot-pursued"></i> Pursued</span>
-    <span><i class="memories-dot memories-dot-awaiting"></i> Awaiting</span>
+    <span><i class="memories-dot memories-dot-lived memories-circle"></i> Lived</span>
+    <span><i class="memories-dot memories-dot-pursued memories-circle"></i> Pursued</span>
+    <span><i class="memories-dot memories-dot-awaiting memories-circle"></i> Awaiting</span>
+    <span><i class="memories-dot memories-dot-lived memories-square"></i> Hike</span>
   </div>
 
-  <h2 class="memories-section-title">Places</h2>
+  <h2 class="memories-section-title">Places and Trails</h2>
   <div id="memories-grid" class="memories-grid"></div>
 
 </div>
@@ -340,19 +369,117 @@ author_profile: true
       lat: 45.5017,
       lng: -73.5673,
       status: "lived",
+      category: "place",
       type: "city",
       excerpt: "A city that became part of my life.",
       image: "/images/memories/montreal.jpg",
       url: "/memories/montreal/"
     },
     {
+      title: "New York City",
+      slug: "new-york",
+      country: "United States",
+      location: "New York, New York, United States",
+      lat: 40.7128,
+      lng: -74.0060,
+      status: "lived",
+      category: "place",
+      type: "city",
+      excerpt: "The most beautiful city in the world.",
+      image: "/images/memories/new-york.jpg",
+      url: "/memories/new-york/"
+    },
+    {
+      title: "San Diego",
+      slug: "san-diego",
+      country: "United States",
+      location: "San Diego, California, United States",
+      lat: 32.7157,
+      lng: -117.1611,
+      status: "lived",
+      category: "place",
+      type: "city",
+      excerpt: "My first lived memory of California.",
+      image: "/images/memories/san-diego.jpg",
+      url: "/memories/san-diego/"
+    },
+    {
+      title: "Los Angeles",
+      slug: "los-angeles",
+      country: "United States",
+      location: "Los Angeles, California, United States",
+      lat: 34.0522,
+      lng: -118.2437,
+      status: "pursued",
+      category: "place",
+      type: "city",
+      excerpt: "The next California chapter.",
+      image: "/images/memories/los-angeles.jpg",
+      url: "/memories/los-angeles/"
+    },
+    {
+      title: "Grande boucle du Pic de l’Ours",
+      slug: "pic-de-l-ours",
+      country: "Canada",
+      location: "Parc national du Mont-Orford, Quebec, Canada",
+      lat: 45.3080,
+      lng: -72.2360,
+      status: "lived",
+      category: "hike",
+      type: "trail",
+      difficulty: "Hard",
+      duration: "6.5–7.5 h",
+      distance: "20 km loop",
+      address: "Approximate point in Parc national du Mont-Orford",
+      excerpt: "A long, demanding loop with a real mountain feel.",
+      image: "/images/memories/pic-de-l-ours.jpg",
+      url: "/memories/pic-de-l-ours/"
+    },
+    {
+      title: "Sentier du Mont-Mégantic",
+      slug: "mont-megantic",
+      country: "Canada",
+      location: "Observatoire sector, Notre-Dame-des-Bois, Quebec, Canada",
+      lat: 45.4550,
+      lng: -71.1540,
+      status: "lived",
+      category: "hike",
+      type: "trail",
+      difficulty: "Difficult",
+      duration: "4–7 h",
+      distance: "11.2 km loop",
+      address: "189 Route du Parc, Notre-Dame-des-Bois, QC",
+      excerpt: "A hike where mountain and sky belong to the same memory.",
+      image: "/images/memories/mont-megantic.jpg",
+      url: "/memories/mont-megantic/"
+    },
+    {
+      title: "Mont Gosford",
+      slug: "mont-gosford",
+      country: "Canada",
+      location: "Saint-Augustin-de-Woburn, Quebec, Canada",
+      lat: 45.3000,
+      lng: -70.8870,
+      status: "lived",
+      category: "hike",
+      type: "trail",
+      difficulty: "Difficult",
+      duration: "6 h",
+      distance: "17.4 km loop",
+      address: "901 rang Tout-de-Joie, St-Augustin-de-Woburn, QC",
+      excerpt: "The highest summit in southern Quebec, earned on foot.",
+      image: "/images/memories/mont-gosford.jpg",
+      url: "/memories/mont-gosford/"
+    },
+    {
       title: "Nahanni",
       slug: "nahanni",
       country: "Canada",
       location: "Northwest Territories, Canada",
-      lat: 61.056,
-      lng: -123.397,
+      lat: 61.0560,
+      lng: -123.3970,
       status: "awaiting",
+      category: "place",
       type: "wilderness",
       excerpt: "A northern landscape of scale, silence, and raw power.",
       image: "/images/memories/nahanni.jpg",
@@ -364,8 +491,9 @@ author_profile: true
       country: "Canada",
       location: "Yukon, Canada",
       lat: 64.2823,
-      lng: -135.0,
+      lng: -135.0000,
       status: "awaiting",
+      category: "place",
       type: "nature",
       excerpt: "A sky made strange, alive, and unforgettable.",
       image: "/images/memories/yukon-aurora.jpg",
@@ -379,6 +507,7 @@ author_profile: true
       lat: 36.1069,
       lng: -112.1129,
       status: "awaiting",
+      category: "place",
       type: "landscape",
       excerpt: "A place vast enough to humble thought.",
       image: "/images/memories/grand-canyon.jpg",
@@ -392,6 +521,7 @@ author_profile: true
       lat: 30.3285,
       lng: 35.4444,
       status: "awaiting",
+      category: "place",
       type: "historical site",
       excerpt: "A city carved out of stone and time.",
       image: "/images/memories/petra.jpg",
@@ -405,6 +535,7 @@ author_profile: true
       lat: -13.1631,
       lng: -72.5450,
       status: "awaiting",
+      category: "place",
       type: "historical site",
       excerpt: "One of the great unions of altitude, beauty, and history.",
       image: "/images/memories/machu-picchu.jpg",
@@ -418,6 +549,7 @@ author_profile: true
       lat: -0.9538,
       lng: -90.9656,
       status: "awaiting",
+      category: "place",
       type: "nature",
       excerpt: "A place where nature feels older and more original.",
       image: "/images/memories/galapagos.jpg",
@@ -431,6 +563,7 @@ author_profile: true
       lat: -50.9423,
       lng: -73.4068,
       status: "awaiting",
+      category: "place",
       type: "mountains",
       excerpt: "Granite towers, wind, glaciers, and distance.",
       image: "/images/memories/torres-del-paine.jpg",
@@ -470,14 +603,18 @@ author_profile: true
     return "#d97706";
   }
 
-  function createMarkerIcon(color) {
+  function createMarkerIcon(color, category) {
+    const shapeStyle = category === "hike"
+      ? "border-radius:4px;"
+      : "border-radius:50%;";
+
     return L.divIcon({
       className: "",
       html: `
         <div style="
           width: 16px;
           height: 16px;
-          border-radius: 50%;
+          ${shapeStyle}
           background: ${color};
           border: 2px solid white;
           box-shadow: 0 0 0 3px rgba(0,0,0,0.12);
@@ -489,6 +626,30 @@ author_profile: true
     });
   }
 
+  function buildTags(item) {
+    const tags = [
+      `<span class="memory-tag">${item.category === "hike" ? "Hike" : "Place"}</span>`,
+      `<span class="memory-tag">${item.type}</span>`
+    ];
+
+    if (item.difficulty) {
+      tags.push(`<span class="memory-tag">${item.difficulty}</span>`);
+    }
+
+    return tags.join("");
+  }
+
+  function buildPopupDetails(item) {
+    let extra = "";
+
+    if (item.distance) extra += `<small><strong>Distance:</strong> ${item.distance}</small>`;
+    if (item.duration) extra += `<small><strong>Duration:</strong> ${item.duration}</small>`;
+    if (item.difficulty) extra += `<small><strong>Difficulty:</strong> ${item.difficulty}</small>`;
+    if (item.address) extra += `<small><strong>Start:</strong> ${item.address}</small>`;
+
+    return extra;
+  }
+
   function renderGrid(items) {
     grid.innerHTML = items.map(item => `
       <article class="memory-card">
@@ -497,6 +658,7 @@ author_profile: true
           <div class="memory-card-meta">${item.location}</div>
           <h3 class="memory-card-title">${item.title}</h3>
           <p class="memory-card-text">${item.excerpt}</p>
+          <div class="memory-card-tags">${buildTags(item)}</div>
           <div class="memory-card-footer">
             <span class="memory-status ${getStatusClass(item.status)}">${getStatusLabel(item.status)}</span>
             <a class="memory-link" href="${item.url}">Open memory</a>
@@ -511,7 +673,7 @@ author_profile: true
 
     items.forEach(item => {
       const marker = L.marker([item.lat, item.lng], {
-        icon: createMarkerIcon(getMarkerColor(item.status))
+        icon: createMarkerIcon(getMarkerColor(item.status), item.category)
       });
 
       marker.bindPopup(`
@@ -519,6 +681,7 @@ author_profile: true
           <img class="memory-popup-image" src="${item.image}" alt="${item.title}">
           <h3>${item.title}</h3>
           <small>${item.location}</small>
+          ${buildPopupDetails(item)}
           <p>${item.excerpt}</p>
           <a href="${item.url}">Open memory</a>
         </div>
@@ -528,11 +691,13 @@ author_profile: true
     });
   }
 
-  function renderAll(filter) {
-    const filtered = filter === "all"
-      ? memories
-      : memories.filter(item => item.status === filter);
+  function getFilteredItems(filter) {
+    if (filter === "all") return memories;
+    return memories.filter(item => item.status === filter || item.category === filter);
+  }
 
+  function renderAll(filter) {
+    const filtered = getFilteredItems(filter);
     renderGrid(filtered);
     renderMarkers(filtered);
   }
