@@ -114,11 +114,6 @@ $$
 \boxed{\text{No, this can never happen.}}
 $$
 
----
-
-## Remark
-
-The counts themselves are hard to control, but their differences modulo $$3$$ are rigid enough to forbid equality.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:56px 0; width:100%;">
 
@@ -183,11 +178,7 @@ $$
 }
 $$
 
----
 
-## Remark
-
-Every move changes the sum by an even number, so modulo $$2$$ the entire process is governed by the initial value of $$1+2+\cdots+n$$.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:56px 0; width:100%;">
 
