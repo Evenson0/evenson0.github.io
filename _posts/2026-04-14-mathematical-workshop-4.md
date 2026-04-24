@@ -263,6 +263,10 @@ $$
 
 The Fibonacci invariant is perfectly adapted to the move $$m,m+1\mapsto m+2$$, because it mirrors the identity $$F_{m+2}=F_m+F_{m+1}$$.
 
+<hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
+
+*Posted on April 14, 2026.*
+
 ---
 
 *Posted on April 14, 2026.*
