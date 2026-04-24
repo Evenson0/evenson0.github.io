@@ -323,12 +323,6 @@ $$
 
 The polynomial cannot be factored into the product of two nonconstant polynomials with integer coefficients.
 
----
-
-## Remark
-
-The clever point is to evaluate the supposed factorization at the roots of the cubic part: $$a$$, $$b$$, and $$c$$.
-
 
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
