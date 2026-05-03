@@ -50,6 +50,21 @@ permalink: /tools/olympiad-practice/
     backdrop-filter: blur(6px);
   }
 
+  .op-btn *,
+  .op-btn:hover *,
+  .op-btn:focus *,
+  .op-btn:active * {
+    text-decoration: none !important;
+  }
+
+  a.op-btn,
+  a.op-btn:hover,
+  a.op-btn:focus,
+  a.op-btn:active,
+  a.op-btn:visited {
+    text-decoration: none !important;
+  }
+
   .op-btn::before {
     content: "";
     position: absolute;
@@ -80,6 +95,10 @@ permalink: /tools/olympiad-practice/
     transform: translateX(130%);
   }
 
+  .op-btn:active {
+    transform: translateY(0) scale(0.99);
+  }
+
   .op-btn-primary {
     background: linear-gradient(135deg, #111827, #1f2937);
     color: white !important;
@@ -88,6 +107,7 @@ permalink: /tools/olympiad-practice/
   }
 
   .op-btn-primary:hover {
+    color: white !important;
     border-color: rgba(96,165,250,0.65);
     box-shadow:
       0 0 0 1px rgba(96,165,250,0.16),
@@ -130,6 +150,24 @@ permalink: /tools/olympiad-practice/
     gap: 12px;
     flex-wrap: wrap;
     margin-top: 1.25rem;
+  }
+
+  .op-answer-box {
+    margin-top: 1rem;
+    padding: 1rem 1.1rem;
+    border-left: 4px solid #16a34a;
+    background: #dcfce7 !important;
+    border-radius: 10px;
+    color: #166534 !important;
+  }
+
+  .op-answer-box,
+  .op-answer-box * {
+    color: #166534 !important;
+  }
+
+  .op-answer-label {
+    font-weight: 800;
   }
 
   .op-nav-box {
@@ -191,8 +229,8 @@ permalink: /tools/olympiad-practice/
     <h3 style="margin-top:0;">Solution</h3>
     <div id="solutionSteps"></div>
 
-    <div style="margin-top:1rem; padding:1rem 1.1rem; border-left:4px solid #16a34a; background:rgba(22,163,74,0.08); border-radius:10px;">
-      <strong>Answer.</strong><br>
+    <div class="op-answer-box">
+      <span class="op-answer-label">Answer.</span><br>
       <span id="answerText"></span>
     </div>
   </div>
@@ -206,9 +244,11 @@ permalink: /tools/olympiad-practice/
       <a href="/tools/goldbach/" class="op-btn">
         ← Previous
       </a>
+
       <a href="/tools/" class="op-btn op-btn-back">
         Back to Tools
       </a>
+
       <a href="/tools/prime-number/" class="op-btn">
         Next →
       </a>
@@ -220,18 +260,18 @@ permalink: /tools/olympiad-practice/
 <script>
 let problems = [];
 let currentProblem = null;
-let seenProblemIds = new Set();
 
 function updateProblemCounter() {
   const total = problems.length;
-  const seen = seenProblemIds.size;
-  document.getElementById('problemCounter').innerText = `Problem ${seen} / ${total}`;
+  const currentId = currentProblem ? currentProblem.id : 0;
+  document.getElementById('problemCounter').innerText = `Problem ${currentId} / ${total}`;
 }
 
 async function loadProblems() {
   try {
-    const response = await fetch('/assets/data/olympiad-problems.json');
+    const response = await fetch('/assets/data/olympiad-problems.json?v=' + Date.now());
     problems = await response.json();
+
     updateProblemCounter();
     loadRandomProblem();
   } catch (error) {
@@ -247,6 +287,7 @@ function getRandomProblemIndexExcludingCurrent() {
   }
 
   let randomIndex;
+
   do {
     randomIndex = Math.floor(Math.random() * problems.length);
   } while (problems[randomIndex].id === currentProblem.id);
@@ -260,14 +301,11 @@ function loadRandomProblem() {
   const randomIndex = getRandomProblemIndexExcludingCurrent();
   currentProblem = problems[randomIndex];
 
-  if (currentProblem && currentProblem.id !== undefined && currentProblem.id !== null) {
-    seenProblemIds.add(String(currentProblem.id));
-  }
-
   document.getElementById('problemTitle').innerText = currentProblem.title;
   document.getElementById('problemStatement').innerHTML = currentProblem.statement;
 
   renderSolution();
+
   document.getElementById('solutionBox').style.display = 'none';
   updateProblemCounter();
 
@@ -295,8 +333,10 @@ function renderSolution() {
 
 function toggleSolution() {
   const box = document.getElementById('solutionBox');
+
   if (box.style.display === 'none') {
     box.style.display = 'block';
+
     if (window.MathJax && MathJax.typesetPromise) {
       MathJax.typesetPromise();
     }
