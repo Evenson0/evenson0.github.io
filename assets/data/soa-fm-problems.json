@@ -137,5 +137,28 @@
   ],
   "generalization": "When \\( v^n \\) is known, higher powers such as \\( v^{2n} \\) can be obtained directly. Then reduce the present value equation to a single equation in \\( v^m \\), and finally solve for \\( i \\) using \\( v = \\dfrac{1}{1+i} \\).",
   "answer_text": "The annual effective interest rate is \\( \\boxed{3.50\\%} \\)."
+},
+  {
+  "id": 7,
+  "topic": "effective interest rate",
+  "title": "Exercise 7",
+  "statement": "Sam invested \\( \\$500 \\) in a bank. After two years, the fund increased to \\( \\$561.80 \\). What was the annual effective interest rate offered by the bank?",
+  "choices": [
+    "\\( 4\\% \\)",
+    "\\( 5\\% \\)",
+    "\\( 6\\% \\)",
+    "\\( 7\\% \\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The initial amount is \\( A(0)=500 \\), and the accumulated amount after two years is \\( A(2)=561.80 \\).",
+    "Using the constant effective interest rate formula, \\( A(t)=A(0)(1+i)^t \\).",
+    "Substitute the known values: \\( 561.80 = 500(1+i)^2 \\).",
+    "Divide both sides by \\( 500 \\): \\( (1+i)^2 = 1.1236 \\).",
+    "Take the square root: \\( 1+i = \\sqrt{1.1236} \\).",
+    "Thus, \\( i = \\sqrt{1.1236}-1 = 0.06 \\)."
+  ],
+  "generalization": "When an amount \\( A(0) \\) accumulates to \\( A(t) \\) over \\( t \\) years at a constant annual effective interest rate \\( i \\), use \\( A(t)=A(0)(1+i)^t \\), so \\( i = \\left(\\dfrac{A(t)}{A(0)}\\right)^{1/t}-1 \\).",
+  "answer_text": "The annual effective interest rate was \\( \\boxed{6\\%} \\)."
 }
 ]
