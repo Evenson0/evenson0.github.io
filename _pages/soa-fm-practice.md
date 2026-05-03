@@ -25,6 +25,7 @@ permalink: /tools/soa-fm-practice/
       color 0.22s ease;
     overflow: hidden;
     backdrop-filter: blur(6px);
+    font: inherit;
   }
 
   .fm-btn *,
@@ -86,7 +87,7 @@ permalink: /tools/soa-fm-practice/
 
   .fm-btn-primary {
     background: linear-gradient(135deg, #111827, #1f2937);
-    color: white !important;
+    color: #ffffff !important;
     border: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 6px 18px rgba(0,0,0,0.18);
   }
@@ -97,6 +98,7 @@ permalink: /tools/soa-fm-practice/
       0 0 0 1px rgba(96,165,250,0.16),
       0 10px 28px rgba(37,99,235,0.28);
     background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color: #ffffff !important;
   }
 
   .fm-btn-nav {
@@ -178,6 +180,44 @@ permalink: /tools/soa-fm-practice/
     border: 1px solid #fcd34d !important;
     color: #92400e !important;
   }
+
+  .fm-answer-box {
+    margin-top: 1rem;
+    padding: 1rem 1.1rem;
+    border-left: 4px solid #16a34a;
+    background: #dcfce7 !important;
+    border-radius: 10px;
+    color: #166534 !important;
+  }
+
+  .fm-answer-box,
+  .fm-answer-box * {
+    color: #166534 !important;
+  }
+
+  button.fm-btn-primary,
+  button.fm-btn-primary:hover,
+  button.fm-btn-primary:focus,
+  button.fm-btn-primary:active,
+  button.fm-btn-primary:visited {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: linear-gradient(135deg, #111827, #1f2937) !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+  }
+
+  button.fm-btn-primary:hover,
+  button.fm-btn-primary:focus,
+  button.fm-btn-primary:active {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  button.fm-btn-primary:focus-visible {
+    outline: 3px solid rgba(96,165,250,0.45);
+    outline-offset: 3px;
+  }
 </style>
 
 <div style="max-width: 850px; margin: 2rem auto; padding: 2rem; border: 1px solid rgba(127,127,127,0.22); border-radius: 16px; background: inherit; color: inherit;">
@@ -226,7 +266,7 @@ permalink: /tools/soa-fm-practice/
     <h3>Generalization</h3>
     <p id="generalizationText"></p>
 
-    <div style="margin-top:1rem; padding:1rem 1.1rem; border-left:4px solid #16a34a; background:rgba(22,163,74,0.08); border-radius:10px;">
+    <div class="fm-answer-box">
       <strong>Answer.</strong><br>
       <span id="answerText"></span>
     </div>
@@ -257,7 +297,6 @@ permalink: /tools/soa-fm-practice/
 <script>
 let problems = [];
 let currentProblem = null;
-let seenProblemIds = new Set();
 
 function updateProblemCounter() {
   const total = problems.length;
@@ -298,10 +337,6 @@ function loadRandomProblem() {
 
   const randomIndex = getRandomProblemIndexExcludingCurrent();
   currentProblem = problems[randomIndex];
-
-  if (currentProblem && currentProblem.id !== undefined && currentProblem.id !== null) {
-    seenProblemIds.add(String(currentProblem.id));
-  }
 
   document.getElementById('problemTitle').innerText = currentProblem.title;
   document.getElementById('problemStatement').innerHTML = currentProblem.statement;
