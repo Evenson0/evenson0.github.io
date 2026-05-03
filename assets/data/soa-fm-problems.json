@@ -160,5 +160,73 @@
   ],
   "generalization": "When an amount \\( A(0) \\) accumulates to \\( A(t) \\) over \\( t \\) years at a constant annual effective interest rate \\( i \\), use \\( A(t)=A(0)(1+i)^t \\), so \\( i = \\left(\\dfrac{A(t)}{A(0)}\\right)^{1/t}-1 \\).",
   "answer_text": "The annual effective interest rate was \\( \\boxed{6\\%} \\)."
+},
+  {
+  "id": 8,
+  "topic": "compound interest",
+  "title": "Exercise 8",
+  "statement": "Beth invests \\( \\$300 \\) in a fund earning a \\( 1\\% \\) monthly effective interest rate. How much is in her fund at the end of eight months?",
+  "choices": [
+    "\\( \\$318.00 \\)",
+    "\\( \\$321.37 \\)",
+    "\\( \\$324.86 \\)",
+    "\\( \\$326.40 \\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since the interest rate is given as a monthly effective interest rate, define \\( t \\) in terms of months.",
+    "The initial investment is \\( A(0)=300 \\), the monthly effective interest rate is \\( i=0.01 \\), and the time is \\( t=8 \\).",
+    "Use the accumulation formula \\( A(t)=A(0)(1+i)^t \\).",
+    "Thus, \\( A(8)=300(1.01)^8 \\).",
+    "Compute \\( 300(1.01)^8 \\approx 324.8570 \\)."
+  ],
+  "generalization": "When the effective interest rate is given per period, measure \\( t \\) in that same period. For a monthly effective interest rate, \\( t \\) should be measured in months.",
+  "answer_text": "Beth has \\( \\boxed{\\$324.86} \\) at the end of eight months."
+},
+{
+  "id": 9,
+  "topic": "compound interest",
+  "title": "Exercise 9",
+  "statement": "James invests \\( \\$100 \\) in a bank. The fund earns an annual effective interest rate of \\( 10\\% \\). Calculate the fund accumulation at the end of six months.",
+  "choices": [
+    "\\( \\$104.88 \\)",
+    "\\( \\$105.00 \\)",
+    "\\( \\$105.10 \\)",
+    "\\( \\$110.00 \\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The interest rate is an annual effective interest rate, so define \\( t \\) in terms of years.",
+    "Six months is half a year, so \\( t=0.5 \\).",
+    "The initial investment is \\( A(0)=100 \\), and the annual effective interest rate is \\( i=0.10 \\).",
+    "Use the accumulation formula \\( A(t)=A(0)(1+i)^t \\).",
+    "Thus, \\( A(0.5)=100(1.10)^{1/2} \\).",
+    "Compute \\( 100(1.10)^{1/2} \\approx 104.88 \\)."
+  ],
+  "generalization": "When an annual effective interest rate is used for a fraction of a year, the exponent is the fraction of the year. For six months, use \\( t=\\frac{1}{2} \\).",
+  "answer_text": "The fund accumulation is \\( \\boxed{\\$104.88} \\) at the end of six months."
+},
+{
+  "id": 10,
+  "topic": "present value",
+  "title": "Exercise 10",
+  "statement": "Toby wants to have \\( \\$500 \\) in one year. How much does he need to invest today if the account credits a \\( 7\\% \\) annual effective interest rate?",
+  "choices": [
+    "\\( \\$450.00 \\)",
+    "\\( \\$462.50 \\)",
+    "\\( \\$467.29 \\)",
+    "\\( \\$475.00 \\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "We are not given the initial investment. Instead, we are given the amount at the end of one year.",
+    "The desired accumulated value is \\( A(1)=500 \\), and the annual effective interest rate is \\( i=0.07 \\).",
+    "Use the formula \\( A(1)=A(0)(1+i) \\).",
+    "Substitute the known values: \\( 500=A(0)(1.07) \\).",
+    "Solve for \\( A(0) \\): \\( A(0)=\\dfrac{500}{1.07} \\).",
+    "Compute \\( \\dfrac{500}{1.07} \\approx 467.2897 \\)."
+  ],
+  "generalization": "To find the amount that must be invested today to reach a future value, discount the future value back to the present. With annual effective interest rate \\( i \\), the present value of \\( A(t) \\) due in \\( t \\) years is \\( A(0)=\\dfrac{A(t)}{(1+i)^t} \\).",
+  "answer_text": "Toby needs to invest \\( \\boxed{\\$467.29} \\) today."
 }
 ]
