@@ -147,6 +147,37 @@ permalink: /tools/soa-fm-practice/
     font-size: 0.96rem;
     font-weight: 600;
   }
+
+  .fm-result-message {
+    margin-top: 1rem;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .fm-result-message,
+  .fm-result-message * {
+    color: inherit !important;
+  }
+
+  .fm-result-correct {
+    background: #dcfce7 !important;
+    border: 1px solid #86efac !important;
+    color: #166534 !important;
+  }
+
+  .fm-result-incorrect {
+    background: #fee2e2 !important;
+    border: 1px solid #fca5a5 !important;
+    color: #991b1b !important;
+  }
+
+  .fm-result-warning {
+    background: #fef3c7 !important;
+    border: 1px solid #fcd34d !important;
+    color: #92400e !important;
+  }
 </style>
 
 <div style="max-width: 850px; margin: 2rem auto; padding: 2rem; border: 1px solid rgba(127,127,127,0.22); border-radius: 16px; background: inherit; color: inherit;">
@@ -200,6 +231,7 @@ permalink: /tools/soa-fm-practice/
       <span id="answerText"></span>
     </div>
   </div>
+
   <div id="problemCounter" class="fm-counter">Problem 0 / 0</div>
 
   <hr style="border:none; border-top:1px solid rgba(120,120,120,0.35); margin:2rem 0;">
@@ -209,9 +241,11 @@ permalink: /tools/soa-fm-practice/
       <a href="/tools/goldbach/" class="fm-btn fm-btn-nav">
         ← Previous
       </a>
+
       <a href="/tools/" class="fm-btn fm-btn-back">
         Back to Tools
       </a>
+
       <a href="/tools/financial-math-calculator/" class="fm-btn fm-btn-nav">
         Next →
       </a>
@@ -227,14 +261,15 @@ let seenProblemIds = new Set();
 
 function updateProblemCounter() {
   const total = problems.length;
-  const seen = seenProblemIds.size;
-  document.getElementById('problemCounter').innerText = `Problem ${seen} / ${total}`;
+  const currentId = currentProblem ? currentProblem.id : 0;
+  document.getElementById('problemCounter').innerText = `Problem ${currentId} / ${total}`;
 }
 
 async function loadProblems() {
   try {
-    const response = await fetch('/assets/data/soa-fm-problems.json');
+    const response = await fetch('/assets/data/soa-fm-problems.json?v=' + Date.now());
     problems = await response.json();
+
     updateProblemCounter();
     loadRandomProblem();
   } catch (error) {
@@ -250,6 +285,7 @@ function getRandomProblemIndexExcludingCurrent() {
   }
 
   let randomIndex;
+
   do {
     randomIndex = Math.floor(Math.random() * problems.length);
   } while (problems[randomIndex].id === currentProblem.id);
@@ -311,14 +347,14 @@ function checkAnswer() {
   }
 
   if (selected === null) {
-    result.innerHTML = '<div style="padding:12px; border:1px solid #f5c2c7; background:#f8d7da; color:#842029; border-radius:10px;">Please select an answer.</div>';
+    result.innerHTML = '<div class="fm-result-message fm-result-warning">Please select an answer.</div>';
     return;
   }
 
   if (selected === currentProblem.correct) {
-    result.innerHTML = '<div style="padding:12px; border:1px solid #badbcc; background:#d1e7dd; color:#0f5132; border-radius:10px;">Correct.</div>';
+    result.innerHTML = '<div class="fm-result-message fm-result-correct">Correct.</div>';
   } else {
-    result.innerHTML = '<div style="padding:12px; border:1px solid #f5c2c7; background:#f8d7da; color:#842029; border-radius:10px;">Incorrect. Try again or reveal the solution.</div>';
+    result.innerHTML = '<div class="fm-result-message fm-result-incorrect">Incorrect. Try again or reveal the solution.</div>';
   }
 }
 
@@ -342,8 +378,10 @@ function renderSolution() {
 
 function toggleSolution() {
   const box = document.getElementById('solutionBox');
+
   if (box.style.display === 'none') {
     box.style.display = 'block';
+
     if (window.MathJax && MathJax.typesetPromise) {
       MathJax.typesetPromise();
     }
