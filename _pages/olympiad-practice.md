@@ -48,6 +48,7 @@ permalink: /tools/olympiad-practice/
       color 0.22s ease;
     overflow: hidden;
     backdrop-filter: blur(6px);
+    font: inherit;
   }
 
   .op-btn *,
@@ -101,18 +102,18 @@ permalink: /tools/olympiad-practice/
 
   .op-btn-primary {
     background: linear-gradient(135deg, #111827, #1f2937);
-    color: white !important;
+    color: #ffffff !important;
     border: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 6px 18px rgba(0,0,0,0.18);
   }
 
   .op-btn-primary:hover {
-    color: white !important;
     border-color: rgba(96,165,250,0.65);
     box-shadow:
       0 0 0 1px rgba(96,165,250,0.16),
       0 10px 28px rgba(37,99,235,0.28);
     background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color: #ffffff !important;
   }
 
   .op-btn-back {
@@ -192,6 +193,30 @@ permalink: /tools/olympiad-practice/
     opacity: 0.75;
     font-size: 0.96rem;
     font-weight: 600;
+  }
+
+  button.op-btn-primary,
+  button.op-btn-primary:hover,
+  button.op-btn-primary:focus,
+  button.op-btn-primary:active,
+  button.op-btn-primary:visited {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: linear-gradient(135deg, #111827, #1f2937) !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+  }
+
+  button.op-btn-primary:hover,
+  button.op-btn-primary:focus,
+  button.op-btn-primary:active {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  button.op-btn-primary:focus-visible {
+    outline: 3px solid rgba(96,165,250,0.45);
+    outline-offset: 3px;
   }
 </style>
 
