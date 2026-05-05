@@ -279,5 +279,21 @@
   ],
   "generalization": "When several cash flows occur at different times, choose one comparison date and move every cash flow to that date using the appropriate accumulation or discount factor. Then set the value of inflows equal to the value of outflows.",
   "answer_text": "Bob invested \\(\\boxed{399.68}\\)."
+},
+  {
+  "id": 13,
+  "topic": "effective rate of discount",
+  "title": "Example 1.1.6",
+  "statement": "Sam invests \\(200\\) in a bank. The fund earns an annual effective rate of discount of \\(9.0909\\%\\). What will the fund value be at the end of five years?",
+  "choices": [],
+  "correct": null,
+  "solution_steps": [
+    "Define \\(t\\) in terms of years.",
+    "We have \\(A(0)=200\\), \\(d=9.0909\\%\\), and \\(t=5\\).",
+    "Since \\((1-d)^{-1}\\) is the one-period accumulation factor associated with an effective discount rate, the accumulated value after five years is \\(A(5)=200(1-0.090909)^{-5}\\).",
+    "Therefore, \\(A(5)=322.1018\\)."
+  ],
+  "generalization": "When an effective discount rate \\(d\\) is used to accumulate a value forward in time, use the accumulation factor \\((1-d)^{-1}\\) for each period. Over \\(t\\) periods, the accumulated value is \\(A(t)=A(0)(1-d)^{-t}\\).",
+  "answer_text": "The fund accumulates to \\(\\boxed{322.10}\\) at the end of five years."
 }
 ]
