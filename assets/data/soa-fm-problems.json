@@ -255,5 +255,29 @@
   ],
   "generalization": "When two funds accumulate at different effective interest rates, write equations at the time points given in the problem. Solve for the initial deposits, then accumulate or discount to the required time.",
   "answer_text": "The total in the two funds at the end of \\(10\\) years is \\(\\boxed{7{,}569.07}\\)."
+},
+  {
+  "id": 12,
+  "topic": "present value and accumulated value",
+  "title": "Exercise 12",
+  "statement": "Bob invests \\(X\\) in an account that pays interest at an annual effective rate of \\(8\\%\\). Ten years later, he withdraws \\(X\\). Ten years after that, he withdraws \\(1{,}000\\), which exhausts the account. Calculate \\(X\\).",
+  "choices": [
+    "\\(399.68\\)",
+    "\\(463.19\\)",
+    "\\(500.00\\)",
+    "\\(680.58\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Accumulate all cash flows to time \\(20\\).",
+    "The initial deposit \\(X\\) accumulates for \\(20\\) years, so its accumulated value at time \\(20\\) is \\(X(1.08)^{20}\\).",
+    "The withdrawal of \\(X\\) at time \\(10\\) accumulates for \\(10\\) years to time \\(20\\), so its accumulated value at time \\(20\\) is \\(X(1.08)^{10}\\).",
+    "Since the final withdrawal of \\(1{,}000\\) exhausts the account at time \\(20\\), we have \\(X(1.08)^{20}-X(1.08)^{10}=1{,}000\\).",
+    "Factor out \\(X\\): \\(X\\left[(1.08)^{20}-(1.08)^{10}\\right]=1{,}000\\).",
+    "Solve for \\(X\\): \\(X=\\dfrac{1{,}000}{(1.08)^{20}-(1.08)^{10}}\\).",
+    "Therefore, \\(X=399.6751\\)."
+  ],
+  "generalization": "When several cash flows occur at different times, choose one comparison date and move every cash flow to that date using the appropriate accumulation or discount factor. Then set the value of inflows equal to the value of outflows.",
+  "answer_text": "Bob invested \\(\\boxed{399.68}\\)."
 }
 ]
