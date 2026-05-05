@@ -329,5 +329,26 @@
   ],
   "generalization": "Given an effective interest rate \\(i\\), the equivalent effective discount rate is \\(d=\\dfrac{i}{1+i}\\), and the discount factor is \\(v=\\dfrac{1}{1+i}\\).",
   "answer_text": "The equivalent annual effective discount rate is \\(\\boxed{7.407\\%}\\), and the discount factor is \\(\\boxed{0.9259}\\)."
+},
+  {
+  "id": 16,
+  "topic": "effective rate of discount",
+  "title": "Exercise 16",
+  "statement": "A deposit of \\(X\\) is made into a fund which pays an annual effective interest rate of \\(6\\%\\) for \\(10\\) years. At the same time, \\(\\dfrac{X}{2}\\) is deposited into another fund which pays an annual effective rate of discount of \\(d\\) for \\(10\\) years. The amounts of interest earned over the \\(10\\) years are equal for both funds. Calculate \\(d\\).",
+  "choices": [],
+  "correct": null,
+  "solution_steps": [
+    "The amount of interest earned is the difference between the initial amount and the amount at the end of \\(10\\) years.",
+    "For the first fund, the accumulated value after \\(10\\) years is \\(X(1.06)^{10}\\). Therefore, the interest earned is \\(X(1.06)^{10}-X\\).",
+    "For the second fund, the annual effective rate of discount is \\(d\\), so the accumulation factor over \\(10\\) years is \\((1-d)^{-10}\\).",
+    "The accumulated value of the second fund after \\(10\\) years is \\(\\dfrac{X}{2}(1-d)^{-10}\\). Therefore, the interest earned is \\(\\dfrac{X}{2}(1-d)^{-10}-\\dfrac{X}{2}\\).",
+    "Since the amounts of interest earned are equal, \\(X(1.06)^{10}-X=\\dfrac{X}{2}(1-d)^{-10}-\\dfrac{X}{2}\\).",
+    "Divide both sides by \\(X\\): \\(1.06^{10}-1=\\dfrac{(1-d)^{-10}}{2}-\\dfrac{1}{2}\\).",
+    "Rearranging gives \\((1-d)^{-10}=2.581695\\).",
+    "Therefore, \\(1-d=(2.581695)^{-1/10}\\).",
+    "Hence, \\(d=1-(2.581695)^{-1/10}=0.09049\\)."
+  ],
+  "generalization": "When comparing interest earned by two funds, compute interest as accumulated value minus initial deposit for each fund. If one fund uses an effective discount rate \\(d\\), remember that its accumulation factor over \\(n\\) periods is \\((1-d)^{-n}\\).",
+  "answer_text": "The annual effective rate of discount is \\(\\boxed{9.049\\%}\\)."
 }
 ]
