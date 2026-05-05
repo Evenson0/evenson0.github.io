@@ -295,5 +295,22 @@
   ],
   "generalization": "When an effective discount rate \\(d\\) is used to accumulate a value forward in time, use the accumulation factor \\((1-d)^{-1}\\) for each period. Over \\(t\\) periods, the accumulated value is \\(A(t)=A(0)(1-d)^{-t}\\).",
   "answer_text": "The fund accumulates to \\(\\boxed{322.10}\\) at the end of five years."
+},
+  {
+  "id": 14,
+  "topic": "effective rate of discount",
+  "title": "Example 1.1.7",
+  "statement": "Fund A offers a monthly effective discount rate of \\(1\\%\\). Jack deposited \\(350\\) into Fund A four years ago. Now, he withdraws all his funds. How much does he withdraw?",
+  "choices": [],
+  "correct": null,
+  "solution_steps": [
+    "Use \\(t\\) in terms of months.",
+    "Since there are \\(12\\) months in a year, four years correspond to \\(48\\) months.",
+    "We have \\(A(0)=350\\), \\(d=1\\%\\), and \\(t=48\\).",
+    "Since \\((1-d)^{-1}\\) is the one-period accumulation factor associated with an effective discount rate, the accumulated value after \\(48\\) months is \\(A(48)=350(1-0.01)^{-48}\\).",
+    "Therefore, \\(A(48)=566.9943\\)."
+  ],
+  "generalization": "When the discount rate is effective per month, the time period must be measured in months. If money is invested for \\(n\\) months at a monthly effective discount rate \\(d\\), the accumulated value is \\(A(n)=A(0)(1-d)^{-n}\\).",
+  "answer_text": "Jack withdraws \\(\\boxed{566.99}\\) from the fund."
 }
 ]
