@@ -312,5 +312,22 @@
   ],
   "generalization": "When the discount rate is effective per month, the time period must be measured in months. If money is invested for \\(n\\) months at a monthly effective discount rate \\(d\\), the accumulated value is \\(A(n)=A(0)(1-d)^{-n}\\).",
   "answer_text": "Jack withdraws \\(\\boxed{566.99}\\) from the fund."
+},
+  {
+  "id": 15,
+  "topic": "effective rate of discount",
+  "title": "Example 1.1.7",
+  "statement": "Given an \\(8\\%\\) annual effective interest rate, calculate the equivalent annual effective discount rate, \\(d\\), and the discount factor, \\(v\\).",
+  "choices": [],
+  "correct": null,
+  "solution_steps": [
+    "The effective interest rate is \\(8\\%\\). Thus, \\(i=0.08\\).",
+    "Recall that the effective discount rate is \\(d=\\dfrac{i}{1+i}\\).",
+    "Substitute \\(i=0.08\\): \\(d=\\dfrac{0.08}{1.08}=0.07407\\).",
+    "Recall that the discount factor is \\(v=\\dfrac{1}{1+i}\\).",
+    "Substitute \\(i=0.08\\): \\(v=\\dfrac{1}{1.08}=0.9259\\)."
+  ],
+  "generalization": "Given an effective interest rate \\(i\\), the equivalent effective discount rate is \\(d=\\dfrac{i}{1+i}\\), and the discount factor is \\(v=\\dfrac{1}{1+i}\\).",
+  "answer_text": "The equivalent annual effective discount rate is \\(\\boxed{7.407\\%}\\), and the discount factor is \\(\\boxed{0.9259}\\)."
 }
 ]
