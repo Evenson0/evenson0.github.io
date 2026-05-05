@@ -228,5 +228,32 @@
   ],
   "generalization": "To find the amount that must be invested today to reach a future value, discount the future value back to the present. With annual effective interest rate \\( i \\), the present value of \\( A(t) \\) due in \\( t \\) years is \\( A(0)=\\dfrac{A(t)}{(1+i)^t} \\).",
   "answer_text": "Toby needs to invest \\( \\boxed{\\$467.29} \\) today."
+},
+  {
+  "id": 11,
+  "topic": "present value and accumulated value",
+  "title": "Exercise 11",
+  "statement": "Fund A is invested at an annual effective interest rate of \\(3\\%\\). Fund B is invested at an annual effective interest rate of \\(2.5\\%\\). At the end of \\(20\\) years, the total in the two funds is \\(10{,}000\\). At the end of \\(31\\) years, the amount in Fund A is twice the amount in Fund B. Calculate the total in the two funds at the end of \\(10\\) years.",
+  "choices": [
+    "\\(7{,}426.83\\)",
+    "\\(7{,}569.07\\)",
+    "\\(7{,}815.64\\)",
+    "\\(8{,}000.00\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let \\(A\\) and \\(B\\) be the amounts initially invested in Fund A and Fund B, respectively.",
+    "At the end of \\(20\\) years, the total in the two funds is \\(10{,}000\\), so \\(A(1.03)^{20}+B(1.025)^{20}=10{,}000\\).",
+    "At the end of \\(31\\) years, the amount in Fund A is twice the amount in Fund B, so \\(A(1.03)^{31}=2B(1.025)^{31}\\).",
+    "From \\(A(1.03)^{31}=2B(1.025)^{31}\\), solve for \\(A\\): \\(A=\\dfrac{2B(1.025)^{31}}{(1.03)^{31}}\\).",
+    "Substitute this expression for \\(A\\) into the equation at time \\(20\\): \\(\\dfrac{2B(1.025)^{31}}{(1.03)^{31}}(1.03)^{20}+B(1.025)^{20}=10{,}000\\).",
+    "Factor out \\(B\\): \\(B\\left[2\\left(\\dfrac{1.025^{31}}{1.03^{11}}\\right)+1.025^{20}\\right]=10{,}000\\).",
+    "Solving gives \\(B=2{,}107.4648\\).",
+    "Then \\(A=\\dfrac{2B(1.025)^{31}}{1.03^{31}}=3{,}624.7344\\).",
+    "The total of the two funds at the end of \\(10\\) years is \\(A(1.03)^{10}+B(1.025)^{10}\\).",
+    "Therefore, \\(A(1.03)^{10}+B(1.025)^{10}=7{,}569.07\\)."
+  ],
+  "generalization": "When two funds accumulate at different effective interest rates, write equations at the time points given in the problem. Solve for the initial deposits, then accumulate or discount to the required time.",
+  "answer_text": "The total in the two funds at the end of \\(10\\) years is \\(\\boxed{7{,}569.07}\\)."
 }
 ]
