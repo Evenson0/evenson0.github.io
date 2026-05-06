@@ -450,5 +450,32 @@
   ],
   "generalization": "When annual effective rates vary by year, multiply the corresponding annual accumulation factors. If the rates depend on an unknown parameter, first use the given accumulated value to solve for that parameter, then apply the required accumulation formula.",
   "answer_text": "Gertrude would have \\(\\boxed{17{,}936.13}\\) in the bank at the end of three years."
+},
+  {
+  "id": 21,
+  "topic": "effective interest rate",
+  "title": "Exercise 21",
+  "statement": "[SOA 22; SOA-IT.027] Bruce and Robbie each open up new bank accounts at time \\(0\\). Bruce deposits \\(100\\) into his bank account, and Robbie deposits \\(50\\) into his. Each account earns the same annual effective interest rate. The amount of interest earned in Bruce's account during the \\(11\\)th year is equal to \\(X\\). The amount of interest earned in Robbie's account during the \\(17\\)th year is also equal to \\(X\\). Calculate \\(X\\).",
+  "choices": [
+    "\\(28.96\\)",
+    "\\(35.42\\)",
+    "\\(38.88\\)",
+    "\\(42.67\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The amount of interest earned in any account is the difference between its value at the end of a period and its value at the beginning of the period.",
+    "The amount of interest earned in Bruce's account during the \\(11\\)th year is \\(100(1+i)^{11}-100(1+i)^{10}=X\\).",
+    "The amount of interest earned in Robbie's account during the \\(17\\)th year is \\(50(1+i)^{17}-50(1+i)^{16}=X\\).",
+    "Set the two expressions equal: \\(100(1+i)^{11}-100(1+i)^{10}=50(1+i)^{17}-50(1+i)^{16}\\).",
+    "Factor both sides: \\(100(1+i)^{10}((1+i)-1)=50(1+i)^{16}((1+i)-1)\\).",
+    "This becomes \\(100(1+i)^{10}i=50(1+i)^{16}i\\).",
+    "Since the interest rate is positive, divide by \\(50(1+i)^{10}i\\) to get \\(2=(1+i)^6\\).",
+    "Thus, \\(1+i=2^{1/6}\\), so \\(i=2^{1/6}-1=0.122462\\).",
+    "Substitute into Bruce's interest equation: \\(X=100(1.122462)^{11}-100(1.122462)^{10}\\).",
+    "Therefore, \\(X=38.88\\)."
+  ],
+  "generalization": "The interest earned during year \\(n\\) is the accumulated value at time \\(n\\) minus the accumulated value at time \\(n-1\\). For a deposit \\(P\\) at annual effective interest rate \\(i\\), this interest is \\(P(1+i)^n-P(1+i)^{n-1}=P(1+i)^{n-1}i\\).",
+  "answer_text": "The amount of interest is \\(\\boxed{38.88}\\)."
 }
 ]
