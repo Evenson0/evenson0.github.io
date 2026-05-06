@@ -377,5 +377,30 @@
   ],
   "generalization": "An amount function of the form \\(A(t)=C(1+i)^t\\) represents compound interest with a constant effective interest rate \\(i\\) each period. This is the interest assumption used in almost every FM problem.",
   "answer_text": "The effective rates are \\(\\boxed{i_3=i_7=8\\%}\\)."
+},
+  {
+  "id": 18,
+  "topic": "interest accumulation",
+  "title": "Exercise 18",
+  "statement": "An investment of \\(1{,}000\\) is made into a fund at time \\(t=0\\). The fund develops the following balances over the next \\(4\\) years: \\[ \\begin{array}{c|ccccc} t & 0 & 1 & 2 & 3 & 4 \\\\ \\hline A(t) & 1{,}000 & 1{,}060 & 1{,}113 & 1{,}146 & 1{,}181 \\end{array} \\] If \\(5{,}000\\) is invested in the same fund at time \\(1\\), find the amount of interest earned on this deposit between time \\(2\\) and time \\(3\\).",
+  "choices": [
+    "\\(150.00\\)",
+    "\\(155.66\\)",
+    "\\(165.00\\)",
+    "\\(180.19\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Since the new deposit is made into the same fund at time \\(1\\), its value at later times grows in proportion to the original fund values after time \\(1\\).",
+    "Let \\(A^*(t)\\) be the accumulated value at time \\(t\\) of the \\(5{,}000\\) deposited at time \\(1\\).",
+    "At time \\(2\\), \\(A^*(2)=5{,}000\\dfrac{A(2)}{A(1)}\\).",
+    "Thus, \\(A^*(2)=5{,}000\\dfrac{1{,}113}{1{,}060}=5{,}250\\).",
+    "At time \\(3\\), \\(A^*(3)=5{,}000\\dfrac{A(3)}{A(1)}\\).",
+    "Thus, \\(A^*(3)=5{,}000\\dfrac{1{,}146}{1{,}060}=5{,}405.66\\).",
+    "The interest earned between time \\(2\\) and time \\(3\\) is \\(I_3^*=A^*(3)-A^*(2)\\).",
+    "Therefore, \\(I_3^*=5{,}405.66-5{,}250=155.66\\)."
+  ],
+  "generalization": "If a deposit is made into a fund at time \\(k\\), and the fund has amount function values \\(A(t)\\), then the accumulated value at time \\(t\\ge k\\) of a deposit \\(P\\) made at time \\(k\\) is \\(P\\dfrac{A(t)}{A(k)}\\).",
+  "answer_text": "The amount of interest earned between time \\(2\\) and time \\(3\\) is \\(\\boxed{155.66}\\)."
 }
 ]
