@@ -350,5 +350,32 @@
   ],
   "generalization": "When comparing interest earned by two funds, compute interest as accumulated value minus initial deposit for each fund. If one fund uses an effective discount rate \\(d\\), remember that its accumulation factor over \\(n\\) periods is \\((1-d)^{-n}\\).",
   "answer_text": "The annual effective rate of discount is \\(\\boxed{9.049\\%}\\)."
+},
+  {
+  "id": 17,
+  "topic": "effective interest rate",
+  "title": "Exercise 17",
+  "statement": "Given \\(A(t)=10(1.08)^t\\), find \\(i_3\\) and \\(i_7\\).",
+  "choices": [
+    "\\(i_3=6\\%,\\ i_7=6\\%\\)",
+    "\\(i_3=8\\%,\\ i_7=8\\%\\)",
+    "\\(i_3=8\\%,\\ i_7=7\\%\\)",
+    "\\(i_3=10\\%,\\ i_7=10\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "The effective rate of interest for year \\(3\\) is \\(i_3=\\dfrac{A(3)-A(2)}{A(2)}\\).",
+    "Using \\(A(t)=10(1.08)^t\\), we get \\(i_3=\\dfrac{10(1.08)^3-10(1.08)^2}{10(1.08)^2}\\).",
+    "Factor \\(10(1.08)^2\\) from the numerator: \\(i_3=\\dfrac{10(1.08)^2[(1.08)-1]}{10(1.08)^2}\\).",
+    "Therefore, \\(i_3=1.08-1=0.08=8\\%\\).",
+    "The effective rate of interest for year \\(7\\) is \\(i_7=\\dfrac{A(7)-A(6)}{A(6)}\\).",
+    "Using \\(A(t)=10(1.08)^t\\), we get \\(i_7=\\dfrac{10(1.08)^7-10(1.08)^6}{10(1.08)^6}\\).",
+    "Factor \\(10(1.08)^6\\) from the numerator: \\(i_7=\\dfrac{10(1.08)^6[(1.08)-1]}{10(1.08)^6}\\).",
+    "Therefore, \\(i_7=1.08-1=0.08=8\\%\\).",
+    "More generally, for year \\(n\\), \\(i_n=\\dfrac{A(n)-A(n-1)}{A(n-1)}\\).",
+    "Since \\(A(t)=10(1.08)^t\\), we have \\(i_n=\\dfrac{10(1.08)^n-10(1.08)^{n-1}}{10(1.08)^{n-1}}=1.08-1=0.08\\)."
+  ],
+  "generalization": "An amount function of the form \\(A(t)=C(1+i)^t\\) represents compound interest with a constant effective interest rate \\(i\\) each period. This is the interest assumption used in almost every FM problem.",
+  "answer_text": "The effective rates are \\(\\boxed{i_3=i_7=8\\%}\\)."
 }
 ]
