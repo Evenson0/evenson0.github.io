@@ -402,5 +402,28 @@
   ],
   "generalization": "If a deposit is made into a fund at time \\(k\\), and the fund has amount function values \\(A(t)\\), then the accumulated value at time \\(t\\ge k\\) of a deposit \\(P\\) made at time \\(k\\) is \\(P\\dfrac{A(t)}{A(k)}\\).",
   "answer_text": "The amount of interest earned between time \\(2\\) and time \\(3\\) is \\(\\boxed{155.66}\\)."
+},
+  {
+  "id": 19,
+  "topic": "effective interest rate",
+  "title": "Exercise 19",
+  "statement": "You are given the accumulation function \\(a(t)=2t^2+3t+1\\). Determine \\(i_9\\), the effective interest rate during the ninth year.",
+  "choices": [
+    "\\(18.42\\%\\)",
+    "\\(24.18\\%\\)",
+    "\\(37.00\\%\\)",
+    "\\(41.18\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "The ninth year is the period from time \\(8\\) to time \\(9\\).",
+    "The effective interest rate during year \\(9\\) is \\(i_9=\\dfrac{a(9)-a(8)}{a(8)}\\).",
+    "Compute \\(a(8)=2(8)^2+3(8)+1=128+24+1=153\\).",
+    "Compute \\(a(9)=2(9)^2+3(9)+1=162+27+1=190\\).",
+    "Substitute these values: \\(i_9=\\dfrac{190-153}{153}\\).",
+    "Thus, \\(i_9=\\dfrac{37}{153}=0.24183\\)."
+  ],
+  "generalization": "For an accumulation function \\(a(t)\\), the effective interest rate during year \\(n\\) is \\(i_n=\\dfrac{a(n)-a(n-1)}{a(n-1)}\\).",
+  "answer_text": "The effective interest rate during the ninth year is \\(\\boxed{24.18\\%}\\)."
 }
 ]
