@@ -25,6 +25,9 @@ main:
 
   - title: "Mathematical Workshop"
     url: /workshop/
+
+  - title: "Notes"
+    url: /notes/
     
   - title: "CV"
     url: /cv/
