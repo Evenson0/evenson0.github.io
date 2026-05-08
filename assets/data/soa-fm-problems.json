@@ -477,5 +477,32 @@
   ],
   "generalization": "The interest earned during year \\(n\\) is the accumulated value at time \\(n\\) minus the accumulated value at time \\(n-1\\). For a deposit \\(P\\) at annual effective interest rate \\(i\\), this interest is \\(P(1+i)^n-P(1+i)^{n-1}=P(1+i)^{n-1}i\\).",
   "answer_text": "The amount of interest is \\(\\boxed{38.88}\\)."
+},
+  {
+  "id": 22,
+  "topic": "present value and discount rates",
+  "title": "Exercise 22",
+  "statement": "John can earn the following rates for the next five years: Year \\(1\\): effective rate of interest \\(=4\\%\\); Year \\(2\\): effective rate of discount \\(=5\\%\\); Year \\(3\\): effective rate of interest \\(=6\\%\\); Years \\(4\\) and \\(5\\): effective rate of discount \\(=10\\%\\). John needs to have \\(1{,}000\\) in \\(5\\) years. How much should he invest now?",
+  "choices": [
+    "\\(671.92\\)",
+    "\\(698.02\\)",
+    "\\(721.17\\)",
+    "\\(775.28\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "We need the present value at time \\(0\\) of \\(1{,}000\\) paid at time \\(5\\).",
+    "To move backward through a year with an effective interest rate \\(i\\), divide by \\(1+i\\).",
+    "To move backward through a year with an effective discount rate \\(d\\), multiply by \\(1-d\\).",
+    "Starting from time \\(5\\), the year \\(5\\) discount rate gives the factor \\(1-0.10=0.90\\).",
+    "The year \\(4\\) discount rate also gives the factor \\(1-0.10=0.90\\).",
+    "The year \\(3\\) interest rate gives the factor \\((1.06)^{-1}\\).",
+    "The year \\(2\\) discount rate gives the factor \\(1-0.05=0.95\\).",
+    "The year \\(1\\) interest rate gives the factor \\((1.04)^{-1}\\).",
+    "Therefore, \\(PV=1{,}000(0.90)(0.90)(1.06)^{-1}(0.95)(1.04)^{-1}\\).",
+    "Thus, \\(PV=698.02\\)."
+  ],
+  "generalization": "When moving backward in time, use \\((1+i)^{-1}\\) for an effective interest rate and \\(1-d\\) for an effective discount rate. Apply the factors year by year in reverse chronological order.",
+  "answer_text": "John should invest \\(\\boxed{698.02}\\) now."
 }
 ]
