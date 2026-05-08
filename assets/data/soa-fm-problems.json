@@ -527,5 +527,33 @@
   ],
   "generalization": "For an accumulation function \\(a(t)\\), the discount factor for year \\(n\\) is \\(v_n=\\dfrac{a(n-1)}{a(n)}\\). If \\(a(t)=(1+i)^t\\), then \\(v_n=\\dfrac{1}{1+i}\\) for every year \\(n\\).",
   "answer_text": "The discount factor for year \\(5\\) is \\(\\boxed{0.92593}\\)."
+},
+  {
+  "id": 24,
+  "topic": "present value and discount factor",
+  "title": "Exercise 24",
+  "statement": "[SOA 16; SOA-IT.020] David can receive one of the following two payment streams: i. \\(100\\) at time \\(0\\), \\(200\\) at time \\(n\\) years, and \\(300\\) at time \\(2n\\) years; ii. \\(600\\) at time \\(10\\) years. At an annual effective interest rate of \\(i\\), the present values of the two streams are equal. Given \\(v^n=0.76\\), calculate \\(i\\).",
+  "choices": [
+    "\\(3.5\\%\\)",
+    "\\(4.0\\%\\)",
+    "\\(4.5\\%\\)",
+    "\\(5.0\\%\\)",
+    "\\(5.5\\%\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The present value of the first payment stream is \\(100+200v^n+300v^{2n}\\).",
+    "The present value of the second payment stream is \\(600v^{10}\\).",
+    "Since the present values are equal, \\(600v^{10}=100+200v^n+300v^{2n}\\).",
+    "Given \\(v^n=0.76\\), we have \\(v^{2n}=(0.76)^2\\).",
+    "Substitute into the equation: \\(600v^{10}=100+200(0.76)+300(0.76)^2\\).",
+    "Compute the right-hand side: \\(100+152+173.28=425.28\\).",
+    "Thus, \\(600v^{10}=425.28\\), so \\(v^{10}=\\dfrac{425.28}{600}=0.7088\\).",
+    "Since \\(v=\\dfrac{1}{1+i}\\), we have \\(v^{10}=(1+i)^{-10}\\).",
+    "Therefore, \\((1+i)^{-10}=0.7088\\).",
+    "Solving gives \\(i=(0.7088)^{-1/10}-1=0.035\\)."
+  ],
+  "generalization": "When two payment streams have equal present values, discount each payment to time \\(0\\), equate the present values, and solve for the unknown interest rate. If \\(v^n\\) is given, use powers such as \\(v^{2n}=(v^n)^2\\) to simplify the equation.",
+  "answer_text": "The annual effective interest rate is \\(\\boxed{3.5\\%}\\)."
 }
 ]
