@@ -504,5 +504,28 @@
   ],
   "generalization": "When moving backward in time, use \\((1+i)^{-1}\\) for an effective interest rate and \\(1-d\\) for an effective discount rate. Apply the factors year by year in reverse chronological order.",
   "answer_text": "John should invest \\(\\boxed{698.02}\\) now."
+},
+  {
+  "id": 23,
+  "topic": "discount factor",
+  "title": "Exercise 23",
+  "statement": "Given \\(a(t)=1.08^t\\), find \\(v_5\\).",
+  "choices": [
+    "\\(0.90000\\)",
+    "\\(0.92593\\)",
+    "\\(1.08000\\)",
+    "\\(1.46933\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "The quantity \\(v_5\\) is the discount factor for year \\(5\\). It moves money backward from time \\(5\\) to time \\(4\\).",
+    "By definition, \\(v_5=\\dfrac{a(4)}{a(5)}\\).",
+    "Since \\(a(t)=1.08^t\\), we have \\(a(4)=1.08^4\\) and \\(a(5)=1.08^5\\).",
+    "Therefore, \\(v_5=\\dfrac{1.08^4}{1.08^5}\\).",
+    "Simplify: \\(v_5=1.08^{-1}\\).",
+    "Thus, \\(v_5=0.92593\\)."
+  ],
+  "generalization": "For an accumulation function \\(a(t)\\), the discount factor for year \\(n\\) is \\(v_n=\\dfrac{a(n-1)}{a(n)}\\). If \\(a(t)=(1+i)^t\\), then \\(v_n=\\dfrac{1}{1+i}\\) for every year \\(n\\).",
+  "answer_text": "The discount factor for year \\(5\\) is \\(\\boxed{0.92593}\\)."
 }
 ]
