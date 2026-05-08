@@ -582,5 +582,30 @@
   ],
   "generalization": "For a one-period loan of amount \\(X\\), the amount of interest paid is \\(Xi\\), while the amount of discount paid is \\(Xd\\). The effective rate of interest and the effective rate of discount satisfy \\(d=\\dfrac{i}{1+i}\\) and \\(i=\\dfrac{d}{1-d}\\).",
   "answer_text": "The loan amount is \\(\\boxed{1{,}350}\\), so the correct choice is E."
+},
+  {
+  "id": 26,
+  "topic": "compound interest",
+  "title": "Exercise 26",
+  "statement": "At a certain rate of compound interest, \\(1\\) grows to \\(3\\) in \\(x\\) years, \\(3\\) grows to \\(14\\) in \\(y\\) years, and \\(1\\) grows to \\(21\\) in \\(z\\) years. Determine what \\(5\\) grows to in \\(z-x-y\\) years.",
+  "choices": [
+    "\\(\\dfrac{5}{2}\\)",
+    "\\(\\dfrac{15}{2}\\)",
+    "\\(10\\)",
+    "\\(\\dfrac{35}{2}\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Write each given fact as an accumulation factor equation using \\((1+i)^t\\).",
+    "Since \\(1\\) grows to \\(3\\) in \\(x\\) years, we have \\((1+i)^x=3\\).",
+    "Since \\(3\\) grows to \\(14\\) in \\(y\\) years, we have \\(3(1+i)^y=14\\), so \\((1+i)^y=\\dfrac{14}{3}\\).",
+    "Since \\(1\\) grows to \\(21\\) in \\(z\\) years, we have \\((1+i)^z=21\\).",
+    "We want the accumulated value of \\(5\\) after \\(z-x-y\\) years, which is \\(5(1+i)^{z-x-y}\\).",
+    "Rewrite the expression as \\(5(1+i)^{z-x-y}=\\dfrac{5(1+i)^z}{(1+i)^x(1+i)^y}\\).",
+    "Substitute the known values: \\(5(1+i)^{z-x-y}=\\dfrac{5(21)}{3\\left(\\dfrac{14}{3}\\right)}\\).",
+    "Simplify: \\(\\dfrac{5(21)}{3\\left(\\dfrac{14}{3}\\right)}=\\dfrac{105}{14}=\\dfrac{15}{2}\\)."
+  ],
+  "generalization": "Under compound interest, time exponents can be added and subtracted using the laws of exponents. If \\((1+i)^a\\), \\((1+i)^b\\), and \\((1+i)^c\\) are known, then \\((1+i)^{c-a-b}=\\dfrac{(1+i)^c}{(1+i)^a(1+i)^b}\\).",
+  "answer_text": "\\(5\\) grows to \\(\\boxed{\\dfrac{15}{2}}\\)."
 }
 ]
