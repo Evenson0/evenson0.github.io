@@ -555,5 +555,32 @@
   ],
   "generalization": "When two payment streams have equal present values, discount each payment to time \\(0\\), equate the present values, and solve for the unknown interest rate. If \\(v^n\\) is given, use powers such as \\(v^{2n}=(v^n)^2\\) to simplify the equation.",
   "answer_text": "The annual effective interest rate is \\(\\boxed{3.5\\%}\\)."
+},
+  {
+  "id": 25,
+  "topic": "effective rate of discount",
+  "title": "Exercise 25",
+  "statement": "The amount of interest paid on a loan of \\(X\\) for one year is \\(108\\). The equivalent amount of discount paid on a loan of \\(X\\) for one year is \\(100\\). Determine \\(X\\).",
+  "choices": [
+    "Less than \\(1{,}220\\)",
+    "At least \\(1{,}220\\), but less than \\(1{,}260\\)",
+    "At least \\(1{,}260\\), but less than \\(1{,}300\\)",
+    "At least \\(1{,}300\\), but less than \\(1{,}340\\)",
+    "At least \\(1{,}340\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "The amount of interest paid is \\(Xi=108\\).",
+    "The amount of discount paid is \\(Xd=100\\).",
+    "Recall the relationship between the effective rate of interest and the effective rate of discount: \\(d=\\dfrac{i}{1+i}\\).",
+    "Equivalently, \\(i=\\dfrac{d}{1-d}\\).",
+    "Using \\(Xi=108\\), substitute \\(i=\\dfrac{d}{1-d}\\): \\(X\\left(\\dfrac{d}{1-d}\\right)=108\\).",
+    "Since \\(Xd=100\\), this becomes \\(\\dfrac{Xd}{1-d}=108\\), so \\(\\dfrac{100}{1-d}=108\\).",
+    "Solve for \\(d\\): \\(100=108(1-d)\\), so \\(108d=8\\), and therefore \\(d=\\dfrac{8}{108}\\).",
+    "Using \\(Xd=100\\), we get \\(X\\left(\\dfrac{8}{108}\\right)=100\\).",
+    "Therefore, \\(X=100\\left(\\dfrac{108}{8}\\right)=1{,}350\\)."
+  ],
+  "generalization": "For a one-period loan of amount \\(X\\), the amount of interest paid is \\(Xi\\), while the amount of discount paid is \\(Xd\\). The effective rate of interest and the effective rate of discount satisfy \\(d=\\dfrac{i}{1+i}\\) and \\(i=\\dfrac{d}{1-d}\\).",
+  "answer_text": "The loan amount is \\(\\boxed{1{,}350}\\), so the correct choice is E."
 }
 ]
