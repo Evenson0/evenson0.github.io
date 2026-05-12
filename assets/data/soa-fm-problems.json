@@ -878,5 +878,39 @@
   ],
   "generalization": "When an interest rate changes at a certain time, accumulate separately over each time interval. For a nominal annual rate \\(i^{(m)}\\) compounded \\(m\\) times per year, the accumulation factor over \\(t\\) years is \\(\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\).",
   "answer_text": "It will take approximately \\(\\boxed{9.33}\\) years for the deposit to double, so the correct choice is C."
+},
+  {
+  "id": 37,
+  "topic": "nominal interest rate",
+  "title": "Exercise 37",
+  "statement": "On January \\(1\\), \\(1980\\), Jack deposited \\(\\$1{,}000\\) into Bank \\(X\\) to earn interest at the rate of \\(j\\) per annum compounded semiannually. On January \\(1\\), \\(1985\\), he transferred his account to Bank \\(Y\\) to earn interest at the rate of \\(k\\) per annum compounded quarterly. On January \\(1\\), \\(1988\\), the balance at Bank \\(Y\\) is \\(\\$1{,}990.76\\). If Jack could have earned interest at the rate of \\(k\\) per annum compounded quarterly from January \\(1\\), \\(1980\\), through January \\(1\\), \\(1988\\), his balance would have been \\(\\$2{,}203.76\\). Calculate the ratio \\(\\dfrac{k}{j}\\).",
+  "choices": [
+    "\\(1.25\\)",
+    "\\(1.30\\)",
+    "\\(1.35\\)",
+    "\\(1.40\\)",
+    "\\(1.45\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "First calculate \\(k\\).",
+    "From January \\(1\\), \\(1980\\), to January \\(1\\), \\(1988\\), there are \\(8\\) years.",
+    "Since \\(k\\) is compounded quarterly, there are \\(4\\cdot 8=32\\) quarterly compounding periods.",
+    "Using the hypothetical balance, \\(1{,}000\\left(1+\\dfrac{k}{4}\\right)^{32}=2{,}203.76\\).",
+    "Divide by \\(1{,}000\\): \\(\\left(1+\\dfrac{k}{4}\\right)^{32}=2.20376\\).",
+    "Taking the thirty-second root gives \\(1+\\dfrac{k}{4}=1.025\\).",
+    "Thus, \\(\\dfrac{k}{4}=0.025\\), so \\(k=0.10\\).",
+    "Now calculate \\(j\\). From January \\(1\\), \\(1980\\), to January \\(1\\), \\(1985\\), there are \\(5\\) years, or \\(2\\cdot 5=10\\) semiannual compounding periods.",
+    "From January \\(1\\), \\(1985\\), to January \\(1\\), \\(1988\\), there are \\(3\\) years, or \\(4\\cdot 3=12\\) quarterly compounding periods.",
+    "The actual balance equation is \\(1{,}000\\left(1+\\dfrac{j}{2}\\right)^{10}\\left(1+\\dfrac{k}{4}\\right)^{12}=1{,}990.76\\).",
+    "Since \\(1+\\dfrac{k}{4}=1.025\\), this becomes \\(1{,}000\\left(1+\\dfrac{j}{2}\\right)^{10}(1.025)^{12}=1{,}990.76\\).",
+    "Divide by \\(1{,}000\\): \\(\\left(1+\\dfrac{j}{2}\\right)^{10}(1.025)^{12}=1.99076\\).",
+    "Thus, \\(\\left(1+\\dfrac{j}{2}\\right)^{10}=\\dfrac{1.99076}{(1.025)^{12}}=1.48024\\).",
+    "Taking the tenth root gives \\(1+\\dfrac{j}{2}=1.04\\).",
+    "Therefore, \\(\\dfrac{j}{2}=0.04\\), so \\(j=0.08\\).",
+    "Finally, \\(\\dfrac{k}{j}=\\dfrac{0.10}{0.08}=1.25\\)."
+  ],
+  "generalization": "When a fund earns different nominal rates over different time intervals, write one accumulation factor for each interval. For a nominal annual rate \\(i^{(m)}\\) compounded \\(m\\) times per year over \\(t\\) years, the accumulation factor is \\(\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\).",
+  "answer_text": "The ratio is \\(\\boxed{\\dfrac{k}{j}=1.25}\\), so the correct choice is A."
 }
 ]
