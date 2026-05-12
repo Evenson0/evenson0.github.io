@@ -658,5 +658,28 @@
   ],
   "generalization": "Under simple interest, the accumulated value depends on the product \\(it\\). If a condition gives the value of \\(ix\\), it can be substituted directly into other simple interest expressions involving multiples of \\(i\\) and \\(x\\).",
   "answer_text": "\\(20\\) accumulates to \\(\\boxed{120}\\)."
+},
+  {
+  "id": 29,
+  "topic": "compound interest and simple interest",
+  "title": "Exercise 29",
+  "statement": "An investment earns \\(10\\%\\) compound interest for each complete year and \\(8\\%\\) simple interest for each partial year. A \\(\\$100\\) investment is made on January \\(1\\), \\(2008\\). What is the accumulated value of the investment on July \\(1\\), \\(2012\\)?",
+  "choices": [
+    "\\(\\$146.41\\)",
+    "\\(\\$150.00\\)",
+    "\\(\\$152.27\\)",
+    "\\(\\$161.05\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "From January \\(1\\), \\(2008\\), to January \\(1\\), \\(2012\\), there are \\(4\\) complete years.",
+    "From January \\(1\\), \\(2012\\), to July \\(1\\), \\(2012\\), there is \\(0.5\\) of a year.",
+    "For the \\(4\\) complete years, use compound interest at \\(10\\%\\): \\(100(1.10)^4\\).",
+    "For the partial year, use simple interest at \\(8\\%\\), giving the factor \\(1+0.08(0.5)\\).",
+    "Therefore, \\(AV=100(1.10)^4\\bigl(1+0.08(0.5)\\bigr)\\).",
+    "Compute: \\(AV=100(1.10)^4(1.04)=152.2664\\)."
+  ],
+  "generalization": "When complete years use compound interest and partial years use simple interest, first accumulate through the full years using \\((1+i)^n\\), then multiply by the simple interest factor \\(1+jt\\) for the partial year.",
+  "answer_text": "The accumulated value is \\(\\boxed{\\$152.27}\\)."
 }
 ]
