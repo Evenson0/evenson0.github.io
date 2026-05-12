@@ -765,5 +765,34 @@
   ],
   "generalization": "If a nominal annual interest rate \\(i^{(m)}\\) is compounded \\(m\\) times per year, then the effective rate per conversion period is \\(\\dfrac{i^{(m)}}{m}\\). Over \\(t\\) years, the accumulated value is \\(A(t)=A(0)\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\).",
   "answer_text": "The fund value after five years is \\(\\boxed{\\$363.34}\\)."
+},
+  {
+  "id": 33,
+  "topic": "nominal interest rate",
+  "title": "Exercise 33",
+  "statement": "Sam invested \\(\\$100\\) in a bank four years ago. The fund earned a nominal interest rate of \\(x\\%\\), compounded quarterly. Today, he closes his account and withdraws \\(\\$180\\). Calculate \\(x\\), the nominal annual interest rate compounded quarterly, and \\(i\\), the equivalent annual effective interest rate.",
+  "choices": [
+    "\\(x=12.50\\%,\\ i=13.08\\%\\)",
+    "\\(x=14.97\\%,\\ i=15.83\\%\\)",
+    "\\(x=15.83\\%,\\ i=14.97\\%\\)",
+    "\\(x=18.00\\%,\\ i=19.25\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Since the nominal interest rate is compounded quarterly, there are \\(m=4\\) conversion periods per year.",
+    "Over \\(4\\) years, there are \\(4\\cdot 4=16\\) quarterly compounding periods.",
+    "Let \\(r\\) be the nominal annual rate expressed as a decimal. Since the problem asks for \\(x\\%\\), we have \\(x=100r\\).",
+    "The quarterly effective interest rate is \\(\\dfrac{r}{4}\\).",
+    "The accumulation equation is \\(100\\left(1+\\dfrac{r}{4}\\right)^{16}=180\\).",
+    "Divide by \\(100\\): \\(\\left(1+\\dfrac{r}{4}\\right)^{16}=1.8\\).",
+    "Take the sixteenth root: \\(1+\\dfrac{r}{4}=1.8^{1/16}\\).",
+    "Thus, \\(\\dfrac{r}{4}=1.8^{1/16}-1=0.03742\\).",
+    "Therefore, \\(r=4(0.03742)=0.149679\\).",
+    "Since \\(x=100r\\), we get \\(x=14.9679\\%\\).",
+    "The equivalent annual effective interest rate satisfies \\(1+i=\\left(1+\\dfrac{r}{4}\\right)^4\\).",
+    "Thus, \\(i=\\left(1+\\dfrac{0.149679}{4}\\right)^4-1=0.158292\\)."
+  ],
+  "generalization": "If a nominal annual interest rate \\(i^{(m)}\\) is compounded \\(m\\) times per year, the effective rate per conversion period is \\(\\dfrac{i^{(m)}}{m}\\). Over \\(t\\) years, the accumulated value is \\(A(t)=A(0)\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\). The equivalent annual effective rate is \\(i=\\left(1+\\dfrac{i^{(m)}}{m}\\right)^m-1\\).",
+  "answer_text": "The nominal annual rate compounded quarterly is \\(\\boxed{x=14.9679\\%}\\), and the equivalent annual effective interest rate is \\(\\boxed{i=15.8292\\%}\\)."
 }
 ]
