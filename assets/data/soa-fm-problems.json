@@ -794,5 +794,31 @@
   ],
   "generalization": "If a nominal annual interest rate \\(i^{(m)}\\) is compounded \\(m\\) times per year, the effective rate per conversion period is \\(\\dfrac{i^{(m)}}{m}\\). Over \\(t\\) years, the accumulated value is \\(A(t)=A(0)\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\). The equivalent annual effective rate is \\(i=\\left(1+\\dfrac{i^{(m)}}{m}\\right)^m-1\\).",
   "answer_text": "The nominal annual rate compounded quarterly is \\(\\boxed{x=14.9679\\%}\\), and the equivalent annual effective interest rate is \\(\\boxed{i=15.8292\\%}\\)."
+},
+  {
+  "id": 34,
+  "topic": "nominal interest rate",
+  "title": "Exercise 34",
+  "statement": "James invests \\(\\$100\\) in a bank. The fund earns a \\(10\\%\\) annual effective interest rate. What is the fund value at the end of six months?",
+  "choices": [
+    "\\(\\$104.00\\)",
+    "\\(\\$104.88\\)",
+    "\\(\\$105.00\\)",
+    "\\(\\$110.00\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "There are two six-month periods in one year, so \\(m=2\\).",
+    "We are given \\(A(0)=100\\) and an annual effective interest rate \\(i=10\\%\\).",
+    "Let \\(i^{(2)}\\) be the nominal annual interest rate convertible semiannually.",
+    "Since this rate is equivalent to the annual effective rate of \\(10\\%\\), we have \\(\\left(1+\\dfrac{i^{(2)}}{2}\\right)^2=1.10\\).",
+    "Taking the square root gives \\(1+\\dfrac{i^{(2)}}{2}=1.10^{1/2}\\).",
+    "Thus, \\(\\dfrac{i^{(2)}}{2}=1.10^{1/2}-1=0.04881\\).",
+    "Therefore, the effective interest rate for six months is \\(4.881\\%\\).",
+    "Accumulate \\(100\\) for one six-month period: \\(A\\left(\\dfrac{1}{2}\\right)=100(1.04881)\\).",
+    "Hence, \\(A\\left(\\dfrac{1}{2}\\right)=104.88\\)."
+  ],
+  "generalization": "To convert an annual effective interest rate \\(i\\) to an effective rate over one \\(m\\)-th of a year, solve \\(1+j=(1+i)^{1/m}\\). Thus, \\(j=(1+i)^{1/m}-1\\).",
+  "answer_text": "The fund value at the end of six months is \\(\\boxed{\\$104.88}\\)."
 }
 ]
