@@ -681,5 +681,34 @@
   ],
   "generalization": "When complete years use compound interest and partial years use simple interest, first accumulate through the full years using \\((1+i)^n\\), then multiply by the simple interest factor \\(1+jt\\) for the partial year.",
   "answer_text": "The accumulated value is \\(\\boxed{\\$152.27}\\)."
+},
+  {
+  "id": 30,
+  "topic": "simple interest and compound interest",
+  "title": "Exercise 30",
+  "statement": "An investor puts \\(\\$100\\) into Fund \\(X\\) and \\(\\$100\\) into Fund \\(Y\\). Fund \\(Y\\) earns compound interest at the annual rate of \\(j>0\\), and Fund \\(X\\) earns simple interest at the annual rate of \\(1.05j\\). At the end of \\(2\\) years, the amount in Fund \\(Y\\) is equal to the amount in Fund \\(X\\). Calculate the amount in Fund \\(Y\\) at the end of \\(5\\) years.",
+  "choices": [
+    "\\(150\\)",
+    "\\(153\\)",
+    "\\(157\\)",
+    "\\(161\\)",
+    "\\(165\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Fund \\(X\\) earns simple interest at rate \\(1.05j\\), so its accumulation function is \\(a_X(t)=1+1.05jt\\).",
+    "Fund \\(Y\\) earns compound interest at rate \\(j\\), so its accumulation function is \\(a_Y(t)=(1+j)^t\\).",
+    "At the end of \\(2\\) years, the amounts are equal. Since both funds start with \\(100\\), we have \\(100a_X(2)=100a_Y(2)\\).",
+    "Cancel \\(100\\): \\(a_X(2)=a_Y(2)\\).",
+    "Substitute the accumulation functions: \\(1+1.05j(2)=(1+j)^2\\).",
+    "Thus, \\(1+2.1j=(1+j)^2\\).",
+    "Expand the right-hand side: \\(1+2.1j=1+2j+j^2\\).",
+    "Simplify: \\(j^2=0.1j\\).",
+    "Since \\(j>0\\), divide by \\(j\\) to obtain \\(j=0.1\\).",
+    "The amount in Fund \\(Y\\) at the end of \\(5\\) years is \\(100(1.10)^5\\).",
+    "Therefore, \\(100(1.10)^5=161.05\\)."
+  ],
+  "generalization": "When comparing simple interest and compound interest, first write the appropriate accumulation function for each fund. Under simple interest, \\(a(t)=1+it\\). Under compound interest, \\(a(t)=(1+i)^t\\). Then use the equality condition to solve for the unknown rate.",
+  "answer_text": "The amount in Fund \\(Y\\) at the end of \\(5\\) years is \\(\\boxed{161.05}\\), so the closest answer is D."
 }
 ]
