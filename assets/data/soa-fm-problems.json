@@ -847,5 +847,36 @@
   ],
   "generalization": "Given an annual effective interest rate \\(i\\), the equivalent nominal annual rate convertible \\(m\\) times per year is \\(i^{(m)}=m\\left((1+i)^{1/m}-1\\right)\\).",
   "answer_text": "The nominal rates are \\(\\boxed{i^{(12)}=9.5690\\%}\\) and \\(\\boxed{i^{(4)}=9.6455\\%}\\)."
+},
+  {
+  "id": 36,
+  "topic": "nominal interest rate",
+  "title": "Exercise 36",
+  "statement": "You deposit \\(\\$100\\) into a fund that accumulates at an annual effective interest rate of \\(7\\%\\). Four years later, the interest rate changes to an annual nominal rate of \\(8\\%\\), compounded quarterly. How many years will it take for your deposit to double?",
+  "choices": [
+    "\\(9.00\\)",
+    "\\(9.25\\)",
+    "\\(9.33\\)",
+    "\\(9.50\\)",
+    "\\(10.00\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "First, check whether the fund doubles before the interest rate changes.",
+    "After four years, the fund value is \\(100(1.07)^4=131.0796\\).",
+    "Since \\(131.0796<200\\), the fund does not double during the first four years.",
+    "Let \\(n\\) be the total number of years needed for the deposit to double.",
+    "After year \\(4\\), the fund earns a nominal annual interest rate of \\(8\\%\\), compounded quarterly.",
+    "The effective quarterly interest rate is \\(\\dfrac{0.08}{4}=0.02\\).",
+    "From time \\(4\\) to time \\(n\\), there are \\(4(n-4)\\) quarters.",
+    "Set up the doubling equation: \\(100(1.07)^4(1.02)^{4(n-4)}=200\\).",
+    "Divide by \\(100\\): \\((1.07)^4(1.02)^{4(n-4)}=2\\).",
+    "Thus, \\((1.02)^{4(n-4)}=\\dfrac{2}{(1.07)^4}\\).",
+    "Taking natural logarithms gives \\(4(n-4)\\ln(1.02)=\\ln\\left(\\dfrac{2}{(1.07)^4}\\right)\\).",
+    "Therefore, \\(n=4+\\dfrac{\\ln\\left(\\dfrac{2}{(1.07)^4}\\right)}{4\\ln(1.02)}\\).",
+    "Thus, \\(n=9.3340\\)."
+  ],
+  "generalization": "When an interest rate changes at a certain time, accumulate separately over each time interval. For a nominal annual rate \\(i^{(m)}\\) compounded \\(m\\) times per year, the accumulation factor over \\(t\\) years is \\(\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\).",
+  "answer_text": "It will take approximately \\(\\boxed{9.33}\\) years for the deposit to double, so the correct choice is C."
 }
 ]
