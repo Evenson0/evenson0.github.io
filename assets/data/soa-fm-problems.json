@@ -607,5 +607,30 @@
   ],
   "generalization": "Under compound interest, time exponents can be added and subtracted using the laws of exponents. If \\((1+i)^a\\), \\((1+i)^b\\), and \\((1+i)^c\\) are known, then \\((1+i)^{c-a-b}=\\dfrac{(1+i)^c}{(1+i)^a(1+i)^b}\\).",
   "answer_text": "\\(5\\) grows to \\(\\boxed{\\dfrac{15}{2}}\\)."
+},
+  {
+  "id": 27,
+  "topic": "simple interest and effective discount",
+  "title": "Exercise 27",
+  "statement": "A loan is made for five years at a simple interest rate of \\(12\\%\\) per annum. What is the equivalent annual effective rate of discount during the fourth year of the loan?",
+  "choices": [
+    "\\(7.69\\%\\)",
+    "\\(8.108\\%\\)",
+    "\\(8.824\\%\\)",
+    "\\(12.00\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let the original loan amount be \\(1\\).",
+    "Since the loan uses simple interest at \\(12\\%\\) per annum, the accumulation function is \\(a(t)=1+0.12t\\).",
+    "The fourth year is the period from time \\(3\\) to time \\(4\\).",
+    "Compute the loan balance at time \\(3\\): \\(a(3)=1+0.12(3)=1.36\\).",
+    "Compute the loan balance at time \\(4\\): \\(a(4)=1+0.12(4)=1.48\\).",
+    "The effective rate of discount during the fourth year is \\(d_4=\\dfrac{a(4)-a(3)}{a(4)}\\).",
+    "Substitute the values: \\(d_4=\\dfrac{1.48-1.36}{1.48}\\).",
+    "Thus, \\(d_4=0.08108=8.108\\%\\)."
+  ],
+  "generalization": "Under simple interest with rate \\(i\\), the accumulation function is \\(a(t)=1+it\\). The effective rate of discount during year \\(n\\) is \\(d_n=\\dfrac{a(n)-a(n-1)}{a(n)}\\).",
+  "answer_text": "The equivalent annual effective rate of discount during the fourth year is \\(\\boxed{8.108\\%}\\)."
 }
 ]
