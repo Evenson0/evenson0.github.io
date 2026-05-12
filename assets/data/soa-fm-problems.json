@@ -632,5 +632,31 @@
   ],
   "generalization": "Under simple interest with rate \\(i\\), the accumulation function is \\(a(t)=1+it\\). The effective rate of discount during year \\(n\\) is \\(d_n=\\dfrac{a(n)-a(n-1)}{a(n)}\\).",
   "answer_text": "The equivalent annual effective rate of discount during the fourth year is \\(\\boxed{8.108\\%}\\)."
+},
+  {
+  "id": 28,
+  "topic": "simple interest",
+  "title": "Exercise 28",
+  "statement": "At a rate of simple interest \\(i\\), \\(10\\) will accumulate to \\(15\\) after \\(x\\) years. What will \\(20\\) accumulate to at a simple interest rate of \\(2i\\) after \\(5x\\) years?",
+  "choices": [
+    "\\(60\\)",
+    "\\(100\\)",
+    "\\(120\\)",
+    "\\(150\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Under simple interest, the accumulated value is \\(A(t)=P(1+it)\\).",
+    "We are given that \\(10\\) accumulates to \\(15\\) after \\(x\\) years at simple interest rate \\(i\\), so \\(10(1+ix)=15\\).",
+    "Divide by \\(10\\): \\(1+ix=1.5\\).",
+    "Thus, \\(ix=0.5\\).",
+    "Now compute the accumulated value of \\(20\\) at simple interest rate \\(2i\\) after \\(5x\\) years.",
+    "Using simple interest, \\(A=20\\bigl(1+(2i)(5x)\\bigr)\\).",
+    "Simplify: \\(A=20(1+10ix)\\).",
+    "Since \\(ix=0.5\\), we get \\(A=20(1+10(0.5))\\).",
+    "Therefore, \\(A=20(6)=120\\)."
+  ],
+  "generalization": "Under simple interest, the accumulated value depends on the product \\(it\\). If a condition gives the value of \\(ix\\), it can be substituted directly into other simple interest expressions involving multiples of \\(i\\) and \\(x\\).",
+  "answer_text": "\\(20\\) accumulates to \\(\\boxed{120}\\)."
 }
 ]
