@@ -820,5 +820,32 @@
   ],
   "generalization": "To convert an annual effective interest rate \\(i\\) to an effective rate over one \\(m\\)-th of a year, solve \\(1+j=(1+i)^{1/m}\\). Thus, \\(j=(1+i)^{1/m}-1\\).",
   "answer_text": "The fund value at the end of six months is \\(\\boxed{\\$104.88}\\)."
+},
+  {
+  "id": 35,
+  "topic": "nominal interest rate",
+  "title": "Exercise 35",
+  "statement": "Calculate \\(i^{(12)}\\) and \\(i^{(4)}\\), given that the annual effective interest rate is \\(i=10\\%\\).",
+  "choices": [
+    "\\(i^{(12)}=9.5000\\%,\\ i^{(4)}=9.5000\\%\\)",
+    "\\(i^{(12)}=9.5690\\%,\\ i^{(4)}=9.6455\\%\\)",
+    "\\(i^{(12)}=10.0000\\%,\\ i^{(4)}=10.0000\\%\\)",
+    "\\(i^{(12)}=10.4713\\%,\\ i^{(4)}=10.3813\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Use the relationship \\(1+i=\\left(1+\\dfrac{i^{(m)}}{m}\\right)^m\\).",
+    "Since the annual effective interest rate is \\(i=10\\%\\), we have \\(1+i=1.10\\).",
+    "For monthly compounding, \\(m=12\\), so \\(\\left(1+\\dfrac{i^{(12)}}{12}\\right)^{12}=1.10\\).",
+    "Taking the twelfth root gives \\(1+\\dfrac{i^{(12)}}{12}=1.10^{1/12}\\).",
+    "Therefore, \\(i^{(12)}=12\\left(1.10^{1/12}-1\\right)\\).",
+    "Thus, \\(i^{(12)}=0.095690=9.5690\\%\\).",
+    "For quarterly compounding, \\(m=4\\), so \\(\\left(1+\\dfrac{i^{(4)}}{4}\\right)^4=1.10\\).",
+    "Taking the fourth root gives \\(1+\\dfrac{i^{(4)}}{4}=1.10^{1/4}\\).",
+    "Therefore, \\(i^{(4)}=4\\left(1.10^{1/4}-1\\right)\\).",
+    "Thus, \\(i^{(4)}=0.096455=9.6455\\%\\)."
+  ],
+  "generalization": "Given an annual effective interest rate \\(i\\), the equivalent nominal annual rate convertible \\(m\\) times per year is \\(i^{(m)}=m\\left((1+i)^{1/m}-1\\right)\\).",
+  "answer_text": "The nominal rates are \\(\\boxed{i^{(12)}=9.5690\\%}\\) and \\(\\boxed{i^{(4)}=9.6455\\%}\\)."
 }
 ]
