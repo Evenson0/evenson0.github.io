@@ -738,5 +738,32 @@
   ],
   "generalization": "Under simple interest with rate \\(i\\), the effective interest rate during year \\(t\\) is \\(i_t=\\dfrac{i}{1+i(t-1)}\\). This decreases as \\(t\\) increases.",
   "answer_text": "The equivalent effective rate of \\(2.5\\%\\) occurs during year \\(\\boxed{16}\\), so the correct choice is C."
+},
+  {
+  "id": 32,
+  "topic": "nominal interest rate",
+  "title": "Exercise 32",
+  "statement": "Sam invests \\(\\$200\\) in a bank. The fund earns a nominal interest rate of \\(12\\%\\), compounded monthly. What is the fund value five years after the time of the investment?",
+  "choices": [
+    "\\(\\$320.00\\)",
+    "\\(\\$352.47\\)",
+    "\\(\\$363.34\\)",
+    "\\(\\$370.41\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since the nominal interest rate is compounded monthly, there are \\(m=12\\) conversion periods per year.",
+    "The nominal annual rate is \\(i^{(12)}=0.12\\).",
+    "The monthly effective interest rate is \\(\\dfrac{i^{(12)}}{12}=\\dfrac{0.12}{12}=0.01\\).",
+    "Over \\(5\\) years, there are \\(12\\cdot 5=60\\) monthly compounding periods.",
+    "Using the nominal interest accumulation formula, \\(A(5)=200\\left(1+\\dfrac{0.12}{12}\\right)^{12(5)}\\).",
+    "Thus, \\(A(5)=200(1.01)^{60}\\).",
+    "Therefore, \\(A(5)=363.3393\\).",
+    "Alternatively, the equivalent annual effective rate satisfies \\(1+i=\\left(1+\\dfrac{0.12}{12}\\right)^{12}\\).",
+    "So \\(i=\\left(1+\\dfrac{0.12}{12}\\right)^{12}-1=0.126825\\).",
+    "Then \\(A(5)=200(1.126825)^5=363.3393\\)."
+  ],
+  "generalization": "If a nominal annual interest rate \\(i^{(m)}\\) is compounded \\(m\\) times per year, then the effective rate per conversion period is \\(\\dfrac{i^{(m)}}{m}\\). Over \\(t\\) years, the accumulated value is \\(A(t)=A(0)\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\).",
+  "answer_text": "The fund value after five years is \\(\\boxed{\\$363.34}\\)."
 }
 ]
