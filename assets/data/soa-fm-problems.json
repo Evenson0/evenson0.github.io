@@ -710,5 +710,33 @@
   ],
   "generalization": "When comparing simple interest and compound interest, first write the appropriate accumulation function for each fund. Under simple interest, \\(a(t)=1+it\\). Under compound interest, \\(a(t)=(1+i)^t\\). Then use the equality condition to solve for the unknown rate.",
   "answer_text": "The amount in Fund \\(Y\\) at the end of \\(5\\) years is \\(\\boxed{161.05}\\), so the closest answer is D."
+},
+  {
+  "id": 31,
+  "topic": "simple interest",
+  "title": "Exercise 31",
+  "statement": "Simple interest of \\(i=0.04\\) is being credited to a fund. In which year is this equivalent to an effective rate of \\(2.5\\%\\)?",
+  "choices": [
+    "\\(14\\)",
+    "\\(15\\)",
+    "\\(16\\)",
+    "\\(17\\)",
+    "Never"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since the fund earns simple interest of \\(4\\%\\), the accumulation function is \\(a(t)=1+0.04t\\).",
+    "The effective rate of interest earned during year \\(t\\) is \\(i_t=\\dfrac{a(t)-a(t-1)}{a(t-1)}\\).",
+    "Substitute the accumulation function: \\(i_t=\\dfrac{(1+0.04t)-\\bigl(1+0.04(t-1)\\bigr)}{1+0.04(t-1)}\\).",
+    "The numerator simplifies to \\(0.04\\).",
+    "Thus, \\(i_t=\\dfrac{0.04}{1+0.04(t-1)}\\).",
+    "Since \\(1+0.04(t-1)=0.96+0.04t\\), we have \\(i_t=\\dfrac{0.04}{0.96+0.04t}\\).",
+    "Set this equal to \\(2.5\\%\\): \\(0.025=\\dfrac{0.04}{0.96+0.04t}\\).",
+    "Solve: \\(0.025(0.96+0.04t)=0.04\\).",
+    "This gives \\(0.024+0.001t=0.04\\), so \\(0.001t=0.016\\).",
+    "Therefore, \\(t=16\\)."
+  ],
+  "generalization": "Under simple interest with rate \\(i\\), the effective interest rate during year \\(t\\) is \\(i_t=\\dfrac{i}{1+i(t-1)}\\). This decreases as \\(t\\) increases.",
+  "answer_text": "The equivalent effective rate of \\(2.5\\%\\) occurs during year \\(\\boxed{16}\\), so the correct choice is C."
 }
 ]
