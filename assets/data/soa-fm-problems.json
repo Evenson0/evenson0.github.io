@@ -912,5 +912,98 @@
   ],
   "generalization": "When a fund earns different nominal rates over different time intervals, write one accumulation factor for each interval. For a nominal annual rate \\(i^{(m)}\\) compounded \\(m\\) times per year over \\(t\\) years, the accumulation factor is \\(\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\).",
   "answer_text": "The ratio is \\(\\boxed{\\dfrac{k}{j}=1.25}\\), so the correct choice is A."
+},
+  {
+  "id": 38,
+  "topic": "nominal interest rate",
+  "title": "Exercise 38",
+  "statement": "Jennifer deposits \\(\\$1{,}000\\) into a bank account. The bank credits interest at a nominal annual rate of \\(i\\), convertible semiannually, for the first \\(7\\) years and a nominal annual rate of \\(2i\\), convertible quarterly, for all years thereafter. The accumulated amount in the account at the end of \\(5\\) years is \\(X\\). The accumulated amount in the account at the end of \\(10.5\\) years is \\(\\$1{,}980\\). Calculate \\(X\\).",
+  "choices": [
+    "\\(1200\\)",
+    "\\(1225\\)",
+    "\\(1250\\)",
+    "\\(1275\\)",
+    "\\(1300\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "For a nominal annual rate \\(i\\) convertible semiannually, the effective rate per half-year is \\(\\dfrac{i}{2}\\).",
+    "For a nominal annual rate \\(2i\\) convertible quarterly, the effective rate per quarter is \\(\\dfrac{2i}{4}=\\dfrac{i}{2}\\).",
+    "Thus, both accumulation periods use the same periodic factor \\(1+\\dfrac{i}{2}\\).",
+    "From time \\(0\\) to time \\(5\\), there are \\(2\\cdot 5=10\\) semiannual conversion periods.",
+    "Therefore, \\(X=1{,}000\\left(1+\\dfrac{i}{2}\\right)^{10}\\).",
+    "From time \\(0\\) to time \\(7\\), there are \\(2\\cdot 7=14\\) semiannual conversion periods.",
+    "From time \\(7\\) to time \\(10.5\\), there are \\(3.5\\) years, or \\(4\\cdot 3.5=14\\) quarterly conversion periods.",
+    "Using the accumulated value at time \\(10.5\\), we get \\(1{,}000\\left(1+\\dfrac{i}{2}\\right)^{14}\\left(1+\\dfrac{2i}{4}\\right)^{14}=1{,}980\\).",
+    "Since \\(\\dfrac{2i}{4}=\\dfrac{i}{2}\\), this becomes \\(1{,}000\\left(1+\\dfrac{i}{2}\\right)^{28}=1{,}980\\).",
+    "Divide by \\(1{,}000\\): \\(\\left(1+\\dfrac{i}{2}\\right)^{28}=1.98\\).",
+    "Taking the \\(28\\)-th root gives \\(1+\\dfrac{i}{2}=1.98^{1/28}=1.024696\\).",
+    "Now substitute into \\(X=1{,}000\\left(1+\\dfrac{i}{2}\\right)^{10}\\).",
+    "Thus, \\(X=1{,}000(1.024696)^{10}=1{,}276.30\\)."
+  ],
+  "generalization": "When a nominal rate changes, convert each nominal rate into its effective rate per conversion period. In this problem, \\(i\\) convertible semiannually gives \\(i/2\\), while \\(2i\\) convertible quarterly gives \\(2i/4=i/2\\), so both parts use the same periodic accumulation factor.",
+  "answer_text": "The accumulated amount is approximately \\(\\boxed{1{,}276.30}\\), so the closest answer is \\(\\boxed{1275}\\)."
+},
+  {
+  "id": 39,
+  "topic": "nominal interest rate",
+  "title": "Exercise 39",
+  "statement": "Brian and Jennifer each take out a loan of \\(X\\). Jennifer will repay her loan by making one payment of \\(\\$800\\) at the end of year \\(10\\). Brian will repay his loan by making one payment of \\(\\$1{,}120\\) at the end of year \\(10\\). The nominal annual rate convertible semiannually being charged to Jennifer is exactly one-half the nominal annual rate convertible semiannually being charged to Brian. Calculate \\(X\\).",
+  "choices": [
+    "\\(562\\)",
+    "\\(565\\)",
+    "\\(568\\)",
+    "\\(571\\)",
+    "\\(574\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Let \\(i\\) be the nominal annual rate convertible semiannually charged to Jennifer.",
+    "Then the nominal annual rate convertible semiannually charged to Brian is \\(2i\\).",
+    "Since the loans are repaid at the end of \\(10\\) years and interest is convertible semiannually, there are \\(2(10)=20\\) conversion periods.",
+    "For Jennifer, the effective semiannual rate is \\(\\dfrac{i}{2}\\).",
+    "For Brian, the effective semiannual rate is \\(\\dfrac{2i}{2}=i\\).",
+    "Since both loans have the same present value \\(X\\), equate the present values: \\(800\\left(1+\\dfrac{i}{2}\\right)^{-20}=1120(1+i)^{-20}\\).",
+    "Divide both sides by \\(800\\): \\(\\left(1+\\dfrac{i}{2}\\right)^{-20}=1.4(1+i)^{-20}\\).",
+    "Rewrite \\(1+\\dfrac{i}{2}\\) as \\(\\dfrac{2+i}{2}\\), giving \\(\\left(\\dfrac{2+i}{2}\\right)^{-20}=1.4(1+i)^{-20}\\).",
+    "Solving gives \\(\\dfrac{2+i}{1+i}=2(1.4)^{1/20}=1.9666\\).",
+    "Thus, \\(2+i=1.9666(1+i)\\).",
+    "Solving this equation gives \\(i=0.034554\\).",
+    "Now use Brian's repayment amount: \\(X=1120(1+i)^{-20}\\).",
+    "Substitute \\(i=0.034554\\): \\(X=1120(1.034554)^{-20}=567.75\\)."
+  ],
+  "generalization": "When two loans have the same present value but different repayment amounts and interest rates, equate the present values of the repayments. For a nominal annual rate convertible semiannually, the effective semiannual rate is the nominal rate divided by \\(2\\).",
+  "answer_text": "The loan amount is approximately \\(\\boxed{567.75}\\), so the closest answer is \\(\\boxed{568}\\)."
+},
+  {
+  "id": 40,
+  "topic": "nominal interest rate and simple interest",
+  "title": "Exercise 40",
+  "statement": "[SOA 3; SOA-IT.003] Eric deposits \\(\\$100\\) into a savings account at time \\(0\\), which pays interest at an annual nominal rate of \\(i\\), compounded semiannually. Mike deposits \\(\\$200\\) into a different savings account at time \\(0\\), which pays simple interest at an annual rate of \\(i\\). Eric and Mike earn the same amount of interest during the last \\(6\\) months of the \\(8\\)th year. Calculate \\(i\\).",
+  "choices": [
+    "\\(9.06\\%\\)",
+    "\\(9.26\\%\\)",
+    "\\(9.46\\%\\)",
+    "\\(9.66\\%\\)",
+    "\\(9.86\\%\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The last \\(6\\) months of the \\(8\\)th year is the period from time \\(7.5\\) to time \\(8\\).",
+    "For Eric, the annual nominal rate \\(i\\) is compounded semiannually, so the effective semiannual rate is \\(\\dfrac{i}{2}\\).",
+    "Eric's account value at time \\(8\\) is \\(100\\left(1+\\dfrac{i}{2}\\right)^{16}\\).",
+    "Eric's account value at time \\(7.5\\) is \\(100\\left(1+\\dfrac{i}{2}\\right)^{15}\\).",
+    "Thus, Eric's interest during the last \\(6\\) months of the \\(8\\)th year is \\(100\\left(1+\\dfrac{i}{2}\\right)^{16}-100\\left(1+\\dfrac{i}{2}\\right)^{15}\\).",
+    "For Mike, the account earns simple interest at annual rate \\(i\\), so his accumulated value at time \\(t\\) is \\(200(1+it)\\).",
+    "Mike's interest from time \\(7.5\\) to time \\(8\\) is \\(200(1+8i)-200(1+7.5i)\\).",
+    "Equate the interest amounts: \\(100\\left(1+\\dfrac{i}{2}\\right)^{16}-100\\left(1+\\dfrac{i}{2}\\right)^{15}=200(1+8i)-200(1+7.5i)\\).",
+    "Factor and simplify: \\(100\\left(1+\\dfrac{i}{2}\\right)^{15}\\left(\\dfrac{i}{2}\\right)=100i\\).",
+    "Since \\(i>0\\), divide both sides by \\(100i\\) to get \\(\\dfrac{1}{2}\\left(1+\\dfrac{i}{2}\\right)^{15}=1\\).",
+    "Thus, \\(\\left(1+\\dfrac{i}{2}\\right)^{15}=2\\).",
+    "Taking the \\(15\\)-th root gives \\(1+\\dfrac{i}{2}=2^{1/15}\\).",
+    "Therefore, \\(i=2\\left(2^{1/15}-1\\right)=0.0946\\)."
+  ],
+  "generalization": "For nominal interest compounded semiannually, the effective semiannual rate is \\(\\dfrac{i}{2}\\). For simple interest, the interest earned over an interval of length \\(h\\) on principal \\(P\\) is \\(Pih\\). To compare interest earned over the same period under different interest methods, compute the change in accumulated value over that period and equate the two amounts.",
+  "answer_text": "The annual rate is \\(\\boxed{9.46\\%}\\), so the correct choice is C."
 }
 ]
