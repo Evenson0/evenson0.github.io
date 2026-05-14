@@ -1034,5 +1034,31 @@
   ],
   "generalization": "For a nominal interest rate \\(K\\) convertible quarterly, the yearly accumulation factor is \\(\\left(1+\\dfrac{K}{4}\\right)^4\\). For a nominal discount rate \\(K\\) convertible quarterly, the yearly accumulation factor is \\(\\left(1-\\dfrac{K}{4}\\right)^{-4}\\).",
   "answer_text": "The nominal rate is \\(\\boxed{K=0.080}\\), so the correct choice is E."
+},
+  {
+  "id": 42,
+  "topic": "nominal interest rate and nominal discount rate",
+  "title": "Exercise 42",
+  "statement": "Express \\(i^{(9)}\\) as a function of \\(d^{(3)}\\).",
+  "choices": [
+    "\\(9\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{1/3}-9\\)",
+    "\\(9\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-1/3}-9\\)",
+    "\\(9\\left(1+\\dfrac{d^{(3)}}{3}\\right)^{-1/3}-9\\)",
+    "\\(9\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{1/3}+9\\)",
+    "\\(9\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-1/3}+9\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "For the nominal interest rate \\(i^{(9)}\\), the annual accumulation factor is \\(\\left(1+\\dfrac{i^{(9)}}{9}\\right)^9\\).",
+    "For the nominal discount rate \\(d^{(3)}\\), the annual discount factor is \\(\\left(1-\\dfrac{d^{(3)}}{3}\\right)^3\\).",
+    "Therefore, the corresponding annual accumulation factor is \\(\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-3}\\).",
+    "Since the two rates are equivalent, set the annual accumulation factors equal: \\(\\left(1+\\dfrac{i^{(9)}}{9}\\right)^9=\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-3}\\).",
+    "Taking the ninth root gives \\(1+\\dfrac{i^{(9)}}{9}=\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-1/3}\\).",
+    "Subtract \\(1\\): \\(\\dfrac{i^{(9)}}{9}=\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-1/3}-1\\).",
+    "Multiply by \\(9\\): \\(i^{(9)}=9\\left[\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-1/3}-1\\right]\\).",
+    "Equivalently, \\(i^{(9)}=9\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-1/3}-9\\)."
+  ],
+  "generalization": "To convert between a nominal interest rate and a nominal discount rate, equate their annual accumulation factors. For nominal interest, use \\(\\left(1+\\dfrac{i^{(n)}}{n}\\right)^n\\). For nominal discount, use \\(\\left(1-\\dfrac{d^{(m)}}{m}\\right)^{-m}\\).",
+  "answer_text": "The expression is \\(\\boxed{i^{(9)}=9\\left(1-\\dfrac{d^{(3)}}{3}\\right)^{-1/3}-9}\\), so the correct choice is B."
 }
 ]
