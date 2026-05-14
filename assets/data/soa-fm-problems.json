@@ -1005,5 +1005,34 @@
   ],
   "generalization": "For nominal interest compounded semiannually, the effective semiannual rate is \\(\\dfrac{i}{2}\\). For simple interest, the interest earned over an interval of length \\(h\\) on principal \\(P\\) is \\(Pih\\). To compare interest earned over the same period under different interest methods, compute the change in accumulated value over that period and equate the two amounts.",
   "answer_text": "The annual rate is \\(\\boxed{9.46\\%}\\), so the correct choice is C."
+},
+  {
+  "id": 41,
+  "topic": "nominal interest rate and nominal discount rate",
+  "title": "Exercise 41",
+  "statement": "John invests \\(\\$1{,}000\\) in a fund which earns interest during the first year at a nominal rate of \\(K\\) convertible quarterly. During the second year, the fund earns interest at a nominal discount rate of \\(K\\) convertible quarterly. At the end of the second year, the fund has accumulated to \\(\\$1{,}173.54\\). Calculate \\(K\\).",
+  "choices": [
+    "\\(0.064\\)",
+    "\\(0.068\\)",
+    "\\(0.072\\)",
+    "\\(0.076\\)",
+    "\\(0.080\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "During the first year, the fund earns a nominal interest rate \\(K\\) convertible quarterly, so the effective quarterly interest rate is \\(\\dfrac{K}{4}\\).",
+    "The accumulation factor for the first year is \\(\\left(1+\\dfrac{K}{4}\\right)^4\\).",
+    "During the second year, the fund earns a nominal discount rate \\(K\\) convertible quarterly, so the effective quarterly discount rate is \\(\\dfrac{K}{4}\\).",
+    "The accumulation factor corresponding to a quarterly discount rate \\(\\dfrac{K}{4}\\) is \\(\\left(1-\\dfrac{K}{4}\\right)^{-1}\\).",
+    "Thus, the accumulation factor for the second year is \\(\\left(1-\\dfrac{K}{4}\\right)^{-4}\\).",
+    "Set up the accumulated value equation: \\(1{,}000\\left(1+\\dfrac{K}{4}\\right)^4\\left(1-\\dfrac{K}{4}\\right)^{-4}=1{,}173.54\\).",
+    "Divide by \\(1{,}000\\): \\(\\left(1+\\dfrac{K}{4}\\right)^4\\left(1-\\dfrac{K}{4}\\right)^{-4}=1.17354\\).",
+    "Rewrite as \\(\\left(\\dfrac{1+\\frac{K}{4}}{1-\\frac{K}{4}}\\right)^4=1.17354\\).",
+    "Taking the fourth root gives \\(\\dfrac{1+\\frac{K}{4}}{1-\\frac{K}{4}}=1.17354^{1/4}\\).",
+    "Solving gives \\(K=4\\left(\\dfrac{1.17354^{1/4}-1}{1.17354^{1/4}+1}\\right)\\).",
+    "Therefore, \\(K=0.0800\\)."
+  ],
+  "generalization": "For a nominal interest rate \\(K\\) convertible quarterly, the yearly accumulation factor is \\(\\left(1+\\dfrac{K}{4}\\right)^4\\). For a nominal discount rate \\(K\\) convertible quarterly, the yearly accumulation factor is \\(\\left(1-\\dfrac{K}{4}\\right)^{-4}\\).",
+  "answer_text": "The nominal rate is \\(\\boxed{K=0.080}\\), so the correct choice is E."
 }
 ]
