@@ -1094,5 +1094,57 @@
   ],
   "generalization": "When multiple deposits are made into different funds, first find each accumulated value at the target time. If a nominal interest rate is compounded \\(m\\) times per year, use \\(\\left(1+\\dfrac{i^{(m)}}{m}\\right)^{mt}\\). If a nominal discount rate is compounded \\(m\\) times per year, use \\(\\left(1-\\dfrac{d^{(m)}}{m}\\right)^{-mt}\\).",
   "answer_text": "The annual effective interest rate earned on the total deposits is approximately \\(\\boxed{0.0784}\\), so the correct choice is E."
+},
+  {
+  "id": 44,
+  "topic": "amount function and accumulation function",
+  "title": "Exercise 44",
+  "statement": "You are given the following amount function: \\(A(t)=t^2+100\\). Suppose \\(\\$50\\) was invested at \\(t=4\\). What would be the accumulated value of the \\(\\$50\\) at \\(t=6\\)?",
+  "choices": [
+    "\\(53.8\\)",
+    "\\(57.2\\)",
+    "\\(58.6\\)",
+    "\\(61.5\\)",
+    "\\(66.0\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since the deposit is made at time \\(t=4\\), we do not use \\(A(6)\\) directly.",
+    "Instead, we use the growth factor from time \\(4\\) to time \\(6\\), which is \\(\\dfrac{A(6)}{A(4)}\\).",
+    "Compute \\(A(4)=4^2+100=116\\).",
+    "Compute \\(A(6)=6^2+100=136\\).",
+    "The accumulated value at \\(t=6\\) is \\(50\\cdot \\dfrac{A(6)}{A(4)}\\).",
+    "Substitute the values: \\(50\\cdot \\dfrac{136}{116}=58.6207\\)."
+  ],
+  "generalization": "If a deposit \\(P\\) is made at time \\(s\\) and accumulated to time \\(t\\) under an amount function \\(A(t)\\), then the accumulated value is \\(P\\dfrac{A(t)}{A(s)}\\). The ratio \\(\\dfrac{A(t)}{A(s)}\\) gives the growth factor from time \\(s\\) to time \\(t\\).",
+  "answer_text": "The accumulated value is \\(\\boxed{58.6}\\), so the correct choice is C."
+},
+  {
+  "id": 45,
+  "topic": "effective interest rate",
+  "title": "Exercise 45",
+  "statement": "Gertrude deposits \\(\\$10{,}000\\) in a bank. During the first year, the bank credits an annual effective rate of interest \\(i\\). During the second year, the bank credits an annual effective rate of interest \\(i-5\\%\\). At the end of two years, she has \\(\\$12{,}093.75\\) in the bank. What would Gertrude have in the bank at the end of three years, if the annual effective rate of interest were \\(i+9\\%\\) for each of the three years?",
+  "choices": [
+    "\\(16{,}851\\)",
+    "\\(17{,}196\\)",
+    "\\(17{,}499\\)",
+    "\\(17{,}936\\)",
+    "\\(18{,}113\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Set up the equation of value using the first two years: \\(10{,}000(1+i)(1+i-0.05)=12{,}093.75\\).",
+    "Divide both sides by \\(10{,}000\\): \\((1+i)(1+i-0.05)=1.209375\\).",
+    "Rewrite the second factor: \\((1+i)(0.95+i)=1.209375\\).",
+    "Expand: \\(0.95+i+0.95i+i^2=1.209375\\).",
+    "Combine like terms: \\(i^2+1.95i+0.95=1.209375\\).",
+    "Move all terms to one side: \\(i^2+1.95i-0.259375=0\\).",
+    "Using the quadratic formula, the positive solution is \\(i=0.125\\).",
+    "Thus, the original first-year rate is \\(12.5\\%\\).",
+    "The new annual effective rate is \\(i+9\\%=0.125+0.09=0.215\\).",
+    "Accumulate \\(10{,}000\\) for three years at \\(21.5\\%\\): \\(10{,}000(1.215)^3=17{,}936.13\\)."
+  ],
+  "generalization": "When rates vary by year and depend on an unknown parameter, first write an equation of value using the known accumulated amount. Solve for the unknown rate, then apply the required accumulation formula.",
+  "answer_text": "Gertrude would have approximately \\(\\boxed{17{,}936}\\), so the correct choice is D."
 }
 ]
