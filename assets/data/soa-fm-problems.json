@@ -1486,5 +1486,190 @@
   ],
   "generalization": "When two funds have equal accumulated values at a given time, use that equality to determine the equivalent growth factor. A force of interest \\(\\delta_t\\) gives accumulation \\(\\exp\\left(\\int \\delta_t\\,dt\\right)\\), while a constant annual effective rate \\(i\\) gives accumulation \\((1+i)^t\\).",
   "answer_text": "The value of Fund \\(Y\\) at the end of \\(1.5\\) years is \\(\\boxed{e^{0.3}}\\), so the correct choice is C."
+},
+  {
+  "id": 58,
+  "topic": "force of interest and present value",
+  "title": "Exercise 58",
+  "statement": "At a force of interest \\(\\delta=0.05\\), the following payments have the same present value: (i) \\(X\\) at the end of year \\(5\\) plus \\(2X\\) at the end of year \\(10\\); (ii) \\(Y\\) at the end of year \\(14\\). Calculate \\(\\dfrac{Y}{X}\\).",
+  "choices": [
+    "\\(3.7945\\)",
+    "\\(3.9120\\)",
+    "\\(4.0111\\)",
+    "\\(4.1208\\)",
+    "\\(4.2789\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since the force of interest is constant, the discount factor for a payment made at time \\(t\\) is \\(e^{-\\delta t}\\).",
+    "Here, \\(\\delta=0.05\\).",
+    "The present value of the first payment stream is \\(Xe^{-0.05(5)}+2Xe^{-0.05(10)}\\).",
+    "The present value of the second payment stream is \\(Ye^{-0.05(14)}\\).",
+    "Set the two present values equal: \\(Xe^{-0.05(5)}+2Xe^{-0.05(10)}=Ye^{-0.05(14)}\\).",
+    "This becomes \\(Xe^{-0.25}+2Xe^{-0.50}=Ye^{-0.70}\\).",
+    "Factor out \\(X\\): \\(X\\left(e^{-0.25}+2e^{-0.50}\\right)=Ye^{-0.70}\\).",
+    "Divide both sides by \\(Xe^{-0.70}\\): \\(\\dfrac{Y}{X}=\\dfrac{e^{-0.25}+2e^{-0.50}}{e^{-0.70}}\\).",
+    "Simplify: \\(\\dfrac{Y}{X}=e^{0.45}+2e^{0.20}\\).",
+    "Therefore, \\(\\dfrac{Y}{X}=4.0111\\)."
+  ],
+  "generalization": "Under a constant force of interest \\(\\delta\\), the present value of a payment \\(C\\) made at time \\(t\\) is \\(Ce^{-\\delta t}\\). To compare payment streams, discount each cash flow to the same valuation date and equate present values.",
+  "answer_text": "The ratio is \\(\\boxed{\\dfrac{Y}{X}=4.0111}\\), so the correct choice is C."
+},
+  {
+  "id": 59,
+  "topic": "force of interest and simple interest",
+  "title": "Exercise 59",
+  "statement": "On January \\(1\\), \\(1997\\), Kelly deposits \\(X\\) into a bank account. The account is credited with simple interest at a rate of \\(10\\%\\) per year. On the same date, Tara deposits \\(X\\) into a different bank account. The account is credited interest using a force of interest \\(\\delta_t=\\dfrac{2t}{t^2+k}\\). From the end of the \\(4\\)th year until the end of the \\(8\\)th year, both accounts earn the same dollar amount of interest. Calculate \\(k\\).",
+  "choices": [
+    "\\(80\\)",
+    "\\(100\\)",
+    "\\(110\\)",
+    "\\(120\\)",
+    "\\(140\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "For Kelly, the account earns simple interest at a rate of \\(10\\%\\), so the accumulation function is \\(a_K(t)=1+0.1t\\).",
+    "For Tara, the force of interest is \\(\\delta_t=\\dfrac{2t}{t^2+k}\\).",
+    "We need an accumulation function \\(a_T(t)\\) such that \\(\\dfrac{a_T'(t)}{a_T(t)}=\\dfrac{2t}{t^2+k}\\).",
+    "Since \\(\\dfrac{d}{dt}(t^2+k)=2t\\), we have \\(\\int \\dfrac{2t}{t^2+k}\\,dt=\\ln(t^2+k)\\).",
+    "Thus, \\(a_T(t)=C(t^2+k)\\).",
+    "Because an accumulation function must satisfy \\(a_T(0)=1\\), we get \\(1=Ck\\), so \\(C=\\dfrac{1}{k}\\).",
+    "Therefore, \\(a_T(t)=\\dfrac{t^2+k}{k}=\\dfrac{t^2}{k}+1\\).",
+    "The dollar amount of interest earned from the end of year \\(4\\) to the end of year \\(8\\) is equal for both accounts.",
+    "Since both deposits are \\(X\\), cancel \\(X\\) and set \\(a_K(8)-a_K(4)=a_T(8)-a_T(4)\\).",
+    "For Kelly, \\(a_K(8)-a_K(4)=(1+0.1(8))-(1+0.1(4))=1.8-1.4=0.4\\).",
+    "For Tara, \\(a_T(8)-a_T(4)=\\left(\\dfrac{8^2}{k}+1\\right)-\\left(\\dfrac{4^2}{k}+1\\right)=\\dfrac{64}{k}-\\dfrac{16}{k}=\\dfrac{48}{k}\\).",
+    "Set the two equal: \\(0.4=\\dfrac{48}{k}\\).",
+    "Solving gives \\(k=\\dfrac{48}{0.4}=120\\)."
+  ],
+  "generalization": "When comparing dollar amounts of interest over an interval, compare the change in accumulated value over that interval. If the same amount is deposited in both funds, the common deposit can be canceled.",
+  "answer_text": "The value of \\(k\\) is \\(\\boxed{120}\\)."
+},
+  {
+  "id": 60,
+  "topic": "force of interest and effective discount rate",
+  "title": "Exercise 60",
+  "statement": "If the force of interest is \\(\\delta_t=\\dfrac{2t}{1+t^2}\\), what is the effective rate of discount during year \\(4\\)?",
+  "choices": [
+    "Less than \\(0.43\\)",
+    "At least \\(0.43\\), but less than \\(0.53\\)",
+    "At least \\(0.53\\), but less than \\(0.63\\)",
+    "At least \\(0.63\\), but less than \\(0.73\\)",
+    "At least \\(0.73\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Use the definition of force of interest: \\(\\delta_t=\\dfrac{a'(t)}{a(t)}\\).",
+    "Since \\(\\delta_t=\\dfrac{2t}{1+t^2}\\), observe that the numerator \\(2t\\) is the derivative of the denominator \\(1+t^2\\).",
+    "Therefore, the accumulation function is \\(a(t)=1+t^2\\).",
+    "Indeed, \\(\\dfrac{a'(t)}{a(t)}=\\dfrac{2t}{1+t^2}\\).",
+    "Year \\(4\\) is the period from time \\(3\\) to time \\(4\\).",
+    "Compute \\(a(3)=1+3^2=10\\).",
+    "Compute \\(a(4)=1+4^2=17\\).",
+    "The effective rate of discount during year \\(4\\) is the interest earned during the period divided by the final value.",
+    "Thus, \\(d_4=\\dfrac{a(4)-a(3)}{a(4)}\\).",
+    "Substitute the values: \\(d_4=\\dfrac{17-10}{17}=\\dfrac{7}{17}=0.4118\\)."
+  ],
+  "generalization": "Given an accumulation function \\(a(t)\\), the effective rate of discount during year \\(n\\) is \\(d_n=\\dfrac{a(n)-a(n-1)}{a(n)}\\). If a force of interest is given, first recover or identify the accumulation function using \\(\\delta_t=\\dfrac{a'(t)}{a(t)}\\).",
+  "answer_text": "The effective rate of discount during year \\(4\\) is \\(\\boxed{0.4118}\\), which is less than \\(0.43\\). The correct choice is A."
+},
+  {
+  "id": 61,
+  "topic": "force of interest and nominal interest rate",
+  "title": "Exercise 61",
+  "statement": "Fund \\(X\\) starts with \\(\\$1{,}000\\) and accumulates with a force of interest \\(\\delta_t=\\dfrac{1}{15-t}\\), for \\(0\\leq t\\leq 15\\). Fund \\(Y\\) starts with \\(\\$1{,}000\\) and accumulates with an interest rate of \\(8\\%\\) per annum compounded semiannually for the first three years and an effective interest rate of \\(i\\) per annum thereafter. Fund \\(X\\) equals Fund \\(Y\\) at the end of four years. Calculate \\(i\\).",
+  "choices": [
+    "\\(0.0750\\)",
+    "\\(0.0775\\)",
+    "\\(0.0800\\)",
+    "\\(0.0825\\)",
+    "\\(0.0850\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "For Fund \\(X\\), the force of interest is \\(\\delta_t=\\dfrac{1}{15-t}\\).",
+    "The accumulation function is \\(a_X(t)=\\exp\\left(\\int_0^t \\dfrac{1}{15-s}\\,ds\\right)\\).",
+    "Compute the integral: \\(\\int_0^t \\dfrac{1}{15-s}\\,ds=\\left[-\\ln(15-s)\\right]_0^t\\).",
+    "Thus, \\(\\int_0^t \\dfrac{1}{15-s}\\,ds=-\\ln(15-t)+\\ln(15)=\\ln\\left(\\dfrac{15}{15-t}\\right)\\).",
+    "Therefore, \\(a_X(t)=\\dfrac{15}{15-t}=\\left(1-\\dfrac{t}{15}\\right)^{-1}\\).",
+    "At time \\(4\\), Fund \\(X\\) has value \\(1000a_X(4)=1000\\left(1-\\dfrac{4}{15}\\right)^{-1}\\).",
+    "This equals \\(1000\\left(\\dfrac{15}{11}\\right)=1363.64\\).",
+    "For Fund \\(Y\\), the first three years use a nominal annual interest rate of \\(8\\%\\), compounded semiannually.",
+    "The effective semiannual interest rate is \\(\\dfrac{0.08}{2}=0.04\\).",
+    "Over three years, there are \\(3\\cdot 2=6\\) semiannual periods.",
+    "Thus, after three years, Fund \\(Y\\) has value \\(1000(1.04)^6\\).",
+    "During the fourth year, Fund \\(Y\\) earns an annual effective interest rate \\(i\\), so its value at time \\(4\\) is \\(1000(1.04)^6(1+i)\\).",
+    "Since Fund \\(X\\) equals Fund \\(Y\\) at time \\(4\\), set \\(1000(1.04)^6(1+i)=1000\\left(\\dfrac{15}{11}\\right)\\).",
+    "Cancel \\(1000\\): \\((1.04)^6(1+i)=\\dfrac{15}{11}\\).",
+    "Solving gives \\(i=\\dfrac{15}{11(1.04)^6}-1\\).",
+    "Therefore, \\(i=0.0777\\)."
+  ],
+  "generalization": "When a fund accumulates under a force of interest \\(\\delta_t\\), its accumulation factor over \\([0,t]\\) is \\(\\exp\\left(\\int_0^t \\delta_s\\,ds\\right)\\). When comparing funds, compute each accumulated value at the same time and set them equal.",
+  "answer_text": "The annual effective interest rate is approximately \\(\\boxed{0.0777}\\), so the closest answer is \\(\\boxed{0.0775}\\)."
+},
+  {
+  "id": 62,
+  "topic": "force of interest and accumulation function",
+  "title": "Exercise 62",
+  "statement": "A fund starts with a zero balance at time \\(0\\). The fund accumulates with a varying force of interest \\(\\delta_t=\\dfrac{2t}{t^2+1}\\), for \\(t>0\\). A deposit of \\(\\$100{,}000\\) is made at time \\(2\\). Calculate the number of years from the time of deposit for the fund to double.",
+  "choices": [
+    "\\(0.5\\)",
+    "\\(1.0\\)",
+    "\\(1.5\\)",
+    "\\(2.0\\)",
+    "\\(2.5\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "The force of interest is \\(\\delta_t=\\dfrac{2t}{t^2+1}\\).",
+    "Notice that the numerator \\(2t\\) is the derivative of the denominator \\(t^2+1\\).",
+    "Therefore, the accumulation function is \\(a(t)=t^2+1\\).",
+    "Indeed, \\(\\dfrac{a'(t)}{a(t)}=\\dfrac{2t}{t^2+1}=\\delta_t\\).",
+    "The deposit is made at time \\(2\\), so we accumulate from time \\(2\\) to an unknown time \\(t\\).",
+    "The accumulation factor from time \\(2\\) to time \\(t\\) is \\(\\dfrac{a(t)}{a(2)}\\).",
+    "We want the deposit to double, so \\(100{,}000\\dfrac{a(t)}{a(2)}=200{,}000\\).",
+    "Cancel \\(100{,}000\\): \\(\\dfrac{a(t)}{a(2)}=2\\).",
+    "Since \\(a(2)=2^2+1=5\\), we get \\(\\dfrac{t^2+1}{5}=2\\).",
+    "Thus, \\(t^2+1=10\\).",
+    "Therefore, \\(t^2=9\\), so \\(t=3\\).",
+    "The fund doubles at time \\(3\\). Since the deposit was made at time \\(2\\), the number of years from the time of deposit is \\(3-2=1\\)."
+  ],
+  "generalization": "If a deposit is made at time \\(s\\) and grows under an accumulation function \\(a(t)\\), then its value at time \\(t\\) is the deposit multiplied by \\(\\dfrac{a(t)}{a(s)}\\).",
+  "answer_text": "The fund doubles \\(\\boxed{1.0}\\) year after the deposit, so the correct choice is B."
+},
+  {
+  "id": 63,
+  "topic": "nominal discount rate and force of interest",
+  "title": "Exercise 63",
+  "statement": "A deposit of \\(100\\) is made into a fund at time \\(t=0\\). The fund pays interest at a nominal annual rate of discount \\(d\\), compounded quarterly, for the first two years. Beginning at time \\(t=2\\), interest is credited at a force of interest \\(\\delta_t=\\dfrac{1}{t+1}\\). At time \\(t=5\\), the accumulated value of the fund is \\(260\\). Calculate \\(d\\).",
+  "choices": [
+    "\\(12.7\\%\\)",
+    "\\(12.9\\%\\)",
+    "\\(13.1\\%\\)",
+    "\\(13.3\\%\\)",
+    "\\(13.5\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "For the first two years, the fund earns a nominal annual rate of discount \\(d\\), compounded quarterly.",
+    "The effective quarterly discount rate is \\(\\dfrac{d}{4}\\).",
+    "There are \\(2\\cdot 4=8\\) quarters in the first two years.",
+    "Thus, the accumulation factor for the first two years is \\(\\left(1-\\dfrac{d}{4}\\right)^{-8}\\).",
+    "Beginning at time \\(t=2\\), the force of interest is \\(\\delta_t=\\dfrac{1}{t+1}\\).",
+    "This corresponds to the accumulation function \\(a(t)=t+1\\), since \\(\\dfrac{a'(t)}{a(t)}=\\dfrac{1}{t+1}\\).",
+    "The accumulation factor from time \\(2\\) to time \\(5\\) is \\(\\dfrac{a(5)}{a(2)}\\).",
+    "Compute \\(a(2)=2+1=3\\).",
+    "Compute \\(a(5)=5+1=6\\).",
+    "Therefore, \\(\\dfrac{a(5)}{a(2)}=\\dfrac{6}{3}=2\\).",
+    "Set up the accumulated value equation: \\(100\\left(1-\\dfrac{d}{4}\\right)^{-8}\\dfrac{a(5)}{a(2)}=260\\).",
+    "Substitute \\(\\dfrac{a(5)}{a(2)}=2\\): \\(100\\left(1-\\dfrac{d}{4}\\right)^{-8}(2)=260\\).",
+    "Thus, \\(\\left(1-\\dfrac{d}{4}\\right)^{-8}=1.3\\).",
+    "Taking both sides to the power \\(-1/8\\), we get \\(1-\\dfrac{d}{4}=1.3^{-1/8}\\).",
+    "Therefore, \\(d=4\\left(1-1.3^{-1/8}\\right)\\).",
+    "Hence, \\(d=0.12905\\), or approximately \\(12.9\\%\\)."
+  ],
+  "generalization": "When a fund uses different interest measures over different time intervals, multiply the accumulation factors for each interval. A nominal discount rate compounded quarterly gives accumulation factor \\(\\left(1-\\dfrac{d}{4}\\right)^{-4t}\\), while a force of interest \\(\\delta_t\\) gives accumulation factor \\(\\exp\\left(\\int \\delta_t\\,dt\\right)\\).",
+  "answer_text": "The nominal annual rate of discount is approximately \\(\\boxed{12.9\\%}\\), so the correct choice is B."
 }
 ]
