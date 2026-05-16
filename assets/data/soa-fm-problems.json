@@ -1295,5 +1295,196 @@
   ],
   "generalization": "For a nominal annual interest rate \\(i\\) compounded semiannually, the account value after \\(t\\) years is \\(A(t)=A(0)\\left(1+\\dfrac{i}{2}\\right)^{2t}\\). Interest credited during year \\(n\\) is the difference between the balances at times \\(n\\) and \\(n-1\\), or equivalently the balance at time \\(n-1\\) multiplied by the equivalent annual effective rate.",
   "answer_text": "The nominal annual interest rate is \\(\\boxed{10.15\\%}\\), so the correct choice is A."
+},
+  {
+  "id": 51,
+  "topic": "force of interest",
+  "title": "Exercise 51",
+  "statement": "On July \\(1\\), \\(1984\\), a person invested \\(\\$1{,}000\\) in a fund for which the force of interest at time \\(t\\) is given by \\(\\delta_t=\\dfrac{3+2t}{50}\\), where \\(t\\) is the number of years since January \\(1\\), \\(1984\\). Determine the accumulated value of the investment on January \\(1\\), \\(1985\\).",
+  "choices": [
+    "\\(\\$1{,}015.11\\)",
+    "\\(\\$1{,}030.45\\)",
+    "\\(\\$1{,}046.03\\)",
+    "\\(\\$1{,}060.00\\)",
+    "\\(\\$1{,}075.29\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since \\(t\\) is measured from January \\(1\\), \\(1984\\), July \\(1\\), \\(1984\\), corresponds to \\(t=0.5\\).",
+    "January \\(1\\), \\(1985\\), corresponds to \\(t=1\\).",
+    "To accumulate from time \\(0.5\\) to time \\(1\\), use \\(a(0.5,1)=\\exp\\left(\\int_{0.5}^{1}\\delta_s\\,ds\\right)\\).",
+    "Thus, the accumulated value is \\(1000\\exp\\left(\\int_{0.5}^{1}\\dfrac{3+2s}{50}\\,ds\\right)\\).",
+    "Compute the integral: \\(\\int_{0.5}^{1}\\dfrac{3+2s}{50}\\,ds=\\left[\\dfrac{1}{50}(3s+s^2)\\right]_{0.5}^{1}\\).",
+    "Substitute the bounds: \\(\\dfrac{1}{50}\\left[(3(1)+1^2)-(3(0.5)+(0.5)^2)\\right]\\).",
+    "This gives \\(\\dfrac{1}{50}(4-1.75)=\\dfrac{2.25}{50}=0.045\\).",
+    "Therefore, the accumulated value is \\(1000e^{0.045}=1046.03\\)."
+  ],
+  "generalization": "If a deposit \\(P\\) is made at time \\(t_1\\) and the force of interest is \\(\\delta_t\\), then the accumulated value at time \\(t_2\\) is \\(P\\exp\\left(\\int_{t_1}^{t_2}\\delta_t\\,dt\\right)\\).",
+  "answer_text": "The accumulated value is \\(\\boxed{\\$1{,}046.03}\\)."
+},
+  {
+  "id": 52,
+  "topic": "force of interest",
+  "title": "Exercise 52",
+  "statement": "\\(X\\) is deposited into a savings account at time \\(t=0\\). No other amounts are deposited. The force of interest for the fund is \\(\\delta_t=\\dfrac{t}{30}\\). The balance of the fund after \\(10\\) years is \\(12{,}500\\). Determine \\(X\\).",
+  "choices": [
+    "\\(2{,}360.95\\)",
+    "\\(3{,}125.00\\)",
+    "\\(4{,}721.90\\)",
+    "\\(7{,}887.41\\)",
+    "\\(12{,}500.00\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The deposit \\(X\\) is made at time \\(0\\), and the accumulated value at time \\(10\\) is \\(12{,}500\\).",
+    "Using the force of interest, the accumulation factor from time \\(0\\) to time \\(10\\) is \\(\\exp\\left(\\int_0^{10}\\delta_t\\,dt\\right)\\).",
+    "Therefore, \\(12{,}500=X\\exp\\left(\\int_0^{10}\\dfrac{t}{30}\\,dt\\right)\\).",
+    "Solving for \\(X\\), we get \\(X=12{,}500\\exp\\left(-\\int_0^{10}\\dfrac{t}{30}\\,dt\\right)\\).",
+    "Compute the integral: \\(\\int_0^{10}\\dfrac{t}{30}\\,dt=\\left[\\dfrac{t^2}{60}\\right]_0^{10}\\).",
+    "Thus, \\(\\int_0^{10}\\dfrac{t}{30}\\,dt=\\dfrac{100}{60}=\\dfrac{5}{3}\\).",
+    "Therefore, \\(X=12{,}500e^{-5/3}\\).",
+    "Hence, \\(X=2{,}360.95\\)."
+  ],
+  "generalization": "If a deposit \\(X\\) at time \\(0\\) accumulates to \\(A(n)\\) under force of interest \\(\\delta_t\\), then \\(A(n)=X\\exp\\left(\\int_0^n\\delta_t\\,dt\\right)\\). Therefore, \\(X=A(n)\\exp\\left(-\\int_0^n\\delta_t\\,dt\\right)\\).",
+  "answer_text": "The initial deposit is \\(\\boxed{2{,}360.95}\\)."
+},
+  {
+  "id": 53,
+  "topic": "force of interest",
+  "title": "Exercise 53",
+  "statement": "\\(\\$1{,}000\\) is deposited into a savings account at time \\(t=0\\). No other amounts are deposited. The accumulated amount in the account at time \\(t\\) is given by \\[A(t)=1000\\left(1+\\frac{2t}{35}\\right)^2.\\] Determine the force of interest at time \\(t=32.5\\).",
+  "choices": [
+    "\\(0.02\\)",
+    "\\(0.03\\)",
+    "\\(0.04\\)",
+    "\\(0.05\\)",
+    "\\(0.06\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Recall that the force of interest is \\(\\delta_t=\\dfrac{A'(t)}{A(t)}\\).",
+    "The accumulated amount is \\(A(t)=1000\\left(1+\\dfrac{2t}{35}\\right)^2\\).",
+    "Differentiate using the chain rule: \\(A'(t)=1000\\cdot 2\\left(1+\\dfrac{2t}{35}\\right)\\left(\\dfrac{2}{35}\\right)\\).",
+    "Thus, \\(A'(t)=\\dfrac{4000}{35}\\left(1+\\dfrac{2t}{35}\\right)\\).",
+    "Therefore, \\(\\delta_t=\\dfrac{\\frac{4000}{35}\\left(1+\\frac{2t}{35}\\right)}{1000\\left(1+\\frac{2t}{35}\\right)^2}\\).",
+    "Cancel common factors: \\(\\delta_t=\\dfrac{\\frac{4}{35}}{1+\\frac{2t}{35}}\\).",
+    "Evaluate at \\(t=32.5\\): \\(\\delta_{32.5}=\\dfrac{\\frac{4}{35}}{1+\\frac{2(32.5)}{35}}\\).",
+    "Since \\(2(32.5)=65\\), we have \\(\\delta_{32.5}=\\dfrac{\\frac{4}{35}}{1+\\frac{65}{35}}\\).",
+    "Thus, \\(\\delta_{32.5}=\\dfrac{\\frac{4}{35}}{\\frac{100}{35}}=\\dfrac{4}{100}=0.04\\)."
+  ],
+  "generalization": "Given an amount function \\(A(t)\\), the force of interest at time \\(t\\) is the instantaneous relative growth rate \\(\\delta_t=\\dfrac{A'(t)}{A(t)}\\).",
+  "answer_text": "The force of interest at time \\(t=32.5\\) is \\(\\boxed{0.04}\\)."
+},
+  {
+  "id": 54,
+  "topic": "force of interest",
+  "title": "Exercise 54",
+  "statement": "A deposit of \\(1\\) will accumulate to \\(2.7183\\) in \\(10\\) years with a force of interest \\[\\delta_t=\\begin{cases} kt, & 0<t<5,\\\\ 0.04kt^2, & 5<t\\leq 10. \\end{cases}\\] Determine \\(k\\).",
+  "choices": [
+    "\\(0.0394\\)",
+    "\\(0.0404\\)",
+    "\\(0.0414\\)",
+    "\\(0.0424\\)",
+    "\\(0.0434\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Use the accumulation formula under a force of interest: \\(a(10)=\\exp\\left(\\int_0^{10}\\delta_t\\,dt\\right)\\).",
+    "Since the force of interest is piecewise, split the integral into two parts: \\(\\int_0^{10}\\delta_t\\,dt=\\int_0^5 kt\\,dt+\\int_5^{10}0.04kt^2\\,dt\\).",
+    "Compute the first integral: \\(\\int_0^5 kt\\,dt=k\\left[\\dfrac{t^2}{2}\\right]_0^5=\\dfrac{25}{2}k=12.5k\\).",
+    "Compute the second integral: \\(\\int_5^{10}0.04kt^2\\,dt=0.04k\\left[\\dfrac{t^3}{3}\\right]_5^{10}\\).",
+    "This gives \\(0.04k\\left(\\dfrac{10^3-5^3}{3}\\right)=0.04k\\left(\\dfrac{875}{3}\\right)=\\dfrac{35}{3}k\\).",
+    "Therefore, \\(2.7183=\\exp\\left(12.5k+\\dfrac{35}{3}k\\right)\\).",
+    "Since \\(12.5=\\dfrac{25}{2}\\), the exponent becomes \\(\\dfrac{25}{2}k+\\dfrac{35}{3}k=\\dfrac{145}{6}k\\).",
+    "Thus, \\(2.7183=e^{\\frac{145}{6}k}\\).",
+    "Taking natural logarithms gives \\(\\ln(2.7183)=\\dfrac{145}{6}k\\).",
+    "Solving for \\(k\\), we get \\(k=\\dfrac{6\\ln(2.7183)}{145}=0.0414\\)."
+  ],
+  "generalization": "When the force of interest is piecewise-defined, split the integral over the relevant intervals. The accumulation factor over \\([0,n]\\) is \\(\\exp\\left(\\int_0^n\\delta_t\\,dt\\right)\\).",
+  "answer_text": "The value of \\(k\\) is \\(\\boxed{0.0414}\\)."
+},
+  {
+  "id": 55,
+  "topic": "force of interest",
+  "title": "Exercise 55",
+  "statement": "Given two accumulation functions: \\(a_1(t)=1+0.08t\\) and \\(a_2(t)=1.05^t\\). At what time \\(t\\) will the forces of interest be equal for the two functions?",
+  "choices": [
+    "\\(6\\)",
+    "\\(7\\)",
+    "\\(8\\)",
+    "\\(9\\)",
+    "\\(10\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Use the definition of force of interest: \\(\\delta_t=\\dfrac{a'(t)}{a(t)}\\).",
+    "For \\(a_1(t)=1+0.08t\\), we have \\(a_1'(t)=0.08\\).",
+    "Thus, \\(\\delta_{1,t}=\\dfrac{0.08}{1+0.08t}\\).",
+    "For \\(a_2(t)=1.05^t\\), we have \\(a_2'(t)=1.05^t\\ln(1.05)\\).",
+    "Thus, \\(\\delta_{2,t}=\\dfrac{1.05^t\\ln(1.05)}{1.05^t}=\\ln(1.05)\\).",
+    "Set the two forces of interest equal: \\(\\dfrac{0.08}{1+0.08t}=\\ln(1.05)\\).",
+    "Solve for \\(t\\): \\(1+0.08t=\\dfrac{0.08}{\\ln(1.05)}\\).",
+    "Thus, \\(t=\\dfrac{\\frac{0.08}{\\ln(1.05)}-1}{0.08}\\).",
+    "Therefore, \\(t=7.99\\), which is approximately \\(8\\)."
+  ],
+  "generalization": "To compare the forces of interest of two accumulation functions, compute \\(\\delta_t=\\dfrac{a'(t)}{a(t)}\\) for each function, then set the two expressions equal and solve for \\(t\\).",
+  "answer_text": "The forces of interest are equal at approximately \\(\\boxed{t=8}\\)."
+},
+  {
+  "id": 56,
+  "topic": "force of interest",
+  "title": "Exercise 56",
+  "statement": "A fund earns interest at a force of interest \\(\\delta_t=kt\\). A deposit of \\(\\$100\\) at time \\(t=0\\) will grow to \\(\\$250\\) at the end of \\(5\\) years. Determine \\(k\\).",
+  "choices": [
+    "\\(0.08\\ln(1.5)\\)",
+    "\\(0.06\\)",
+    "\\(0.08\\ln(2.5)\\)",
+    "\\(0.08\\)",
+    "\\(\\ln(2.5)\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Recall that the accumulation factor for a given force of interest is \\(\\exp\\left(\\int \\delta_t\\,dt\\right)\\).",
+    "Since the deposit is made at time \\(0\\) and accumulated to time \\(5\\), we have \\(100\\exp\\left(\\int_0^5 kt\\,dt\\right)=250\\).",
+    "Compute the integral: \\(\\int_0^5 kt\\,dt=\\left[\\dfrac{kt^2}{2}\\right]_0^5\\).",
+    "Thus, \\(\\int_0^5 kt\\,dt=\\dfrac{k(5)^2}{2}=12.5k\\).",
+    "Therefore, \\(100\\exp(12.5k)=250\\).",
+    "Divide both sides by \\(100\\): \\(\\exp(12.5k)=2.5\\).",
+    "Taking natural logarithms gives \\(12.5k=\\ln(2.5)\\).",
+    "Hence, \\(k=\\dfrac{\\ln(2.5)}{12.5}\\).",
+    "Since \\(\\dfrac{1}{12.5}=0.08\\), we obtain \\(k=0.08\\ln(2.5)\\)."
+  ],
+  "generalization": "If a deposit \\(P\\) accumulates to \\(F\\) over \\([0,n]\\) under force of interest \\(\\delta_t\\), then \\(F=P\\exp\\left(\\int_0^n \\delta_t\\,dt\\right)\\).",
+  "answer_text": "The value of \\(k\\) is \\(\\boxed{0.08\\ln(2.5)}\\), so the correct choice is C."
+},
+  {
+  "id": 57,
+  "topic": "force of interest and effective interest rate",
+  "title": "Exercise 57",
+  "statement": "In Fund \\(X\\), money accumulates at a force of interest \\(\\delta_t=0.01t+0.1\\), for \\(0\\leq t\\leq 20\\). In Fund \\(Y\\), money accumulates at an annual effective interest rate \\(i\\). An amount of \\(1\\) is invested in each of Fund \\(X\\) and Fund \\(Y\\) for \\(20\\) years. The value of Fund \\(X\\) at the end of \\(20\\) years is equal to the value of Fund \\(Y\\) at the end of \\(20\\) years. Calculate the value of Fund \\(Y\\) at the end of \\(1.5\\) years.",
+  "choices": [
+    "\\(e^{0.1}\\)",
+    "\\(e^{0.2}\\)",
+    "\\(e^{0.3}\\)",
+    "\\(e^{0.4}\\)",
+    "\\(e^{0.5}\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "First calculate the accumulated value of Fund \\(X\\) after \\(20\\) years.",
+    "Since Fund \\(X\\) accumulates with force of interest \\(\\delta_t=0.01t+0.1\\), its accumulation factor over \\(20\\) years is \\(\\exp\\left(\\int_0^{20}(0.01t+0.1)\\,dt\\right)\\).",
+    "Compute the integral: \\(\\int_0^{20}(0.01t+0.1)\\,dt=\\left[0.005t^2+0.1t\\right]_0^{20}\\).",
+    "Thus, \\(\\left[0.005t^2+0.1t\\right]_0^{20}=0.005(20)^2+0.1(20)\\).",
+    "This equals \\(0.005(400)+2=2+2=4\\).",
+    "Therefore, the value of Fund \\(X\\) after \\(20\\) years is \\(e^4\\).",
+    "Fund \\(Y\\) accumulates at an annual effective interest rate \\(i\\), so its value after \\(20\\) years is \\((1+i)^{20}\\).",
+    "Since the two fund values are equal at time \\(20\\), we have \\((1+i)^{20}=e^4\\).",
+    "The value of Fund \\(Y\\) after \\(1.5\\) years is \\((1+i)^{1.5}\\).",
+    "Rewrite this as \\((1+i)^{1.5}=\\left((1+i)^{20}\\right)^{1.5/20}\\).",
+    "Substitute \\((1+i)^{20}=e^4\\): \\((1+i)^{1.5}=(e^4)^{1.5/20}\\).",
+    "Thus, \\((1+i)^{1.5}=e^{4(1.5/20)}=e^{0.3}\\)."
+  ],
+  "generalization": "When two funds have equal accumulated values at a given time, use that equality to determine the equivalent growth factor. A force of interest \\(\\delta_t\\) gives accumulation \\(\\exp\\left(\\int \\delta_t\\,dt\\right)\\), while a constant annual effective rate \\(i\\) gives accumulation \\((1+i)^t\\).",
+  "answer_text": "The value of Fund \\(Y\\) at the end of \\(1.5\\) years is \\(\\boxed{e^{0.3}}\\), so the correct choice is C."
 }
 ]
