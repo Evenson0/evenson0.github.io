@@ -1146,5 +1146,154 @@
   ],
   "generalization": "When rates vary by year and depend on an unknown parameter, first write an equation of value using the known accumulated amount. Solve for the unknown rate, then apply the required accumulation formula.",
   "answer_text": "Gertrude would have approximately \\(\\boxed{17{,}936}\\), so the correct choice is D."
+},
+  {
+  "id": 46,
+  "topic": "accumulation function and effective discount rate",
+  "title": "Exercise 46",
+  "statement": "The accumulation function is a function of the number of years elapsed, \\(t\\): \\[a(t)=1+0.04t+0.002t^2.\\] Calculate the equivalent level annual effective discount rate earned during the first \\(15\\) years.",
+  "choices": [
+    "\\(4.5\\%\\)",
+    "\\(4.6\\%\\)",
+    "\\(4.7\\%\\)",
+    "\\(4.8\\%\\)",
+    "\\(4.9\\%\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "First calculate the accumulation function at time \\(15\\).",
+    "Using \\(a(t)=1+0.04t+0.002t^2\\), we get \\(a(15)=1+0.04(15)+0.002(15)^2\\).",
+    "Thus, \\(a(15)=1+0.60+0.45=2.05\\).",
+    "Let \\(d\\) be the equivalent level annual effective discount rate over the first \\(15\\) years.",
+    "Under a level effective discount rate, the accumulation factor over \\(15\\) years is \\((1-d)^{-15}\\).",
+    "Since the accumulated value of \\(1\\) after \\(15\\) years is \\(2.05\\), we set \\(2.05=(1-d)^{-15}\\).",
+    "Equivalently, \\(2.05=\\dfrac{1}{(1-d)^{15}}\\).",
+    "Therefore, \\((1-d)^{15}=\\dfrac{1}{2.05}\\).",
+    "Taking the fifteenth root gives \\(1-d=\\left(\\dfrac{1}{2.05}\\right)^{1/15}\\).",
+    "Thus, \\(d=1-\\left(\\dfrac{1}{2.05}\\right)^{1/15}=0.04673\\)."
+  ],
+  "generalization": "If an accumulation function \\(a(t)\\) is given and we want the equivalent level annual effective discount rate over \\(n\\) years, solve \\(a(n)=(1-d)^{-n}\\). Therefore, \\(d=1-a(n)^{-1/n}\\).",
+  "answer_text": "The equivalent level annual effective discount rate is \\(\\boxed{4.7\\%}\\), so the correct choice is C."
+},
+  {
+  "id": 47,
+  "topic": "simple interest and nominal interest rate",
+  "title": "Exercise 47",
+  "statement": "An investor deposited \\(\\$1{,}000\\) in each of Bank \\(X\\) and Bank \\(Y\\). Bank \\(X\\) credits simple interest at an annual rate of \\(10\\%\\) for the first five years and \\(7\\%\\) thereafter. Bank \\(Y\\) credits interest at an annual nominal rate of \\(5\\%\\), compounded quarterly. The interest credited in the eighth year by Bank \\(Y\\) exceeds the interest credited in the eighth year by Bank \\(X\\) by \\(N\\). Calculate the absolute value of \\(N\\).",
+  "choices": [
+    "\\(0.36\\)",
+    "\\(2.14\\)",
+    "\\(20.00\\)",
+    "\\(56.36\\)",
+    "\\(56.93\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "For Bank \\(X\\), simple interest is credited at an annual rate of \\(7\\%\\) after the first five years.",
+    "Under simple interest, the interest credited each year is based on the original principal.",
+    "Therefore, the interest credited by Bank \\(X\\) during the eighth year is \\(1{,}000(0.07)=70\\).",
+    "For Bank \\(Y\\), the annual nominal interest rate is \\(5\\%\\), compounded quarterly.",
+    "The effective quarterly interest rate is \\(\\dfrac{0.05}{4}=0.0125\\).",
+    "The eighth year is the period from time \\(7\\) to time \\(8\\).",
+    "Since interest is compounded quarterly, time \\(7\\) corresponds to \\(7(4)=28\\) quarters, and time \\(8\\) corresponds to \\(8(4)=32\\) quarters.",
+    "The interest credited by Bank \\(Y\\) during the eighth year is \\(1{,}000(1.0125)^{32}-1{,}000(1.0125)^{28}\\).",
+    "Thus, the interest credited by Bank \\(Y\\) during the eighth year is \\(72.14\\).",
+    "The excess is \\(N=72.14-70=2.14\\)."
+  ],
+  "generalization": "Under simple interest, interest during each year is based on the original principal. Under compound interest, interest during a year is the difference between the accumulated values at the end and beginning of that year.",
+  "answer_text": "The absolute value of \\(N\\) is \\(\\boxed{2.14}\\), so the correct choice is B."
+},
+  {
+  "id": 48,
+  "topic": "nominal interest rate",
+  "title": "Exercise 48",
+  "statement": "Lucas opens a bank account with \\(\\$1{,}000\\) and lets it accumulate at an annual nominal interest rate of \\(6\\%\\) convertible semiannually. Danielle also opens a bank account with \\(\\$1{,}000\\) at the same time as Lucas, but it grows at an annual nominal interest rate of \\(3\\%\\) convertible monthly. For each account, interest is credited only at the end of each interest conversion period. Calculate the number of months required for the amount in Lucas's account to be at least double the amount in Danielle's account.",
+  "choices": [
+    "\\(276\\)",
+    "\\(282\\)",
+    "\\(285\\)",
+    "\\(286\\)",
+    "\\(288\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "Lucas earns a nominal annual interest rate of \\(6\\%\\) convertible semiannually, so his effective semiannual interest rate is \\(\\dfrac{0.06}{2}=0.03\\).",
+    "Danielle earns a nominal annual interest rate of \\(3\\%\\) convertible monthly, so her effective monthly interest rate is \\(\\dfrac{0.03}{12}=0.0025\\).",
+    "Let \\(n\\) be the number of years required for Lucas's account to be twice Danielle's account, ignoring the final rounding to a conversion date.",
+    "Lucas's accumulated value after \\(n\\) years is \\(1{,}000(1.03)^{2n}\\).",
+    "Danielle's accumulated value after \\(n\\) years is \\(1{,}000(1.0025)^{12n}\\).",
+    "Set Lucas's amount equal to twice Danielle's amount: \\(1{,}000(1.03)^{2n}=2(1{,}000)(1.0025)^{12n}\\).",
+    "Cancel \\(1{,}000\\): \\((1.03)^{2n}=2(1.0025)^{12n}\\).",
+    "Taking natural logarithms gives \\(2n\\ln(1.03)=\\ln 2+12n\\ln(1.0025)\\).",
+    "Rearrange: \\(n\\left[2\\ln(1.03)-12\\ln(1.0025)\\right]=\\ln 2\\).",
+    "Thus, \\(n=\\dfrac{\\ln 2}{2\\ln(1.03)-12\\ln(1.0025)}=23.775\\) years.",
+    "This is \\(23.775(12)=285.3\\) months.",
+    "However, Lucas's interest is credited only at the end of each semiannual conversion period, so Lucas's balance changes only every \\(6\\) months.",
+    "The next multiple of \\(6\\) months after \\(285.3\\) months is \\(288\\) months."
+  ],
+  "generalization": "When interest is credited only at conversion dates, first solve the continuous-looking equation to locate the crossing time, then round up to the next valid conversion date for the account whose credited balance must reach the required level.",
+  "answer_text": "The required number of months is \\(\\boxed{288}\\), so the correct choice is E."
+},
+  {
+  "id": 49,
+  "topic": "amount function and accumulation function",
+  "title": "Exercise 49",
+  "statement": "Consider the following amount function, which is a function of the number of years elapsed, \\(t\\): \\[A(t)=Xt^2+Yt+Z.\\] You are given that \\(A(0)=500\\), \\(A(1)=521\\), and \\(A(4)=596\\). Calculate the future value at time \\(5\\) of \\(400\\) that is deposited at time \\(0\\).",
+  "choices": [
+    "\\(500\\)",
+    "\\(521\\)",
+    "\\(575\\)",
+    "\\(625\\)",
+    "\\(675\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "First use \\(A(0)=500\\) to find \\(Z\\).",
+    "Since \\(A(0)=X(0)^2+Y(0)+Z\\), we get \\(Z=500\\).",
+    "Using \\(A(1)=521\\), we have \\(X+Y+500=521\\), so \\(X+Y=21\\).",
+    "Using \\(A(4)=596\\), we have \\(16X+4Y+500=596\\), so \\(16X+4Y=96\\).",
+    "Divide the second equation by \\(4\\): \\(4X+Y=24\\).",
+    "Now subtract \\(X+Y=21\\) from \\(4X+Y=24\\), giving \\(3X=3\\).",
+    "Thus, \\(X=1\\).",
+    "Substitute \\(X=1\\) into \\(X+Y=21\\), giving \\(Y=20\\).",
+    "Therefore, the amount function is \\(A(t)=t^2+20t+500\\).",
+    "The accumulation function is \\(a(t)=\\dfrac{A(t)}{A(0)}\\).",
+    "Compute \\(A(5)=5^2+20(5)+500=625\\).",
+    "Thus, \\(a(5)=\\dfrac{625}{500}=1.25\\).",
+    "The future value at time \\(5\\) of \\(400\\) deposited at time \\(0\\) is \\(400a(5)=400(1.25)=500\\)."
+  ],
+  "generalization": "If an amount function \\(A(t)\\) is given and a deposit \\(P\\) is made at time \\(0\\), then its accumulated value at time \\(t\\) is \\(P\\dfrac{A(t)}{A(0)}\\).",
+  "answer_text": "The future value is \\(\\boxed{500}\\), so the correct choice is A."
+},
+  {
+  "id": 50,
+  "topic": "nominal interest rate",
+  "title": "Exercise 50",
+  "statement": "An investor deposits \\(100\\) into a bank account at time \\(0\\). The bank credits interest at an annual nominal interest rate of \\(i\\), compounded semiannually. The total amount of interest credited in the twelfth year is twice the amount of interest credited in the fifth year. Calculate \\(i\\).",
+  "choices": [
+    "\\(10.15\\%\\)",
+    "\\(10.24\\%\\)",
+    "\\(10.32\\%\\)",
+    "\\(10.41\\%\\)",
+    "\\(10.48\\%\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Since \\(i\\) is an annual nominal rate compounded semiannually, the effective semiannual rate is \\(\\dfrac{i}{2}\\).",
+    "Let \\(j\\) be the equivalent annual effective interest rate.",
+    "Then \\(1+j=\\left(1+\\dfrac{i}{2}\\right)^2\\).",
+    "The interest credited during a given year is the account balance at the beginning of the year multiplied by \\(j\\).",
+    "The twelfth year is the period from time \\(11\\) to time \\(12\\), so the interest credited in the twelfth year is \\(A(11)j\\).",
+    "The fifth year is the period from time \\(4\\) to time \\(5\\), so the interest credited in the fifth year is \\(A(4)j\\).",
+    "We are told that the interest credited in the twelfth year is twice the interest credited in the fifth year: \\(A(11)j=2A(4)j\\).",
+    "Since \\(j>0\\), cancel \\(j\\): \\(A(11)=2A(4)\\).",
+    "Using semiannual compounding, \\(A(11)=100\\left(1+\\dfrac{i}{2}\\right)^{22}\\) and \\(A(4)=100\\left(1+\\dfrac{i}{2}\\right)^8\\).",
+    "Thus, \\(100\\left(1+\\dfrac{i}{2}\\right)^{22}=2(100)\\left(1+\\dfrac{i}{2}\\right)^8\\).",
+    "Cancel \\(100\\left(1+\\dfrac{i}{2}\\right)^8\\): \\(\\left(1+\\dfrac{i}{2}\\right)^{14}=2\\).",
+    "Taking the fourteenth root gives \\(1+\\dfrac{i}{2}=2^{1/14}\\).",
+    "Therefore, \\(i=2\\left(2^{1/14}-1\\right)=0.1015\\)."
+  ],
+  "generalization": "For a nominal annual interest rate \\(i\\) compounded semiannually, the account value after \\(t\\) years is \\(A(t)=A(0)\\left(1+\\dfrac{i}{2}\\right)^{2t}\\). Interest credited during year \\(n\\) is the difference between the balances at times \\(n\\) and \\(n-1\\), or equivalently the balance at time \\(n-1\\) multiplied by the equivalent annual effective rate.",
+  "answer_text": "The nominal annual interest rate is \\(\\boxed{10.15\\%}\\), so the correct choice is A."
 }
 ]
