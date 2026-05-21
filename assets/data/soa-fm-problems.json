@@ -1671,5 +1671,88 @@
   ],
   "generalization": "When a fund uses different interest measures over different time intervals, multiply the accumulation factors for each interval. A nominal discount rate compounded quarterly gives accumulation factor \\(\\left(1-\\dfrac{d}{4}\\right)^{-4t}\\), while a force of interest \\(\\delta_t\\) gives accumulation factor \\(\\exp\\left(\\int \\delta_t\\,dt\\right)\\).",
   "answer_text": "The nominal annual rate of discount is approximately \\(\\boxed{12.9\\%}\\), so the correct choice is B."
+},
+  {
+  "id": 64,
+  "topic": "equations of value",
+  "title": "Exercise 64",
+  "statement": "Brown will receive \\(1000\\) at the end of \\(10\\) years. In return, he will pay \\(200\\) now and another payment \\(X\\) in \\(5\\) years. At a \\(10\\%\\) annual effective interest rate, what should the size of Brown's second payment be?",
+  "choices": [
+    "\\(250.00\\)",
+    "\\(275.50\\)",
+    "\\(298.82\\)",
+    "\\(322.10\\)",
+    "\\(350.00\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Choose time \\(5\\) as the comparison date.",
+    "The payment of \\(200\\) at time \\(0\\) accumulates for \\(5\\) years, so its value at time \\(5\\) is \\(200(1.10)^5\\).",
+    "The payment \\(X\\) is already at time \\(5\\), so it remains \\(X\\).",
+    "The payment of \\(1000\\) at time \\(10\\) is discounted back \\(5\\) years to time \\(5\\), giving \\(1000v_{0.10}^5\\).",
+    "Since \\(v_{0.10}=\\dfrac{1}{1.10}\\), we have \\(v_{0.10}^5=(1.10)^{-5}\\).",
+    "The equation of value at time \\(5\\) is \\(200(1.10)^5+X=1000(1.10)^{-5}\\).",
+    "Solving for \\(X\\), we get \\(X=1000(1.10)^{-5}-200(1.10)^5\\).",
+    "Therefore, \\(X=298.82\\)."
+  ],
+  "generalization": "An equation of value can be written at any comparison date under compound interest. The key is to move every cash flow to the same date before comparing them.",
+  "answer_text": "Brown's second payment should be \\(\\boxed{298.82}\\), so the correct choice is C."
+},
+  {
+  "id": 65,
+  "topic": "equations of value and force of interest",
+  "title": "Exercise 65",
+  "statement": "You are given \\(\\delta_t=\\dfrac{2}{1+t}\\). A payment of \\(300\\) at the end of \\(3\\) years and \\(600\\) at the end of \\(6\\) years has the same present value as a payment of \\(200\\) at the end of \\(2\\) years and \\(X\\) at the end of \\(5\\) years. Calculate \\(X\\).",
+  "choices": [
+    "\\(295.82\\)",
+    "\\(305.82\\)",
+    "\\(315.82\\)",
+    "\\(325.82\\)",
+    "\\(335.82\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since the problem states that the two payment streams have the same present value, the comparison date is time \\(0\\).",
+    "First find the accumulation function from the force of interest: \\(a(t)=\\exp\\left(\\int_0^t \\delta_s\\,ds\\right)\\).",
+    "Substitute \\(\\delta_s=\\dfrac{2}{1+s}\\): \\(a(t)=\\exp\\left(\\int_0^t \\dfrac{2}{1+s}\\,ds\\right)\\).",
+    "Compute the integral: \\(\\int_0^t \\dfrac{2}{1+s}\\,ds=\\left[2\\ln(1+s)\\right]_0^t\\).",
+    "Thus, \\(a(t)=\\exp(2\\ln(1+t))=(1+t)^2\\).",
+    "The present value of a payment at time \\(t\\) is found by dividing by \\(a(t)\\).",
+    "Write the equation of value at time \\(0\\): \\(\\dfrac{300}{a(3)}+\\dfrac{600}{a(6)}=\\dfrac{200}{a(2)}+\\dfrac{X}{a(5)}\\).",
+    "Since \\(a(t)=(1+t)^2\\), we have \\(a(2)=9\\), \\(a(3)=16\\), \\(a(5)=36\\), and \\(a(6)=49\\).",
+    "Substitute these values: \\(\\dfrac{300}{16}+\\dfrac{600}{49}=\\dfrac{200}{9}+\\dfrac{X}{36}\\).",
+    "Solve for \\(X\\): \\(X=36\\left(\\dfrac{300}{16}+\\dfrac{600}{49}-\\dfrac{200}{9}\\right)\\).",
+    "Therefore, \\(X=315.82\\)."
+  ],
+  "generalization": "When a force of interest is given, first derive the accumulation function \\(a(t)\\). Then discount each payment to the comparison date using the appropriate factor. If the problem says present value, the comparison date is time \\(0\\).",
+  "answer_text": "The value of \\(X\\) is \\(\\boxed{315.82}\\), so the correct choice is C."
+},
+  {
+  "id": 66,
+  "topic": "equations of value and nominal discount rate",
+  "title": "Exercise 66",
+  "statement": "Harry borrows \\(3500\\) from Mary. He agrees to repay the loan with annual payments, made at the end of each year, of \\(500\\), \\(1000\\), \\(1500\\), and \\(X\\). Mary charges Harry a rate of discount of \\(10\\%\\) convertible four times per year. Determine the amount of the final payment.",
+  "choices": [
+    "\\(1626.12\\)",
+    "\\(1656.12\\)",
+    "\\(1686.12\\)",
+    "\\(1716.12\\)",
+    "\\(1746.12\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The nominal annual rate of discount is \\(10\\%\\), convertible four times per year.",
+    "Therefore, the effective discount rate per quarter is \\(\\dfrac{0.10}{4}=0.025\\).",
+    "Choose time \\(0\\) as the comparison date.",
+    "The payment of \\(500\\) at the end of year \\(1\\) is discounted for \\(4\\) quarters, giving \\(500(1-0.025)^4\\).",
+    "The payment of \\(1000\\) at the end of year \\(2\\) is discounted for \\(8\\) quarters, giving \\(1000(1-0.025)^8\\).",
+    "The payment of \\(1500\\) at the end of year \\(3\\) is discounted for \\(12\\) quarters, giving \\(1500(1-0.025)^{12}\\).",
+    "The final payment \\(X\\) at the end of year \\(4\\) is discounted for \\(16\\) quarters, giving \\(X(1-0.025)^{16}\\).",
+    "Write the equation of value at time \\(0\\): \\(3500=500(1-0.025)^4+1000(1-0.025)^8+1500(1-0.025)^{12}+X(1-0.025)^{16}\\).",
+    "Solve for \\(X\\): \\(X=\\dfrac{3500-500(1-0.025)^4-1000(1-0.025)^8-1500(1-0.025)^{12}}{(1-0.025)^{16}}\\).",
+    "Therefore, \\(X=1686.12\\)."
+  ],
+  "generalization": "For a nominal annual discount rate \\(d^{(m)}\\) convertible \\(m\\) times per year, the effective discount rate per conversion period is \\(\\dfrac{d^{(m)}}{m}\\). A payment made after \\(n\\) conversion periods has present value \\(C\\left(1-\\dfrac{d^{(m)}}{m}\\right)^n\\).",
+  "answer_text": "The final payment is \\(\\boxed{1686.12}\\), so the correct choice is C."
 }
 ]
