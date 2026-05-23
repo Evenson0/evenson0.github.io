@@ -2126,5 +2126,107 @@
   ],
   "generalization": "When the unknown is the interest rate, write an equation of value in terms of the discount factor \\(v=\\dfrac{1}{1+i}\\). If the equation is quadratic in \\(v\\), solve using the quadratic formula and reject any negative discount factor.",
   "answer_text": "The annual effective interest rate is \\(\\boxed{0.10}\\), so the correct choice is C."
+},
+  {
+  "id": 79,
+  "topic": "unknown rate of interest and outstanding balance",
+  "title": "Exercise 79",
+  "statement": "John borrows \\(1{,}000\\) from Jane at an annual effective rate of interest \\(i\\). He agrees to pay back \\(1{,}000\\) after six years and \\(1{,}366.87\\) after another six years. Three years after his first payment, John repays the outstanding balance. What is the amount of John's second payment?",
+  "choices": [
+    "\\(1{,}020\\)",
+    "\\(1{,}027\\)",
+    "\\(1{,}048\\)",
+    "\\(1{,}073\\)",
+    "\\(1{,}094\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let \\(v=\\dfrac{1}{1+i}\\).",
+    "Under the original repayment plan, John pays \\(1{,}000\\) at time \\(6\\) and \\(1{,}366.87\\) at time \\(12\\).",
+    "Use the original repayment plan to find the interest rate.",
+    "The equation of value at time \\(0\\) is \\(1{,}000=1{,}000v^6+1{,}366.87v^{12}\\).",
+    "Rearrange: \\(1{,}366.87v^{12}+1{,}000v^6-1{,}000=0\\).",
+    "Let \\(x=v^6\\). Then \\(v^{12}=x^2\\).",
+    "The equation becomes \\(1{,}366.87x^2+1{,}000x-1{,}000=0\\).",
+    "Using the quadratic formula gives a positive solution \\(x=0.56447\\).",
+    "Thus, \\(v^6=0.56447\\), which gives \\(i=0.10\\).",
+    "John makes his first payment at time \\(6\\), then repays the outstanding balance three years later, at time \\(9\\).",
+    "At time \\(9\\), the only remaining scheduled payment is \\(1{,}366.87\\) due at time \\(12\\).",
+    "Therefore, the outstanding balance at time \\(9\\) is \\(X=1{,}366.87v^3\\).",
+    "Since \\(i=0.10\\), \\(v=\\dfrac{1}{1.10}\\).",
+    "Thus, \\(X=1{,}366.87(1.10)^{-3}=1{,}026.95\\).",
+    "Therefore, John's second payment is approximately \\(1{,}027\\)."
+  ],
+  "generalization": "To find an outstanding balance at a given time, take the value at that time of the remaining scheduled payments. If the interest rate is not given directly, first use the original equation of value to solve for the rate.",
+  "answer_text": "John's second payment is approximately \\(\\boxed{1{,}027}\\), so the correct choice is B."
+},
+  {
+  "id": 80,
+  "topic": "unknown rate of interest and equations of value",
+  "title": "Exercise 80",
+  "statement": "At an annual effective interest rate \\(i\\), with \\(i>0\\), the following are all equal: (i) the present value of \\(10{,}000\\) at the end of \\(6\\) years; (ii) the sum of the present values of \\(6{,}000\\) at the end of year \\(t\\) and \\(56{,}000\\) at the end of year \\(2t\\); (iii) \\(5{,}000\\) immediately. Calculate the present value of a payment of \\(8{,}000\\) at the end of year \\(t+3\\), using the same annual effective interest rate.",
+  "choices": [
+    "\\(1{,}330\\)",
+    "\\(1{,}415\\)",
+    "\\(1{,}600\\)",
+    "\\(1{,}775\\)",
+    "\\(2{,}000\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let \\(v=\\dfrac{1}{1+i}\\).",
+    "Since the present value of \\(10{,}000\\) at the end of \\(6\\) years is equal to \\(5{,}000\\) immediately, we have \\(10{,}000v^6=5{,}000\\).",
+    "Thus, \\(v^6=\\dfrac{1}{2}\\).",
+    "Therefore, \\(v^3=\\sqrt{\\dfrac{1}{2}}=\\dfrac{1}{\\sqrt{2}}\\).",
+    "Equivalently, the interest rate is \\(i=2^{1/6}-1=0.122462\\).",
+    "Now use the equality between the second payment stream and \\(5{,}000\\) immediately: \\(5{,}000=6{,}000v^t+56{,}000v^{2t}\\).",
+    "Let \\(x=v^t\\). Then \\(v^{2t}=x^2\\).",
+    "The equation becomes \\(5{,}000=6{,}000x+56{,}000x^2\\).",
+    "Divide by \\(1{,}000\\): \\(5=6x+56x^2\\).",
+    "Rearrange: \\(56x^2+6x-5=0\\).",
+    "Using the quadratic formula, \\(x=\\dfrac{-6\\pm\\sqrt{6^2-4(56)(-5)}}{2(56)}\\).",
+    "This gives \\(x=\\dfrac{-6+34}{112}=\\dfrac{28}{112}=\\dfrac{1}{4}\\), discarding the negative solution.",
+    "Therefore, \\(v^t=\\dfrac{1}{4}\\).",
+    "The present value of \\(8{,}000\\) at time \\(t+3\\) is \\(8{,}000v^{t+3}\\).",
+    "Rewrite this as \\(8{,}000v^tv^3\\).",
+    "Substitute \\(v^t=\\dfrac{1}{4}\\) and \\(v^3=\\dfrac{1}{\\sqrt{2}}\\).",
+    "Thus, \\(8{,}000v^{t+3}=8{,}000\\left(\\dfrac{1}{4}\\right)\\left(\\dfrac{1}{\\sqrt{2}}\\right)=1{,}414.21\\)."
+  ],
+  "generalization": "When several present values are known to be equal, use the simplest equality first to obtain information about the discount factor. Then use another equality to solve for expressions such as \\(v^t\\), without necessarily needing to solve directly for \\(t\\).",
+  "answer_text": "The present value is approximately \\(\\boxed{1{,}415}\\), so the correct choice is B."
+},
+  {
+  "id": 81,
+  "topic": "unknown rate of interest and force of interest",
+  "title": "Exercise 81",
+  "statement": "At time \\(t=0\\), Donald puts \\(1{,}000\\) into a fund crediting interest at a nominal annual rate of \\(i\\), compounded semiannually. At time \\(t=2\\), Lewis puts \\(1{,}000\\) into a different fund crediting interest at a force of interest \\(\\delta_t=\\dfrac{1}{5+t}\\), for all \\(t\\). At time \\(t=16\\), the amounts in each fund will be equal. Calculate \\(i\\).",
+  "choices": [
+    "\\(6.9\\%\\)",
+    "\\(7.0\\%\\)",
+    "\\(7.1\\%\\)",
+    "\\(7.2\\%\\)",
+    "\\(7.3\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "For Lewis, identify the accumulation function from the force of interest.",
+    "Since \\(\\delta_t=\\dfrac{1}{5+t}\\), we can write \\(\\delta_t=\\dfrac{\\frac{1}{5}}{1+\\frac{t}{5}}\\).",
+    "Thus, an accumulation function is \\(a(t)=1+\\dfrac{t}{5}\\).",
+    "Indeed, \\(\\dfrac{a'(t)}{a(t)}=\\dfrac{\\frac{1}{5}}{1+\\frac{t}{5}}=\\dfrac{1}{5+t}=\\delta_t\\).",
+    "Donald accumulates from time \\(0\\) to time \\(16\\). Since his nominal annual rate is \\(i\\), compounded semiannually, the effective semiannual rate is \\(\\dfrac{i}{2}\\).",
+    "There are \\(16\\cdot 2=32\\) semiannual periods.",
+    "Therefore, Donald's accumulated value at time \\(16\\) is \\(1{,}000\\left(1+\\dfrac{i}{2}\\right)^{32}\\).",
+    "Lewis accumulates from time \\(2\\) to time \\(16\\). His accumulation factor is \\(\\dfrac{a(16)}{a(2)}\\).",
+    "Compute \\(a(16)=1+\\dfrac{16}{5}=4.2\\).",
+    "Compute \\(a(2)=1+\\dfrac{2}{5}=1.4\\).",
+    "Thus, \\(\\dfrac{a(16)}{a(2)}=\\dfrac{4.2}{1.4}=3\\).",
+    "Since the two funds are equal at time \\(16\\), set \\(1{,}000\\left(1+\\dfrac{i}{2}\\right)^{32}=1{,}000\\cdot 3\\).",
+    "Cancel \\(1{,}000\\): \\(\\left(1+\\dfrac{i}{2}\\right)^{32}=3\\).",
+    "Taking the \\(32\\)nd root gives \\(1+\\dfrac{i}{2}=3^{1/32}\\).",
+    "Therefore, \\(i=2\\left(3^{1/32}-1\\right)\\).",
+    "Thus, \\(i=0.06986\\), or approximately \\(7.0\\%\\)."
+  ],
+  "generalization": "When comparing two funds at a common future date, write the accumulated value of each fund at that date. For a force of interest, either integrate the force over the relevant interval or identify the accumulation function and use the ratio \\(\\dfrac{a(t_2)}{a(t_1)}\\).",
+  "answer_text": "The nominal annual rate compounded semiannually is approximately \\(\\boxed{7.0\\%}\\), so the correct choice is B."
 }
 ]
