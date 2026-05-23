@@ -2347,5 +2347,40 @@
   ],
   "generalization": "When payments are monthly and the interest rate is nominal convertible monthly, use the monthly effective rate directly. A single payment at the end of \\(K\\) months has present value \\(Cv^K\\), while a level monthly annuity-immediate has present value \\(R\\annimm{n}\\).",
   "answer_text": "The value of \\(K\\) is approximately \\(\\boxed{29.0}\\), so the correct choice is A."
+},
+  {
+  "id": 86,
+  "topic": "annuities-immediate and unknown rate of interest",
+  "title": "Exercise 86",
+  "statement": "An annuity pays \\(2\\) at the end of each year for \\(18\\) years. Another annuity pays \\(2.5\\) at the end of each year for \\(9\\) years. At an effective annual interest rate of \\(i\\), where \\(0<i<1\\), the present values of both annuities are equal. Calculate \\(i\\).",
+  "choices": [
+    "\\(14\\%\\)",
+    "\\(17\\%\\)",
+    "\\(20\\%\\)",
+    "\\(23\\%\\)",
+    "\\(26\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let \\(v=\\dfrac{1}{1+i}\\).",
+    "The present value of the first annuity is \\(2\\annimm{18}\\).",
+    "The present value of the second annuity is \\(2.5\\annimm{9}\\).",
+    "Since the present values are equal, \\(2\\annimm{18}=2.5\\annimm{9}\\).",
+    "Using \\(\\annimm{n}=\\dfrac{1-v^n}{i}\\), we get \\(2\\left(\\dfrac{1-v^{18}}{i}\\right)=2.5\\left(\\dfrac{1-v^9}{i}\\right)\\).",
+    "Since \\(i>0\\), multiply both sides by \\(i\\): \\(2(1-v^{18})=2.5(1-v^9)\\).",
+    "Expand and rearrange: \\(2v^{18}-2.5v^9+0.5=0\\).",
+    "Let \\(x=v^9\\). Then \\(v^{18}=x^2\\).",
+    "The equation becomes \\(2x^2-2.5x+0.5=0\\).",
+    "Using the quadratic formula gives \\(x=1\\) or \\(x=0.25\\).",
+    "Since \\(x=v^9\\), we have \\(v^9=1\\) or \\(v^9=0.25\\).",
+    "The solution \\(v^9=1\\) implies \\(v=1\\), hence \\(i=0\\), which is not allowed because \\(0<i<1\\).",
+    "Therefore, \\(v^9=0.25\\).",
+    "Taking the ninth root gives \\(v=(0.25)^{1/9}\\).",
+    "Since \\(v=\\dfrac{1}{1+i}\\), we have \\(i=\\dfrac{1}{(0.25)^{1/9}}-1\\).",
+    "Thus, \\(i=0.16653\\), or approximately \\(16.653\\%\\).",
+    "The closest answer choice is \\(17\\%\\)."
+  ],
+  "generalization": "When two annuity present values are equal, write both values using \\(\\annimm{n}=\\dfrac{1-v^n}{i}\\). If the terms involve powers like \\(v^9\\) and \\(v^{18}\\), use a substitution such as \\(x=v^9\\) to reduce the equation to a quadratic.",
+  "answer_text": "The effective annual interest rate is approximately \\(\\boxed{16.653\\%}\\), so the correct choice is B."
 }
 ]
