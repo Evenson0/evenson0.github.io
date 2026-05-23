@@ -2228,5 +2228,124 @@
   ],
   "generalization": "When comparing two funds at a common future date, write the accumulated value of each fund at that date. For a force of interest, either integrate the force over the relevant interval or identify the accumulation function and use the ratio \\(\\dfrac{a(t_2)}{a(t_1)}\\).",
   "answer_text": "The nominal annual rate compounded semiannually is approximately \\(\\boxed{7.0\\%}\\), so the correct choice is B."
+},
+  {
+  "id": 82,
+  "topic": "annuities-immediate and present value",
+  "title": "Exercise 82",
+  "statement": "A payment of \\(1\\) is to be made each year for \\(22\\) years. The effective annual rate of interest is \\(8.25\\%\\). If the first payment is one year from now, the present value of these payments is \\(10\\). Calculate the present value if the first payment is \\(22\\) years from now.",
+  "choices": [
+    "\\(1.69\\)",
+    "\\(1.79\\)",
+    "\\(1.89\\)",
+    "\\(1.99\\)",
+    "\\(2.09\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "If the first payment is one year from now, then the payments occur at times \\(1,2,\\ldots,22\\).",
+    "We are given that the present value of this annuity-immediate is \\(\\annimm{22}=10\\).",
+    "If the first payment is \\(22\\) years from now, then the payments occur at times \\(22,23,\\ldots,43\\).",
+    "This is still a 22-payment annuity-immediate, but \\(\\annimm{22}\\) is measured one period before the first payment.",
+    "Since the first payment is at time \\(22\\), the value \\(\\annimm{22}=10\\) is measured at time \\(21\\).",
+    "To find the present value at time \\(0\\), discount this value by \\(21\\) years.",
+    "Thus, \\(PV=10v^{21}\\).",
+    "Since \\(i=0.0825\\), we have \\(v=\\dfrac{1}{1.0825}\\).",
+    "Therefore, \\(PV=10(1.0825)^{-21}\\).",
+    "This gives \\(PV=1.89\\)."
+  ],
+  "generalization": "The value \\(\\annimm{n}\\) is measured one period before the first payment. If the first payment is delayed, first locate the time at which the annuity value is measured, then discount that value back to the present.",
+  "answer_text": "The present value is \\(\\boxed{1.89}\\), so the correct choice is C."
+},
+  {
+  "id": 83,
+  "topic": "annuities-immediate and present value",
+  "title": "Exercise 83",
+  "statement": "John invests \\(100{,}000\\) into a fund earning an annual effective interest rate of \\(4\\%\\). John will make withdrawals of \\(X\\) at the end of every \\(5\\) years for a total of \\(10\\) withdrawals. After the last withdrawal, the fund's balance will be \\(0\\). Calculate \\(X\\).",
+  "choices": [
+    "\\(23{,}213.09\\)",
+    "\\(24{,}213.09\\)",
+    "\\(25{,}213.09\\)",
+    "\\(26{,}213.09\\)",
+    "\\(27{,}213.09\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The withdrawals are made every \\(5\\) years, so we use the effective interest rate per \\(5\\)-year period.",
+    "Let \\(j\\) be the effective rate per \\(5\\) years.",
+    "Since the annual effective interest rate is \\(4\\%\\), we have \\(1+j=(1.04)^5\\).",
+    "Thus, \\(j=(1.04)^5-1=0.216652902\\).",
+    "The withdrawals form an annuity-immediate with \\(10\\) payments of \\(X\\), where each payment period is \\(5\\) years.",
+    "Therefore, the present value of the withdrawals is \\(X\\annimm{10}_{j}\\).",
+    "The equation of value at time \\(0\\) is \\(100{,}000=X\\annimm{10}_{j}\\).",
+    "Using \\(\\annimm{10}_{j}=\\dfrac{1-v_j^{10}}{j}\\), where \\(v_j=\\dfrac{1}{1+j}\\), we get \\(100{,}000=X\\left(\\dfrac{1-v_j^{10}}{j}\\right)\\).",
+    "Substitute \\(j=0.216652902\\): \\(100{,}000=X\\left(\\dfrac{1-(1.216652902)^{-10}}{0.216652902}\\right)\\).",
+    "Solving for \\(X\\), we get \\(X=25{,}213.09\\)."
+  ],
+  "generalization": "When annuity payments are made every \\(k\\) years, convert the annual effective interest rate into an effective rate per \\(k\\)-year payment period before using the annuity formula.",
+  "answer_text": "The withdrawal amount is \\(\\boxed{25{,}213.09}\\), so the correct choice is C."
+},
+  {
+  "id": 84,
+  "topic": "annuities-immediate and present value",
+  "title": "Exercise 84",
+  "statement": "A 20-year annuity pays \\(100\\) every other year beginning at the end of the second year, with additional payments of \\(300\\) each at the ends of years \\(3\\), \\(9\\), and \\(15\\). The effective annual interest rate is \\(4\\%\\). Calculate the present value of the annuity.",
+  "choices": [
+    "\\(1{,}310\\)",
+    "\\(1{,}340\\)",
+    "\\(1{,}370\\)",
+    "\\(1{,}400\\)",
+    "\\(1{,}430\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Let \\(v_{0.04}=\\dfrac{1}{1.04}\\).",
+    "The regular payments of \\(100\\) occur every other year beginning at time \\(2\\), so they occur at times \\(2,4,6,\\ldots,20\\).",
+    "There are \\(10\\) regular payments of \\(100\\).",
+    "Since the payment period is \\(2\\) years, use the effective interest rate per \\(2\\)-year period.",
+    "Let \\(j\\) be the effective interest rate per \\(2\\) years. Then \\(1+j=(1.04)^2\\).",
+    "Thus, \\(j=(1.04)^2-1=0.0816\\).",
+    "The present value of the regular payments is \\(100\\annimm{10}_{j}\\).",
+    "The additional payments of \\(300\\) occur at times \\(3\\), \\(9\\), and \\(15\\).",
+    "Their present value is \\(300v_{0.04}^{3}+300v_{0.04}^{9}+300v_{0.04}^{15}\\).",
+    "Therefore, \\(PV=100\\annimm{10}_{j}+300v_{0.04}^{3}+300v_{0.04}^{9}+300v_{0.04}^{15}\\).",
+    "Using \\(\\annimm{10}_{j}=\\dfrac{1-v_j^{10}}{j}\\), we get \\(PV=100\\left(\\dfrac{1-(1.0816)^{-10}}{0.0816}\\right)+300(1.04)^{-3}+300(1.04)^{-9}+300(1.04)^{-15}\\).",
+    "Thus, \\(PV=1{,}310.25\\).",
+    "So the present value is approximately \\(1{,}310\\)."
+  ],
+  "generalization": "When payments occur every \\(k\\) years, convert the annual effective interest rate into an effective rate per \\(k\\)-year payment period for the annuity formula. Payments that do not fit the regular annuity pattern should be valued separately and added.",
+  "answer_text": "The present value is approximately \\(\\boxed{1{,}310}\\), so the correct choice is A."
+},
+  {
+  "id": 85,
+  "topic": "annuities-immediate and unknown time",
+  "title": "Exercise 85",
+  "statement": "On January 1, 1985, Marc has the following two options for repaying a loan: (i) sixty monthly payments of \\(100\\), commencing February 1, 1985; (ii) a single payment of \\(6{,}000\\) at the end of \\(K\\) months. Interest is at a nominal annual rate of \\(12\\%\\), compounded monthly. The two options have the same present value. Determine \\(K\\).",
+  "choices": [
+    "\\(29.0\\)",
+    "\\(29.5\\)",
+    "\\(30.0\\)",
+    "\\(30.5\\)",
+    "\\(31.0\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The nominal annual interest rate is \\(12\\%\\), compounded monthly.",
+    "Therefore, the effective monthly interest rate is \\(j=\\dfrac{0.12}{12}=0.01\\).",
+    "Let \\(v_{0.01}=\\dfrac{1}{1.01}\\).",
+    "The first option consists of \\(60\\) monthly payments of \\(100\\), beginning one month from January 1, 1985.",
+    "Therefore, its present value is \\(100\\annimm{60}_{0.01}\\).",
+    "The second option is a single payment of \\(6{,}000\\) at the end of \\(K\\) months, so its present value is \\(6{,}000v_{0.01}^{K}\\).",
+    "Since the two options have the same present value, \\(100\\annimm{60}_{0.01}=6{,}000v_{0.01}^{K}\\).",
+    "Using \\(\\annimm{60}_{0.01}=\\dfrac{1-v_{0.01}^{60}}{0.01}\\), we get \\(100\\left(\\dfrac{1-v_{0.01}^{60}}{0.01}\\right)=6{,}000v_{0.01}^{K}\\).",
+    "Thus, \\(v_{0.01}^{K}=\\dfrac{100\\left(\\frac{1-v_{0.01}^{60}}{0.01}\\right)}{6{,}000}\\).",
+    "Substituting \\(v_{0.01}=\\dfrac{1}{1.01}\\), we obtain \\(v_{0.01}^{K}=0.7492506\\).",
+    "Taking natural logarithms gives \\(K\\ln(v_{0.01})=\\ln(0.7492506)\\).",
+    "Therefore, \\(K=\\dfrac{\\ln(0.7492506)}{\\ln(v_{0.01})}\\).",
+    "Since \\(v_{0.01}=\\dfrac{1}{1.01}\\), we get \\(K=29.0123\\).",
+    "Thus, \\(K\\approx 29.0\\)."
+  ],
+  "generalization": "When payments are monthly and the interest rate is nominal convertible monthly, use the monthly effective rate directly. A single payment at the end of \\(K\\) months has present value \\(Cv^K\\), while a level monthly annuity-immediate has present value \\(R\\annimm{n}\\).",
+  "answer_text": "The value of \\(K\\) is approximately \\(\\boxed{29.0}\\), so the correct choice is A."
 }
 ]
