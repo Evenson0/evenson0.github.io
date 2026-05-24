@@ -2382,5 +2382,151 @@
   ],
   "generalization": "When two annuity present values are equal, write both values using \\(\\annimm{n}=\\dfrac{1-v^n}{i}\\). If the terms involve powers like \\(v^9\\) and \\(v^{18}\\), use a substitution such as \\(x=v^9\\) to reduce the equation to a quadratic.",
   "answer_text": "The effective annual interest rate is approximately \\(\\boxed{16.653\\%}\\), so the correct choice is B."
+},
+  {
+  "id": 87,
+  "topic": "annuities-immediate and varying interest rates",
+  "title": "Exercise 87",
+  "statement": "A fifteen-year annuity-immediate has payments of \\(500\\) per year. The rate of interest is \\(3.5\\%\\) for the first nine years and \\(5\\%\\) thereafter. What is the present value of this annuity?",
+  "choices": [
+    "\\(5{,}365.94\\)",
+    "\\(5{,}515.94\\)",
+    "\\(5{,}665.94\\)",
+    "\\(5{,}815.94\\)",
+    "\\(5{,}965.94\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The first \\(9\\) payments occur at times \\(1,2,\\ldots,9\\).",
+    "These payments are valued using the interest rate \\(3.5\\%\\).",
+    "The remaining \\(6\\) payments occur at times \\(10,11,\\ldots,15\\).",
+    "These payments are valued at time \\(9\\) using the interest rate \\(5\\%\\), then discounted back to time \\(0\\) using the rate \\(3.5\\%\\).",
+    "The present value of the first \\(9\\) payments is \\(500\\annimm{9}_{0.035}\\).",
+    "The value at time \\(9\\) of the last \\(6\\) payments is \\(500\\annimm{6}_{0.05}\\).",
+    "Discount this value back to time \\(0\\) using \\(v_{0.035}^{9}\\).",
+    "Thus, \\(PV=500\\annimm{9}_{0.035}+500\\annimm{6}_{0.05}v_{0.035}^{9}\\).",
+    "Using \\(\\annimm{n}=\\dfrac{1-v^n}{i}\\), we get \\(PV=500\\left(\\dfrac{1-(1.035)^{-9}}{0.035}\\right)+500\\left(\\dfrac{1-(1.05)^{-6}}{0.05}\\right)(1.035)^{-9}\\).",
+    "Therefore, \\(PV=5{,}665.94\\)."
+  ],
+  "generalization": "When interest rates change over time, split the annuity into blocks. Value each block using the interest rate that applies during that block, then move each block value to the comparison date using the appropriate discount factors.",
+  "answer_text": "The present value is \\(\\boxed{5{,}665.94}\\), so the correct choice is C."
+},
+  {
+  "id": 88,
+  "topic": "annuities-immediate and TVM function",
+  "title": "Exercise 88",
+  "statement": "John invests \\(100{,}000\\) into a fund earning an annual effective interest rate of \\(4\\%\\). John will make withdrawals of \\(X\\) at the end of every \\(5\\) years for a total of \\(10\\) withdrawals. After the last withdrawal, the fund's balance will be \\(0\\). Calculate \\(X\\).",
+  "choices": [
+    "\\(23{,}213.09\\)",
+    "\\(24{,}213.09\\)",
+    "\\(25{,}213.09\\)",
+    "\\(26{,}213.09\\)",
+    "\\(27{,}213.09\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The withdrawals are made every \\(5\\) years, so we use the effective interest rate per \\(5\\)-year period.",
+    "Let \\(j\\) be the effective rate per \\(5\\) years.",
+    "Since the annual effective interest rate is \\(4\\%\\), we have \\(1+j=(1.04)^5\\).",
+    "Thus, \\(j=(1.04)^5-1=0.216652902\\).",
+    "The equation of value is \\(100{,}000=X\\annimm{10}_{j}\\).",
+    "Using the TVM function, enter \\(N=10\\), \\(I/Y=100((1.04)^5-1)\\), \\(PV=-100{,}000\\), and \\(FV=0\\).",
+    "Then compute \\(PMT\\).",
+    "The calculator gives \\(PMT=25{,}213.09\\).",
+    "Therefore, \\(X=25{,}213.09\\)."
+  ],
+  "generalization": "When annuity payments are made every \\(k\\) years, the TVM interest rate must be the effective rate per \\(k\\)-year payment period. The calculator input \\(I/Y\\) is usually entered as a percentage, so use \\(100j\\), not \\(j\\), when entering the rate.",
+  "answer_text": "The withdrawal amount is \\(\\boxed{25{,}213.09}\\), so the correct choice is C."
+},
+  {
+  "id": 89,
+  "topic": "annuities and counting payments",
+  "title": "Exercise 89",
+  "statement": "Payments are made every \\(5\\) years, with the first payment on July 1, 2014 and the last payment on July 1, 2064. Determine the number of payments.",
+  "choices": [
+    "\\(9\\)",
+    "\\(10\\)",
+    "\\(11\\)",
+    "\\(12\\)",
+    "\\(13\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The payments are made every \\(5\\) years.",
+    "The first payment is in \\(2014\\), and the last payment is in \\(2064\\).",
+    "The payment years are \\(2014,2019,2024,\\ldots,2064\\).",
+    "Using the previous term method, the term before \\(2014\\) is \\(2014-5=2009\\).",
+    "Therefore, the number of payments is \\(\\dfrac{2064-2009}{5}\\).",
+    "This gives \\(\\dfrac{55}{5}=11\\).",
+    "Equivalently, \\(\\dfrac{2064-2014}{5}+1=10+1=11\\)."
+  ],
+  "generalization": "For payments made at regular intervals, the number of payments is \\(\\dfrac{\\text{last payment time}-\\text{first payment time}}{\\text{spacing}}+1\\). Equivalently, subtract the previous term from the last payment time and divide by the spacing.",
+  "answer_text": "There are \\(\\boxed{11}\\) payments, so the correct choice is C."
+},
+  {
+  "id": 90,
+  "topic": "annuities-immediate and mortgage payments",
+  "title": "Exercise 90",
+  "statement": "John has a \\(30\\)-year \\(100{,}000\\) mortgage with monthly payments based on a nominal annual interest rate of \\(12\\%\\), convertible monthly. The first payment is due in one month. Find \\(X\\) such that if John decided to add \\(X\\) to each monthly payment, starting with the first payment, the term of the mortgage would be reduced to \\(25\\) years.",
+  "choices": [
+    "Less than \\(20\\)",
+    "At least \\(20\\), but less than \\(30\\)",
+    "At least \\(30\\), but less than \\(40\\)",
+    "At least \\(40\\), but less than \\(50\\)",
+    "At least \\(50\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "The nominal annual interest rate is \\(12\\%\\), convertible monthly.",
+    "Therefore, the effective monthly interest rate is \\(j=\\dfrac{0.12}{12}=0.01\\).",
+    "Let \\(R\\) be the original monthly payment for the \\(30\\)-year mortgage.",
+    "There are \\(30\\cdot 12=360\\) monthly payments.",
+    "Thus, \\(100{,}000=R\\annimm{360}_{0.01}\\).",
+    "Using \\(\\annimm{360}_{0.01}=\\dfrac{1-(1.01)^{-360}}{0.01}\\), we get \\(R=\\dfrac{100{,}000}{\\annimm{360}_{0.01}}\\).",
+    "Therefore, \\(R=1{,}028.61\\).",
+    "If John reduces the term to \\(25\\) years, there are \\(25\\cdot 12=300\\) monthly payments.",
+    "The new monthly payment is \\(R+X\\).",
+    "Thus, \\(100{,}000=(R+X)\\annimm{300}_{0.01}\\).",
+    "Using \\(\\annimm{300}_{0.01}=\\dfrac{1-(1.01)^{-300}}{0.01}\\), we get \\(R+X=\\dfrac{100{,}000}{\\annimm{300}_{0.01}}\\).",
+    "Therefore, \\(R+X=1{,}053.22\\).",
+    "Since \\(R=1{,}028.61\\), we have \\(X=1{,}053.22-1{,}028.61=24.61\\).",
+    "Thus, \\(X\\) is at least \\(20\\), but less than \\(30\\)."
+  ],
+  "generalization": "For a level-payment mortgage with monthly payments, use the monthly effective interest rate and treat the payments as an annuity-immediate. To compare two mortgage terms, compute the monthly payment for each term and take the difference.",
+  "answer_text": "The additional monthly payment is \\(\\boxed{24.61}\\), so the correct choice is B."
+},
+  {
+  "id": 91,
+  "topic": "annuities-immediate and unknown rate of interest",
+  "title": "Exercise 91",
+  "statement": "Eric receives \\(12{,}000\\) from a life insurance policy. He uses the fund to purchase two different annuities, each costing \\(6{,}000\\). The first annuity is a \\(24\\)-year annuity-immediate paying \\(K\\) per year to himself. The second annuity is an \\(8\\)-year annuity-immediate paying \\(2K\\) per year to his son. Both annuities are based on an annual effective interest rate of \\(i\\), where \\(i>0\\). Determine \\(i\\).",
+  "choices": [
+    "\\(6.0\\%\\)",
+    "\\(6.2\\%\\)",
+    "\\(6.4\\%\\)",
+    "\\(6.6\\%\\)",
+    "\\(6.8\\%\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "For the first annuity, write \\(K\\annimm{24}_{i}=6{,}000\\).",
+    "For the second annuity, write \\(2K\\annimm{8}_{i}=6{,}000\\).",
+    "Therefore, \\(K\\annimm{8}_{i}=3{,}000\\).",
+    "Rewrite the \\(24\\)-year annuity as three deferred \\(8\\)-year annuities: \\(\\annimm{24}_{i}=\\annimm{8}_{i}+v^8\\annimm{8}_{i}+v^{16}\\annimm{8}_{i}\\).",
+    "Multiply by \\(K\\): \\(K\\annimm{24}_{i}=K\\annimm{8}_{i}+Kv^8\\annimm{8}_{i}+Kv^{16}\\annimm{8}_{i}\\).",
+    "Substitute the known values: \\(6{,}000=3{,}000+3{,}000v^8+3{,}000v^{16}\\).",
+    "Divide by \\(3{,}000\\): \\(2=1+v^8+v^{16}\\).",
+    "Thus, \\(v^{16}+v^8-1=0\\).",
+    "Let \\(x=v^8\\). Then \\(v^{16}=x^2\\).",
+    "The equation becomes \\(x^2+x-1=0\\).",
+    "Using the quadratic formula, \\(x=\\dfrac{-1\\pm\\sqrt{5}}{2}\\).",
+    "Since \\(x=v^8>0\\), keep \\(x=\\dfrac{-1+\\sqrt{5}}{2}\\).",
+    "Therefore, \\(v^8=\\dfrac{-1+\\sqrt{5}}{2}\\).",
+    "Taking the eighth root gives \\(v=\\left(\\dfrac{-1+\\sqrt{5}}{2}\\right)^{1/8}\\).",
+    "Since \\(v=\\dfrac{1}{1+i}\\), we get \\(i=\\left(\\dfrac{-1+\\sqrt{5}}{2}\\right)^{-1/8}-1\\).",
+    "Thus, \\(i=0.061997\\), or approximately \\(6.2\\%\\)."
+  ],
+  "generalization": "A long annuity can often be split into smaller deferred annuities. For example, \\(\\annimm{24}=\\annimm{8}+v^8\\annimm{8}+v^{16}\\annimm{8}\\). This can turn an unknown-rate annuity equation into a polynomial equation in \\(v^n\\).",
+  "answer_text": "The annual effective interest rate is approximately \\(\\boxed{6.2\\%}\\), so the correct choice is B."
 }
 ]
