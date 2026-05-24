@@ -2528,5 +2528,211 @@
   ],
   "generalization": "A long annuity can often be split into smaller deferred annuities. For example, \\(\\annimm{24}=\\annimm{8}+v^8\\annimm{8}+v^{16}\\annimm{8}\\). This can turn an unknown-rate annuity equation into a polynomial equation in \\(v^n\\).",
   "answer_text": "The annual effective interest rate is approximately \\(\\boxed{6.2\\%}\\), so the correct choice is B."
+},
+  {
+  "id": 92,
+  "topic": "annuities-immediate and accumulated value",
+  "title": "Exercise 92",
+  "statement": "Grandma decides to set up a college fund for her newborn grandson. She will deposit \\(1{,}335.10\\) into a savings account every year on his birthday, starting on his first birthday and ending on his \\(18\\)th birthday. She hopes to accumulate \\(50{,}000\\) to give to him on his \\(18\\)th birthday. What is the minimum annual compound interest rate the savings account must earn in order to reach her goal?",
+  "choices": [
+    "\\(6\\%\\)",
+    "\\(7\\%\\)",
+    "\\(8\\%\\)",
+    "\\(9\\%\\)",
+    "\\(10\\%\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The deposits are made on birthdays \\(1,2,\\ldots,18\\).",
+    "Therefore, there are \\(18\\) deposits.",
+    "Since the goal is to have \\(50{,}000\\) on the \\(18\\)th birthday, we need the accumulated value at time \\(18\\).",
+    "The deposits form an annuity-immediate with \\(18\\) payments of \\(1{,}335.10\\).",
+    "The accumulated value equation is \\(1{,}335.10s_{\\overline{18}\\,|i}=50{,}000\\).",
+    "Using \\(s_{\\overline{n}\\,|i}=\\dfrac{(1+i)^n-1}{i}\\), we get \\(1{,}335.10\\left(\\dfrac{(1+i)^{18}-1}{i}\\right)=50{,}000\\).",
+    "Solving this equation with a financial calculator gives \\(I/Y=8\\).",
+    "Thus, the account must earn at least \\(8\\%\\)."
+  ],
+  "generalization": "When equal deposits are made at the end of each period and the target amount is at the time of the last deposit, use the accumulated value annuity-immediate formula \\(Rs_{\\overline{n}\\,|i}\\). If the interest rate is unknown, solve the resulting equation for \\(i\\), often using a financial calculator or numerical solver.",
+  "answer_text": "The minimum annual compound interest rate is \\(\\boxed{8\\%}\\), so the correct choice is C."
+},
+  {
+  "id": 93,
+  "topic": "annuities-immediate and accumulated value with force of interest",
+  "title": "Exercise 93",
+  "statement": "You are given \\(\\delta_t=\\dfrac{1}{1+t}\\), for \\(0\\leq t\\leq 5\\). Calculate \\(s_{\\overline{5}\\,|}\\).",
+  "choices": [
+    "\\(7.7\\)",
+    "\\(8.2\\)",
+    "\\(8.7\\)",
+    "\\(9.2\\)",
+    "\\(9.7\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "First identify the accumulation function from the force of interest.",
+    "Since \\(\\delta_t=\\dfrac{1}{1+t}\\), we recognize that \\(a(t)=1+t\\).",
+    "Indeed, \\(\\dfrac{a'(t)}{a(t)}=\\dfrac{1}{1+t}=\\delta_t\\).",
+    "The symbol \\(s_{\\overline{5}\\,|}\\) represents the accumulated value at time \\(5\\) of five payments of \\(1\\), made at times \\(1,2,3,4,5\\).",
+    "A payment made at time \\(k\\) accumulates to time \\(5\\) by the factor \\(\\dfrac{a(5)}{a(k)}\\).",
+    "Therefore, \\(s_{\\overline{5}\\,|}=\\dfrac{a(5)}{a(1)}+\\dfrac{a(5)}{a(2)}+\\dfrac{a(5)}{a(3)}+\\dfrac{a(5)}{a(4)}+1\\).",
+    "Since \\(a(t)=1+t\\), we have \\(a(5)=6\\).",
+    "Thus, \\(s_{\\overline{5}\\,|}=\\dfrac{6}{2}+\\dfrac{6}{3}+\\dfrac{6}{4}+\\dfrac{6}{5}+1\\).",
+    "So \\(s_{\\overline{5}\\,|}=3+2+1.5+1.2+1=8.7\\)."
+  ],
+  "generalization": "When the force of interest is varying, do not use the constant-rate formula \\(s_{\\overline{n}\\,|}=\\dfrac{(1+i)^n-1}{i}\\). Instead, find the accumulation function \\(a(t)\\), then accumulate each payment from its payment time to the valuation time using \\(\\dfrac{a(T)}{a(t)}\\).",
+  "answer_text": "The accumulated value is \\(\\boxed{8.7}\\), so the correct choice is C."
+},
+  {
+  "id": 94,
+  "topic": "annuities-immediate and retirement funding",
+  "title": "Exercise 94",
+  "statement": "A person age \\(40\\) wishes to accumulate a fund for retirement by depositing an amount \\(X\\) at the end of each year into an account paying \\(4\\%\\) interest. At age \\(65\\), the person will use the entire account balance to purchase a 15-year annuity-immediate with annual payments of \\(10{,}000\\), based on an annual effective interest rate of \\(5\\%\\). Find \\(X\\).",
+  "choices": [
+    "\\(2{,}292.36\\)",
+    "\\(2{,}392.36\\)",
+    "\\(2{,}492.36\\)",
+    "\\(2{,}592.36\\)",
+    "\\(2{,}692.36\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The person deposits \\(X\\) at the end of each year from age \\(41\\) through age \\(65\\).",
+    "Thus, there are \\(65-40=25\\) deposits.",
+    "The accumulated value of these deposits at age \\(65\\) is \\(Xs_{\\overline{25}\\,|0.04}\\).",
+    "At age \\(65\\), the person purchases a 15-year annuity-immediate paying \\(10{,}000\\) per year.",
+    "Since the first annuity payment occurs one year later, the value at age \\(65\\) is \\(10{,}000a_{\\overline{15}\\,|0.05}\\).",
+    "Set the accumulated deposits equal to the cost of the annuity: \\(Xs_{\\overline{25}\\,|0.04}=10{,}000a_{\\overline{15}\\,|0.05}\\).",
+    "Solve for \\(X\\): \\(X=\\dfrac{10{,}000a_{\\overline{15}\\,|0.05}}{s_{\\overline{25}\\,|0.04}}\\).",
+    "Use \\(a_{\\overline{15}\\,|0.05}=\\dfrac{1-(1.05)^{-15}}{0.05}\\).",
+    "Use \\(s_{\\overline{25}\\,|0.04}=\\dfrac{(1.04)^{25}-1}{0.04}\\).",
+    "Thus, \\(X=\\dfrac{10{,}000\\left(\\frac{1-(1.05)^{-15}}{0.05}\\right)}{\\frac{(1.04)^{25}-1}{0.04}}\\).",
+    "Therefore, \\(X=2{,}492.36\\)."
+  ],
+  "generalization": "Retirement funding problems often have two stages: an accumulation stage before retirement and a payout stage after retirement. First compute the fund needed at retirement using a present value annuity formula, then set it equal to the accumulated value of the deposits.",
+  "answer_text": "The annual deposit is \\(\\boxed{2{,}492.36}\\), so the correct choice is C."
+},
+  {
+  "id": 95,
+  "topic": "annuities-immediate and grouping payments",
+  "title": "Exercise 95",
+  "statement": "At an effective annual interest rate \\(i\\), you are given: (i) the present value of an annuity-immediate with annual payments of \\(1\\) for \\(n\\) years is \\(40\\); (ii) the present value of an annuity-immediate with annual payments of \\(1\\) for \\(3n\\) years is \\(70\\). Calculate the accumulated value of an annuity-immediate with annual payments of \\(1\\) for \\(2n\\) years.",
+  "choices": [
+    "\\(180\\)",
+    "\\(210\\)",
+    "\\(240\\)",
+    "\\(270\\)",
+    "\\(300\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "We are given \\(a_{\\overline{n}\\,|}=40\\) and \\(a_{\\overline{3n}\\,|}=70\\).",
+    "Split the \\(3n\\)-payment annuity into three blocks of \\(n\\) payments: \\(a_{\\overline{3n}\\,|}=a_{\\overline{n}\\,|}+v^n a_{\\overline{n}\\,|}+v^{2n}a_{\\overline{n}\\,|}\\).",
+    "Substitute the given values: \\(70=40+40v^n+40v^{2n}\\).",
+    "Let \\(x=v^n\\). Then \\(70=40+40x+40x^2\\).",
+    "Subtract \\(40\\): \\(30=40x+40x^2\\).",
+    "Divide by \\(40\\): \\(\\dfrac{3}{4}=x+x^2\\).",
+    "Rearrange: \\(x^2+x-\\dfrac{3}{4}=0\\).",
+    "Using the quadratic formula, \\(x=\\dfrac{-1\\pm2}{2}\\).",
+    "Since \\(x=v^n>0\\), keep \\(x=\\dfrac{1}{2}\\).",
+    "Therefore, \\(v^n=\\dfrac{1}{2}\\).",
+    "Let \\(X=s_{\\overline{2n}\\,|}\\).",
+    "The last \\(2n\\) payments, from time \\(n+1\\) to time \\(3n\\), have accumulated value \\(X\\) at time \\(3n\\).",
+    "The present value of this block is \\(Xv^{3n}\\).",
+    "Since the present value of the full \\(3n\\)-year annuity is \\(70\\), and the present value of the first \\(n\\)-year block is \\(40\\), write \\(70=40+Xv^{3n}\\).",
+    "Since \\(v^n=\\dfrac{1}{2}\\), we have \\(v^{3n}=\\left(\\dfrac{1}{2}\\right)^3=\\dfrac{1}{8}\\).",
+    "Thus, \\(70=40+\\dfrac{X}{8}\\).",
+    "Solving gives \\(X=240\\)."
+  ],
+  "generalization": "When annuities are grouped into blocks of equal length, use identities such as \\(a_{\\overline{3n}\\,|}=a_{\\overline{n}\\,|}+v^n a_{\\overline{n}\\,|}+v^{2n}a_{\\overline{n}\\,|}\\). To find an accumulated value, identify the block whose accumulated value is being requested and discount it back to the comparison date.",
+  "answer_text": "The accumulated value is \\(\\boxed{240}\\), so the correct choice is C."
+},
+  {
+  "id": 96,
+  "topic": "annuities-immediate and accumulated value",
+  "title": "Exercise 96",
+  "statement": "Harriet wishes to accumulate \\(60{,}000\\) in a fund at the end of \\(25\\) years. She plans to deposit \\(80\\) into the fund at the end of each of the first \\(120\\) months. She then plans to deposit \\(80+X\\) into the fund at the end of each of the last \\(180\\) months. Assume the fund earns interest at an annual effective rate of \\(3.66\\%\\). Determine \\(X\\).",
+  "choices": [
+    "Less than \\(86\\)",
+    "At least \\(86\\), but less than \\(88\\)",
+    "At least \\(88\\), but less than \\(90\\)",
+    "At least \\(90\\), but less than \\(92\\)",
+    "At least \\(92\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The deposits are monthly, so convert the annual effective interest rate to an effective monthly interest rate.",
+    "Let \\(j\\) be the effective monthly rate. Since the annual effective rate is \\(3.66\\%\\), we have \\(1+j=(1.0366)^{1/12}\\).",
+    "Thus, \\(j=(1.0366)^{1/12}-1\\approx 0.003\\).",
+    "The target date is the end of \\(25\\) years, which is the end of \\(25\\cdot12=300\\) months.",
+    "View the deposits as \\(80\\) deposited every month for all \\(300\\) months, plus an extra \\(X\\) deposited every month for the last \\(180\\) months.",
+    "The accumulated value of the base deposits is \\(80s_{\\overline{300}\\,|j}\\).",
+    "The accumulated value of the extra deposits is \\(Xs_{\\overline{180}\\,|j}\\).",
+    "Therefore, \\(80s_{\\overline{300}\\,|j}+Xs_{\\overline{180}\\,|j}=60{,}000\\).",
+    "Using \\(s_{\\overline{n}\\,|j}=\\dfrac{(1+j)^n-1}{j}\\), solve for \\(X\\): \\(X=\\dfrac{60{,}000-80s_{\\overline{300}\\,|j}}{s_{\\overline{180}\\,|j}}\\).",
+    "Substituting \\(j=(1.0366)^{1/12}-1\\), we get \\(X=88.85\\).",
+    "Thus, \\(X\\) is at least \\(88\\), but less than \\(90\\)."
+  ],
+  "generalization": "When deposits change after some time, one clean method is to split the cash flows into a base payment stream and an additional payment stream. Here, the payments can be viewed as \\(80\\) for all \\(300\\) months plus an extra \\(X\\) for the last \\(180\\) months.",
+  "answer_text": "The value of \\(X\\) is \\(\\boxed{88.85}\\), so the correct choice is C."
+},
+  {
+  "id": 97,
+  "topic": "annuities-immediate and accumulated value with changing interest rates",
+  "title": "Exercise 97",
+  "statement": "Jeff deposits \\(100\\) at the end of each year for \\(13\\) years into Fund \\(X\\). Rachel deposits \\(100\\) at the end of each year for \\(13\\) years into Fund \\(Y\\). Fund \\(X\\) earns an annual effective rate of \\(15\\%\\) for the first \\(5\\) years and an annual effective rate of \\(6\\%\\) thereafter. Fund \\(Y\\) earns an annual effective rate of \\(i\\). At the end of \\(13\\) years, the accumulated value of Fund \\(X\\) equals the accumulated value of Fund \\(Y\\). Calculate \\(i\\).",
+  "choices": [
+    "\\(6.4\\%\\)",
+    "\\(6.7\\%\\)",
+    "\\(7.0\\%\\)",
+    "\\(7.4\\%\\)",
+    "\\(7.8\\%\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "The key is to accumulate Fund \\(X\\) correctly because the interest rate changes after \\(5\\) years.",
+    "The first \\(5\\) deposits into Fund \\(X\\) accumulate at \\(15\\%\\) until time \\(5\\), then at \\(6\\%\\) from time \\(5\\) to time \\(13\\).",
+    "The accumulated value at time \\(13\\) of these first \\(5\\) deposits is \\(100s_{\\overline{5}\\,|0.15}(1.06)^8\\).",
+    "The last \\(8\\) deposits occur after the rate has changed to \\(6\\%\\), so their accumulated value at time \\(13\\) is \\(100s_{\\overline{8}\\,|0.06}\\).",
+    "Therefore, \\(AV_X=100s_{\\overline{5}\\,|0.15}(1.06)^8+100s_{\\overline{8}\\,|0.06}\\).",
+    "For Fund \\(Y\\), Rachel deposits \\(100\\) for \\(13\\) years at annual effective rate \\(i\\), so \\(AV_Y=100s_{\\overline{13}\\,|i}\\).",
+    "Since the accumulated values are equal, \\(100s_{\\overline{5}\\,|0.15}(1.06)^8+100s_{\\overline{8}\\,|0.06}=100s_{\\overline{13}\\,|i}\\).",
+    "Using \\(s_{\\overline{n}\\,|i}=\\dfrac{(1+i)^n-1}{i}\\), the left-hand side equals \\(2{,}064.38\\).",
+    "Thus, \\(100s_{\\overline{13}\\,|i}=2{,}064.38\\).",
+    "So \\(s_{\\overline{13}\\,|i}=20.6438\\).",
+    "Solve \\(\\dfrac{(1+i)^{13}-1}{i}=20.6438\\).",
+    "This gives \\(i=0.0738\\), or approximately \\(7.38\\%\\).",
+    "The closest answer choice is \\(7.4\\%\\)."
+  ],
+  "generalization": "When an interest rate changes during an accumulation period, split the deposits into groups based on when the rate changes. Accumulate each group using the appropriate rates, then equate the final accumulated values.",
+  "answer_text": "The annual effective interest rate is approximately \\(\\boxed{7.4\\%}\\), so the correct choice is D."
+},
+  {
+  "id": 98,
+  "topic": "annuities-immediate and accumulated value",
+  "title": "Exercise 98",
+  "statement": "Tom has served in the Navy for \\(21\\) years and plans to retire sometime in the future. Every three years, he has received a re-enlistment bonus and deposited a certain dollar amount, \\(X\\), in an account for when he retires. After making his current deposit, the value of his account is \\(180{,}176\\). Assuming an annual effective interest rate of \\(9\\%\\), what were his tri-annual deposits?",
+  "choices": [
+    "Less than \\(10{,}400\\)",
+    "At least \\(10{,}400\\), but less than \\(10{,}425\\)",
+    "At least \\(10{,}425\\), but less than \\(10{,}450\\)",
+    "At least \\(10{,}450\\), but less than \\(10{,}475\\)",
+    "At least \\(10{,}475\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "The deposits are made every \\(3\\) years.",
+    "Since Tom has served for \\(21\\) years and has just made his current deposit, the deposits occur at times \\(3,6,9,12,15,18,21\\).",
+    "Thus, there are \\(\\dfrac{21}{3}=7\\) deposits.",
+    "Since deposits are made every \\(3\\) years, use the effective interest rate per \\(3\\)-year period.",
+    "Let \\(j\\) be the effective rate per \\(3\\) years. Then \\(1+j=(1.09)^3\\).",
+    "Thus, \\(j=(1.09)^3-1=0.295029\\).",
+    "The accumulated value after the current deposit is \\(Xs_{\\overline{7}\\,|j}\\).",
+    "Therefore, \\(Xs_{\\overline{7}\\,|j}=180{,}176\\).",
+    "Using \\(s_{\\overline{7}\\,|j}=\\dfrac{(1+j)^7-1}{j}\\), solve for \\(X\\): \\(X=\\dfrac{180{,}176}{s_{\\overline{7}\\,|j}}\\).",
+    "Substitute \\(j=0.295029\\): \\(X=\\dfrac{180{,}176}{\\frac{(1.295029)^7-1}{0.295029}}\\).",
+    "This gives \\(X=10{,}405\\)."
+  ],
+  "generalization": "When payments are made every \\(k\\) years, convert the annual effective interest rate into an effective rate per \\(k\\)-year payment period before applying the accumulated value formula.",
+  "answer_text": "The tri-annual deposits were \\(\\boxed{10{,}405}\\), so the correct choice is B."
 }
 ]
