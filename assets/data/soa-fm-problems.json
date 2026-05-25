@@ -2734,5 +2734,122 @@
   ],
   "generalization": "When payments are made every \\(k\\) years, convert the annual effective interest rate into an effective rate per \\(k\\)-year payment period before applying the accumulated value formula.",
   "answer_text": "The tri-annual deposits were \\(\\boxed{10{,}405}\\), so the correct choice is B."
+},
+  {
+  "id": 99,
+  "topic": "annuities-due and present value",
+  "title": "Exercise 99",
+  "statement": "At an annual effective interest rate of \\(8\\%\\), the present value of a 30-year annuity-due with annual payments of \\(X\\) is \\(1{,}500\\). Determine \\(X\\).",
+  "choices": [
+    "\\(113.37\\)",
+    "\\(118.37\\)",
+    "\\(123.37\\)",
+    "\\(128.37\\)",
+    "\\(133.37\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since this is an annuity-due, the payments occur at the beginning of each year.",
+    "Therefore, the payments occur at times \\(0,1,2,\\ldots,29\\).",
+    "Using first principles, the present value is \\(1{,}500=X+Xv+Xv^2+\\cdots+Xv^{29}\\).",
+    "Factor out \\(X\\): \\(1{,}500=X(1+v+v^2+\\cdots+v^{29})\\).",
+    "The geometric series satisfies \\(1+v+v^2+\\cdots+v^{29}=\\dfrac{1-v^{30}}{1-v}\\).",
+    "Thus, \\(1{,}500=X\\left(\\dfrac{1-v^{30}}{1-v}\\right)\\).",
+    "Since \\(v=\\dfrac{1}{1.08}\\), solving for \\(X\\) gives \\(X=123.37\\).",
+    "Equivalently, use the annuity-due formula \\(\\ddot{a}_{\\overline{n}\\,|}=\\dfrac{1-v^n}{d}\\).",
+    "Here \\(d=\\dfrac{i}{1+i}=\\dfrac{0.08}{1.08}\\).",
+    "The equation is \\(1{,}500=X\\ddot{a}_{\\overline{30}\\,|0.08}\\).",
+    "Therefore, \\(X=\\dfrac{1{,}500}{\\ddot{a}_{\\overline{30}\\,|0.08}}=123.37\\).",
+    "Using a financial calculator, set BGN mode, \\(N=30\\), \\(I/Y=8\\), \\(PV=-1{,}500\\), and \\(FV=0\\).",
+    "Computing \\(PMT\\) gives \\(123.37\\)."
+  ],
+  "generalization": "For an annuity-due, payments occur at the beginning of each period. The present value formula is \\(\\ddot{a}_{\\overline{n}\\,|}=\\dfrac{1-v^n}{d}\\), and financial calculator problems should be done in BGN mode.",
+  "answer_text": "The annual payment is \\(\\boxed{123.37}\\), so the correct choice is C."
+},
+  {
+  "id": 100,
+  "topic": "annuities-due and present value",
+  "title": "Exercise 100",
+  "statement": "Given an annual effective discount rate of \\(d=0.10\\), calculate the present value of \\(20\\) payments of \\(1{,}000\\), paid every two years starting immediately.",
+  "choices": [
+    "\\(4{,}985.36\\)",
+    "\\(5{,}085.36\\)",
+    "\\(5{,}185.36\\)",
+    "\\(5{,}285.36\\)",
+    "\\(5{,}385.36\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Since payments are made every two years, we need the effective rate per two-year payment period.",
+    "The annual effective discount rate is \\(d=0.10\\).",
+    "Thus, the annual discount factor is \\(v=1-d=0.90\\).",
+    "The discount factor over two years is \\(v^2=(0.90)^2=0.81\\).",
+    "Therefore, the effective discount rate per two-year payment period is \\(d_2=1-v^2=1-0.81=0.19\\).",
+    "Since the payments start immediately, this is an annuity-due with \\(20\\) payments.",
+    "Thus, the present value is \\(PV=1{,}000\\ddot{a}_{\\overline{20}\\,|}\\).",
+    "Using \\(\\ddot{a}_{\\overline{20}\\,|}=\\dfrac{1-v^{20}}{d_2}\\), where \\(v=0.81\\) is the two-year discount factor, we get \\(PV=1{,}000\\left(\\dfrac{1-(0.81)^{20}}{0.19}\\right)\\).",
+    "Therefore, \\(PV=5{,}185.36\\)."
+  ],
+  "generalization": "When payments are made every \\(k\\) years, convert the given annual rate into an effective rate or discount factor per \\(k\\)-year payment period. For an annuity-due, use BGN mode on a financial calculator because payments occur at the beginning of each payment period.",
+  "answer_text": "The present value is \\(\\boxed{5{,}185.36}\\), so the correct choice is C."
+},
+  {
+  "id": 101,
+  "topic": "annuities-due and unknown monthly interest rate",
+  "title": "Exercise 101",
+  "statement": "A renter with \\(1{,}104\\) has a one-year lease. The landlord is willing to accept two payment options: (1) \\(1{,}104\\) now; or (2) \\(100\\) paid at the beginning of each month for \\(12\\) months. What monthly interest rate would be required for the two options to be equivalent?",
+  "choices": [
+    "Less than \\(0.012\\)",
+    "At least \\(0.012\\), but less than \\(0.013\\)",
+    "At least \\(0.013\\), but less than \\(0.014\\)",
+    "At least \\(0.014\\), but less than \\(0.015\\)",
+    "At least \\(0.015\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "The second option consists of payments made at the beginning of each month, so it is a monthly annuity-due.",
+    "Let \\(j\\) be the effective monthly interest rate.",
+    "The present value of the first option is \\(1{,}104\\).",
+    "The present value of the second option is \\(100\\ddot{a}_{\\overline{12}\\,|j}\\).",
+    "Since the two options are equivalent, write \\(1{,}104=100\\ddot{a}_{\\overline{12}\\,|j}\\).",
+    "Because the payments are made at the beginning of each month, use BGN mode on the financial calculator.",
+    "Enter \\(N=12\\), \\(PV=-1{,}104\\), \\(PMT=100\\), and \\(FV=0\\).",
+    "Computing \\(I/Y\\) gives \\(1.55372\\).",
+    "Since the calculator gives \\(I/Y\\) as a percentage, the monthly interest rate is \\(j=1.55372\\%=0.0155372\\).",
+    "Thus, the required monthly interest rate is at least \\(0.015\\)."
+  ],
+  "generalization": "When payments are made at the beginning of each period, treat the stream as an annuity-due and use BGN mode on the financial calculator. If the calculator returns \\(I/Y\\), remember that it is usually expressed as a percentage.",
+  "answer_text": "The required monthly interest rate is \\(\\boxed{0.0155372}\\), so the correct choice is E."
+},
+  {
+  "id": 102,
+  "topic": "annuities-due and monthly payout",
+  "title": "Exercise 102",
+  "statement": "The proceeds of a \\(10{,}000\\) death benefit are left on deposit with an insurance company for seven years at an annual effective interest rate of \\(5\\%\\). The balance at the end of seven years is paid to the beneficiary in \\(120\\) equal monthly payments of \\(X\\), with the first payment made immediately. During the payout period, interest is credited at an annual effective interest rate of \\(3\\%\\). Calculate \\(X\\).",
+  "choices": [
+    "\\(117\\)",
+    "\\(118\\)",
+    "\\(129\\)",
+    "\\(135\\)",
+    "\\(158\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Set up an equation of value at time \\(7\\).",
+    "The death benefit accumulates for \\(7\\) years at \\(5\\%\\), so its value at time \\(7\\) is \\(10{,}000(1.05)^7\\).",
+    "At time \\(7\\), the beneficiary receives \\(120\\) monthly payments of \\(X\\), with the first payment made immediately.",
+    "Therefore, the payout stream is a monthly annuity-due.",
+    "During the payout period, the annual effective interest rate is \\(3\\%\\).",
+    "Let \\(j\\) be the effective monthly interest rate. Then \\(1+j=(1.03)^{1/12}\\).",
+    "Thus, \\(j=(1.03)^{1/12}-1\\).",
+    "The value at time \\(7\\) of the payout stream is \\(X\\ddot{a}_{\\overline{120}\\,|j}\\).",
+    "Therefore, \\(10{,}000(1.05)^7=X\\ddot{a}_{\\overline{120}\\,|j}\\).",
+    "Using \\(\\ddot{a}_{\\overline{120}\\,|j}=\\dfrac{1-v_j^{120}}{d_j}\\), where \\(v_j=\\dfrac{1}{1+j}\\) and \\(d_j=\\dfrac{j}{1+j}\\), solve for \\(X\\).",
+    "Thus, \\(X=\\dfrac{10{,}000(1.05)^7}{\\ddot{a}_{\\overline{120}\\,|j}}\\).",
+    "Substituting \\(j=(1.03)^{1/12}-1\\), we obtain \\(X=135.27\\).",
+    "The closest answer choice is \\(135\\)."
+  ],
+  "generalization": "When a lump sum is accumulated first and then paid out as an annuity, choose the transition time as the equation-of-value date. If the payout begins immediately, use an annuity-due. If payments are monthly, convert the annual effective rate to an effective monthly rate before applying the annuity formula.",
+  "answer_text": "The monthly payment is \\(\\boxed{135.27}\\), so the correct choice is D."
 }
 ]
