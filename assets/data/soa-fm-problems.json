@@ -2851,5 +2851,135 @@
   ],
   "generalization": "When a lump sum is accumulated first and then paid out as an annuity, choose the transition time as the equation-of-value date. If the payout begins immediately, use an annuity-due. If payments are monthly, convert the annual effective rate to an effective monthly rate before applying the annuity formula.",
   "answer_text": "The monthly payment is \\(\\boxed{135.27}\\), so the correct choice is D."
+},
+  {
+  "id": 103,
+  "topic": "annuities-due and accumulated value",
+  "title": "Exercise 103",
+  "statement": "Given \\(d=0.04\\), find the accumulated value at time \\(20\\) of an annuity with payments of \\(250\\) every two years. The first payment is made immediately and the last payment is made \\(18\\) years from now.",
+  "choices": [
+    "\\(3{,}925.61\\)",
+    "\\(3{,}975.61\\)",
+    "\\(4{,}025.61\\)",
+    "\\(4{,}075.61\\)",
+    "\\(4{,}125.61\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The payments are made every \\(2\\) years, starting immediately.",
+    "Thus, the payments occur at times \\(0,2,4,\\ldots,18\\).",
+    "The number of payments is \\(\\dfrac{18-0}{2}+1=10\\).",
+    "The accumulated value is requested at time \\(20\\), which is one two-year period after the last payment.",
+    "Therefore, this is an annuity-due accumulated value problem.",
+    "Since payments are made every \\(2\\) years, convert the annual effective discount rate into an effective interest rate per \\(2\\)-year period.",
+    "The annual discount factor is \\(v=1-d=0.96\\).",
+    "The two-year discount factor is \\(v^2=(0.96)^2\\).",
+    "Therefore, the effective interest rate per \\(2\\)-year period is \\(j=(0.96)^{-2}-1\\).",
+    "So \\(j=(1-0.04)^{-2}-1\\).",
+    "Using the annuity-due accumulated value formula, \\(AV=250\\ddot{s}_{\\overline{10}\\,|j}\\).",
+    "Since \\(\\ddot{s}_{\\overline{n}\\,|j}=\\dfrac{(1+j)^n-1}{d_j}\\), where \\(d_j=\\dfrac{j}{1+j}\\), we get \\(AV=250\\left(\\dfrac{(1+j)^{10}-1}{j/(1+j)}\\right)\\).",
+    "Substituting \\(j=(1-0.04)^{-2}-1\\), we obtain \\(AV=4{,}025.61\\).",
+    "Using the TVM function, use BGN mode with \\(N=10\\), \\(I/Y=100((1-0.04)^{-2}-1)\\), \\(PV=0\\), and \\(PMT=-250\\).",
+    "Computing \\(FV\\) gives \\(4{,}025.61\\)."
+  ],
+  "generalization": "When payments are made every \\(k\\) years, convert the annual rate into an effective rate per \\(k\\)-year payment period. If the first payment is made immediately and the accumulated value is measured one payment period after the last payment, use the annuity-due accumulated value formula \\(\\ddot{s}_{\\overline{n}\\,|}\\).",
+  "answer_text": "The accumulated value is \\(\\boxed{4{,}025.61}\\), so the correct choice is C."
+},
+  {
+  "id": 104,
+  "topic": "annuities-due and accumulated value",
+  "title": "Exercise 104",
+  "statement": "Bill deposits \\(X\\) into a savings account every six months. His first deposit is made today. The savings account earns a nominal annual interest rate convertible semiannually of \\(i^{(2)}=0.06\\). Bill's account balance immediately before his \\(25\\)th deposit is \\(1{,}772.96\\). Determine \\(X\\).",
+  "choices": [
+    "\\(40\\)",
+    "\\(45\\)",
+    "\\(50\\)",
+    "\\(55\\)",
+    "\\(60\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Deposits are made every six months, so there are two deposits per year.",
+    "The nominal annual interest rate convertible semiannually is \\(i^{(2)}=0.06\\).",
+    "Therefore, the effective interest rate per six-month period is \\(j=\\dfrac{0.06}{2}=0.03\\).",
+    "Bill makes his first deposit today, so the deposit times are \\(0,0.5,1,1.5,\\ldots\\).",
+    "The \\(25\\)th deposit occurs at time \\(\\dfrac{24}{2}=12\\).",
+    "The account balance is given immediately before the \\(25\\)th deposit, so the balance is measured at time \\(12\\), before the deposit at time \\(12\\) is made.",
+    "Thus, only the first \\(24\\) deposits are included.",
+    "These \\(24\\) deposits form an annuity-due accumulated one payment period after the last included deposit.",
+    "Therefore, \\(X\\ddot{s}_{\\overline{24}\\,|0.03}=1{,}772.96\\).",
+    "Using \\(\\ddot{s}_{\\overline{n}\\,|j}=\\dfrac{(1+j)^n-1}{d_j}\\), where \\(d_j=\\dfrac{j}{1+j}\\), we have \\(\\ddot{s}_{\\overline{24}\\,|0.03}=\\dfrac{(1.03)^{24}-1}{0.03/1.03}\\).",
+    "Solve for \\(X\\): \\(X=\\dfrac{1{,}772.96}{\\ddot{s}_{\\overline{24}\\,|0.03}}\\).",
+    "Thus, \\(X=\\dfrac{1{,}772.96}{\\frac{(1.03)^{24}-1}{0.03/1.03}}=50\\).",
+    "Using TVM, use BGN mode with \\(N=24\\), \\(I/Y=3\\), \\(PV=0\\), and \\(FV=1{,}772.96\\). Computing \\(PMT\\) gives \\(-50\\), so \\(X=50\\)."
+  ],
+  "generalization": "When the first deposit is made immediately, the deposits form an annuity-due. If the balance is given immediately before a future deposit, that future deposit is not included. Count only the deposits already made, then accumulate them to the valuation date.",
+  "answer_text": "The deposit amount is \\(\\boxed{50}\\), so the correct choice is C."
+},
+  {
+  "id": 105,
+  "topic": "annuities-due and accumulated value",
+  "title": "Exercise 105",
+  "statement": "John wishes to accumulate \\(15{,}000\\) in a trust fund at the end of \\(10\\) years. He will make \\(10\\) annual deposits of \\(1{,}000\\), with each annual deposit made at the beginning of the year. In order to accumulate \\(15{,}000\\) in the trust fund, John needs to increase each of the last \\(2\\) payments by \\(X\\). The deposits earn interest at an effective annual rate of \\(5\\%\\). Determine \\(X\\).",
+  "choices": [
+    "Less than \\(850\\)",
+    "At least \\(850\\), but less than \\(950\\)",
+    "At least \\(950\\), but less than \\(1{,}050\\)",
+    "At least \\(1{,}050\\), but less than \\(1{,}150\\)",
+    "At least \\(1{,}150\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The deposits are made at the beginning of each year, so the \\(10\\) regular deposits of \\(1{,}000\\) occur at times \\(0,1,2,\\ldots,9\\).",
+    "The target accumulated value is at time \\(10\\).",
+    "The last two deposits occur at times \\(8\\) and \\(9\\). These are the deposits increased by \\(X\\).",
+    "Split the deposits into two streams: \\(1{,}000\\) deposited at the beginning of each year for \\(10\\) years, and an additional \\(X\\) deposited at times \\(8\\) and \\(9\\).",
+    "The accumulated value at time \\(10\\) of the regular deposits is \\(1{,}000\\ddot{s}_{\\overline{10}\\,|0.05}\\).",
+    "The accumulated value at time \\(10\\) of the two extra deposits is \\(X\\ddot{s}_{\\overline{2}\\,|0.05}\\).",
+    "Therefore, the equation of value at time \\(10\\) is \\(1{,}000\\ddot{s}_{\\overline{10}\\,|0.05}+X\\ddot{s}_{\\overline{2}\\,|0.05}=15{,}000\\).",
+    "Use \\(\\ddot{s}_{\\overline{n}\\,|i}=\\dfrac{(1+i)^n-1}{d}\\), where \\(d=\\dfrac{i}{1+i}\\).",
+    "Thus, \\(\\ddot{s}_{\\overline{10}\\,|0.05}=\\dfrac{1.05^{10}-1}{0.05/1.05}\\) and \\(\\ddot{s}_{\\overline{2}\\,|0.05}=\\dfrac{1.05^2-1}{0.05/1.05}\\).",
+    "Solving for \\(X\\), \\(X=\\dfrac{15{,}000-1{,}000\\ddot{s}_{\\overline{10}\\,|0.05}}{\\ddot{s}_{\\overline{2}\\,|0.05}}\\).",
+    "Substituting the values gives \\(X=833.08\\).",
+    "Therefore, \\(X\\) is less than \\(850\\)."
+  ],
+  "generalization": "When only the last few payments are increased, split the cash flows into a base annuity and an additional annuity. Here, all \\(10\\) deposits of \\(1{,}000\\) form one annuity-due, while the extra \\(X\\) payments at times \\(8\\) and \\(9\\) form a 2-payment annuity-due accumulated to time \\(10\\).",
+  "answer_text": "The required increase is \\(\\boxed{833.08}\\), so the correct choice is A."
+},
+  {
+  "id": 106,
+  "topic": "annuities-due and accumulated value",
+  "title": "Exercise 106",
+  "statement": "[SOA 2; SOA-IT.002] Kathryn deposits \\(100\\) into an account at the beginning of each \\(4\\)-year period for \\(40\\) years. The account credits interest at an annual effective interest rate of \\(i\\). The accumulated amount in the account at the end of \\(40\\) years is \\(X\\), which is \\(5\\) times the accumulated amount in the account at the end of \\(20\\) years. Calculate \\(X\\).",
+  "choices": [
+    "\\(4{,}695\\)",
+    "\\(5{,}070\\)",
+    "\\(5{,}445\\)",
+    "\\(5{,}820\\)",
+    "\\(6{,}195\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "The deposits are made at the beginning of each \\(4\\)-year period, so they occur at times \\(0,4,8,\\ldots,36\\).",
+    "There are \\(10\\) deposits in total.",
+    "Let \\(j\\) be the effective interest rate per \\(4\\)-year period. Then \\(1+j=(1+i)^4\\).",
+    "At time \\(20\\), there have been \\(5\\) deposits, at times \\(0,4,8,12,16\\).",
+    "Their accumulated value at time \\(20\\) is \\(100\\ddot{s}_{\\overline{5}\\,|j}\\).",
+    "At time \\(40\\), there have been \\(10\\) deposits, so the accumulated value at time \\(40\\) is \\(100\\ddot{s}_{\\overline{10}\\,|j}\\).",
+    "We are given \\(100\\ddot{s}_{\\overline{10}\\,|j}=5(100\\ddot{s}_{\\overline{5}\\,|j})\\).",
+    "Thus, \\(\\ddot{s}_{\\overline{10}\\,|j}=5\\ddot{s}_{\\overline{5}\\,|j}\\).",
+    "Using \\(\\ddot{s}_{\\overline{n}\\,|j}=\\dfrac{(1+j)^n-1}{d_j}\\), where \\(d_j=\\dfrac{j}{1+j}\\), we get \\(\\dfrac{(1+j)^{10}-1}{d_j}=5\\left(\\dfrac{(1+j)^5-1}{d_j}\\right)\\).",
+    "Cancel \\(d_j\\): \\((1+j)^{10}-1=5((1+j)^5-1)\\).",
+    "Rearrange: \\((1+j)^{10}-5(1+j)^5+4=0\\).",
+    "Let \\(y=(1+j)^5\\). Then \\(y^2-5y+4=0\\).",
+    "Factor: \\((y-1)(y-4)=0\\).",
+    "Reject \\(y=1\\) because it implies \\(j=0\\). Therefore, \\(y=4\\).",
+    "Thus, \\((1+j)^5=4\\), so \\(1+j=4^{1/5}\\).",
+    "Now \\(X=100\\ddot{s}_{\\overline{10}\\,|j}\\).",
+    "Since \\((1+j)^{10}=16\\) and \\(d_j=1-\\dfrac{1}{1+j}=1-4^{-1/5}\\), we have \\(X=100\\left(\\dfrac{16-1}{1-4^{-1/5}}\\right)\\).",
+    "Therefore, \\(X=6{,}195\\)."
+  ],
+  "generalization": "When deposits occur every \\(k\\) years, use an effective interest rate per \\(k\\)-year period. If deposits are made at the beginning of each period, use annuity-due accumulated value formulas. Ratios of accumulated values at different times can often be simplified by introducing a substitution such as \\(y=(1+j)^m\\).",
+  "answer_text": "The accumulated value is \\(\\boxed{6{,}195}\\), so the correct choice is E."
 }
 ]
