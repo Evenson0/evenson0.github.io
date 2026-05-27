@@ -3062,5 +3062,177 @@
   ],
   "generalization": "The correct connection between present value and accumulated value is obtained by moving the present value forward \\(n\\) periods: \\(s_{\\overline{n}\\,|}=a_{\\overline{n}\\,|}(1+i)^n\\). Be careful not to use \\(n-1\\), even though the first annuity-immediate payment is at time \\(1\\).",
   "answer_text": "The incorrect identity is statement \\(\\boxed{5}\\), so the correct choice is E."
+},
+  {
+  "id": 110,
+  "topic": "annuities-due and fission method",
+  "title": "Exercise 110",
+  "statement": "An annuity makes \\(5\\) payments of \\(200\\) every two years starting today. You are given \\(\\ddot{a}_{\\overline{2}\\,|}=1.943\\) and \\(\\ddot{s}_{\\overline{10}\\,|}=13.972\\). Find the accumulated value of the annuity two years after the last payment.",
+  "choices": [
+    "\\(1{,}238.19\\)",
+    "\\(1{,}338.19\\)",
+    "\\(1{,}438.19\\)",
+    "\\(1{,}538.19\\)",
+    "\\(1{,}638.19\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The annuity makes payments of \\(200\\) every two years starting today.",
+    "Therefore, the payments occur at times \\(0,2,4,6,8\\).",
+    "The last payment is at time \\(8\\), so two years after the last payment is time \\(10\\).",
+    "Use the fission method to replace each two-year payment of \\(200\\) by two annual payments of \\(R\\).",
+    "Since \\(R\\ddot{a}_{\\overline{2}\\,|}=200\\), we have \\(R=\\dfrac{200}{\\ddot{a}_{\\overline{2}\\,|}}\\).",
+    "Thus, the original payment stream is equivalent to \\(10\\) annual payments of \\(\\dfrac{200}{\\ddot{a}_{\\overline{2}\\,|}}\\) made at times \\(0,1,2,\\ldots,9\\).",
+    "The accumulated value at time \\(10\\) of these \\(10\\) annual payments is \\(\\left(\\dfrac{200}{\\ddot{a}_{\\overline{2}\\,|}}\\right)\\ddot{s}_{\\overline{10}\\,|}\\).",
+    "Substitute the given values: \\(AV=\\left(\\dfrac{200}{1.943}\\right)(13.972)\\).",
+    "Therefore, \\(AV=1{,}438.19\\)."
+  ],
+  "generalization": "The fission method replaces a less frequent payment stream by a more frequent equivalent payment stream. Here, each payment of \\(200\\) every two years is replaced by two annual payments whose annuity-due present value equals \\(200\\).",
+  "answer_text": "The accumulated value is \\(\\boxed{1{,}438.19}\\), so the correct choice is C."
+},
+  {
+  "id": 111,
+  "topic": "annuities-immediate and block payments",
+  "title": "Exercise 111",
+  "statement": "Annuities A and B have the following payments. For end of years \\(1\\text{--}5\\), Annuity A pays \\(0\\) and Annuity B pays \\(K\\). For end of years \\(6\\text{--}10\\), Annuity A pays \\(2\\) and Annuity B pays \\(0\\). For end of years \\(11\\text{--}15\\), Annuity A pays \\(1\\) and Annuity B pays \\(K\\). Annuities A and B have equal present values at an annual effective interest rate \\(i\\) such that \\(v^5=\\frac{1}{3}\\). Calculate \\(K\\).",
+  "choices": [
+    "\\(0.5\\)",
+    "\\(0.6\\)",
+    "\\(0.7\\)",
+    "\\(0.8\\)",
+    "\\(0.9\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Let \\(q=v^5\\). We are given \\(q=\\frac{1}{3}\\).",
+    "The present value of Annuity A is \\(2a_{\\overline{5}\\,|}v^5+a_{\\overline{5}\\,|}v^{10}\\).",
+    "The present value of Annuity B is \\(Ka_{\\overline{5}\\,|}+Ka_{\\overline{5}\\,|}v^{10}\\).",
+    "Since the present values are equal, \\(2a_{\\overline{5}\\,|}v^5+a_{\\overline{5}\\,|}v^{10}=Ka_{\\overline{5}\\,|}+Ka_{\\overline{5}\\,|}v^{10}\\).",
+    "Factor out \\(a_{\\overline{5}\\,|}\\): \\(a_{\\overline{5}\\,|}(2v^5+v^{10})=Ka_{\\overline{5}\\,|}(1+v^{10})\\).",
+    "Cancel \\(a_{\\overline{5}\\,|}\\): \\(2v^5+v^{10}=K(1+v^{10})\\).",
+    "Since \\(v^5=\\frac{1}{3}\\), we have \\(v^{10}=\\left(v^5\\right)^2=\\frac{1}{9}\\).",
+    "Substitute these values: \\(2\\left(\\frac{1}{3}\\right)+\\frac{1}{9}=K\\left(1+\frac{1}{9}\\right)\\).",
+    "Thus, \\(\\frac{7}{9}=K\\left(\\frac{10}{9}\\right)\\).",
+    "Solving gives \\(K=\\frac{7}{10}=0.7\\)."
+  ],
+  "generalization": "When payments occur in equal-length blocks, value each block as an annuity-immediate and discount it to time \\(0\\). If the same annuity factor appears on both sides, it can often be canceled, leaving a simpler equation in powers of \\(v\\).",
+  "answer_text": "The value is \\(\\boxed{K=0.7}\\), so the correct choice is C."
+},
+  {
+  "id": 112,
+  "topic": "current value and varying interest rates",
+  "title": "Exercise 112",
+  "statement": "You are given that \\(X\\) is the current value at the end of year \\(2\\) of a 20-year annuity-due of \\(1\\) per annum, and the effective annual interest rate for year \\(t\\) is \\(\\frac{1}{8+t}\\). Calculate \\(X\\).",
+  "choices": [
+    "\\(\\displaystyle \\sum_{t=9}^{18}\\frac{10}{t}\\)",
+    "\\(\\displaystyle \\sum_{t=9}^{28}\\frac{11}{t}\\)",
+    "\\(\\displaystyle \\sum_{t=10}^{29}\\frac{10}{t}\\)",
+    "\\(\\displaystyle \\sum_{t=10}^{29}\\frac{11}{t}\\)",
+    "\\(\\displaystyle \\sum_{t=11}^{30}\\frac{10}{t}\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "A 20-year annuity-due has payments of \\(1\\) at times \\(0,1,2,\\ldots,19\\).",
+    "The current value is requested at the end of year \\(2\\), so the valuation date is time \\(2\\).",
+    "The effective annual interest rate for year \\(t\\) is \\(i_t=\\frac{1}{8+t}\\).",
+    "Therefore, the accumulation factor for year \\(t\\) is \\(1+i_t=1+\\frac{1}{8+t}=\\frac{9+t}{8+t}\\).",
+    "The payment at time \\(0\\) accumulates to time \\(2\\) through years \\(1\\) and \\(2\\): \\(\\left(1+\\frac{1}{9}\\right)\\left(1+\\frac{1}{10}\\right)=\\frac{10}{9}\\cdot\\frac{11}{10}=\\frac{11}{9}\\).",
+    "The payment at time \\(1\\) accumulates one year to time \\(2\\): \\(1+\\frac{1}{10}=\\frac{11}{10}\\).",
+    "The payment at time \\(2\\) is already at the valuation date, so its value is \\(1=\\frac{11}{11}\\).",
+    "The payment at time \\(3\\) is discounted one year back to time \\(2\\): \\(\\left(1+\\frac{1}{11}\\right)^{-1}=\\frac{11}{12}\\).",
+    "The payment at time \\(4\\) is discounted two years back: \\(\\left(1+\\frac{1}{11}\\right)^{-1}\\left(1+\\frac{1}{12}\\right)^{-1}=\\frac{11}{12}\\cdot\\frac{12}{13}=\\frac{11}{13}\\).",
+    "Continuing this telescoping pattern, the current value is \\(X=\\frac{11}{9}+\\frac{11}{10}+\\frac{11}{11}+\\frac{11}{12}+\\cdots+\\frac{11}{28}\\).",
+    "Therefore, \\(X=\\displaystyle \\sum_{t=9}^{28}\\frac{11}{t}\\)."
+  ],
+  "generalization": "With varying annual interest rates, value each payment directly at the chosen valuation date. Products of successive accumulation or discount factors may telescope, as they do here because \\(1+\\frac{1}{8+t}=\\frac{9+t}{8+t}\\).",
+  "answer_text": "The current value is \\(\\boxed{\\displaystyle \\sum_{t=9}^{28}\\frac{11}{t}}\\), so the correct choice is B."
+},
+  {
+  "id": 113,
+  "topic": "deferred annuities and changing payments",
+  "title": "Exercise 113",
+  "statement": "Mr. Smith wants to give his son an annuity of \\(5{,}000\\) per year starting on his \\(21\\)st birthday, which will be increased to \\(10{,}000\\) per year on his \\(25\\)th birthday, with the final payment on his \\(30\\)th birthday. What is the present value of that annuity on his son's \\(10\\)th birthday if the effective annual interest rate is \\(5\\%\\)?",
+  "choices": [
+    "Less than \\(35{,}500\\)",
+    "At least \\(35{,}500\\), but less than \\(36{,}000\\)",
+    "At least \\(36{,}000\\), but less than \\(36{,}500\\)",
+    "At least \\(36{,}500\\), but less than \\(37{,}000\\)",
+    "At least \\(37{,}000\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "We value the annuity on the son's \\(10\\)th birthday.",
+    "The payments are \\(5{,}000\\) at ages \\(21,22,23,24\\), and \\(10{,}000\\) at ages \\(25,26,27,28,29,30\\).",
+    "The effective annual interest rate is \\(i=0.05\\), so \\(v=\\frac{1}{1.05}\\).",
+    "The \\(5{,}000\\) payments at ages \\(21\\) through \\(24\\) form a \\(4\\)-payment annuity-immediate valued at age \\(20\\).",
+    "The value at age \\(10\\) of these payments is \\(5{,}000a_{\\overline{4}\\,|0.05}v^{10}\\).",
+    "The \\(10{,}000\\) payments at ages \\(25\\) through \\(30\\) form a \\(6\\)-payment annuity-immediate valued at age \\(24\\).",
+    "The value at age \\(10\\) of these payments is \\(10{,}000a_{\\overline{6}\\,|0.05}v^{14}\\).",
+    "Therefore, \\(PV=5{,}000a_{\\overline{4}\\,|0.05}v^{10}+10{,}000a_{\\overline{6}\\,|0.05}v^{14}\\).",
+    "Using \\(a_{\\overline{n}\\,|i}=\\frac{1-v^n}{i}\\), with \\(v=\\frac{1}{1.05}\\), we get \\(PV=36{,}520.22\\).",
+    "Thus, the present value is at least \\(36{,}500\\), but less than \\(37{,}000\\).",
+    "Alternatively, the cash flows can be rewritten as \\(10{,}000a_{\\overline{20}\\,|0.05}-5{,}000a_{\\overline{14}\\,|0.05}-5{,}000a_{\\overline{10}\\,|0.05}\\), which gives the same result."
+  ],
+  "generalization": "When payments change over time, split the stream into simpler deferred annuities or rewrite the cash flows as a large level annuity minus unwanted portions. The key is to value everything at the same date.",
+  "answer_text": "The present value is \\(\\boxed{36{,}520.22}\\), so the correct choice is D."
+},
+  {
+  "id": 114,
+  "topic": "deferred annuities and nominal interest rates",
+  "title": "Exercise 114",
+  "statement": "A loan of \\(8{,}000\\) is to be repaid in \\(36\\) equal monthly installments, with the first one paid six months after the loan is made. The nominal annual interest rate is \\(10\\%\\) compounded quarterly. Determine the amount of the monthly payment.",
+  "choices": [
+    "Less than \\(258\\)",
+    "At least \\(258\\), but less than \\(262\\)",
+    "At least \\(262\\), but less than \\(266\\)",
+    "At least \\(266\\), but less than \\(270\\)",
+    "At least \\(270\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Let \\(X\\) be the monthly payment.",
+    "Since the payments are monthly, first convert the nominal annual rate compounded quarterly into an effective monthly rate.",
+    "The quarterly effective rate is \\(\\frac{0.10}{4}=0.025\\).",
+    "Let \\(j\\) be the effective monthly interest rate. Since one quarter contains \\(3\\) months, \\((1+j)^3=1.025\\).",
+    "Thus, \\(j=(1.025)^{1/3}-1\\). Equivalently, \\(j=\\left(1+\\frac{0.10}{4}\\right)^{4/12}-1\\).",
+    "So \\(j=0.008264838\\).",
+    "The first payment is made \\(6\\) months after the loan is made, so the \\(36\\) monthly payments occur at months \\(6,7,8,\\ldots,41\\).",
+    "A \\(36\\)-payment annuity-immediate with first payment at month \\(6\\) is naturally valued one month before the first payment, namely at month \\(5\\).",
+    "Therefore, the present value at month \\(0\\) is \\(Xa_{\\overline{36}\\,|j}v_j^5\\).",
+    "The equation of value is \\(8{,}000=Xa_{\\overline{36}\\,|j}v_j^5\\).",
+    "Using \\(a_{\\overline{36}\\,|j}=\\frac{1-v_j^{36}}{j}\\), solve for \\(X\\): \\(X=\\frac{8{,}000}{a_{\\overline{36}\\,|j}v_j^5}\\).",
+    "Substituting \\(j=0.008264838\\), we obtain \\(X=268.66\\)."
+  ],
+  "generalization": "When payments are monthly but the interest rate is given as a nominal annual rate compounded quarterly, first convert to an effective monthly rate. If the first payment is delayed, value the annuity at its natural valuation date and then discount back to the loan date.",
+  "answer_text": "The monthly payment is \\(\\boxed{268.66}\\), so the correct choice is D."
+},
+  {
+  "id": 115,
+  "topic": "annuities-due and accumulated value",
+  "title": "Exercise 115",
+  "statement": "Eloise plans to accumulate \\(100{,}000\\) at the end of \\(42\\) years. She makes deposits of \\(X\\) at the beginning of years \\(1\\) through \\(14\\), no deposits at the beginning of years \\(15\\) through \\(32\\), and deposits of \\(Y\\) at the beginning of years \\(33\\) through \\(42\\). The annual effective interest rate is \\(7\\%\\). Also, \\(X-Y=100\\). Calculate \\(Y\\).",
+  "choices": [
+    "\\(479\\)",
+    "\\(499\\)",
+    "\\(519\\)",
+    "\\(539\\)",
+    "\\(559\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The deposits of \\(X\\) are made at the beginning of years \\(1\\) through \\(14\\), so they occur at times \\(0,1,2,\\ldots,13\\).",
+    "The deposits of \\(Y\\) are made at the beginning of years \\(33\\) through \\(42\\), so they occur at times \\(32,33,\\ldots,41\\).",
+    "The target accumulated value is at time \\(42\\).",
+    "Since \\(X-Y=100\\), we have \\(X=Y+100\\).",
+    "The first set of deposits can be valued at time \\(0\\) using \\(\\ddot{a}_{\\overline{14}\\,|0.07}\\), then accumulated to time \\(42\\).",
+    "Thus, the accumulated value at time \\(42\\) of the first set is \\(X\\ddot{a}_{\\overline{14}\\,|0.07}(1.07)^{42}\\).",
+    "The last \\(10\\) deposits of \\(Y\\) form an annuity-due accumulated to time \\(42\\), so their value is \\(Y\\ddot{s}_{\\overline{10}\\,|0.07}\\).",
+    "Set up the equation of value: \\(X\\ddot{a}_{\\overline{14}\\,|0.07}(1.07)^{42}+Y\\ddot{s}_{\\overline{10}\\,|0.07}=100{,}000\\).",
+    "Substitute \\(X=Y+100\\): \\((Y+100)\\ddot{a}_{\\overline{14}\\,|0.07}(1.07)^{42}+Y\\ddot{s}_{\\overline{10}\\,|0.07}=100{,}000\\).",
+    "Solving gives \\(Y\\approx 479.17\\).",
+    "Equivalently, the first set can be accumulated using \\((Y+100)\\ddot{s}_{\\overline{14}\\,|0.07}(1.07)^{28}\\), which gives the same result."
+  ],
+  "generalization": "When deposits occur at the beginning of years, treat them as annuities-due. Choose the final target date as the equation-of-value date, then accumulate each block of deposits to that date. If two unknown payments are related, substitute one in terms of the other before solving.",
+  "answer_text": "The value is \\(\\boxed{479}\\), so the correct choice is A."
 }
 ]
