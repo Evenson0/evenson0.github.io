@@ -572,6 +572,7 @@ mathjax: true
       $$
     </div>
 
+
     <div class="fm-proof-card">
       <div class="fm-proof-label">Relations</div>
       <h3>How the four annuity formulas connect</h3>
@@ -661,6 +662,108 @@ mathjax: true
         But the reason is timing: annuity-due payments are shifted one period earlier.
       </div>
     </div>
+
+  <div class="fm-proof-card">
+  <div class="fm-proof-label">Immediate vs. Due</div>
+  <h3>Where each annuity notation is measured</h3>
+
+  <p>
+    The words <em>immediate</em> and <em>due</em> describe the timing of the payments,
+    but the notation mainly tells us where the value of the payment stream is measured.
+  </p>
+
+  <p>
+    For \(n\) payments of \(1\), the four standard annuity symbols correspond to four different
+    valuation dates.
+  </p>
+
+  $$
+  a_{\overline{n}|}
+  \quad
+  \text{is measured one period before the first payment.}
+  $$
+
+  $$
+  \ddot{a}_{\overline{n}|}
+  \quad
+  \text{is measured at the time of the first payment.}
+  $$
+
+  $$
+  s_{\overline{n}|}
+  \quad
+  \text{is measured at the time of the last payment.}
+  $$
+
+  $$
+  \ddot{s}_{\overline{n}|}
+  \quad
+  \text{is measured one period after the last payment.}
+  $$
+
+  <div class="fm-proof-note">
+    This is often the fastest way to choose the correct formula. Draw the timeline first,
+    locate the valuation date, then choose the notation that already places the value there.
+  </div>
+
+  <h3>Which is larger: \(a_{\overline{n}|}\) or \(\ddot{a}_{\overline{n}|}\)?</h3>
+
+  <p>
+    Both represent the present value of \(n\) payments of \(1\). But the annuity-due payments
+    are received one period earlier than the annuity-immediate payments.
+  </p>
+
+  $$
+  a_{\overline{n}|}
+  =
+  v\ddot{a}_{\overline{n}|}
+  $$
+
+  Therefore,
+
+  $$
+  \boxed{
+  \ddot{a}_{\overline{n}|}
+  =
+  (1+i)a_{\overline{n}|}
+  }.
+  $$
+
+  <p>
+    So \(\ddot{a}_{\overline{n}|}\) is larger than \(a_{\overline{n}|}\) whenever \(i>0\).
+  </p>
+
+  <h3>Useful shift identities</h3>
+
+  $$
+  \boxed{
+  \ddot{a}_{\overline{n}|}
+  =
+  1+a_{\overline{n-1}|}
+  }
+  $$
+
+  $$
+  \boxed{
+  \ddot{s}_{\overline{n}|}
+  =
+  (1+i)s_{\overline{n}|}
+  }
+  $$
+
+  $$
+  \boxed{
+  \ddot{s}_{\overline{n}|}
+  =
+  s_{\overline{n+1}|}-1
+  }
+  $$
+
+  <div class="fm-proof-note">
+    The most important intuition is timing: annuity-due values are shifted one period forward
+    compared with annuity-immediate values.
+  </div>
+</div>
 
   </div>
 
