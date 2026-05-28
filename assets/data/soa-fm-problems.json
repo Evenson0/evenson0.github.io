@@ -3234,5 +3234,159 @@
   ],
   "generalization": "When deposits occur at the beginning of years, treat them as annuities-due. Choose the final target date as the equation-of-value date, then accumulate each block of deposits to that date. If two unknown payments are related, substitute one in terms of the other before solving.",
   "answer_text": "The value is \\(\\boxed{479}\\), so the correct choice is A."
+},
+  {
+  "id": 116,
+  "topic": "perpetuities and accumulated value",
+  "title": "Exercise 116",
+  "statement": "Deposits of \\(1{,}000\\) are placed into a fund at the beginning of each year for \\(30\\) years. At the end of the \\(40\\)th year, annual withdrawals commence and continue forever. Interest is at an effective annual rate of \\(5\\%\\). Calculate the annual withdrawal.",
+  "choices": [
+    "\\(5{,}211.09\\)",
+    "\\(5{,}311.09\\)",
+    "\\(5{,}411.09\\)",
+    "\\(5{,}511.09\\)",
+    "\\(5{,}611.09\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The deposits are made at the beginning of each year for \\(30\\) years, so they occur at times \\(0,1,2,\\ldots,29\\).",
+    "The annual withdrawals start at the end of the \\(40\\)th year, so they occur at times \\(40,41,42,\\ldots\\).",
+    "Let \\(X\\) be the annual withdrawal.",
+    "A convenient equation of value is at time \\(39\\), one year before the first withdrawal.",
+    "The deposits at times \\(0,1,\\ldots,29\\) have accumulated value at time \\(39\\) equal to \\(1{,}000s_{\\overline{30}\\,|0.05}(1.05)^{10}\\).",
+    "The withdrawals at times \\(40,41,42,\\ldots\\) form a perpetuity-immediate valued at time \\(39\\), so their value is \\(Xa_{\\overline{\\infty}\\,|0.05}\\).",
+    "Thus, \\(1{,}000s_{\\overline{30}\\,|0.05}(1.05)^{10}=Xa_{\\overline{\\infty}\\,|0.05}\\).",
+    "Using \\(a_{\\overline{\\infty}\\,|0.05}=\\frac{1}{0.05}\\), we get \\(1{,}000s_{\\overline{30}\\,|0.05}(1.05)^{10}=X\\left(\\frac{1}{0.05}\\right)\\).",
+    "Therefore, \\(X=1{,}000s_{\\overline{30}\\,|0.05}(1.05)^{10}(0.05)\\).",
+    "Using \\(s_{\\overline{30}\\,|0.05}=\\frac{1.05^{30}-1}{0.05}\\), we obtain \\(X=5{,}411.09\\).",
+    "Equivalently, an equation at time \\(40\\) would use a perpetuity-due: \\(1{,}000\\ddot{a}_{\\overline{30}\\,|0.05}(1.05)^{40}=X\\ddot{a}_{\\overline{\\infty}\\,|0.05}\\)."
+  ],
+  "generalization": "When deposits are made at the beginning of each year, they can be handled as an annuity-due or shifted into an annuity-immediate framework. For withdrawals that continue forever, choose the valuation date carefully: one period before the first withdrawal gives a perpetuity-immediate, while the date of the first withdrawal gives a perpetuity-due.",
+  "answer_text": "The annual withdrawal is \\(\\boxed{5{,}411.09}\\), so the correct choice is C."
+},
+  {
+  "id": 117,
+  "topic": "perpetuity-due and effective discount rates",
+  "title": "Exercise 117",
+  "statement": "A perpetuity of \\(1\\) each year, with the first payment due immediately, has a present value of \\(25\\) at an annual effective interest rate \\(i\\). The owner is considering exchanging it now for another perpetuity with the first payment due immediately and subsequent payments due at two-year intervals. What should the payment of the second perpetuity be in order to keep the same interest rate \\(i\\) and the same present value?",
+  "choices": [
+    "\\(1.76\\)",
+    "\\(1.86\\)",
+    "\\(1.96\\)",
+    "\\(2.06\\)",
+    "\\(2.16\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The first perpetuity pays \\(1\\) immediately and then \\(1\\) each year forever.",
+    "Thus, it is a perpetuity-due with annual payments of \\(1\\).",
+    "Its present value is \\(\\ddot{a}_{\\overline{\\infty}\\,|i}=25\\).",
+    "For a perpetuity-due, \\(\\ddot{a}_{\\overline{\\infty}\\,|i}=\\frac{1}{d}\\).",
+    "Therefore, \\(\\frac{1}{d}=25\\), so \\(d=0.04\\).",
+    "The annual discount factor is \\(v=1-d=0.96\\).",
+    "The second perpetuity pays \\(X\\) immediately and then every two years forever.",
+    "Let \\(e\\) be the effective discount rate per two-year period.",
+    "Then \\(e=1-v^2\\).",
+    "Since \\(v=0.96\\), we get \\(e=1-(0.96)^2=0.0784\\).",
+    "The second perpetuity is a perpetuity-due with payments every two years, so its present value is \\(\\frac{X}{e}\\).",
+    "The present value must remain \\(25\\), so \\(\\frac{X}{e}=25\\).",
+    "Thus, \\(X=25e=25(0.0784)=1.96\\)."
+  ],
+  "generalization": "For a perpetuity-due, use the effective discount rate per payment period. If payments occur every two years, convert the annual discount factor to a two-year discount rate using \\(e=1-v^2\\).",
+  "answer_text": "The payment of the second perpetuity is \\(\\boxed{1.96}\\), so the correct choice is C."
+},
+  {
+  "id": 118,
+  "topic": "perpetuities and annuities",
+  "title": "Exercise 118",
+  "statement": "John's estate is to be divided into three equal parts and invested, to be paid out as follows. John's two children will each receive their share in \\(20\\) level annual payments beginning one year after John's death. Charity Q will receive its share as equal annual payments in perpetuity beginning \\(21\\) years after John's death. Charity Q's annual payment is twice the annual payment for one child. Determine the effective annual interest rate at which the estate is invested.",
+  "choices": [
+    "\\(4.6\\%\\)",
+    "\\(5.1\\%\\)",
+    "\\(5.6\\%\\)",
+    "\\(6.1\\%\\)",
+    "\\(6.6\\%\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The estate is divided into three equal parts, so the present value of each party's payments is equal.",
+    "Let \\(X\\) be the annual payment for one child.",
+    "Then Charity Q's annual payment is \\(2X\\).",
+    "Each child receives payments at times \\(1,2,\\ldots,20\\).",
+    "Thus, the present value of one child's payments is \\(Xa_{\\overline{20}\\,|}\\).",
+    "Charity Q receives payments at times \\(21,22,23,\\ldots\\).",
+    "This is a perpetuity-immediate beginning at time \\(21\\). Its value at time \\(20\\) is \\(2Xa_{\\overline{\\infty}\\,|}\\).",
+    "Discounting back \\(20\\) years, Charity Q's present value is \\(2Xa_{\\overline{\\infty}\\,|}v^{20}\\).",
+    "Since the present values are equal, \\(Xa_{\\overline{20}\\,|}=2Xa_{\\overline{\\infty}\\,|}v^{20}\\).",
+    "Cancel \\(X\\): \\(a_{\\overline{20}\\,|}=2a_{\\overline{\\infty}\\,|}v^{20}\\).",
+    "Using \\(a_{\\overline{20}\\,|}=\\frac{1-v^{20}}{i}\\) and \\(a_{\\overline{\\infty}\\,|}=\\frac{1}{i}\\), we get \\(\\frac{1-v^{20}}{i}=2\\left(\\frac{1}{i}\\right)v^{20}\\).",
+    "Cancel \\(1/i\\): \\(1-v^{20}=2v^{20}\\).",
+    "Thus, \\(1=3v^{20}\\), so \\(v^{20}=\\frac{1}{3}\\).",
+    "Taking reciprocals gives \\((1+i)^{20}=3\\).",
+    "Therefore, \\(i=3^{1/20}-1\\).",
+    "Numerically, \\(i=0.0565\\), or approximately \\(5.65\\%\\)."
+  ],
+  "generalization": "When equal shares are paid through different annuity structures, equate the present values of the payment streams. A perpetuity-immediate beginning at time \\(m+1\\) has present value \\(v^m a_{\\overline{\\infty}\\,|}\\) times the payment amount.",
+  "answer_text": "The effective annual interest rate is \\(\\boxed{5.65\\%}\\), so the closest choice is C."
+},
+  {
+  "id": 119,
+  "topic": "perpetuities and interest rate conversion",
+  "title": "Exercise 119",
+  "statement": "Perpetuity A pays \\(100\\) at the end of each year. Perpetuity B pays \\(25\\) at the end of each quarter. The present value of Perpetuity A at the annual effective interest rate \\(i\\) is \\(2{,}000\\). What is the present value of Perpetuity B at the same annual effective interest rate \\(i\\)?",
+  "choices": [
+    "Less than \\(2{,}020\\)",
+    "At least \\(2{,}020\\), but less than \\(2{,}025\\)",
+    "At least \\(2{,}025\\), but less than \\(2{,}030\\)",
+    "At least \\(2{,}030\\), but less than \\(2{,}035\\)",
+    "At least \\(2{,}035\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "Perpetuity A pays \\(100\\) at the end of each year, so it is a perpetuity-immediate.",
+    "The present value of Perpetuity A is \\(100a_{\\overline{\\infty}\\,|i}=2{,}000\\).",
+    "Using \\(a_{\\overline{\\infty}\\,|i}=\\frac{1}{i}\\), we get \\(100\\left(\\frac{1}{i}\\right)=2{,}000\\).",
+    "Thus, \\(i=\\frac{100}{2{,}000}=0.05\\).",
+    "So the annual effective interest rate is \\(5\\%\\).",
+    "Perpetuity B pays quarterly, so we must convert the annual effective rate into an effective quarterly rate.",
+    "Let \\(j\\) be the effective quarterly interest rate. Then \\((1+j)^4=1.05\\).",
+    "Therefore, \\(j=(1.05)^{1/4}-1=0.012272234\\).",
+    "Perpetuity B pays \\(25\\) at the end of each quarter, so it is a perpetuity-immediate with quarterly payments.",
+    "Thus, \\(PV_B=25a_{\\overline{\\infty}\\,|j}\\).",
+    "Using \\(a_{\\overline{\\infty}\\,|j}=\\frac{1}{j}\\), we get \\(PV_B=25\\left(\\frac{1}{0.012272234}\\right)\\).",
+    "Therefore, \\(PV_B=2{,}037.12\\)."
+  ],
+  "generalization": "For a perpetuity, the interest rate must match the payment period. If payments are quarterly but the given rate is annual effective, first convert to the effective quarterly rate before using \\(a_{\\overline{\\infty}\\,|}=\\frac{1}{i}\\).",
+  "answer_text": "The present value of Perpetuity B is \\(\\boxed{2{,}037.12}\\), so the correct choice is E."
+},
+  {
+  "id": 120,
+  "topic": "perpetuities and annuities",
+  "title": "Exercise 120",
+  "statement": "The death benefit on a life insurance policy can be paid in any of the following ways, each of which has the same present value as the death benefit: (i) a perpetuity of \\(120\\) at the end of each month; (ii) \\(365.47\\) at the end of each month for \\(n\\) years; and (iii) a payment of \\(17{,}866.32\\) at the end of \\(n\\) years. Calculate the amount of the death benefit.",
+  "choices": [
+    "\\(8{,}000\\)",
+    "\\(9{,}000\\)",
+    "\\(10{,}000\\)",
+    "\\(12{,}000\\)",
+    "\\(15{,}000\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Let \\(j\\) be the effective monthly interest rate.",
+    "Since all three payment options have the same present value, equate options (i) and (ii).",
+    "Option (i) is a monthly perpetuity-immediate of \\(120\\), so its present value is \\(120a_{\\overline{\\infty}\\,|j}\\).",
+    "Option (ii) is a monthly annuity-immediate of \\(365.47\\) for \\(n\\) years. Since there are \\(12n\\) monthly payments, its present value is \\(365.47a_{\\overline{12n}\\,|j}\\).",
+    "Thus, \\(120a_{\\overline{\\infty}\\,|j}=365.47a_{\\overline{12n}\\,|j}\\).",
+    "Using \\(a_{\\overline{\\infty}\\,|j}=\\frac{1}{j}\\) and \\(a_{\\overline{12n}\\,|j}=\\frac{1-v_j^{12n}}{j}\\), we get \\(120\\left(\\frac{1}{j}\\right)=365.47\\left(\\frac{1-v_j^{12n}}{j}\\right)\\).",
+    "Cancel \\(\\frac{1}{j}\\): \\(120=365.47(1-v_j^{12n})\\).",
+    "Therefore, \\(1-v_j^{12n}=\\frac{120}{365.47}\\).",
+    "So \\(v_j^{12n}=1-\\frac{120}{365.47}=0.67166\\).",
+    "Option (iii) gives the death benefit as the present value of \\(17{,}866.32\\) paid at the end of \\(n\\) years.",
+    "Thus, \\(\\text{Death benefit}=17{,}866.32v_j^{12n}\\).",
+    "Substitute \\(v_j^{12n}=0.67166\\): \\(\\text{Death benefit}=17{,}866.32(0.67166)=12{,}000\\)."
+  ],
+  "generalization": "When several payment options have the same present value, equate two options to solve for a useful discount factor, then use that factor in the remaining option. Here, equating the perpetuity and finite annuity gives \\(v_j^{12n}\\), which is exactly the discount factor needed for the single payment option.",
+  "answer_text": "The death benefit is \\(\\boxed{12{,}000}\\), so the correct choice is D."
 }
 ]
