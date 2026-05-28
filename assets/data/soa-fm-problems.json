@@ -3388,5 +3388,34 @@
   ],
   "generalization": "When several payment options have the same present value, equate two options to solve for a useful discount factor, then use that factor in the remaining option. Here, equating the perpetuity and finite annuity gives \\(v_j^{12n}\\), which is exactly the discount factor needed for the single payment option.",
   "answer_text": "The death benefit is \\(\\boxed{12{,}000}\\), so the correct choice is D."
+},
+  {
+  "id": 121,
+  "topic": "perpetuities and accumulated value",
+  "title": "Exercise 121",
+  "statement": "Deposits of \\(1{,}000\\) are placed into a fund at the beginning of each year for \\(30\\) years. At the end of the \\(40\\)th year, annual payments commence and continue forever. Interest is at an effective rate of \\(5\\%\\). Calculate the annual payment.",
+  "choices": [
+    "\\(5{,}440\\)",
+    "\\(5{,}430\\)",
+    "\\(5{,}420\\)",
+    "\\(5{,}410\\)",
+    "\\(5{,}400\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Let \\(X\\) be the annual payment.",
+    "The deposits are made at the beginning of each year for \\(30\\) years, so they occur at times \\(0,1,2,\\ldots,29\\).",
+    "The annual payments begin at the end of the \\(40\\)th year, so they occur at times \\(40,41,42,\\ldots\\).",
+    "A convenient equation of value is at time \\(39\\), one year before the first annual payment.",
+    "The accumulated value at time \\(39\\) of the deposits is \\(1{,}000s_{\\overline{30}\\,|0.05}(1.05)^{10}\\).",
+    "The payments beginning at time \\(40\\) form a perpetuity-immediate valued at time \\(39\\), so their value is \\(Xa_{\\overline{\\infty}\\,|0.05}\\).",
+    "Thus, \\(1{,}000s_{\\overline{30}\\,|0.05}(1.05)^{10}=Xa_{\\overline{\\infty}\\,|0.05}\\).",
+    "Using \\(a_{\\overline{\\infty}\\,|0.05}=\\frac{1}{0.05}\\), we get \\(1{,}000s_{\\overline{30}\\,|0.05}(1.05)^{10}=X\\left(\\frac{1}{0.05}\\right)\\).",
+    "Therefore, \\(X=1{,}000s_{\\overline{30}\\,|0.05}(1.05)^{10}(0.05)\\).",
+    "Since \\(s_{\\overline{30}\\,|0.05}=\\frac{1.05^{30}-1}{0.05}\\), we obtain \\(X=5{,}411.09\\).",
+    "The closest answer choice is \\(5{,}410\\)."
+  ],
+  "generalization": "When deposits occur at the beginning of each year and withdrawals continue forever, choose a valuation date just before the first withdrawal. Then the withdrawals can be valued as a perpetuity-immediate, while the deposits can be accumulated to that same date.",
+  "answer_text": "The annual payment is approximately \\(\\boxed{5{,}411.09}\\), so the closest choice is D, \\(5{,}410\\)."
 }
 ]
