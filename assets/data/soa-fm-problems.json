@@ -3417,5 +3417,110 @@
   ],
   "generalization": "When deposits occur at the beginning of each year and withdrawals continue forever, choose a valuation date just before the first withdrawal. Then the withdrawals can be valued as a perpetuity-immediate, while the deposits can be accumulated to that same date.",
   "answer_text": "The annual payment is approximately \\(\\boxed{5{,}411.09}\\), so the closest choice is D, \\(5{,}410\\)."
+},
+  {
+  "id": 122,
+  "topic": "Annuities Payable m-thly",
+  "title": "Exercise 122",
+  "statement": "Dave receives twenty payments of 500 every 6 months, with the first payment immediately. He immediately deposits each payment into an account earning an annual effective interest rate of i. Which of the following expressions represents the value of the account at time 10?",
+  "choices": [
+    {
+      "label": "A",
+      "text": "500\\ddot{s}_{\\overline{10}|i}^{(2)}"
+    },
+    {
+      "label": "B",
+      "text": "500\\ddot{s}_{\\overline{20}|i}^{(2)}"
+    },
+    {
+      "label": "C",
+      "text": "1000\\ddot{s}_{\\overline{10}|i}^{(2)}"
+    },
+    {
+      "label": "D",
+      "text": "1000\\ddot{s}_{\\overline{20}|i}^{(2)}"
+    }
+  ],
+  "correct": "C",
+  "solution_steps": [
+    "Payments are made every 6 months, so m=2.",
+    "There are twenty semiannual payments, so the payments cover 20/2=10 years.",
+    "The first payment is made immediately, so the annuity is an annuity-due payable semiannually.",
+    "In m-thly annuity notation, the coefficient represents the total annual payment.",
+    "Each semiannual payment is 500, so the total annual payment is 2(500)=1000.",
+    "Therefore, the accumulated value at time 10 is 1000\\ddot{s}_{\\overline{10}|i}^{(2)}.",
+    "Equivalently, if j=(1+i)^{1/2}-1 is the effective rate per 6 months, the value is 500\\ddot{s}_{\\overline{20}|j}."
+  ],
+  "generalization": "For an annuity-due payable m-thly with payments of R each payment period for n years, the total annual payment is mR, and the accumulated value at time n is mR\\ddot{s}_{\\overline{n}|i}^{(m)}. Equivalently, using the effective rate j per payment period, the value is R\\ddot{s}_{\\overline{mn}|j}.",
+  "answer_text": "The correct answer is C. The value of the account at time 10 is 1000\\ddot{s}_{\\overline{10}|i}^{(2)}."
+},
+  {
+  "id": 123,
+  "topic": "Annuities Payable m-thly",
+  "title": "Exercise 123",
+  "statement": "Given \\ddot{a}_{\\overline{3}|}^{(4)}=2.7732 and v^3=0.8396, what is the present value of 12 quarterly payments of 100, with the first payment one quarter from now?",
+  "choices": [],
+  "correct": "1093.24",
+  "solution_steps": [
+    "Payments are made quarterly, so m=4.",
+    "There are 12 quarterly payments, so the payments cover 12/4=3 years.",
+    "Each quarterly payment is 100, so the total annual payment is 4(100)=400.",
+    "The present value of the quarterly annuity-immediate is PV=400a_{\\overline{3}|}^{(4)}.",
+    "We are given \\ddot{a}_{\\overline{3}|}^{(4)}, which represents a quarterly annuity-due.",
+    "The annuity-due has payments at times 0, 0.25, ..., 2.75, while the annuity-immediate has payments at times 0.25, 0.50, ..., 3.",
+    "Therefore, a_{\\overline{3}|}^{(4)}=\\ddot{a}_{\\overline{3}|}^{(4)}-1/4+(1/4)v^3.",
+    "Multiplying by 400 gives PV=400\\ddot{a}_{\\overline{3}|}^{(4)}-100+100v^3.",
+    "Substitute the given values: PV=400(2.7732)-100+100(0.8396).",
+    "Thus, PV=1093.24."
+  ],
+  "generalization": "For an annuity-immediate payable m-thly over n years, each payment of R corresponds to a total annual payment of mR. If the annuity-due factor is given instead, then a_{\\overline{n}|}^{(m)}=\\ddot{a}_{\\overline{n}|}^{(m)}-1/m+(1/m)v^n.",
+  "answer_text": "The present value is 1093.24."
+},
+  {
+  "id": 124,
+  "topic": "Annuities Payable m-thly",
+  "title": "Exercise 124",
+  "statement": "John made a deposit of 1000 into a fund at the beginning of each year for 20 years. At the end of 20 years, he began making semiannual withdrawals of 3000 at the beginning of each six months, with a smaller final withdrawal to exhaust the fund. The fund earned an annual effective interest rate of 8.16%. Calculate the amount of the final withdrawal.",
+  "choices": [
+    {
+      "label": "A",
+      "text": "561"
+    },
+    {
+      "label": "B",
+      "text": "1226"
+    },
+    {
+      "label": "C",
+      "text": "1430"
+    },
+    {
+      "label": "D",
+      "text": "1488"
+    },
+    {
+      "label": "E",
+      "text": "2240"
+    }
+  ],
+  "correct": "C",
+  "solution_steps": [
+    "The annual effective interest rate is i=0.0816.",
+    "The effective 6-month interest rate is j=(1.0816)^{1/2}-1=0.04.",
+    "The deposits of 1000 are made at the beginning of each year for 20 years, so they occur at times 0,1,2,...,19.",
+    "At time 19.5, the accumulated value of the deposits is 1000s_{\\overline{20}|0.0816}(1.0816)^{1/2}.",
+    "This gives 1000s_{\\overline{20}|0.0816}(1.0816)^{1/2}=48444.38.",
+    "The withdrawals begin at time 20. Relative to time 19.5, the first withdrawal occurs one half-year later, so the withdrawals form an annuity-immediate at the semiannual rate j=0.04.",
+    "Let n be the number of full semiannual withdrawals of 3000 that would exhaust the fund. Then 48444.38=3000a_{\\overline{n}|0.04}.",
+    "Solving this equation gives n=26.47 approximately.",
+    "Therefore, there are 26 full withdrawals of 3000, followed by a smaller final withdrawal X six months later.",
+    "At time 19.5, the equation of value is 48444.38=3000a_{\\overline{26}|0.04}+X(1.04)^{-27}.",
+    "Now 3000a_{\\overline{26}|0.04}=47948.31.",
+    "Thus, 48444.38=47948.31+X(1.04)^{-27}.",
+    "Solving gives X=1430.35.",
+    "The closest answer is 1430."
+  ],
+  "generalization": "When deposits and withdrawals have different payment frequencies, choose a valuation date that makes the cash flows easy to express. If the final withdrawal is smaller than the regular withdrawals, first determine how many full payments can be made, then solve an equation of value for the remaining partial payment.",
+  "answer_text": "The final withdrawal is approximately 1430.35, so the correct answer is C."
 }
 ]
