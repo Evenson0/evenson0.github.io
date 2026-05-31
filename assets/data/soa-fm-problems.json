@@ -3495,5 +3495,189 @@
   ],
   "generalization": "When deposits and withdrawals have different payment frequencies, choose a valuation date that makes the cash flows easy to express. If the final withdrawal is smaller than the regular withdrawals, first determine how many full payments can be made, then solve an equation of value for the remaining partial payment.",
   "answer_text": "The final withdrawal is approximately \\(\\boxed{1430.35}\\), so the correct answer is C."
+},
+  {
+  "id": 125,
+  "topic": "Increasing Annuities: Arithmetic",
+  "title": "Exercise 125",
+  "statement": "Olga buys a five-year increasing annuity for X. Olga will receive 2 at the end of the first month, 4 at the end of the second month, and for each month thereafter the payment increases by 2. The nominal interest rate is 9% convertible quarterly. Calculate X.",
+  "choices": [],
+  "correct": "2729.21",
+  "solution_steps": [
+    "The payments are monthly for 5 years, so the total number of payments is \\(5\\times 12=60\\).",
+    "The payments are \\(2,4,6,\\ldots,120\\).",
+    "Factor out \\(2\\): the payment stream is \\(2(1,2,3,\\ldots,60)\\).",
+    "Therefore, \\(X=2(Ia)_{\\overline{60}|j}\\), where \\(j\\) is the effective monthly interest rate.",
+    "The nominal interest rate is \\(9\\%\\) convertible quarterly, so the effective quarterly rate is \\(0.09/4=0.0225\\).",
+    "Since one quarter contains 3 months, \\((1+j)^3=1.0225\\).",
+    "Thus, \\(j=(1.0225)^{1/3}-1=0.0074444275\\).",
+    "Using the formula \\((Ia)_{\\overline{n}|j}=\\frac{\\ddot{a}_{\\overline{n}|j}-nv_j^n}{j}\\), we get \\(X=2\\left(\\frac{\\ddot{a}_{\\overline{60}|j}-60v_j^{60}}{j}\\right)\\).",
+    "Using the TVM function in BGN mode with \\(N=60\\), \\(I/Y=0.74444275\\), \\(PMT=1\\), and \\(FV=-60\\), the calculator gives \\(PV=-10.15873987\\).",
+    "Change the sign and divide by \\(j\\): \\(10.15873987/0.0074444275=1364.607296\\).",
+    "Multiply by \\(2\\): \\(X=2(1364.607296)=2729.214593\\)."
+  ],
+  "generalization": "For monthly payments that increase arithmetically by a constant amount R, the payment stream \\(R,2R,3R,\\ldots,nR\\) has present value \\(R(Ia)_{\\overline{n}|j}\\), where \\(j\\) is the effective interest rate per payment period.",
+  "answer_text": "The value of the annuity is \\(\\boxed{2729.21}\\)."
+},
+  {
+  "id": 126,
+  "topic": "Increasing Annuities: Arithmetic",
+  "title": "Exercise 126",
+  "statement": "Smith makes deposits to a savings account on July 1 of each year. The first deposit was made on July 1, 1972, and the last deposit will be made on July 1, 1982. The first deposit was 1000, and each subsequent deposit increases by 100. The account is credited with an effective annual interest rate of 4%. Determine the value of Smith's account as of July 2, 1982.",
+  "choices": [],
+  "correct": "19702.23",
+  "solution_steps": [
+    "Let time \\(0\\) be July 1, 1971. Then the deposits occur at times \\(1,2,\\ldots,11\\).",
+    "The deposits are \\(1000,1100,1200,\\ldots,2000\\).",
+    "Decompose the payment stream as \\(1000,1100,1200,\\ldots,2000=900(1,1,1,\\ldots,1)+100(1,2,3,\\ldots,11)\\).",
+    "The level part contributes \\(900s_{\\overline{11}|0.04}\\) at time \\(11\\).",
+    "The increasing part has present value \\(100(Ia)_{\\overline{11}|0.04}\\) at time \\(0\\).",
+    "Accumulating this increasing part to time \\(11\\) gives \\(100(Ia)_{\\overline{11}|0.04}(1.04)^{11}\\).",
+    "Therefore, the accumulated value is \\(900s_{\\overline{11}|0.04}+100(Ia)_{\\overline{11}|0.04}(1.04)^{11}\\).",
+    "Substituting \\(i=0.04\\) gives \\(19702.23\\)."
+  ],
+  "generalization": "When deposits increase arithmetically, it is often useful to decompose the payments into a level annuity plus an increasing annuity. For payments \\(A,A+B,A+2B,\\ldots,A+(n-1)B\\), one can write the stream as \\((A-B)(1,1,\\ldots,1)+B(1,2,\\ldots,n)\\).",
+  "answer_text": "The value of Smith's account is \\(\\boxed{19702.23}\\)."
+},
+  {
+  "id": 127,
+  "topic": "Increasing Annuities: Arithmetic",
+  "title": "Exercise 127",
+  "statement": "Jones purchased a perpetuity today for 7000. He will receive the first annual payment of 200 five years from now. The second annual payment will be 200 plus an amount C. Each subsequent payment will be the prior amount plus an additional constant amount C. If the effective interest rate is 4%, find C.",
+  "choices": [],
+  "correct": "5.10",
+  "solution_steps": [
+    "The first payment is \\(200\\) at time \\(5\\). The second payment is \\(200+C\\) at time \\(6\\), the third payment is \\(200+2C\\) at time \\(7\\), and so on.",
+    "Decompose the payment stream into a level perpetuity of \\(200\\) beginning at time \\(5\\), plus an increasing perpetuity with payments \\(C,2C,3C,\\ldots\\) beginning at time \\(6\\).",
+    "The level perpetuity has value \\(200a_{\\overline{\\infty}|0.04}\\) at time \\(4\\), so its present value is \\(200a_{\\overline{\\infty}|0.04}v^4\\).",
+    "The increasing part is an increasing perpetuity-immediate valued at time \\(5\\), so its value at time \\(5\\) is \\(C(Ia)_{\\overline{\\infty}|0.04}\\).",
+    "Therefore, the present value of the increasing part is \\(C(Ia)_{\\overline{\\infty}|0.04}v^5\\).",
+    "The equation of value is \\(7000=200a_{\\overline{\\infty}|0.04}v^4+C(Ia)_{\\overline{\\infty}|0.04}v^5\\).",
+    "Use \\(a_{\\overline{\\infty}|0.04}=1/0.04\\).",
+    "Use \\((Ia)_{\\overline{\\infty}|0.04}=1/(id)\\), where \\(d=i/(1+i)=0.04/1.04\\).",
+    "Thus, \\(7000=200(1/0.04)(1.04)^{-4}+C\\left(1/(0.04(0.04/1.04))\\right)(1.04)^{-5}\\).",
+    "Solving gives \\(C=5.10\\)."
+  ],
+  "generalization": "When a perpetuity has payments that start later and then increase arithmetically, decompose the stream into a level perpetuity plus an increasing perpetuity. Carefully choose the valuation date: a level perpetuity-immediate beginning at time \\(t+1\\) is valued at time \\(t\\), while an increasing perpetuity-immediate with payments \\(1,2,3,\\ldots\\) beginning at time \\(t+1\\) is also valued at time \\(t\\).",
+  "answer_text": "The constant increase is \\(\\boxed{5.10}\\)."
+},
+  {
+  "id": 127,
+  "topic": "Increasing Annuities: Arithmetic",
+  "title": "Exercise 127",
+  "statement": "Jones purchased a perpetuity today for 7000. He will receive the first annual payment of 200 five years from now. The second annual payment will be 200 plus an amount C. Each subsequent payment will be the prior amount plus an additional constant amount C. If the effective annual interest rate is 4%, find C.",
+  "choices": [
+    "\\(\\text{Less than }6\\)",
+    "\\(\\text{At least }6,\\text{ but less than }7\\)",
+    "\\(\\text{At least }7,\\text{ but less than }8\\)",
+    "\\(\\text{At least }8,\\text{ but less than }9\\)",
+    "\\(\\text{At least }9\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The payments are \\(200,200+C,200+2C,200+3C,\\ldots\\) at times \\(5,6,7,8,\\ldots\\).",
+    "Decompose the cash flow into a level perpetuity of \\(200\\) starting at time \\(5\\), plus an increasing perpetuity with payments \\(C,2C,3C,\\ldots\\) starting at time \\(6\\).",
+    "Write an equation of value at time \\(4\\).",
+    "The purchase price accumulated to time \\(4\\) is \\(7000(1.04)^4\\).",
+    "At time \\(4\\), the level perpetuity has value \\(200a_{\\overline{\\infty}|0.04}\\).",
+    "The increasing part starts with \\(C\\) at time \\(6\\), so at time \\(4\\) it has value \\(C(Ia)_{\\overline{\\infty}|0.04}v\\).",
+    "Thus, \\(7000(1.04)^4=200a_{\\overline{\\infty}|0.04}+C(Ia)_{\\overline{\\infty}|0.04}v\\).",
+    "Use \\(a_{\\overline{\\infty}|0.04}=1/0.04=25\\).",
+    "Use \\((Ia)_{\\overline{\\infty}|0.04}=1/(id)\\), where \\(d=0.04/1.04\\). This gives \\((Ia)_{\\overline{\\infty}|0.04}=650\\).",
+    "Since \\(v=1/1.04\\), we have \\((Ia)_{\\overline{\\infty}|0.04}v=650/1.04=625\\).",
+    "Therefore, \\(7000(1.04)^4=200(25)+625C\\).",
+    "So \\(8189.01=5000+625C\\).",
+    "Solving gives \\(C=5.10\\).",
+    "Therefore, \\(C<6\\)."
+  ],
+  "generalization": "For a perpetuity with a level component and an arithmetic increasing component, decompose the payments into a level perpetuity plus an increasing perpetuity. Then choose a valuation date one period before the first level payment, so the level perpetuity can be written as \\(Ra_{\\overline{\\infty}|i}\\). If the increasing component starts one period later, discount its increasing perpetuity value by one additional factor \\(v\\).",
+  "answer_text": "The value of \\(C\\) is approximately \\(\\boxed{5.10}\\), so the correct answer is A: Less than \\(6\\)."
+},
+  {
+  "id": 128,
+  "topic": "Increasing Annuities: Arithmetic",
+  "title": "Exercise 128",
+  "statement": "Sally buys a house. She has limited initial funds, so she agrees to make 360 monthly payments as follows: (i) The first payment is to be 500, with each subsequent payment increasing by 10. (ii) The first payment is due one month after the date of the loan. (iii) The nominal annual interest rate is 6% compounded monthly. Determine how much Sally borrowed.",
+  "choices": [
+    "\\(\\text{Less than }\\$200{,}000\\)",
+    "\\(\\text{At least }\\$200{,}000,\\text{ but less than }\\$230{,}000\\)",
+    "\\(\\text{At least }\\$230{,}000,\\text{ but less than }\\$260{,}000\\)",
+    "\\(\\text{At least }\\$260{,}000,\\text{ but less than }\\$290{,}000\\)",
+    "\\(\\text{At least }\\$290{,}000\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "The nominal annual interest rate is \\(6\\%\\) compounded monthly, so the effective monthly interest rate is \\(j=0.06/12=0.005\\).",
+    "The payments are \\(500,510,520,\\ldots\\) for a total of \\(360\\) monthly payments.",
+    "Decompose the payment stream as \\(500,510,520,\\ldots=490(1,1,1,\\ldots,1)+10(1,2,3,\\ldots,360)\\).",
+    "Therefore, the amount borrowed is the present value \\(PV=490a_{\\overline{360}|0.005}+10(Ia)_{\\overline{360}|0.005}\\).",
+    "Using \\(a_{\\overline{360}|0.005}=\\frac{1-v^{360}}{0.005}\\), where \\(v=1/1.005\\), we get \\(490a_{\\overline{360}|0.005}=81727.89\\).",
+    "Using \\((Ia)_{\\overline{360}|0.005}=\\frac{\\ddot{a}_{\\overline{360}|0.005}-360v^{360}}{0.005}\\), we get \\(10(Ia)_{\\overline{360}|0.005}=215700.96\\).",
+    "Thus, \\(PV=81727.89+215700.96=297428.85\\).",
+    "Therefore, Sally borrowed approximately \\(297429\\).",
+    "The correct answer is E, since the amount is at least \\(290000\\)."
+  ],
+  "generalization": "For an arithmetic increasing payment stream \\(P,P+Q,P+2Q,\\ldots,P+(n-1)Q\\), it is often useful to decompose it as \\((P-Q)(1,1,\\ldots,1)+Q(1,2,3,\\ldots,n)\\). The present value is then \\((P-Q)a_{\\overline{n}|j}+Q(Ia)_{\\overline{n}|j}\\), where \\(j\\) is the effective rate per payment period.",
+  "answer_text": "Sally borrowed approximately \\(\\boxed{297428.85}\\), so the correct answer is E: At least \\(\\$290{,}000\\)."
+},
+  {
+  "id": 129,
+  "topic": "Increasing Annuities: Arithmetic",
+  "title": "Exercise 129",
+  "statement": "Sally takes out a mortgage with the following repayment schedule: 100 at the beginning of each month in year 1, 200 at the beginning of each month in year 2, and in general 100n at the beginning of each month in year n, ending with 1500 at the beginning of each month in year 15. Sally will pay interest at an effective annual rate of 7%. Determine the present value of Sally's loan payments at the beginning of year 1, just before she makes her first 100 payment.",
+  "choices": [
+    "\\(\\text{Less than }\\$75{,}500\\)",
+    "\\(\\text{At least }\\$75{,}500,\\text{ but less than }\\$76{,}500\\)",
+    "\\(\\text{At least }\\$76{,}500,\\text{ but less than }\\$77{,}500\\)",
+    "\\(\\text{At least }\\$77{,}500,\\text{ but less than }\\$78{,}500\\)",
+    "\\(\\text{At least }\\$78{,}500\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Let \\(j\\) be the effective monthly interest rate. Since the annual effective interest rate is \\(7\\%\\), we have \\(j=(1.07)^{1/12}-1\\).",
+    "During year 1, Sally pays \\(100\\) at the beginning of each month, so the accumulated value at the end of year 1 is \\(100\\ddot{s}_{\\overline{12}|j}\\).",
+    "During year 2, Sally pays \\(200\\) at the beginning of each month, so the accumulated value at the end of year 2 is \\(200\\ddot{s}_{\\overline{12}|j}\\).",
+    "Continuing in the same way, year 15 gives an accumulated value of \\(1500\\ddot{s}_{\\overline{12}|j}\\) at the end of year 15.",
+    "After rolling up each year's monthly payments, the annual cash flows are \\(100\\ddot{s}_{\\overline{12}|j},200\\ddot{s}_{\\overline{12}|j},\\ldots,1500\\ddot{s}_{\\overline{12}|j}\\) at times \\(1,2,\\ldots,15\\).",
+    "This is an increasing annuity-immediate with annual effective interest rate \\(7\\%\\).",
+    "Thus, \\(PV=100\\ddot{s}_{\\overline{12}|j}(Ia)_{\\overline{15}|0.07}\\).",
+    "Using \\(j=(1.07)^{1/12}-1\\), we get \\(\\ddot{s}_{\\overline{12}|j}=12.45029715\\).",
+    "Also, \\((Ia)_{\\overline{15}|0.07}=61.55396701\\).",
+    "Therefore, \\(PV=100(12.45029715)(61.55396701)=76636.52\\).",
+    "The present value is approximately \\(76637\\), which falls in the interval from \\(76500\\) to \\(77500\\)."
+  ],
+  "generalization": "When payments are made monthly within each year but increase annually, it is often useful to first accumulate each year's monthly payments to the end of that year using a monthly annuity-due accumulated value factor. Then the resulting annual cash flows can be treated as an increasing annuity-immediate at the annual effective interest rate.",
+  "answer_text": "The present value is approximately \\(\\boxed{76636.52}\\), so the correct answer is C: At least \\(\\$76{,}500\\), but less than \\(\\$77{,}500\\)."
+},
+  {
+  "id": 130,
+  "topic": "Increasing Annuities: Arithmetic",
+  "title": "Exercise 130",
+  "statement": "A scholarship fund is to be established by making annual deposits as follows: at time 1, the deposit is 1000; at time 2, the deposit is 1000+500; at time 3, the deposit is 1000+500(2); in general, at time t, the deposit is 1000+500(t-1); and at time 10, the deposit is 1000+500(9). Beginning at time t=11, the fund will pay one scholarship of amount X annually into perpetuity. Assuming i=0.12, what is the largest value of X that the fund can provide?",
+  "choices": [
+    "\\(\\text{Less than }\\$5{,}500\\)",
+    "\\(\\text{At least }\\$5{,}500,\\text{ but less than }\\$6{,}000\\)",
+    "\\(\\text{At least }\\$6{,}000,\\text{ but less than }\\$6{,}500\\)",
+    "\\(\\text{At least }\\$6{,}500,\\text{ but less than }\\$7{,}000\\)",
+    "\\(\\text{At least }\\$7{,}000\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Write an equation of value at time \\(10\\).",
+    "The deposits are \\(1000,1500,2000,\\ldots,5500\\) at times \\(1,2,3,\\ldots,10\\).",
+    "Decompose the deposits as \\(1000(1,1,\\ldots,1)+500(0,1,2,\\ldots,9)\\).",
+    "The level part accumulates to time \\(10\\) as \\(1000s_{\\overline{10}|0.12}\\).",
+    "The increasing part starts after time \\(1\\), with payments \\(500,1000,1500,\\ldots,4500\\) at times \\(2,3,\\ldots,10\\). Its accumulated value at time \\(10\\) is \\(500(Is)_{\\overline{9}|0.12}\\).",
+    "Beginning at time \\(11\\), the fund pays \\(X\\) annually forever. At time \\(10\\), this perpetuity has value \\(Xa_{\\overline{\\infty}|0.12}\\).",
+    "Thus, \\(1000s_{\\overline{10}|0.12}+500(Is)_{\\overline{9}|0.12}=Xa_{\\overline{\\infty}|0.12}\\).",
+    "Compute \\(s_{\\overline{10}|0.12}=17.548735\\).",
+    "Compute \\((Is)_{\\overline{9}|0.12}=62.906126\\).",
+    "Therefore, \\(1000(17.548735)+500(62.906126)=49001.80\\).",
+    "Since \\(a_{\\overline{\\infty}|0.12}=1/0.12\\), we have \\(49001.80=X/0.12\\).",
+    "Solving gives \\(X=49001.80(0.12)=5880.22\\).",
+    "The value falls between \\(5500\\) and \\(6000\\)."
+  ],
+  "generalization": "When deposits increase arithmetically and future payments are a perpetuity, choose the valuation date one period before the perpetuity begins. Accumulate the deposits to that date, decompose them into a level annuity plus an increasing annuity if useful, and equate the result to the present value of the perpetuity.",
+  "answer_text": "The largest scholarship payment is approximately \\(\\boxed{5880.22}\\), so the correct answer is B: At least \\(\\$5{,}500\\), but less than \\(\\$6{,}000\\)."
 }
 ]
