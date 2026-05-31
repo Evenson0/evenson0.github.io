@@ -3679,5 +3679,154 @@
   ],
   "generalization": "When deposits increase arithmetically and future payments are a perpetuity, choose the valuation date one period before the perpetuity begins. Accumulate the deposits to that date, decompose them into a level annuity plus an increasing annuity if useful, and equate the result to the present value of the perpetuity.",
   "answer_text": "The largest scholarship payment is approximately \\(\\boxed{5880.22}\\), so the correct answer is B: At least \\(\\$5{,}500\\), but less than \\(\\$6{,}000\\)."
+},
+  {
+  "id": 131,
+  "topic": "Decreasing Annuities: Arithmetic",
+  "title": "Exercise 131",
+  "statement": "Jane receives a ten-year increasing annuity-immediate paying 100 the first year and increasing by 100 each year thereafter. Mary receives a ten-year decreasing annuity-immediate paying X the first year and decreasing by X/10 each year thereafter. At an effective interest rate of 5%, both annuities have the same present value. Calculate X.",
+  "choices": [],
+  "correct": "864.12",
+  "solution_steps": [
+    "Jane's payments are \\(100,200,300,\\ldots,1000\\). Therefore, Jane's present value is \\(100(Ia)_{\\overline{10}|0.05}\\).",
+    "Mary's payments are \\(X,9X/10,8X/10,\\ldots,X/10\\). This is equal to \\((X/10)(10,9,8,\\ldots,1)\\).",
+    "Therefore, Mary's present value is \\((X/10)(Da)_{\\overline{10}|0.05}\\).",
+    "Since the two present values are equal, \\(100(Ia)_{\\overline{10}|0.05}=(X/10)(Da)_{\\overline{10}|0.05}\\).",
+    "Solving for \\(X\\), we get \\(X=1000(Ia)_{\\overline{10}|0.05}/(Da)_{\\overline{10}|0.05}\\).",
+    "Using \\((Ia)_{\\overline{n}|i}=\\frac{\\ddot{a}_{\\overline{n}|i}-nv^n}{i}\\), we obtain \\((Ia)_{\\overline{10}|0.05}=39.3737828\\).",
+    "Thus, Jane's present value is \\(100(39.3737828)=3937.37828\\).",
+    "Using \\((Da)_{\\overline{n}|i}=\\frac{n-a_{\\overline{n}|i}}{i}\\), and \\(a_{\\overline{10}|0.05}=7.721734929\\), we obtain \\((Da)_{\\overline{10}|0.05}=45.56530142\\).",
+    "Substitute into the equation: \\(3937.37828=(X/10)(45.56530142)\\).",
+    "Solving gives \\(X=864.12\\)."
+  ],
+  "generalization": "When two annuities have the same present value, write each cash flow in terms of standard arithmetic annuity factors. An increasing stream \\(R,2R,\\ldots,nR\\) has present value \\(R(Ia)_{\\overline{n}|i}\\), while a decreasing stream \\(nR,(n-1)R,\\ldots,R\\) has present value \\(R(Da)_{\\overline{n}|i}\\).",
+  "answer_text": "The value of \\(X\\) is \\(\\boxed{864.12}\\)."
+},
+  {
+  "id": 132,
+  "topic": "Decreasing Annuities: Arithmetic",
+  "title": "Exercise 132",
+  "statement": "For a decreasing annuity-due with annual payments: (i) the first payment is 120, (ii) each subsequent payment decreases by 10, (iii) the last payment is 40, and (iv) the annual effective rate of interest is 5%. Find the accumulated value of the annuity payments one year after the last payment.",
+  "choices": [],
+  "correct": "963.77",
+  "solution_steps": [
+    "The payments are \\(120,110,100,\\ldots,40\\).",
+    "Since the payments decrease by \\(10\\), solve \\(120-10(n-1)=40\\). This gives \\(n=9\\).",
+    "Because this is an annuity-due, the payments occur at times \\(0,1,2,\\ldots,8\\).",
+    "The accumulated value is required one year after the last payment, which is time \\(9\\).",
+    "Decompose the payment stream as \\(120,110,100,\\ldots,40=30(1,1,1,\\ldots,1)+10(9,8,7,\\ldots,1)\\).",
+    "Thus, the accumulated value at time \\(9\\) is \\(AV=30\\ddot{s}_{\\overline{9}|0.05}+10(D\\ddot{s})_{\\overline{9}|0.05}\\).",
+    "Using \\((D\\ddot{s})_{\\overline{n}|i}=\\frac{n(1+i)^n-s_{\\overline{n}|i}}{d}\\), where \\(d=i/(1+i)\\), we get \\((D\\ddot{s})_{\\overline{9}|0.05}=\\frac{9(1.05)^9-s_{\\overline{9}|0.05}}{0.05/1.05}\\).",
+    "Substituting the values gives \\(AV=963.77\\).",
+    "Alternatively, value the payments at time \\(-1\\): \\(10(Da)_{\\overline{9}|0.05}+30a_{\\overline{9}|0.05}=591.67\\).",
+    "Then accumulate from time \\(-1\\) to time \\(9\\): \\(591.67(1.05)^{10}=963.77\\)."
+  ],
+  "generalization": "For a decreasing annuity-due, it is often simpler to value the cash flows one period before the first payment using annuity-immediate formulas, then accumulate to the required date. A payment stream that does not end at the decrement amount can be decomposed into a level annuity plus a standard decreasing annuity.",
+  "answer_text": "The accumulated value one year after the last payment is \\(\\boxed{963.77}\\)."
+},
+  {
+  "id": 133,
+  "topic": "Decreasing Annuities: Arithmetic",
+  "title": "Exercise 133",
+  "statement": "For an annuity-immediate with monthly payments: (i) the monthly payments for each year are level; (ii) the monthly payments for the first year are 100; (iii) each subsequent year the monthly payments decrease by 10, so year two has monthly payments of 90, year three has monthly payments of 80, and so on; (iv) there are ten years worth of payments; and (v) the annual effective interest rate is 8%. Find the present value of this annuity.",
+  "choices": [],
+  "correct": "5113.31",
+  "solution_steps": [
+    "Let \\(j\\) be the effective monthly interest rate. Since the annual effective interest rate is \\(8\\%\\), \\(j=(1.08)^{1/12}-1\\).",
+    "During year 1, the annuity pays \\(100\\) at the end of each month, so the accumulated value at the end of year 1 is \\(100s_{\\overline{12}|j}\\).",
+    "During year 2, the monthly payment is \\(90\\), so the accumulated value at the end of year 2 is \\(90s_{\\overline{12}|j}\\).",
+    "Continuing in the same way, the annual rolled-up cash flows are \\(100s_{\\overline{12}|j},90s_{\\overline{12}|j},80s_{\\overline{12}|j},\\ldots,10s_{\\overline{12}|j}\\) at times \\(1,2,3,\\ldots,10\\).",
+    "Factor out \\(10s_{\\overline{12}|j}\\). The annual cash flows are \\(10s_{\\overline{12}|j}(10,9,8,\\ldots,1)\\).",
+    "Thus, the present value is \\(PV=10s_{\\overline{12}|j}(Da)_{\\overline{10}|0.08}\\).",
+    "Using \\(s_{\\overline{12}|j}=\\frac{(1+j)^{12}-1}{j}=\\frac{1.08-1}{j}\\), and \\((Da)_{\\overline{10}|0.08}=\\frac{10-a_{\\overline{10}|0.08}}{0.08}\\), we compute \\(PV=5113.31\\)."
+  ],
+  "generalization": "When payments are monthly within each year but change annually, first roll up the monthly payments within each year to the end of that year using the effective monthly rate. The resulting annual cash flows can then be valued as an increasing or decreasing annuity at the annual effective interest rate.",
+  "answer_text": "The present value of the annuity is \\(\\boxed{5113.31}\\)."
+},
+  {
+  "id": 134,
+  "topic": "Decreasing Annuities: Arithmetic",
+  "title": "Exercise 134",
+  "statement": "An annuity-immediate pays 10 at the ends of years 1 and 2, 9 at the ends of years 3 and 4, etc., with payments decreasing by 1 every second year, until nothing is paid. The effective annual rate of interest is 5%. Calculate the present value of this annuity-immediate.",
+  "choices": [
+    "\\(71\\)",
+    "\\(78\\)",
+    "\\(84\\)",
+    "\\(88\\)",
+    "\\(94\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "The payments are \\(10,10,9,9,8,8,\\ldots,1,1\\) at times \\(1,2,3,4,\\ldots,19,20\\).",
+    "Let \\(j\\) be the effective interest rate per two years. Then \\(j=(1.05)^2-1=0.1025\\).",
+    "The payments at the ends of years \\(2,4,6,\\ldots,20\\) are \\(10,9,8,\\ldots,1\\). Using two-year periods, their present value is \\((Da)_{\\overline{10}|0.1025}\\).",
+    "The payments at the ends of years \\(1,3,5,\\ldots,19\\) are also \\(10,9,8,\\ldots,1\\). They occur one year earlier than the corresponding even-year payments.",
+    "Therefore, the present value of the odd-year payments is \\(1.05(Da)_{\\overline{10}|0.1025}\\).",
+    "The total present value is \\((Da)_{\\overline{10}|0.1025}+1.05(Da)_{\\overline{10}|0.1025}=2.05(Da)_{\\overline{10}|0.1025}\\).",
+    "Using \\((Da)_{\\overline{n}|i}=\\frac{n-a_{\\overline{n}|i}}{i}\\), we get \\((Da)_{\\overline{10}|0.1025}=38.2482\\).",
+    "Thus, \\(PV=2.05(38.2482)=78.41\\).",
+    "The closest answer is \\(78\\)."
+  ],
+  "generalization": "When a payment pattern changes every two years, it can be useful to group cash flows into two-year periods. If two identical decreasing streams occur one year apart, value one stream using the two-year effective rate, then adjust the other stream by one year of interest.",
+  "answer_text": "The present value is approximately \\(\\boxed{78.41}\\), so the correct answer is B: \\(78\\)."
+},
+  {
+  "id": 135,
+  "topic": "Decreasing Annuities: Arithmetic",
+  "title": "Exercise 135",
+  "statement": "François purchases a 10-year annuity-immediate with annual payments of 10X. Jacques purchases a 10-year decreasing annuity-immediate which also makes annual payments. The payment at the end of year 1 is equal to 50. At the end of year 2, and at the end of each year through year 10, each subsequent payment is reduced from the previous year's payment by an amount equal to X. At an annual effective interest rate of 7.072%, both annuities have the same present value. Calculate X, where X<5.",
+  "choices": [
+    "\\(3.29\\)",
+    "\\(3.39\\)",
+    "\\(3.49\\)",
+    "\\(3.59\\)",
+    "\\(3.69\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Let \\(i=0.07072\\) and \\(v=1/(1+i)\\).",
+    "François receives \\(10X\\) each year for 10 years, so his present value is \\(10Xa_{\\overline{10}|i}\\).",
+    "Jacques receives \\(50,50-X,50-2X,\\ldots,50-9X\\).",
+    "Decompose Jacques's payments as a level annuity of \\(50\\), minus an increasing annuity of \\(X\\) starting one year after the first payment.",
+    "Therefore, Jacques's present value is \\(50a_{\\overline{10}|i}-X(Ia)_{\\overline{9}|i}v\\).",
+    "Since both annuities have the same present value, \\(10Xa_{\\overline{10}|i}=50a_{\\overline{10}|i}-X(Ia)_{\\overline{9}|i}v\\).",
+    "Move the terms involving \\(X\\) to the left: \\(10Xa_{\\overline{10}|i}+X(Ia)_{\\overline{9}|i}v=50a_{\\overline{10}|i}\\).",
+    "Factor out \\(X\\): \\(X(10a_{\\overline{10}|i}+(Ia)_{\\overline{9}|i}v)=50a_{\\overline{10}|i}\\).",
+    "Thus, \\(X=\\frac{50a_{\\overline{10}|i}}{10a_{\\overline{10}|i}+(Ia)_{\\overline{9}|i}v}\\).",
+    "Using \\(i=0.07072\\), \\(a_{\\overline{10}|i}=7.000265\\) and \\((Ia)_{\\overline{9}|i}=29.536439\\).",
+    "Substituting gives \\(X=3.5866\\).",
+    "Therefore, \\(X\\approx 3.59\\)."
+  ],
+  "generalization": "When a decreasing payment stream has the form \\(A,A-X,A-2X,\\ldots,A-(n-1)X\\), it can be written as a level annuity of \\(A\\) minus an increasing annuity based on the reductions. If the reductions start in the second payment, the increasing annuity must be discounted by one period.",
+  "answer_text": "The value of \\(X\\) is approximately \\(\\boxed{3.59}\\), so the correct answer is D."
+},
+  {
+  "id": 136,
+  "topic": "Decreasing Annuities: Arithmetic",
+  "title": "Exercise 136",
+  "statement": "You are given an annuity-immediate paying 10 for 10 years, then decreasing by one per year for nine years, and paying one per year thereafter, forever. The annual effective rate of interest is 4%. Calculate the present value of this annuity.",
+  "choices": [
+    "\\(119\\)",
+    "\\(121\\)",
+    "\\(123\\)",
+    "\\(125\\)",
+    "\\(127\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The payment stream pays \\(10\\) for the first 10 years.",
+    "Then it pays \\(9,8,7,\\ldots,1\\) for the next 9 years.",
+    "After that, it pays \\(1\\) per year forever.",
+    "Let \\(i=0.04\\) and \\(v=1/1.04\\).",
+    "Represent the annuity as the sum of three streams: a level annuity of \\(10\\) for 10 years, a deferred decreasing annuity for 9 years, and a deferred perpetuity of \\(1\\).",
+    "The present value of the first stream is \\(10a_{\\overline{10}|0.04}\\).",
+    "The decreasing payments \\(9,8,\\ldots,1\\) occur at times \\(11,12,\\ldots,19\\). Their value at time \\(10\\) is \\((Da)_{\\overline{9}|0.04}\\), so their present value is \\(v^{10}(Da)_{\\overline{9}|0.04}\\).",
+    "The perpetuity of \\(1\\) begins at time \\(20\\). Its value at time \\(19\\) is \\(a_{\\overline{\\infty}|0.04}\\), so its present value is \\(v^{19}a_{\\overline{\\infty}|0.04}\\).",
+    "Therefore, \\(PV=10a_{\\overline{10}|0.04}+v^{10}(Da)_{\\overline{9}|0.04}+v^{19}a_{\\overline{\\infty}|0.04}\\).",
+    "Using \\(a_{\\overline{10}|0.04}=\\frac{1-v^{10}}{0.04}\\), \\((Da)_{\\overline{9}|0.04}=\\frac{9-a_{\\overline{9}|0.04}}{0.04}\\), and \\(a_{\\overline{\\infty}|0.04}=1/0.04\\), we get \\(PV=119.40\\).",
+    "The closest answer is \\(119\\)."
+  ],
+  "generalization": "When an annuity has several phases, split the cash flow into separate annuity streams. Level payments can be valued using level annuity factors, decreasing payments using decreasing annuity factors, and payments continuing forever using perpetuity factors. Then discount each deferred stream back to time 0.",
+  "answer_text": "The present value is approximately \\(\\boxed{119.40}\\), so the correct answer is A: \\(119\\)."
 }
 ]
