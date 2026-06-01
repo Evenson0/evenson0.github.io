@@ -4115,5 +4115,307 @@
   ],
   "generalization": "For a perpetuity with an initial level period followed by geometric growth, value the level annuity first, then value the deferred geometric perpetuity at the point just before its first payment. Finally, discount the deferred value back to the valuation date.",
   "answer_text": "The value of \\(k\\) is \\(\\boxed{4.0}\\), so the correct answer is A."
+},
+  {
+  "id": 147,
+  "topic": "Continuous Annuities",
+  "title": "Exercise 147",
+  "statement": "Do these on your calculator without pen or paper: given i=0.04, calculate the continuous annuity present value factor for 10 years; given delta=0.06, calculate the continuous annuity present value factor for 20 years; given i=0.10, calculate the continuous annuity accumulated value factor for 15 years; given delta=0.08, calculate the continuous annuity accumulated value factor for 25 years.",
+  "choices": [],
+  "correct": "8.272; 11.647; 33.336; 79.863",
+  "solution_steps": [
+    "For continuous annuities, use \\(\\bar{a}_{\\overline{n}|}=\\frac{1-v^n}{\\delta}\\) and \\(\\bar{s}_{\\overline{n}|}=\\frac{(1+i)^n-1}{\\delta}\\).",
+    "If \\(i\\) is given, use \\(\\delta=\\ln(1+i)\\).",
+    "If \\(\\delta\\) is given, use \\(1+i=e^{\\delta}\\).",
+    "For \\(i=0.04\\), \\(\\delta=\\ln(1.04)\\), so \\(\\bar{a}_{\\overline{10}|}=\\frac{1-(1.04)^{-10}}{\\ln(1.04)}=8.272\\).",
+    "For \\(\\delta=0.06\\), use \\(v^n=e^{-\\delta n}\\), so \\(\\bar{a}_{\\overline{20}|}=\\frac{1-e^{-0.06(20)}}{0.06}=11.647\\).",
+    "For \\(i=0.10\\), \\(\\delta=\\ln(1.10)\\), so \\(\\bar{s}_{\\overline{15}|}=\\frac{(1.10)^{15}-1}{\\ln(1.10)}=33.336\\).",
+    "For \\(\\delta=0.08\\), use \\((1+i)^n=e^{\\delta n}\\), so \\(\\bar{s}_{\\overline{25}|}=\\frac{e^{0.08(25)}-1}{0.08}=79.863\\)."
+  ],
+  "generalization": "For continuous annuities, the force of interest \\(\\delta\\) replaces the usual denominator \\(i\\) or \\(d\\). If the effective rate \\(i\\) is given, convert it using \\(\\delta=\\ln(1+i)\\). If \\(\\delta\\) is given directly, it is often faster to use exponential forms: \\(\\bar{a}_{\\overline{n}|}=\\frac{1-e^{-\\delta n}}{\\delta}\\) and \\(\\bar{s}_{\\overline{n}|}=\\frac{e^{\\delta n}-1}{\\delta}\\).",
+  "answer_text": "The answers are \\(\\bar{a}_{\\overline{10}|}=8.272\\), \\(\\bar{a}_{\\overline{20}|}=11.647\\), \\(\\bar{s}_{\\overline{15}|}=33.336\\), and \\(\\bar{s}_{\\overline{25}|}=79.863\\)."
+},
+  {
+  "id": 148,
+  "topic": "Continuous Annuities",
+  "title": "Exercise 148",
+  "statement": "A continuous perpetuity has a rate of payment of 10 per year for the first 5 years and 20 per year thereafter. If the annual effective rate of interest is 8%, find the present value of this perpetuity.",
+  "choices": [],
+  "correct": "218.37",
+  "solution_steps": [
+    "The annual effective interest rate is \\(i=0.08\\), so the force of interest is \\(\\delta=\\ln(1.08)\\).",
+    "For the first 5 years, the perpetuity pays continuously at a rate of \\(10\\) per year. The present value of this part is \\(10\\bar{a}_{\\overline{5}|}\\).",
+    "After time \\(5\\), the perpetuity pays continuously at a rate of \\(20\\) per year forever. The value at time \\(5\\) of this continuous perpetuity is \\(20\\bar{a}_{\\overline{\\infty}|}\\).",
+    "Discounting this value back to time \\(0\\), we get \\(20\\bar{a}_{\\overline{\\infty}|}v^5\\).",
+    "Thus, \\(PV=10\\bar{a}_{\\overline{5}|}+20\\bar{a}_{\\overline{\\infty}|}v^5\\).",
+    "Using \\(\\bar{a}_{\\overline{5}|}=\\frac{1-v^5}{\\delta}\\) and \\(\\bar{a}_{\\overline{\\infty}|}=\\frac{1}{\\delta}\\), we get \\(PV=10\\left(\\frac{1-v^5}{\\delta}\\right)+20\\left(\\frac{1}{\\delta}\\right)v^5\\).",
+    "With \\(v=1/1.08\\) and \\(\\delta=\\ln(1.08)\\), this gives \\(PV=218.37\\).",
+    "Alternatively, write the cash flow as a continuous perpetuity of \\(20\\) per year forever minus a continuous temporary annuity of \\(10\\) per year for the first 5 years: \\(PV=20\\bar{a}_{\\overline{\\infty}|}-10\\bar{a}_{\\overline{5}|}=218.37\\)."
+  ],
+  "generalization": "For a continuous payment stream with different payment rates over different time intervals, split the stream into separate continuous annuities or perpetuities. A continuous perpetuity paying at rate \\(R\\) per year has present value \\(R/\\delta\\), and a continuous temporary annuity paying at rate \\(R\\) for \\(n\\) years has present value \\(R(1-v^n)/\\delta\\).",
+  "answer_text": "The present value of the continuous perpetuity is \\(\\boxed{218.37}\\)."
+},
+  {
+  "id": 149,
+  "topic": "Continuous Annuities",
+  "title": "Exercise 149",
+  "statement": "The present value of a continuous annuity of 1 per year for a certain number of years is 4. The continuously compounded rate of interest is 12.5%. What is the accumulated value of a continuous annuity of 1 per year for twice that number of years?",
+  "choices": [],
+  "correct": "24",
+  "solution_steps": [
+    "Let the unknown number of years be \\(n\\).",
+    "The present value of a continuous annuity of \\(1\\) per year for \\(n\\) years is \\(\\bar{a}_{\\overline{n}|}\\).",
+    "We are given \\(\\bar{a}_{\\overline{n}|}=4\\).",
+    "The continuously compounded rate of interest is \\(\\delta=0.125\\).",
+    "Using \\(\\bar{a}_{\\overline{n}|}=\\frac{1-v^n}{\\delta}\\), we get \\(\\frac{1-v^n}{0.125}=4\\).",
+    "Thus, \\(1-v^n=0.5\\), so \\(v^n=0.5\\).",
+    "Therefore, \\((1+i)^n=0.5^{-1}=2\\).",
+    "We need \\(\\bar{s}_{\\overline{2n}|}=\\frac{(1+i)^{2n}-1}{\\delta}\\).",
+    "Since \\((1+i)^n=2\\), we have \\((1+i)^{2n}=2^2=4\\).",
+    "Therefore, \\(\\bar{s}_{\\overline{2n}|}=\\frac{4-1}{0.125}=24\\)."
+  ],
+  "generalization": "When a continuous annuity present value gives information about \\(v^n\\), use it to infer \\((1+i)^n\\). Then accumulated values over multiples of \\(n\\) can often be found without solving explicitly for \\(n\\).",
+  "answer_text": "The accumulated value is \\(\\boxed{24}\\)."
+},
+  {
+  "id": 150,
+  "topic": "Continuous Annuities",
+  "title": "Exercise 150",
+  "statement": "You are given an effective annual rate of interest i=5%. Which of the following values are greater than or equal to 20? (1) The present value of an annuity of 1 per year payable continuously for 50 years. (2) The accumulated value in 5 years of annual payments starting at 5 and decreasing by 1 per year, with payments starting one year from now. (3) The present value of a perpetuity paying 1 every 5 years and increasing by 1 each payment, with payments starting five years from now.",
+  "choices": [
+    "\\((1)\\)",
+    "\\((2)\\)",
+    "\\((3)\\)",
+    "\\((1)\\text{ and }(2)\\)",
+    "\\(\\text{None of }(1),(2),\\text{ or }(3)\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "We are given \\(i=0.05\\), so \\(v=1/1.05\\) and \\(\\delta=\\ln(1.05)\\).",
+    "For value 1, use the continuous annuity formula \\(\\bar{a}_{\\overline{50}|}=\\frac{1-v^{50}}{\\delta}\\).",
+    "Thus, \\(\\bar{a}_{\\overline{50}|}=\\frac{1-(1.05)^{-50}}{\\ln(1.05)}=18.71\\). Since \\(18.71<20\\), value 1 is not at least 20.",
+    "For value 2, the payments are \\(5,4,3,2,1\\) at times \\(1,2,3,4,5\\).",
+    "The accumulated value at time 5 is \\((Ds)_{\\overline{5}|0.05}\\).",
+    "Using \\((Ds)_{\\overline{n}|i}=\\frac{n-a_{\\overline{n}|i}}{i}(1+i)^n\\), we get \\((Ds)_{\\overline{5}|0.05}=17.12\\). Since \\(17.12<20\\), value 2 is not at least 20.",
+    "For value 3, the payments are \\(1,2,3,\\ldots\\) at times \\(5,10,15,\\ldots\\).",
+    "Let \\(j\\) be the effective rate per 5 years. Then \\(j=(1.05)^5-1=0.27628\\).",
+    "This is an increasing perpetuity-immediate measured in 5-year periods, so \\(PV=(Ia)_{\\overline{\\infty}|j}\\).",
+    "For an increasing perpetuity-immediate, \\((Ia)_{\\overline{\\infty}|j}=\\frac{1}{jd}=\\frac{1+j}{j^2}\\).",
+    "Substituting \\(j=0.27628\\), we get \\(PV=16.72\\). Since \\(16.72<20\\), value 3 is not at least 20.",
+    "Therefore, none of the three values are greater than or equal to 20."
+  ],
+  "generalization": "When comparing different annuity values, compute each value at the correct valuation date and with the correct payment frequency. For continuous annuities, use \\(\\delta=\\ln(1+i)\\). For payments made every several years, convert the annual effective rate into the effective rate per payment period.",
+  "answer_text": "None of the three values are greater than or equal to 20, so the correct answer is E."
+},
+  {
+  "id": 151,
+  "topic": "Continuous Annuities",
+  "title": "Exercise 151",
+  "statement": "An annuity has the following series of payments: (i) 1000 per year for the first 4 years payable continuously; (ii) 1000 starting at the end of the 5th year, increasing by X per year at the end of years 6 through 11; (iii) 3000 per year at the beginning of years 13 through 15. The nominal rate of interest is 10% compounded twice per year. The accumulated value of the payments at the end of the 15th year is 50000. Determine X.",
+  "choices": [
+    "\\(\\text{Less than }\\$295\\)",
+    "\\(\\text{At least }\\$295,\\text{ but less than }\\$305\\)",
+    "\\(\\text{At least }\\$305,\\text{ but less than }\\$315\\)",
+    "\\(\\text{At least }\\$315,\\text{ but less than }\\$325\\)",
+    "\\(\\text{At least }\\$325\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The nominal rate is \\(10\\%\\) compounded twice per year, so the annual effective rate is \\(i=(1+0.10/2)^2-1=0.1025\\).",
+    "Let \\(v=1/1.1025\\).",
+    "Write an equation of value at time \\(0\\). Since the accumulated value at time \\(15\\) is \\(50000\\), its present value is \\(50000v^{15}\\).",
+    "The first stream is \\(1000\\) per year payable continuously for the first 4 years, so its present value is \\(1000\\bar{a}_{\\overline{4}|0.1025}\\).",
+    "The second stream has a level part of \\(1000\\) paid at the ends of years \\(5\\) through \\(11\\). This is \\(1000a_{\\overline{7}|0.1025}v^4\\).",
+    "The increasing part is \\(X,2X,\\ldots,6X\\) paid at the ends of years \\(6\\) through \\(11\\). This is \\(X(Ia)_{\\overline{6}|0.1025}v^5\\).",
+    "The third stream pays \\(3000\\) at the beginning of years \\(13\\) through \\(15\\), which means times \\(12,13,14\\). Its present value is \\(3000a_{\\overline{3}|0.1025}v^{11}\\).",
+    "The equation of value is \\(1000\\bar{a}_{\\overline{4}|0.1025}+1000a_{\\overline{7}|0.1025}v^4+X(Ia)_{\\overline{6}|0.1025}v^5+3000a_{\\overline{3}|0.1025}v^{11}=50000v^{15}\\).",
+    "Substituting values gives \\(3311.74+4387.60+8.53894X+1419.80=11568.87\\).",
+    "Thus, \\(8.53894X=2449.73\\).",
+    "Solving gives \\(X=286.89\\).",
+    "Therefore, \\(X\\) is less than \\(295\\)."
+  ],
+  "generalization": "For mixed payment streams, write all values at a common valuation date. Continuous payments use continuous annuity factors, level annual payments use ordinary annuity factors, arithmetic increasing payments use increasing annuity factors, and timing words such as beginning of year must be translated carefully into exact time points.",
+  "answer_text": "The value of \\(X\\) is approximately \\(\\boxed{286.89}\\), so the correct answer is A: Less than \\(\\$295\\)."
+},
+  {
+  "id": 152,
+  "topic": "Continuous Annuities",
+  "title": "Exercise 152",
+  "statement": "Given delta = 0.05, calculate: (1) the present value of a continuously increasing annuity for 10 years, (2) the present value of a continuously decreasing annuity for 10 years, and (3) the present value of a continuously increasing perpetuity.",
+  "choices": [],
+  "correct": "36.08; 42.61; 400",
+  "solution_steps": [
+    "Since \\(\\delta=0.05\\), we have \\(v^t=e^{-\\delta t}\\).",
+    "Thus, \\(v^{10}=e^{-0.05(10)}=e^{-0.5}\\).",
+    "Compute the continuous annuity factor: \\(\\bar{a}_{\\overline{10}|}=\\frac{1-v^{10}}{\\delta}=\\frac{1-e^{-0.5}}{0.05}\\).",
+    "For the continuously increasing annuity, use \\((\\bar{I}\\bar{a})_{\\overline{n}|}=\\frac{\\bar{a}_{\\overline{n}|}-nv^n}{\\delta}\\).",
+    "Therefore, \\((\\bar{I}\\bar{a})_{\\overline{10}|}=\\frac{\\bar{a}_{\\overline{10}|}-10v^{10}}{0.05}=36.08\\).",
+    "For the continuously decreasing annuity, use \\((\\bar{D}\\bar{a})_{\\overline{n}|}=\\frac{n-\\bar{a}_{\\overline{n}|}}{\\delta}\\).",
+    "Therefore, \\((\\bar{D}\\bar{a})_{\\overline{10}|}=\\frac{10-\\bar{a}_{\\overline{10}|}}{0.05}=42.61\\).",
+    "For the continuously increasing perpetuity, use \\((\\bar{I}\\bar{a})_{\\overline{\\infty}|}=\\frac{1}{\\delta^2}\\).",
+    "Therefore, \\((\\bar{I}\\bar{a})_{\\overline{\\infty}|}=\\frac{1}{0.05^2}=400\\)."
+  ],
+  "generalization": "When the force of interest \\(\\delta\\) is given directly, use \\(v^t=e^{-\\delta t}\\). The main formulas are \\((\\bar{I}\\bar{a})_{\\overline{n}|}=\\frac{\\bar{a}_{\\overline{n}|}-nv^n}{\\delta}\\), \\((\\bar{D}\\bar{a})_{\\overline{n}|}=\\frac{n-\\bar{a}_{\\overline{n}|}}{\\delta}\\), and \\((\\bar{I}\\bar{a})_{\\overline{\\infty}|}=\\frac{1}{\\delta^2}\\).",
+  "answer_text": "The answers are \\((\\bar{I}\\bar{a})_{\\overline{10}|}=\\boxed{36.08}\\), \\((\\bar{D}\\bar{a})_{\\overline{10}|}=\\boxed{42.61}\\), and \\((\\bar{I}\\bar{a})_{\\overline{\\infty}|}=\\boxed{400}\\)."
+},
+  {
+  "id": 153,
+  "topic": "Continuous Annuities",
+  "title": "Exercise 153",
+  "statement": "Payments are made to an account at a continuous rate of 8k + tk, where 0 <= t <= 10. Interest is credited at a force of interest delta_t = 1/(8+t). After 10 years, the account is worth 20000. Calculate k.",
+  "choices": [],
+  "correct": "111.11",
+  "solution_steps": [
+    "The payment rate at time \\(t\\) is \\(f(t)=8k+tk=k(8+t)\\).",
+    "The force of interest is \\(\\delta_t=\\frac{1}{8+t}\\).",
+    "The accumulation function from time \\(0\\) to time \\(t\\) is \\(a(t)=\\exp\\left(\\int_0^t \\delta_s\\,ds\\right)\\).",
+    "Thus, \\(a(t)=\\exp\\left(\\int_0^t \\frac{1}{8+s}\\,ds\\right)\\).",
+    "Compute the integral: \\(\\int_0^t \\frac{1}{8+s}\\,ds=\\ln(8+t)-\\ln(8)=\\ln\\left(\\frac{8+t}{8}\\right)\\).",
+    "Therefore, \\(a(t)=\\frac{8+t}{8}=1+\\frac{t}{8}\\).",
+    "The accumulated value at time \\(10\\) is \\(AV=\\int_0^{10} f(t)a(t,10)\\,dt\\), where \\(a(t,10)=\\frac{a(10)}{a(t)}\\).",
+    "Since \\(a(10)=\\frac{18}{8}\\) and \\(a(t)=\\frac{8+t}{8}\\), we get \\(a(t,10)=\\frac{18}{8+t}\\).",
+    "Substitute into the accumulated value equation: \\(20000=\\int_0^{10} k(8+t)\\left(\\frac{18}{8+t}\\right)\\,dt\\).",
+    "The factor \\((8+t)\\) cancels, so \\(20000=\\int_0^{10}18k\\,dt\\).",
+    "Therefore, \\(20000=18k(10)=180k\\).",
+    "Solving gives \\(k=\\frac{20000}{180}=111.11\\)."
+  ],
+  "generalization": "For generalized continuous annuities, use the accumulated value formula \\(AV=\\int_0^n f(t)a(t,n)\\,dt\\), where \\(a(t,n)=a(n)/a(t)\\). When the force of interest varies with time, first compute the accumulation function \\(a(t)=\\exp\\left(\\int_0^t \\delta_s\\,ds\\right)\\).",
+  "answer_text": "The value of \\(k\\) is \\(\\boxed{111.11}\\)."
+},
+  {
+  "id": 154,
+  "topic": "Continuous Annuities",
+  "title": "Exercise 154",
+  "statement": "You are given: (i) The force of interest at time t is kt^3. (ii) R is the present value of a four-year continuously increasing annuity which has a rate of payment of mt^3 at time t. Calculate R.",
+  "choices": [
+    "\\(\\dfrac{k-me^{-4k}}{k}\\)",
+    "\\(\\dfrac{k-me^{-64k}}{k}\\)",
+    "\\(\\dfrac{1-me^{-4k}}{k}\\)",
+    "\\(\\dfrac{1-me^{-64k}}{k}\\)",
+    "\\(\\dfrac{m(1-e^{-64k})}{k}\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "The payment rate at time \\(t\\) is \\(f(t)=mt^3\\).",
+    "The force of interest is \\(\\delta_t=kt^3\\).",
+    "The present value of a generalized continuous annuity is \\(R=\\int_0^4 f(t)\\exp\\left(-\\int_0^t \\delta_s\\,ds\\right)dt\\).",
+    "Substitute \\(f(t)=mt^3\\) and \\(\\delta_s=ks^3\\): \\(R=\\int_0^4 mt^3\\exp\\left(-\\int_0^t ks^3\\,ds\\right)dt\\).",
+    "Compute the inner integral: \\(\\int_0^t ks^3\\,ds=kt^4/4\\).",
+    "Thus, \\(R=\\int_0^4 mt^3e^{-kt^4/4}\\,dt\\).",
+    "Let \\(u=t^4/4\\). Then \\(du=t^3dt\\).",
+    "When \\(t=0\\), \\(u=0\\). When \\(t=4\\), \\(u=64\\).",
+    "Therefore, \\(R=\\int_0^{64}me^{-ku}\\,du\\).",
+    "Integrating gives \\(R=m\\left[-e^{-ku}/k\\right]_0^{64}\\).",
+    "So \\(R=-me^{-64k}/k+m/k\\).",
+    "Therefore, \\(R=\\frac{m(1-e^{-64k})}{k}\\)."
+  ],
+  "generalization": "For a generalized continuous annuity, always begin with \\(PV=\\int f(t)\\exp\\left(-\\int_0^t \\delta_s\\,ds\\right)dt\\). If the payment rate resembles the derivative of the accumulated force of interest, a substitution often simplifies the integral immediately.",
+  "answer_text": "The present value is \\(\\boxed{\\dfrac{m(1-e^{-64k})}{k}}\\), so the correct answer is E."
+},
+  {
+  "id": 155,
+  "topic": "Annuity Tricks",
+  "title": "Exercise 155",
+  "statement": "An 11-year annuity has a series of payments 1,2,3,4,5,6,5,4,3,2,1 with the first payment made at the end of the second year. The present value of this annuity is 25 at an interest rate i. A 12-year annuity has a series of payments 1,2,3,4,5,6,6,5,4,3,2,1 with the first payment made at the end of the first year. Calculate the present value of the 12-year annuity at interest rate i.",
+  "choices": [],
+  "correct": "30",
+  "solution_steps": [
+    "The 11-year annuity has payments \\(1,2,3,4,5,6,5,4,3,2,1\\) at times \\(2,3,4,\\ldots,12\\).",
+    "This is a deferred pyramid annuity with peak \\(6\\). A pyramid annuity-immediate with peak \\(6\\) has present value \\(a_{\\overline{6}|}\\ddot{a}_{\\overline{6}|}\\).",
+    "Since the first payment is deferred one year, the present value of the 11-year annuity is \\(v a_{\\overline{6}|}\\ddot{a}_{\\overline{6}|}\\).",
+    "We are given \\(v a_{\\overline{6}|}\\ddot{a}_{\\overline{6}|}=25\\).",
+    "Using \\(\\ddot{a}_{\\overline{6}|}=(1+i)a_{\\overline{6}|}\\), we get \\(v\\ddot{a}_{\\overline{6}|}=a_{\\overline{6}|}\\).",
+    "Therefore, \\(v a_{\\overline{6}|}\\ddot{a}_{\\overline{6}|}=a_{\\overline{6}|}^2\\).",
+    "Thus, \\(a_{\\overline{6}|}^2=25\\), so \\(a_{\\overline{6}|}=5\\).",
+    "The 12-year annuity equals the 11-year annuity plus an extra level annuity-immediate of \\(1\\) paid at times \\(1,2,3,4,5,6\\).",
+    "The present value of this extra stream is \\(a_{\\overline{6}|}=5\\).",
+    "Therefore, the present value of the 12-year annuity is \\(25+5=30\\)."
+  ],
+  "generalization": "A pyramid annuity with payments \\(1,2,\\ldots,n,n-1,\\ldots,1\\) has present value \\(a_{\\overline{n}|}\\ddot{a}_{\\overline{n}|}\\). If the pyramid is deferred one period, multiply by \\(v\\), which can simplify because \\(v\\ddot{a}_{\\overline{n}|}=a_{\\overline{n}|}\\).",
+  "answer_text": "The present value of the 12-year annuity is \\(\\boxed{30}\\)."
+},
+  {
+  "id": 156,
+  "topic": "Annuity Tricks",
+  "title": "Exercise 156",
+  "statement": "A fund is built with annual payments increasing by 1 from 1 to 10 and then decreasing by 1 to 0. The first payment of 1 is made today. If the fund is used to purchase a 10-year level annuity with the first payment at 20 years from today, what is the amount of the level payment? Assume an annual effective rate of interest of 4%.",
+  "choices": [
+    "\\(\\text{Less than }\\$16\\)",
+    "\\(\\text{At least }\\$16,\\text{ but less than }\\$17\\)",
+    "\\(\\text{At least }\\$17,\\text{ but less than }\\$18\\)",
+    "\\(\\text{At least }\\$18,\\text{ but less than }\\$19\\)",
+    "\\(\\text{At least }\\$19\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "The fund payments are \\(1,2,3,\\ldots,10,9,8,\\ldots,2,1\\), with the first payment made today.",
+    "Thus, the payments occur at times \\(0,1,2,\\ldots,18\\).",
+    "This is a pyramid annuity-due with peak \\(10\\), so its present value at time \\(0\\) is \\(\\ddot{a}_{\\overline{10}|}^2\\).",
+    "The 10-year level annuity has its first payment at time \\(20\\), so its payments occur at times \\(20,21,\\ldots,29\\).",
+    "Value both sides at time \\(19\\), one period before the first level payment.",
+    "The accumulated value of the fund at time \\(19\\) is \\(\\ddot{a}_{\\overline{10}|}^2(1+i)^{19}\\).",
+    "Rewrite this as \\((\\ddot{a}_{\\overline{10}|}(1+i)^{10})(\\ddot{a}_{\\overline{10}|}(1+i)^9)\\).",
+    "Since \\(\\ddot{a}_{\\overline{10}|}(1+i)^{10}=\\ddot{s}_{\\overline{10}|}\\) and \\(\\ddot{a}_{\\overline{10}|}(1+i)^9=s_{\\overline{10}|}\\), the fund value at time \\(19\\) is \\(\\ddot{s}_{\\overline{10}|}s_{\\overline{10}|}\\).",
+    "Let \\(X\\) be the level payment. At time \\(19\\), the value of the level annuity is \\(Xa_{\\overline{10}|}\\).",
+    "Therefore, \\(\\ddot{s}_{\\overline{10}|}s_{\\overline{10}|}=Xa_{\\overline{10}|}\\).",
+    "Using \\(i=0.04\\), compute \\(a_{\\overline{10}|}=8.1109\\), \\(s_{\\overline{10}|}=12.0061\\), and \\(\\ddot{s}_{\\overline{10}|}=12.4864\\).",
+    "Thus, \\(X=\\frac{12.4864(12.0061)}{8.1109}=18.48\\).",
+    "Therefore, \\(X\\) is at least \\(18\\), but less than \\(19\\)."
+  ],
+  "generalization": "A pyramid annuity-due with peak \\(n\\) has present value \\(\\ddot{a}_{\\overline{n}|}^2\\). When the accumulated value is needed at a later time, it can be useful to split the accumulation power so that terms become familiar accumulated annuity factors.",
+  "answer_text": "The level payment is \\(\\boxed{18.48}\\), so the correct answer is D."
+},
+  {
+  "id": 157,
+  "topic": "Annuity Tricks",
+  "title": "Exercise 157",
+  "statement": "Hilary receives payments of X at the end of each year for n years. The present value of her annuity is 493. Ned receives payments of 3X at the end of each year for 2n years. The present value of his annuity is 2748. Both present values are calculated at the same annual effective interest rate. Determine v^n.",
+  "choices": [
+    "\\(0.86\\)",
+    "\\(0.87\\)",
+    "\\(0.88\\)",
+    "\\(0.89\\)",
+    "\\(0.90\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Hilary's present value is \\(Xa_{\\overline{n}|}=493\\).",
+    "Ned's present value is \\(3Xa_{\\overline{2n}|}=2748\\).",
+    "Divide Ned's equation by Hilary's equation: \\(\\frac{3Xa_{\\overline{2n}|}}{Xa_{\\overline{n}|}}=\\frac{2748}{493}\\).",
+    "Cancel \\(X\\) to get \\(3\\frac{a_{\\overline{2n}|}}{a_{\\overline{n}|}}=\\frac{2748}{493}\\).",
+    "Use the ratio trick \\(\\frac{a_{\\overline{2n}|}}{a_{\\overline{n}|}}=1+v^n\\).",
+    "Thus, \\(3(1+v^n)=\\frac{2748}{493}\\).",
+    "Therefore, \\(1+v^n=\\frac{2748}{3(493)}\\).",
+    "So, \\(v^n=\\frac{2748}{1479}-1=0.8580\\).",
+    "The closest answer is \\(0.86\\)."
+  ],
+  "generalization": "When two level annuities have terms \\(n\\) and \\(2n\\), the ratio trick \\(a_{\\overline{2n}|}/a_{\\overline{n}|}=1+v^n\\) can quickly isolate \\(v^n\\).",
+  "answer_text": "The value of \\(v^n\\) is approximately \\(\\boxed{0.8580}\\), so the correct answer is A: \\(0.86\\)."
+},
+  {
+  "id": 158,
+  "topic": "Annuity Tricks",
+  "title": "Exercise 158",
+  "statement": "An annuity pays 1 now, 2 a year from now, 3 two years from now, etc., until a maximum payment of 5 is made, after which time the payments decrease by 1 per year until there are no further payments. Find the present value.",
+  "choices": [
+    "\\(\\left(\\ddot{a}_{\\overline{5}|}\\right)^2\\)",
+    "\\(5\\ddot{a}_{\\overline{5}|}\\)",
+    "\\(\\left(a_{\\overline{5}|}\\right)^2\\)",
+    "\\(5a_{\\overline{5}|}\\)",
+    "\\(\\ddot{a}_{\\overline{5}|}a_{\\overline{5}|}\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The payments are \\(1,2,3,4,5,4,3,2,1\\).",
+    "Since the first payment is made now, the payments occur at times \\(0,1,2,3,4,5,6,7,8\\).",
+    "This is a pyramid annuity-due with peak \\(5\\).",
+    "A pyramid annuity-immediate with peak \\(n\\) has present value \\(a_{\\overline{n}|}\\ddot{a}_{\\overline{n}|}\\).",
+    "Because the first payment is made immediately, the pyramid is shifted one period earlier, so the present value is \\(a_{\\overline{5}|}\\ddot{a}_{\\overline{5}|}(1+i)\\).",
+    "Using \\(\\ddot{a}_{\\overline{5}|}=(1+i)a_{\\overline{5}|}\\), we have \\(a_{\\overline{5}|}(1+i)=\\ddot{a}_{\\overline{5}|}\\).",
+    "Therefore, \\(a_{\\overline{5}|}\\ddot{a}_{\\overline{5}|}(1+i)=\\ddot{a}_{\\overline{5}|}\\ddot{a}_{\\overline{5}|}\\).",
+    "Thus, \\(PV=\\left(\\ddot{a}_{\\overline{5}|}\\right)^2\\)."
+  ],
+  "generalization": "A pyramid annuity-immediate with peak \\(n\\) has present value \\(a_{\\overline{n}|}\\ddot{a}_{\\overline{n}|}\\). If the first payment is made immediately, the pyramid becomes an annuity-due, and the present value becomes \\(\\left(\\ddot{a}_{\\overline{n}|}\\right)^2\\).",
+  "answer_text": "The present value is \\(\\boxed{\\left(\\ddot{a}_{\\overline{5}|}\\right)^2}\\), so the correct answer is A."
 }
 ]
