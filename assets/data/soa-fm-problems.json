@@ -3968,5 +3968,152 @@
   ],
   "generalization": "When two funding schedules must have the same accumulated value, value both schedules at the same comparison date. A geometric contribution schedule can be accumulated using the geometric accumulated value formula, while an arithmetic increasing contribution schedule can be decomposed into a level annuity plus an increasing annuity.",
   "answer_text": "The required annual increase is \\(\\boxed{500.50}\\), so the correct answer is C: At least \\(\\$480\\), but less than \\(\\$520\\)."
+},
+  {
+  "id": 142,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 142",
+  "statement": "Smith will make deposits to a fund each January 1 and July 1 from 1985 through 1995. Each July 1, the level deposit is increased by 10.25% over the previous level. The effective annual interest rate is 10.25%. The fund balance on December 31, 1995 will be 15000. Calculate the amount of Smith's initial deposit on January 1, 1985.",
+  "choices": [],
+  "correct": "227.39",
+  "solution_steps": [
+    "Let \\(X\\) be Smith's initial deposit on January 1, 1985.",
+    "The effective annual interest rate is \\(i=0.1025\\).",
+    "The January deposits are \\(X,X(1.1025),X(1.1025)^2,\\ldots,X(1.1025)^{10}\\).",
+    "The July deposits are \\(X(1.1025),X(1.1025)^2,\\ldots,X(1.1025)^{11}\\).",
+    "There are 11 January deposits and 11 July deposits.",
+    "Value the deposits at January 1, 1985.",
+    "For the January deposits, the growth rate equals the interest rate, so this is the special case \\(r=i\\) for a geometric annuity-due.",
+    "Thus, \\((G\\ddot{a})_{\\overline{11}|0.1025,0.1025}=11\\), and the value of the January deposits is \\(11X\\).",
+    "For the July deposits, the first July deposit is \\(1.1025X\\), and it occurs one half-year after January 1, 1985.",
+    "At July 1, 1985, the value of the July deposits is \\(1.1025X(G\\ddot{a})_{\\overline{11}|0.1025,0.1025}\\).",
+    "Discounting this value back one half-year gives \\(1.1025X(11)(1.1025)^{-1/2}\\).",
+    "Since \\((1.1025)^{1/2}=1.05\\), the total value at January 1, 1985 is \\(11X+11X(1.05)=22.55X\\).",
+    "Accumulate this value 11 years to December 31, 1995: \\(22.55X(1.1025)^{11}=15000\\).",
+    "Solving gives \\(X=15000/[22.55(1.1025)^{11}]=227.39\\)."
+  ],
+  "generalization": "When the payment growth rate equals the interest rate, use the special case for a geometric annuity-due: \\((G\\ddot{a})_{\\overline{n}|i,i}=n\\). If a second payment stream is shifted by a fractional period, value it at its own first payment date and then discount or accumulate by the fractional period.",
+  "answer_text": "Smith's initial deposit is \\(\\boxed{227.39}\\)."
+},
+  {
+  "id": 143,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 143",
+  "statement": "A perpetuity pays 2X one year from today. The annual payments increase by 5% per year thereafter. The effective annual interest rate on this perpetuity is 6%. The present value is 32400. A second perpetuity pays Y one year from now, and the annual payments increase by an amount of X per year thereafter. The effective annual interest rate on this perpetuity is i, and the present value is 24000. A third perpetuity pays Y per year, with the first payment one year from now. The effective annual interest rate on this perpetuity is i, and the present value is 4000. What is Y?",
+  "choices": [],
+  "correct": "360",
+  "solution_steps": [
+    "The first perpetuity is a geometric perpetuity-immediate with first payment \\(2X\\), interest rate \\(0.06\\), and growth rate \\(0.05\\).",
+    "Thus, \\(2X(Ga)_{\\overline{\\infty}|0.06,0.05}=32400\\).",
+    "Since \\((Ga)_{\\overline{\\infty}|i,r}=1/(i-r)\\), we have \\((Ga)_{\\overline{\\infty}|0.06,0.05}=1/(0.06-0.05)=100\\).",
+    "Therefore, \\(2X(100)=32400\\), so \\(X=162\\).",
+    "The third perpetuity is a level perpetuity-immediate with present value \\(Ya_{\\overline{\\infty}|i}=4000\\).",
+    "Since \\(a_{\\overline{\\infty}|i}=1/i\\), this gives \\(Y/i=4000\\), so \\(Y=4000i\\).",
+    "The second perpetuity has payments \\(Y,Y+X,Y+2X,Y+3X,\\ldots\\).",
+    "Decompose the second perpetuity into a level perpetuity of \\(Y\\) plus an arithmetic increasing part \\(0,X,2X,3X,\\ldots\\).",
+    "The level part has present value \\(Ya_{\\overline{\\infty}|i}\\).",
+    "The increasing part starts one year later than a standard increasing perpetuity-immediate, so its present value is \\(X(Ia)_{\\overline{\\infty}|i}v_i\\).",
+    "Thus, \\(Ya_{\\overline{\\infty}|i}+X(Ia)_{\\overline{\\infty}|i}v_i=24000\\).",
+    "Using \\(Ya_{\\overline{\\infty}|i}=4000\\), we get \\(X(Ia)_{\\overline{\\infty}|i}v_i=20000\\).",
+    "Since \\((Ia)_{\\overline{\\infty}|i}=1/(id)\\), \\(d=i/(1+i)\\), and \\(v_i=1/(1+i)\\), we have \\((Ia)_{\\overline{\\infty}|i}v_i=1/i^2\\).",
+    "Therefore, \\(X/i^2=20000\\).",
+    "Using \\(X=162\\), we get \\(162/i^2=20000\\), so \\(i^2=0.0081\\).",
+    "Thus, \\(i=0.09\\).",
+    "Finally, \\(Y=4000i=4000(0.09)=360\\)."
+  ],
+  "generalization": "When a perpetuity combines a level component and an arithmetic increasing component, decompose the cash flow into a level perpetuity plus an increasing perpetuity. If the increasing part starts one period later than the standard increasing perpetuity-immediate, multiply its value by \\(v\\).",
+  "answer_text": "The value of \\(Y\\) is \\(\\boxed{360}\\)."
+},
+  {
+  "id": 144,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 144",
+  "statement": "An annuity provides for 10 annual payments. The first of these payments is 100, and each subsequent payment is 10% higher than the one preceding it. Find the present value, to the nearest 50, of this annuity at the time one year prior to the first payment if i=10%.",
+  "choices": [
+    "\\(\\$800\\)",
+    "\\(\\$850\\)",
+    "\\(\\$900\\)",
+    "\\(\\$950\\)",
+    "\\(\\$1000\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The payments are \\(100,100(1.10),100(1.10)^2,\\ldots,100(1.10)^9\\).",
+    "There are \\(n=10\\) payments.",
+    "The payment growth rate is \\(r=0.10\\), and the effective interest rate is \\(i=0.10\\).",
+    "Thus, \\(r=i\\), so we use the special-case formula for a geometric annuity-immediate.",
+    "Since the valuation date is one year prior to the first payment, this is a geometric annuity-immediate.",
+    "For the special case \\(r=i\\), \\((Ga)_{\\overline{n}|i,i}=nv_i\\).",
+    "Therefore, \\(PV=100(Ga)_{\\overline{10}|0.10,0.10}=100(10)v\\).",
+    "Since \\(v=1/1.10\\), we get \\(PV=100(10)(1/1.10)=909.09\\).",
+    "To the nearest \\(50\\), this is \\(900\\)."
+  ],
+  "generalization": "When the payment growth rate equals the interest rate, each discounted payment in a geometric annuity-immediate has the same value. Therefore, if the first payment is \\(P\\), the present value is \\(Pn v\\), where \\(n\\) is the number of payments and \\(v=1/(1+i)\\).",
+  "answer_text": "The present value is approximately \\(\\boxed{909.09}\\), so to the nearest \\(50\\), the correct answer is C: \\(\\$900\\)."
+},
+  {
+  "id": 145,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 145",
+  "statement": "Mary purchases an increasing annuity-immediate for 50000 that makes twenty annual payments as follows: (i) P, 2P, ..., 10P in years 1 through 10; and (ii) 10P(1.05), 10P(1.05)^2, ..., 10P(1.05)^10 in years 11 through 20. The annual effective interest rate is 7% for the first 10 years and 5% thereafter. Calculate P.",
+  "choices": [
+    "\\(564\\)",
+    "\\(574\\)",
+    "\\(584\\)",
+    "\\(594\\)",
+    "\\(604\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Split the annuity into two parts.",
+    "For years 1 through 10, the payments are \\(P,2P,\\ldots,10P\\). This is an arithmetic increasing annuity-immediate.",
+    "Since the interest rate for the first 10 years is \\(7\\%\\), the present value of the first part is \\(P(Ia)_{\\overline{10}|0.07}\\).",
+    "For years 11 through 20, the payments are \\(10P(1.05),10P(1.05)^2,\\ldots,10P(1.05)^{10}\\).",
+    "At time 10, this is a geometric annuity-immediate with first payment \\(10P(1.05)\\), growth rate \\(r=0.05\\), and interest rate \\(i=0.05\\).",
+    "Since \\(r=i\\), use the special-case formula \\((Ga)_{\\overline{n}|i,i}=nv_i\\).",
+    "Thus, the value at time 10 of the second part is \\(10P(1.05)(Ga)_{\\overline{10}|0.05,0.05}\\).",
+    "Using \\((Ga)_{\\overline{10}|0.05,0.05}=10v_{0.05}\\), this becomes \\(10P(1.05)(10v_{0.05})=100P\\).",
+    "Discount this value back to time 0 at \\(7\\%\\), giving \\(100Pv_{0.07}^{10}\\).",
+    "Therefore, the equation of value is \\(50000=P(Ia)_{\\overline{10}|0.07}+100Pv_{0.07}^{10}\\).",
+    "Factor out \\(P\\): \\(50000=P[(Ia)_{\\overline{10}|0.07}+100v_{0.07}^{10}]\\).",
+    "Compute \\((Ia)_{\\overline{10}|0.07}=34.73913325\\).",
+    "Compute \\(100v_{0.07}^{10}=50.83492921\\).",
+    "Thus, \\(50000=P(85.57406246)\\).",
+    "Solving gives \\(P=584.29\\).",
+    "The closest answer is \\(584\\)."
+  ],
+  "generalization": "When an annuity combines an arithmetic increasing part and a deferred geometric part, value each part at the correct interest rate. If the geometric growth rate equals the interest rate, use the special case \\((Ga)_{\\overline{n}|i,i}=nv_i\\). Then discount the deferred value back using the interest rate applicable before the deferral date.",
+  "answer_text": "The value of \\(P\\) is approximately \\(\\boxed{584.29}\\), so the correct answer is C: \\(584\\)."
+},
+  {
+  "id": 146,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 146",
+  "statement": "[SOA 11; SOA-IT.014] Mike buys a perpetuity-immediate with varying annual payments. During the first 5 years, the payment is constant and equal to 10. Beginning in year 6, the payments start to increase. For year 6 and all future years, the payment in that year is k% larger than the payment in the year immediately preceding that year, where k < 9.2. At an annual effective interest rate of 9.2%, the perpetuity has a present value of 167.50. Calculate k.",
+  "choices": [
+    "\\(4.0\\)",
+    "\\(4.2\\)",
+    "\\(4.4\\)",
+    "\\(4.6\\)",
+    "\\(4.8\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Let \\(j\\) be the decimal representation of \\(k\\%\\), so \\(j=k/100\\).",
+    "The annual effective interest rate is \\(i=0.092\\).",
+    "The first five payments are level payments of \\(10\\), so their present value is \\(10a_{\\overline{5}|0.092}\\).",
+    "Beginning in year 6, the payments form a geometric perpetuity-immediate.",
+    "The first payment of the geometric perpetuity is \\(10(1+j)\\), and it occurs at time \\(6\\).",
+    "Thus, the value of this geometric perpetuity at time \\(5\\) is \\(10(1+j)/(0.092-j)\\).",
+    "Discount this value back five years to time \\(0\\), giving \\(10(1+j)(1/(0.092-j))v_{0.092}^5\\).",
+    "The equation of value is \\(167.50=10a_{\\overline{5}|0.092}+10(1+j)(1/(0.092-j))v_{0.092}^5\\).",
+    "Using \\(v_{0.092}=1/1.092\\), this simplifies to \\(20=(1+j)/(0.092-j)\\).",
+    "Solve: \\(20(0.092-j)=1+j\\).",
+    "Then \\(1.84-20j=1+j\\), so \\(0.84=21j\\).",
+    "Thus, \\(j=0.040\\).",
+    "Since \\(j\\) is the decimal representation of \\(k\\%\\), we get \\(k=4.0\\)."
+  ],
+  "generalization": "For a perpetuity with an initial level period followed by geometric growth, value the level annuity first, then value the deferred geometric perpetuity at the point just before its first payment. Finally, discount the deferred value back to the valuation date.",
+  "answer_text": "The value of \\(k\\) is \\(\\boxed{4.0}\\), so the correct answer is A."
 }
 ]
