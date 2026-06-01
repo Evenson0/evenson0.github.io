@@ -3828,5 +3828,145 @@
   ],
   "generalization": "When an annuity has several phases, split the cash flow into separate annuity streams. Level payments can be valued using level annuity factors, decreasing payments using decreasing annuity factors, and payments continuing forever using perpetuity factors. Then discount each deferred stream back to time 0.",
   "answer_text": "The present value is approximately \\(\\boxed{119.40}\\), so the correct answer is A: \\(119\\)."
+},
+  {
+  "id": 137,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 137",
+  "statement": "Annual deposits are made into a fund at the beginning of each year for 10 years. The first 5 deposits are 100 each, and deposits increase by 7% per year thereafter. If the fund earns an annual effective rate of 5%, find the accumulated value at the end of 10 years.",
+  "choices": [],
+  "correct": "1449.81",
+  "solution_steps": [
+    "The deposits are made at the beginning of each year, so they occur at times \\(0,1,2,\\ldots,9\\).",
+    "The first 5 deposits are \\(100\\), so the deposits at times \\(0,1,2,3,4\\) are all \\(100\\).",
+    "After that, the deposits increase by \\(7\\%\\) per year: \\(100(1.07),100(1.07)^2,\\ldots,100(1.07)^5\\).",
+    "Choose time \\(3\\) as the valuation date.",
+    "At time \\(3\\), the first four deposits at times \\(0,1,2,3\\) have accumulated value \\(100s_{\\overline{4}|0.05}\\).",
+    "The remaining six deposits at times \\(4,5,\\ldots,9\\) form a geometric annuity-immediate from the perspective of time \\(3\\), with first payment \\(100\\), interest rate \\(i=0.05\\), and growth rate \\(r=0.07\\).",
+    "Thus, their value at time \\(3\\) is \\(100(Ga)_{\\overline{6}|0.05,0.07}\\).",
+    "Therefore, the value at time \\(3\\) is \\(100s_{\\overline{4}|0.05}+100(Ga)_{\\overline{6}|0.05,0.07}\\).",
+    "Compute \\(s_{\\overline{4}|0.05}=4.310125\\).",
+    "Compute \\((Ga)_{\\overline{6}|0.05,0.07}=\\frac{1-(1.07/1.05)^6}{0.05-0.07}=5.993404737\\).",
+    "Thus, the value at time \\(3\\) is \\(100(4.310125)+100(5.993404737)=1030.35\\).",
+    "Accumulate this value from time \\(3\\) to time \\(10\\): \\(AV=1030.35(1.05)^7\\).",
+    "This gives \\(AV=1449.81\\)."
+  ],
+  "generalization": "When a payment stream is level for a few periods and then grows geometrically, choose a valuation date just before the geometric part begins. Then value the earlier level deposits as an accumulated annuity and the later growing deposits as a geometric annuity-immediate.",
+  "answer_text": "The accumulated value at the end of 10 years is \\(\\boxed{1449.81}\\)."
+},
+  {
+  "id": 138,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 138",
+  "statement": "Stan elects to receive his retirement benefit over 20 years at the rate of 2000 per month, beginning one month from now. The monthly benefit increases by 5% each year. At a nominal rate of 6% convertible monthly, calculate the present value of the retirement benefit.",
+  "choices": [],
+  "correct": "419253.25",
+  "solution_steps": [
+    "The nominal annual interest rate is \\(6\\%\\) convertible monthly, so the effective monthly interest rate is \\(j=0.06/12=0.005\\).",
+    "The effective annual interest rate is \\(i=(1+j)^{12}-1=(1.005)^{12}-1=0.0616778\\).",
+    "During the first year, Stan receives \\(2000\\) at the end of each month, so the accumulated value at the end of the first year is \\(2000s_{\\overline{12}|j}\\).",
+    "During the second year, the monthly payment increases by \\(5\\%\\), so the accumulated value at the end of the second year is \\(2000(1.05)s_{\\overline{12}|j}\\).",
+    "The rolled-up annual cash flows are \\(2000s_{\\overline{12}|j},2000(1.05)s_{\\overline{12}|j},\\ldots,2000(1.05)^{19}s_{\\overline{12}|j}\\) at times \\(1,2,\\ldots,20\\).",
+    "These cash flows form a geometric annuity-immediate with annual effective interest rate \\(i\\) and annual growth rate \\(r=0.05\\).",
+    "Thus, \\(PV=2000s_{\\overline{12}|j}(Ga)_{\\overline{20}|i,0.05}\\).",
+    "Compute \\(s_{\\overline{12}|0.005}=\\frac{(1.005)^{12}-1}{0.005}=12.33556237\\).",
+    "Use \\((Ga)_{\\overline{20}|i,0.05}=\\frac{1-(1.05/(1+i))^{20}}{i-0.05}\\), where \\(i=0.0616778\\).",
+    "Therefore, \\(PV=2000(12.33556237)\\left(\\frac{1-(1.05/1.0616778)^{20}}{0.0616778-0.05}\\right)=419253.25\\)."
+  ],
+  "generalization": "When payments are monthly within each year but increase annually, first roll up each year's monthly payments to the end of that year using the monthly effective rate. Then value the resulting annual cash flows as a geometric annuity-immediate using the annual effective interest rate and the annual growth rate.",
+  "answer_text": "The present value of the retirement benefit is \\(\\boxed{419253.25}\\)."
+},
+  {
+  "id": 139,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 139",
+  "statement": "Smith receives annual dividends which began one year after an investment of 10000 fifteen years ago. Dividends have increased 2% every year. The dividend Smith received today was 659.74. What is the accumulated value today of Smith's dividends assuming an effective annual interest rate of 5.06%?",
+  "choices": [
+    "\\(\\text{Less than }\\$12{,}240\\)",
+    "\\(\\text{At least }\\$12{,}240,\\text{ but less than }\\$12{,}300\\)",
+    "\\(\\text{At least }\\$12{,}300,\\text{ but less than }\\$12{,}360\\)",
+    "\\(\\text{At least }\\$12{,}360,\\text{ but less than }\\$12{,}420\\)",
+    "\\(\\text{At least }\\$12{,}420\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let \\(k\\) be the first dividend, paid one year after the investment.",
+    "Since the investment was made 15 years ago and dividends began one year after the investment, the dividends occur at times \\(1,2,\\ldots,15\\).",
+    "The dividends increase by \\(2\\%\\) each year, so the dividend received today at time \\(15\\) is \\(k(1.02)^{14}\\).",
+    "We are given \\(k(1.02)^{14}=659.74\\).",
+    "Solving gives \\(k=659.74/(1.02)^{14}=500\\).",
+    "Thus, the dividends are \\(500,500(1.02),500(1.02)^2,\\ldots,500(1.02)^{14}\\).",
+    "The accumulated value today is the accumulated value of a geometric annuity-immediate with \\(n=15\\), \\(i=0.0506\\), and \\(r=0.02\\).",
+    "Therefore, \\(AV=500(Gs)_{\\overline{15}|0.0506,0.02}\\).",
+    "Using \\((Gs)_{\\overline{n}|i,r}=\\frac{(1+i)^n-(1+r)^n}{i-r}\\), we get \\(AV=500\\left(\\frac{(1.0506)^{15}-(1.02)^{15}}{0.0506-0.02}\\right)\\).",
+    "This gives \\(AV=12270.44\\).",
+    "The value falls between \\(12240\\) and \\(12300\\)."
+  ],
+  "generalization": "When the last payment of a geometric annuity is given, first backsolve for the first payment using the growth rate. Then use the geometric accumulated value formula to find the value at the final payment date.",
+  "answer_text": "The accumulated value today is approximately \\(\\boxed{12270.44}\\), so the correct answer is B: At least \\(\\$12{,}240\\), but less than \\(\\$12{,}300\\)."
+},
+  {
+  "id": 140,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 140",
+  "statement": "Mary is to receive an annuity with 30 annual payments. The first payment of 1000 is due immediately, and each successive payment is 5% less than the payment for the preceding year. Interest is 12% compounded annually. Determine the present value of the annuity.",
+  "choices": [
+    "\\(\\text{Less than }\\$6{,}400\\)",
+    "\\(\\text{At least }\\$6{,}400,\\text{ but less than }\\$6{,}500\\)",
+    "\\(\\text{At least }\\$6{,}500,\\text{ but less than }\\$6{,}600\\)",
+    "\\(\\text{At least }\\$6{,}600,\\text{ but less than }\\$6{,}700\\)",
+    "\\(\\text{At least }\\$6{,}700\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The first payment is due immediately, so this is a geometric annuity-due.",
+    "The payments are \\(1000,1000(0.95),1000(0.95)^2,\\ldots,1000(0.95)^{29}\\).",
+    "There are \\(30\\) payments, occurring at times \\(0,1,2,\\ldots,29\\).",
+    "The annual effective interest rate is \\(i=0.12\\).",
+    "Since each payment is \\(5\\%\\) less than the previous payment, the growth rate is \\(r=-0.05\\).",
+    "Thus, \\(1+r=0.95\\).",
+    "The present value is \\(PV=1000(G\\ddot{a})_{\\overline{30}|0.12,-0.05}\\).",
+    "Using \\((G\\ddot{a})_{\\overline{n}|i,r}=(1+i)(Ga)_{\\overline{n}|i,r}\\), we get \\(PV=1000(1.12)(Ga)_{\\overline{30}|0.12,-0.05}\\).",
+    "Using \\((Ga)_{\\overline{n}|i,r}=\\frac{1-\\left(\\frac{1+r}{1+i}\\right)^n}{i-r}\\), we obtain \\(PV=1000(1.12)\\left(\\frac{1-(0.95/1.12)^{30}}{0.12-(-0.05)}\\right)\\).",
+    "Since \\(0.12-(-0.05)=0.17\\), this becomes \\(PV=1000(1.12)\\left(\\frac{1-(0.95/1.12)^{30}}{0.17}\\right)\\).",
+    "This gives \\(PV=6541.04\\).",
+    "The value falls between \\(6500\\) and \\(6600\\)."
+  ],
+  "generalization": "A decreasing geometric annuity can be handled using the same geometric annuity formulas by using a negative growth rate. If each payment is 5% less than the previous payment, then \\(r=-0.05\\) and \\(1+r=0.95\\). If the first payment is immediate, use the geometric annuity-due factor.",
+  "answer_text": "The present value is approximately \\(\\boxed{6541.04}\\), so the correct answer is C: At least \\(\\$6{,}500\\), but less than \\(\\$6{,}600\\)."
+},
+  {
+  "id": 141,
+  "topic": "Geometric Varying Annuities",
+  "title": "Exercise 141",
+  "statement": "Bill is due to retire in 20 years, at which time he will start collecting pension benefits. His employer is scheduled to begin funding Bill's pension benefits with the first annual payment due at the end of year 1 and the last annual payment due at the end of year 20. The initial employer's contribution is 2000 and will increase by 3% each year. Employer contributions will earn interest at an annual effective interest rate of 7%. Bill's employer can elect alternative funding: annual contributions beginning at the end of year 6 with the last contribution at the end of year 20. These annual contributions begin at 1000 and increase by Q per year. Under this alternative funding, the employer's contributions will earn an annual effective interest rate of 8%. Determine Q so that both funding options have the same accumulated value at the end of year 20.",
+  "choices": [
+    "\\(\\text{Less than }\\$440\\)",
+    "\\(\\text{At least }\\$440,\\text{ but less than }\\$480\\)",
+    "\\(\\text{At least }\\$480,\\text{ but less than }\\$520\\)",
+    "\\(\\text{At least }\\$520,\\text{ but less than }\\$560\\)",
+    "\\(\\text{At least }\\$560\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Compare the accumulated values at the end of year \\(20\\).",
+    "For the first funding option, the payments are \\(2000,2000(1.03),2000(1.03)^2,\\ldots,2000(1.03)^{19}\\) at times \\(1,2,\\ldots,20\\).",
+    "These contributions earn \\(7\\%\\), so the accumulated value at time \\(20\\) is \\(AV_1=2000(Gs)_{\\overline{20}|0.07,0.03}\\).",
+    "Using \\((Gs)_{\\overline{n}|i,r}=\\frac{(1+i)^n-(1+r)^n}{i-r}\\), we get \\(AV_1=2000\\left(\\frac{1.07^{20}-1.03^{20}}{0.07-0.03}\\right)=103178.66\\).",
+    "For the second funding option, payments are made from time \\(6\\) through time \\(20\\), so there are \\(15\\) payments.",
+    "The payments are \\(1000,1000+Q,1000+2Q,\\ldots,1000+14Q\\).",
+    "Decompose this payment stream as \\(1000(1,1,\\ldots,1)+Q(0,1,2,\\ldots,14)\\).",
+    "The level part accumulates to time \\(20\\) as \\(1000s_{\\overline{15}|0.08}\\).",
+    "The increasing part accumulates to time \\(20\\) as \\(Q(Is)_{\\overline{14}|0.08}\\).",
+    "Thus, \\(AV_2=1000s_{\\overline{15}|0.08}+Q(Is)_{\\overline{14}|0.08}\\).",
+    "Set \\(AV_1=AV_2\\): \\(103178.66=1000s_{\\overline{15}|0.08}+Q(Is)_{\\overline{14}|0.08}\\).",
+    "Compute \\(s_{\\overline{15}|0.08}=27.15211393\\), so \\(1000s_{\\overline{15}|0.08}=27152.11\\).",
+    "Compute \\((Is)_{\\overline{14}|0.08}=151.9014241\\).",
+    "Therefore, \\(103178.66=27152.11+151.9014241Q\\).",
+    "Solving gives \\(Q=500.50\\).",
+    "The value falls between \\(480\\) and \\(520\\)."
+  ],
+  "generalization": "When two funding schedules must have the same accumulated value, value both schedules at the same comparison date. A geometric contribution schedule can be accumulated using the geometric accumulated value formula, while an arithmetic increasing contribution schedule can be decomposed into a level annuity plus an increasing annuity.",
+  "answer_text": "The required annual increase is \\(\\boxed{500.50}\\), so the correct answer is C: At least \\(\\$480\\), but less than \\(\\$520\\)."
 }
 ]
