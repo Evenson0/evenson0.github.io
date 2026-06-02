@@ -4439,5 +4439,59 @@
   ],
   "generalization": "For NPV and IRR problems, first build the net cash flow timeline carefully. Expenses at the beginning of each year occur at times 0,1,2,..., while returns at the end of each year occur at times 1,2,3,... . Once the net cash flows are identified, use the NPV function with the given cost of capital and the IRR function to solve for the break-even interest rate.",
   "answer_text": "The net present value is \\(\\boxed{63.71}\\), and the internal rate of return is \\(\\boxed{0.07234}\\), or \\(\\boxed{7.234\\%}\\)."
+},
+  {
+  "id": 160,
+  "topic": "Yield Rates",
+  "title": "Exercise 160",
+  "statement": "Jean takes out a loan to be repaid in 120 monthly payments of 3000 each, the first payment being due one month after the date of the loan. The nominal annual interest rate is 6%, convertible monthly. Immediately after making the 60th payment, Jean negotiates to pay the bank a lump sum of 150000 to pay off the loan. Determine the effective annual yield to the lender over the life of the loan.",
+  "choices": [
+    "\\(\\text{Less than }5.0\\%\\)",
+    "\\(\\text{At least }5.0\\%,\\text{ but less than }5.3\\%\\)",
+    "\\(\\text{At least }5.3\\%,\\text{ but less than }5.6\\%\\)",
+    "\\(\\text{At least }5.6\\%,\\text{ but less than }5.9\\%\\)",
+    "\\(\\text{At least }5.9\\%\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "First compute the original loan amount using the contract interest rate.",
+    "The nominal annual interest rate is \\(6\\%\\), convertible monthly, so the monthly rate is \\(j=0.06/12=0.005\\).",
+    "The loan amount is the present value of 120 monthly payments of 3000: \\(L=3000a_{\\overline{120}|0.005}\\).",
+    "Thus, \\(L=3000\\left(\\frac{1-(1.005)^{-120}}{0.005}\\right)=270220.36\\).",
+    "Now compute the actual yield to the lender based on the payments actually received.",
+    "Jean makes 60 monthly payments of 3000 and then immediately after the 60th payment makes a lump sum payment of 150000.",
+    "Let \\(j^\\ast\\) be the actual monthly yield to the lender.",
+    "The equation of value at time 0 is \\(270220.36=3000a_{\\overline{60}|j^\\ast}+150000(1+j^\\ast)^{-60}\\).",
+    "Equivalently, \\(270220.36=3000\\left(\\frac{1-(1+j^\\ast)^{-60}}{j^\\ast}\\right)+150000(1+j^\\ast)^{-60}\\).",
+    "Solving numerically gives \\(j^\\ast=0.00465789\\).",
+    "The effective annual yield is \\((1+j^\\ast)^{12}-1\\).",
+    "Therefore, \\((1.00465789)^{12}-1=0.05735\\), or \\(5.735\\%\\)."
+  ],
+  "generalization": "The yield to the lender is based on the actual cash flows received, not necessarily the original contract rate. First find the original loan amount using the contractual repayment terms. Then solve for the interest rate that equates this loan amount to the actual payments received by the lender.",
+  "answer_text": "The effective annual yield is \\(\\boxed{5.735\\%}\\), so the correct answer is D: at least \\(5.6\\%\\), but less than \\(5.9\\%\\)."
+},
+  {
+  "id": 161,
+  "topic": "Net Present Value and Internal Rate of Return",
+  "title": "Exercise 161",
+  "statement": "[SOA 19; SOA-IT.023] Project P requires an investment of 4000 today. The investment pays 2000 one year from today and 4000 two years from today. Project Q requires an investment of X two years from today. The investment pays 2000 today and 4000 one year from today. The net present values of the two projects are equal at an annual effective interest rate of 10%. Calculate X.",
+  "choices": [
+    "\\(5400\\)",
+    "\\(5420\\)",
+    "\\(5440\\)",
+    "\\(5460\\)",
+    "\\(5480\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Let \\(v=1/1.10\\).",
+    "The net present value of Project P is \\(NPV_P=-4000+2000v+4000v^2\\).",
+    "The net present value of Project Q is \\(NPV_Q=2000+4000v-Xv^2\\).",
+    "Since the two net present values are equal, set \\(-4000+2000v+4000v^2=2000+4000v-Xv^2\\).",
+    "Substitute \\(v=1/1.10\\): \\(-4000+\\frac{2000}{1.10}+\\frac{4000}{1.10^2}=2000+\\frac{4000}{1.10}-\\frac{X}{1.10^2}\\).",
+    "Solving for \\(X\\) gives \\(X=5460\\)."
+  ],
+  "generalization": "When two projects have equal net present values, write the NPV of each project at the same interest rate and set them equal. Investments are negative cash flows, while payments received are positive cash flows.",
+  "answer_text": "The value of \\(X\\) is \\(\\boxed{5460}\\), so the correct answer is D."
 }
 ]
