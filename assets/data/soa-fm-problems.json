@@ -4417,5 +4417,27 @@
   ],
   "generalization": "A pyramid annuity-immediate with peak \\(n\\) has present value \\(a_{\\overline{n}|}\\ddot{a}_{\\overline{n}|}\\). If the first payment is made immediately, the pyramid becomes an annuity-due, and the present value becomes \\(\\left(\\ddot{a}_{\\overline{n}|}\\right)^2\\).",
   "answer_text": "The present value is \\(\\boxed{\\left(\\ddot{a}_{\\overline{5}|}\\right)^2}\\), so the correct answer is A."
+},
+  {
+  "id": 159,
+  "topic": "Net Present Value and Internal Rate of Return",
+  "title": "Exercise 159",
+  "statement": "A five-year investment project requires an initial investment of 10000 at inception and maintenance expenses at the beginning of each year. The maintenance expense is 300 for the first year and is anticipated to increase 6% each year thereafter. Projected annual returns from the project are 3000 at the end of the first year and decrease by 100 per year thereafter. (a) If the cost of capital is 7%, calculate the NPV of the project. (b) Compute the internal rate of return for the project.",
+  "choices": [],
+  "correct": "NPV = 63.71; IRR = 0.07234",
+  "solution_steps": [
+    "The initial investment and the first maintenance expense occur at time 0, so the cash outflow at time 0 is \\(10000+300=10300\\).",
+    "The maintenance expenses occur at the beginning of each year, so they occur at times \\(0,1,2,3,4\\).",
+    "The maintenance expenses are \\(300,300(1.06),300(1.06)^2,300(1.06)^3,300(1.06)^4\\).",
+    "The returns occur at the ends of years 1 through 5 and are \\(3000,2900,2800,2700,2600\\).",
+    "The net cash flows are \\(-10300,2682.00,2562.92,2442.70,2321.26,2600\\).",
+    "Using a cost of capital of \\(7\\%\\), the NPV is \\(-10300+\\frac{2682.00}{1.07}+\\frac{2562.92}{1.07^2}+\\frac{2442.70}{1.07^3}+\\frac{2321.26}{1.07^4}+\\frac{2600}{1.07^5}\\).",
+    "This gives \\(NPV=63.71\\).",
+    "The IRR is the rate \\(i\\) that makes the NPV equal to zero.",
+    "Thus, \\(i\\) solves \\(0=-10300+\\frac{2682.00}{1+i}+\\frac{2562.92}{(1+i)^2}+\\frac{2442.70}{(1+i)^3}+\\frac{2321.26}{(1+i)^4}+\\frac{2600}{(1+i)^5}\\).",
+    "Using the BA II Plus CF and IRR functions gives \\(IRR=0.07234\\), or \\(7.234\\%\\)."
+  ],
+  "generalization": "For NPV and IRR problems, first build the net cash flow timeline carefully. Expenses at the beginning of each year occur at times 0,1,2,..., while returns at the end of each year occur at times 1,2,3,... . Once the net cash flows are identified, use the NPV function with the given cost of capital and the IRR function to solve for the break-even interest rate.",
+  "answer_text": "The net present value is \\(\\boxed{63.71}\\), and the internal rate of return is \\(\\boxed{0.07234}\\), or \\(\\boxed{7.234\\%}\\)."
 }
 ]
