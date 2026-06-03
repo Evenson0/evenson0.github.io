@@ -1,16 +1,19 @@
 ---
+
 title: "Mathematical Workshop #7"
 date: 2026-06-03
 permalink: /workshop/7/
 layout: single
 author_profile: true
 tags:
-  - binomial coefficients
-  - generating functions
-  - Fibonacci sequence
-  - combinatorics
-  - olympiad mathematics
-series: mathematical-workshop
+
+* binomial coefficients
+* generating functions
+* Fibonacci sequence
+* combinatorics
+* olympiad mathematics
+  series: mathematical-workshop
+
 ---
 
 In this post I present five short problems centered around binomial coefficients and generating functions. The main ideas are differentiating the binomial theorem, comparing coefficients, and using generating functions to uncover identities involving Fibonacci numbers.
@@ -22,8 +25,16 @@ In this post I present five short problems centered around binomial coefficients
 Prove that for any positive integer $$n$$,
 
 $$
-\binom{n}{1}+2\binom{n}{2}+3\binom{n}{3}+\cdots+n\binom{n}{n}
-=============================================================
+\binom{n}{1}
++
+2\binom{n}{2}
++
+3\binom{n}{3}
++
+\cdots
++
+n\binom{n}{n}
+=============
 
 n2^{n-1}.
 $$
@@ -66,9 +77,55 @@ $$
 1,2,3,\ldots,n.
 $$
 
-A natural way to make these factors appear is to differentiate with respect to $$x$$.
+These factors appear naturally when we differentiate powers of $$x$$. Indeed,
 
-Differentiating both sides gives
+$$
+\frac{d}{dx}x^k=kx^{k-1}.
+$$
+
+So we differentiate both sides of the binomial identity with respect to $$x$$.
+
+On the left-hand side, we get
+
+$$
+\frac{d}{dx}(1+x)^n
+===================
+
+n(1+x)^{n-1}.
+$$
+
+On the right-hand side, we get
+
+$$
+\frac{d}{dx}
+\left(
+\binom{n}{0}
++
+\binom{n}{1}x
++
+\binom{n}{2}x^2
++
+\cdots
++
+\binom{n}{n}x^n
+\right).
+$$
+
+The constant term $$\binom{n}{0}$$ disappears, and each term is differentiated separately:
+
+$$
+\binom{n}{1}
++
+2\binom{n}{2}x
++
+3\binom{n}{3}x^2
++
+\cdots
++
+n\binom{n}{n}x^{n-1}.
+$$
+
+Therefore,
 
 $$
 n(1+x)^{n-1}
@@ -85,13 +142,13 @@ n(1+x)^{n-1}
 n\binom{n}{n}x^{n-1}.
 $$
 
-Now we want the same expression but without powers of $$x$$. So we set
+Now we want the same expression as in the problem, without powers of $$x$$. So we set
 
 $$
 x=1.
 $$
 
-Then
+This gives
 
 $$
 n(1+1)^{n-1}
@@ -111,10 +168,19 @@ $$
 Since
 
 $$
-(1+1)^{n-1}=2^{n-1},
+1+1=2,
 $$
 
-we obtain
+we have
+
+$$
+n(1+1)^{n-1}
+============
+
+n2^{n-1}.
+$$
+
+Thus,
 
 $$
 \binom{n}{1}
@@ -131,13 +197,7 @@ n\binom{n}{n}
 n2^{n-1}.
 $$
 
-Thus,
-
-$$
-\boxed{
-\binom{n}{1}+2\binom{n}{2}+3\binom{n}{3}+\cdots+n\binom{n}{n}=n2^{n-1}.
-}
-$$
+This proves the identity.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
@@ -197,9 +257,9 @@ $$
 \left(\sum_{k=0}^{n}\binom{n}{k}x^k\right)^2.
 $$
 
-Now let us study the coefficient of $$x^n$$ on both sides.
+We now compare the coefficient of $$x^n$$ on both sides.
 
-On the left-hand side, by the binomial theorem,
+First, on the left-hand side,
 
 $$
 (1+x)^{2n}
@@ -214,44 +274,74 @@ $$
 \binom{2n}{n}.
 $$
 
-On the right-hand side, we multiply
+Now consider the right-hand side:
 
 $$
+\left(\sum_{k=0}^{n}\binom{n}{k}x^k\right)^2
+============================================
+
 \left(\sum_{i=0}^{n}\binom{n}{i}x^i\right)
 \left(\sum_{j=0}^{n}\binom{n}{j}x^j\right).
 $$
 
-To get a term in $$x^n$$, we need
+When we multiply these two sums, a term $$x^n$$ appears whenever
 
 $$
 i+j=n.
 $$
 
-Thus the coefficient of $$x^n$$ is
+The coefficient contributed by such a pair $$(i,j)$$ is
+
+$$
+\binom{n}{i}\binom{n}{j}.
+$$
+
+Hence, the coefficient of $$x^n$$ on the right-hand side is
 
 $$
 \sum_{i+j=n}\binom{n}{i}\binom{n}{j}.
 $$
 
-Since $$j=n-i$$, this becomes
+Since $$i+j=n$$, we can write
 
 $$
+j=n-i.
+$$
+
+Thus,
+
+$$
+\sum_{i+j=n}\binom{n}{i}\binom{n}{j}
+====================================
+
 \sum_{i=0}^{n}\binom{n}{i}\binom{n}{n-i}.
 $$
 
-But
+But the binomial coefficients satisfy the symmetry identity
 
 $$
-\binom{n}{n-i}=\binom{n}{i}.
+\binom{n}{n-i}
+==============
+
+\binom{n}{i}.
 $$
 
-Therefore the coefficient of $$x^n$$ on the right-hand side is
+Therefore,
+
+$$
+\sum_{i=0}^{n}\binom{n}{i}\binom{n}{n-i}
+========================================
+
+\sum_{i=0}^{n}\binom{n}{i}^2.
+$$
+
+So the coefficient of $$x^n$$ on the right-hand side is
 
 $$
 \sum_{i=0}^{n}\binom{n}{i}^2.
 $$
 
-Since both sides are the same polynomial, their coefficients of $$x^n$$ must be equal. Hence,
+Since both sides are the same polynomial, the coefficients of $$x^n$$ must be equal. Hence,
 
 $$
 \sum_{i=0}^{n}\binom{n}{i}^2
@@ -260,13 +350,7 @@ $$
 \binom{2n}{n}.
 $$
 
-Thus,
-
-$$
-\boxed{
-\binom{n}{0}^2+\binom{n}{1}^2+\cdots+\binom{n}{n}^2=\binom{2n}{n}.
-}
-$$
+This proves the identity.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
@@ -288,9 +372,9 @@ $$
 
 This identity is known as Vandermonde's identity.
 
-We prove it by comparing coefficients.
+We prove it by comparing coefficients in two different expressions for the same polynomial.
 
-Start with the two binomial expansions
+Start with the binomial expansions
 
 $$
 (1+x)^n
@@ -308,7 +392,7 @@ $$
 \sum_{i=0}^{m}\binom{m}{i}x^i.
 $$
 
-Multiplying these two expressions gives
+Multiplying these two identities gives
 
 $$
 (1+x)^n(1+x)^m
@@ -318,7 +402,7 @@ $$
 \left(\sum_{i=0}^{m}\binom{m}{i}x^i\right).
 $$
 
-The left-hand side is simply
+The left-hand side simplifies to
 
 $$
 (1+x)^{m+n}.
@@ -334,9 +418,9 @@ $$
 \left(\sum_{i=0}^{m}\binom{m}{i}x^i\right).
 $$
 
-Now compare the coefficient of $$x^k$$.
+Now compare the coefficient of $$x^k$$ on both sides.
 
-On the left-hand side,
+On the left-hand side, by the binomial theorem,
 
 $$
 (1+x)^{m+n}
@@ -345,21 +429,33 @@ $$
 \sum_{r=0}^{m+n}\binom{m+n}{r}x^r.
 $$
 
-So the coefficient of $$x^k$$ is
+Therefore, the coefficient of $$x^k$$ is
 
 $$
 \binom{m+n}{k}.
 $$
 
-On the right-hand side, a term $$x^k$$ appears when we choose a term $$x^j$$ from the first factor and a term $$x^{k-j}$$ from the second factor.
+On the right-hand side, a term $$x^k$$ is produced by choosing a term $$x^j$$ from the first factor and a term $$x^{k-j}$$ from the second factor.
 
-The coefficient contributed by that choice is
+The coefficient of $$x^j$$ in the first factor is
+
+$$
+\binom{n}{j}.
+$$
+
+The coefficient of $$x^{k-j}$$ in the second factor is
+
+$$
+\binom{m}{k-j}.
+$$
+
+So the contribution from this choice is
 
 $$
 \binom{n}{j}\binom{m}{k-j}.
 $$
 
-As $$j$$ varies from $$0$$ to $$k$$, we get all possible ways to form $$x^k$$. Therefore the coefficient of $$x^k$$ on the right-hand side is
+As $$j$$ runs from $$0$$ to $$k$$, we get all possible ways to form $$x^k$$. Therefore, the coefficient of $$x^k$$ on the right-hand side is
 
 $$
 \sum_{j=0}^{k}
@@ -376,17 +472,7 @@ $$
 \binom{m+n}{k}.
 $$
 
-Thus,
-
-$$
-\boxed{
-\sum_{j=0}^{k}
-\binom{n}{j}\binom{m}{k-j}
-==========================
-
-\binom{m+n}{k}.
-}
-$$
+This proves the identity.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
@@ -424,21 +510,36 @@ We use the generating function of the Fibonacci sequence.
 Let
 
 $$
-A(x)=\sum_{n=0}^{\infty}F_nx^n.
+A(x)
+====
+
+\sum_{n=0}^{\infty}F_nx^n.
+$$
+
+So
+
+$$
+A(x)
+====
+
+F_0+F_1x+F_2x^2+F_3x^3+\cdots.
 $$
 
 Since
 
 $$
-F_0=0,
-\qquad
+F_0=0
+\qquad\text{and}\qquad
 F_1=1,
 $$
 
 we have
 
 $$
-A(x)=0+x+F_2x^2+F_3x^3+F_4x^4+\cdots.
+A(x)
+====
+
+x+F_2x^2+F_3x^3+F_4x^4+\cdots.
 $$
 
 Using the Fibonacci recurrence
@@ -447,19 +548,72 @@ $$
 F_n=F_{n-1}+F_{n-2},
 $$
 
-one obtains the standard generating function
+we can derive the generating function explicitly.
+
+Multiply $$A(x)$$ by $$x$$:
+
+$$
+xA(x)
+=====
+
+F_0x+F_1x^2+F_2x^3+F_3x^4+\cdots.
+$$
+
+Multiply $$A(x)$$ by $$x^2$$:
+
+$$
+x^2A(x)
+=======
+
+F_0x^2+F_1x^3+F_2x^4+F_3x^5+\cdots.
+$$
+
+Now compute
+
+$$
+A(x)-xA(x)-x^2A(x).
+$$
+
+The coefficient of $$x^0$$ is
+
+$$
+F_0=0.
+$$
+
+The coefficient of $$x^1$$ is
+
+$$
+F_1=1.
+$$
+
+For every power $$x^n$$ with $$n\ge 2$$, the coefficient is
+
+$$
+F_n-F_{n-1}-F_{n-2}.
+$$
+
+But by the Fibonacci recurrence,
+
+$$
+F_n-F_{n-1}-F_{n-2}=0.
+$$
+
+Therefore,
+
+$$
+A(x)-xA(x)-x^2A(x)=x.
+$$
+
+Factoring out $$A(x)$$ gives
+
+$$
+A(x)(1-x-x^2)=x.
+$$
+
+Hence,
 
 $$
 A(x)=\frac{x}{1-x-x^2}.
-$$
-
-Thus,
-
-$$
-\sum_{n=0}^{\infty}F_nx^n
-=========================
-
-\frac{x}{1-x-x^2}.
 $$
 
 Now the sum we want is
@@ -513,7 +667,7 @@ $$
 \frac12-\frac14=\frac14.
 $$
 
-So
+Therefore,
 
 $$
 A\left(\frac12\right)
@@ -540,13 +694,7 @@ $$
 \sum_{n=1}^{\infty}\frac{F_n}{2^n}=2.
 $$
 
-Thus,
-
-$$
-\boxed{
-\sum_{n=1}^{\infty}\frac{F_n}{2^n}=2.
-}
-$$
+This proves the identity.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
@@ -577,16 +725,28 @@ $$
 \frac{x}{1-x-x^2}.
 $$
 
-We want a formula for $$F_{n+1}$$, so we consider the shifted sequence
+We want a formula for the shifted sequence
 
 $$
 F_1,F_2,F_3,F_4,\ldots.
 $$
 
-Define
+So define
 
 $$
-G(x)=\sum_{n\ge 0}F_{n+1}x^n.
+G(x)
+====
+
+\sum_{n\ge 0}F_{n+1}x^n.
+$$
+
+Explicitly,
+
+$$
+G(x)
+====
+
+F_1+F_2x+F_3x^2+F_4x^3+\cdots.
 $$
 
 Since
@@ -604,7 +764,10 @@ $$
 we have
 
 $$
-G(x)=1+x+2x^2+3x^3+5x^4+\cdots.
+G(x)
+====
+
+1+x+2x^2+3x^3+5x^4+\cdots.
 $$
 
 From the Fibonacci generating function, we get
@@ -653,7 +816,7 @@ G(x)
 \frac{1}{1-\frac{x^2}{1-x}}.
 $$
 
-Now use the geometric series identity
+Now we use the geometric series identity
 
 $$
 \frac{1}{1-y}
@@ -748,7 +911,7 @@ G(x)
 \binom{m+k}{k}x^{m+2k}.
 $$
 
-Now we want the coefficient of $$x^n$$.
+Now we extract the coefficient of $$x^n$$.
 
 Since
 
@@ -756,7 +919,11 @@ $$
 G(x)=\sum_{n\ge 0}F_{n+1}x^n,
 $$
 
-the coefficient of $$x^n$$ is exactly $$F_{n+1}$$.
+the coefficient of $$x^n$$ is exactly
+
+$$
+F_{n+1}.
+$$
 
 On the other hand, in the double sum, a term contributes to $$x^n$$ precisely when
 
@@ -797,8 +964,10 @@ $$
 Replacing $$m$$ by $$n-2k$$ gives
 
 $$
-\binom{(n-2k)+k}{k}
-===================
+\binom{m+k}{k}
+==============
+
+# \binom{(n-2k)+k}{k}
 
 \binom{n-k}{k}.
 $$
@@ -813,17 +982,7 @@ F_{n+1}
 \binom{n-k}{k}.
 $$
 
-Thus,
-
-$$
-\boxed{
-F_{n+1}
-=======
-
-\sum_{k=0}^{\lfloor n/2\rfloor}
-\binom{n-k}{k}.
-}
-$$
+This proves the identity.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
