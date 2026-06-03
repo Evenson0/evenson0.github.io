@@ -1,19 +1,16 @@
 ---
-
 title: "Mathematical Workshop #7"
 date: 2026-06-03
 permalink: /workshop/7/
 layout: single
 author_profile: true
 tags:
-
-* binomial coefficients
-* generating functions
-* Fibonacci sequence
-* combinatorics
-* olympiad mathematics
-  series: mathematical-workshop
-
+  - binomial coefficients
+  - generating functions
+  - Fibonacci sequence
+  - combinatorics
+  - olympiad mathematics
+series: mathematical-workshop
 ---
 
 In this post I present five short problems centered around binomial coefficients and generating functions. The main ideas are differentiating the binomial theorem, comparing coefficients, and using generating functions to uncover identities involving Fibonacci numbers.
