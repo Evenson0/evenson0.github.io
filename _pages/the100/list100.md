@@ -253,7 +253,7 @@ permalink: /list-100/
     <li>✗ Be a writer</li>
     <li>✗ <a href="/memories/">Trek through Torres del Paine</a></li>
     <li>✗ Complete a Master’s degree</li>
-    <li>✗ Work internationally (US or Europe)</li>
+    <li>✗ Work internationally</li>
     <li>✗ Pursue a career in politics</li>
     <li>✗ Complete a PhD</li>
   </ol>
