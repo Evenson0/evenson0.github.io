@@ -252,6 +252,10 @@ permalink: /tools/soa-fm-practice/
     <button onclick="loadRandomProblem()" class="fm-btn">
       New Problem
     </button>
+
+    <button onclick="resetSolvedProgress()" class="fm-btn">
+      Reset Progress
+    </button>
   </div>
 
   <div id="result" style="margin-top:1rem; font-weight:600;"></div>
@@ -272,7 +276,10 @@ permalink: /tools/soa-fm-practice/
     </div>
   </div>
 
-  <div id="problemCounter" class="fm-counter">Problem 0 / 0</div>
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-top:1rem;">
+    <div id="problemCounter" class="fm-counter" style="margin-top:0;">Problem 0 / 0</div>
+    <div id="solvedCounter" class="fm-counter" style="margin-top:0;">Solved 0 / 0</div>
+  </div>
 
   <hr style="border:none; border-top:1px solid rgba(120,120,120,0.35); margin:2rem 0;">
 
@@ -298,10 +305,78 @@ permalink: /tools/soa-fm-practice/
 let problems = [];
 let currentProblem = null;
 
+const solvedStorageKey = 'soaFmSolvedProblemIds';
+let solvedProblemIds = new Set();
+
+function getProblemId(problem) {
+  return String(problem.id);
+}
+
+function loadSolvedProgress() {
+  try {
+    const savedProgress = localStorage.getItem(solvedStorageKey);
+    const parsedProgress = savedProgress ? JSON.parse(savedProgress) : [];
+    solvedProblemIds = new Set(parsedProgress.map(String));
+  } catch (error) {
+    solvedProblemIds = new Set();
+    console.error('Unable to load solved progress:', error);
+  }
+}
+
+function saveSolvedProgress() {
+  try {
+    localStorage.setItem(
+      solvedStorageKey,
+      JSON.stringify(Array.from(solvedProblemIds))
+    );
+  } catch (error) {
+    console.error('Unable to save solved progress:', error);
+  }
+}
+
+function updateSolvedCounter() {
+  const solvedCounter = document.getElementById('solvedCounter');
+
+  if (!solvedCounter) return;
+
+  const total = problems.length;
+  const solved = solvedProblemIds.size;
+
+  solvedCounter.innerText = `Solved ${solved} / ${total}`;
+}
+
 function updateProblemCounter() {
   const total = problems.length;
   const currentId = currentProblem ? currentProblem.id : 0;
+
   document.getElementById('problemCounter').innerText = `Problem ${currentId} / ${total}`;
+  updateSolvedCounter();
+}
+
+function markCurrentProblemAsSolved() {
+  if (!currentProblem) return false;
+
+  const problemId = getProblemId(currentProblem);
+  const wasAlreadySolved = solvedProblemIds.has(problemId);
+
+  solvedProblemIds.add(problemId);
+  saveSolvedProgress();
+  updateSolvedCounter();
+
+  return !wasAlreadySolved;
+}
+
+function resetSolvedProgress() {
+  const confirmed = confirm('Do you want to reset your solved problem progress?');
+
+  if (!confirmed) return;
+
+  solvedProblemIds.clear();
+  saveSolvedProgress();
+  updateSolvedCounter();
+
+  const result = document.getElementById('result');
+  result.innerHTML = '<div class="fm-result-message fm-result-warning">Progress has been reset.</div>';
 }
 
 async function loadProblems() {
@@ -309,6 +384,7 @@ async function loadProblems() {
     const response = await fetch('/assets/data/soa-fm-problems.json?v=' + Date.now());
     problems = await response.json();
 
+    loadSolvedProgress();
     updateProblemCounter();
     loadRandomProblem();
   } catch (error) {
@@ -387,7 +463,13 @@ function checkAnswer() {
   }
 
   if (selected === currentProblem.correct) {
-    result.innerHTML = '<div class="fm-result-message fm-result-correct">Correct.</div>';
+    const newlySolved = markCurrentProblemAsSolved();
+
+    if (newlySolved) {
+      result.innerHTML = '<div class="fm-result-message fm-result-correct">Correct. This problem has been added to your solved count.</div>';
+    } else {
+      result.innerHTML = '<div class="fm-result-message fm-result-correct">Correct. This problem was already counted.</div>';
+    }
   } else {
     result.innerHTML = '<div class="fm-result-message fm-result-incorrect">Incorrect. Try again or reveal the solution.</div>';
   }
