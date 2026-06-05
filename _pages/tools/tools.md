@@ -225,6 +225,16 @@ permalink: /tools/
       </div>
     </a>
 
+    <a href="/tools/random-walk/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Random Walk Simulator</h3>
+        <p class="lab-card-desc">
+          Choose a starting point, generate a two-dimensional random walk, and visualize how randomness creates a path over time.
+        </p>
+        <p class="lab-card-cta">Open tool →</p>
+      </div>
+    </a>
+
   </div>
 
 <h2 class="lab-section-title">Actuarial Science</h2>
