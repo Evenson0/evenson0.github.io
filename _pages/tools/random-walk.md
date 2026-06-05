@@ -180,15 +180,28 @@ author_profile: true
     line-height: 1.55;
   }
 
-  .rw-return-badge {
+  .rw-return-button {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 14px;
     border-radius: 999px;
+    border: none;
     background: #f59e0b;
     color: #111827;
     font-weight: 900;
     box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35);
+    cursor: pointer;
+  }
+
+  .rw-return-button:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+  }
+
+  .rw-return-button-active {
+    background: #22c55e;
+    color: #052e16;
+    box-shadow: 0 6px 18px rgba(34, 197, 94, 0.35);
   }
 
   .rw-return-number {
@@ -228,7 +241,8 @@ author_profile: true
     font-size: 0.88rem;
   }
 
-  .rw-theory-box {
+  .rw-theory-box,
+  .rw-computation-box {
     margin-top: 12px;
     padding: 12px 14px;
     border-radius: 14px;
@@ -236,9 +250,30 @@ author_profile: true
     background: rgba(127, 127, 127, 0.08);
   }
 
-  .rw-theory-title {
+  .rw-theory-title,
+  .rw-computation-title {
     font-weight: 900;
     margin-bottom: 6px;
+  }
+
+  .rw-formula-line {
+    margin-top: 7px;
+  }
+
+  .rw-formula {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background: rgba(127, 127, 127, 0.12);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size: 0.9rem;
+  }
+
+  .rw-return-visual-note {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    opacity: 0.82;
   }
 </style>
 
@@ -335,6 +370,8 @@ author_profile: true
   let currentPath = [];
   let animationId = null;
   let animationTimeoutId = null;
+  let currentVisibleIndex = 0;
+  let showReturnPoints = false;
   let logFactorialCache = [0];
 
   function getDimension() {
@@ -390,7 +427,7 @@ author_profile: true
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     if (currentPath.length > 0) {
-      drawPath(currentPath);
+      drawPath(currentPath, currentVisibleIndex);
     } else {
       drawEmptyCanvas();
     }
@@ -564,6 +601,60 @@ author_profile: true
     ctx.restore();
   }
 
+  function drawReturnMarkers(path, maxIndex, bounds, width, height, padding) {
+    const startVector = path[0];
+    const d = getDimension();
+    const plotPoints = getPlotPoints(path);
+
+    const returnIndices = [];
+
+    for (let i = 1; i <= maxIndex; i++) {
+      if (vectorsAreEqual(startVector, path[i])) {
+        returnIndices.push(i);
+      }
+    }
+
+    if (returnIndices.length === 0) {
+      return;
+    }
+
+    ctx.save();
+
+    if (d === 1) {
+      ctx.fillStyle = "#f59e0b";
+      ctx.strokeStyle = "#111827";
+      ctx.lineWidth = 1.5;
+
+      returnIndices.forEach(index => {
+        const point = transformPoint(plotPoints[index], bounds, width, height, padding);
+
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, 5, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+      });
+    } else {
+      const startPlotPoint = transformPoint(plotPoints[0], bounds, width, height, padding);
+
+      ctx.strokeStyle = "#f59e0b";
+      ctx.fillStyle = "#f59e0b";
+      ctx.lineWidth = 4;
+
+      ctx.beginPath();
+      ctx.arc(startPlotPoint.x, startPlotPoint.y, 13, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(startPlotPoint.x, startPlotPoint.y, 5, 0, 2 * Math.PI);
+      ctx.fill();
+
+      ctx.font = "bold 13px system-ui, sans-serif";
+      ctx.fillText("returns: " + returnIndices.length, startPlotPoint.x + 16, startPlotPoint.y - 12);
+    }
+
+    ctx.restore();
+  }
+
   function drawPath(path, maxIndex = path.length - 1) {
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
@@ -604,8 +695,14 @@ author_profile: true
 
     ctx.stroke();
 
+    if (showReturnPoints) {
+      drawReturnMarkers(path, maxIndex, bounds, width, height, padding);
+    }
+
     const start = transformPoint(visiblePoints[0], bounds, width, height, padding);
     const end = transformPoint(visiblePoints[visiblePoints.length - 1], bounds, width, height, padding);
+
+    ctx.fillStyle = getComputedStyle(document.body).color;
 
     ctx.beginPath();
     ctx.arc(start.x, start.y, 5, 0, 2 * Math.PI);
@@ -622,6 +719,78 @@ author_profile: true
     }
 
     return "(" + vector.map(value => value.toFixed(0)).join(", ") + ")";
+  }
+
+  function formatSignedSquareTerm(value) {
+    return "(" + value.toFixed(0) + ")²";
+  }
+
+  function buildDistanceFormula(start, end, distance) {
+    if (start.length === 1) {
+      const difference = end[0] - start[0];
+
+      return `
+        <div class="rw-formula-line">
+          <strong>Displacement:</strong><br>
+          <span class="rw-formula">
+            |${end[0].toFixed(0)} - ${start[0].toFixed(0)}| = |${difference.toFixed(0)}| = ${distance.toFixed(2)}
+          </span>
+        </div>
+      `;
+    }
+
+    const differences = end.map((value, index) => value - start[index]);
+    const squaredTerms = differences.map(diff => diff * diff);
+    const sumSquares = squaredTerms.reduce((sum, value) => sum + value, 0);
+
+    const coordinateFormula = end.map((value, index) => {
+      return "(" + value.toFixed(0) + " - " + start[index].toFixed(0) + ")²";
+    }).join(" + ");
+
+    const simplifiedFormula = squaredTerms.map(value => value.toFixed(0)).join(" + ");
+
+    return `
+      <div class="rw-formula-line">
+        <strong>Displacement:</strong><br>
+        <span class="rw-formula">
+          √[${coordinateFormula}] = √[${simplifiedFormula}] = √${sumSquares.toFixed(0)} = ${distance.toFixed(2)}
+        </span>
+      </div>
+    `;
+  }
+
+  function buildExcursionFormula(start, maxPosition, maxTime, maxExcursion) {
+    if (start.length === 1) {
+      const difference = maxPosition[0] - start[0];
+
+      return `
+        <div class="rw-formula-line">
+          <strong>Maximum excursion:</strong><br>
+          <span class="rw-formula">
+            max |X_t - X_0| occurs at t = ${maxTime}: |${maxPosition[0].toFixed(0)} - ${start[0].toFixed(0)}| = |${difference.toFixed(0)}| = ${maxExcursion.toFixed(2)}
+          </span>
+        </div>
+      `;
+    }
+
+    const differences = maxPosition.map((value, index) => value - start[index]);
+    const squaredTerms = differences.map(diff => diff * diff);
+    const sumSquares = squaredTerms.reduce((sum, value) => sum + value, 0);
+
+    const coordinateFormula = maxPosition.map((value, index) => {
+      return "(" + value.toFixed(0) + " - " + start[index].toFixed(0) + ")²";
+    }).join(" + ");
+
+    const simplifiedFormula = squaredTerms.map(value => value.toFixed(0)).join(" + ");
+
+    return `
+      <div class="rw-formula-line">
+        <strong>Maximum excursion:</strong><br>
+        <span class="rw-formula">
+          max ||X_t - X_0|| occurs at t = ${maxTime}: √[${coordinateFormula}] = √[${simplifiedFormula}] = √${sumSquares.toFixed(0)} = ${maxExcursion.toFixed(2)}
+        </span>
+      </div>
+    `;
   }
 
   function logFactorial(n) {
@@ -687,11 +856,18 @@ author_profile: true
     const displacement = euclideanDistance(start, end);
 
     let maxExcursion = 0;
+    let maxExcursionTime = 0;
+    let maxExcursionPosition = start;
     let returnTimes = [];
 
     for (let i = 1; i <= maxIndex; i++) {
       const distanceFromStart = euclideanDistance(start, path[i]);
-      maxExcursion = Math.max(maxExcursion, distanceFromStart);
+
+      if (distanceFromStart > maxExcursion) {
+        maxExcursion = distanceFromStart;
+        maxExcursionTime = i;
+        maxExcursionPosition = path[i];
+      }
 
       if (vectorsAreEqual(start, path[i])) {
         returnTimes.push(i);
@@ -703,6 +879,8 @@ author_profile: true
       end,
       displacement,
       maxExcursion,
+      maxExcursionTime,
+      maxExcursionPosition,
       returnCount: returnTimes.length,
       returnTimes,
       firstReturn: returnTimes.length > 0 ? returnTimes[0] : null,
@@ -724,7 +902,7 @@ author_profile: true
       `;
     }
 
-    const maxDisplayed = 30;
+    const maxDisplayed = 40;
     const displayedTimes = returnTimes.slice(0, maxDisplayed);
 
     const chips = displayedTimes.map(time => {
@@ -770,6 +948,49 @@ author_profile: true
     `;
   }
 
+  function buildComputationHTML(result) {
+    const displacementFormula = buildDistanceFormula(
+      result.start,
+      result.end,
+      result.displacement
+    );
+
+    const excursionFormula = buildExcursionFormula(
+      result.start,
+      result.maxExcursionPosition,
+      result.maxExcursionTime,
+      result.maxExcursion
+    );
+
+    return `
+      <div class="rw-computation-box">
+        <div class="rw-computation-title">How the quantities are computed</div>
+        ${displacementFormula}
+        ${excursionFormula}
+      </div>
+    `;
+  }
+
+  function buildReturnVisualNote(d, returnCount) {
+    if (!showReturnPoints || returnCount === 0) {
+      return "";
+    }
+
+    if (d === 1) {
+      return `
+        <div class="rw-return-visual-note">
+          The orange dots on the graph mark the times when the walk returns to the starting position.
+        </div>
+      `;
+    }
+
+    return `
+      <div class="rw-return-visual-note">
+        In dimension 2, every return to the starting point occurs at the same spatial point, so the starting point is highlighted with an orange ring.
+      </div>
+    `;
+  }
+
   function updateStats(path, maxIndex = path.length - 1, isLive = false) {
     const d = getDimension();
     const result = computeStats(path, maxIndex);
@@ -786,8 +1007,18 @@ author_profile: true
       ? "None"
       : result.lastReturn + "/" + result.totalSteps;
 
+    const returnButtonClass = showReturnPoints
+      ? "rw-return-button rw-return-button-active"
+      : "rw-return-button";
+
+    const returnButtonText = showReturnPoints
+      ? "Hide return points"
+      : "Returns to the starting point";
+
     const returnTimesHTML = buildReturnTimesHTML(result.returnTimes, result.totalSteps);
     const theoryHTML = buildTheoryHTML(d, result.totalSteps);
+    const computationHTML = buildComputationHTML(result);
+    const visualNoteHTML = buildReturnVisualNote(d, result.returnCount);
 
     stats.innerHTML = `
       <strong>Dimension:</strong> ${d} ${liveLabel}<br>
@@ -799,15 +1030,29 @@ author_profile: true
       <strong>First return:</strong> ${firstReturnText}<br>
       <strong>Last return:</strong> ${lastReturnText}<br>
 
-      <span class="rw-return-badge">
-        Returns to the starting point:
+      <button class="${returnButtonClass}" onclick="toggleReturnPoints()">
+        ${returnButtonText}:
         <span class="rw-return-number">${result.returnCount}</span>
-      </span>
+      </button>
+
+      ${visualNoteHTML}
 
       ${returnTimesHTML}
 
       ${theoryHTML}
+
+      ${computationHTML}
     `;
+  }
+
+  function toggleReturnPoints() {
+    if (currentPath.length === 0) {
+      return;
+    }
+
+    showReturnPoints = !showReturnPoints;
+    drawPath(currentPath, currentVisibleIndex);
+    updateStats(currentPath, currentVisibleIndex);
   }
 
   function stopAnimation() {
@@ -826,8 +1071,10 @@ author_profile: true
     stopAnimation();
 
     currentPath = generatePath();
-    drawPath(currentPath);
-    updateStats(currentPath);
+    currentVisibleIndex = currentPath.length - 1;
+
+    drawPath(currentPath, currentVisibleIndex);
+    updateStats(currentPath, currentVisibleIndex);
   }
 
   function getFrameJump(speedVolume, pathLength) {
@@ -868,8 +1115,9 @@ author_profile: true
     const { speedVolume } = getInputs();
 
     if (speedVolume >= 100) {
-      drawPath(currentPath);
-      updateStats(currentPath);
+      currentVisibleIndex = currentPath.length - 1;
+      drawPath(currentPath, currentVisibleIndex);
+      updateStats(currentPath, currentVisibleIndex);
       return;
     }
 
@@ -879,9 +1127,10 @@ author_profile: true
 
     function step() {
       const visibleIndex = Math.min(index, currentPath.length - 1);
+      currentVisibleIndex = visibleIndex;
 
-      drawPath(currentPath, visibleIndex);
-      updateStats(currentPath, visibleIndex, true);
+      drawPath(currentPath, currentVisibleIndex);
+      updateStats(currentPath, currentVisibleIndex, true);
 
       index += frameJump;
 
@@ -890,8 +1139,9 @@ author_profile: true
           animationId = requestAnimationFrame(step);
         }, frameDelay);
       } else {
-        drawPath(currentPath);
-        updateStats(currentPath);
+        currentVisibleIndex = currentPath.length - 1;
+        drawPath(currentPath, currentVisibleIndex);
+        updateStats(currentPath, currentVisibleIndex);
         animationId = null;
         animationTimeoutId = null;
       }
@@ -904,6 +1154,9 @@ author_profile: true
     stopAnimation();
 
     currentPath = [];
+    currentVisibleIndex = 0;
+    showReturnPoints = false;
+
     drawEmptyCanvas();
 
     stats.innerHTML = "Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probabilities.";
