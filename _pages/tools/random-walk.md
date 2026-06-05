@@ -204,6 +204,42 @@ author_profile: true
     font-size: 0.82rem;
     font-weight: 800;
   }
+
+  .rw-return-times {
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: rgba(127, 127, 127, 0.08);
+    border: 1px solid rgba(127, 127, 127, 0.22);
+  }
+
+  .rw-return-times-title {
+    font-weight: 900;
+    margin-bottom: 6px;
+  }
+
+  .rw-return-chip {
+    display: inline-block;
+    margin: 4px 5px 4px 0;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: rgba(127, 127, 127, 0.18);
+    font-weight: 700;
+    font-size: 0.88rem;
+  }
+
+  .rw-theory-box {
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(127, 127, 127, 0.22);
+    background: rgba(127, 127, 127, 0.08);
+  }
+
+  .rw-theory-title {
+    font-weight: 900;
+    margin-bottom: 6px;
+  }
 </style>
 
 <div class="rw-container">
@@ -286,7 +322,7 @@ author_profile: true
   </div>
 
   <div id="rwStats" class="rw-stats">
-    Generate a walk to see the final position, displacement, maximum excursion, and number of returns to the starting point.
+    Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probabilities.
   </div>
 
 </div>
@@ -299,6 +335,7 @@ author_profile: true
   let currentPath = [];
   let animationId = null;
   let animationTimeoutId = null;
+  let logFactorialCache = [0];
 
   function getDimension() {
     return Number(document.getElementById("dimension").value);
@@ -587,6 +624,62 @@ author_profile: true
     return "(" + vector.map(value => value.toFixed(0)).join(", ") + ")";
   }
 
+  function logFactorial(n) {
+    for (let i = logFactorialCache.length; i <= n; i++) {
+      logFactorialCache[i] = logFactorialCache[i - 1] + Math.log(i);
+    }
+
+    return logFactorialCache[n];
+  }
+
+  function logChoose(n, k) {
+    if (k < 0 || k > n) {
+      return -Infinity;
+    }
+
+    return logFactorial(n) - logFactorial(k) - logFactorial(n - k);
+  }
+
+  function formatProbability(probability) {
+    if (probability === 0) {
+      return "0%";
+    }
+
+    if (probability >= 0.0001) {
+      return (100 * probability).toFixed(4) + "%";
+    }
+
+    return (100 * probability).toExponential(4) + "%";
+  }
+
+  function theoreticalExactReturnProbability(d, steps) {
+    if (steps % 2 === 1) {
+      return 0;
+    }
+
+    const m = steps / 2;
+
+    if (d === 1) {
+      const logProb = logChoose(2 * m, m) - (2 * m) * Math.log(2);
+      return Math.exp(logProb);
+    }
+
+    if (d === 2) {
+      const logOneDimensionalPart = logChoose(2 * m, m) - (2 * m) * Math.log(2);
+      return Math.exp(2 * logOneDimensionalPart);
+    }
+
+    return null;
+  }
+
+  function theoreticalEventualReturnProbability(d) {
+    if (d === 1 || d === 2) {
+      return 1;
+    }
+
+    return null;
+  }
+
   function computeStats(path, maxIndex = path.length - 1) {
     const start = path[0];
     const end = path[maxIndex];
@@ -594,14 +687,14 @@ author_profile: true
     const displacement = euclideanDistance(start, end);
 
     let maxExcursion = 0;
-    let returnCount = 0;
+    let returnTimes = [];
 
     for (let i = 1; i <= maxIndex; i++) {
       const distanceFromStart = euclideanDistance(start, path[i]);
       maxExcursion = Math.max(maxExcursion, distanceFromStart);
 
       if (vectorsAreEqual(start, path[i])) {
-        returnCount += 1;
+        returnTimes.push(i);
       }
     }
 
@@ -610,10 +703,71 @@ author_profile: true
       end,
       displacement,
       maxExcursion,
-      returnCount,
+      returnCount: returnTimes.length,
+      returnTimes,
+      firstReturn: returnTimes.length > 0 ? returnTimes[0] : null,
+      lastReturn: returnTimes.length > 0 ? returnTimes[returnTimes.length - 1] : null,
       visiblePositions: maxIndex + 1,
-      totalPositions: path.length
+      totalPositions: path.length,
+      visibleSteps: maxIndex,
+      totalSteps: path.length - 1
     };
+  }
+
+  function buildReturnTimesHTML(returnTimes, totalSteps) {
+    if (returnTimes.length === 0) {
+      return `
+        <div class="rw-return-times">
+          <div class="rw-return-times-title">Return times</div>
+          No return to the starting point has occurred yet.
+        </div>
+      `;
+    }
+
+    const maxDisplayed = 30;
+    const displayedTimes = returnTimes.slice(0, maxDisplayed);
+
+    const chips = displayedTimes.map(time => {
+      return `<span class="rw-return-chip">${time}/${totalSteps}</span>`;
+    }).join("");
+
+    const remaining = returnTimes.length > maxDisplayed
+      ? `<span class="rw-return-chip">+${returnTimes.length - maxDisplayed} more</span>`
+      : "";
+
+    return `
+      <div class="rw-return-times">
+        <div class="rw-return-times-title">Return times</div>
+        ${chips}
+        ${remaining}
+      </div>
+    `;
+  }
+
+  function buildTheoryHTML(d, steps) {
+    const eventualReturnProbability = theoreticalEventualReturnProbability(d);
+    const exactReturnProbability = theoreticalExactReturnProbability(d, steps);
+
+    const eventualText = eventualReturnProbability === null
+      ? "Not available in this simulator"
+      : formatProbability(eventualReturnProbability);
+
+    const exactText = exactReturnProbability === null
+      ? "Not available"
+      : formatProbability(exactReturnProbability);
+
+    const parityNote = steps % 2 === 1
+      ? "<br><em>Because the number of steps is odd, an exact return to the starting point is impossible for this simple lattice walk.</em>"
+      : "";
+
+    return `
+      <div class="rw-theory-box">
+        <div class="rw-theory-title">Theoretical probabilities</div>
+        <strong>Probability of eventually returning to the starting point:</strong> ${eventualText}<br>
+        <strong>Probability of being exactly at the starting point after ${steps} steps:</strong> ${exactText}
+        ${parityNote}
+      </div>
+    `;
   }
 
   function updateStats(path, maxIndex = path.length - 1, isLive = false) {
@@ -624,6 +778,17 @@ author_profile: true
       ? `<span class="rw-live-label">live</span>`
       : "";
 
+    const firstReturnText = result.firstReturn === null
+      ? "None"
+      : result.firstReturn + "/" + result.totalSteps;
+
+    const lastReturnText = result.lastReturn === null
+      ? "None"
+      : result.lastReturn + "/" + result.totalSteps;
+
+    const returnTimesHTML = buildReturnTimesHTML(result.returnTimes, result.totalSteps);
+    const theoryHTML = buildTheoryHTML(d, result.totalSteps);
+
     stats.innerHTML = `
       <strong>Dimension:</strong> ${d} ${liveLabel}<br>
       <strong>Starting point:</strong> ${formatVector(result.start)}<br>
@@ -631,11 +796,17 @@ author_profile: true
       <strong>Displacement from start:</strong> ${result.displacement.toFixed(2)}<br>
       <strong>Maximum excursion:</strong> ${result.maxExcursion.toFixed(2)}<br>
       <strong>Visible positions:</strong> ${result.visiblePositions} / ${result.totalPositions}<br>
+      <strong>First return:</strong> ${firstReturnText}<br>
+      <strong>Last return:</strong> ${lastReturnText}<br>
 
       <span class="rw-return-badge">
         Returns to the starting point:
         <span class="rw-return-number">${result.returnCount}</span>
       </span>
+
+      ${returnTimesHTML}
+
+      ${theoryHTML}
     `;
   }
 
@@ -735,7 +906,7 @@ author_profile: true
     currentPath = [];
     drawEmptyCanvas();
 
-    stats.innerHTML = "Generate a walk to see the final position, displacement, maximum excursion, and number of returns to the starting point.";
+    stats.innerHTML = "Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probabilities.";
   }
 
   function drawEmptyCanvas() {
