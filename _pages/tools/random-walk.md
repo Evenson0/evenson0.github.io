@@ -37,6 +37,13 @@ author_profile: true
     line-height: 1.55;
   }
 
+  .rw-small-note {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    opacity: 0.78;
+    line-height: 1.5;
+  }
+
   .rw-panel {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -173,11 +180,29 @@ author_profile: true
     line-height: 1.55;
   }
 
-  .rw-small-note {
-    margin-top: 12px;
-    font-size: 0.9rem;
-    opacity: 0.78;
-    line-height: 1.5;
+  .rw-return-badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #f59e0b;
+    color: #111827;
+    font-weight: 900;
+    box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35);
+  }
+
+  .rw-return-number {
+    font-size: 1.2rem;
+  }
+
+  .rw-live-label {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: rgba(127, 127, 127, 0.16);
+    font-size: 0.82rem;
+    font-weight: 800;
   }
 </style>
 
@@ -273,6 +298,7 @@ author_profile: true
 
   let currentPath = [];
   let animationId = null;
+  let animationTimeoutId = null;
 
   function getDimension() {
     return Number(document.getElementById("dimension").value);
@@ -561,17 +587,16 @@ author_profile: true
     return "(" + vector.map(value => value.toFixed(0)).join(", ") + ")";
   }
 
-  function updateStats(path) {
-    const d = getDimension();
+  function computeStats(path, maxIndex = path.length - 1) {
     const start = path[0];
-    const end = path[path.length - 1];
+    const end = path[maxIndex];
 
     const displacement = euclideanDistance(start, end);
 
     let maxExcursion = 0;
     let returnCount = 0;
 
-    for (let i = 1; i < path.length; i++) {
+    for (let i = 1; i <= maxIndex; i++) {
       const distanceFromStart = euclideanDistance(start, path[i]);
       maxExcursion = Math.max(maxExcursion, distanceFromStart);
 
@@ -580,22 +605,54 @@ author_profile: true
       }
     }
 
+    return {
+      start,
+      end,
+      displacement,
+      maxExcursion,
+      returnCount,
+      visiblePositions: maxIndex + 1,
+      totalPositions: path.length
+    };
+  }
+
+  function updateStats(path, maxIndex = path.length - 1, isLive = false) {
+    const d = getDimension();
+    const result = computeStats(path, maxIndex);
+
+    const liveLabel = isLive
+      ? `<span class="rw-live-label">live</span>`
+      : "";
+
     stats.innerHTML = `
-      <strong>Dimension:</strong> ${d}<br>
-      <strong>Starting point:</strong> ${formatVector(start)}<br>
-      <strong>Final position:</strong> ${formatVector(end)}<br>
-      <strong>Displacement from start:</strong> ${displacement.toFixed(2)}<br>
-      <strong>Maximum excursion:</strong> ${maxExcursion.toFixed(2)}<br>
-      <strong>Returns to the starting point:</strong> ${returnCount}<br>
-      <strong>Total number of positions:</strong> ${path.length}
+      <strong>Dimension:</strong> ${d} ${liveLabel}<br>
+      <strong>Starting point:</strong> ${formatVector(result.start)}<br>
+      <strong>Current or final position:</strong> ${formatVector(result.end)}<br>
+      <strong>Displacement from start:</strong> ${result.displacement.toFixed(2)}<br>
+      <strong>Maximum excursion:</strong> ${result.maxExcursion.toFixed(2)}<br>
+      <strong>Visible positions:</strong> ${result.visiblePositions} / ${result.totalPositions}<br>
+
+      <span class="rw-return-badge">
+        Returns to the starting point:
+        <span class="rw-return-number">${result.returnCount}</span>
+      </span>
     `;
   }
 
-  function generateRandomWalk() {
+  function stopAnimation() {
     if (animationId) {
       cancelAnimationFrame(animationId);
       animationId = null;
     }
+
+    if (animationTimeoutId) {
+      clearTimeout(animationTimeoutId);
+      animationTimeoutId = null;
+    }
+  }
+
+  function generateRandomWalk() {
+    stopAnimation();
 
     currentPath = generatePath();
     drawPath(currentPath);
@@ -608,16 +665,32 @@ author_profile: true
     }
 
     const normalized = speedVolume / 100;
-    const jump = 1 + Math.floor(normalized * normalized * Math.max(2, pathLength / 35));
+
+    if (speedVolume <= 12) {
+      return 1;
+    }
+
+    const jump = 1 + Math.floor(
+      Math.pow(normalized, 2.4) * Math.max(2, pathLength / 30)
+    );
 
     return Math.max(1, jump);
   }
 
-  function playRandomWalk() {
-    if (animationId) {
-      cancelAnimationFrame(animationId);
-      animationId = null;
+  function getFrameDelay(speedVolume) {
+    if (speedVolume >= 100) {
+      return 0;
     }
+
+    const normalized = speedVolume / 100;
+
+    const delay = 1200 * Math.pow(1 - normalized, 3.4);
+
+    return Math.round(delay);
+  }
+
+  function playRandomWalk() {
+    stopAnimation();
 
     currentPath = generatePath();
 
@@ -631,18 +704,25 @@ author_profile: true
 
     let index = 0;
     const frameJump = getFrameJump(speedVolume, currentPath.length);
+    const frameDelay = getFrameDelay(speedVolume);
 
     function step() {
-      drawPath(currentPath, index);
+      const visibleIndex = Math.min(index, currentPath.length - 1);
+
+      drawPath(currentPath, visibleIndex);
+      updateStats(currentPath, visibleIndex, true);
 
       index += frameJump;
 
       if (index < currentPath.length) {
-        animationId = requestAnimationFrame(step);
+        animationTimeoutId = setTimeout(() => {
+          animationId = requestAnimationFrame(step);
+        }, frameDelay);
       } else {
         drawPath(currentPath);
         updateStats(currentPath);
         animationId = null;
+        animationTimeoutId = null;
       }
     }
 
@@ -650,10 +730,7 @@ author_profile: true
   }
 
   function resetRandomWalk() {
-    if (animationId) {
-      cancelAnimationFrame(animationId);
-      animationId = null;
-    }
+    stopAnimation();
 
     currentPath = [];
     drawEmptyCanvas();
