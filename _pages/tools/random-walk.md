@@ -3,6 +3,7 @@ title: "Random Walk Simulator"
 permalink: /tools/random-walk/
 layout: single
 author_profile: true
+mathjax: true
 ---
 
 <style>
@@ -218,23 +219,11 @@ author_profile: true
     font-weight: 800;
   }
 
-  .rw-theory-highlight {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 8px 11px;
-    border-radius: 999px;
-    background: #2563eb;
-    color: #ffffff;
-    font-weight: 900;
-    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.28);
-  }
-
   .rw-details {
     margin-top: 14px;
   }
 
   .rw-return-times,
-  .rw-theory-box,
   .rw-computation-box {
     margin-top: 12px;
     padding: 12px 14px;
@@ -244,7 +233,6 @@ author_profile: true
   }
 
   .rw-return-times-title,
-  .rw-theory-title,
   .rw-computation-title {
     font-weight: 900;
     margin-bottom: 6px;
@@ -260,18 +248,16 @@ author_profile: true
     font-size: 0.88rem;
   }
 
-  .rw-formula-line {
-    margin-top: 7px;
+  .rw-math-display {
+    overflow-x: auto;
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: rgba(127, 127, 127, 0.10);
   }
 
-  .rw-formula {
-    display: inline-block;
-    margin-top: 4px;
-    padding: 5px 8px;
-    border-radius: 8px;
-    background: rgba(127, 127, 127, 0.12);
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-    font-size: 0.9rem;
+  .rw-formula-line {
+    margin-top: 10px;
   }
 
   .rw-return-visual-note {
@@ -367,7 +353,7 @@ author_profile: true
   </div>
 
   <div id="rwStats" class="rw-stats">
-    Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probability.
+    Generate a walk to see the final position, displacement, maximum excursion, and return times.
   </div>
 
 </div>
@@ -382,6 +368,26 @@ author_profile: true
   let animationTimeoutId = null;
   let currentVisibleIndex = 0;
   let showReturnDetails = false;
+
+  function typesetStatsMath() {
+    if (!showReturnDetails) {
+      return;
+    }
+
+    if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
+      window.MathJax.typesetPromise([stats]).catch(() => {});
+      return;
+    }
+
+    if (window.MathJax && typeof window.MathJax.typeset === "function") {
+      window.MathJax.typeset([stats]);
+      return;
+    }
+
+    if (window.MathJax && window.MathJax.Hub) {
+      window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub, stats]);
+    }
+  }
 
   function getDimension() {
     return Number(document.getElementById("dimension").value);
@@ -736,10 +742,18 @@ author_profile: true
 
       return `
         <div class="rw-formula-line">
-          <strong>Displacement from start:</strong><br>
-          <span class="rw-formula">
-            |${end[0].toFixed(0)} - ${start[0].toFixed(0)}| = |${difference.toFixed(0)}| = ${distance.toFixed(2)}
-          </span>
+          <strong>Displacement from start:</strong>
+          <div class="rw-math-display">
+            \\[
+              |X_t - X_0|
+              =
+              |${end[0].toFixed(0)} - ${start[0].toFixed(0)}|
+              =
+              |${difference.toFixed(0)}|
+              =
+              ${distance.toFixed(2)}
+            \\]
+          </div>
         </div>
       `;
     }
@@ -749,17 +763,27 @@ author_profile: true
     const sumSquares = squaredTerms.reduce((sum, value) => sum + value, 0);
 
     const coordinateFormula = end.map((value, index) => {
-      return "(" + value.toFixed(0) + " - " + start[index].toFixed(0) + ")²";
+      return "\\left(" + value.toFixed(0) + " - " + start[index].toFixed(0) + "\\right)^2";
     }).join(" + ");
 
     const simplifiedFormula = squaredTerms.map(value => value.toFixed(0)).join(" + ");
 
     return `
       <div class="rw-formula-line">
-        <strong>Displacement from start:</strong><br>
-        <span class="rw-formula">
-          √[${coordinateFormula}] = √[${simplifiedFormula}] = √${sumSquares.toFixed(0)} = ${distance.toFixed(2)}
-        </span>
+        <strong>Displacement from start:</strong>
+        <div class="rw-math-display">
+          \\[
+            \\|X_t - X_0\\|
+            =
+            \\sqrt{${coordinateFormula}}
+            =
+            \\sqrt{${simplifiedFormula}}
+            =
+            \\sqrt{${sumSquares.toFixed(0)}}
+            \\approx
+            ${distance.toFixed(2)}
+          \\]
+        </div>
       </div>
     `;
   }
@@ -770,10 +794,21 @@ author_profile: true
 
       return `
         <div class="rw-formula-line">
-          <strong>Maximum excursion:</strong><br>
-          <span class="rw-formula">
-            max |X_t - X_0| occurs at t = ${maxTime}: |${maxPosition[0].toFixed(0)} - ${start[0].toFixed(0)}| = |${difference.toFixed(0)}| = ${maxExcursion.toFixed(2)}
-          </span>
+          <strong>Maximum excursion:</strong>
+          <div class="rw-math-display">
+            \\[
+              \\max_{0 \\leq s \\leq ${maxTime}} |X_s - X_0|
+              =
+              |${maxPosition[0].toFixed(0)} - ${start[0].toFixed(0)}|
+              =
+              |${difference.toFixed(0)}|
+              =
+              ${maxExcursion.toFixed(2)}
+            \\]
+          </div>
+          <div class="rw-small-note">
+            The maximum occurs at time \(t = ${maxTime}\).
+          </div>
         </div>
       `;
     }
@@ -783,17 +818,29 @@ author_profile: true
     const sumSquares = squaredTerms.reduce((sum, value) => sum + value, 0);
 
     const coordinateFormula = maxPosition.map((value, index) => {
-      return "(" + value.toFixed(0) + " - " + start[index].toFixed(0) + ")²";
+      return "\\left(" + value.toFixed(0) + " - " + start[index].toFixed(0) + "\\right)^2";
     }).join(" + ");
 
     const simplifiedFormula = squaredTerms.map(value => value.toFixed(0)).join(" + ");
 
     return `
       <div class="rw-formula-line">
-        <strong>Maximum excursion:</strong><br>
-        <span class="rw-formula">
-          max ||X_t - X_0|| occurs at t = ${maxTime}: √[${coordinateFormula}] = √[${simplifiedFormula}] = √${sumSquares.toFixed(0)} = ${maxExcursion.toFixed(2)}
-        </span>
+        <strong>Maximum excursion:</strong>
+        <div class="rw-math-display">
+          \\[
+            \\max_s \\|X_s - X_0\\|
+            =
+            \\left\\|X_{${maxTime}} - X_0\\right\\|
+            =
+            \\sqrt{${coordinateFormula}}
+            =
+            \\sqrt{${simplifiedFormula}}
+            =
+            \\sqrt{${sumSquares.toFixed(0)}}
+            \\approx
+            ${maxExcursion.toFixed(2)}
+          \\]
+        </div>
       </div>
     `;
   }
@@ -891,18 +938,6 @@ author_profile: true
     `;
   }
 
-  function buildTheoryHTML() {
-    return `
-      <div class="rw-theory-box">
-        <div class="rw-theory-title">Theoretical return probability</div>
-        For this simulator, \(d=1\) and \(d=2\). In both cases, the simple symmetric random walk is recurrent.
-        Therefore, the probability of eventually returning to the starting point is:
-        <br>
-        <span class="rw-theory-highlight">100%</span>
-      </div>
-    `;
-  }
-
   function buildComputationHTML(result) {
     const displacementFormula = buildDistanceFormula(
       result.start,
@@ -933,14 +968,12 @@ author_profile: true
 
     const returnTimesHTML = buildReturnTimesHTML(result.returnTimes, result.totalSteps);
     const visualNoteHTML = buildReturnVisualNote(d, result.returnCount);
-    const theoryHTML = buildTheoryHTML();
     const computationHTML = buildComputationHTML(result);
 
     return `
       <div class="rw-details">
         ${visualNoteHTML}
         ${returnTimesHTML}
-        ${theoryHTML}
         ${computationHTML}
       </div>
     `;
@@ -981,7 +1014,6 @@ author_profile: true
       <strong>Visible positions:</strong> ${result.visiblePositions} / ${result.totalPositions}<br>
       <strong>First return:</strong> ${firstReturnText}<br>
       <strong>Last return:</strong> ${lastReturnText}<br>
-      <strong>Theoretical probability of eventually returning:</strong> 100%<br>
 
       <button class="${returnButtonClass}" onclick="toggleReturnDetails()">
         ${returnButtonText}:
@@ -990,6 +1022,8 @@ author_profile: true
 
       ${detailsHTML}
     `;
+
+    typesetStatsMath();
   }
 
   function toggleReturnDetails() {
@@ -1106,7 +1140,7 @@ author_profile: true
 
     drawEmptyCanvas();
 
-    stats.innerHTML = "Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probability.";
+    stats.innerHTML = "Generate a walk to see the final position, displacement, maximum excursion, and return times.";
   }
 
   function drawEmptyCanvas() {
