@@ -218,15 +218,34 @@ author_profile: true
     font-weight: 800;
   }
 
-  .rw-return-times {
+  .rw-theory-highlight {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 11px;
+    border-radius: 999px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 900;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.28);
+  }
+
+  .rw-details {
+    margin-top: 14px;
+  }
+
+  .rw-return-times,
+  .rw-theory-box,
+  .rw-computation-box {
     margin-top: 12px;
     padding: 12px 14px;
     border-radius: 14px;
-    background: rgba(127, 127, 127, 0.08);
     border: 1px solid rgba(127, 127, 127, 0.22);
+    background: rgba(127, 127, 127, 0.08);
   }
 
-  .rw-return-times-title {
+  .rw-return-times-title,
+  .rw-theory-title,
+  .rw-computation-title {
     font-weight: 900;
     margin-bottom: 6px;
   }
@@ -239,21 +258,6 @@ author_profile: true
     background: rgba(127, 127, 127, 0.18);
     font-weight: 700;
     font-size: 0.88rem;
-  }
-
-  .rw-theory-box,
-  .rw-computation-box {
-    margin-top: 12px;
-    padding: 12px 14px;
-    border-radius: 14px;
-    border: 1px solid rgba(127, 127, 127, 0.22);
-    background: rgba(127, 127, 127, 0.08);
-  }
-
-  .rw-theory-title,
-  .rw-computation-title {
-    font-weight: 900;
-    margin-bottom: 6px;
   }
 
   .rw-formula-line {
@@ -299,10 +303,16 @@ author_profile: true
     </p>
 
     <div class="rw-note-box">
-      <strong>Theoretical note: Pólya's theorem.</strong>
-      The simple random walk on \(\mathbb{Z}^d\) is recurrent for \(d \leq 2\), meaning it returns to its starting point with probability \(1\).
-      It is transient for \(d \geq 3\), meaning there is a positive probability that it never returns.
-      This simulator focuses on \(d=1\) and \(d=2\), the directly visualizable cases.
+      <strong>Proposition.</strong>
+      For the simple symmetric random walk on \(\mathbb{Z}^d\), the walk is recurrent for \(d \leq 2\).
+      In other words, in dimensions \(1\) and \(2\), the probability of eventually returning to the starting point is \(1\), or \(100\%\).
+      For \(d \geq 3\), the walk is transient.
+    </div>
+
+    <div class="rw-note-box">
+      <strong>Remark.</strong>
+      Recurrence does not mean that the walker returns quickly.
+      In dimension \(d=1\), the expected return time to the starting point is infinite, even though the probability of eventually returning is \(100\%\).
     </div>
 
     <div class="rw-small-note">
@@ -357,7 +367,7 @@ author_profile: true
   </div>
 
   <div id="rwStats" class="rw-stats">
-    Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probabilities.
+    Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probability.
   </div>
 
 </div>
@@ -371,8 +381,7 @@ author_profile: true
   let animationId = null;
   let animationTimeoutId = null;
   let currentVisibleIndex = 0;
-  let showReturnPoints = false;
-  let logFactorialCache = [0];
+  let showReturnDetails = false;
 
   function getDimension() {
     return Number(document.getElementById("dimension").value);
@@ -695,7 +704,7 @@ author_profile: true
 
     ctx.stroke();
 
-    if (showReturnPoints) {
+    if (showReturnDetails) {
       drawReturnMarkers(path, maxIndex, bounds, width, height, padding);
     }
 
@@ -721,17 +730,13 @@ author_profile: true
     return "(" + vector.map(value => value.toFixed(0)).join(", ") + ")";
   }
 
-  function formatSignedSquareTerm(value) {
-    return "(" + value.toFixed(0) + ")²";
-  }
-
   function buildDistanceFormula(start, end, distance) {
     if (start.length === 1) {
       const difference = end[0] - start[0];
 
       return `
         <div class="rw-formula-line">
-          <strong>Displacement:</strong><br>
+          <strong>Displacement from start:</strong><br>
           <span class="rw-formula">
             |${end[0].toFixed(0)} - ${start[0].toFixed(0)}| = |${difference.toFixed(0)}| = ${distance.toFixed(2)}
           </span>
@@ -751,7 +756,7 @@ author_profile: true
 
     return `
       <div class="rw-formula-line">
-        <strong>Displacement:</strong><br>
+        <strong>Displacement from start:</strong><br>
         <span class="rw-formula">
           √[${coordinateFormula}] = √[${simplifiedFormula}] = √${sumSquares.toFixed(0)} = ${distance.toFixed(2)}
         </span>
@@ -791,62 +796,6 @@ author_profile: true
         </span>
       </div>
     `;
-  }
-
-  function logFactorial(n) {
-    for (let i = logFactorialCache.length; i <= n; i++) {
-      logFactorialCache[i] = logFactorialCache[i - 1] + Math.log(i);
-    }
-
-    return logFactorialCache[n];
-  }
-
-  function logChoose(n, k) {
-    if (k < 0 || k > n) {
-      return -Infinity;
-    }
-
-    return logFactorial(n) - logFactorial(k) - logFactorial(n - k);
-  }
-
-  function formatProbability(probability) {
-    if (probability === 0) {
-      return "0%";
-    }
-
-    if (probability >= 0.0001) {
-      return (100 * probability).toFixed(4) + "%";
-    }
-
-    return (100 * probability).toExponential(4) + "%";
-  }
-
-  function theoreticalExactReturnProbability(d, steps) {
-    if (steps % 2 === 1) {
-      return 0;
-    }
-
-    const m = steps / 2;
-
-    if (d === 1) {
-      const logProb = logChoose(2 * m, m) - (2 * m) * Math.log(2);
-      return Math.exp(logProb);
-    }
-
-    if (d === 2) {
-      const logOneDimensionalPart = logChoose(2 * m, m) - (2 * m) * Math.log(2);
-      return Math.exp(2 * logOneDimensionalPart);
-    }
-
-    return null;
-  }
-
-  function theoreticalEventualReturnProbability(d) {
-    if (d === 1 || d === 2) {
-      return 1;
-    }
-
-    return null;
   }
 
   function computeStats(path, maxIndex = path.length - 1) {
@@ -902,7 +851,7 @@ author_profile: true
       `;
     }
 
-    const maxDisplayed = 40;
+    const maxDisplayed = 60;
     const displayedTimes = returnTimes.slice(0, maxDisplayed);
 
     const chips = displayedTimes.map(time => {
@@ -922,28 +871,34 @@ author_profile: true
     `;
   }
 
-  function buildTheoryHTML(d, steps) {
-    const eventualReturnProbability = theoreticalEventualReturnProbability(d);
-    const exactReturnProbability = theoreticalExactReturnProbability(d, steps);
+  function buildReturnVisualNote(d, returnCount) {
+    if (returnCount === 0) {
+      return "";
+    }
 
-    const eventualText = eventualReturnProbability === null
-      ? "Not available in this simulator"
-      : formatProbability(eventualReturnProbability);
-
-    const exactText = exactReturnProbability === null
-      ? "Not available"
-      : formatProbability(exactReturnProbability);
-
-    const parityNote = steps % 2 === 1
-      ? "<br><em>Because the number of steps is odd, an exact return to the starting point is impossible for this simple lattice walk.</em>"
-      : "";
+    if (d === 1) {
+      return `
+        <div class="rw-return-visual-note">
+          The orange dots on the graph mark the times when the walk returns to the starting position.
+        </div>
+      `;
+    }
 
     return `
+      <div class="rw-return-visual-note">
+        In dimension 2, every return to the starting point occurs at the same spatial point, so the starting point is highlighted with an orange ring.
+      </div>
+    `;
+  }
+
+  function buildTheoryHTML() {
+    return `
       <div class="rw-theory-box">
-        <div class="rw-theory-title">Theoretical probabilities</div>
-        <strong>Probability of eventually returning to the starting point:</strong> ${eventualText}<br>
-        <strong>Probability of being exactly at the starting point after ${steps} steps:</strong> ${exactText}
-        ${parityNote}
+        <div class="rw-theory-title">Theoretical return probability</div>
+        For this simulator, \(d=1\) and \(d=2\). In both cases, the simple symmetric random walk is recurrent.
+        Therefore, the probability of eventually returning to the starting point is:
+        <br>
+        <span class="rw-theory-highlight">100%</span>
       </div>
     `;
   }
@@ -971,22 +926,22 @@ author_profile: true
     `;
   }
 
-  function buildReturnVisualNote(d, returnCount) {
-    if (!showReturnPoints || returnCount === 0) {
+  function buildDetailsHTML(result, d) {
+    if (!showReturnDetails) {
       return "";
     }
 
-    if (d === 1) {
-      return `
-        <div class="rw-return-visual-note">
-          The orange dots on the graph mark the times when the walk returns to the starting position.
-        </div>
-      `;
-    }
+    const returnTimesHTML = buildReturnTimesHTML(result.returnTimes, result.totalSteps);
+    const visualNoteHTML = buildReturnVisualNote(d, result.returnCount);
+    const theoryHTML = buildTheoryHTML();
+    const computationHTML = buildComputationHTML(result);
 
     return `
-      <div class="rw-return-visual-note">
-        In dimension 2, every return to the starting point occurs at the same spatial point, so the starting point is highlighted with an orange ring.
+      <div class="rw-details">
+        ${visualNoteHTML}
+        ${returnTimesHTML}
+        ${theoryHTML}
+        ${computationHTML}
       </div>
     `;
   }
@@ -1007,18 +962,15 @@ author_profile: true
       ? "None"
       : result.lastReturn + "/" + result.totalSteps;
 
-    const returnButtonClass = showReturnPoints
+    const returnButtonClass = showReturnDetails
       ? "rw-return-button rw-return-button-active"
       : "rw-return-button";
 
-    const returnButtonText = showReturnPoints
-      ? "Hide return points"
+    const returnButtonText = showReturnDetails
+      ? "Hide return details"
       : "Returns to the starting point";
 
-    const returnTimesHTML = buildReturnTimesHTML(result.returnTimes, result.totalSteps);
-    const theoryHTML = buildTheoryHTML(d, result.totalSteps);
-    const computationHTML = buildComputationHTML(result);
-    const visualNoteHTML = buildReturnVisualNote(d, result.returnCount);
+    const detailsHTML = buildDetailsHTML(result, d);
 
     stats.innerHTML = `
       <strong>Dimension:</strong> ${d} ${liveLabel}<br>
@@ -1029,28 +981,23 @@ author_profile: true
       <strong>Visible positions:</strong> ${result.visiblePositions} / ${result.totalPositions}<br>
       <strong>First return:</strong> ${firstReturnText}<br>
       <strong>Last return:</strong> ${lastReturnText}<br>
+      <strong>Theoretical probability of eventually returning:</strong> 100%<br>
 
-      <button class="${returnButtonClass}" onclick="toggleReturnPoints()">
+      <button class="${returnButtonClass}" onclick="toggleReturnDetails()">
         ${returnButtonText}:
         <span class="rw-return-number">${result.returnCount}</span>
       </button>
 
-      ${visualNoteHTML}
-
-      ${returnTimesHTML}
-
-      ${theoryHTML}
-
-      ${computationHTML}
+      ${detailsHTML}
     `;
   }
 
-  function toggleReturnPoints() {
+  function toggleReturnDetails() {
     if (currentPath.length === 0) {
       return;
     }
 
-    showReturnPoints = !showReturnPoints;
+    showReturnDetails = !showReturnDetails;
     drawPath(currentPath, currentVisibleIndex);
     updateStats(currentPath, currentVisibleIndex);
   }
@@ -1155,11 +1102,11 @@ author_profile: true
 
     currentPath = [];
     currentVisibleIndex = 0;
-    showReturnPoints = false;
+    showReturnDetails = false;
 
     drawEmptyCanvas();
 
-    stats.innerHTML = "Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probabilities.";
+    stats.innerHTML = "Generate a walk to see the final position, displacement, maximum excursion, return times, and theoretical return probability.";
   }
 
   function drawEmptyCanvas() {
