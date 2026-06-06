@@ -5267,5 +5267,62 @@
   ],
   "generalization": "To find the interest portion of a payment, first find the outstanding balance immediately before that payment. For the fifth payment, find the balance immediately after the fourth payment, then multiply by the interest rate.",
   "answer_text": "The amount of interest contained in the fifth payment is \\(\\boxed{1125.50}\\), so the correct answer is E: \\(1100<X\\)."
+},
+  {
+    "id": 190,
+    "topic": "Types of Securities",
+    "title": "Exercise 190",
+    "statement": "Name two ways corporations raise capital.",
+    "choices": [],
+    "correct": "Issue debt and issue equity.",
+    "solution_steps": [
+      "Corporations usually raise capital in two main ways.",
+      "The first way is to issue debt, such as bonds.",
+      "The second way is to issue equity, such as common stock.",
+      "Debt means the corporation borrows money from investors and usually promises to make interest payments and repay principal.",
+      "Equity means investors buy an ownership interest in the company, but the return is not guaranteed."
+    ],
+    "generalization": "Corporations raise capital mainly by issuing debt or issuing equity. Debt creates a borrowing obligation, while equity represents ownership.",
+    "answer_text": "The two ways corporations raise capital are \\(\\boxed{\\text{issue debt and issue equity}}\\)."
+  },
+  {
+    "id": 191,
+    "topic": "Types of Securities",
+    "title": "Exercise 191",
+    "statement": "Company XYZ issues common stock, preferred stock, and bonds. Rank the degree of security from most secure to least secure for the three financial instruments.",
+    "choices": [],
+    "correct": "Bonds, Preferred Stock, Common Stock",
+    "solution_steps": [
+      "The degree of security depends on the priority of claims.",
+      "Bondholders are generally paid before stockholders.",
+      "Preferred stockholders are paid after bondholders, but before common stockholders.",
+      "Common stockholders have the residual claim, meaning they are paid only after the obligations to bondholders and preferred stockholders have been met.",
+      "Therefore, the ranking from most secure to least secure is bonds, preferred stock, and common stock."
+    ],
+    "generalization": "In terms of claim priority, debt is generally more secure than equity. Preferred stock has priority over common stock, but bonds have priority over both.",
+    "answer_text": "The ranking from most secure to least secure is \\(\\boxed{\\text{Bonds, Preferred Stock, Common Stock}}\\)."
+  },
+  {
+  "id": 192,
+  "topic": "Types of Securities",
+  "title": "Exercise 192",
+  "statement": "Which of the following correctly orders the length of maturity for the debt securities below, ordered from shortest maturity to longest maturity?",
+  "choices": [
+    "\\(\\text{Note, Bond, Bill}\\)",
+    "\\(\\text{Bill, Note, Bond}\\)",
+    "\\(\\text{Bond, Bill, Note}\\)",
+    "\\(\\text{Bill, Bond, Note}\\)",
+    "\\(\\text{Note, Bill, Bond}\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Debt securities are often classified by their time to maturity.",
+    "A bill has the shortest maturity, usually one year or less.",
+    "A note has an intermediate maturity, usually greater than one year and up to ten years.",
+    "A bond has the longest maturity, usually greater than ten years.",
+    "Therefore, from shortest maturity to longest maturity, the correct order is Bill, Note, Bond."
+  ],
+  "generalization": "For debt securities, bills are short-term, notes are intermediate-term, and bonds are long-term.",
+  "answer_text": "The correct order is \\(\\boxed{\\text{Bill, Note, Bond}}\\), so the correct answer is B."
 }
 ]
