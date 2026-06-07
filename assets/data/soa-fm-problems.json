@@ -6224,5 +6224,70 @@
   ],
   "generalization": "When cash flows are nominal, discount them using the nominal interest rate. If the real rate \\(i'\\) and inflation rate \\(r\\) are given, use \\(1+i=(1+r)(1+i')\\) to find the nominal rate.",
   "answer_text": "The net present value is \\(\\boxed{-19.30}\\)."
-}
+},
+  {
+    "id": 226,
+    "topic": "Price as a Function of Yield",
+    "title": "Exercise 226",
+    "statement": "True or false: when interest rates decrease, bond prices go down.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "The statement is false.",
+      "Bond prices and interest rates are inversely related.",
+      "The price of a bond is the present value of its future cash flows: \\(P=\\sum_t CF_t(1+i)^{-t}\\).",
+      "If the interest rate \\(i\\) decreases, then the discount factor \\((1+i)^{-t}\\) increases.",
+      "Therefore, the present value of the bond's cash flows increases.",
+      "So when interest rates decrease, bond prices go up, not down."
+    ],
+    "generalization": "Bond prices and yield rates move in opposite directions. When yields increase, prices decrease. When yields decrease, prices increase.",
+    "answer_text": "The statement is false."
+  },
+  {
+    "id": 227,
+    "topic": "Price Sensitivity",
+    "title": "Exercise 227",
+    "statement": "Which of the following bonds is the most price sensitive to changes in interest rates?",
+    "choices": [
+      "5-year zero-coupon bond",
+      "10-year zero-coupon bond",
+      "20-year zero-coupon bond",
+      "They are equally sensitive"
+    ],
+    "correct": 2,
+    "solution_steps": [
+      "Cash flows further into the future are more sensitive to changes in interest rates.",
+      "A zero-coupon bond has only one cash flow, paid at maturity.",
+      "Therefore, the longer the maturity, the more sensitive the bond price is to changes in interest rates.",
+      "Among the choices, the longest maturity is the 20-year zero-coupon bond.",
+      "Thus, the 20-year zero-coupon bond is the most price sensitive."
+    ],
+    "generalization": "For zero-coupon bonds, price sensitivity increases with maturity. Longer maturity means the single cash flow is further in the future, so its present value reacts more strongly to yield changes.",
+    "answer_text": "The most price sensitive bond is the 20-year zero-coupon bond. The correct answer is C."
+  },
+  {
+    "id": 228,
+    "topic": "Price Sensitivity",
+    "title": "Exercise 228",
+    "statement": "Let x be the price change for a 20-year zero-coupon bond when interest rates change from 5% to 4%. Let y be the price change for the same bond when interest rates change from 15% to 14%. True or false: |x| > |y|.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "The statement is true.",
+      "The same 20-year zero-coupon bond is used in both cases.",
+      "The yield decreases by one percentage point in both cases.",
+      "However, bond prices are more sensitive to interest rate changes when the current yield rate is lower.",
+      "The change from 5% to 4% occurs at a lower yield level than the change from 15% to 14%.",
+      "Therefore, the absolute price change is larger for the change from 5% to 4%.",
+      "Thus, \\(|x|>|y|\\)."
+    ],
+    "generalization": "Price sensitivity depends not only on the size of the yield change but also on the current yield level. For the same change in yield, bond prices are generally more sensitive when yields are lower.",
+    "answer_text": "The statement is true."
+  }
 ]
