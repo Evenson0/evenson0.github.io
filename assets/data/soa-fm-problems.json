@@ -5892,5 +5892,316 @@
   ],
   "generalization": "For a callable bond, the investor must calculate the price at each possible call date using the required yield and then choose the minimum price. This ensures the required yield is achieved regardless of when the bond is called.",
   "answer_text": "The maximum price is \\(\\boxed{922}\\), so the correct answer is A."
+},
+  {
+  "id": 213,
+  "topic": "Yield Curves",
+  "title": "Exercise 213",
+  "statement": "What is the gist of the phenomenon called term structure of interest rates?",
+  "choices": [],
+  "correct": "Interest rates vary by the term of the investment.",
+  "solution_steps": [
+    "The term structure of interest rates describes how interest rates depend on the term, or length, of the investment.",
+    "Otherwise similar investments may have different yield rates if they have different maturities.",
+    "Therefore, the main idea is that interest rates vary by the term of the investment."
+  ],
+  "generalization": "The term structure of interest rates is represented graphically by the yield curve, which shows the relationship between maturity and yield rate.",
+  "answer_text": "Interest rates vary by the term of the investment."
+},
+  {
+  "id": 214,
+  "topic": "Spot Rates",
+  "title": "Exercise 214",
+  "statement": "Company XYZ invests 10000 into a project that expects to return 5000 one year after the investment and 7000 two years after the investment. For XYZ's investment, the one-year spot rate is 10%. Calculate the two-year spot rate.",
+  "choices": [],
+  "correct": "13.3%",
+  "solution_steps": [
+    "Let \\(s_2\\) be the two-year spot rate.",
+    "The initial investment is \\(10000\\).",
+    "The project returns \\(5000\\) at time 1 and \\(7000\\) at time 2.",
+    "The one-year spot rate is \\(s_1=0.10\\).",
+    "Using spot rates, the present value equation is \\(10000=\\frac{5000}{1.10}+\\frac{7000}{(1+s_2)^2}\\).",
+    "First, \\(5000/1.10=4545.45\\).",
+    "Thus, \\(10000=4545.45+\\frac{7000}{(1+s_2)^2}\\).",
+    "So, \\(5454.55=\\frac{7000}{(1+s_2)^2}\\).",
+    "Therefore, \\((1+s_2)^2=7000/5454.55=1.28333\\).",
+    "Taking the square root gives \\(1+s_2=\\sqrt{1.28333}\\).",
+    "Thus, \\(s_2=0.133\\)."
+  ],
+  "generalization": "When using spot rates, each cash flow is discounted using the spot rate corresponding to its timing. A cash flow at time 1 uses \\(s_1\\), while a cash flow at time 2 uses \\(s_2\\).",
+  "answer_text": "The two-year spot rate is \\(\\boxed{13.3\\%}\\)."
+},
+  {
+  "id": 215,
+  "topic": "Spot Rates",
+  "title": "Exercise 215",
+  "statement": "Given the following annual effective spot rates: s_1 = 4.00%, s_2 = 4.50%, s_3 = 4.75%, and s_4 = 5.00%. Calculate 100(Ia)_{\\overline{4}|}.",
+  "choices": [],
+  "correct": "869.39",
+  "solution_steps": [
+    "The expression \\(100(Ia)_{\\overline{4}|}\\) represents an increasing annuity-immediate with payments \\(100, 200, 300, 400\\) at times \\(1,2,3,4\\), respectively.",
+    "Since spot rates are given, each cash flow must be discounted using the spot rate corresponding to its payment time.",
+    "The payment of \\(100\\) at time \\(1\\) is discounted using \\(s_1=4.00\\%\\), giving \\(100/1.04\\).",
+    "The payment of \\(200\\) at time \\(2\\) is discounted using \\(s_2=4.50\\%\\), giving \\(200/(1.045)^2\\).",
+    "The payment of \\(300\\) at time \\(3\\) is discounted using \\(s_3=4.75\\%\\), giving \\(300/(1.0475)^3\\).",
+    "The payment of \\(400\\) at time \\(4\\) is discounted using \\(s_4=5.00\\%\\), giving \\(400/(1.05)^4\\).",
+    "Therefore, \\(100(Ia)_{\\overline{4}|}=\\frac{100}{1.04}+\\frac{200}{(1.045)^2}+\\frac{300}{(1.0475)^3}+\\frac{400}{(1.05)^4}\\).",
+    "This gives \\(100(Ia)_{\\overline{4}|}=869.39\\)."
+  ],
+  "generalization": "When spot rates are given, each cash flow is discounted using the spot rate corresponding to its time. For an increasing annuity-immediate with payments \\(100,200,\\ldots,100n\\), the present value is the sum of each payment discounted by its own spot rate.",
+  "answer_text": "The value of \\(100(Ia)_{\\overline{4}|}\\) is \\(\\boxed{869.39}\\)."
+},
+  {
+  "id": 216,
+  "topic": "Spot Rates",
+  "title": "Exercise 216",
+  "statement": "Given the following prices of zero-coupon bonds with a redemption amount of 105: maturity 1 price 100.96, maturity 2 price 98.02, maturity 3 price 95.39, maturity 4 price 93.29. Calculate the price of a 4-year 100 par value bond with 5% annual coupons.",
+  "choices": [],
+  "correct": "107.31",
+  "solution_steps": [
+    "The bond has par value \\(F=100\\).",
+    "The annual coupon rate is \\(5\\%\\), so each annual coupon is \\(100(0.05)=5\\).",
+    "The bond matures in 4 years, so the cash flows are \\(5\\) at time 1, \\(5\\) at time 2, \\(5\\) at time 3, and \\(105\\) at time 4.",
+    "We are given prices of zero-coupon bonds that each pay \\(105\\) at maturity.",
+    "Using the percentage of price method, the present value of a cash flow at the same time is proportional to the price of the corresponding zero-coupon bond.",
+    "The present value of the time 1 coupon is \\(100.96(5/105)\\).",
+    "The present value of the time 2 coupon is \\(98.02(5/105)\\).",
+    "The present value of the time 3 coupon is \\(95.39(5/105)\\).",
+    "The present value of the time 4 cash flow is \\(93.29(105/105)\\).",
+    "Therefore, \\(P=100.96(5/105)+98.02(5/105)+95.39(5/105)+93.29(105/105)\\).",
+    "This gives \\(P=107.31\\)."
+  ],
+  "generalization": "When zero-coupon bond prices are given, the percentage of price method can be used to value cash flows at the same maturity. If a zero-coupon bond paying \\(A\\) at time \\(t\\) has price \\(P_A\\), then the present value of \\(B\\) at time \\(t\\) is \\(P_A(B/A)\\).",
+  "answer_text": "The price of the bond is \\(\\boxed{107.31}\\)."
+},
+  {
+  "id": 217,
+  "topic": "Spot Rates",
+  "title": "Exercise 217",
+  "statement": "Consider the following information on three U.S. Treasury bonds with coupons paid semiannually: Bond A has principal 100, maturity 0.50 years, annual coupon 0, and price 95.00. Bond B has principal 100, maturity 1.00 year, annual coupon 9, and price 98.50. Bond C has principal 100, maturity 1.50 years, annual coupon 12, and price 101.50. Using the bootstrap method, calculate the continuously compounded 1.5-year zero rate.",
+  "choices": [
+    "\\(0.1000\\)",
+    "\\(0.1062\\)",
+    "\\(0.1100\\)",
+    "\\(0.1147\\)",
+    "\\(0.1200\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let \\(\\delta_{0.5}\\), \\(\\delta_1\\), and \\(\\delta_{1.5}\\) denote the continuously compounded zero rates for maturities \\(0.5\\), \\(1\\), and \\(1.5\\) years.",
+    "Since coupons are paid semiannually, the semiannual coupon payment is one-half of the annual coupon.",
+    "Bond A has no coupon and matures in \\(0.5\\) years, so \\(100e^{-0.5\\delta_{0.5}}=95\\).",
+    "Solving gives \\(\\delta_{0.5}=0.1026\\).",
+    "Bond B has an annual coupon of \\(9\\), so its semiannual coupon is \\(9/2=4.5\\).",
+    "Bond B has cash flows \\(4.5\\) at time \\(0.5\\) and \\(104.5\\) at time \\(1\\).",
+    "Thus, \\(4.5e^{-0.5\\delta_{0.5}}+104.5e^{-\\delta_1}=98.50\\).",
+    "Using \\(\\delta_{0.5}=0.1026\\), solving gives \\(\\delta_1=0.1035\\).",
+    "Bond C has an annual coupon of \\(12\\), so its semiannual coupon is \\(12/2=6\\).",
+    "Bond C has cash flows \\(6\\) at time \\(0.5\\), \\(6\\) at time \\(1\\), and \\(106\\) at time \\(1.5\\).",
+    "Therefore, \\(6e^{-0.5\\delta_{0.5}}+6e^{-\\delta_1}+106e^{-1.5\\delta_{1.5}}=101.50\\).",
+    "Substituting the previously found zero rates gives \\(6e^{-0.5(0.1026)}+6e^{-0.1035}+106e^{-1.5\\delta_{1.5}}=101.50\\).",
+    "Solving gives \\(\\delta_{1.5}=0.1062\\)."
+  ],
+  "generalization": "Bootstrapping means solving for zero rates sequentially. First solve for the shortest maturity zero rate, then use it to solve for the next maturity, and continue until the desired maturity is reached.",
+  "answer_text": "The continuously compounded 1.5-year zero rate is \\(\\boxed{0.1062}\\), so the correct answer is B."
+},
+  {
+  "id": 218,
+  "topic": "Spot Rates",
+  "title": "Exercise 218",
+  "statement": "You are given the following information with respect to a bond: par value 1000, term to maturity 3 years, and annual coupon rate 6% payable annually. You are also given that the one-year, two-year, and three-year annual spot interest rates are 7%, 8%, and 9%, respectively. Calculate the value of the bond.",
+  "choices": [
+    "\\(906\\)",
+    "\\(926\\)",
+    "\\(930\\)",
+    "\\(950\\)",
+    "\\(1000\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "The par value is \\(F=1000\\).",
+    "The annual coupon rate is \\(6\\%\\), so the annual coupon payment is \\(1000(0.06)=60\\).",
+    "Since the bond matures in 3 years and coupons are paid annually, the cash flows are \\(60\\) at time 1, \\(60\\) at time 2, and \\(1060\\) at time 3.",
+    "Using spot rates, each cash flow must be discounted using the spot rate corresponding to its payment time.",
+    "The one-year spot rate is \\(s_1=7\\%\\), the two-year spot rate is \\(s_2=8\\%\\), and the three-year spot rate is \\(s_3=9\\%\\).",
+    "Therefore, the bond value is \\(P=\\frac{60}{1.07}+\\frac{60}{(1.08)^2}+\\frac{1060}{(1.09)^3}\\).",
+    "This gives \\(P=926.03\\).",
+    "The closest answer is \\(926\\)."
+  ],
+  "generalization": "When spot rates are given, each cash flow is discounted using the spot rate corresponding to its payment time. A time 1 cash flow uses \\(s_1\\), a time 2 cash flow uses \\(s_2\\), and so on.",
+  "answer_text": "The value of the bond is approximately \\(\\boxed{926.03}\\), so the correct answer is B."
+},
+  {
+  "id": 219,
+  "topic": "Forward Rates",
+  "title": "Exercise 219",
+  "statement": "Given the following spot rates: s_1 = 4.00%, s_2 = 5.00%, s_3 = 5.50%, s_4 = 5.75%, and s_5 = 6.00%. Calculate the 3-year forward rate, deferred for two years.",
+  "choices": [],
+  "correct": "6.672%",
+  "solution_steps": [
+    "A 3-year forward rate deferred for two years is the rate from time 2 to time 5.",
+    "Therefore, we want \\(f_{2,5}\\).",
+    "There are two equivalent ways to accumulate \\(1\\) from time \\(0\\) to time \\(5\\).",
+    "Using the 5-year spot rate gives \\((1+s_5)^5\\).",
+    "Using the 2-year spot rate first and then the 3-year forward rate gives \\((1+s_2)^2(1+f_{2,5})^3\\).",
+    "Thus, \\((1+s_2)^2(1+f_{2,5})^3=(1+s_5)^5\\).",
+    "Substitute \\(s_2=0.05\\) and \\(s_5=0.06\\).",
+    "This gives \\((1.05)^2(1+f_{2,5})^3=(1.06)^5\\).",
+    "So \\((1+f_{2,5})^3=\\frac{(1.06)^5}{(1.05)^2}\\).",
+    "Taking the cube root gives \\(1+f_{2,5}=\\left[\\frac{(1.06)^5}{(1.05)^2}\\right]^{1/3}\\).",
+    "Therefore, \\(f_{2,5}=\\left[\\frac{(1.06)^5}{(1.05)^2}\\right]^{1/3}-1\\).",
+    "Thus, \\(f_{2,5}=0.06672\\)."
+  ],
+  "generalization": "An m-year forward rate deferred t years is found by equating accumulation from time 0 to time t+m using spot rates and forward rates: \\((1+s_t)^t(1+f_{t,t+m})^m=(1+s_{t+m})^{t+m}\\).",
+  "answer_text": "The 3-year forward rate deferred for two years is \\(\\boxed{6.672\\%}\\)."
+},
+  {
+  "id": 220,
+  "topic": "Forward Rates",
+  "title": "Exercise 220",
+  "statement": "You are given the following information about the Treasury market. Treasuries always have a par value of 100. A 1-year zero-coupon Treasury has price 96.62, a 2-year zero-coupon Treasury has price x, and a 3-year zero-coupon Treasury has price 88.90. It is known that the one-year forward rate starting in two years is 4.5%. Calculate x.",
+  "choices": [],
+  "correct": "92.90",
+  "solution_steps": [
+    "Since the Treasuries have \\(0\\%\\) coupons, they are zero-coupon bonds.",
+    "The 3-year Treasury has price \\(88.90\\) and pays \\(100\\) at time \\(3\\).",
+    "The one-year forward rate starting in two years is \\(f_{2,3}=0.045\\).",
+    "Let \\(s_2\\) be the 2-year spot rate.",
+    "Using the 2-year spot rate from time \\(0\\) to time \\(2\\), and then the forward rate from time \\(2\\) to time \\(3\\), we get \\(88.90=\\frac{100}{(1+s_2)^2(1.045)}\\).",
+    "Therefore, \\((1+s_2)^2=\\frac{100}{88.90(1.045)}\\).",
+    "This gives \\((1+s_2)^2=1.0764\\).",
+    "Taking the square root gives \\(1+s_2=\\sqrt{1.0764}\\).",
+    "Thus, \\(s_2=0.0375\\).",
+    "The 2-year Treasury price is \\(x=\\frac{100}{(1+s_2)^2}\\).",
+    "Substituting \\(s_2=0.0375\\), we get \\(x=\\frac{100}{(1.0375)^2}=92.90\\)."
+  ],
+  "generalization": "If a forward rate \\(f_{t,t+m}\\) is known, it can be combined with a spot rate to price a zero-coupon bond. The key relationship is \\((1+s_t)^t(1+f_{t,t+m})^m=(1+s_{t+m})^{t+m}\\).",
+  "answer_text": "The price of the 2-year Treasury is \\(\\boxed{92.90}\\)."
+},
+  {
+  "id": 220,
+  "topic": "Forward Rates",
+  "title": "Exercise 220",
+  "statement": "You are given the following information about the Treasury market. Treasuries always have a par value of 100. A 1-year zero-coupon Treasury has price 96.62, a 2-year zero-coupon Treasury has price x, and a 3-year zero-coupon Treasury has price 88.90. It is known that the one-year forward rate starting in two years is 4.5%. Calculate x.",
+  "choices": [],
+  "correct": "92.90",
+  "solution_steps": [
+    "Since the Treasuries have \\(0\\%\\) coupons, they are zero-coupon bonds.",
+    "The 3-year Treasury has price \\(88.90\\) and pays \\(100\\) at time \\(3\\).",
+    "The one-year forward rate starting in two years is \\(f_{2,3}=0.045\\).",
+    "Let \\(s_2\\) be the 2-year spot rate.",
+    "Using the 2-year spot rate from time \\(0\\) to time \\(2\\), and then the forward rate from time \\(2\\) to time \\(3\\), we get \\(88.90=\\frac{100}{(1+s_2)^2(1.045)}\\).",
+    "Therefore, \\((1+s_2)^2=\\frac{100}{88.90(1.045)}\\).",
+    "This gives \\((1+s_2)^2=1.0764\\).",
+    "Taking the square root gives \\(1+s_2=\\sqrt{1.0764}\\).",
+    "Thus, \\(s_2=0.0375\\).",
+    "The 2-year Treasury price is \\(x=\\frac{100}{(1+s_2)^2}\\).",
+    "Substituting \\(s_2=0.0375\\), we get \\(x=\\frac{100}{(1.0375)^2}=92.90\\)."
+  ],
+  "generalization": "If a forward rate \\(f_{t,t+m}\\) is known, it can be combined with a spot rate to price a zero-coupon bond. The key relationship is \\((1+s_t)^t(1+f_{t,t+m})^m=(1+s_{t+m})^{t+m}\\).",
+  "answer_text": "The price of the 2-year Treasury is \\(\\boxed{92.90}\\)."
+},
+  {
+  "id": 221,
+  "topic": "Forward Rates",
+  "title": "Exercise 221",
+  "statement": "You are given: (i) the one-year spot rate is 5%, (ii) the one-year forward rate starting in one year is 5.5%, and (iii) the one-year forward rate starting in two years is 6.0%. Calculate \\(\\ddot{a}_{\\overline{3}|}\\).",
+  "choices": [],
+  "correct": "2.855",
+  "solution_steps": [
+    "An annuity-due with 3 payments has payments of \\(1\\) at times \\(0,1,2\\).",
+    "Therefore, \\(\\ddot{a}_{\\overline{3}|}=1+PV(1\\text{ at time }1)+PV(1\\text{ at time }2)\\).",
+    "The payment at time \\(0\\) is already at the valuation date, so its present value is \\(1\\).",
+    "The payment at time \\(1\\) is discounted using the one-year spot rate, giving \\(1/1.05\\).",
+    "The payment at time \\(2\\) is discounted using the one-year spot rate for year 1 and the one-year forward rate for year 2, giving \\(1/[(1.05)(1.055)]\\).",
+    "Thus, \\(\\ddot{a}_{\\overline{3}|}=1+\\frac{1}{1.05}+\\frac{1}{(1.05)(1.055)}\\).",
+    "This gives \\(\\ddot{a}_{\\overline{3}|}=2.855\\)."
+  ],
+  "generalization": "When valuing an annuity using forward rates, discount each payment by the product of the one-year rates that apply before that payment date. For an annuity-due, remember that the first payment occurs immediately at time 0.",
+  "answer_text": "The value is \\(\\boxed{2.855}\\)."
+},
+  {
+  "id": 222,
+  "topic": "Forward Rates",
+  "title": "Exercise 222",
+  "statement": "You are given the following information about three bonds. Bond A has price 96 on Jan. 1, 2001 and cash inflow 100 on Jul. 1, 2001. Bond B has price 88 on Jan. 1, 2001 and cash inflow 100 on Jul. 1, 2002. Bond C has price 125 on Jan. 1, 2001 and cash inflow 150 on Jan. 1, 2003. Assuming no arbitrage opportunity exists, calculate the forward rate from July 1, 2002 to January 1, 2003 as a nominal rate convertible semiannually.",
+  "choices": [
+    "\\(0.083\\)",
+    "\\(0.087\\)",
+    "\\(0.093\\)",
+    "\\(0.100\\)",
+    "\\(0.112\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "Set January 1, 2001 as time \\(0\\).",
+    "Then July 1, 2002 is time \\(1.5\\), and January 1, 2003 is time \\(2\\).",
+    "We need the forward rate from time \\(1.5\\) to time \\(2\\), expressed as a nominal rate convertible semiannually.",
+    "Bond B costs \\(88\\) at time \\(0\\) and pays \\(100\\) at time \\(1.5\\), so the accumulation factor from time \\(0\\) to time \\(1.5\\) is \\(a(1.5)=100/88\\).",
+    "Bond C costs \\(125\\) at time \\(0\\) and pays \\(150\\) at time \\(2\\), so the accumulation factor from time \\(0\\) to time \\(2\\) is \\(a(2)=150/125\\).",
+    "The effective forward rate for the half-year from time \\(1.5\\) to time \\(2\\) is \\(a(2)/a(1.5)-1\\).",
+    "Substituting gives \\(a(2)/a(1.5)=(150/125)/(100/88)=1.056\\).",
+    "Thus, the effective half-year forward rate is \\(1.056-1=0.056\\).",
+    "Since the answer is requested as a nominal rate convertible semiannually, multiply by \\(2\\): \\(i^{(2)}=2(0.056)=0.112\\)."
+  ],
+  "generalization": "To find a forward rate between two future dates, compare the accumulation factors to the two dates. If the forward rate is for one half-year and the answer is requested as a nominal rate convertible semiannually, double the effective half-year rate.",
+  "answer_text": "The forward rate is \\(\\boxed{0.112}\\), so the correct answer is E."
+},
+  {
+  "id": 223,
+  "topic": "Forward Rates",
+  "title": "Exercise 223",
+  "statement": "The following is a list of prices for zero-coupon bonds with par value of 1000 and varying maturities: maturity 1 price 943.40, maturity 2 price 898.47, maturity 3 price 847.62, and maturity 4 price 792.16. Calculate the 1-year forward rate, deferred 3 years.",
+  "choices": [
+    "\\(0.057\\)",
+    "\\(0.060\\)",
+    "\\(0.070\\)",
+    "\\(0.080\\)",
+    "\\(0.083\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "We are looking for the 1-year forward rate deferred 3 years. This is the forward rate from year \\(3\\) to year \\(4\\).",
+    "Let this forward rate be \\(f_{3,4}\\).",
+    "Since the bonds are zero-coupon bonds with par value \\(1000\\), the accumulation factor from time \\(0\\) to time \\(3\\) is \\(1000/847.62\\).",
+    "The accumulation factor from time \\(0\\) to time \\(4\\) is \\(1000/792.16\\).",
+    "The 4-year accumulation factor must equal the 3-year accumulation factor multiplied by the 1-year forward accumulation factor from year \\(3\\) to year \\(4\\).",
+    "Therefore, \\(\\frac{1000}{847.62}(1+f_{3,4})=\\frac{1000}{792.16}\\).",
+    "Thus, \\(1+f_{3,4}=\\frac{1000/792.16}{1000/847.62}\\).",
+    "So, \\(1+f_{3,4}=\\frac{847.62}{792.16}\\).",
+    "Therefore, \\(f_{3,4}=\\frac{847.62}{792.16}-1\\).",
+    "This gives \\(f_{3,4}=0.0700\\)."
+  ],
+  "generalization": "For zero-coupon bonds, the price gives the discount factor directly. To find a forward rate between years \\(t\\) and \\(t+1\\), compare the accumulation factors to time \\(t\\) and time \\(t+1\\).",
+  "answer_text": "The 1-year forward rate deferred 3 years is \\(\\boxed{0.070}\\), so the correct answer is C."
+},
+  {
+  "id": 224,
+  "topic": "Forward Rates",
+  "title": "Exercise 224",
+  "statement": "You are given the following information with respect to a non-callable bond: par amount 1000, term to maturity 4 years, and annual coupon rate 8% payable annually. The one-year annual forward interest rates are given under two equally likely scenarios. Scenario X has rates 7%, 7%, 8%, and 10% at times 0, 1, 2, and 3. Scenario Y has rates 7%, 6%, 7%, and 5% at times 0, 1, 2, and 3. Calculate the value of the bond, that is, the expected present value of the bond payments.",
+  "choices": [
+    "\\(1000.00\\)",
+    "\\(1018.40\\)",
+    "\\(1022.80\\)",
+    "\\(1030.39\\)",
+    "\\(1031.07\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "The annual coupon payment is \\(1000(0.08)=80\\).",
+    "Since the bond matures in 4 years, the cash flows are \\(80\\), \\(80\\), \\(80\\), and \\(1080\\).",
+    "We discount the cash flows separately under each interest rate scenario, then average the two present values.",
+    "Under Scenario X, the one-year forward rates are \\(7\\%\\), \\(7\\%\\), \\(8\\%\\), and \\(10\\%\\).",
+    "Thus, \\(PV_X=\\frac{80}{1.07}+\\frac{80}{(1.07)(1.07)}+\\frac{80}{(1.07)(1.07)(1.08)}+\\frac{1080}{(1.07)(1.07)(1.08)(1.10)}\\).",
+    "This gives \\(PV_X=1003.37\\).",
+    "Under Scenario Y, the one-year forward rates are \\(7\\%\\), \\(6\\%\\), \\(7\\%\\), and \\(5\\%\\).",
+    "Thus, \\(PV_Y=\\frac{80}{1.07}+\\frac{80}{(1.07)(1.06)}+\\frac{80}{(1.07)(1.06)(1.07)}+\\frac{1080}{(1.07)(1.06)(1.07)(1.05)}\\).",
+    "This gives \\(PV_Y=1058.76\\).",
+    "Since the two scenarios are equally likely, the expected present value is \\((PV_X+PV_Y)/2\\).",
+    "Therefore, \\((1003.37+1058.76)/2=1031.07\\)."
+  ],
+  "generalization": "When future one-year forward rates are scenario-dependent, calculate the present value of the bond cash flows under each scenario, then take the probability-weighted average of those present values.",
+  "answer_text": "The value of the bond is \\(\\boxed{1031.07}\\), so the correct answer is E."
 }
 ]
