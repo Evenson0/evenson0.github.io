@@ -218,13 +218,17 @@ mathjax: true
     </p>
 
     <div class="fm-actions">
-      <a href="https://www.overleaf.com/read/gzvgpwjwvdrg#0d2080" class="fm-btn fm-btn-primary" target="_blank" rel="noopener noreferrer">
-        View the notes on Overleaf
+      <a href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}"
+         class="fm-btn fm-btn-primary"
+         target="_blank"
+         rel="noopener noreferrer">
+        Open the PDF notes
       </a>
+
       <a href="/tools/soa-fm-practice/" class="fm-btn fm-btn-secondary">
         Open the FM practice tool
       </a>
-    </div>
+  </div>
   </div>
 
   <div class="fm-section-title">Core Topics</div>
@@ -778,7 +782,7 @@ mathjax: true
   </ul>
 
   <div class="fm-note">
-    The notes are maintained on Overleaf and updated regularly. For active preparation,
+    <strong>Last updated:</strong> June 7, 2026. For active preparation,
     you can also use the FM practice tool to work through exercises and reinforce the main concepts.
   </div>
 
