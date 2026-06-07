@@ -134,21 +134,26 @@ author_profile: true
 
   <div class="notes-section-title">Available Notes</div>
 
-  <div class="notes-grid">
-    <div class="note-card">
-      <div class="note-tag">Actuarial Science</div>
-      <h3>SOA FM Exam Notes</h3>
-      <p>
-        A growing set of personal notes for the SOA Exam FM, covering interest theory,
-        present value, accumulated value, discount rates, annuities, loans, bonds,
-        duration, immunization, and related topics.
-      </p>
-      <div class="note-links">
-        <a class="note-btn" href="/notes/soa-fm/">Open page</a>
-        <a class="note-btn" href="https://www.overleaf.com/read/gzvgpwjwvdrg#0d2080" target="_blank" rel="noopener noreferrer">View on Overleaf</a>
-      </div>
+<div class="notes-grid">
+  <div class="note-card">
+    <div class="note-tag">Actuarial Science</div>
+    <h3>SOA FM Exam Notes</h3>
+    <p>
+      A growing set of personal notes for the SOA Exam FM, covering interest theory,
+      present value, accumulated value, discount rates, annuities, loans, bonds,
+      duration, immunization, and related topics.
+    </p>
+    <div class="note-links">
+      <a class="note-btn" href="/notes/soa-fm/">Open page</a>
+      <a class="note-btn"
+         href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}"
+         target="_blank"
+         rel="noopener noreferrer">
+        Open PDF
+      </a>
     </div>
   </div>
+</div>
 
   <div class="notes-foot">
     More notes in probability, statistics, mathematical finance, and actuarial science will be added here over time.
