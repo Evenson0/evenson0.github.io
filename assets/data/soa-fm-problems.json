@@ -5793,5 +5793,104 @@
   ],
   "generalization": "For a callable bond, the purchase price that guarantees a minimum yield is the minimum of the prices calculated over all possible redemption dates. Once the actual call date is known, the realized yield is found by solving the value equation using the actual holding period and call price.",
   "answer_text": "The annual yield rate earned by the investor is \\(\\boxed{9.24\\%}\\)."
+},
+  {
+  "id": 210,
+  "topic": "Callable Bonds",
+  "title": "Exercise 210",
+  "statement": "An investor purchases a 1000 bond redeemable at par that pays 8% semiannual coupons and matures in 10 years. The bond will yield 7% convertible semiannually to maturity. If the bond is called in five years, the minimum redemption value the investor needs to realize the same yield is X. Determine X.",
+  "choices": [
+    "\\(1036\\)",
+    "\\(1042\\)",
+    "\\(1048\\)",
+    "\\(1054\\)",
+    "\\(1060\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "A 1000 bond means that the par value is \\(F=1000\\).",
+    "The bond is redeemable at par, so the redemption value at maturity is \\(C=1000\\).",
+    "The bond pays \\(8\\%\\) semiannual coupons, so the coupon rate per half-year is \\(r=0.08/2=0.04\\).",
+    "Thus, each semiannual coupon payment is \\(Fr=1000(0.04)=40\\).",
+    "The yield rate is \\(7\\%\\) convertible semiannually, so the yield rate per half-year is \\(i=0.07/2=0.035\\).",
+    "Since the bond matures in 10 years and pays semiannual coupons, the number of coupon periods is \\(n=10(2)=20\\).",
+    "First, find the original purchase price of the bond: \\(P=40a_{\\overline{20}|0.035}+1000v_{0.035}^{20}\\).",
+    "Equivalently, using the premium / discount formula, \\(P=C+(Fr-Ci)a_{\\overline{20}|i}\\).",
+    "Here, \\(Ci=1000(0.035)=35\\).",
+    "Therefore, \\(P=1000+(40-35)a_{\\overline{20}|0.035}\\).",
+    "Thus, \\(P=1000+5a_{\\overline{20}|0.035}=1071.06\\).",
+    "If the bond is called in five years, then there are \\(5(2)=10\\) semiannual periods.",
+    "To realize the same yield, we use the same semiannual yield rate \\(i=0.035\\).",
+    "The value equation is \\(1071.06=40a_{\\overline{10}|0.035}+Xv_{0.035}^{10}\\).",
+    "Using \\(a_{\\overline{10}|0.035}=8.3166\\) and \\(v_{0.035}^{10}=0.7089\\), we get \\(1071.06=40(8.3166)+X(0.7089)\\).",
+    "So \\(1071.06=332.66+0.7089X\\).",
+    "Therefore, \\(X=(1071.06-332.66)/0.7089=1041.58\\).",
+    "The closest answer is \\(1042\\)."
+  ],
+  "generalization": "When a bond is called earlier than maturity, use the original purchase price and the desired yield rate to solve for the call price that gives the investor the same yield over the shorter holding period.",
+  "answer_text": "The minimum redemption value is approximately \\(\\boxed{1041.58}\\), so the closest answer is B: \\(1042\\)."
+},
+  {
+  "id": 211,
+  "topic": "Callable Bonds",
+  "title": "Exercise 211",
+  "statement": "A 1000 ten-year bond bearing annual coupons of 4% is callable at par at any time after the fifth year. A purchaser pays a price for the bond that will assure him of a yield of not less than 5% if it is held to maturity or prior call. Find: (i) the purchase price to the nearest dollar; (ii) the call date most favorable to the purchaser.",
+  "choices": [
+    "Purchase price: \\(923\\); Call date: 5 years hence",
+    "Purchase price: \\(923\\); Call date: 10 years hence",
+    "Purchase price: \\(957\\); Call date: 5 years hence",
+    "Purchase price: \\(957\\); Call date: 10 years hence",
+    "Purchase price: \\(1000\\); Call date: 10 years hence"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The par value is \\(F=1000\\).",
+    "The bond pays annual coupons of \\(4\\%\\), so the annual coupon payment is \\(Fr=1000(0.04)=40\\).",
+    "The desired yield rate is \\(i=0.05\\).",
+    "The bond is callable at par, so the redemption value is \\(C=1000\\).",
+    "If the bond is called or redeemed at time \\(n\\), its price at a \\(5\\%\\) yield is \\(P=40a_{\\overline{n}|0.05}+1000v_{0.05}^n\\).",
+    "Using the premium / discount formula, \\(P=C+(Fr-Ci)a_{\\overline{n}|i}\\).",
+    "Here, \\(Ci=1000(0.05)=50\\).",
+    "Thus, \\(Fr-Ci=40-50=-10\\).",
+    "Therefore, \\(P=1000-10a_{\\overline{n}|0.05}\\).",
+    "For \\(n=5\\), \\(P=1000-10a_{\\overline{5}|0.05}=957\\).",
+    "For \\(n=10\\), \\(P=1000-10a_{\\overline{10}|0.05}=923\\).",
+    "To guarantee a yield of at least \\(5\\%\\), the purchaser must use the minimum of the possible prices.",
+    "Therefore, the purchase price is \\(923\\).",
+    "If the purchaser pays \\(923\\), the most favorable call date for the purchaser is the earliest possible call date, which is 5 years hence.",
+    "This is because the bond is bought at a discount. Receiving the par value earlier gives the investor a higher realized yield."
+  ],
+  "generalization": "For a callable bond, the purchase price that guarantees a minimum yield is the minimum of the prices computed over all possible redemption dates. After the investor pays that safe price, the most favorable call date is the date that gives the highest realized yield.",
+  "answer_text": "The purchase price is \\(\\boxed{923}\\), and the call date most favorable to the purchaser is \\(\\boxed{5\\text{ years hence}}\\). The correct answer is A."
+},
+  {
+  "id": 212,
+  "topic": "Callable Bonds",
+  "title": "Exercise 212",
+  "statement": "A 1000 par-value 4% bond with semiannual coupons matures at the end of 10 years. The bond is callable at 1050 on any coupon date from the 3rd through the 6th years, at 1025 from the 7th through the 9th years, and at 1000 during the 10th year. Find the maximum price that an investor can pay and still be certain of a yield of 5% convertible semiannually.",
+  "choices": [
+    "\\(922\\)",
+    "\\(944\\)",
+    "\\(959\\)",
+    "\\(986\\)",
+    "\\(1016\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The par value is \\(F=1000\\).",
+    "The bond pays \\(4\\%\\) semiannual coupons, so the coupon rate per half-year is \\(r=0.04/2=0.02\\).",
+    "Thus, each semiannual coupon payment is \\(Fr=1000(0.02)=20\\).",
+    "The required yield is \\(5\\%\\) convertible semiannually, so the yield rate per half-year is \\(i=0.05/2=0.025\\).",
+    "The maximum price that guarantees the required yield is the minimum price over all possible call dates.",
+    "For a call date \\(n\\) semiannual periods from now, the price is \\(P=20a_{\\overline{n}|0.025}+Cv_{0.025}^n\\), where \\(C\\) is the call price at that time.",
+    "For call dates from the 3rd through the 6th years, \\(C=1050\\), so \\(P=20a_{\\overline{n}|0.025}+1050v_{0.025}^n\\), where \\(n=5,\\ldots,12\\).",
+    "For call dates from the 7th through the 9th years, \\(C=1025\\), so \\(P=20a_{\\overline{n}|0.025}+1025v_{0.025}^n\\), where \\(n=13,\\ldots,18\\).",
+    "For the 10th year, \\(C=1000\\), so \\(P=20a_{\\overline{n}|0.025}+1000v_{0.025}^n\\), where \\(n=19,20\\).",
+    "Testing the relevant endpoints gives: for \\(n=5\\), \\(P=1021\\); for \\(n=12\\), \\(P=985\\); for \\(n=13\\), \\(P=963\\); for \\(n=18\\), \\(P=944\\); for \\(n=19\\), \\(P=925\\); and for \\(n=20\\), \\(P=922\\).",
+    "The smallest of these prices is \\(922\\).",
+    "Therefore, the maximum price the investor can pay and still be certain of a yield of \\(5\\%\\) convertible semiannually is \\(922\\)."
+  ],
+  "generalization": "For a callable bond, the investor must calculate the price at each possible call date using the required yield and then choose the minimum price. This ensures the required yield is achieved regardless of when the bond is called.",
+  "answer_text": "The maximum price is \\(\\boxed{922}\\), so the correct answer is A."
 }
 ]
