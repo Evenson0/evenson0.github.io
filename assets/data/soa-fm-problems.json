@@ -6203,5 +6203,26 @@
   ],
   "generalization": "When future one-year forward rates are scenario-dependent, calculate the present value of the bond cash flows under each scenario, then take the probability-weighted average of those present values.",
   "answer_text": "The value of the bond is \\(\\boxed{1031.07}\\), so the correct answer is E."
+},
+  {
+  "id": 225,
+  "topic": "Real Rates of Interest",
+  "title": "Exercise 225",
+  "statement": "The current real rate of interest is 4%. The expected annual inflation rate over the next several years is 5%. Given the following expected nominal cash flows: at year 0, -300; at year 1, 160; at year 2, 160. What is the net present value of the investment using the nominal rate of interest?",
+  "choices": [],
+  "correct": "-19.30",
+  "solution_steps": [
+    "Let \\(i'\\) be the real rate of interest, \\(r\\) the inflation rate, and \\(i\\) the nominal rate of interest.",
+    "We are given \\(i'=0.04\\) and \\(r=0.05\\).",
+    "The relationship between the nominal rate, inflation rate, and real rate is \\(1+i=(1+r)(1+i')\\).",
+    "Substitute the given values: \\(1+i=(1.05)(1.04)\\).",
+    "Thus, \\(1+i=1.092\\), so \\(i=0.092\\).",
+    "Therefore, the nominal rate of interest is \\(9.2\\%\\).",
+    "Since the cash flows are nominal cash flows, discount them using the nominal rate \\(i=0.092\\).",
+    "The net present value is \\(NPV=-300+\\frac{160}{1.092}+\\frac{160}{(1.092)^2}\\).",
+    "This gives \\(NPV=-19.30\\)."
+  ],
+  "generalization": "When cash flows are nominal, discount them using the nominal interest rate. If the real rate \\(i'\\) and inflation rate \\(r\\) are given, use \\(1+i=(1+r)(1+i')\\) to find the nominal rate.",
+  "answer_text": "The net present value is \\(\\boxed{-19.30}\\)."
 }
 ]
