@@ -3,7 +3,7 @@ title: "SOA FM Exam Notes"
 permalink: /notes/soa-fm/
 layout: single
 author_profile: true
-mathjax: true
+mathjax: false
 ---
 
 <style>
@@ -180,7 +180,7 @@ mathjax: true
     <div class="fm-card">
       <div class="fm-card-number">Chapter 1</div>
       <h3>Time Value of Money</h3>
-      <div class="fm-weight">Weight: 5â15%</div>
+      <div class="fm-weight">Weight: 5–15%</div>
       <p>
         This chapter covers the foundations of financial mathematics: simple and compound interest,
         accumulation functions, present value, accumulated value, discount factors, nominal and
@@ -191,7 +191,7 @@ mathjax: true
     <div class="fm-card">
       <div class="fm-card-number">Chapter 2</div>
       <h3>Annuities and Non-Contingent Cash Flows</h3>
-      <div class="fm-weight">Weight: 20â30%</div>
+      <div class="fm-weight">Weight: 20–30%</div>
       <p>
         This part studies level annuities, annuities-immediate, annuities-due, perpetuities,
         and increasing or decreasing cash-flow patterns.
@@ -201,7 +201,7 @@ mathjax: true
     <div class="fm-card">
       <div class="fm-card-number">Chapter 3</div>
       <h3>Loans</h3>
-      <div class="fm-weight">Weight: 15â25%</div>
+      <div class="fm-weight">Weight: 15–25%</div>
       <p>
         Here the emphasis is on loan structure and amortization. Topics include principal,
         payment schedules, outstanding balance, interest and principal components of each payment,
@@ -212,7 +212,7 @@ mathjax: true
     <div class="fm-card">
       <div class="fm-card-number">Chapter 4</div>
       <h3>Bonds</h3>
-      <div class="fm-weight">Weight: 15â25%</div>
+      <div class="fm-weight">Weight: 15–25%</div>
       <p>
         This chapter introduces bond pricing and yield. It includes coupon rates, redemption value,
         premium and discount amortization, book value, market value, callable bonds,
@@ -223,7 +223,7 @@ mathjax: true
     <div class="fm-card">
       <div class="fm-card-number">Chapter 5</div>
       <h3>General Cash Flows, Portfolios, and Asset Liability Management</h3>
-      <div class="fm-weight">Weight: 20â30%</div>
+      <div class="fm-weight">Weight: 20–30%</div>
       <p>
         This final part develops the broader theory of financial cash flows. It includes yield rates,
         spot and forward rates, yield curves, duration, convexity, matching, immunization,
