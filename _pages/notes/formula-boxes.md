@@ -73,7 +73,6 @@ mathjax: true
     padding: 1.05rem 1.1rem;
     background: linear-gradient(180deg, rgba(127,127,127,0.045), rgba(127,127,127,0.02));
     box-shadow: var(--fm-shadow);
-    overflow-x: auto;
   }
 
   .fm-proof-card h3 {
@@ -106,6 +105,49 @@ mathjax: true
     line-height: 1.65;
     font-size: 0.95rem;
   }
+
+  .fm-formula-row {
+    margin: 0.75rem 0;
+    padding: 0.75rem 0.85rem;
+    border-radius: 12px;
+    background: rgba(127,127,127,0.045);
+    line-height: 1.65;
+  }
+
+  .fm-formula-row strong {
+    display: inline-block;
+    min-width: 5.8rem;
+  }
+
+  mjx-container {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 0;
+  }
+
+  @media (max-width: 600px) {
+    .fm-hero {
+      padding: 1.2rem 1rem;
+    }
+
+    .fm-proof-card {
+      padding: 1rem 0.9rem;
+    }
+
+    .fm-formula-row strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      min-width: 0;
+    }
+  }
 </style>
 
 <div class="fm-shell">
@@ -135,33 +177,33 @@ mathjax: true
         are all different ways of describing the same one-period accumulation.
       </p>
 
-      $$
+      \[
       v=\frac{1}{1+i}
-      $$
+      \]
 
-      $$
+      \[
       d=1-v
-      $$
+      \]
 
-      $$
+      \[
       d=1-\frac{1}{1+i}=\frac{i}{1+i}
-      $$
+      \]
 
-      $$
+      \[
       i=\frac{d}{1-d}
-      $$
+      \]
 
-      $$
-      \boxed{v=\frac{1}{1+i}=1-d}
-      $$
+      \[
+      v=\frac{1}{1+i}=1-d
+      \]
 
-      $$
-      \boxed{d=\frac{i}{1+i}}
-      $$
+      \[
+      d=\frac{i}{1+i}
+      \]
 
-      $$
-      \boxed{i=\frac{d}{1-d}}
-      $$
+      \[
+      i=\frac{d}{1-d}
+      \]
 
       <div class="fm-proof-note">
         A useful identity is \( \frac{1-v}{v}=i \).
@@ -177,33 +219,31 @@ mathjax: true
         times \(1,2,\ldots,n\).
       </p>
 
-      $$
+      \[
       a_{\overline{n}|}=v+v^2+\cdots+v^n
-      $$
+      \]
 
-      $$
+      \[
       a_{\overline{n}|}
       =
       \frac{v-v^{n+1}}{1-v}
       =
       \frac{v(1-v^n)}{1-v}
-      $$
+      \]
 
-      Since \(i=\frac{1-v}{v}\),
+      <p>Since \(i=\frac{1-v}{v}\), we have</p>
 
-      $$
-      \frac{v}{1-v}=\frac{1}{i}
-      $$
+      \[
+      \frac{v}{1-v}=\frac{1}{i}.
+      \]
 
-      Therefore,
+      <p>Therefore,</p>
 
-      $$
-      \boxed{
+      \[
       a_{\overline{n}|}
       =
-      \frac{1-v^n}{i}
-      }
-      $$
+      \frac{1-v^n}{i}.
+      \]
     </div>
 
     <div class="fm-proof-card">
@@ -215,35 +255,33 @@ mathjax: true
         times \(0,1,\ldots,n-1\).
       </p>
 
-      $$
+      \[
       \ddot{a}_{\overline{n}|}
       =
       1+v+v^2+\cdots+v^{n-1}
-      $$
+      \]
 
-      $$
+      \[
       \ddot{a}_{\overline{n}|}
       =
-      \frac{1-v^n}{1-v}
-      $$
+      \frac{1-v^n}{1-v}.
+      \]
 
-      Since \(d=1-v\),
+      <p>Since \(d=1-v\),</p>
 
-      $$
-      \boxed{
+      \[
       \ddot{a}_{\overline{n}|}
       =
-      \frac{1-v^n}{d}
-      }
-      $$
+      \frac{1-v^n}{d}.
+      \]
 
-      $$
-      \boxed{
+      <p>Also, because the payments are shifted one period earlier,</p>
+
+      \[
       \ddot{a}_{\overline{n}|}
       =
-      (1+i)a_{\overline{n}|}
-      }
-      $$
+      (1+i)a_{\overline{n}|}.
+      \]
     </div>
 
     <div class="fm-proof-card">
@@ -255,25 +293,17 @@ mathjax: true
         The accumulated value is measured at time \(n\).
       </p>
 
-      $$
+      \[
       s_{\overline{n}|}
       =
       1+(1+i)+(1+i)^2+\cdots+(1+i)^{n-1}
-      $$
+      \]
 
-      $$
+      \[
       s_{\overline{n}|}
       =
-      \frac{(1+i)^n-1}{i}
-      $$
-
-      $$
-      \boxed{
-      s_{\overline{n}|}
-      =
-      \frac{(1+i)^n-1}{i}
-      }
-      $$
+      \frac{(1+i)^n-1}{i}.
+      \]
     </div>
 
     <div class="fm-proof-card">
@@ -285,94 +315,68 @@ mathjax: true
         The accumulated value is measured at time \(n\).
       </p>
 
-      $$
+      \[
       \ddot{s}_{\overline{n}|}
       =
       (1+i)^n+(1+i)^{n-1}+\cdots+(1+i)
-      $$
+      \]
 
-      $$
+      \[
       \ddot{s}_{\overline{n}|}
       =
       (1+i)s_{\overline{n}|}
-      $$
+      \]
 
-      $$
-      \boxed{
+      \[
       \ddot{s}_{\overline{n}|}
       =
-      \frac{(1+i)^n-1}{d}
-      }
-      $$
+      \frac{(1+i)^n-1}{d}.
+      \]
     </div>
 
     <div class="fm-proof-card">
       <div class="fm-proof-label">Relations</div>
       <h3>How the four annuity formulas connect</h3>
 
-      $$
-      \boxed{
-      a_{\overline{n}|}
-      =
-      \frac{1-v^n}{i}
-      }
-      $$
+      <div class="fm-formula-row">
+        <strong>Immediate PV:</strong>
+        \(a_{\overline{n}|}=\frac{1-v^n}{i}\)
+      </div>
 
-      $$
-      \boxed{
-      \ddot{a}_{\overline{n}|}
-      =
-      \frac{1-v^n}{d}
-      }
-      $$
+      <div class="fm-formula-row">
+        <strong>Due PV:</strong>
+        \(\ddot{a}_{\overline{n}|}=\frac{1-v^n}{d}\)
+      </div>
 
-      $$
-      \boxed{
-      s_{\overline{n}|}
-      =
-      \frac{(1+i)^n-1}{i}
-      }
-      $$
+      <div class="fm-formula-row">
+        <strong>Immediate AV:</strong>
+        \(s_{\overline{n}|}=\frac{(1+i)^n-1}{i}\)
+      </div>
 
-      $$
-      \boxed{
-      \ddot{s}_{\overline{n}|}
-      =
-      \frac{(1+i)^n-1}{d}
-      }
-      $$
+      <div class="fm-formula-row">
+        <strong>Due AV:</strong>
+        \(\ddot{s}_{\overline{n}|}=\frac{(1+i)^n-1}{d}\)
+      </div>
 
-      $$
-      \boxed{
-      \ddot{a}_{\overline{n}|}
-      =
-      (1+i)a_{\overline{n}|}
-      }
-      $$
+      <div class="fm-formula-row">
+        <strong>PV shift:</strong>
+        \(\ddot{a}_{\overline{n}|}=(1+i)a_{\overline{n}|}\)
+      </div>
 
-      $$
-      \boxed{
-      \ddot{s}_{\overline{n}|}
-      =
-      (1+i)s_{\overline{n}|}
-      }
-      $$
+      <div class="fm-formula-row">
+        <strong>AV shift:</strong>
+        \(\ddot{s}_{\overline{n}|}=(1+i)s_{\overline{n}|}\)
+      </div>
 
-      $$
-      \boxed{
-      s_{\overline{n}|}
-      =
-      a_{\overline{n}|}(1+i)^n
-      }
-      $$
+      <div class="fm-formula-row">
+        <strong>PV to AV:</strong>
+        \(s_{\overline{n}|}=a_{\overline{n}|}(1+i)^n\)
+      </div>
 
-      $$
-      \boxed{
-      \ddot{s}_{\overline{n}|}
-      =
-      \ddot{a}_{\overline{n}|}(1+i)^n
-      }
-      $$
+      <div class="fm-formula-row">
+        <strong>PV to AV:</strong>
+        \(\ddot{s}_{\overline{n}|}=\ddot{a}_{\overline{n}|}(1+i)^n\)
+      </div>
 
       <div class="fm-proof-note">
         Memory rule: immediate formulas use \(i\) in the denominator, due formulas use \(d\) in the denominator.
@@ -388,29 +392,25 @@ mathjax: true
         but the notation mainly tells us where the value of the payment stream is measured.
       </p>
 
-      $$
-      a_{\overline{n}|}
-      \quad
-      \text{is measured one period before the first payment.}
-      $$
+      <div class="fm-formula-row">
+        <strong>\(a_{\overline{n}|}\)</strong>
+        is measured one period before the first payment.
+      </div>
 
-      $$
-      \ddot{a}_{\overline{n}|}
-      \quad
-      \text{is measured at the time of the first payment.}
-      $$
+      <div class="fm-formula-row">
+        <strong>\(\ddot{a}_{\overline{n}|}\)</strong>
+        is measured at the time of the first payment.
+      </div>
 
-      $$
-      s_{\overline{n}|}
-      \quad
-      \text{is measured at the time of the last payment.}
-      $$
+      <div class="fm-formula-row">
+        <strong>\(s_{\overline{n}|}\)</strong>
+        is measured at the time of the last payment.
+      </div>
 
-      $$
-      \ddot{s}_{\overline{n}|}
-      \quad
-      \text{is measured one period after the last payment.}
-      $$
+      <div class="fm-formula-row">
+        <strong>\(\ddot{s}_{\overline{n}|}\)</strong>
+        is measured one period after the last payment.
+      </div>
 
       <div class="fm-proof-note">
         Draw the timeline first, locate the valuation date, then choose the notation that already places the value there.
@@ -418,29 +418,17 @@ mathjax: true
 
       <h3>Useful shift identities</h3>
 
-      $$
-      \boxed{
-      \ddot{a}_{\overline{n}|}
-      =
-      1+a_{\overline{n-1}|}
-      }
-      $$
+      <div class="fm-formula-row">
+        \(\ddot{a}_{\overline{n}|}=1+a_{\overline{n-1}|}\)
+      </div>
 
-      $$
-      \boxed{
-      \ddot{s}_{\overline{n}|}
-      =
-      (1+i)s_{\overline{n}|}
-      }
-      $$
+      <div class="fm-formula-row">
+        \(\ddot{s}_{\overline{n}|}=(1+i)s_{\overline{n}|}\)
+      </div>
 
-      $$
-      \boxed{
-      \ddot{s}_{\overline{n}|}
-      =
-      s_{\overline{n+1}|}-1
-      }
-      $$
+      <div class="fm-formula-row">
+        \(\ddot{s}_{\overline{n}|}=s_{\overline{n+1}|}-1\)
+      </div>
 
       <div class="fm-proof-note">
         The most important intuition is timing: annuity-due values are shifted one period forward
