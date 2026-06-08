@@ -3,7 +3,7 @@ title: "SOA FM Exam Notes"
 permalink: /notes/soa-fm/
 layout: single
 author_profile: true
-mathjax: true
+mathjax: false
 ---
 
 <style>
