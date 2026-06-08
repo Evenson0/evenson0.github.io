@@ -1,7 +1,3 @@
-
-
-
-
 ⸻
 
 title: “SOA FM Exam Notes”
