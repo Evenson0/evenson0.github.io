@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Mathematical Articles and Notes"
 excerpt: "A collection of mathematical articles, problem-solving notes, and research-oriented essays written to develop clarity, rigor, and independent thinking."
@@ -54,4 +53,3 @@ By writing regularly, I want to improve my ability to explain ideas clearly, str
 ## Links
 
 Selected articles are available on the blog. GitHub and archive links coming soon.
-```
