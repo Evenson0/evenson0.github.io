@@ -133,4 +133,3 @@ This section will later include selected GitHub projects, live demos, technical 
 </div>
 
 {% endif %}
-```
