@@ -37,6 +37,15 @@ author_profile: true
   border-color: rgba(127, 127, 127, 0.45);
   background: rgba(127, 127, 127, 0.11);
   text-decoration: none;
+  .portfolio-card,
+  .portfolio-card:hover,
+  .portfolio-card:focus,
+  .portfolio-card:visited,
+  .portfolio-card *,
+  .portfolio-card:hover *,
+  .portfolio-card:focus *,
+  .portfolio-card:visited * {
+    text-decoration: none !important;
 }
 
 .portfolio-icon {
