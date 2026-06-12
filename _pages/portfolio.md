@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: archive
 title: "Portfolio"
@@ -15,4 +14,3 @@ Welcome to my portfolio. This space gathers my tools, articles, research notes, 
 {% for post in portfolio_items %}
   {% include archive-single.html %}
 {% endfor %}
-```
