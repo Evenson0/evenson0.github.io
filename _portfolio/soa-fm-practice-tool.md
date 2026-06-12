@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "SOA FM Practice Tool"
 excerpt: "An interactive practice tool for SOA Exam FM, built to organize problems, track progress, and reinforce financial mathematics concepts."
@@ -38,4 +37,3 @@ This project is currently under development.
 ## Links
 
 GitHub link coming soon.
-```
