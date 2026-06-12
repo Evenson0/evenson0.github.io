@@ -49,27 +49,6 @@ mathjax: true
     margin-bottom: 4px;
   }
 
-  .bot-formulas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 12px;
-    margin-top: 18px;
-  }
-
-  .bot-formula-card {
-    padding: 13px 14px;
-    border-radius: 14px;
-    border: 1px solid rgba(127, 127, 127, 0.24);
-    background: rgba(127, 127, 127, 0.06);
-    line-height: 1.45;
-    overflow-x: auto;
-  }
-
-  .bot-formula-card strong {
-    display: block;
-    margin-bottom: 6px;
-  }
-
   .bot-panel {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -207,6 +186,11 @@ mathjax: true
   .bot-tree-svg {
     display: block;
     height: 520px;
+    color: inherit;
+  }
+
+  .bot-tree-svg text {
+    fill: currentColor;
   }
 
   .bot-edge {
@@ -257,16 +241,19 @@ mathjax: true
   .bot-node-title {
     font-size: 12px;
     opacity: 0.78;
+    fill: currentColor;
   }
 
   .bot-node-main {
     font-size: 15px;
     font-weight: 800;
+    fill: currentColor;
   }
 
   .bot-node-small {
     font-size: 11px;
     opacity: 0.78;
+    fill: currentColor;
   }
 
   .bot-result-grid {
@@ -384,58 +371,6 @@ mathjax: true
         Can be exercised before maturity if immediate exercise is better.
       </div>
     </div>
-
-    <div class="bot-formulas">
-      <div class="bot-formula-card">
-        <strong>Stock node</strong>
-        \[
-          S_{i,j} = S_0 u^j d^{i-j}
-        \]
-      </div>
-
-      <div class="bot-formula-card">
-        <strong>Risk-neutral probability</strong>
-        \[
-          p = \frac{e^{r\Delta t} - d}{u-d}
-        \]
-      </div>
-
-      <div class="bot-formula-card">
-        <strong>European continuation value</strong>
-        \[
-          V_{i,j} = e^{-r\Delta t}
-          \left(pV_{i+1,j+1} + (1-p)V_{i+1,j}\right)
-        \]
-      </div>
-
-      <div class="bot-formula-card">
-        <strong>Terminal payoff</strong>
-        \[
-          C_T = \max(S_T-K,0),
-          \qquad
-          P_T = \max(K-S_T,0)
-        \]
-      </div>
-
-      <div class="bot-formula-card">
-        <strong>American exercise</strong>
-        \[
-          V_{i,j}
-          =
-          \max(\text{continuation},\text{immediate exercise})
-        \]
-      </div>
-
-      <div class="bot-formula-card">
-        <strong>Delta</strong>
-        \[
-          \Delta
-          =
-          \frac{V_{\text{up}} - V_{\text{down}}}
-          {S_{\text{up}} - S_{\text{down}}}
-        \]
-      </div>
-    </div>
   </div>
 
   <div class="bot-panel">
@@ -458,7 +393,7 @@ mathjax: true
 
     <div class="bot-field">
       <label for="botSteps">Steps \(n\)</label>
-      <input id="botSteps" type="number" value="3" min="1" max="10" step="1">
+      <input id="botSteps" type="number" value="2" min="1" max="10" step="1">
     </div>
 
     <div class="bot-field">
@@ -586,22 +521,6 @@ mathjax: true
   function updateBotVolumeLabel() {
     const value = Number(document.getElementById("botVolume").value);
     document.getElementById("botVolumeValue").textContent = value + "%";
-  }
-
-  function typesetBotMath() {
-    if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
-      window.MathJax.typesetPromise().catch(() => {});
-      return;
-    }
-
-    if (window.MathJax && typeof window.MathJax.typeset === "function") {
-      window.MathJax.typeset();
-      return;
-    }
-
-    if (window.MathJax && window.MathJax.Hub) {
-      window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub]);
-    }
   }
 
   function botMoney(x) {
@@ -1389,7 +1308,6 @@ mathjax: true
     botOptionStage.textContent = "Waiting to build option value tree...";
 
     renderBotKpis(params, tree);
-    typesetBotMath();
 
     if (params.volume >= 100) {
       revealFullStockTree(params, tree);
@@ -1448,5 +1366,4 @@ mathjax: true
   }
 
   updateBotVolumeLabel();
-  typesetBotMath();
 </script>
