@@ -49,6 +49,27 @@ mathjax: true
     margin-bottom: 4px;
   }
 
+  .bot-formulas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .bot-formula-card {
+    padding: 13px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(127, 127, 127, 0.24);
+    background: rgba(127, 127, 127, 0.06);
+    line-height: 1.45;
+    overflow-x: auto;
+  }
+
+  .bot-formula-card strong {
+    display: block;
+    margin-bottom: 6px;
+  }
+
   .bot-panel {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -132,9 +153,9 @@ mathjax: true
     display: none;
   }
 
-  .bot-output {
+  .bot-main {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
@@ -248,11 +269,18 @@ mathjax: true
     opacity: 0.78;
   }
 
+  .bot-result-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.2fr);
+    gap: 16px;
+    align-items: start;
+  }
+
   .bot-kpis {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 10px;
-    margin: 12px 0 16px;
+    margin: 12px 0 0;
   }
 
   .bot-kpi {
@@ -300,7 +328,7 @@ mathjax: true
   }
 
   @media (max-width: 900px) {
-    .bot-output {
+    .bot-result-grid {
       grid-template-columns: 1fr;
     }
 
@@ -354,6 +382,58 @@ mathjax: true
       <div class="bot-concept">
         <strong>American option</strong>
         Can be exercised before maturity if immediate exercise is better.
+      </div>
+    </div>
+
+    <div class="bot-formulas">
+      <div class="bot-formula-card">
+        <strong>Stock node</strong>
+        \[
+          S_{i,j} = S_0 u^j d^{i-j}
+        \]
+      </div>
+
+      <div class="bot-formula-card">
+        <strong>Risk-neutral probability</strong>
+        \[
+          p = \frac{e^{r\Delta t} - d}{u-d}
+        \]
+      </div>
+
+      <div class="bot-formula-card">
+        <strong>European continuation value</strong>
+        \[
+          V_{i,j} = e^{-r\Delta t}
+          \left(pV_{i+1,j+1} + (1-p)V_{i+1,j}\right)
+        \]
+      </div>
+
+      <div class="bot-formula-card">
+        <strong>Terminal payoff</strong>
+        \[
+          C_T = \max(S_T-K,0),
+          \qquad
+          P_T = \max(K-S_T,0)
+        \]
+      </div>
+
+      <div class="bot-formula-card">
+        <strong>American exercise</strong>
+        \[
+          V_{i,j}
+          =
+          \max(\text{continuation},\text{immediate exercise})
+        \]
+      </div>
+
+      <div class="bot-formula-card">
+        <strong>Delta</strong>
+        \[
+          \Delta
+          =
+          \frac{V_{\text{up}} - V_{\text{down}}}
+          {S_{\text{up}} - S_{\text{down}}}
+        \]
       </div>
     </div>
   </div>
@@ -428,7 +508,7 @@ mathjax: true
     <button class="bot-btn" onclick="resetBinomialTree()">Reset</button>
   </div>
 
-  <div class="bot-output">
+  <div class="bot-main">
 
     <div class="bot-forest">
 
@@ -463,17 +543,23 @@ mathjax: true
     <div class="bot-result-card">
       <h2>Result</h2>
 
-      <div id="botResult">
-        Click <strong>Generate tree</strong> to start.
+      <div class="bot-result-grid">
+        <div>
+          <div id="botResult">
+            Click <strong>Generate tree</strong> to start.
+          </div>
+
+          <div id="botKpis" class="bot-kpis"></div>
+        </div>
+
+        <div>
+          <div id="botDetail" class="bot-detail">
+            The selected node details will appear here during the construction.
+          </div>
+
+          <div id="botLog" class="bot-log"></div>
+        </div>
       </div>
-
-      <div id="botKpis" class="bot-kpis"></div>
-
-      <div id="botDetail" class="bot-detail">
-        The selected node details will appear here during the construction.
-      </div>
-
-      <div id="botLog" class="bot-log"></div>
     </div>
 
   </div>
@@ -500,6 +586,22 @@ mathjax: true
   function updateBotVolumeLabel() {
     const value = Number(document.getElementById("botVolume").value);
     document.getElementById("botVolumeValue").textContent = value + "%";
+  }
+
+  function typesetBotMath() {
+    if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
+      window.MathJax.typesetPromise().catch(() => {});
+      return;
+    }
+
+    if (window.MathJax && typeof window.MathJax.typeset === "function") {
+      window.MathJax.typeset();
+      return;
+    }
+
+    if (window.MathJax && window.MathJax.Hub) {
+      window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub]);
+    }
   }
 
   function botMoney(x) {
@@ -1287,6 +1389,7 @@ mathjax: true
     botOptionStage.textContent = "Waiting to build option value tree...";
 
     renderBotKpis(params, tree);
+    typesetBotMath();
 
     if (params.volume >= 100) {
       revealFullStockTree(params, tree);
@@ -1345,4 +1448,5 @@ mathjax: true
   }
 
   updateBotVolumeLabel();
+  typesetBotMath();
 </script>
