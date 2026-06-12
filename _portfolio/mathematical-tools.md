@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Mathematical Tools"
 excerpt: "Interactive mathematical tools designed to make abstract concepts more visual, intuitive, and useful for learning and research."
@@ -48,4 +47,3 @@ The long-term goal is to build a library of mathematical tools that can support 
 ## Links
 
 GitHub links coming soon.
-```
