@@ -7326,5 +7326,155 @@
   ],
   "generalization": "In dedication problems, work backward from the final liability. First determine the face amount needed for the longest maturity bond, then subtract its earlier coupons from earlier liabilities. The amount spent on a bond is its current price, not necessarily its face amount.",
   "answer_text": "A. 83.66"
+},
+  {
+  "id": 269,
+  "topic": "Nominal Interest and Discount Rates",
+  "title": "Exercise 269",
+  "statement": "Investment X for $100,000 is invested at a nominal rate of interest, j, convertible semiannually. After four years, it accumulates to $214,358.88. Investment Y for $100,000 is invested at a nominal rate of discount, k, convertible quarterly. After two years, it accumulates to $232,305.73. Investment Z for $100,000 is invested at an annual effective rate of interest equal to j in year one and an annual effective rate of discount equal to k in year two. Calculate the value of investment Z at the end of two years.",
+  "choices": [
+    "168,000",
+    "182,900",
+    "184,425",
+    "200,000",
+    "201,675"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Investment X is invested at a nominal rate of interest \\(j\\), convertible semiannually, so the rate per half-year is \\(j/2\\).",
+    "There are \\(4(2)=8\\) semiannual periods in four years.",
+    "Thus, \\(100,000\\left(1+\\frac{j}{2}\\right)^8=214,358.88\\).",
+    "Dividing by \\(100,000\\), we get \\(\\left(1+\\frac{j}{2}\\right)^8=2.1435888\\).",
+    "Taking the eighth root gives \\(1+\\frac{j}{2}=2.1435888^{1/8}\\).",
+    "Therefore, \\(j=2\\left(2.1435888^{1/8}-1\\right)=0.20\\).",
+    "Investment Y is invested at a nominal rate of discount \\(k\\), convertible quarterly, so the discount rate per quarter is \\(k/4\\).",
+    "There are \\(2(4)=8\\) quarterly periods in two years.",
+    "For a nominal discount rate, the accumulation factor per quarter is \\(\\left(1-\\frac{k}{4}\\right)^{-1}\\).",
+    "Thus, \\(100,000\\left(1-\\frac{k}{4}\\right)^{-8}=232,305.73\\).",
+    "Dividing by \\(100,000\\), we get \\(\\left(1-\\frac{k}{4}\\right)^{-8}=2.3230573\\).",
+    "Taking both sides to the power \\(-1/8\\), we get \\(1-\\frac{k}{4}=2.3230573^{-1/8}\\).",
+    "Therefore, \\(k=4\\left(1-2.3230573^{-1/8}\\right)=0.40\\).",
+    "Investment Z earns an annual effective interest rate equal to \\(j=0.20\\) in year one, so the first-year accumulation factor is \\(1.20\\).",
+    "In year two, investment Z earns an annual effective discount rate equal to \\(k=0.40\\), so the one-year accumulation factor is \\(\\frac{1}{1-k}=\\frac{1}{0.60}\\).",
+    "Therefore, \\(Z=100,000(1.20)\\left(\\frac{1}{0.60}\\right)=200,000\\)."
+  ],
+  "generalization": "For a nominal interest rate convertible m-thly, the accumulation factor over t years is \\(\\left(1+\\frac{i^{(m)}}{m}\\right)^{mt}\\). For a nominal discount rate convertible m-thly, the accumulation factor over t years is \\(\\left(1-\\frac{d^{(m)}}{m}\\right)^{-mt}\\).",
+  "answer_text": "D. 200,000"
+},
+  {
+  "id": 270,
+  "topic": "Interest Theory",
+  "title": "Exercise 270",
+  "statement": "The derivative of the force of interest with respect to the annual effective interest rate is denoted by dδ/di. The derivative of the annual effective interest rate with respect to the annual effective discount rate is denoted by di/dd. Simplify the expression (dδ/di)(di/dd).",
+  "choices": [
+    "i",
+    "v",
+    "d",
+    "1+i",
+    "v^3"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "The force of interest corresponding to an annual effective interest rate \\(i\\) is \\(\\delta=\\ln(1+i)\\).",
+    "Therefore, \\(\\frac{d}{di}\\delta=\\frac{d}{di}\\ln(1+i)=\\frac{1}{1+i}\\).",
+    "Since \\(v=\\frac{1}{1+i}\\), we have \\(\\frac{d}{di}\\delta=v\\).",
+    "The relationship between the annual effective interest rate \\(i\\) and the annual effective discount rate \\(d\\) is \\(i=\\frac{d}{1-d}\\).",
+    "Differentiate \\(i\\) with respect to \\(d\\): \\(\\frac{d}{dd}i=\\frac{d}{dd}\\left(\\frac{d}{1-d}\\right)\\).",
+    "Using the quotient rule, \\(\\frac{d}{dd}i=\\frac{(1-d)(1)-d(-1)}{(1-d)^2}\\).",
+    "Thus, \\(\\frac{d}{dd}i=\\frac{1}{(1-d)^2}\\).",
+    "Since \\(v=1-d\\), we get \\(\\frac{d}{dd}i=\\frac{1}{v^2}\\).",
+    "Therefore, \\(\\left(\\frac{d}{di}\\delta\\right)\\left(\\frac{d}{dd}i\\right)=v\\cdot \\frac{1}{v^2}=\\frac{1}{v}\\).",
+    "Finally, since \\(\\frac{1}{v}=1+i\\), the expression simplifies to \\(1+i\\)."
+  ],
+  "generalization": "Use the relationships \\(\\delta=\\ln(1+i)\\), \\(v=\\frac{1}{1+i}\\), and \\(i=\\frac{d}{1-d}\\). Differentiating these identities allows expressions involving derivatives of interest, discount, and force of interest to be simplified.",
+  "answer_text": "D. 1+i"
+},
+  {
+  "id": 271,
+  "topic": "Interest Theory",
+  "title": "Exercise 271",
+  "statement": "John deposits $1,000 into a fund. The fund earns: (i) an annual nominal rate of interest of 4% convertible quarterly for the first three years; (ii) a constant annual force of interest of 5% for the next three years; and (iii) an annual nominal discount rate of 6% convertible semiannually thereafter. Calculate the amount in the fund at the end of ten years.",
+  "choices": [
+    "1,658",
+    "1,667",
+    "1,670",
+    "1,674",
+    "1,677"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "For the first three years, the fund earns an annual nominal rate of interest of 4% convertible quarterly, so the quarterly rate is \\(0.04/4=0.01\\).",
+    "There are \\(3(4)=12\\) quarters in the first three years, so the first accumulation factor is \\(\\left(1+\\frac{0.04}{4}\\right)^{12}\\).",
+    "For the next three years, the fund earns a constant annual force of interest of 5%. The accumulation factor under a constant force of interest is \\(e^{\\delta t}\\).",
+    "Here, \\(\\delta=0.05\\) and \\(t=3\\), so the second accumulation factor is \\(e^{0.05(3)}\\).",
+    "After six years, there are four years remaining until the end of year ten.",
+    "During the last four years, the fund earns an annual nominal discount rate of 6% convertible semiannually, so the semiannual discount rate is \\(0.06/2=0.03\\).",
+    "For a nominal discount rate, the accumulation factor per conversion period is \\(\\frac{1}{1-d}\\).",
+    "There are \\(4(2)=8\\) semiannual periods in the last four years, so the last accumulation factor is \\(\\left(1-\\frac{0.06}{2}\\right)^{-8}\\).",
+    "Therefore, the amount at the end of ten years is \\(1000\\left(1+\\frac{0.04}{4}\\right)^{12}e^{0.05(3)}\\left(1-\\frac{0.06}{2}\\right)^{-8}\\).",
+    "Calculating gives \\(1000(1.01)^{12}e^{0.15}(0.97)^{-8}=1670.42\\).",
+    "The closest answer is \\(1,670\\)."
+  ],
+  "generalization": "When different interest accumulation methods apply over different time intervals, multiply the corresponding accumulation factors. For nominal interest, use \\(\\left(1+\\frac{i^{(m)}}{m}\\right)^{mt}\\). For force of interest, use \\(e^{\\delta t}\\). For nominal discount, use \\(\\left(1-\\frac{d^{(m)}}{m}\\right)^{-mt}\\).",
+  "answer_text": "C. 1,670"
+},
+  {
+  "id": 272,
+  "topic": "Nominal Interest and Discount Rates",
+  "title": "Exercise 272",
+  "statement": "Which of the following are correct expressions for d^(360)? (I) 1 - v^(1/360). (II) 360 - 360(1 + i^(12)/12)^(-30). (III) 1 / (1/360 + 1/i^(360)). Let v = 1/(1+i).",
+  "choices": [
+    "None",
+    "I only",
+    "II only",
+    "III only",
+    "The correct answer is not given by A, B, C, or D"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "For a nominal discount rate \\(d^{(m)}\\) convertible \\(m\\)-thly, \\(v=\\left(1-\\frac{d^{(m)}}{m}\\right)^m\\).",
+    "Therefore, \\(v^{1/m}=1-\\frac{d^{(m)}}{m}\\), so \\(d^{(m)}=m\\left(1-v^{1/m}\\right)\\).",
+    "For \\(m=360\\), \\(d^{(360)}=360\\left(1-v^{1/360}\\right)\\).",
+    "Statement (I) is false because \\(1-v^{1/360}=\\frac{d^{(360)}}{360}\\), not \\(d^{(360)}\\).",
+    "For a nominal interest rate \\(i^{(12)}\\) convertible monthly, \\(1+i=\\left(1+\\frac{i^{(12)}}{12}\\right)^{12}\\).",
+    "Thus, \\(v=(1+i)^{-1}=\\left(1+\\frac{i^{(12)}}{12}\\right)^{-12}\\).",
+    "Then \\(v^{1/360}=\\left(1+\\frac{i^{(12)}}{12}\\right)^{-12/360}=\\left(1+\\frac{i^{(12)}}{12}\\right)^{-1/30}\\).",
+    "Therefore, \\(d^{(360)}=360\\left[1-\\left(1+\\frac{i^{(12)}}{12}\\right)^{-1/30}\\right]\\).",
+    "Statement (II) is false because it uses the exponent \\(-30\\) instead of \\(-1/30\\).",
+    "The relationship between nominal interest and nominal discount rates convertible \\(m\\)-thly is \\(\\frac{1}{d^{(m)}}-\\frac{1}{i^{(m)}}=\\frac{1}{m}\\).",
+    "For \\(m=360\\), \\(\\frac{1}{d^{(360)}}=\\frac{1}{360}+\\frac{1}{i^{(360)}}\\).",
+    "Taking reciprocals gives \\(d^{(360)}=\\frac{1}{\\frac{1}{360}+\\frac{1}{i^{(360)}}}\\), so statement (III) is true.",
+    "Only statement (III) is correct."
+  ],
+  "generalization": "For nominal discount convertible m-thly, use \\(d^{(m)}=m(1-v^{1/m})\\). Also, nominal interest and nominal discount convertible at the same frequency satisfy \\(\\frac{1}{d^{(m)}}-\\frac{1}{i^{(m)}}=\\frac{1}{m}\\).",
+  "answer_text": "D. III only"
+},
+  {
+  "id": 273,
+  "topic": "Force of Interest",
+  "title": "Exercise 273",
+  "statement": "A store purchased couch #1 for X two months ago and plans to sell it for $1,500 six months from today. The same store purchases couch #2 for X today and plans to sell it for $1,500 four months from today. The annual force of interest is a constant 10%. The current value of the store's cash flows from the purchase and sale of couch #2 is 260. Calculate the current value of the store's cash flows from the purchase and sale of couch #1.",
+  "choices": [
+    "216",
+    "218",
+    "256",
+    "260",
+    "307"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The annual force of interest is constant at \\(\\delta=0.10\\).",
+    "Under a constant force of interest, a cash flow \\(C\\) at time \\(t\\) has current value \\(Ce^{-\\delta t}\\), where \\(t\\) is measured in years.",
+    "For couch #2, the purchase occurs today, so the current value of the purchase is \\(-X\\).",
+    "The sale of couch #2 occurs four months from today, which is \\(4/12\\) years from today. Its current value is \\(1500e^{-0.10(4/12)}\\).",
+    "The current value of couch #2 is given as 260, so \\(1500e^{-0.10(4/12)}-X=260\\).",
+    "Solving gives \\(X=1500e^{-0.10(4/12)}-260=1190.82\\).",
+    "For couch #1, the purchase occurred two months ago, which is \\(-2/12\\) years relative to today. Its value at the current time is the accumulated value \\(-Xe^{0.10(2/12)}\\).",
+    "The sale of couch #1 occurs six months from today, which is \\(6/12\\) years from today. Its current value is \\(1500e^{-0.10(6/12)}\\).",
+    "Therefore, the current value of the cash flows from couch #1 is \\(1500e^{-0.10(6/12)}-Xe^{0.10(2/12)}\\).",
+    "Substituting \\(X=1190.82\\), we get \\(1500e^{-0.10(6/12)}-1190.82e^{0.10(2/12)}=216\\)."
+  ],
+  "generalization": "With a constant force of interest \\(\\delta\\), move cash flows to the valuation date using \\(e^{-\\delta t}\\) for future cash flows and \\(e^{\\delta t}\\) for past cash flows accumulated to the present.",
+  "answer_text": "A. 216"
 }
 ]
