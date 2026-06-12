@@ -3,520 +3,538 @@ title: "Binomial Option Tree Lab"
 permalink: /tools/binomial-option-tree/
 layout: single
 author_profile: true
+mathjax: true
 ---
 
 <style>
-  .bot-tool {
-    --bg: #050807;
-    --panel: #0b1510;
-    --panel-2: #101d16;
-    --green: #00ff7b;
-    --green-soft: #9effc4;
-    --green-dark: #0b6b38;
-    --text: #eafff1;
-    --muted: #a8c9b4;
-    --red: #ff5f73;
-    --yellow: #ffd166;
-    --border: rgba(0, 255, 123, 0.28);
-
-    background: radial-gradient(circle at top right, rgba(0, 255, 123, 0.12), transparent 35%), var(--bg);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 24px;
-    margin: 24px 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    box-shadow: 0 0 40px rgba(0, 255, 123, 0.08);
+  .bot-container {
+    max-width: 1080px;
+    margin: 0 auto;
   }
 
-  .bot-tool h1,
-  .bot-tool h2,
-  .bot-tool h3 {
-    color: var(--green-soft);
+  .bot-notes {
+    padding: 20px;
+    border-radius: 18px;
+    border: 1px solid rgba(127, 127, 127, 0.24);
+    background: rgba(127, 127, 127, 0.06);
+    margin-bottom: 22px;
+  }
+
+  .bot-notes h2 {
     margin-top: 0;
   }
 
-  .bot-subtitle {
-    color: var(--muted);
-    max-width: 900px;
+  .bot-notes p {
+    margin-bottom: 12px;
     line-height: 1.6;
-  }
-
-  .bot-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }
-
-  .bot-card {
-    background: linear-gradient(180deg, var(--panel), var(--panel-2));
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 16px;
   }
 
   .bot-concepts {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-    margin-top: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
   }
 
   .bot-concept {
-    background: rgba(0, 255, 123, 0.06);
-    border: 1px solid rgba(0, 255, 123, 0.18);
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 0.92rem;
+    padding: 13px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(127, 127, 127, 0.24);
+    background: rgba(127, 127, 127, 0.06);
+    line-height: 1.45;
   }
 
   .bot-concept strong {
-    color: var(--green);
     display: block;
     margin-bottom: 4px;
   }
 
-  .bot-controls {
+  .bot-panel {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-radius: 16px;
+    background: rgba(127, 127, 127, 0.06);
+    margin-bottom: 18px;
+  }
+
+  .bot-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 
   .bot-field label {
-    display: block;
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 0.95rem;
   }
 
   .bot-field input,
   .bot-field select {
-    width: 100%;
-    box-sizing: border-box;
-    background: #030604;
-    color: var(--text);
-    border: 1px solid var(--border);
+    padding: 9px 10px;
     border-radius: 10px;
-    padding: 10px;
-    outline: none;
+    border: 1px solid rgba(127, 127, 127, 0.35);
+    background: transparent;
+    color: inherit;
   }
 
-  .bot-field input:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
+  .bot-volume-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
-  .bot-actions {
+  .bot-volume-wrap input[type="range"] {
+    width: 100%;
+  }
+
+  .bot-volume-value {
+    min-width: 48px;
+    font-weight: 800;
+    text-align: right;
+  }
+
+  .bot-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 16px;
+    margin-bottom: 18px;
   }
 
-  .bot-button {
-    background: var(--green);
-    color: #001807;
-    border: none;
+  .bot-btn {
+    padding: 10px 16px;
     border-radius: 12px;
-    padding: 11px 16px;
-    font-weight: 700;
     cursor: pointer;
+    border: 1px solid rgba(127, 127, 127, 0.28);
+    background: rgba(127, 127, 127, 0.08);
+    color: inherit;
+    font-weight: 700;
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      background 0.18s ease;
   }
 
-  .bot-button.secondary {
-    background: transparent;
-    color: var(--green-soft);
-    border: 1px solid var(--border);
+  .bot-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: rgba(127, 127, 127, 0.14);
+  }
+
+  .bot-warning {
+    margin-bottom: 14px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(245, 158, 11, 0.45);
+    background: rgba(245, 158, 11, 0.12);
+    display: none;
   }
 
   .bot-output {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
     gap: 16px;
-    margin-top: 18px;
+  }
+
+  .bot-tree-card,
+  .bot-result-card {
+    border-radius: 18px;
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    background: rgba(127, 127, 127, 0.04);
+    padding: 16px;
+  }
+
+  .bot-stage {
+    margin-bottom: 12px;
+    font-weight: 800;
+    line-height: 1.45;
   }
 
   .bot-tree-wrap {
-    overflow: auto;
-    min-height: 460px;
-    background: #020403;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 18px;
-    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(127, 127, 127, 0.24);
+    background: rgba(255, 255, 255, 0.02);
   }
 
-  .bot-stage-label {
-    color: var(--green-soft);
-    font-size: 0.9rem;
-    margin-bottom: 12px;
+  #botTreeSvg {
+    display: block;
+    width: 100%;
+    height: 590px;
   }
 
-  .bot-tree {
-    min-width: 760px;
-    height: 430px;
-    position: relative;
-  }
-
-  .bot-node {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    min-width: 112px;
-    background: rgba(0, 255, 123, 0.08);
-    border: 1px solid rgba(0, 255, 123, 0.35);
-    border-radius: 14px;
-    padding: 8px 10px;
-    text-align: center;
+  .bot-edge {
+    stroke: currentColor;
+    stroke-width: 2;
     opacity: 0;
-    transition: opacity 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+    transition: opacity 0.35s ease;
   }
 
-  .bot-node.visible {
+  .bot-edge-visible {
+    opacity: 0.22;
+  }
+
+  .bot-node-group {
+    opacity: 0;
+    transition:
+      opacity 0.35s ease,
+      transform 0.35s ease;
+  }
+
+  .bot-node-visible {
     opacity: 1;
-    box-shadow: 0 0 18px rgba(0, 255, 123, 0.18);
   }
 
-  .bot-node.active {
-    transform: translate(-50%, -50%) scale(1.06);
-    border-color: var(--green);
-    box-shadow: 0 0 26px rgba(0, 255, 123, 0.45);
+  .bot-node-active {
+    filter: drop-shadow(0 0 8px rgba(127, 127, 127, 0.65));
   }
 
-  .bot-node.exercise {
-    border-color: var(--yellow);
-    box-shadow: 0 0 22px rgba(255, 209, 102, 0.35);
+  .bot-node-early rect {
+    stroke: #f59e0b;
+    stroke-width: 2.5;
+  }
+
+  .bot-node-terminal rect {
+    stroke-dasharray: 5 4;
+  }
+
+  .bot-node-rect {
+    fill: rgba(127, 127, 127, 0.10);
+    stroke: rgba(127, 127, 127, 0.55);
+    stroke-width: 1.4;
   }
 
   .bot-node-title {
-    color: var(--muted);
-    font-size: 0.73rem;
+    font-size: 12px;
+    opacity: 0.78;
   }
 
   .bot-node-main {
-    color: var(--green-soft);
+    font-size: 15px;
     font-weight: 800;
-    font-size: 1rem;
   }
 
   .bot-node-small {
-    color: var(--muted);
-    font-size: 0.72rem;
-    margin-top: 2px;
+    font-size: 11px;
+    opacity: 0.78;
   }
 
-  .bot-line-layer {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-
-  .bot-line {
-    stroke: rgba(0, 255, 123, 0.25);
-    stroke-width: 2;
-  }
-
-  .bot-result {
-    font-size: 1.05rem;
-    line-height: 1.6;
-  }
-
-  .bot-result strong {
-    color: var(--green);
+  .bot-kpis {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 12px 0 16px;
   }
 
   .bot-kpi {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    margin: 12px 0;
-  }
-
-  .bot-kpi div {
-    background: rgba(0, 255, 123, 0.06);
-    border: 1px solid rgba(0, 255, 123, 0.18);
-    border-radius: 12px;
-    padding: 10px;
+    padding: 12px 13px;
+    border-radius: 14px;
+    border: 1px solid rgba(127, 127, 127, 0.22);
+    background: rgba(127, 127, 127, 0.06);
   }
 
   .bot-kpi span {
-    color: var(--muted);
     display: block;
-    font-size: 0.78rem;
+    font-size: 0.82rem;
+    opacity: 0.78;
+    margin-bottom: 3px;
   }
 
   .bot-kpi strong {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
+  }
+
+  .bot-detail {
+    padding: 12px 13px;
+    border-radius: 14px;
+    border: 1px solid rgba(127, 127, 127, 0.22);
+    background: rgba(127, 127, 127, 0.06);
+    line-height: 1.55;
+  }
+
+  .bot-detail-title {
+    font-weight: 900;
+    margin-bottom: 6px;
   }
 
   .bot-log {
-    height: 210px;
+    margin-top: 12px;
+    padding: 12px 13px;
+    border-radius: 14px;
+    border: 1px solid rgba(127, 127, 127, 0.22);
+    background: rgba(127, 127, 127, 0.05);
+    max-height: 180px;
     overflow: auto;
-    background: #020403;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 10px;
-    color: var(--green-soft);
-    font-family: Consolas, monospace;
-    font-size: 0.82rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size: 0.84rem;
     white-space: pre-wrap;
   }
 
-  .bot-warning {
-    color: var(--yellow);
-    margin-top: 10px;
-    font-size: 0.92rem;
-  }
-
-  .bot-theory code {
-    color: var(--green-soft);
-  }
-
   @media (max-width: 900px) {
-    .bot-grid,
-    .bot-output,
-    .bot-controls,
-    .bot-concepts {
+    .bot-output {
       grid-template-columns: 1fr;
+    }
+
+    #botTreeSvg {
+      height: 520px;
     }
   }
 </style>
 
-<div class="bot-tool" id="binomial-option-tool">
-  <h1>Binomial Option Tree Lab</h1>
-  <p class="bot-subtitle">
-    This tool builds a binomial tree for a stock price, then prices a European or American call/put by backward induction.
-    It is designed as a visual companion for the discrete-time no-arbitrage model used in mathematical finance.
-  </p>
+<div class="bot-container">
 
-  <div class="bot-card">
-    <h2>Key Concepts</h2>
+  <div class="bot-notes">
+    <h2>Binomial Option Tree Lab</h2>
+
+    <p>
+      This tool builds a binomial tree for an underlying asset and prices a call or put option by backward induction.
+      The goal is to see the whole tree appear progressively, from the stock price tree to the terminal payoffs and finally to the option value at the root.
+    </p>
+
+    <p>
+      At each time step, the asset price moves either up by a factor \(u\) or down by a factor \(d\).
+      Under the risk-neutral measure, the option price is obtained by discounting the expected future value.
+    </p>
+
     <div class="bot-concepts">
-      <div class="bot-concept"><strong>Underlying asset</strong>The stock or asset on which the derivative is written.</div>
-      <div class="bot-concept"><strong>Call option</strong>A contract giving the right to buy the asset at strike K.</div>
-      <div class="bot-concept"><strong>Put option</strong>A contract giving the right to sell the asset at strike K.</div>
-      <div class="bot-concept"><strong>Strike price K</strong>The fixed exercise price of the option.</div>
-      <div class="bot-concept"><strong>Maturity T</strong>The final date at which the option expires.</div>
-      <div class="bot-concept"><strong>European option</strong>Can be exercised only at maturity.</div>
-      <div class="bot-concept"><strong>American option</strong>Can be exercised at any node before maturity.</div>
-      <div class="bot-concept"><strong>Risk-free rate r</strong>The continuously compounded rate used for discounting.</div>
-      <div class="bot-concept"><strong>Up / down factors</strong>At each step, the stock moves to Su or Sd.</div>
-      <div class="bot-concept"><strong>Risk-neutral probability</strong>The probability p that makes the discounted stock a martingale.</div>
-      <div class="bot-concept"><strong>Backward induction</strong>Start from final payoffs and work backward to time 0.</div>
-      <div class="bot-concept"><strong>Replication portfolio</strong>A portfolio Delta shares + B bonds that reproduces the option value.</div>
+      <div class="bot-concept">
+        <strong>Binomial tree</strong>
+        A discrete model where the asset goes up or down at each step.
+      </div>
+
+      <div class="bot-concept">
+        <strong>Risk-neutral probability</strong>
+        The probability that makes the discounted stock price a martingale.
+      </div>
+
+      <div class="bot-concept">
+        <strong>Backward induction</strong>
+        Start from terminal payoffs and work backward to time 0.
+      </div>
+
+      <div class="bot-concept">
+        <strong>European option</strong>
+        Can be exercised only at maturity.
+      </div>
+
+      <div class="bot-concept">
+        <strong>American option</strong>
+        Can be exercised before maturity if immediate exercise is better.
+      </div>
+
+      <div class="bot-concept">
+        <strong>Delta</strong>
+        Local hedge ratio between the option and the underlying asset.
+      </div>
     </div>
   </div>
 
-  <div class="bot-grid" style="margin-top:16px;">
-    <div class="bot-card">
-      <h2>Inputs</h2>
-      <div class="bot-controls">
-        <div class="bot-field">
-          <label>Solve for</label>
-          <select id="bot-target">
-            <option value="optionPrice">Option price</option>
-            <option value="stockPrice">Underlying price S0</option>
-          </select>
-        </div>
+  <div class="bot-panel">
 
-        <div class="bot-field">
-          <label>Option type</label>
-          <select id="bot-option-type">
-            <option value="call">Call</option>
-            <option value="put">Put</option>
-          </select>
-        </div>
-
-        <div class="bot-field">
-          <label>Exercise style</label>
-          <select id="bot-style">
-            <option value="european">European</option>
-            <option value="american">American</option>
-          </select>
-        </div>
-
-        <div class="bot-field">
-          <label>Steps n</label>
-          <input id="bot-n" type="number" value="2" min="1" max="8" step="1">
-        </div>
-
-        <div class="bot-field">
-          <label>Stock price S0</label>
-          <input id="bot-s0" type="number" value="100" step="0.01">
-        </div>
-
-        <div class="bot-field">
-          <label>Strike K</label>
-          <input id="bot-k" type="number" value="100" step="0.01">
-        </div>
-
-        <div class="bot-field">
-          <label>Risk-free rate r</label>
-          <input id="bot-r" type="number" value="0.02" step="0.001">
-        </div>
-
-        <div class="bot-field">
-          <label>Maturity T</label>
-          <input id="bot-t" type="number" value="2" step="0.01">
-        </div>
-
-        <div class="bot-field">
-          <label>Up factor u</label>
-          <input id="bot-u" type="number" value="1.12" step="0.001">
-        </div>
-
-        <div class="bot-field">
-          <label>Down factor d</label>
-          <input id="bot-d" type="number" value="0.93" step="0.001">
-        </div>
-
-        <div class="bot-field">
-          <label>Known option price</label>
-          <input id="bot-known-price" type="number" value="10" step="0.01" disabled>
-        </div>
-
-        <div class="bot-field">
-          <label>Animation speed</label>
-          <select id="bot-speed">
-            <option value="900">Slow</option>
-            <option value="500">Medium</option>
-            <option value="200">Fast</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="bot-actions">
-        <button class="bot-button" id="bot-run">Generate Tree</button>
-        <button class="bot-button secondary" id="bot-reset">Reset</button>
-      </div>
-
-      <div class="bot-warning" id="bot-warning"></div>
+    <div class="bot-field">
+      <label for="botOptionType">Option type</label>
+      <select id="botOptionType">
+        <option value="call">Call</option>
+        <option value="put">Put</option>
+      </select>
     </div>
 
-    <div class="bot-card bot-theory">
-      <h2>Theory</h2>
-      <p>
-        For one step of length <code>dt = T / n</code>, the risk-neutral probability is
-      </p>
-      <p><code>p = (exp(r dt) - d) / (u - d)</code></p>
-      <p>
-        The European continuation value is
-      </p>
-      <p><code>V = exp(-r dt) [p V_up + (1 - p) V_down]</code></p>
-      <p>
-        For an American option, each node compares continuation value with immediate exercise value:
-      </p>
-      <p><code>V = max(continuation, immediate exercise)</code></p>
-      <p>
-        The delta at a node is
-      </p>
-      <p><code>Delta = (V_up - V_down) / (S_up - S_down)</code></p>
+    <div class="bot-field">
+      <label for="botStyle">Exercise style</label>
+      <select id="botStyle">
+        <option value="european">European</option>
+        <option value="american">American</option>
+      </select>
     </div>
+
+    <div class="bot-field">
+      <label for="botSteps">Steps \(n\)</label>
+      <input id="botSteps" type="number" value="3" min="1" max="10" step="1">
+    </div>
+
+    <div class="bot-field">
+      <label for="botS0">Initial price \(S_0\)</label>
+      <input id="botS0" type="number" value="100" min="0.01" step="0.01">
+    </div>
+
+    <div class="bot-field">
+      <label for="botK">Strike \(K\)</label>
+      <input id="botK" type="number" value="100" min="0.01" step="0.01">
+    </div>
+
+    <div class="bot-field">
+      <label for="botR">Risk-free rate \(r\)</label>
+      <input id="botR" type="number" value="0.02" step="0.001">
+    </div>
+
+    <div class="bot-field">
+      <label for="botT">Maturity \(T\)</label>
+      <input id="botT" type="number" value="1" min="0.01" step="0.01">
+    </div>
+
+    <div class="bot-field">
+      <label for="botU">Up factor \(u\)</label>
+      <input id="botU" type="number" value="1.12" min="0.01" step="0.001">
+    </div>
+
+    <div class="bot-field">
+      <label for="botD">Down factor \(d\)</label>
+      <input id="botD" type="number" value="0.93" min="0.01" step="0.001">
+    </div>
+
+    <div class="bot-field">
+      <label for="botVolume">Rhythm volume</label>
+      <div class="bot-volume-wrap">
+        <input id="botVolume" type="range" min="0" max="100" value="55" oninput="updateBotVolumeLabel()">
+        <span id="botVolumeValue" class="bot-volume-value">55%</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="botWarning" class="bot-warning"></div>
+
+  <div class="bot-buttons">
+    <button class="bot-btn" onclick="generateBinomialTree()">Generate tree</button>
+    <button class="bot-btn" onclick="resetBinomialTree()">Reset</button>
   </div>
 
   <div class="bot-output">
-    <div class="bot-tree-wrap">
-      <div class="bot-stage-label" id="bot-stage">Waiting for inputs...</div>
-      <div class="bot-tree" id="bot-tree"></div>
+
+    <div class="bot-tree-card">
+      <div id="botStage" class="bot-stage">Waiting for inputs...</div>
+
+      <div class="bot-tree-wrap">
+        <svg id="botTreeSvg" aria-label="Binomial option tree"></svg>
+      </div>
     </div>
 
-    <div class="bot-card">
+    <div class="bot-result-card">
       <h2>Result</h2>
-      <div class="bot-result" id="bot-result">
-        Click <strong>Generate Tree</strong> to start.
+
+      <div id="botResult">
+        Click <strong>Generate tree</strong> to start.
       </div>
-      <div class="bot-kpi" id="bot-kpi"></div>
-      <h3>Log</h3>
-      <div class="bot-log" id="bot-log"></div>
+
+      <div id="botKpis" class="bot-kpis"></div>
+
+      <div id="botDetail" class="bot-detail">
+        The selected node details will appear here during the construction.
+      </div>
+
+      <div id="botLog" class="bot-log"></div>
     </div>
+
   </div>
+
 </div>
 
 <script>
-(function () {
-  const $ = (id) => document.getElementById(id);
+  const botSvg = document.getElementById("botTreeSvg");
+  const botStage = document.getElementById("botStage");
+  const botResult = document.getElementById("botResult");
+  const botKpis = document.getElementById("botKpis");
+  const botDetail = document.getElementById("botDetail");
+  const botLog = document.getElementById("botLog");
+  const botWarning = document.getElementById("botWarning");
 
-  const ids = {
-    target: $("bot-target"),
-    optionType: $("bot-option-type"),
-    style: $("bot-style"),
-    n: $("bot-n"),
-    s0: $("bot-s0"),
-    k: $("bot-k"),
-    r: $("bot-r"),
-    t: $("bot-t"),
-    u: $("bot-u"),
-    d: $("bot-d"),
-    knownPrice: $("bot-known-price"),
-    speed: $("bot-speed"),
-    run: $("bot-run"),
-    reset: $("bot-reset"),
-    warning: $("bot-warning"),
-    tree: $("bot-tree"),
-    stage: $("bot-stage"),
-    result: $("bot-result"),
-    kpi: $("bot-kpi"),
-    log: $("bot-log")
-  };
+  let botAnimationToken = 0;
+  let botCurrentTree = null;
+  let botViewBox = null;
 
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  function updateBotVolumeLabel() {
+    const value = Number(document.getElementById("botVolume").value);
+    document.getElementById("botVolumeValue").textContent = value + "%";
   }
 
-  function fmt(x) {
-    if (!Number.isFinite(x)) return "--";
-    return Number(x).toFixed(4);
-  }
+  function botMoney(x) {
+    if (!Number.isFinite(x)) {
+      return "--";
+    }
 
-  function money(x) {
-    if (!Number.isFinite(x)) return "--";
     return "$" + Number(x).toFixed(4);
   }
 
-  function getInputs() {
+  function botNumber(x) {
+    if (!Number.isFinite(x)) {
+      return "--";
+    }
+
+    return Number(x).toFixed(4);
+  }
+
+  function botSleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  function getBotDelay(volume) {
+    if (volume >= 100) {
+      return 0;
+    }
+
+    const normalized = volume / 100;
+    return Math.round(950 * Math.pow(1 - normalized, 3.2));
+  }
+
+  function getBotInputs() {
     return {
-      target: ids.target.value,
-      optionType: ids.optionType.value,
-      style: ids.style.value,
-      n: Math.max(1, Math.min(8, parseInt(ids.n.value, 10))),
-      s0: parseFloat(ids.s0.value),
-      k: parseFloat(ids.k.value),
-      r: parseFloat(ids.r.value),
-      t: parseFloat(ids.t.value),
-      u: parseFloat(ids.u.value),
-      d: parseFloat(ids.d.value),
-      knownPrice: parseFloat(ids.knownPrice.value),
-      speed: parseInt(ids.speed.value, 10)
+      optionType: document.getElementById("botOptionType").value,
+      style: document.getElementById("botStyle").value,
+      n: Math.max(1, Math.min(10, Number(document.getElementById("botSteps").value))),
+      s0: Number(document.getElementById("botS0").value),
+      k: Number(document.getElementById("botK").value),
+      r: Number(document.getElementById("botR").value),
+      t: Number(document.getElementById("botT").value),
+      u: Number(document.getElementById("botU").value),
+      d: Number(document.getElementById("botD").value),
+      volume: Number(document.getElementById("botVolume").value)
     };
   }
 
-  function validate(params) {
-    if (params.u <= params.d) return "The up factor u must be greater than the down factor d.";
-    if (params.d <= 0 || params.u <= 0) return "The up and down factors must be positive.";
-    if (params.t <= 0) return "Maturity T must be positive.";
-    if (params.n < 1 || params.n > 8) return "For readability, n must be between 1 and 8.";
-    if (params.target === "optionPrice" && params.s0 <= 0) return "S0 must be positive.";
-    if (params.k <= 0) return "K must be positive.";
-    if (params.target === "stockPrice" && params.knownPrice < 0) return "Known option price must be non-negative.";
+  function validateBotInputs(params) {
+    if (params.s0 <= 0) {
+      return "The initial stock price S0 must be positive.";
+    }
+
+    if (params.k <= 0) {
+      return "The strike K must be positive.";
+    }
+
+    if (params.t <= 0) {
+      return "The maturity T must be positive.";
+    }
+
+    if (params.u <= 0 || params.d <= 0) {
+      return "The up and down factors must be positive.";
+    }
+
+    if (params.u <= params.d) {
+      return "The up factor u must be greater than the down factor d.";
+    }
 
     const dt = params.t / params.n;
     const p = (Math.exp(params.r * dt) - params.d) / (params.u - params.d);
+
     if (p <= 0 || p >= 1) {
-      return "No-arbitrage condition failed: the risk-neutral probability is not between 0 and 1.";
+      return "No-arbitrage condition failed: the risk-neutral probability must be between 0 and 1.";
     }
+
     return "";
   }
 
-  function payoff(s, k, type) {
-    if (type === "call") return Math.max(s - k, 0);
+  function botPayoff(s, k, optionType) {
+    if (optionType === "call") {
+      return Math.max(s - k, 0);
+    }
+
     return Math.max(k - s, 0);
   }
 
-  function priceOption(params, s0Override = null) {
+  function priceBinomialOption(params) {
     const n = params.n;
-    const s0 = s0Override === null ? params.s0 : s0Override;
     const dt = params.t / n;
     const discount = Math.exp(-params.r * dt);
     const p = (Math.exp(params.r * dt) - params.d) / (params.u - params.d);
@@ -524,46 +542,54 @@ author_profile: true
     const stock = [];
     const option = [];
     const delta = [];
-    const bond = [];
     const early = [];
+    const continuation = [];
+    const immediate = [];
 
     for (let i = 0; i <= n; i++) {
       stock[i] = [];
       option[i] = [];
       delta[i] = [];
-      bond[i] = [];
       early[i] = [];
+      continuation[i] = [];
+      immediate[i] = [];
+
       for (let j = 0; j <= i; j++) {
-        stock[i][j] = s0 * Math.pow(params.u, j) * Math.pow(params.d, i - j);
+        stock[i][j] =
+          params.s0 *
+          Math.pow(params.u, j) *
+          Math.pow(params.d, i - j);
+
         option[i][j] = null;
         delta[i][j] = null;
-        bond[i][j] = null;
         early[i][j] = false;
+        continuation[i][j] = null;
+        immediate[i][j] = botPayoff(stock[i][j], params.k, params.optionType);
       }
     }
 
     for (let j = 0; j <= n; j++) {
-      option[n][j] = payoff(stock[n][j], params.k, params.optionType);
+      option[n][j] = immediate[n][j];
     }
 
     for (let i = n - 1; i >= 0; i--) {
       for (let j = 0; j <= i; j++) {
-        const upV = option[i + 1][j + 1];
-        const downV = option[i + 1][j];
-        const upS = stock[i + 1][j + 1];
-        const downS = stock[i + 1][j];
-        const continuation = discount * (p * upV + (1 - p) * downV);
-        const immediate = payoff(stock[i][j], params.k, params.optionType);
+        const upValue = option[i + 1][j + 1];
+        const downValue = option[i + 1][j];
+        const upStock = stock[i + 1][j + 1];
+        const downStock = stock[i + 1][j];
 
-        if (params.style === "american" && immediate > continuation) {
-          option[i][j] = immediate;
+        const cont = discount * (p * upValue + (1 - p) * downValue);
+        continuation[i][j] = cont;
+
+        if (params.style === "american" && immediate[i][j] > cont) {
+          option[i][j] = immediate[i][j];
           early[i][j] = true;
         } else {
-          option[i][j] = continuation;
+          option[i][j] = cont;
         }
 
-        delta[i][j] = (upV - downV) / (upS - downS);
-        bond[i][j] = discount * (upV - delta[i][j] * upS);
+        delta[i][j] = (upValue - downValue) / (upStock - downStock);
       }
     }
 
@@ -571,8 +597,9 @@ author_profile: true
       stock,
       option,
       delta,
-      bond,
       early,
+      continuation,
+      immediate,
       price: option[0][0],
       p,
       dt,
@@ -580,229 +607,588 @@ author_profile: true
     };
   }
 
-  function solveForStockPrice(params) {
-    let low = 0.0001;
-    let high = Math.max(params.k * 5, 500);
+  function botLayout(params) {
+    const n = params.n;
 
-    for (let tries = 0; tries < 20; tries++) {
-      const priceHigh = priceOption(params, high).price;
-      if (priceHigh >= params.knownPrice) break;
-      high *= 2;
+    const xGap = 165;
+    const yGap = 82;
+    const marginX = 90;
+    const marginY = 90;
+
+    const width = marginX * 2 + xGap * n + 170;
+    const height = Math.max(560, marginY * 2 + yGap * n + 150);
+
+    const centerY = height / 2;
+
+    function position(i, j) {
+      return {
+        x: marginX + i * xGap,
+        y: centerY + (i / 2 - j) * yGap
+      };
     }
 
-    for (let iter = 0; iter < 80; iter++) {
-      const mid = (low + high) / 2;
-      const priceMid = priceOption(params, mid).price;
-      if (priceMid < params.knownPrice) low = mid;
-      else high = mid;
-    }
-
-    return (low + high) / 2;
+    return {
+      width,
+      height,
+      position
+    };
   }
 
-  function positionForNode(i, j, n) {
-    const xGap = 680 / Math.max(n, 1);
-    const yGap = 330 / Math.max(n + 1, 2);
-    const x = 70 + i * xGap;
-    const centerY = 215;
-    const y = centerY + (i / 2 - j) * yGap * 1.8;
-    return { x, y };
-  }
+  function botColumnViewBox(params, column) {
+    const layout = botLayout(params);
+    const n = params.n;
 
-  function clearTree() {
-    ids.tree.innerHTML = "";
-  }
+    const visibleColumn = Math.max(0, Math.min(column, n));
+    const minX = 0;
+    const maxX = layout.position(visibleColumn, visibleColumn).x + 145;
 
-  function createLines(n) {
-    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("class", "bot-line-layer");
-    svg.setAttribute("viewBox", "0 0 820 430");
+    let minY = Infinity;
+    let maxY = -Infinity;
 
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i <= visibleColumn; i++) {
       for (let j = 0; j <= i; j++) {
-        const a = positionForNode(i, j, n);
-        const down = positionForNode(i + 1, j, n);
-        const up = positionForNode(i + 1, j + 1, n);
-
-        [down, up].forEach(b => {
-          const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-          line.setAttribute("x1", a.x);
-          line.setAttribute("y1", a.y);
-          line.setAttribute("x2", b.x);
-          line.setAttribute("y2", b.y);
-          line.setAttribute("class", "bot-line");
-          svg.appendChild(line);
-        });
+        const p = layout.position(i, j);
+        minY = Math.min(minY, p.y - 70);
+        maxY = Math.max(maxY, p.y + 70);
       }
     }
 
-    ids.tree.appendChild(svg);
+    minY = Math.max(0, minY);
+    maxY = Math.min(layout.height, maxY);
+
+    return {
+      x: minX,
+      y: minY,
+      w: Math.min(layout.width, maxX - minX),
+      h: Math.max(260, maxY - minY)
+    };
   }
 
-  function createNode(i, j, n) {
-    const pos = positionForNode(i, j, n);
-    const node = document.createElement("div");
-    node.className = "bot-node";
-    node.id = `bot-node-${i}-${j}`;
-    node.style.left = pos.x + "px";
-    node.style.top = pos.y + "px";
-    ids.tree.appendChild(node);
-    return node;
+  function botFullViewBox(params) {
+    const layout = botLayout(params);
+
+    return {
+      x: 0,
+      y: 0,
+      w: layout.width,
+      h: layout.height
+    };
   }
 
-  function setNodeContent(i, j, html, className = "") {
-    const node = $(`bot-node-${i}-${j}`);
-    if (!node) return;
-    node.innerHTML = html;
-    node.className = "bot-node visible " + className;
+  function setBotViewBox(box) {
+    botViewBox = box;
+    botSvg.setAttribute("viewBox", `${box.x} ${box.y} ${box.w} ${box.h}`);
   }
 
-  function log(message) {
-    ids.log.textContent += message + "\n";
-    ids.log.scrollTop = ids.log.scrollHeight;
+  function animateBotViewBox(targetBox, duration = 450) {
+    if (!botViewBox) {
+      setBotViewBox(targetBox);
+      return Promise.resolve();
+    }
+
+    const startBox = { ...botViewBox };
+    const startTime = performance.now();
+
+    return new Promise(resolve => {
+      function frame(now) {
+        const progress = Math.min(1, (now - startTime) / duration);
+        const eased = 1 - Math.pow(1 - progress, 3);
+
+        const current = {
+          x: startBox.x + (targetBox.x - startBox.x) * eased,
+          y: startBox.y + (targetBox.y - startBox.y) * eased,
+          w: startBox.w + (targetBox.w - startBox.w) * eased,
+          h: startBox.h + (targetBox.h - startBox.h) * eased
+        };
+
+        setBotViewBox(current);
+
+        if (progress < 1) {
+          requestAnimationFrame(frame);
+        } else {
+          setBotViewBox(targetBox);
+          resolve();
+        }
+      }
+
+      requestAnimationFrame(frame);
+    });
   }
 
-  async function animate(result, params) {
-    clearTree();
-    ids.log.textContent = "";
-    createLines(params.n);
+  function clearBotSvg() {
+    botSvg.innerHTML = "";
+  }
+
+  function createSvgElement(name) {
+    return document.createElementNS("http://www.w3.org/2000/svg", name);
+  }
+
+  function createBotTreeSkeleton(params) {
+    clearBotSvg();
+
+    const layout = botLayout(params);
+    botSvg.setAttribute("viewBox", `0 0 ${layout.width} ${layout.height}`);
+
+    const edgeLayer = createSvgElement("g");
+    edgeLayer.setAttribute("id", "botEdgeLayer");
+
+    const nodeLayer = createSvgElement("g");
+    nodeLayer.setAttribute("id", "botNodeLayer");
+
+    botSvg.appendChild(edgeLayer);
+    botSvg.appendChild(nodeLayer);
+
+    for (let i = 0; i < params.n; i++) {
+      for (let j = 0; j <= i; j++) {
+        const start = layout.position(i, j);
+        const down = layout.position(i + 1, j);
+        const up = layout.position(i + 1, j + 1);
+
+        const downLine = createSvgElement("line");
+        downLine.setAttribute("x1", start.x);
+        downLine.setAttribute("y1", start.y);
+        downLine.setAttribute("x2", down.x);
+        downLine.setAttribute("y2", down.y);
+        downLine.setAttribute("class", "bot-edge");
+        downLine.setAttribute("id", `bot-edge-${i}-${j}-down`);
+        edgeLayer.appendChild(downLine);
+
+        const upLine = createSvgElement("line");
+        upLine.setAttribute("x1", start.x);
+        upLine.setAttribute("y1", start.y);
+        upLine.setAttribute("x2", up.x);
+        upLine.setAttribute("y2", up.y);
+        upLine.setAttribute("class", "bot-edge");
+        upLine.setAttribute("id", `bot-edge-${i}-${j}-up`);
+        edgeLayer.appendChild(upLine);
+      }
+    }
 
     for (let i = 0; i <= params.n; i++) {
-      for (let j = 0; j <= i; j++) createNode(i, j, params.n);
-    }
-
-    ids.stage.textContent = "Step 1 — Building the stock price tree.";
-    log("Building stock price tree...");
-
-    for (let i = 0; i <= params.n; i++) {
       for (let j = 0; j <= i; j++) {
-        setNodeContent(i, j, `
-          <div class="bot-node-title">S(${i},${j})</div>
-          <div class="bot-node-main">${money(result.stock[i][j])}</div>
-        `, "active");
-        await sleep(params.speed);
-        setNodeContent(i, j, `
-          <div class="bot-node-title">S(${i},${j})</div>
-          <div class="bot-node-main">${money(result.stock[i][j])}</div>
-        `);
+        const p = layout.position(i, j);
+
+        const group = createSvgElement("g");
+        group.setAttribute("id", `bot-node-${i}-${j}`);
+        group.setAttribute("class", "bot-node-group");
+        group.setAttribute("transform", `translate(${p.x}, ${p.y})`);
+
+        const rect = createSvgElement("rect");
+        rect.setAttribute("x", -58);
+        rect.setAttribute("y", -33);
+        rect.setAttribute("width", 116);
+        rect.setAttribute("height", 66);
+        rect.setAttribute("rx", 13);
+        rect.setAttribute("class", "bot-node-rect");
+
+        const title = createSvgElement("text");
+        title.setAttribute("x", 0);
+        title.setAttribute("y", -14);
+        title.setAttribute("text-anchor", "middle");
+        title.setAttribute("class", "bot-node-title");
+        title.setAttribute("id", `bot-node-${i}-${j}-title`);
+
+        const main = createSvgElement("text");
+        main.setAttribute("x", 0);
+        main.setAttribute("y", 5);
+        main.setAttribute("text-anchor", "middle");
+        main.setAttribute("class", "bot-node-main");
+        main.setAttribute("id", `bot-node-${i}-${j}-main`);
+
+        const small = createSvgElement("text");
+        small.setAttribute("x", 0);
+        small.setAttribute("y", 23);
+        small.setAttribute("text-anchor", "middle");
+        small.setAttribute("class", "bot-node-small");
+        small.setAttribute("id", `bot-node-${i}-${j}-small`);
+
+        group.appendChild(rect);
+        group.appendChild(title);
+        group.appendChild(main);
+        group.appendChild(small);
+
+        nodeLayer.appendChild(group);
       }
     }
-
-    ids.stage.textContent = "Step 2 — Computing terminal payoffs.";
-    log("Computing terminal payoffs at maturity...");
-
-    for (let j = 0; j <= params.n; j++) {
-      setNodeContent(params.n, j, `
-        <div class="bot-node-title">Payoff</div>
-        <div class="bot-node-main">${money(result.option[params.n][j])}</div>
-        <div class="bot-node-small">S = ${money(result.stock[params.n][j])}</div>
-      `, "active");
-      await sleep(params.speed);
-      setNodeContent(params.n, j, `
-        <div class="bot-node-title">Payoff</div>
-        <div class="bot-node-main">${money(result.option[params.n][j])}</div>
-        <div class="bot-node-small">S = ${money(result.stock[params.n][j])}</div>
-      `);
-    }
-
-    ids.stage.textContent = "Step 3 — Backward induction.";
-    log("Working backward to time 0...");
-
-    for (let i = params.n - 1; i >= 0; i--) {
-      for (let j = 0; j <= i; j++) {
-        const exerciseClass = result.early[i][j] ? "exercise" : "active";
-        setNodeContent(i, j, `
-          <div class="bot-node-title">V(${i},${j})</div>
-          <div class="bot-node-main">${money(result.option[i][j])}</div>
-          <div class="bot-node-small">S = ${money(result.stock[i][j])}</div>
-          <div class="bot-node-small">Δ = ${fmt(result.delta[i][j])}</div>
-          ${result.early[i][j] ? '<div class="bot-node-small" style="color:#ffd166;">Early exercise</div>' : ''}
-        `, exerciseClass);
-        await sleep(params.speed);
-        setNodeContent(i, j, `
-          <div class="bot-node-title">V(${i},${j})</div>
-          <div class="bot-node-main">${money(result.option[i][j])}</div>
-          <div class="bot-node-small">S = ${money(result.stock[i][j])}</div>
-          <div class="bot-node-small">Δ = ${fmt(result.delta[i][j])}</div>
-          ${result.early[i][j] ? '<div class="bot-node-small" style="color:#ffd166;">Early exercise</div>' : ''}
-        `, result.early[i][j] ? "exercise" : "");
-      }
-    }
-
-    ids.stage.textContent = "Done — the price at the root is the no-arbitrage option price.";
-    log("Done.");
   }
 
-  function renderKpis(params, result, solvedS0 = null) {
-    const displayS0 = solvedS0 === null ? params.s0 : solvedS0;
-    ids.kpi.innerHTML = `
-      <div><span>Risk-neutral probability</span><strong>${fmt(result.p)}</strong></div>
-      <div><span>Discount factor per step</span><strong>${fmt(result.discount)}</strong></div>
-      <div><span>Stock price S0</span><strong>${money(displayS0)}</strong></div>
-      <div><span>Option price</span><strong>${money(result.price)}</strong></div>
-    `;
+  function getBotNode(i, j) {
+    return document.getElementById(`bot-node-${i}-${j}`);
   }
 
-  async function runTool() {
-    const params = getInputs();
-    ids.warning.textContent = "";
-    const error = validate(params);
-    if (error) {
-      ids.warning.textContent = error;
+  function revealBotNode(i, j) {
+    const node = getBotNode(i, j);
+
+    if (node) {
+      node.classList.add("bot-node-visible");
+    }
+  }
+
+  function activateBotNode(i, j, active = true) {
+    const node = getBotNode(i, j);
+
+    if (!node) {
       return;
     }
 
-    ids.run.disabled = true;
-
-    let result;
-    let solvedS0 = null;
-
-    if (params.target === "stockPrice") {
-      solvedS0 = solveForStockPrice(params);
-      result = priceOption(params, solvedS0);
-      ids.result.innerHTML = `
-        Solved underlying price:<br>
-        <strong>${money(solvedS0)}</strong><br><br>
-        Check: the model option price is <strong>${money(result.price)}</strong>.
-      `;
-      log(`Solved S0 = ${fmt(solvedS0)} from known option price ${fmt(params.knownPrice)}.`);
+    if (active) {
+      node.classList.add("bot-node-active");
     } else {
-      result = priceOption(params);
-      ids.result.innerHTML = `
-        ${params.style.charAt(0).toUpperCase() + params.style.slice(1)} ${params.optionType} price:<br>
-        <strong>${money(result.price)}</strong>
-      `;
-      log(`Option price = ${fmt(result.price)}.`);
+      node.classList.remove("bot-node-active");
+    }
+  }
+
+  function markTerminalNode(i, j) {
+    const node = getBotNode(i, j);
+
+    if (node) {
+      node.classList.add("bot-node-terminal");
+    }
+  }
+
+  function markEarlyExerciseNode(i, j) {
+    const node = getBotNode(i, j);
+
+    if (node) {
+      node.classList.add("bot-node-early");
+    }
+  }
+
+  function revealBotEdgesFrom(i, j) {
+    const down = document.getElementById(`bot-edge-${i}-${j}-down`);
+    const up = document.getElementById(`bot-edge-${i}-${j}-up`);
+
+    if (down) {
+      down.classList.add("bot-edge-visible");
     }
 
-    renderKpis(params, result, solvedS0);
-    await animate(result, { ...params, s0: solvedS0 === null ? params.s0 : solvedS0 });
-    ids.run.disabled = false;
+    if (up) {
+      up.classList.add("bot-edge-visible");
+    }
   }
 
-  function resetTool() {
-    clearTree();
-    ids.stage.textContent = "Waiting for inputs...";
-    ids.result.innerHTML = "Click <strong>Generate Tree</strong> to start.";
-    ids.kpi.innerHTML = "";
-    ids.log.textContent = "";
-    ids.warning.textContent = "";
+  function setBotNodeText(i, j, title, main, small) {
+    const titleEl = document.getElementById(`bot-node-${i}-${j}-title`);
+    const mainEl = document.getElementById(`bot-node-${i}-${j}-main`);
+    const smallEl = document.getElementById(`bot-node-${i}-${j}-small`);
+
+    if (titleEl) {
+      titleEl.textContent = title;
+    }
+
+    if (mainEl) {
+      mainEl.textContent = main;
+    }
+
+    if (smallEl) {
+      smallEl.textContent = small;
+    }
   }
 
-  function updateTargetState() {
-    const solvingStock = ids.target.value === "stockPrice";
-    ids.s0.disabled = solvingStock;
-    ids.knownPrice.disabled = !solvingStock;
+  function writeBotLog(message) {
+    botLog.textContent += message + "\n";
+    botLog.scrollTop = botLog.scrollHeight;
   }
 
-  ids.target.addEventListener("change", updateTargetState);
-  ids.run.addEventListener("click", runTool);
-  ids.reset.addEventListener("click", resetTool);
-  updateTargetState();
-})();
+  function setBotDetail(html) {
+    botDetail.innerHTML = html;
+  }
+
+  function renderBotKpis(params, tree) {
+    botKpis.innerHTML = `
+      <div class="bot-kpi">
+        <span>Risk-neutral probability</span>
+        <strong>${botNumber(tree.p)}</strong>
+      </div>
+
+      <div class="bot-kpi">
+        <span>Discount factor per step</span>
+        <strong>${botNumber(tree.discount)}</strong>
+      </div>
+
+      <div class="bot-kpi">
+        <span>Time step</span>
+        <strong>${botNumber(tree.dt)}</strong>
+      </div>
+
+      <div class="bot-kpi">
+        <span>Option price at root</span>
+        <strong>${botMoney(tree.price)}</strong>
+      </div>
+    `;
+  }
+
+  function renderBotResult(params, tree) {
+    const style = params.style.charAt(0).toUpperCase() + params.style.slice(1);
+    const type = params.optionType.charAt(0).toUpperCase() + params.optionType.slice(1);
+
+    botResult.innerHTML = `
+      <p>
+        ${style} ${type} option price:
+      </p>
+      <h2>${botMoney(tree.price)}</h2>
+    `;
+  }
+
+  async function animateStockTree(params, tree, token) {
+    const delay = getBotDelay(params.volume);
+
+    botStage.textContent = "Step 1 — Building the stock price tree.";
+    writeBotLog("Building stock price tree.");
+
+    for (let i = 0; i <= params.n; i++) {
+      if (token !== botAnimationToken) {
+        return;
+      }
+
+      await animateBotViewBox(botColumnViewBox(params, i), 420);
+
+      for (let j = 0; j <= i; j++) {
+        if (token !== botAnimationToken) {
+          return;
+        }
+
+        if (i > 0 && j < i) {
+          revealBotEdgesFrom(i - 1, j);
+        }
+
+        if (i > 0 && j > 0) {
+          revealBotEdgesFrom(i - 1, j - 1);
+        }
+
+        setBotNodeText(
+          i,
+          j,
+          `S(${i},${j})`,
+          botMoney(tree.stock[i][j]),
+          "stock price"
+        );
+
+        revealBotNode(i, j);
+        activateBotNode(i, j, true);
+
+        setBotDetail(`
+          <div class="bot-detail-title">Stock node</div>
+          <strong>Node:</strong> (${i}, ${j})<br>
+          <strong>Stock price:</strong> ${botMoney(tree.stock[i][j])}<br>
+          <strong>Formula:</strong> S0 × u^${j} × d^${i - j}
+        `);
+
+        await botSleep(delay);
+
+        activateBotNode(i, j, false);
+      }
+    }
+  }
+
+  async function animateTerminalPayoffs(params, tree, token) {
+    const delay = getBotDelay(params.volume);
+
+    botStage.textContent = "Step 2 — Computing terminal payoffs.";
+    writeBotLog("Computing payoffs at maturity.");
+
+    await animateBotViewBox(botFullViewBox(params), 500);
+
+    for (let j = 0; j <= params.n; j++) {
+      if (token !== botAnimationToken) {
+        return;
+      }
+
+      setBotNodeText(
+        params.n,
+        j,
+        `Payoff`,
+        botMoney(tree.option[params.n][j]),
+        `S = ${botMoney(tree.stock[params.n][j])}`
+      );
+
+      markTerminalNode(params.n, j);
+      activateBotNode(params.n, j, true);
+
+      setBotDetail(`
+        <div class="bot-detail-title">Terminal payoff</div>
+        <strong>Node:</strong> (${params.n}, ${j})<br>
+        <strong>Stock price:</strong> ${botMoney(tree.stock[params.n][j])}<br>
+        <strong>Payoff:</strong> ${botMoney(tree.option[params.n][j])}
+      `);
+
+      await botSleep(delay);
+
+      activateBotNode(params.n, j, false);
+    }
+  }
+
+  async function animateBackwardInduction(params, tree, token) {
+    const delay = getBotDelay(params.volume);
+
+    botStage.textContent = "Step 3 — Backward induction.";
+    writeBotLog("Working backward from maturity to time 0.");
+
+    for (let i = params.n - 1; i >= 0; i--) {
+      if (token !== botAnimationToken) {
+        return;
+      }
+
+      for (let j = 0; j <= i; j++) {
+        if (token !== botAnimationToken) {
+          return;
+        }
+
+        const early = tree.early[i][j];
+
+        setBotNodeText(
+          i,
+          j,
+          `V(${i},${j})`,
+          botMoney(tree.option[i][j]),
+          `Δ = ${botNumber(tree.delta[i][j])}`
+        );
+
+        if (early) {
+          markEarlyExerciseNode(i, j);
+        }
+
+        activateBotNode(i, j, true);
+
+        const earlyText = early
+          ? "<br><strong>Decision:</strong> early exercise"
+          : "<br><strong>Decision:</strong> continue";
+
+        setBotDetail(`
+          <div class="bot-detail-title">Backward induction</div>
+          <strong>Node:</strong> (${i}, ${j})<br>
+          <strong>Stock price:</strong> ${botMoney(tree.stock[i][j])}<br>
+          <strong>Continuation value:</strong> ${botMoney(tree.continuation[i][j])}<br>
+          <strong>Immediate exercise value:</strong> ${botMoney(tree.immediate[i][j])}<br>
+          <strong>Option value:</strong> ${botMoney(tree.option[i][j])}<br>
+          <strong>Delta:</strong> ${botNumber(tree.delta[i][j])}
+          ${params.style === "american" ? earlyText : ""}
+        `);
+
+        await botSleep(delay);
+
+        activateBotNode(i, j, false);
+      }
+    }
+  }
+
+  async function generateBinomialTree() {
+    const params = getBotInputs();
+    const error = validateBotInputs(params);
+
+    botWarning.style.display = "none";
+    botWarning.textContent = "";
+
+    if (error) {
+      botWarning.textContent = error;
+      botWarning.style.display = "block";
+      return;
+    }
+
+    botAnimationToken += 1;
+    const token = botAnimationToken;
+
+    botLog.textContent = "";
+    botResult.innerHTML = "Building tree...";
+    botKpis.innerHTML = "";
+    botDetail.innerHTML = "The selected node details will appear here during the construction.";
+
+    const tree = priceBinomialOption(params);
+    botCurrentTree = tree;
+
+    createBotTreeSkeleton(params);
+    setBotViewBox(botColumnViewBox(params, 0));
+
+    renderBotKpis(params, tree);
+
+    if (params.volume >= 100) {
+      for (let i = 0; i <= params.n; i++) {
+        for (let j = 0; j <= i; j++) {
+          if (i < params.n) {
+            revealBotEdgesFrom(i, j);
+          }
+
+          if (i === params.n) {
+            setBotNodeText(
+              i,
+              j,
+              "Payoff",
+              botMoney(tree.option[i][j]),
+              `S = ${botMoney(tree.stock[i][j])}`
+            );
+            markTerminalNode(i, j);
+          } else {
+            setBotNodeText(
+              i,
+              j,
+              `V(${i},${j})`,
+              botMoney(tree.option[i][j]),
+              i < params.n ? `Δ = ${botNumber(tree.delta[i][j])}` : ""
+            );
+          }
+
+          if (tree.early[i][j]) {
+            markEarlyExerciseNode(i, j);
+          }
+
+          revealBotNode(i, j);
+        }
+      }
+
+      setBotViewBox(botFullViewBox(params));
+      renderBotResult(params, tree);
+
+      botStage.textContent = "Done — the whole tree is visible.";
+      writeBotLog("Tree generated instantly.");
+      setBotDetail(`
+        <div class="bot-detail-title">Root price</div>
+        <strong>Option value at time 0:</strong> ${botMoney(tree.price)}<br>
+        <strong>Risk-neutral probability:</strong> ${botNumber(tree.p)}<br>
+        <strong>Discount factor:</strong> ${botNumber(tree.discount)}
+      `);
+
+      return;
+    }
+
+    await animateStockTree(params, tree, token);
+    if (token !== botAnimationToken) return;
+
+    await animateTerminalPayoffs(params, tree, token);
+    if (token !== botAnimationToken) return;
+
+    await animateBackwardInduction(params, tree, token);
+    if (token !== botAnimationToken) return;
+
+    await animateBotViewBox(botFullViewBox(params), 500);
+
+    renderBotResult(params, tree);
+
+    botStage.textContent = "Done — the price at the root is the binomial option price.";
+    writeBotLog("Done.");
+
+    setBotDetail(`
+      <div class="bot-detail-title">Root price</div>
+      <strong>Option value at time 0:</strong> ${botMoney(tree.price)}<br>
+      <strong>Risk-neutral probability:</strong> ${botNumber(tree.p)}<br>
+      <strong>Discount factor:</strong> ${botNumber(tree.discount)}
+    `);
+  }
+
+  function resetBinomialTree() {
+    botAnimationToken += 1;
+    botCurrentTree = null;
+    botViewBox = null;
+
+    clearBotSvg();
+
+    botStage.textContent = "Waiting for inputs...";
+    botResult.innerHTML = "Click <strong>Generate tree</strong> to start.";
+    botKpis.innerHTML = "";
+    botDetail.innerHTML = "The selected node details will appear here during the construction.";
+    botLog.textContent = "";
+    botWarning.textContent = "";
+    botWarning.style.display = "none";
+  }
+
+  updateBotVolumeLabel();
 </script>
-
-## Notes
-
-This tool uses a discrete-time binomial model. It is best for learning the mechanics of risk-neutral pricing, backward induction, American early exercise, and replication. For large values of `n`, the tree becomes harder to read visually, so the interactive display is intentionally limited to small trees.
-
