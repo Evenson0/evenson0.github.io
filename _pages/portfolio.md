@@ -1,3 +1,4 @@
+```markdown
 ---
 layout: single
 title: "Portfolio"
@@ -24,11 +25,26 @@ author_profile: true
   padding: 1.4rem;
   border: 1px solid rgba(127, 127, 127, 0.25);
   border-radius: 14px;
-  text-decoration: none;
   color: inherit;
   background: rgba(127, 127, 127, 0.07);
   min-height: 210px;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+/* Remove all underline effects from the whole card and every child element */
+.portfolio-card,
+.portfolio-card:link,
+.portfolio-card:visited,
+.portfolio-card:hover,
+.portfolio-card:focus,
+.portfolio-card:active,
+.portfolio-card *,
+.portfolio-card:link *,
+.portfolio-card:visited *,
+.portfolio-card:hover *,
+.portfolio-card:focus *,
+.portfolio-card:active * {
+  text-decoration: none !important;
 }
 
 .portfolio-card:hover {
@@ -36,16 +52,6 @@ author_profile: true
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
   border-color: rgba(127, 127, 127, 0.45);
   background: rgba(127, 127, 127, 0.11);
-  text-decoration: none;
-  .portfolio-card,
-  .portfolio-card:hover,
-  .portfolio-card:focus,
-  .portfolio-card:visited,
-  .portfolio-card *,
-  .portfolio-card:hover *,
-  .portfolio-card:focus *,
-  .portfolio-card:visited * {
-    text-decoration: none !important;
 }
 
 .portfolio-icon {
