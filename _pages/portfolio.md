@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: single
 title: "Portfolio"
