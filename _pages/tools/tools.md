@@ -265,8 +265,18 @@ permalink: /tools/
 
 <h2 class="lab-section-title">Quantitative Finance</h2>
 
-  <div class="lab-coming">
-    Tools coming soon.
+  <div class="lab-grid">
+
+    <a href="/tools/binomial-option-tree/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Binomial Option Tree</h3>
+        <p class="lab-card-desc">
+          Build an animated binomial tree, compare European and American options, and price calls or puts by backward induction.
+        </p>
+        <p class="lab-card-cta">Open tool →</p>
+      </div>
+    </a>
+
   </div>
 
 </div>
