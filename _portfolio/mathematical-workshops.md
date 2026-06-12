@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Mathematical Workshops"
 excerpt: "A collection of mathematical problem-solving articles written in an olympiad-style format, with detailed and pedagogical solutions."
@@ -41,4 +40,3 @@ Active project.
 ## Links
 
 Articles are available on the blog. GitHub archive coming soon.
-```
