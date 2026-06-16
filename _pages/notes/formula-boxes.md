@@ -886,6 +886,205 @@ mathjax: true
 
 
 
+
+<div class="fm-proof-card">
+  <div class="fm-proof-label">Increasing annuity</div>
+  <h3>The \(P,Q\) method for arithmetic annuities</h3>
+
+  <p>
+    The \(P,Q\) method is a shortcut for valuing an arithmetic annuity whose payments increase
+    by a constant amount each period.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>Payments:</strong>
+    \[
+    P,\quad P+Q,\quad P+2Q,\quad \ldots,\quad P+(n-1)Q
+    \]
+  </div>
+
+  <p>
+    Here, \(P\) is the first payment and \(Q\) is the constant increase from one payment to the next.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>PV shortcut:</strong>
+    \[
+    PV
+    =
+    \left(P+\frac{Q}{i}\right)a_{\overline{n}|}
+    -
+    \frac{Qn}{i}v^n
+    \]
+  </div>
+
+  <div class="fm-formula-row">
+    <strong>BA II Plus setup:</strong>
+    \[
+    N=n,
+    \qquad
+    I/Y=100i,
+    \qquad
+    PMT=P+\frac{Q}{i},
+    \qquad
+    FV=-\frac{Qn}{i}.
+    \]
+  </div>
+
+  <details class="fm-toggle">
+    <summary>Show derivation</summary>
+    <div class="fm-toggle-content">
+      <p>
+        Start with the present value of the arithmetic payment stream:
+      </p>
+
+      \[
+      PV
+      =
+      Pv+(P+Q)v^2+(P+2Q)v^3+\cdots+(P+(n-1)Q)v^n.
+      \]
+
+      <p>
+        Separate the level part and the increasing part:
+      </p>
+
+      \[
+      PV
+      =
+      P(v+v^2+\cdots+v^n)
+      +
+      Q(v^2+2v^3+\cdots+(n-1)v^n).
+      \]
+
+      <p>
+        The first part is simply:
+      </p>
+
+      \[
+      P(v+v^2+\cdots+v^n)
+      =
+      Pa_{\overline{n}|}.
+      \]
+
+      <p>
+        For the increasing part, use the identity
+      </p>
+
+      \[
+      (Ia)_{\overline{n}|}
+      =
+      v+2v^2+3v^3+\cdots+nv^n.
+      \]
+
+      <p>
+        Since the increasing part starts at \(v^2\), we can write:
+      </p>
+
+      \[
+      v^2+2v^3+\cdots+(n-1)v^n
+      =
+      (Ia)_{\overline{n}|}
+      -
+      a_{\overline{n}|}.
+      \]
+
+      <p>
+        Therefore,
+      </p>
+
+      \[
+      PV
+      =
+      Pa_{\overline{n}|}
+      +
+      Q\left((Ia)_{\overline{n}|}-a_{\overline{n}|}\right).
+      \]
+
+      \[
+      PV
+      =
+      (P-Q)a_{\overline{n}|}
+      +
+      Q(Ia)_{\overline{n}|}.
+      \]
+
+      <p>
+        Now use the closed form:
+      </p>
+
+      \[
+      (Ia)_{\overline{n}|}
+      =
+      \frac{\ddot{a}_{\overline{n}|}-nv^n}{i}.
+      \]
+
+      <p>
+        Since \(\ddot{a}_{\overline{n}|}=(1+i)a_{\overline{n}|}\), we get:
+      </p>
+
+      \[
+      (Ia)_{\overline{n}|}
+      =
+      \frac{(1+i)a_{\overline{n}|}-nv^n}{i}.
+      \]
+
+      <p>
+        Substitute this into the present value:
+      </p>
+
+      \[
+      PV
+      =
+      (P-Q)a_{\overline{n}|}
+      +
+      Q\left(
+      \frac{(1+i)a_{\overline{n}|}-nv^n}{i}
+      \right).
+      \]
+
+      \[
+      PV
+      =
+      (P-Q)a_{\overline{n}|}
+      +
+      \frac{Q(1+i)}{i}a_{\overline{n}|}
+      -
+      \frac{Qn}{i}v^n.
+      \]
+
+      <p>
+        Combine the \(a_{\overline{n}|}\) terms:
+      </p>
+
+      \[
+      P-Q+\frac{Q(1+i)}{i}
+      =
+      P-Q+\frac{Q}{i}+Q
+      =
+      P+\frac{Q}{i}.
+      \]
+
+      <p>
+        Therefore,
+      </p>
+
+      \[
+      PV
+      =
+      \left(P+\frac{Q}{i}\right)a_{\overline{n}|}
+      -
+      \frac{Qn}{i}v^n.
+      \]
+
+      <div class="fm-proof-note">
+        Memory rule: replace the arithmetic annuity by a level annuity with
+        \(PMT=P+\frac{Q}{i}\), then add a final adjustment \(FV=-\frac{Qn}{i}\).
+      </div>
+    </div>
+  </details>
+</div>
+
+
     
 
 
