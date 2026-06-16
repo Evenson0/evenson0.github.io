@@ -1085,6 +1085,351 @@ mathjax: true
 </div>
 
 
+
+
+
+
+
+
+
+<div class="fm-proof-card">
+  <div class="fm-proof-label">Bonds and securities</div>
+  <h3>Basic bond price formula</h3>
+
+  <p>
+    A bond price is the present value of its coupon payments plus the present value of its redemption value.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>Formula:</strong>
+    \[
+    P = Fr\,a_{\overline{n}|i} + Cv_i^n
+    \]
+  </div>
+
+  <p>
+    Here, \(F\) is the face amount, \(r\) is the coupon rate per period, \(C\) is the redemption value,
+    \(i\) is the yield rate per period, and \(n\) is the number of coupon periods.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>Discount factor:</strong>
+    \[
+    v_i=\frac{1}{1+i}
+    \]
+  </div>
+
+  <p>
+    If we define
+  </p>
+
+  \[
+  K=Cv_i^n,
+  \]
+
+  <p>
+    then the formula can also be written as
+  </p>
+
+  <div class="fm-formula-row">
+    \[
+    P=Fr\,a_{\overline{n}|i}+K.
+    \]
+  </div>
+
+  <div class="fm-proof-note">
+    Memory rule: bond price = present value of coupons + present value of redemption value.
+  </div>
+</div>
+
+<div class="fm-proof-card">
+  <div class="fm-proof-label">Bonds and securities</div>
+  <h3>Premium, discount, and par</h3>
+
+  <p>
+    A bond is bought at a premium, discount, or par depending on how its price compares with its redemption value.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>Premium:</strong>
+    \[
+    P>C
+    \]
+  </div>
+
+  <div class="fm-formula-row">
+    <strong>Discount:</strong>
+    \[
+    P<C
+    \]
+  </div>
+
+  <div class="fm-formula-row">
+    <strong>Par:</strong>
+    \[
+    P=C
+    \]
+  </div>
+
+  <p>
+    Here, \(P\) is the price of the bond and \(C\) is the redemption value of the bond.
+  </p>
+
+  <div class="fm-proof-note">
+    A premium bond is not necessarily a bad deal, and a discount bond is not necessarily a good deal.
+    The price reflects the relationship between the coupon rate and the yield rate.
+  </div>
+</div>
+
+<div class="fm-proof-card">
+  <div class="fm-proof-label">Bonds and securities</div>
+  <h3>Premium / discount formula</h3>
+
+  <p>
+    The premium / discount formula rewrites the basic bond price formula in a way that makes the
+    relationship between the coupon rate and the yield rate visible.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>Formula:</strong>
+    \[
+    P=C+(Fr-Ci)a_{\overline{n}|i}
+    \]
+  </div>
+
+  <p>
+    If \(F=C\), then \(Fr=Cr\), and the formula becomes
+  </p>
+
+  <div class="fm-formula-row">
+    \[
+    P=C+C(r-i)a_{\overline{n}|i}.
+    \]
+  </div>
+
+  <details class="fm-toggle">
+    <summary>Show derivation</summary>
+    <div class="fm-toggle-content">
+      <p>
+        Start with the basic bond price formula:
+      </p>
+
+      \[
+      P=Fr\,a_{\overline{n}|i}+Cv_i^n.
+      \]
+
+      <p>
+        Recall that
+      </p>
+
+      \[
+      a_{\overline{n}|i}=\frac{1-v_i^n}{i}.
+      \]
+
+      <p>
+        Therefore,
+      </p>
+
+      \[
+      ia_{\overline{n}|i}=1-v_i^n.
+      \]
+
+      <p>
+        So,
+      </p>
+
+      \[
+      v_i^n=1-ia_{\overline{n}|i}.
+      \]
+
+      <p>
+        Substitute this into the basic bond price formula:
+      </p>
+
+      \[
+      P=Fr\,a_{\overline{n}|i}+C(1-ia_{\overline{n}|i}).
+      \]
+
+      \[
+      P=Fr\,a_{\overline{n}|i}+C-Ci\,a_{\overline{n}|i}.
+      \]
+
+      \[
+      P=C+(Fr-Ci)a_{\overline{n}|i}.
+      \]
+
+      <p>
+        If \(F=C\), then \(Fr=Cr\), so
+      </p>
+
+      \[
+      P=C+(Cr-Ci)a_{\overline{n}|i}.
+      \]
+
+      <p>
+        Factoring out \(C\), we get
+      </p>
+
+      \[
+      P=C+C(r-i)a_{\overline{n}|i}.
+      \]
+
+      <div class="fm-proof-note">
+        If \(r>i\), then \(P>C\), so the bond sells at a premium.
+        If \(r<i\), then \(P<C\), so the bond sells at a discount.
+        If \(r=i\), then \(P=C\), so the bond is priced at par.
+      </div>
+    </div>
+  </details>
+</div>
+
+<div class="fm-proof-card">
+  <div class="fm-proof-label">Bonds and securities</div>
+  <h3>Coupon rate vs. yield rate intuition</h3>
+
+  <p>
+    The premium or discount comes from comparing the coupon rate paid by the bond with the yield rate
+    required by the market.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>If \(r>i\):</strong>
+    \[
+    P>C
+    \]
+    The bond sells at a premium.
+  </div>
+
+  <div class="fm-formula-row">
+    <strong>If \(r<i\):</strong>
+    \[
+    P<C
+    \]
+    The bond sells at a discount.
+  </div>
+
+  <div class="fm-formula-row">
+    <strong>If \(r=i\):</strong>
+    \[
+    P=C
+    \]
+    The bond is priced at par.
+  </div>
+
+  <div class="fm-proof-note">
+    This is why a bond whose coupon rate equals the yield rate is priced at par.
+    The coupons exactly match the market's required return.
+  </div>
+</div>
+
+<div class="fm-proof-card">
+  <div class="fm-proof-label">Bonds and securities</div>
+  <h3>Makeham's formula</h3>
+
+  <p>
+    Makeham's formula is another way to write the bond price in terms of the present value of the
+    redemption value.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>Formula:</strong>
+    \[
+    P=K+\frac{g}{i}(C-K)
+    \]
+  </div>
+
+  <p>
+    where
+  </p>
+
+  \[
+  K=Cv_i^n.
+  \]
+
+  <p>
+    Here, \(g\) is the coupon rate based on the redemption value, so the coupon amount is \(Cg\).
+  </p>
+
+  <details class="fm-toggle">
+    <summary>Show derivation</summary>
+    <div class="fm-toggle-content">
+      <p>
+        Start with the bond price formula written using coupons \(Cg\):
+      </p>
+
+      \[
+      P=Cg\,a_{\overline{n}|i}+Cv_i^n.
+      \]
+
+      <p>
+        Define
+      </p>
+
+      \[
+      K=Cv_i^n.
+      \]
+
+      <p>
+        Then
+      </p>
+
+      \[
+      C-K=C-Cv_i^n=C(1-v_i^n).
+      \]
+
+      <p>
+        Since
+      </p>
+
+      \[
+      a_{\overline{n}|i}=\frac{1-v_i^n}{i},
+      \]
+
+      <p>
+        we have
+      </p>
+
+      \[
+      Cg\,a_{\overline{n}|i}
+      =
+      Cg\left(\frac{1-v_i^n}{i}\right)
+      =
+      \frac{g}{i}C(1-v_i^n).
+      \]
+
+      <p>
+        But \(C(1-v_i^n)=C-K\), so
+      </p>
+
+      \[
+      Cg\,a_{\overline{n}|i}
+      =
+      \frac{g}{i}(C-K).
+      \]
+
+      <p>
+        Therefore,
+      </p>
+
+      \[
+      P=K+\frac{g}{i}(C-K).
+      \]
+
+      <div class="fm-proof-note">
+        Makeham's formula is useful when the problem gives or suggests \(K=Cv_i^n\).
+        Otherwise, the basic bond price formula is usually faster.
+      </div>
+    </div>
+  </details>
+</div>
+
+
+
+
+
+
+
+
     
 
 
