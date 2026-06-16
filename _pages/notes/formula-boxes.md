@@ -478,6 +478,252 @@ mathjax: true
       </details>
     </div>
 
+
+
+
+
+```html
+<div class="fm-proof-card">
+  <div class="fm-proof-label">Geometric annuity</div>
+  <h3>Present value of a geometrically increasing annuity</h3>
+
+  <p>
+    A geometrically increasing annuity has payments that grow by a constant percentage each period.
+    If the first payment is \(X\), the growth rate is \(g\), and the interest rate is \(i\), then the
+    payments are
+  </p>
+
+  <div class="fm-formula-row">
+    \[
+    X,\quad X(1+g),\quad X(1+g)^2,\quad \ldots,\quad X(1+g)^{n-1}.
+    \]
+  </div>
+
+  <div class="fm-formula-row">
+    <strong>PV formula:</strong>
+    \[
+    PV
+    =
+    X
+    \left[
+    \frac{1-\left(\frac{1+g}{1+i}\right)^n}
+    {i-g}
+    \right],
+    \qquad i\ne g.
+    \]
+  </div>
+
+  <p>
+    Therefore, if the present value is known, the first payment is
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>First payment:</strong>
+    \[
+    X
+    =
+    \frac{PV(i-g)}
+    {1-\left(\frac{1+g}{1+i}\right)^n}.
+    \]
+  </div>
+
+  <details class="fm-toggle">
+    <summary>Show derivation</summary>
+    <div class="fm-toggle-content">
+      <p>
+        Start by discounting each payment to time \(0\):
+      </p>
+
+      \[
+      PV
+      =
+      \frac{X}{1+i}
+      +
+      \frac{X(1+g)}{(1+i)^2}
+      +
+      \frac{X(1+g)^2}{(1+i)^3}
+      +
+      \cdots
+      +
+      \frac{X(1+g)^{n-1}}{(1+i)^n}.
+      \]
+
+      <p>
+        Factor out the first discounted payment:
+      </p>
+
+      \[
+      PV
+      =
+      \frac{X}{1+i}
+      \left[
+      1+
+      \frac{1+g}{1+i}
+      +
+      \left(\frac{1+g}{1+i}\right)^2
+      +
+      \cdots+
+      \left(\frac{1+g}{1+i}\right)^{n-1}
+      \right].
+      \]
+
+      <p>
+        The expression in brackets is a geometric series with common ratio
+      </p>
+
+      \[
+      r=\frac{1+g}{1+i}.
+      \]
+
+      <p>
+        Therefore,
+      </p>
+
+      \[
+      1+r+r^2+\cdots+r^{n-1}
+      =
+      \frac{1-r^n}{1-r}.
+      \]
+
+      <p>
+        Substitute \(r=\frac{1+g}{1+i}\):
+      </p>
+
+      \[
+      PV
+      =
+      \frac{X}{1+i}
+      \left[
+      \frac{
+      1-\left(\frac{1+g}{1+i}\right)^n
+      }
+      {
+      1-\frac{1+g}{1+i}
+      }
+      \right].
+      \]
+
+      <p>
+        Now simplify the denominator:
+      </p>
+
+      \[
+      1-\frac{1+g}{1+i}
+      =
+      \frac{1+i-(1+g)}{1+i}
+      =
+      \frac{i-g}{1+i}.
+      \]
+
+      <p>
+        Hence,
+      </p>
+
+      \[
+      PV
+      =
+      \frac{X}{1+i}
+      \left[
+      \frac{
+      1-\left(\frac{1+g}{1+i}\right)^n
+      }
+      {
+      \frac{i-g}{1+i}
+      }
+      \right].
+      \]
+
+      <p>
+        The factors \(1+i\) cancel, giving
+      </p>
+
+      \[
+      PV
+      =
+      X
+      \left[
+      \frac{
+      1-\left(\frac{1+g}{1+i}\right)^n
+      }
+      {i-g}
+      \right].
+      \]
+
+      <p>
+        Solving for \(X\), we get
+      </p>
+
+      \[
+      X
+      =
+      \frac{PV(i-g)}
+      {1-\left(\frac{1+g}{1+i}\right)^n}.
+      \]
+
+      <div class="fm-proof-note">
+        Memory rule: for a geometric annuity, compare the payment growth factor \(1+g\)
+        with the accumulation factor \(1+i\). The key ratio is
+        \(\frac{1+g}{1+i}\).
+      </div>
+    </div>
+  </details>
+</div>
+
+<div class="fm-proof-card">
+  <div class="fm-proof-label">Geometric annuity example</div>
+  <h3>Finding the first payment in a growing loan repayment</h3>
+
+  <p>
+    Suppose a loan of \(100{,}000\) is repaid over \(25\) years at an annual effective interest rate of
+    \(7\%\). The first payment is \(X\), and each subsequent payment increases by \(4\%\).
+  </p>
+
+  <div class="fm-formula-row">
+    \[
+    100{,}000
+    =
+    X
+    \left[
+    \frac{1-\left(\frac{1.04}{1.07}\right)^{25}}
+    {0.07-0.04}
+    \right].
+    \]
+  </div>
+
+  <p>
+    Therefore,
+  </p>
+
+  <div class="fm-formula-row">
+    \[
+    X
+    =
+    \frac{100{,}000(0.07-0.04)}
+    {1-\left(\frac{1.04}{1.07}\right)^{25}}
+    =
+    5{,}895.97.
+    \]
+  </div>
+
+  <div class="fm-proof-note">
+    The first payment is not found with a level annuity formula. The payments are geometric because
+    each payment is \(4\%\) larger than the previous one.
+  </div>
+</div>
+```
+
+
+
+
+
+
+
+
+
+
+
+    
+
     <div class="fm-proof-card">
       <div class="fm-proof-label">Duration</div>
       <h3>Macaulay duration of an annuity-immediate</h3>
@@ -722,10 +968,6 @@ mathjax: true
         compared with annuity-immediate values.
       </div>
     </div>
-
-
-
-
   </div>
 
 
