@@ -119,6 +119,43 @@ mathjax: true
     min-width: 5.8rem;
   }
 
+  .fm-toggle {
+    margin-top: 0.9rem;
+    border: 1px solid var(--fm-border);
+    border-radius: 14px;
+    background: rgba(127,127,127,0.035);
+    overflow: hidden;
+  }
+
+  .fm-toggle summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 0.85rem 0.95rem;
+    font-weight: 800;
+    color: var(--fm-blue);
+    user-select: none;
+  }
+
+  .fm-toggle summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .fm-toggle summary::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 0.45rem;
+    transition: transform 0.18s ease;
+  }
+
+  .fm-toggle[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .fm-toggle-content {
+    padding: 0 0.95rem 0.95rem 0.95rem;
+    border-top: 1px solid var(--fm-border);
+  }
+
   mjx-container {
     max-width: 100%;
     overflow-x: auto;
@@ -177,37 +214,56 @@ mathjax: true
         are all different ways of describing the same one-period accumulation.
       </p>
 
-      \[
-      v=\frac{1}{1+i}
-      \]
-
-      \[
-      d=1-v
-      \]
-
-      \[
-      d=1-\frac{1}{1+i}=\frac{i}{1+i}
-      \]
-
-      \[
-      i=\frac{d}{1-d}
-      \]
-
-      \[
-      v=\frac{1}{1+i}=1-d
-      \]
-
-      \[
-      d=\frac{i}{1+i}
-      \]
-
-      \[
-      i=\frac{d}{1-d}
-      \]
-
-      <div class="fm-proof-note">
-        A useful identity is \( \frac{1-v}{v}=i \).
+      <div class="fm-formula-row">
+        \[
+        v=\frac{1}{1+i}
+        \]
       </div>
+
+      <div class="fm-formula-row">
+        \[
+        d=1-v
+        \]
+      </div>
+
+      <div class="fm-formula-row">
+        \[
+        d=\frac{i}{1+i}
+        \qquad\text{and}\qquad
+        i=\frac{d}{1-d}
+        \]
+      </div>
+
+      <details class="fm-toggle">
+        <summary>Show derivation</summary>
+        <div class="fm-toggle-content">
+          \[
+          d=1-v
+          \]
+
+          \[
+          d=1-\frac{1}{1+i}
+          =
+          \frac{i}{1+i}
+          \]
+
+          \[
+          v=1-d
+          \]
+
+          \[
+          1+i=\frac{1}{v}=\frac{1}{1-d}
+          \]
+
+          \[
+          i=\frac{1}{1-d}-1=\frac{d}{1-d}
+          \]
+
+          <div class="fm-proof-note">
+            A useful identity is \( \frac{1-v}{v}=i \).
+          </div>
+        </div>
+      </details>
     </div>
 
     <div class="fm-proof-card">
@@ -219,31 +275,44 @@ mathjax: true
         times \(1,2,\ldots,n\).
       </p>
 
-      \[
-      a_{\overline{n}|}=v+v^2+\cdots+v^n
-      \]
+      <div class="fm-formula-row">
+        \[
+        a_{\overline{n}|}
+        =
+        \frac{1-v^n}{i}
+        \]
+      </div>
 
-      \[
-      a_{\overline{n}|}
-      =
-      \frac{v-v^{n+1}}{1-v}
-      =
-      \frac{v(1-v^n)}{1-v}
-      \]
+      <details class="fm-toggle">
+        <summary>Show derivation</summary>
+        <div class="fm-toggle-content">
+          \[
+          a_{\overline{n}|}=v+v^2+\cdots+v^n
+          \]
 
-      <p>Since \(i=\frac{1-v}{v}\), we have</p>
+          \[
+          a_{\overline{n}|}
+          =
+          \frac{v-v^{n+1}}{1-v}
+          =
+          \frac{v(1-v^n)}{1-v}
+          \]
 
-      \[
-      \frac{v}{1-v}=\frac{1}{i}.
-      \]
+          <p>Since \(i=\frac{1-v}{v}\), we have</p>
 
-      <p>Therefore,</p>
+          \[
+          \frac{v}{1-v}=\frac{1}{i}.
+          \]
 
-      \[
-      a_{\overline{n}|}
-      =
-      \frac{1-v^n}{i}.
-      \]
+          <p>Therefore,</p>
+
+          \[
+          a_{\overline{n}|}
+          =
+          \frac{1-v^n}{i}.
+          \]
+        </div>
+      </details>
     </div>
 
     <div class="fm-proof-card">
@@ -255,33 +324,54 @@ mathjax: true
         times \(0,1,\ldots,n-1\).
       </p>
 
-      \[
-      \ddot{a}_{\overline{n}|}
-      =
-      1+v+v^2+\cdots+v^{n-1}
-      \]
+      <div class="fm-formula-row">
+        \[
+        \ddot{a}_{\overline{n}|}
+        =
+        \frac{1-v^n}{d}
+        \]
+      </div>
 
-      \[
-      \ddot{a}_{\overline{n}|}
-      =
-      \frac{1-v^n}{1-v}.
-      \]
+      <div class="fm-formula-row">
+        \[
+        \ddot{a}_{\overline{n}|}
+        =
+        (1+i)a_{\overline{n}|}
+        \]
+      </div>
 
-      <p>Since \(d=1-v\),</p>
+      <details class="fm-toggle">
+        <summary>Show derivation</summary>
+        <div class="fm-toggle-content">
+          \[
+          \ddot{a}_{\overline{n}|}
+          =
+          1+v+v^2+\cdots+v^{n-1}
+          \]
 
-      \[
-      \ddot{a}_{\overline{n}|}
-      =
-      \frac{1-v^n}{d}.
-      \]
+          \[
+          \ddot{a}_{\overline{n}|}
+          =
+          \frac{1-v^n}{1-v}
+          \]
 
-      <p>Also, because the payments are shifted one period earlier,</p>
+          <p>Since \(d=1-v\),</p>
 
-      \[
-      \ddot{a}_{\overline{n}|}
-      =
-      (1+i)a_{\overline{n}|}.
-      \]
+          \[
+          \ddot{a}_{\overline{n}|}
+          =
+          \frac{1-v^n}{d}.
+          \]
+
+          <p>Also, because the payments are shifted one period earlier,</p>
+
+          \[
+          \ddot{a}_{\overline{n}|}
+          =
+          (1+i)a_{\overline{n}|}.
+          \]
+        </div>
+      </details>
     </div>
 
     <div class="fm-proof-card">
@@ -293,17 +383,36 @@ mathjax: true
         The accumulated value is measured at time \(n\).
       </p>
 
-      \[
-      s_{\overline{n}|}
-      =
-      1+(1+i)+(1+i)^2+\cdots+(1+i)^{n-1}
-      \]
+      <div class="fm-formula-row">
+        \[
+        s_{\overline{n}|}
+        =
+        \frac{(1+i)^n-1}{i}
+        \]
+      </div>
 
-      \[
-      s_{\overline{n}|}
-      =
-      \frac{(1+i)^n-1}{i}.
-      \]
+      <details class="fm-toggle">
+        <summary>Show derivation</summary>
+        <div class="fm-toggle-content">
+          \[
+          s_{\overline{n}|}
+          =
+          1+(1+i)+(1+i)^2+\cdots+(1+i)^{n-1}
+          \]
+
+          \[
+          s_{\overline{n}|}
+          =
+          \frac{(1+i)^n-1}{(1+i)-1}
+          \]
+
+          \[
+          s_{\overline{n}|}
+          =
+          \frac{(1+i)^n-1}{i}.
+          \]
+        </div>
+      </details>
     </div>
 
     <div class="fm-proof-card">
@@ -315,23 +424,201 @@ mathjax: true
         The accumulated value is measured at time \(n\).
       </p>
 
-      \[
-      \ddot{s}_{\overline{n}|}
-      =
-      (1+i)^n+(1+i)^{n-1}+\cdots+(1+i)
-      \]
+      <div class="fm-formula-row">
+        \[
+        \ddot{s}_{\overline{n}|}
+        =
+        (1+i)s_{\overline{n}|}
+        \]
+      </div>
 
-      \[
-      \ddot{s}_{\overline{n}|}
-      =
-      (1+i)s_{\overline{n}|}
-      \]
+      <div class="fm-formula-row">
+        \[
+        \ddot{s}_{\overline{n}|}
+        =
+        \frac{(1+i)^n-1}{d}
+        \]
+      </div>
 
-      \[
-      \ddot{s}_{\overline{n}|}
-      =
-      \frac{(1+i)^n-1}{d}.
-      \]
+      <details class="fm-toggle">
+        <summary>Show derivation</summary>
+        <div class="fm-toggle-content">
+          \[
+          \ddot{s}_{\overline{n}|}
+          =
+          (1+i)^n+(1+i)^{n-1}+\cdots+(1+i)
+          \]
+
+          \[
+          \ddot{s}_{\overline{n}|}
+          =
+          (1+i)\left[1+(1+i)+\cdots+(1+i)^{n-1}\right]
+          \]
+
+          \[
+          \ddot{s}_{\overline{n}|}
+          =
+          (1+i)s_{\overline{n}|}
+          \]
+
+          \[
+          \ddot{s}_{\overline{n}|}
+          =
+          (1+i)\frac{(1+i)^n-1}{i}
+          \]
+
+          <p>Since \(d=\frac{i}{1+i}\), we have \(\frac{1+i}{i}=\frac{1}{d}\). Therefore,</p>
+
+          \[
+          \ddot{s}_{\overline{n}|}
+          =
+          \frac{(1+i)^n-1}{d}.
+          \]
+        </div>
+      </details>
+    </div>
+
+    <div class="fm-proof-card">
+      <div class="fm-proof-label">Duration</div>
+      <h3>Macaulay duration of an annuity-immediate</h3>
+
+      <p>
+        For a level annuity-immediate, the Macaulay duration is the present-value-weighted average
+        time of the payments.
+      </p>
+
+      <div class="fm-formula-row">
+        <strong>Definition:</strong>
+        \[
+        D
+        =
+        \frac{1v+2v^2+\cdots+nv^n}
+        {v+v^2+\cdots+v^n}
+        \]
+      </div>
+
+      <div class="fm-formula-row">
+        <strong>Shortcut:</strong>
+        \[
+        D
+        =
+        \frac{1+i}{i}
+        -
+        \frac{n}{(1+i)^n-1}
+        \]
+      </div>
+
+      <details class="fm-toggle">
+        <summary>Show derivation</summary>
+        <div class="fm-toggle-content">
+          <p>
+            The numerator is the present value of an increasing annuity-immediate, while the denominator
+            is the present value of a level annuity-immediate.
+          </p>
+
+          \[
+          D
+          =
+          \frac{(Ia)_{\overline{n}|}}{a_{\overline{n}|}}
+          \]
+
+          <p>For an annuity-immediate,</p>
+
+          \[
+          a_{\overline{n}|}
+          =
+          \frac{1-v^n}{i}.
+          \]
+
+          <p>For an increasing annuity-immediate,</p>
+
+          \[
+          (Ia)_{\overline{n}|}
+          =
+          \frac{\ddot{a}_{\overline{n}|}-nv^n}{i}.
+          \]
+
+          <p>Since \(\ddot{a}_{\overline{n}|}=(1+i)a_{\overline{n}|}\),</p>
+
+          \[
+          (Ia)_{\overline{n}|}
+          =
+          \frac{(1+i)a_{\overline{n}|}-nv^n}{i}.
+          \]
+
+          <p>Now divide by \(a_{\overline{n}|}\):</p>
+
+          \[
+          D
+          =
+          \frac{(Ia)_{\overline{n}|}}{a_{\overline{n}|}}
+          =
+          \frac{(1+i)a_{\overline{n}|}-nv^n}
+          {ia_{\overline{n}|}}.
+          \]
+
+          <p>Separate the two terms:</p>
+
+          \[
+          D
+          =
+          \frac{(1+i)a_{\overline{n}|}}{ia_{\overline{n}|}}
+          -
+          \frac{nv^n}{ia_{\overline{n}|}}
+          \]
+
+          \[
+          D
+          =
+          \frac{1+i}{i}
+          -
+          \frac{nv^n}{ia_{\overline{n}|}}.
+          \]
+
+          <p>Since \(a_{\overline{n}|}=\frac{1-v^n}{i}\), we have</p>
+
+          \[
+          ia_{\overline{n}|}
+          =
+          1-v^n.
+          \]
+
+          <p>Therefore,</p>
+
+          \[
+          D
+          =
+          \frac{1+i}{i}
+          -
+          \frac{nv^n}{1-v^n}.
+          \]
+
+          <p>Finally,</p>
+
+          \[
+          \frac{v^n}{1-v^n}
+          =
+          \frac{1}{v^{-n}-1}
+          =
+          \frac{1}{(1+i)^n-1}.
+          \]
+
+          <p>So,</p>
+
+          \[
+          D
+          =
+          \frac{1+i}{i}
+          -
+          \frac{n}{(1+i)^n-1}.
+          \]
+
+          <div class="fm-proof-note">
+            Memory rule: duration of a level annuity-immediate is
+            \(D=\frac{(Ia)_{\overline{n}|}}{a_{\overline{n}|}}\), then the shortcut is just the simplified form.
+          </div>
+        </div>
+      </details>
     </div>
 
     <div class="fm-proof-card">
