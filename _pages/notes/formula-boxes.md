@@ -723,6 +723,170 @@ mathjax: true
       </div>
     </div>
 
+
+
+
   </div>
+
+
+
+<div class="fm-proof-card">
+  <div class="fm-proof-label">TI-30XS shortcut</div>
+  <h3>Using a table to test an increasing annuity</h3>
+
+  <p>
+    When payments increase by a constant amount and the number of full payments is unknown,
+    the TI-30XS table function can be used to test values of \(n\) quickly.
+  </p>
+
+  <div class="fm-formula-row">
+    <strong>Setup:</strong>
+    \[
+    10(Ia)_{\overline{n}|}=700
+    \]
+  </div>
+
+  <p>
+    For payments \(10,20,30,\ldots,10n\), the present value of the first \(n\)
+    regular payments is
+  </p>
+
+  <div class="fm-formula-row">
+    \[
+    10(Ia)_{\overline{n}|}
+    =
+    10\left(
+    \frac{\ddot{a}_{\overline{n}|}-nv^n}{i}
+    \right).
+    \]
+  </div>
+
+  <p>
+    At \(i=5\%\), we have \(v=1/1.05\), so this becomes
+  </p>
+
+  <div class="fm-formula-row">
+    \[
+    10\left(
+    \frac{
+    \frac{1-v^n}{d}
+    -
+    nv^n
+    }{0.05}
+    \right),
+    \qquad
+    v=\frac{1}{1.05},
+    \qquad
+    d=\frac{0.05}{1.05}.
+    \]
+  </div>
+
+  <details class="fm-toggle">
+    <summary>Show TI-30XS table method</summary>
+    <div class="fm-toggle-content">
+      <p>
+        On the TI-30XS, replace \(n\) by \(x\) and enter the present value function as \(y\).
+      </p>
+
+      <div class="fm-formula-row">
+        \[
+        y
+        =
+        200\left[
+        21(1-1.05^{-x})
+        -
+        x(1.05)^{-x}
+        \right].
+        \]
+      </div>
+
+      <p>
+        This formula comes from simplifying
+      </p>
+
+      \[
+      10\left(
+      \frac{\ddot{a}_{\overline{x}|}-xv^x}{0.05}
+      \right).
+      \]
+
+      <p>Use the table function:</p>
+
+      <div class="fm-formula-row">
+        <strong>Step 1:</strong>
+        Press <code>table</code>.
+      </div>
+
+      <div class="fm-formula-row">
+        <strong>Step 2:</strong>
+        Enter
+        \[
+        y
+        =
+        200\left[
+        21(1-1.05^{-x})
+        -
+        x(1.05)^{-x}
+        \right].
+        \]
+      </div>
+
+      <div class="fm-formula-row">
+        <strong>Step 3:</strong>
+        Set <code>Start = 1</code> and <code>Step = 1</code>.
+      </div>
+
+      <div class="fm-formula-row">
+        <strong>Step 4:</strong>
+        Scroll until the value of \(y\) passes \(700\).
+      </div>
+
+      <p>
+        The table gives approximately
+      </p>
+
+      \[
+      y(14)=664.52
+      \]
+
+      \[
+      y(15)=736.67.
+      \]
+
+      <p>
+        Therefore, 14 full regular payments can be made, but 15 full regular payments would be too much.
+        The smaller final payment is made at time \(15\).
+      </p>
+
+      <p>
+        The present value left after the 14 regular payments is
+      </p>
+
+      \[
+      700-664.52=35.48.
+      \]
+
+      <p>
+        Since the final smaller payment is made at time \(15\), accumulate this amount for 15 years:
+      </p>
+
+      \[
+      35.48(1.05)^{15}=73.74.
+      \]
+
+      <div class="fm-proof-note">
+        The final answer is approximately \(74\). The common mistake is to stop at \(35.48\);
+        that is the present value of the final payment, not the final payment itself.
+      </div>
+    </div>
+  </details>
+</div>
+
+
+
+
+
+    
+
 
 </div>
