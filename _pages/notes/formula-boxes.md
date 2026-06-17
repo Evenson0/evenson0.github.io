@@ -970,12 +970,12 @@ mathjax: true
     <details class="fm-proof-card fm-card-toggle">
       <summary class="fm-card-summary">
         <span class="fm-proof-label">Loans and amortization</span>
-        <h3>Amortization schedule example</h3>
+        <h3>General amortization schedule</h3>
       </summary>
       <div class="fm-card-content">
         <p>
-          The following table shows how a loan payment is split into interest and principal when the
-          interest rate and payments vary by year.
+          An amortization schedule tracks how each payment is split into interest and principal,
+          and how the outstanding balance changes over time.
         </p>
 
         <div class="fm-table-wrap">
@@ -983,97 +983,110 @@ mathjax: true
             <thead>
               <tr>
                 <th>\(t\)</th>
-                <th>\(i_t\)</th>
-                <th>\(R_t\)</th>
-                <th>\(I_t\)</th>
-                <th>\(P_t\)</th>
-                <th>\(OB_t\)</th>
+                <th>Payment</th>
+                <th>Interest paid</th>
+                <th>Principal repaid</th>
+                <th>Outstanding balance</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>0</td>
+                <td>\(0\)</td>
                 <td>—</td>
                 <td>—</td>
                 <td>—</td>
-                <td>—</td>
-                <td>4724.80</td>
+                <td>\(OB_0=L\)</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>5%</td>
-                <td>1000.00</td>
-                <td>236.24</td>
-                <td>763.76</td>
-                <td>3961.04</td>
+                <td>\(1\)</td>
+                <td>\(R_1\)</td>
+                <td>\(I_1=i_1OB_0\)</td>
+                <td>\(P_1=R_1-I_1\)</td>
+                <td>\(OB_1=OB_0-P_1\)</td>
               </tr>
               <tr>
-                <td>2</td>
-                <td>10%</td>
-                <td>1500.00</td>
-                <td>396.10</td>
-                <td>1103.90</td>
-                <td>2857.14</td>
+                <td>\(2\)</td>
+                <td>\(R_2\)</td>
+                <td>\(I_2=i_2OB_1\)</td>
+                <td>\(P_2=R_2-I_2\)</td>
+                <td>\(OB_2=OB_1-P_2\)</td>
               </tr>
               <tr>
-                <td>3</td>
-                <td>5%</td>
-                <td>3000.00</td>
-                <td>142.86</td>
-                <td>2857.14</td>
-                <td>0.00</td>
+                <td>\(3\)</td>
+                <td>\(R_3\)</td>
+                <td>\(I_3=i_3OB_2\)</td>
+                <td>\(P_3=R_3-I_3\)</td>
+                <td>\(OB_3=OB_2-P_3\)</td>
+              </tr>
+              <tr>
+                <td>\(dots\)</td>
+                <td>\(dots\)</td>
+                <td>\(dots\)</td>
+                <td>\(dots\)</td>
+                <td>\(dots\)</td>
+              </tr>
+              <tr>
+                <td>\(t\)</td>
+                <td>\(R_t\)</td>
+                <td>\(I_t=i_tOB_{t-1}\)</td>
+                <td>\(P_t=R_t-I_t\)</td>
+                <td>\(OB_t=OB_{t-1}-P_t\)</td>
+              </tr>
+              <tr>
+                <td>\(dots\)</td>
+                <td>\(dots\)</td>
+                <td>\(dots\)</td>
+                <td>\(dots\)</td>
+                <td>\(dots\)</td>
+              </tr>
+              <tr>
+                <td>\(n\)</td>
+                <td>\(R_n\)</td>
+                <td>\(I_n=i_nOB_{n-1}\)</td>
+                <td>\(P_n=R_n-I_n\)</td>
+                <td>\(OB_n=0\)</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <details class="fm-toggle">
-          <summary>Show calculations</summary>
+          <summary>Show formulas</summary>
           <div class="fm-toggle-content">
-            <p>At time \(1\),</p>
+            <p>At each payment date, interest is charged on the previous outstanding balance.</p>
 
-            \[
-            I_1 = 4724.80(0.05)=236.24.
-            \]
+            <div class="fm-formula-row">
+              <strong>Interest:</strong>
+              \[
+              I_t=i_tOB_{t-1}
+              \]
+            </div>
 
-            \[
-            P_1 = 1000.00 - 236.24 = 763.76.
-            \]
+            <div class="fm-formula-row">
+              <strong>Principal:</strong>
+              \[
+              P_t=R_t-I_t
+              \]
+            </div>
 
-            \[
-            OB_1 = 4724.80 - 763.76 = 3961.04.
-            \]
+            <div class="fm-formula-row">
+              <strong>Balance:</strong>
+              \[
+              OB_t=OB_{t-1}-P_t
+              \]
+            </div>
 
-            <p>At time \(2\),</p>
+            <p>Equivalently, since \(P_t=R_t-i_tOB_{t-1}\), the balance can be updated directly:</p>
 
-            \[
-            I_2 = 3961.04(0.10)=396.10.
-            \]
-
-            \[
-            P_2 = 1500.00 - 396.10 = 1103.90.
-            \]
-
-            \[
-            OB_2 = 3961.04 - 1103.90 = 2857.14.
-            \]
-
-            <p>At time \(3\),</p>
-
-            \[
-            I_3 = 2857.14(0.05)=142.86.
-            \]
-
-            \[
-            P_3 = 3000.00 - 142.86 = 2857.14.
-            \]
-
-            \[
-            OB_3 = 2857.14 - 2857.14 = 0.
-            \]
+            <div class="fm-formula-row">
+              \[
+              OB_t=OB_{t-1}(1+i_t)-R_t.
+              \]
+            </div>
 
             <div class="fm-proof-note">
-              A loan is fully repaid when the outstanding balance reaches \(0\).
+              Memory rule: interest is based on the previous balance; principal is the part of the payment
+              that actually reduces the loan.
             </div>
           </div>
         </details>
