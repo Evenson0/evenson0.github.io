@@ -783,6 +783,238 @@ mathjax: true
       </div>
     </details>
 
+
+
+        <details class="fm-proof-card fm-card-toggle">
+      <summary class="fm-card-summary">
+        <span class="fm-proof-label">Immunization</span>
+        <h3>Two zero-coupon bonds around a liability date</h3>
+      </summary>
+      <div class="fm-card-content">
+        <p>
+          Suppose a liability of amount \(L\) is due at time \(t_L\). To immunize it using two zero-coupon
+          bonds maturing at times \(t_X\) and \(t_Y\), where
+        </p>
+
+        <div class="fm-formula-row">
+          \[
+          t_X < t_L < t_Y,
+          \]
+        </div>
+
+        <p>
+          choose the asset portfolio so that its Macaulay duration equals the liability date.
+        </p>
+
+        <div class="fm-formula-row">
+          <strong>Weight in \(Y\):</strong>
+          \[
+          w_Y=\frac{t_L-t_X}{t_Y-t_X}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Weight in \(X\):</strong>
+          \[
+          w_X=\frac{t_Y-t_L}{t_Y-t_X}
+          \]
+        </div>
+
+        <p>
+          These are weights based on present value, not face amount.
+        </p>
+
+        <div class="fm-formula-row">
+          \[
+          w_X+w_Y=1
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Present value of liability:</strong>
+          \[
+          PV_L=Lv^{t_L}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Present value invested in \(Y\):</strong>
+          \[
+          PV_Y=w_YPV_L
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Face amount of bond \(Y\):</strong>
+          \[
+          F_Y=w_YL(1+i)^{t_Y-t_L}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Face amount of bond \(X\):</strong>
+          \[
+          F_X=w_XL(1+i)^{t_X-t_L}
+          \]
+        </div>
+
+        <details class="fm-toggle">
+          <summary>Show derivation</summary>
+          <div class="fm-toggle-content">
+            <p>
+              Since both assets are zero-coupon bonds, each bond has Macaulay duration equal to its maturity.
+              Therefore, the portfolio duration is the present-value-weighted average maturity:
+            </p>
+
+            \[
+            D_{\text{assets}}=w_Xt_X+w_Yt_Y.
+            \]
+
+            <p>
+              To immunize the liability, set the asset duration equal to the liability duration:
+            </p>
+
+            \[
+            w_Xt_X+w_Yt_Y=t_L.
+            \]
+
+            <p>
+              Since the weights must sum to \(1\),
+            </p>
+
+            \[
+            w_X=1-w_Y.
+            \]
+
+            <p>Substitute this into the duration equation:</p>
+
+            \[
+            (1-w_Y)t_X+w_Yt_Y=t_L.
+            \]
+
+            \[
+            t_X+w_Y(t_Y-t_X)=t_L.
+            \]
+
+            \[
+            w_Y=\frac{t_L-t_X}{t_Y-t_X}.
+            \]
+
+            <p>Then</p>
+
+            \[
+            w_X=1-w_Y
+            =
+            \frac{t_Y-t_L}{t_Y-t_X}.
+            \]
+
+            <p>
+              To convert the present-value weight into a face amount, first compute the present value of the liability:
+            </p>
+
+            \[
+            PV_L=Lv^{t_L}.
+            \]
+
+            <p>
+              The present value invested in bond \(Y\) is
+            </p>
+
+            \[
+            PV_Y=w_YPV_L=w_YLv^{t_L}.
+            \]
+
+            <p>
+              Since bond \(Y\) is a zero-coupon bond paying \(F_Y\) at time \(t_Y\),
+            </p>
+
+            \[
+            PV_Y=F_Yv^{t_Y}.
+            \]
+
+            <p>Therefore,</p>
+
+            \[
+            F_Yv^{t_Y}=w_YLv^{t_L}.
+            \]
+
+            \[
+            F_Y=w_YL\frac{v^{t_L}}{v^{t_Y}}.
+            \]
+
+            \[
+            F_Y=w_YL(1+i)^{t_Y-t_L}.
+            \]
+
+            <p>
+              Similarly,
+            </p>
+
+            \[
+            F_X=w_XL(1+i)^{t_X-t_L}.
+            \]
+
+            <div class="fm-proof-note">
+              Memory rule: first find the present-value weights using the liability date as a weighted average
+              of the two bond maturities. Then convert the weight into a face amount. Do not confuse
+              present-value weight with face amount.
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show example</summary>
+          <div class="fm-toggle-content">
+            <p>
+              Suppose \(L=6000\), \(t_L=3\), \(t_X=1\), \(t_Y=5\), and \(i=5\%\).
+            </p>
+
+            \[
+            w_Y=\frac{3-1}{5-1}=\frac{2}{4}=0.5.
+            \]
+
+            \[
+            w_X=\frac{5-3}{5-1}=\frac{2}{4}=0.5.
+            \]
+
+            <p>
+              The face amount of bond \(Y\) is
+            </p>
+
+            \[
+            F_Y=w_YL(1+i)^{t_Y-t_L}.
+            \]
+
+            \[
+            F_Y=0.5(6000)(1.05)^{5-3}.
+            \]
+
+            \[
+            F_Y=3000(1.05)^2=3307.50.
+            \]
+
+            <p>
+              So the required face amount of the 5-year zero-coupon bond is approximately
+            </p>
+
+            \[
+            F_Y\approx 3310.
+            \]
+
+            <div class="fm-proof-note">
+              The \(0.5\) is not the face amount proportion. It is the present-value weight of bond \(Y\)
+              in the immunizing portfolio.
+            </div>
+          </div>
+        </details>
+      </div>
+    </details>
+
+
+
+
+    
+
     <details class="fm-proof-card fm-card-toggle">
       <summary class="fm-card-summary">
         <span class="fm-proof-label">Duration</span>
