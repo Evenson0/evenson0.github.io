@@ -328,6 +328,292 @@ mathjax: true
       </div>
     </details>
 
+
+
+
+
+    <details class="fm-proof-card fm-card-toggle">
+      <summary class="fm-card-summary">
+        <span class="fm-proof-label">Force of interest</span>
+        <h3>Accumulation with a varying force of interest</h3>
+      </summary>
+      <div class="fm-card-content">
+        <p>
+          When the force of interest varies with time, the accumulation function is built by integrating
+          the force of interest over time.
+        </p>
+
+        <div class="fm-formula-row">
+          <strong>Accumulation function:</strong>
+          \[
+          a(t)
+          =
+          \exp\left(\int_0^t \delta_s\,ds\right)
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Accumulation from \(s\) to \(t\):</strong>
+          \[
+          \frac{a(t)}{a(s)}
+          =
+          \exp\left(\int_s^t \delta_u\,du\right)
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Discount from \(t\) to \(s\):</strong>
+          \[
+          \frac{a(s)}{a(t)}
+          =
+          \exp\left(-\int_s^t \delta_u\,du\right)
+          \]
+        </div>
+
+        <p>
+          Therefore, a deposit \(C\) made at time \(s\) accumulates to time \(t\) as
+        </p>
+
+        <div class="fm-formula-row">
+          \[
+          C\frac{a(t)}{a(s)}.
+          \]
+        </div>
+
+        <p>
+          Similarly, a payment \(C\) due at time \(t\) has value at time \(s\) equal to
+        </p>
+
+        <div class="fm-formula-row">
+          \[
+          C\frac{a(s)}{a(t)}.
+          \]
+        </div>
+
+        <details class="fm-toggle">
+          <summary>Show derivation</summary>
+          <div class="fm-toggle-content">
+            <p>
+              The force of interest is the instantaneous rate of growth of the accumulation function:
+            </p>
+
+            \[
+            \delta_t
+            =
+            \frac{a'(t)}{a(t)}.
+            \]
+
+            <p>
+              Rearranging gives
+            </p>
+
+            \[
+            \frac{a'(t)}{a(t)}=\delta_t.
+            \]
+
+            <p>
+              Since \(\frac{a'(t)}{a(t)}\) is the derivative of \(\ln(a(t))\), we get
+            </p>
+
+            \[
+            \frac{d}{dt}\ln(a(t))=\delta_t.
+            \]
+
+            <p>
+              Integrate from \(0\) to \(t\):
+            </p>
+
+            \[
+            \ln(a(t))-\ln(a(0))
+            =
+            \int_0^t \delta_s\,ds.
+            \]
+
+            <p>
+              Since \(a(0)=1\), we have \(\ln(a(0))=0\). Therefore,
+            </p>
+
+            \[
+            \ln(a(t))
+            =
+            \int_0^t \delta_s\,ds.
+            \]
+
+            \[
+            a(t)
+            =
+            \exp\left(\int_0^t \delta_s\,ds\right).
+            \]
+
+            <p>
+              To accumulate from time \(s\) to time \(t\), divide the accumulation functions:
+            </p>
+
+            \[
+            \frac{a(t)}{a(s)}
+            =
+            \frac{
+            \exp\left(\int_0^t \delta_u\,du\right)
+            }{
+            \exp\left(\int_0^s \delta_u\,du\right)
+            }.
+            \]
+
+            \[
+            \frac{a(t)}{a(s)}
+            =
+            \exp\left(\int_s^t \delta_u\,du\right).
+            \]
+
+            <div class="fm-proof-note">
+              Memory rule: \(a(t)\) accumulates from \(0\) to \(t\). For money deposited at time \(s\),
+              use the ratio \(\frac{a(t)}{a(s)}\), not just \(a(t)\).
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show special cases</summary>
+          <div class="fm-toggle-content">
+            <p>
+              If the force of interest is constant, \(\delta_t=\delta\), then
+            </p>
+
+            \[
+            a(t)
+            =
+            \exp\left(\int_0^t \delta\,ds\right)
+            =
+            e^{\delta t}.
+            \]
+
+            <p>
+              The accumulation factor from \(s\) to \(t\) becomes
+            </p>
+
+            \[
+            \frac{a(t)}{a(s)}
+            =
+            \frac{e^{\delta t}}{e^{\delta s}}
+            =
+            e^{\delta(t-s)}.
+            \]
+
+            <p>
+              If the effective annual interest rate is constant at \(i\), then
+            </p>
+
+            \[
+            a(t)=(1+i)^t.
+            \]
+
+            <p>
+              So the accumulation factor from \(s\) to \(t\) is
+            </p>
+
+            \[
+            \frac{a(t)}{a(s)}
+            =
+            \frac{(1+i)^t}{(1+i)^s}
+            =
+            (1+i)^{t-s}.
+            \]
+
+            <div class="fm-proof-note">
+              The varying-force formula generalizes both constant force of interest and constant effective interest.
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show example</summary>
+          <div class="fm-toggle-content">
+            <p>
+              Suppose deposits are made at times \(t_0,t_1,\ldots,t_m\), and the fund is valued at time \(T\).
+              If the deposits are \(C_0,C_1,\ldots,C_m\), then the accumulated value at time \(T\) is
+            </p>
+
+            \[
+            AV_T
+            =
+            \sum_{j=0}^m C_j\frac{a(T)}{a(t_j)}.
+            \]
+
+            <p>
+              For example, if deposits of \(5000\), \(1000\), and \(4000\) are made at times
+              \(0\), \(\frac{1}{3}\), and \(\frac{2}{3}\), then the accumulated value at time \(1\) is
+            </p>
+
+            \[
+            AV_1
+            =
+            5000a(1)
+            +
+            1000\frac{a(1)}{a(1/3)}
+            +
+            4000\frac{a(1)}{a(2/3)}.
+            \]
+
+            <p>
+              If
+            </p>
+
+            \[
+            \delta_t=\frac{k}{1+(1-t)k},
+            \]
+
+            <p>
+              then
+            </p>
+
+            \[
+            a(t)
+            =
+            \exp\left(\int_0^t \frac{k}{1+(1-s)k}\,ds\right)
+            =
+            \frac{1+k}{1+(1-t)k}.
+            \]
+
+            <p>
+              Therefore,
+            </p>
+
+            \[
+            a(1)=1+k,
+            \]
+
+            \[
+            \frac{a(1)}{a(1/3)}
+            =
+            1+\frac{2}{3}k,
+            \]
+
+            \[
+            \frac{a(1)}{a(2/3)}
+            =
+            1+\frac{1}{3}k.
+            \]
+
+            <div class="fm-proof-note">
+              The most common mistake is to multiply every deposit by \(a(1)\). Only the deposit made at time \(0\)
+              accumulates with \(a(1)\). Later deposits accumulate with ratios such as
+              \(\frac{a(1)}{a(1/3)}\).
+            </div>
+          </div>
+        </details>
+      </div>
+    </details>
+
+
+
+
+
+
+
+
+
+    
+
     <details class="fm-proof-card fm-card-toggle">
       <summary class="fm-card-summary">
         <span class="fm-proof-label">Annuity-immediate</span>
