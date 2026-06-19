@@ -1340,7 +1340,7 @@ mathjax: true
 
 
 
-        <details class="fm-proof-card fm-card-toggle">
+            <details class="fm-proof-card fm-card-toggle">
       <summary class="fm-card-summary">
         <span class="fm-proof-label">Varying annuities</span>
         <h3>Geometric varying annuities</h3>
@@ -1370,7 +1370,7 @@ mathjax: true
         <div class="fm-formula-row">
           <strong>Geometric immediate:</strong>
           \[
-          PV
+          PV_{\text{immediate}}
           =
           X
           \frac{
@@ -1383,12 +1383,27 @@ mathjax: true
         <div class="fm-formula-row">
           <strong>Geometric due:</strong>
           \[
-          PV
+          PV_{\text{due}}
           =
           X
           \frac{
           1-\left(\frac{1+r}{1+i}\right)^n
-          }{1-\frac{1+r}{1+i}},
+          }{
+          1-\frac{1+r}{1+i}
+          },
+          \qquad i\ne r.
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Geometric due, simplified:</strong>
+          \[
+          PV_{\text{due}}
+          =
+          X(1+i)
+          \frac{
+          1-\left(\frac{1+r}{1+i}\right)^n
+          }{i-r},
           \qquad i\ne r.
           \]
         </div>
@@ -1410,10 +1425,10 @@ mathjax: true
         <div class="fm-formula-row">
           <strong>Immediate perpetuity:</strong>
           \[
-          PV
+          PV_{\text{immediate}}
           =
           \begin{cases}
-          \dfrac{X}{i-r}, & r<i,\\[0.7rem]
+          \dfrac{X}{i-r}, & r<i,\\
           \text{does not converge}, & r\ge i.
           \end{cases}
           \]
@@ -1422,10 +1437,10 @@ mathjax: true
         <div class="fm-formula-row">
           <strong>Due perpetuity:</strong>
           \[
-          PV
+          PV_{\text{due}}
           =
           \begin{cases}
-          \dfrac{X(1+i)}{i-r}, & r<i,\\[0.7rem]
+          \dfrac{X(1+i)}{i-r}, & r<i,\\
           \text{does not converge}, & r\ge i.
           \end{cases}
           \]
@@ -1449,7 +1464,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{immediate}}
             =
             Xv+X(1+r)v^2+X(1+r)^2v^3+\cdots+X(1+r)^{n-1}v^n.
             \]
@@ -1459,7 +1474,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{immediate}}
             =
             Xv\left[
             1+(1+r)v+\big((1+r)v\big)^2+\cdots+\big((1+r)v\big)^{n-1}
@@ -1479,7 +1494,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{immediate}}
             =
             Xv\frac{1-q^n}{1-q}.
             \]
@@ -1513,7 +1528,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{immediate}}
             =
             X
             \frac{
@@ -1537,7 +1552,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{due}}
             =
             X+X(1+r)v+X(1+r)^2v^2+\cdots+X(1+r)^{n-1}v^{n-1}.
             \]
@@ -1547,7 +1562,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{due}}
             =
             X\left[
             1+(1+r)v+\big((1+r)v\big)^2+\cdots+\big((1+r)v\big)^{n-1}
@@ -1555,7 +1570,7 @@ mathjax: true
             \]
 
             <p>
-              Again, the common ratio is
+              This is a geometric series with common ratio
             </p>
 
             \[
@@ -1563,11 +1578,11 @@ mathjax: true
             \]
 
             <p>
-              Hence,
+              Therefore,
             </p>
 
             \[
-            PV
+            PV_{\text{due}}
             =
             X\frac{1-q^n}{1-q}.
             \]
@@ -1577,7 +1592,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{due}}
             =
             X
             \frac{
@@ -1588,7 +1603,30 @@ mathjax: true
             \]
 
             <p>
-              Another way to write this is to define an equivalent interest rate \(j\):
+              Since
+            </p>
+
+            \[
+            1-\frac{1+r}{1+i}
+            =
+            \frac{i-r}{1+i},
+            \]
+
+            <p>
+              the formula can also be written as
+            </p>
+
+            \[
+            PV_{\text{due}}
+            =
+            X(1+i)
+            \frac{
+            1-\left(\frac{1+r}{1+i}\right)^n
+            }{i-r}.
+            \]
+
+            <p>
+              Another useful form comes from defining an equivalent rate \(j\):
             </p>
 
             \[
@@ -1612,7 +1650,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{due}}
             =
             X\ddot{a}_{\overline{n}|j}
             =
@@ -1620,8 +1658,8 @@ mathjax: true
             \]
 
             <div class="fm-proof-note">
-              Due means the first payment is at time \(0\), so there is no initial discount factor \(v\).
-              That is why the due formula is one period larger than the immediate formula.
+              Memory rule: the geometric due annuity starts at time \(0\), so there is no initial discount factor \(v\).
+              It is one period earlier than the geometric immediate annuity.
             </div>
           </div>
         </details>
@@ -1634,7 +1672,7 @@ mathjax: true
             </p>
 
             \[
-            PV
+            PV_{\text{immediate}}
             =
             X
             \frac{
@@ -1708,12 +1746,12 @@ mathjax: true
           <div class="fm-toggle-content">
             <p>
               When \(i=r\), the growth rate of the payments exactly matches the interest rate.
-              The usual formula cannot be used because \(i-r=0\).
+              The usual formula cannot be used because the denominator \(i-r\) becomes \(0\).
             </p>
 
             <p>
-              For the immediate version, the \(k\)-th payment is \(X(1+r)^{k-1}\) at time \(k\).
-              Its present value is
+              For the immediate version, the \(k\)-th payment is \(X(1+r)^{k-1}\) at time \(k\),
+              where \(k=1,2,\ldots,n\). Its present value is
             </p>
 
             \[
@@ -1743,8 +1781,28 @@ mathjax: true
             \]
 
             <p>
-              For the due version, each payment occurs one period earlier. The \(k\)-th discounted payment
-              becomes \(X\), so
+              For the due version, the \(k\)-th payment is \(X(1+r)^k\) at time \(k\),
+              where \(k=0,1,\ldots,n-1\). Its present value is
+            </p>
+
+            \[
+            X(1+r)^kv^k.
+            \]
+
+            <p>
+              Since \(i=r\), we have \(v=\frac{1}{1+r}\). Therefore,
+            </p>
+
+            \[
+            X(1+r)^kv^k
+            =
+            X(1+r)^k\frac{1}{(1+r)^k}
+            =
+            X.
+            \]
+
+            <p>
+              Every discounted payment equals \(X\), and there are \(n\) payments:
             </p>
 
             \[
@@ -1752,7 +1810,8 @@ mathjax: true
             \]
 
             <div class="fm-proof-note">
-              When \(i=r\), each payment's growth exactly cancels the effect of discounting.
+              When \(i=r\), growth exactly cancels discounting. In the due case, each payment has present value \(X\);
+              in the immediate case, each payment has present value \(Xv\).
             </div>
           </div>
         </details>
