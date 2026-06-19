@@ -958,7 +958,14 @@ mathjax: true
 
 
 
-        <details class="fm-proof-card fm-card-toggle">
+
+
+
+
+
+
+
+<details class="fm-proof-card fm-card-toggle">
       <summary class="fm-card-summary">
         <span class="fm-proof-label">Varying annuities</span>
         <h3>Arithmetic varying annuities</h3>
@@ -1323,7 +1330,17 @@ mathjax: true
       </div>
     </details>
 
-    <details class="fm-proof-card fm-card-toggle">
+
+
+
+
+
+
+
+
+
+
+        <details class="fm-proof-card fm-card-toggle">
       <summary class="fm-card-summary">
         <span class="fm-proof-label">Varying annuities</span>
         <h3>Geometric varying annuities</h3>
@@ -1331,20 +1348,31 @@ mathjax: true
       <div class="fm-card-content">
         <p>
           A geometric varying annuity has payments that grow by a constant percentage \(r\) each period.
-          For the immediate version, payments occur at times \(1,2,\ldots,n\):
+          If the first payment is \(X\), then the payment pattern is
         </p>
 
         <div class="fm-formula-row">
           \[
-          1,\quad 1+r,\quad (1+r)^2,\quad \ldots,\quad (1+r)^{n-1}.
+          X,\quad X(1+r),\quad X(1+r)^2,\quad \ldots,\quad X(1+r)^{n-1}.
+          \]
+        </div>
+
+        <p>
+          The key idea is that the present values form a geometric series with common ratio
+        </p>
+
+        <div class="fm-formula-row">
+          \[
+          q=(1+r)v=\frac{1+r}{1+i}.
           \]
         </div>
 
         <div class="fm-formula-row">
           <strong>Geometric immediate:</strong>
           \[
-          (Ga)_{\overline{n}|i,r}
+          PV
           =
+          X
           \frac{
           1-\left(\frac{1+r}{1+i}\right)^n
           }{i-r},
@@ -1355,32 +1383,50 @@ mathjax: true
         <div class="fm-formula-row">
           <strong>Geometric due:</strong>
           \[
-          (G\ddot{a})_{\overline{n}|i,r}
+          PV
           =
-          \ddot{a}_{\overline{n}|\frac{i-r}{1+r}}.
+          X
+          \frac{
+          1-\left(\frac{1+r}{1+i}\right)^n
+          }{1-\frac{1+r}{1+i}},
+          \qquad i\ne r.
           \]
         </div>
 
         <div class="fm-formula-row">
-          <strong>Geometric immediate perpetuity:</strong>
+          <strong>Equivalent-rate form:</strong>
           \[
-          (Ga)_{\overline{\infty}|i,r}
+          j=\frac{i-r}{1+r}
+          \]
+          \[
+          PV_{\text{due}}
+          =
+          X\ddot{a}_{\overline{n}|j}
+          =
+          X\ddot{a}_{\overline{n}|\frac{i-r}{1+r}}.
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Immediate perpetuity:</strong>
+          \[
+          PV
           =
           \begin{cases}
-          \dfrac{1}{i-r}, & r<i,\\[0.7rem]
-          \text{undefined}, & r\ge i.
+          \dfrac{X}{i-r}, & r<i,\\[0.7rem]
+          \text{does not converge}, & r\ge i.
           \end{cases}
           \]
         </div>
 
         <div class="fm-formula-row">
-          <strong>Geometric due perpetuity:</strong>
+          <strong>Due perpetuity:</strong>
           \[
-          (G\ddot{a})_{\overline{\infty}|i,r}
+          PV
           =
           \begin{cases}
-          \dfrac{1+i}{i-r}, & r<i,\\[0.7rem]
-          \text{undefined}, & r\ge i.
+          \dfrac{X(1+i)}{i-r}, & r<i,\\[0.7rem]
+          \text{does not converge}, & r\ge i.
           \end{cases}
           \]
         </div>
@@ -1388,9 +1434,9 @@ mathjax: true
         <div class="fm-formula-row">
           <strong>Special case \(i=r\):</strong>
           \[
-          (Ga)_{\overline{n}|r,r}=nv,
+          PV_{\text{immediate}}=Xnv,
           \qquad
-          (G\ddot{a})_{\overline{n}|r,r}=n.
+          PV_{\text{due}}=Xn.
           \]
         </div>
 
@@ -1398,29 +1444,30 @@ mathjax: true
           <summary>Show derivation of the immediate formula</summary>
           <div class="fm-toggle-content">
             <p>
-              Start with the present value of the geometric increasing payments:
+              For the immediate version, payments occur at times \(1,2,\ldots,n\).
+              Therefore, the present value is
             </p>
 
             \[
-            (Ga)_{\overline{n}|i,r}
+            PV
             =
-            v+(1+r)v^2+(1+r)^2v^3+\cdots+(1+r)^{n-1}v^n.
+            Xv+X(1+r)v^2+X(1+r)^2v^3+\cdots+X(1+r)^{n-1}v^n.
             \]
 
             <p>
-              Factor out the first discounted payment \(v\):
+              Factor out the first discounted payment \(Xv\):
             </p>
 
             \[
-            (Ga)_{\overline{n}|i,r}
+            PV
             =
-            v\left[
+            Xv\left[
             1+(1+r)v+\big((1+r)v\big)^2+\cdots+\big((1+r)v\big)^{n-1}
             \right].
             \]
 
             <p>
-              Since \(v=\frac{1}{1+i}\), the common ratio is
+              The expression inside the brackets is a geometric series. Its common ratio is
             </p>
 
             \[
@@ -1428,13 +1475,13 @@ mathjax: true
             \]
 
             <p>
-              Therefore,
+              So
             </p>
 
             \[
-            (Ga)_{\overline{n}|i,r}
+            PV
             =
-            v\frac{1-q^n}{1-q}.
+            Xv\frac{1-q^n}{1-q}.
             \]
 
             <p>
@@ -1450,11 +1497,11 @@ mathjax: true
             \]
 
             <p>
-              Therefore,
+              Since \(v=\frac{1}{1+i}\),
             </p>
 
             \[
-            v\frac{1}{1-q}
+            \frac{v}{1-q}
             =
             \frac{1}{1+i}\cdot\frac{1+i}{i-r}
             =
@@ -1462,87 +1509,119 @@ mathjax: true
             \]
 
             <p>
-              Hence,
+              Therefore,
             </p>
 
             \[
-            (Ga)_{\overline{n}|i,r}
+            PV
             =
+            X
             \frac{
             1-\left(\frac{1+r}{1+i}\right)^n
             }{i-r}.
             \]
 
             <div class="fm-proof-note">
-              Memory rule: the whole formula comes from the geometric ratio
-              \(\frac{1+r}{1+i}\). Growth \(1+r\) competes against discounting \(1+i\).
+              Memory rule: the ratio is \(\frac{1+r}{1+i}\). Growth fights against discounting.
+              If \(i=r\), do not use this formula because the denominator becomes \(0\).
             </div>
           </div>
         </details>
 
         <details class="fm-toggle">
-          <summary>Show why the due formula changes the interest rate</summary>
+          <summary>Show derivation of the due formula</summary>
           <div class="fm-toggle-content">
             <p>
-              A geometric annuity-due has payments at times \(0,1,\ldots,n-1\):
+              For the due version, payments occur at times \(0,1,\ldots,n-1\).
+              Therefore, the present value is
             </p>
 
             \[
-            1,\quad 1+r,\quad (1+r)^2,\quad \ldots,\quad (1+r)^{n-1}.
-            \]
-
-            <p>
-              Its present value is
-            </p>
-
-            \[
-            (G\ddot{a})_{\overline{n}|i,r}
+            PV
             =
-            1+(1+r)v+\big((1+r)v\big)^2+\cdots+\big((1+r)v\big)^{n-1}.
+            X+X(1+r)v+X(1+r)^2v^2+\cdots+X(1+r)^{n-1}v^{n-1}.
             \]
 
             <p>
-              Again, the ratio is
+              Factor out \(X\):
             </p>
 
             \[
-            q=\frac{1+r}{1+i}.
+            PV
+            =
+            X\left[
+            1+(1+r)v+\big((1+r)v\big)^2+\cdots+\big((1+r)v\big)^{n-1}
+            \right].
             \]
 
             <p>
-              Now define an equivalent interest rate \(j\) by
+              Again, the common ratio is
+            </p>
+
+            \[
+            q=(1+r)v=\frac{1+r}{1+i}.
+            \]
+
+            <p>
+              Hence,
+            </p>
+
+            \[
+            PV
+            =
+            X\frac{1-q^n}{1-q}.
+            \]
+
+            <p>
+              Substituting \(q=\frac{1+r}{1+i}\), we get
+            </p>
+
+            \[
+            PV
+            =
+            X
+            \frac{
+            1-\left(\frac{1+r}{1+i}\right)^n
+            }{
+            1-\frac{1+r}{1+i}
+            }.
+            \]
+
+            <p>
+              Another way to write this is to define an equivalent interest rate \(j\):
             </p>
 
             \[
             1+j=\frac{1+i}{1+r}.
             \]
 
-            <p>
-              Then
-            </p>
-
             \[
-            j=\frac{1+i}{1+r}-1
-            =
-            \frac{i-r}{1+r}.
+            j=\frac{1+i}{1+r}-1=\frac{i-r}{1+r}.
             \]
 
             <p>
-              Since \(q=\frac{1}{1+j}\), the geometric annuity-due becomes an ordinary annuity-due
-              valued at rate \(j\):
+              Since
             </p>
 
             \[
-            (G\ddot{a})_{\overline{n}|i,r}
+            \frac{1}{1+j}=\frac{1+r}{1+i},
+            \]
+
+            <p>
+              the geometric due annuity becomes an ordinary annuity-due at rate \(j\):
+            </p>
+
+            \[
+            PV
             =
-            \ddot{a}_{\overline{n}|j}
+            X\ddot{a}_{\overline{n}|j}
             =
-            \ddot{a}_{\overline{n}|\frac{i-r}{1+r}}.
+            X\ddot{a}_{\overline{n}|\frac{i-r}{1+r}}.
             \]
 
             <div class="fm-proof-note">
-              This is a powerful trick: divide the interest rate effect by the growth effect, then value
-              the stream like a level annuity.
+              Due means the first payment is at time \(0\), so there is no initial discount factor \(v\).
+              That is why the due formula is one period larger than the immediate formula.
             </div>
           </div>
         </details>
@@ -1551,12 +1630,13 @@ mathjax: true
           <summary>Show perpetuity cases</summary>
           <div class="fm-toggle-content">
             <p>
-              From the finite geometric immediate formula,
+              The finite immediate formula is
             </p>
 
             \[
-            (Ga)_{\overline{n}|i,r}
+            PV
             =
+            X
             \frac{
             1-\left(\frac{1+r}{1+i}\right)^n
             }{i-r}.
@@ -1571,7 +1651,7 @@ mathjax: true
             \]
 
             <p>
-              The perpetuity exists only when \(q<1\), because then \(q^n\to 0\).
+              A geometric perpetuity has a finite present value only when \(q<1\).
             </p>
 
             \[
@@ -1587,38 +1667,38 @@ mathjax: true
             \]
 
             <p>
-              If \(r<i\), then
+              If \(r<i\), then \(q^n\to 0\), and the immediate perpetuity becomes
             </p>
 
             \[
-            (Ga)_{\overline{\infty}|i,r}
+            PV_{\text{immediate}}
             =
-            \frac{1}{i-r}.
+            \frac{X}{i-r}.
             \]
 
             <p>
-              For the due version,
+              The due perpetuity is one period earlier than the immediate perpetuity, so
             </p>
 
             \[
-            (G\ddot{a})_{\overline{\infty}|i,r}
+            PV_{\text{due}}
             =
-            (1+i)(Ga)_{\overline{\infty}|i,r}.
+            (1+i)PV_{\text{immediate}}.
             \]
 
             \[
-            (G\ddot{a})_{\overline{\infty}|i,r}
+            PV_{\text{due}}
             =
-            \frac{1+i}{i-r}.
+            \frac{X(1+i)}{i-r}.
             \]
 
             <p>
-              If \(r\ge i\), the payments grow too quickly relative to the discount rate, so the present value
+              If \(r\ge i\), the payments grow at least as fast as the discount rate, so the present value
               does not converge.
             </p>
 
             <div class="fm-proof-note">
-              A geometric perpetuity needs discounting to dominate growth. That is why the condition is \(r<i\).
+              A geometric perpetuity exists only if discounting dominates growth. That is the condition \(r<i\).
             </div>
           </div>
         </details>
@@ -1627,16 +1707,17 @@ mathjax: true
           <summary>Show special case \(i=r\)</summary>
           <div class="fm-toggle-content">
             <p>
-              When \(i=r\), the growth rate exactly matches the interest rate.
+              When \(i=r\), the growth rate of the payments exactly matches the interest rate.
+              The usual formula cannot be used because \(i-r=0\).
             </p>
 
             <p>
-              For the immediate version, the \(k\)-th payment is \((1+r)^{k-1}\) at time \(k\).
+              For the immediate version, the \(k\)-th payment is \(X(1+r)^{k-1}\) at time \(k\).
               Its present value is
             </p>
 
             \[
-            (1+r)^{k-1}v^k.
+            X(1+r)^{k-1}v^k.
             \]
 
             <p>
@@ -1644,39 +1725,40 @@ mathjax: true
             </p>
 
             \[
-            (1+r)^{k-1}v^k
+            X(1+r)^{k-1}v^k
             =
-            (1+r)^{k-1}\frac{1}{(1+r)^k}
+            X(1+r)^{k-1}\frac{1}{(1+r)^k}
             =
-            \frac{1}{1+r}
+            \frac{X}{1+r}
             =
-            v.
+            Xv.
             \]
 
             <p>
-              Every discounted payment is equal to \(v\), and there are \(n\) payments:
+              Every discounted payment equals \(Xv\), and there are \(n\) payments:
             </p>
 
             \[
-            (Ga)_{\overline{n}|r,r}=nv.
+            PV_{\text{immediate}}=Xnv.
             \]
 
             <p>
-              For the due version, the \(k\)-th payment occurs one period earlier, so each discounted payment
-              equals \(1\). Therefore,
+              For the due version, each payment occurs one period earlier. The \(k\)-th discounted payment
+              becomes \(X\), so
             </p>
 
             \[
-            (G\ddot{a})_{\overline{n}|r,r}=n.
+            PV_{\text{due}}=Xn.
             \]
 
             <div class="fm-proof-note">
-              When \(i=r\), the usual formula has denominator \(i-r=0\), so you must use the special case.
+              When \(i=r\), each payment's growth exactly cancels the effect of discounting.
             </div>
           </div>
         </details>
       </div>
     </details>
+    
 
 
 
@@ -1687,7 +1769,7 @@ mathjax: true
 
 
 
-
+    
 
 
 
