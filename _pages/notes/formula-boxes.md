@@ -3216,6 +3216,393 @@ mathjax: true
       </div>
     </details>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="fm-proof-card fm-card-toggle">
+  <summary class="fm-card-summary">
+    <span class="fm-proof-label">Bonds and securities</span>
+    <h3>Accumulation of discount and book value</h3>
+  </summary>
+  <div class="fm-card-content">
+    <p>
+      When a bond is purchased at a discount, its book value increases over time until it reaches the
+      redemption value at maturity. The increase in book value during a coupon period is called the
+      accumulation of discount.
+    </p>
+
+    <div class="fm-formula-row">
+      <strong>Discount bond:</strong>
+      \[
+      P<C
+      \]
+    </div>
+
+    <div class="fm-formula-row">
+      <strong>Book value recursion:</strong>
+      \[
+      B_t=B_{t-1}(1+i)-Fr
+      \]
+    </div>
+
+    <div class="fm-formula-row">
+      <strong>Accumulation of discount at coupon \(t\):</strong>
+      \[
+      A_t=B_t-B_{t-1}
+      =
+      (Ci-Fr)v^{n-t+1}
+      \]
+    </div>
+
+    <div class="fm-formula-row">
+      <strong>Total discount in the purchase price:</strong>
+      \[
+      C-P=(Ci-Fr)a_{\overline{n}|i}
+      \]
+    </div>
+
+    <p>
+      Here, \(C\) is the redemption value, \(Fr\) is the coupon per period, \(i\) is the yield rate per
+      period, \(n\) is the total number of coupons, \(v=\frac{1}{1+i}\), and \(B_t\) is the book value
+      just after the \(t\)-th coupon.
+    </p>
+
+    <details class="fm-toggle">
+      <summary>Show why the exponent is \(n-t+1\)</summary>
+      <div class="fm-toggle-content">
+        <p>
+          The accumulation of discount in coupon \(t\) happens during the period from \(t-1\) to \(t\).
+          Therefore, it starts from the book value just after coupon \(t-1\).
+        </p>
+
+        <p>
+          Just after coupon \(t-1\), the coupon \(t\) has not been paid yet. The remaining coupon dates are
+        </p>
+
+        \[
+        t,\ t+1,\ t+2,\ldots,n.
+        \]
+
+        <p>
+          The number of remaining coupons is therefore
+        </p>
+
+        \[
+        n-t+1.
+        \]
+
+        <p>
+          This is why the formula uses \(v^{n-t+1}\), not \(v^{n-t}\).
+        </p>
+
+        <div class="fm-proof-note">
+          Memory rule: coupon \(t\) is included because the accumulation of discount in coupon \(t\)
+          is measured during the period before coupon \(t\) is paid.
+        </div>
+      </div>
+    </details>
+
+    <details class="fm-toggle">
+      <summary>Show derivation</summary>
+      <div class="fm-toggle-content">
+        <p>
+          The book value just after coupon \(t-1\) is the present value, at the bond yield \(i\), of all
+          remaining cash flows:
+        </p>
+
+        \[
+        B_{t-1}
+        =
+        Fr\,a_{\overline{n-t+1}|i}
+        +
+        Cv^{n-t+1}.
+        \]
+
+        <p>
+          The accumulation of discount during coupon period \(t\) is
+        </p>
+
+        \[
+        A_t=B_t-B_{t-1}.
+        \]
+
+        <p>
+          Using the book value recursion,
+        </p>
+
+        \[
+        B_t=B_{t-1}(1+i)-Fr.
+        \]
+
+        <p>
+          Therefore,
+        </p>
+
+        \[
+        A_t
+        =
+        B_{t-1}(1+i)-Fr-B_{t-1}.
+        \]
+
+        \[
+        A_t
+        =
+        iB_{t-1}-Fr.
+        \]
+
+        <p>
+          Substitute the expression for \(B_{t-1}\):
+        </p>
+
+        \[
+        A_t
+        =
+        i\left(Fr\,a_{\overline{n-t+1}|i}+Cv^{n-t+1}\right)-Fr.
+        \]
+
+        \[
+        A_t
+        =
+        Fr\left(ia_{\overline{n-t+1}|i}\right)+Civ^{n-t+1}-Fr.
+        \]
+
+        <p>
+          Since
+        </p>
+
+        \[
+        ia_{\overline{m}|i}=1-v^m,
+        \]
+
+        <p>
+          with \(m=n-t+1\), we get
+        </p>
+
+        \[
+        A_t
+        =
+        Fr(1-v^{n-t+1})+Civ^{n-t+1}-Fr.
+        \]
+
+        \[
+        A_t
+        =
+        Fr-Frv^{n-t+1}+Civ^{n-t+1}-Fr.
+        \]
+
+        \[
+        A_t
+        =
+        (Ci-Fr)v^{n-t+1}.
+        \]
+
+        <div class="fm-proof-note">
+          For a discount bond, \(Ci>Fr\), so \(A_t>0\). The book value increases toward the redemption
+          value \(C\).
+        </div>
+      </div>
+    </details>
+
+    <details class="fm-toggle">
+      <summary>Show example</summary>
+      <div class="fm-toggle-content">
+        <p>
+          A 40-year bond is purchased at a discount and pays annual coupons. The accumulation of discount
+          in the 15th coupon is \(194.82\), and the accumulation of discount in the 20th coupon is \(306.69\).
+          Find the amount of discount in the purchase price.
+        </p>
+
+        <p>
+          Since \(n=40\), the accumulation of discount at coupon \(t\) is
+        </p>
+
+        \[
+        A_t=(Ci-Fr)v^{40-t+1}.
+        \]
+
+        <p>
+          For the 15th coupon,
+        </p>
+
+        \[
+        194.82=(Ci-Fr)v^{40-15+1}.
+        \]
+
+        \[
+        194.82=(Ci-Fr)v^{26}.
+        \]
+
+        <p>
+          For the 20th coupon,
+        </p>
+
+        \[
+        306.69=(Ci-Fr)v^{40-20+1}.
+        \]
+
+        \[
+        306.69=(Ci-Fr)v^{21}.
+        \]
+
+        <p>
+          Divide the two equations:
+        </p>
+
+        \[
+        \frac{194.82}{306.69}
+        =
+        \frac{(Ci-Fr)v^{26}}{(Ci-Fr)v^{21}}
+        =
+        v^5.
+        \]
+
+        \[
+        v
+        =
+        \left(\frac{194.82}{306.69}\right)^{1/5}.
+        \]
+
+        \[
+        v\approx 0.91324.
+        \]
+
+        <p>
+          Therefore,
+        </p>
+
+        \[
+        i=\frac{1}{v}-1\approx 0.095.
+        \]
+
+        <p>
+          Now solve for \(Ci-Fr\) using the 15th coupon:
+        </p>
+
+        \[
+        Ci-Fr
+        =
+        \frac{194.82}{v^{26}}.
+        \]
+
+        \[
+        Ci-Fr\approx 2062.53.
+        \]
+
+        <p>
+          The total discount in the purchase price is the present value of all future accumulations of
+          discount:
+        </p>
+
+        \[
+        C-P=(Ci-Fr)a_{\overline{40}|i}.
+        \]
+
+        \[
+        C-P
+        =
+        2062.53a_{\overline{40}|0.095}.
+        \]
+
+        \[
+        a_{\overline{40}|0.095}
+        =
+        \frac{1-v^{40}}{0.095}.
+        \]
+
+        \[
+        C-P\approx 21{,}135.
+        \]
+
+        <div class="fm-formula-row">
+          \[
+          \boxed{C-P\approx 21{,}135}
+          \]
+        </div>
+
+        <div class="fm-proof-note">
+          The amounts \(194.82\) and \(306.69\) are not the total discount. They are two individual
+          coupon-period accumulations of discount. The total discount in the purchase price is the present
+          value of all 40 such accumulations.
+        </div>
+      </div>
+    </details>
+
+    <details class="fm-toggle">
+      <summary>Show endpoint intuition</summary>
+      <div class="fm-toggle-content">
+        <p>
+          The exponent \(n-t+1\) gives a useful way to check the formula.
+        </p>
+
+        <div class="fm-formula-row">
+          <strong>First coupon:</strong>
+          \[
+          A_1=(Ci-Fr)v^n
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Coupon \(t\):</strong>
+          \[
+          A_t=(Ci-Fr)v^{n-t+1}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Last coupon:</strong>
+          \[
+          A_n=(Ci-Fr)v
+          \]
+        </div>
+
+        <p>
+          For a discount bond, the accumulation of discount grows over time because the exponent decreases:
+        </p>
+
+        \[
+        v^n<v^{n-1}<\cdots<v.
+        \]
+
+        <p>
+          Therefore,
+        </p>
+
+        \[
+        A_1<A_2<\cdots<A_n.
+        \]
+
+        <div class="fm-proof-note">
+          At time \(0\), there is no coupon-period accumulation yet. What exists at time \(0\) is the
+          total discount in the purchase price, \(C-P\).
+        </div>
+      </div>
+    </details>
+  </div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
     <details class="fm-proof-card fm-card-toggle">
       <summary class="fm-card-summary">
         <span class="fm-proof-label">Bonds and securities</span>
