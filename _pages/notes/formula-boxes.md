@@ -611,6 +611,296 @@ mathjax: true
 
 
 
+<details class="fm-proof-card fm-card-toggle">
+  <summary class="fm-card-summary">
+    <span class="fm-proof-label">Spot rates</span>
+    <h3>Spot rates and exact cash-flow matching</h3>
+  </summary>
+  <div class="fm-card-content">
+    <p>
+      A spot rate depends on two things: the calendar year in which the investment starts, and the
+      length of the investment period. If \(s_m^{(Y)}\) is the spot rate available in calendar year
+      \(Y\) for an \(m\)-year zero-coupon investment, then an amount invested at the beginning of
+      year \(Y\) for \(m\) years accumulates according to
+    </p>
+
+    <div class="fm-formula-row">
+      \[
+      \text{Accumulated value}
+      =
+      A\left(1+s_m^{(Y)}\right)^m.
+      \]
+    </div>
+
+    <p>
+      Equivalently, the amount needed at the beginning of year \(Y\) to fund a payment \(L\) due
+      \(m\) years later is
+    </p>
+
+    <div class="fm-formula-row">
+      \[
+      \text{Required investment}
+      =
+      \frac{L}{\left(1+s_m^{(Y)}\right)^m}.
+      \]
+    </div>
+
+    <div class="fm-proof-note">
+      Memory rule: the superscript tells you when the money is invested; the subscript tells you how
+      long the money is invested. An investment made in 2012 for 3 years uses \(s_3^{(2012)}\), not a
+      rate from 2015.
+    </div>
+
+    <details class="fm-toggle">
+      <summary>Show general cash-flow matching method</summary>
+      <div class="fm-toggle-content">
+        <p>
+          In exact cash-flow matching, premiums or asset cash flows are invested in zero-coupon bonds
+          so that future liabilities are paid exactly.
+        </p>
+
+        <p>
+          Suppose an amount \(A\) is received at time \(Y\), and it is used to fund a liability at time
+          \(Y+m\). Then the correct spot rate is the \(m\)-year spot rate available at time \(Y\):
+        </p>
+
+        \[
+        A\left(1+s_m^{(Y)}\right)^m.
+        \]
+
+        <p>
+          If the future liability is \(L\), the amount required at time \(Y\) is
+        </p>
+
+        \[
+        \frac{L}{\left(1+s_m^{(Y)}\right)^m}.
+        \]
+
+        <p>
+          When the shortest-duration liability has priority, work forward in liability order:
+        </p>
+
+        <div class="fm-formula-row">
+          <strong>Step 1:</strong>
+          Use the earliest available premium to fund the earliest liability.
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Step 2:</strong>
+          If the earliest premium is not enough, use part of the next premium to complete the earliest liability.
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Step 3:</strong>
+          Any leftover premium is then invested toward the next liability.
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Step 4:</strong>
+          Continue until every liability is exactly matched.
+        </div>
+
+        <div class="fm-proof-note">
+          The key is not to average spot rates. Each invested amount uses the spot rate corresponding
+          to its own start date and its own investment length.
+        </div>
+      </div>
+    </details>
+
+    <details class="fm-toggle">
+      <summary>Show example</summary>
+      <div class="fm-toggle-content">
+        <p>
+          A company expects to make the following claims:
+        </p>
+
+        <div class="fm-table-wrap">
+          <table class="fm-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Claim</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1/1/2015</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>1/1/2017</td>
+                <td>70,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          It expects to receive the following premiums:
+        </p>
+
+        <div class="fm-table-wrap">
+          <table class="fm-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1/1/2012</td>
+                <td>30,000</td>
+              </tr>
+              <tr>
+                <td>1/1/2013</td>
+                <td>32,000</td>
+              </tr>
+              <tr>
+                <td>1/1/2014</td>
+                <td>\(X\)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Spot rates are given below. The row gives the calendar year in which the investment begins,
+          and the column gives the length of the investment.
+        </p>
+
+        <div class="fm-table-wrap">
+          <table class="fm-table">
+            <thead>
+              <tr>
+                <th>Calendar year of original investment</th>
+                <th>\(s_1\)</th>
+                <th>\(s_2\)</th>
+                <th>\(s_3\)</th>
+                <th>\(s_4\)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2012</td>
+                <td>4.25%</td>
+                <td>4.70%</td>
+                <td>4.95%</td>
+                <td>5.10%</td>
+              </tr>
+              <tr>
+                <td>2013</td>
+                <td>4.45%</td>
+                <td>4.80%</td>
+                <td>5.05%</td>
+                <td>5.25%</td>
+              </tr>
+              <tr>
+                <td>2014</td>
+                <td>4.50%</td>
+                <td>4.85%</td>
+                <td>5.15%</td>
+                <td>5.40%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          The shortest-duration claim is first priority, so the 2015 claim is funded first.
+        </p>
+
+        <p>
+          The 30,000 premium received on 1/1/2012 is invested for 3 years, from 2012 to 2015. Therefore,
+          we use \(s_3^{(2012)}=4.95\%\).
+        </p>
+
+        \[
+        30{,}000(1.0495)^3=34{,}679.16.
+        \]
+
+        <p>
+          The remaining amount needed for the 2015 claim is
+        </p>
+
+        \[
+        50{,}000-34{,}679.16=15{,}320.84.
+        \]
+
+        <p>
+          This remaining amount is funded using part of the 2013 premium. Since the money is invested
+          from 2013 to 2015, the investment length is 2 years, so we use \(s_2^{(2013)}=4.80\%\).
+        </p>
+
+        \[
+        \frac{15{,}320.84}{(1.048)^2}=13{,}949.54.
+        \]
+
+        <p>
+          Therefore, the unused part of the 2013 premium is
+        </p>
+
+        \[
+        32{,}000-13{,}949.54=18{,}050.46.
+        \]
+
+        <p>
+          This remaining 2013 premium is now invested toward the 2017 claim. Since the money is invested
+          from 2013 to 2017, the investment length is 4 years, so we use \(s_4^{(2013)}=5.25\%\).
+        </p>
+
+        \[
+        18{,}050.46(1.0525)^4=22{,}150.15.
+        \]
+
+        <p>
+          The remaining amount needed for the 2017 claim is
+        </p>
+
+        \[
+        70{,}000-22{,}150.15=47{,}849.85.
+        \]
+
+        <p>
+          Finally, the premium \(X\) received on 1/1/2014 is invested for 3 years, from 2014 to 2017.
+          Therefore, we use \(s_3^{(2014)}=5.15\%\).
+        </p>
+
+        \[
+        X(1.0515)^3=47{,}849.85.
+        \]
+
+        \[
+        X=\frac{47{,}849.85}{(1.0515)^3}=41{,}157.86.
+        \]
+
+        <div class="fm-formula-row">
+          \[
+          X\approx 41{,}000.
+          \]
+        </div>
+
+        <div class="fm-proof-note">
+          The most common mistake is to use the year of the claim to choose the rate. The correct
+          rate is chosen using the year the money is invested and the number of years until the claim.
+        </div>
+      </div>
+    </details>
+  </div>
+</details>
+
+
+
+
+    
+
+
+
+
+
+
+
+
 
     
 
