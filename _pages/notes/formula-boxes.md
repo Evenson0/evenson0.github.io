@@ -950,6 +950,752 @@ mathjax: true
       </div>
     </details>
 
+
+
+
+
+
+
+
+
+        <details class="fm-proof-card fm-card-toggle">
+      <summary class="fm-card-summary">
+        <span class="fm-proof-label">Varying annuities</span>
+        <h3>Arithmetic varying annuities</h3>
+      </summary>
+      <div class="fm-card-content">
+        <p>
+          An arithmetic varying annuity has payments that change by a constant amount each period.
+          The most common special cases are increasing annuities and decreasing annuities.
+        </p>
+
+        <div class="fm-formula-row">
+          <strong>Increasing immediate:</strong>
+          \[
+          (Ia)_{\overline{n}|}
+          =
+          \frac{\ddot{a}_{\overline{n}|}-nv^n}{i}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Decreasing immediate:</strong>
+          \[
+          (Da)_{\overline{n}|}
+          =
+          \frac{n-a_{\overline{n}|}}{i}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Increasing due:</strong>
+          \[
+          (I\ddot{a})_{\overline{n}|}
+          =
+          \frac{\ddot{a}_{\overline{n}|}-nv^n}{d}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Decreasing due:</strong>
+          \[
+          (D\ddot{a})_{\overline{n}|}
+          =
+          \frac{n-a_{\overline{n}|}}{d}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Accumulated values:</strong>
+          \[
+          (Is)_{\overline{n}|}=(Ia)_{\overline{n}|}(1+i)^n,
+          \qquad
+          (Ds)_{\overline{n}|}=(Da)_{\overline{n}|}(1+i)^n
+          \]
+          \[
+          (I\ddot{s})_{\overline{n}|}=(I\ddot{a})_{\overline{n}|}(1+i)^n,
+          \qquad
+          (D\ddot{s})_{\overline{n}|}=(D\ddot{a})_{\overline{n}|}(1+i)^n
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Perpetuities:</strong>
+          \[
+          (Ia)_{\overline{\infty}|}
+          =
+          \frac{1}{id}
+          \]
+          \[
+          (I\ddot{a})_{\overline{\infty}|}
+          =
+          \frac{1}{d^2}
+          \]
+        </div>
+
+        <details class="fm-toggle">
+          <summary>Show payment patterns</summary>
+          <div class="fm-toggle-content">
+            <p>
+              For an increasing annuity-immediate, payments occur at the end of each period:
+            </p>
+
+            \[
+            1,\ 2,\ 3,\ \ldots,\ n.
+            \]
+
+            \[
+            (Ia)_{\overline{n}|}
+            =
+            v+2v^2+3v^3+\cdots+nv^n.
+            \]
+
+            <p>
+              For a decreasing annuity-immediate, payments occur at the end of each period:
+            </p>
+
+            \[
+            n,\ n-1,\ n-2,\ \ldots,\ 1.
+            \]
+
+            \[
+            (Da)_{\overline{n}|}
+            =
+            nv+(n-1)v^2+(n-2)v^3+\cdots+v^n.
+            \]
+
+            <p>
+              For annuity-due versions, all payments are shifted one period earlier.
+            </p>
+
+            \[
+            (I\ddot{a})_{\overline{n}|}
+            =
+            1+2v+3v^2+\cdots+nv^{n-1}.
+            \]
+
+            \[
+            (D\ddot{a})_{\overline{n}|}
+            =
+            n+(n-1)v+(n-2)v^2+\cdots+v^{n-1}.
+            \]
+
+            <div class="fm-proof-note">
+              Memory rule: immediate annuities start at time \(1\); due annuities start at time \(0\).
+              The payment amounts are the same, but the timing changes.
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show derivation of \((Ia)_{\overline{n}|}\)</summary>
+          <div class="fm-toggle-content">
+            <p>
+              Start from the present value of the increasing annuity-immediate:
+            </p>
+
+            \[
+            (Ia)_{\overline{n}|}
+            =
+            v+2v^2+3v^3+\cdots+nv^n.
+            \]
+
+            <p>
+              Multiply by \(1+i\). Since \((1+i)v^k=v^{k-1}\), we get
+            </p>
+
+            \[
+            (1+i)(Ia)_{\overline{n}|}
+            =
+            1+2v+3v^2+\cdots+nv^{n-1}.
+            \]
+
+            <p>
+              Subtract the original expression:
+            </p>
+
+            \[
+            (1+i)(Ia)_{\overline{n}|}-(Ia)_{\overline{n}|}
+            =
+            1+v+v^2+\cdots+v^{n-1}-nv^n.
+            \]
+
+            <p>
+              The left side is \(i(Ia)_{\overline{n}|}\). The sum on the right is
+              \(\ddot{a}_{\overline{n}|}\). Therefore,
+            </p>
+
+            \[
+            i(Ia)_{\overline{n}|}
+            =
+            \ddot{a}_{\overline{n}|}-nv^n.
+            \]
+
+            \[
+            (Ia)_{\overline{n}|}
+            =
+            \frac{\ddot{a}_{\overline{n}|}-nv^n}{i}.
+            \]
+
+            <div class="fm-proof-note">
+              This is the key formula behind many arithmetic annuity shortcuts.
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show derivation of \((Da)_{\overline{n}|}\)</summary>
+          <div class="fm-toggle-content">
+            <p>
+              Start from the decreasing annuity-immediate:
+            </p>
+
+            \[
+            (Da)_{\overline{n}|}
+            =
+            nv+(n-1)v^2+(n-2)v^3+\cdots+v^n.
+            \]
+
+            <p>
+              Multiply by \(1+i\):
+            </p>
+
+            \[
+            (1+i)(Da)_{\overline{n}|}
+            =
+            n+(n-1)v+(n-2)v^2+\cdots+v^{n-1}.
+            \]
+
+            <p>
+              Subtract the original expression:
+            </p>
+
+            \[
+            (1+i)(Da)_{\overline{n}|}-(Da)_{\overline{n}|}
+            =
+            n-(v+v^2+\cdots+v^n).
+            \]
+
+            <p>
+              The left side is \(i(Da)_{\overline{n}|}\), and the sum is
+              \(a_{\overline{n}|}\). Therefore,
+            </p>
+
+            \[
+            i(Da)_{\overline{n}|}
+            =
+            n-a_{\overline{n}|}.
+            \]
+
+            \[
+            (Da)_{\overline{n}|}
+            =
+            \frac{n-a_{\overline{n}|}}{i}.
+            \]
+
+            <div class="fm-proof-note">
+              The decreasing annuity formula is often easier to remember because the numerator is
+              simply \(n-a_{\overline{n}|}\).
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show why the due formulas use \(d\)</summary>
+          <div class="fm-toggle-content">
+            <p>
+              A due annuity shifts each payment one period earlier. Therefore,
+            </p>
+
+            \[
+            (I\ddot{a})_{\overline{n}|}
+            =
+            (1+i)(Ia)_{\overline{n}|}.
+            \]
+
+            <p>
+              Using the immediate formula,
+            </p>
+
+            \[
+            (I\ddot{a})_{\overline{n}|}
+            =
+            (1+i)
+            \frac{\ddot{a}_{\overline{n}|}-nv^n}{i}.
+            \]
+
+            <p>
+              Since \(d=\frac{i}{1+i}\), we have \(\frac{1+i}{i}=\frac{1}{d}\).
+              Therefore,
+            </p>
+
+            \[
+            (I\ddot{a})_{\overline{n}|}
+            =
+            \frac{\ddot{a}_{\overline{n}|}-nv^n}{d}.
+            \]
+
+            <p>
+              Similarly,
+            </p>
+
+            \[
+            (D\ddot{a})_{\overline{n}|}
+            =
+            (1+i)(Da)_{\overline{n}|}
+            =
+            \frac{n-a_{\overline{n}|}}{d}.
+            \]
+
+            <div class="fm-proof-note">
+              Memory rule: immediate formulas divide by \(i\); due formulas divide by \(d\).
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show perpetuity limits</summary>
+          <div class="fm-toggle-content">
+            <p>
+              From the increasing annuity-immediate formula,
+            </p>
+
+            \[
+            (Ia)_{\overline{n}|}
+            =
+            \frac{\ddot{a}_{\overline{n}|}-nv^n}{i}.
+            \]
+
+            <p>
+              As \(n\to\infty\), we have \(v^n\to 0\) and \(nv^n\to 0\). Also,
+            </p>
+
+            \[
+            \ddot{a}_{\overline{\infty}|}
+            =
+            \frac{1}{d}.
+            \]
+
+            <p>
+              Therefore,
+            </p>
+
+            \[
+            (Ia)_{\overline{\infty}|}
+            =
+            \frac{1/d}{i}
+            =
+            \frac{1}{id}.
+            \]
+
+            <p>
+              For the due version,
+            </p>
+
+            \[
+            (I\ddot{a})_{\overline{\infty}|}
+            =
+            (1+i)(Ia)_{\overline{\infty}|}.
+            \]
+
+            \[
+            (I\ddot{a})_{\overline{\infty}|}
+            =
+            (1+i)\frac{1}{id}.
+            \]
+
+            <p>
+              Since \(d=\frac{i}{1+i}\), this simplifies to
+            </p>
+
+            \[
+            (I\ddot{a})_{\overline{\infty}|}
+            =
+            \frac{1}{d^2}.
+            \]
+
+            <div class="fm-proof-note">
+              For an increasing perpetuity, \(nv^n\) disappears in the limit because exponential discounting
+              dominates linear growth.
+            </div>
+          </div>
+        </details>
+      </div>
+    </details>
+
+    <details class="fm-proof-card fm-card-toggle">
+      <summary class="fm-card-summary">
+        <span class="fm-proof-label">Varying annuities</span>
+        <h3>Geometric varying annuities</h3>
+      </summary>
+      <div class="fm-card-content">
+        <p>
+          A geometric varying annuity has payments that grow by a constant percentage \(r\) each period.
+          For the immediate version, payments occur at times \(1,2,\ldots,n\):
+        </p>
+
+        <div class="fm-formula-row">
+          \[
+          1,\quad 1+r,\quad (1+r)^2,\quad \ldots,\quad (1+r)^{n-1}.
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Geometric immediate:</strong>
+          \[
+          (Ga)_{\overline{n}|i,r}
+          =
+          \frac{
+          1-\left(\frac{1+r}{1+i}\right)^n
+          }{i-r},
+          \qquad i\ne r.
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Geometric due:</strong>
+          \[
+          (G\ddot{a})_{\overline{n}|i,r}
+          =
+          \ddot{a}_{\overline{n}|\frac{i-r}{1+r}}.
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Geometric immediate perpetuity:</strong>
+          \[
+          (Ga)_{\overline{\infty}|i,r}
+          =
+          \begin{cases}
+          \dfrac{1}{i-r}, & r<i,\\[0.7rem]
+          \text{undefined}, & r\ge i.
+          \end{cases}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Geometric due perpetuity:</strong>
+          \[
+          (G\ddot{a})_{\overline{\infty}|i,r}
+          =
+          \begin{cases}
+          \dfrac{1+i}{i-r}, & r<i,\\[0.7rem]
+          \text{undefined}, & r\ge i.
+          \end{cases}
+          \]
+        </div>
+
+        <div class="fm-formula-row">
+          <strong>Special case \(i=r\):</strong>
+          \[
+          (Ga)_{\overline{n}|r,r}=nv,
+          \qquad
+          (G\ddot{a})_{\overline{n}|r,r}=n.
+          \]
+        </div>
+
+        <details class="fm-toggle">
+          <summary>Show derivation of the immediate formula</summary>
+          <div class="fm-toggle-content">
+            <p>
+              Start with the present value of the geometric increasing payments:
+            </p>
+
+            \[
+            (Ga)_{\overline{n}|i,r}
+            =
+            v+(1+r)v^2+(1+r)^2v^3+\cdots+(1+r)^{n-1}v^n.
+            \]
+
+            <p>
+              Factor out the first discounted payment \(v\):
+            </p>
+
+            \[
+            (Ga)_{\overline{n}|i,r}
+            =
+            v\left[
+            1+(1+r)v+\big((1+r)v\big)^2+\cdots+\big((1+r)v\big)^{n-1}
+            \right].
+            \]
+
+            <p>
+              Since \(v=\frac{1}{1+i}\), the common ratio is
+            </p>
+
+            \[
+            q=(1+r)v=\frac{1+r}{1+i}.
+            \]
+
+            <p>
+              Therefore,
+            </p>
+
+            \[
+            (Ga)_{\overline{n}|i,r}
+            =
+            v\frac{1-q^n}{1-q}.
+            \]
+
+            <p>
+              Now simplify the denominator:
+            </p>
+
+            \[
+            1-q
+            =
+            1-\frac{1+r}{1+i}
+            =
+            \frac{i-r}{1+i}.
+            \]
+
+            <p>
+              Therefore,
+            </p>
+
+            \[
+            v\frac{1}{1-q}
+            =
+            \frac{1}{1+i}\cdot\frac{1+i}{i-r}
+            =
+            \frac{1}{i-r}.
+            \]
+
+            <p>
+              Hence,
+            </p>
+
+            \[
+            (Ga)_{\overline{n}|i,r}
+            =
+            \frac{
+            1-\left(\frac{1+r}{1+i}\right)^n
+            }{i-r}.
+            \]
+
+            <div class="fm-proof-note">
+              Memory rule: the whole formula comes from the geometric ratio
+              \(\frac{1+r}{1+i}\). Growth \(1+r\) competes against discounting \(1+i\).
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show why the due formula changes the interest rate</summary>
+          <div class="fm-toggle-content">
+            <p>
+              A geometric annuity-due has payments at times \(0,1,\ldots,n-1\):
+            </p>
+
+            \[
+            1,\quad 1+r,\quad (1+r)^2,\quad \ldots,\quad (1+r)^{n-1}.
+            \]
+
+            <p>
+              Its present value is
+            </p>
+
+            \[
+            (G\ddot{a})_{\overline{n}|i,r}
+            =
+            1+(1+r)v+\big((1+r)v\big)^2+\cdots+\big((1+r)v\big)^{n-1}.
+            \]
+
+            <p>
+              Again, the ratio is
+            </p>
+
+            \[
+            q=\frac{1+r}{1+i}.
+            \]
+
+            <p>
+              Now define an equivalent interest rate \(j\) by
+            </p>
+
+            \[
+            1+j=\frac{1+i}{1+r}.
+            \]
+
+            <p>
+              Then
+            </p>
+
+            \[
+            j=\frac{1+i}{1+r}-1
+            =
+            \frac{i-r}{1+r}.
+            \]
+
+            <p>
+              Since \(q=\frac{1}{1+j}\), the geometric annuity-due becomes an ordinary annuity-due
+              valued at rate \(j\):
+            </p>
+
+            \[
+            (G\ddot{a})_{\overline{n}|i,r}
+            =
+            \ddot{a}_{\overline{n}|j}
+            =
+            \ddot{a}_{\overline{n}|\frac{i-r}{1+r}}.
+            \]
+
+            <div class="fm-proof-note">
+              This is a powerful trick: divide the interest rate effect by the growth effect, then value
+              the stream like a level annuity.
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show perpetuity cases</summary>
+          <div class="fm-toggle-content">
+            <p>
+              From the finite geometric immediate formula,
+            </p>
+
+            \[
+            (Ga)_{\overline{n}|i,r}
+            =
+            \frac{
+            1-\left(\frac{1+r}{1+i}\right)^n
+            }{i-r}.
+            \]
+
+            <p>
+              Let
+            </p>
+
+            \[
+            q=\frac{1+r}{1+i}.
+            \]
+
+            <p>
+              The perpetuity exists only when \(q<1\), because then \(q^n\to 0\).
+            </p>
+
+            \[
+            \frac{1+r}{1+i}<1
+            \]
+
+            \[
+            1+r<1+i
+            \]
+
+            \[
+            r<i.
+            \]
+
+            <p>
+              If \(r<i\), then
+            </p>
+
+            \[
+            (Ga)_{\overline{\infty}|i,r}
+            =
+            \frac{1}{i-r}.
+            \]
+
+            <p>
+              For the due version,
+            </p>
+
+            \[
+            (G\ddot{a})_{\overline{\infty}|i,r}
+            =
+            (1+i)(Ga)_{\overline{\infty}|i,r}.
+            \]
+
+            \[
+            (G\ddot{a})_{\overline{\infty}|i,r}
+            =
+            \frac{1+i}{i-r}.
+            \]
+
+            <p>
+              If \(r\ge i\), the payments grow too quickly relative to the discount rate, so the present value
+              does not converge.
+            </p>
+
+            <div class="fm-proof-note">
+              A geometric perpetuity needs discounting to dominate growth. That is why the condition is \(r<i\).
+            </div>
+          </div>
+        </details>
+
+        <details class="fm-toggle">
+          <summary>Show special case \(i=r\)</summary>
+          <div class="fm-toggle-content">
+            <p>
+              When \(i=r\), the growth rate exactly matches the interest rate.
+            </p>
+
+            <p>
+              For the immediate version, the \(k\)-th payment is \((1+r)^{k-1}\) at time \(k\).
+              Its present value is
+            </p>
+
+            \[
+            (1+r)^{k-1}v^k.
+            \]
+
+            <p>
+              Since \(i=r\), we have \(v=\frac{1}{1+r}\). Therefore,
+            </p>
+
+            \[
+            (1+r)^{k-1}v^k
+            =
+            (1+r)^{k-1}\frac{1}{(1+r)^k}
+            =
+            \frac{1}{1+r}
+            =
+            v.
+            \]
+
+            <p>
+              Every discounted payment is equal to \(v\), and there are \(n\) payments:
+            </p>
+
+            \[
+            (Ga)_{\overline{n}|r,r}=nv.
+            \]
+
+            <p>
+              For the due version, the \(k\)-th payment occurs one period earlier, so each discounted payment
+              equals \(1\). Therefore,
+            </p>
+
+            \[
+            (G\ddot{a})_{\overline{n}|r,r}=n.
+            \]
+
+            <div class="fm-proof-note">
+              When \(i=r\), the usual formula has denominator \(i-r=0\), so you must use the special case.
+            </div>
+          </div>
+        </details>
+      </div>
+    </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
     <details class="fm-proof-card fm-card-toggle">
       <summary class="fm-card-summary">
         <span class="fm-proof-label">Geometric annuity</span>
