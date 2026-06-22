@@ -134,26 +134,47 @@ author_profile: true
 
   <div class="notes-section-title">Available Notes</div>
 
-<div class="notes-grid">
-  <div class="note-card">
-    <div class="note-tag">Actuarial Science</div>
-    <h3>SOA FM Exam Notes</h3>
-    <p>
-      A growing set of personal notes for the SOA Exam FM, covering interest theory,
-      present value, accumulated value, discount rates, annuities, loans, bonds,
-      duration, immunization, and related topics.
-    </p>
-    <div class="note-links">
-      <a class="note-btn" href="/notes/soa-fm/">Open page</a>
-      <a class="note-btn"
-         href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}"
-         target="_blank"
-         rel="noopener noreferrer">
-        Open PDF
-      </a>
+  <div class="notes-grid">
+
+    <div class="note-card">
+      <div class="note-tag">Actuarial Science</div>
+      <h3>SOA FM Exam Notes</h3>
+      <p>
+        A growing set of personal notes for the SOA Exam FM, covering interest theory,
+        present value, accumulated value, discount rates, annuities, loans, bonds,
+        duration, immunization, and related topics.
+      </p>
+      <div class="note-links">
+        <a class="note-btn" href="/notes/soa-fm/">Open page</a>
+        <a class="note-btn"
+           href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}"
+           target="_blank"
+           rel="noopener noreferrer">
+          Open PDF
+        </a>
+      </div>
     </div>
+
+    <div class="note-card">
+      <div class="note-tag">P&amp;C Actuarial Science</div>
+      <h3>P&amp;C Actuarial Essentials Notes</h3>
+      <p>
+        An independent study companion for the CAS P&amp;C Actuarial Essentials Program,
+        introducing property and casualty insurance, actuarial work, pricing, reserving,
+        insurance data, risk, reinsurance, and key performance metrics.
+      </p>
+      <div class="note-links">
+        <a class="note-btn" href="/notes/pc-actuarial-essentials/">Open page</a>
+        <a class="note-btn"
+           href="{{ '/assets/pdf/pc-actuarial-essentials-notes.pdf' | relative_url }}"
+           target="_blank"
+           rel="noopener noreferrer">
+          Open PDF
+        </a>
+      </div>
+    </div>
+
   </div>
-</div>
 
   <div class="notes-foot">
     More notes in probability, statistics, mathematical finance, and actuarial science will be added here over time.
