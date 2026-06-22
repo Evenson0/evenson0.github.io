@@ -159,9 +159,9 @@ author_profile: true
       <div class="note-tag">P&amp;C Actuarial Science</div>
       <h3>P&amp;C Actuarial Essentials Notes</h3>
       <p>
-        An independent study companion for the CAS P&amp;C Actuarial Essentials Program,
-        introducing property and casualty insurance, actuarial work, pricing, reserving,
-        insurance data, risk, reinsurance, and key performance metrics.
+        A growing set of notes exploring property and casualty insurance and the work
+        of P&amp;C actuaries, including risk, pricing, reserving, insurance data,
+        reinsurance, profitability metrics, and actuarial judgment.
       </p>
       <div class="note-links">
         <a class="note-btn" href="/notes/pc-actuarial-essentials/">Open page</a>
