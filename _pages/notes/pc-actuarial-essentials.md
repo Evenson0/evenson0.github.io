@@ -147,16 +147,6 @@ author_profile: true
     display: block;
   }
 
-  .pc-disclaimer {
-    margin-top: 1.5rem;
-    padding: 1rem 1.1rem;
-    border-left: 3px solid rgba(5,150,105,0.65);
-    background: var(--pc-green-soft);
-    border-radius: 10px;
-    line-height: 1.7;
-    font-size: 0.96rem;
-  }
-
   .pc-toc {
     margin-top: 1rem;
     padding: 1.1rem 1.2rem;
@@ -186,9 +176,10 @@ author_profile: true
   <div class="pc-hero">
     <h2>P&amp;C Actuarial Essentials Notes</h2>
     <p>
-      These notes are an independent study companion for the CAS P&amp;C Actuarial Essentials Program.
-      They are designed to introduce students to the fundamentals of property and casualty insurance
-      through definitions, examples, formulas, actuarial intuition, and short case studies.
+      These notes explore the fundamentals of property and casualty insurance and the work
+      of P&amp;C actuaries. The goal is to build a clear, practical, and structured
+      introduction to how actuaries understand risk, analyze insurance data, price policies,
+      estimate reserves, study profitability, and support insurance decision-making.
     </p>
 
     <div class="pc-meta">
@@ -196,21 +187,23 @@ author_profile: true
       <span class="pc-pill">P&amp;C Insurance</span>
       <span class="pc-pill">Pricing</span>
       <span class="pc-pill">Reserving</span>
-      <span class="pc-pill">Study Notes</span>
+      <span class="pc-pill">Insurance Data</span>
     </div>
   </div>
 
   <div class="pc-section">
     <h2>About these notes</h2>
     <p>
-      The goal of this document is to build a clear and structured introduction to P&amp;C actuarial work.
-      The notes cover the insurance business model, the role of P&amp;C actuaries, claim frequency and severity,
-      ratemaking, reserving, insurance data, reinsurance, profitability metrics, and professional judgment.
+      This document is a personal exploration of the property and casualty insurance field.
+      It focuses on the ideas, tools, and ways of thinking that appear in P&amp;C actuarial work,
+      from basic insurance concepts to pricing, reserving, data analysis, reinsurance, and
+      performance monitoring.
     </p>
 
     <p>
-      The document is written as a learning resource for students who are beginning to explore actuarial science,
-      especially those interested in property and casualty insurance.
+      The notes are written for students, actuarial candidates, and curious learners who want
+      a clear first introduction to the P&amp;C insurance world and to the role actuaries play
+      within it.
     </p>
 
     <div class="pc-btn-row">
@@ -297,10 +290,6 @@ author_profile: true
         src="{{ '/assets/pdf/pc-actuarial-essentials-notes.pdf' | relative_url }}">
       </iframe>
     </div>
-  </div>
-
-  <div class="pc-disclaimer">
-    These are independent personal study notes. They are not official CAS material and are not a substitute for the official CAS P&amp;C Actuarial Essentials Program.
   </div>
 
 </div>
