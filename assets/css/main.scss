@@ -2160,8 +2160,8 @@ html[data-theme="dark"] samp {
 .author__pronouns,
 .author__urls li,
 .author__urls a {
-  font-size: 0.82rem !important;
-  line-height: 1.65 !important;
+  font-size: 0.7rem !important;
+  line-height: 1.35 !important;
 }
 
 .author__bio,
@@ -2179,8 +2179,16 @@ html[data-theme="dark"] samp {
 
 .author__urls li.author__desktop {
   color: #63776b !important;
-  font-size: 0.78rem !important;
-  line-height: 1.55 !important;
+  font-size: 0.7rem !important;
+  line-height: 1.35 !important;
+}
+
+.author__urls li {
+  margin-bottom: 0.18rem !important;
+}
+
+.author__urls a {
+  padding: 0.08rem 0 !important;
 }
 
 html[data-theme="dark"] .author__urls li.author__desktop {
