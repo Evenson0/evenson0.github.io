@@ -1092,3 +1092,115 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   READABILITY AND HOVER REFINEMENTS
+   ========================================================================== */
+
+.page__content,
+.page__content p,
+.page__content li,
+.page__content dd,
+.page__content td,
+.page__content blockquote,
+.archive-card-excerpt,
+.portfolio-meta {
+  font-family: "Inter", $sans-serif !important;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6,
+.archive-card-title,
+.lab-card h3,
+.note-card h3,
+.fm-card h3,
+.pc-card h3,
+.cv-item h3,
+.cv-skill-box h3,
+.memory-card-title {
+  font-family: "JetBrains Mono", $monospace !important;
+}
+
+.archive__item:hover .archive__item-title,
+.archive-card:hover .archive-card-title,
+.archive-card:hover .archive-card-title a,
+.archive-card:hover a,
+.archive a:hover,
+.page__content a:hover,
+.portfolio-row:hover,
+.portfolio-row:hover .portfolio-title {
+  text-decoration: none !important;
+}
+
+.archive-card:hover,
+.portfolio-row:hover {
+  background: var(--ev-console-accent-soft) !important;
+}
+
+.portfolio-row {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.portfolio-row:hover {
+  border-color: var(--ev-console-accent) !important;
+}
+
+.lab-card,
+.note-card,
+.fm-card,
+.pc-card,
+.cv-item,
+.cv-skill-box,
+.memory-card,
+.fm-proof-card,
+.bot-concept,
+.bot-kpi,
+.mh-stat-card,
+.rw-stats {
+  color: var(--global-text-color) !important;
+}
+
+.lab-card p,
+.note-card p,
+.fm-card p,
+.pc-card p,
+.cv-item p,
+.cv-skill-box p,
+.memory-card-text,
+.lab-card-desc,
+.archive-card-excerpt,
+.portfolio-meta {
+  color: color-mix(in srgb, var(--global-text-color) 86%, transparent) !important;
+  opacity: 1 !important;
+}
+
+.note-tag,
+.memory-tag,
+.memory-status,
+.pc-pill,
+.cv-pill,
+.rw-return-chip,
+.archive-card-meta,
+.archive-card-date,
+.portfolio-index,
+.portfolio-type {
+  color: color-mix(in srgb, var(--global-text-color) 72%, var(--ev-console-accent) 28%) !important;
+  opacity: 1 !important;
+}
+
+.notes-shell {
+  border-top: 0 !important;
+}
+
+.notes-intro {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 1px solid var(--ev-line) !important;
+}
