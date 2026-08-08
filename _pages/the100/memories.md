@@ -703,9 +703,6 @@ author_profile: true
           <div class="memory-card-tags">${buildTags(item)}</div>
           <div class="memory-card-footer">
             <span class="memory-status ${getStatusClass(item.status)}">${getStatusLabel(item.status)}</span>
-            <a class="memory-link-button" href="${item.url}" aria-label="View ${item.title}">
-              Details
-            </a>
           </div>
         </div>
       </article>
@@ -739,9 +736,6 @@ author_profile: true
           <small>${item.location}</small>
           ${buildPopupDetails(item)}
           <p>${item.excerpt}</p>
-          <a class="memory-link-button" href="${item.url}" aria-label="View ${item.title}">
-            Details
-          </a>
         </div>
       `);
 

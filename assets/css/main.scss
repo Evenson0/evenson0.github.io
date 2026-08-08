@@ -1549,3 +1549,38 @@ body,
 .memories-filter.active {
   color: var(--global-text-color) !important;
 }
+
+/* Force the visible Markdown prose into the developer type system. */
+#main .page__content,
+#main .page__content > p,
+#main .page__content p,
+#main .page__content li,
+#main .page__content dd,
+#main .page__content td,
+#main .page__content blockquote,
+#main .archive__item-excerpt,
+#main .portfolio-meta,
+#main .lab-card-desc,
+#main .note-card p,
+#main .memory-card-text,
+#main .cv-item p,
+#main .cv-skill-box li,
+#main .tool-note,
+#main .fmc-lead,
+#main .rw-notes p,
+#main .bot-notes p,
+#main .mh-lead,
+#main .mh-sublead {
+  font-family: "JetBrains Mono", $monospace !important;
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+#main mjx-container,
+#main .MathJax,
+#main code,
+#main pre,
+#main kbd,
+#main samp {
+  font-family: $monospace !important;
+}
