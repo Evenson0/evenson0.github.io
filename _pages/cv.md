@@ -123,6 +123,11 @@ author_profile: true
     margin: 2rem 0;
   }
 
+  .cv-rule,
+  .cv-section {
+    display: none;
+  }
+
   .cv-section {
     margin-top: 2rem;
   }
@@ -204,44 +209,127 @@ author_profile: true
   }
 
   .cv-system {
-    display: grid;
-    grid-template-columns: minmax(280px, 0.92fr) minmax(300px, 1.08fr);
-    gap: 1rem;
-    margin: 1.7rem 0 2rem;
-  }
-
-  .cv-system-map,
-  .cv-system-panel {
-    border: 1px solid var(--ev-line, rgba(127,127,127,0.22));
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 650px;
+    margin: 1.7rem 0 0;
+    padding: 1.1rem;
+    border: 1px solid color-mix(in srgb, var(--ev-title-green, #16a34a) 34%, transparent);
     background:
-      linear-gradient(135deg, rgba(16,185,129,0.07), transparent 42%),
-      repeating-linear-gradient(
-        0deg,
-        rgba(127,127,127,0.04) 0,
-        rgba(127,127,127,0.04) 1px,
-        transparent 1px,
-        transparent 18px
-      ),
-      var(--global-bg-color, transparent);
+      radial-gradient(circle at 18% 18%, rgba(16,185,129,0.18), transparent 26%),
+      radial-gradient(circle at 82% 10%, rgba(20,184,166,0.12), transparent 25%),
+      linear-gradient(180deg, rgba(1,18,10,0.96), rgba(0,7,4,0.98));
+    box-shadow:
+      0 26px 70px rgba(0,0,0,0.28),
+      0 0 0 1px rgba(52,211,153,0.08) inset;
+    color: #d7fbe8;
   }
 
-  .cv-system-map {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.65rem;
-    padding: 0.75rem;
+  .cv-matrix-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    opacity: 0.54;
+  }
+
+  .cv-system::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(90deg, rgba(52,211,153,0.08) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(52,211,153,0.06) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(0,0,0,0.22), rgba(0,0,0,0.70));
+    background-size: 42px 42px, 42px 42px, auto;
+    pointer-events: none;
+  }
+
+  .cv-system-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.1rem;
+    color: #d7fbe8;
+  }
+
+  .cv-system-label,
+  .cv-panel-kicker,
+  .cv-node-code,
+  .cv-detail-date {
+    font-family: "JetBrains Mono", monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .cv-system-label {
+    font-size: 0.72rem;
+    color: #52f0a5;
+  }
+
+  .cv-system-title {
+    margin: 0.35rem 0 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(1.55rem, 4vw, 3rem);
+    line-height: 1;
+    color: #52f0a5;
+    text-shadow: 0 0 18px rgba(82,240,165,0.26);
+  }
+
+  .cv-system-status {
+    min-width: max-content;
+    padding: 0.42rem 0.62rem;
+    border: 1px solid rgba(82,240,165,0.32);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.68rem;
+    color: #b7f7d2;
+    background: rgba(0,0,0,0.34);
+  }
+
+  .cv-node-viewport {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(82,240,165,0.22);
+    background: rgba(0,0,0,0.28);
+  }
+
+  .cv-node-rail {
+    display: flex;
+    gap: 0.7rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    padding: 0.85rem;
+  }
+
+  .cv-node-rail::-webkit-scrollbar {
+    height: 7px;
+  }
+
+  .cv-node-rail::-webkit-scrollbar-thumb {
+    background: rgba(82,240,165,0.38);
   }
 
   .cv-node {
     appearance: none;
-    min-height: 118px;
-    padding: 0.85rem;
-    border: 1px solid var(--ev-line, rgba(127,127,127,0.22));
+    position: relative;
+    flex: 0 0 min(240px, 78vw);
+    min-height: 130px;
+    padding: 0.95rem;
+    border: 1px solid rgba(82,240,165,0.24);
     border-radius: 0;
-    color: inherit;
-    background: color-mix(in srgb, var(--global-bg-color) 90%, #10b981 10%);
+    color: #d7fbe8;
+    background:
+      linear-gradient(135deg, rgba(82,240,165,0.14), transparent 54%),
+      rgba(0,10,5,0.76);
     cursor: pointer;
     text-align: left;
+    scroll-snap-align: center;
     transition:
       border-color 0.18s ease,
       background 0.18s ease,
@@ -250,33 +338,44 @@ author_profile: true
       box-shadow 0.18s ease;
   }
 
+  .cv-node::after {
+    content: "";
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    width: 32px;
+    height: 2px;
+    background: #52f0a5;
+    opacity: 0.42;
+  }
+
   .cv-node:hover,
   .cv-node:focus-visible,
   .cv-node.is-active {
-    border-color: var(--ev-title-green, #16a34a);
-    background: color-mix(in srgb, var(--global-bg-color) 78%, #16a34a 22%);
-    box-shadow: 0 0 0 1px rgba(22,163,74,0.22), 0 12px 26px rgba(0,0,0,0.12);
+    border-color: #52f0a5;
+    background:
+      linear-gradient(135deg, rgba(82,240,165,0.24), transparent 56%),
+      rgba(2,32,17,0.92);
+    box-shadow: 0 0 0 1px rgba(82,240,165,0.22), 0 0 34px rgba(16,185,129,0.22);
     outline: none;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
 
   .cv-node-code,
   .cv-panel-kicker {
     display: block;
-    font-family: "JetBrains Mono", monospace;
     font-size: 0.68rem;
-    letter-spacing: 0.08em;
-    color: var(--ev-title-green, #16a34a);
-    opacity: 0.9;
+    color: #52f0a5;
+    opacity: 0.92;
   }
 
   .cv-node-title {
     display: block;
-    margin-top: 0.55rem;
+    margin-top: 0.6rem;
     font-family: "JetBrains Mono", monospace;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 800;
-    color: var(--ev-title-green, #16a34a);
+    color: #d7fbe8;
   }
 
   .cv-node-meta {
@@ -284,25 +383,32 @@ author_profile: true
     margin-top: 0.45rem;
     font-size: 0.78rem;
     line-height: 1.45;
-    color: color-mix(in srgb, var(--global-text-color) 74%, transparent);
+    color: rgba(215,251,232,0.72);
   }
 
   .cv-system-panel {
-    min-height: 100%;
+    min-height: 340px;
     padding: 1.25rem;
+    border: 1px solid rgba(82,240,165,0.28);
+    background:
+      linear-gradient(90deg, rgba(82,240,165,0.10), transparent 28rem),
+      rgba(0,0,0,0.42);
+    backdrop-filter: blur(3px);
   }
 
   .cv-panel-title {
     margin: 0.45rem 0 0.35rem;
     font-family: "JetBrains Mono", monospace;
-    font-size: clamp(1.4rem, 2.6vw, 2.05rem);
-    line-height: 1.12;
-    color: var(--ev-title-green, #16a34a);
+    font-size: clamp(1.55rem, 3.3vw, 2.65rem);
+    line-height: 1.04;
+    color: #52f0a5;
+    text-shadow: 0 0 16px rgba(82,240,165,0.22);
   }
 
   .cv-panel-meta {
+    max-width: 760px;
     margin: 0 0 1rem;
-    color: color-mix(in srgb, var(--global-text-color) 80%, transparent);
+    color: rgba(215,251,232,0.78);
     line-height: 1.65;
   }
 
@@ -315,10 +421,25 @@ author_profile: true
   }
 
   .cv-panel-list li {
-    padding: 0.75rem 0.85rem;
-    border-left: 2px solid var(--ev-title-green, #16a34a);
-    background: color-mix(in srgb, var(--global-bg-color) 88%, #10b981 12%);
+    padding: 0.85rem 0.95rem;
+    border-left: 2px solid #52f0a5;
+    background: rgba(1,24,12,0.72);
+    color: #eafff3;
     line-height: 1.55;
+  }
+
+  .cv-detail-title {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-weight: 800;
+    color: #ffffff;
+  }
+
+  .cv-detail-date {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-size: 0.66rem;
+    color: rgba(82,240,165,0.88);
   }
 
   .cv-panel-tags {
@@ -329,45 +450,61 @@ author_profile: true
   }
 
   .cv-panel-tags span {
-    padding: 0.28rem 0.5rem;
-    border: 1px solid color-mix(in srgb, var(--ev-title-green, #16a34a) 48%, transparent);
+    padding: 0.3rem 0.52rem;
+    border: 1px solid rgba(82,240,165,0.38);
     font-family: "JetBrains Mono", monospace;
     font-size: 0.7rem;
-    color: color-mix(in srgb, var(--global-text-color) 86%, transparent);
-    background: color-mix(in srgb, var(--global-bg-color) 82%, #10b981 18%);
+    color: #d7fbe8;
+    background: rgba(0,0,0,0.36);
   }
 
-  .cv-full-record {
+  .cv-panel-actions {
     display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    margin-top: 2.2rem;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ev-title-green, #16a34a);
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1rem;
   }
 
-  .cv-full-record::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, var(--ev-title-green, #16a34a), transparent);
+  .cv-panel-actions a,
+  .cv-panel-actions a:visited {
+    padding: 0.42rem 0.65rem;
+    border: 1px solid rgba(82,240,165,0.34);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.72rem;
+    color: #52f0a5;
+    text-decoration: none !important;
+    background: rgba(0,0,0,0.28);
+  }
+
+  .cv-panel-actions a:hover {
+    border-color: #52f0a5;
+    color: #ffffff;
+    background: rgba(82,240,165,0.12);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cv-node,
+    .cv-btn {
+      transition: none;
+    }
   }
 
   @media (max-width: 760px) {
     .cv-system {
-      grid-template-columns: 1fr;
+      min-height: 620px;
+      padding: 0.8rem;
     }
 
-    .cv-system-map {
-      grid-template-columns: 1fr;
+    .cv-system-head {
+      display: grid;
     }
 
-    .cv-node {
-      min-height: 94px;
+    .cv-system-status {
+      width: fit-content;
+    }
+
+    .cv-system-panel {
+      padding: 1rem;
     }
   }
 </style>
@@ -393,7 +530,18 @@ author_profile: true
   </div>
 
   <div class="cv-system" aria-label="Interactive CV system">
-    <div class="cv-system-map" role="tablist" aria-label="CV sections">
+    <canvas class="cv-matrix-canvas" id="cv-matrix-canvas" aria-hidden="true"></canvas>
+
+    <div class="cv-system-head">
+      <div>
+        <div class="cv-system-label">interactive cv / matrix mode</div>
+        <h2 class="cv-system-title">Career Signal</h2>
+      </div>
+      <div class="cv-system-status" id="cv-system-status">AUTO-SCAN: ON</div>
+    </div>
+
+    <div class="cv-node-viewport">
+      <div class="cv-node-rail" id="cv-node-rail" role="tablist" aria-label="CV sections">
       <button class="cv-node is-active" type="button" data-cv-node="profile" role="tab" aria-selected="true">
         <span class="cv-node-code">010001 / ID</span>
         <span class="cv-node-title">Profile</span>
@@ -424,14 +572,13 @@ author_profile: true
         <span class="cv-node-title">Activities</span>
         <span class="cv-node-meta">Association, hackathons, writing, theater, sport.</span>
       </button>
+      </div>
     </div>
 
     <section class="cv-system-panel" id="cv-system-panel" role="tabpanel" aria-live="polite"></section>
   </div>
 
   <hr class="cv-rule">
-
-  <div class="cv-full-record">Full record</div>
 
   <div class="cv-section">
     <h2>Professional Experience</h2>
@@ -653,21 +800,59 @@ author_profile: true
         code: "010001 / ID",
         title: "Evenson Auguste",
         meta: "Actuarial Analyst (P&C Pricing) - Montréal, Québec, Canada.",
-        items: [
-          "I build pricing tools, actuarial models, and analytical workflows for property and casualty insurance.",
-          "My work sits between mathematics, actuarial science, software, and practical automation.",
-          "Active online through GitHub and LinkedIn, with a downloadable PDF version available above."
+        details: [
+          {
+            title: "Operating field",
+            date: "current",
+            body: "Pricing tools, actuarial models, and analytical workflows for property and casualty insurance."
+          },
+          {
+            title: "Working intersection",
+            date: "math / insurance / code",
+            body: "Mathematics, actuarial science, software, automation, and practical model deployment."
+          },
+          {
+            title: "Public nodes",
+            date: "available",
+            body: "GitHub and LinkedIn are active links in the header. The downloadable PDF version stays available above."
+          }
         ],
-        tags: ["P&C pricing", "Actuarial tools", "Mathematics", "Computation"]
+        tags: ["P&C pricing", "Actuarial tools", "Mathematics", "Computation"],
+        links: [
+          ["GitHub", "https://github.com/Evenson0"],
+          ["LinkedIn", "https://www.linkedin.com/in/evenson-auguste"]
+        ]
       },
       experience: {
         code: "101110 / RUN",
         title: "Professional Experience",
         meta: "A path shaped by insurance pricing, data systems, research, and technical teaching.",
-        items: [
-          "Actuarial Analyst at Optimum General Insurance, focused on pricing tools, statistical modeling, VBA, Python, R, and portfolio analysis.",
-          "Former corporate actuarial intern at Optimum General Insurance and R&D actuarial intern at Optimum Reinsurance.",
-          "Research assistant for OFE data platforms and conference websites, plus teaching assistant at Université de Montréal."
+        details: [
+          {
+            title: "Actuarial Analyst - P&C Pricing, Optimum General Insurance",
+            date: "September 2025 - Present",
+            body: "Development and optimization of internal actuarial tools for commercial lines and automobile insurance pricing, with data analysis, statistical modeling, VBA, Python, and R."
+          },
+          {
+            title: "Actuarial Intern - Corporate Actuarial, Optimum General Insurance",
+            date: "May 2025 - August 2025",
+            body: "Pricing model improvement, large-scale data analysis, and automation tools for risk modeling."
+          },
+          {
+            title: "Research Assistant, Observatoire de la Francophonie Économique",
+            date: "February 2024 - December 2024",
+            body: "Conference website and data platform management, including updates, data security, and user experience."
+          },
+          {
+            title: "Teaching Assistant, Université de Montréal",
+            date: "September 2022 - April 2024",
+            body: "Undergraduate support in mathematics, linear algebra, statistics, and statistical software for actuarial science."
+          },
+          {
+            title: "Actuarial Intern - R&D, Optimum Reinsurance",
+            date: "May 2023 - August 2023",
+            body: "Interactive RShiny visualization and machine learning analysis using SHAP values and XGBoost."
+          }
         ],
         tags: ["Optimum", "Pricing", "R&D", "Teaching", "Data platforms"]
       },
@@ -675,10 +860,22 @@ author_profile: true
         code: "011010 / EDU",
         title: "Education",
         meta: "Mathematics first, engineering close behind.",
-        items: [
-          "B.Sc. Mathematics - Actuarial Science, Université de Montréal, with interests in risk theory, statistical modeling, quantitative finance, stochastic calculus, and investments.",
-          "B.Eng. Software Engineering, Polytechnique Montréal, concentration in artificial intelligence and data science.",
-          "B.Eng. Electromechanical Engineering, Université d'État d'Haïti."
+        details: [
+          {
+            title: "Université de Montréal",
+            date: "2021 - 2024",
+            body: "B.Sc. Mathematics - Actuarial Science. Interests: risk theory, statistical modeling, quantitative finance, stochastic calculus, and investments."
+          },
+          {
+            title: "Polytechnique Montréal",
+            date: "2022 - 2026",
+            body: "B.Eng. Software Engineering, concentration in artificial intelligence and data science."
+          },
+          {
+            title: "Université d'État d'Haïti",
+            date: "2015 - 2020",
+            body: "B.Eng. Electromechanical Engineering."
+          }
         ],
         tags: ["Actuarial science", "Software engineering", "AI", "Data science"]
       },
@@ -686,10 +883,22 @@ author_profile: true
         code: "110011 / STACK",
         title: "Technical Stack",
         meta: "Tools used to turn models into usable systems.",
-        items: [
-          "Programming and databases: Python, Java, C/C++, SQL, MySQL, Microsoft Access, VBA.",
-          "Statistical software: R, SAS, Excel.",
-          "Other strengths: machine learning, Git, LaTeX, teaching, and scientific communication."
+        details: [
+          {
+            title: "Programming and databases",
+            date: "core stack",
+            body: "Python, Java, C/C++, SQL, MySQL, Microsoft Access, and VBA."
+          },
+          {
+            title: "Statistical software",
+            date: "modeling stack",
+            body: "R, SAS, and Excel."
+          },
+          {
+            title: "Other strengths",
+            date: "support layer",
+            body: "Machine learning, Git, LaTeX, teaching, and scientific communication."
+          }
         ],
         tags: ["Python", "R", "SAS", "SQL", "VBA", "ML", "Git"]
       },
@@ -697,10 +906,22 @@ author_profile: true
         code: "001101 / LANG",
         title: "Languages",
         meta: "Communication layer.",
-        items: [
-          "French - Native.",
-          "Haitian Creole - Native.",
-          "English - Intermediate."
+        details: [
+          {
+            title: "French",
+            date: "native",
+            body: "Professional and academic working language."
+          },
+          {
+            title: "Haitian Creole",
+            date: "native",
+            body: "Native language."
+          },
+          {
+            title: "English",
+            date: "intermediate",
+            body: "Technical reading and professional communication."
+          }
         ],
         tags: ["French", "Haitian Creole", "English"]
       },
@@ -708,10 +929,27 @@ author_profile: true
         code: "111000 / LIFE",
         title: "Activities",
         meta: "Leadership, writing, public presence, and discipline outside the desk.",
-        items: [
-          "Treasurer for the P&C Actuarial Association and former Vice President - Hackathon at PolyHx.",
-          "Columnist for L'Axiomatique, writing about actuarial science and finance.",
-          "Theater training, boxing and kickboxing, plus volunteer science presentations through Cap Campus."
+        details: [
+          {
+            title: "Treasurer - P&C Actuarial Association",
+            date: "Since 2026",
+            body: "Financial management and administrative support for the association."
+          },
+          {
+            title: "Vice President - Hackathon, PolyHx",
+            date: "September 2022 - August 2025",
+            body: "Organization of one of Canada's largest bilingual hackathons."
+          },
+          {
+            title: "Columnist - L'Axiomatique",
+            date: "September 2021 - April 2024",
+            body: "Monthly articles on actuarial science and finance."
+          },
+          {
+            title: "Theater, boxing, volunteering",
+            date: "ongoing",
+            body: "Theater training, boxing and kickboxing, and science presentations through Cap Campus."
+          }
         ],
         tags: ["Association", "Hackathon", "Writing", "Theater", "Boxing"]
       }
@@ -719,6 +957,10 @@ author_profile: true
 
     const panel = document.getElementById("cv-system-panel");
     const nodes = Array.from(document.querySelectorAll("[data-cv-node]"));
+    const rail = document.getElementById("cv-node-rail");
+    const status = document.getElementById("cv-system-status");
+    let activeIndex = 0;
+    let autoplay = null;
 
     const escapeHtml = (value) => value
       .replace(/&/g, "&amp;")
@@ -726,7 +968,7 @@ author_profile: true
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
 
-    const render = (key) => {
+    const render = (key, source = "auto") => {
       const entry = cvData[key];
       if (!entry || !panel) return;
 
@@ -735,11 +977,22 @@ author_profile: true
         <h2 class="cv-panel-title">${escapeHtml(entry.title)}</h2>
         <p class="cv-panel-meta">${escapeHtml(entry.meta)}</p>
         <ul class="cv-panel-list">
-          ${entry.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          ${entry.details.map((item) => `
+            <li>
+              <span class="cv-detail-title">${escapeHtml(item.title)}</span>
+              <span class="cv-detail-date">${escapeHtml(item.date)}</span>
+              ${escapeHtml(item.body)}
+            </li>
+          `).join("")}
         </ul>
         <div class="cv-panel-tags">
           ${entry.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}
         </div>
+        ${entry.links ? `
+          <div class="cv-panel-actions">
+            ${entry.links.map(([label, href]) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`).join("")}
+          </div>
+        ` : ""}
       `;
 
       nodes.forEach((node) => {
@@ -747,12 +1000,83 @@ author_profile: true
         node.classList.toggle("is-active", isActive);
         node.setAttribute("aria-selected", String(isActive));
       });
+
+      activeIndex = Math.max(0, nodes.findIndex((node) => node.dataset.cvNode === key));
+      if (nodes[activeIndex] && rail) {
+        nodes[activeIndex].scrollIntoView({
+          behavior: source === "init" ? "auto" : "smooth",
+          inline: "center",
+          block: "nearest"
+        });
+      }
     };
 
     nodes.forEach((node) => {
-      node.addEventListener("click", () => render(node.dataset.cvNode));
+      node.addEventListener("click", () => {
+        window.clearInterval(autoplay);
+        if (status) status.textContent = "AUTO-SCAN: PAUSED";
+        render(node.dataset.cvNode, "click");
+      });
     });
 
-    render("profile");
+    const startAutoplay = () => {
+      autoplay = window.setInterval(() => {
+        activeIndex = (activeIndex + 1) % nodes.length;
+        render(nodes[activeIndex].dataset.cvNode);
+      }, 4800);
+    };
+
+    const initMatrix = () => {
+      const canvas = document.getElementById("cv-matrix-canvas");
+      const system = document.querySelector(".cv-system");
+      if (!canvas || !system) return;
+
+      const context = canvas.getContext("2d");
+      const chars = "0101011010010110";
+      const fontSize = 15;
+      let columns = 0;
+      let drops = [];
+
+      const resize = () => {
+        const rect = system.getBoundingClientRect();
+        const scale = window.devicePixelRatio || 1;
+        canvas.width = Math.max(1, Math.floor(rect.width * scale));
+        canvas.height = Math.max(1, Math.floor(rect.height * scale));
+        canvas.style.width = `${rect.width}px`;
+        canvas.style.height = `${rect.height}px`;
+        context.setTransform(scale, 0, 0, scale, 0, 0);
+        columns = Math.ceil(rect.width / fontSize);
+        drops = Array.from({ length: columns }, () => Math.random() * -24);
+      };
+
+      const draw = () => {
+        const rect = system.getBoundingClientRect();
+        context.fillStyle = "rgba(0, 7, 4, 0.16)";
+        context.fillRect(0, 0, rect.width, rect.height);
+        context.font = `${fontSize}px JetBrains Mono, monospace`;
+        context.fillStyle = "rgba(82, 240, 165, 0.68)";
+
+        drops.forEach((drop, index) => {
+          const char = chars[Math.floor(Math.random() * chars.length)];
+          context.fillText(char, index * fontSize, drop * fontSize);
+
+          if (drop * fontSize > rect.height && Math.random() > 0.972) {
+            drops[index] = 0;
+          } else {
+            drops[index] = drop + 1;
+          }
+        });
+
+        window.requestAnimationFrame(draw);
+      };
+
+      resize();
+      window.addEventListener("resize", resize);
+      draw();
+    };
+
+    render("profile", "init");
+    startAutoplay();
+    initMatrix();
   })();
 </script>

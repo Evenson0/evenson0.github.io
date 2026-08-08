@@ -99,16 +99,16 @@ author_profile: true
   #memories-map {
     width: 100%;
     height: 560px;
-    background: #020403;
+    background: #b8d7ec;
   }
 
   .memories-map-wrap .leaflet-container {
-    background: #020403;
+    background: #b8d7ec;
     font-family: "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace;
   }
 
   .memories-map-wrap .leaflet-tile {
-    filter: saturate(0.72) hue-rotate(18deg) brightness(0.95) contrast(1.04);
+    filter: saturate(1.08) brightness(1.02) contrast(1.02);
   }
 
   .memories-map-wrap .leaflet-control-zoom a,
@@ -132,6 +132,7 @@ author_profile: true
     border: 1px solid currentColor;
     border-radius: 999px;
     opacity: 0.28;
+    animation: memory-marker-pulse 2.4s ease-out infinite;
   }
 
   .memory-marker-dot {
@@ -141,6 +142,23 @@ author_profile: true
     border-radius: 999px;
     background: currentColor;
     box-shadow: 0 0 18px currentColor;
+  }
+
+  @keyframes memory-marker-pulse {
+    0% {
+      opacity: 0.34;
+      transform: scale(0.72);
+    }
+
+    70% {
+      opacity: 0.08;
+      transform: scale(1.45);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(1.45);
+    }
   }
 
   .memory-marker-hike .memory-marker-dot {
@@ -368,7 +386,13 @@ author_profile: true
   }
 
   html[data-theme="dark"] .memories-map-wrap .leaflet-tile {
-    filter: saturate(0.88) hue-rotate(56deg) brightness(0.86) contrast(1.08);
+    filter: saturate(0.95) brightness(0.76) contrast(1.08);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .memory-marker::before {
+      animation: none;
+    }
   }
 
   @media (max-width: 700px) {
@@ -717,24 +741,10 @@ author_profile: true
     scrollWheelZoom: false
   }).setView([22, -15], 2);
 
-  const getMapTileUrl = () => {
-    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-    return isDark
-      ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-      : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
-  };
-
-  const tileLayer = L.tileLayer(getMapTileUrl(), {
+  const tileLayer = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
     maxZoom: 18,
-    attribution: "&copy; OpenStreetMap contributors &copy; CARTO"
+    attribution: "Tiles &copy; Esri"
   }).addTo(map);
-
-  new MutationObserver(() => {
-    tileLayer.setUrl(getMapTileUrl());
-  }).observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ["data-theme"]
-  });
 
   const markersLayer = L.layerGroup().addTo(map);
   let currentMarkers = [];
