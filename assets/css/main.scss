@@ -1610,6 +1610,67 @@ body,
   font-family: $monospace !important;
 }
 
+:root {
+  --ev-title-green: #047857;
+  --ev-title-green-line: color-mix(in srgb, #047857 70%, transparent);
+}
+
+html[data-theme="dark"] {
+  --ev-title-green: #34d399;
+  --ev-title-green-line: color-mix(in srgb, #34d399 72%, transparent);
+}
+
+#main .page__title,
+#main .archive h1,
+#main .page__content h1,
+#main .page__content h2,
+#main .page__content h3,
+#main .page__content h4,
+#main .page__content h5,
+#main .page__content h6,
+#main .archive__subtitle,
+#main .archive__item-title,
+#main .archive__item-title a,
+#main .archive-card-title,
+#main .archive-card-title a,
+#main .portfolio-title,
+#main .lab-card h3,
+#main .note-card h3,
+#main .memory-card-title,
+#main .cv-name,
+#main .cv-item h3,
+#main .cv-skill-box h3,
+#main .tool-shell h1,
+#main .op-shell h1,
+#main .mh-title,
+#main .fmc-shell h1,
+#main .bot-notes h2,
+#main .rw-notes h2,
+#main .pc-section h2,
+#main .fm-section h2 {
+  color: var(--ev-title-green) !important;
+}
+
+#main .page__title,
+#main .archive h1,
+#main .archive__subtitle,
+#main .page__content h2,
+#main .pc-section h2,
+#main .fm-section h2,
+#main .cv-section h2 {
+  border-color: var(--ev-title-green-line) !important;
+}
+
+#main .page__title::before,
+#main .archive h1::before,
+#main .archive__subtitle::before,
+#main .page__content h2::before,
+#main .pc-section h2::before,
+#main .fm-section h2::before,
+#main .cv-section h2::before {
+  color: var(--ev-title-green) !important;
+}
+
 .tool-nav-row,
 .op-nav-row,
 .fmc-nav-row,
