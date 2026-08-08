@@ -333,17 +333,25 @@ body {
 
 /* Normalize older page-specific card systems into the same editorial language. */
 .lab-shell,
+.notes-shell,
 .notes-intro,
+.fm-shell,
+.pc-notes-shell,
 .fm-hero,
 .pc-hero,
 .cv-shell,
 .list100-shell,
+.memories-shell,
 .tool-shell,
 .prime-shell,
 .goldbach-shell,
+.op-shell,
+.mh-shell,
 .olympiad-shell,
 .fmc-shell,
+.bot-container,
 .bot-shell,
+.rw-container,
 .rw-shell {
   border-radius: 0 !important;
   border-top: 2px solid var(--global-text-color) !important;
@@ -358,7 +366,8 @@ body {
 .notes-grid,
 .fm-grid,
 .pc-grid,
-.cv-skills-grid {
+.cv-skills-grid,
+.memories-grid {
   display: block !important;
 }
 
@@ -368,7 +377,18 @@ body {
 .pc-card,
 .cv-card,
 .cv-skills-card,
-.list100-card {
+.list100-card,
+.memory-card,
+.fm-proof-card,
+.bot-concept,
+.bot-kpi,
+.bot-detail,
+.mh-stat-card,
+.rw-note-box,
+.rw-vector-panel,
+.rw-stats,
+.rw-return-times,
+.rw-computation-box {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.75rem 1rem;
@@ -385,7 +405,8 @@ body {
 }
 
 .lab-card::before,
-.note-card::before {
+.note-card::before,
+.memory-card::before {
   display: none !important;
 }
 
@@ -395,7 +416,18 @@ body {
 .pc-card:hover,
 .cv-card:hover,
 .cv-skills-card:hover,
-.list100-card:hover {
+.list100-card:hover,
+.memory-card:hover,
+.fm-proof-card:hover,
+.bot-concept:hover,
+.bot-kpi:hover,
+.bot-detail:hover,
+.mh-stat-card:hover,
+.rw-note-box:hover,
+.rw-vector-panel:hover,
+.rw-stats:hover,
+.rw-return-times:hover,
+.rw-computation-box:hover {
   border-top-color: var(--ev-line-strong) !important;
   background: transparent !important;
   box-shadow: none !important;
@@ -408,7 +440,16 @@ body {
 .pc-card h3,
 .cv-card h3,
 .cv-skills-card h3,
-.list100-card h3 {
+.list100-card h3,
+.memory-card-title,
+.fm-card-summary h3,
+.bot-concept strong,
+.bot-detail-title,
+.bot-tree-header h3,
+.rw-vector-title,
+.rw-return-times-title,
+.rw-computation-title,
+.mh-stat-title {
   margin: 0 !important;
   font-family: $serif !important;
   font-size: 1.05rem !important;
@@ -421,7 +462,13 @@ body {
 .pc-card p,
 .cv-card p,
 .cv-skills-card p,
-.list100-card p {
+.list100-card p,
+.memory-card-text,
+.fm-card-content p,
+.bot-notes p,
+.rw-notes p,
+.mh-lead,
+.mh-sublead {
   grid-column: 1 / -1;
   margin: 0 !important;
   color: var(--ev-muted) !important;
@@ -432,7 +479,14 @@ body {
 .note-card-link,
 .fm-card-number,
 .pc-pill,
-.cv-pill {
+.cv-pill,
+.note-tag,
+.memory-tag,
+.memory-status,
+.bot-tree-subtitle,
+.rw-small-note,
+.rw-live-label,
+.mh-door-label {
   border-radius: 0 !important;
   border: 0 !important;
   background: transparent !important;
@@ -459,8 +513,43 @@ body {
 .pc-callout,
 .cv-panel,
 .fmc-box,
+.fmc-field,
+.fmc-params,
+.fmc-alert,
+.fmc-step,
+.tool-nav-box,
+.tool-alert,
+.tool-results-box,
+.op-problem-box,
+.op-solution-box,
+.op-answer-box,
+.op-nav-box,
+.fm-choice,
+.fm-answer-box,
+.fm-result-message,
+.mh-status,
+.mh-note,
+.mh-nav,
+.memories-map-wrap,
+.memories-toolbar,
+.memory-popup,
+.pc-pdf-box,
+.pc-toc,
+.fm-note,
+.fm-proof-note,
+.fm-formula-row,
+.fm-toggle,
+.fm-table-wrap,
 .bot-tree-card,
 .bot-result-card,
+.bot-panel,
+.bot-warning,
+.bot-stage,
+.bot-log,
+.rw-panel,
+.rw-canvas-wrap,
+.rw-details,
+.rw-math-display,
 .rw-output-card {
   border-radius: 0 !important;
   border: 1px solid var(--ev-line) !important;
@@ -472,17 +561,159 @@ input,
 select,
 textarea,
 button,
-.btn {
+.btn,
+.tool-btn,
+.op-btn,
+.fm-btn,
+.fmc-btn,
+.bot-btn,
+.rw-btn,
+.mh-btn,
+.memory-link-button,
+.note-btn,
+.pc-btn,
+.fm-btn,
+.memories-filter,
+.rw-return-button {
   border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.tool-btn::before,
+.op-btn::before,
+.fm-btn::before,
+.fmc-btn::before,
+.bot-btn::before {
+  display: none !important;
+}
+
+.tool-btn:hover,
+.op-btn:hover,
+.fm-btn:hover,
+.fmc-btn:hover,
+.bot-btn:hover,
+.rw-btn:hover,
+.mh-btn:hover,
+.memory-link-button:hover,
+.note-btn:hover,
+.pc-btn:hover,
+.memories-filter:hover,
+.rw-return-button:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.memory-card {
+  overflow: visible !important;
+}
+
+.memory-card-image,
+.memory-popup-image,
+.author__avatar img,
+figure img {
+  border-radius: 0 !important;
+}
+
+.memory-card-image {
+  height: auto !important;
+  max-height: 230px;
+  border-bottom: 1px solid var(--ev-line);
+  filter: grayscale(0.25);
+}
+
+.memory-card-body {
+  padding: 1rem 0 0 !important;
+}
+
+.memories-hero {
+  text-align: left !important;
+  border-bottom: 2px solid var(--global-text-color);
+  padding-bottom: 1.25rem;
+}
+
+.memories-hero p,
+.memories-quote {
+  margin-left: 0 !important;
+  text-align: left !important;
+}
+
+.memories-section-title,
+.lab-section-title,
+.notes-section-title,
+.fm-section-title,
+.pc-section h2 {
+  text-align: left !important;
+  border-bottom: 1px solid var(--ev-line);
+  padding-bottom: 0.45rem;
+  font-size: 0.92rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.memories-map-wrap,
+.bot-tree-wrap,
+.rw-canvas-wrap {
+  overflow: auto !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0 !important;
+}
+
+.mh-door,
+.mh-door-panel,
+.mh-door-badge,
+.rw-return-chip,
+.rw-volume-value,
+.bot-volume-value,
+.bot-node-rect {
+  border-radius: 0 !important;
+}
+
+.mh-door,
+.mh-stat-card {
+  box-shadow: none !important;
+}
+
+.mh-door:hover {
+  transform: none !important;
+}
+
+.mh-door::before,
+.mh-door-panel::before,
+.mh-door-panel::after {
+  display: none !important;
+}
+
+.page__content hr[style] {
+  border-top-color: var(--ev-line-strong) !important;
+  margin: 2.5rem 0 !important;
+}
+
+.page__content mjx-container {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 @media (max-width: 720px) {
   .lab-shell,
+  .notes-shell,
   .notes-intro,
+  .fm-shell,
+  .pc-notes-shell,
   .fm-hero,
   .pc-hero,
   .cv-shell,
-  .list100-shell {
+  .list100-shell,
+  .memories-shell,
+  .tool-shell,
+  .op-shell,
+  .mh-shell,
+  .fmc-shell,
+  .bot-container,
+  .rw-container {
     padding: 1.1rem 0 !important;
   }
 
@@ -492,12 +723,31 @@ button,
   .pc-card,
   .cv-card,
   .cv-skills-card,
-  .list100-card {
+  .list100-card,
+  .memory-card,
+  .fm-proof-card,
+  .bot-concept,
+  .bot-kpi,
+  .bot-detail,
+  .mh-stat-card,
+  .rw-note-box,
+  .rw-vector-panel,
+  .rw-stats,
+  .rw-return-times,
+  .rw-computation-box {
     grid-template-columns: minmax(0, 1fr);
   }
 
   .lab-card-cta {
     grid-column: 1;
     grid-row: auto;
+  }
+
+  .memories-toolbar {
+    justify-content: flex-start !important;
+  }
+
+  #memories-map {
+    height: 380px !important;
   }
 }
