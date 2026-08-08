@@ -409,6 +409,12 @@ author_profile: true
     opacity: 1 !important;
   }
 
+  html #main .page__content .cv-system #cv-system-panel .cv-panel-meta {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-shadow: 0 0 12px rgba(0,0,0,0.48);
+  }
+
   #main .page__content #cv-system-panel .cv-detail-title {
     color: #ffffff !important;
     opacity: 1 !important;
@@ -972,7 +978,7 @@ author_profile: true
     const sourceNodes = Array.from(document.querySelectorAll("[data-cv-node]"));
     let allNodes = [...sourceNodes];
     let isMoving = true;
-    let activeKey = "profile";
+    let activeKey = "";
     let lastFrame = 0;
     let loopWidth = 0;
     let position = 0;
@@ -1022,9 +1028,19 @@ author_profile: true
     const bindNodeEvents = () => {
       allNodes.forEach((node) => {
         node.addEventListener("click", () => {
+          const clickedKey = node.dataset.cvNode;
+          const wasMoving = isMoving;
+          const wasActive = clickedKey === activeKey;
+
           centerNode(node);
-          render(getCenteredKey());
-          isMoving = !isMoving;
+          render(clickedKey);
+
+          if (wasMoving) {
+            isMoving = false;
+          } else if (wasActive) {
+            isMoving = true;
+          }
+
           if (status) status.textContent = isMoving ? "AUTO-SCAN: ON" : "AUTO-SCAN: PAUSED";
         });
       });
@@ -1065,8 +1081,11 @@ author_profile: true
       if (!rail || !node || !loopWidth) return;
 
       const viewport = rail.parentElement;
-      const viewportWidth = viewport ? viewport.clientWidth : rail.clientWidth;
-      position = node.offsetLeft - ((viewportWidth - node.offsetWidth) / 2);
+      const viewportBox = viewport ? viewport.getBoundingClientRect() : rail.getBoundingClientRect();
+      const nodeBox = node.getBoundingClientRect();
+      const viewportCenter = viewportBox.left + viewportBox.width / 2;
+      const nodeCenter = nodeBox.left + nodeBox.width / 2;
+      position += nodeCenter - viewportCenter;
       normalizePosition();
       applyCarouselTransform();
     };
@@ -1074,8 +1093,9 @@ author_profile: true
     const getCenteredKey = () => {
       if (!rail || !allNodes.length) return activeKey;
 
-      const railBox = rail.getBoundingClientRect();
-      const center = railBox.left + railBox.width / 2;
+      const viewport = rail.parentElement;
+      const viewportBox = viewport ? viewport.getBoundingClientRect() : rail.getBoundingClientRect();
+      const center = viewportBox.left + viewportBox.width / 2;
       let bestNode = allNodes[0];
       let bestDistance = Infinity;
 
