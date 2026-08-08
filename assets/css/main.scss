@@ -569,7 +569,6 @@ button,
 .bot-btn,
 .rw-btn,
 .mh-btn,
-.memory-link-button,
 .note-btn,
 .pc-btn,
 .fm-btn,
@@ -595,7 +594,6 @@ button,
 .bot-btn:hover,
 .rw-btn:hover,
 .mh-btn:hover,
-.memory-link-button:hover,
 .note-btn:hover,
 .pc-btn:hover,
 .memories-filter:hover,
@@ -1027,7 +1025,6 @@ body {
 .bot-btn,
 .rw-btn,
 .mh-btn,
-.memory-link-button,
 .memories-filter {
   border: 1px solid var(--ev-line-strong) !important;
   background: transparent !important;
@@ -1045,7 +1042,6 @@ body {
 .bot-btn:hover,
 .rw-btn:hover,
 .mh-btn:hover,
-.memory-link-button:hover,
 .memories-filter:hover,
 .memories-filter.active {
   border-color: var(--ev-console-accent) !important;
@@ -1062,8 +1058,7 @@ body {
   border-bottom: 1px solid var(--ev-line) !important;
 }
 
-.note-btn,
-.memory-link-button {
+.note-btn {
   text-decoration: none !important;
 }
 
@@ -1340,7 +1335,6 @@ body,
 .bot-btn:hover,
 .rw-btn:hover,
 .mh-btn:hover,
-.memory-link-button:hover,
 .memories-filter:hover,
 .memories-filter.active {
   border-color: var(--ev-dev-accent) !important;
@@ -1448,7 +1442,6 @@ body,
 .bot-btn:hover,
 .rw-btn:hover,
 .mh-btn:hover,
-.memory-link-button:hover,
 .memories-filter:hover,
 .memories-filter.active {
   border-color: var(--ev-hacker-green-line) !important;
@@ -1566,7 +1559,18 @@ body,
 #main .page__content dd,
 #main .page__content td,
 #main .page__content blockquote,
+#main .archive,
+#main .archive p,
+#main .archive li,
+#main .archive time,
+#main .archive strong,
+#main .archive__item,
+#main .archive__item-excerpt p,
+#main .archive-card,
+#main .archive-card p,
 #main .archive__item-excerpt,
+#main .archive-card-meta,
+#main .archive-card-date,
 #main .portfolio-meta,
 #main .lab-card-desc,
 #main .note-card p,
@@ -1582,6 +1586,19 @@ body,
   font-family: "JetBrains Mono", $monospace !important;
   font-size: 0.94rem;
   line-height: 1.75;
+}
+
+#main a.memory-card,
+#main a.memory-card:visited {
+  color: inherit !important;
+  cursor: pointer;
+  display: block;
+  text-decoration: none !important;
+}
+
+#main a.memory-card:hover,
+#main a.memory-card:focus {
+  text-decoration: none !important;
 }
 
 #main mjx-container,

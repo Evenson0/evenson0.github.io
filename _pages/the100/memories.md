@@ -264,38 +264,6 @@ author_profile: true
     color: #6d28d9;
   }
 
-  .memory-link-button,
-  .memory-link-button:visited {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    padding: 0.62rem 0.9rem;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: white;
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    box-shadow: 0 8px 18px rgba(37,99,235,0.22);
-    transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
-  }
-
-  .memory-link-button:hover,
-  .memory-link-button:focus {
-    transform: translateY(-1px);
-    box-shadow: 0 12px 24px rgba(37,99,235,0.28);
-    opacity: 0.98;
-  }
-
-  .memory-link-button:active {
-    transform: translateY(0);
-  }
-
-  .memory-link-button .arrow {
-    font-size: 0.95em;
-    line-height: 1;
-  }
-
   .leaflet-popup-content-wrapper {
     border-radius: 16px;
   }
@@ -329,11 +297,6 @@ author_profile: true
     display: block;
     margin-bottom: 0.4rem;
     opacity: 0.72;
-  }
-
-  .memory-popup .memory-link-button {
-    padding: 0.55rem 0.82rem;
-    font-size: 0.86rem;
   }
 
   @media (max-width: 700px) {
@@ -676,7 +639,7 @@ author_profile: true
     return tags.join("");
   }
 
-  function buildPopupDetails(item) {
+  function buildPopupMeta(item) {
     let extra = "";
 
     if (item.distance) extra += `<small><strong>Distance:</strong> ${item.distance}</small>`;
@@ -694,7 +657,7 @@ author_profile: true
 
   function renderGrid(items) {
     grid.innerHTML = items.map(item => `
-      <article class="memory-card">
+      <a class="memory-card" href="${item.url}" aria-label="${item.title}">
         <img class="memory-card-image" src="${item.image}" alt="${item.title}">
         <div class="memory-card-body">
           <div class="memory-card-meta">${item.location}</div>
@@ -705,7 +668,7 @@ author_profile: true
             <span class="memory-status ${getStatusClass(item.status)}">${getStatusLabel(item.status)}</span>
           </div>
         </div>
-      </article>
+      </a>
     `).join("");
   }
 
@@ -734,7 +697,7 @@ author_profile: true
           <img class="memory-popup-image" src="${item.image}" alt="${item.title}">
           <h3>${item.title}</h3>
           <small>${item.location}</small>
-          ${buildPopupDetails(item)}
+          ${buildPopupMeta(item)}
           <p>${item.excerpt}</p>
         </div>
       `);
