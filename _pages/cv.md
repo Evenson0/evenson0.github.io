@@ -303,12 +303,12 @@ author_profile: true
     gap: 0.7rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
+    scrollbar-width: none;
     padding: 0.85rem;
   }
 
   .cv-node-rail::-webkit-scrollbar {
-    height: 7px;
+    display: none;
   }
 
   .cv-node-rail::-webkit-scrollbar-thumb {
@@ -408,7 +408,7 @@ author_profile: true
   .cv-panel-meta {
     max-width: 760px;
     margin: 0 0 1rem;
-    color: rgba(215,251,232,0.78);
+    color: #d7fbe8 !important;
     line-height: 1.65;
   }
 
@@ -424,7 +424,7 @@ author_profile: true
     padding: 0.85rem 0.95rem;
     border-left: 2px solid #52f0a5;
     background: rgba(1,24,12,0.72);
-    color: #eafff3;
+    color: #eafff3 !important;
     line-height: 1.55;
   }
 
@@ -432,14 +432,14 @@ author_profile: true
     display: block;
     margin-bottom: 0.2rem;
     font-weight: 800;
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   .cv-detail-date {
     display: block;
     margin-bottom: 0.45rem;
     font-size: 0.66rem;
-    color: rgba(82,240,165,0.88);
+    color: #7dffba !important;
   }
 
   .cv-panel-tags {
@@ -543,32 +543,26 @@ author_profile: true
     <div class="cv-node-viewport">
       <div class="cv-node-rail" id="cv-node-rail" role="tablist" aria-label="CV sections">
       <button class="cv-node is-active" type="button" data-cv-node="profile" role="tab" aria-selected="true">
-        <span class="cv-node-code">010001 / ID</span>
         <span class="cv-node-title">Profile</span>
         <span class="cv-node-meta">Actuarial pricing, mathematical tools, computation.</span>
       </button>
       <button class="cv-node" type="button" data-cv-node="experience" role="tab" aria-selected="false">
-        <span class="cv-node-code">101110 / RUN</span>
         <span class="cv-node-title">Experience</span>
         <span class="cv-node-meta">Pricing, R&amp;D, data platforms, teaching.</span>
       </button>
       <button class="cv-node" type="button" data-cv-node="education" role="tab" aria-selected="false">
-        <span class="cv-node-code">011010 / EDU</span>
         <span class="cv-node-title">Education</span>
         <span class="cv-node-meta">Actuarial science, software engineering, electromechanics.</span>
       </button>
       <button class="cv-node" type="button" data-cv-node="skills" role="tab" aria-selected="false">
-        <span class="cv-node-code">110011 / STACK</span>
         <span class="cv-node-title">Skills</span>
         <span class="cv-node-meta">Python, R, SAS, SQL, VBA, ML, LaTeX.</span>
       </button>
       <button class="cv-node" type="button" data-cv-node="languages" role="tab" aria-selected="false">
-        <span class="cv-node-code">001101 / LANG</span>
         <span class="cv-node-title">Languages</span>
         <span class="cv-node-meta">French, Haitian Creole, English.</span>
       </button>
       <button class="cv-node" type="button" data-cv-node="activities" role="tab" aria-selected="false">
-        <span class="cv-node-code">111000 / LIFE</span>
         <span class="cv-node-title">Activities</span>
         <span class="cv-node-meta">Association, hackathons, writing, theater, sport.</span>
       </button>
@@ -797,7 +791,6 @@ author_profile: true
   (() => {
     const cvData = {
       profile: {
-        code: "010001 / ID",
         title: "Evenson Auguste",
         meta: "Actuarial Analyst (P&C Pricing) - Montréal, Québec, Canada.",
         details: [
@@ -824,7 +817,6 @@ author_profile: true
         ]
       },
       experience: {
-        code: "101110 / RUN",
         title: "Professional Experience",
         meta: "A path shaped by insurance pricing, data systems, research, and technical teaching.",
         details: [
@@ -857,7 +849,6 @@ author_profile: true
         tags: ["Optimum", "Pricing", "R&D", "Teaching", "Data platforms"]
       },
       education: {
-        code: "011010 / EDU",
         title: "Education",
         meta: "Mathematics first, engineering close behind.",
         details: [
@@ -880,7 +871,6 @@ author_profile: true
         tags: ["Actuarial science", "Software engineering", "AI", "Data science"]
       },
       skills: {
-        code: "110011 / STACK",
         title: "Technical Stack",
         meta: "Tools used to turn models into usable systems.",
         details: [
@@ -903,7 +893,6 @@ author_profile: true
         tags: ["Python", "R", "SAS", "SQL", "VBA", "ML", "Git"]
       },
       languages: {
-        code: "001101 / LANG",
         title: "Languages",
         meta: "Communication layer.",
         details: [
@@ -926,7 +915,6 @@ author_profile: true
         tags: ["French", "Haitian Creole", "English"]
       },
       activities: {
-        code: "111000 / LIFE",
         title: "Activities",
         meta: "Leadership, writing, public presence, and discipline outside the desk.",
         details: [
@@ -973,7 +961,6 @@ author_profile: true
       if (!entry || !panel) return;
 
       panel.innerHTML = `
-        <span class="cv-panel-kicker">${escapeHtml(entry.code)}</span>
         <h2 class="cv-panel-title">${escapeHtml(entry.title)}</h2>
         <p class="cv-panel-meta">${escapeHtml(entry.meta)}</p>
         <ul class="cv-panel-list">
@@ -1023,7 +1010,7 @@ author_profile: true
       autoplay = window.setInterval(() => {
         activeIndex = (activeIndex + 1) % nodes.length;
         render(nodes[activeIndex].dataset.cvNode);
-      }, 4800);
+      }, 1000);
     };
 
     const initMatrix = () => {
