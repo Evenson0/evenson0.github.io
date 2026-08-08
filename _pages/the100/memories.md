@@ -4,13 +4,6 @@ permalink: /memories/
 author_profile: true
 ---
 
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""
-/>
-
 <style>
   .memories-shell {
     max-width: 1180px;
@@ -76,14 +69,14 @@ author_profile: true
   .memories-filter:hover,
   .memories-filter:focus {
     transform: translateY(-1px);
-    border-color: rgba(59,130,246,0.45);
+    border-color: rgba(4,120,87,0.45);
     box-shadow: 0 10px 24px rgba(0,0,0,0.08);
   }
 
   .memories-filter.active {
-    background: rgba(37,99,235,0.12);
-    border-color: rgba(37,99,235,0.45);
-    color: #2563eb;
+    background: rgba(4,120,87,0.12);
+    border-color: rgba(4,120,87,0.45);
+    color: #047857;
     font-weight: 600;
   }
 
@@ -91,14 +84,70 @@ author_profile: true
     margin: 0 auto 2rem auto;
     border: 1px solid rgba(127,127,127,0.18);
     border-radius: 22px;
-    overflow: hidden;
+    overflow: hidden !important;
     box-shadow: 0 16px 34px rgba(0,0,0,0.10);
     background: rgba(127,127,127,0.04);
   }
 
   #memories-map {
+    position: relative;
     width: 100%;
     height: 560px;
+  }
+
+  .memories-globe-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    touch-action: none;
+  }
+
+  .memories-globe-canvas:active {
+    cursor: grabbing;
+  }
+
+  .memories-globe-panel {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: min(280px, calc(100% - 2rem));
+    padding: 0.9rem;
+    border: 1px solid rgba(4,120,87,0.22);
+    background: rgba(255,255,255,0.92);
+    color: #17251d;
+    font-family: "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace;
+    pointer-events: none;
+  }
+
+  .memories-globe-panel h3 {
+    margin: 0 0 0.35rem 0;
+    color: #047857;
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .memories-globe-panel p,
+  .memories-globe-panel small {
+    display: block;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  .memories-globe-panel small {
+    margin-bottom: 0.45rem;
+    color: #63776b;
+    font-size: 0.78rem;
+  }
+
+  .memories-globe-fallback {
+    display: grid;
+    min-height: 100%;
+    place-items: center;
+    padding: 2rem;
+    color: #63776b;
+    font-family: "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace;
+    text-align: center;
   }
 
   .memories-legend {
@@ -123,8 +172,8 @@ author_profile: true
     display: inline-block;
   }
 
-  .memories-dot-lived {
-    background: #2563eb;
+  .memories-dot-visited {
+    background: #047857;
     border-radius: 999px;
   }
 
@@ -147,8 +196,8 @@ author_profile: true
     display: inline-block;
   }
 
-  .memories-triangle-lived {
-    color: #2563eb;
+  .memories-triangle-visited {
+    color: #047857;
   }
 
   .memories-triangle-pursued {
@@ -249,9 +298,9 @@ author_profile: true
     letter-spacing: 0.01em;
   }
 
-  .memory-status-lived {
-    background: rgba(37,99,235,0.12);
-    color: #2563eb;
+  .memory-status-visited {
+    background: rgba(4,120,87,0.12);
+    color: #047857;
   }
 
   .memory-status-awaiting {
@@ -262,10 +311,6 @@ author_profile: true
   .memory-status-pursued {
     background: rgba(124,58,237,0.12);
     color: #6d28d9;
-  }
-
-  .leaflet-popup-content-wrapper {
-    border-radius: 16px;
   }
 
   .memory-popup {
@@ -299,6 +344,21 @@ author_profile: true
     opacity: 0.72;
   }
 
+  html[data-theme="dark"] .memories-globe-panel {
+    border-color: rgba(52,211,153,0.32);
+    background: rgba(2,4,3,0.82);
+    color: #d7fbe8;
+  }
+
+  html[data-theme="dark"] .memories-globe-panel h3 {
+    color: #34d399;
+  }
+
+  html[data-theme="dark"] .memories-globe-panel small,
+  html[data-theme="dark"] .memories-globe-fallback {
+    color: #8fbda3;
+  }
+
   @media (max-width: 700px) {
     .memories-shell {
       padding: 1.2rem;
@@ -306,6 +366,12 @@ author_profile: true
 
     #memories-map {
       height: 430px;
+    }
+
+    .memories-globe-panel {
+      right: 0.75rem;
+      bottom: 0.75rem;
+      padding: 0.75rem;
     }
   }
 </style>
@@ -318,7 +384,7 @@ author_profile: true
       Some places remain in memory longer than they remain in time. This page is where I keep the traces of journeys, landscapes, monuments, cities, and hikes that felt large enough to deserve remembrance.
     </p>
     <p class="memories-quote">
-      A map of what I have lived, what I am still pursuing, and what still waits for me somewhere in the world.
+      A globe of what I have visited, what I am still pursuing, and what still waits for me somewhere in the world.
     </p>
   </div>
 
@@ -326,7 +392,7 @@ author_profile: true
     <button class="memories-filter active" data-filter="all">All</button>
     <button class="memories-filter" data-filter="place">Places</button>
     <button class="memories-filter" data-filter="hike">Hikes</button>
-    <button class="memories-filter" data-filter="lived">Lived</button>
+    <button class="memories-filter" data-filter="visited">Visited</button>
     <button class="memories-filter" data-filter="pursued">Pursued</button>
     <button class="memories-filter" data-filter="awaiting">Awaiting</button>
   </div>
@@ -336,10 +402,10 @@ author_profile: true
   </div>
 
   <div class="memories-legend">
-    <span><i class="memories-dot memories-dot-lived"></i> Lived place</span>
+    <span><i class="memories-dot memories-dot-visited"></i> Visited place</span>
     <span><i class="memories-dot memories-dot-pursued"></i> Pursued place</span>
     <span><i class="memories-dot memories-dot-awaiting"></i> Awaiting place</span>
-    <span><i class="memories-triangle memories-triangle-lived"></i> Lived hike</span>
+    <span><i class="memories-triangle memories-triangle-visited"></i> Completed hike</span>
     <!-- <span><i class="memories-triangle memories-triangle-pursued"></i> Pursued hike</span>
     <span><i class="memories-triangle memories-triangle-awaiting"></i> Awaiting hike</span> -->
   </div>
@@ -349,13 +415,17 @@ author_profile: true
 
 </div>
 
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+    }
+  }
+</script>
 
-<script>
+<script type="module">
+  import * as THREE from "three";
+
   const memories = [
     {
       title: "Montreal",
@@ -364,7 +434,7 @@ author_profile: true
       location: "Montreal, Quebec, Canada",
       lat: 45.5017,
       lng: -73.5673,
-      status: "lived",
+      status: "visited",
       category: "place",
       type: "city",
       excerpt: "A city that became part of my life.",
@@ -378,7 +448,7 @@ author_profile: true
       location: "New York, New York, United States",
       lat: 40.7128,
       lng: -74.0060,
-      status: "lived",
+      status: "visited",
       category: "place",
       type: "city",
       excerpt: "The most beautiful city in the world.",
@@ -392,10 +462,10 @@ author_profile: true
       location: "San Diego, California, United States",
       lat: 32.7157,
       lng: -117.1611,
-      status: "lived",
+      status: "visited",
       category: "place",
       type: "city",
-      excerpt: "My first lived memory of California.",
+      excerpt: "My first visited memory of California.",
       image: "/images/memories/san-diego.jpg",
       url: "/memories/san-diego/"
     },
@@ -420,7 +490,7 @@ author_profile: true
       location: "Parc national du Mont-Orford, Quebec, Canada",
       lat: 45.3080,
       lng: -72.2360,
-      status: "lived",
+      status: "visited",
       category: "hike",
       type: "trail",
       difficulty: "Hard",
@@ -438,7 +508,7 @@ author_profile: true
       location: "Observatoire sector, Notre-Dame-des-Bois, Quebec, Canada",
       lat: 45.4550,
       lng: -71.1540,
-      status: "lived",
+      status: "visited",
       category: "hike",
       type: "trail",
       difficulty: "Difficult",
@@ -456,7 +526,7 @@ author_profile: true
       location: "Saint-Augustin-de-Woburn, Quebec, Canada",
       lat: 45.3000,
       lng: -70.8870,
-      status: "lived",
+      status: "visited",
       category: "hike",
       type: "trail",
       difficulty: "Difficult",
@@ -571,59 +641,21 @@ author_profile: true
   const filterButtons = document.querySelectorAll(".memories-filter");
 
   function getStatusClass(status) {
-    if (status === "lived") return "memory-status-lived";
+    if (status === "visited") return "memory-status-visited";
     if (status === "pursued") return "memory-status-pursued";
     return "memory-status-awaiting";
   }
 
   function getStatusLabel(status) {
-    if (status === "lived") return "Lived";
+    if (status === "visited") return "Visited";
     if (status === "pursued") return "Pursued";
     return "Awaiting";
   }
 
   function getMarkerColor(status) {
-    if (status === "lived") return "#2563eb";
+    if (status === "visited") return "#047857";
     if (status === "pursued") return "#7c3aed";
     return "#d97706";
-  }
-
-  function createMarkerIcon(color, category) {
-    if (category === "hike") {
-      return L.divIcon({
-        className: "",
-        html: `
-          <div style="
-            width: 0;
-            height: 0;
-            border-left: 9px solid transparent;
-            border-right: 9px solid transparent;
-            border-bottom: 16px solid ${color};
-            filter: drop-shadow(0 0 0 white) drop-shadow(0 0 3px rgba(0,0,0,0.25));
-          "></div>
-        `,
-        iconSize: [18, 16],
-        iconAnchor: [9, 16],
-        popupAnchor: [0, -14]
-      });
-    }
-
-    return L.divIcon({
-      className: "",
-      html: `
-        <div style="
-          width: 16px;
-          height: 16px;
-          border-radius: 50%;
-          background: ${color};
-          border: 2px solid white;
-          box-shadow: 0 0 0 3px rgba(0,0,0,0.12);
-        "></div>
-      `,
-      iconSize: [16, 16],
-      iconAnchor: [8, 8],
-      popupAnchor: [0, -10]
-    });
   }
 
   function buildTags(item) {
@@ -672,44 +704,219 @@ author_profile: true
     `).join("");
   }
 
-  const map = L.map("memories-map", {
-    zoomControl: true,
-    worldCopyJump: true
-  }).setView([22, -15], 2);
+  const globeRoot = document.getElementById("memories-map");
+  let globeApi = null;
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 18,
-    attribution: "&copy; OpenStreetMap contributors"
-  }).addTo(map);
+  function latLngToVector3(lat, lng, radius) {
+    const phi = (90 - lat) * Math.PI / 180;
+    const theta = (lng + 180) * Math.PI / 180;
 
-  const markersLayer = L.layerGroup().addTo(map);
+    return new THREE.Vector3(
+      -radius * Math.sin(phi) * Math.cos(theta),
+      radius * Math.cos(phi),
+      radius * Math.sin(phi) * Math.sin(theta)
+    );
+  }
 
-  function renderMarkers(items) {
-    markersLayer.clearLayers();
+  function createRing(radius, latitude, material) {
+    const points = [];
+    for (let lng = -180; lng <= 180; lng += 4) {
+      points.push(latLngToVector3(latitude, lng, radius));
+    }
+    return new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material);
+  }
 
-    items.forEach(item => {
-      const marker = L.marker([item.lat, item.lng], {
-        icon: createMarkerIcon(getMarkerColor(item.status), item.category)
+  function createMeridian(radius, longitude, material) {
+    const points = [];
+    for (let lat = -90; lat <= 90; lat += 4) {
+      points.push(latLngToVector3(lat, longitude, radius));
+    }
+    return new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material);
+  }
+
+  function createGlobe() {
+    if (!globeRoot || !window.WebGLRenderingContext) {
+      globeRoot.innerHTML = '<div class="memories-globe-fallback">The interactive globe needs WebGL.</div>';
+      return null;
+    }
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
+    camera.position.set(0, 0, 7);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.domElement.className = "memories-globe-canvas";
+    globeRoot.innerHTML = "";
+    globeRoot.appendChild(renderer.domElement);
+
+    const panel = document.createElement("div");
+    panel.className = "memories-globe-panel";
+    globeRoot.appendChild(panel);
+
+    const globeGroup = new THREE.Group();
+    globeGroup.rotation.set(-0.18, -0.85, 0);
+    scene.add(globeGroup);
+
+    const earth = new THREE.Mesh(
+      new THREE.SphereGeometry(2, 96, 64),
+      new THREE.MeshPhongMaterial({
+        color: 0x07140d,
+        emissive: 0x021108,
+        shininess: 18,
+        transparent: true,
+        opacity: 0.96
+      })
+    );
+    globeGroup.add(earth);
+
+    const shell = new THREE.Mesh(
+      new THREE.SphereGeometry(2.035, 96, 64),
+      new THREE.MeshBasicMaterial({
+        color: 0x34d399,
+        wireframe: true,
+        transparent: true,
+        opacity: 0.16
+      })
+    );
+    globeGroup.add(shell);
+
+    const lineMaterial = new THREE.LineBasicMaterial({
+      color: 0x34d399,
+      transparent: true,
+      opacity: 0.2
+    });
+
+    [-60, -30, 0, 30, 60].forEach(lat => globeGroup.add(createRing(2.045, lat, lineMaterial)));
+    [-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150, 180].forEach(lng => globeGroup.add(createMeridian(2.045, lng, lineMaterial)));
+
+    const ambient = new THREE.AmbientLight(0x7fffd4, 1.2);
+    const key = new THREE.DirectionalLight(0xffffff, 1.35);
+    key.position.set(3, 4, 5);
+    scene.add(ambient, key);
+
+    const markerGroup = new THREE.Group();
+    globeGroup.add(markerGroup);
+
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+    const markers = [];
+    let activeItems = memories;
+    let selectedItem = memories[0];
+    let dragging = false;
+    let moved = false;
+    let lastX = 0;
+    let lastY = 0;
+
+    function resize() {
+      const rect = globeRoot.getBoundingClientRect();
+      renderer.setSize(rect.width, rect.height, false);
+      camera.aspect = rect.width / rect.height;
+      camera.updateProjectionMatrix();
+    }
+
+    function updatePanel(item) {
+      selectedItem = item;
+      panel.innerHTML = `
+        <h3>${item.title}</h3>
+        <small>${item.location} · ${getStatusLabel(item.status)}</small>
+        <p>${item.excerpt}</p>
+      `;
+    }
+
+    function clearMarkers() {
+      markers.splice(0).forEach(marker => {
+        markerGroup.remove(marker);
+        marker.geometry.dispose();
+        marker.material.dispose();
+      });
+    }
+
+    function renderMarkers(items) {
+      clearMarkers();
+      activeItems = items;
+
+      items.forEach(item => {
+        const geometry = item.category === "hike"
+          ? new THREE.ConeGeometry(0.07, 0.16, 4)
+          : new THREE.SphereGeometry(0.055, 18, 18);
+        const material = new THREE.MeshBasicMaterial({ color: getMarkerColor(item.status) });
+        const marker = new THREE.Mesh(geometry, material);
+        marker.position.copy(latLngToVector3(item.lat, item.lng, 2.12));
+        marker.lookAt(new THREE.Vector3(0, 0, 0));
+        marker.userData.item = item;
+        markers.push(marker);
+        markerGroup.add(marker);
       });
 
-      marker.bindPopup(`
-        <div class="memory-popup">
-          <img class="memory-popup-image" src="${item.image}" alt="${item.title}">
-          <h3>${item.title}</h3>
-          <small>${item.location}</small>
-          ${buildPopupMeta(item)}
-          <p>${item.excerpt}</p>
-        </div>
-      `);
+      updatePanel(items[0] || memories[0]);
+    }
 
-      markersLayer.addLayer(marker);
+    function pick(clientX, clientY) {
+      const rect = renderer.domElement.getBoundingClientRect();
+      pointer.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+      pointer.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+      raycaster.setFromCamera(pointer, camera);
+      const hit = raycaster.intersectObjects(markers, false)[0];
+      if (!hit) return;
+      updatePanel(hit.object.userData.item);
+    }
+
+    function onPointerDown(event) {
+      dragging = true;
+      moved = false;
+      lastX = event.clientX;
+      lastY = event.clientY;
+      renderer.domElement.setPointerCapture(event.pointerId);
+    }
+
+    function onPointerMove(event) {
+      if (!dragging) return;
+      const dx = event.clientX - lastX;
+      const dy = event.clientY - lastY;
+      if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
+      globeGroup.rotation.y += dx * 0.006;
+      globeGroup.rotation.x += dy * 0.004;
+      globeGroup.rotation.x = Math.max(-1.1, Math.min(1.1, globeGroup.rotation.x));
+      lastX = event.clientX;
+      lastY = event.clientY;
+    }
+
+    function onPointerUp(event) {
+      dragging = false;
+      renderer.domElement.releasePointerCapture(event.pointerId);
+      if (!moved) pick(event.clientX, event.clientY);
+    }
+
+    renderer.domElement.addEventListener("pointerdown", onPointerDown);
+    renderer.domElement.addEventListener("pointermove", onPointerMove);
+    renderer.domElement.addEventListener("pointerup", onPointerUp);
+    renderer.domElement.addEventListener("pointercancel", () => { dragging = false; });
+    renderer.domElement.addEventListener("dblclick", () => {
+      if (selectedItem && selectedItem.url) window.location.href = selectedItem.url;
     });
+    window.addEventListener("resize", resize);
+
+    function animate() {
+      requestAnimationFrame(animate);
+      if (!dragging) globeGroup.rotation.y += 0.0014;
+      markers.forEach(marker => {
+        marker.scale.setScalar(marker.userData.item === selectedItem ? 1.55 : 1);
+      });
+      renderer.render(scene, camera);
+    }
+
+    resize();
+    renderMarkers(memories);
+    animate();
+
+    return { renderMarkers, resize };
   }
 
   function renderAll(filter) {
     const filtered = getFilteredItems(filter);
     renderGrid(filtered);
-    renderMarkers(filtered);
+    if (globeApi) globeApi.renderMarkers(filtered);
   }
 
   filterButtons.forEach(button => {
@@ -720,5 +927,6 @@ author_profile: true
     });
   });
 
+  globeApi = createGlobe();
   renderAll("all");
 </script>
