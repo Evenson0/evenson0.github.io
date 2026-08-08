@@ -4,6 +4,13 @@ permalink: /memories/
 author_profile: true
 ---
 
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+
 <style>
   .memories-shell {
     max-width: 1180px;
@@ -84,70 +91,76 @@ author_profile: true
     margin: 0 auto 2rem auto;
     border: 1px solid rgba(127,127,127,0.18);
     border-radius: 22px;
-    overflow: hidden !important;
+    overflow: hidden;
     box-shadow: 0 16px 34px rgba(0,0,0,0.10);
     background: rgba(127,127,127,0.04);
   }
 
   #memories-map {
-    position: relative;
     width: 100%;
     height: 560px;
+    background: #020403;
   }
 
-  .memories-globe-canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: grab;
-    touch-action: none;
-  }
-
-  .memories-globe-canvas:active {
-    cursor: grabbing;
-  }
-
-  .memories-globe-panel {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    width: min(280px, calc(100% - 2rem));
-    padding: 0.9rem;
-    border: 1px solid rgba(4,120,87,0.22);
-    background: rgba(255,255,255,0.92);
-    color: #17251d;
+  .memories-map-wrap .leaflet-container {
+    background: #020403;
     font-family: "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace;
-    pointer-events: none;
   }
 
-  .memories-globe-panel h3 {
-    margin: 0 0 0.35rem 0;
-    color: #047857;
-    font-size: 0.98rem;
-    line-height: 1.35;
+  .memories-map-wrap .leaflet-tile {
+    filter: saturate(0.25) hue-rotate(86deg) brightness(0.76) contrast(1.18);
   }
 
-  .memories-globe-panel p,
-  .memories-globe-panel small {
-    display: block;
-    margin: 0;
-    line-height: 1.55;
+  .memories-map-wrap .leaflet-control-zoom a,
+  .memories-map-wrap .leaflet-control-attribution {
+    border-color: rgba(4,120,87,0.22) !important;
+    background: rgba(255,255,255,0.92) !important;
+    color: #047857 !important;
   }
 
-  .memories-globe-panel small {
-    margin-bottom: 0.45rem;
-    color: #63776b;
-    font-size: 0.78rem;
-  }
-
-  .memories-globe-fallback {
+  .memory-marker {
+    position: relative;
     display: grid;
-    min-height: 100%;
     place-items: center;
-    padding: 2rem;
-    color: #63776b;
-    font-family: "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace;
-    text-align: center;
+  }
+
+  .memory-marker::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    opacity: 0.28;
+  }
+
+  .memory-marker-dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255,255,255,0.92);
+    border-radius: 999px;
+    background: currentColor;
+    box-shadow: 0 0 18px currentColor;
+  }
+
+  .memory-marker-hike .memory-marker-dot {
+    width: 0;
+    height: 0;
+    border-right: 7px solid transparent;
+    border-bottom: 13px solid currentColor;
+    border-left: 7px solid transparent;
+    border-top: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .memory-popup-link,
+  .memory-popup-link:visited {
+    display: inline-block;
+    margin-top: 0.35rem;
+    color: #047857;
+    font-weight: 700;
+    text-decoration: none;
   }
 
   .memories-legend {
@@ -313,6 +326,16 @@ author_profile: true
     color: #6d28d9;
   }
 
+  .leaflet-popup-content-wrapper {
+    border: 1px solid rgba(4,120,87,0.2);
+    border-radius: 0;
+    box-shadow: 0 18px 38px rgba(0,0,0,0.16);
+  }
+
+  .leaflet-popup-tip {
+    background: #ffffff;
+  }
+
   .memory-popup {
     max-width: 250px;
   }
@@ -328,6 +351,7 @@ author_profile: true
 
   .memory-popup h3 {
     margin: 0 0 0.35rem 0;
+    color: #047857;
     font-size: 1rem;
     line-height: 1.35;
   }
@@ -344,19 +368,17 @@ author_profile: true
     opacity: 0.72;
   }
 
-  html[data-theme="dark"] .memories-globe-panel {
-    border-color: rgba(52,211,153,0.32);
-    background: rgba(2,4,3,0.82);
-    color: #d7fbe8;
+  html[data-theme="dark"] .memories-map-wrap .leaflet-control-zoom a,
+  html[data-theme="dark"] .memories-map-wrap .leaflet-control-attribution,
+  html[data-theme="dark"] .leaflet-popup-content-wrapper,
+  html[data-theme="dark"] .leaflet-popup-tip {
+    background: #06110b !important;
+    color: #d7fbe8 !important;
   }
 
-  html[data-theme="dark"] .memories-globe-panel h3 {
+  html[data-theme="dark"] .memory-popup h3,
+  html[data-theme="dark"] .memory-popup-link {
     color: #34d399;
-  }
-
-  html[data-theme="dark"] .memories-globe-panel small,
-  html[data-theme="dark"] .memories-globe-fallback {
-    color: #8fbda3;
   }
 
   @media (max-width: 700px) {
@@ -366,12 +388,6 @@ author_profile: true
 
     #memories-map {
       height: 430px;
-    }
-
-    .memories-globe-panel {
-      right: 0.75rem;
-      bottom: 0.75rem;
-      padding: 0.75rem;
     }
   }
 </style>
@@ -384,7 +400,7 @@ author_profile: true
       Some places remain in memory longer than they remain in time. This page is where I keep the traces of journeys, landscapes, monuments, cities, and hikes that felt large enough to deserve remembrance.
     </p>
     <p class="memories-quote">
-      A globe of what I have visited, what I am still pursuing, and what still waits for me somewhere in the world.
+      A map of what I have visited, what I am still pursuing, and what still waits for me somewhere in the world.
     </p>
   </div>
 
@@ -415,17 +431,13 @@ author_profile: true
 
 </div>
 
-<script type="importmap">
-  {
-    "imports": {
-      "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
-    }
-  }
-</script>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
 
-<script type="module">
-  import * as THREE from "three";
-
+<script>
   const memories = [
     {
       title: "Montreal",
@@ -658,6 +670,18 @@ author_profile: true
     return "#d97706";
   }
 
+  function createMarkerIcon(color, category) {
+    return L.divIcon({
+      className: `memory-marker ${category === "hike" ? "memory-marker-hike" : "memory-marker-place"}`,
+      html: `
+        <div class="memory-marker-dot" style="color: ${color};"></div>
+      `,
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      popupAnchor: [0, -16]
+    });
+  }
+
   function buildTags(item) {
     const tags = [
       `<span class="memory-tag">${item.category === "hike" ? "Hike" : "Place"}</span>`,
@@ -704,320 +728,56 @@ author_profile: true
     `).join("");
   }
 
-  const globeRoot = document.getElementById("memories-map");
-  let globeApi = null;
+  const map = L.map("memories-map", {
+    zoomControl: true,
+    worldCopyJump: true,
+    scrollWheelZoom: false
+  }).setView([22, -15], 2);
 
-  function latLngToVector3(lat, lng, radius) {
-    const phi = (90 - lat) * Math.PI / 180;
-    const theta = (lng + 180) * Math.PI / 180;
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: "&copy; OpenStreetMap contributors"
+  }).addTo(map);
 
-    return new THREE.Vector3(
-      -radius * Math.sin(phi) * Math.cos(theta),
-      radius * Math.cos(phi),
-      radius * Math.sin(phi) * Math.sin(theta)
-    );
-  }
+  const markersLayer = L.layerGroup().addTo(map);
+  let currentMarkers = [];
 
-  function createRing(radius, latitude, material) {
-    const points = [];
-    for (let lng = -180; lng <= 180; lng += 4) {
-      points.push(latLngToVector3(latitude, lng, radius));
-    }
-    return new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material);
-  }
+  function renderMarkers(items) {
+    markersLayer.clearLayers();
+    currentMarkers = [];
 
-  function createMeridian(radius, longitude, material) {
-    const points = [];
-    for (let lat = -90; lat <= 90; lat += 4) {
-      points.push(latLngToVector3(lat, longitude, radius));
-    }
-    return new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material);
-  }
-
-  function createEarthTexture() {
-    const canvas = document.createElement("canvas");
-    canvas.width = 2048;
-    canvas.height = 1024;
-    const ctx = canvas.getContext("2d");
-    const w = canvas.width;
-    const h = canvas.height;
-
-    function project(lat, lng) {
-      return {
-        x: ((lng + 180) / 360) * w,
-        y: ((90 - lat) / 180) * h
-      };
-    }
-
-    function drawPolygon(points, fill, stroke) {
-      ctx.beginPath();
-      points.forEach(([lat, lng], index) => {
-        const point = project(lat, lng);
-        if (index === 0) ctx.moveTo(point.x, point.y);
-        else ctx.lineTo(point.x, point.y);
+    items.forEach(item => {
+      const marker = L.marker([item.lat, item.lng], {
+        icon: createMarkerIcon(getMarkerColor(item.status), item.category)
       });
-      ctx.closePath();
-      ctx.fillStyle = fill;
-      ctx.fill();
-      ctx.strokeStyle = stroke;
-      ctx.lineWidth = 2;
-      ctx.stroke();
-    }
 
-    function drawLabel(text, lat, lng) {
-      const point = project(lat, lng);
-      ctx.save();
-      ctx.translate(point.x, point.y);
-      ctx.fillStyle = "rgba(199,249,221,0.82)";
-      ctx.font = "700 20px JetBrains Mono, Monaco, Consolas, monospace";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(text, 0, 0);
-      ctx.restore();
-    }
+      marker.bindPopup(`
+        <div class="memory-popup">
+          <img class="memory-popup-image" src="${item.image}" alt="${item.title}">
+          <h3>${item.title}</h3>
+          <small>${item.location}</small>
+          ${buildPopupMeta(item)}
+          <p>${item.excerpt}</p>
+          <a class="memory-popup-link" href="${item.url}">Open memory</a>
+        </div>
+      `);
 
-    ctx.fillStyle = "#020403";
-    ctx.fillRect(0, 0, w, h);
-
-    ctx.strokeStyle = "rgba(52,211,153,0.12)";
-    ctx.lineWidth = 1;
-    for (let lng = -180; lng <= 180; lng += 15) {
-      const a = project(-90, lng);
-      const b = project(90, lng);
-      ctx.beginPath();
-      ctx.moveTo(a.x, a.y);
-      ctx.lineTo(b.x, b.y);
-      ctx.stroke();
-    }
-    for (let lat = -75; lat <= 75; lat += 15) {
-      const a = project(lat, -180);
-      const b = project(lat, 180);
-      ctx.beginPath();
-      ctx.moveTo(a.x, a.y);
-      ctx.lineTo(b.x, b.y);
-      ctx.stroke();
-    }
-
-    const landFill = "rgba(52,211,153,0.34)";
-    const landStroke = "rgba(110,231,183,0.8)";
-
-    [
-      // North America
-      [[72,-168],[70,-138],[62,-122],[58,-105],[51,-96],[49,-80],[58,-63],[52,-52],[43,-62],[31,-81],[25,-97],[16,-99],[8,-84],[16,-105],[24,-112],[32,-124],[45,-128],[56,-140],[60,-158]],
-      // South America
-      [[12,-81],[9,-66],[-2,-51],[-15,-40],[-32,-52],[-55,-69],[-42,-75],[-18,-79],[-5,-81]],
-      // Greenland
-      [[84,-73],[82,-20],[72,-16],[60,-42],[63,-61],[73,-73]],
-      // Europe
-      [[71,-10],[64,28],[55,42],[44,31],[36,10],[43,-9],[54,-11]],
-      // Africa
-      [[36,-17],[32,31],[12,52],[-10,43],[-35,20],[-34,-10],[-5,-18],[16,-17]],
-      // Asia
-      [[72,28],[70,95],[58,145],[42,151],[22,122],[9,105],[18,78],[7,45],[31,31],[49,42],[58,60]],
-      // Australia
-      [[-11,113],[-16,154],[-39,147],[-43,116],[-26,112]],
-      // Antarctica
-      [[-64,-180],[-66,-90],[-68,0],[-66,90],[-64,180],[-82,180],[-82,-180]]
-    ].forEach(points => drawPolygon(points, landFill, landStroke));
-
-    drawLabel("CANADA", 58, -105);
-    drawLabel("USA", 39, -98);
-    drawLabel("MEXICO", 22, -102);
-    drawLabel("PERU", -10, -75);
-    drawLabel("ECUADOR", -1, -78);
-    drawLabel("CHILE", -34, -71);
-    drawLabel("JORDAN", 31, 36);
-
-    const texture = new THREE.CanvasTexture(canvas);
-    texture.colorSpace = THREE.SRGBColorSpace;
-    texture.anisotropy = 4;
-    return texture;
-  }
-
-  function createGlobe() {
-    if (!globeRoot || !window.WebGLRenderingContext) {
-      globeRoot.innerHTML = '<div class="memories-globe-fallback">The interactive globe needs WebGL.</div>';
-      return null;
-    }
-
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
-    camera.position.set(0, 0, 7);
-
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-    renderer.domElement.className = "memories-globe-canvas";
-    globeRoot.innerHTML = "";
-    globeRoot.appendChild(renderer.domElement);
-
-    const panel = document.createElement("div");
-    panel.className = "memories-globe-panel";
-    globeRoot.appendChild(panel);
-
-    const globeGroup = new THREE.Group();
-    globeGroup.rotation.set(-0.18, -0.85, 0);
-    scene.add(globeGroup);
-
-    const earth = new THREE.Mesh(
-      new THREE.SphereGeometry(2, 96, 64),
-      new THREE.MeshPhongMaterial({
-        color: 0xffffff,
-        map: createEarthTexture(),
-        emissive: 0x021108,
-        shininess: 18,
-        transparent: true,
-        opacity: 0.96
-      })
-    );
-    globeGroup.add(earth);
-
-    const shell = new THREE.Mesh(
-      new THREE.SphereGeometry(2.035, 96, 64),
-      new THREE.MeshBasicMaterial({
-        color: 0x34d399,
-        wireframe: true,
-        transparent: true,
-        opacity: 0.16
-      })
-    );
-    globeGroup.add(shell);
-
-    const lineMaterial = new THREE.LineBasicMaterial({
-      color: 0x34d399,
-      transparent: true,
-      opacity: 0.2
+      markersLayer.addLayer(marker);
+      currentMarkers.push(marker);
     });
 
-    [-60, -30, 0, 30, 60].forEach(lat => globeGroup.add(createRing(2.045, lat, lineMaterial)));
-    [-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150, 180].forEach(lng => globeGroup.add(createMeridian(2.045, lng, lineMaterial)));
-
-    const ambient = new THREE.AmbientLight(0x7fffd4, 1.2);
-    const key = new THREE.DirectionalLight(0xffffff, 1.35);
-    key.position.set(3, 4, 5);
-    scene.add(ambient, key);
-
-    const markerGroup = new THREE.Group();
-    globeGroup.add(markerGroup);
-
-    const raycaster = new THREE.Raycaster();
-    const pointer = new THREE.Vector2();
-    const markers = [];
-    let activeItems = memories;
-    let selectedItem = memories[0];
-    let dragging = false;
-    let moved = false;
-    let lastX = 0;
-    let lastY = 0;
-
-    function resize() {
-      const rect = globeRoot.getBoundingClientRect();
-      renderer.setSize(rect.width, rect.height, false);
-      camera.aspect = rect.width / rect.height;
-      camera.updateProjectionMatrix();
+    if (items.length > 1) {
+      const bounds = L.latLngBounds(items.map(item => [item.lat, item.lng]));
+      map.fitBounds(bounds, { padding: [34, 34], maxZoom: 5 });
+    } else if (items.length === 1) {
+      map.setView([items[0].lat, items[0].lng], 5);
     }
-
-    function updatePanel(item) {
-      selectedItem = item;
-      panel.innerHTML = `
-        <h3>${item.title}</h3>
-        <small>${item.location} · ${getStatusLabel(item.status)}</small>
-        <p>${item.excerpt}</p>
-      `;
-    }
-
-    function clearMarkers() {
-      markers.splice(0).forEach(marker => {
-        markerGroup.remove(marker);
-        marker.geometry.dispose();
-        marker.material.dispose();
-      });
-    }
-
-    function renderMarkers(items) {
-      clearMarkers();
-      activeItems = items;
-
-      items.forEach(item => {
-        const geometry = item.category === "hike"
-          ? new THREE.ConeGeometry(0.07, 0.16, 4)
-          : new THREE.SphereGeometry(0.055, 18, 18);
-        const material = new THREE.MeshBasicMaterial({ color: getMarkerColor(item.status) });
-        const marker = new THREE.Mesh(geometry, material);
-        marker.position.copy(latLngToVector3(item.lat, item.lng, 2.12));
-        marker.lookAt(new THREE.Vector3(0, 0, 0));
-        marker.userData.item = item;
-        markers.push(marker);
-        markerGroup.add(marker);
-      });
-
-      updatePanel(items[0] || memories[0]);
-    }
-
-    function pick(clientX, clientY) {
-      const rect = renderer.domElement.getBoundingClientRect();
-      pointer.x = ((clientX - rect.left) / rect.width) * 2 - 1;
-      pointer.y = -((clientY - rect.top) / rect.height) * 2 + 1;
-      raycaster.setFromCamera(pointer, camera);
-      const hit = raycaster.intersectObjects(markers, false)[0];
-      if (!hit) return;
-      updatePanel(hit.object.userData.item);
-    }
-
-    function onPointerDown(event) {
-      dragging = true;
-      moved = false;
-      lastX = event.clientX;
-      lastY = event.clientY;
-      renderer.domElement.setPointerCapture(event.pointerId);
-    }
-
-    function onPointerMove(event) {
-      if (!dragging) return;
-      const dx = event.clientX - lastX;
-      const dy = event.clientY - lastY;
-      if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
-      globeGroup.rotation.y += dx * 0.006;
-      globeGroup.rotation.x += dy * 0.004;
-      globeGroup.rotation.x = Math.max(-1.1, Math.min(1.1, globeGroup.rotation.x));
-      lastX = event.clientX;
-      lastY = event.clientY;
-    }
-
-    function onPointerUp(event) {
-      dragging = false;
-      renderer.domElement.releasePointerCapture(event.pointerId);
-      if (!moved) pick(event.clientX, event.clientY);
-    }
-
-    renderer.domElement.addEventListener("pointerdown", onPointerDown);
-    renderer.domElement.addEventListener("pointermove", onPointerMove);
-    renderer.domElement.addEventListener("pointerup", onPointerUp);
-    renderer.domElement.addEventListener("pointercancel", () => { dragging = false; });
-    renderer.domElement.addEventListener("dblclick", () => {
-      if (selectedItem && selectedItem.url) window.location.href = selectedItem.url;
-    });
-    window.addEventListener("resize", resize);
-
-    function animate() {
-      requestAnimationFrame(animate);
-      if (!dragging) globeGroup.rotation.y += 0.0014;
-      markers.forEach(marker => {
-        marker.scale.setScalar(marker.userData.item === selectedItem ? 1.55 : 1);
-      });
-      renderer.render(scene, camera);
-    }
-
-    resize();
-    renderMarkers(memories);
-    animate();
-
-    return { renderMarkers, resize };
   }
 
   function renderAll(filter) {
     const filtered = getFilteredItems(filter);
     renderGrid(filtered);
-    if (globeApi) globeApi.renderMarkers(filtered);
+    renderMarkers(filtered);
   }
 
   filterButtons.forEach(button => {
@@ -1028,6 +788,5 @@ author_profile: true
     });
   });
 
-  globeApi = createGlobe();
   renderAll("all");
 </script>
