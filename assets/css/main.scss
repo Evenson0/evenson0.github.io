@@ -774,16 +774,14 @@ body {
 .archive h1,
 .portfolio-lead,
 .cv-name {
-  font-family: "JetBrains Mono", $monospace !important;
+  font-family: "Inter", $sans-serif !important;
   letter-spacing: -0.01em;
 }
 
 .page__title::before,
 .archive .page__title::before,
 .archive h1::before {
-  content: "~/ ";
-  color: var(--ev-console-accent);
-  font-weight: 400;
+  content: none;
 }
 
 .page__content h2,
@@ -807,8 +805,7 @@ body {
 .pc-section h2::before,
 .memories-section-title::before,
 .cv-section h2::before {
-  content: "# ";
-  color: var(--ev-console-accent);
+  content: none;
 }
 
 .masthead__menu-item--lg a,
@@ -843,9 +840,12 @@ body {
 }
 
 .archive-card::before {
-  content: "λ";
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-top: 0.55rem;
+  border: 1px solid var(--ev-console-accent);
   color: var(--ev-console-accent);
-  font-size: 0.95rem;
 }
 
 .archive-card-title {
@@ -855,6 +855,13 @@ body {
 
 .archive-card:hover {
   background: var(--ev-console-accent-soft);
+}
+
+.archive-card:hover .archive-card-title a,
+.page__content a:hover,
+.archive a:hover,
+.portfolio-row:hover .portfolio-title {
+  text-decoration: none !important;
 }
 
 .lab-shell,
@@ -882,7 +889,7 @@ body {
 .notes-shell::before,
 .cv-shell::before,
 .memories-shell::before {
-  content: "session: active";
+  content: none;
   display: block;
   margin-bottom: 1.15rem;
   color: var(--ev-console-dim);
@@ -949,8 +956,7 @@ body {
 .cv-item h3::before,
 .cv-skill-box h3::before,
 .memory-card-title::before {
-  content: "> ";
-  color: var(--ev-console-accent);
+  content: none;
 }
 
 .lab-card {
@@ -980,14 +986,13 @@ body {
 }
 
 .lab-card-link::after {
-  content: "↵";
+  content: "";
   position: absolute;
-  right: 0.8rem;
-  bottom: 0.65rem;
-  color: var(--ev-console-accent);
-  font-family: "JetBrains Mono", $monospace;
+  inset: 0;
+  border: 1px solid var(--ev-console-accent);
   opacity: 0;
   transition: opacity 0.15s ease;
+  pointer-events: none;
 }
 
 .lab-card-link:hover::after {
@@ -1045,6 +1050,21 @@ body {
 .memories-filter.active {
   border-color: var(--ev-console-accent) !important;
   background: var(--ev-console-accent-soft) !important;
+  text-decoration: none !important;
+}
+
+.notes-shell {
+  border-top: 0 !important;
+}
+
+.notes-intro {
+  border-top: 0 !important;
+  border-bottom: 1px solid var(--ev-line) !important;
+}
+
+.note-btn,
+.memory-link-button {
+  text-decoration: none !important;
 }
 
 @media (max-width: 720px) {
