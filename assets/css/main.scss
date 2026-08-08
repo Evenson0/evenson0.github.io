@@ -2147,7 +2147,6 @@ html[data-theme="dark"] samp {
 .sidebar .author__name,
 .author__pronouns,
 .author__bio,
-.author__urls li,
 .author__urls a {
   color: var(--ev-title-green) !important;
 }
@@ -2159,7 +2158,6 @@ html[data-theme="dark"] samp {
 }
 
 .author__pronouns,
-.author__bio,
 .author__urls li,
 .author__urls a {
   font-size: 0.82rem !important;
@@ -2169,7 +2167,24 @@ html[data-theme="dark"] samp {
 .author__bio,
 .sidebar .author__bio,
 .sidebar .author__bio p {
+  font-size: 0.72rem !important;
+  line-height: 1.5 !important;
+}
+
+.author__bio,
+.sidebar .author__bio,
+.sidebar .author__bio p {
   opacity: 1 !important;
+}
+
+.author__urls li.author__desktop {
+  color: #63776b !important;
+  font-size: 0.78rem !important;
+  line-height: 1.55 !important;
+}
+
+html[data-theme="dark"] .author__urls li.author__desktop {
+  color: #8fbda3 !important;
 }
 
 .author__urls .icon-pad-right {
