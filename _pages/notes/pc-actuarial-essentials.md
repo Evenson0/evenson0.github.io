@@ -213,7 +213,6 @@ author_profile: true
          rel="noopener noreferrer">
         Open PDF
       </a>
-      <a class="pc-btn" href="/notes/">Back to notes</a>
     </div>
   </div>
 

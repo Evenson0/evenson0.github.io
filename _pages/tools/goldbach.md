@@ -281,10 +281,7 @@ permalink: /tools/goldbach/
       <a href="/tools/prime-number/" class="tool-btn tool-btn-nav">
         ← Previous
       </a>
-      <a href="/tools/" class="tool-btn tool-btn-back">
-        Back to Tools
-      </a>
-      <a href="/tools/prime-number/" class="tool-btn tool-btn-nav">
+      <a href="/tools/olympiad-practice/" class="tool-btn tool-btn-nav">
         Next →
       </a>
     </div>

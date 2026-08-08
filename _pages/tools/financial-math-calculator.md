@@ -340,8 +340,7 @@ permalink: /tools/financial-math-calculator/
   <div class="fmc-nav-box">
     <div class="fmc-nav-row">
       <a href="/tools/soa-fm-practice/" class="fmc-btn">← Previous</a>
-      <a href="/tools/" class="fmc-btn fmc-btn-back">Back to Tools</a>
-      <a href="/tools/soa-fm-practice/" class="fmc-btn">Next →</a>
+      <a href="/tools/binomial-option-tree/" class="fmc-btn">Next →</a>
     </div>
   </div>
 

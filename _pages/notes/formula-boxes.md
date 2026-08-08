@@ -255,11 +255,6 @@ mathjax: true
       identities, I keep their short derivations here so that I can rebuild them quickly during review.
     </p>
 
-    <div class="fm-actions">
-      <a href="/notes/soa-fm/" class="fm-btn fm-btn-secondary">
-        Back to SOA FM Exam Notes
-      </a>
-    </div>
   </div>
 
   <div class="fm-proof-grid">

@@ -285,12 +285,8 @@ permalink: /tools/soa-fm-practice/
 
   <div style="margin-top:2rem; padding:1rem; border:1px solid rgba(120,120,120,0.22); border-radius:16px; background:rgba(127,127,127,0.05);">
     <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:14px;">
-      <a href="/tools/goldbach/" class="fm-btn fm-btn-nav">
+      <a href="/tools/random-walk/" class="fm-btn fm-btn-nav">
         ← Previous
-      </a>
-
-      <a href="/tools/" class="fm-btn fm-btn-back">
-        Back to Tools
       </a>
 
       <a href="/tools/financial-math-calculator/" class="fm-btn fm-btn-nav">

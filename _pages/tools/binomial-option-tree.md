@@ -1367,3 +1367,10 @@ mathjax: true
 
   updateBotVolumeLabel();
 </script>
+
+<div class="bot-container">
+  <div class="bot-buttons">
+    <a class="bot-btn" href="/tools/financial-math-calculator/">← Previous</a>
+    <a class="bot-btn" href="/tools/prime-number/">Next →</a>
+  </div>
+</div>

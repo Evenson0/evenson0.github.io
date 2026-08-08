@@ -1165,3 +1165,10 @@ mathjax: true
   updateVolumeLabel();
   resizeCanvas();
 </script>
+
+<div class="rw-container">
+  <div class="rw-buttons">
+    <a class="rw-btn" href="/tools/monty-hall/">← Previous</a>
+    <a class="rw-btn" href="/tools/soa-fm-practice/">Next →</a>
+  </div>
+</div>

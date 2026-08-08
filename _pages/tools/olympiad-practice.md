@@ -270,11 +270,7 @@ permalink: /tools/olympiad-practice/
         ← Previous
       </a>
 
-      <a href="/tools/" class="op-btn op-btn-back">
-        Back to Tools
-      </a>
-
-      <a href="/tools/prime-number/" class="op-btn">
+      <a href="/tools/monty-hall/" class="op-btn">
         Next →
       </a>
     </div>

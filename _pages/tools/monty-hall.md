@@ -573,7 +573,8 @@ author_profile: true
   </p>
 
   <div class="mh-nav">
-    <a href="/tools/">← Back to Tools</a>
+    <a href="/tools/olympiad-practice/">← Previous</a>
+    <a href="/tools/random-walk/">Next →</a>
   </div>
 
 </div>

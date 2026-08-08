@@ -259,11 +259,8 @@ permalink: /tools/prime-number/
 
   <div class="tool-nav-box">
     <div class="tool-nav-row">
-      <a href="/tools/goldbach/" class="tool-btn tool-btn-nav">
+      <a href="/tools/binomial-option-tree/" class="tool-btn tool-btn-nav">
         ← Previous
-      </a>
-      <a href="/tools/" class="tool-btn tool-btn-back">
-        Back to Tools
       </a>
       <a href="/tools/goldbach/" class="tool-btn tool-btn-nav">
         Next →
