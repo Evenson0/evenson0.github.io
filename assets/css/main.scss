@@ -1613,6 +1613,32 @@ body,
 :root {
   --ev-title-green: #047857;
   --ev-title-green-line: color-mix(in srgb, #047857 70%, transparent);
+  --global-text-color: #17251d;
+  --global-text-color-light: #63776b;
+  --global-link-color: #047857;
+  --global-link-color-hover: #065f46;
+  --global-link-color-visited: #0f766e;
+  --global-border-color: rgba(4, 120, 87, 0.16);
+  --global-dark-border-color: rgba(4, 120, 87, 0.34);
+  --global-code-background-color: #f6faf7;
+  --global-code-text-color: #153b2a;
+  --global-fig-caption-color: #63776b;
+  --global-masthead-link-color: #17251d;
+  --global-masthead-link-color-hover: #047857;
+  --global-thead-color: #f3f8f5;
+  --ev-line: rgba(4, 120, 87, 0.16);
+  --ev-line-strong: rgba(4, 120, 87, 0.46);
+  --ev-muted: #63776b;
+  --ev-surface: #ffffff;
+  --ev-dev-panel: #fbfdfb;
+  --ev-dev-hover: rgba(4, 120, 87, 0.075);
+  --ev-dev-accent: rgba(4, 120, 87, 0.58);
+  --ev-console-accent: #047857;
+  --ev-console-accent-soft: rgba(4, 120, 87, 0.075);
+  --ev-hacker-green: #047857;
+  --ev-hacker-green-soft: rgba(4, 120, 87, 0.075);
+  --ev-hacker-green-line: rgba(4, 120, 87, 0.58);
+  --ev-tool-surface: #fbfdfb;
 }
 
 html[data-theme="dark"] {
@@ -1669,6 +1695,568 @@ html[data-theme="dark"] {
 #main .fm-section h2::before,
 #main .cv-section h2::before {
   color: var(--ev-title-green) !important;
+}
+
+body,
+.masthead,
+.greedy-nav,
+.page__footer {
+  background: var(--global-bg-color) !important;
+}
+
+.masthead {
+  border-bottom: 1px solid rgba(4, 120, 87, 0.12);
+}
+
+.masthead::after {
+  background: rgba(4, 120, 87, 0.2);
+}
+
+.page,
+.archive,
+.sidebar,
+.author__content,
+.author__urls-wrapper {
+  color: #17251d !important;
+}
+
+.greedy-nav a,
+.masthead__menu-item--lg a,
+.author__urls a,
+.page__content a,
+.archive a {
+  color: #047857;
+}
+
+.greedy-nav a:hover,
+.masthead__menu-item--lg a:hover,
+.author__urls a:hover,
+.page__content a:hover,
+.archive a:hover {
+  color: #065f46;
+}
+
+.archive-card,
+.portfolio-row,
+.lab-card,
+.note-card,
+.memory-card,
+.cv-item,
+.cv-skill-box,
+.fm-card,
+.pc-card,
+.fm-proof-card,
+.bot-concept,
+.bot-kpi,
+.mh-stat-card,
+.rw-stats,
+.tool-results-box,
+.op-problem-box,
+.op-solution-box,
+.op-answer-box,
+.fmc-box,
+.fmc-step,
+.bot-panel,
+.bot-tree-card,
+.bot-result-card,
+.bot-stage,
+.bot-log,
+.rw-panel,
+.rw-canvas-wrap,
+.rw-details,
+.rw-math-display,
+.mh-status,
+.mh-note {
+  background: #ffffff !important;
+  border-color: rgba(4, 120, 87, 0.16) !important;
+  color: #17251d !important;
+}
+
+.archive-card:hover,
+.portfolio-row:hover,
+.lab-card:hover,
+.note-card:hover,
+.memory-card:hover,
+.cv-item:hover,
+.cv-skill-box:hover,
+.fm-card:hover,
+.pc-card:hover,
+.fm-proof-card:hover {
+  background: rgba(4, 120, 87, 0.075) !important;
+  border-color: rgba(4, 120, 87, 0.58) !important;
+}
+
+.archive-card-excerpt,
+.portfolio-meta,
+.lab-card-desc,
+.note-card p,
+.memory-card-text,
+.cv-item p,
+.cv-skill-box li,
+.page__content p,
+.page__content li {
+  color: #17251d !important;
+}
+
+.archive-card-meta,
+.archive-card-date,
+.portfolio-index,
+.portfolio-type,
+.note-tag,
+.memory-tag,
+.memory-status,
+.pc-pill,
+.cv-pill,
+.author__bio,
+.sidebar .author__bio,
+.sidebar .author__bio p {
+  color: #63776b !important;
+}
+
+input,
+select,
+textarea,
+.tool-input,
+.fmc-input,
+.fmc-select,
+.bot-field input,
+.bot-field select,
+.rw-field input,
+.rw-field select,
+.rw-mini-field input {
+  background: #ffffff !important;
+  border-color: rgba(4, 120, 87, 0.2) !important;
+  color: #17251d !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.tool-input:focus,
+.fmc-input:focus,
+.fmc-select:focus,
+.bot-field input:focus,
+.bot-field select:focus,
+.rw-field input:focus,
+.rw-field select:focus,
+.rw-mini-field input:focus {
+  border-color: rgba(4, 120, 87, 0.58) !important;
+  box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.075) !important;
+}
+
+code,
+pre,
+kbd,
+samp {
+  background: #f6faf7 !important;
+  color: #153b2a !important;
+  border-color: rgba(4, 120, 87, 0.16) !important;
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: #047857 !important;
+  border-bottom-color: #047857 !important;
+}
+
+.greedy-nav .visible-links a::before {
+  background: rgba(4, 120, 87, 0.46) !important;
+}
+
+.archive-card,
+.portfolio-row,
+.lab-card,
+.note-card,
+.memory-card,
+.cv-item,
+.cv-skill-box,
+.fm-card,
+.pc-card,
+.fm-proof-card {
+  border-left-color: rgba(4, 120, 87, 0.34) !important;
+}
+
+.archive-card::before,
+.lab-card-link::after {
+  border-color: rgba(4, 120, 87, 0.38) !important;
+  color: #047857 !important;
+}
+
+.archive-card:hover,
+.portfolio-row:hover,
+.lab-card:hover,
+.note-card:hover,
+.memory-card:hover,
+.cv-item:hover,
+.cv-skill-box:hover,
+.fm-card:hover,
+.pc-card:hover,
+.fm-proof-card:hover {
+  background: #eef8f1 !important;
+  border-color: rgba(4, 120, 87, 0.72) !important;
+  border-left-color: #047857 !important;
+}
+
+.archive-card:hover::before,
+.lab-card-link:hover::after {
+  border-color: #047857 !important;
+}
+
+.archive-card-meta,
+.archive-card-date,
+.portfolio-index,
+.portfolio-type,
+.note-tag,
+.memory-tag,
+.memory-status,
+.pc-pill,
+.cv-pill {
+  background: #f2f8f4 !important;
+  border: 1px solid rgba(4, 120, 87, 0.14) !important;
+  color: #486555 !important;
+}
+
+.portfolio-index,
+.portfolio-type,
+.archive-card-meta,
+.archive-card-date {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.tool-btn,
+.op-btn,
+.fmc-btn,
+.bot-btn,
+.rw-btn,
+.mh-btn,
+.note-btn,
+.pc-btn,
+.fm-btn,
+.cv-btn,
+.memories-filter {
+  border-color: rgba(4, 120, 87, 0.34) !important;
+  color: #047857 !important;
+}
+
+.tool-btn:hover,
+.op-btn:hover,
+.fmc-btn:hover,
+.bot-btn:hover,
+.rw-btn:hover,
+.mh-btn:hover,
+.note-btn:hover,
+.pc-btn:hover,
+.fm-btn:hover,
+.cv-btn:hover,
+.memories-filter:hover,
+.memories-filter.active {
+  background: #eef8f1 !important;
+  border-color: #047857 !important;
+  color: #065f46 !important;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #020403;
+  --global-footer-bg-color: #020403;
+  --global-border-color: rgba(52, 211, 153, 0.22);
+  --global-dark-border-color: rgba(52, 211, 153, 0.42);
+  --global-code-background-color: #06110b;
+  --global-code-text-color: #c7f9dd;
+  --global-fig-caption-color: #7ca98f;
+  --global-link-color: #34d399;
+  --global-link-color-hover: #6ee7b7;
+  --global-link-color-visited: #10b981;
+  --global-masthead-link-color: #d7fbe8;
+  --global-masthead-link-color-hover: #34d399;
+  --global-text-color: #d7fbe8;
+  --global-text-color-light: #8fbda3;
+  --global-thead-color: #07140d;
+  --ev-line: rgba(52, 211, 153, 0.22);
+  --ev-line-strong: rgba(52, 211, 153, 0.58);
+  --ev-muted: #8fbda3;
+  --ev-surface: #06110b;
+  --ev-dev-panel: #041008;
+  --ev-dev-hover: rgba(52, 211, 153, 0.11);
+  --ev-dev-accent: rgba(52, 211, 153, 0.72);
+  --ev-console-bg: #020403;
+  --ev-console-ink: #d7fbe8;
+  --ev-console-dim: #8fbda3;
+  --ev-console-accent: #34d399;
+  --ev-console-accent-soft: rgba(52, 211, 153, 0.12);
+  --ev-hacker-green: #34d399;
+  --ev-hacker-green-soft: rgba(52, 211, 153, 0.13);
+  --ev-hacker-green-line: rgba(52, 211, 153, 0.72);
+  --ev-tool-surface: #041008;
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .masthead,
+html[data-theme="dark"] .greedy-nav,
+html[data-theme="dark"] .page__footer {
+  background: #020403 !important;
+}
+
+html[data-theme="dark"] .masthead {
+  border-bottom: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+html[data-theme="dark"] .masthead::after {
+  background: rgba(52, 211, 153, 0.28);
+}
+
+html[data-theme="dark"] .page,
+html[data-theme="dark"] .archive,
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .author__content,
+html[data-theme="dark"] .author__urls-wrapper {
+  color: #d7fbe8 !important;
+}
+
+html[data-theme="dark"] .lab-shell,
+html[data-theme="dark"] .notes-shell,
+html[data-theme="dark"] .fm-shell,
+html[data-theme="dark"] .pc-notes-shell,
+html[data-theme="dark"] .cv-shell,
+html[data-theme="dark"] .memories-shell,
+html[data-theme="dark"] .tool-shell,
+html[data-theme="dark"] .op-shell,
+html[data-theme="dark"] .mh-shell,
+html[data-theme="dark"] .fmc-shell,
+html[data-theme="dark"] .bot-container,
+html[data-theme="dark"] .rw-container {
+  background: #041008 !important;
+  border-color: rgba(52, 211, 153, 0.22) !important;
+}
+
+html[data-theme="dark"] .archive-card,
+html[data-theme="dark"] .portfolio-row,
+html[data-theme="dark"] .lab-card,
+html[data-theme="dark"] .note-card,
+html[data-theme="dark"] .memory-card,
+html[data-theme="dark"] .cv-item,
+html[data-theme="dark"] .cv-skill-box,
+html[data-theme="dark"] .fm-card,
+html[data-theme="dark"] .pc-card,
+html[data-theme="dark"] .fm-proof-card,
+html[data-theme="dark"] .bot-concept,
+html[data-theme="dark"] .bot-kpi,
+html[data-theme="dark"] .mh-stat-card,
+html[data-theme="dark"] .rw-stats,
+html[data-theme="dark"] .tool-results-box,
+html[data-theme="dark"] .op-problem-box,
+html[data-theme="dark"] .op-solution-box,
+html[data-theme="dark"] .op-answer-box,
+html[data-theme="dark"] .fmc-box,
+html[data-theme="dark"] .fmc-step,
+html[data-theme="dark"] .bot-panel,
+html[data-theme="dark"] .bot-tree-card,
+html[data-theme="dark"] .bot-result-card,
+html[data-theme="dark"] .bot-stage,
+html[data-theme="dark"] .bot-log,
+html[data-theme="dark"] .rw-panel,
+html[data-theme="dark"] .rw-canvas-wrap,
+html[data-theme="dark"] .rw-details,
+html[data-theme="dark"] .rw-math-display,
+html[data-theme="dark"] .mh-status,
+html[data-theme="dark"] .mh-note {
+  background: #06110b !important;
+  border-color: rgba(52, 211, 153, 0.22) !important;
+  color: #d7fbe8 !important;
+}
+
+html[data-theme="dark"] .archive-card:hover,
+html[data-theme="dark"] .portfolio-row:hover,
+html[data-theme="dark"] .lab-card:hover,
+html[data-theme="dark"] .note-card:hover,
+html[data-theme="dark"] .memory-card:hover,
+html[data-theme="dark"] .cv-item:hover,
+html[data-theme="dark"] .cv-skill-box:hover,
+html[data-theme="dark"] .fm-card:hover,
+html[data-theme="dark"] .pc-card:hover,
+html[data-theme="dark"] .fm-proof-card:hover {
+  background: rgba(52, 211, 153, 0.11) !important;
+  border-color: rgba(52, 211, 153, 0.72) !important;
+}
+
+html[data-theme="dark"] .archive-card-excerpt,
+html[data-theme="dark"] .portfolio-meta,
+html[data-theme="dark"] .lab-card-desc,
+html[data-theme="dark"] .note-card p,
+html[data-theme="dark"] .memory-card-text,
+html[data-theme="dark"] .cv-item p,
+html[data-theme="dark"] .cv-skill-box li,
+html[data-theme="dark"] .page__content p,
+html[data-theme="dark"] .page__content li {
+  color: #d7fbe8 !important;
+}
+
+html[data-theme="dark"] .archive-card-meta,
+html[data-theme="dark"] .archive-card-date,
+html[data-theme="dark"] .portfolio-index,
+html[data-theme="dark"] .portfolio-type,
+html[data-theme="dark"] .note-tag,
+html[data-theme="dark"] .memory-tag,
+html[data-theme="dark"] .memory-status,
+html[data-theme="dark"] .pc-pill,
+html[data-theme="dark"] .cv-pill {
+  color: #8fbda3 !important;
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] .tool-input,
+html[data-theme="dark"] .fmc-input,
+html[data-theme="dark"] .fmc-select,
+html[data-theme="dark"] .bot-field input,
+html[data-theme="dark"] .bot-field select,
+html[data-theme="dark"] .rw-field input,
+html[data-theme="dark"] .rw-field select,
+html[data-theme="dark"] .rw-mini-field input {
+  background: #020403 !important;
+  border-color: rgba(52, 211, 153, 0.32) !important;
+  color: #d7fbe8 !important;
+}
+
+html[data-theme="dark"] code,
+html[data-theme="dark"] pre,
+html[data-theme="dark"] kbd,
+html[data-theme="dark"] samp {
+  background: #06110b !important;
+  color: #c7f9dd !important;
+  border-color: rgba(52, 211, 153, 0.26) !important;
+}
+
+/* Final identity pass for portfolio, list, and author rail. */
+.portfolio-kicker,
+.portfolio-divider h2,
+.portfolio-rail strong,
+.portfolio-rail span,
+.portfolio-pill,
+.list100-shell,
+.list100-shell p,
+.list100-shell li,
+.list100-shell strong,
+.list100-shell span,
+.sidebar .author__name,
+.author__pronouns,
+.author__bio,
+.author__urls,
+.author__urls li,
+.author__urls a {
+  font-family: "JetBrains Mono", $monospace !important;
+}
+
+.sidebar .author__name,
+.author__pronouns,
+.author__bio,
+.author__urls li,
+.author__urls a {
+  color: var(--ev-title-green) !important;
+}
+
+.sidebar .author__name {
+  font-size: 1.08rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
+
+.author__pronouns,
+.author__bio,
+.author__urls li,
+.author__urls a {
+  font-size: 0.82rem !important;
+  line-height: 1.65 !important;
+}
+
+.author__bio,
+.sidebar .author__bio,
+.sidebar .author__bio p {
+  opacity: 1 !important;
+}
+
+.author__urls .icon-pad-right {
+  color: var(--ev-title-green) !important;
+}
+
+.portfolio-kicker,
+.portfolio-divider h2,
+.portfolio-rail strong {
+  color: var(--ev-title-green) !important;
+}
+
+.portfolio-kicker {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.portfolio-note,
+.portfolio-rail span,
+.portfolio-meta,
+.portfolio-index,
+.portfolio-type {
+  color: #486555 !important;
+}
+
+.portfolio-rail {
+  border-left-color: var(--ev-title-green-line) !important;
+}
+
+.portfolio-list,
+.portfolio-row,
+.portfolio-pill {
+  border-color: rgba(4, 120, 87, 0.18) !important;
+}
+
+.portfolio-divider::after {
+  background: rgba(4, 120, 87, 0.24) !important;
+}
+
+.portfolio-pill {
+  border-radius: 0 !important;
+  color: #047857 !important;
+  text-decoration: none !important;
+}
+
+.portfolio-pill:hover {
+  background: #eef8f1 !important;
+  border-color: #047857 !important;
+  color: #065f46 !important;
+}
+
+@media (max-width: 720px) {
+  .portfolio-rail {
+    border-top-color: var(--ev-title-green-line) !important;
+  }
+}
+
+html[data-theme="dark"] .portfolio-note,
+html[data-theme="dark"] .portfolio-rail span,
+html[data-theme="dark"] .portfolio-meta,
+html[data-theme="dark"] .portfolio-index,
+html[data-theme="dark"] .portfolio-type {
+  color: #8fbda3 !important;
+}
+
+html[data-theme="dark"] .portfolio-list,
+html[data-theme="dark"] .portfolio-row,
+html[data-theme="dark"] .portfolio-pill {
+  border-color: rgba(52, 211, 153, 0.22) !important;
+}
+
+html[data-theme="dark"] .portfolio-divider::after {
+  background: rgba(52, 211, 153, 0.28) !important;
+}
+
+html[data-theme="dark"] .portfolio-pill {
+  color: #34d399 !important;
+}
+
+html[data-theme="dark"] .portfolio-pill:hover {
+  background: rgba(52, 211, 153, 0.11) !important;
+  border-color: #34d399 !important;
+  color: #6ee7b7 !important;
 }
 
 .tool-nav-row,

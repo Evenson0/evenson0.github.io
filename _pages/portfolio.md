@@ -278,7 +278,7 @@ author_profile: true
 </style>
 
 <div class="portfolio-intro">
-  <div class="portfolio-kicker">Selected work</div>
+  <div class="portfolio-kicker">Selected Work</div>
   <p class="portfolio-lead">
     A working index of actuarial tools, mathematical notes, research experiments,
     and interactive models.
