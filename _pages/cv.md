@@ -202,6 +202,174 @@ author_profile: true
   .cv-links-inline a:visited {
     text-decoration: none !important;
   }
+
+  .cv-system {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.92fr) minmax(300px, 1.08fr);
+    gap: 1rem;
+    margin: 1.7rem 0 2rem;
+  }
+
+  .cv-system-map,
+  .cv-system-panel {
+    border: 1px solid var(--ev-line, rgba(127,127,127,0.22));
+    background:
+      linear-gradient(135deg, rgba(16,185,129,0.07), transparent 42%),
+      repeating-linear-gradient(
+        0deg,
+        rgba(127,127,127,0.04) 0,
+        rgba(127,127,127,0.04) 1px,
+        transparent 1px,
+        transparent 18px
+      ),
+      var(--global-bg-color, transparent);
+  }
+
+  .cv-system-map {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+    padding: 0.75rem;
+  }
+
+  .cv-node {
+    appearance: none;
+    min-height: 118px;
+    padding: 0.85rem;
+    border: 1px solid var(--ev-line, rgba(127,127,127,0.22));
+    border-radius: 0;
+    color: inherit;
+    background: color-mix(in srgb, var(--global-bg-color) 90%, #10b981 10%);
+    cursor: pointer;
+    text-align: left;
+    transition:
+      border-color 0.18s ease,
+      background 0.18s ease,
+      color 0.18s ease,
+      transform 0.18s ease,
+      box-shadow 0.18s ease;
+  }
+
+  .cv-node:hover,
+  .cv-node:focus-visible,
+  .cv-node.is-active {
+    border-color: var(--ev-title-green, #16a34a);
+    background: color-mix(in srgb, var(--global-bg-color) 78%, #16a34a 22%);
+    box-shadow: 0 0 0 1px rgba(22,163,74,0.22), 0 12px 26px rgba(0,0,0,0.12);
+    outline: none;
+    transform: translateY(-2px);
+  }
+
+  .cv-node-code,
+  .cv-panel-kicker {
+    display: block;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: var(--ev-title-green, #16a34a);
+    opacity: 0.9;
+  }
+
+  .cv-node-title {
+    display: block;
+    margin-top: 0.55rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--ev-title-green, #16a34a);
+  }
+
+  .cv-node-meta {
+    display: block;
+    margin-top: 0.45rem;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: color-mix(in srgb, var(--global-text-color) 74%, transparent);
+  }
+
+  .cv-system-panel {
+    min-height: 100%;
+    padding: 1.25rem;
+  }
+
+  .cv-panel-title {
+    margin: 0.45rem 0 0.35rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(1.4rem, 2.6vw, 2.05rem);
+    line-height: 1.12;
+    color: var(--ev-title-green, #16a34a);
+  }
+
+  .cv-panel-meta {
+    margin: 0 0 1rem;
+    color: color-mix(in srgb, var(--global-text-color) 80%, transparent);
+    line-height: 1.65;
+  }
+
+  .cv-panel-list {
+    display: grid;
+    gap: 0.7rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .cv-panel-list li {
+    padding: 0.75rem 0.85rem;
+    border-left: 2px solid var(--ev-title-green, #16a34a);
+    background: color-mix(in srgb, var(--global-bg-color) 88%, #10b981 12%);
+    line-height: 1.55;
+  }
+
+  .cv-panel-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 1rem;
+  }
+
+  .cv-panel-tags span {
+    padding: 0.28rem 0.5rem;
+    border: 1px solid color-mix(in srgb, var(--ev-title-green, #16a34a) 48%, transparent);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.7rem;
+    color: color-mix(in srgb, var(--global-text-color) 86%, transparent);
+    background: color-mix(in srgb, var(--global-bg-color) 82%, #10b981 18%);
+  }
+
+  .cv-full-record {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 2.2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ev-title-green, #16a34a);
+  }
+
+  .cv-full-record::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--ev-title-green, #16a34a), transparent);
+  }
+
+  @media (max-width: 760px) {
+    .cv-system {
+      grid-template-columns: 1fr;
+    }
+
+    .cv-system-map {
+      grid-template-columns: 1fr;
+    }
+
+    .cv-node {
+      min-height: 94px;
+    }
+  }
 </style>
 
 <div class="cv-shell">
@@ -224,7 +392,46 @@ author_profile: true
     </div>
   </div>
 
+  <div class="cv-system" aria-label="Interactive CV system">
+    <div class="cv-system-map" role="tablist" aria-label="CV sections">
+      <button class="cv-node is-active" type="button" data-cv-node="profile" role="tab" aria-selected="true">
+        <span class="cv-node-code">010001 / ID</span>
+        <span class="cv-node-title">Profile</span>
+        <span class="cv-node-meta">Actuarial pricing, mathematical tools, computation.</span>
+      </button>
+      <button class="cv-node" type="button" data-cv-node="experience" role="tab" aria-selected="false">
+        <span class="cv-node-code">101110 / RUN</span>
+        <span class="cv-node-title">Experience</span>
+        <span class="cv-node-meta">Pricing, R&amp;D, data platforms, teaching.</span>
+      </button>
+      <button class="cv-node" type="button" data-cv-node="education" role="tab" aria-selected="false">
+        <span class="cv-node-code">011010 / EDU</span>
+        <span class="cv-node-title">Education</span>
+        <span class="cv-node-meta">Actuarial science, software engineering, electromechanics.</span>
+      </button>
+      <button class="cv-node" type="button" data-cv-node="skills" role="tab" aria-selected="false">
+        <span class="cv-node-code">110011 / STACK</span>
+        <span class="cv-node-title">Skills</span>
+        <span class="cv-node-meta">Python, R, SAS, SQL, VBA, ML, LaTeX.</span>
+      </button>
+      <button class="cv-node" type="button" data-cv-node="languages" role="tab" aria-selected="false">
+        <span class="cv-node-code">001101 / LANG</span>
+        <span class="cv-node-title">Languages</span>
+        <span class="cv-node-meta">French, Haitian Creole, English.</span>
+      </button>
+      <button class="cv-node" type="button" data-cv-node="activities" role="tab" aria-selected="false">
+        <span class="cv-node-code">111000 / LIFE</span>
+        <span class="cv-node-title">Activities</span>
+        <span class="cv-node-meta">Association, hackathons, writing, theater, sport.</span>
+      </button>
+    </div>
+
+    <section class="cv-system-panel" id="cv-system-panel" role="tabpanel" aria-live="polite"></section>
+  </div>
+
   <hr class="cv-rule">
+
+  <div class="cv-full-record">Full record</div>
 
   <div class="cv-section">
     <h2>Professional Experience</h2>
@@ -438,3 +645,114 @@ author_profile: true
   </div>
 
 </div>
+
+<script>
+  (() => {
+    const cvData = {
+      profile: {
+        code: "010001 / ID",
+        title: "Evenson Auguste",
+        meta: "Actuarial Analyst (P&C Pricing) - Montréal, Québec, Canada.",
+        items: [
+          "I build pricing tools, actuarial models, and analytical workflows for property and casualty insurance.",
+          "My work sits between mathematics, actuarial science, software, and practical automation.",
+          "Active online through GitHub and LinkedIn, with a downloadable PDF version available above."
+        ],
+        tags: ["P&C pricing", "Actuarial tools", "Mathematics", "Computation"]
+      },
+      experience: {
+        code: "101110 / RUN",
+        title: "Professional Experience",
+        meta: "A path shaped by insurance pricing, data systems, research, and technical teaching.",
+        items: [
+          "Actuarial Analyst at Optimum General Insurance, focused on pricing tools, statistical modeling, VBA, Python, R, and portfolio analysis.",
+          "Former corporate actuarial intern at Optimum General Insurance and R&D actuarial intern at Optimum Reinsurance.",
+          "Research assistant for OFE data platforms and conference websites, plus teaching assistant at Université de Montréal."
+        ],
+        tags: ["Optimum", "Pricing", "R&D", "Teaching", "Data platforms"]
+      },
+      education: {
+        code: "011010 / EDU",
+        title: "Education",
+        meta: "Mathematics first, engineering close behind.",
+        items: [
+          "B.Sc. Mathematics - Actuarial Science, Université de Montréal, with interests in risk theory, statistical modeling, quantitative finance, stochastic calculus, and investments.",
+          "B.Eng. Software Engineering, Polytechnique Montréal, concentration in artificial intelligence and data science.",
+          "B.Eng. Electromechanical Engineering, Université d'État d'Haïti."
+        ],
+        tags: ["Actuarial science", "Software engineering", "AI", "Data science"]
+      },
+      skills: {
+        code: "110011 / STACK",
+        title: "Technical Stack",
+        meta: "Tools used to turn models into usable systems.",
+        items: [
+          "Programming and databases: Python, Java, C/C++, SQL, MySQL, Microsoft Access, VBA.",
+          "Statistical software: R, SAS, Excel.",
+          "Other strengths: machine learning, Git, LaTeX, teaching, and scientific communication."
+        ],
+        tags: ["Python", "R", "SAS", "SQL", "VBA", "ML", "Git"]
+      },
+      languages: {
+        code: "001101 / LANG",
+        title: "Languages",
+        meta: "Communication layer.",
+        items: [
+          "French - Native.",
+          "Haitian Creole - Native.",
+          "English - Intermediate."
+        ],
+        tags: ["French", "Haitian Creole", "English"]
+      },
+      activities: {
+        code: "111000 / LIFE",
+        title: "Activities",
+        meta: "Leadership, writing, public presence, and discipline outside the desk.",
+        items: [
+          "Treasurer for the P&C Actuarial Association and former Vice President - Hackathon at PolyHx.",
+          "Columnist for L'Axiomatique, writing about actuarial science and finance.",
+          "Theater training, boxing and kickboxing, plus volunteer science presentations through Cap Campus."
+        ],
+        tags: ["Association", "Hackathon", "Writing", "Theater", "Boxing"]
+      }
+    };
+
+    const panel = document.getElementById("cv-system-panel");
+    const nodes = Array.from(document.querySelectorAll("[data-cv-node]"));
+
+    const escapeHtml = (value) => value
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+
+    const render = (key) => {
+      const entry = cvData[key];
+      if (!entry || !panel) return;
+
+      panel.innerHTML = `
+        <span class="cv-panel-kicker">${escapeHtml(entry.code)}</span>
+        <h2 class="cv-panel-title">${escapeHtml(entry.title)}</h2>
+        <p class="cv-panel-meta">${escapeHtml(entry.meta)}</p>
+        <ul class="cv-panel-list">
+          ${entry.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+        </ul>
+        <div class="cv-panel-tags">
+          ${entry.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}
+        </div>
+      `;
+
+      nodes.forEach((node) => {
+        const isActive = node.dataset.cvNode === key;
+        node.classList.toggle("is-active", isActive);
+        node.setAttribute("aria-selected", String(isActive));
+      });
+    };
+
+    nodes.forEach((node) => {
+      node.addEventListener("click", () => render(node.dataset.cvNode));
+    });
+
+    render("profile");
+  })();
+</script>
