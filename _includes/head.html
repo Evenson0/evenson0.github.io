@@ -13,4 +13,5 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+{% assign cache_bust = site.github.build_revision | default: site.time %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v={{ cache_bust | url_encode }}">
