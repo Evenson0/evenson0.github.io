@@ -476,10 +476,10 @@ author_profile: true
       location: "Los Angeles, California, United States",
       lat: 34.0522,
       lng: -118.2437,
-      status: "pursued",
+      status: "visited",
       category: "place",
       type: "city",
-      excerpt: "The next California chapter.",
+      excerpt: "Another visited California chapter.",
       image: "/images/memories/los-angeles.jpg",
       url: "/memories/los-angeles/"
     },
@@ -734,6 +734,106 @@ author_profile: true
     return new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), material);
   }
 
+  function createEarthTexture() {
+    const canvas = document.createElement("canvas");
+    canvas.width = 2048;
+    canvas.height = 1024;
+    const ctx = canvas.getContext("2d");
+    const w = canvas.width;
+    const h = canvas.height;
+
+    function project(lat, lng) {
+      return {
+        x: ((lng + 180) / 360) * w,
+        y: ((90 - lat) / 180) * h
+      };
+    }
+
+    function drawPolygon(points, fill, stroke) {
+      ctx.beginPath();
+      points.forEach(([lat, lng], index) => {
+        const point = project(lat, lng);
+        if (index === 0) ctx.moveTo(point.x, point.y);
+        else ctx.lineTo(point.x, point.y);
+      });
+      ctx.closePath();
+      ctx.fillStyle = fill;
+      ctx.fill();
+      ctx.strokeStyle = stroke;
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    function drawLabel(text, lat, lng) {
+      const point = project(lat, lng);
+      ctx.save();
+      ctx.translate(point.x, point.y);
+      ctx.fillStyle = "rgba(199,249,221,0.82)";
+      ctx.font = "700 20px JetBrains Mono, Monaco, Consolas, monospace";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, 0, 0);
+      ctx.restore();
+    }
+
+    ctx.fillStyle = "#020403";
+    ctx.fillRect(0, 0, w, h);
+
+    ctx.strokeStyle = "rgba(52,211,153,0.12)";
+    ctx.lineWidth = 1;
+    for (let lng = -180; lng <= 180; lng += 15) {
+      const a = project(-90, lng);
+      const b = project(90, lng);
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      ctx.stroke();
+    }
+    for (let lat = -75; lat <= 75; lat += 15) {
+      const a = project(lat, -180);
+      const b = project(lat, 180);
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      ctx.stroke();
+    }
+
+    const landFill = "rgba(52,211,153,0.34)";
+    const landStroke = "rgba(110,231,183,0.8)";
+
+    [
+      // North America
+      [[72,-168],[70,-138],[62,-122],[58,-105],[51,-96],[49,-80],[58,-63],[52,-52],[43,-62],[31,-81],[25,-97],[16,-99],[8,-84],[16,-105],[24,-112],[32,-124],[45,-128],[56,-140],[60,-158]],
+      // South America
+      [[12,-81],[9,-66],[-2,-51],[-15,-40],[-32,-52],[-55,-69],[-42,-75],[-18,-79],[-5,-81]],
+      // Greenland
+      [[84,-73],[82,-20],[72,-16],[60,-42],[63,-61],[73,-73]],
+      // Europe
+      [[71,-10],[64,28],[55,42],[44,31],[36,10],[43,-9],[54,-11]],
+      // Africa
+      [[36,-17],[32,31],[12,52],[-10,43],[-35,20],[-34,-10],[-5,-18],[16,-17]],
+      // Asia
+      [[72,28],[70,95],[58,145],[42,151],[22,122],[9,105],[18,78],[7,45],[31,31],[49,42],[58,60]],
+      // Australia
+      [[-11,113],[-16,154],[-39,147],[-43,116],[-26,112]],
+      // Antarctica
+      [[-64,-180],[-66,-90],[-68,0],[-66,90],[-64,180],[-82,180],[-82,-180]]
+    ].forEach(points => drawPolygon(points, landFill, landStroke));
+
+    drawLabel("CANADA", 58, -105);
+    drawLabel("USA", 39, -98);
+    drawLabel("MEXICO", 22, -102);
+    drawLabel("PERU", -10, -75);
+    drawLabel("ECUADOR", -1, -78);
+    drawLabel("CHILE", -34, -71);
+    drawLabel("JORDAN", 31, 36);
+
+    const texture = new THREE.CanvasTexture(canvas);
+    texture.colorSpace = THREE.SRGBColorSpace;
+    texture.anisotropy = 4;
+    return texture;
+  }
+
   function createGlobe() {
     if (!globeRoot || !window.WebGLRenderingContext) {
       globeRoot.innerHTML = '<div class="memories-globe-fallback">The interactive globe needs WebGL.</div>';
@@ -761,7 +861,8 @@ author_profile: true
     const earth = new THREE.Mesh(
       new THREE.SphereGeometry(2, 96, 64),
       new THREE.MeshPhongMaterial({
-        color: 0x07140d,
+        color: 0xffffff,
+        map: createEarthTexture(),
         emissive: 0x021108,
         shininess: 18,
         transparent: true,
