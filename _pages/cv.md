@@ -301,8 +301,9 @@ author_profile: true
   .cv-node-rail {
     display: flex;
     gap: 0.7rem;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
+    scroll-behavior: auto;
     scrollbar-width: none;
     padding: 0.85rem;
   }
@@ -396,6 +397,13 @@ author_profile: true
     backdrop-filter: blur(3px);
   }
 
+  #cv-system-panel,
+  #cv-system-panel p,
+  #cv-system-panel li,
+  #cv-system-panel span {
+    opacity: 1 !important;
+  }
+
   .cv-panel-title {
     margin: 0.45rem 0 0.35rem;
     font-family: "JetBrains Mono", monospace;
@@ -408,7 +416,7 @@ author_profile: true
   .cv-panel-meta {
     max-width: 760px;
     margin: 0 0 1rem;
-    color: #d7fbe8 !important;
+    color: #f0fff7 !important;
     line-height: 1.65;
   }
 
@@ -424,7 +432,7 @@ author_profile: true
     padding: 0.85rem 0.95rem;
     border-left: 2px solid #52f0a5;
     background: rgba(1,24,12,0.72);
-    color: #eafff3 !important;
+    color: #f7fffb !important;
     line-height: 1.55;
   }
 
@@ -944,11 +952,14 @@ author_profile: true
     };
 
     const panel = document.getElementById("cv-system-panel");
-    const nodes = Array.from(document.querySelectorAll("[data-cv-node]"));
     const rail = document.getElementById("cv-node-rail");
     const status = document.getElementById("cv-system-status");
-    let activeIndex = 0;
-    let autoplay = null;
+    const sourceNodes = Array.from(document.querySelectorAll("[data-cv-node]"));
+    let allNodes = [...sourceNodes];
+    let isMoving = true;
+    let activeKey = "profile";
+    let lastFrame = 0;
+    let loopWidth = 0;
 
     const escapeHtml = (value) => value
       .replace(/&/g, "&amp;")
@@ -956,9 +967,12 @@ author_profile: true
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
 
-    const render = (key, source = "auto") => {
+    const render = (key) => {
+      if (activeKey === key && panel.innerHTML) return;
+
       const entry = cvData[key];
       if (!entry || !panel) return;
+      activeKey = key;
 
       panel.innerHTML = `
         <h2 class="cv-panel-title">${escapeHtml(entry.title)}</h2>
@@ -982,35 +996,80 @@ author_profile: true
         ` : ""}
       `;
 
-      nodes.forEach((node) => {
+      allNodes.forEach((node) => {
         const isActive = node.dataset.cvNode === key;
         node.classList.toggle("is-active", isActive);
         node.setAttribute("aria-selected", String(isActive));
       });
-
-      activeIndex = Math.max(0, nodes.findIndex((node) => node.dataset.cvNode === key));
-      if (nodes[activeIndex] && rail) {
-        nodes[activeIndex].scrollIntoView({
-          behavior: source === "init" ? "auto" : "smooth",
-          inline: "center",
-          block: "nearest"
-        });
-      }
     };
 
-    nodes.forEach((node) => {
-      node.addEventListener("click", () => {
-        window.clearInterval(autoplay);
-        if (status) status.textContent = "AUTO-SCAN: PAUSED";
-        render(node.dataset.cvNode, "click");
+    const bindNodeEvents = () => {
+      allNodes.forEach((node) => {
+        node.addEventListener("click", () => {
+          render(node.dataset.cvNode);
+          isMoving = !isMoving;
+          if (status) status.textContent = isMoving ? "AUTO-SCAN: ON" : "AUTO-SCAN: PAUSED";
+        });
       });
-    });
+    };
 
-    const startAutoplay = () => {
-      autoplay = window.setInterval(() => {
-        activeIndex = (activeIndex + 1) % nodes.length;
-        render(nodes[activeIndex].dataset.cvNode);
-      }, 1000);
+    const setupCarousel = () => {
+      if (!rail || !sourceNodes.length) return;
+
+      sourceNodes.forEach((node) => {
+        const clone = node.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        rail.appendChild(clone);
+      });
+
+      allNodes = Array.from(rail.querySelectorAll("[data-cv-node]"));
+      bindNodeEvents();
+
+      window.requestAnimationFrame(() => {
+        loopWidth = rail.scrollWidth / 2;
+        rail.scrollLeft = 0;
+      });
+    };
+
+    const getCenteredKey = () => {
+      if (!rail || !allNodes.length) return activeKey;
+
+      const railBox = rail.getBoundingClientRect();
+      const center = railBox.left + railBox.width / 2;
+      let bestNode = allNodes[0];
+      let bestDistance = Infinity;
+
+      allNodes.forEach((node) => {
+        const box = node.getBoundingClientRect();
+        const nodeCenter = box.left + box.width / 2;
+        const distance = Math.abs(center - nodeCenter);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          bestNode = node;
+        }
+      });
+
+      return bestNode.dataset.cvNode;
+    };
+
+    const animateCarousel = (timestamp) => {
+      if (!rail) return;
+
+      if (!lastFrame) lastFrame = timestamp;
+      const delta = Math.min(48, timestamp - lastFrame);
+      lastFrame = timestamp;
+
+      if (isMoving && loopWidth > 0) {
+        rail.scrollLeft += delta * 0.065;
+
+        if (rail.scrollLeft >= loopWidth) {
+          rail.scrollLeft -= loopWidth;
+        }
+
+        render(getCenteredKey());
+      }
+
+      window.requestAnimationFrame(animateCarousel);
     };
 
     const initMatrix = () => {
@@ -1062,8 +1121,9 @@ author_profile: true
       draw();
     };
 
-    render("profile", "init");
-    startAutoplay();
+    setupCarousel();
+    render("profile");
+    window.requestAnimationFrame(animateCarousel);
     initMatrix();
   })();
 </script>
