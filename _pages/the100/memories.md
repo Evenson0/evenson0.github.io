@@ -108,7 +108,7 @@ author_profile: true
   }
 
   .memories-map-wrap .leaflet-tile {
-    filter: saturate(0.25) hue-rotate(86deg) brightness(0.76) contrast(1.18);
+    filter: saturate(0.72) hue-rotate(18deg) brightness(0.95) contrast(1.04);
   }
 
   .memories-map-wrap .leaflet-control-zoom a,
@@ -195,11 +195,6 @@ author_profile: true
     border-radius: 999px;
   }
 
-  .memories-dot-pursued {
-    background: #7c3aed;
-    border-radius: 999px;
-  }
-
   .memories-triangle {
     width: 0;
     height: 0;
@@ -211,10 +206,6 @@ author_profile: true
 
   .memories-triangle-visited {
     color: #047857;
-  }
-
-  .memories-triangle-pursued {
-    color: #7c3aed;
   }
 
   .memories-triangle-awaiting {
@@ -321,11 +312,6 @@ author_profile: true
     color: #b45309;
   }
 
-  .memory-status-pursued {
-    background: rgba(124,58,237,0.12);
-    color: #6d28d9;
-  }
-
   .leaflet-popup-content-wrapper {
     border: 1px solid rgba(4,120,87,0.2);
     border-radius: 0;
@@ -381,6 +367,10 @@ author_profile: true
     color: #34d399;
   }
 
+  html[data-theme="dark"] .memories-map-wrap .leaflet-tile {
+    filter: saturate(0.88) hue-rotate(56deg) brightness(0.86) contrast(1.08);
+  }
+
   @media (max-width: 700px) {
     .memories-shell {
       padding: 1.2rem;
@@ -409,7 +399,6 @@ author_profile: true
     <button class="memories-filter" data-filter="place">Places</button>
     <button class="memories-filter" data-filter="hike">Hikes</button>
     <button class="memories-filter" data-filter="visited">Visited</button>
-    <button class="memories-filter" data-filter="pursued">Pursued</button>
     <button class="memories-filter" data-filter="awaiting">Awaiting</button>
   </div>
 
@@ -419,11 +408,8 @@ author_profile: true
 
   <div class="memories-legend">
     <span><i class="memories-dot memories-dot-visited"></i> Visited place</span>
-    <span><i class="memories-dot memories-dot-pursued"></i> Pursued place</span>
     <span><i class="memories-dot memories-dot-awaiting"></i> Awaiting place</span>
     <span><i class="memories-triangle memories-triangle-visited"></i> Completed hike</span>
-    <!-- <span><i class="memories-triangle memories-triangle-pursued"></i> Pursued hike</span>
-    <span><i class="memories-triangle memories-triangle-awaiting"></i> Awaiting hike</span> -->
   </div>
 
   <h2 class="memories-section-title">Places and Trails</h2>
@@ -654,19 +640,16 @@ author_profile: true
 
   function getStatusClass(status) {
     if (status === "visited") return "memory-status-visited";
-    if (status === "pursued") return "memory-status-pursued";
     return "memory-status-awaiting";
   }
 
   function getStatusLabel(status) {
     if (status === "visited") return "Visited";
-    if (status === "pursued") return "Pursued";
     return "Awaiting";
   }
 
   function getMarkerColor(status) {
     if (status === "visited") return "#047857";
-    if (status === "pursued") return "#7c3aed";
     return "#d97706";
   }
 
@@ -734,10 +717,24 @@ author_profile: true
     scrollWheelZoom: false
   }).setView([22, -15], 2);
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  const getMapTileUrl = () => {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    return isDark
+      ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+      : "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
+  };
+
+  const tileLayer = L.tileLayer(getMapTileUrl(), {
     maxZoom: 18,
-    attribution: "&copy; OpenStreetMap contributors"
+    attribution: "&copy; OpenStreetMap contributors &copy; CARTO"
   }).addTo(map);
+
+  new MutationObserver(() => {
+    tileLayer.setUrl(getMapTileUrl());
+  }).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["data-theme"]
+  });
 
   const markersLayer = L.layerGroup().addTo(map);
   let currentMarkers = [];
