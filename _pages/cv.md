@@ -216,9 +216,6 @@ author_profile: true
     <div class="cv-location">Montréal, Québec, Canada</div>
 
     <div class="cv-contact">
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:evensont96@yahoo.fr">evensont96@yahoo.fr</a><br>
-
       <i class="fab fa-github"></i>
       <a href="https://github.com/Evenson0">github.com/Evenson0</a><br>
 

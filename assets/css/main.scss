@@ -751,3 +751,324 @@ figure img {
     height: 380px !important;
   }
 }
+
+/* ==========================================================================
+   DEVELOPER CONSOLE DIRECTION
+   ========================================================================== */
+
+:root {
+  --ev-console-bg: color-mix(in srgb, var(--global-bg-color) 88%, #020617 12%);
+  --ev-console-ink: var(--global-text-color);
+  --ev-console-dim: color-mix(in srgb, var(--global-text-color) 62%, transparent);
+  --ev-console-accent: #16a34a;
+  --ev-console-accent-soft: color-mix(in srgb, #16a34a 18%, transparent);
+  --ev-console-warning: #d97706;
+}
+
+body {
+  font-family: "Inter", $sans-serif;
+}
+
+.page__title,
+.archive .page__title,
+.archive h1,
+.portfolio-lead,
+.cv-name {
+  font-family: "JetBrains Mono", $monospace !important;
+  letter-spacing: -0.01em;
+}
+
+.page__title::before,
+.archive .page__title::before,
+.archive h1::before {
+  content: "~/ ";
+  color: var(--ev-console-accent);
+  font-weight: 400;
+}
+
+.page__content h2,
+.archive__subtitle,
+.lab-section-title,
+.notes-section-title,
+.fm-section-title,
+.pc-section h2,
+.memories-section-title,
+.cv-section h2 {
+  font-family: "JetBrains Mono", $monospace !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+}
+
+.page__content h2::before,
+.archive__subtitle::before,
+.lab-section-title::before,
+.notes-section-title::before,
+.fm-section-title::before,
+.pc-section h2::before,
+.memories-section-title::before,
+.cv-section h2::before {
+  content: "# ";
+  color: var(--ev-console-accent);
+}
+
+.masthead__menu-item--lg a,
+.greedy-nav a,
+.author__urls a,
+.archive-card-meta,
+.archive-card-date,
+.portfolio-index,
+.portfolio-type,
+.lab-card::after,
+.note-tag,
+.memory-tag,
+.memory-status,
+.cv-date,
+.cv-tags {
+  font-family: "JetBrains Mono", $monospace !important;
+}
+
+.author__avatar img {
+  border-radius: 50% !important;
+  filter: none !important;
+}
+
+.sidebar .author__name {
+  font-family: "Inter", $sans-serif !important;
+}
+
+.archive-card {
+  grid-template-columns: 2.8rem minmax(0, 1fr);
+  border-top: 0;
+  padding: 0.95rem 0;
+}
+
+.archive-card::before {
+  content: "λ";
+  color: var(--ev-console-accent);
+  font-size: 0.95rem;
+}
+
+.archive-card-title {
+  font-family: "JetBrains Mono", $monospace !important;
+  font-size: 1.05rem;
+}
+
+.archive-card:hover {
+  background: var(--ev-console-accent-soft);
+}
+
+.lab-shell,
+.notes-shell,
+.fm-shell,
+.pc-notes-shell,
+.cv-shell,
+.memories-shell,
+.tool-shell,
+.op-shell,
+.mh-shell,
+.fmc-shell,
+.bot-container,
+.rw-container {
+  position: relative;
+  padding: 1.6rem !important;
+  border: 1px solid var(--ev-line) !important;
+  border-left: 4px solid var(--ev-console-accent) !important;
+  background:
+    linear-gradient(90deg, var(--ev-console-accent-soft), transparent 34rem),
+    var(--ev-console-bg) !important;
+}
+
+.lab-shell::before,
+.notes-shell::before,
+.cv-shell::before,
+.memories-shell::before {
+  content: "session: active";
+  display: block;
+  margin-bottom: 1.15rem;
+  color: var(--ev-console-dim);
+  font-family: "JetBrains Mono", $monospace;
+  font-size: 0.72rem;
+}
+
+.lab-grid,
+.notes-grid,
+.fm-grid,
+.pc-grid,
+.cv-skills-grid,
+.memories-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.85rem !important;
+}
+
+.lab-card,
+.note-card,
+.fm-card,
+.pc-card,
+.cv-item,
+.cv-skill-box,
+.memory-card,
+.fm-proof-card,
+.bot-concept,
+.bot-kpi,
+.mh-stat-card,
+.rw-stats {
+  display: block !important;
+  padding: 1rem !important;
+  border: 1px solid var(--ev-line) !important;
+  border-left: 3px solid transparent !important;
+  background: color-mix(in srgb, var(--global-bg-color) 78%, #020617 22%) !important;
+}
+
+.lab-card:hover,
+.note-card:hover,
+.fm-card:hover,
+.pc-card:hover,
+.cv-item:hover,
+.cv-skill-box:hover,
+.memory-card:hover,
+.fm-proof-card:hover {
+  border-left-color: var(--ev-console-accent) !important;
+  background: color-mix(in srgb, var(--global-bg-color) 72%, #16a34a 10%) !important;
+}
+
+.lab-card h3,
+.note-card h3,
+.fm-card h3,
+.pc-card h3,
+.cv-item h3,
+.cv-skill-box h3,
+.memory-card-title {
+  font-family: "JetBrains Mono", $monospace !important;
+}
+
+.lab-card h3::before,
+.note-card h3::before,
+.fm-card h3::before,
+.pc-card h3::before,
+.cv-item h3::before,
+.cv-skill-box h3::before,
+.memory-card-title::before {
+  content: "> ";
+  color: var(--ev-console-accent);
+}
+
+.lab-card {
+  min-height: 170px;
+}
+
+.lab-card::after {
+  content: attr(data-kind);
+}
+
+.lab-card p,
+.note-card p,
+.fm-card p,
+.pc-card p,
+.cv-item p,
+.cv-skill-box p,
+.memory-card-text {
+  margin-top: 0.65rem !important;
+}
+
+.lab-card-cta {
+  display: none !important;
+}
+
+.lab-card-link {
+  position: relative;
+}
+
+.lab-card-link::after {
+  content: "↵";
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.65rem;
+  color: var(--ev-console-accent);
+  font-family: "JetBrains Mono", $monospace;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.lab-card-link:hover::after {
+  opacity: 1;
+}
+
+.memory-card-image {
+  filter: none !important;
+}
+
+.memory-tag,
+.memory-status,
+.note-tag,
+.pc-pill,
+.cv-pill,
+.rw-return-chip {
+  color: var(--ev-console-accent) !important;
+}
+
+.cv-contact {
+  font-family: "JetBrains Mono", $monospace;
+  font-size: 0.9rem;
+}
+
+.cv-btn,
+.note-btn,
+.pc-btn,
+.fm-btn,
+.tool-btn,
+.op-btn,
+.fmc-btn,
+.bot-btn,
+.rw-btn,
+.mh-btn,
+.memory-link-button,
+.memories-filter {
+  border: 1px solid var(--ev-line-strong) !important;
+  background: transparent !important;
+  color: var(--global-text-color) !important;
+  font-family: "JetBrains Mono", $monospace !important;
+}
+
+.cv-btn:hover,
+.note-btn:hover,
+.pc-btn:hover,
+.fm-btn:hover,
+.tool-btn:hover,
+.op-btn:hover,
+.fmc-btn:hover,
+.bot-btn:hover,
+.rw-btn:hover,
+.mh-btn:hover,
+.memory-link-button:hover,
+.memories-filter:hover,
+.memories-filter.active {
+  border-color: var(--ev-console-accent) !important;
+  background: var(--ev-console-accent-soft) !important;
+}
+
+@media (max-width: 720px) {
+  .lab-shell,
+  .notes-shell,
+  .fm-shell,
+  .pc-notes-shell,
+  .cv-shell,
+  .memories-shell,
+  .tool-shell,
+  .op-shell,
+  .mh-shell,
+  .fmc-shell,
+  .bot-container,
+  .rw-container {
+    padding: 1rem !important;
+  }
+
+  .lab-grid,
+  .notes-grid,
+  .fm-grid,
+  .pc-grid,
+  .cv-skills-grid,
+  .memories-grid {
+    grid-template-columns: 1fr;
+  }
+}

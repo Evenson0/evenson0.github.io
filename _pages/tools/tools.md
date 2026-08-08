@@ -191,7 +191,6 @@ permalink: /tools/
         <p class="lab-card-desc">
           Explore primality, test integers, and interact with one of the most classical objects in number theory.
         </p>
-        <p class="lab-card-cta">Open tool →</p>
       </div>
     </a>
 
@@ -201,7 +200,6 @@ permalink: /tools/
         <p class="lab-card-desc">
           Experiment with even integers and their decomposition into sums of two prime numbers.
         </p>
-        <p class="lab-card-cta">Open tool →</p>
       </div>
     </a>
 
@@ -211,7 +209,6 @@ permalink: /tools/
         <p class="lab-card-desc">
           Explore randomized olympiad-style problems together with complete written solutions.
         </p>
-        <p class="lab-card-cta">Open tool →</p>
       </div>
     </a>
 
@@ -221,7 +218,6 @@ permalink: /tools/
         <p class="lab-card-desc">
           Interact with the famous probability puzzle, reveal doors visually, and compare the outcomes of staying versus switching.
         </p>
-        <p class="lab-card-cta">Open tool →</p>
       </div>
     </a>
 
@@ -231,7 +227,6 @@ permalink: /tools/
         <p class="lab-card-desc">
           Choose a starting point, generate a two-dimensional random walk, and visualize how randomness creates a path over time.
         </p>
-        <p class="lab-card-cta">Open tool →</p>
       </div>
     </a>
 
@@ -247,7 +242,6 @@ permalink: /tools/
         <p class="lab-card-desc">
           Train with randomized financial mathematics problems inspired by SOA Exam FM, complete with multiple-choice answers.
         </p>
-        <p class="lab-card-cta">Open tool →</p>
       </div>
     </a>
 
@@ -257,7 +251,6 @@ permalink: /tools/
         <p class="lab-card-desc">
           Choose what you want to calculate, provide the known inputs, and obtain the corresponding financial mathematics solution.
         </p>
-        <p class="lab-card-cta">Open tool →</p>
       </div>
     </a>
 
@@ -273,7 +266,6 @@ permalink: /tools/
         <p class="lab-card-desc">
           Build an animated binomial tree, compare European and American options, and price calls or puts by backward induction.
         </p>
-        <p class="lab-card-cta">Open tool →</p>
       </div>
     </a>
 
