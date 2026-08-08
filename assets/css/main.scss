@@ -1352,3 +1352,200 @@ body,
 .archive-card:hover .archive-card-title a {
   color: var(--global-text-color) !important;
 }
+
+/* ==========================================================================
+   GLOBAL TEXT AND TOOL INTERACTION POLISH
+   ========================================================================== */
+
+#main,
+#main .page,
+#main .archive,
+#main .page__content,
+#main .page__content > p,
+#main .page__content p,
+#main .page__content li,
+#main .page__content dd,
+#main .page__content td,
+#main .page__content blockquote,
+.page__content div:not([class*="MathJax"]):not([class*="mjx"]),
+.page__content span:not([class*="MathJax"]):not([class*="mjx"]) {
+  font-family: "Inter", $sans-serif !important;
+}
+
+#main .page__title,
+#main .archive h1,
+#main .page__content h1,
+#main .page__content h2,
+#main .page__content h3,
+#main .page__content h4,
+#main .page__content h5,
+#main .page__content h6,
+.masthead__menu-item--lg a,
+.greedy-nav a,
+.archive-card-title,
+.portfolio-title,
+.lab-card h3,
+.note-card h3,
+.memory-card-title,
+.cv-name,
+.cv-item h3,
+.cv-skill-box h3,
+.tool-shell h1,
+.op-shell h1,
+.mh-title,
+.fmc-shell h1,
+.bot-notes h2,
+.rw-notes h2 {
+  font-family: "JetBrains Mono", $monospace !important;
+}
+
+:root {
+  --ev-hacker-green: #18c964;
+  --ev-hacker-green-soft: color-mix(in srgb, #18c964 18%, transparent);
+  --ev-hacker-green-line: color-mix(in srgb, #18c964 74%, transparent);
+  --ev-tool-surface: color-mix(in srgb, var(--global-bg-color) 90%, var(--global-text-color) 10%);
+}
+
+.archive-card:hover,
+.portfolio-row:hover,
+.lab-card:hover,
+.note-card:hover,
+.memory-card:hover,
+.cv-item:hover,
+.cv-skill-box:hover,
+.fm-card:hover,
+.pc-card:hover,
+.fm-proof-card:hover {
+  border-color: var(--ev-hacker-green-line) !important;
+  border-left-color: var(--ev-hacker-green-line) !important;
+  background: var(--ev-hacker-green-soft) !important;
+}
+
+.archive-card:hover::before,
+.lab-card-link:hover::after {
+  border-color: var(--ev-hacker-green-line) !important;
+}
+
+.portfolio-row:hover .portfolio-title,
+.archive-card:hover .archive-card-title,
+.archive-card:hover .archive-card-title a,
+.lab-card:hover h3,
+.note-card:hover h3,
+.memory-card:hover .memory-card-title,
+.cv-item:hover h3,
+.cv-skill-box:hover h3 {
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+}
+
+.cv-btn:hover,
+.note-btn:hover,
+.pc-btn:hover,
+.fm-btn:hover,
+.tool-btn:hover,
+.op-btn:hover,
+.fmc-btn:hover,
+.bot-btn:hover,
+.rw-btn:hover,
+.mh-btn:hover,
+.memory-link-button:hover,
+.memories-filter:hover,
+.memories-filter.active {
+  border-color: var(--ev-hacker-green-line) !important;
+  background: var(--ev-hacker-green-soft) !important;
+}
+
+.tool-shell,
+.op-shell,
+.mh-shell,
+.fmc-shell,
+.bot-container,
+.rw-container {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--global-bg-color) 88%, #020617 12%), var(--global-bg-color)),
+    var(--ev-tool-surface) !important;
+}
+
+.tool-shell,
+.op-shell,
+.fmc-shell,
+.bot-container,
+.rw-container {
+  border-top: 1px solid var(--ev-line) !important;
+}
+
+.tool-input,
+.fmc-input,
+.fmc-select,
+.bot-field input,
+.bot-field select,
+.rw-field input,
+.rw-field select,
+.rw-mini-field input {
+  background: color-mix(in srgb, var(--global-bg-color) 88%, var(--global-text-color) 12%) !important;
+  border: 1px solid var(--ev-line) !important;
+  color: var(--global-text-color) !important;
+  font-family: "JetBrains Mono", $monospace !important;
+}
+
+.tool-input:focus,
+.fmc-input:focus,
+.fmc-select:focus,
+.bot-field input:focus,
+.bot-field select:focus,
+.rw-field input:focus,
+.rw-field select:focus,
+.rw-mini-field input:focus {
+  border-color: var(--ev-hacker-green-line) !important;
+  box-shadow: 0 0 0 3px var(--ev-hacker-green-soft) !important;
+}
+
+.tool-results-box,
+.op-problem-box,
+.op-solution-box,
+.op-answer-box,
+.fmc-box,
+.fmc-step,
+.bot-panel,
+.bot-tree-card,
+.bot-result-card,
+.bot-stage,
+.bot-log,
+.rw-panel,
+.rw-canvas-wrap,
+.rw-details,
+.rw-math-display,
+.mh-status,
+.mh-note,
+.mh-nav {
+  background: color-mix(in srgb, var(--global-bg-color) 92%, var(--global-text-color) 8%) !important;
+  border-color: var(--ev-line) !important;
+}
+
+.bot-tree-svg,
+.rw-canvas-wrap canvas,
+#walkCanvas {
+  filter: saturate(1.1) contrast(1.04);
+}
+
+.mh-door {
+  border-color: var(--ev-line) !important;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--global-bg-color) 88%, var(--global-text-color) 12%), var(--global-bg-color)) !important;
+}
+
+.mh-door:hover,
+.mh-door.selected {
+  border-color: var(--ev-hacker-green-line) !important;
+  box-shadow: inset 0 0 0 1px var(--ev-hacker-green-line) !important;
+}
+
+.mh-door.win,
+.mh-door.final-open {
+  border-color: var(--ev-hacker-green-line) !important;
+}
+
+.rw-return-button-active,
+.memories-filter.active {
+  color: var(--global-text-color) !important;
+}

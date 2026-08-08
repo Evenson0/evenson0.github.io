@@ -176,8 +176,4 @@ author_profile: true
 
   </div>
 
-  <div class="notes-foot">
-    More notes in probability, statistics, mathematical finance, and actuarial science will be added here over time.
-  </div>
-
 </div>
