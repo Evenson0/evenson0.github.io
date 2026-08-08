@@ -301,11 +301,11 @@ author_profile: true
   .cv-node-rail {
     display: flex;
     gap: 0.7rem;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: auto;
+    width: max-content;
+    overflow: visible;
     scrollbar-width: none;
     padding: 0.85rem;
+    will-change: transform;
   }
 
   .cv-node-rail::-webkit-scrollbar {
@@ -330,7 +330,6 @@ author_profile: true
       rgba(0,10,5,0.76);
     cursor: pointer;
     text-align: left;
-    scroll-snap-align: center;
     transition:
       border-color 0.18s ease,
       background 0.18s ease,
@@ -401,6 +400,22 @@ author_profile: true
   #cv-system-panel p,
   #cv-system-panel li,
   #cv-system-panel span {
+    opacity: 1 !important;
+  }
+
+  #main .page__content #cv-system-panel .cv-panel-meta,
+  #main .page__content #cv-system-panel .cv-panel-list li {
+    color: #f7fffb !important;
+    opacity: 1 !important;
+  }
+
+  #main .page__content #cv-system-panel .cv-detail-title {
+    color: #ffffff !important;
+    opacity: 1 !important;
+  }
+
+  #main .page__content #cv-system-panel .cv-detail-date {
+    color: #7dffba !important;
     opacity: 1 !important;
   }
 
@@ -960,6 +975,7 @@ author_profile: true
     let activeKey = "profile";
     let lastFrame = 0;
     let loopWidth = 0;
+    let position = 0;
 
     const escapeHtml = (value) => value
       .replace(/&/g, "&amp;")
@@ -1006,7 +1022,8 @@ author_profile: true
     const bindNodeEvents = () => {
       allNodes.forEach((node) => {
         node.addEventListener("click", () => {
-          render(node.dataset.cvNode);
+          centerNode(node);
+          render(getCenteredKey());
           isMoving = !isMoving;
           if (status) status.textContent = isMoving ? "AUTO-SCAN: ON" : "AUTO-SCAN: PAUSED";
         });
@@ -1027,8 +1044,31 @@ author_profile: true
 
       window.requestAnimationFrame(() => {
         loopWidth = rail.scrollWidth / 2;
-        rail.scrollLeft = 0;
+        position = 0;
+        applyCarouselTransform();
       });
+    };
+
+    const normalizePosition = () => {
+      if (!loopWidth) return;
+
+      while (position >= loopWidth) position -= loopWidth;
+      while (position < 0) position += loopWidth;
+    };
+
+    const applyCarouselTransform = () => {
+      if (!rail) return;
+      rail.style.transform = `translate3d(${-position}px, 0, 0)`;
+    };
+
+    const centerNode = (node) => {
+      if (!rail || !node || !loopWidth) return;
+
+      const viewport = rail.parentElement;
+      const viewportWidth = viewport ? viewport.clientWidth : rail.clientWidth;
+      position = node.offsetLeft - ((viewportWidth - node.offsetWidth) / 2);
+      normalizePosition();
+      applyCarouselTransform();
     };
 
     const getCenteredKey = () => {
@@ -1060,12 +1100,9 @@ author_profile: true
       lastFrame = timestamp;
 
       if (isMoving && loopWidth > 0) {
-        rail.scrollLeft += delta * 0.065;
-
-        if (rail.scrollLeft >= loopWidth) {
-          rail.scrollLeft -= loopWidth;
-        }
-
+        position += delta * 0.07;
+        normalizePosition();
+        applyCarouselTransform();
         render(getCenteredKey());
       }
 
