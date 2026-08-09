@@ -455,6 +455,78 @@ author_profile: true
   }
 </style>
 
+<!-- Final component styles live here, after the legacy rules above, so the game
+     show never depends on stylesheet load order. -->
+<style>
+  .mh-shell {
+    padding: 0 !important;
+    overflow: hidden !important;
+    color: #fff !important;
+    background: #100b22 !important;
+    border: 1px solid #4e3b76 !important;
+  }
+  .mh-show-header {
+    padding: 2rem 1.5rem 1.35rem !important;
+    text-align: center;
+    background: radial-gradient(circle at 50% -40%, #704bc2, transparent 58%), #17102e !important;
+  }
+  .mh-title, .mh-lead, .mh-sublead { color: #fff !important; }
+  .mh-sublead { color: #e9e0ff !important; }
+  .mh-stage-frame {
+    padding: 1.4rem clamp(.65rem, 3vw, 1.6rem) 1.8rem !important;
+    background: radial-gradient(ellipse at 50% 0, #34205f 0, #160e2c 48%, #090612 100%) !important;
+  }
+  #mh-status {
+    position: relative !important;
+    z-index: 20 !important;
+    display: block !important;
+    max-width: 660px !important;
+    margin: 0 auto 1.3rem !important;
+    padding: 1rem 1.15rem !important;
+    color: #1d102f !important;
+    -webkit-text-fill-color: #1d102f !important;
+    background: #ffd978 !important;
+    border: 2px solid #fff0bd !important;
+    border-radius: 7px !important;
+    font-weight: 900 !important;
+    line-height: 1.45 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    text-shadow: none !important;
+  }
+  .mh-doors {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: clamp(7px, 2vw, 16px) !important;
+    max-width: 720px !important;
+    margin: 0 auto !important;
+  }
+  .mh-door {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 255px !important;
+    color: #fff !important;
+    background: linear-gradient(90deg, #311548, #713b8e 50%, #311548) !important;
+    border: 4px solid #d8a944 !important;
+    border-radius: 48px 48px 6px 6px !important;
+  }
+  .mh-door-panel {
+    background: linear-gradient(145deg, #67387f, #2d123f) !important;
+    border: 2px solid #eacb7f !important;
+  }
+  .mh-door-top, .mh-door-footer { color: #fff !important; background: #211033 !important; }
+  .mh-door-label { color: #fff !important; }
+  .mh-door-number-large { color: #fff2c8 !important; }
+  .mh-control-desk, .mh-scoreboard-title, .mh-stats, .mh-note, .mh-nav { background: #17102e !important; }
+  @media (max-width: 600px) {
+    .mh-stage-frame { padding-left: .45rem !important; padding-right: .45rem !important; }
+    .mh-doors { gap: 5px !important; }
+    .mh-door { min-height: 172px !important; border-width: 3px !important; border-radius: 25px 25px 5px 5px !important; }
+    .mh-door-label { display: none !important; }
+    .mh-door-top { min-height: 30px !important; padding: .25rem !important; justify-content: center !important; }
+    .mh-door-footer { padding: .35rem .1rem !important; font-size: .62rem !important; }
+  }
+</style>
+
 <div class="mh-shell">
 
   <div class="mh-show-header">

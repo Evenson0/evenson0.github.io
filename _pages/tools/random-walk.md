@@ -268,6 +268,93 @@ tool_theme: universe
   }
 </style>
 
+<!-- Stable page-local layout. These rules intentionally follow the legacy
+     component CSS so MathJax and the theme switch cannot reorder the page. -->
+<style>
+  .rw-container { max-width: 980px; margin: 0 auto; color: #183041; }
+  .rw-theory, .rw-workbench, .rw-observatory {
+    margin: 0 0 1.25rem;
+    padding: clamp(1rem, 2.5vw, 1.6rem);
+    border: 1px solid #c8d7e2;
+    border-radius: 10px;
+    background: #f7fafc;
+  }
+  .rw-theory { border-top: 4px solid #176b9b; }
+  .rw-notes { margin: 0 !important; padding: 0 !important; color: #183041 !important; background: transparent !important; border: 0 !important; }
+  .rw-notes h2 { margin: .35rem 0 1rem; color: #102b3d !important; }
+  .rw-notes p { color: #243f51 !important; line-height: 1.75 !important; }
+  .rw-proposition, .rw-remark {
+    display: block !important;
+    margin: 1rem 0 0 !important;
+    padding: 1rem 1.15rem !important;
+    color: #172d3c !important;
+    background: #fff !important;
+    border: 1px solid #b8ccd9 !important;
+    border-left: 4px solid #176b9b !important;
+    border-radius: 4px !important;
+    font: 1rem/1.8 Georgia, "Times New Roman", serif !important;
+    overflow: visible !important;
+  }
+  .rw-proposition strong, .rw-remark strong {
+    display: block !important;
+    margin: 0 0 .35rem !important;
+    color: #0e5279 !important;
+    line-height: 1.35 !important;
+  }
+  .rw-proposition mjx-container, .rw-remark mjx-container {
+    display: inline-block !important;
+    margin: 0 .1em !important;
+    vertical-align: -.08em !important;
+  }
+  .rw-section-heading { margin-bottom: 1rem !important; color: #183041 !important; }
+  .rw-section-heading strong { color: #102b3d !important; }
+  .rw-section-heading small { color: #557083 !important; }
+  .rw-config-grid { display: grid !important; grid-template-columns: minmax(0, 1.45fr) minmax(210px, .7fr) !important; gap: 1rem !important; }
+  .rw-panel, .rw-vector-panel {
+    margin: 0 !important;
+    padding: 1rem !important;
+    color: #183041 !important;
+    background: #edf4f8 !important;
+    border: 1px solid #c4d5df !important;
+    border-radius: 6px !important;
+  }
+  .rw-panel { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .rw-vector-panel { display: flex !important; flex-direction: column !important; gap: .85rem !important; }
+  .rw-vector-title { margin: 0 !important; padding-bottom: .6rem !important; color: #102b3d !important; border-bottom: 1px solid #c4d5df !important; }
+  .rw-vector-fields { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: .65rem !important; }
+  .rw-field, .rw-mini-field { min-width: 0 !important; }
+  .rw-field label, .rw-mini-field label { display: block !important; margin-bottom: .3rem !important; color: #17374b !important; line-height: 1.3 !important; }
+  .rw-field input, .rw-field select, .rw-mini-field input {
+    width: 100% !important;
+    min-width: 0 !important;
+    color: #142c3b !important;
+    -webkit-text-fill-color: #142c3b !important;
+    background: #fff !important;
+    border: 1px solid #9fb8c8 !important;
+  }
+  .rw-buttons { margin: 1rem 0 0 !important; }
+  .rw-buttons .rw-btn { color: #153449 !important; background: #fff !important; border: 1px solid #9db7c7 !important; }
+  .rw-buttons .rw-btn:first-child { color: #fff !important; background: #176b9b !important; border-color: #176b9b !important; }
+  .rw-canvas-wrap { background: #071522 !important; border: 1px solid #42657c !important; border-radius: 6px !important; }
+  #randomWalkCanvas { height: min(570px, 62vw) !important; min-height: 330px; }
+  .rw-stats { color: #183041 !important; background: #fff !important; border: 1px solid #c4d5df !important; line-height: 1.7 !important; overflow-wrap: anywhere !important; }
+  .rw-stats * { max-width: 100%; }
+  .rw-math-display { overflow-x: auto !important; white-space: normal !important; }
+  html[data-theme="dark"] .rw-container { color: #edf7ff; }
+  html[data-theme="dark"] :is(.rw-theory,.rw-workbench,.rw-observatory) { color: #edf7ff; background: #0b1928; border-color: #29465b; }
+  html[data-theme="dark"] .rw-notes, html[data-theme="dark"] .rw-notes p { color: #dfedf6 !important; }
+  html[data-theme="dark"] .rw-notes h2, html[data-theme="dark"] .rw-section-heading strong { color: #f3f9fd !important; }
+  html[data-theme="dark"] :is(.rw-proposition,.rw-remark,.rw-panel,.rw-vector-panel,.rw-stats) { color: #e7f3fa !important; background: #112538 !important; border-color: #36556b !important; }
+  html[data-theme="dark"] :is(.rw-proposition,.rw-remark) strong { color: #71d0ff !important; }
+  html[data-theme="dark"] :is(.rw-field,.rw-mini-field) label, html[data-theme="dark"] .rw-vector-title { color: #e7f3fa !important; }
+  html[data-theme="dark"] :is(.rw-field,.rw-mini-field) input, html[data-theme="dark"] .rw-field select { color: #eef8ff !important; -webkit-text-fill-color: #eef8ff !important; background: #07131f !important; }
+  @media (max-width: 700px) {
+    .rw-config-grid, .rw-panel { grid-template-columns: 1fr !important; }
+    .rw-vector-fields { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+    #randomWalkCanvas { min-height: 280px; height: 82vw !important; }
+  }
+</style>
+
 <div class="rw-container">
 
   <section class="rw-theory" aria-labelledby="rw-theory-title">
