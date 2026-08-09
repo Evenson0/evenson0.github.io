@@ -1,0 +1,399 @@
+{
+  "updated_at": "2026-08-09T22:36:38.471180+00:00",
+  "assets": {
+    "Indices": [
+      {
+        "symbol": "^GSPC",
+        "name": "S&P 500",
+        "price": 7757.6401,
+        "change_pct": 0.618,
+        "low_52w": 6343.7202,
+        "high_52w": 7757.6401
+      },
+      {
+        "symbol": "^IXIC",
+        "name": "Nasdaq Composite",
+        "price": 26690.6191,
+        "change_pct": 1.299,
+        "low_52w": 20794.6406,
+        "high_52w": 27093.9004
+      },
+      {
+        "symbol": "^DJI",
+        "name": "Dow Jones",
+        "price": 54036.9297,
+        "change_pct": 0.282,
+        "low_52w": 43975.0898,
+        "high_52w": 54349.1211
+      },
+      {
+        "symbol": "^GSPTSE",
+        "name": "S&P/TSX Composite",
+        "price": 36381.1992,
+        "change_pct": 0.678,
+        "low_52w": 27758.6992,
+        "high_52w": 36381.1992
+      },
+      {
+        "symbol": "XIU.TO",
+        "name": "S&P/TSX 60 ETF",
+        "price": 54.14,
+        "change_pct": 0.334,
+        "low_52w": 41.82,
+        "high_52w": 54.14
+      },
+      {
+        "symbol": "^RUT",
+        "name": "Russell 2000",
+        "price": 3034.49,
+        "change_pct": 1.097,
+        "low_52w": 2216.51,
+        "high_52w": 3036.98
+      },
+      {
+        "symbol": "^FTSE",
+        "name": "FTSE 100",
+        "price": 10901.0996,
+        "change_pct": 0.305,
+        "low_52w": 9095.7002,
+        "high_52w": 10910.5996
+      },
+      {
+        "symbol": "^N225",
+        "name": "Nikkei 225",
+        "price": 65606.7109,
+        "change_pct": -0.117,
+        "low_52w": 41059.1484,
+        "high_52w": 72366.3438
+      }
+    ],
+    "Equities": [
+      {
+        "symbol": "AAPL",
+        "name": "Apple",
+        "price": 313.33,
+        "change_pct": 0.294,
+        "low_52w": 224.9,
+        "high_52w": 340.08
+      },
+      {
+        "symbol": "MSFT",
+        "name": "Microsoft",
+        "price": 499.99,
+        "change_pct": 0.026,
+        "low_52w": 352.83,
+        "high_52w": 542.07
+      },
+      {
+        "symbol": "NVDA",
+        "name": "NVIDIA",
+        "price": 223.96,
+        "change_pct": 2.27,
+        "low_52w": 165.17,
+        "high_52w": 235.74
+      },
+      {
+        "symbol": "AMZN",
+        "name": "Amazon",
+        "price": 274.48,
+        "change_pct": 0.815,
+        "low_52w": 198.79,
+        "high_52w": 284.02
+      },
+      {
+        "symbol": "RY.TO",
+        "name": "Royal Bank",
+        "price": 294.59,
+        "change_pct": -0.664,
+        "low_52w": 182.12,
+        "high_52w": 305.74
+      },
+      {
+        "symbol": "SHOP.TO",
+        "name": "Shopify",
+        "price": 211.37,
+        "change_pct": 2.398,
+        "low_52w": 130.71,
+        "high_52w": 249.71
+      },
+      {
+        "symbol": "CNR.TO",
+        "name": "Canadian National",
+        "price": 176.52,
+        "change_pct": -0.434,
+        "low_52w": 127.07,
+        "high_52w": 183.92
+      }
+    ],
+    "Rates": [
+      {
+        "symbol": "^IRX",
+        "name": "US 13-week yield",
+        "price": 3.71,
+        "change_pct": -0.589,
+        "low_52w": 3.507,
+        "high_52w": 4.143
+      },
+      {
+        "symbol": "^FVX",
+        "name": "US 5-year yield",
+        "price": 4.362,
+        "change_pct": -0.615,
+        "low_52w": 3.512,
+        "high_52w": 4.461
+      },
+      {
+        "symbol": "^TNX",
+        "name": "US 10-year yield",
+        "price": 4.66,
+        "change_pct": -0.214,
+        "low_52w": 3.953,
+        "high_52w": 4.745
+      },
+      {
+        "symbol": "^TYX",
+        "name": "US 30-year yield",
+        "price": 5.211,
+        "change_pct": -0.038,
+        "low_52w": 4.539,
+        "high_52w": 5.275
+      }
+    ],
+    "FX": [
+      {
+        "symbol": "CAD=X",
+        "name": "USD / CAD",
+        "price": 1.3944,
+        "change_pct": -0.5,
+        "low_52w": 1.3492,
+        "high_52w": 1.4235
+      },
+      {
+        "symbol": "EURUSD=X",
+        "name": "EUR / USD",
+        "price": 1.1559,
+        "change_pct": 0.301,
+        "low_52w": 1.1354,
+        "high_52w": 1.2018
+      },
+      {
+        "symbol": "GBPUSD=X",
+        "name": "GBP / USD",
+        "price": 1.349,
+        "change_pct": 0.255,
+        "low_52w": 1.3022,
+        "high_52w": 1.3825
+      },
+      {
+        "symbol": "JPY=X",
+        "name": "USD / JPY",
+        "price": 157.873,
+        "change_pct": -0.338,
+        "low_52w": 146.413,
+        "high_52w": 163.864
+      }
+    ],
+    "Commodities": [
+      {
+        "symbol": "GC=F",
+        "name": "Gold",
+        "price": 4402.5,
+        "change_pct": 1.424,
+        "low_52w": 3313.3999,
+        "high_52w": 5318.3999
+      },
+      {
+        "symbol": "CL=F",
+        "name": "WTI Crude",
+        "price": 78.88,
+        "change_pct": 0.895,
+        "low_52w": 55.27,
+        "high_52w": 112.95
+      },
+      {
+        "symbol": "NG=F",
+        "name": "Natural Gas",
+        "price": 2.716,
+        "change_pct": 2.029,
+        "low_52w": 2.523,
+        "high_52w": 7.46
+      },
+      {
+        "symbol": "HG=F",
+        "name": "Copper",
+        "price": 6.6085,
+        "change_pct": 0.578,
+        "low_52w": 4.409,
+        "high_52w": 6.703
+      }
+    ]
+  },
+  "yield_curve": [
+    {
+      "term": "3M",
+      "value": 3.71
+    },
+    {
+      "term": "5Y",
+      "value": 4.362
+    },
+    {
+      "term": "10Y",
+      "value": 4.66
+    },
+    {
+      "term": "30Y",
+      "value": 5.211
+    }
+  ],
+  "news": [
+    {
+      "title": "How AI agents can power the S&P 500 higher",
+      "link": "https://finance.yahoo.com/markets/article/how-ai-agents-can-power-the-sp-500-higher-123000201.html",
+      "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Dow Jones Futures Fall As Market Bulls Rule; Cisco, Lumentum Earnings Ahead",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-warren-buffett-cisco-lumentum-earnings/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "1 Internet Stock with Impressive Fundamentals and 2 We Question",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/1-internet-stock-impressive-fundamentals-222122758.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "3 S&P 500 Stocks We Approach with Caution",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-p-500-stocks-approach-215722192.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "3 Reasons to Sell WDAY and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-wday-1-210122450.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "S&P 500 Positive Profit Surprises Trending Above 5-Year Average",
+      "link": "https://www.barrons.com/livecoverage/sunday0809/card/s-p-500-positive-profit-surprises-trending-above-5-year-average-SFZldkmcNCFSSVbQa79W?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "This TSX stock soared 28% this week with one analyst seeing 'durable, profitable growth'",
+      "link": "https://financialpost.com/investing/tsx-stock-soared-analysts-share-price-upside",
+      "publisher": "Financial Post",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Extends Rally to Fresh Record High Above 36,000 on Strong Jobs Report",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-extends-rally-205725158.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "The AI-adjacent portfolio: Six Canadians stocks that could benefit from the AI buildout",
+      "link": "https://financialpost.com/investing/six-canadians-stocks-benefit-from-ai-buildout",
+      "publisher": "Financial Post",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Slips From Record High as Tech Weakness Offsets Oil-Driven Energy Gains",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-slips-record-203317614.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: The Index Tops 36,000 for the First Time as Metals Rally Offsets Energy Weakness",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-tops-36-202911459.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX gains on US-Iran peace optimism; Americas Gold and Silver leads miners rally",
+      "link": "https://ca.finance.yahoo.com/news/tsx-gains-us-iran-peace-150724072.html",
+      "publisher": "Reuters",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    }
+  ],
+  "earnings": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "when": "Oct 29",
+      "note": "Upcoming earnings and investor materials",
+      "link": "https://finance.yahoo.com/quote/AAPL/"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "when": "Oct 28",
+      "note": "Upcoming earnings and investor materials",
+      "link": "https://finance.yahoo.com/quote/MSFT/"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "when": "Aug 26",
+      "note": "Upcoming earnings and investor materials",
+      "link": "https://finance.yahoo.com/quote/NVDA/"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "when": "Oct 29",
+      "note": "Upcoming earnings and investor materials",
+      "link": "https://finance.yahoo.com/quote/AMZN/"
+    },
+    {
+      "symbol": "RY.TO",
+      "name": "Royal Bank",
+      "when": "Aug 27",
+      "note": "Upcoming earnings and investor materials",
+      "link": "https://finance.yahoo.com/quote/RY.TO/"
+    },
+    {
+      "symbol": "SHOP.TO",
+      "name": "Shopify",
+      "when": "Nov 03",
+      "note": "Upcoming earnings and investor materials",
+      "link": "https://finance.yahoo.com/quote/SHOP.TO/"
+    }
+  ],
+  "macro_events": [
+    {
+      "time": "08:30 ET",
+      "event": "Inflation and labour releases",
+      "region": "Canada / United States",
+      "note": "Monitor the official economic calendars"
+    },
+    {
+      "time": "10:00 ET",
+      "event": "Central-bank and activity data",
+      "region": "North America",
+      "note": "Consensus and prior readings vary by release"
+    },
+    {
+      "time": "14:00 ET",
+      "event": "Monetary-policy communications",
+      "region": "Federal Reserve / Bank of Canada",
+      "note": "Statements, minutes and rate decisions"
+    }
+  ]
+}

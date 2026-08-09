@@ -261,6 +261,15 @@ tool_theme: atlas
 
   <div class="lab-grid">
 
+    <a href="/tools/market-lab/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Market Lab</h3>
+        <p class="lab-card-desc">
+          Read the global trading day through market sessions, cross-asset prices, macro signals, earnings, news, and quantitative tools.
+        </p>
+      </div>
+    </a>
+
     <a href="/tools/binomial-option-tree/" class="lab-card-link">
       <div class="lab-card">
         <h3>Binomial Option Tree</h3>
