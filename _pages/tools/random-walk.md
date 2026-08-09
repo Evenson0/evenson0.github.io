@@ -296,10 +296,9 @@ tool_theme: universe
       A simple symmetric random walk on \(\mathbb{Z}^d\) is recurrent if and only if \(d \in \{1,2\}\); equivalently, it returns to its starting point with probability \(1\) in dimensions \(1\) and \(2\), whereas it is transient for every \(d \geq 3\).
     </div>
 
-    <div class="rw-note-box">
+    <div class="rw-note-box rw-remark">
       <strong>Remark.</strong>
-      Recurrence does not mean that the walker returns quickly.
-      In dimension \(d=1\), the expected return time to the starting point is infinite, even though the probability of eventually returning is \(100\%\).
+      Recurrence does not imply a rapid return: for the simple symmetric random walk on \(\mathbb{Z}\), the probability of eventually returning to the starting point is \(1\), although the expected return time is infinite.
     </div>
 
     <div class="rw-small-note">
