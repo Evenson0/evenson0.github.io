@@ -1,6 +1,7 @@
 ---
 title: "Goldbach Conjecture"
 permalink: /tools/goldbach/
+tool_theme: matrix
 ---
 
 <style>

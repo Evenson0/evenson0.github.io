@@ -1,6 +1,7 @@
 ---
 title: "Quantitative Laboratory"
 permalink: /tools/
+tool_theme: atlas
 ---
 
 <style>

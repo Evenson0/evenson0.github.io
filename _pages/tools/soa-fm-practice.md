@@ -1,6 +1,7 @@
 ---
 title: "SOA FM Practice"
 permalink: /tools/soa-fm-practice/
+tool_theme: actuarial
 ---
 
 <style>

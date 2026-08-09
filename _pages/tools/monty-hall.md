@@ -2,6 +2,7 @@
 layout: single
 title: "Monty Hall Simulation"
 permalink: /tools/monty-hall/
+tool_theme: probability
 author_profile: true
 ---
 

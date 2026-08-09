@@ -1,0 +1,149 @@
+/* Domain-specific interfaces for the Quantitative Laboratory. */
+:root {
+  --tool-bg: #071017;
+  --tool-surface: rgba(10, 22, 30, .92);
+  --tool-surface-2: rgba(17, 31, 40, .82);
+  --tool-line: rgba(143, 184, 204, .18);
+  --tool-text: #e9f1f4;
+  --tool-muted: #91a7b2;
+  --tool-accent: #70d6ff;
+  --tool-accent-2: #ffcc66;
+  --tool-glow: rgba(112, 214, 255, .19);
+  --tool-display: "Playfair Display", Georgia, serif;
+  --tool-body: Inter, system-ui, sans-serif;
+  --tool-mono: "JetBrains Mono", monospace;
+}
+
+.tool-experience {
+  color: var(--tool-text);
+  background-color: var(--tool-bg);
+  background-image: radial-gradient(circle at 82% 5%, var(--tool-glow), transparent 30rem);
+  font-family: var(--tool-body);
+}
+
+.tool-experience .masthead,
+.tool-experience .page__footer { background: rgba(5, 12, 17, .88); border-color: var(--tool-line); }
+.tool-experience .masthead { backdrop-filter: blur(18px); }
+.tool-experience .masthead a,
+.tool-experience .page__footer a { color: var(--tool-text); }
+.tool-experience #main { max-width: 1380px; }
+.tool-experience .page { width: 100%; padding-right: 0; }
+.tool-experience .page__inner-wrap { max-width: none; }
+.tool-experience .page__inner-wrap > header { display: none; }
+.tool-experience .page__content { color: var(--tool-text); }
+.tool-experience .page__content h1,
+.tool-experience .page__content h2,
+.tool-experience .page__content h3 { color: var(--tool-text); font-family: var(--tool-display); letter-spacing: -.025em; }
+.tool-experience .page__content a { color: var(--tool-accent); }
+.tool-experience input,
+.tool-experience select,
+.tool-experience button { font-family: var(--tool-body); }
+
+/* Replace the old translucent-card language across every interactive tool. */
+.tool-experience :is(.tool-shell,.fmc-shell,.mh-shell,.lab-shell,.op-shell,.rw-container,.bot-container) {
+  position: relative;
+  isolation: isolate;
+  max-width: 1180px;
+  margin: 2rem auto 4rem;
+  padding: clamp(1.25rem, 3vw, 3rem);
+  border: 1px solid var(--tool-line);
+  border-radius: 8px;
+  background: var(--tool-surface);
+  box-shadow: 0 32px 80px rgba(0,0,0,.28);
+  overflow: hidden;
+}
+.tool-experience :is(.tool-shell,.fmc-shell,.mh-shell,.lab-shell,.op-shell,.rw-container,.bot-container)::after {
+  content: ""; position: absolute; inset: 0 0 auto; height: 3px;
+  background: linear-gradient(90deg, var(--tool-accent), var(--tool-accent-2), transparent 85%);
+  z-index: -1;
+}
+.tool-experience :is(.tool-shell,.fmc-shell,.mh-shell,.lab-shell,.op-shell,.rw-container,.bot-container) > h1:first-child {
+  margin: 0 0 .85rem; font-size: clamp(2rem, 5vw, 4.4rem); line-height: .98;
+}
+.tool-experience :is(.tool-panel,.fmc-box,.fmc-nav-box,.mh-status,.rw-panel,.rw-vector-panel,.rw-notes,.rw-stats,.rw-return-times,.rw-computation-box,.bot-panel,.bot-notes,.bot-tree-card,.bot-result-card,.tool-results-box,.tool-nav-box,.fm-answer-box,#solutionBox) {
+  border: 1px solid var(--tool-line) !important; border-radius: 5px !important;
+  background: var(--tool-surface-2) !important; box-shadow: none !important;
+}
+.tool-experience :is(input,select) {
+  min-height: 44px; border: 1px solid var(--tool-line) !important; border-radius: 3px !important;
+  color: var(--tool-text) !important; background: rgba(0,0,0,.24) !important;
+}
+.tool-experience :is(input,select):focus { outline: 2px solid var(--tool-accent); outline-offset: 2px; box-shadow: none !important; transform: none !important; }
+.tool-experience :is(.tool-btn,.fmc-btn,.fm-btn,.mh-btn,.rw-btn,.bot-btn) {
+  border: 1px solid var(--tool-line) !important; border-radius: 3px !important;
+  color: var(--tool-text) !important; background: transparent !important;
+  box-shadow: none !important; letter-spacing: .045em; text-transform: uppercase; font-size: .78rem; font-weight: 700;
+}
+.tool-experience :is(.tool-btn,.fmc-btn,.fm-btn,.mh-btn,.rw-btn,.bot-btn):hover {
+  border-color: var(--tool-accent) !important; color: var(--tool-bg) !important;
+  background: var(--tool-accent) !important; transform: translateY(-2px);
+}
+.tool-experience :is(.tool-btn-primary,.fmc-btn-primary,.fm-btn-primary) { background: var(--tool-accent) !important; color: var(--tool-bg) !important; }
+
+/* Laboratory atlas — disciplined navigation with an identity per discipline. */
+.tool-theme-atlas { --tool-bg:#ebe8df; --tool-surface:#f7f4ec; --tool-surface-2:#efebe0; --tool-line:rgba(22,42,49,.18); --tool-text:#142a31; --tool-muted:#607078; --tool-accent:#0a6872; --tool-accent-2:#d97735; --tool-glow:rgba(10,104,114,.12); }
+.tool-theme-atlas .lab-shell { border-radius: 2px; background-image: linear-gradient(rgba(20,42,49,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(20,42,49,.035) 1px,transparent 1px); background-size: 24px 24px; }
+.tool-theme-atlas .lab-shell > h1 { font-size: clamp(2.8rem,7vw,6.3rem) !important; max-width: 9ch; }
+.tool-theme-atlas .lab-section-title { margin-top: 3rem; padding-bottom: .6rem; border-bottom: 1px solid var(--tool-line); font-family: var(--tool-mono); font-size: .78rem; text-transform: uppercase; letter-spacing: .14em; }
+.tool-theme-atlas .lab-grid { grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 1px; background: var(--tool-line); border: 1px solid var(--tool-line); }
+.tool-theme-atlas .lab-card { border: 0; border-radius: 0; background: #f7f4ec; box-shadow: none; min-height: 190px; padding: 1.6rem; }
+.tool-theme-atlas .lab-card::before { display:none; }
+.tool-theme-atlas .lab-card::after { content:"↗"; position:absolute; right:1.25rem; top:1.1rem; color:var(--tool-accent); font-size:1.2rem; }
+.tool-theme-atlas .lab-card:hover { transform:none; background:#e2f0ec; box-shadow:inset 0 -4px var(--tool-accent); }
+.tool-theme-atlas .lab-card h3 { padding-right:2rem; font-size:1.35rem; }
+
+/* Number theory — phosphor terminal, restrained rather than game-like. */
+.tool-theme-matrix { --tool-bg:#020806; --tool-surface:rgba(2,13,9,.96); --tool-surface-2:rgba(5,25,16,.86); --tool-line:rgba(79,255,154,.24); --tool-text:#d5ffe5; --tool-muted:#79a98c; --tool-accent:#4fff9a; --tool-accent-2:#d7ff4f; --tool-glow:rgba(79,255,154,.14); --tool-display:var(--tool-mono); }
+.tool-theme-matrix { background-image:linear-gradient(rgba(79,255,154,.025) 1px,transparent 1px),radial-gradient(circle at 80% 0,var(--tool-glow),transparent 35rem); background-size:100% 4px,auto; }
+.tool-theme-matrix :is(.tool-shell) { font-family:var(--tool-mono); }
+.tool-theme-matrix :is(.tool-shell) > h1::before { content:"./"; color:var(--tool-accent); }
+.tool-theme-matrix .tool-note { border:1px solid var(--tool-line); border-left:3px solid var(--tool-accent); border-radius:0; background:rgba(79,255,154,.045); }
+.tool-theme-matrix .tool-alert-success { background:rgba(79,255,154,.1)!important; color:var(--tool-text)!important; }
+.tool-theme-matrix .tool-alert-error { background:rgba(255,82,82,.1)!important; color:#ffaaaa!important; }
+
+/* Probability stage — editorial indigo and warm reveal cues. */
+.tool-theme-probability { --tool-bg:#100d20; --tool-surface:rgba(24,19,47,.97); --tool-surface-2:#211a3e; --tool-line:rgba(207,196,255,.2); --tool-text:#f5f0ff; --tool-muted:#aaa1c4; --tool-accent:#b9a2ff; --tool-accent-2:#ffb74d; --tool-glow:rgba(139,104,246,.22); }
+.tool-theme-probability .mh-shell { border-radius:22px; }
+.tool-theme-probability .mh-door { border-radius:10px; border-color:var(--tool-line); background:linear-gradient(145deg,#2d2354,#17132c); box-shadow:12px 18px 0 rgba(0,0,0,.18); }
+.tool-theme-probability .mh-door:hover { border-color:var(--tool-accent); background:linear-gradient(145deg,#3a2b70,#20183b); }
+.tool-theme-probability .mh-door-number { font-family:var(--tool-display); color:var(--tool-accent-2); }
+
+/* Stochastic universe — deep-space plotting desk. */
+.tool-theme-universe { --tool-bg:#030711; --tool-surface:rgba(6,15,31,.95); --tool-surface-2:rgba(14,31,55,.82); --tool-line:rgba(109,190,255,.22); --tool-text:#e8f4ff; --tool-muted:#8aa7c1; --tool-accent:#65d8ff; --tool-accent-2:#ffcc68; --tool-glow:rgba(59,130,246,.2); }
+.tool-theme-universe { background-image:radial-gradient(circle at 20% 18%,rgba(255,255,255,.55) 0 1px,transparent 1.5px),radial-gradient(circle at 75% 30%,rgba(255,255,255,.35) 0 1px,transparent 1.5px),radial-gradient(circle at 80% 0,var(--tool-glow),transparent 34rem); background-size:137px 137px,211px 211px,auto; }
+.tool-theme-universe .rw-canvas-wrap { border-radius:4px; border-color:var(--tool-line); background:#020713; box-shadow:0 0 40px rgba(30,136,229,.12) inset; }
+
+/* Olympiad — paper, ink, and geometric construction lines. */
+.tool-theme-olympiad { --tool-bg:#e9e3d5; --tool-surface:#fbf8f0; --tool-surface-2:#f2ecdf; --tool-line:rgba(59,48,37,.2); --tool-text:#2d2924; --tool-muted:#756c62; --tool-accent:#9d2f2f; --tool-accent-2:#b5882f; --tool-glow:rgba(157,47,47,.08); }
+.tool-theme-olympiad :is(.tool-shell,.op-shell) { background-image:linear-gradient(90deg,transparent 39px,rgba(157,47,47,.14) 40px,transparent 41px),linear-gradient(rgba(45,41,36,.045) 1px,transparent 1px); background-size:auto,100% 28px; }
+.tool-theme-olympiad :is(.tool-shell,.op-shell) > h1 { font-style:italic; }
+.tool-theme-olympiad :is(.op-problem,.op-solution,.op-answer-box) { border:1px solid var(--tool-line)!important; border-radius:2px!important; background:rgba(251,248,240,.88)!important; color:var(--tool-text)!important; }
+
+/* Actuarial workstation — data-heavy navy and cyan. */
+.tool-theme-actuarial { --tool-bg:#07131c; --tool-surface:#0d202c; --tool-surface-2:#112a38; --tool-line:rgba(104,211,232,.2); --tool-text:#eefaff; --tool-muted:#8db0bd; --tool-accent:#69d4e8; --tool-accent-2:#b5e550; --tool-glow:rgba(105,212,232,.15); --tool-display:var(--tool-body); }
+.tool-theme-actuarial .page__content > div:first-of-type { max-width:1050px!important; border-radius:4px!important; background:var(--tool-surface)!important; border-color:var(--tool-line)!important; box-shadow:0 30px 70px rgba(0,0,0,.25); }
+.tool-theme-actuarial .fm-choice { border-radius:3px; background:var(--tool-surface-2); }
+.tool-theme-actuarial .fm-choice:hover { border-color:var(--tool-accent); background:rgba(105,212,232,.09); }
+
+/* Financial calculator — precise ledger green. */
+.tool-theme-finance { --tool-bg:#07130f; --tool-surface:#0d211a; --tool-surface-2:#122b22; --tool-line:rgba(118,205,157,.21); --tool-text:#edf9f1; --tool-muted:#92ad9d; --tool-accent:#77d39e; --tool-accent-2:#e6bd67; --tool-glow:rgba(58,160,105,.17); --tool-display:var(--tool-body); }
+.tool-theme-finance .fmc-shell { border-radius:4px; }
+.tool-theme-finance .fmc-result-value { color:var(--tool-accent); font-family:var(--tool-mono); font-size:1.25rem; }
+.tool-theme-finance .fmc-step { border-left:3px solid var(--tool-accent)!important; }
+
+/* Options market — Bloomberg-inspired amber terminal. */
+.tool-theme-market { --tool-bg:#090b10; --tool-surface:#10141b; --tool-surface-2:#161c25; --tool-line:rgba(255,177,66,.23); --tool-text:#f4f5f7; --tool-muted:#98a1ad; --tool-accent:#ffb142; --tool-accent-2:#4ed8c1; --tool-glow:rgba(255,177,66,.13); --tool-display:var(--tool-body); }
+.tool-theme-market .bot-container { border-radius:2px; }
+.tool-theme-market .bot-container::before { content:"MARKET MODEL / LIVE CALCULATION"; display:block; margin-bottom:1.3rem; color:var(--tool-accent); font:700 .7rem/1 var(--tool-mono); letter-spacing:.16em; }
+.tool-theme-market .bot-tree-svg { font-family:var(--tool-mono); }
+.tool-theme-market .bot-node-rect { fill:#161c25; stroke:var(--tool-accent); }
+.tool-theme-market .bot-kpi { border-radius:2px; border-color:var(--tool-line); background:#0c1016; }
+
+@media (max-width: 900px) {
+  .tool-experience .sidebar { display:none; }
+  .tool-experience .page { padding-left:0; }
+  .tool-experience :is(.tool-shell,.fmc-shell,.mh-shell,.lab-shell,.op-shell,.rw-container,.bot-container) { margin-top:1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tool-experience *, .tool-experience *::before, .tool-experience *::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; }
+}

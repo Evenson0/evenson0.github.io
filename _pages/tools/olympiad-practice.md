@@ -1,6 +1,7 @@
 ---
 title: "Olympiad Practice"
 permalink: /tools/olympiad-practice/
+tool_theme: olympiad
 ---
 
 <style>

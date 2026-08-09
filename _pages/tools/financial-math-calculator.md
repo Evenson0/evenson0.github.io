@@ -1,6 +1,7 @@
 ---
 title: "Financial Mathematics Calculator"
 permalink: /tools/financial-math-calculator/
+tool_theme: finance
 ---
 
 <style>

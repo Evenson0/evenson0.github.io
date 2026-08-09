@@ -4,6 +4,7 @@ permalink: /tools/random-walk/
 layout: single
 author_profile: true
 mathjax: true
+tool_theme: universe
 ---
 
 <style>

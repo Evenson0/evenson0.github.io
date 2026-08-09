@@ -4,6 +4,7 @@ permalink: /tools/binomial-option-tree/
 layout: single
 author_profile: true
 mathjax: true
+tool_theme: market
 ---
 
 <style>

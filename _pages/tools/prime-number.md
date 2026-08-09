@@ -1,6 +1,7 @@
 ---
 title: "Prime Number"
 permalink: /tools/prime-number/
+tool_theme: matrix
 ---
 
 <style>
