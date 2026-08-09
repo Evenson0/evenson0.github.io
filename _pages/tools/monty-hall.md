@@ -483,10 +483,10 @@ author_profile: true
     max-width: 660px !important;
     margin: 0 auto 1.3rem !important;
     padding: 1rem 1.15rem !important;
-    color: #26133f !important;
-    -webkit-text-fill-color: #26133f !important;
-    background: #ddceff !important;
-    border: 2px solid #f2ebff !important;
+    color: #e9e0ff !important;
+    -webkit-text-fill-color: #e9e0ff !important;
+    background: #2a1d4d !important;
+    border: 1px solid #7962b1 !important;
     border-radius: 7px !important;
     font-weight: 900 !important;
     line-height: 1.45 !important;
@@ -517,20 +517,24 @@ author_profile: true
   .mh-door-label { color: #fff !important; }
   .mh-door-number-large { color: #fff2c8 !important; }
   .mh-control-desk, .mh-scoreboard-title, .mh-stats, .mh-note, .mh-nav { background: #17102e !important; }
+  .mh-stat-card {
+    color: #f4efff !important;
+    background: #21183b !important;
+    border: 1px solid #554477 !important;
+    box-shadow: inset 0 3px #ffd166 !important;
+  }
+  .mh-stat-card .mh-stat-line { color: #e9e0ff !important; opacity: 1 !important; }
   .mh-note {
-    padding: 1rem 1.15rem !important;
-    color: #26133f !important;
-    -webkit-text-fill-color: #26133f !important;
-    background: #ddceff !important;
-    border: 1px solid #f2ebff !important;
-    border-left: 4px solid #a685eb !important;
-    border-radius: 6px !important;
-    font-weight: 650 !important;
+    margin: 2rem 2rem 0 !important;
+    padding: 0 !important;
+    color: #e9e0ff !important;
+    -webkit-text-fill-color: #e9e0ff !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 400 !important;
     line-height: 1.75 !important;
     opacity: 1 !important;
-  }
-  .mh-note mjx-container, .mh-note mjx-container * {
-    color: #26133f !important;
   }
   @media (max-width: 600px) {
     .mh-stage-frame { padding-left: .45rem !important; padding-right: .45rem !important; }
@@ -665,7 +669,7 @@ author_profile: true
 
   <p class="mh-note">
     The theoretical result is the heart of the puzzle:
-    staying wins with probability \( \frac{1}{3} \), while switching wins with probability \( \frac{2}{3} \).
+    staying wins with probability ⅓, while switching wins with probability ⅔.
     The simulation lets you see this experimentally.
   </p>
 

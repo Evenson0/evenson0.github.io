@@ -283,6 +283,8 @@ tool_theme: universe
   .rw-notes { margin: 0 !important; padding: 0 !important; color: #183041 !important; background: transparent !important; border: 0 !important; }
   .rw-notes h2 { margin: .35rem 0 1rem; color: #102b3d !important; }
   .rw-notes p { color: #243f51 !important; line-height: 1.75 !important; }
+  .rw-math-symbol { color: inherit !important; font-family:Georgia,"Times New Roman",serif; font-style:italic; white-space:nowrap; }
+  .rw-math-symbol sup { color: inherit !important; font-size:.7em; line-height:0; }
   .rw-proposition, .rw-remark {
     display: block !important;
     margin: 1rem 0 0 !important;
@@ -369,37 +371,37 @@ tool_theme: universe
   <section class="rw-theory" aria-labelledby="rw-theory-title">
   <div class="rw-notes">
     <div class="rw-eyebrow">Stochastic process laboratory</div>
-    <h2 id="rw-theory-title">Random walk on \(\mathbb{Z}^d\)</h2>
+    <h2 id="rw-theory-title">Random walk on <span class="rw-math-symbol">ℤ<sup>d</sup></span></h2>
 
     <p>
       A random walk is a stochastic process that can be imagined as the motion of a walker moving randomly on a mathematical space.
-      In this simulator, the space is \(\mathbb{Z}^d\), the set of points with integer coordinates in \(d\) dimensions.
+      In this simulator, the space is <span class="rw-math-symbol">ℤ<sup>d</sup></span>, the set of points with integer coordinates in \(d\) dimensions.
     </p>
 
     <p>
-      In the simple symmetric random walk on \(\mathbb{Z}^d\), the walker starts from a chosen point \(X_0\).
+      In the simple symmetric random walk on <span class="rw-math-symbol">ℤ<sup>d</sup></span>, the walker starts from a chosen point \(X_0\).
       At each step, one coordinate is selected, and the walker moves by \(+1\) or \(-1\) along that coordinate.
     </p>
 
     <p>
       In dimension \(d=1\), the walk moves left or right on the integer line.
-      In dimension \(d=2\), the walk moves on the integer grid \(\mathbb{Z}^2\).
+      In dimension \(d=2\), the walk moves on the integer grid <span class="rw-math-symbol">ℤ<sup>2</sup></span>.
       These are the two dimensions represented in this simulator because they can be visualized directly.
     </p>
 
     <div class="rw-note-box rw-proposition">
       <strong>Proposition (Pólya).</strong>
-      A simple symmetric random walk on \(\mathbb{Z}^d\) is recurrent if and only if \(d \in \{1,2\}\); equivalently, it returns to its starting point with probability \(1\) in dimensions \(1\) and \(2\), whereas it is transient for every \(d \geq 3\).
+      A simple symmetric random walk on <span class="rw-math-symbol">ℤ<sup>d</sup></span> is recurrent if and only if \(d \in \{1,2\}\); equivalently, it returns to its starting point with probability \(1\) in dimensions \(1\) and \(2\), whereas it is transient for every \(d \geq 3\).
     </div>
 
     <div class="rw-note-box rw-remark">
       <strong>Remark.</strong>
-      Recurrence does not imply a rapid return: for the simple symmetric random walk on \(\mathbb{Z}\), the probability of eventually returning to the starting point is \(1\), although the expected return time is infinite.
+      Recurrence does not imply a rapid return: for the simple symmetric random walk on <span class="rw-math-symbol">ℤ</span>, the probability of eventually returning to the starting point is \(1\), although the expected return time is infinite.
     </div>
 
     <div class="rw-small-note">
       For \(d=1\), the graph below shows \(X_t\) as a function of time.
-      For \(d=2\), it shows the path of the walker on the grid \(\mathbb{Z}^2\).
+      For \(d=2\), it shows the path of the walker on the grid <span class="rw-math-symbol">ℤ<sup>2</sup></span>.
     </div>
   </div>
   </section>
