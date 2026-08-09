@@ -15,7 +15,8 @@
 <meta name="theme-color" content="#ffffff"/>
 
 {% if page.tool_theme %}
-<link rel="stylesheet" href="{{ base_path }}/assets/css/tool-experiences.css"/>
+{% assign tool_cache_bust = site.github.build_revision | default: site.time %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/tool-experiences.css?v={{ tool_cache_bust | url_encode }}"/>
 {% endif %}
 
 <!-- Google Fonts -->
