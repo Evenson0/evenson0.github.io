@@ -291,11 +291,9 @@ tool_theme: universe
       These are the two dimensions represented in this simulator because they can be visualized directly.
     </p>
 
-    <div class="rw-note-box">
-      <strong>Proposition.</strong>
-      For the simple symmetric random walk on \(\mathbb{Z}^d\), the walk is recurrent for \(d \leq 2\).
-      In other words, in dimensions \(1\) and \(2\), the probability of eventually returning to the starting point is \(1\), or \(100\%\).
-      For \(d \geq 3\), the walk is transient.
+    <div class="rw-note-box rw-proposition">
+      <strong>Proposition (Pólya).</strong>
+      A simple symmetric random walk on \(\mathbb{Z}^d\) is recurrent if and only if \(d \in \{1,2\}\); equivalently, it returns to its starting point with probability \(1\) in dimensions \(1\) and \(2\), whereas it is transient for every \(d \geq 3\).
     </div>
 
     <div class="rw-note-box">

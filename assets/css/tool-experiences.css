@@ -173,6 +173,23 @@
 .tool-theme-probability :is(.mh-note,.mh-nav) { margin-left:2rem; margin-right:2rem; color:#e7dfff; }
 .tool-theme-probability .mh-nav a { color:#ffd166; }
 
+/* Refined show hierarchy: readable host prompt and calmer stage geometry. */
+.tool-theme-probability .mh-show-header { position:relative; padding-top:2.4rem; }
+.tool-theme-probability .mh-show-header::after { content:""; position:absolute; left:10%; right:10%; bottom:0; height:1px; background:linear-gradient(90deg,transparent,#c8a8ff,transparent); }
+.tool-theme-probability .mh-stage-frame { position:relative; padding-top:1.75rem; background:radial-gradient(ellipse at 50% 0,rgba(139,92,246,.28),transparent 46%),linear-gradient(180deg,#0d0920,#18102e); }
+.tool-theme-probability .mh-stage-frame::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.18; background:repeating-linear-gradient(90deg,transparent 0 14.2%,rgba(255,255,255,.09) 14.3%,transparent 14.4%); }
+.tool-theme-probability .mh-status { position:relative; z-index:2; color:#24143a!important; background:#ffe29a!important; border-color:#ffd166!important; font-weight:800; letter-spacing:.01em; box-shadow:0 8px 26px rgba(0,0,0,.28)!important; }
+.tool-theme-probability .mh-status::before { content:"HOST"; display:inline-block; margin-right:.7rem; padding:.25rem .45rem; border-radius:3px; color:#ffe9ae; background:#321d51; font:800 .64rem/1 var(--tool-mono); letter-spacing:.1em; vertical-align:middle; }
+.tool-theme-probability .mh-doors { position:relative; z-index:1; align-items:end; }
+.tool-theme-probability .mh-door { min-height:320px; }
+.tool-theme-probability .mh-door-top { color:#fff; background:rgba(17,9,34,.64); border-bottom:1px solid rgba(255,255,255,.16); }
+.tool-theme-probability .mh-door-label { color:#f4ecff; }
+.tool-theme-probability .mh-door-badge { color:#24143a; background:#ffd166; }
+.tool-theme-probability .mh-door-footer { color:#fff; background:#24143a; border-top:1px solid rgba(255,255,255,.16); }
+.tool-theme-probability .mh-control-desk { border-top:3px solid #ffd166; }
+.tool-theme-probability .mh-stats { gap:10px; }
+.tool-theme-probability .mh-stat-card { padding:1.1rem; }
+
 /* Random walk: theory, controls and observatory are separate reading zones. */
 .rw-theory,.rw-workbench,.rw-observatory { margin-bottom:1.25rem; }
 .tool-theme-universe .rw-notes { padding:clamp(1.25rem,3vw,2rem); color:var(--tool-text); background:var(--tool-surface)!important; border-left:4px solid var(--tool-accent)!important; }
@@ -184,6 +201,14 @@
 .rw-section-heading small { margin-top:.15rem; color:var(--tool-muted); }
 .rw-config-grid { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(210px,.7fr); gap:1rem; align-items:stretch; }
 .tool-theme-universe :is(.rw-panel,.rw-vector-panel) { margin:0; color:var(--tool-text); background:var(--tool-surface-2)!important; }
+.tool-theme-universe .rw-vector-panel { display:flex; flex-direction:column; justify-content:flex-start; gap:1rem; }
+.tool-theme-universe .rw-vector-title { margin:0; padding-bottom:.65rem; border-bottom:1px solid var(--tool-line); line-height:1.35; }
+.tool-theme-universe .rw-vector-fields { display:grid; grid-template-columns:repeat(auto-fit,minmax(90px,1fr)); gap:.75rem; align-items:end; }
+.tool-theme-universe .rw-mini-field { min-width:0; }
+.tool-theme-universe .rw-mini-field label { display:block; margin-bottom:.2rem; line-height:1.25; }
+.tool-theme-universe .rw-mini-field input { width:100%; min-width:0; }
+.tool-theme-universe .rw-proposition { position:relative; padding:1.15rem 1.25rem 1.15rem 1.4rem; border:1px solid var(--tool-line); border-left:4px solid var(--tool-accent); background:var(--tool-surface-2); font-family:Georgia,"Times New Roman",serif; font-size:1.02rem; line-height:1.7; }
+.tool-theme-universe .rw-proposition strong { display:block; margin-bottom:.3rem; font-variant:small-caps; letter-spacing:.025em; color:var(--tool-text); }
 .tool-theme-universe :is(.rw-field,.rw-mini-field) label { color:var(--tool-text); }
 .tool-theme-universe :is(.rw-field,.rw-mini-field) :is(input,select) { color:var(--tool-text)!important; background:#fff!important; }
 [data-theme="dark"] .tool-theme-universe :is(.rw-field,.rw-mini-field) :is(input,select) { background:#071326!important; }
@@ -225,6 +250,33 @@
 .tool-theme-market .bot-tree-wrap { background:#fff; }
 [data-theme="dark"] .tool-theme-market .bot-tree-wrap { background:#090c11; }
 .tool-theme-market .bot-node-rect { fill:var(--tool-surface-2); stroke:var(--tool-accent); }
+
+/* Consistent previous/next navigation without changing page geometry. */
+.tool-experience :is(.tool-nav-row,.op-nav-row,.fmc-nav-row,.mh-nav,.rw-container:last-of-type .rw-buttons,.bot-container:last-of-type .bot-buttons) a,
+.tool-experience a.fm-btn-nav {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+  padding:.62rem .9rem;
+  border:1px solid var(--tool-line)!important;
+  border-radius:4px!important;
+  color:var(--tool-text)!important;
+  background:var(--tool-surface)!important;
+  font:700 .76rem/1.2 var(--tool-body);
+  letter-spacing:.035em;
+  text-decoration:none!important;
+  box-shadow:none!important;
+}
+.tool-experience :is(.tool-nav-row,.op-nav-row,.fmc-nav-row,.mh-nav,.rw-container:last-of-type .rw-buttons,.bot-container:last-of-type .bot-buttons) a:hover,
+.tool-experience :is(.tool-nav-row,.op-nav-row,.fmc-nav-row,.mh-nav,.rw-container:last-of-type .rw-buttons,.bot-container:last-of-type .bot-buttons) a:focus,
+.tool-experience a.fm-btn-nav:hover,
+.tool-experience a.fm-btn-nav:focus {
+  color:var(--tool-bg)!important;
+  background:var(--tool-accent)!important;
+  border-color:var(--tool-accent)!important;
+  text-decoration:none!important;
+}
 
 @media (max-width:760px) {
   .tool-theme-probability .mh-shell { padding:0; }
