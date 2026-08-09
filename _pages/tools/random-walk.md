@@ -270,8 +270,10 @@ tool_theme: universe
 
 <div class="rw-container">
 
+  <section class="rw-theory" aria-labelledby="rw-theory-title">
   <div class="rw-notes">
-    <h2>Random walk on \(\mathbb{Z}^d\)</h2>
+    <div class="rw-eyebrow">Stochastic process laboratory</div>
+    <h2 id="rw-theory-title">Random walk on \(\mathbb{Z}^d\)</h2>
 
     <p>
       A random walk is a stochastic process that can be imagined as the motion of a walker moving randomly on a mathematical space.
@@ -307,7 +309,11 @@ tool_theme: universe
       For \(d=2\), it shows the path of the walker on the grid \(\mathbb{Z}^2\).
     </div>
   </div>
+  </section>
 
+  <section class="rw-workbench" aria-label="Simulation controls">
+  <div class="rw-section-heading"><span>01</span><div><strong>Model configuration</strong><small>Define the state space and experiment.</small></div></div>
+  <div class="rw-config-grid">
   <div class="rw-panel">
 
     <div class="rw-field">
@@ -342,13 +348,17 @@ tool_theme: universe
     <div class="rw-vector-title">Starting point \(X_0\)</div>
     <div id="startVectorFields" class="rw-vector-fields"></div>
   </div>
+  </div>
 
   <div class="rw-buttons">
     <button class="rw-btn" onclick="generateRandomWalk()">Generate walk</button>
     <button class="rw-btn" onclick="playRandomWalk()">Play walk</button>
     <button class="rw-btn" onclick="resetRandomWalk()">Reset</button>
   </div>
+  </section>
 
+  <section class="rw-observatory" aria-label="Random walk visualization">
+  <div class="rw-section-heading"><span>02</span><div><strong>Path observatory</strong><small>Inspect trajectory, displacement and returns.</small></div></div>
   <div class="rw-canvas-wrap">
     <canvas id="randomWalkCanvas"></canvas>
   </div>
@@ -356,6 +366,7 @@ tool_theme: universe
   <div id="rwStats" class="rw-stats">
     Generate a walk to see the final position, displacement, maximum excursion, and return times.
   </div>
+  </section>
 
 </div>
 

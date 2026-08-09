@@ -457,6 +457,8 @@ author_profile: true
 
 <div class="mh-shell">
 
+  <div class="mh-show-header">
+    <div class="mh-on-air">Probability Live · On air</div>
   <h1 class="mh-title">Monty Hall Simulation</h1>
 
   <p class="mh-lead">
@@ -466,10 +468,12 @@ author_profile: true
   <p class="mh-sublead">
     Choose a door, watch the host reveal a goat, then decide whether to stay with your original choice or switch to the remaining unopened door.
   </p>
+  </div>
 
   <hr class="mh-rule">
 
-  <div id="mh-status" class="mh-status">
+  <div class="mh-stage-frame">
+  <div id="mh-status" class="mh-status" aria-live="polite">
     Choose one of the three doors to begin.
   </div>
 
@@ -534,7 +538,10 @@ author_profile: true
       <div class="mh-door-footer" id="footer-2">Closed</div>
     </div>
   </div>
+  </div>
 
+  <div class="mh-control-desk">
+  <div class="mh-control-label">Contestant controls</div>
   <div class="mh-controls">
     <button id="stayBtn" class="mh-btn primary" onclick="stayChoice()" disabled>Stay</button>
     <button id="switchBtn" class="mh-btn primary" onclick="switchChoice()" disabled>Switch</button>
@@ -543,7 +550,9 @@ author_profile: true
     <button class="mh-btn" onclick="simulateStrategy('switch', 1000)">Simulate 1000 switch</button>
     <button class="mh-btn" onclick="resetStats()">Reset stats</button>
   </div>
+  </div>
 
+  <div class="mh-scoreboard-title">Live scoreboard</div>
   <div class="mh-stats">
     <div class="mh-stat-card">
       <div class="mh-stat-title">Overall</div>

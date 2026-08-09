@@ -221,8 +221,9 @@ tool_theme: actuarial
   }
 </style>
 
-<div style="max-width: 850px; margin: 2rem auto; padding: 2rem; border: 1px solid rgba(127,127,127,0.22); border-radius: 16px; background: inherit; color: inherit;">
+<div class="fm-shell" style="max-width: 850px; margin: 2rem auto; padding: 2rem; border: 1px solid rgba(127,127,127,0.22); border-radius: 16px; background: inherit; color: inherit;">
 
+  <div class="fm-kicker">Exam FM · Practice desk</div>
   <h1>SOA FM Practice</h1>
 
   <p>
@@ -235,13 +236,15 @@ tool_theme: actuarial
 
   <hr style="border:none; border-top:1px solid rgba(120,120,120,0.35); margin:2rem 0;">
 
+  <div class="fm-question-card">
   <h2 id="problemTitle">Loading problem...</h2>
 
   <p id="problemStatement"></p>
 
   <div id="choicesContainer" style="display:grid; gap:12px; margin-top:1rem;"></div>
+  </div>
 
-  <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:1.25rem;">
+  <div class="fm-action-bar" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:1.25rem;">
     <button onclick="checkAnswer()" class="fm-btn fm-btn-primary">
       Check Answer
     </button>
