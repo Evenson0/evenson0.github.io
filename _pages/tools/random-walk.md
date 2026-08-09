@@ -306,6 +306,11 @@ tool_theme: universe
     margin: 0 .1em !important;
     vertical-align: -.08em !important;
   }
+  .rw-theory mjx-container, .rw-theory mjx-container *,
+  .rw-stats mjx-container, .rw-stats mjx-container * {
+    color: #102b3d !important;
+    opacity: 1 !important;
+  }
   .rw-section-heading { margin-bottom: 1rem !important; color: #183041 !important; }
   .rw-section-heading strong { color: #102b3d !important; }
   .rw-section-heading small { color: #557083 !important; }
@@ -346,6 +351,10 @@ tool_theme: universe
   html[data-theme="dark"] .rw-notes h2, html[data-theme="dark"] .rw-section-heading strong { color: #f3f9fd !important; }
   html[data-theme="dark"] :is(.rw-proposition,.rw-remark,.rw-panel,.rw-vector-panel,.rw-stats) { color: #e7f3fa !important; background: #112538 !important; border-color: #36556b !important; }
   html[data-theme="dark"] :is(.rw-proposition,.rw-remark) strong { color: #71d0ff !important; }
+  html[data-theme="dark"] .rw-theory mjx-container,
+  html[data-theme="dark"] .rw-theory mjx-container *,
+  html[data-theme="dark"] .rw-stats mjx-container,
+  html[data-theme="dark"] .rw-stats mjx-container * { color: #eef8ff !important; }
   html[data-theme="dark"] :is(.rw-field,.rw-mini-field) label, html[data-theme="dark"] .rw-vector-title { color: #e7f3fa !important; }
   html[data-theme="dark"] :is(.rw-field,.rw-mini-field) input, html[data-theme="dark"] .rw-field select { color: #eef8ff !important; -webkit-text-fill-color: #eef8ff !important; background: #07131f !important; }
   @media (max-width: 700px) {
@@ -458,6 +467,12 @@ tool_theme: universe
   const canvas = document.getElementById("randomWalkCanvas");
   const ctx = canvas.getContext("2d");
   const stats = document.getElementById("rwStats");
+  const canvasColors = {
+    axes: "#7894a8",
+    labels: "#eaf6ff",
+    path: "#45d6ff",
+    point: "#f8fafc"
+  };
 
   let currentPath = [];
   let animationId = null;
@@ -676,7 +691,7 @@ tool_theme: universe
     ctx.save();
     ctx.lineWidth = 1;
     ctx.globalAlpha = 0.32;
-    ctx.strokeStyle = getComputedStyle(document.body).color;
+    ctx.strokeStyle = canvasColors.axes;
 
     const origin = transformPoint({ x: 0, y: 0 }, bounds, width, height, padding);
 
@@ -699,7 +714,7 @@ tool_theme: universe
     ctx.save();
     ctx.globalAlpha = 0.72;
     ctx.font = "13px system-ui, sans-serif";
-    ctx.fillStyle = getComputedStyle(document.body).color;
+    ctx.fillStyle = canvasColors.labels;
 
     if (d === 1) {
       ctx.fillText("time t", width - 70, height - 16);
@@ -789,8 +804,8 @@ tool_theme: universe
     ctx.lineWidth = 2;
     ctx.lineJoin = "round";
     ctx.lineCap = "round";
-    ctx.strokeStyle = getComputedStyle(document.body).color;
-    ctx.fillStyle = getComputedStyle(document.body).color;
+    ctx.strokeStyle = canvasColors.path;
+    ctx.fillStyle = canvasColors.path;
 
     ctx.beginPath();
 
@@ -813,7 +828,7 @@ tool_theme: universe
     const start = transformPoint(visiblePoints[0], bounds, width, height, padding);
     const end = transformPoint(visiblePoints[visiblePoints.length - 1], bounds, width, height, padding);
 
-    ctx.fillStyle = getComputedStyle(document.body).color;
+    ctx.fillStyle = canvasColors.point;
 
     ctx.beginPath();
     ctx.arc(start.x, start.y, 5, 0, 2 * Math.PI);
@@ -1250,7 +1265,7 @@ tool_theme: universe
     ctx.textBaseline = "middle";
     ctx.globalAlpha = 0.65;
     ctx.font = "16px system-ui, sans-serif";
-    ctx.fillStyle = getComputedStyle(document.body).color;
+    ctx.fillStyle = canvasColors.labels;
     ctx.fillText("Random walk will appear here", width / 2, height / 2);
     ctx.restore();
   }

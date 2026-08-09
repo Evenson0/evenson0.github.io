@@ -483,10 +483,10 @@ author_profile: true
     max-width: 660px !important;
     margin: 0 auto 1.3rem !important;
     padding: 1rem 1.15rem !important;
-    color: #1d102f !important;
-    -webkit-text-fill-color: #1d102f !important;
-    background: #ffd978 !important;
-    border: 2px solid #fff0bd !important;
+    color: #26133f !important;
+    -webkit-text-fill-color: #26133f !important;
+    background: #ddceff !important;
+    border: 2px solid #f2ebff !important;
     border-radius: 7px !important;
     font-weight: 900 !important;
     line-height: 1.45 !important;
@@ -517,6 +517,21 @@ author_profile: true
   .mh-door-label { color: #fff !important; }
   .mh-door-number-large { color: #fff2c8 !important; }
   .mh-control-desk, .mh-scoreboard-title, .mh-stats, .mh-note, .mh-nav { background: #17102e !important; }
+  .mh-note {
+    padding: 1rem 1.15rem !important;
+    color: #26133f !important;
+    -webkit-text-fill-color: #26133f !important;
+    background: #ddceff !important;
+    border: 1px solid #f2ebff !important;
+    border-left: 4px solid #a685eb !important;
+    border-radius: 6px !important;
+    font-weight: 650 !important;
+    line-height: 1.75 !important;
+    opacity: 1 !important;
+  }
+  .mh-note mjx-container, .mh-note mjx-container * {
+    color: #26133f !important;
+  }
   @media (max-width: 600px) {
     .mh-stage-frame { padding-left: .45rem !important; padding-right: .45rem !important; }
     .mh-doors { gap: 5px !important; }
