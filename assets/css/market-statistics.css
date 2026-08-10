@@ -6,3 +6,4 @@ html[data-theme=dark] .tool-theme-marketstats{background:#0a1115}html[data-theme
 @media(max-width:700px){.ms-workspace{padding:.8rem}.ms-view-tabs{position:sticky;top:0;z-index:5;margin-inline:-.8rem}.ms-view-tabs button{flex:none}.ms-detail-grid,.ms-corr-columns,.ms-watch-grid{grid-template-columns:1fr}.ms-detail-grid .ms-wide{grid-column:auto}}
 .ms-subhead{margin:1.5rem 0 .5rem;color:var(--ms-green);font:700 .65rem var(--ms-mono);letter-spacing:.08em;text-transform:uppercase}
 .ms-note p{color:#d7e7e1!important}.ms-note>span{color:#9adac8!important}
+.ms-search-row button{color:#fff!important;background:#075e54!important;border-color:#075e54!important}.ms-search-row button:hover{color:#fff!important;background:#0a7668!important}.ms-view-tabs button.active,.ms-periods button.active{color:#fff!important;background:#075e54!important}.ms-quick button:hover{color:#fff!important;background:#075e54!important}.ms-search input::placeholder{color:#6d777a;opacity:1}

@@ -79,7 +79,7 @@ tool_theme: marketlab
     <div class="ml-section-head"><div><span class="ml-index">02</span><h2>Quantitative desk</h2></div><p>Move from observation to analysis</p></div>
     <div class="ml-tool-grid">
       <a href="/tools/market-statistics/"><span>Analytics</span><strong>Market Statistics</strong><p>Study performance, risk, trend, drawdown and correlation for indices, ETFs and equities.</p><i>Open terminal ↗</i></a>
-      <div class="ml-tool-planned"><span>Derivatives</span><strong>Derivatives Explorer</strong><p>Compare option chains, expirations, strategies and scenario payoffs.</p><i>In development</i></div>
+      <a href="/tools/derivatives-explorer/"><span>Derivatives</span><strong>Derivatives Explorer</strong><p>Compare option chains, expirations, strategies and scenario payoffs.</p><i>Open terminal ↗</i></a>
       <div class="ml-tool-planned"><span>Fixed income</span><strong>Bond Intelligence</strong><p>Compare coupons, yields, duration, call risk and interest-rate scenarios.</p><i>In development</i></div>
     </div>
   </section>

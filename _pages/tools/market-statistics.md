@@ -6,7 +6,7 @@ author_profile: true
 tool_theme: marketstats
 ---
 
-<link rel="stylesheet" href="/assets/css/market-statistics.css?v=1">
+<link rel="stylesheet" href="/assets/css/market-statistics.css?v=3">
 
 <div class="ms-shell" id="marketStatistics">
   <header class="ms-hero">
@@ -15,8 +15,8 @@ tool_theme: marketstats
     <p>Search an index, ETF or equity. Examine its return, risk, trend, drawdown and relationship to a benchmark.</p>
     <div class="ms-search-row">
       <label class="ms-search">
-        <span>Instrument</span>
-        <input id="msSearch" list="msUniverse" value="^GSPC" autocomplete="off" aria-label="Search an instrument">
+        <span>Global search</span>
+        <input id="msSearch" list="msUniverse" value="^GSPC" placeholder="Ticker or name — AAPL, SPX, TSX…" autocomplete="off" aria-label="Search an index, ETF, or equity">
         <datalist id="msUniverse"></datalist>
       </label>
       <button id="msAnalyze" type="button">Analyze <span>→</span></button>
@@ -104,4 +104,4 @@ tool_theme: marketstats
   <footer class="ms-note"><span>METHOD</span><p>Adjusted daily closes. Statistics are historical estimates, not forecasts. The regime score combines observable trend, momentum, volatility and participation signals; it does not represent investor advice or a survey of investor opinion.</p></footer>
 </div>
 
-<script src="/assets/js/market-statistics.js?v=1" defer></script>
+<script src="/assets/js/market-statistics.js?v=3" defer></script>
