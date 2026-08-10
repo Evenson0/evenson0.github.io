@@ -168,7 +168,7 @@ tool_theme: atlas
   }
 
   .tool-theme-atlas {
-    background: #fffdf5;
+    background: #fff;
   }
 
   .tool-theme-atlas .page__inner-wrap > header {
@@ -254,11 +254,11 @@ tool_theme: atlas
   .tool-theme-atlas .page,
   .tool-theme-atlas .page__inner-wrap,
   .tool-theme-atlas .page__content {
-    background: #fffdf5 !important;
+    background: #fff !important;
   }
 
   .tool-theme-atlas .lab-shell {
-    background: #fffdf5 !important;
+    background: #fff !important;
   }
 
   .tool-theme-atlas .lab-grid {
