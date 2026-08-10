@@ -72,7 +72,7 @@
   async function unlock() {
     const bytes = new TextEncoder().encode($("wlCode").value);
     const hash = Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))).map(b => b.toString(16).padStart(2, "0")).join("");
-    if (hash !== "b0d30a544ea3f7290f69c1ace620174c865da3dc241fc70293297486fc98c89f") { $("wlGateError").textContent = "Incorrect access code."; return; }
+    if (hash !== "9d5cb4542d34d8080f53a2edc4ba21ad4c709877568ce9677fcb0a8b3d1066f3") { $("wlGateError").textContent = "Incorrect access code."; return; }
     $("wlGate").hidden = true; $("wlShell").hidden = false; render();
   }
   $("wlUnlock").onclick = unlock;
