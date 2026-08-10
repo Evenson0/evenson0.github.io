@@ -81,6 +81,7 @@ tool_theme: marketlab
       <a href="/tools/market-statistics/"><span>Analytics</span><strong>Market Statistics</strong><p>Study performance, risk, trend, drawdown and correlation for indices, ETFs and equities.</p><i>Open terminal ↗</i></a>
       <a href="/tools/derivatives-explorer/"><span>Derivatives</span><strong>Derivatives Explorer</strong><p>Compare option chains, expirations, strategies and scenario payoffs.</p><i>Open terminal ↗</i></a>
       <a href="/tools/bond-intelligence/"><span>Fixed income</span><strong>Bonds</strong><p>Compare coupons, yields, duration, call risk and interest-rate scenarios.</p><i>Open terminal ↗</i></a>
+      <a href="/tools/wealth-lab/"><span>Personal</span><strong>Wealth Lab</strong><p>Model annuities, recurring contributions, compound returns and long-term goals.</p><i>Private access ↗</i></a>
     </div>
   </section>
 
