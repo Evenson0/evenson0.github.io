@@ -18,7 +18,6 @@ tool_theme: marketlab
     <div class="ml-sync-panel">
       <span class="ml-sync-label">Market snapshot</span>
       <strong id="mlUpdated">Loading data…</strong>
-      <button class="ml-refresh" id="mlRefresh" type="button"><span>↻</span> Refresh</button>
     </div>
   </header>
 
