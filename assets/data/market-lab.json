@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T20:26:00.110300+00:00",
+  "updated_at": "2026-08-10T21:26:59.861633+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3939,
-        "change_pct": -0.532,
+        "price": 1.3937,
+        "change_pct": -0.547,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1545,
-        "change_pct": 0.173,
+        "price": 1.1547,
+        "change_pct": 0.196,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -187,8 +187,8 @@
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.331,
-        "change_pct": 0.582,
+        "price": 159.215,
+        "change_pct": 0.509,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4449.1001,
-        "change_pct": 2.497,
+        "price": 4448.6001,
+        "change_pct": 2.486,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.21,
-        "change_pct": 5.155,
+        "price": 82.3,
+        "change_pct": 5.27,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.78,
-        "change_pct": 4.433,
+        "price": 2.778,
+        "change_pct": 4.358,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6325,
-        "change_pct": 0.944,
+        "price": 6.6355,
+        "change_pct": 0.989,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -269,24 +269,31 @@
       "time": "Latest"
     },
     {
-      "title": "Nasdaq ends down as expectations of Hormuz deal fade",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-futures-tick-101955732.html",
-      "publisher": "Reuters",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "3 Reasons to Sell XPRO and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-xpro-1-195722818.html",
+      "title": "2 Reasons to Like PTC (and 1 Not So Much)",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-ptc-1-not-211722052.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Fall Amid Higher Crude Oil Prices, Treasury Yields",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-amid-195107889.html",
-      "publisher": "MT Newswires",
+      "title": "Semiconductor ETFs See Profit-Taking as Investors Pile Into QQQ",
+      "link": "http://www.etf.com/sections/weekly-etf-flows/semiconductor-etfs-see-profit-taking-investors-pile-qqq?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss",
+      "publisher": "etf.com",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "2 Reasons to Like LII (and 1 Not So Much)",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-lii-1-not-210922691.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Closes at Fresh Record High as Surging Oil Prices Boost Energy Stocks",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-205146847.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "TSX Closer: The Index Tops 36,000 for the First Time as Metals Rally Offsets Energy Weakness",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-tops-36-202911459.html",
       "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX gains on US-Iran peace optimism; Americas Gold and Silver leads miners rally",
-      "link": "https://ca.finance.yahoo.com/news/tsx-gains-us-iran-peace-150724072.html",
-      "publisher": "Reuters",
       "related": "^GSPTSE",
       "time": "Latest"
     }
