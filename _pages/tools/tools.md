@@ -166,6 +166,89 @@ tool_theme: atlas
     );
     opacity: 0.82;
   }
+
+  .tool-theme-atlas {
+    background: #dcebe2;
+  }
+
+  .tool-theme-atlas .page__inner-wrap > header {
+    display: none;
+  }
+
+  .lab-shell {
+    color: #153b32;
+    border-color: #9fc5b6;
+    background:
+      radial-gradient(circle at 92% 4%, rgba(151, 214, 191, 0.32), transparent 24%),
+      #fffdf5;
+    box-shadow: 0 24px 60px rgba(20, 73, 61, 0.14);
+  }
+
+  .lab-shell h1 {
+    color: #123d35;
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .lab-section-title {
+    color: #087263;
+  }
+
+  .lab-rule {
+    border-top-color: #a9ccbe;
+  }
+
+  .lab-card {
+    border-color: #aed0c3;
+    background: linear-gradient(145deg, #f0faf5, #e2f2ea);
+    box-shadow: 0 10px 26px rgba(20, 73, 61, 0.09);
+  }
+
+  .lab-card h3 {
+    color: #174f49;
+  }
+
+  .lab-card-desc,
+  .lab-lead,
+  .lab-sublead {
+    color: #365f55;
+    opacity: 1;
+  }
+
+  .lab-card:hover {
+    border-color: #43a78f;
+    background: linear-gradient(145deg, #e6f7ef, #ccebdd);
+    box-shadow: 0 16px 36px rgba(8, 114, 99, 0.17);
+  }
+
+  .lab-card::before {
+    background: linear-gradient(120deg, transparent 25%, rgba(137, 203, 184, 0.24) 50%, transparent 75%);
+  }
+
+  html[data-theme="dark"] .tool-theme-atlas {
+    background: #081711;
+  }
+
+  html[data-theme="dark"] .lab-shell {
+    color: #eaf8f2;
+    border-color: #326b5a;
+    background: #102a23;
+  }
+
+  html[data-theme="dark"] .lab-shell h1,
+  html[data-theme="dark"] .lab-card h3 {
+    color: #f5fff9;
+  }
+
+  html[data-theme="dark"] .lab-card {
+    border-color: #326b5a;
+    background: linear-gradient(145deg, #173c32, #123128);
+  }
+
+  html[data-theme="dark"] .lab-card-desc,
+  html[data-theme="dark"] .lab-lead,
+  html[data-theme="dark"] .lab-sublead {
+    color: #c3e4d8;
+  }
 </style>
 
 <div class="lab-shell">
