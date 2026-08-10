@@ -23,15 +23,6 @@
     return Math.max(0, (target - initial * Math.pow(1 + rate, months)) * rate / (Math.pow(1 + rate, months) - 1));
   }
 
-  function monthsTo(target, initial, contribution, rate) {
-    let balance = initial;
-    for (let month = 0; month <= 1200; month++) {
-      if (balance >= target) return month;
-      balance = balance * (1 + rate) + contribution;
-    }
-    return null;
-  }
-
   function drawChart(rows) {
     const W = 920, H = 360, L = 76, R = 20, T = 24, B = 48;
     const max = Math.max(...rows.map(r => r.balance), 1);
@@ -52,18 +43,26 @@
 
   function render() {
     const initial = value("wlInitial"), contribution = value("wlMonthly"), rate = value("wlRate") / 100;
-    const target = value("wlTarget"), annual = Math.pow(1 + rate, 12) - 1;
+    const annual = Math.pow(1 + rate, 12) - 1;
     const years = Math.max(.1, value("wlYears")), months = Math.max(1, Math.round(years * 12));
     const full = simulate(months, initial, contribution, rate), last = full.at(-1), growth = last.balance - last.paid;
     $("wlKpis").innerHTML = `<article class="wl-kpi"><span>Balance after ${years} years</span><strong>${money(last.balance)}</strong><small>Selected projection</small></article><article class="wl-kpi"><span>Total invested</span><strong>${money(last.paid)}</strong><small>Initial amount plus contributions</small></article><article class="wl-kpi"><span>Investment growth</span><strong>${money(growth)}</strong><small>Balance minus invested capital</small></article><article class="wl-kpi"><span>Effective annual return</span><strong>${(annual*100).toFixed(2)}%</strong><small>${(rate*100).toFixed(2)}% compounded monthly</small></article>`;
     drawChart(full);
     const needed = requiredMonthly(1000000, 60, initial, rate);
-    const targetMonths = monthsTo(target, initial, contribution, rate);
     const atTwo = simulate(300, initial, contribution, .02).at(-1);
-    $("wlGoals").innerHTML = `<article><span>Effective annual return</span><strong>${(annual * 100).toFixed(2)}%</strong><small>Equivalent of ${(rate * 100).toFixed(2)}% compounded monthly</small></article><article><span>$1M in 5 years</span><strong>${money(needed)}/mo</strong><small>At the selected monthly return</small></article><article><span>${money(target)} target</span><strong>${targetMonths === null ? "100+ years" : `${Math.floor(targetMonths/12)}y ${targetMonths%12}m`}</strong><small>With current contributions</small></article><article><span>25 years at 2% monthly</span><strong>${money(atTwo.balance)}</strong><small>${money(atTwo.paid)} invested · ${money(atTwo.balance-atTwo.paid)} growth</small></article>`;
+    $("wlGoals").innerHTML = `<article><span>Effective annual return</span><strong>${(annual * 100).toFixed(2)}%</strong><small>Equivalent of ${(rate * 100).toFixed(2)}% compounded monthly</small></article><article><span>$1M in 5 years</span><strong>${money(needed)}/mo</strong><small>At the selected monthly return</small></article><article><span>25 years at 2% monthly</span><strong>${money(atTwo.balance)}</strong><small>${money(atTwo.paid)} invested · ${money(atTwo.balance-atTwo.paid)} growth</small></article>`;
     const start = new Date(`${$("wlStart").value || "2026-08"}-01T12:00:00`);
     $("wlLedger").innerHTML = full.slice(1).map(r => { const d = new Date(start); d.setMonth(d.getMonth() + r.month - 1); return `<tr><td>${d.toLocaleDateString("en-CA", { month: "short", year: "numeric" })}</td><td>${money(r.contribution)}</td><td>${money(r.interest)}</td><td>${money(r.paid)}</td><td>${money(r.balance)}</td></tr>`; }).join("");
-    $("wlFormula").innerHTML = `Monthly annuity: <b>FV = P(1+r)<sup>n</sup> + PMT × [((1+r)<sup>n</sup> − 1) / r]</b>, where r = ${(rate*100).toFixed(2)}% per month. The effective annual return is <b>(1+r)<sup>12</sup> − 1 = ${(annual*100).toFixed(2)}%</b>. Contributions are made at month-end.`;
+    const formula = $("wlFormula");
+    formula.innerHTML = String.raw`<span class="wl-formula-label">Future value of an ordinary annuity</span>\[
+      FV_n=P(1+r)^n+PMT\left(\frac{(1+r)^n-1}{r}\right)
+    \]<span class="wl-formula-copy">Here, \(r=${(rate*100).toFixed(2)}\%\) per month and contributions are deposited at month-end.</span><span class="wl-formula-label">Effective annual return</span>\[
+      i_{\mathrm{annual}}=(1+r)^{12}-1=${(annual*100).toFixed(2)}\%
+    \]`;
+    if (window.MathJax?.typesetPromise) {
+      window.MathJax.typesetClear?.([formula]);
+      window.MathJax.typesetPromise([formula]);
+    }
   }
 
   document.querySelectorAll(".wl-controls input").forEach(input => {

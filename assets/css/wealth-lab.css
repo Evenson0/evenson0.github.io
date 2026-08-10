@@ -58,3 +58,11 @@ html[data-theme="dark"] .wl-shell,html[data-theme="dark"] .wl-kpi,html[data-them
 html[data-theme="dark"] .wl-controls label{color:#0e5143!important;background:#fff9e9!important}
 .tool-theme-wealth,.tool-theme-wealth #main,.tool-theme-wealth .page,.tool-theme-wealth .page__inner-wrap,.tool-theme-wealth .page__content{background:#fff!important}
 html[data-theme="dark"] .tool-theme-wealth,html[data-theme="dark"] .tool-theme-wealth #main,html[data-theme="dark"] .tool-theme-wealth .page,html[data-theme="dark"] .tool-theme-wealth .page__inner-wrap,html[data-theme="dark"] .tool-theme-wealth .page__content{background:#08130f!important}
+#wlGoals{grid-template-columns:repeat(3,1fr)}
+@media(max-width:700px){#wlGoals{grid-template-columns:1fr}}
+.wl-formula{padding:clamp(1.4rem,4vw,2.5rem)!important;border-top:4px solid var(--w-green);background:linear-gradient(135deg,#fff9e9,#edf9f3)!important}
+.wl-formula>span:first-child{display:block;margin-bottom:1.4rem}
+.wl-formula p{max-width:760px;margin:0 auto;color:#103e33;font-family:var(--w-serif);text-align:center}
+.wl-formula-label{display:block;margin:1.25rem 0 .4rem;color:#087263;font:700 .62rem var(--w-mono);letter-spacing:.1em;text-transform:uppercase}
+.wl-formula-copy{display:block;margin:1rem auto 1.4rem;color:#285c4f;font:.75rem/1.7 var(--w-mono)}
+.wl-formula mjx-container{margin:1rem 0!important;color:#103e33;font-size:125%!important;overflow-x:auto;overflow-y:hidden}
