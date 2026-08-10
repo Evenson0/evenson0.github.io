@@ -1,0 +1,13 @@
+{
+  "updated_at": "2026-08-10",
+  "policy_rate": {"label": "Bank of Canada policy rate", "value": 2.25},
+  "bonds": [
+    {"id":"manual","label":"Manual entry"},
+    {"id":"ca-2028","label":"Canada Government · 3.50% · 2028","market":"Canada","issuer":"Government of Canada","currency":"CAD","face":1000,"price":1012.40,"coupon":3.50,"years":2.0,"frequency":2,"callYears":0,"callPrice":1000,"rating":"AAA"},
+    {"id":"ca-2033","label":"Canada Government · 2.75% · 2033","market":"Canada","issuer":"Government of Canada","currency":"CAD","face":1000,"price":987.60,"coupon":2.75,"years":7.0,"frequency":2,"callYears":0,"callPrice":1000,"rating":"AAA"},
+    {"id":"us-2031","label":"US Treasury · 4.125% · 2031","market":"United States","issuer":"U.S. Treasury","currency":"USD","face":1000,"price":1021.10,"coupon":4.125,"years":5.0,"frequency":2,"callYears":0,"callPrice":1000,"rating":"Sovereign"},
+    {"id":"us-2036","label":"US Treasury · 4.50% · 2036","market":"United States","issuer":"U.S. Treasury","currency":"USD","face":1000,"price":1038.70,"coupon":4.50,"years":10.0,"frequency":2,"callYears":0,"callPrice":1000,"rating":"Sovereign"},
+    {"id":"corp-2031","label":"Investment-grade corporate · 5.20% · 2031","market":"North America","issuer":"Representative IG corporate","currency":"USD","face":1000,"price":995.00,"coupon":5.20,"years":5.0,"frequency":2,"callYears":2.0,"callPrice":1010,"rating":"A"},
+    {"id":"muni-2036","label":"Municipal bond · 4.00% · 2036","market":"United States","issuer":"Representative municipal issuer","currency":"USD","face":1000,"price":975.00,"coupon":4.00,"years":10.0,"frequency":2,"callYears":5.0,"callPrice":1000,"rating":"AA"}
+  ]
+}
