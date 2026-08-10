@@ -5,7 +5,7 @@ layout: single
 author_profile: true
 tool_theme: derivatives
 ---
-<link rel="stylesheet" href="/assets/css/derivatives-explorer.css?v=5">
+<link rel="stylesheet" href="/assets/css/derivatives-explorer.css?v=6">
 <div class="dx-shell">
   <header class="dx-hero"><span>Quantitative desk / listed options</span><h1>Derivatives<br>Explorer</h1><p>Inspect expirations, strikes, liquidity and risk. Translate a market view into transparent option scenarios.</p></header>
   <section class="dx-controls"><label>Market<select id="dxMarket"></select></label><label>Product<select id="dxProduct"><option value="equity-options">Equity & ETF options</option><option value="index-options">Index options</option><option value="futures">Futures</option><option value="futures-options">Options on futures</option><option value="forex">FX & currency derivatives</option><option value="rates">Rates derivatives</option><option value="warrants">Warrants & structured products</option></select></label><label>Underlying<select id="dxSymbol"></select></label><label>Expiration<select id="dxExpiry"></select></label><label>Outlook<select id="dxOutlook"><option value="bullish">Bullish</option><option value="bearish">Bearish</option><option value="neutral">Neutral</option></select></label><button id="dxRun">Build scenario →</button></section>
