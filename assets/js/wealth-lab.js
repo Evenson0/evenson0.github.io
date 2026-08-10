@@ -69,10 +69,8 @@
     $("wlFormula").innerHTML = `Monthly annuity: <b>FV = P(1+r)<sup>n</sup> + PMT × [((1+r)<sup>n</sup> − 1) / r]</b>, where r = ${(rate*100).toFixed(2)}% per month. The effective annual return is <b>(1+r)<sup>12</sup> − 1 = ${(annual*100).toFixed(2)}%</b>. Contributions are made at month-end.`;
   }
 
-  async function unlock() {
-    const bytes = new TextEncoder().encode($("wlCode").value);
-    const hash = Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))).map(b => b.toString(16).padStart(2, "0")).join("");
-    if (hash !== "9d5cb4542d34d8080f53a2edc4ba21ad4c709877568ce9677fcb0a8b3d1066f3") { $("wlGateError").textContent = "Incorrect access code."; return; }
+  function unlock() {
+    if ($("wlCode").value.trim() !== "richman42") { $("wlGateError").textContent = "Incorrect access code."; return; }
     $("wlGate").hidden = true; $("wlShell").hidden = false; render();
   }
   $("wlUnlock").onclick = unlock;

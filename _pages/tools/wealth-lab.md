@@ -13,4 +13,4 @@ tool_theme: wealth
  <main><section class="wl-kpis" id="wlKpis"></section><section class="wl-chart-card"><div><span>Account path</span><h2>Contributions vs growth</h2></div><div id="wlChart"></div></section><section class="wl-goals"><div><span>Goal solver</span><h2>What would it take?</h2></div><div id="wlGoals"></div></section><section class="wl-table-card"><div><span>Monthly ledger</span><h2>Every month of the account</h2></div><div class="wl-table-wrap"><table><thead><tr><th>Month</th><th>Contribution</th><th>Interest</th><th>Total contributed</th><th>Balance</th></tr></thead><tbody id="wlLedger"></tbody></table></div></section><section class="wl-formula"><span>Technical note</span><p id="wlFormula"></p></section></main>
  <footer><b>SIMULATION</b><p>Returns are assumed constant, compounded monthly, before taxes, fees and inflation. Actual market returns vary and losses are possible.</p></footer>
 </div>
-<script src="/assets/js/wealth-lab.js?v=3" defer></script>
+<script src="/assets/js/wealth-lab.js?v=4" defer></script>
