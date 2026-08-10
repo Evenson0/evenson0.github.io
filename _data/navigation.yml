@@ -37,9 +37,6 @@ main:
 
   - title: "Tools"
     url: /tools/
-
-  - title: "Market Lab"
-    url: /tools/market-lab/
     
   - title: "Memories"
     url: /memories/
