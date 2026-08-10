@@ -249,6 +249,29 @@ tool_theme: atlas
   html[data-theme="dark"] .lab-sublead {
     color: #c3e4d8;
   }
+
+  .tool-theme-atlas #main,
+  .tool-theme-atlas .page,
+  .tool-theme-atlas .page__inner-wrap,
+  .tool-theme-atlas .page__content {
+    background: #dcebe2 !important;
+  }
+
+  .tool-theme-atlas .lab-shell,
+  .tool-theme-atlas .lab-grid {
+    background: #fffdf5 !important;
+  }
+
+  html[data-theme="dark"] .tool-theme-atlas #main,
+  html[data-theme="dark"] .tool-theme-atlas .page,
+  html[data-theme="dark"] .tool-theme-atlas .page__inner-wrap,
+  html[data-theme="dark"] .tool-theme-atlas .page__content {
+    background: #081711 !important;
+  }
+
+  html[data-theme="dark"] .tool-theme-atlas .lab-grid {
+    background: #102a23 !important;
+  }
 </style>
 
 <div class="lab-shell">
