@@ -39,3 +39,20 @@
 .wl-shell footer{display:flex;gap:1rem;padding:1rem;color:#d6e8e2;background:#0b2723}.wl-shell footer p{margin:0;color:#d6e8e2!important;font-size:.65rem}.wl-shell footer b{color:var(--w-mint);font:.6rem var(--w-mono)}
 @media(max-width:800px){.wl-controls,.wl-kpis{grid-template-columns:repeat(2,1fr)}.wl-goals{grid-template-columns:1fr}}
 @media(max-width:500px){.wl-controls,.wl-kpis,#wlGoals{grid-template-columns:1fr}.wl-legend{justify-content:flex-start;flex-wrap:wrap}.wl-shell footer{display:block}}
+.wl-shell{--w-bg:#e0f3e9;--w-card:#fff9e9;--w-ink:#103e33;--w-muted:#285c4f;--w-line:#66a58f;color-scheme:light}
+.wl-controls,.wl-kpis,#wlGoals{background:#66a58f!important}
+.wl-controls label{color:#0e5143!important;background:#fff9e9!important}
+.wl-controls input,.wl-controls input:focus,.wl-controls input:hover{appearance:none;-webkit-appearance:none;border:2px solid #4b957d!important;outline:none!important;color:#103e33!important;background:#ccebdd!important;box-shadow:none!important}
+.wl-controls input[type="month"]{-webkit-appearance:auto;appearance:auto;color-scheme:light}
+.wl-kpi{color:#103e33!important;background:#d9f1e7!important}
+.wl-kpi:nth-child(even){background:#fff9e9!important}
+.wl-chart-card,.wl-goals,.wl-table-card,.wl-formula{color:#103e33!important;background:#fff9e9!important}
+#wlGoals article{color:#103e33!important;background:#d9f1e7!important}
+#wlGoals article:nth-child(2n){background:#f7efd9!important}
+.wl-shell th{color:#0e5143!important;background:#ccebdd!important}
+.wl-shell td{color:#103e33!important;background:#fff9e9!important}
+.wl-shell tr:nth-child(even) td{background:#edf9f3!important}
+.wl-grid{stroke:#a7d2c2!important}.wl-axis{stroke:#2e715e!important}
+#wlChart text,.wl-kpi span,.wl-kpi small,#wlGoals span,#wlGoals small{color:#285c4f!important;fill:#285c4f!important}
+html[data-theme="dark"] .wl-shell,html[data-theme="dark"] .wl-kpi,html[data-theme="dark"] .wl-chart-card,html[data-theme="dark"] .wl-goals,html[data-theme="dark"] .wl-table-card,html[data-theme="dark"] .wl-formula{color:#103e33!important;background:#fff9e9!important}
+html[data-theme="dark"] .wl-controls label{color:#0e5143!important;background:#fff9e9!important}
