@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T21:26:59.861633+00:00",
+  "updated_at": "2026-08-10T22:21:06.159970+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3937,
-        "change_pct": -0.547,
+        "price": 1.3939,
+        "change_pct": -0.536,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1547,
-        "change_pct": 0.196,
+        "price": 1.1546,
+        "change_pct": 0.185,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -187,8 +187,8 @@
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.215,
-        "change_pct": 0.509,
+        "price": 159.276,
+        "change_pct": 0.547,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4448.6001,
-        "change_pct": 2.486,
+        "price": 4450.5,
+        "change_pct": 2.53,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.3,
-        "change_pct": 5.27,
+        "price": 82.21,
+        "change_pct": 5.155,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.778,
-        "change_pct": 4.358,
+        "price": 2.777,
+        "change_pct": 4.32,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6355,
-        "change_pct": 0.989,
+        "price": 6.6315,
+        "change_pct": 0.928,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -269,23 +269,23 @@
       "time": "Latest"
     },
     {
-      "title": "2 Reasons to Like PTC (and 1 Not So Much)",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-ptc-1-not-211722052.html",
-      "publisher": "StockStory",
+      "title": "VYM’s 2.2% Yield Hides $141,000 in Decade-Long Underperformance Versus the S&P 500",
+      "link": "https://247wallst.com/investing/etf/2026/08/10/vyms-2-2-yield-hides-141000-in-decade-long-underperformance-versus-the-sp-500/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Semiconductor ETFs See Profit-Taking as Investors Pile Into QQQ",
-      "link": "http://www.etf.com/sections/weekly-etf-flows/semiconductor-etfs-see-profit-taking-investors-pile-qqq?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss",
-      "publisher": "etf.com",
+      "title": "Why Kevin Warsh Might Raise Interest Rates at the Next FOMC Meeting, Despite a Weak Jobs Report",
+      "link": "https://www.fool.com/investing/2026/08/10/why-kevin-warsh-might-raise-interest-rates-at-the/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "2 Reasons to Like LII (and 1 Not So Much)",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-lii-1-not-210922691.html",
-      "publisher": "StockStory",
+      "title": "Stock Market Today, Aug. 10: Markets Slip as Oil Gains Fuel Inflation Fears",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/10/stock-market-today-aug-10-markets-slip-as-oil-gains-fuel-inflation-fears/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
