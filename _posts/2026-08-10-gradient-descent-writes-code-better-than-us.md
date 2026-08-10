@@ -54,12 +54,7 @@ Gradient descent is an optimization method.
 In its simplest form, it looks like this:
 
 $$
-\theta_{t+1}
-============
-
-## \theta_t
-
-\eta \nabla_\theta L(\theta_t).
+\theta_{t+1} = \theta_t - \eta \nabla_{\theta} L(\theta_t).
 $$
 
 We take a collection of numbers, calculate some derivatives, move those numbers slightly, and repeat.
@@ -196,13 +191,13 @@ Karpathy imports only three modules.
 os.path.exists(...)
 ```
 
-`math` provides mathematical functions such as
+`math` provides mathematical functions such as:
 
 $$
 \log(x)
 $$
 
-and
+and:
 
 $$
 e^x.
@@ -225,15 +220,7 @@ sets the state of Python's pseudorandom number generator.
 A computer generally does not produce truly random numbers in ordinary software. It generates a deterministic sequence from an internal state:
 
 $$
-s_0
-\rightarrow
-s_1
-\rightarrow
-s_2
-\rightarrow
-s_3
-\rightarrow
-\cdots.
+s_0 \rightarrow s_1 \rightarrow s_2 \rightarrow s_3 \rightarrow \cdots
 $$
 
 If two programs begin with the same seed and perform the same random operations in the same order, they generate the same sequence.
@@ -267,7 +254,7 @@ random.shuffle(docs)
 print(f"num docs: {len(docs)}")
 ```
 
-The condition
+The condition:
 
 ```python
 if not os.path.exists('input.txt'):
@@ -333,7 +320,7 @@ for line in open('input.txt'):
 
 `line.strip()` removes surrounding whitespace and the newline character.
 
-The condition
+The condition:
 
 ```python
 if line.strip()
@@ -393,15 +380,13 @@ A neural network does not directly manipulate the abstract concept of the letter
 
 It manipulates numbers.
 
-We therefore need a mapping
+We therefore need a mapping:
 
 $$
-\text{text}
-\longrightarrow
-\text{integers}.
+\text{text} \longrightarrow \text{integers}.
 $$
 
-The expression
+The expression:
 
 ```python
 ''.join(docs)
@@ -438,7 +423,7 @@ keeps only the distinct characters.
 Mathematically, we obtain something like:
 
 $$
-{a,b,c,\ldots,z}.
+\{a,b,c,\ldots,z\}.
 $$
 
 Finally:
@@ -454,18 +439,14 @@ For this dataset the tokens are essentially the lowercase alphabet.
 Their positions become their identifiers:
 
 $$
-a\mapsto0,
+a \mapsto 0,
+\qquad
+b \mapsto 1,
+\qquad
+c \mapsto 2,
+\qquad
+\ldots
 $$
-
-$$
-b\mapsto1,
-$$
-
-$$
-c\mapsto2,
-$$
-
-and so on.
 
 This is a character-level tokenizer.
 
@@ -483,10 +464,10 @@ introduces a special token.
 
 `BOS` stands for Beginning of Sequence.
 
-With 26 letters,
+With 26 letters:
 
 $$
-BOS=26.
+BOS = 26.
 $$
 
 Therefore:
@@ -495,10 +476,10 @@ Therefore:
 vocab_size = len(uchars) + 1
 ```
 
-gives
+gives:
 
 $$
-V=27.
+V = 27.
 $$
 
 The vocabulary consists of 26 ordinary characters and one special token.
@@ -512,15 +493,11 @@ emma
 With the obvious alphabetical encoding:
 
 $$
-e\mapsto4,
-$$
-
-$$
-m\mapsto12,
-$$
-
-$$
-a\mapsto0.
+e \mapsto 4,
+\qquad
+m \mapsto 12,
+\qquad
+a \mapsto 0.
 $$
 
 Training will later transform `emma` into:
@@ -544,29 +521,29 @@ At the end, it acts as a stop symbol.
 The sequence generates the prediction tasks:
 
 $$
-BOS\rightarrow e,
+BOS \rightarrow e
 $$
 
 $$
-e\rightarrow m,
+e \rightarrow m
 $$
 
 $$
-em\rightarrow m,
+em \rightarrow m
 $$
 
 $$
-emm\rightarrow a,
+emm \rightarrow a
 $$
 
 $$
-emma\rightarrow BOS.
+emma \rightarrow BOS
 $$
 
 We have now arrived at the fundamental objective of an autoregressive language model:
 
 $$
-P(x_{t+1}\mid x_1,x_2,\ldots,x_t).
+P(x_{t+1} \mid x_1,x_2,\ldots,x_t).
 $$
 
 Given everything seen so far, what is likely to come next?
@@ -604,13 +581,13 @@ Then gradients appear.
 
 microGPT implements enough of this machinery from scratch that we can see what `backward()` actually means.
 
-Suppose a model has parameters
+Suppose a model has parameters:
 
 $$
 \theta_1,\theta_2,\ldots,\theta_P
 $$
 
-and produces a loss
+and produces a loss:
 
 $$
 L(\theta_1,\ldots,\theta_P).
@@ -621,58 +598,59 @@ To improve the model, we want to know how changing each parameter changes the lo
 We therefore need:
 
 $$
-\frac{\partial L}{\partial\theta_1},
-\frac{\partial L}{\partial\theta_2},
+\frac{\partial L}{\partial \theta_1},
+\qquad
+\frac{\partial L}{\partial \theta_2},
+\qquad
 \ldots,
-\frac{\partial L}{\partial\theta_P}.
+\qquad
+\frac{\partial L}{\partial \theta_P}.
 $$
 
 Together, these derivatives form the gradient:
 
 $$
-\nabla_\theta L
-===============
-
-\begin{bmatrix}
-\dfrac{\partial L}{\partial\theta_1}\
-\dfrac{\partial L}{\partial\theta_2}\
-\vdots\
-\dfrac{\partial L}{\partial\theta_P}
-\end{bmatrix}.
+\nabla_{\theta} L
+=
+\left(
+\frac{\partial L}{\partial \theta_1},
+\frac{\partial L}{\partial \theta_2},
+\ldots,
+\frac{\partial L}{\partial \theta_P}
+\right).
 $$
 
 The difficulty is that a parameter may influence the final loss through hundreds of intermediate calculations.
 
 This is precisely the problem solved by the chain rule.
 
-<hr style="border:none; border-top:1px solid rgba(120,120,120,0.35); margin:40px 0; width:100%;">
+<hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
 ## The chain rule
 
 Suppose:
 
 $$
-y=f(x)
+y = f(x)
 $$
 
 and:
 
 $$
-z=g(y).
+z = g(y).
 $$
 
 Then:
 
 $$
-z=g(f(x)).
+z = g(f(x)).
 $$
 
 The chain rule states:
 
 $$
 \frac{dz}{dx}
-=============
-
+=
 \frac{dz}{dy}
 \frac{dy}{dx}.
 $$
@@ -682,23 +660,14 @@ A neural network is an enormous composition of functions.
 If:
 
 $$
-x
-\rightarrow
-a
-\rightarrow
-b
-\rightarrow
-c
-\rightarrow
-L,
+x \rightarrow a \rightarrow b \rightarrow c \rightarrow L,
 $$
 
 then:
 
 $$
 \frac{\partial L}{\partial x}
-=============================
-
+=
 \frac{\partial L}{\partial c}
 \frac{\partial c}{\partial b}
 \frac{\partial b}{\partial a}
@@ -712,7 +681,7 @@ The crucial observation is that every operation only needs to know its local der
 For addition:
 
 $$
-z=x+y,
+z = x+y,
 $$
 
 we have:
@@ -726,7 +695,7 @@ $$
 For multiplication:
 
 $$
-z=xy,
+z = xy,
 $$
 
 we have:
@@ -740,31 +709,25 @@ $$
 For the logarithm:
 
 $$
-z=\log x,
+z = \log x,
 $$
 
 we have:
 
 $$
-\frac{dz}{dx}
-=============
-
-\frac1x.
+\frac{dz}{dx} = \frac{1}{x}.
 $$
 
 For the exponential:
 
 $$
-z=e^x,
+z = e^x,
 $$
 
 we have:
 
 $$
-\frac{dz}{dx}
-=============
-
-e^x.
+\frac{dz}{dx} = e^x.
 $$
 
 If the program records these local derivatives as it computes the forward pass, it can later walk backward through the computation and assemble the derivative of the final loss with respect to every parameter.
@@ -802,7 +765,7 @@ If:
 $$
 a=3,
 \qquad
-b=4,
+b=4
 $$
 
 and:
@@ -977,10 +940,7 @@ def __pow__(self, other):
 This encodes:
 
 $$
-\frac{d}{dx}x^n
-===============
-
-nx^{n-1}.
+\frac{d}{dx}x^n = nx^{n-1}.
 $$
 
 Then:
@@ -997,10 +957,7 @@ def log(self):
 encodes:
 
 $$
-\frac{d}{dx}\log x
-==================
-
-\frac1x.
+\frac{d}{dx}\log x = \frac{1}{x}.
 $$
 
 The exponential:
@@ -1034,21 +991,17 @@ def relu(self):
 The Rectified Linear Unit is:
 
 $$
-\operatorname{ReLU}(x)
-======================
-
-\max(0,x).
+\operatorname{ReLU}(x)=\max(0,x).
 $$
 
 Its derivative away from zero is:
 
 $$
 \operatorname{ReLU}'(x)
-=======================
-
+=
 \begin{cases}
-1,&x>0,\
-0,&x<0.
+1, & x>0,\\
+0, & x<0.
 \end{cases}
 $$
 
@@ -1075,19 +1028,13 @@ def __rtruediv__(self, other): return other * self**-1
 Subtraction is expressed as:
 
 $$
-x-y
-===
-
-x+(-y).
+x-y=x+(-y).
 $$
 
 Division becomes:
 
 $$
-\frac{x}{y}
-===========
-
-xy^{-1}.
+\frac{x}{y}=xy^{-1}.
 $$
 
 This illustrates a general idea that will reappear throughout the program.
@@ -1201,8 +1148,7 @@ Their product gives:
 
 $$
 \frac{\partial L}{\partial \text{child}}
-========================================
-
+=
 \frac{\partial L}{\partial v}
 \frac{\partial v}{\partial \text{child}}.
 $$
@@ -1211,28 +1157,9 @@ The use of `+=` rather than `=` is important.
 
 A variable may affect the final loss through several different paths.
 
-If:
+The corresponding derivative contributions must therefore be added.
 
-$$
-L=L(a(b),c(b)),
-$$
-
-then:
-
-$$
-\frac{\partial L}{\partial b}
-=============================
-
-\frac{\partial L}{\partial a}
-\frac{\partial a}{\partial b}
-+
-\frac{\partial L}{\partial c}
-\frac{\partial c}{\partial b}.
-$$
-
-Those contributions must be added.
-
-This small method is therefore sufficient to differentiate the much larger neural network that comes next.
+This small method is sufficient to differentiate the much larger neural network that comes next.
 
 When we later encounter:
 
@@ -1261,7 +1188,7 @@ head_dim = n_embd // n_head
 `n_embd = 16` means the internal representation of a token contains 16 coordinates:
 
 $$
-x\in\mathbb{R}^{16}.
+x \in \mathbb{R}^{16}.
 $$
 
 `block_size = 16` means that the model processes at most sixteen positions.
@@ -1271,13 +1198,9 @@ $$
 Therefore:
 
 $$
-d_h
-===
-
-# \frac{16}{4}
-
-4.
-
+d_h = \frac{n_{\mathrm{embd}}}{n_{\mathrm{head}}}
+= \frac{16}{4}
+= 4.
 $$
 
 Each attention head operates on four-dimensional vectors.
@@ -1307,11 +1230,11 @@ creates:
 
 $$
 W=
-\begin{bmatrix}
-w_{11}&w_{12}\
-w_{21}&w_{22}\
-w_{31}&w_{32}
-\end{bmatrix}.
+\begin{pmatrix}
+w_{11} & w_{12}\\
+w_{21} & w_{22}\\
+w_{31} & w_{32}
+\end{pmatrix}.
 $$
 
 Each element is generated using:
@@ -1323,9 +1246,7 @@ random.gauss(0, std)
 so:
 
 $$
-w_{ij}
-\sim
-\mathcal N(0,0.08^2).
+w_{ij} \sim \mathcal{N}(0,0.08^2).
 $$
 
 The model begins with random parameters.
@@ -1355,9 +1276,7 @@ state_dict = {
 The first matrix is:
 
 $$
-W_E
-\in
-\mathbb{R}^{27\times16}.
+W_E \in \mathbb{R}^{27\times16}.
 $$
 
 It contains the token embeddings.
@@ -1365,23 +1284,14 @@ It contains the token embeddings.
 Each token receives a learned vector:
 
 $$
-e_i
-\in
-\mathbb{R}^{16}.
+e_i \in \mathbb{R}^{16}.
 $$
 
-Instead of treating `a` merely as integer zero, the model can represent it as:
+Instead of treating `a` merely as integer zero, the model can represent it as something like:
 
 $$
-e_a
-===
-
-[
-0.14,
--0.31,
-0.08,
-\ldots
-].
+e_a =
+[0.14,-0.31,0.08,\ldots].
 $$
 
 These coordinates are not manually assigned meanings.
@@ -1391,9 +1301,7 @@ They are learned.
 The second matrix:
 
 $$
-W_P
-\in
-\mathbb{R}^{16\times16}
+W_P \in \mathbb{R}^{16\times16}
 $$
 
 contains positional embeddings.
@@ -1414,7 +1322,7 @@ and:
 cba
 ```
 
-contain the same three token identities but mean different things.
+contain the same three token identities but in different orders.
 
 Each position therefore receives a vector:
 
@@ -1431,9 +1339,7 @@ $$
 The third matrix is the language-model head:
 
 $$
-W_{\mathrm{LM}}
-\in
-\mathbb{R}^{27\times16}.
+W_{\mathrm{LM}} \in \mathbb{R}^{27\times16}.
 $$
 
 At the end of the model it will transform the internal sixteen-dimensional representation into 27 scores, one for every possible next token.
@@ -1454,13 +1360,7 @@ state_dict[f'layer{i}.attn_wo'] = matrix(n_embd, n_embd)
 These matrices are:
 
 $$
-W_Q,
-\quad
-W_K,
-\quad
-W_V,
-\quad
-W_O.
+W_Q,\qquad W_K,\qquad W_V,\qquad W_O.
 $$
 
 Each belongs to:
@@ -1473,13 +1373,9 @@ They will create queries, keys and values:
 
 $$
 q=W_Qx,
-$$
-
-$$
+\qquad
 k=W_Kx,
-$$
-
-$$
+\qquad
 v=W_Vx.
 $$
 
@@ -1507,17 +1403,13 @@ $$
 the first transformation is:
 
 $$
-\mathbb{R}^{16}
-\rightarrow
-\mathbb{R}^{64}.
+\mathbb{R}^{16} \rightarrow \mathbb{R}^{64}.
 $$
 
 The second returns:
 
 $$
-\mathbb{R}^{64}
-\rightarrow
-\mathbb{R}^{16}.
+\mathbb{R}^{64} \rightarrow \mathbb{R}^{16}.
 $$
 
 This is the feed-forward neural network inside the Transformer.
@@ -1546,58 +1438,43 @@ params = [
 We can represent all model parameters as one vector:
 
 $$
-\theta
-======
-
-(\theta_1,\theta_2,\ldots,\theta_P).
+\theta=(\theta_1,\theta_2,\ldots,\theta_P).
 $$
 
-For this model:
-
-Token embeddings:
+For this model, token embeddings contribute:
 
 $$
-27\times16=432.
+27\times16 = 432.
 $$
 
-Position embeddings:
+Position embeddings contribute:
 
 $$
-16\times16=256.
+16\times16 = 256.
 $$
 
-Language-model head:
+The language-model head contributes:
 
 $$
-27\times16=432.
+27\times16 = 432.
 $$
 
-Attention:
+The four attention matrices contribute:
 
 $$
 4(16\times16)=1024.
 $$
 
-MLP:
+The MLP contributes:
 
 $$
-64\times16+16\times64
-=====================
-
-2048.
-
+64\times16 + 16\times64 = 2048.
 $$
 
 Therefore:
 
 $$
-P
-=
-
-# 432+256+432+1024+2048
-
-4192.
-
+P = 432 + 256 + 432 + 1024 + 2048 = 4192.
 $$
 
 microGPT has 4,192 trainable scalar parameters.
@@ -1634,32 +1511,32 @@ Suppose:
 
 $$
 x=
-\begin{bmatrix}
-x_1\
+\begin{pmatrix}
+x_1\\
 x_2
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 and:
 
 $$
 W=
-\begin{bmatrix}
-w_{11}&w_{12}\
-w_{21}&w_{22}\
+\begin{pmatrix}
+w_{11}&w_{12}\\
+w_{21}&w_{22}\\
 w_{31}&w_{32}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Then:
 
 $$
 Wx=
-\begin{bmatrix}
-w_{11}x_1+w_{12}x_2\
-w_{21}x_1+w_{22}x_2\
+\begin{pmatrix}
+w_{11}x_1+w_{12}x_2\\
+w_{21}x_1+w_{22}x_2\\
 w_{31}x_1+w_{32}x_2
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 The function:
@@ -1730,10 +1607,9 @@ Softmax transforms them into:
 
 $$
 p_i
-===
-
+=
 \frac{e^{z_i}}
-{\sum_{j=1}^{V} e^{z_j}}.
+{\sum_{j=1}^{V}e^{z_j}}.
 $$
 
 Because:
@@ -1760,13 +1636,9 @@ Then:
 
 $$
 e^2\approx7.389,
-$$
-
-$$
+\qquad
 e^1\approx2.718,
-$$
-
-$$
+\qquad
 e^0=1.
 $$
 
@@ -1780,13 +1652,9 @@ So:
 
 $$
 p_1\approx0.665,
-$$
-
-$$
+\qquad
 p_2\approx0.245,
-$$
-
-$$
+\qquad
 p_3\approx0.090.
 $$
 
@@ -1811,8 +1679,7 @@ Because softmax satisfies:
 $$
 \frac{e^{z_i-c}}
 {\sum_j e^{z_j-c}}
-==================
-
+=
 \frac{e^{z_i}}
 {\sum_j e^{z_j}}.
 $$
@@ -1822,7 +1689,7 @@ Subtracting the same number from all logits leaves the probabilities unchanged.
 Choosing:
 
 $$
-c=\max_jz_j
+c=\max_j z_j
 $$
 
 makes the largest exponent equal to:
@@ -1856,22 +1723,17 @@ the mean square is:
 
 $$
 \operatorname{MS}(x)
-====================
-
-\frac1d
-\sum_{i=1}^d x_i^2.
+=
+\frac{1}{d}\sum_{i=1}^{d}x_i^2.
 $$
 
 Then:
 
 $$
 \operatorname{RMSNorm}(x)
-=========================
-
+=
 \frac{x}
-{\sqrt{
-\frac1d\sum_i x_i^2+\varepsilon
-}}.
+{\sqrt{\frac{1}{d}\sum_i x_i^2+\varepsilon}}.
 $$
 
 Here:
@@ -1890,21 +1752,18 @@ Then:
 
 $$
 \operatorname{MS}(x)
-====================
-
-# \frac{4+1+4}{3}
-
+=
+\frac{4+1+4}{3}
+=
 3.
-
 $$
 
-Ignoring the tiny $\varepsilon$:
+Ignoring the tiny epsilon:
 
 $$
 \operatorname{RMSNorm}(x)
-=========================
-
-\frac1{\sqrt3}[2,-1,2].
+=
+\frac{1}{\sqrt{3}}[2,-1,2].
 $$
 
 Normalization keeps the magnitude of internal representations under control.
@@ -1983,8 +1842,6 @@ $$
 y=x+F(x).
 $$
 
-Why?
-
 One intuition is that the network no longer needs every block to construct a completely new representation.
 
 It can instead learn modifications to an existing representation.
@@ -2001,7 +1858,7 @@ $$
 y\approx x.
 $$
 
-Residual connections also create shorter gradient paths during backpropagation and are a central feature of modern deep neural networks.
+Residual connections also create shorter paths for gradients during backpropagation.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
@@ -2019,13 +1876,9 @@ Mathematically:
 
 $$
 q_t=W_Qx_t,
-$$
-
-$$
+\qquad
 k_t=W_Kx_t,
-$$
-
-$$
+\qquad
 v_t=W_Vx_t.
 $$
 
@@ -2039,9 +1892,7 @@ The key describes what a position offers for matching.
 
 The value contains the information that will be retrieved if that position receives attention.
 
-Suppose the current position is trying to decide which earlier characters matter for predicting the next one.
-
-Its query will be compared with the keys of previous positions.
+The current query will be compared with the keys of previous positions.
 
 The better the match, the more of that position's value will contribute to the current representation.
 
@@ -2072,8 +1923,6 @@ $$
 v_1,v_2,\ldots,v_t.
 $$
 
-This has an important consequence.
-
 The current token can only attend to positions that have already been processed.
 
 It cannot see the future.
@@ -2090,7 +1939,7 @@ Many Transformer implementations enforce this using a causal attention mask.
 
 microGPT achieves causality naturally because future keys and values simply do not exist yet.
 
-This is also a miniature implementation of what is commonly called the KV cache during autoregressive generation.
+This is also a miniature implementation of what is commonly called a KV cache during autoregressive generation.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
@@ -2146,13 +1995,9 @@ extract the corresponding parts of every key and value.
 
 Instead of one sixteen-dimensional attention mechanism, the model therefore has four four-dimensional mechanisms operating in parallel.
 
-The intuition is that different heads can learn different relations.
+Different heads can learn different relationships.
 
-One might become useful for local character patterns.
-
-Another might capture dependencies across larger distances.
-
-No such role is explicitly programmed.
+No such specialization is explicitly programmed.
 
 If useful specializations appear, they are learned.
 
@@ -2160,7 +2005,7 @@ If useful specializations appear, they are learned.
 
 ## The attention score
 
-Now we reach one of the most important lines in the entire program:
+Now we reach one of the central lines:
 
 ```python
 attn_logits = [
@@ -2176,18 +2021,15 @@ For a query $q$ and a key $k_t$, this computes:
 
 $$
 s_t
-===
-
-\frac{q\cdot k_t}
-{\sqrt{d_h}}.
+=
+\frac{q\cdot k_t}{\sqrt{d_h}}.
 $$
 
 The dot product is:
 
 $$
 q\cdot k_t
-==========
-
+=
 \sum_{j=1}^{d_h}q_jk_{t,j}.
 $$
 
@@ -2195,44 +2037,39 @@ If the vectors point in compatible directions, their dot product tends to be lar
 
 The model therefore interprets a large dot product as a strong match between query and key.
 
-But why divide by:
+Why divide by:
 
 $$
 \sqrt{d_h}?
 $$
 
-Suppose the coordinates of $q$ and $k$ are independent, approximately centered, and have variance around one.
+Suppose the coordinates of $q$ and $k$ are approximately independent, centered random variables with variance close to one.
 
 Then:
 
 $$
 q\cdot k
-========
-
+=
 \sum_{j=1}^{d_h}q_jk_j.
 $$
 
-The variance of a sum of roughly independent terms grows approximately proportionally to the number of terms:
+The variance of the sum grows approximately proportionally to $d_h$:
 
 $$
-\operatorname{Var}(q\cdot k)
-\approx
-d_h.
+\operatorname{Var}(q\cdot k)\approx d_h.
 $$
 
-So the standard deviation grows like:
+Its standard deviation therefore grows approximately as:
 
 $$
 \sqrt{d_h}.
 $$
 
-Dividing by $\sqrt{d_h}$ keeps the scale of attention logits approximately stable as the head dimension changes.
+Dividing by $\sqrt{d_h}$ keeps the scale of attention logits more stable as the head dimension changes.
 
-Otherwise, larger dimensions would tend to produce larger logits.
+Without this scaling, large dimensions would tend to produce larger logits and a more saturated softmax.
 
-Softmax would then become extremely concentrated, making optimization more difficult.
-
-This is the scaled dot-product attention introduced by the Transformer architecture.
+This is scaled dot-product attention.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
@@ -2266,11 +2103,10 @@ the scores are:
 
 $$
 s_1
-===
-
-# \frac{1\cdot1+0\cdot0}{\sqrt2}
-
-\frac1{\sqrt2}
+=
+\frac{1\cdot1+0\cdot0}{\sqrt{2}}
+=
+\frac{1}{\sqrt{2}}
 \approx0.707,
 $$
 
@@ -2278,20 +2114,17 @@ and:
 
 $$
 s_2
-===
-
-# \frac{1\cdot0+0\cdot1}{\sqrt2}
-
+=
+\frac{1\cdot0+0\cdot1}{\sqrt{2}}
+=
 0.
-
 $$
 
 Softmax produces:
 
 $$
 \alpha_1
-========
-
+=
 \frac{e^{0.707}}
 {e^{0.707}+e^0}
 \approx0.670,
@@ -2300,8 +2133,7 @@ $$
 and:
 
 $$
-\alpha_2
-\approx0.330.
+\alpha_2\approx0.330.
 $$
 
 Suppose the values are:
@@ -2319,10 +2151,7 @@ $$
 The attention output becomes:
 
 $$
-o
-=
-
-0.670v_1+0.330v_2.
+o=0.670v_1+0.330v_2.
 $$
 
 Therefore:
@@ -2330,16 +2159,10 @@ Therefore:
 $$
 o
 =
-
-0.670[2,1]+0.330[0,3].
-$$
-
-So:
-
-$$
-o
+0.670[2,1]
++
+0.330[0,3]
 =
-
 [1.34,1.66].
 $$
 
@@ -2361,32 +2184,20 @@ attn_weights = softmax(attn_logits)
 
 transforms the raw compatibility scores into probabilities.
 
-If the available positions are:
-
-$$
-1,\ldots,t,
-$$
-
-then:
+If the available positions are $1,\ldots,t$, then:
 
 $$
 \alpha_{t,j}
-============
-
-\frac{
-\exp(s_{t,j})
-}{
-\sum_{\ell=1}^{t}\exp(s_{t,\ell})
-}.
+=
+\frac{\exp(s_{t,j})}
+{\sum_{\ell=1}^{t}\exp(s_{t,\ell})}.
 $$
 
 Therefore:
 
 $$
-\sum_{j=1}^t\alpha_{t,j}=1.
+\sum_{j=1}^{t}\alpha_{t,j}=1.
 $$
-
-The weights can be interpreted as the fraction of attention allocated to each previous position.
 
 The head output is then:
 
@@ -2404,20 +2215,16 @@ Mathematically:
 
 $$
 o_t
-===
-
+=
 \sum_{j=1}^{t}
 \alpha_{t,j}v_j.
 $$
 
-That is the complete attention operation.
-
-In matrix notation, the familiar formula is:
+In matrix notation, the familiar attention formula is:
 
 $$
 \operatorname{Attention}(Q,K,V)
-===============================
-
+=
 \operatorname{softmax}
 \left(
 \frac{QK^\top}{\sqrt{d_h}}
@@ -2436,30 +2243,21 @@ After each head is computed:
 x_attn.extend(head_out)
 ```
 
-concatenates their outputs.
+concatenates the outputs.
 
 If each head produces:
 
 $$
-o_t^{(h)}
-\in
-\mathbb{R}^{4},
+o_t^{(h)}\in\mathbb{R}^{4},
 $$
 
-then four heads give:
+then four heads together produce a vector in:
 
 $$
-[
-o_t^{(1)};
-o_t^{(2)};
-o_t^{(3)};
-o_t^{(4)}
-]
-\in
 \mathbb{R}^{16}.
 $$
 
-This combined vector is then projected:
+This combined vector is projected:
 
 ```python
 x = linear(x_attn, state_dict[f'layer{li}.attn_wo'])
@@ -2468,7 +2266,7 @@ x = linear(x_attn, state_dict[f'layer{li}.attn_wo'])
 or:
 
 $$
-x=W_Ox_{\text{attn}}.
+x=W_Ox_{\mathrm{attn}}.
 $$
 
 Then the residual connection is applied:
@@ -2480,12 +2278,11 @@ x = [a + b for a, b in zip(x, x_residual)]
 so:
 
 $$
-x_{\text{new}}
-==============
-
-x_{\text{residual}}
+x_{\mathrm{new}}
+=
+x_{\mathrm{residual}}
 +
-W_Ox_{\text{attn}}.
+W_Ox_{\mathrm{attn}}.
 $$
 
 The attention block is complete.
@@ -2534,19 +2331,13 @@ $$
 with:
 
 $$
-W_2:
-\mathbb{R}^{64}
-\rightarrow
-\mathbb{R}^{16}.
+W_2:\mathbb{R}^{64}\rightarrow\mathbb{R}^{16}.
 $$
 
 The residual connection produces:
 
 $$
-x_{\text{out}}
-==============
-
-x_{\text{in}}+f.
+x_{\mathrm{out}}=x_{\mathrm{in}}+f.
 $$
 
 Why include a nonlinear activation such as ReLU?
@@ -2644,8 +2435,7 @@ For each parameter $\theta_i$, let:
 
 $$
 g_t
-===
-
+=
 \frac{\partial L_t}{\partial\theta_i}.
 $$
 
@@ -2653,27 +2443,21 @@ Adam maintains a first-moment estimate:
 
 $$
 m_t
-===
-
+=
 \beta_1m_{t-1}
 +
 (1-\beta_1)g_t.
 $$
 
-This behaves like an exponentially weighted moving average of recent gradients.
-
-It also maintains:
+It also maintains a second-moment estimate:
 
 $$
 v_t
-===
-
+=
 \beta_2v_{t-1}
 +
 (1-\beta_2)g_t^2.
 $$
-
-This tracks the squared magnitude of recent gradients.
 
 The two Python lists:
 
@@ -2711,7 +2495,7 @@ doc = docs[step % len(docs)]
 
 chooses a document.
 
-The modulo operator `%` ensures that if the number of steps becomes larger than the dataset, indexing wraps back to the beginning.
+The modulo operator `%` ensures that indexing wraps around if necessary.
 
 Then:
 
@@ -2799,10 +2583,7 @@ loss_t = -probs[target_id].log()
 Mathematically:
 
 $$
-L_t
-===
-
--\log p(y_t).
+L_t=-\log p(y_t).
 $$
 
 This is the negative log-likelihood of the correct token.
@@ -2820,11 +2601,8 @@ $$
 Then:
 
 $$
--\log(0.9)
-\approx0.105.
+-\log(0.9)\approx0.105.
 $$
-
-This is a small loss.
 
 If:
 
@@ -2835,8 +2613,7 @@ $$
 then:
 
 $$
--\log(0.5)
-\approx0.693.
+-\log(0.5)\approx0.693.
 $$
 
 If:
@@ -2848,13 +2625,10 @@ $$
 then:
 
 $$
--\log(0.01)
-\approx4.605.
+-\log(0.01)\approx4.605.
 $$
 
 The model is heavily penalized when it assigns very little probability to the correct answer.
-
-This function also has a probabilistic interpretation.
 
 For a sequence:
 
@@ -2866,23 +2640,21 @@ an autoregressive model assigns probability:
 
 $$
 P(x_1,\ldots,x_n)
-=================
-
-\prod_{t=1}^n
+=
+\prod_{t=1}^{n}
 P(x_t\mid x_1,\ldots,x_{t-1}).
 $$
 
-Maximizing this product is equivalent to maximizing its logarithm:
+Taking logarithms transforms the product into a sum:
 
 $$
 \log P(x_1,\ldots,x_n)
-======================
-
-\sum_{t=1}^n
+=
+\sum_{t=1}^{n}
 \log P(x_t\mid x_{<t}).
 $$
 
-Minimizing negative log-likelihood therefore means maximizing the probability the model assigns to the training data.
+Minimizing negative log-likelihood therefore means maximizing the probability assigned to the training data.
 
 The average loss is:
 
@@ -2895,9 +2667,8 @@ or:
 $$
 L
 =
-
--\frac1n
-\sum_{t=1}^n
+-\frac{1}{n}
+\sum_{t=1}^{n}
 \log
 P_\theta(x_{t+1}\mid x_{\leq t}).
 $$
@@ -2922,46 +2693,25 @@ loss.backward()
 
 We have already implemented everything necessary to understand it.
 
-`loss` sits at the end of a computation graph containing:
-
-* embeddings;
-* additions;
-* RMSNorm;
-* matrix-vector products;
-* queries;
-* keys;
-* values;
-* dot products;
-* exponentials;
-* softmax;
-* attention;
-* ReLU;
-* another softmax;
-* a logarithm.
+`loss` sits at the end of a computation graph containing embeddings, additions, RMSNorm, matrix-vector products, queries, keys, values, dot products, exponentials, softmax, attention, ReLU and logarithms.
 
 The backward pass traverses this graph in reverse.
 
-For every trainable parameter:
-
-$$
-\theta_i,
-$$
-
-it computes:
+For every trainable parameter $\theta_i$, it computes:
 
 $$
 \frac{\partial L}{\partial\theta_i}.
 $$
 
-The result is:
+Together, these values form:
 
 $$
-\nabla_\theta L.
+\nabla_{\theta}L.
 $$
 
 The 4,192 random numbers from the beginning are no longer just numbers.
 
-Each one now has a direction telling us how changing it would affect the prediction error.
+Each one now has a derivative telling us how changing it would affect the prediction error.
 
 We have reached the mathematical object at the center of Karpathy's 2017 sentence.
 
@@ -2979,8 +2729,7 @@ so:
 
 $$
 \eta_t
-======
-
+=
 \eta_0
 \left(
 1-\frac{t}{T}
@@ -2989,7 +2738,7 @@ $$
 
 Training begins with larger updates and gradually reduces their magnitude.
 
-Then for every parameter:
+Then:
 
 ```python
 m[i] = beta1 * m[i] + (1 - beta1) * p.grad
@@ -2999,8 +2748,7 @@ implements:
 
 $$
 m_t
-===
-
+=
 \beta_1m_{t-1}
 +
 (1-\beta_1)g_t.
@@ -3016,8 +2764,7 @@ implements:
 
 $$
 v_t
-===
-
+=
 \beta_2v_{t-1}
 +
 (1-\beta_2)g_t^2.
@@ -3036,18 +2783,16 @@ or:
 
 $$
 \hat m_t
-========
-
-\frac{m_t}
-{1-\beta_1^t},
+=
+\frac{m_t}{1-\beta_1^t},
 $$
+
+and:
 
 $$
 \hat v_t
-========
-
-\frac{v_t}
-{1-\beta_2^t}.
+=
+\frac{v_t}{1-\beta_2^t}.
 $$
 
 Finally:
@@ -3062,8 +2807,7 @@ $$
 \theta_t
 \leftarrow
 \theta_t
---------
-
+-
 \eta_t
 \frac{\hat m_t}
 {\sqrt{\hat v_t}+\varepsilon}.
@@ -3072,8 +2816,6 @@ $$
 The parameter has changed.
 
 Not because a programmer knew what value it should contain.
-
-Not because the program contains an `if` statement describing the linguistic rule to learn.
 
 It changed because calculus told the optimizer how that number contributed to prediction error.
 
@@ -3096,38 +2838,22 @@ At initialization:
 $$
 \theta_0
 \sim
-\text{random}.
+\text{random initialization}.
 $$
 
 After one update:
 
 $$
-\theta_1
-========
-
-\operatorname{Adam}
-(
-\theta_0,
-\nabla L(\theta_0)
-).
+\theta_0 \rightarrow \theta_1.
 $$
 
 Then:
 
 $$
-\theta_2
-========
-
-\operatorname{Adam}
-(
-\theta_1,
-\nabla L(\theta_1)
-).
+\theta_1 \rightarrow \theta_2.
 $$
 
-And so on.
-
-After many steps:
+And so on:
 
 $$
 \theta_0
@@ -3161,20 +2887,17 @@ The language-model head is different.
 
 The program has moved from one point in a 4,192-dimensional parameter space to another.
 
-Training is a trajectory through this space.
-
-Conceptually, we are trying to find:
+Conceptually, we would like to find:
 
 $$
 \theta^\star
-============
-
-\arg\min_\theta L(\theta).
+=
+\underset{\theta}{\operatorname{argmin}}\;L(\theta).
 $$
 
-In practice, deep learning does not generally guarantee that we find a unique global minimum.
+In practice, deep learning does not generally guarantee that training finds a unique global minimum.
 
-But optimization searches for parameter values that make the model perform well.
+Optimization searches for parameter values that make the model perform well.
 
 This collection of learned numbers is where much of the model's behaviour lives.
 
@@ -3228,25 +2951,13 @@ and then:
 probs = softmax([l / temperature for l in logits])
 ```
 
-Here temperature modifies the logits.
-
-If the original logits are:
-
-$$
-z_i,
-$$
-
-temperature $\tau$ gives:
+If the original logits are $z_i$ and temperature is $\tau$, then:
 
 $$
 P_i
-===
-
-\frac{
-e^{z_i/\tau}
-}{
-\sum_j e^{z_j/\tau}
-}.
+=
+\frac{e^{z_i/\tau}}
+{\sum_j e^{z_j/\tau}}.
 $$
 
 If:
@@ -3259,8 +2970,6 @@ differences between logits become larger.
 
 The distribution becomes sharper.
 
-High-probability tokens become more dominant.
-
 At:
 
 $$
@@ -3268,8 +2977,6 @@ $$
 $$
 
 the original softmax distribution is preserved.
-
-If temperature were greater than one, the distribution would become flatter and sampling more random.
 
 microGPT uses:
 
@@ -3293,7 +3000,7 @@ token_id = random.choices(
 The model does not necessarily choose:
 
 $$
-\arg\max_iP_i.
+\underset{i}{\operatorname{argmax}}\;P_i.
 $$
 
 Instead, it samples according to the probability distribution.
@@ -3302,13 +3009,9 @@ Suppose:
 
 $$
 P(a)=0.6,
-$$
-
-$$
+\qquad
 P(b)=0.3,
-$$
-
-$$
+\qquad
 P(c)=0.1.
 $$
 
@@ -3316,7 +3019,7 @@ Then `a` is most likely, but `b` and `c` remain possible.
 
 This randomness is why repeated generations can produce different results.
 
-The new token then becomes the input to the next iteration.
+The new token becomes the input to the next iteration.
 
 Generation is autoregressive:
 
@@ -3347,7 +3050,7 @@ if token_id == BOS:
     break
 ```
 
-the model decides that the sequence has ended.
+the sequence ends.
 
 Otherwise:
 
@@ -3365,7 +3068,7 @@ print(f"sample {sample_idx+1:2d}: {''.join(sample)}")
 
 prints the generated name.
 
-The model is now producing sequences that resemble its training data without simply being instructed which sequence to output.
+The model is now producing sequences that resemble its training data without being explicitly told what sequence to output.
 
 <hr style="border:none; border-top:2px solid rgba(120,120,120,0.7); margin:50px 0; width:100%;">
 
@@ -3387,19 +3090,18 @@ $$
 
 Generation repeatedly samples from this conditional distribution.
 
-The full probability of a sequence can be decomposed as:
+The probability of a complete sequence can be decomposed as:
 
 $$
 P_\theta(x_1,\ldots,x_n)
-========================
-
+=
 \prod_{t=1}^{n}
 P_\theta(x_t\mid x_1,\ldots,x_{t-1}).
 $$
 
 This simple factorization is extraordinarily powerful.
 
-A model trained over enormous corpora encounters natural language, mathematics, source code, conversations, documentation, reasoning traces and many other kinds of structured sequences.
+A model trained over enormous corpora encounters natural language, mathematics, source code, conversations, documentation and many other kinds of structured sequences.
 
 To become good at predicting what comes next, it must learn regularities in those sequences.
 
@@ -3407,11 +3109,11 @@ For source code, those regularities include syntax, variable relationships, comm
 
 Prediction therefore becomes much richer than guessing a character.
 
-A sufficiently capable predictor has to construct internal representations of the structures generating the data.
+A sufficiently capable predictor has to construct internal representations of some of the structures generating the data.
 
-This does not mean that next-token prediction explains every aspect of intelligence.
+This does not mean that next-token prediction by itself explains every aspect of intelligence.
 
-It does explain why the apparently modest objective should not be dismissed as trivial.
+It does explain why the objective should not be dismissed as trivial.
 
 Predicting the continuation of a complex world requires learning something about the structure of that world.
 
@@ -3421,7 +3123,7 @@ Predicting the continuation of a complex world requires learning something about
 
 We can now return to Karpathy's tweet.
 
-There are actually two different senses in which modern AI and programming intersect.
+There are two different senses in which modern AI and programming intersect.
 
 The first is obvious today.
 
@@ -3503,13 +3205,6 @@ But he does not choose the final 4,192 parameter values.
 
 The optimization process does.
 
-Nobody writes:
-
-```text
-after this combination of characters,
-increase the probability of "a" by exactly this amount
-```
-
 Nobody manually decides what every coordinate of every embedding should represent.
 
 Nobody fills the query and key matrices with linguistic rules.
@@ -3558,11 +3253,8 @@ Adam is not the vanilla update:
 
 $$
 \theta_{t+1}
-============
-
-## \theta_t
-
-\eta\nabla L(\theta_t).
+=
+\theta_t-\eta\nabla L(\theta_t).
 $$
 
 Its update contains moving averages and adaptive scaling:
@@ -3571,8 +3263,7 @@ $$
 \theta_t
 \leftarrow
 \theta_t
---------
-
+-
 \eta_t
 \frac{\hat m_t}
 {\sqrt{\hat v_t}+\varepsilon}.
@@ -3581,7 +3272,7 @@ $$
 Still, the central information driving the update is the gradient:
 
 $$
-\nabla_\theta L.
+\nabla_{\theta}L.
 $$
 
 So "gradient descent" in the title should be understood in the broader family of gradient-based optimization methods.
@@ -3644,11 +3335,8 @@ The stranger question is how we got from:
 
 $$
 \theta_{t+1}
-============
-
-## \theta_t
-
-\eta\nabla_\theta L(\theta_t)
+=
+\theta_t-\eta\nabla_{\theta}L(\theta_t)
 $$
 
 to machines capable of producing it.
@@ -3713,18 +3401,17 @@ It writes something we are only beginning to understand how to read.
 
 ## References
 
-* [Andrej Karpathy, “Gradient descent can write code better than you. I'm sorry.”, August 4, 2017](https://x.com/karpathy/status/893576281375219712)
-* [Andrej Karpathy, microGPT](https://karpathy.ai/microgpt.html)
-* [microGPT source code, GitHub Gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95)
-* [Andrej Karpathy on GitHub](https://github.com/karpathy)
-* [Andrej Karpathy on YouTube](https://www.youtube.com/@AndrejKarpathy)
-* [Andrej Karpathy, Neural Networks: Zero to Hero](https://www.youtube.com/@AndrejKarpathy)
-* [Andrej Karpathy, makemore](https://github.com/karpathy/makemore)
-* [Andrej Karpathy, micrograd](https://github.com/karpathy/micrograd)
-* [Andrej Karpathy, “Software 2.0”](https://karpathy.medium.com/software-2-0-a64152b37c35)
-* [OpenAI, “Learning to Reason with LLMs”](https://openai.com/index/learning-to-reason-with-llms/)
-* [Vaswani et al., “Attention Is All You Need”](https://arxiv.org/abs/1706.03762)
-* [Kingma and Ba, “Adam: A Method for Stochastic Optimization”](https://arxiv.org/abs/1412.6980)
+- [Andrej Karpathy, "Gradient descent can write code better than you. I'm sorry.", August 4, 2017](https://x.com/karpathy/status/893576281375219712)
+- [Andrej Karpathy, microGPT](https://karpathy.ai/microgpt.html)
+- [microGPT source code, GitHub Gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95)
+- [Andrej Karpathy on GitHub](https://github.com/karpathy)
+- [Andrej Karpathy on YouTube](https://www.youtube.com/@AndrejKarpathy)
+- [Andrej Karpathy, makemore](https://github.com/karpathy/makemore)
+- [Andrej Karpathy, micrograd](https://github.com/karpathy/micrograd)
+- [Andrej Karpathy, "Software 2.0"](https://karpathy.medium.com/software-2-0-a64152b37c35)
+- [OpenAI, "Learning to Reason with LLMs"](https://openai.com/index/learning-to-reason-with-llms/)
+- [Vaswani et al., "Attention Is All You Need"](https://arxiv.org/abs/1706.03762)
+- [Kingma and Ba, "Adam: A Method for Stochastic Optimization"](https://arxiv.org/abs/1412.6980)
 
 ---
 
