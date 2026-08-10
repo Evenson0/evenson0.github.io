@@ -5,10 +5,10 @@ layout: single
 author_profile: true
 tool_theme: derivatives
 ---
-<link rel="stylesheet" href="/assets/css/derivatives-explorer.css?v=4">
+<link rel="stylesheet" href="/assets/css/derivatives-explorer.css?v=5">
 <div class="dx-shell">
   <header class="dx-hero"><span>Quantitative desk / listed options</span><h1>Derivatives<br>Explorer</h1><p>Inspect expirations, strikes, liquidity and risk. Translate a market view into transparent option scenarios.</p></header>
-  <section class="dx-controls"><label>Product<select id="dxProduct"><option value="equity-options">Equity & ETF options</option><option value="index-options">Index options</option><option value="futures">Futures</option><option value="futures-options">Options on futures</option><option value="forex">FX & currency derivatives</option><option value="rates">Rates derivatives</option><option value="warrants">Warrants & structured products</option></select></label><label>Underlying<select id="dxSymbol"></select></label><label>Expiration<select id="dxExpiry"></select></label><label>Outlook<select id="dxOutlook"><option value="bullish">Bullish</option><option value="bearish">Bearish</option><option value="neutral">Neutral</option></select></label><button id="dxRun">Build scenario →</button></section>
+  <section class="dx-controls"><label>Market<select id="dxMarket"></select></label><label>Product<select id="dxProduct"><option value="equity-options">Equity & ETF options</option><option value="index-options">Index options</option><option value="futures">Futures</option><option value="futures-options">Options on futures</option><option value="forex">FX & currency derivatives</option><option value="rates">Rates derivatives</option><option value="warrants">Warrants & structured products</option></select></label><label>Underlying<select id="dxSymbol"></select></label><label>Expiration<select id="dxExpiry"></select></label><label>Outlook<select id="dxOutlook"><option value="bullish">Bullish</option><option value="bearish">Bearish</option><option value="neutral">Neutral</option></select></label><button id="dxRun">Build scenario →</button></section>
   <div class="dx-status" id="dxStatus">Loading option chains…</div>
   <main id="dxWorkspace" hidden>
     <section class="dx-snapshot"><div><span>Underlying</span><strong id="dxName">—</strong></div><div><span>Spot</span><strong id="dxSpot">—</strong></div><div><span>Expiration</span><strong id="dxDate">—</strong></div><div><span>Days remaining</span><strong id="dxDte">—</strong></div></section>
@@ -22,4 +22,5 @@ tool_theme: derivatives
   <footer><b>DATA NOTE</b><p>Availability on IBKR depends on jurisdiction, account permissions and market-data subscriptions. Options can lose their full value.</p></footer>
 </div>
 <script src="/assets/js/derivatives-explorer.js?v=4" defer></script>
-<script src="/assets/js/derivatives-products.js?v=1" defer></script>
+<script src="/assets/js/derivatives-products.js?v=2" defer></script>
+<script src="/assets/js/derivatives-markets.js?v=1" defer></script>

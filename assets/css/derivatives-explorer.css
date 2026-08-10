@@ -13,3 +13,9 @@
 .dx-product p{color:#d7e7e1!important;font-size:.7rem}
 @media(max-width:900px){.dx-controls{grid-template-columns:repeat(2,1fr)}.dx-product-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.dx-controls,.dx-product-grid{grid-template-columns:1fr}}
+.dx-controls{grid-template-columns:repeat(3,minmax(0,1fr))}
+.dx-controls button{min-height:58px}
+.dx-market-note{padding:1.2rem;color:#d7e7e1;background:#10251f;font:.7rem/1.6 var(--dx-mono)}
+.dx-market-note b{color:var(--dx-mint)}
+@media(max-width:720px){.dx-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.dx-controls{grid-template-columns:1fr}}
