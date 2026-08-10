@@ -12,3 +12,6 @@ html[data-theme=dark] .bi-shell{--bi-paper:#111a1b;--bi-card:#172223;--bi-ink:#e
 .bi-curve>div>strong{display:block;margin-top:.65rem;color:#f0c778;font:.72rem var(--bi-mono)}
 html[data-theme=dark] .bi-shell{--bi-paper:#10231e;--bi-card:#17342c;--bi-ink:#f4fff9;--bi-muted:#b8d8cd;--bi-line:#386858}
 html[data-theme=dark] .bi-picker,html[data-theme=dark] .bi-kpi,html[data-theme=dark] .bi-call-note,html[data-theme=dark] .bi-scenario,html[data-theme=dark] .bi-guide-grid div{background:#1c4036}
+.bi-picker-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:.7rem}
+.bi-picker input{width:100%;margin:.4rem 0 .7rem;padding:.75rem;border:1px solid #72a695;color:#153b32;background:#fffdf5;font:.7rem var(--bi-mono)}
+@media(max-width:650px){.bi-picker-grid{grid-template-columns:1fr}}
