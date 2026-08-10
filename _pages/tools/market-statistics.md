@@ -46,7 +46,12 @@ tool_theme: marketstats
       <label>Benchmark<select id="msBenchmark"></select></label>
     </section>
 
-    <section class="ms-kpis" id="msKpis"></section>
+    <nav class="ms-view-tabs" id="msViewTabs" aria-label="Research views">
+      <button class="active" data-view="overview">Overview</button><button data-view="market">Market &amp; indices</button><button data-view="financials">Financials</button><button data-view="economy">Macro &amp; micro</button><button data-view="news">News &amp; decision</button>
+    </nav>
+
+    <div class="ms-view active" data-panel="overview">
+      <section class="ms-kpis" id="msKpis"></section>
 
     <section class="ms-grid">
       <article class="ms-card ms-chart-card ms-price-card">
@@ -82,7 +87,18 @@ tool_theme: marketstats
         <div class="ms-chart ms-histogram" id="msHistogram"></div>
         <div class="ms-distribution" id="msDistribution"></div>
       </article>
-    </section>
+      </section>
+    </div>
+
+    <div class="ms-view" data-panel="market">
+      <section class="ms-detail-grid"><article class="ms-card"><header><div><span>Security identity</span><h3>Listing &amp; market</h3></div></header><div id="msListing"></div></article><article class="ms-card"><header><div><span>Benchmark map</span><h3>Index membership</h3></div></header><div id="msMemberships"></div></article><article class="ms-card ms-wide"><header><div><span>Relationship map</span><h3>Most correlated equities</h3></div><strong id="msCorrWindow">Selected period</strong></header><div id="msCorrelationLeaders"></div></article></section>
+    </div>
+
+    <div class="ms-view" data-panel="financials"><section class="ms-detail-grid"><article class="ms-card ms-wide"><header><div><span>Company reported</span><h3>Latest quarterly results</h3></div></header><div id="msFinancials"></div></article><article class="ms-card"><header><div><span>Market valuation</span><h3>Valuation context</h3></div></header><div id="msValuation"></div></article><article class="ms-card"><header><div><span>Evidence</span><h3>Data posture</h3></div></header><div id="msFinancialNote"></div></article></section></div>
+
+    <div class="ms-view" data-panel="economy"><section class="ms-detail-grid"><article class="ms-card"><header><div><span>Top-down lens</span><h3>Macro sensitivities</h3></div></header><div id="msMacro"></div></article><article class="ms-card"><header><div><span>Bottom-up lens</span><h3>Micro drivers</h3></div></header><div id="msMicro"></div></article><article class="ms-card ms-wide"><header><div><span>Scenario monitor</span><h3>What to watch</h3></div></header><div id="msWatch"></div></article></section></div>
+
+    <div class="ms-view" data-panel="news"><section class="ms-detail-grid"><article class="ms-card ms-wide"><header><div><span>Latest coverage</span><h3>Company news</h3></div></header><div id="msCompanyNews"></div></article><article class="ms-card"><header><div><span>Decision support</span><h3>Signal balance</h3></div></header><div id="msDecision"></div></article><article class="ms-card"><header><div><span>Discipline</span><h3>Proof &amp; invalidation</h3></div></header><div id="msProof"></div></article></section></div>
   </main>
 
   <footer class="ms-note"><span>METHOD</span><p>Adjusted daily closes. Statistics are historical estimates, not forecasts. The regime score combines observable trend, momentum, volatility and participation signals; it does not represent investor advice or a survey of investor opinion.</p></footer>
