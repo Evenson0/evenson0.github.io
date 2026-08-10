@@ -5,7 +5,7 @@ layout: single
 author_profile: true
 tool_theme: wealth
 ---
-<link rel="stylesheet" href="/assets/css/wealth-lab.css?v=5">
+<link rel="stylesheet" href="/assets/css/wealth-lab.css?v=6">
 <div class="wl-shell" id="wlShell">
  <header><span>Personal finance / annuities</span><h1>Wealth<br>Lab</h1><p>See how recurring contributions, time and compound returns build an account month by month.</p></header>
  <section class="wl-controls"><label>Start date<input id="wlStart" type="month" value="2026-08"></label><label>Initial amount ($)<input id="wlInitial" type="number" value="25"></label><label>Monthly contribution ($)<input id="wlMonthly" type="number" value="25"></label><label>Monthly return (%)<input id="wlRate" type="number" value="5" step="0.1"></label><label>Projection (years)<input id="wlYears" type="number" value="25" min="0.1" max="100" step="0.1"></label><label>Target ($)<input id="wlTarget" type="number" value="100000"></label></section>

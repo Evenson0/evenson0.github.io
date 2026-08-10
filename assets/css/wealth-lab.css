@@ -56,3 +56,5 @@
 #wlChart text,.wl-kpi span,.wl-kpi small,#wlGoals span,#wlGoals small{color:#285c4f!important;fill:#285c4f!important}
 html[data-theme="dark"] .wl-shell,html[data-theme="dark"] .wl-kpi,html[data-theme="dark"] .wl-chart-card,html[data-theme="dark"] .wl-goals,html[data-theme="dark"] .wl-table-card,html[data-theme="dark"] .wl-formula{color:#103e33!important;background:#fff9e9!important}
 html[data-theme="dark"] .wl-controls label{color:#0e5143!important;background:#fff9e9!important}
+.tool-theme-wealth,.tool-theme-wealth #main,.tool-theme-wealth .page,.tool-theme-wealth .page__inner-wrap,.tool-theme-wealth .page__content{background:#fff!important}
+html[data-theme="dark"] .tool-theme-wealth,html[data-theme="dark"] .tool-theme-wealth #main,html[data-theme="dark"] .tool-theme-wealth .page,html[data-theme="dark"] .tool-theme-wealth .page__inner-wrap,html[data-theme="dark"] .tool-theme-wealth .page__content{background:#08130f!important}

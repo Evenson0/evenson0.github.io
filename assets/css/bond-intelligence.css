@@ -17,3 +17,7 @@ html[data-theme=dark] .bi-picker,html[data-theme=dark] .bi-kpi,html[data-theme=d
 @media(max-width:650px){.bi-picker-grid{grid-template-columns:1fr}}
 .tool-theme-bonds,.tool-theme-bonds #main,.tool-theme-bonds .page,.tool-theme-bonds .page__inner-wrap,.tool-theme-bonds .page__content{background:#fff!important}
 html[data-theme=dark] .tool-theme-bonds,html[data-theme=dark] .tool-theme-bonds #main,html[data-theme=dark] .tool-theme-bonds .page,html[data-theme=dark] .tool-theme-bonds .page__inner-wrap,html[data-theme=dark] .tool-theme-bonds .page__content{background:#08130f!important}
+.bi-picker,.bi-picker label,.bi-picker-grid{min-width:0;max-width:100%}
+.bi-picker select{box-sizing:border-box;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+#biBond{min-height:210px;padding:.35rem;white-space:normal;background:#fffdf5}
+#biBond option{padding:.55rem .6rem;border-bottom:1px solid #b8d3c8;white-space:normal}
