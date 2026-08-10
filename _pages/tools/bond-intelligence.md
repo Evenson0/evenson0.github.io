@@ -1,5 +1,5 @@
 ---
-title: "Bond Intelligence"
+title: "Bonds"
 permalink: /tools/bond-intelligence/
 layout: single
 author_profile: true
@@ -7,7 +7,7 @@ tool_theme: bonds
 ---
 <link rel="stylesheet" href="/assets/css/bond-intelligence.css?v=1">
 <div class="bi-shell">
-  <header class="bi-hero"><span>Quantitative desk / fixed income</span><h1>Bond<br>Intelligence</h1><p>Translate coupon, price, maturity and call terms into yield, interest-rate risk and scenario outcomes.</p></header>
+  <header class="bi-hero"><span>Quantitative desk / fixed income</span><h1>Bonds</h1><p>Translate coupon, price, maturity and call terms into yield, interest-rate risk and scenario outcomes.</p></header>
   <section class="bi-curve"><div><span>Market reference</span><h2>US Treasury curve</h2><p id="biCurveDate">Loading cached rates…</p></div><div class="bi-curve-points" id="biCurve"></div></section>
   <main class="bi-main">
     <section class="bi-inputs"><header><span>01 / Terms</span><h2>Describe the bond</h2></header><div class="bi-fields">

@@ -281,7 +281,7 @@ tool_theme: atlas
 
     <a href="/tools/derivatives-explorer/" class="lab-card-link"><div class="lab-card"><h3>Derivatives Explorer</h3><p class="lab-card-desc">Inspect option chains, expirations, liquidity, implied volatility, Greeks, strategies, and payoff scenarios.</p></div></a>
 
-    <a href="/tools/bond-intelligence/" class="lab-card-link"><div class="lab-card"><h3>Bond Intelligence</h3><p class="lab-card-desc">Analyze coupon income, yield to maturity, yield to call, duration, convexity, and interest-rate scenarios.</p></div></a>
+    <a href="/tools/bond-intelligence/" class="lab-card-link"><div class="lab-card"><h3>Bonds</h3><p class="lab-card-desc">Analyze coupon income, yield to maturity, yield to call, duration, convexity, and interest-rate scenarios.</p></div></a>
 
     <a href="/tools/binomial-option-tree/" class="lab-card-link">
       <div class="lab-card">
