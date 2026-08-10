@@ -6,7 +6,7 @@ author_profile: true
 tool_theme: marketlab
 ---
 
-<link rel="stylesheet" href="/assets/css/market-lab.css?v=2">
+<link rel="stylesheet" href="/assets/css/market-lab.css?v=3">
 
 <div class="ml-shell" id="marketLab">
   <header class="ml-hero">
