@@ -21,3 +21,11 @@ html[data-theme=dark] .tool-theme-bonds,html[data-theme=dark] .tool-theme-bonds 
 .bi-picker select{box-sizing:border-box;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 #biBond{min-height:210px;padding:.35rem;white-space:normal;background:#fffdf5}
 #biBond option{padding:.55rem .6rem;border-bottom:1px solid #b8d3c8;white-space:normal}
+.bi-picker{border-color:#2d7462!important;color:#fff!important;background:#123f35!important}
+.bi-picker label,.bi-picker p,.bi-picker p b{color:#e9fff7!important}
+.bi-picker select,.bi-picker input,.bi-fields input,.bi-fields select,html[data-theme=dark] .bi-fields input,html[data-theme=dark] .bi-fields select{border-color:#4a8d79!important;color:#fff!important;background:#195547!important;color-scheme:dark}
+.bi-picker select option,.bi-fields select option{color:#fff;background:#195547}
+.bi-kpi,.bi-call-note,.bi-scenario,.bi-guide-grid div,html[data-theme=dark] .bi-kpi,html[data-theme=dark] .bi-call-note,html[data-theme=dark] .bi-scenario,html[data-theme=dark] .bi-guide-grid div{color:#fff!important;background:#123f35!important}
+.bi-kpi span,.bi-kpi small,.bi-scenario span,.bi-guide-grid p,.bi-call-note{color:#cceadf!important}
+.bi-kpi strong,.bi-scenario b,.bi-guide-grid b{color:#fff!important}
+.bi-scenario small.up{color:#8de0c8!important}.bi-scenario small.down{color:#ffaaa1!important}
