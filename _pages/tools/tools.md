@@ -168,7 +168,7 @@ tool_theme: atlas
   }
 
   .tool-theme-atlas {
-    background: #dcebe2;
+    background: #fffdf5;
   }
 
   .tool-theme-atlas .page__inner-wrap > header {
@@ -254,12 +254,17 @@ tool_theme: atlas
   .tool-theme-atlas .page,
   .tool-theme-atlas .page__inner-wrap,
   .tool-theme-atlas .page__content {
-    background: #dcebe2 !important;
+    background: #fffdf5 !important;
   }
 
-  .tool-theme-atlas .lab-shell,
-  .tool-theme-atlas .lab-grid {
+  .tool-theme-atlas .lab-shell {
     background: #fffdf5 !important;
+  }
+
+  .tool-theme-atlas .lab-grid {
+    padding: 8px;
+    border-radius: 20px;
+    background: #b9dfd0 !important;
   }
 
   html[data-theme="dark"] .tool-theme-atlas #main,

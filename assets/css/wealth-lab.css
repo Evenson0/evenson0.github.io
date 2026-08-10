@@ -1,4 +1,5 @@
 :root{--w-bg:#e8f4ed;--w-card:#fffdf7;--w-ink:#153b32;--w-muted:#42675d;--w-green:#087263;--w-mint:#9bd9c6;--w-gold:#d8a453;--w-line:#a9ccbe;--w-mono:"JetBrains Mono",monospace;--w-serif:"Playfair Display",Georgia,serif}
+#wlRun,.wl-gate{display:none!important}
 .tool-theme-wealth,.tool-theme-wealth #main,.tool-theme-wealth .page,.tool-theme-wealth .page__inner-wrap,.tool-theme-wealth .page__content{background:#dcebe2!important}
 .tool-theme-wealth .page__inner-wrap>header{display:none}
 .wl-shell{max-width:1120px;margin:1rem auto 4rem;color:var(--w-ink);background:var(--w-bg);border:1px solid var(--w-line);box-shadow:0 24px 60px rgba(20,73,61,.13)}
