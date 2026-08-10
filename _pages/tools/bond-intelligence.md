@@ -5,7 +5,7 @@ layout: single
 author_profile: true
 tool_theme: bonds
 ---
-<link rel="stylesheet" href="/assets/css/bond-intelligence.css?v=3">
+<link rel="stylesheet" href="/assets/css/bond-intelligence.css?v=4">
 <div class="bi-shell">
   <header class="bi-hero"><span>Quantitative desk / fixed income</span><h1>Bonds</h1><p>Translate coupon, price, maturity and call terms into yield, interest-rate risk and scenario outcomes.</p></header>
   <section class="bi-curve"><div><span>Market reference</span><h2>Rates dashboard</h2><p id="biCurveDate">Loading cached rates…</p><strong id="biPolicyRate"></strong></div><div class="bi-curve-points" id="biCurve"></div></section>

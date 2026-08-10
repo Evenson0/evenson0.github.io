@@ -15,3 +15,5 @@ html[data-theme=dark] .bi-picker,html[data-theme=dark] .bi-kpi,html[data-theme=d
 .bi-picker-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:.7rem}
 .bi-picker input{width:100%;margin:.4rem 0 .7rem;padding:.75rem;border:1px solid #72a695;color:#153b32;background:#fffdf5;font:.7rem var(--bi-mono)}
 @media(max-width:650px){.bi-picker-grid{grid-template-columns:1fr}}
+.tool-theme-bonds,.tool-theme-bonds #main,.tool-theme-bonds .page,.tool-theme-bonds .page__inner-wrap,.tool-theme-bonds .page__content{background:#fff!important}
+html[data-theme=dark] .tool-theme-bonds,html[data-theme=dark] .tool-theme-bonds #main,html[data-theme=dark] .tool-theme-bonds .page,html[data-theme=dark] .tool-theme-bonds .page__inner-wrap,html[data-theme=dark] .tool-theme-bonds .page__content{background:#08130f!important}
