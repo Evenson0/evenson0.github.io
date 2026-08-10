@@ -270,6 +270,15 @@ tool_theme: atlas
       </div>
     </a>
 
+    <a href="/tools/market-statistics/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Market Statistics</h3>
+        <p class="lab-card-desc">
+          Search an index, ETF, or equity and examine its performance, volatility, drawdown, moving averages, momentum, and benchmark correlation.
+        </p>
+      </div>
+    </a>
+
     <a href="/tools/binomial-option-tree/" class="lab-card-link">
       <div class="lab-card">
         <h3>Binomial Option Tree</h3>

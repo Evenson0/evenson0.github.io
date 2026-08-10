@@ -78,9 +78,9 @@ tool_theme: marketlab
   <section class="ml-desk">
     <div class="ml-section-head"><div><span class="ml-index">02</span><h2>Quantitative desk</h2></div><p>Move from observation to analysis</p></div>
     <div class="ml-tool-grid">
-      <a href="/tools/binomial-option-tree/"><span>Derivatives</span><strong>Option Tree</strong><p>Price European and American options by backward induction.</p><i>Open model ↗</i></a>
-      <a href="/tools/financial-math-calculator/"><span>Valuation</span><strong>Financial Calculator</strong><p>Solve rates, annuities, bonds and accumulation problems.</p><i>Open calculator ↗</i></a>
-      <a href="/portfolio/pairs-trading-research/"><span>Research</span><strong>Pairs Trading</strong><p>Explore cointegration, spread dynamics and relative value.</p><i>Read research ↗</i></a>
+      <a href="/tools/market-statistics/"><span>Analytics</span><strong>Market Statistics</strong><p>Study performance, risk, trend, drawdown and correlation for indices, ETFs and equities.</p><i>Open terminal ↗</i></a>
+      <div class="ml-tool-planned"><span>Derivatives</span><strong>Derivatives Explorer</strong><p>Compare option chains, expirations, strategies and scenario payoffs.</p><i>In development</i></div>
+      <div class="ml-tool-planned"><span>Fixed income</span><strong>Bond Intelligence</strong><p>Compare coupons, yields, duration, call risk and interest-rate scenarios.</p><i>In development</i></div>
     </div>
   </section>
 

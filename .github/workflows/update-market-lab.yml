@@ -24,11 +24,13 @@ jobs:
       - name: Install market-data client
         run: pip install "yfinance>=0.2.54,<2"
       - name: Build market snapshot
-        run: python scripts/update_market_lab.py
+        run: |
+          python scripts/update_market_lab.py
+          python scripts/update_market_statistics.py
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/market-lab.json
+          git add assets/data/market-lab.json assets/data/market-statistics.json
           git diff --cached --quiet || git commit -m "Update Market Lab data"
           git push
