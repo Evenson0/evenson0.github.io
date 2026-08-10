@@ -366,7 +366,7 @@ tool_theme: atlas
 
     <a href="/tools/bond-intelligence/" class="lab-card-link"><div class="lab-card"><h3>Bonds</h3><p class="lab-card-desc">Analyze coupon income, yield to maturity, yield to call, duration, convexity, and interest-rate scenarios.</p></div></a>
 
-    <a href="/tools/wealth-lab/" class="lab-card-link"><div class="lab-card"><h3>Personal Wealth Lab</h3><p class="lab-card-desc">Explore annuities, monthly contributions, compound returns, financial targets, and month-by-month account growth.</p></div></a>
+    <a href="/tools/wealth-lab/" class="lab-card-link"><div class="lab-card"><h3>Wealth Lab</h3><p class="lab-card-desc">Explore annuities, monthly contributions, compound returns, financial targets, and month-by-month account growth.</p></div></a>
 
     <a href="/tools/binomial-option-tree/" class="lab-card-link">
       <div class="lab-card">

@@ -69,11 +69,6 @@
     $("wlFormula").innerHTML = `Monthly annuity: <b>FV = P(1+r)<sup>n</sup> + PMT × [((1+r)<sup>n</sup> − 1) / r]</b>, where r = ${(rate*100).toFixed(2)}% per month. The effective annual return is <b>(1+r)<sup>12</sup> − 1 = ${(annual*100).toFixed(2)}%</b>. Contributions are made at month-end.`;
   }
 
-  function unlock() {
-    if ($("wlCode").value.trim() !== "richman42") { $("wlGateError").textContent = "Incorrect access code."; return; }
-    $("wlGate").hidden = true; $("wlShell").hidden = false; render();
-  }
-  $("wlUnlock").onclick = unlock;
-  $("wlCode").onkeydown = event => { if (event.key === "Enter") unlock(); };
   $("wlRun").onclick = render;
+  render();
 })();
