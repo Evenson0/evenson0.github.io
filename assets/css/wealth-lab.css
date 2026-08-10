@@ -19,7 +19,7 @@
 .wl-kpi strong{display:block;margin:.45rem 0;color:var(--w-ink);font:700 1.08rem var(--w-mono)}
 .wl-kpi small{color:var(--w-muted);font:.58rem/1.5 var(--w-mono)}
 .wl-chart-card h2,.wl-goals h2,.wl-table-card h2{margin:.3rem 0;color:var(--w-ink);font:600 1.35rem var(--w-serif)}
-.wl-chart-card{border-top:4px solid var(--w-primary)}
+.wl-chart-card{border-top:1px solid var(--w-line)}
 .wl-controls label{background:#dceffc!important}
 .wl-kpi,.wl-chart-card,.wl-goals,.wl-table-card,.wl-formula{background:#e5f3fc!important}
 .wl-kpi:nth-child(even){background:#cfe8f7!important}
