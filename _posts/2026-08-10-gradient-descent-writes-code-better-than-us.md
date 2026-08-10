@@ -1,19 +1,16 @@
 ---
-
 title: "Gradient Descent Writes Code Better Than Us"
 date: 2026-08-10
 permalink: /posts/2026/08/10/gradient-descent-writes-code-better-than-us
 tags:
-
-* artificial intelligence
-* machine learning
-* deep learning
-* gpt
-* transformers
-* gradient descent
-* neural networks
-* andrej karpathy
-
+  - artificial-intelligence
+  - machine-learning
+  - deep-learning
+  - gpt
+  - transformers
+  - gradient-descent
+  - neural-networks
+  - andrej-karpathy
 ---
 
 In 2017, Andrej Karpathy, one of the most influential contemporary contributors to artificial intelligence, posted the following sentence on Twitter:
