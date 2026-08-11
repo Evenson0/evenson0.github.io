@@ -1,53 +1,53 @@
 {
-  "updated_at": "2026-08-11T19:48:59.850962+00:00",
+  "updated_at": "2026-08-11T21:06:31.471606+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7726.5098,
-        "change_pct": -0.343,
+        "price": 7728.2002,
+        "change_pct": -0.321,
         "low_52w": 6343.7202,
         "high_52w": 7757.6401
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26433.2812,
-        "change_pct": -0.647,
+        "price": 26445.4453,
+        "change_pct": -0.601,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53808.8906,
-        "change_pct": -0.31,
-        "low_52w": 43975.0898,
+        "price": 53791.8516,
+        "change_pct": -0.341,
+        "low_52w": 44458.6094,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36499.2383,
-        "change_pct": 0.112,
+        "price": 36475.9219,
+        "change_pct": 0.048,
         "low_52w": 27775.1992,
-        "high_52w": 36499.2383
+        "high_52w": 36475.9219
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.31,
-        "change_pct": 0.074,
+        "price": 54.28,
+        "change_pct": 0.018,
         "low_52w": 41.86,
-        "high_52w": 54.31
+        "high_52w": 54.28
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3030.2275,
-        "change_pct": 0.425,
-        "low_52w": 2216.51,
+        "price": 3027.1155,
+        "change_pct": 0.322,
+        "low_52w": 2269.3501,
         "high_52w": 3036.98
       },
       {
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 304.284,
-        "change_pct": -1.29,
+        "price": 304.91,
+        "change_pct": -1.087,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 503.48,
-        "change_pct": -0.51,
+        "price": 503.81,
+        "change_pct": -0.445,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 217.29,
-        "change_pct": -0.12,
+        "price": 217.5,
+        "change_pct": -0.023,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 273.196,
-        "change_pct": -1.76,
+        "price": 272.27,
+        "change_pct": -2.093,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 293.37,
-        "change_pct": -0.245,
+        "price": 293.12,
+        "change_pct": -0.33,
         "low_52w": 183.87,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 213.64,
-        "change_pct": -1.138,
+        "price": 212.3,
+        "change_pct": -1.758,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.04,
-        "change_pct": 0.975,
+        "price": 175.72,
+        "change_pct": 0.792,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.392,
-        "change_pct": -0.224,
+        "price": 1.3921,
+        "change_pct": -0.214,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1546,
-        "change_pct": -0.09,
+        "price": 1.1545,
+        "change_pct": -0.102,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -180,15 +180,15 @@
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
         "price": 1.3506,
-        "change_pct": 0.115,
+        "change_pct": 0.116,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.26,
-        "change_pct": 0.867,
+        "price": 159.266,
+        "change_pct": 0.871,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4428.8999,
-        "change_pct": 1.538,
+        "price": 4427.8999,
+        "change_pct": 1.515,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 83.38,
-        "change_pct": 1.522,
+        "price": 83.25,
+        "change_pct": 1.364,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.767,
-        "change_pct": -0.966,
+        "price": 2.748,
+        "change_pct": -1.646,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6355,
-        "change_pct": 0.622,
+        "price": 6.6275,
+        "change_pct": 0.5,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -248,8 +248,8 @@
   ],
   "news": [
     {
-      "title": "Earnings live updates: Plug Power stock jumps on improved margins, On Holding tanks",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-plug-power-stock-jumps-on-improved-margins-on-holding-tanks-202302733.html",
+      "title": "Older Americans are dropping out of the workforce. Blame the soaring stock market.",
+      "link": "https://finance.yahoo.com/markets/article/older-americans-are-dropping-out-of-the-workforce-blame-the-soaring-stock-market-201231934.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
@@ -262,31 +262,38 @@
       "time": "Latest"
     },
     {
-      "title": "This Buffett Oil Stock Is Quietly Outperforming Chevron Under Greg Abel. Is It Worth Buying Now?",
-      "link": "https://www.fool.com/investing/2026/08/11/this-buffett-oil-stock-is-quietly-outperforming-ch/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "3 of the Best Dividend Stocks to Buy for Under $100 Right Now",
-      "link": "https://www.fool.com/investing/2026/08/11/3-of-the-best-dividend-stocks-to-buy-for-under-100/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Dow Jones AI Giants Nvidia, Amazon In Or Near Buy Zones; Avnet, Okta Are Stocks To Watch",
-      "link": "https://www.investors.com/stock-lists/stocks-near-a-buy-zone/dow-jones-ai-giants-nvidia-stock-nvda-amazon-amzn/?src=A00220&yptr=yahoo",
+      "title": "Dow Jones Futures: Stocks Pause Before CPI Inflation; 3 Nvidia Partners Lead Earnings Movers Late",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-stocks-pause-before-cpi-inflation-3-nvidia-partners-lead-earnings-movers-late/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Joby Aviation Stock Is Priced For An Aircraft That Has Yet To Fly A Passenger",
-      "link": "https://www.trefis.com/articles/611004/joby-aviation-stock-is-priced-for-an-aircraft-that-has-yet-to-fly-a-passenger/2026-08-11",
-      "publisher": "Trefis",
+      "title": "This 5.3% Monthly Payer Only Buys Stocks That Raised Dividends 10 Straight Years, It’s Up 18.5% in 2026",
+      "link": "https://247wallst.com/investing/2026/08/11/this-5-3-monthly-payer-only-buys-stocks-that-raised-dividends-10-straight-years-its-up-18-5-in-2026/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today: Dow Skids, Oil Pops As Iran Says This On Hormuz; SpaceX Shares Take A Dive (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-us-iran-spacex-rocket-lab-rklb/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Update: Equities Post Back-to-Back Declines Amid Hormuz Deal Doubts",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/equities-post-back-back-declines-202958244.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Closes at Fresh Record High as Oil, Utilities and Telecom Stocks Rise",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-204156569.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -320,13 +327,6 @@
     {
       "title": "TSX Closer: Index Slips From Record High as Tech Weakness Offsets Oil-Driven Energy Gains",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-slips-record-203317614.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: The Index Tops 36,000 for the First Time as Metals Rally Offsets Energy Weakness",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-tops-36-202911459.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
