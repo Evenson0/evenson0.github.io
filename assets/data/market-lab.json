@@ -1,60 +1,60 @@
 {
-  "updated_at": "2026-08-11T14:46:40.670067+00:00",
+  "updated_at": "2026-08-11T15:44:40.875525+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7759.9502,
-        "change_pct": 0.088,
+        "price": 7744.1201,
+        "change_pct": -0.116,
         "low_52w": 6343.7202,
-        "high_52w": 7759.9502
+        "high_52w": 7757.6401
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26598.0625,
-        "change_pct": -0.027,
+        "price": 26525.2441,
+        "change_pct": -0.301,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53987.0117,
-        "change_pct": 0.02,
+        "price": 53926.7383,
+        "change_pct": -0.091,
         "low_52w": 43975.0898,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36577.1797,
-        "change_pct": 0.326,
+        "price": 36519.4414,
+        "change_pct": 0.168,
         "low_52w": 27775.1992,
-        "high_52w": 36577.1797
+        "high_52w": 36519.4414
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.44,
-        "change_pct": 0.313,
+        "price": 54.39,
+        "change_pct": 0.221,
         "low_52w": 41.86,
-        "high_52w": 54.44
+        "high_52w": 54.39
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3033.4673,
-        "change_pct": 0.532,
+        "price": 3028.0569,
+        "change_pct": 0.353,
         "low_52w": 2216.51,
         "high_52w": 3036.98
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10858.7803,
-        "change_pct": -0.034,
+        "price": 10849.2197,
+        "change_pct": -0.122,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 306.89,
-        "change_pct": -0.444,
+        "price": 307.21,
+        "change_pct": -0.341,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 503.34,
-        "change_pct": -0.537,
+        "price": 501.075,
+        "change_pct": -0.985,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 219.13,
-        "change_pct": 0.726,
+        "price": 218.785,
+        "change_pct": 0.568,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 274.695,
-        "change_pct": -1.221,
+        "price": 272.47,
+        "change_pct": -2.021,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 293.5,
-        "change_pct": -0.201,
+        "price": 293.95,
+        "change_pct": -0.048,
         "low_52w": 183.87,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 214.99,
-        "change_pct": -0.514,
+        "price": 212.03,
+        "change_pct": -1.883,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 175.48,
-        "change_pct": 0.654,
+        "price": 175.34,
+        "change_pct": 0.574,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -137,16 +137,16 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.387,
-        "change_pct": -0.409,
+        "price": 4.391,
+        "change_pct": -0.318,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.684,
-        "change_pct": -0.319,
+        "price": 4.686,
+        "change_pct": -0.277,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.393,
-        "change_pct": -0.151,
+        "price": 1.3929,
+        "change_pct": -0.161,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1546,
-        "change_pct": -0.09,
+        "price": 1.1541,
+        "change_pct": -0.136,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3509,
-        "change_pct": 0.137,
+        "price": 1.3506,
+        "change_pct": 0.111,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.219,
-        "change_pct": 0.841,
+        "price": 159.315,
+        "change_pct": 0.902,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4450.0,
-        "change_pct": 2.022,
+        "price": 4438.3999,
+        "change_pct": 1.756,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.15,
-        "change_pct": 0.024,
+        "price": 83.03,
+        "change_pct": 1.096,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.767,
-        "change_pct": -0.966,
+        "price": 2.755,
+        "change_pct": -1.396,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6555,
-        "change_pct": 0.925,
+        "price": 6.6345,
+        "change_pct": 0.607,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -235,11 +235,11 @@
     },
     {
       "term": "5Y",
-      "value": 4.387
+      "value": 4.391
     },
     {
       "term": "10Y",
-      "value": 4.684
+      "value": 4.686
     },
     {
       "term": "30Y",
@@ -269,23 +269,23 @@
       "time": "Latest"
     },
     {
-      "title": "'An unprecedented boom': Corporate profits are on pace for fastest growth since 2021",
-      "link": "https://finance.yahoo.com/markets/article/an-unprecedented-boom-corporate-profits-are-on-pace-for-fastest-growth-since-2021-152552912.html",
-      "publisher": "Yahoo Finance",
+      "title": "The S&P 500 Is at Record Highs and Hasn't Been This Expensive in Decades. History Says This Could Happen Next",
+      "link": "https://www.fool.com/investing/2026/08/11/the-sp-500-is-at-record-highs-and-hasnt-been-this/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "JB Global Capital: Lessons from Lululemon’s (LULU) Investment Case",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jb-global-capital-lessons-lululemon-142709356.html",
-      "publisher": "Insider Monkey",
+      "title": "The Market Now Says a Rate HIKE Is Coming. There’s a Dividend Fund Literally Built for This",
+      "link": "https://247wallst.com/investing/2026/08/11/the-market-now-says-a-rate-hike-is-coming-theres-a-dividend-fund-literally-built-for-this/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Flowers Foods (FLO) Cuts Dividend to Strengthen Financial Health",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/flowers-foods-flo-cuts-dividend-142459308.html",
-      "publisher": "Insider Monkey",
+      "title": "The Stock Market Is at a Stop Light. Wall Street Awaits ‘Green Light’ on Iran, Inflation.",
+      "link": "https://www.barrons.com/livecoverage/stock-market-news-today-081126/card/the-stock-market-is-at-a-stop-light-wall-street-awaits-green-light-on-iran-inflation--yTPMisfoWxWanNnVH936?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
