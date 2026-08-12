@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T21:30:13.175641+00:00",
+  "updated_at": "2026-08-12T22:25:00.980688+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3936,
-        "change_pct": 0.017,
+        "price": 1.3942,
+        "change_pct": 0.062,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1527,
-        "change_pct": -0.165,
+        "price": 1.1529,
+        "change_pct": -0.153,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3495,
-        "change_pct": -0.124,
+        "price": 1.3493,
+        "change_pct": -0.134,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.381,
-        "change_pct": 0.141,
+        "price": 159.43,
+        "change_pct": 0.172,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,24 +197,24 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4469.0,
-        "change_pct": 1.962,
+        "price": 4461.6001,
+        "change_pct": 1.793,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.58,
-        "change_pct": -0.745,
+        "price": 82.72,
+        "change_pct": -0.577,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.793,
-        "change_pct": 0.94,
+        "price": 2.791,
+        "change_pct": 0.867,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
@@ -262,29 +262,29 @@
       "time": "Latest"
     },
     {
+      "title": "Dow Jones Futures: Cisco, Coherent Are Earnings Movers Late After Nebius, Lumentum, CoreWeave Lead AI Rally",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-cisco-coherent-earnings-movers-nebius-lumentum-coreweave-ai-rally/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Cathie Wood buys $16.2 million of popular semiconductor stock",
+      "link": "https://www.thestreet.com/investing/stocks/cathie-wood-buys-16-million-semiconductor-stock-broadcom-avgo",
+      "publisher": "TheStreet",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Which Is the Better Energy Sector ETF, VanEck's Nuclear-Focused NLR or First Trust's EMLP Targeting Energy Infrastructure?",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/12/which-is-the-better-energy-sector-etf-vaneck-s-nuclear-focused-nlr-or-first-trust-s-emlp-targeting-energy-infrastructure/",
+      "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
       "title": "Stock Market Today, Aug. 12: Stocks Edge Higher as Inflation Data Eases Fed Rate Pressure",
       "link": "https://www.fool.com/coverage/stock-market-today/2026/08/12/stock-market-today-aug-12-stocks-edge-higher-as-inflation-data-eases-fed-rate-pressure/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today, Aug. 12: Nebius Group Surges on Massive Revenue Growth",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/12/stock-market-today-aug-12-nebius-group-surges-on-massive-revenue-growth/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Jamie Dimon Just Issued a 9-Word Warning to Stock Investors. Here's What History Says Comes Next.",
-      "link": "https://www.fool.com/investing/2026/08/12/jamie-dimon-just-issued-a-9-word-warning-to-stock/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today, Aug. 12: Wendy's Surges 15% on Take-Private Bid Report",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/12/stock-market-today-aug-12-wendy-s-surges-15-on-take-private-bid-report/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
