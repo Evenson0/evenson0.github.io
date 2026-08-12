@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-08-12T13:51:11.701765+00:00",
+  "updated_at": "2026-08-12T15:16:36.212559+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7757.3398,
-        "change_pct": 0.377,
+        "price": 7744.9502,
+        "change_pct": 0.217,
         "low_52w": 6343.7202,
         "high_52w": 7757.6401
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26643.1816,
-        "change_pct": 0.748,
+        "price": 26576.0234,
+        "change_pct": 0.494,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53869.8594,
-        "change_pct": 0.145,
+        "price": 53774.0781,
+        "change_pct": -0.033,
         "low_52w": 44458.6094,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36586.6602,
-        "change_pct": 0.304,
+        "price": 36608.5195,
+        "change_pct": 0.364,
         "low_52w": 27823.9004,
-        "high_52w": 36586.6602
+        "high_52w": 36608.5195
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.4,
-        "change_pct": 0.221,
+        "price": 54.48,
+        "change_pct": 0.368,
         "low_52w": 41.93,
-        "high_52w": 54.4
+        "high_52w": 54.48
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3043.5161,
-        "change_pct": 0.542,
+        "price": 3029.9434,
+        "change_pct": 0.093,
         "low_52w": 2269.3501,
-        "high_52w": 3043.5161
+        "high_52w": 3036.98
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10822.9404,
-        "change_pct": -0.196,
+        "price": 10819.5498,
+        "change_pct": -0.227,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 67524.0625,
-        "change_pct": 0.827,
+        "price": 66970.2188,
+        "change_pct": 2.078,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 302.955,
-        "change_pct": -0.641,
+        "price": 301.695,
+        "change_pct": -1.054,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 495.535,
-        "change_pct": -1.642,
+        "price": 493.575,
+        "change_pct": -2.032,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 223.075,
-        "change_pct": 2.563,
+        "price": 223.82,
+        "change_pct": 2.906,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 271.4001,
-        "change_pct": -0.32,
+        "price": 269.07,
+        "change_pct": -1.175,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 295.09,
-        "change_pct": 0.672,
+        "price": 295.7,
+        "change_pct": 0.88,
         "low_52w": 185.73,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 210.25,
-        "change_pct": -0.966,
+        "price": 208.93,
+        "change_pct": -1.587,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 175.78,
-        "change_pct": 0.034,
+        "price": 175.67,
+        "change_pct": -0.028,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.707,
-        "change_pct": -0.617,
+        "price": 3.71,
+        "change_pct": -0.536,
         "low_52w": 3.507,
         "high_52w": 4.13
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.348,
-        "change_pct": -0.844,
-        "low_52w": 3.512,
+        "price": 4.366,
+        "change_pct": -0.433,
+        "low_52w": 4.324,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.66,
-        "change_pct": -0.512,
+        "price": 4.678,
+        "change_pct": -0.128,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.225,
-        "change_pct": -0.21,
+        "price": 5.242,
+        "change_pct": 0.115,
         "low_52w": 4.539,
         "high_52w": 5.275
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3916,
-        "change_pct": -0.126,
+        "price": 1.392,
+        "change_pct": -0.099,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1554,
-        "change_pct": 0.066,
+        "price": 1.1546,
+        "change_pct": -0.003,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3525,
-        "change_pct": 0.103,
+        "price": 1.3509,
+        "change_pct": -0.019,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.954,
-        "change_pct": -0.127,
+        "price": 159.208,
+        "change_pct": 0.033,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,16 +197,16 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4470.6001,
-        "change_pct": 1.999,
+        "price": 4475.8999,
+        "change_pct": 2.12,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.77,
-        "change_pct": -0.517,
+        "price": 83.18,
+        "change_pct": -0.024,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
@@ -221,8 +221,8 @@
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.647,
-        "change_pct": 0.529,
+        "price": 6.636,
+        "change_pct": 0.363,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -231,19 +231,19 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.707
+      "value": 3.71
     },
     {
       "term": "5Y",
-      "value": 4.348
+      "value": 4.366
     },
     {
       "term": "10Y",
-      "value": 4.66
+      "value": 4.678
     },
     {
       "term": "30Y",
-      "value": 5.225
+      "value": 5.242
     }
   ],
   "news": [
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Rises On Key Inflation Data; Nvidia Partner CoreWeave Soars On Results (Live Coverage)",
+      "title": "Baron Opportunity Fund Trimmed Datadog (DDOG) After Rally",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/baron-opportunity-fund-trimmed-datadog-145853537.html",
+      "publisher": "Insider Monkey",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Here’s Why Baron Opportunity Fund Sold CoStar Group (CSGP)",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-baron-opportunity-fund-sold-144559444.html",
+      "publisher": "Insider Monkey",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq Leads Charge As Super Micro Jumps Higher (Live Coverage)",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-july-cpi-inflation-nvidia-partner-coreweave/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "S&P 500, Nasdaq open higher after inflation data, earnings boost",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-open-higher-133504042.html",
-      "publisher": "Reuters",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Exchange-Traded Funds, Equity Futures Gain Pre-Bell Wednesday Amid In-Line Consumer Inflation Data, Tech Gains",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-131639194.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "CPI Inflation Data Cools As Expected, May Keep Fed Rate Hikes On Hold (Live Coverage)",
-      "link": "https://www.investors.com/news/cpi-inflation-july-federal-reserve-rate-hike-apple-sp-500/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Micron Technology’s (MU) Competitive Edge in a Rapidly Evolving Industry",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-competitive-edge-143850791.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
     },
