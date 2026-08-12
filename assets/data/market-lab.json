@@ -1,54 +1,54 @@
 {
-  "updated_at": "2026-08-12T19:29:03.036095+00:00",
+  "updated_at": "2026-08-12T20:24:53.137956+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7751.1299,
-        "change_pct": 0.297,
+        "price": 7748.5,
+        "change_pct": 0.263,
         "low_52w": 6343.7202,
         "high_52w": 7757.6401
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26606.709,
-        "change_pct": 0.61,
+        "price": 26588.4883,
+        "change_pct": 0.541,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53813.5508,
-        "change_pct": 0.04,
-        "low_52w": 44458.6094,
+        "price": 53770.2695,
+        "change_pct": -0.04,
+        "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36671.8789,
-        "change_pct": 0.537,
+        "price": 36662.1406,
+        "change_pct": 0.511,
         "low_52w": 27823.9004,
-        "high_52w": 36671.8789
+        "high_52w": 36662.1406
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.6,
-        "change_pct": 0.59,
+        "price": 54.58,
+        "change_pct": 0.553,
         "low_52w": 41.93,
-        "high_52w": 54.6
+        "high_52w": 54.58
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3050.2913,
-        "change_pct": 0.765,
+        "price": 3045.4829,
+        "change_pct": 0.607,
         "low_52w": 2269.3501,
-        "high_52w": 3050.2913
+        "high_52w": 3045.4829
       },
       {
         "symbol": "^FTSE",
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 301.6557,
-        "change_pct": -1.067,
+        "price": 302.25,
+        "change_pct": -0.872,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 494.585,
-        "change_pct": -1.831,
+        "price": 492.43,
+        "change_pct": -2.259,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 222.9276,
-        "change_pct": 2.495,
+        "price": 224.09,
+        "change_pct": 3.03,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 268.84,
-        "change_pct": -1.26,
+        "price": 267.28,
+        "change_pct": -1.833,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 297.15,
-        "change_pct": 1.375,
+        "price": 297.56,
+        "change_pct": 1.515,
         "low_52w": 185.73,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 208.0,
-        "change_pct": -3.748,
+        "price": 209.78,
+        "change_pct": -2.925,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.07,
-        "change_pct": 0.199,
+        "price": 176.01,
+        "change_pct": 0.165,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3944,
-        "change_pct": 0.073,
+        "price": 1.3943,
+        "change_pct": 0.064,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -179,16 +179,16 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3492,
-        "change_pct": -0.146,
+        "price": 1.3491,
+        "change_pct": -0.148,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.481,
-        "change_pct": 0.204,
+        "price": 159.466,
+        "change_pct": 0.195,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4477.8999,
-        "change_pct": 2.165,
+        "price": 4469.2998,
+        "change_pct": 1.969,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 83.14,
-        "change_pct": -0.072,
+        "price": 82.86,
+        "change_pct": -0.409,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.792,
-        "change_pct": 0.904,
+        "price": 2.794,
+        "change_pct": 0.976,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6145,
-        "change_pct": 0.038,
+        "price": 6.607,
+        "change_pct": -0.076,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -248,44 +248,44 @@
   ],
   "news": [
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq rise after CPI data cools slightly",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-august-12-dow-sp-500-nasdaq-cpi-report-091555133.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Forget big tech: the real AI money is in plumbing",
-      "link": "https://finance.yahoo.com/video/forget-big-tech-real-ai-100000112.html",
+      "title": "Goldman Sachs is 'all in' on ETFs. But why?",
+      "link": "https://finance.yahoo.com/video/goldman-sachs-etfs-why-180000631.html",
       "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Older Americans are dropping out of the workforce. Blame the soaring stock market.",
-      "link": "https://finance.yahoo.com/markets/article/older-americans-are-dropping-out-of-the-workforce-blame-the-soaring-stock-market-201231934.html",
-      "publisher": "Yahoo Finance",
+      "title": "US Equity Markets End Mixed Amid Tech Stock Gains, Lower Inflation Data",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-end-mixed-201441316.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why SpaceX Stock Just Gained 11%",
-      "link": "https://www.fool.com/investing/2026/08/12/why-spacex-stock-just-gained-11/",
+      "title": "VBR vs. IWN: Which Small-Cap Value ETF Is the Better Buy?",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/12/vbr-vs-iwn-which-small-cap-value-etf-is-the-better-buy/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why Oracle Stock Just Jumped",
-      "link": "https://www.fool.com/investing/2026/08/12/why-oracle-stock-just-jumped/",
+      "title": "S&P 500 ends higher as CoreWeave results fuel AI optimism",
+      "link": "https://finance.yahoo.com/economy/policy/articles/wall-st-futures-tick-heading-102342692.html",
+      "publisher": "Reuters",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Which Is the Better S&P 500 ETF, Vanguard's VOO or the iShares IVV?",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/12/which-is-the-better-s-and-p-500-etf-vanguard-s-voo-or-the-ishares-ivv/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Nasdaq Gains As Nvidia Rises; Wendy's Soars On Deal News (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-july-cpi-inflation-nvidia-partner-coreweave/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Update: US Equity Indexes Rise as Chipmakers Boost Technology, Cooling Inflation Lifts Bets for Fed Policy Pause",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-chipmakers-195237541.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
