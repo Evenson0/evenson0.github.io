@@ -1,54 +1,54 @@
 {
-  "updated_at": "2026-08-13T16:38:06.042651+00:00",
+  "updated_at": "2026-08-13T17:44:52.015105+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7787.6602,
-        "change_pct": 0.505,
+        "price": 7790.0498,
+        "change_pct": 0.536,
         "low_52w": 6343.7202,
-        "high_52w": 7787.6602
+        "high_52w": 7790.0498
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26762.4902,
-        "change_pct": 0.654,
+        "price": 26783.832,
+        "change_pct": 0.735,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53729.9219,
-        "change_pct": -0.075,
+        "price": 53734.1797,
+        "change_pct": -0.067,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36575.7812,
-        "change_pct": -0.235,
+        "price": 36627.2305,
+        "change_pct": -0.095,
         "low_52w": 27823.9004,
         "high_52w": 36662.1016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.61,
-        "change_pct": 0.055,
+        "price": 54.7,
+        "change_pct": 0.22,
         "low_52w": 41.93,
-        "high_52w": 54.61
+        "high_52w": 54.7
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3048.5896,
-        "change_pct": 0.102,
+        "price": 3050.5837,
+        "change_pct": 0.168,
         "low_52w": 2269.3501,
-        "high_52w": 3048.5896
+        "high_52w": 3050.5837
       },
       {
         "symbol": "^FTSE",
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 303.225,
-        "change_pct": 0.323,
+        "price": 303.44,
+        "change_pct": 0.394,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 494.45,
-        "change_pct": 0.41,
+        "price": 493.73,
+        "change_pct": 0.264,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 225.43,
-        "change_pct": 0.598,
+        "price": 225.25,
+        "change_pct": 0.518,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 265.08,
-        "change_pct": -0.823,
+        "price": 265.16,
+        "change_pct": -0.793,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 298.66,
-        "change_pct": 0.37,
+        "price": 298.94,
+        "change_pct": 0.464,
         "low_52w": 187.03,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 213.11,
-        "change_pct": 1.587,
+        "price": 215.5,
+        "change_pct": 2.727,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.89,
-        "change_pct": 1.068,
+        "price": 178.0,
+        "change_pct": 1.131,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -131,30 +131,30 @@
         "name": "US 13-week yield",
         "price": 3.697,
         "change_pct": -0.27,
-        "low_52w": 3.507,
-        "high_52w": 4.128
+        "low_52w": 3.658,
+        "high_52w": 3.805
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.32,
-        "change_pct": -1.257,
-        "low_52w": 3.512,
+        "price": 4.322,
+        "change_pct": -1.211,
+        "low_52w": 4.322,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.641,
-        "change_pct": -0.876,
+        "price": 4.645,
+        "change_pct": -0.79,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.21,
-        "change_pct": -0.705,
+        "price": 5.216,
+        "change_pct": -0.591,
         "low_52w": 4.539,
         "high_52w": 5.275
       }
@@ -164,31 +164,31 @@
         "symbol": "CAD=X",
         "name": "USD / CAD",
         "price": 1.3932,
-        "change_pct": 0.095,
+        "change_pct": 0.091,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1531,
-        "change_pct": -0.107,
+        "price": 1.1533,
+        "change_pct": -0.096,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3485,
-        "change_pct": -0.186,
+        "price": 1.3484,
+        "change_pct": -0.194,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.463,
-        "change_pct": 0.124,
+        "price": 159.509,
+        "change_pct": 0.153,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4413.7998,
-        "change_pct": 0.111,
+        "price": 4417.1001,
+        "change_pct": 0.186,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.41,
-        "change_pct": -1.033,
+        "price": 81.98,
+        "change_pct": -1.549,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.755,
-        "change_pct": -1.747,
+        "price": 2.727,
+        "change_pct": -2.746,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.601,
-        "change_pct": 0.061,
+        "price": 6.603,
+        "change_pct": 0.091,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -235,29 +235,22 @@
     },
     {
       "term": "5Y",
-      "value": 4.32
+      "value": 4.322
     },
     {
       "term": "10Y",
-      "value": 4.641
+      "value": 4.645
     },
     {
       "term": "30Y",
-      "value": 5.21
+      "value": 5.216
     }
   ],
   "news": [
     {
-      "title": "Stock market today: S&P 500 and Nasdaq gain on soft inflation data, Dow dips",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-and-nasdaq-gain-on-soft-inflation-data-dow-dips-100145282.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Earnings live updates: Cisco and Cerebras earnings point to strong AI demand, but their stocks are falling anyway",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-cisco-and-cerebras-earnings-point-to-strong-ai-demand-but-their-stocks-are-falling-anyway-202302733.html",
-      "publisher": "Yahoo Finance",
+      "title": "We just had 'one of the most significant rotations of the current bull market': Strategist",
+      "link": "https://finance.yahoo.com/video/just-had-one-most-significant-120000665.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
@@ -269,23 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Tesla paid Elon Musk 2.5m times more as CEO than its average worker in 2025",
-      "link": "https://finance.yahoo.com/economy/policy/articles/tesla-paid-elon-musk-2-163114033.html",
-      "publisher": "The Guardian",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Tech stocks power S&P 500 to record high as oil prices, producer inflation ease",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-tick-higher-102006057.html",
-      "publisher": "Reuters",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Top Midday Stories: Accelerant to be Taken Private by Thoma Bravo in $4 Billion Deal; Cisco Shares Fall Despite Strong Earnings, Guidance",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-accelerant-taken-160019493.html",
+      "title": "Update: Equity Markets Mostly Higher Intraday Following Wholesale Inflation Report",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/equity-markets-mostly-higher-intraday-173436485.html",
       "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "3 Reasons to Avoid WOR and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-avoid-wor-1-173300600.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "3 Reasons to Sell GM and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-gm-1-172500398.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "3 Reasons We Love Vertiv (VRT)",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-love-vertiv-vrt-171700062.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
