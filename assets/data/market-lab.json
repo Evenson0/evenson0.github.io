@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T20:25:01.328283+00:00",
+  "updated_at": "2026-08-13T21:30:21.590358+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3927,
-        "change_pct": 0.057,
+        "price": 1.3928,
+        "change_pct": 0.063,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.153,
-        "change_pct": -0.119,
+        "price": 1.1533,
+        "change_pct": -0.096,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3485,
-        "change_pct": -0.181,
+        "price": 1.3488,
+        "change_pct": -0.165,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.55,
-        "change_pct": 0.179,
+        "price": 159.451,
+        "change_pct": 0.117,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4406.2998,
-        "change_pct": -0.059,
+        "price": 4407.1001,
+        "change_pct": -0.041,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 81.16,
-        "change_pct": -2.534,
+        "price": 81.21,
+        "change_pct": -2.474,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.731,
-        "change_pct": -2.603,
+        "price": 2.732,
+        "change_pct": -2.568,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.583,
-        "change_pct": -0.212,
+        "price": 6.5895,
+        "change_pct": -0.114,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -248,9 +248,16 @@
   ],
   "news": [
     {
-      "title": "Stock market today: S&P 500 notches record high, Nasdaq rallies after soft inflation data",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-13-sp-500-record-high-nasdaq-dow-inflation-100145282.html",
+      "title": "Earnings live updates: Applied Materials stock falls after solid earnings fail to impress",
+      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-applied-materials-stock-falls-after-solid-earnings-fail-to-impress-202302733.html",
       "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "We just had 'one of the most significant rotations of the current bull market': Strategist",
+      "link": "https://finance.yahoo.com/video/just-had-one-most-significant-120000665.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
@@ -262,30 +269,23 @@
       "time": "Latest"
     },
     {
-      "title": "Earnings live updates: Cisco and Cerebras earnings point to strong AI demand, but their stocks are falling anyway",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-cisco-and-cerebras-earnings-point-to-strong-ai-demand-but-their-stocks-are-falling-anyway-202302733.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "How major US stock indexes fared Thursday 8/13/2026",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-202137379.html",
-      "publisher": "Associated Press",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Bill Ackman's Pershing Square Has Delivered a 15.9% Annualized Return Since 2004, Beating the S&P 500 by Over 5 Points a Year. Can It Continue?",
-      "link": "https://www.fool.com/investing/2026/08/13/bill-ackman-pershing-beat-sp500-continue/",
+      "title": "Stock Market Today, Aug. 13: Cisco Falls on Margin Concerns Despite Record Revenue and AI Demand",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/13/stock-market-today-aug-13-cisco-falls-on-margin-concerns-despite-record-revenue-and-ai-demand/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "S&P 500 notches record-high close as rate-hike worries ease",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-tick-higher-102006057.html",
-      "publisher": "Reuters",
+      "title": "Dow Jones Futures: S&P 500 Hits High On Workday, Sandisk, Oil Prices; Applied Materials Earnings Late",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp-500-high-workday-sandisk-oil-prices-applied-materials-earnings/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "The Collectibles Market Can Push eBay Stock Higher",
+      "link": "https://www.fool.com/investing/2026/08/13/the-collectibles-market-can-push-ebay-stock-higher/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
