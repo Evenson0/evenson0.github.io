@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T21:30:21.590358+00:00",
+  "updated_at": "2026-08-13T22:25:37.199646+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3928,
-        "change_pct": 0.063,
+        "price": 1.3927,
+        "change_pct": 0.057,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1533,
-        "change_pct": -0.096,
+        "price": 1.1534,
+        "change_pct": -0.084,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -187,8 +187,8 @@
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.451,
-        "change_pct": 0.117,
+        "price": 159.479,
+        "change_pct": 0.134,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4407.1001,
-        "change_pct": -0.041,
+        "price": 4410.1001,
+        "change_pct": 0.027,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 81.21,
-        "change_pct": -2.474,
+        "price": 81.06,
+        "change_pct": -2.654,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.732,
-        "change_pct": -2.568,
+        "price": 2.733,
+        "change_pct": -2.532,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.5895,
-        "change_pct": -0.114,
+        "price": 6.585,
+        "change_pct": -0.182,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -269,22 +269,22 @@
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today, Aug. 13: Cisco Falls on Margin Concerns Despite Record Revenue and AI Demand",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/13/stock-market-today-aug-13-cisco-falls-on-margin-concerns-despite-record-revenue-and-ai-demand/",
-      "publisher": "Motley Fool",
+      "title": "The Investment Company of America, AIVSX, Has Outlasted Nearly Every Fund Launched Beside It",
+      "link": "https://247wallst.com/investing/2026/08/13/the-investment-company-of-america-aivsx-has-outlasted-nearly-every-fund-launched-beside-it/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Dow Jones Futures: S&P 500 Hits High On Workday, Sandisk, Oil Prices; Applied Materials Earnings Late",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp-500-high-workday-sandisk-oil-prices-applied-materials-earnings/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "The Signs Before UnitedHealth Stock Ran Were In Its Own Exit Plan",
+      "link": "https://www.trefis.com/articles/611364/the-signs-before-unitedhealth-stock-ran-were-in-its-own-exit-plan/2026-08-13",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "The Collectibles Market Can Push eBay Stock Higher",
-      "link": "https://www.fool.com/investing/2026/08/13/the-collectibles-market-can-push-ebay-stock-higher/",
+      "title": "The Stock Market Just Flashed a Warning Seen Only 5 Times Before. History Is Crystal Clear About What Happens Next (Hint: It's Not Good).",
+      "link": "https://www.fool.com/investing/2026/08/13/the-stock-market-just-flashed-a-warning-seen-only/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
