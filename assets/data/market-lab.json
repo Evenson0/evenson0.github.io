@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T20:16:58.160845+00:00",
+  "updated_at": "2026-08-14T20:50:34.477627+00:00",
   "assets": {
     "Indices": [
       {
@@ -45,10 +45,10 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3068.4087,
+        "price": 3068.4153,
         "change_pct": 0.51,
         "low_52w": 2269.3501,
-        "high_52w": 3068.4087
+        "high_52w": 3068.4153
       },
       {
         "symbol": "^FTSE",
@@ -147,8 +147,8 @@
         "name": "US 10-year yield",
         "price": 4.696,
         "change_pct": 1.185,
-        "low_52w": 3.953,
-        "high_52w": 4.745
+        "low_52w": 4.604,
+        "high_52w": 4.703
       },
       {
         "symbol": "^TYX",
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3877,
-        "change_pct": -0.454,
+        "price": 1.3873,
+        "change_pct": -0.484,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -179,16 +179,16 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3534,
-        "change_pct": 0.271,
+        "price": 1.3535,
+        "change_pct": 0.272,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.354,
-        "change_pct": 0.016,
+        "price": 159.313,
+        "change_pct": -0.009,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4428.6001,
-        "change_pct": 1.49,
+        "price": 4431.8999,
+        "change_pct": 1.565,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.48,
-        "change_pct": 1.514,
+        "price": 82.4,
+        "change_pct": 1.415,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.719,
-        "change_pct": -0.293,
+        "price": 2.712,
+        "change_pct": -0.55,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6035,
-        "change_pct": 0.167,
+        "price": 6.612,
+        "change_pct": 0.296,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -269,24 +269,31 @@
       "time": "Latest"
     },
     {
-      "title": "S&P 500 Pulls Back from High as Market's Fear Gauge Keeps Its Cool",
-      "link": "https://www.barrons.com/livecoverage/stock-market-news-today-0814/card/s-p-500-pulls-back-from-high-as-market-s-fear-gauge-keeps-its-cool-58CmEVdftR8oLUyJyY4M?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Investors should diversify beyond AI trade, says CIO",
+      "link": "https://finance.yahoo.com/video/investors-diversify-beyond-ai-trade-203230934.html",
+      "publisher": "Reuters Videos",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Broadcom Falls 6% as AI Trade Cools",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/broadcom-falls-6-ai-trade-195640614.html",
-      "publisher": "GuruFocus.com",
+      "title": "Stripe and Advent bid $60.50 a share for PayPal as talks advance, WSJ reports",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/stripe-advent-bid-60-50-202741307.html",
+      "publisher": "Investing.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Fall After Retail Sales Drop Most in 14 Months, Crude Oil Rises as Iran Warned Against Economic Pain",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-retail-193941966.html",
+      "title": "US Equity Indexes Mixed This Week After Soft Inflation Prints, Slumping Retail Sales Set to Restrain Fed Policy Hawks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-week-202521705.html",
       "publisher": "MT Newswires",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: The Index Retreats From a Record High as Technology Stocks Drop",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-retreats-record-201716808.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -320,13 +327,6 @@
     {
       "title": "TSX Closer: Index Closes at Fresh Record High as Oil, Utilities and Telecom Stocks Rise",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-204156569.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Closes at Fresh Record High as Surging Oil Prices Boost Energy Stocks",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-205146847.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
