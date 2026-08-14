@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-08-14T14:42:46.881548+00:00",
+  "updated_at": "2026-08-14T15:36:44.382827+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7793.3301,
-        "change_pct": -0.073,
+        "price": 7785.7002,
+        "change_pct": -0.17,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26752.2617,
-        "change_pct": -0.189,
+        "price": 26683.7207,
+        "change_pct": -0.445,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53753.3594,
-        "change_pct": -0.161,
+        "price": 53749.4688,
+        "change_pct": -0.168,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36721.1211,
-        "change_pct": -0.104,
+        "price": 36655.3906,
+        "change_pct": -0.283,
         "low_52w": 27823.9004,
         "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.75,
-        "change_pct": -0.237,
+        "price": 54.7,
+        "change_pct": -0.328,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3065.21,
-        "change_pct": 0.405,
+        "price": 3063.1204,
+        "change_pct": 0.336,
         "low_52w": 2269.3501,
-        "high_52w": 3065.21
+        "high_52w": 3063.1204
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10763.3496,
-        "change_pct": -0.087,
+        "price": 10752.8496,
+        "change_pct": -0.184,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 68713.7969,
-        "change_pct": 0.593,
+        "price": 68308.5938,
+        "change_pct": 1.162,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 305.065,
-        "change_pct": -0.064,
+        "price": 305.7455,
+        "change_pct": 0.159,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 498.97,
-        "change_pct": 0.421,
+        "price": 497.67,
+        "change_pct": 0.159,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 225.925,
-        "change_pct": 0.277,
+        "price": 225.36,
+        "change_pct": 0.027,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 264.29,
-        "change_pct": -0.317,
+        "price": 263.96,
+        "change_pct": -0.441,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 298.85,
-        "change_pct": -0.2,
+        "price": 298.95,
+        "change_pct": -0.167,
         "low_52w": 188.41,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 213.12,
-        "change_pct": -3.553,
+        "price": 214.2,
+        "change_pct": -3.064,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.43,
-        "change_pct": -0.197,
+        "price": 177.22,
+        "change_pct": -0.315,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -131,64 +131,64 @@
         "name": "US 13-week yield",
         "price": 3.7,
         "change_pct": -0.135,
-        "low_52w": 3.658,
-        "high_52w": 3.805
+        "low_52w": 3.507,
+        "high_52w": 4.128
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.323,
-        "change_pct": 0.232,
+        "price": 4.341,
+        "change_pct": 0.649,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.661,
-        "change_pct": 0.431,
+        "price": 4.682,
+        "change_pct": 0.883,
         "low_52w": 4.604,
         "high_52w": 4.703
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.242,
-        "change_pct": 0.556,
+        "price": 5.265,
+        "change_pct": 0.998,
         "low_52w": 5.096,
-        "high_52w": 5.247
+        "high_52w": 5.265
       }
     ],
     "FX": [
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3877,
-        "change_pct": -0.456,
+        "price": 1.3873,
+        "change_pct": -0.485,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1582,
-        "change_pct": 0.452,
+        "price": 1.1587,
+        "change_pct": 0.498,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3551,
-        "change_pct": 0.393,
+        "price": 1.3554,
+        "change_pct": 0.419,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.008,
-        "change_pct": -0.201,
+        "price": 159.114,
+        "change_pct": -0.134,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4446.8999,
-        "change_pct": 1.909,
+        "price": 4437.0,
+        "change_pct": 1.682,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 81.55,
-        "change_pct": 0.369,
+        "price": 81.85,
+        "change_pct": 0.738,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.773,
-        "change_pct": 1.687,
+        "price": 2.767,
+        "change_pct": 1.467,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6225,
-        "change_pct": 0.455,
+        "price": 6.5875,
+        "change_pct": -0.076,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -235,28 +235,28 @@
     },
     {
       "term": "5Y",
-      "value": 4.323
+      "value": 4.341
     },
     {
       "term": "10Y",
-      "value": 4.661
+      "value": 4.682
     },
     {
       "term": "30Y",
-      "value": 5.242
+      "value": 5.265
     }
   ],
   "news": [
     {
-      "title": "Reddit stock surges after S&P 500 inclusion — here's the platform's next big opportunity",
-      "link": "https://finance.yahoo.com/markets/stocks/article/reddit-stock-surges-after-sp-500-inclusion--heres-the-platforms-next-big-opportunity-093635663.html",
-      "publisher": "Yahoo Finance",
+      "title": "AI demand fuels a travel booking stock boom: How to spot AI's next under-the-radar winners",
+      "link": "https://finance.yahoo.com/video/ai-demand-fuels-travel-booking-152938080.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock market today: S&P 500 notches record high, Nasdaq rallies after soft inflation data",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-13-sp-500-record-high-nasdaq-dow-inflation-100145282.html",
+      "title": "Stocks subdued as earnings season begins to wind down: AlphaCheck",
+      "link": "https://finance.yahoo.com/markets/article/stocks-subdued-as-earnings-season-begins-to-wind-down-alphacheck-134418155.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
@@ -269,23 +269,23 @@
       "time": "Latest"
     },
     {
-      "title": "Target Stock Flies To New Highs As Earnings Approach, But Walmart Stuck In Neutral",
-      "link": "https://www.investors.com/research/earnings-preview/target-stock-flies-to-new-highs-walmart-viking-earnings/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Citi Keeps S&P 500 Target at 8,100 as Earnings Outlook Strengthens",
+      "link": "https://investorshub.advfn.com/market-news/article/34276/citi-keeps-sp-500-target-at-8100-as-earnings-outlook-strengthens",
+      "publisher": "InvestorsHub",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Hits Highs; Cisco, Lumentum, Super Micro, Sandisk Key Movers: Weekly Review",
-      "link": "https://www.investors.com/news/stock-market-hits-highs-cisco-lumentum-super-micro-sandisk-key-movers-weekly-review/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Mining Tycoon Gina Rinehart Reveals $1.4 Billion SpaceX Stake",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/mining-tycoon-gina-rinehart-reveals-144646372.html",
+      "publisher": "Bloomberg",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Steady After Surprise Retail Sales; Applied Materials Dives On Earnings (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-retail-sales-applied-materials-stock-amat/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Super Micro's Margin Surprise Is Already Guided Back Down",
+      "link": "https://www.trefis.com/articles/611553/super-micros-margin-surprise-is-already-guided-back-down/2026-08-14",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
