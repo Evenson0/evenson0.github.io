@@ -1,60 +1,60 @@
 {
-  "updated_at": "2026-08-14T13:46:48.202903+00:00",
+  "updated_at": "2026-08-14T14:42:46.881548+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7803.4399,
-        "change_pct": 0.057,
+        "price": 7793.3301,
+        "change_pct": -0.073,
         "low_52w": 6343.7202,
-        "high_52w": 7803.4399
+        "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26823.7168,
-        "change_pct": 0.077,
+        "price": 26752.2617,
+        "change_pct": -0.189,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53833.7617,
-        "change_pct": -0.012,
+        "price": 53753.3594,
+        "change_pct": -0.161,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36772.3789,
-        "change_pct": 0.036,
+        "price": 36721.1211,
+        "change_pct": -0.104,
         "low_52w": 27823.9004,
-        "high_52w": 36772.3789
+        "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.87,
-        "change_pct": -0.018,
+        "price": 54.75,
+        "change_pct": -0.237,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3050.7036,
-        "change_pct": -0.07,
+        "price": 3065.21,
+        "change_pct": 0.405,
         "low_52w": 2269.3501,
-        "high_52w": 3052.8501
+        "high_52w": 3065.21
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10764.46,
-        "change_pct": -0.076,
+        "price": 10763.3496,
+        "change_pct": -0.087,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 306.4501,
-        "change_pct": 0.39,
+        "price": 305.065,
+        "change_pct": -0.064,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 496.22,
-        "change_pct": -0.133,
+        "price": 498.97,
+        "change_pct": 0.421,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 225.87,
-        "change_pct": 0.253,
+        "price": 225.925,
+        "change_pct": 0.277,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 264.7,
-        "change_pct": -0.162,
+        "price": 264.29,
+        "change_pct": -0.317,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 299.38,
-        "change_pct": -0.023,
+        "price": 298.85,
+        "change_pct": -0.2,
         "low_52w": 188.41,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 217.73,
-        "change_pct": -1.466,
+        "price": 213.12,
+        "change_pct": -3.553,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.98,
-        "change_pct": 0.112,
+        "price": 177.43,
+        "change_pct": -0.197,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,66 +129,66 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.697,
-        "change_pct": -0.216,
-        "low_52w": 3.507,
-        "high_52w": 4.128
+        "price": 3.7,
+        "change_pct": -0.135,
+        "low_52w": 3.658,
+        "high_52w": 3.805
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.32,
-        "change_pct": 0.162,
+        "price": 4.323,
+        "change_pct": 0.232,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.659,
-        "change_pct": 0.388,
-        "low_52w": 3.953,
-        "high_52w": 4.745
+        "price": 4.661,
+        "change_pct": 0.431,
+        "low_52w": 4.604,
+        "high_52w": 4.703
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.243,
-        "change_pct": 0.575,
-        "low_52w": 4.539,
-        "high_52w": 5.275
+        "price": 5.242,
+        "change_pct": 0.556,
+        "low_52w": 5.096,
+        "high_52w": 5.247
       }
     ],
     "FX": [
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3868,
-        "change_pct": -0.519,
+        "price": 1.3877,
+        "change_pct": -0.456,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1585,
-        "change_pct": 0.475,
+        "price": 1.1582,
+        "change_pct": 0.452,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3559,
-        "change_pct": 0.453,
+        "price": 1.3551,
+        "change_pct": 0.393,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.806,
-        "change_pct": -0.328,
+        "price": 159.008,
+        "change_pct": -0.201,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4450.1001,
-        "change_pct": 1.982,
+        "price": 4446.8999,
+        "change_pct": 1.909,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 80.88,
-        "change_pct": -0.455,
+        "price": 81.55,
+        "change_pct": 0.369,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.743,
-        "change_pct": 0.587,
+        "price": 2.773,
+        "change_pct": 1.687,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.602,
-        "change_pct": 0.144,
+        "price": 6.6225,
+        "change_pct": 0.455,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -231,61 +231,61 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.697
+      "value": 3.7
     },
     {
       "term": "5Y",
-      "value": 4.32
+      "value": 4.323
     },
     {
       "term": "10Y",
-      "value": 4.659
+      "value": 4.661
     },
     {
       "term": "30Y",
-      "value": 5.243
+      "value": 5.242
     }
   ],
   "news": [
     {
-      "title": "Stocks subdued as earnings season begins to wind down: AlphaCheck",
-      "link": "https://finance.yahoo.com/markets/article/stocks-subdued-as-earnings-season-begins-to-wind-down-alphacheck-134418155.html",
+      "title": "Reddit stock surges after S&P 500 inclusion — here's the platform's next big opportunity",
+      "link": "https://finance.yahoo.com/markets/stocks/article/reddit-stock-surges-after-sp-500-inclusion--heres-the-platforms-next-big-opportunity-093635663.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Earnings live updates: Applied Materials stock falls after solid earnings fail to impress",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-applied-materials-stock-falls-after-solid-earnings-fail-to-impress-202302733.html",
+      "title": "Stock market today: S&P 500 notches record high, Nasdaq rallies after soft inflation data",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-13-sp-500-record-high-nasdaq-dow-inflation-100145282.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Wall St set for muted open as Middle East tensions curb risk appetite",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-muted-higher-111429941.html",
-      "publisher": "Reuters",
+      "title": "Wall Street is piling into the riskiest corners of the market: Chart of the Day",
+      "link": "https://finance.yahoo.com/video/wall-street-piling-riskiest-corners-193546387.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "This Is the 1 Investing Move That History Says Has Never Once Failed Long-Term Investors",
-      "link": "https://www.fool.com/investing/2026/08/14/this-is-the-1-investing-move-that-history-says-has/",
-      "publisher": "Motley Fool",
+      "title": "Target Stock Flies To New Highs As Earnings Approach, But Walmart Stuck In Neutral",
+      "link": "https://www.investors.com/research/earnings-preview/target-stock-flies-to-new-highs-walmart-viking-earnings/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Exchange-Traded Funds Higher, Equity Futures Mixed Pre-Bell Friday Amid Retail Sales Data",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-equity-131348296.html",
-      "publisher": "MT Newswires",
+      "title": "Stock Market Hits Highs; Cisco, Lumentum, Super Micro, Sandisk Key Movers: Weekly Review",
+      "link": "https://www.investors.com/news/stock-market-hits-highs-cisco-lumentum-super-micro-sandisk-key-movers-weekly-review/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Reddit is Up 11% Premarket After S&P 500 Addition. Here’s How Other New S&P 500 Stocks Performed.",
-      "link": "https://247wallst.com/investing/2026/08/14/reddit-is-up-11-premarket-after-sp-500-addition-heres-how-other-new-sp-500-stocks-performed/",
-      "publisher": "24/7 Wall St.",
+      "title": "Stock Market Today: Dow Steady After Surprise Retail Sales; Applied Materials Dives On Earnings (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-retail-sales-applied-materials-stock-amat/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
