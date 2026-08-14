@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T20:50:34.477627+00:00",
+  "updated_at": "2026-08-14T21:42:54.693950+00:00",
   "assets": {
     "Indices": [
       {
@@ -131,15 +131,15 @@
         "name": "US 13-week yield",
         "price": 3.697,
         "change_pct": -0.216,
-        "low_52w": 3.658,
-        "high_52w": 3.805
+        "low_52w": 3.507,
+        "high_52w": 4.128
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
         "price": 4.362,
         "change_pct": 1.136,
-        "low_52w": 4.313,
+        "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
@@ -147,48 +147,48 @@
         "name": "US 10-year yield",
         "price": 4.696,
         "change_pct": 1.185,
-        "low_52w": 4.604,
-        "high_52w": 4.703
+        "low_52w": 3.953,
+        "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
         "price": 5.265,
         "change_pct": 0.998,
-        "low_52w": 5.096,
-        "high_52w": 5.265
+        "low_52w": 4.539,
+        "high_52w": 5.275
       }
     ],
     "FX": [
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3873,
-        "change_pct": -0.484,
+        "price": 1.3872,
+        "change_pct": -0.396,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1571,
-        "change_pct": 0.359,
+        "price": 1.1573,
+        "change_pct": 0.37,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3535,
-        "change_pct": 0.272,
+        "price": 1.3536,
+        "change_pct": 0.282,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.313,
-        "change_pct": -0.009,
+        "price": 159.305,
+        "change_pct": -0.076,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,8 +197,8 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4431.8999,
-        "change_pct": 1.565,
+        "price": 4432.0,
+        "change_pct": 1.568,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
@@ -213,16 +213,16 @@
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.712,
-        "change_pct": -0.55,
+        "price": 2.715,
+        "change_pct": -0.44,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.612,
-        "change_pct": 0.296,
+        "price": 6.6065,
+        "change_pct": 0.212,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Earnings live updates: Applied Materials stock falls after solid earnings fail to impress",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-applied-materials-stock-falls-after-solid-earnings-fail-to-impress-202302733.html",
-      "publisher": "Yahoo Finance",
+      "title": "Two Funds Promise 20% Income From the S&P 500. One Caps Your Upside, One Doesn’t, and It Charges Less",
+      "link": "https://247wallst.com/investing/2026/08/14/two-funds-promise-20-income-from-the-sp-500-one-caps-your-upside-one-doesnt-and-it-charges-less/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Investors should diversify beyond AI trade, says CIO",
-      "link": "https://finance.yahoo.com/video/investors-diversify-beyond-ai-trade-203230934.html",
-      "publisher": "Reuters Videos",
+      "title": "3 Reasons to Sell NDSN and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-ndsn-1-213300929.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stripe and Advent bid $60.50 a share for PayPal as talks advance, WSJ reports",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/stripe-advent-bid-60-50-202741307.html",
-      "publisher": "Investing.com",
+      "title": "Stock Market Today, Aug. 14: Rally Stalls on Disappointing Consumer Data, Broadcom Falls 6%",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/14/stock-market-today-aug-14-stocks-slip-as-consumer-data-disappoints-broadcom-falls-6/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "US Equity Indexes Mixed This Week After Soft Inflation Prints, Slumping Retail Sales Set to Restrain Fed Policy Hawks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-week-202521705.html",
-      "publisher": "MT Newswires",
+      "title": "2 Reasons to Like AMAL and 1 to Stay Skeptical",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-amal-1-stay-212500987.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
