@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-08-14T18:35:54.891280+00:00",
+  "updated_at": "2026-08-14T19:39:07.453641+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7780.5601,
-        "change_pct": -0.236,
+        "price": 7782.8198,
+        "change_pct": -0.207,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26683.7559,
-        "change_pct": -0.445,
+        "price": 26709.7793,
+        "change_pct": -0.348,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53776.6094,
-        "change_pct": -0.118,
+        "price": 53747.3281,
+        "change_pct": -0.172,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36705.5,
-        "change_pct": -0.146,
+        "price": 36695.6406,
+        "change_pct": -0.173,
         "low_52w": 27823.9004,
         "high_52w": 36759.3008
       },
@@ -45,10 +45,10 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3063.3354,
-        "change_pct": 0.343,
+        "price": 3064.4958,
+        "change_pct": 0.381,
         "low_52w": 2269.3501,
-        "high_52w": 3063.3354
+        "high_52w": 3064.4958
       },
       {
         "symbol": "^FTSE",
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 306.0,
-        "change_pct": 0.242,
+        "price": 305.7587,
+        "change_pct": 0.163,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 495.3706,
-        "change_pct": -0.304,
+        "price": 495.23,
+        "change_pct": -0.332,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 224.92,
-        "change_pct": -0.169,
+        "price": 225.16,
+        "change_pct": -0.062,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 263.19,
-        "change_pct": -0.732,
+        "price": 263.52,
+        "change_pct": -0.607,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 299.51,
-        "change_pct": 0.02,
+        "price": 299.9,
+        "change_pct": 0.15,
         "low_52w": 188.41,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 214.98,
-        "change_pct": -2.711,
+        "price": 215.43,
+        "change_pct": -2.507,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.41,
-        "change_pct": -0.771,
+        "price": 175.88,
+        "change_pct": -1.069,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,16 +129,16 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.7,
-        "change_pct": -0.135,
+        "price": 3.697,
+        "change_pct": -0.216,
         "low_52w": 3.507,
         "high_52w": 4.128
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.364,
-        "change_pct": 1.182,
+        "price": 4.362,
+        "change_pct": 1.136,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
@@ -153,8 +153,8 @@
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.266,
-        "change_pct": 1.017,
+        "price": 5.265,
+        "change_pct": 0.998,
         "low_52w": 4.539,
         "high_52w": 5.275
       }
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3875,
-        "change_pct": -0.469,
+        "price": 1.3877,
+        "change_pct": -0.46,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -187,8 +187,8 @@
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.379,
-        "change_pct": 0.032,
+        "price": 159.38,
+        "change_pct": 0.033,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4436.8999,
-        "change_pct": 1.68,
+        "price": 4434.2998,
+        "change_pct": 1.62,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.29,
-        "change_pct": 1.28,
+        "price": 82.3,
+        "change_pct": 1.292,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.741,
-        "change_pct": 0.513,
+        "price": 2.724,
+        "change_pct": -0.11,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.599,
-        "change_pct": 0.099,
+        "price": 6.6025,
+        "change_pct": 0.152,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -231,11 +231,11 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.7
+      "value": 3.697
     },
     {
       "term": "5Y",
-      "value": 4.364
+      "value": 4.362
     },
     {
       "term": "10Y",
@@ -243,7 +243,7 @@
     },
     {
       "term": "30Y",
-      "value": 5.266
+      "value": 5.265
     }
   ],
   "news": [
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Wall Street is piling into the riskiest corners of the market: Chart of the Day",
-      "link": "https://finance.yahoo.com/video/wall-street-piling-riskiest-corners-193546387.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "Texas Data Center Moratorium: Key Meeting Next Week; Watch These S&P 500 Stocks",
+      "link": "https://www.investors.com/news/texas-data-center-moratorium-puc-meeting-sp-500-stocks/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Reddit Stock Surges 14% on Landmark S&P 500 Entry",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/reddit-stock-surges-14-landmark-182308020.html",
+      "title": "What Separates AVGO From Its Peers Right Now",
+      "link": "https://www.trefis.com/articles/611488/what-separates-avgo-from-its-peers-right-now/2026-08-14",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "JPMorgan Spots Something Unusual in Hot Stocks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-spots-something-unusual-hot-190932634.html",
       "publisher": "GuruFocus.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Solar Is Now Half of All New Power on the Grid and This ETF Still Trades Like Nobody Noticed",
-      "link": "https://247wallst.com/investing/etf/2026/08/14/solar-is-now-half-of-all-new-power-on-the-grid-and-this-etf-still-trades-like-nobody-noticed/",
+      "title": "Reddit Is Still Down 24% This Year. What Will It Take to Get RDDT Stock Back Up to $200?",
+      "link": "https://247wallst.com/investing/2026/08/14/reddit-is-still-down-24-this-year-what-will-it-take-to-get-rddt-stock-back-up-to-200/",
       "publisher": "24/7 Wall St.",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "1 Semiconductor Stock on Our Buy List and 2 We Brush Off",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/1-semiconductor-stock-buy-list-180500555.html",
-      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
