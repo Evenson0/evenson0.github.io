@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-08-13T22:25:37.199646+00:00",
+  "updated_at": "2026-08-14T13:46:48.202903+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7798.9902,
-        "change_pct": 0.652,
+        "price": 7803.4399,
+        "change_pct": 0.057,
         "low_52w": 6343.7202,
-        "high_52w": 7798.9902
+        "high_52w": 7803.4399
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26803.0254,
-        "change_pct": 0.807,
+        "price": 26823.7168,
+        "change_pct": 0.077,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53839.9883,
-        "change_pct": 0.13,
+        "price": 53833.7617,
+        "change_pct": -0.012,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36759.2891,
-        "change_pct": 0.265,
+        "price": 36772.3789,
+        "change_pct": 0.036,
         "low_52w": 27823.9004,
-        "high_52w": 36759.2891
+        "high_52w": 36772.3789
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.88,
-        "change_pct": 0.55,
+        "price": 54.87,
+        "change_pct": -0.018,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3052.8469,
-        "change_pct": 0.242,
+        "price": 3050.7036,
+        "change_pct": -0.07,
         "low_52w": 2269.3501,
-        "high_52w": 3052.8469
+        "high_52w": 3052.8501
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10772.6699,
-        "change_pct": -0.559,
+        "price": 10764.46,
+        "change_pct": -0.076,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 67524.0625,
-        "change_pct": 0.827,
+        "price": 68713.7969,
+        "change_pct": 0.593,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 305.26,
-        "change_pct": 0.996,
+        "price": 306.4501,
+        "change_pct": 0.39,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 496.88,
-        "change_pct": 0.904,
+        "price": 496.22,
+        "change_pct": -0.133,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 225.3,
-        "change_pct": 0.54,
+        "price": 225.87,
+        "change_pct": 0.253,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 265.13,
-        "change_pct": -0.804,
+        "price": 264.7,
+        "change_pct": -0.162,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 299.45,
-        "change_pct": 0.635,
-        "low_52w": 187.03,
+        "price": 299.38,
+        "change_pct": -0.023,
+        "low_52w": 188.41,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 220.97,
-        "change_pct": 5.334,
+        "price": 217.73,
+        "change_pct": -1.466,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.78,
-        "change_pct": 1.006,
+        "price": 177.98,
+        "change_pct": 0.112,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.705,
-        "change_pct": -0.054,
+        "price": 3.697,
+        "change_pct": -0.216,
         "low_52w": 3.507,
         "high_52w": 4.128
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.313,
-        "change_pct": -1.417,
+        "price": 4.32,
+        "change_pct": 0.162,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.641,
-        "change_pct": -0.876,
+        "price": 4.659,
+        "change_pct": 0.388,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.213,
-        "change_pct": -0.648,
+        "price": 5.243,
+        "change_pct": 0.575,
         "low_52w": 4.539,
         "high_52w": 5.275
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3927,
-        "change_pct": 0.057,
+        "price": 1.3868,
+        "change_pct": -0.519,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1534,
-        "change_pct": -0.084,
+        "price": 1.1585,
+        "change_pct": 0.475,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3488,
-        "change_pct": -0.165,
+        "price": 1.3559,
+        "change_pct": 0.453,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.479,
-        "change_pct": 0.134,
+        "price": 158.806,
+        "change_pct": -0.328,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4410.1001,
-        "change_pct": 0.027,
+        "price": 4450.1001,
+        "change_pct": 1.982,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 81.06,
-        "change_pct": -2.654,
+        "price": 80.88,
+        "change_pct": -0.455,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.733,
-        "change_pct": -2.532,
+        "price": 2.743,
+        "change_pct": 0.587,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.585,
-        "change_pct": -0.182,
+        "price": 6.602,
+        "change_pct": 0.144,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -231,22 +231,29 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.705
+      "value": 3.697
     },
     {
       "term": "5Y",
-      "value": 4.313
+      "value": 4.32
     },
     {
       "term": "10Y",
-      "value": 4.641
+      "value": 4.659
     },
     {
       "term": "30Y",
-      "value": 5.213
+      "value": 5.243
     }
   ],
   "news": [
+    {
+      "title": "Stocks subdued as earnings season begins to wind down: AlphaCheck",
+      "link": "https://finance.yahoo.com/markets/article/stocks-subdued-as-earnings-season-begins-to-wind-down-alphacheck-134418155.html",
+      "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
     {
       "title": "Earnings live updates: Applied Materials stock falls after solid earnings fail to impress",
       "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-applied-materials-stock-falls-after-solid-earnings-fail-to-impress-202302733.html",
@@ -255,37 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "We just had 'one of the most significant rotations of the current bull market': Strategist",
-      "link": "https://finance.yahoo.com/video/just-had-one-most-significant-120000665.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "Wall St set for muted open as Middle East tensions curb risk appetite",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-muted-higher-111429941.html",
+      "publisher": "Reuters",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Gold prices must overcome this next hurdle before another bullish run",
-      "link": "https://finance.yahoo.com/markets/commodities/article/gold-prices-must-overcome-this-next-hurdle-before-another-bullish-run-115154899.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "The Investment Company of America, AIVSX, Has Outlasted Nearly Every Fund Launched Beside It",
-      "link": "https://247wallst.com/investing/2026/08/13/the-investment-company-of-america-aivsx-has-outlasted-nearly-every-fund-launched-beside-it/",
-      "publisher": "24/7 Wall St.",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "The Signs Before UnitedHealth Stock Ran Were In Its Own Exit Plan",
-      "link": "https://www.trefis.com/articles/611364/the-signs-before-unitedhealth-stock-ran-were-in-its-own-exit-plan/2026-08-13",
-      "publisher": "Trefis",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "The Stock Market Just Flashed a Warning Seen Only 5 Times Before. History Is Crystal Clear About What Happens Next (Hint: It's Not Good).",
-      "link": "https://www.fool.com/investing/2026/08/13/the-stock-market-just-flashed-a-warning-seen-only/",
+      "title": "This Is the 1 Investing Move That History Says Has Never Once Failed Long-Term Investors",
+      "link": "https://www.fool.com/investing/2026/08/14/this-is-the-1-investing-move-that-history-says-has/",
       "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Exchange-Traded Funds Higher, Equity Futures Mixed Pre-Bell Friday Amid Retail Sales Data",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-equity-131348296.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Reddit is Up 11% Premarket After S&P 500 Addition. Here’s How Other New S&P 500 Stocks Performed.",
+      "link": "https://247wallst.com/investing/2026/08/14/reddit-is-up-11-premarket-after-sp-500-addition-heres-how-other-new-sp-500-stocks-performed/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
@@ -293,6 +293,13 @@
       "title": "TSX Closer: The Index Closes at Fresh Record High as Technology Stocks Rally",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-201732743.html",
       "publisher": "MT Newswires",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "MoneyMasters Podcast 8-13-26- SP 500 Vs. TSX - Which Leads Next",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/moneymasters-podcast-8-13-26-163200205.html",
+      "publisher": "MoneyShow",
       "related": "^GSPTSE",
       "time": "Latest"
     },
@@ -321,13 +328,6 @@
       "title": "TSX Closer: Index Closes at Fresh Record High as Surging Oil Prices Boost Energy Stocks",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-205146847.html",
       "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "This TSX stock soared 28% this week with one analyst seeing 'durable, profitable growth'",
-      "link": "https://financialpost.com/investing/tsx-stock-soared-analysts-share-price-upside",
-      "publisher": "Financial Post",
       "related": "^GSPTSE",
       "time": "Latest"
     }
