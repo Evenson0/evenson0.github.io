@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T21:42:54.693950+00:00",
+  "updated_at": "2026-08-14T22:01:40.390746+00:00",
   "assets": {
     "Indices": [
       {
@@ -155,8 +155,8 @@
         "name": "US 30-year yield",
         "price": 5.265,
         "change_pct": 0.998,
-        "low_52w": 4.539,
-        "high_52w": 5.275
+        "low_52w": 5.096,
+        "high_52w": 5.265
       }
     ],
     "FX": [
@@ -164,7 +164,7 @@
         "symbol": "CAD=X",
         "name": "USD / CAD",
         "price": 1.3872,
-        "change_pct": -0.396,
+        "change_pct": -0.492,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -262,6 +262,20 @@
       "time": "Latest"
     },
     {
+      "title": "3 Reasons to Sell RF and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-rf-1-214900556.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "3 Reasons to Avoid GPC and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-avoid-gpc-1-214100145.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
       "title": "Two Funds Promise 20% Income From the S&P 500. One Caps Your Upside, One Doesn’t, and It Charges Less",
       "link": "https://247wallst.com/investing/2026/08/14/two-funds-promise-20-income-from-the-sp-500-one-caps-your-upside-one-doesnt-and-it-charges-less/",
       "publisher": "24/7 Wall St.",
@@ -271,20 +285,6 @@
     {
       "title": "3 Reasons to Sell NDSN and 1 Stock to Buy Instead",
       "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-ndsn-1-213300929.html",
-      "publisher": "StockStory",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today, Aug. 14: Rally Stalls on Disappointing Consumer Data, Broadcom Falls 6%",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/14/stock-market-today-aug-14-stocks-slip-as-consumer-data-disappoints-broadcom-falls-6/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "2 Reasons to Like AMAL and 1 to Stay Skeptical",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-amal-1-stay-212500987.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
