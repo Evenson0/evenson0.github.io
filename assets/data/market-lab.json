@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-17T20:03:51.825846+00:00",
+  "updated_at": "2026-08-17T20:46:45.514093+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7745.3501,
-        "change_pct": -0.519,
+        "price": 7745.0601,
+        "change_pct": -0.523,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
@@ -21,7 +21,7 @@
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53460.0195,
+        "price": 53459.7812,
         "change_pct": -0.507,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
@@ -45,8 +45,8 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3057.3784,
-        "change_pct": -0.36,
+        "price": 3057.5398,
+        "change_pct": -0.355,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3874,
-        "change_pct": -0.383,
+        "price": 1.3875,
+        "change_pct": -0.373,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -179,16 +179,16 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3544,
-        "change_pct": 0.398,
+        "price": 1.3543,
+        "change_pct": 0.39,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.465,
-        "change_pct": 0.024,
+        "price": 159.484,
+        "change_pct": 0.036,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4474.5,
-        "change_pct": 2.148,
+        "price": 4471.7002,
+        "change_pct": 2.084,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.57,
-        "change_pct": 2.633,
+        "price": 84.86,
+        "change_pct": 2.985,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.701,
-        "change_pct": -1.171,
+        "price": 2.7,
+        "change_pct": -1.207,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.607,
-        "change_pct": 0.114,
+        "price": 6.6105,
+        "change_pct": 0.167,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -262,31 +262,38 @@
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Decline, Crude Oil Jumps After Trump Threatens to Bomb Oman",
-      "link": "https://finance.yahoo.com/markets/articles/us-equity-indexes-decline-crude-195613628.html",
+      "title": "Fed's Next Rate Move Just Got More Complicated",
+      "link": "https://finance.yahoo.com/economy/policy/articles/feds-next-rate-move-just-203716877.html",
+      "publisher": "GuruFocus.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Update: Equities Fall, Oil Rallies as US-Iran Ceasefire Expires",
+      "link": "https://finance.yahoo.com/markets/articles/equities-fall-oil-rallies-us-203511790.html",
       "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Guardant Health (GH) Surges on FDA Approval and Cancer Screening Momentum",
-      "link": "https://finance.yahoo.com/healthcare/articles/guardant-health-gh-surges-fda-194840110.html",
-      "publisher": "Insider Monkey",
+      "title": "S&P 500's Best Stock In 2026 Leads Index With A Bullish Move",
+      "link": "https://www.investors.com/news/sandisk-sp-500-best-stock-2026-leads-with-bullish-move/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why Investors Are Moving On From Synopsys (SNPS)",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-investors-moving-synopsys-snps-194830437.html",
-      "publisher": "Insider Monkey",
+      "title": "Stop waiting for a dip — Fundstrat’s Mark Newton on stocks to buy now",
+      "link": "https://www.thestreet.com/video/stop-waiting-for-a-dip-fundstrats-mark-newton-on-stocks-to-buy",
+      "publisher": "TheStreet",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Boston Scientific (BSX) Faces Growth Concerns in Key Medical Device Franchises",
-      "link": "https://finance.yahoo.com/healthcare/articles/boston-scientific-bsx-faces-growth-194823938.html",
-      "publisher": "Insider Monkey",
-      "related": "^GSPC",
+      "title": "TSX Closer: The Index Closes Lower as Technology Weighs, Canadian Inflation Accelerates to 3.0%",
+      "link": "https://finance.yahoo.com/economy/articles/tsx-closer-index-closes-lower-202055412.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "MoneyMasters Podcast 8-13-26- SP 500 Vs. TSX - Which Leads Next",
       "link": "https://finance.yahoo.com/markets/stocks/articles/moneymasters-podcast-8-13-26-163200205.html",
       "publisher": "MoneyShow",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Closes at Fresh Record High as Financials Gain, Air Canada Surges",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-203059625.html",
-      "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
     }
