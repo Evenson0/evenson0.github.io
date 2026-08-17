@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T22:01:40.390746+00:00",
+  "updated_at": "2026-08-17T13:08:24.487488+00:00",
   "assets": {
     "Indices": [
       {
@@ -13,7 +13,7 @@
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26729.1641,
+        "price": 26729.1602,
         "change_pct": -0.276,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
@@ -29,7 +29,7 @@
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36730.2695,
+        "price": 36730.3008,
         "change_pct": -0.079,
         "low_52w": 27823.9004,
         "high_52w": 36759.3008
@@ -45,24 +45,24 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3068.4153,
+        "price": 3068.4199,
         "change_pct": 0.51,
         "low_52w": 2269.3501,
-        "high_52w": 3068.4153
+        "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10750.1104,
-        "change_pct": -0.21,
+        "price": 10739.2998,
+        "change_pct": -0.1,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 68308.5938,
-        "change_pct": 1.162,
+        "price": 69220.25,
+        "change_pct": 0.737,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -129,66 +129,66 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.697,
-        "change_pct": -0.216,
+        "price": 3.703,
+        "change_pct": 0.162,
         "low_52w": 3.507,
         "high_52w": 4.128
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.362,
-        "change_pct": 1.136,
+        "price": 4.382,
+        "change_pct": 0.459,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.696,
-        "change_pct": 1.185,
+        "price": 4.716,
+        "change_pct": 0.426,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.265,
-        "change_pct": 0.998,
-        "low_52w": 5.096,
-        "high_52w": 5.265
+        "price": 5.288,
+        "change_pct": 0.437,
+        "low_52w": 4.539,
+        "high_52w": 5.288
       }
     ],
     "FX": [
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3872,
-        "change_pct": -0.492,
+        "price": 1.3855,
+        "change_pct": -0.516,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1573,
-        "change_pct": 0.37,
+        "price": 1.1601,
+        "change_pct": 0.568,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3536,
-        "change_pct": 0.282,
+        "price": 1.3562,
+        "change_pct": 0.525,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.305,
-        "change_pct": -0.076,
+        "price": 159.25,
+        "change_pct": -0.11,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4432.0,
-        "change_pct": 1.568,
+        "price": 4442.8999,
+        "change_pct": 1.427,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.4,
-        "change_pct": 1.415,
+        "price": 83.03,
+        "change_pct": 0.765,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.715,
-        "change_pct": -0.44,
+        "price": 2.674,
+        "change_pct": -2.159,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6065,
-        "change_pct": 0.212,
+        "price": 6.652,
+        "change_pct": 0.796,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -231,62 +231,76 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.697
+      "value": 3.703
     },
     {
       "term": "5Y",
-      "value": 4.362
+      "value": 4.382
     },
     {
       "term": "10Y",
-      "value": 4.696
+      "value": 4.716
     },
     {
       "term": "30Y",
-      "value": 5.265
+      "value": 5.288
     }
   ],
   "news": [
     {
-      "title": "AI demand fuels a travel booking stock boom: How to spot AI's next under-the-radar winners",
-      "link": "https://finance.yahoo.com/video/ai-demand-fuels-travel-booking-152938080.html",
-      "publisher": "Yahoo Finance Video",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stocks subdued as earnings season begins to wind down: AlphaCheck",
-      "link": "https://finance.yahoo.com/markets/article/stocks-subdued-as-earnings-season-begins-to-wind-down-alphacheck-134418155.html",
+      "title": "'Spending is leading to earnings': Wall Street strategists see payoff from Big Tech's AI investment",
+      "link": "https://finance.yahoo.com/news/spending-is-leading-to-earnings-wall-street-strategists-see-payoff-from-big-techs-ai-investment-151610093.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "3 Reasons to Sell RF and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-rf-1-214900556.html",
+      "title": "Update: US Equity Futures Mixed Pre-Bell as 60-Day US-Iran Ceasefire Expires",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-mixed-pre-125500559.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "3 Reasons to Sell TREX and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-trex-1-125420032.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "3 Reasons to Avoid GPC and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-avoid-gpc-1-214100145.html",
+      "title": "3 Reasons FNB is Risky and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-fnb-risky-1-124620211.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Two Funds Promise 20% Income From the S&P 500. One Caps Your Upside, One Doesn’t, and It Charges Less",
-      "link": "https://247wallst.com/investing/2026/08/14/two-funds-promise-20-income-from-the-sp-500-one-caps-your-upside-one-doesnt-and-it-charges-less/",
-      "publisher": "24/7 Wall St.",
+      "title": "Stock Market Today: Dow Falls, Nasdaq Rises As Memory Chip Stocks Micron, Sandisk Extend Gains (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-micron-stock-sandisk-stock-sndk/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "3 Reasons to Sell NDSN and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-ndsn-1-213300929.html",
-      "publisher": "StockStory",
+      "title": "REET vs HAUZ: Which Real Estate ETF Is the Better Buy in 2026?",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/17/reet-vs-hauz-which-real-estate-etf-is-the-better-buy-in-2026/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Toronto futures little changed as investors await domestic inflation data",
+      "link": "https://ca.finance.yahoo.com/news/toronto-futures-little-changed-investors-104137948.html",
+      "publisher": "Reuters",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "This TSX stock soared this week on 'positive surprise' as one analyst see 52% possible upside for 'undervalued' shares",
+      "link": "https://financialpost.com/investing/tsx-stock-analyst-52-upside-undervalued-shares",
+      "publisher": "Financial Post",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -313,20 +327,6 @@
     {
       "title": "TSX Closer: Index Closes at Fresh Record High as Financials Gain, Air Canada Surges",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-203059625.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "G2 Goldfields (TSX:GTWO) After Index Removal Is The Valuation A Buying Opportunity",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/g2-goldfields-tsx-gtwo-index-170843388.html",
-      "publisher": "Simply Wall St.",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Closes at Fresh Record High as Oil, Utilities and Telecom Stocks Rise",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-204156569.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
