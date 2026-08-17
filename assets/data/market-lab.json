@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-17T16:48:07.816006+00:00",
+  "updated_at": "2026-08-17T17:47:30.797742+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7769.98,
-        "change_pct": -0.203,
+        "price": 7756.4302,
+        "change_pct": -0.377,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26717.1934,
-        "change_pct": -0.045,
+        "price": 26662.7246,
+        "change_pct": -0.249,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53541.0781,
-        "change_pct": -0.356,
+        "price": 53452.6797,
+        "change_pct": -0.521,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36789.4609,
-        "change_pct": 0.161,
+        "price": 36758.1914,
+        "change_pct": 0.076,
         "low_52w": 27823.9004,
-        "high_52w": 36789.4609
+        "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.88,
-        "change_pct": 0.109,
+        "price": 54.81,
+        "change_pct": -0.018,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3060.5557,
-        "change_pct": -0.256,
+        "price": 3055.6404,
+        "change_pct": -0.416,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 303.6301,
-        "change_pct": -0.752,
+        "price": 304.59,
+        "change_pct": -0.438,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 480.45,
-        "change_pct": -3.018,
+        "price": 479.505,
+        "change_pct": -3.209,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 227.12,
-        "change_pct": 0.87,
+        "price": 225.96,
+        "change_pct": 0.355,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 259.66,
-        "change_pct": -1.138,
+        "price": 258.74,
+        "change_pct": -1.489,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 301.88,
-        "change_pct": 0.392,
+        "price": 300.92,
+        "change_pct": 0.073,
         "low_52w": 188.41,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 207.37,
-        "change_pct": -3.256,
+        "price": 206.8,
+        "change_pct": -3.522,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.83,
-        "change_pct": 0.546,
+        "price": 176.52,
+        "change_pct": 0.37,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -137,58 +137,58 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.364,
-        "change_pct": 0.046,
+        "price": 4.375,
+        "change_pct": 0.298,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.706,
-        "change_pct": 0.213,
+        "price": 4.718,
+        "change_pct": 0.468,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.289,
-        "change_pct": 0.456,
+        "price": 5.303,
+        "change_pct": 0.722,
         "low_52w": 4.539,
-        "high_52w": 5.289
+        "high_52w": 5.303
       }
     ],
     "FX": [
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3867,
-        "change_pct": -0.43,
+        "price": 1.3871,
+        "change_pct": -0.4,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1594,
-        "change_pct": 0.51,
+        "price": 1.1583,
+        "change_pct": 0.417,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3562,
-        "change_pct": 0.525,
+        "price": 1.3548,
+        "change_pct": 0.421,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.358,
-        "change_pct": -0.043,
+        "price": 159.451,
+        "change_pct": 0.016,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4483.7998,
-        "change_pct": 2.361,
+        "price": 4473.2998,
+        "change_pct": 2.121,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.62,
-        "change_pct": 0.267,
+        "price": 84.32,
+        "change_pct": 2.33,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.693,
-        "change_pct": -1.464,
+        "price": 2.687,
+        "change_pct": -1.683,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6135,
-        "change_pct": 0.212,
+        "price": 6.603,
+        "change_pct": 0.053,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -235,15 +235,15 @@
     },
     {
       "term": "5Y",
-      "value": 4.364
+      "value": 4.375
     },
     {
       "term": "10Y",
-      "value": 4.706
+      "value": 4.718
     },
     {
       "term": "30Y",
-      "value": 5.289
+      "value": 5.303
     }
   ],
   "news": [
@@ -262,29 +262,29 @@
       "time": "Latest"
     },
     {
+      "title": "Stock Market Today: Dow Falls, Oil Up After Trump Oman Threat; Energy Stock Clears Entry (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-micron-stock-sandisk-stock-sndk/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Restaurant Brands (QSR): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/restaurant-brands-qsr-buy-sell-171820980.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "'Fear Gauge' Falls To Year's Low. A Bad Sign For The Stock Market?",
+      "link": "https://www.investors.com/news/vix-stock-market-fear-gauge/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
       "title": "Update: US Equity Indexes Mixed as Tech Gains Lift Nasdaq, Trump Threatens to Bomb Oman as Iran Peace Deal Deadline Expires",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-tech-162001775.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "FTSE 100 drifts lower as oil price pushes higher",
-      "link": "https://uk.finance.yahoo.com/news/ftse-100-drifts-lower-oil-161837390.html",
-      "publisher": "PA Media: Money",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Wall St mixed as Middle East tensions eclipse tech strength",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-mixed-middle-east-160028177.html",
-      "publisher": "Reuters",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Top Midday Stories: Nvidia Investing $1.5 Billion in SB Energy; L3Harris Names Sam Mehta as CEO, Replacing Christopher Kubasik",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-nvidia-investing-154830059.html",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-tech-165624845.html",
       "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
