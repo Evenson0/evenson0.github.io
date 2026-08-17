@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T21:43:24.370399+00:00",
+  "updated_at": "2026-08-17T22:02:36.579496+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3874,
-        "change_pct": -0.382,
+        "price": 1.3873,
+        "change_pct": -0.386,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1582,
-        "change_pct": 0.405,
+        "price": 1.1583,
+        "change_pct": 0.417,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3545,
-        "change_pct": 0.405,
+        "price": 1.3544,
+        "change_pct": 0.398,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.392,
-        "change_pct": -0.021,
+        "price": 159.446,
+        "change_pct": 0.013,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -276,16 +276,16 @@
       "time": "Latest"
     },
     {
-      "title": "U.S. Stocks Slip as Oil Impasse Weighs on Sentiment",
-      "link": "https://www.wsj.com/finance/stocks/u-s-stocks-slip-as-oil-impasse-weighs-on-sentiment-2ad6f70c?siteid=yhoof2&yptr=yahoo",
-      "publisher": "The Wall Street Journal",
+      "title": "SpaceX Matters More for Telsa Stock Than Cybercab These Days",
+      "link": "https://www.barrons.com/articles/tesla-stock-price-today-spacex-a37b62ef?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "1 Semiconductor Stock Worth Investigating and 2 We Avoid",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/1-semiconductor-stock-worth-investigating-204620394.html",
-      "publisher": "StockStory",
+      "title": "U.S. Stocks Slip as Oil Impasse Weighs on Sentiment",
+      "link": "https://www.wsj.com/finance/stocks/u-s-stocks-slip-as-oil-impasse-weighs-on-sentiment-2ad6f70c?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
       "related": "^GSPC",
       "time": "Latest"
     },
