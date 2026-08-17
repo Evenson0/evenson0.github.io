@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T21:12:10.580710+00:00",
+  "updated_at": "2026-08-17T21:43:24.370399+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3867,
-        "change_pct": -0.432,
+        "price": 1.3874,
+        "change_pct": -0.382,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -179,16 +179,16 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3547,
-        "change_pct": 0.416,
+        "price": 1.3545,
+        "change_pct": 0.405,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.406,
-        "change_pct": -0.013,
+        "price": 159.392,
+        "change_pct": -0.021,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "1 Semiconductor Stock Worth Investigating and 2 We Avoid",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/1-semiconductor-stock-worth-investigating-204620394.html",
-      "publisher": "StockStory",
+      "title": "Stock Market Today, Aug. 17: Markets Inch Lower and Treasury Yields Rise as Investors Wait for Retail Earnings",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/17/stock-market-today-aug-17-markets-inch-lower-and-treasury-yields-rise-as-investors-wait-for-retail-earnings/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Fed's Next Rate Move Just Got More Complicated",
-      "link": "https://finance.yahoo.com/economy/policy/articles/feds-next-rate-move-just-203716877.html",
-      "publisher": "GuruFocus.com",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Update: Equities Fall, Oil Rallies as US-Iran Ceasefire Expires",
-      "link": "https://finance.yahoo.com/markets/articles/equities-fall-oil-rallies-us-203511790.html",
+      "title": "Update: US Equity Indexes Slide After Trump's Threats to Bomb Oman Lifts Crude Oil, 30-Year Treasury Yield Touches 19-Year High",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-slide-trump-211106690.html",
       "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "S&P 500's Best Stock In 2026 Leads Index With A Bullish Move",
-      "link": "https://www.investors.com/news/sandisk-sp-500-best-stock-2026-leads-with-bullish-move/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "U.S. Stocks Slip as Oil Impasse Weighs on Sentiment",
+      "link": "https://www.wsj.com/finance/stocks/u-s-stocks-slip-as-oil-impasse-weighs-on-sentiment-2ad6f70c?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "1 Semiconductor Stock Worth Investigating and 2 We Avoid",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/1-semiconductor-stock-worth-investigating-204620394.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
