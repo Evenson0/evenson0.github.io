@@ -1,60 +1,60 @@
 {
-  "updated_at": "2026-08-17T13:55:00.307733+00:00",
+  "updated_at": "2026-08-17T14:46:51.229431+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7779.1802,
-        "change_pct": -0.085,
+        "price": 7773.1699,
+        "change_pct": -0.162,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26770.3789,
-        "change_pct": 0.154,
+        "price": 26734.8828,
+        "change_pct": 0.021,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53572.1914,
-        "change_pct": -0.298,
+        "price": 53502.1406,
+        "change_pct": -0.429,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36700.1289,
-        "change_pct": -0.082,
+        "price": 36786.8711,
+        "change_pct": 0.154,
         "low_52w": 27823.9004,
-        "high_52w": 36759.3008
+        "high_52w": 36786.8711
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.75,
-        "change_pct": -0.128,
+        "price": 54.86,
+        "change_pct": 0.073,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3054.1653,
-        "change_pct": -0.465,
+        "price": 3060.552,
+        "change_pct": -0.256,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10741.3301,
-        "change_pct": -0.082,
+        "price": 10741.4805,
+        "change_pct": -0.08,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 305.485,
-        "change_pct": -0.145,
+        "price": 304.575,
+        "change_pct": -0.443,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 486.1504,
-        "change_pct": -1.867,
+        "price": 482.25,
+        "change_pct": -2.654,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 226.25,
-        "change_pct": 0.484,
+        "price": 227.098,
+        "change_pct": 0.861,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 262.995,
-        "change_pct": 0.131,
+        "price": 260.21,
+        "change_pct": -0.929,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 300.85,
-        "change_pct": 0.05,
+        "price": 301.35,
+        "change_pct": 0.216,
         "low_52w": 188.41,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 208.55,
-        "change_pct": -2.706,
+        "price": 208.08,
+        "change_pct": -2.925,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 175.95,
-        "change_pct": 0.045,
+        "price": 176.39,
+        "change_pct": 0.296,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -137,42 +137,42 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.373,
-        "change_pct": 0.252,
+        "price": 4.359,
+        "change_pct": -0.069,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.708,
-        "change_pct": 0.256,
+        "price": 4.696,
+        "change_pct": 0.0,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.282,
-        "change_pct": 0.323,
+        "price": 5.274,
+        "change_pct": 0.171,
         "low_52w": 4.539,
-        "high_52w": 5.282
+        "high_52w": 5.275
       }
     ],
     "FX": [
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3855,
-        "change_pct": -0.516,
+        "price": 1.3854,
+        "change_pct": -0.525,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1597,
-        "change_pct": 0.533,
+        "price": 1.1592,
+        "change_pct": 0.487,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -180,15 +180,15 @@
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
         "price": 1.3556,
-        "change_pct": 0.485,
+        "change_pct": 0.484,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.315,
-        "change_pct": -0.07,
+        "price": 159.253,
+        "change_pct": -0.109,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4443.0,
-        "change_pct": 1.429,
+        "price": 4479.2002,
+        "change_pct": 2.256,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.76,
-        "change_pct": 0.437,
+        "price": 82.44,
+        "change_pct": 0.049,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.706,
-        "change_pct": -0.988,
+        "price": 2.703,
+        "change_pct": -1.098,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.5905,
-        "change_pct": -0.136,
+        "price": 6.613,
+        "change_pct": 0.205,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -235,57 +235,57 @@
     },
     {
       "term": "5Y",
-      "value": 4.373
+      "value": 4.359
     },
     {
       "term": "10Y",
-      "value": 4.708
+      "value": 4.696
     },
     {
       "term": "30Y",
-      "value": 5.282
+      "value": 5.274
     }
   ],
   "news": [
     {
-      "title": "Tech searches for gains as stocks teeter at the open: AlphaCheck",
-      "link": "https://finance.yahoo.com/markets/article/tech-searches-for-gains-as-stocks-teeter-at-the-open-alphacheck-135155576.html",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq waver ahead of retail earnings",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "'Spending is leading to earnings': Wall Street strategists see payoff from Big Tech's AI investment",
-      "link": "https://finance.yahoo.com/news/spending-is-leading-to-earnings-wall-street-strategists-see-payoff-from-big-techs-ai-investment-151610093.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "3 Reasons to Avoid STNG and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-avoid-stng-1-135020983.html",
+      "title": "3 Reasons DIN is Risky and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-din-risky-1-143020290.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Falls, Nasdaq Rises As Memory Chip Stocks Micron, Sandisk Extend Gains (Live Coverage)",
+      "title": "Stock Market Today: Dow Falls, Oil Rises After Trump Oman Threat; Micron, Sandisk Extend Gains (Live Coverage)",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-micron-stock-sandisk-stock-sndk/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "3 Reasons UNFI is Risky and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-unfi-risky-1-134220704.html",
+      "title": "Nvidia’s Stake in SpaceX—and Musk’s Massive Holdings",
+      "link": "https://www.barrons.com/articles/elon-musk-spacex-holdings-stock-8a935b9d?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "ICU Medical (ICUI): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/icu-medical-icui-buy-sell-141420193.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "S&P 500 opens muted as Middle East tensions weigh",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-opens-muted-middle-133600812.html",
-      "publisher": "Reuters",
+      "title": "Tronox Holdings Plc (TROX) Pressured by Softer Guidance and Leverage Risks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tronox-holdings-plc-trox-pressured-141158294.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
     },
