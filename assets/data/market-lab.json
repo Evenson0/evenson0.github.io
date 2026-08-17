@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-17T19:44:09.505172+00:00",
+  "updated_at": "2026-08-17T20:03:51.825846+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7749.7998,
-        "change_pct": -0.462,
+        "price": 7745.3501,
+        "change_pct": -0.519,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26654.1719,
-        "change_pct": -0.281,
+        "price": 26644.9102,
+        "change_pct": -0.315,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53450.1719,
-        "change_pct": -0.525,
+        "price": 53460.0195,
+        "change_pct": -0.507,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36715.0586,
-        "change_pct": -0.041,
+        "price": 36667.9219,
+        "change_pct": -0.17,
         "low_52w": 27823.9004,
         "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.74,
-        "change_pct": -0.146,
+        "price": 54.68,
+        "change_pct": -0.255,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3057.1223,
-        "change_pct": -0.368,
+        "price": 3057.3784,
+        "change_pct": -0.36,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 305.665,
-        "change_pct": -0.087,
+        "price": 305.59,
+        "change_pct": -0.111,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 480.76,
-        "change_pct": -2.955,
+        "price": 480.35,
+        "change_pct": -3.038,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 225.48,
-        "change_pct": 0.142,
+        "price": 225.01,
+        "change_pct": -0.067,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 260.1995,
-        "change_pct": -0.933,
+        "price": 261.31,
+        "change_pct": -0.51,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 300.3,
-        "change_pct": -0.133,
+        "price": 300.09,
+        "change_pct": -0.203,
         "low_52w": 188.41,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 206.79,
-        "change_pct": -3.527,
+        "price": 206.4,
+        "change_pct": -3.709,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 175.81,
-        "change_pct": -0.034,
+        "price": 175.51,
+        "change_pct": -0.205,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3872,
-        "change_pct": -0.395,
+        "price": 1.3874,
+        "change_pct": -0.383,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1583,
-        "change_pct": 0.417,
+        "price": 1.1582,
+        "change_pct": 0.405,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -187,8 +187,8 @@
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.423,
-        "change_pct": -0.002,
+        "price": 159.465,
+        "change_pct": 0.024,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4471.3999,
-        "change_pct": 2.077,
+        "price": 4474.5,
+        "change_pct": 2.148,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.42,
-        "change_pct": 2.451,
+        "price": 84.57,
+        "change_pct": 2.633,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.699,
-        "change_pct": -1.244,
+        "price": 2.701,
+        "change_pct": -1.171,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.606,
-        "change_pct": 0.098,
+        "price": 6.607,
+        "change_pct": 0.114,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Here’s How Nancy Pelosi Beat the Stock Market and Warren Buffett",
-      "link": "https://247wallst.com/investing/2025/11/23/heres-how-nancy-pelosi-beat-the-stock-market-and-warren-buffett/",
-      "publisher": "24/7 Wall St.",
+      "title": "Update: US Equity Indexes Decline, Crude Oil Jumps After Trump Threatens to Bomb Oman",
+      "link": "https://finance.yahoo.com/markets/articles/us-equity-indexes-decline-crude-195613628.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why Meta Platforms Stock Is Falling Today",
-      "link": "https://www.fool.com/investing/2026/08/17/why-meta-stock-is-falling-today/",
-      "publisher": "Motley Fool",
+      "title": "Guardant Health (GH) Surges on FDA Approval and Cancer Screening Momentum",
+      "link": "https://finance.yahoo.com/healthcare/articles/guardant-health-gh-surges-fda-194840110.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Wall Street indexes slip with Iran, retail results in focus",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-mixed-middle-east-160028177.html",
-      "publisher": "Reuters",
+      "title": "Why Investors Are Moving On From Synopsys (SNPS)",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-investors-moving-synopsys-snps-194830437.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Cisco Grew Faster By Selling Hardware And Charging More For It",
-      "link": "https://www.trefis.com/articles/611686/cisco-grew-faster-by-selling-hardware-and-charging-more-for-it/2026-08-17",
-      "publisher": "Trefis",
+      "title": "Boston Scientific (BSX) Faces Growth Concerns in Key Medical Device Franchises",
+      "link": "https://finance.yahoo.com/healthcare/articles/boston-scientific-bsx-faces-growth-194823938.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
     },
