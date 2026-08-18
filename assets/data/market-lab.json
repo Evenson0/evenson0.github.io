@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-18T20:00:33.871624+00:00",
+  "updated_at": "2026-08-18T20:42:43.112012+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7691.9702,
-        "change_pct": -0.685,
+        "price": 7691.7598,
+        "change_pct": -0.688,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
@@ -21,8 +21,8 @@
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53343.6406,
-        "change_pct": -0.217,
+        "price": 53343.3984,
+        "change_pct": -0.218,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
@@ -45,8 +45,8 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3022.6794,
-        "change_pct": -1.14,
+        "price": 3017.887,
+        "change_pct": -1.297,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3898,
-        "change_pct": 0.19,
+        "price": 1.3897,
+        "change_pct": 0.183,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -179,8 +179,8 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3533,
-        "change_pct": -0.101,
+        "price": 1.3532,
+        "change_pct": -0.111,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4400.6001,
-        "change_pct": -0.389,
+        "price": 4393.7002,
+        "change_pct": -0.546,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.14,
-        "change_pct": -0.426,
+        "price": 84.37,
+        "change_pct": -0.154,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.782,
-        "change_pct": 3.42,
+        "price": 2.793,
+        "change_pct": 3.829,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.467,
-        "change_pct": -2.075,
+        "price": 6.4585,
+        "change_pct": -2.203,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Fall as 30-Year Yield Hits 19-Year High, Crude Oil Advances",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-30-195215372.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: Nasdaq Hit Hard By Chip Names; Sandisk, Micron Slide As Biotech Soars (Live Coverage)",
+      "title": "Stock Market Today: Nasdaq Slides Along With Chip Names; Sandisk, Micron Lose Big",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-nvidia-stock-nvda/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Meet the Dividend King That's Quietly Crushing the S&P 500 in 2026. Here's Why It's a Buy This August.",
-      "link": "https://www.fool.com/investing/2026/08/18/meet-the-dividend-king-thats-quietly-crushing-the/",
-      "publisher": "Motley Fool",
+      "title": "Coherent, Teradyne, and Ciena Are the S&P 500’s 3 Biggest Decliners on Tuesday",
+      "link": "https://247wallst.com/investing/2026/08/18/coherent-teradyne-and-ciena-are-the-sp-500s-3-biggest-decliners-on-tuesday/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Meet the Dividend King Stock That Yields More Than Quadruple the S&P 500. Here's Why It's a Buy in August.",
-      "link": "https://www.fool.com/investing/2026/08/18/meet-the-dividend-king-stock-that-yields-more-than/",
-      "publisher": "Motley Fool",
+      "title": "Veteran Analyst Firm Just Calls Tesla Stock a 'Sell' on Robotaxi Risks",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/veteran-analyst-firm-just-calls-202652386.html",
+      "publisher": "GuruFocus.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Update: Equities Fall For Third Day as Oil Stretches Gains Amid Middle East Anxiety",
+      "link": "https://finance.yahoo.com/markets/articles/equities-fall-third-day-oil-202610757.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
