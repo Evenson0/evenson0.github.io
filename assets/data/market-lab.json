@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T20:42:43.112012+00:00",
+  "updated_at": "2026-08-18T21:03:09.991454+00:00",
   "assets": {
     "Indices": [
       {
@@ -131,8 +131,8 @@
         "name": "US 13-week yield",
         "price": 3.705,
         "change_pct": 0.054,
-        "low_52w": 3.507,
-        "high_52w": 4.128
+        "low_52w": 3.658,
+        "high_52w": 3.805
       },
       {
         "symbol": "^FVX",
@@ -147,8 +147,8 @@
         "name": "US 10-year yield",
         "price": 4.706,
         "change_pct": -0.381,
-        "low_52w": 3.953,
-        "high_52w": 4.745
+        "low_52w": 4.604,
+        "high_52w": 4.724
       },
       {
         "symbol": "^TYX",
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3897,
-        "change_pct": 0.183,
+        "price": 1.3888,
+        "change_pct": 0.116,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1578,
-        "change_pct": 0.036,
+        "price": 1.1577,
+        "change_pct": 0.024,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3532,
-        "change_pct": -0.111,
+        "price": 1.3538,
+        "change_pct": -0.061,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.645,
-        "change_pct": 0.265,
+        "price": 159.563,
+        "change_pct": 0.214,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4393.7002,
-        "change_pct": -0.546,
+        "price": 4386.7998,
+        "change_pct": -0.702,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.37,
-        "change_pct": -0.154,
+        "price": 84.47,
+        "change_pct": -0.036,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.793,
-        "change_pct": 3.829,
+        "price": 2.794,
+        "change_pct": 3.866,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.4585,
-        "change_pct": -2.203,
+        "price": 6.456,
+        "change_pct": -2.241,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -248,9 +248,9 @@
   ],
   "news": [
     {
-      "title": "Stocks often fade in midterm election years. Here's why.",
-      "link": "https://finance.yahoo.com/video/stocks-often-fade-midterm-election-192737817.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "Earnings live updates: La-Z-Boy stock plunges as 'uneven consumer' leads to earnings miss",
+      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-la-z-boy-stock-plunges-as-uneven-consumer-leads-to-earnings-miss-115925351.html",
+      "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Nasdaq Slides Along With Chip Names; Sandisk, Micron Lose Big",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-nvidia-stock-nvda/?src=A00220&yptr=yahoo",
+      "title": "Mega Cap Growth vs Small Cap Growth: Which ETF Wins?",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/18/mega-cap-growth-vs-small-cap-growth-which-etf-wins/",
+      "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Dow Jones Futures: Sandisk, Micron, Credo Lead AI Rug Pull; Target Earnings Due",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sandisk-micro-credo-ai-stocks-target-earnings/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Coherent, Teradyne, and Ciena Are the S&P 500’s 3 Biggest Decliners on Tuesday",
-      "link": "https://247wallst.com/investing/2026/08/18/coherent-teradyne-and-ciena-are-the-sp-500s-3-biggest-decliners-on-tuesday/",
-      "publisher": "24/7 Wall St.",
+      "title": "U.S. Tech Stocks Slip as Bond Yields Hit Decade Highs; Iran Truce Expires",
+      "link": "https://www.wsj.com/finance/stocks/u-s-tech-stocks-slip-as-bond-yields-hit-decade-highs-iran-truce-expires-122be523?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Veteran Analyst Firm Just Calls Tesla Stock a 'Sell' on Robotaxi Risks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/veteran-analyst-firm-just-calls-202652386.html",
-      "publisher": "GuruFocus.com",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Update: Equities Fall For Third Day as Oil Stretches Gains Amid Middle East Anxiety",
-      "link": "https://finance.yahoo.com/markets/articles/equities-fall-third-day-oil-202610757.html",
-      "publisher": "MT Newswires",
+      "title": "Traders Are Looking for Cover in Energy Stocks",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-18-2026/card/traders-are-looking-for-cover-in-energy-stocks-l4lsZK0iaVlTAa1YoU9A?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
       "related": "^GSPC",
       "time": "Latest"
     },
