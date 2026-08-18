@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T21:41:15.811846+00:00",
+  "updated_at": "2026-08-18T22:00:26.701836+00:00",
   "assets": {
     "Indices": [
       {
@@ -131,8 +131,8 @@
         "name": "US 13-week yield",
         "price": 3.705,
         "change_pct": 0.054,
-        "low_52w": 3.507,
-        "high_52w": 4.128
+        "low_52w": 3.658,
+        "high_52w": 3.805
       },
       {
         "symbol": "^FVX",
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.389,
-        "change_pct": 0.13,
+        "price": 1.3894,
+        "change_pct": 0.179,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1581,
-        "change_pct": 0.059,
+        "price": 1.1579,
+        "change_pct": 0.047,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3534,
-        "change_pct": -0.091,
+        "price": 1.3536,
+        "change_pct": -0.081,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.546,
-        "change_pct": 0.203,
+        "price": 159.569,
+        "change_pct": 0.144,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -262,16 +262,9 @@
       "time": "Latest"
     },
     {
-      "title": "Dow Jones Futures: Sandisk, Micron, Credo Lead AI Rug Pull; Indexes Near Critical Level",
+      "title": "Dow Jones Futures: Sandisk, Micron, Credo Lead AI Rug Pull; Indexes Near Key Test",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sandisk-micron-credo-ai-stocks-target-earnings/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today, Aug. 18: CoreWeave Falls as Debt-Financing Concerns and Capital Spending Pressures Rise With Interest Rates",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/18/stock-market-today-aug-18-coreweave-falls-as-debt-financing-concerns-and-capital-spending-pressures-rise-with-interest-rates/",
-      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
@@ -279,6 +272,13 @@
       "title": "Legendary Investor Drops Stark 2027 Market Warning",
       "link": "https://finance.yahoo.com/economy/articles/legendary-investor-drops-stark-2027-212429486.html",
       "publisher": "GuruFocus.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today, Aug. 18: CoreWeave Falls as Debt-Financing Concerns and Capital Spending Pressures Rise With Interest Rates",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/18/stock-market-today-aug-18-coreweave-falls-as-debt-financing-concerns-and-capital-spending-pressures-rise-with-interest-rates/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
