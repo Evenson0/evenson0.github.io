@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-19T18:55:48.856213+00:00",
+  "updated_at": "2026-08-19T19:42:30.780464+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7716.21,
-        "change_pct": 0.318,
+        "price": 7711.6899,
+        "change_pct": 0.259,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26344.9434,
-        "change_pct": 0.21,
+        "price": 26341.0,
+        "change_pct": 0.195,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53444.1484,
-        "change_pct": 0.189,
+        "price": 53452.5586,
+        "change_pct": 0.205,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36343.0508,
-        "change_pct": -0.068,
+        "price": 36387.8398,
+        "change_pct": 0.055,
         "low_52w": 27823.9004,
         "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.07,
-        "change_pct": -0.387,
+        "price": 54.11,
+        "change_pct": -0.313,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3032.7078,
-        "change_pct": 0.491,
+        "price": 3034.2861,
+        "change_pct": 0.543,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 315.035,
-        "change_pct": 1.614,
+        "price": 315.44,
+        "change_pct": 1.745,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 483.625,
-        "change_pct": 0.414,
+        "price": 483.505,
+        "change_pct": 0.389,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 219.57,
-        "change_pct": -0.077,
+        "price": 218.985,
+        "change_pct": -0.344,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 263.99,
-        "change_pct": 1.75,
+        "price": 265.52,
+        "change_pct": 2.34,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 286.82,
-        "change_pct": -3.186,
+        "price": 287.08,
+        "change_pct": -3.099,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 202.08,
-        "change_pct": -0.907,
+        "price": 202.23,
+        "change_pct": -0.834,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.0,
-        "change_pct": 0.074,
+        "price": 176.335,
+        "change_pct": 0.264,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -131,15 +131,15 @@
         "name": "US 13-week yield",
         "price": 3.7,
         "change_pct": -0.135,
-        "low_52w": 3.507,
-        "high_52w": 4.128
+        "low_52w": 3.658,
+        "high_52w": 3.805
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
         "price": 4.353,
         "change_pct": -0.321,
-        "low_52w": 3.512,
+        "low_52w": 4.313,
         "high_52w": 4.461
       },
       {
@@ -147,15 +147,15 @@
         "name": "US 10-year yield",
         "price": 4.653,
         "change_pct": -1.126,
-        "low_52w": 3.953,
-        "high_52w": 4.745
+        "low_52w": 4.604,
+        "high_52w": 4.724
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.195,
-        "change_pct": -1.703,
-        "low_52w": 4.539,
+        "price": 5.194,
+        "change_pct": -1.722,
+        "low_52w": 5.096,
         "high_52w": 5.309
       }
     ],
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3806,
-        "change_pct": -0.459,
+        "price": 1.3813,
+        "change_pct": -0.412,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1678,
-        "change_pct": 0.823,
+        "price": 1.1677,
+        "change_pct": 0.812,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.361,
-        "change_pct": 0.437,
+        "price": 1.3607,
+        "change_pct": 0.42,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.275,
-        "change_pct": -0.668,
+        "price": 158.216,
+        "change_pct": -0.705,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4548.3999,
-        "change_pct": 4.178,
+        "price": 4566.0,
+        "change_pct": 4.581,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.21,
-        "change_pct": -0.859,
+        "price": 83.98,
+        "change_pct": -1.13,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.784,
-        "change_pct": 0.288,
+        "price": 2.775,
+        "change_pct": -0.036,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.4825,
-        "change_pct": 0.0,
+        "price": 6.4925,
+        "change_pct": 0.154,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -243,49 +243,49 @@
     },
     {
       "term": "30Y",
-      "value": 5.195
+      "value": 5.194
     }
   ],
   "news": [
     {
-      "title": "Active ETFs enable more 'tactical' market moves for clients",
-      "link": "https://finance.yahoo.com/video/active-etfs-enable-more-tactical-144700650.html",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq rise as bonds rally, Moderna stock skyrockets",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-august-19-dow-sp-500-nasdaq-081116064.html",
+      "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "There's 'light at the end of the tunnel' for tech stocks amid bond rout: Eric Jackson",
+      "link": "https://finance.yahoo.com/video/theres-light-end-tunnel-tech-140846636.html",
       "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "15 S&P 500 stocks are up 100% or more this year — here's what they have in common",
-      "link": "https://finance.yahoo.com/markets/article/15-sp-500-stocks-are-up-100-or-more-this-year--heres-what-they-have-in-common-135448325.html",
+      "title": "Wall Street's hot streak is running into a midterm-year curse: Chart of the Day",
+      "link": "https://finance.yahoo.com/markets/article/wall-streets-hot-streak-is-running-into-a-midterm-year-curse-chart-of-the-day-100000963.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nvidia stock's deep discount creates a 'compelling opportunity,' BofA says",
-      "link": "https://finance.yahoo.com/markets/stocks/article/nvidia-stocks-deep-discount-creates-a-compelling-opportunity-bofa-says-114927735.html",
-      "publisher": "Yahoo Finance",
+      "title": "Why Is XRP (Ripple) Up Today?",
+      "link": "https://www.fool.com/investing/2026/08/19/why-xrp/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Wall St rises as yields ease, Moderna lifts healthcare stocks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-steady-tech-104804699.html",
-      "publisher": "Reuters",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Moderna, Merck, Micron, Marvell, Estée Lauder, Honeywell Aerospace, and More Stocks That Explain Today’s Market",
-      "link": "https://www.barrons.com/articles/stock-movers-882bea6d?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: S&P 500 Higher As Yields Fall; Bitcoin Jumps As Gold Stocks Rise(Live Coverage)",
+      "title": "Stock Market Today: S&P 500 Higher As Yields Tumble; Coinbase Soars Amid White House News (Live Coverage)",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-minutes-nvidia-sk-hynix-skhy/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Intel Stock Charges A Premium For Capacity Still Being Built",
+      "link": "https://www.trefis.com/articles/612015/intel-stock-charges-a-premium-for-capacity-still-being-built/2026-08-19",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
