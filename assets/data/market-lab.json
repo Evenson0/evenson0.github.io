@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T20:47:40.670569+00:00",
+  "updated_at": "2026-08-19T21:43:24.228810+00:00",
   "assets": {
     "Indices": [
       {
@@ -147,8 +147,8 @@
         "name": "US 10-year yield",
         "price": 4.653,
         "change_pct": -1.126,
-        "low_52w": 4.604,
-        "high_52w": 4.724
+        "low_52w": 3.953,
+        "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3808,
-        "change_pct": -0.441,
+        "price": 1.3803,
+        "change_pct": -0.481,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1682,
-        "change_pct": 0.859,
+        "price": 1.168,
+        "change_pct": 0.835,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3607,
-        "change_pct": 0.42,
+        "price": 1.3608,
+        "change_pct": 0.427,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.152,
-        "change_pct": -0.746,
+        "price": 158.103,
+        "change_pct": -0.776,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4577.5,
-        "change_pct": 4.844,
+        "price": 4580.7002,
+        "change_pct": 4.918,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.29,
-        "change_pct": -0.765,
+        "price": 84.4,
+        "change_pct": -0.636,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.779,
-        "change_pct": 0.108,
+        "price": 2.783,
+        "change_pct": 0.252,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.5005,
-        "change_pct": 0.278,
+        "price": 6.5085,
+        "change_pct": 0.401,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Breaks Losing Streak As Moderna Catapults On Its Cancer Vaccine Win (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-minutes-nvidia-sk-hynix-skhy/?src=A00220&yptr=yahoo",
+      "title": "Vanguard VEA vs iShares IXUS: Which International ETF Promises Better Performance in 2026?",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/19/vanguard-vea-vs-ishares-ixus-which-international-etf-promises-better-performance-in-2026/",
+      "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Dow Jones Futures: S&P 500, Nasdaq Rise On Treasury Move; Moderna, Merck Spur Big Biopharma Gains",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-treasury-move-moderna-merck-spur-big-biopharma-gains/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "US Equity Markets End Higher as US Treasury Plans Expanded Long-Bond Buybacks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-end-higher-202620978.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Johnson & Johnson Stock Runs On A Calendar The Market Does Not Set",
-      "link": "https://www.trefis.com/articles/612016/johnson-johnson-stock-runs-on-a-calendar-the-market-does-not-set/2026-08-19",
+      "title": "Alphabet Stock Surged When Its AI Spending Found Customers",
+      "link": "https://www.trefis.com/articles/612013/alphabet-stock-surged-when-its-ai-spending-found-customers/2026-08-19",
       "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stocks Hitch a Ride on the Bond Market's Rally",
-      "link": "https://www.barrons.com/livecoverage/stock-market-news-today-081926/card/stocks-hitch-a-ride-on-the-bond-market-s-rally-48n4XuI0VGZ4ln2bdnWI?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Update: Equities Snap 3-Day Losing Streak as Traders Parse July Fed Minutes",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/equities-snap-3-day-losing-205650247.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
