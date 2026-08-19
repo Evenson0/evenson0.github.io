@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-19T19:42:30.780464+00:00",
+  "updated_at": "2026-08-19T20:01:38.937299+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7711.6899,
-        "change_pct": 0.259,
+        "price": 7708.3398,
+        "change_pct": 0.216,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26341.0,
-        "change_pct": 0.195,
+        "price": 26331.0898,
+        "change_pct": 0.157,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53452.5586,
-        "change_pct": 0.205,
+        "price": 53463.1094,
+        "change_pct": 0.224,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36387.8398,
-        "change_pct": 0.055,
+        "price": 36401.7891,
+        "change_pct": 0.093,
         "low_52w": 27823.9004,
         "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.11,
-        "change_pct": -0.313,
+        "price": 54.12,
+        "change_pct": -0.295,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3034.2861,
-        "change_pct": 0.543,
+        "price": 3032.0896,
+        "change_pct": 0.471,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 315.44,
-        "change_pct": 1.745,
+        "price": 316.83,
+        "change_pct": 2.193,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 483.505,
-        "change_pct": 0.389,
+        "price": 484.31,
+        "change_pct": 0.556,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 218.985,
-        "change_pct": -0.344,
+        "price": 217.56,
+        "change_pct": -0.992,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 265.52,
-        "change_pct": 2.34,
+        "price": 265.84,
+        "change_pct": 2.463,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 287.08,
-        "change_pct": -3.099,
+        "price": 286.92,
+        "change_pct": -3.153,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 202.23,
-        "change_pct": -0.834,
+        "price": 202.61,
+        "change_pct": -0.647,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.335,
-        "change_pct": 0.264,
+        "price": 176.4,
+        "change_pct": 0.301,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3813,
-        "change_pct": -0.412,
+        "price": 1.3806,
+        "change_pct": -0.459,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1677,
-        "change_pct": 0.812,
+        "price": 1.1681,
+        "change_pct": 0.847,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -187,8 +187,8 @@
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.216,
-        "change_pct": -0.705,
+        "price": 158.095,
+        "change_pct": -0.781,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4566.0,
-        "change_pct": 4.581,
+        "price": 4567.8999,
+        "change_pct": 4.624,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 83.98,
-        "change_pct": -1.13,
+        "price": 84.1,
+        "change_pct": -0.989,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.775,
-        "change_pct": -0.036,
+        "price": 2.777,
+        "change_pct": 0.036,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.4925,
-        "change_pct": 0.154,
+        "price": 6.4945,
+        "change_pct": 0.185,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -269,23 +269,23 @@
       "time": "Latest"
     },
     {
-      "title": "Why Is XRP (Ripple) Up Today?",
-      "link": "https://www.fool.com/investing/2026/08/19/why-xrp/",
+      "title": "Why State Street SPDR Developed World ex-US is a Strong International ETF",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/19/why-state-street-spdr-developed-world-ex-us-is-a-strong-international-etf/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: S&P 500 Higher As Yields Tumble; Coinbase Soars Amid White House News (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-minutes-nvidia-sk-hynix-skhy/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "US Equity Indexes Rise After Treasury Lifts Buyback Limit, Fed Minutes Show Most FOMC Participants Agreed to Hold Rates Steady at July Meeting",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-treasury-194420378.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Intel Stock Charges A Premium For Capacity Still Being Built",
-      "link": "https://www.trefis.com/articles/612015/intel-stock-charges-a-premium-for-capacity-still-being-built/2026-08-19",
-      "publisher": "Trefis",
+      "title": "Why Is Bitcoin Up Today?",
+      "link": "https://www.fool.com/investing/2026/08/19/why-is-bitcoin-up-today/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
