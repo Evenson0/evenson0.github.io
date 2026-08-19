@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T22:00:26.701836+00:00",
+  "updated_at": "2026-08-19T13:11:38.143912+00:00",
   "assets": {
     "Indices": [
       {
@@ -29,7 +29,7 @@
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36367.9297,
+        "price": 36367.8984,
         "change_pct": -0.818,
         "low_52w": 27823.9004,
         "high_52w": 36759.3008
@@ -45,7 +45,7 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3017.887,
+        "price": 3017.8899,
         "change_pct": -1.297,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
@@ -53,16 +53,16 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10728.04,
-        "change_pct": 0.072,
+        "price": 10739.2197,
+        "change_pct": 0.105,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 69220.25,
-        "change_pct": 0.737,
+        "price": 65326.4219,
+        "change_pct": -3.164,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.705,
-        "change_pct": 0.054,
-        "low_52w": 3.658,
-        "high_52w": 3.805
+        "price": 3.7,
+        "change_pct": -0.135,
+        "low_52w": 3.507,
+        "high_52w": 4.128
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.367,
-        "change_pct": -0.206,
+        "price": 4.337,
+        "change_pct": -0.687,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.706,
-        "change_pct": -0.381,
+        "price": 4.647,
+        "change_pct": -1.254,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.285,
-        "change_pct": -0.452,
+        "price": 5.196,
+        "change_pct": -1.684,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3894,
-        "change_pct": 0.179,
+        "price": 1.3842,
+        "change_pct": -0.202,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1579,
-        "change_pct": 0.047,
+        "price": 1.1651,
+        "change_pct": 0.588,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3536,
-        "change_pct": -0.081,
+        "price": 1.361,
+        "change_pct": 0.444,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.569,
-        "change_pct": 0.144,
+        "price": 158.424,
+        "change_pct": -0.575,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4389.5,
-        "change_pct": -0.641,
+        "price": 4497.7998,
+        "change_pct": 3.019,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.42,
-        "change_pct": -0.095,
+        "price": 84.18,
+        "change_pct": -0.895,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.793,
-        "change_pct": 3.829,
+        "price": 2.843,
+        "change_pct": 2.414,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.456,
-        "change_pct": -2.241,
+        "price": 6.467,
+        "change_pct": -0.239,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -231,62 +231,69 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.705
+      "value": 3.7
     },
     {
       "term": "5Y",
-      "value": 4.367
+      "value": 4.337
     },
     {
       "term": "10Y",
-      "value": 4.706
+      "value": 4.647
     },
     {
       "term": "30Y",
-      "value": 5.285
+      "value": 5.196
     }
   ],
   "news": [
     {
-      "title": "Earnings live updates: La-Z-Boy stock plunges as 'uneven consumer' leads to earnings miss",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-la-z-boy-stock-plunges-as-uneven-consumer-leads-to-earnings-miss-115925351.html",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures stall after Trump pauses tariffs on Canada",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-august-19-dow-sp-500-nasdaq-081116064.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Global bond sell-off pressures stocks: AlphaCheck",
-      "link": "https://finance.yahoo.com/markets/article/global-bond-sell-off-pressures-stocks-alphacheck-135011383.html",
+      "title": "Nvidia stock's deep discount creates a 'compelling opportunity,' BofA says",
+      "link": "https://finance.yahoo.com/markets/stocks/article/nvidia-stocks-deep-discount-creates-a-compelling-opportunity-bofa-says-114927735.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Dow Jones Futures: Sandisk, Micron, Credo Lead AI Rug Pull; Indexes Near Key Test",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sandisk-micron-credo-ai-stocks-target-earnings/?src=A00220&yptr=yahoo",
+      "title": "Gold can be a great inflation hedge, but sometimes it's not: AlphaSpace breakdown",
+      "link": "https://finance.yahoo.com/video/gold-great-inflation-hedge-sometimes-160000950.html",
+      "publisher": "Yahoo Finance Video",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today: Dow Rises Amid Treasury Buybacks; Moderna Soars On Cancer Drug News (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-minutes-nvidia-sk-hynix-skhy/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Legendary Investor Drops Stark 2027 Market Warning",
-      "link": "https://finance.yahoo.com/economy/articles/legendary-investor-drops-stark-2027-212429486.html",
-      "publisher": "GuruFocus.com",
+      "title": "Update: US Equity Futures Mostly Flat Pre-Bell as Traders Await Fed Policy Meeting Minutes",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-mostly-flat-125303444.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today, Aug. 18: CoreWeave Falls as Debt-Financing Concerns and Capital Spending Pressures Rise With Interest Rates",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/18/stock-market-today-aug-18-coreweave-falls-as-debt-financing-concerns-and-capital-spending-pressures-rise-with-interest-rates/",
+      "title": "If a Stock Market Crash Is Coming, History Says This Is the Best Move Investors Can Make",
+      "link": "https://www.fool.com/investing/2026/08/19/if-a-stock-market-crash-is-coming-history-says-thi/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Sprott Gold Miners ETF vs Global X Silver Miners ETF: Which Is the Best Fund to Profit from the Historic Metals Bull Run?",
-      "link": "https://www.fool.com/coverage/etfs/2026/08/18/sprott-gold-miners-etf-vs-global-x-silver-miners-etf-which-is-the-best-fund-to-profit-from-the-historic-metals-bull-run/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
+      "title": "US Pauses 50% Tariffs on Certain Canadian Goods for Three Days, While Carney Says \"Important Work\" Remains Amid \"Progress\"",
+      "link": "https://finance.yahoo.com/economy/policy/articles/us-pauses-50-tariffs-certain-105140420.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "TSX Closer: The Index Closes at Fresh Record High as Technology Stocks Rally",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-fresh-201732743.html",
       "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "MoneyMasters Podcast 8-13-26- SP 500 Vs. TSX - Which Leads Next",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/moneymasters-podcast-8-13-26-163200205.html",
-      "publisher": "MoneyShow",
       "related": "^GSPTSE",
       "time": "Latest"
     }
