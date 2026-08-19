@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T21:43:24.228810+00:00",
+  "updated_at": "2026-08-19T22:03:08.620051+00:00",
   "assets": {
     "Indices": [
       {
@@ -147,8 +147,8 @@
         "name": "US 10-year yield",
         "price": 4.653,
         "change_pct": -1.126,
-        "low_52w": 3.953,
-        "high_52w": 4.745
+        "low_52w": 4.604,
+        "high_52w": 4.724
       },
       {
         "symbol": "^TYX",
@@ -171,24 +171,24 @@
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.168,
-        "change_pct": 0.835,
+        "price": 1.1684,
+        "change_pct": 0.87,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3608,
-        "change_pct": 0.427,
+        "price": 1.3609,
+        "change_pct": 0.434,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.103,
-        "change_pct": -0.776,
+        "price": 158.042,
+        "change_pct": -0.815,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -262,6 +262,20 @@
       "time": "Latest"
     },
     {
+      "title": "VEA vs VXUS: Does a Vanguard Developed Markets or Emerging Markets ETF Provide Better Growth Prospects?ure?",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/19/vea-vs-vxus-does-a-vanguard-developed-markets-or-emerging-markets-etf-provide-better-growth-prospects-ure/",
+      "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today, Aug. 19: Stocks Edge Higher, Ending 3-Day Losing Streak",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/19/stock-market-today-aug-19-stocks-edge-higher-ending-3-day-losing-streak/",
+      "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
       "title": "Vanguard VEA vs iShares IXUS: Which International ETF Promises Better Performance in 2026?",
       "link": "https://www.fool.com/coverage/etfs/2026/08/19/vanguard-vea-vs-ishares-ixus-which-international-etf-promises-better-performance-in-2026/",
       "publisher": "Motley Fool",
@@ -272,20 +286,6 @@
       "title": "Dow Jones Futures: S&P 500, Nasdaq Rise On Treasury Move; Moderna, Merck Spur Big Biopharma Gains",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-treasury-move-moderna-merck-spur-big-biopharma-gains/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Alphabet Stock Surged When Its AI Spending Found Customers",
-      "link": "https://www.trefis.com/articles/612013/alphabet-stock-surged-when-its-ai-spending-found-customers/2026-08-19",
-      "publisher": "Trefis",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Update: Equities Snap 3-Day Losing Streak as Traders Parse July Fed Minutes",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/equities-snap-3-day-losing-205650247.html",
-      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
