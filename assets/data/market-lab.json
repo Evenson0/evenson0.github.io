@@ -1,60 +1,60 @@
 {
-  "updated_at": "2026-08-19T13:59:37.002767+00:00",
+  "updated_at": "2026-08-19T14:55:04.661675+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7720.0698,
-        "change_pct": 0.368,
+        "price": 7733.6099,
+        "change_pct": 0.544,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26274.0957,
-        "change_pct": -0.059,
+        "price": 26385.7734,
+        "change_pct": 0.365,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53588.6211,
-        "change_pct": 0.46,
+        "price": 53599.1016,
+        "change_pct": 0.479,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36706.0586,
-        "change_pct": 0.93,
+        "price": 36582.6289,
+        "change_pct": 0.59,
         "low_52w": 27823.9004,
         "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.68,
-        "change_pct": 0.737,
+        "price": 54.44,
+        "change_pct": 0.295,
         "low_52w": 41.93,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3046.1003,
-        "change_pct": 0.935,
+        "price": 3046.4048,
+        "change_pct": 0.945,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10744.2305,
-        "change_pct": 0.151,
+        "price": 10761.4404,
+        "change_pct": 0.312,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 316.175,
-        "change_pct": 1.982,
+        "price": 317.66,
+        "change_pct": 2.461,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 482.195,
-        "change_pct": 0.117,
+        "price": 483.775,
+        "change_pct": 0.445,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 218.55,
-        "change_pct": -0.542,
+        "price": 219.6,
+        "change_pct": -0.064,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 260.29,
-        "change_pct": 0.324,
+        "price": 264.265,
+        "change_pct": 1.856,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 294.14,
-        "change_pct": -0.716,
+        "price": 289.75,
+        "change_pct": -2.197,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 204.89,
-        "change_pct": 0.471,
+        "price": 206.66,
+        "change_pct": 1.339,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.67,
-        "change_pct": 1.023,
+        "price": 176.66,
+        "change_pct": 0.449,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,33 +129,33 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.703,
-        "change_pct": -0.054,
-        "low_52w": 3.658,
-        "high_52w": 3.805
+        "price": 3.705,
+        "change_pct": 0.0,
+        "low_52w": 3.507,
+        "high_52w": 4.128
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.343,
-        "change_pct": -0.55,
-        "low_52w": 4.313,
+        "price": 4.346,
+        "change_pct": -0.481,
+        "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.651,
-        "change_pct": -1.169,
+        "price": 4.643,
+        "change_pct": -1.339,
         "low_52w": 4.604,
         "high_52w": 4.724
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.199,
-        "change_pct": -1.627,
-        "low_52w": 5.096,
+        "price": 5.185,
+        "change_pct": -1.892,
+        "low_52w": 4.539,
         "high_52w": 5.309
       }
     ],
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3821,
-        "change_pct": -0.35,
+        "price": 1.3815,
+        "change_pct": -0.397,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.166,
-        "change_pct": 0.67,
+        "price": 1.1666,
+        "change_pct": 0.717,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3622,
-        "change_pct": 0.529,
+        "price": 1.361,
+        "change_pct": 0.437,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.43,
-        "change_pct": -0.571,
+        "price": 158.329,
+        "change_pct": -0.634,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4509.3999,
-        "change_pct": 3.284,
+        "price": 4547.2002,
+        "change_pct": 4.15,
         "low_52w": 3313.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.54,
-        "change_pct": -0.471,
+        "price": 84.82,
+        "change_pct": -0.141,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.868,
-        "change_pct": 3.314,
+        "price": 2.832,
+        "change_pct": 2.017,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.4615,
-        "change_pct": -0.324,
+        "price": 6.4895,
+        "change_pct": 0.108,
         "low_52w": 4.409,
         "high_52w": 6.703
       }
@@ -231,61 +231,61 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.703
+      "value": 3.705
     },
     {
       "term": "5Y",
-      "value": 4.343
+      "value": 4.346
     },
     {
       "term": "10Y",
-      "value": 4.651
+      "value": 4.643
     },
     {
       "term": "30Y",
-      "value": 5.199
+      "value": 5.185
     }
   ],
   "news": [
     {
-      "title": "Earnings live updates: Estée Lauder stock pops as turnaround gains ground, Analog Devices rises",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-estee-lauder-stock-pops-as-turnaround-gains-ground-analog-devices-rises-115925351.html",
+      "title": "Stock market today: Dow, S&P 500 gain steam as bonds rally, Trump pauses tariffs on Canadian goods",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-august-19-dow-sp-500-nasdaq-081116064.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Forget the Mag 7: The phase 2 AI trade is here",
-      "link": "https://finance.yahoo.com/video/forget-mag-7-phase-2-100000233.html",
+      "title": "15 S&P 500 stocks are up 100% or more this year — here's what they have in common",
+      "link": "https://finance.yahoo.com/markets/article/15-sp-500-stocks-are-up-100-or-more-this-year--heres-what-they-have-in-common-135448325.html",
+      "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Nvidia stock's deep discount creates a 'compelling opportunity,' BofA says",
+      "link": "https://finance.yahoo.com/markets/stocks/article/nvidia-stocks-deep-discount-creates-a-compelling-opportunity-bofa-says-114927735.html",
+      "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Gold can be a great inflation hedge, but sometimes it's not: AlphaSpace breakdown",
+      "link": "https://finance.yahoo.com/video/gold-great-inflation-hedge-sometimes-160000950.html",
       "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Rises On Treasury Buybacks; Moderna Soars On Cancer Drug News (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-minutes-nvidia-sk-hynix-skhy/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "3 Reasons to Avoid CMI and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-avoid-cmi-1-144602244.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Dow rises 230 points after Treasury doubles bond buybacks",
-      "link": "https://qz.com/dow-sp500-treasury-bond-buyback-yields-081926",
-      "publisher": "Quartz",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Wall St opens up after tech-led slump as yields ease; earnings watched",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-opens-tech-led-133753997.html",
-      "publisher": "Reuters",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "3 High-Yielding Dividend Stocks That Have Doubled Their Payouts in 5 Years",
-      "link": "https://www.fool.com/investing/2026/08/19/3-high-yielding-dividend-stocks-that-have-doubled-their-payouts-in-5-years/",
-      "publisher": "Motley Fool",
+      "title": "3 Reasons LNC is Risky and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-lnc-risky-1-143802154.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
