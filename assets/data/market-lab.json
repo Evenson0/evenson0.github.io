@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-20T19:02:19.633884+00:00",
+  "updated_at": "2026-08-20T19:47:58.768378+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7650.6699,
-        "change_pct": -0.744,
+        "price": 7648.46,
+        "change_pct": -0.772,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26061.3848,
-        "change_pct": -1.024,
+        "price": 26072.8516,
+        "change_pct": -0.981,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 52789.7617,
-        "change_pct": -1.259,
+        "price": 52798.5195,
+        "change_pct": -1.243,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36263.2695,
-        "change_pct": -0.381,
+        "price": 36295.1797,
+        "change_pct": -0.293,
         "low_52w": 27878.8008,
         "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 53.87,
-        "change_pct": -0.462,
+        "price": 53.905,
+        "change_pct": -0.397,
         "low_52w": 42.03,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2990.6565,
-        "change_pct": -1.394,
+        "price": 2994.6016,
+        "change_pct": -1.264,
         "low_52w": 2269.3501,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 314.95,
-        "change_pct": -0.593,
+        "price": 312.55,
+        "change_pct": -1.351,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 482.27,
-        "change_pct": -0.421,
+        "price": 481.82,
+        "change_pct": -0.514,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 216.595,
-        "change_pct": -0.444,
+        "price": 216.775,
+        "change_pct": -0.361,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 260.94,
-        "change_pct": -1.843,
+        "price": 261.16,
+        "change_pct": -1.76,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 282.88,
-        "change_pct": -1.408,
+        "price": 282.49,
+        "change_pct": -1.544,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 202.7,
-        "change_pct": 0.044,
+        "price": 204.3,
+        "change_pct": 0.834,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.36,
-        "change_pct": 0.544,
+        "price": 177.54,
+        "change_pct": 0.646,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -137,24 +137,24 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.389,
-        "change_pct": 0.827,
+        "price": 4.387,
+        "change_pct": 0.781,
         "low_52w": 4.313,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.7,
-        "change_pct": 1.01,
+        "price": 4.696,
+        "change_pct": 0.924,
         "low_52w": 4.604,
         "high_52w": 4.724
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.24,
-        "change_pct": 0.886,
+        "price": 5.237,
+        "change_pct": 0.828,
         "low_52w": 5.096,
         "high_52w": 5.309
       }
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3791,
-        "change_pct": -0.768,
+        "price": 1.3792,
+        "change_pct": -0.766,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -180,15 +180,15 @@
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
         "price": 1.3628,
-        "change_pct": 0.67,
+        "change_pct": 0.675,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.164,
-        "change_pct": -0.242,
+        "price": 159.135,
+        "change_pct": -0.26,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4581.6001,
-        "change_pct": 2.054,
+        "price": 4582.7998,
+        "change_pct": 2.08,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.89,
-        "change_pct": 1.235,
+        "price": 86.63,
+        "change_pct": 0.932,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.759,
-        "change_pct": -1.955,
+        "price": 2.76,
+        "change_pct": -1.919,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.481,
-        "change_pct": -0.1,
+        "price": 6.482,
+        "change_pct": -0.085,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -235,15 +235,15 @@
     },
     {
       "term": "5Y",
-      "value": 4.389
+      "value": 4.387
     },
     {
       "term": "10Y",
-      "value": 4.7
+      "value": 4.696
     },
     {
       "term": "30Y",
-      "value": 5.24
+      "value": 5.237
     }
   ],
   "news": [
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Dow drops 600 points on rising yields, Walmart earnings miss",
-      "link": "https://qz.com/dow-falls-yields-rise-walmart-stock-082026",
-      "publisher": "Quartz",
+      "title": "Dow Gets Slammed as Walmart Falls 9% and Long-Term Yields Jump",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dow-gets-slammed-walmart-falls-194413071.html",
+      "publisher": "GuruFocus.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "We Told You to Forget SCHD. It Just Beat the S&P by 12 Points, Its Biggest Win Ever",
-      "link": "https://247wallst.com/investing/2026/08/20/we-told-you-to-forget-schd-it-just-beat-the-sp-by-12-points-its-biggest-win-ever/",
-      "publisher": "24/7 Wall St.",
+      "title": "Pro-DEI Companies Are Are Doing Just Fine According To New Study",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/pro-dei-companies-doing-just-193017443.html",
+      "publisher": "Black Enterprise",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why Is XRP (Ripple) Up 24.9% Today?",
-      "link": "https://www.fool.com/investing/2026/08/20/why-is-xrp-ripple-up-today/",
-      "publisher": "Motley Fool",
+      "title": "Hims & Hers Health Stock Trades Below The Market On Revenue And Above It On Cash",
+      "link": "https://www.trefis.com/articles/612240/hims-hers-health-stock-trades-below-the-market-on-revenue-and-above-it-on-cash/2026-08-20",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Wall St indexes fall to two-week lows as rising bond yields, disappointing Walmart results drag",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-muted-bond-101757250.html",
-      "publisher": "Reuters",
+      "title": "Stock Market Today: Small Caps Pace Drop, Dow Index Tumbles 600 Points; Oil Stocks Catch Fire (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-threat-walmart-stock-wmt/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
