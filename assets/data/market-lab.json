@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T20:49:08.475304+00:00",
+  "updated_at": "2026-08-20T21:46:03.011328+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3787,
-        "change_pct": -0.798,
+        "price": 1.3783,
+        "change_pct": -0.825,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -179,16 +179,16 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3633,
-        "change_pct": 0.71,
+        "price": 1.363,
+        "change_pct": 0.687,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.07,
-        "change_pct": -0.301,
+        "price": 159.031,
+        "change_pct": -0.325,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4574.0,
-        "change_pct": 1.884,
+        "price": 4575.1001,
+        "change_pct": 1.909,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.48,
-        "change_pct": 0.757,
+        "price": 86.21,
+        "change_pct": 0.443,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.763,
-        "change_pct": -1.812,
+        "price": 2.765,
+        "change_pct": -1.741,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.483,
-        "change_pct": -0.069,
+        "price": 6.4825,
+        "change_pct": -0.077,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -255,37 +255,37 @@
       "time": "Latest"
     },
     {
-      "title": "Update: Equities Drop to Lowest in More Than 2 Weeks as Yields Rise",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/equities-drop-lowest-more-2-204202654.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: Dow Tumbles 700 Points But Miners Rise; Oil Stocks Catch Fire (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-threat-walmart-stock-wmt/?src=A00220&yptr=yahoo",
+      "title": "Dow Jones Futures: Market Triggers This Bearish Signal As Walmart, SpaceX, CrowdStrike Tumble",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-triggers-bearish-signal-walmart-spacex-crowdstrike/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Vanguard VCIT vs Fidelity FIGB: Which Bond ETF Is the Better Choice for Investors in 2026?",
-      "link": "https://www.fool.com/coverage/etfs/2026/08/20/vanguard-vcit-vs-fidelity-figb-which-bond-etf-is-the-better-choice-for-investors-in-2026/",
+      "title": "US Stock Indices End Lower As Trump’s ‘Economic Warfare’ Threats Push Yields, Oil Higher — WMT, CRWV, SBUX, DE, RKLB In Focus",
+      "link": "https://stocktwits.com/news-articles/markets/equity/us-stock-indices-end-lower-as-trump-s-economic-warfare-threats-push-yields-oil-higher/cZYeR5dRJZA",
+      "publisher": "Stocktwits",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today, Aug. 20: Walmart Stock Drops on Disappointing Comparable Sales Growth",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/20/stock-market-today-aug-20-walmart-stock-drops-on-disappointing-comparable-sales-growth/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "US Equity Indexes Fall After Trump Warns of Severe Economic Actions Against Iran, Driving Up Oil Prices, Bond Yields",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-trump-203003295.html",
-      "publisher": "MT Newswires",
+      "title": "Stock Market Today, Aug. 20: Webull Initially Surges 14%, Ends 2% Higher After Record Q2 Revenue and Earnings Beat",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/20/stock-market-today-aug-20-webull-initially-surges-14-ends-2-higher-after-record-q2-revenue-and-earnings-beat/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "$98 billion In Payouts, A Lagging Stock: The V Trade-Off",
-      "link": "https://www.trefis.com/articles/612185/98-billion-in-payouts-a-lagging-stock-the-v-trade-off/2026-08-20",
-      "publisher": "Trefis",
+      "title": "XLF vs EUFN: Is a U.S. Financials ETF Superior to a Europe-Focused Fund?",
+      "link": "https://www.fool.com/coverage/etfs/2026/08/20/xlf-vs-eufn-is-a-u-s-financials-etf-superior-to-a-europe-focused-fund/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
