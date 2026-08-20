@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T21:46:03.011328+00:00",
+  "updated_at": "2026-08-20T22:10:29.810789+00:00",
   "assets": {
     "Indices": [
       {
@@ -131,15 +131,15 @@
         "name": "US 13-week yield",
         "price": 3.703,
         "change_pct": 0.081,
-        "low_52w": 3.507,
-        "high_52w": 4.128
+        "low_52w": 3.658,
+        "high_52w": 3.805
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
         "price": 4.387,
         "change_pct": 0.781,
-        "low_52w": 3.512,
+        "low_52w": 4.313,
         "high_52w": 4.461
       },
       {
@@ -155,7 +155,7 @@
         "name": "US 30-year yield",
         "price": 5.237,
         "change_pct": 0.828,
-        "low_52w": 4.539,
+        "low_52w": 5.096,
         "high_52w": 5.309
       }
     ],
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3783,
-        "change_pct": -0.825,
+        "price": 1.3785,
+        "change_pct": -0.815,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1682,
-        "change_pct": 0.888,
+        "price": 1.1685,
+        "change_pct": 0.911,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.363,
-        "change_pct": 0.687,
+        "price": 1.3634,
+        "change_pct": 0.72,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.031,
-        "change_pct": -0.325,
+        "price": 159.018,
+        "change_pct": -0.333,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4575.1001,
-        "change_pct": 1.909,
+        "price": 4574.7002,
+        "change_pct": 1.9,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.21,
-        "change_pct": 0.443,
+        "price": 86.26,
+        "change_pct": 0.501,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.765,
-        "change_pct": -1.741,
+        "price": 2.76,
+        "change_pct": -1.919,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.4825,
-        "change_pct": -0.077,
+        "price": 6.486,
+        "change_pct": -0.023,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -255,6 +255,13 @@
       "time": "Latest"
     },
     {
+      "title": "Stock Market Today, Aug. 20: Stocks Slide on Weak Retail Earnings, Rising Bond Yields",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/20/stock-market-today-aug-20-stocks-slide-on-weak-retail-earnings-rising-bond-yields/",
+      "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
       "title": "Dow Jones Futures: Market Triggers This Bearish Signal As Walmart, SpaceX, CrowdStrike Tumble",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-triggers-bearish-signal-walmart-spacex-crowdstrike/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
@@ -278,13 +285,6 @@
     {
       "title": "Stock Market Today, Aug. 20: Webull Initially Surges 14%, Ends 2% Higher After Record Q2 Revenue and Earnings Beat",
       "link": "https://www.fool.com/coverage/stock-market-today/2026/08/20/stock-market-today-aug-20-webull-initially-surges-14-ends-2-higher-after-record-q2-revenue-and-earnings-beat/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "XLF vs EUFN: Is a U.S. Financials ETF Superior to a Europe-Focused Fund?",
-      "link": "https://www.fool.com/coverage/etfs/2026/08/20/xlf-vs-eufn-is-a-u-s-financials-etf-superior-to-a-europe-focused-fund/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
