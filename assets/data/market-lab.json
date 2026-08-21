@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T20:44:19.328242+00:00",
+  "updated_at": "2026-08-21T21:03:30.827391+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3765,
-        "change_pct": -0.33,
+        "price": 1.3764,
+        "change_pct": -0.126,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.168,
-        "change_pct": 0.049,
+        "price": 1.1678,
+        "change_pct": 0.037,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3645,
-        "change_pct": 0.329,
+        "price": 1.3648,
+        "change_pct": 0.353,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.974,
-        "change_pct": 0.441,
+        "price": 158.862,
+        "change_pct": 0.37,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4668.6001,
-        "change_pct": 3.372,
+        "price": 4662.2998,
+        "change_pct": 3.233,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.77,
-        "change_pct": -1.207,
+        "price": 86.73,
+        "change_pct": -1.252,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.796,
-        "change_pct": 2.305,
+        "price": 2.799,
+        "change_pct": 2.415,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.5805,
-        "change_pct": 1.865,
+        "price": 6.579,
+        "change_pct": 1.842,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -262,28 +262,28 @@
       "time": "Latest"
     },
     {
-      "title": "Nordson's Order Book, Not Just Its Record Quarter, Moved The Stock",
-      "link": "https://www.trefis.com/articles/612410/nordsons-order-book-not-just-its-record-quarter-moved-the-stock/2026-08-21",
-      "publisher": "Trefis",
+      "title": "Dow Jones Futures: Market Rally Repairs Some Damage; Nvidia, CrowdStrike, Warsh In Focus",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-crowdstrike-warsh/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "What ExxonMobil Told You Before The Oil Shock Arrived",
-      "link": "https://www.trefis.com/articles/612388/what-exxonmobil-told-you-before-the-oil-shock-arrived/2026-08-21",
-      "publisher": "Trefis",
+      "title": "S&P 500 Posts First Weekly Loss Since July Amid US Warning to Iran",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-first-weekly-204508360.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why Bitcoin Is Up Today",
-      "link": "https://www.fool.com/investing/2026/08/21/why-bitcoin-is-up-today/",
-      "publisher": "Motley Fool",
+      "title": "Wall St rises on the day but falls for the week; bond yields and Iran in focus",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-rise-sharp-101936269.html",
+      "publisher": "Reuters",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Gains 550 Points; Palantir Rises, Bitcoin Rallies (Live Coverage)",
+      "title": "Stock Market Today: Dow Gains 500 Points; SpaceX Snaps A Losing Streak, Bitcoin Pops",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-stock-market-sell-off-bitcoin-surges/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
