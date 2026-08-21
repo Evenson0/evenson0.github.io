@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-08-21T16:53:48.049086+00:00",
+  "updated_at": "2026-08-21T17:47:56.566411+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7678.5298,
-        "change_pct": 0.489,
+        "price": 7676.2002,
+        "change_pct": 0.459,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26188.2168,
-        "change_pct": 0.464,
+        "price": 26189.5469,
+        "change_pct": 0.469,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53157.9414,
-        "change_pct": 0.756,
+        "price": 53214.8789,
+        "change_pct": 0.864,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36599.6094,
-        "change_pct": 0.644,
+        "price": 36578.9805,
+        "change_pct": 0.587,
         "low_52w": 28055.4004,
         "high_52w": 36759.3008
       },
@@ -45,8 +45,8 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3013.9482,
-        "change_pct": 0.719,
+        "price": 3014.4932,
+        "change_pct": 0.737,
         "low_52w": 2274.1001,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 310.94,
-        "change_pct": -0.116,
+        "price": 309.9001,
+        "change_pct": -0.45,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 483.12,
-        "change_pct": 0.409,
+        "price": 482.7,
+        "change_pct": 0.322,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 215.335,
-        "change_pct": -0.699,
+        "price": 215.7,
+        "change_pct": -0.53,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 258.615,
-        "change_pct": -0.575,
+        "price": 258.58,
+        "change_pct": -0.588,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 282.45,
-        "change_pct": -0.311,
+        "price": 282.78,
+        "change_pct": -0.194,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 204.18,
-        "change_pct": 0.398,
+        "price": 204.76,
+        "change_pct": 0.683,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.965,
-        "change_pct": 0.63,
+        "price": 178.54,
+        "change_pct": 0.956,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -153,8 +153,8 @@
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.274,
-        "change_pct": 0.707,
+        "price": 5.276,
+        "change_pct": 0.745,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3767,
-        "change_pct": -0.317,
+        "price": 1.3761,
+        "change_pct": -0.358,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1685,
-        "change_pct": 0.096,
+        "price": 1.1684,
+        "change_pct": 0.084,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3641,
-        "change_pct": 0.303,
+        "price": 1.3646,
+        "change_pct": 0.338,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.956,
-        "change_pct": 0.43,
+        "price": 159.024,
+        "change_pct": 0.473,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4678.6001,
-        "change_pct": 3.594,
+        "price": 4682.1001,
+        "change_pct": 3.671,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.88,
-        "change_pct": -1.082,
+        "price": 87.34,
+        "change_pct": -0.558,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.814,
-        "change_pct": 2.964,
+        "price": 2.799,
+        "change_pct": 2.415,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.5805,
-        "change_pct": 1.865,
+        "price": 6.5845,
+        "change_pct": 1.927,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -243,7 +243,7 @@
     },
     {
       "term": "30Y",
-      "value": 5.274
+      "value": 5.276
     }
   ],
   "news": [
@@ -255,37 +255,37 @@
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Jumps After Sell-Off; Bitcoin Tops $77,000; Gold Miners Shine (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-stock-market-sell-off-bitcoin-surges/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Wall St rises in broad rebound; yields push markets towards weekly declines",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-rise-sharp-101936269.html",
-      "publisher": "Reuters",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Could Investing $300 a Month in VOO Make You a Millionaire? Here's the Math.",
-      "link": "https://www.fool.com/investing/2026/08/21/could-investing-300-a-month-in-voo-make-million/",
+      "title": "Dow Climbs 0.9% to Close Out a Week It Would Rather Forget",
+      "link": "https://www.fool.com/investing/2026/08/21/dow-climbs-09-to-close-out-a-tough-week/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "2 Software Stocks Worth Your Attention and 1 That Underwhelm",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/2-software-stocks-worth-attention-154747633.html",
+      "title": "3 Consumer Stocks We Keep Off Our Radar",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-consumer-stocks-keep-off-171547996.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "XMax Stock Down Post Q2 Earnings Despite AI Push Aiding Revenues",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/xmax-stock-down-post-q2-153600908.html",
-      "publisher": "Zacks",
+      "title": "Robinhood Leads Friday’s S&P 500 Gains",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-21-2026/card/robinhood-leads-friday-s-s-p-500-gains-bfqsEvdpn8a5YLzGR4ML?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "US Equity Indexes Rise Despite Further Uptick in Treasury Yields, Firm Oil Prices",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-despite-165247483.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Bitcoin Jumps While the S&P Heads for Weekly Loss",
+      "link": "https://www.wsj.com/finance/stocks/bond-yields-steady-as-treasury-intervention-struggles-to-convince-439dbe17?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
       "related": "^GSPC",
       "time": "Latest"
     },
