@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-21T20:00:31.264166+00:00",
+  "updated_at": "2026-08-21T20:44:19.328242+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7674.2998,
-        "change_pct": 0.434,
+        "price": 7674.3701,
+        "change_pct": 0.435,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
@@ -21,7 +21,7 @@
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53276.8086,
+        "price": 53277.0117,
         "change_pct": 0.981,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
@@ -29,8 +29,8 @@
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36620.1289,
-        "change_pct": 0.7,
+        "price": 36620.2305,
+        "change_pct": 0.701,
         "low_52w": 28055.4004,
         "high_52w": 36759.3008
       },
@@ -45,8 +45,8 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3018.1843,
-        "change_pct": 0.861,
+        "price": 3017.8708,
+        "change_pct": 0.85,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3766,
-        "change_pct": -0.321,
+        "price": 1.3765,
+        "change_pct": -0.33,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1682,
-        "change_pct": 0.072,
+        "price": 1.168,
+        "change_pct": 0.049,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3648,
-        "change_pct": 0.351,
+        "price": 1.3645,
+        "change_pct": 0.329,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.997,
-        "change_pct": 0.456,
+        "price": 158.974,
+        "change_pct": 0.441,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4680.2002,
-        "change_pct": 3.629,
+        "price": 4668.6001,
+        "change_pct": 3.372,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.76,
-        "change_pct": -1.218,
+        "price": 86.77,
+        "change_pct": -1.207,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.787,
-        "change_pct": 1.976,
+        "price": 2.796,
+        "change_pct": 2.305,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.5865,
-        "change_pct": 1.958,
+        "price": 6.5805,
+        "change_pct": 1.865,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -248,16 +248,30 @@
   ],
   "news": [
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq rise as bitcoin surges",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-080533702.html",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq post weekly losses as bond volatility remains in focus, bitcoin soars",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-bitcoin-080533702.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq slide as bond relief evaporates, Walmart stock takes a hit",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-20-dow-sp-500-nasdaq-081139322.html",
+      "title": "Here's what Nvidia needs to do to unlock an even better stock valuation",
+      "link": "https://finance.yahoo.com/markets/stocks/article/heres-what-nvidia-needs-to-do-to-unlock-an-even-better-stock-valuation-120651570.html",
       "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Nordson's Order Book, Not Just Its Record Quarter, Moved The Stock",
+      "link": "https://www.trefis.com/articles/612410/nordsons-order-book-not-just-its-record-quarter-moved-the-stock/2026-08-21",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "What ExxonMobil Told You Before The Oil Shock Arrived",
+      "link": "https://www.trefis.com/articles/612388/what-exxonmobil-told-you-before-the-oil-shock-arrived/2026-08-21",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
@@ -276,17 +290,10 @@
       "time": "Latest"
     },
     {
-      "title": "US Equity Indexes Rise Despite Surging Bond Yields",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-despite-193017144.html",
+      "title": "TSX Closer: The Index Rises as Base Metals Rally, Oil and Gold Rise",
+      "link": "https://finance.yahoo.com/markets/commodities/articles/tsx-closer-index-rises-metals-202334682.html",
       "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Wells Fargo (WFC): Buy, Sell, or Hold Post Q2 Earnings?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-wfc-buy-sell-192347412.html",
-      "publisher": "StockStory",
-      "related": "^GSPC",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "TSX Closer: The Index Closes Lower as Technology Weighs, Canadian Inflation Accelerates to 3.0%",
       "link": "https://finance.yahoo.com/economy/articles/tsx-closer-index-closes-lower-202055412.html",
       "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "Toronto futures little changed as investors await domestic inflation data",
-      "link": "https://ca.finance.yahoo.com/news/toronto-futures-little-changed-investors-104137948.html",
-      "publisher": "Reuters",
       "related": "^GSPTSE",
       "time": "Latest"
     }
