@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-21T18:58:56.233425+00:00",
+  "updated_at": "2026-08-21T19:39:51.936461+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7678.6499,
-        "change_pct": 0.491,
+        "price": 7681.1802,
+        "change_pct": 0.524,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26182.1445,
-        "change_pct": 0.441,
+        "price": 26203.3105,
+        "change_pct": 0.522,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53297.9297,
-        "change_pct": 1.021,
+        "price": 53320.5898,
+        "change_pct": 1.064,
         "low_52w": 44785.5,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36617.6914,
-        "change_pct": 0.694,
+        "price": 36623.4492,
+        "change_pct": 0.71,
         "low_52w": 28055.4004,
         "high_52w": 36759.3008
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.36,
-        "change_pct": 0.704,
+        "price": 54.345,
+        "change_pct": 0.676,
         "low_52w": 42.24,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3015.199,
-        "change_pct": 0.761,
+        "price": 3017.9829,
+        "change_pct": 0.854,
         "low_52w": 2274.1001,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 308.54,
-        "change_pct": -0.887,
+        "price": 309.49,
+        "change_pct": -0.581,
         "low_52w": 224.9,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 482.76,
-        "change_pct": 0.335,
+        "price": 483.795,
+        "change_pct": 0.55,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 215.245,
-        "change_pct": -0.74,
+        "price": 215.06,
+        "change_pct": -0.825,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 259.18,
-        "change_pct": -0.358,
+        "price": 259.5,
+        "change_pct": -0.235,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 283.07,
-        "change_pct": -0.092,
+        "price": 282.77,
+        "change_pct": -0.198,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 204.87,
-        "change_pct": 0.738,
+        "price": 204.93,
+        "change_pct": 0.767,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 178.68,
-        "change_pct": 1.035,
+        "price": 178.77,
+        "change_pct": 1.086,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -145,8 +145,8 @@
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.74,
-        "change_pct": 0.937,
+        "price": 4.738,
+        "change_pct": 0.894,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
@@ -171,24 +171,24 @@
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1685,
-        "change_pct": 0.096,
+        "price": 1.1682,
+        "change_pct": 0.072,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3651,
-        "change_pct": 0.377,
+        "price": 1.3647,
+        "change_pct": 0.347,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.027,
-        "change_pct": 0.474,
+        "price": 158.991,
+        "change_pct": 0.452,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,24 +197,24 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4682.3999,
-        "change_pct": 3.678,
+        "price": 4675.5,
+        "change_pct": 3.525,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.91,
-        "change_pct": -1.047,
+        "price": 86.81,
+        "change_pct": -1.161,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.799,
-        "change_pct": 2.415,
+        "price": 2.786,
+        "change_pct": 1.939,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
@@ -239,7 +239,7 @@
     },
     {
       "term": "10Y",
-      "value": 4.74
+      "value": 4.738
     },
     {
       "term": "30Y",
@@ -255,37 +255,37 @@
       "time": "Latest"
     },
     {
-      "title": "Is Microsoft a Screaming Buy Under $500 Per Share?",
-      "link": "https://www.fool.com/investing/2026/08/21/is-microsoft-a-screaming-buy-under-500-per-share/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "3 Reasons to Avoid OII and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-avoid-oii-1-185147421.html",
-      "publisher": "StockStory",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Jim Cramer sends strong verdict on where the market is headed",
-      "link": "https://www.thestreet.com/markets/jim-cramer-says-stock-market-downturn-creates-ai-buying-opportunities",
-      "publisher": "TheStreet",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "2 Reasons to Watch PFE and 1 to Stay Cautious",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-watch-pfe-1-183547422.html",
-      "publisher": "StockStory",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "US Equity Indexes Lower This Week as Trump Threatens Major Economic War on Iran",
-      "link": "https://finance.yahoo.com/economy/policy/articles/us-equity-indexes-lower-week-183302717.html",
+      "title": "US Equity Indexes Rise Despite Surging Bond Yields",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-despite-193017144.html",
       "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Wells Fargo (WFC): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-wfc-buy-sell-192347412.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Why Stocks Are Shrugging Off the Rise in Bond Yields",
+      "link": "https://www.barrons.com/articles/stocks-bonds-dow-nasdaq-sp500-16a23825?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "This Market Barometer Is Sending a Warning Sign",
+      "link": "https://www.barrons.com/livecoverage/stock-market-news-today-082126/card/this-market-barometer-is-sending-a-warning-sign-mxfCvUnENNjPgQGFF4a6?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Freeport-McMoRan Stock Ran, And Half The Reason Was Visible Seven Months Early",
+      "link": "https://www.trefis.com/articles/612390/freeport-mcmoran-stock-ran-and-half-the-reason-was-visible-seven-months-early/2026-08-21",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
