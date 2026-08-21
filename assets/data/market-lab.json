@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T22:10:29.810789+00:00",
+  "updated_at": "2026-08-21T13:13:32.284826+00:00",
   "assets": {
     "Indices": [
       {
@@ -13,7 +13,7 @@
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26067.166,
+        "price": 26067.1699,
         "change_pct": -1.002,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
@@ -29,7 +29,7 @@
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36365.4219,
+        "price": 36365.3984,
         "change_pct": -0.1,
         "low_52w": 27878.8008,
         "high_52w": 36759.3008
@@ -45,7 +45,7 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2992.4336,
+        "price": 2992.4299,
         "change_pct": -1.336,
         "low_52w": 2274.1001,
         "high_52w": 3068.4199
@@ -53,16 +53,16 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10748.1602,
-        "change_pct": 0.044,
+        "price": 10774.5303,
+        "change_pct": 0.245,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 65326.4219,
-        "change_pct": -3.164,
+        "price": 66016.3594,
+        "change_pct": -0.303,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -129,33 +129,33 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.703,
-        "change_pct": 0.081,
-        "low_52w": 3.658,
-        "high_52w": 3.805
+        "price": 3.7,
+        "change_pct": -0.081,
+        "low_52w": 3.507,
+        "high_52w": 4.128
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.387,
-        "change_pct": 0.781,
-        "low_52w": 4.313,
+        "price": 4.38,
+        "change_pct": -0.16,
+        "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
         "price": 4.696,
-        "change_pct": 0.924,
+        "change_pct": 0.0,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.237,
-        "change_pct": 0.828,
-        "low_52w": 5.096,
+        "price": 5.246,
+        "change_pct": 0.172,
+        "low_52w": 4.539,
         "high_52w": 5.309
       }
     ],
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3785,
-        "change_pct": -0.815,
+        "price": 1.3749,
+        "change_pct": -0.442,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1685,
-        "change_pct": 0.911,
+        "price": 1.169,
+        "change_pct": 0.143,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3634,
-        "change_pct": 0.72,
+        "price": 1.3637,
+        "change_pct": 0.274,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.018,
-        "change_pct": -0.333,
+        "price": 158.785,
+        "change_pct": 0.322,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4574.7002,
-        "change_pct": 1.9,
+        "price": 4638.8999,
+        "change_pct": 2.715,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.26,
-        "change_pct": 0.501,
+        "price": 86.66,
+        "change_pct": -1.332,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.76,
-        "change_pct": -1.919,
+        "price": 2.804,
+        "change_pct": 2.598,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.486,
-        "change_pct": -0.023,
+        "price": 6.596,
+        "change_pct": 2.105,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -231,11 +231,11 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.703
+      "value": 3.7
     },
     {
       "term": "5Y",
-      "value": 4.387
+      "value": 4.38
     },
     {
       "term": "10Y",
@@ -243,49 +243,49 @@
     },
     {
       "term": "30Y",
-      "value": 5.237
+      "value": 5.246
     }
   ],
   "news": [
     {
-      "title": "Earnings live updates: Advance Auto Parts stock drops 24% as 'constrained' customer spending weighs on sales growth",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-advance-auto-parts-stock-drops-24-as-constrained-customer-spending-weighs-on-sales-growth-115925351.html",
+      "title": "Here's what Nvidia needs to do to unlock an even better stock valuation",
+      "link": "https://finance.yahoo.com/markets/stocks/article/heres-what-nvidia-needs-to-do-to-unlock-an-even-better-stock-valuation-120651570.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today, Aug. 20: Stocks Slide on Weak Retail Earnings, Rising Bond Yields",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/20/stock-market-today-aug-20-stocks-slide-on-weak-retail-earnings-rising-bond-yields/",
-      "publisher": "Motley Fool",
+      "title": "Stocks dip as bond yields and oil rise, Walmart earnings drag on retail: AlphaCheck",
+      "link": "https://finance.yahoo.com/markets/article/stocks-dip-as-bond-yields-and-oil-rise-walmart-earnings-drag-on-retail-alphacheck-140142173.html",
+      "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Dow Jones Futures: Market Triggers This Bearish Signal As Walmart, SpaceX, CrowdStrike Tumble",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-triggers-bearish-signal-walmart-spacex-crowdstrike/?src=A00220&yptr=yahoo",
+      "title": "Update: US Equity Futures Higher Pre-Bell as Traders Try to Rebound After Yield-Induced Sell-Off",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-higher-pre-124934805.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Wolfe Research highlights powerful S&P 500 earnings momentum",
+      "link": "https://investorshub.advfn.com/market-news/article/34799/wolfe-research-highlights-powerful-sp-500-earnings-momentum",
+      "publisher": "InvestorsHub",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Wall St set for higher open but weekly losses loom",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-rise-sharp-101936269.html",
+      "publisher": "Reuters",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today: Dow Futures Rebound From Sell-Off; Bitcoin Surges Near $77K (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-stock-market-sell-off-bitcoin-surges/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "US Stock Indices End Lower As Trump’s ‘Economic Warfare’ Threats Push Yields, Oil Higher — WMT, CRWV, SBUX, DE, RKLB In Focus",
-      "link": "https://stocktwits.com/news-articles/markets/equity/us-stock-indices-end-lower-as-trump-s-economic-warfare-threats-push-yields-oil-higher/cZYeR5dRJZA",
-      "publisher": "Stocktwits",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today, Aug. 20: Walmart Stock Drops on Disappointing Comparable Sales Growth",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/20/stock-market-today-aug-20-walmart-stock-drops-on-disappointing-comparable-sales-growth/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today, Aug. 20: Webull Initially Surges 14%, Ends 2% Higher After Record Q2 Revenue and Earnings Beat",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/20/stock-market-today-aug-20-webull-initially-surges-14-ends-2-higher-after-record-q2-revenue-and-earnings-beat/",
-      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
