@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T21:03:30.827391+00:00",
+  "updated_at": "2026-08-21T21:42:02.553063+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3764,
-        "change_pct": -0.126,
+        "price": 1.3763,
+        "change_pct": -0.343,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4662.2998,
-        "change_pct": 3.233,
+        "price": 4661.6001,
+        "change_pct": 3.217,
         "low_52w": 3336.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.73,
-        "change_pct": -1.252,
+        "price": 86.64,
+        "change_pct": -1.355,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.799,
-        "change_pct": 2.415,
+        "price": 2.798,
+        "change_pct": 2.378,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.579,
-        "change_pct": 1.842,
+        "price": 6.58,
+        "change_pct": 1.858,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Dow Jones Futures: Market Rally Repairs Some Damage; Nvidia, CrowdStrike, Warsh In Focus",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-crowdstrike-warsh/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "JEPI Holds $46 Billion and Is Up 5.8% This Year. Four Funds With the Same Job Beat It by Double Digits",
+      "link": "https://247wallst.com/investing/2026/08/21/jepi-holds-46-billion-and-is-up-5-8-this-year-four-funds-with-the-same-job-beat-it-by-double-digits/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "S&P 500 Posts First Weekly Loss Since July Amid US Warning to Iran",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-first-weekly-204508360.html",
-      "publisher": "MT Newswires",
+      "title": "Stock Market Today, Aug. 21: Tesla Gains on Nevada Robotaxi Permit Approval",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/21/stock-market-today-aug-21-tesla-gains-on-nevada-robotaxi-permit-approval/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Wall St rises on the day but falls for the week; bond yields and Iran in focus",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-rise-sharp-101936269.html",
-      "publisher": "Reuters",
+      "title": "What Separates DE Stock From Its Peers Right Now",
+      "link": "https://www.trefis.com/articles/612371/what-separates-de-stock-from-its-peers-right-now/2026-08-21",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Gains 500 Points; SpaceX Snaps A Losing Streak, Bitcoin Pops",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-stock-market-sell-off-bitcoin-surges/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "U.S. Stocks Rise as Bitcoin Nears $80,000",
+      "link": "https://www.wsj.com/finance/stocks/u-s-stocks-rise-as-bitcoin-nears-80-000-5de452ad?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
       "related": "^GSPC",
       "time": "Latest"
     },
