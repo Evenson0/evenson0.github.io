@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T21:46:04.153296+00:00",
+  "updated_at": "2026-08-24T22:09:57.684644+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.384,
-        "change_pct": 0.423,
+        "price": 1.3845,
+        "change_pct": 0.464,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -179,16 +179,16 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3634,
-        "change_pct": -0.072,
+        "price": 1.3633,
+        "change_pct": -0.075,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.053,
-        "change_pct": 0.107,
+        "price": 159.094,
+        "change_pct": 0.133,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -269,23 +269,23 @@
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today, Aug. 24: Nvidia Extends Losses as Tech Stocks Retreat",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/24/stock-market-today-aug-24-nvidia-extends-losses-as-tech-stocks-retreat/",
-      "publisher": "Motley Fool",
+      "title": "S&P 500, Nasdaq end down on tech stocks, investors weigh Iran moves",
+      "link": "https://finance.yahoo.com/video/p-500-nasdaq-end-down-215152032.html",
+      "publisher": "Reuters Videos",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "NVIDIA Earnings: A Quick Look at Expectations",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-quick-look-expectations-212800994.html",
+      "title": "AutoZone (AZO) Gains As Market Dips: What You Should Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/autozone-azo-gains-market-dips-215002578.html",
       "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Uranium Energy Stock Is Priced On Pounds It Has Not Sold Yet",
-      "link": "https://www.trefis.com/articles/612595/uranium-energy-stock-is-priced-on-pounds-it-has-not-sold-yet/2026-08-24",
-      "publisher": "Trefis",
+      "title": "C3.ai, Inc. (AI) Registers a Bigger Fall Than the Market: Important Facts to Note",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/c3-ai-inc-ai-registers-215002066.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
