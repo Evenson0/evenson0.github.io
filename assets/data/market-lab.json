@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T20:51:21.170819+00:00",
+  "updated_at": "2026-08-24T21:46:04.153296+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3846,
-        "change_pct": 0.467,
+        "price": 1.384,
+        "change_pct": 0.423,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1667,
-        "change_pct": -0.176,
+        "price": 1.1669,
+        "change_pct": -0.165,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3631,
-        "change_pct": -0.094,
+        "price": 1.3634,
+        "change_pct": -0.072,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.096,
-        "change_pct": 0.134,
+        "price": 159.053,
+        "change_pct": 0.107,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4704.7002,
-        "change_pct": 1.743,
+        "price": 4710.0,
+        "change_pct": 1.858,
         "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.93,
-        "change_pct": -2.447,
+        "price": 84.98,
+        "change_pct": -2.389,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.801,
-        "change_pct": 1.01,
+        "price": 2.807,
+        "change_pct": 1.226,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6045,
-        "change_pct": 0.38,
+        "price": 6.6055,
+        "change_pct": 0.395,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -269,23 +269,23 @@
       "time": "Latest"
     },
     {
-      "title": "Update: Nasdaq, S&P 500 Fall as New Sanctions Plan Targets Iran's Trading Partners",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-fall-sanctions-204112044.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Oil prices fall as Bessent outlines new steps to punish Iran",
-      "link": "https://finance.yahoo.com/energy/articles/oil-falls-trump-pledges-economic-030019769.html",
-      "publisher": "AFP",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Amazon Has Been Lagging the S&P 500 in 2026. This Is the Only Reason I'd Need to Buy the Stock in August Without Hesitation.",
-      "link": "https://www.fool.com/investing/2026/08/24/amazon-is-lagging-the-sp-500-in-2026-this-is-the-o/",
+      "title": "Stock Market Today, Aug. 24: Nvidia Extends Losses as Tech Stocks Retreat",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/24/stock-market-today-aug-24-nvidia-extends-losses-as-tech-stocks-retreat/",
       "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "NVIDIA Earnings: A Quick Look at Expectations",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-quick-look-expectations-212800994.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Uranium Energy Stock Is Priced On Pounds It Has Not Sold Yet",
+      "link": "https://www.trefis.com/articles/612595/uranium-energy-stock-is-priced-on-pounds-it-has-not-sold-yet/2026-08-24",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
