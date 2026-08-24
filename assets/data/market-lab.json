@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T22:01:56.239283+00:00",
+  "updated_at": "2026-08-24T13:15:59.054328+00:00",
   "assets": {
     "Indices": [
       {
@@ -13,7 +13,7 @@
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26180.4551,
+        "price": 26180.4609,
         "change_pct": 0.435,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
@@ -29,7 +29,7 @@
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36620.2305,
+        "price": 36620.1992,
         "change_pct": 0.701,
         "low_52w": 28055.4004,
         "high_52w": 36759.3008
@@ -45,7 +45,7 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3017.8708,
+        "price": 3017.8701,
         "change_pct": 0.85,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
@@ -53,16 +53,16 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10816.5596,
-        "change_pct": 0.636,
+        "price": 10810.0801,
+        "change_pct": -0.06,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 66216.7891,
-        "change_pct": 1.363,
+        "price": 65528.0898,
+        "change_pct": -0.74,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.71,
-        "change_pct": 0.189,
+        "price": 3.718,
+        "change_pct": 0.216,
         "low_52w": 3.507,
-        "high_52w": 4.128
+        "high_52w": 4.093
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.424,
-        "change_pct": 0.843,
+        "price": 4.417,
+        "change_pct": -0.158,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.738,
-        "change_pct": 0.894,
+        "price": 4.712,
+        "change_pct": -0.549,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.276,
-        "change_pct": 0.745,
+        "price": 5.238,
+        "change_pct": -0.72,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3763,
-        "change_pct": -0.343,
+        "price": 1.3828,
+        "change_pct": 0.338,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1678,
-        "change_pct": 0.037,
+        "price": 1.1677,
+        "change_pct": -0.095,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -180,15 +180,15 @@
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
         "price": 1.3648,
-        "change_pct": 0.353,
+        "change_pct": 0.031,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.862,
-        "change_pct": 0.37,
+        "price": 159.084,
+        "change_pct": 0.127,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4661.6001,
-        "change_pct": 3.217,
-        "low_52w": 3336.8999,
+        "price": 4729.6001,
+        "change_pct": 2.282,
+        "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.64,
-        "change_pct": -1.355,
+        "price": 85.55,
+        "change_pct": -1.734,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.798,
-        "change_pct": 2.378,
+        "price": 2.88,
+        "change_pct": 3.859,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.58,
-        "change_pct": 1.858,
+        "price": 6.6245,
+        "change_pct": 0.684,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -231,62 +231,83 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.71
+      "value": 3.718
     },
     {
       "term": "5Y",
-      "value": 4.424
+      "value": 4.417
     },
     {
       "term": "10Y",
-      "value": 4.738
+      "value": 4.712
     },
     {
       "term": "30Y",
-      "value": 5.276
+      "value": 5.238
     }
   ],
   "news": [
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq post weekly losses as bond volatility remains in focus, bitcoin soars",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-bitcoin-080533702.html",
+      "title": "Nvidia earnings and Jackson Hole: What to watch this week",
+      "link": "https://finance.yahoo.com/markets/article/nvidia-earnings-and-jackson-hole-what-to-watch-this-week-100000082.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Here's what Nvidia needs to do to unlock an even better stock valuation",
-      "link": "https://finance.yahoo.com/markets/stocks/article/heres-what-nvidia-needs-to-do-to-unlock-an-even-better-stock-valuation-120651570.html",
+      "title": "Scott Bessent just kicked the bitcoin debasement trade into another gear: Chart of the Day",
+      "link": "https://finance.yahoo.com/markets/crypto/article/scott-bessent-just-kicked-the-bitcoin-debasement-trade-into-another-gear-chart-of-the-day-110841942.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "VTV’s 0.03% Fee Hides the Real Cost: $250,000 Trails the S&P 500 by $229,000 Over a Decade",
-      "link": "https://247wallst.com/investing/etf/2026/08/21/vtvs-0-03-fee-hides-the-real-cost-250000-trails-the-sp-500-by-229000-over-a-decade/",
-      "publisher": "24/7 Wall St.",
+      "title": "1 Healthcare Stock to Target This Week and 2 Facing Headwinds",
+      "link": "https://finance.yahoo.com/healthcare/articles/1-healthcare-stock-target-week-131336497.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "US Stock Indices End Week Lower On Pressure From Elevated Long-Duration Treasury Yields — PSKY, MSTR, WMT, TSLA, NVDA In Focus",
-      "link": "https://stocktwits.com/news-articles/markets/equity/us-stock-indices-end-week-lower-on-pressure-from-elevated-long-duration-treasury-yields-psky/cZY97YMRJVO",
-      "publisher": "Stocktwits",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Why Is Tesla Stock Up Today?",
-      "link": "https://www.fool.com/investing/2026/08/21/why-is-tesla-stock-up-today/",
+      "title": "Forget the S&P 500: Microsoft Remains One of the Best Stocks to Own",
+      "link": "https://www.fool.com/investing/2026/08/24/forget-the-sp-500-microsoft-remains-one-of-the-bes/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "JEPI Holds $46 Billion and Is Up 5.8% This Year. Four Funds With the Same Job Beat It by Double Digits",
-      "link": "https://247wallst.com/investing/2026/08/21/jepi-holds-46-billion-and-is-up-5-8-this-year-four-funds-with-the-same-job-beat-it-by-double-digits/",
-      "publisher": "24/7 Wall St.",
+      "title": "3 Industrials Stocks We’re Skeptical Of",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-industrials-stocks-skeptical-125736202.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today: Dow Falls Ahead of 'Economic D-Day'; Alibaba Slides On Offering (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-economic-d-day-alibaba-stock-baba/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Update: Canada-US Trade Talks Collapse, Ottawa Vows 'Dollar-for-Dollar' Retaliatory Tariffs",
+      "link": "https://finance.yahoo.com/economy/policy/articles/canada-us-trade-talks-collapse-110737701.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX futures subdued as investors weigh US tariffs, await details on looming Iran sanctions",
+      "link": "https://ca.finance.yahoo.com/news/tsx-futures-subdued-investors-weigh-103147473.html",
+      "publisher": "Reuters",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "Canada-US Trade Talks Collapse, Ottawa Vows 'Dollar-for-Dollar' Retaliatory Tariffs",
+      "link": "https://finance.yahoo.com/economy/policy/articles/canada-us-trade-talks-collapse-101724895.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -306,27 +327,6 @@
     {
       "title": "S&P/TSX Composite Index Down 95 Points Mid-Morning With Most Sectors Lower",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/p-tsx-composite-index-down-142850648.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: The Index Edges Higher as Base Metals Gain",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-edges-higher-202025905.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "US Pauses 50% Tariffs on Certain Canadian Goods for Three Days, While Carney Says \"Important Work\" Remains Amid \"Progress\"",
-      "link": "https://finance.yahoo.com/economy/policy/articles/us-pauses-50-tariffs-certain-105140420.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: The Index Closes Lower as Technology Weighs, Canadian Inflation Accelerates to 3.0%",
-      "link": "https://finance.yahoo.com/economy/articles/tsx-closer-index-closes-lower-202055412.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
