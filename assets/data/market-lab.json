@@ -1,60 +1,60 @@
 {
-  "updated_at": "2026-08-25T15:08:35.459302+00:00",
+  "updated_at": "2026-08-25T16:02:45.533860+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7664.1602,
-        "change_pct": 0.148,
+        "price": 7675.0498,
+        "change_pct": 0.29,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26073.2871,
-        "change_pct": 0.358,
+        "price": 26135.8711,
+        "change_pct": 0.599,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53465.2695,
-        "change_pct": 0.09,
+        "price": 53535.6797,
+        "change_pct": 0.222,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36866.1992,
-        "change_pct": 0.414,
+        "price": 36925.1602,
+        "change_pct": 0.575,
         "low_52w": 28169.9004,
-        "high_52w": 36866.1992
+        "high_52w": 36925.1602
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.77,
-        "change_pct": 0.551,
+        "price": 54.84,
+        "change_pct": 0.679,
         "low_52w": 42.36,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3004.647,
-        "change_pct": 0.319,
+        "price": 3006.137,
+        "change_pct": 0.369,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10876.1299,
-        "change_pct": 0.201,
+        "price": 10886.1602,
+        "change_pct": 0.294,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 309.18,
-        "change_pct": -0.374,
+        "price": 309.54,
+        "change_pct": -0.258,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 489.43,
-        "change_pct": 0.435,
+        "price": 489.185,
+        "change_pct": 0.385,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 210.66,
-        "change_pct": 1.046,
+        "price": 211.8194,
+        "change_pct": 1.602,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 260.645,
-        "change_pct": -0.544,
+        "price": 261.145,
+        "change_pct": -0.353,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 284.76,
-        "change_pct": 0.757,
+        "price": 285.38,
+        "change_pct": 0.977,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 213.1,
-        "change_pct": 2.634,
+        "price": 213.28,
+        "change_pct": 2.721,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.34,
-        "change_pct": 0.453,
+        "price": 176.79,
+        "change_pct": 0.142,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -137,24 +137,24 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.355,
-        "change_pct": -1.202,
+        "price": 4.351,
+        "change_pct": -1.293,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.649,
-        "change_pct": -1.169,
+        "price": 4.641,
+        "change_pct": -1.339,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.185,
-        "change_pct": -0.879,
+        "price": 5.172,
+        "change_pct": -1.128,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3838,
-        "change_pct": 0.331,
+        "price": 1.3833,
+        "change_pct": 0.292,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1674,
-        "change_pct": -0.064,
+        "price": 1.1677,
+        "change_pct": -0.041,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3636,
-        "change_pct": -0.131,
+        "price": 1.3641,
+        "change_pct": -0.091,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.26,
-        "change_pct": 0.224,
+        "price": 159.212,
+        "change_pct": 0.194,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4690.5,
-        "change_pct": 1.071,
+        "price": 4707.2002,
+        "change_pct": 1.431,
         "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.4,
-        "change_pct": -3.07,
+        "price": 81.88,
+        "change_pct": -3.682,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.774,
-        "change_pct": -0.288,
+        "price": 2.8,
+        "change_pct": 0.647,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6625,
-        "change_pct": 0.962,
+        "price": 6.6875,
+        "change_pct": 1.341,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -235,57 +235,57 @@
     },
     {
       "term": "5Y",
-      "value": 4.355
+      "value": 4.351
     },
     {
       "term": "10Y",
-      "value": 4.649
+      "value": 4.641
     },
     {
       "term": "30Y",
-      "value": 5.185
+      "value": 5.172
     }
   ],
   "news": [
     {
-      "title": "Earnings live updates: Dick's Sporting Goods stock tanks after retailer slashes outlook amid 'challenging conditions'",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-q2-nvidia-115314802.html",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq hold steady as US-Canada trade tensions heat up",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-25-dow-sp-500-nasdaq-tariffs-oil-080527092.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "3 Reasons LMT is Risky and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-lmt-risky-1-145444797.html",
+      "title": "Wall Street is rotating out of 2026's biggest winners: Chart of the Day",
+      "link": "https://finance.yahoo.com/markets/article/wall-street-is-rotating-out-of-2026s-biggest-winners-chart-of-the-day-180639239.html",
+      "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Why Dick’s Sporting Goods’ Same-Store Sales Ring Warning Bells",
+      "link": "https://www.barrons.com/articles/dicks-sporting-goods-earnings-stock-price-0313467b?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Why Tesla Is Raising Prices on the Cybertruck—Even as Sales Slow Down",
+      "link": "https://www.barrons.com/articles/tesla-stock-price-cybertruck-cca1407c?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Navient (NAVI): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/navient-navi-buy-sell-hold-154244880.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "3 Reasons to Avoid ADBE and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-avoid-adbe-1-144644435.html",
-      "publisher": "StockStory",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Jensen Huang Told Investors in Seoul to \"Buy at a Discount\" During the Recent AI Stock Sell-Off. Here's Whether His Call Has Paid Off.",
-      "link": "https://www.fool.com/investing/2026/08/25/jensen-huang-told-investors-in-seoul-to-buy-at-a-d/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Pre-Markets Up, DKS Sells Off on Q2 Miss",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/pre-markets-dks-sells-off-144000427.html",
+      "title": "Is Kraft Heinz Stock a Buy as Low Valuation Meets Execution Risk?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/kraft-heinz-stock-buy-low-153800220.html",
       "publisher": "Zacks",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Washington Wants to Auto-Open a Trump Account for All 73 Million Kids. Every One Defaults Into the Same Fund",
-      "link": "https://247wallst.com/investing/2026/08/25/washington-wants-to-auto-open-a-trump-account-for-all-73-million-kids-every-one-defaults-into-the-same-fund/",
-      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
