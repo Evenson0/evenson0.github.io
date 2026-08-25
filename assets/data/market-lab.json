@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T22:09:57.684644+00:00",
+  "updated_at": "2026-08-25T13:13:49.422786+00:00",
   "assets": {
     "Indices": [
       {
@@ -13,7 +13,7 @@
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 25980.1914,
+        "price": 25980.1895,
         "change_pct": -0.765,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
@@ -29,7 +29,7 @@
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36714.1211,
+        "price": 36714.1016,
         "change_pct": 0.256,
         "low_52w": 28169.9004,
         "high_52w": 36759.3008
@@ -53,16 +53,16 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10854.3203,
-        "change_pct": 0.349,
+        "price": 10850.96,
+        "change_pct": -0.031,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 66016.3594,
-        "change_pct": -0.303,
+        "price": 65856.4297,
+        "change_pct": 0.501,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.703,
-        "change_pct": -0.189,
+        "price": 3.705,
+        "change_pct": 0.054,
         "low_52w": 3.507,
         "high_52w": 4.093
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.408,
-        "change_pct": -0.362,
+        "price": 4.367,
+        "change_pct": -0.93,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.704,
-        "change_pct": -0.718,
+        "price": 4.66,
+        "change_pct": -0.935,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.231,
-        "change_pct": -0.853,
+        "price": 5.191,
+        "change_pct": -0.765,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3845,
-        "change_pct": 0.464,
+        "price": 1.3847,
+        "change_pct": 0.391,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1669,
-        "change_pct": -0.165,
+        "price": 1.1677,
+        "change_pct": -0.041,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3633,
-        "change_pct": -0.075,
+        "price": 1.3649,
+        "change_pct": -0.034,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.094,
-        "change_pct": 0.133,
+        "price": 159.167,
+        "change_pct": 0.166,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4710.0,
-        "change_pct": 1.858,
+        "price": 4687.6001,
+        "change_pct": 1.008,
         "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.98,
-        "change_pct": -2.389,
+        "price": 82.19,
+        "change_pct": -3.317,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.807,
-        "change_pct": 1.226,
+        "price": 2.757,
+        "change_pct": -0.899,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6055,
-        "change_pct": 0.395,
+        "price": 6.6325,
+        "change_pct": 0.508,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -231,61 +231,61 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.703
+      "value": 3.705
     },
     {
       "term": "5Y",
-      "value": 4.408
+      "value": 4.367
     },
     {
       "term": "10Y",
-      "value": 4.704
+      "value": 4.66
     },
     {
       "term": "30Y",
-      "value": 5.231
+      "value": 5.191
     }
   ],
   "news": [
     {
-      "title": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock?",
-      "link": "https://finance.yahoo.com/markets/stocks/article/nvidias-valuation-looks-surprisingly-cheap-heading-into-earnings-could-it-be-an-issue-for-the-stock-191738544.html",
+      "title": "Nvidia stock is on a 7-day losing streak ahead of its big earnings report",
+      "link": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-is-on-a-7-day-losing-streak-ahead-of-its-big-earnings-report-121527754.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nvidia earnings and Jackson Hole: What to watch this week",
-      "link": "https://finance.yahoo.com/markets/article/nvidia-earnings-and-jackson-hole-what-to-watch-this-week-100000082.html",
+      "title": "Wall Street is rotating out of 2026's biggest winners: Chart of the Day",
+      "link": "https://finance.yahoo.com/markets/article/wall-street-is-rotating-out-of-2026s-biggest-winners-chart-of-the-day-180639239.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Scott Bessent just kicked the bitcoin debasement trade into another gear: Chart of the Day",
-      "link": "https://finance.yahoo.com/markets/crypto/article/scott-bessent-just-kicked-the-bitcoin-debasement-trade-into-another-gear-chart-of-the-day-110841942.html",
+      "title": "Semiconductor stocks drag S&P 500, Nasdaq lower: AlphaCheck",
+      "link": "https://finance.yahoo.com/markets/article/semiconductor-stocks-drag-sp-500-nasdaq-lower-alphacheck-135725875.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "S&P 500, Nasdaq end down on tech stocks, investors weigh Iran moves",
-      "link": "https://finance.yahoo.com/video/p-500-nasdaq-end-down-215152032.html",
-      "publisher": "Reuters Videos",
+      "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Tuesday as Chip Stocks Recover",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-130924933.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "AutoZone (AZO) Gains As Market Dips: What You Should Know",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/autozone-azo-gains-market-dips-215002578.html",
-      "publisher": "Zacks",
+      "title": "Salesforce Is Still Undervalued Despite a 28% Gain Over the Past Month",
+      "link": "https://www.fool.com/investing/2026/08/25/salesforce-is-still-undervalued-despite-a-28-gain/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "C3.ai, Inc. (AI) Registers a Bigger Fall Than the Market: Important Facts to Note",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/c3-ai-inc-ai-registers-215002066.html",
-      "publisher": "Zacks",
+      "title": "Stock Market Today: Dow Rises As Treasury Yields Fall; Nvidia, Micron, Sandisk Rally (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-treasury-yields-nvidia-micron-sandisk/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
