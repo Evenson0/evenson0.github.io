@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-25T16:02:45.533860+00:00",
+  "updated_at": "2026-08-25T16:58:07.131196+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7675.0498,
-        "change_pct": 0.29,
+        "price": 7673.3198,
+        "change_pct": 0.267,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26135.8711,
-        "change_pct": 0.599,
+        "price": 26130.9082,
+        "change_pct": 0.58,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53535.6797,
-        "change_pct": 0.222,
+        "price": 53514.2109,
+        "change_pct": 0.182,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36925.1602,
-        "change_pct": 0.575,
+        "price": 36928.0508,
+        "change_pct": 0.583,
         "low_52w": 28169.9004,
-        "high_52w": 36925.1602
+        "high_52w": 36928.0508
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.84,
-        "change_pct": 0.679,
+        "price": 54.85,
+        "change_pct": 0.698,
         "low_52w": 42.36,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3006.137,
-        "change_pct": 0.369,
+        "price": 3005.2898,
+        "change_pct": 0.341,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 309.54,
-        "change_pct": -0.258,
+        "price": 309.89,
+        "change_pct": -0.145,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 489.185,
-        "change_pct": 0.385,
+        "price": 489.42,
+        "change_pct": 0.433,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 211.8194,
-        "change_pct": 1.602,
+        "price": 212.09,
+        "change_pct": 1.732,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 261.145,
-        "change_pct": -0.353,
+        "price": 260.795,
+        "change_pct": -0.487,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 285.38,
-        "change_pct": 0.977,
+        "price": 285.95,
+        "change_pct": 1.178,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 213.28,
-        "change_pct": 2.721,
+        "price": 212.86,
+        "change_pct": 2.519,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.79,
-        "change_pct": 0.142,
+        "price": 176.09,
+        "change_pct": -0.255,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -137,24 +137,24 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.351,
-        "change_pct": -1.293,
+        "price": 4.357,
+        "change_pct": -1.157,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.641,
-        "change_pct": -1.339,
+        "price": 4.645,
+        "change_pct": -1.254,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.172,
-        "change_pct": -1.128,
+        "price": 5.175,
+        "change_pct": -1.071,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3833,
-        "change_pct": 0.292,
+        "price": 1.3839,
+        "change_pct": 0.336,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1677,
-        "change_pct": -0.041,
+        "price": 1.1674,
+        "change_pct": -0.064,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3641,
-        "change_pct": -0.091,
+        "price": 1.3634,
+        "change_pct": -0.142,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.212,
-        "change_pct": 0.194,
+        "price": 159.287,
+        "change_pct": 0.241,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,34 +197,34 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4707.2002,
-        "change_pct": 1.431,
+        "price": 4700.6001,
+        "change_pct": 1.289,
         "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 81.88,
-        "change_pct": -3.682,
+        "price": 82.32,
+        "change_pct": -3.164,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.8,
-        "change_pct": 0.647,
+        "price": 2.825,
+        "change_pct": 1.546,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6875,
-        "change_pct": 1.341,
+        "price": 6.7175,
+        "change_pct": 1.796,
         "low_52w": 4.4145,
-        "high_52w": 6.703
+        "high_52w": 6.7175
       }
     ]
   },
@@ -235,15 +235,15 @@
     },
     {
       "term": "5Y",
-      "value": 4.351
+      "value": 4.357
     },
     {
       "term": "10Y",
-      "value": 4.641
+      "value": 4.645
     },
     {
       "term": "30Y",
-      "value": 5.172
+      "value": 5.175
     }
   ],
   "news": [
@@ -262,31 +262,45 @@
       "time": "Latest"
     },
     {
-      "title": "Why Dick’s Sporting Goods’ Same-Store Sales Ring Warning Bells",
-      "link": "https://www.barrons.com/articles/dicks-sporting-goods-earnings-stock-price-0313467b?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "If I Could Tell Every S&P 500 Investor Just 1 Thing About the Stock Market Right Now, It's This.",
+      "link": "https://www.fool.com/investing/2026/08/25/if-i-could-tell-every-sp-500-investor-just-1-thing/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why Tesla Is Raising Prices on the Cybertruck—Even as Sales Slow Down",
-      "link": "https://www.barrons.com/articles/tesla-stock-price-cybertruck-cca1407c?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Navient (NAVI): Buy, Sell, or Hold Post Q2 Earnings?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/navient-navi-buy-sell-hold-154244880.html",
+      "title": "Envista (NVST): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/envista-nvst-buy-sell-hold-163044282.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Is Kraft Heinz Stock a Buy as Low Valuation Meets Execution Risk?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/kraft-heinz-stock-buy-low-153800220.html",
-      "publisher": "Zacks",
+      "title": "Jabil (JBL): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jabil-jbl-buy-sell-hold-162244747.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "3 Reasons We’re Fans of Uber (UBER)",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-fans-uber-uber-161444573.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Update: Canada Matches New US Tariffs, Unveils C$7.5 Billion Support Package for Businesses, Workers",
+      "link": "https://finance.yahoo.com/economy/policy/articles/canada-matches-us-tariffs-unveils-164526205.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "Canada Matches New US Tariffs, Unveils C$7.5 Billion Support Package for Businesses, Workers",
+      "link": "https://finance.yahoo.com/economy/policy/articles/canada-matches-us-tariffs-unveils-155849317.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -313,20 +327,6 @@
     {
       "title": "Canada-US Trade Talks Collapse, Ottawa Vows 'Dollar-for-Dollar' Retaliatory Tariffs",
       "link": "https://finance.yahoo.com/economy/policy/articles/canada-us-trade-talks-collapse-101724895.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: The Index Rises as Base Metals Rally, Oil and Gold Rise",
-      "link": "https://finance.yahoo.com/markets/commodities/articles/tsx-closer-index-rises-metals-202334682.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "S&P/TSX Composite Index Jumps 240 Points Mid-Morning Friday, With Base Metals The Best Performer",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/p-tsx-composite-index-jumps-142833460.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
