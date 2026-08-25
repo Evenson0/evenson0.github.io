@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T21:46:07.930543+00:00",
+  "updated_at": "2026-08-25T22:09:29.711052+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3834,
-        "change_pct": 0.298,
+        "price": 1.3837,
+        "change_pct": 0.323,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1681,
-        "change_pct": -0.006,
+        "price": 1.1678,
+        "change_pct": -0.029,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3647,
-        "change_pct": -0.05,
+        "price": 1.3649,
+        "change_pct": -0.037,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.195,
-        "change_pct": 0.183,
+        "price": 159.21,
+        "change_pct": 0.193,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "JPMorgan sends another strong message to stock market investors",
-      "link": "https://www.thestreet.com/investing/stocks/jpmorgan-warns-investors-about-artificial-intelligence-ai-stocks",
-      "publisher": "TheStreet",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Best Value Stocks to Buy Now and in September",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/best-value-stocks-buy-now-212200607.html",
+      "title": "KB Home (KBH) Outperforms Broader Market: What You Need to Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/kb-home-kbh-outperforms-broader-215002046.html",
       "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Rise With Tech While Treasury Yields, Crude Oil Slide as Process to Tighten Noose Around Iran Begins",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-tech-211306671.html",
-      "publisher": "MT Newswires",
+      "title": "SLB (SLB) Stock Falls Amid Market Uptick: What Investors Need to Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/slb-slb-stock-falls-amid-215002937.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Nasdaq Leads As Key Inflation Report Looms; Nvidia, Micron Gain",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-treasury-yields-nvidia-micron-sandisk/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Cleveland-Cliffs (CLF) Laps the Stock Market: Here's Why",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/cleveland-cliffs-clf-laps-stock-215002344.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "American Eagle Outfitters (AEO) Stock Declines While Market Improves: Some Information for Investors",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/american-eagle-outfitters-aeo-stock-215001332.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
