@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-08-25T14:07:55.631984+00:00",
+  "updated_at": "2026-08-25T15:08:35.459302+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7670.2002,
-        "change_pct": 0.227,
+        "price": 7664.1602,
+        "change_pct": 0.148,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26117.0332,
-        "change_pct": 0.527,
+        "price": 26073.2871,
+        "change_pct": 0.358,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53447.2188,
-        "change_pct": 0.056,
+        "price": 53465.2695,
+        "change_pct": 0.09,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36816.4688,
-        "change_pct": 0.279,
+        "price": 36866.1992,
+        "change_pct": 0.414,
         "low_52w": 28169.9004,
-        "high_52w": 36816.4688
+        "high_52w": 36866.1992
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.7,
-        "change_pct": 0.422,
+        "price": 54.77,
+        "change_pct": 0.551,
         "low_52w": 42.36,
         "high_52w": 54.88
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3003.009,
-        "change_pct": 0.265,
+        "price": 3004.647,
+        "change_pct": 0.319,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10827.0195,
-        "change_pct": -0.251,
+        "price": 10876.1299,
+        "change_pct": 0.201,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 65856.4297,
-        "change_pct": 0.501,
+        "price": 65528.0898,
+        "change_pct": -0.74,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 310.44,
-        "change_pct": 0.032,
+        "price": 309.18,
+        "change_pct": -0.374,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 486.1316,
-        "change_pct": -0.242,
+        "price": 489.43,
+        "change_pct": 0.435,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 213.24,
-        "change_pct": 2.283,
+        "price": 210.66,
+        "change_pct": 1.046,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 261.36,
-        "change_pct": -0.271,
+        "price": 260.645,
+        "change_pct": -0.544,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 284.74,
-        "change_pct": 0.75,
+        "price": 284.76,
+        "change_pct": 0.757,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 211.62,
-        "change_pct": 1.922,
+        "price": 213.1,
+        "change_pct": 2.634,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.72,
-        "change_pct": 0.102,
+        "price": 177.34,
+        "change_pct": 0.453,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -137,24 +137,24 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.369,
-        "change_pct": -0.885,
+        "price": 4.355,
+        "change_pct": -1.202,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.664,
-        "change_pct": -0.85,
+        "price": 4.649,
+        "change_pct": -1.169,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.196,
-        "change_pct": -0.669,
+        "price": 5.185,
+        "change_pct": -0.879,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3832,
-        "change_pct": 0.286,
+        "price": 1.3838,
+        "change_pct": 0.331,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1677,
-        "change_pct": -0.041,
+        "price": 1.1674,
+        "change_pct": -0.064,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3643,
-        "change_pct": -0.075,
+        "price": 1.3636,
+        "change_pct": -0.131,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.229,
-        "change_pct": 0.205,
+        "price": 159.26,
+        "change_pct": 0.224,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4665.5,
-        "change_pct": 0.532,
+        "price": 4690.5,
+        "change_pct": 1.071,
         "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.39,
-        "change_pct": -3.082,
+        "price": 82.4,
+        "change_pct": -3.07,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.755,
-        "change_pct": -0.971,
+        "price": 2.774,
+        "change_pct": -0.288,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.618,
-        "change_pct": 0.288,
+        "price": 6.6625,
+        "change_pct": 0.962,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -235,57 +235,57 @@
     },
     {
       "term": "5Y",
-      "value": 4.369
+      "value": 4.355
     },
     {
       "term": "10Y",
-      "value": 4.664
+      "value": 4.649
     },
     {
       "term": "30Y",
-      "value": 5.196
+      "value": 5.185
     }
   ],
   "news": [
     {
-      "title": "Nvidia stock is on a 7-day losing streak ahead of its big earnings report",
-      "link": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-is-on-a-7-day-losing-streak-ahead-of-its-big-earnings-report-121527754.html",
+      "title": "Earnings live updates: Dick's Sporting Goods stock tanks after retailer slashes outlook amid 'challenging conditions'",
+      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-q2-nvidia-115314802.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Wall Street is rotating out of 2026's biggest winners: Chart of the Day",
-      "link": "https://finance.yahoo.com/markets/article/wall-street-is-rotating-out-of-2026s-biggest-winners-chart-of-the-day-180639239.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "3 Reasons NWBI is Risky and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-nwbi-risky-1-135844358.html",
+      "title": "3 Reasons LMT is Risky and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-lmt-risky-1-145444797.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Allegro MicroSystems (ALGM): Buy, Sell, or Hold Post Q2 Earnings?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/allegro-microsystems-algm-buy-sell-135044276.html",
+      "title": "3 Reasons to Avoid ADBE and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-avoid-adbe-1-144644435.html",
       "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Dick’s Sporting Goods Stock Sinks 21% on Earnings. Slower Same-Store Sales Ring Warning Bells.",
-      "link": "https://www.barrons.com/articles/dicks-sporting-goods-earnings-stock-price-0313467b?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Jensen Huang Told Investors in Seoul to \"Buy at a Discount\" During the Recent AI Stock Sell-Off. Here's Whether His Call Has Paid Off.",
+      "link": "https://www.fool.com/investing/2026/08/25/jensen-huang-told-investors-in-seoul-to-buy-at-a-d/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today (Aug. 25, 2026): S&P 500 futures climb ahead of Nvidia earnings, Fed symposium",
-      "link": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-25-2026",
-      "publisher": "TheStreet",
+      "title": "Pre-Markets Up, DKS Sells Off on Q2 Miss",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/pre-markets-dks-sells-off-144000427.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Washington Wants to Auto-Open a Trump Account for All 73 Million Kids. Every One Defaults Into the Same Fund",
+      "link": "https://247wallst.com/investing/2026/08/25/washington-wants-to-auto-open-a-trump-account-for-all-73-million-kids-every-one-defaults-into-the-same-fund/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
