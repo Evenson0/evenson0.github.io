@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-25T17:47:29.480081+00:00",
+  "updated_at": "2026-08-25T18:18:14.647917+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7667.1699,
-        "change_pct": 0.187,
+        "price": 7666.2202,
+        "change_pct": 0.175,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26105.7539,
-        "change_pct": 0.483,
+        "price": 26086.1543,
+        "change_pct": 0.408,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53492.9609,
-        "change_pct": 0.142,
+        "price": 53521.9297,
+        "change_pct": 0.196,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36952.9609,
-        "change_pct": 0.651,
+        "price": 36965.4102,
+        "change_pct": 0.685,
         "low_52w": 28169.9004,
-        "high_52w": 36952.9609
+        "high_52w": 36965.4102
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.88,
-        "change_pct": 0.753,
+        "price": 54.9,
+        "change_pct": 0.789,
         "low_52w": 42.36,
-        "high_52w": 54.88
+        "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3004.7612,
-        "change_pct": 0.323,
+        "price": 3005.2681,
+        "change_pct": 0.34,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 309.75,
-        "change_pct": -0.19,
+        "price": 309.32,
+        "change_pct": -0.329,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 489.96,
-        "change_pct": 0.544,
+        "price": 489.63,
+        "change_pct": 0.476,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 212.3115,
-        "change_pct": 1.838,
+        "price": 212.04,
+        "change_pct": 1.708,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 260.305,
-        "change_pct": -0.673,
+        "price": 260.32,
+        "change_pct": -0.668,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 285.99,
-        "change_pct": 1.192,
+        "price": 286.69,
+        "change_pct": 1.44,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 212.34,
-        "change_pct": 2.268,
+        "price": 211.32,
+        "change_pct": 1.777,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.01,
-        "change_pct": -0.3,
+        "price": 176.22,
+        "change_pct": -0.181,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -153,8 +153,8 @@
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.173,
-        "change_pct": -1.109,
+        "price": 5.175,
+        "change_pct": -1.071,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3834,
-        "change_pct": 0.299,
+        "price": 1.3833,
+        "change_pct": 0.29,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1675,
-        "change_pct": -0.053,
+        "price": 1.1677,
+        "change_pct": -0.041,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3641,
-        "change_pct": -0.091,
+        "price": 1.3645,
+        "change_pct": -0.061,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.249,
-        "change_pct": 0.217,
+        "price": 159.218,
+        "change_pct": 0.198,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,16 +197,16 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4699.3999,
-        "change_pct": 1.263,
+        "price": 4704.2002,
+        "change_pct": 1.366,
         "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.25,
-        "change_pct": -3.247,
+        "price": 82.12,
+        "change_pct": -3.4,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
@@ -221,8 +221,8 @@
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6975,
-        "change_pct": 1.493,
+        "price": 6.7,
+        "change_pct": 1.531,
         "low_52w": 4.4145,
         "high_52w": 6.703
       }
@@ -243,7 +243,7 @@
     },
     {
       "term": "30Y",
-      "value": 5.173
+      "value": 5.175
     }
   ],
   "news": [
@@ -255,37 +255,37 @@
       "time": "Latest"
     },
     {
-      "title": "A $131 Billion Shot in the Arm: How Boeing’s New F-15 Deal Can Help Shares",
-      "link": "https://www.barrons.com/articles/boeing-stock-f15-contract-c123a415?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock?",
+      "link": "https://finance.yahoo.com/markets/stocks/article/nvidias-valuation-looks-surprisingly-cheap-heading-into-earnings-could-it-be-an-issue-for-the-stock-191738544.html",
+      "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "S&P 500 Climbs Ahead of Nvidia Earnings",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-climbs-ahead-nvidia-173327249.html",
-      "publisher": "GuruFocus.com",
+      "title": "Southwest Airlines (LUV) is Reshaping Operations to Unlock Margin Growth",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/southwest-airlines-luv-reshaping-operations-180752382.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Tesla’s Cybertruck Price Increase Shows  Cost Trumps Demand",
-      "link": "https://www.barrons.com/articles/tesla-stock-price-increase-cybertruck-cca1407c?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Why BBIO Rose 24% in Three Months and Whether the Rally Can Continue",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-bbio-rose-24-three-173200685.html",
+      "title": "SLSN's Earnings Break-Even in Q2, High Operating Costs Hurt",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/slsns-earnings-break-even-q2-180600327.html",
       "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Bilbel Capital Sold CareCloud (CCLD) for More Attractive Opportunities",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bilbel-capital-sold-carecloud-ccld-173000371.html",
-      "publisher": "Insider Monkey",
+      "title": "YSS Stock Is Falling Despite Space Force Win — Goldman Sachs Just Slashed Its Price Target By 50%",
+      "link": "https://stocktwits.com/news-articles/markets/equity/yss-stock-is-falling-despite-space-force-win-goldman-sachs-slashed-its-price-target-by-50-percent/cZYkwOaRJoB",
+      "publisher": "Stocktwits",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Update: Equities Rise Intraday, Oil Falls as Markets Monitor Trade Developments",
+      "link": "https://finance.yahoo.com/markets/articles/equities-rise-intraday-oil-falls-180131090.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
