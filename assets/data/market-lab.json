@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T20:48:44.032394+00:00",
+  "updated_at": "2026-08-25T21:46:07.930543+00:00",
   "assets": {
     "Indices": [
       {
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3837,
-        "change_pct": 0.323,
+        "price": 1.3834,
+        "change_pct": 0.298,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1678,
-        "change_pct": -0.029,
+        "price": 1.1681,
+        "change_pct": -0.006,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3649,
-        "change_pct": -0.033,
+        "price": 1.3647,
+        "change_pct": -0.05,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.2,
-        "change_pct": 0.186,
+        "price": 159.195,
+        "change_pct": 0.183,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,34 +197,34 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4718.8999,
-        "change_pct": 1.683,
+        "price": 4715.8999,
+        "change_pct": 1.618,
         "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 80.8,
-        "change_pct": -4.952,
+        "price": 81.11,
+        "change_pct": -4.588,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.84,
-        "change_pct": 2.085,
+        "price": 2.845,
+        "change_pct": 2.265,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.71,
-        "change_pct": 1.682,
+        "price": 6.711,
+        "change_pct": 1.697,
         "low_52w": 4.4145,
-        "high_52w": 6.71
+        "high_52w": 6.711
       }
     ]
   },
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Dow Jones AI Giant Nvidia Tests Key Support Level As Pivotal Earnings Report Looms",
-      "link": "https://www.investors.com/stock-lists/stocks-near-a-buy-zone/dow-jones-nvidia-stock-buy-point-nvda-earnings/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "JPMorgan sends another strong message to stock market investors",
+      "link": "https://www.thestreet.com/investing/stocks/jpmorgan-warns-investors-about-artificial-intelligence-ai-stocks",
+      "publisher": "TheStreet",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "That Quantum Fund Is Up 40% in 2026 and Just Crossed $6 Billion. The Field Keeps Beating the Stock-Pickers",
-      "link": "https://247wallst.com/investing/2026/08/25/that-quantum-fund-is-up-40-in-2026-and-just-crossed-6-billion-the-field-keeps-beating-the-stock-pickers/",
-      "publisher": "24/7 Wall St.",
+      "title": "Best Value Stocks to Buy Now and in September",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/best-value-stocks-buy-now-212200607.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "U.S. Stocks Rise as Oil, Inflation Fears Retreat",
-      "link": "https://www.wsj.com/finance/stocks/u-s-stocks-rise-as-oil-inflation-fears-retreat-502d4d57?siteid=yhoof2&yptr=yahoo",
-      "publisher": "The Wall Street Journal",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Update: US Equity Indexes Advance Amid Slumping Treasury Yields, Crude Oil",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-advance-amid-194052810.html",
+      "title": "Update: US Equity Indexes Rise With Tech While Treasury Yields, Crude Oil Slide as Process to Tighten Noose Around Iran Begins",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rise-tech-211306671.html",
       "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today: Nasdaq Leads As Key Inflation Report Looms; Nvidia, Micron Gain",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-treasury-yields-nvidia-micron-sandisk/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
