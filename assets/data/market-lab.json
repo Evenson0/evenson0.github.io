@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-25T19:18:50.811473+00:00",
+  "updated_at": "2026-08-25T20:03:38.172806+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7667.8599,
-        "change_pct": 0.196,
+        "price": 7677.2202,
+        "change_pct": 0.318,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26094.2754,
-        "change_pct": 0.439,
+        "price": 26151.2988,
+        "change_pct": 0.659,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53542.5195,
-        "change_pct": 0.235,
+        "price": 53577.2305,
+        "change_pct": 0.3,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36974.6211,
-        "change_pct": 0.71,
+        "price": 36957.6289,
+        "change_pct": 0.663,
         "low_52w": 28169.9004,
-        "high_52w": 36974.6211
+        "high_52w": 36957.6289
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.91,
-        "change_pct": 0.808,
+        "price": 54.9,
+        "change_pct": 0.789,
         "low_52w": 42.36,
-        "high_52w": 54.91
+        "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3004.96,
-        "change_pct": 0.33,
+        "price": 3005.8862,
+        "change_pct": 0.361,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 309.0,
-        "change_pct": -0.432,
+        "price": 309.9,
+        "change_pct": -0.142,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 490.355,
-        "change_pct": 0.625,
+        "price": 491.71,
+        "change_pct": 0.903,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 211.79,
-        "change_pct": 1.588,
+        "price": 213.05,
+        "change_pct": 2.192,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 260.22,
-        "change_pct": -0.706,
+        "price": 261.06,
+        "change_pct": -0.385,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 286.52,
-        "change_pct": 1.38,
+        "price": 286.63,
+        "change_pct": 1.419,
         "low_52w": 188.88,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 212.07,
-        "change_pct": 2.138,
+        "price": 212.84,
+        "change_pct": 2.509,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 175.95,
-        "change_pct": -0.334,
+        "price": 175.77,
+        "change_pct": -0.436,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3827,
-        "change_pct": 0.248,
+        "price": 1.3832,
+        "change_pct": 0.282,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1681,
-        "change_pct": -0.006,
+        "price": 1.168,
+        "change_pct": -0.018,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.365,
-        "change_pct": -0.023,
+        "price": 1.3651,
+        "change_pct": -0.02,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.186,
-        "change_pct": 0.177,
+        "price": 159.147,
+        "change_pct": 0.153,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,34 +197,34 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4716.1001,
-        "change_pct": 1.623,
+        "price": 4722.7002,
+        "change_pct": 1.765,
         "low_52w": 3373.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.38,
-        "change_pct": -3.094,
+        "price": 81.54,
+        "change_pct": -4.082,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.844,
-        "change_pct": 2.229,
+        "price": 2.847,
+        "change_pct": 2.336,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.708,
-        "change_pct": 1.652,
+        "price": 6.713,
+        "change_pct": 1.728,
         "low_52w": 4.4145,
-        "high_52w": 6.708
+        "high_52w": 6.713
       }
     ]
   },
@@ -248,44 +248,44 @@
   ],
   "news": [
     {
-      "title": "Earnings live updates: Dick's Sporting Goods stock plummets nearly 30%, management warns of 'pain' ahead",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-q2-nvidia-115314802.html",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq rise as US-Canada trade tensions heat up, investors await Nvidia earnings",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-25-dow-sp-500-nasdaq-tariffs-oil-080527092.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock?",
-      "link": "https://finance.yahoo.com/markets/stocks/article/nvidias-valuation-looks-surprisingly-cheap-heading-into-earnings-could-it-be-an-issue-for-the-stock-191738544.html",
-      "publisher": "Yahoo Finance",
+      "title": "Update: US Equity Indexes Advance Amid Slumping Treasury Yields, Crude Oil",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-advance-amid-194052810.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "The S&P 500 Is Reaching New Highs. History Says This Is the Riskiest Move Investors Could Make Right Now.",
-      "link": "https://www.fool.com/investing/2026/08/25/the-sp-500-is-reaching-new-highs-history-says-this/",
+      "title": "Yum Brands Stock Zigs When The Market Zags",
+      "link": "https://www.trefis.com/articles/612769/yum-brands-stock-zigs-when-the-market-zags/2026-08-25",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "CrowdStrike Q2 Earnings Preview: What to Expect From Upcoming Report",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-q2-earnings-preview-expect-191946367.html",
+      "publisher": "GuruFocus.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Why Is Gemini Space Station Stock Up Today?",
+      "link": "https://www.fool.com/investing/2026/08/25/why-is-xrp-ripple-up/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Nasdaq Paces Advance As Nvidia, Tech Names Climb; Zoom Shares Dragged (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-treasury-yields-nvidia-micron-sandisk/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Marvell Technology (MRVL) Thrives on Data Center Growth Amid Networking Dominance",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/marvell-technology-mrvl-thrives-data-182649501.html",
-      "publisher": "Insider Monkey",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "REYN Jumps 18.4% in 3 Months as Pricing and Productivity Gain Steam",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/reyn-jumps-18-4-3-182500722.html",
-      "publisher": "Zacks",
+      "title": "The Paid-To-Hold Play On WDAY Stock: An 8.6% Annualized Income",
+      "link": "https://www.trefis.com/articles/612804/the-paid-to-hold-play-on-wday-stock-an-8-6-annualized-income/2026-08-25",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
