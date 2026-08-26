@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-08-26T19:22:14.826395+00:00",
+  "updated_at": "2026-08-26T22:31:23.825062+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7686.98,
-        "change_pct": 0.126,
+        "price": 7675.7002,
+        "change_pct": -0.021,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26164.5156,
-        "change_pct": 0.051,
+        "price": 26130.1973,
+        "change_pct": -0.081,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53510.9414,
-        "change_pct": -0.124,
+        "price": 53463.8789,
+        "change_pct": -0.212,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36921.5703,
-        "change_pct": -0.097,
+        "price": 36813.6484,
+        "change_pct": -0.39,
         "low_52w": 28339.9004,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.57,
-        "change_pct": -0.601,
+        "price": 54.41,
+        "change_pct": -0.893,
         "low_52w": 42.39,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3009.6431,
-        "change_pct": -0.013,
+        "price": 3005.9001,
+        "change_pct": -0.137,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 314.865,
-        "change_pct": 1.602,
+        "price": 313.45,
+        "change_pct": 1.146,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 495.9226,
-        "change_pct": 0.857,
+        "price": 496.37,
+        "change_pct": 0.948,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 210.915,
-        "change_pct": -1.002,
+        "price": 209.66,
+        "change_pct": -1.591,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 260.04,
-        "change_pct": -0.391,
+        "price": 260.28,
+        "change_pct": -0.299,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 287.995,
-        "change_pct": 0.476,
+        "price": 288.11,
+        "change_pct": 0.516,
         "low_52w": 190.39,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 210.54,
-        "change_pct": -1.081,
+        "price": 208.5,
+        "change_pct": -2.039,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.545,
-        "change_pct": 1.01,
+        "price": 176.97,
+        "change_pct": 0.683,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -164,31 +164,31 @@
         "symbol": "CAD=X",
         "name": "USD / CAD",
         "price": 1.3875,
-        "change_pct": 0.247,
+        "change_pct": 0.246,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1655,
-        "change_pct": -0.114,
+        "price": 1.1659,
+        "change_pct": -0.079,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3591,
-        "change_pct": -0.344,
+        "price": 1.3596,
+        "change_pct": -0.307,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.382,
-        "change_pct": 0.153,
+        "price": 159.259,
+        "change_pct": 0.075,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,34 +197,34 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4648.3999,
-        "change_pct": 0.222,
+        "price": 4666.7998,
+        "change_pct": 0.619,
         "low_52w": 3388.6001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 81.99,
-        "change_pct": -0.449,
+        "price": 81.84,
+        "change_pct": -0.631,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.893,
-        "change_pct": 4.44,
+        "price": 2.904,
+        "change_pct": 4.838,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.707,
-        "change_pct": -0.037,
+        "price": 6.71,
+        "change_pct": 0.007,
         "low_52w": 4.4145,
-        "high_52w": 6.7095
+        "high_52w": 6.71
       }
     ]
   },
@@ -248,45 +248,52 @@
   ],
   "news": [
     {
-      "title": "Why the sustainability of the AI boom could be in focus after Nvidia's earnings call",
-      "link": "https://finance.yahoo.com/video/why-sustainability-ai-boom-could-135959475.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "Earnings live updates: Salesforce, CrowdStrike, Okta stocks surge as AI boom helps lift Q2 results",
+      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-q2-nvidia-115314802.html",
+      "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nervous About Big Tech? This Vanguard Value ETF Is Where the Money Is Rotating",
-      "link": "https://247wallst.com/investing/2026/08/26/nervous-about-big-tech-this-vanguard-value-etf-is-where-the-money-is-rotating/",
-      "publisher": "24/7 Wall St.",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Vanguard's VT vs. State Street's SPGM: Which Global Stock ETF Is the Better Buy?",
-      "link": "https://www.fool.com/coverage/etfs/2026/08/26/vanguard-s-vt-vs-state-street-s-spgm-which-global-stock-etf-is-the-better-buy/",
+      "title": "Stock Market Today, Aug. 26: Stocks Edge Lower As Market Digests Meta Ruling and Awaits Nvidia's Earnings",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/26/stock-market-today-aug-26-stocks-edge-lower-as-market-digests-meta-ruling-and-awaits-nvidia-s-earnings/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Jim Cramer Highlights Sandisk’s (SNDK) Massive Buybacks After Stock Surge",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-highlights-sandisk-sndk-190403019.html",
-      "publisher": "Insider Monkey",
+      "title": "Steel Dynamics (STLD) Gains As Market Dips: What You Should Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/steel-dynamics-stld-gains-market-221503577.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "VZ Has Left Its Peers Behind. Or Has It?",
-      "link": "https://www.trefis.com/articles/612962/vz-has-left-its-peers-behind-or-has-it/2026-08-26",
-      "publisher": "Trefis",
+      "title": "Copart, Inc. (CPRT) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/copart-inc-cprt-falls-more-221502354.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Bill Ackman Thinks This Factor Is Even More Important Than Valuation For Long-Term Investments",
-      "link": "https://www.fool.com/investing/2026/08/26/bill-ackman-factor-more-important-valuation/",
-      "publisher": "Motley Fool",
+      "title": "Halliburton (HAL) Rises As Market Takes a Dip: Key Facts",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/halliburton-hal-rises-market-takes-221502728.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Dow Jones Futures Rise; Nvidia, CrowdStrike, Okta, Salesforce Lead Earnings Movers",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-crowdstrike-okta-salesforce-earnings-movers/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Falls From Record High As Base Metals and Information Technology Shares Drop",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-record-204249085.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "Update: Canada-US Trade Talks Collapse, Ottawa Vows 'Dollar-for-Dollar' Retaliatory Tariffs",
       "link": "https://finance.yahoo.com/economy/policy/articles/canada-us-trade-talks-collapse-110737701.html",
       "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX futures subdued as investors weigh US tariffs, await details on looming Iran sanctions",
-      "link": "https://ca.finance.yahoo.com/news/tsx-futures-subdued-investors-weigh-103147473.html",
-      "publisher": "Reuters",
       "related": "^GSPTSE",
       "time": "Latest"
     }
