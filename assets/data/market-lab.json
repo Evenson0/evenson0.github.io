@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-08-26T22:31:23.825062+00:00",
+  "updated_at": "2026-08-27T22:18:07.168495+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7675.7002,
-        "change_pct": -0.021,
+        "price": 7730.9902,
+        "change_pct": 0.72,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26130.1973,
-        "change_pct": -0.081,
+        "price": 26541.3516,
+        "change_pct": 1.573,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53463.8789,
-        "change_pct": -0.212,
+        "price": 53569.4414,
+        "change_pct": 0.197,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36813.6484,
-        "change_pct": -0.39,
-        "low_52w": 28339.9004,
+        "price": 36834.25,
+        "change_pct": 0.056,
+        "low_52w": 28433.0,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.41,
-        "change_pct": -0.893,
-        "low_52w": 42.39,
+        "price": 54.33,
+        "change_pct": -0.147,
+        "low_52w": 42.52,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 3005.9001,
-        "change_pct": -0.137,
+        "price": 3014.3394,
+        "change_pct": 0.281,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10878.1201,
-        "change_pct": -0.074,
+        "price": 10792.54,
+        "change_pct": -0.787,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 65856.4297,
-        "change_pct": 0.501,
+        "price": 66262.1562,
+        "change_pct": 0.616,
         "low_52w": 41938.8906,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 313.45,
-        "change_pct": 1.146,
+        "price": 314.58,
+        "change_pct": 0.36,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 496.37,
-        "change_pct": 0.948,
+        "price": 505.06,
+        "change_pct": 1.751,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 209.66,
-        "change_pct": -1.591,
+        "price": 227.98,
+        "change_pct": 8.738,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 260.28,
-        "change_pct": -0.299,
+        "price": 256.26,
+        "change_pct": -1.544,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 288.11,
-        "change_pct": 0.516,
-        "low_52w": 190.39,
+        "price": 283.47,
+        "change_pct": -1.61,
+        "low_52w": 199.53,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 208.5,
-        "change_pct": -2.039,
+        "price": 213.67,
+        "change_pct": 2.48,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.97,
-        "change_pct": 0.683,
+        "price": 175.15,
+        "change_pct": -1.028,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.69,
-        "change_pct": -0.405,
+        "price": 3.678,
+        "change_pct": -0.325,
         "low_52w": 3.507,
-        "high_52w": 4.088
+        "high_52w": 4.072
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.381,
-        "change_pct": 0.69,
+        "price": 4.396,
+        "change_pct": 0.342,
         "low_52w": 3.512,
         "high_52w": 4.461
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.664,
-        "change_pct": 0.539,
+        "price": 4.672,
+        "change_pct": 0.172,
         "low_52w": 3.953,
         "high_52w": 4.745
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.186,
-        "change_pct": 0.232,
+        "price": 5.191,
+        "change_pct": 0.096,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3875,
-        "change_pct": 0.246,
+        "price": 1.385,
+        "change_pct": 0.1,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1659,
-        "change_pct": -0.079,
+        "price": 1.1658,
+        "change_pct": -0.146,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -180,15 +180,15 @@
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
         "price": 1.3596,
-        "change_pct": -0.307,
+        "change_pct": -0.374,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.259,
-        "change_pct": 0.075,
+        "price": 159.358,
+        "change_pct": 0.085,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,96 +197,103 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4666.7998,
-        "change_pct": 0.619,
-        "low_52w": 3388.6001,
+        "price": 4656.2998,
+        "change_pct": 1.264,
+        "low_52w": 3404.6001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 81.84,
-        "change_pct": -0.631,
+        "price": 83.63,
+        "change_pct": 1.703,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.904,
-        "change_pct": 4.838,
+        "price": 2.898,
+        "change_pct": 1.97,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.71,
-        "change_pct": 0.007,
+        "price": 6.6895,
+        "change_pct": 1.441,
         "low_52w": 4.4145,
-        "high_52w": 6.71
+        "high_52w": 6.7095
       }
     ]
   },
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.69
+      "value": 3.678
     },
     {
       "term": "5Y",
-      "value": 4.381
+      "value": 4.396
     },
     {
       "term": "10Y",
-      "value": 4.664
+      "value": 4.672
     },
     {
       "term": "30Y",
-      "value": 5.186
+      "value": 5.191
     }
   ],
   "news": [
     {
-      "title": "Earnings live updates: Salesforce, CrowdStrike, Okta stocks surge as AI boom helps lift Q2 results",
-      "link": "https://finance.yahoo.com/markets/live/earnings-live-updates-q2-nvidia-115314802.html",
-      "publisher": "Yahoo Finance",
+      "title": "Is the S&P 500 due for a correction? The answer may come before the midterms.",
+      "link": "https://finance.yahoo.com/video/p-500-due-correction-answer-204038255.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today, Aug. 26: Stocks Edge Lower As Market Digests Meta Ruling and Awaits Nvidia's Earnings",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/08/26/stock-market-today-aug-26-stocks-edge-lower-as-market-digests-meta-ruling-and-awaits-nvidia-s-earnings/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Steel Dynamics (STLD) Gains As Market Dips: What You Should Know",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/steel-dynamics-stld-gains-market-221503577.html",
-      "publisher": "Zacks",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Copart, Inc. (CPRT) Falls More Steeply Than Broader Market: What Investors Need to Know",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/copart-inc-cprt-falls-more-221502354.html",
-      "publisher": "Zacks",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Halliburton (HAL) Rises As Market Takes a Dip: Key Facts",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/halliburton-hal-rises-market-takes-221502728.html",
-      "publisher": "Zacks",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Dow Jones Futures Rise; Nvidia, CrowdStrike, Okta, Salesforce Lead Earnings Movers",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-crowdstrike-okta-salesforce-earnings-movers/?src=A00220&yptr=yahoo",
+      "title": "Dow Jones Futures: Market Rallies Into Fed Chief Warsh; Nvidia Jumps, But This Sector Is On Fire",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-chief-warsh-speech-nvidia-jumps-software-sector-on-fire/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "United Airlines (UAL) Stock Sinks As Market Gains: What You Should Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/united-airlines-ual-stock-sinks-220003034.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Paccar (PCAR) Stock Drops Despite Market Gains: Important Facts to Note",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/paccar-pcar-stock-drops-despite-220002235.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Kroger (KR) Stock Declines While Market Improves: Some Information for Investors",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/kroger-kr-stock-declines-while-220002260.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "U.S. Bancorp (USB): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/u-bancorp-usb-buy-sell-215307583.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Higher as Technology Stocks Rise; Investors Weigh Economic Data And BoC Outlook",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-higher-technology-203145423.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -323,13 +330,6 @@
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
-    },
-    {
-      "title": "Update: Canada-US Trade Talks Collapse, Ottawa Vows 'Dollar-for-Dollar' Retaliatory Tariffs",
-      "link": "https://finance.yahoo.com/economy/policy/articles/canada-us-trade-talks-collapse-110737701.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
     }
   ],
   "earnings": [
@@ -350,7 +350,7 @@
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "when": "Aug 26",
+      "when": "Nov 17",
       "note": "Upcoming earnings and investor materials",
       "link": "https://finance.yahoo.com/quote/NVDA/"
     },
