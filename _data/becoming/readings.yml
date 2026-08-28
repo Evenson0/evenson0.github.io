@@ -1,17 +1,109 @@
+# ============================================================
+# BECOMING — RESEARCH READINGS
+# ============================================================
+#
+# This file is a curated research library, not a list of
+# everything worth reading.
+#
+# Principles:
+# - Prefer original papers and authoritative sources.
+# - A reading is linked to the capability or research program
+#   it actually supports.
+# - Reading alone does not unlock research mastery.
+# - Dormant programs may already contain future references.
+# - Add new references when a research question genuinely
+#   requires them.
+#
+# Status:
+#   planned
+#   in_progress
+#   completed
+#   reference
+#
+# Priority:
+#   essential
+#   high
+#   medium
+#   reference
+# ============================================================
+
+
+# ============================================================
+# RESEARCH CRAFT
+# ============================================================
+
+- id: keshav-how-to-read-paper
+  title: How to Read a Paper
+  authors:
+    - S. Keshav
+  year: 2007
+  type: methodological_paper
+  topic: research-craft
+  priority: high
+  status: planned
+  source_url: https://dl.acm.org/doi/10.1145/1273445.1273458
+  doi: 10.1145/1273445.1273458
+  linked_nodes:
+    - research-critical-reading
+    - research-literature-map
+  notes_path: null
+
+- id: wilson-good-enough-computing
+  title: Good Enough Practices in Scientific Computing
+  authors:
+    - Greg Wilson
+    - Jennifer Bryan
+    - Karen Cranston
+    - Justin Kitzes
+    - Lex Nederbragt
+    - Tracy K. Teal
+  year: 2017
+  type: methodological_paper
+  topic: reproducible-research
+  priority: high
+  status: planned
+  source_url: https://doi.org/10.1371/journal.pcbi.1005510
+  doi: 10.1371/journal.pcbi.1005510
+  linked_nodes:
+    - research-reproducibility
+    - research-reproduction-method
+  notes_path: null
+
+
+# ============================================================
+# PROGRAM — MODEL INTERPRETABILITY
+# ACTIVE RESEARCH PROGRAM
+# ============================================================
+
 - id: molnar-iml-book
   title: Interpretable Machine Learning
-  authors: [Christoph Molnar]
+  authors:
+    - Christoph Molnar
+  year: 2025
   type: living_book
   topic: interpretability
   priority: essential
   status: in_progress
   source_url: https://christophm.github.io/interpretable-ml-book/
-  linked_nodes: [research-r0-foundations, research-interpretability-taxonomy, research-intrinsic-models, research-pdp-ice, research-shapley-shap, research-ale]
+  linked_nodes:
+    - research-interpretability-taxonomy
+    - research-intrinsic-models
+    - research-pdp-ice
+    - research-shapley-shap
+    - research-ale
+    - research-evaluation-failure
   notes_path: null
-  source: { organization: Author-maintained web edition, checked_at: 2026-08-27, url: https://christophm.github.io/interpretable-ml-book/ }
+  source:
+    organization: Author-maintained web edition
+    checked_at: 2026-08-28
+    url: https://christophm.github.io/interpretable-ml-book/
+
 - id: molnar-history-challenges
-  title: "Interpretable Machine Learning — A Brief History, State-of-the-Art and Challenges"
-  authors: [Christoph Molnar, Giuseppe Casalicchio, Bernd Bischl]
+  title: Interpretable Machine Learning — A Brief History, State-of-the-Art and Challenges
+  authors:
+    - Christoph Molnar
+    - Giuseppe Casalicchio
+    - Bernd Bischl
   year: 2020
   type: conference_paper
   topic: interpretability-survey
@@ -19,11 +111,52 @@
   status: planned
   source_url: https://arxiv.org/abs/2010.09337
   doi: 10.1007/978-3-030-65965-3_28
-  linked_nodes: [research-r0-foundations, research-evaluation-failure]
+  linked_nodes:
+    - research-interpretability-taxonomy
+    - research-evaluation-failure
+    - research-interpretability-memo
   notes_path: null
+
+- id: friedman-gradient-boosting
+  title: "Greedy Function Approximation: A Gradient Boosting Machine"
+  authors:
+    - Jerome H. Friedman
+  year: 2001
+  type: journal_paper
+  topic: partial-dependence
+  priority: medium
+  status: planned
+  source_url: https://doi.org/10.1214/aos/1013203451
+  doi: 10.1214/aos/1013203451
+  linked_nodes:
+    - research-pdp-ice
+  notes_path: null
+
+- id: goldstein-ice
+  title: Peeking Inside the Black Box — Visualizing Statistical Learning with Plots of Individual Conditional Expectation
+  authors:
+    - Alex Goldstein
+    - Adam Kapelner
+    - Justin Bleich
+    - Emil Pitkin
+  year: 2015
+  type: journal_paper
+  topic: ICE
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1080/10618600.2014.907095
+  doi: 10.1080/10618600.2014.907095
+  linked_nodes:
+    - research-pdp-ice
+    - research-unified-reproduction
+  notes_path: null
+
 - id: ribeiro-lime
-  title: "Why Should I Trust You?: Explaining the Predictions of Any Classifier"
-  authors: [Marco Tulio Ribeiro, Sameer Singh, Carlos Guestrin]
+  title: '"Why Should I Trust You?": Explaining the Predictions of Any Classifier'
+  authors:
+    - Marco Tulio Ribeiro
+    - Sameer Singh
+    - Carlos Guestrin
   year: 2016
   type: conference_paper
   topic: LIME
@@ -31,22 +164,32 @@
   status: planned
   source_url: https://doi.org/10.1145/2939672.2939778
   doi: 10.1145/2939672.2939778
-  linked_nodes: [research-lime]
+  linked_nodes:
+    - research-lime
+    - research-unified-reproduction
   notes_path: null
+
 - id: lundberg-lee-shap
   title: A Unified Approach to Interpreting Model Predictions
-  authors: [Scott M. Lundberg, Su-In Lee]
+  authors:
+    - Scott M. Lundberg
+    - Su-In Lee
   year: 2017
   type: conference_paper
   topic: SHAP
   priority: essential
   status: planned
   source_url: https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html
-  linked_nodes: [research-shapley-shap]
+  linked_nodes:
+    - research-shapley-shap
+    - research-unified-reproduction
   notes_path: null
+
 - id: apley-zhu-ale
   title: Visualizing the Effects of Predictor Variables in Black Box Supervised Learning Models
-  authors: [Daniel W. Apley, Jingyu Zhu]
+  authors:
+    - Daniel W. Apley
+    - Jingyu Zhu
   year: 2020
   type: journal_paper
   topic: ALE
@@ -54,11 +197,33 @@
   status: planned
   source_url: https://doi.org/10.1111/rssb.12377
   doi: 10.1111/rssb.12377
-  linked_nodes: [research-ale, research-correlated-features]
+  linked_nodes:
+    - research-ale
+    - research-unified-reproduction
+    - research-stress-test
   notes_path: null
+
+- id: hooker-mentch-permutation
+  title: "Please Stop Permuting Features: An Explanation and Alternatives"
+  authors:
+    - Giles Hooker
+    - Lucas Mentch
+  year: 2019
+  type: preprint
+  topic: feature-dependence
+  priority: high
+  status: planned
+  source_url: https://arxiv.org/abs/1905.03151
+  linked_nodes:
+    - research-evaluation-failure
+    - research-stress-test
+    - research-interpretability-memo
+  notes_path: null
+
 - id: rudin-black-box
   title: Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead
-  authors: [Cynthia Rudin]
+  authors:
+    - Cynthia Rudin
   year: 2019
   type: journal_paper
   topic: interpretable-models
@@ -66,11 +231,21 @@
   status: planned
   source_url: https://doi.org/10.1038/s42256-019-0048-x
   doi: 10.1038/s42256-019-0048-x
-  linked_nodes: [research-intrinsic-models, research-evaluation-failure]
+  linked_nodes:
+    - research-intrinsic-models
+    - research-evaluation-failure
+    - research-interpretability-memo
   notes_path: null
+
 - id: rudin-grand-challenges
   title: Interpretable Machine Learning — Fundamental Principles and 10 Grand Challenges
-  authors: [Cynthia Rudin, Chaofan Chen, Zhi Chen, Haiyang Huang, Lesia Semenova, Chudi Zhong]
+  authors:
+    - Cynthia Rudin
+    - Chaofan Chen
+    - Zhi Chen
+    - Haiyang Huang
+    - Lesia Semenova
+    - Chudi Zhong
   year: 2022
   type: journal_survey
   topic: interpretability-challenges
@@ -78,5 +253,160 @@
   status: planned
   source_url: https://doi.org/10.1214/21-SS133
   doi: 10.1214/21-SS133
-  linked_nodes: [research-evaluation-failure, research-r2-investigator]
+  linked_nodes:
+    - research-evaluation-failure
+    - research-stress-test
+    - research-interpretability-memo
+  notes_path: null
+
+
+# ============================================================
+# PROGRAM — MCMC / COMPUTATIONAL STATISTICS
+# DORMANT DURING CYCLE 01
+# ============================================================
+
+- id: geyer-introduction-mcmc
+  title: Introduction to Markov Chain Monte Carlo
+  authors:
+    - Charles J. Geyer
+  year: 2011
+  type: book_chapter
+  topic: MCMC-foundations
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1201/b10905-2
+  doi: 10.1201/b10905-2
+  linked_nodes:
+    - research-mcmc-foundations
+    - research-mcmc-algorithms
+  notes_path: null
+
+- id: geyer-practical-mcmc
+  title: Practical Markov Chain Monte Carlo
+  authors:
+    - Charles J. Geyer
+  year: 1992
+  type: journal_paper
+  topic: MCMC
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1214/ss/1177011137
+  doi: 10.1214/ss/1177011137
+  linked_nodes:
+    - research-mcmc-error
+    - research-mcmc-geyer
+    - research-mcmc-paper
+  notes_path: null
+
+- id: tierney-markov-chains-posterior
+  title: Markov Chains for Exploring Posterior Distributions
+  authors:
+    - Luke Tierney
+  year: 1994
+  type: journal_paper
+  topic: MCMC-theory
+  priority: high
+  status: planned
+  source_url: https://www.jstor.org/stable/2242477
+  linked_nodes:
+    - research-mcmc-foundations
+    - research-mcmc-algorithms
+    - research-mcmc-error
+  notes_path: null
+
+
+# ============================================================
+# PROGRAM — QUANTITATIVE FINANCE / PAIRS TRADING
+# DORMANT DURING CYCLE 01
+# ============================================================
+
+- id: gatev-pairs-trading
+  title: "Pairs Trading: Performance of a Relative-Value Arbitrage Rule"
+  authors:
+    - Evan Gatev
+    - William N. Goetzmann
+    - K. Geert Rouwenhorst
+  year: 2006
+  type: journal_paper
+  topic: pairs-trading
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1093/rfs/hhj020
+  doi: 10.1093/rfs/hhj020
+  linked_nodes:
+    - research-pairs-foundations
+    - research-pairs-baseline
+    - research-pairs-validation
+  notes_path: null
+
+- id: vidyamurthy-pairs-trading
+  title: "Pairs Trading: Quantitative Methods and Analysis"
+  authors:
+    - Ganapathy Vidyamurthy
+  year: 2004
+  type: book
+  topic: pairs-trading
+  priority: high
+  status: planned
+  source_url: https://www.wiley.com/en-us/Pairs+Trading%3A+Quantitative+Methods+and+Analysis-p-9780471460671
+  linked_nodes:
+    - research-pairs-foundations
+    - research-pairs-baseline
+  notes_path: null
+
+- id: avellaneda-lee-stat-arb
+  title: Statistical Arbitrage in the US Equities Market
+  authors:
+    - Marco Avellaneda
+    - Jeong-Hyun Lee
+  year: 2010
+  type: journal_paper
+  topic: statistical-arbitrage
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1080/14697680903124632
+  doi: 10.1080/14697680903124632
+  linked_nodes:
+    - research-pairs-validation
+    - research-pairs-extension
+    - research-pairs-paper
+  notes_path: null
+
+
+# ============================================================
+# PROGRAM — CREDIBILITY THEORY
+# DORMANT DURING CYCLE 01
+# ============================================================
+
+- id: buhlmann-experience-rating
+  title: Experience Rating and Credibility
+  authors:
+    - Hans Bühlmann
+  year: 1969
+  type: journal_paper
+  topic: credibility
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1017/S0515036100008023
+  doi: 10.1017/S0515036100008023
+  linked_nodes:
+    - research-credibility-classical
+  notes_path: null
+
+- id: buhlmann-gisler-credibility
+  title: A Course in Credibility Theory and its Applications
+  authors:
+    - Hans Bühlmann
+    - Alois Gisler
+  year: 2005
+  type: book
+  topic: credibility
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1007/3-540-29273-X
+  doi: 10.1007/3-540-29273-X
+  linked_nodes:
+    - research-credibility-classical
+    - research-credibility-modern
+    - research-credibility-survey
   notes_path: null
