@@ -1,18 +1,18 @@
 ---
-title: FM Final Review and Shapley Foundations
-title_fr: Révision finale FM et fondements des valeurs de Shapley
+title: FM Exam Week and Interpretability Consolidation
+title_fr: Semaine d'examen FM et consolidation en interprétabilité
 
 cycle: foundations-01
-cycle_week: 5
+cycle_week: 6
 
-start_date: 2026-09-27
-end_date: 2026-10-03
+start_date: 2026-10-04
+end_date: 2026-10-10
 
 status: planned
 
 active:
   - actuarial-fm-timed
-  - research-shapley-shap
+  - research-interpretability-taxonomy
   - physical-process
 
 maintenance:
@@ -25,79 +25,73 @@ quests:
 
   - domain: actuarial
     node: actuarial-fm-timed
-    task: Enter final FM review mode and prepare for the actual examination date.
-    task_fr: Entrer en révision finale FM et se préparer à la date réelle de l'examen.
+    task: Complete the final FM preparation appropriate to the actual exam date and sit the exam if scheduled this week.
+    task_fr: Compléter la préparation finale FM adaptée à la date réelle de l'examen et passer l'examen s'il est prévu cette semaine.
     completion:
-      - Complete mixed exam-level practice
-      - Complete at least one substantial timed simulation
-      - Review every important error from the simulation
-      - Revisit recurring errors from Weeks 01–04
-      - Complete a final formula review
-      - Complete a final calculator workflow review
-      - Stop adding unnecessary new study resources
-      - Adjust the final days of review to the actual appointment date
+      - Adapt the week's workload to the actual FM appointment date
+      - Review recurring errors rather than reopening the entire syllabus
+      - Complete targeted mixed practice where useful
+      - Review formulas and calculator workflow
+      - Avoid unnecessary new material
+      - Complete the FM exam if the appointment falls this week
     completion_fr:
-      - Compléter une pratique mixte de niveau examen
-      - Compléter au moins une simulation chronométrée substantielle
-      - Revoir chaque erreur importante de la simulation
-      - Revoir les erreurs récurrentes des semaines 1 à 4
-      - Effectuer une révision finale des formules
-      - Effectuer une révision finale de l'utilisation de la calculatrice
-      - Cesser d'ajouter inutilement de nouvelles ressources d'étude
-      - Adapter les derniers jours de révision à la date réelle du rendez-vous
+      - Adapter la charge de la semaine à la date réelle du rendez-vous FM
+      - Revoir les erreurs récurrentes plutôt que de reprendre tout le programme
+      - Compléter une pratique mixte ciblée lorsque cela est utile
+      - Revoir les formules et l'utilisation de la calculatrice
+      - Éviter d'ajouter inutilement de nouveau matériel
+      - Passer l'examen FM si le rendez-vous tombe cette semaine
 
   - domain: research
-    node: research-shapley-shap
-    task: Build a first-principles understanding of Shapley values.
-    task_fr: Construire une compréhension des valeurs de Shapley à partir des principes fondamentaux.
+    node: research-interpretability-taxonomy
+    task: Consolidate the interpretability work from Weeks 01–05 without starting a major new method.
+    task_fr: Consolider le travail sur l'interprétabilité des semaines 1 à 5 sans commencer une nouvelle méthode importante.
     completion:
-      - Understand the cooperative-game setup
-      - Define a coalition and its value
-      - Understand marginal contribution
-      - Derive the Shapley-value intuition from averaging marginal contributions
-      - Understand efficiency
-      - Understand symmetry
-      - Understand the null-player property
-      - Understand additivity
-      - Work through one small example by hand
-      - Write a concise first-principles explanation
+      - Revisit the main ideas from interpretability foundations
+      - Review intrinsic interpretability
+      - Review PDP and ICE
+      - Review LIME
+      - Review Shapley-value foundations
+      - Identify the main connections between the methods studied so far
+      - Write a short synthesis of what remains unclear
+      - Select the questions that should guide the next research phase
     completion_fr:
-      - Comprendre le cadre des jeux coopératifs
-      - Définir une coalition et sa valeur
-      - Comprendre la contribution marginale
-      - Comprendre l'intuition de la valeur de Shapley comme moyenne des contributions marginales
-      - Comprendre l'efficacité
-      - Comprendre la symétrie
-      - Comprendre la propriété du joueur nul
-      - Comprendre l'additivité
-      - Résoudre un petit exemple à la main
-      - Rédiger une explication concise à partir des principes fondamentaux
+      - Revoir les idées principales des fondements de l'interprétabilité
+      - Revoir l'interprétabilité intrinsèque
+      - Revoir PDP et ICE
+      - Revoir LIME
+      - Revoir les fondements des valeurs de Shapley
+      - Identifier les principaux liens entre les méthodes étudiées jusqu'ici
+      - Rédiger une courte synthèse de ce qui reste encore incertain
+      - Sélectionner les questions qui doivent guider la prochaine phase de recherche
 
   - domain: english
     node: english-conversation-practice
-    task: Complete one light English conversation session.
-    task_fr: Compléter une séance légère de conversation en anglais.
+    task: Complete one light English conversation session if it does not interfere with FM.
+    task_fr: Compléter une séance légère de conversation en anglais si elle n'interfère pas avec FM.
     completion:
-      - Complete one conversation
+      - Complete one conversation if practical
       - Keep the session secondary to FM
-      - Reuse a few useful expressions
+      - Reuse useful expressions from previous practice
     completion_fr:
-      - Compléter une conversation
-      - Garder cette séance secondaire par rapport à FM
-      - Réutiliser quelques expressions utiles
+      - Compléter une conversation si cela est raisonnable
+      - Garder la séance secondaire par rapport à FM
+      - Réutiliser des expressions utiles des séances précédentes
 
   - domain: physical
     node: physical-process
-    task: Complete 4 strength sessions, 3 runs, and aim for 12,000–15,000 steps each day.
-    task_fr: Compléter 4 séances de musculation, 3 courses et viser 12 000 à 15 000 pas chaque jour.
+    task: Maintain the physical routine while adapting intensity if necessary around the FM exam.
+    task_fr: Maintenir la routine physique tout en adaptant l'intensité si nécessaire autour de l'examen FM.
     completion:
-      - Complete 4 strength sessions
-      - Complete 3 runs
+      - Aim for 4 strength sessions
+      - Aim for 3 runs
       - Aim for 12,000–15,000 steps each day
+      - Adjust training when necessary to protect the week's main priority
     completion_fr:
-      - Compléter 4 séances de musculation
-      - Compléter 3 courses
+      - Viser 4 séances de musculation
+      - Viser 3 courses
       - Viser 12 000 à 15 000 pas chaque jour
+      - Adapter l'entraînement lorsque nécessaire pour protéger la priorité principale de la semaine
 
 completed: []
 ---
