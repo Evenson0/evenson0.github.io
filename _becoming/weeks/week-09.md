@@ -1,6 +1,6 @@
 ---
-title: Univariate Random Variables · Explanation Failures
-title_fr: Variables aléatoires univariées · Limites des explications
+title: Discrete Random Variables · ANAM II
+title_fr: Variables aléatoires discrètes · ANAM II
 
 cycle: foundations-01
 cycle_week: 9
@@ -10,86 +10,71 @@ status: planned
 
 active:
   - actuarial-exam-1
-  - research-evaluation-failure
+  - research-actuarial-anam
   - physical-training-consistency
 
 maintenance:
   - english-conversation-practice
+  - lean-mathematics-in-lean
+  - mathematics-problem-solving
 
 quests:
 
   - domain: actuarial
     node: actuarial-exam-1
-    task: Work on discrete univariate random variables and their applications.
-    task_fr: Travailler les variables aléatoires univariées discrètes et leurs applications.
-    completion:
-      - Review PMF and CDF
-      - Review expectation and variance
-      - Review the main discrete distributions in the P syllabus
-      - Work on insurance-payment applications
-      - Complete at least 40 focused problems
-      - Review all incorrect or uncertain answers
-    completion_fr:
-      - Revoir PMF et CDF
-      - Revoir espérance et variance
-      - Revoir les principales lois discrètes du syllabus P
-      - Travailler les applications liées aux paiements d'assurance
-      - Compléter au moins 40 problèmes ciblés
-      - Revoir toutes les réponses incorrectes ou incertaines
+    task: Study discrete univariate random variables and complete at least 40 focused P problems.
+    task_fr: Étudier les variables aléatoires discrètes univariées et compléter au moins 40 exercices ciblés de P.
 
   - domain: research
-    node: research-evaluation-failure
-    task: Study when model explanations become unstable, misleading, or underdetermined.
-    task_fr: Étudier quand les explications de modèles deviennent instables, trompeuses ou indéterminées.
+    node: research-actuarial-anam
+    task: Finish Laub, Pho, and Wong and write a technical comparison of GLM, GAM, and ANAM.
+    task_fr: Terminer Laub, Pho et Wong et rédiger une comparaison technique entre GLM, GAM et ANAM.
     completion:
-      - Study instability and sensitivity
-      - Study feature dependence
-      - Distinguish attribution from causal effect
-      - Compare disagreements between methods
-      - Identify examples where more than one explanation can appear reasonable
-      - Write a short failure-mode memo
+      - Understand sparsity
+      - Understand smoothness
+      - Understand monotonicity
+      - Review the empirical experiments
+      - Compare GLM, GAM, and ANAM
+      - Identify at least three unanswered questions
     completion_fr:
-      - Étudier l'instabilité et la sensibilité
-      - Étudier la dépendance entre variables
-      - Distinguer attribution et effet causal
-      - Comparer les désaccords entre méthodes
-      - Identifier des cas où plusieurs explications peuvent sembler raisonnables
-      - Rédiger une courte note sur les modes d'échec
+      - Comprendre la parcimonie
+      - Comprendre le lissage
+      - Comprendre la monotonie
+      - Revoir les expériences empiriques
+      - Comparer GLM, GAM et ANAM
+      - Identifier au moins trois questions non résolues
+
+  - domain: mathematics
+    node: mathematics-problem-solving
+    task: Solve one nontrivial mathematical problem and write the complete reasoning.
+    task_fr: Résoudre un problème mathématique non trivial et rédiger le raisonnement complet.
+
+  - domain: lean
+    node: lean-mathematics-in-lean
+    task: Formalize one of this week's mathematical arguments, or a simpler related lemma if the full problem is too large.
+    task_fr: Formaliser l'un des arguments mathématiques de la semaine, ou un lemme connexe plus simple si le problème complet est trop grand.
 
   - domain: english
     node: english-conversation-practice
-    task: Practice expressing and defending an opinion.
-    task_fr: Travailler l'expression et la défense d'une opinion.
-    completion:
-      - State an opinion clearly
-      - Give reasons
-      - Respond to disagreement
-      - Modify the position when a counterargument is persuasive
-    completion_fr:
-      - Exprimer clairement une opinion
-      - Donner des raisons
-      - Répondre à un désaccord
-      - Modifier sa position lorsqu'un contre-argument est convaincant
+    task: Have one spontaneous social conversation involving opinions, stories, and disagreement.
+    task_fr: Avoir une conversation sociale spontanée comprenant opinions, récits et désaccord.
 
   - domain: physical
     node: physical-training-consistency
-    task: Complete the normal training week.
-    task_fr: Compléter une semaine normale d'entraînement.
-    completion:
-      - Complete 4 strength sessions
-      - Complete 3 runs
-      - Aim for 12,000–15,000 steps each day
-    completion_fr:
-      - Compléter 4 séances de musculation
-      - Compléter 3 courses
-      - Viser 12 000 à 15 000 pas chaque jour
+    task: Complete the normal weekly training plan.
+    task_fr: Compléter le programme hebdomadaire normal.
 
 completed: []
 ---
 
 ## Weekly Review
+
 ### Progress
+
 ### Bottleneck
+
 ### Discovery
+
 ### Adjustment
+
 ### Roadmap Change
