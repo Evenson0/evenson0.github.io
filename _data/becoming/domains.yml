@@ -2,61 +2,70 @@
   title: Research
   title_fr: Recherche
   strategy: active
-  description: Reproduce, investigate, contribute, and submit work for external scrutiny.
-  description_fr: Reproduire, examiner, contribuer et soumettre des travaux à une évaluation externe.
+  description: Develop independent research through reading, reproduction, investigation, original work, and publication.
+  description_fr: Développer une pratique de recherche indépendante par la lecture, la reproduction, l'investigation, le travail original et la publication.
+
 - id: actuarial
   title: Actuarial
   title_fr: Actuariat
   strategy: active
-  description: Build verified technical competence along the CAS credential pathway.
-  description_fr: Développer des compétences techniques vérifiées dans le parcours CAS.
+  description: Build technical actuarial competence and progress through the CAS credential pathway.
+  description_fr: Développer les compétences techniques en actuariat et progresser dans le parcours de qualification de la CAS.
+
 - id: mathematics
   title: Mathematics
   title_fr: Mathématiques
   strategy: dormant
-  description: Develop mathematical maturity through proof, exposition, and investigation.
-  description_fr: Développer la maturité mathématique par la preuve, l'exposition et l'investigation.
+  description: Develop mathematical maturity through proof, problem solving, advanced study, exposition, and independent investigation.
+  description_fr: Développer la maturité mathématique par la preuve, la résolution de problèmes, l'étude avancée, l'exposition et l'investigation indépendante.
+
 - id: lean
   title: Lean / Formalization
   title_fr: Lean / Formalisation
   strategy: dormant
-  description: Formalize mathematics that can be understood, explained, and maintained.
-  description_fr: Formaliser des mathématiques comprises, explicables et maintenables.
+  description: Learn formal mathematics, build substantial formalizations, and contribute meaningfully to the Lean ecosystem.
+  description_fr: Apprendre les mathématiques formelles, construire des formalisations substantielles et contribuer de manière significative à l'écosystème Lean.
+
 - id: writing
   title: Writing
   title_fr: Écriture
   strategy: dormant
-  description: Turn thinking into polished essays, technical work, research, and books.
-  description_fr: Transformer la réflexion en essais, travaux techniques, recherches et livres aboutis.
+  description: Develop original essays, technical exposition, research writing, and long-form work.
+  description_fr: Développer des essais originaux, de l'exposition technique, de l'écriture scientifique et des travaux de long format.
+
 - id: career
   title: Career
   title_fr: Carrière
   strategy: maintenance
-  description: Grow responsibility, technical depth, communication, and useful impact.
-  description_fr: Développer la responsabilité, la profondeur technique, la communication et l'impact.
+  description: Grow analytical ownership, technical depth, business understanding, communication, and leadership.
+  description_fr: Développer l'autonomie analytique, la profondeur technique, la compréhension des affaires, la communication et le leadership.
+
 - id: building
-  title: Building
-  title_fr: Création
+  title: Software Building
+  title_fr: Création logicielle
   strategy: dormant
-  description: Create useful, tested, documented software for real people.
-  description_fr: Créer des logiciels utiles, testés et documentés pour de vrais utilisateurs.
+  description: Turn useful ideas into reliable software, release them, improve them, and maintain them over time.
+  description_fr: Transformer des idées utiles en logiciels fiables, les publier, les améliorer et les maintenir dans le temps.
+
 - id: english
   title: English
   title_fr: Anglais
   strategy: maintenance
-  description: Communicate clearly in daily, technical, and professional settings.
-  description_fr: Communiquer clairement dans la vie quotidienne et les contextes techniques et professionnels.
+  description: Develop fluent communication across everyday, social, technical, and professional situations.
+  description_fr: Développer une communication fluide dans les situations quotidiennes, sociales, techniques et professionnelles.
+
 - id: capital
   title: Capital
   title_fr: Capital
-  strategy: dormant
+  strategy: maintenance
   sensitive: true
-  description: Build a durable process and objectively defined investable capital.
-  description_fr: Construire un système durable et un capital investissable défini objectivement.
+  description: Build financial resilience, a disciplined investment process, and long-term investable capital.
+  description_fr: Construire une résilience financière, un processus d'investissement discipliné et un capital investissable à long terme.
+
 - id: physical
   title: Physical
   title_fr: Physique
   strategy: active
   sensitive: true
-  description: Track private body-mass and user-defined physical-capacity milestones.
-  description_fr: Suivre en privé les étapes de poids et de capacité physique définies par l'utilisateur.
+  description: Build a sustainable physical routine while progressing in body mass, strength, endurance, and hiking capacity.
+  description_fr: Construire une routine physique durable tout en progressant en masse corporelle, force, endurance et capacité en randonnée.
