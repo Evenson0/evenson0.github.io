@@ -9,14 +9,10 @@ philosophy:
   - "A repository is not automatically a useful tool."
   - "A prototype, a maintained product, and an open-source project are different achievements."
   - "Software quality is demonstrated through reliability, documentation, maintainability, and real use."
-  - "External adoption is valuable evidence but should not be required for every engineering milestone."
+  - "External adoption is valuable but should not be required for every engineering milestone."
   - "The goal is to build tools that solve real problems and survive beyond the first implementation."
 
 nodes:
-
-  # ============================================================
-  # BUILDING CRAFT
-  # ============================================================
 
   - id: building-foundations
     title: Software Building Craft
@@ -37,7 +33,6 @@ nodes:
       - Structure code coherently
       - Verify the main behavior
       - Document important design decisions
-    evidence_required: true
 
   - id: building-prototype
     title: Working Prototype
@@ -57,21 +52,8 @@ nodes:
       - Intended problem is identifiable
       - Main inputs and outputs are functional
       - Prototype can be demonstrated
-    evidence_required: true
-    evidence:
-      - type: project
-        title: Financial Math Calculator
-        url: /tools/financial-math-calculator/
-        visibility: public
     notes: >
       Existing projects should be audited before marking this node completed.
-      A working page can count as prototype evidence even if it does not yet
-      satisfy later engineering-quality milestones.
-
-
-  # ============================================================
-  # ENGINEERING QUALITY
-  # ============================================================
 
   - id: building-code-structure
     title: Maintainable Project Structure
@@ -80,20 +62,12 @@ nodes:
     status: dormant
     requires:
       - building-prototype
-    description: >
-      Refactor a prototype so that its organization, naming, boundaries,
-      and dependencies remain understandable as the project grows.
-    description_fr: >
-      Refactoriser un prototype afin que son organisation, son nommage,
-      ses frontières et ses dépendances restent compréhensibles à mesure
-      que le projet grandit.
     unlock_requirements:
       - Clear project structure
       - Meaningful naming
       - Repeated logic reduced
       - Configuration separated where useful
       - Unnecessary complexity removed
-    evidence_required: true
 
   - id: building-tests
     title: Verification and Tests
@@ -102,19 +76,11 @@ nodes:
     status: dormant
     requires:
       - building-prototype
-    description: >
-      Add appropriate automated or reproducible checks for the parts
-      of the project where failure would materially affect correctness.
-    description_fr: >
-      Ajouter des vérifications automatisées ou reproductibles appropriées
-      pour les parties du projet où une erreur affecterait réellement
-      la justesse du résultat.
     unlock_requirements:
       - Critical behavior identified
       - Core calculations or workflows tested
       - Edge cases considered
       - Known limitations documented
-    evidence_required: true
     notes: >
       Do not create meaningless tests merely to increase test count.
 
@@ -125,13 +91,6 @@ nodes:
     status: dormant
     requires:
       - building-prototype
-    description: >
-      Document the project well enough that another person can understand
-      what it does, run or use it, and interpret its outputs.
-    description_fr: >
-      Documenter suffisamment le projet pour qu'une autre personne puisse
-      comprendre son objectif, l'exécuter ou l'utiliser et interpréter
-      ses résultats.
     unlock_requirements:
       - Purpose explained
       - Usage explained
@@ -139,7 +98,6 @@ nodes:
       - Outputs documented
       - Limitations documented
       - Reproduction or installation instructions where relevant
-    evidence_required: true
 
   - id: building-reproducibility
     title: Reproducible Build
@@ -148,18 +106,11 @@ nodes:
     status: dormant
     requires:
       - building-code-structure
-    description: >
-      Ensure that the project can be reconstructed and run without relying
-      on undocumented local state.
-    description_fr: >
-      S'assurer que le projet peut être reconstruit et exécuté sans dépendre
-      d'un état local non documenté.
     unlock_requirements:
       - Dependencies explicit
       - Environment documented
       - Data provenance documented where relevant
       - Build/run procedure reproducible
-    evidence_required: true
 
   - id: building-quality
     title: Engineering-Quality Tool
@@ -171,18 +122,6 @@ nodes:
       - building-tests
       - building-documentation
       - building-reproducibility
-    description: >
-      Demonstrate that a project has moved beyond prototype quality
-      into a reliable and maintainable technical artifact.
-    description_fr: >
-      Démontrer qu'un projet a dépassé le stade du prototype pour devenir
-      un artefact technique fiable et maintenable.
-    evidence_required: true
-
-
-  # ============================================================
-  # RELEASE
-  # ============================================================
 
   - id: building-public-release
     title: Public Release
@@ -192,18 +131,11 @@ nodes:
     requires:
       - building-prototype
       - building-documentation
-    description: >
-      Release a usable version of the project publicly with a stable
-      destination and enough context for another person to try it.
-    description_fr: >
-      Publier une version utilisable du projet avec une destination stable
-      et suffisamment de contexte pour qu'une autre personne puisse l'essayer.
     unlock_requirements:
       - Publicly accessible release
       - Version or release state identifiable
       - Usage documented
       - No confidential data
-    evidence_required: true
 
   - id: building-versioned-release
     title: Versioned Release
@@ -213,61 +145,41 @@ nodes:
     requires:
       - building-public-release
       - building-quality
-    description: >
-      Manage the project as an evolving product rather than an anonymous
-      collection of commits.
-    description_fr: >
-      Gérer le projet comme un produit qui évolue plutôt que comme une
-      simple collection de commits.
     unlock_requirements:
       - Release or version created
       - Changes documented
       - Previous behavior preserved or changes explained
       - Known issues recorded
-    evidence_required: true
-
-
-  # ============================================================
-  # REAL USE
-  # ============================================================
 
   - id: building-real-user
     title: First External User
     title_fr: Premier utilisateur externe
-    type: evidence
+    type: milestone
     status: dormant
     requires:
       - building-public-release
     description: >
-      Obtain credible evidence that someone other than the author
-      used the tool for its intended purpose.
+      Confirm that someone other than the author has genuinely used
+      the tool for its intended purpose.
     description_fr: >
-      Obtenir une preuve crédible qu'une personne autre que l'auteur
-      a utilisé l'outil pour son objectif prévu.
+      Confirmer qu'une personne autre que l'auteur a réellement utilisé
+      l'outil pour son objectif prévu.
     unlock_requirements:
       - External user
       - Genuine use rather than only opening the page
       - Usage does not need to be public
-    evidence_required: true
 
   - id: building-feedback
     title: External Feedback
     title_fr: Retour d'un utilisateur externe
-    type: evidence
+    type: milestone
     status: dormant
     requires:
       - building-public-release
-    description: >
-      Receive substantive feedback about usefulness, usability,
-      correctness, or missing functionality.
-    description_fr: >
-      Recevoir un retour substantiel sur l'utilité, l'ergonomie,
-      la justesse ou les fonctionnalités manquantes.
     unlock_requirements:
       - Feedback from someone other than the author
       - Feedback documented
       - Response or decision documented
-    evidence_required: true
 
   - id: building-feedback-improvement
     title: Improve a Tool From User Feedback
@@ -276,18 +188,11 @@ nodes:
     status: dormant
     requires:
       - building-feedback
-    description: >
-      Change the product in response to genuine user evidence rather
-      than only the author's assumptions.
-    description_fr: >
-      Modifier le produit à partir de véritables retours utilisateurs
-      plutôt qu'uniquement à partir des hypothèses de l'auteur.
     unlock_requirements:
       - Feedback evaluated
       - Change selected deliberately
       - Improvement implemented
       - Result documented
-    evidence_required: true
 
   - id: building-useful-tool
     title: Useful Tool
@@ -298,18 +203,6 @@ nodes:
       - building-quality
       - building-public-release
       - building-real-user
-    description: >
-      Demonstrate that a project is not merely functional but actually
-      useful to someone beyond the builder.
-    description_fr: >
-      Démontrer qu'un projet n'est pas seulement fonctionnel mais réellement
-      utile à une personne autre que son créateur.
-    evidence_required: true
-
-
-  # ============================================================
-  # MAINTENANCE
-  # ============================================================
 
   - id: building-maintenance
     title: Maintain a Tool Over Time
@@ -318,19 +211,11 @@ nodes:
     status: dormant
     requires:
       - building-public-release
-    description: >
-      Return to an existing project after release to fix, improve,
-      update, or simplify it rather than abandoning it permanently.
-    description_fr: >
-      Revenir sur un projet après sa publication afin de le corriger,
-      l'améliorer, le mettre à jour ou le simplifier plutôt que
-      de l'abandonner définitivement.
     unlock_requirements:
       - Tool remains functional over time
       - Dependencies or compatibility maintained where relevant
       - At least one meaningful post-release improvement
       - Documentation kept reasonably current
-    evidence_required: true
 
   - id: building-long-term-maintenance
     title: Long-Term Maintained Tool
@@ -340,18 +225,6 @@ nodes:
     requires:
       - building-maintenance
       - building-feedback-improvement
-    description: >
-      Demonstrate sustained responsibility for the quality and usefulness
-      of an existing software project.
-    description_fr: >
-      Démontrer une responsabilité durable envers la qualité et l'utilité
-      d'un projet logiciel existant.
-    evidence_required: true
-
-
-  # ============================================================
-  # OPEN SOURCE
-  # ============================================================
 
   - id: building-open-source-ready
     title: Open-Source-Ready Project
@@ -361,12 +234,6 @@ nodes:
     requires:
       - building-documentation
       - building-code-structure
-    description: >
-      Prepare a project so that another developer can understand,
-      run, inspect, and potentially contribute to it.
-    description_fr: >
-      Préparer un projet pour qu'un autre développeur puisse le comprendre,
-      l'exécuter, l'inspecter et éventuellement y contribuer.
     unlock_requirements:
       - Public repository
       - README
@@ -374,22 +241,14 @@ nodes:
       - Clear setup instructions
       - Repository structure understandable
       - Contribution expectations documented where appropriate
-    evidence_required: true
 
   - id: building-external-issue
     title: First External Issue or Technical Suggestion
     title_fr: Premier issue ou suggestion technique externe
-    type: evidence
+    type: milestone
     status: dormant
     requires:
       - building-open-source-ready
-    description: >
-      Receive a concrete technical issue, bug report, feature request,
-      or implementation suggestion from another person.
-    description_fr: >
-      Recevoir un problème technique concret, rapport de bug, demande
-      de fonctionnalité ou suggestion d'implémentation d'une autre personne.
-    evidence_required: true
 
   - id: building-issue-resolved
     title: Resolve an External Issue
@@ -398,28 +257,14 @@ nodes:
     status: dormant
     requires:
       - building-external-issue
-    description: >
-      Diagnose and resolve a real externally reported issue while
-      communicating the change clearly.
-    description_fr: >
-      Diagnostiquer et résoudre un problème réel signalé de l'extérieur
-      tout en communiquant clairement le changement.
-    evidence_required: true
 
   - id: building-external-contribution
     title: First External Contribution
     title_fr: Première contribution externe
-    type: evidence
+    type: milestone
     status: dormant
     requires:
       - building-open-source-ready
-    description: >
-      Receive a meaningful code, documentation, testing, or other project
-      contribution from someone else.
-    description_fr: >
-      Recevoir une contribution significative au code, à la documentation,
-      aux tests ou à une autre partie du projet provenant d'une autre personne.
-    evidence_required: true
 
   - id: building-open-source-project
     title: Maintained Open-Source Project
@@ -429,19 +274,6 @@ nodes:
     requires:
       - building-open-source-ready
       - building-maintenance
-    description: >
-      Maintain a project publicly with enough quality and documentation
-      that others can inspect, use, and potentially contribute to it.
-    description_fr: >
-      Maintenir publiquement un projet avec suffisamment de qualité et
-      de documentation pour que d'autres puissent l'inspecter,
-      l'utiliser et éventuellement y contribuer.
-    evidence_required: true
-
-
-  # ============================================================
-  # PORTFOLIO
-  # ============================================================
 
   - id: building-multiple-tools
     title: Three Useful Maintained Tools
@@ -456,20 +288,12 @@ nodes:
     requires:
       - building-useful-tool
       - building-maintenance
-    description: >
-      Demonstrate repeatability by building and maintaining several
-      genuinely useful technical tools rather than relying on one project.
-    description_fr: >
-      Démontrer la répétabilité en construisant et maintenant plusieurs
-      outils techniques réellement utiles plutôt qu'en dépendant
-      d'un seul projet.
     unlock_requirements:
       - At least three useful tools
       - Public or demonstrable releases
       - Appropriate documentation
-      - Evidence of maintenance
+      - Long-term maintenance
       - At least one external user for each qualifying tool
-    evidence_required: true
 
   - id: building-builder
     title: Independent Software Builder
@@ -479,14 +303,6 @@ nodes:
     requires:
       - building-multiple-tools
       - building-quality
-    description: >
-      Demonstrate the ability to repeatedly identify useful problems,
-      build reliable software solutions, release them, and maintain them.
-    description_fr: >
-      Démontrer la capacité à identifier à plusieurs reprises des problèmes
-      utiles, construire des solutions logicielles fiables, les publier
-      et les maintenir.
-    evidence_required: true
 
   - id: building-open-source
     title: Open-Source Builder
@@ -496,12 +312,3 @@ nodes:
     requires:
       - building-builder
       - building-open-source-project
-    description: >
-      Demonstrate sustained ability to build useful public software
-      with the quality, documentation, and maintenance expected of
-      a serious open-source project.
-    description_fr: >
-      Démontrer une capacité durable à construire des logiciels publics
-      utiles avec la qualité, la documentation et la maintenance attendues
-      d'un projet open source sérieux.
-    evidence_required: true
