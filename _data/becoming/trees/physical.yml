@@ -12,10 +12,6 @@ notes: >
 
 nodes:
 
-  # ============================================================
-  # PROCESS — CURRENT ACTIVE BRANCH
-  # ============================================================
-
   - id: physical-process
     title: Physical Process
     title_fr: Processus physique
@@ -27,8 +23,6 @@ nodes:
     description_fr: >
       Construire un système hebdomadaire durable combinant musculation,
       course, mouvement quotidien, récupération et suivi privé de la progression.
-    evidence_required: true
-    evidence_visibility: private
     unlock_requirements:
       - Weekly plan defined
       - Sessions tracked privately
@@ -42,12 +36,6 @@ nodes:
     status: in_progress
     requires:
       - physical-process
-    description: >
-      Establish consistency with the current user-selected training plan
-      without treating one perfect week as mastery.
-    description_fr: >
-      Établir une régularité avec le programme d'entraînement actuellement
-      choisi sans considérer une seule semaine parfaite comme une maîtrise.
     progress:
       mode: streak
       current: 0
@@ -57,8 +45,6 @@ nodes:
       - Eight substantially completed weeks
       - Weekly plan reviewed when necessary
       - Missed sessions documented without resetting long-term progress
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-sustainable-routine
     title: Sustainable Physical Routine
@@ -66,23 +52,10 @@ nodes:
     type: mastery
     requires:
       - physical-training-consistency
-    description: >
-      Demonstrate that training and daily movement have become a sustainable
-      part of ordinary life rather than a temporary intensive phase.
-    description_fr: >
-      Démontrer que l'entraînement et le mouvement quotidien sont devenus
-      une partie durable de la vie normale plutôt qu'une phase intensive temporaire.
     unlock_requirements:
       - Consistent routine maintained over multiple months
       - Training adjusted when life constraints change
       - No dependence on a single short-term challenge
-    evidence_required: true
-    evidence_visibility: private
-
-
-  # ============================================================
-  # BODY MASS — LONG-TERM MILESTONES
-  # ============================================================
 
   - id: physical-138
     title: Starting Point — 138 kg
@@ -91,12 +64,10 @@ nodes:
     status: in_progress
     description: >
       Baseline milestone for the current long-term body-mass trajectory.
-      Verification belongs in private evidence.
+      Exact personal records remain private.
     description_fr: >
       Point de référence pour la trajectoire de masse corporelle à long terme.
-      La vérification reste dans les preuves privées.
-    evidence_required: true
-    evidence_visibility: private
+      Les données personnelles exactes restent privées.
 
   - id: physical-130
     title: 130 kg
@@ -104,8 +75,6 @@ nodes:
     type: physical_milestone
     requires:
       - physical-138
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-120
     title: 120 kg
@@ -113,8 +82,6 @@ nodes:
     type: physical_milestone
     requires:
       - physical-130
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-110
     title: 110 kg
@@ -122,8 +89,6 @@ nodes:
     type: physical_milestone
     requires:
       - physical-120
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-below-100
     title: Below 100 kg
@@ -131,8 +96,6 @@ nodes:
     type: physical_milestone
     requires:
       - physical-110
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-90
     title: 90 kg
@@ -140,8 +103,6 @@ nodes:
     type: physical_milestone
     requires:
       - physical-below-100
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-85
     title: 85 kg
@@ -149,8 +110,6 @@ nodes:
     type: physical_milestone
     requires:
       - physical-90
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-80
     title: Reach 80 kg
@@ -166,13 +125,6 @@ nodes:
       Atteindre l'objectif de masse corporelle à long terme actuellement
       défini. Atteindre ce nombre une seule fois ne constitue pas la fin
       de la progression.
-    evidence_required: true
-    evidence_visibility: private
-
-
-  # ============================================================
-  # MAINTENANCE
-  # ============================================================
 
   - id: physical-target-maintenance
     title: Establish Target Maintenance
@@ -180,14 +132,6 @@ nodes:
     type: maintenance
     requires:
       - physical-80
-    description: >
-      Transition from reaching the target to maintaining a stable
-      long-term range defined at that time.
-    description_fr: >
-      Passer de l'atteinte de l'objectif au maintien d'une plage stable
-      à long terme qui sera définie au moment approprié.
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-maintenance-3m
     title: Three Months Maintained
@@ -195,8 +139,6 @@ nodes:
     type: physical_milestone
     requires:
       - physical-target-maintenance
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-maintenance-6m
     title: Six Months Maintained
@@ -204,13 +146,6 @@ nodes:
     type: physical_milestone
     requires:
       - physical-maintenance-3m
-    evidence_required: true
-    evidence_visibility: private
-
-
-  # ============================================================
-  # PHYSICAL CAPACITY
-  # ============================================================
 
   - id: physical-capacity-baseline
     title: Physical Capacity Baseline
@@ -224,8 +159,6 @@ nodes:
       Établir un point de départ privé pour l'endurance, la force,
       la mobilité et la capacité en randonnée avant de fixer des
       objectifs de performance à long terme.
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-endurance
     title: Endurance Progression
@@ -233,15 +166,6 @@ nodes:
     type: skill
     requires:
       - physical-capacity-baseline
-    description: >
-      Develop measurable cardiovascular endurance using targets selected
-      after the baseline rather than arbitrary targets chosen in advance.
-    description_fr: >
-      Développer une endurance cardiovasculaire mesurable à partir
-      d'objectifs choisis après l'évaluation initiale plutôt que de
-      seuils arbitraires fixés à l'avance.
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-strength
     title: Strength Progression
@@ -249,14 +173,6 @@ nodes:
     type: skill
     requires:
       - physical-capacity-baseline
-    description: >
-      Develop measurable strength while preserving technique,
-      consistency, and long-term progression.
-    description_fr: >
-      Développer une force mesurable tout en conservant une bonne
-      technique, de la régularité et une progression à long terme.
-    evidence_required: true
-    evidence_visibility: private
 
   - id: physical-hiking
     title: Hiking Capacity
@@ -266,13 +182,11 @@ nodes:
       - physical-capacity-baseline
     description: >
       Build the endurance and resilience required for increasingly
-      demanding hikes, using real completed routes as evidence.
+      demanding hikes, using completed routes to track progress.
     description_fr: >
       Développer l'endurance et la résistance nécessaires à des randonnées
-      progressivement plus exigeantes, avec des parcours réellement
-      complétés comme preuves.
-    evidence_required: true
-    evidence_visibility: private
+      progressivement plus exigeantes en utilisant les parcours complétés
+      pour suivre la progression.
 
   - id: physical-capacity
     title: Physical Capacity
@@ -282,19 +196,6 @@ nodes:
       - physical-endurance
       - physical-strength
       - physical-hiking
-    description: >
-      Demonstrate a balanced level of functional capacity rather than
-      defining physical progress solely by body mass.
-    description_fr: >
-      Démontrer un niveau équilibré de capacité fonctionnelle plutôt que
-      de définir la progression physique uniquement par la masse corporelle.
-    evidence_required: true
-    evidence_visibility: private
-
-
-  # ============================================================
-  # LEGENDARY
-  # ============================================================
 
   - id: physical-transformation
     title: Physical Transformation
@@ -304,12 +205,3 @@ nodes:
       - physical-maintenance-6m
       - physical-capacity
       - physical-sustainable-routine
-    description: >
-      Reach and sustain the long-term body-mass objective while maintaining
-      a durable physical routine and meaningful functional capacity.
-    description_fr: >
-      Atteindre et maintenir l'objectif de masse corporelle à long terme
-      tout en conservant une routine physique durable et une capacité
-      fonctionnelle significative.
-    evidence_required: true
-    evidence_visibility: private
