@@ -24,7 +24,6 @@ nodes:
       Établir le niveau actuel en FM à partir d'exercices mixtes et classer
       les erreurs par sujet, concept, calcul, utilisation de la calculatrice
       et gestion du temps.
-    evidence_required: true
     unlock_requirements:
       - Mixed diagnostic completed
       - Errors classified
@@ -46,12 +45,6 @@ nodes:
       - BA II Plus / approved calculator setup
       - Core calculator operations performed fluently
 
-  # ------------------------------------------------------------
-  # FM SYLLABUS BLOCKS
-  # These are parallel areas, not artificial prerequisites
-  # of one another.
-  # ------------------------------------------------------------
-
   - id: actuarial-fm-interest
     title: Interest Rate Measures
     title_fr: Mesures des taux d'intérêt
@@ -66,7 +59,6 @@ nodes:
       - Convert consistently between rate measures
       - Explain accumulation and discount relationships
       - Revisit and correct prior errors
-    evidence_required: true
 
   - id: actuarial-fm-annuities
     title: Annuities and Non-Contingent Cash Flows
@@ -84,7 +76,6 @@ nodes:
       - Arithmetic progression cash flows
       - Geometric progression cash flows
       - Exam-level mixed applications
-    evidence_required: true
 
   - id: actuarial-fm-loans
     title: Loans
@@ -103,7 +94,6 @@ nodes:
       - Refinancing problems
       - Balloon and drop payment problems
       - Exam-level mixed applications
-    evidence_required: true
 
   - id: actuarial-fm-bonds
     title: Bonds
@@ -121,7 +111,6 @@ nodes:
       - Premium and discount relationships
       - Book-value calculations
       - Exam-level mixed applications
-    evidence_required: true
 
   - id: actuarial-fm-cashflows
     title: General Cash Flows, Yield Curves, and Portfolios
@@ -138,7 +127,6 @@ nodes:
       - Yield-curve calculations
       - General cash-flow valuation
       - Portfolio applications
-    evidence_required: true
 
   - id: actuarial-fm-duration
     title: Duration, Convexity, Matching, and Immunization
@@ -157,16 +145,6 @@ nodes:
       - Cash-flow matching
       - Duration matching
       - Redington and full immunization where required
-    evidence_required: true
-
-  # The SOA currently treats these as separate syllabus topics rather than
-  # requiring completion in this artificial order.
-  # October 2026 uses the current FM syllabus published by the SOA.
-  # https://www.soa.org/education/exam-req/edu-exam-fm-detail/study/
-
-  # ------------------------------------------------------------
-  # CUMULATIVE PREPARATION
-  # ------------------------------------------------------------
 
   - id: actuarial-fm-error-log
     title: FM Error Log
@@ -187,7 +165,6 @@ nodes:
       - Corrective action recorded
       - Old errors revisited
       - Recurring mistakes materially reduced
-    evidence_required: true
 
   - id: actuarial-fm-mixed
     title: Mixed FM Practice
@@ -208,7 +185,6 @@ nodes:
       - Weak areas deliberately represented
       - Solutions fully reviewed
       - Calculator use fluent under mixed conditions
-    evidence_required: true
 
   - id: actuarial-fm-timed
     title: Timed FM Practice
@@ -225,7 +201,6 @@ nodes:
       - Timing failures documented
       - Guessing and skip strategy defined
       - Weak topics remediated between simulations
-    evidence_required: true
 
   - id: actuarial-fm-readiness
     title: FM Exam Readiness
@@ -245,7 +220,6 @@ nodes:
       - Calculator workflow stable
       - Final formula review system ready
       - Exam-day strategy defined
-    evidence_required: true
 
   - id: actuarial-fm-attempt
     title: FM Exam Attempt
@@ -258,7 +232,6 @@ nodes:
       end: 2026-10-12
     registration_deadline: 2026-09-02
     appointment_date: null
-    evidence_required: true
     notes: >
       The October 2026 SOA FM testing window is October 1–12.
       The personal appointment date may remain in private.yml.
@@ -272,15 +245,13 @@ nodes:
     requires:
       - actuarial-fm-attempt
     target_date: 2026-10
-    evidence_required: true
     unlock_requirements:
-      - Official passing-result evidence
+      - Official passing result recorded
     source:
       organization: Society of Actuaries
       title: Financial Mathematics Exam
       checked_at: 2026-08-28
       url: https://www.soa.org/education/exam-req/edu-exam-fm-detail.aspx
-
 
   # ============================================================
   # ACAS — PRELIMINARY REQUIREMENTS
@@ -292,7 +263,6 @@ nodes:
     short_title: P
     type: exam
     status: available
-    evidence_required: true
     unlock_requirements:
       - Official CAS-recognized Exam 1 credit
 
@@ -301,7 +271,6 @@ nodes:
     title_fr: VEE Économie
     type: credential
     status: available
-    evidence_required: true
     unlock_requirements:
       - Official VEE Economics credit
 
@@ -310,10 +279,8 @@ nodes:
     title_fr: VEE Comptabilité et finance
     type: credential
     status: available
-    evidence_required: true
     unlock_requirements:
       - Official VEE Accounting and Finance credit
-
 
   # ============================================================
   # CAS DATA & INSURANCE SERIES COURSES
@@ -324,22 +291,18 @@ nodes:
     title_fr: DISC DA — Introduction aux données et à l'analytique
     type: course
     status: available
-    evidence_required: true
 
   - id: actuarial-disc-rm
     title: DISC RM — Risk Management and Insurance Operations
     title_fr: DISC RM — Gestion des risques et opérations d'assurance
     type: course
     status: available
-    evidence_required: true
 
   - id: actuarial-disc-ia
     title: DISC IA — Insurance Accounting, Coverage Analysis, Insurance Law, and Insurance Regulation
     title_fr: DISC IA — Comptabilité d'assurance, analyse des garanties, droit et réglementation
     type: course
     status: available
-    evidence_required: true
-
 
   # ============================================================
   # ACAS — CORE EXAMINATIONS
@@ -350,14 +313,12 @@ nodes:
     title_fr: MAS-I — Statistique actuarielle moderne I
     type: exam
     status: available
-    evidence_required: true
 
   - id: actuarial-mas-2
     title: MAS-II — Modern Actuarial Statistics II
     title_fr: MAS-II — Statistique actuarielle moderne II
     type: exam
     status: available
-    evidence_required: true
 
   - id: actuarial-exam-5
     title: Exam 5 — Basic Techniques for Ratemaking and Estimating Claim Liabilities
@@ -365,7 +326,6 @@ nodes:
     short_title: Exam 5
     type: exam
     status: available
-    evidence_required: true
 
   - id: actuarial-exam-6
     title: Exam 6 — Regulation and Financial Reporting
@@ -373,11 +333,9 @@ nodes:
     short_title: Exam 6
     type: exam
     status: available
-    evidence_required: true
     notes: >
       Complete the version appropriate to the candidate's jurisdiction
       (Canada, United States, International, or Taipei).
-
 
   # ============================================================
   # PCPA
@@ -395,7 +353,6 @@ nodes:
     description_fr: >
       Démontrer la maîtrise pratique de l'analytique prédictive appliquée
       à l'actuariat IARD.
-    evidence_required: true
     notes: >
       CAS states that there is no formal prerequisite for the PCPA Exam,
       but strongly recommends completing MAS-I, MAS-II, and Exam 5 first.
@@ -413,7 +370,6 @@ nodes:
     description_fr: >
       Réaliser de façon indépendante le projet de modélisation prédictive
       PCPA après avoir réussi l'examen PCPA.
-    evidence_required: true
     unlock_requirements:
       - PCPA Exam passed
       - Official project completion credit
@@ -421,7 +377,6 @@ nodes:
       CAS requires the Exam to be passed before the Project.
       Candidates have one year after passing the exam to complete
       the project before needing to retake the exam.
-
 
   # ============================================================
   # PROFESSIONALISM
@@ -433,11 +388,9 @@ nodes:
     short_title: COP
     type: course
     status: available
-    evidence_required: true
     notes: >
       Registration eligibility depends on examination credit.
       Verify current CAS eligibility requirements before registration.
-
 
   # ============================================================
   # ACAS
@@ -463,7 +416,6 @@ nodes:
       - actuarial-pcpa-exam
       - actuarial-pcpa-project
       - actuarial-cop
-    evidence_required: true
     unlock_requirements:
       - All applicable 2026 Associateship requirements credited by CAS
       - ACAS credential officially awarded
@@ -471,7 +423,6 @@ nodes:
       PCPA Exam and Project are required for candidates earning ACAS
       on or after January 1, 2026. Individual transition and waiver
       rules should always be verified before marking completion.
-
 
   # ============================================================
   # FCAS
@@ -484,7 +435,6 @@ nodes:
     type: exam
     requires:
       - actuarial-acas
-    evidence_required: true
 
   - id: actuarial-exam-8
     title: Exam 8 — Advanced Ratemaking
@@ -493,7 +443,6 @@ nodes:
     type: exam
     requires:
       - actuarial-acas
-    evidence_required: true
 
   - id: actuarial-exam-9
     title: Exam 9 — Risk Management for Actuaries
@@ -502,7 +451,6 @@ nodes:
     type: exam
     requires:
       - actuarial-acas
-    evidence_required: true
 
   - id: actuarial-fcas
     title: Fellow of the Casualty Actuarial Society
@@ -514,7 +462,6 @@ nodes:
       - actuarial-exam-7
       - actuarial-exam-8
       - actuarial-exam-9
-    evidence_required: true
     unlock_requirements:
       - All Associateship requirements completed
       - Exam 7 credit
