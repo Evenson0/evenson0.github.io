@@ -1,6 +1,6 @@
 ---
-title: FM Weak Area 3 · LIME
-title_fr: Faiblesse FM 3 · LIME
+title: FM Weak Area 3 · GLM Model Form
+title_fr: Faiblesse FM 3 · Forme d'un GLM
 
 cycle: foundations-01
 cycle_week: 4
@@ -10,11 +10,13 @@ status: planned
 
 active:
   - actuarial-fm-foundations
-  - research-lime
+  - research-actuarial-glm-model-form
   - physical-training-consistency
 
 maintenance:
   - english-conversation-practice
+  - lean-theorem-proving
+  - mathematics-proof-writing
 
 user_inputs:
   fm_weakness_3: null
@@ -23,72 +25,61 @@ quests:
 
   - domain: actuarial
     node: actuarial-fm-foundations
-    task: Work on FM weakness #3 and review the three weak areas together.
-    task_fr: Travailler la faiblesse FM no 3 et revoir ensemble les trois principales faiblesses.
-    completion:
-      - Complete targeted problems
-      - Review incorrect or uncertain answers
-      - Revisit weaknesses #1 and #2
-      - Complete one timed mixed set
-      - Update the error log
-    completion_fr:
-      - Compléter des exercices ciblés
-      - Revoir les réponses incorrectes ou incertaines
-      - Revoir les faiblesses no 1 et no 2
-      - Compléter une série mixte chronométrée
-      - Mettre à jour le journal d'erreurs
+    task: Work on FM weakness #3 and consolidate all three diagnosed weak areas.
+    task_fr: Travailler la faiblesse FM no 3 et consolider les trois principales faiblesses.
 
   - domain: research
-    node: research-lime
-    task: Study LIME, reproduce one explanation, and determine what the explanation represents.
-    task_fr: Étudier LIME, reproduire une explication et déterminer ce qu'elle représente.
+    node: research-actuarial-glm-model-form
+    task: Read Goldburd pages 43–61 and write a technical note on model form.
+    task_fr: Lire les pages 43 à 61 de Goldburd et rédiger une note technique sur la forme du modèle.
     completion:
-      - Understand the local-surrogate idea
-      - Study locality, perturbation, and fidelity
-      - Reproduce one LIME explanation
-      - Inspect the local surrogate
-      - Write a note answering "What exactly does LIME explain?"
-      - Identify at least two weaknesses or ambiguities
+      - Target-variable choice
+      - Distribution choice
+      - Variable selection
+      - Nonlinear transformations
+      - Splines
+      - Categorical grouping
+      - Interactions
     completion_fr:
-      - Comprendre le principe du modèle substitut local
-      - Étudier la localité, la perturbation et la fidélité
-      - Reproduire une explication LIME
-      - Examiner le modèle substitut local
-      - Rédiger une note répondant à « Que décrit exactement LIME ? »
-      - Identifier au moins deux faiblesses ou ambiguïtés
+      - Choix de la variable cible
+      - Choix de la distribution
+      - Sélection des variables
+      - Transformations non linéaires
+      - Splines
+      - Regroupement des catégories
+      - Interactions
+
+  - domain: mathematics
+    node: mathematics-proof-writing
+    task: Write one complete nontrivial mathematical proof.
+    task_fr: Rédiger une démonstration mathématique complète non triviale.
+
+  - domain: lean
+    node: lean-theorem-proving
+    task: Study quantifiers and equality and formalize one proof using them.
+    task_fr: Étudier les quantificateurs et l'égalité et formaliser une preuve les utilisant.
 
   - domain: english
     node: english-conversation-practice
-    task: Explain one actuarial concept during the 60-minute conversation.
-    task_fr: Expliquer un concept actuariel pendant la conversation de 60 minutes.
-    completion:
-      - Explain the concept first to a non-actuary
-      - Explain it again using technical vocabulary
-      - Answer unscripted questions
-    completion_fr:
-      - Expliquer d'abord le concept à une personne non actuaire
-      - L'expliquer ensuite avec le vocabulaire technique
-      - Répondre à des questions spontanées
+    task: Explain one actuarial concept during the conversation.
+    task_fr: Expliquer un concept actuariel pendant la conversation.
 
   - domain: physical
     node: physical-training-consistency
-    task: Complete another normal training week.
-    task_fr: Compléter une nouvelle semaine normale d'entraînement.
-    completion:
-      - Complete 4 strength sessions
-      - Complete 3 runs
-      - Aim for 12,000–15,000 steps each day
-    completion_fr:
-      - Compléter 4 séances de musculation
-      - Compléter 3 courses
-      - Viser 12 000 à 15 000 pas chaque jour
+    task: Complete the normal weekly training plan.
+    task_fr: Compléter le programme hebdomadaire normal.
 
 completed: []
 ---
 
 ## Weekly Review
+
 ### Progress
+
 ### Bottleneck
+
 ### Discovery
+
 ### Adjustment
+
 ### Roadmap Change
