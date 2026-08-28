@@ -1,19 +1,17 @@
 ---
-title: FM Remediation III and LIME
-title_fr: Remédiation FM III et LIME
+title: FM Weak Area 3 · LIME
+title_fr: Faiblesse FM 3 · LIME
 
 cycle: foundations-01
 cycle_week: 4
-
 start_date: 2026-09-20
 end_date: 2026-09-26
-
 status: planned
 
 active:
   - actuarial-fm-foundations
   - research-lime
-  - physical-process
+  - physical-training-consistency
 
 maintenance:
   - english-conversation-practice
@@ -25,73 +23,57 @@ quests:
 
   - domain: actuarial
     node: actuarial-fm-foundations
-    task: Remediate FM weakness #3 from Week 01 and consolidate the three diagnosed weak areas.
-    task_fr: Corriger la faiblesse FM no 3 identifiée à la semaine 1 et consolider les trois principales faiblesses diagnostiquées.
+    task: Work on FM weakness #3 and review the three weak areas together.
+    task_fr: Travailler la faiblesse FM no 3 et revoir ensemble les trois principales faiblesses.
     completion:
-      - Select weakness #3 from the Week 01 diagnostic
-      - Review the underlying concepts and formulas
-      - Complete targeted practice on that topic
-      - Review every incorrect or uncertain answer
-      - Revisit important errors from weaknesses #1 and #2
+      - Complete targeted problems
+      - Review incorrect or uncertain answers
+      - Revisit weaknesses #1 and #2
       - Complete one timed mixed set
-      - Complete a short cumulative review across all three weak areas
       - Update the error log
     completion_fr:
-      - Sélectionner la faiblesse no 3 à partir du diagnostic de la semaine 1
-      - Revoir les concepts et formules sous-jacents
-      - Compléter des exercices ciblés sur ce sujet
-      - Revoir chaque réponse incorrecte ou incertaine
-      - Revoir les erreurs importantes liées aux faiblesses no 1 et no 2
+      - Compléter des exercices ciblés
+      - Revoir les réponses incorrectes ou incertaines
+      - Revoir les faiblesses no 1 et no 2
       - Compléter une série mixte chronométrée
-      - Effectuer une courte révision cumulative des trois principales faiblesses
       - Mettre à jour le journal d'erreurs
 
   - domain: research
     node: research-lime
-    task: Study LIME, reproduce one explanation, and determine what the explanation actually represents.
-    task_fr: Étudier LIME, reproduire une explication et déterminer ce que cette explication représente réellement.
+    task: Study LIME, reproduce one explanation, and determine what the explanation represents.
+    task_fr: Étudier LIME, reproduire une explication et déterminer ce qu'elle représente.
     completion:
-      - Read the selected sections of Ribeiro, Singh, and Guestrin on LIME
-      - Explain the idea of a local surrogate model
-      - Understand how locality is defined
-      - Understand the role of perturbations
-      - Explain what fidelity means for a local explanation
-      - Identify why different perturbations or neighborhoods may change the explanation
-      - Reproduce one LIME explanation on a simple tabular example
-      - Inspect the local surrogate and its coefficients
-      - Write a concise note answering "What exactly does LIME explain?"
-      - Identify at least two weaknesses, ambiguities, or research questions
+      - Understand the local-surrogate idea
+      - Study locality, perturbation, and fidelity
+      - Reproduce one LIME explanation
+      - Inspect the local surrogate
+      - Write a note answering "What exactly does LIME explain?"
+      - Identify at least two weaknesses or ambiguities
     completion_fr:
-      - Lire les sections sélectionnées de Ribeiro, Singh et Guestrin sur LIME
-      - Expliquer le principe d'un modèle substitut local
-      - Comprendre comment la localité est définie
-      - Comprendre le rôle des perturbations
-      - Expliquer ce que signifie la fidélité d'une explication locale
-      - Identifier pourquoi différentes perturbations ou différents voisinages peuvent modifier l'explication
-      - Reproduire une explication LIME sur un exemple tabulaire simple
-      - Examiner le modèle substitut local et ses coefficients
-      - Rédiger une note concise répondant à la question « Que décrit exactement LIME ? »
-      - Identifier au moins deux faiblesses, ambiguïtés ou questions de recherche
+      - Comprendre le principe du modèle substitut local
+      - Étudier la localité, la perturbation et la fidélité
+      - Reproduire une explication LIME
+      - Examiner le modèle substitut local
+      - Rédiger une note répondant à « Que décrit exactement LIME ? »
+      - Identifier au moins deux faiblesses ou ambiguïtés
 
   - domain: english
     node: english-conversation-practice
-    task: Complete one 60-minute English conversation.
-    task_fr: Compléter une conversation de 60 minutes en anglais.
+    task: Explain one actuarial concept during the 60-minute conversation.
+    task_fr: Expliquer un concept actuariel pendant la conversation de 60 minutes.
     completion:
-      - Speak for approximately 60 minutes
-      - Stay in English as much as possible
-      - Reuse useful expressions from previous sessions
-      - Note recurring mistakes worth revisiting
+      - Explain the concept first to a non-actuary
+      - Explain it again using technical vocabulary
+      - Answer unscripted questions
     completion_fr:
-      - Parler pendant environ 60 minutes
-      - Rester en anglais autant que possible
-      - Réutiliser des expressions utiles des séances précédentes
-      - Noter les erreurs récurrentes qui méritent d'être retravaillées
+      - Expliquer d'abord le concept à une personne non actuaire
+      - L'expliquer ensuite avec le vocabulaire technique
+      - Répondre à des questions spontanées
 
   - domain: physical
-    node: physical-process
-    task: Complete 4 strength sessions, 3 runs, and aim for 12,000–15,000 steps each day.
-    task_fr: Compléter 4 séances de musculation, 3 courses et viser 12 000 à 15 000 pas chaque jour.
+    node: physical-training-consistency
+    task: Complete another normal training week.
+    task_fr: Compléter une nouvelle semaine normale d'entraînement.
     completion:
       - Complete 4 strength sessions
       - Complete 3 runs
@@ -105,23 +87,8 @@ completed: []
 ---
 
 ## Weekly Review
-
 ### Progress
-
-What actually moved forward this week?
-
 ### Bottleneck
-
-What created the most friction or prevented progress?
-
 ### Discovery
-
-What did I learn that should influence the next week?
-
 ### Adjustment
-
-What should change next week?
-
 ### Roadmap Change
-
-Only record something here if the long-term roadmap itself should change.
