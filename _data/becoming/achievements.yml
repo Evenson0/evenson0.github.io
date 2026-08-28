@@ -22,8 +22,6 @@
     Titre de Fellow accordé par la Casualty Actuarial Society après
     l'accomplissement de toutes les exigences applicables d'Associateship
     et de Fellowship.
-  evidence_required: true
-
 
 - id: legendary-independent-researcher
   title: Independent Researcher
@@ -39,8 +37,6 @@
     Démontrer la capacité à concevoir, mener, communiquer et faire valider
     extérieurement des recherches substantielles à travers un corpus
     durable de travaux progressivement plus exigeants.
-  evidence_required: true
-
 
 - id: legendary-published-author
   title: Published Author
@@ -52,8 +48,6 @@
     Become the published author of a completed and substantially revised book.
   description_fr: >
     Devenir l'auteur publié d'un livre achevé et substantiellement révisé.
-  evidence_required: true
-
 
 - id: legendary-lean-contributor
   title: Lean / mathlib Contributor
@@ -67,8 +61,6 @@
   description_fr: >
     Démontrer des contributions durables et comprises de manière autonome
     à l'écosystème mathématique Lean.
-  evidence_required: true
-
 
 - id: legendary-portfolio-millionaire
   title: Millionaire — $1M Investable Assets
@@ -83,9 +75,6 @@
   description_fr: >
     Atteindre un million d'actifs investissables selon la définition
     fixe du capital établie dans la roadmap Capital.
-  evidence_required: true
-  evidence_visibility: private
-
 
 - id: legendary-professional-english
   title: Professional English Fluency
@@ -99,8 +88,6 @@
   description_fr: >
     Démontrer un anglais flexible, spontané et précis dans des situations
     professionnelles, techniques, intellectuelles et sociales exigeantes.
-  evidence_required: true
-
 
 - id: legendary-physical-80
   title: Reach 80 kg
@@ -115,5 +102,3 @@
   description_fr: >
     Atteindre l'objectif de masse corporelle à long terme de 80 kg.
     Les mesures exactes et les données de progression restent privées.
-  evidence_required: true
-  evidence_visibility: private
