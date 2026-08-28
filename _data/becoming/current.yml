@@ -14,83 +14,57 @@ focus:
 
 maintenance:
   - english
+  - lean
+  - writing
+  - mathematics
   - career
   - capital
 
 quests:
-
   - id: w01-fm
     tree: actuarial
     node: actuarial-fm-diagnostic
     kind: practice
-    title: FM — 50 problems on interest theory and a mixed diagnostic
-    title_fr: FM — 50 exercices sur la théorie de l'intérêt et un diagnostic mixte
-    why: Identify the three topics that need the most work next week.
-    why_fr: Identifier les trois sujets qui demandent le plus de travail la semaine prochaine.
-    completion:
-      - Complete 50 interest-theory problems
-      - Review all incorrect or uncertain answers
-      - Complete one mixed diagnostic
-      - Identify the three weakest FM areas
-      - Update the error log
-    completion_fr:
-      - Compléter 50 exercices sur la théorie de l'intérêt
-      - Revoir toutes les réponses incorrectes ou incertaines
-      - Compléter un diagnostic mixte
-      - Identifier les trois points faibles principaux en FM
-      - Mettre à jour le journal d'erreurs
+    title: FM — 50 interest-theory problems and one mixed diagnostic
+    title_fr: FM — 50 exercices de théorie de l'intérêt et un diagnostic mixte
     status: planned
 
-  - id: w01-interpretability-note
+  - id: w01-research
     tree: research
-    node: research-interpretability-taxonomy
+    node: research-actuarial-glm-tweedie
     kind: read_write
-    title: Interpretability — read Molnar's introduction and write one concise note
-    title_fr: Interprétabilité — lire l'introduction de Molnar et rédiger une note concise
-    why: Clarify what an explanation is supposed to explain before studying individual methods.
-    why_fr: Préciser ce qu'une explication doit expliquer avant d'étudier les différentes méthodes.
-    completion:
-      - Read Molnar's introduction
-      - Write one concise research note
-      - Formulate three research questions
-    completion_fr:
-      - Lire l'introduction de Molnar
-      - Rédiger une note de recherche concise
-      - Formuler trois questions de recherche
+    title: Goldburd — pages 1–15
+    title_fr: Goldburd — pages 1 à 15
     status: planned
 
-  - id: w01-english-maintenance
+  - id: w01-reading
+    tree: writing
+    node: writing-reading-practice
+    kind: reading
+    title: Mort à crédit — about 70 pages
+    title_fr: Mort à crédit — environ 70 pages
+    status: planned
+
+  - id: w01-lean
+    tree: lean
+    node: lean-fundamentals
+    kind: practice
+    title: Lean — setup, basic types, one small theorem
+    title_fr: Lean — installation, types de base, un petit théorème
+    status: planned
+
+  - id: w01-english
     tree: english
     node: english-conversation-practice
     kind: maintenance
     title: English — one 60-minute conversation
     title_fr: Anglais — une conversation de 60 minutes
-    why: Maintain practical fluency without competing with FM and Research.
-    why_fr: Maintenir l'aisance pratique sans concurrencer FM et la Recherche.
-    completion:
-      - Complete one 60-minute conversation
-      - Reuse target expressions
-      - Note recurring mistakes worth revisiting
-    completion_fr:
-      - Compléter une conversation de 60 minutes
-      - Réutiliser les expressions ciblées
-      - Noter les erreurs récurrentes qui méritent d'être retravaillées
     status: planned
 
-  - id: w01-physical-process
+  - id: w01-physical
     tree: physical
     node: physical-process
     kind: process
-    title: Physical — 4 strength sessions, 3 runs, 12,000–15,000 daily steps
-    title_fr: Physique — 4 séances de musculation, 3 courses, 12 000 à 15 000 pas par jour
-    why: Follow the weekly program consistently.
-    why_fr: Suivre le programme hebdomadaire avec régularité.
-    completion:
-      - Complete 4 strength sessions
-      - Complete 3 runs
-      - Aim for 12,000–15,000 steps each day
-    completion_fr:
-      - Compléter 4 séances de musculation
-      - Compléter 3 courses
-      - Viser 12 000 à 15 000 pas chaque jour
+    title: Physical — 4 strength, 3 runs, 12,000–15,000 daily steps
+    title_fr: Physique — 4 musculation, 3 courses, 12 000 à 15 000 pas par jour
     status: planned
