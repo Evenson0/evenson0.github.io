@@ -2,36 +2,36 @@
   title: Research
   title_fr: Recherche
   strategy: active
-  description: Develop independent research through reading, reproduction, investigation, original work, and publication.
-  description_fr: Développer une pratique de recherche indépendante par la lecture, la reproduction, l'investigation, le travail original et la publication.
+  description: Develop independent research through technical study, reproduction, original questions, research projects, and publication.
+  description_fr: Développer une pratique de recherche indépendante par l'étude technique, la reproduction, les questions originales, les projets de recherche et la publication.
 
 - id: actuarial
   title: Actuarial
   title_fr: Actuariat
   strategy: active
-  description: Build technical actuarial competence and progress through the CAS credential pathway.
-  description_fr: Développer les compétences techniques en actuariat et progresser dans le parcours de qualification de la CAS.
+  description: Build actuarial competence and progress through the CAS credential pathway.
+  description_fr: Développer les compétences actuarielles et progresser dans le parcours de qualification de la CAS.
 
 - id: mathematics
   title: Mathematics
   title_fr: Mathématiques
-  strategy: dormant
-  description: Develop mathematical maturity through proof, problem solving, advanced study, exposition, and independent investigation.
-  description_fr: Développer la maturité mathématique par la preuve, la résolution de problèmes, l'étude avancée, l'exposition et l'investigation indépendante.
+  strategy: maintenance
+  description: Develop mathematical maturity through proof, problem solving, advanced study, exposition, and investigation.
+  description_fr: Développer la maturité mathématique par la preuve, la résolution de problèmes, l'étude avancée, l'exposition et l'investigation.
 
 - id: lean
   title: Lean / Formalization
   title_fr: Lean / Formalisation
-  strategy: dormant
-  description: Learn formal mathematics, build substantial formalizations, and contribute meaningfully to the Lean ecosystem.
-  description_fr: Apprendre les mathématiques formelles, construire des formalisations substantielles et contribuer de manière significative à l'écosystème Lean.
+  strategy: maintenance
+  description: Formalize a small amount of mathematics regularly and progress toward meaningful mathlib contributions.
+  description_fr: Formaliser régulièrement une petite quantité de mathématiques et progresser vers des contributions significatives à mathlib.
 
 - id: writing
   title: Writing
   title_fr: Écriture
-  strategy: dormant
-  description: Develop original essays, technical exposition, research writing, and long-form work.
-  description_fr: Développer des essais originaux, de l'exposition technique, de l'écriture scientifique et des travaux de long format.
+  strategy: maintenance
+  description: Read seriously, develop ideas, and turn them into essays, technical writing, research, and eventually books.
+  description_fr: Lire sérieusement, développer des idées et les transformer en essais, textes techniques, recherches et éventuellement livres.
 
 - id: career
   title: Career
@@ -44,8 +44,8 @@
   title: Software Building
   title_fr: Création logicielle
   strategy: dormant
-  description: Turn useful ideas into reliable software, release them, improve them, and maintain them over time.
-  description_fr: Transformer des idées utiles en logiciels fiables, les publier, les améliorer et les maintenir dans le temps.
+  description: Turn useful ideas into reliable software, release them, improve them, and maintain them.
+  description_fr: Transformer des idées utiles en logiciels fiables, les publier, les améliorer et les maintenir.
 
 - id: english
   title: English
