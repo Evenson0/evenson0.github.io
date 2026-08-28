@@ -1,19 +1,17 @@
 ---
-title: FM Final Review and Shapley Foundations
-title_fr: Révision finale FM et fondements des valeurs de Shapley
+title: FM Exam Practice · Shapley Values
+title_fr: Pratique d'examen FM · Valeurs de Shapley
 
 cycle: foundations-01
 cycle_week: 5
-
 start_date: 2026-09-27
 end_date: 2026-10-03
-
 status: planned
 
 active:
   - actuarial-fm-timed
   - research-shapley-shap
-  - physical-process
+  - physical-training-consistency
 
 maintenance:
   - english-conversation-practice
@@ -25,101 +23,70 @@ quests:
 
   - domain: actuarial
     node: actuarial-fm-timed
-    task: Enter final FM review mode and prepare for the actual examination date.
-    task_fr: Entrer en révision finale FM et se préparer à la date réelle de l'examen.
+    task: Move from topic review to exam-style FM practice.
+    task_fr: Passer de la révision par sujet à une pratique FM de type examen.
     completion:
-      - Complete mixed exam-level practice
-      - Complete at least one substantial timed simulation
-      - Review every important error from the simulation
-      - Revisit recurring errors from Weeks 01–04
-      - Complete a final formula review
-      - Complete a final calculator workflow review
-      - Stop adding unnecessary new study resources
-      - Adjust the final days of review to the actual appointment date
+      - Complete one substantial timed simulation
+      - Review every incorrect or uncertain answer
+      - Revisit recurring errors
+      - Review formulas
+      - Review calculator workflow
+      - Stop adding unnecessary new resources
+      - Sit FM if the appointment falls this week
     completion_fr:
-      - Compléter une pratique mixte de niveau examen
-      - Compléter au moins une simulation chronométrée substantielle
-      - Revoir chaque erreur importante de la simulation
-      - Revoir les erreurs récurrentes des semaines 1 à 4
-      - Effectuer une révision finale des formules
-      - Effectuer une révision finale de l'utilisation de la calculatrice
-      - Cesser d'ajouter inutilement de nouvelles ressources d'étude
-      - Adapter les derniers jours de révision à la date réelle du rendez-vous
+      - Compléter une simulation chronométrée substantielle
+      - Revoir chaque réponse incorrecte ou incertaine
+      - Revoir les erreurs récurrentes
+      - Revoir les formules
+      - Revoir l'utilisation de la calculatrice
+      - Cesser d'ajouter inutilement de nouvelles ressources
+      - Passer FM si le rendez-vous tombe cette semaine
 
   - domain: research
     node: research-shapley-shap
-    task: Build a first-principles understanding of Shapley values.
-    task_fr: Construire une compréhension des valeurs de Shapley à partir des principes fondamentaux.
+    task: Derive and explain Shapley values before using SHAP software.
+    task_fr: Dériver et expliquer les valeurs de Shapley avant d'utiliser un logiciel SHAP.
     completion:
-      - Understand the cooperative-game setup
-      - Define a coalition and its value
-      - Understand marginal contribution
-      - Derive the Shapley-value intuition from averaging marginal contributions
-      - Understand efficiency
-      - Understand symmetry
-      - Understand the null-player property
-      - Understand additivity
+      - Understand coalitions and marginal contributions
+      - Understand efficiency, symmetry, null player, and additivity
       - Work through one small example by hand
-      - Write a concise first-principles explanation
+      - Write a first-principles explanation
     completion_fr:
-      - Comprendre le cadre des jeux coopératifs
-      - Définir une coalition et sa valeur
-      - Comprendre la contribution marginale
-      - Comprendre l'intuition de la valeur de Shapley comme moyenne des contributions marginales
-      - Comprendre l'efficacité
-      - Comprendre la symétrie
-      - Comprendre la propriété du joueur nul
-      - Comprendre l'additivité
+      - Comprendre les coalitions et contributions marginales
+      - Comprendre efficacité, symétrie, joueur nul et additivité
       - Résoudre un petit exemple à la main
-      - Rédiger une explication concise à partir des principes fondamentaux
+      - Rédiger une explication à partir des principes fondamentaux
 
   - domain: english
     node: english-conversation-practice
-    task: Complete one light English conversation session.
-    task_fr: Compléter une séance légère de conversation en anglais.
+    task: Complete one lighter conversation session.
+    task_fr: Compléter une séance de conversation plus légère.
     completion:
-      - Complete one conversation
-      - Keep the session secondary to FM
-      - Reuse a few useful expressions
+      - Keep English secondary to FM this week
+      - Reuse a few recurring expressions
     completion_fr:
-      - Compléter une conversation
-      - Garder cette séance secondaire par rapport à FM
-      - Réutiliser quelques expressions utiles
+      - Garder l'anglais secondaire par rapport à FM cette semaine
+      - Réutiliser quelques expressions récurrentes
 
   - domain: physical
-    node: physical-process
-    task: Complete 4 strength sessions, 3 runs, and aim for 12,000–15,000 steps each day.
-    task_fr: Compléter 4 séances de musculation, 3 courses et viser 12 000 à 15 000 pas chaque jour.
+    node: physical-training-consistency
+    task: Maintain the routine without increasing training demands during final FM preparation.
+    task_fr: Maintenir la routine sans augmenter la charge d'entraînement pendant la préparation finale à FM.
     completion:
-      - Complete 4 strength sessions
-      - Complete 3 runs
+      - Aim for 4 strength sessions
+      - Aim for 3 runs
       - Aim for 12,000–15,000 steps each day
     completion_fr:
-      - Compléter 4 séances de musculation
-      - Compléter 3 courses
+      - Viser 4 séances de musculation
+      - Viser 3 courses
       - Viser 12 000 à 15 000 pas chaque jour
 
 completed: []
 ---
 
 ## Weekly Review
-
 ### Progress
-
-What actually moved forward this week?
-
 ### Bottleneck
-
-What created the most friction or prevented progress?
-
 ### Discovery
-
-What did I learn that should influence the next week?
-
 ### Adjustment
-
-What should change next week?
-
 ### Roadmap Change
-
-Only record something here if the long-term roadmap itself should change.
