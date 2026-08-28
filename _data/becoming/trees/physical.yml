@@ -1,29 +1,315 @@
 tree: physical
+
+title: Physical
+title_fr: Physique
+
 private_by_default: true
-notes: Personal tracking only; not medical advice. Exact measurements belong in private.yml.
+
+notes: >
+  Personal progress tracking only. This roadmap does not provide medical
+  advice or prescribe weight-loss rates. Exact weekly measurements,
+  health information, and private observations belong in private.yml.
+
 nodes:
+
+  # ============================================================
+  # PROCESS — CURRENT ACTIVE BRANCH
+  # ============================================================
+
   - id: physical-process
-    title: Private Physical Process
-    title_fr: Processus physique privé
-    type: maintenance
+    title: Physical Process
+    title_fr: Processus physique
+    type: foundation
     status: in_progress
-    private: true
-    description: Track the user-chosen weekly plan of four strength sessions, three runs, and 12,000–15,000 daily steps, with private measurements and a weekly process observation.
-  - { id: physical-138, title: Starting Point — 138 kg, title_fr: Point de départ — 138 kg, type: physical_milestone, private: true, status: available }
-  - { id: physical-130, title: 130 kg milestone, type: physical_milestone, private: true, requires: [physical-138] }
-  - { id: physical-120, title: 120 kg milestone, type: physical_milestone, private: true, requires: [physical-130] }
-  - { id: physical-110, title: 110 kg milestone, type: physical_milestone, private: true, requires: [physical-120] }
-  - { id: physical-below-100, title: Below 100 kg milestone, type: physical_milestone, private: true, requires: [physical-110] }
-  - { id: physical-90, title: 90 kg milestone, type: physical_milestone, private: true, requires: [physical-below-100] }
-  - { id: physical-85, title: 85 kg milestone, type: physical_milestone, private: true, requires: [physical-90] }
-  - { id: physical-80, title: User-Defined 80 kg Target, type: boss, private: true, requires: [physical-85] }
-  - { id: physical-maintenance, title: Target Maintenance, type: maintenance, private: true, requires: [physical-80] }
-  - { id: physical-maintenance-3m, title: Three Months Maintained, type: physical_milestone, private: true, requires: [physical-maintenance] }
-  - { id: physical-maintenance-6m, title: Six Months Maintained, type: physical_milestone, private: true, requires: [physical-maintenance-3m] }
-  - { id: physical-transformation, title: Transformation, type: legendary, private: true, requires: [physical-maintenance-6m, physical-capacity] }
-  - id: physical-capacity
-    title: Physical Capacity — User Defined
+    description: >
+      Build a sustainable weekly system for strength, running,
+      daily movement, recovery, and private progress tracking.
+    description_fr: >
+      Construire un système hebdomadaire durable combinant musculation,
+      course, mouvement quotidien, récupération et suivi privé de la progression.
+    evidence_required: true
+    evidence_visibility: private
+    unlock_requirements:
+      - Weekly plan defined
+      - Sessions tracked privately
+      - Daily movement tracked privately
+      - Weekly process review completed
+
+  - id: physical-training-consistency
+    title: Training Consistency
+    title_fr: Régularité de l'entraînement
+    type: process
+    status: in_progress
+    requires:
+      - physical-process
+    description: >
+      Establish consistency with the current user-selected training plan
+      without treating one perfect week as mastery.
+    description_fr: >
+      Établir une régularité avec le programme d'entraînement actuellement
+      choisi sans considérer une seule semaine parfaite comme une maîtrise.
+    progress:
+      mode: streak
+      current: 0
+      target: 8
+      unit: weeks
+    unlock_requirements:
+      - Eight substantially completed weeks
+      - Weekly plan reviewed when necessary
+      - Missed sessions documented without resetting long-term progress
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-sustainable-routine
+    title: Sustainable Physical Routine
+    title_fr: Routine physique durable
     type: mastery
-    private: true
+    requires:
+      - physical-training-consistency
+    description: >
+      Demonstrate that training and daily movement have become a sustainable
+      part of ordinary life rather than a temporary intensive phase.
+    description_fr: >
+      Démontrer que l'entraînement et le mouvement quotidien sont devenus
+      une partie durable de la vie normale plutôt qu'une phase intensive temporaire.
+    unlock_requirements:
+      - Consistent routine maintained over multiple months
+      - Training adjusted when life constraints change
+      - No dependence on a single short-term challenge
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # BODY MASS — LONG-TERM MILESTONES
+  # ============================================================
+
+  - id: physical-138
+    title: Starting Point — 138 kg
+    title_fr: Point de départ — 138 kg
+    type: physical_milestone
+    status: in_progress
+    description: >
+      Baseline milestone for the current long-term body-mass trajectory.
+      Verification belongs in private evidence.
+    description_fr: >
+      Point de référence pour la trajectoire de masse corporelle à long terme.
+      La vérification reste dans les preuves privées.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-130
+    title: 130 kg
+    title_fr: 130 kg
+    type: physical_milestone
+    requires:
+      - physical-138
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-120
+    title: 120 kg
+    title_fr: 120 kg
+    type: physical_milestone
+    requires:
+      - physical-130
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-110
+    title: 110 kg
+    title_fr: 110 kg
+    type: physical_milestone
+    requires:
+      - physical-120
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-below-100
+    title: Below 100 kg
+    title_fr: Sous les 100 kg
+    type: physical_milestone
+    requires:
+      - physical-110
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-90
+    title: 90 kg
+    title_fr: 90 kg
+    type: physical_milestone
+    requires:
+      - physical-below-100
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-85
+    title: 85 kg
+    title_fr: 85 kg
+    type: physical_milestone
+    requires:
+      - physical-90
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-80
+    title: Reach 80 kg
+    title_fr: Atteindre 80 kg
+    short_title: 80 kg
+    type: boss
+    requires:
+      - physical-85
+    description: >
+      Reach the current user-defined long-term body-mass target.
+      Reaching the number once is not considered long-term completion.
+    description_fr: >
+      Atteindre l'objectif de masse corporelle à long terme actuellement
+      défini. Atteindre ce nombre une seule fois ne constitue pas la fin
+      de la progression.
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # MAINTENANCE
+  # ============================================================
+
+  - id: physical-target-maintenance
+    title: Establish Target Maintenance
+    title_fr: Stabiliser le poids cible
+    type: maintenance
+    requires:
+      - physical-80
+    description: >
+      Transition from reaching the target to maintaining a stable
+      long-term range defined at that time.
+    description_fr: >
+      Passer de l'atteinte de l'objectif au maintien d'une plage stable
+      à long terme qui sera définie au moment approprié.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-maintenance-3m
+    title: Three Months Maintained
+    title_fr: Maintien pendant trois mois
+    type: physical_milestone
+    requires:
+      - physical-target-maintenance
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-maintenance-6m
+    title: Six Months Maintained
+    title_fr: Maintien pendant six mois
+    type: physical_milestone
+    requires:
+      - physical-maintenance-3m
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # PHYSICAL CAPACITY
+  # ============================================================
+
+  - id: physical-capacity-baseline
+    title: Physical Capacity Baseline
+    title_fr: Évaluation de la capacité physique
+    type: assessment
     status: available
-    description: A separate branch for hiking, strength, endurance, mobility, or other user-defined performance evidence.
+    description: >
+      Establish a private baseline for endurance, strength, mobility,
+      and hiking capacity before defining long-term performance targets.
+    description_fr: >
+      Établir un point de départ privé pour l'endurance, la force,
+      la mobilité et la capacité en randonnée avant de fixer des
+      objectifs de performance à long terme.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-endurance
+    title: Endurance Progression
+    title_fr: Progression en endurance
+    type: skill
+    requires:
+      - physical-capacity-baseline
+    description: >
+      Develop measurable cardiovascular endurance using targets selected
+      after the baseline rather than arbitrary targets chosen in advance.
+    description_fr: >
+      Développer une endurance cardiovasculaire mesurable à partir
+      d'objectifs choisis après l'évaluation initiale plutôt que de
+      seuils arbitraires fixés à l'avance.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-strength
+    title: Strength Progression
+    title_fr: Progression en force
+    type: skill
+    requires:
+      - physical-capacity-baseline
+    description: >
+      Develop measurable strength while preserving technique,
+      consistency, and long-term progression.
+    description_fr: >
+      Développer une force mesurable tout en conservant une bonne
+      technique, de la régularité et une progression à long terme.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-hiking
+    title: Hiking Capacity
+    title_fr: Capacité en randonnée
+    type: skill
+    requires:
+      - physical-capacity-baseline
+    description: >
+      Build the endurance and resilience required for increasingly
+      demanding hikes, using real completed routes as evidence.
+    description_fr: >
+      Développer l'endurance et la résistance nécessaires à des randonnées
+      progressivement plus exigeantes, avec des parcours réellement
+      complétés comme preuves.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: physical-capacity
+    title: Physical Capacity
+    title_fr: Capacité physique
+    type: mastery
+    requires:
+      - physical-endurance
+      - physical-strength
+      - physical-hiking
+    description: >
+      Demonstrate a balanced level of functional capacity rather than
+      defining physical progress solely by body mass.
+    description_fr: >
+      Démontrer un niveau équilibré de capacité fonctionnelle plutôt que
+      de définir la progression physique uniquement par la masse corporelle.
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # LEGENDARY
+  # ============================================================
+
+  - id: physical-transformation
+    title: Physical Transformation
+    title_fr: Transformation physique
+    type: legendary
+    requires:
+      - physical-maintenance-6m
+      - physical-capacity
+      - physical-sustainable-routine
+    description: >
+      Reach and sustain the long-term body-mass objective while maintaining
+      a durable physical routine and meaningful functional capacity.
+    description_fr: >
+      Atteindre et maintenir l'objectif de masse corporelle à long terme
+      tout en conservant une routine physique durable et une capacité
+      fonctionnelle significative.
+    evidence_required: true
+    evidence_visibility: private
