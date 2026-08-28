@@ -2,8 +2,8 @@ current_cycle: foundations-01
 
 cycles:
   - id: foundations-01
-    title: Foundations
-    title_fr: Fondations
+    title: FM · P&C Pricing · Training
+    title_fr: FM · Tarification IARD · Entraînement
     cycle_number: 1
 
     start_date: 2026-08-30
@@ -18,25 +18,29 @@ cycles:
 
     maintenance_domains:
       - english
+      - lean
+      - writing
+      - mathematics
       - career
       - capital
 
     dormant_domains:
-      - mathematics
-      - lean
-      - writing
       - building
 
     objectives:
-      - Prepare seriously for FM and sit the October 2026 examination.
-      - Build strong foundations in model interpretability through reading, reproduction, comparison, and synthesis.
-      - Maintain regular English practice without making it a primary cycle workload.
-      - Establish a consistent physical routine across the full twelve-week cycle.
+      - Prepare seriously for FM and sit the October 2026 exam.
+      - Build a serious foundation in P&C pricing research, beginning with GLMs and progressing toward modern actuarial models.
+      - Establish a consistent physical routine that continues beyond this twelve-week planning window.
+      - Maintain regular English practice with progressively more demanding uses.
+      - Read serious literature and gradually turn reading into original writing.
+      - Formalize a small amount of mathematics in Lean every week.
 
     objectives_fr:
       - Se préparer sérieusement à FM et passer l'examen d'octobre 2026.
-      - Construire des fondations solides en interprétabilité des modèles par la lecture, la reproduction, la comparaison et la synthèse.
-      - Maintenir une pratique régulière de l'anglais sans en faire une charge principale du cycle.
-      - Établir une routine physique régulière pendant l'ensemble des douze semaines.
+      - Construire une base sérieuse en recherche sur la tarification IARD, en commençant par les GLM puis en allant vers les modèles actuariels modernes.
+      - Établir une routine physique régulière qui se poursuit au-delà de cette fenêtre de douze semaines.
+      - Maintenir une pratique régulière de l'anglais avec des usages progressivement plus exigeants.
+      - Lire de la littérature exigeante et transformer progressivement ces lectures en écriture originale.
+      - Formaliser chaque semaine une petite quantité de mathématiques en Lean.
 
     review_path: _becoming/reviews/cycle-foundations-01.md
