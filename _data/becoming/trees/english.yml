@@ -13,22 +13,11 @@ philosophy:
 
 nodes:
 
-  # ============================================================
-  # CONTINUOUS PRACTICE
-  # ============================================================
-
   - id: english-conversation-practice
     title: Recurring English Practice
     title_fr: Pratique régulière de l'anglais
     type: maintenance
     status: maintenance
-    description: >
-      Maintain regular English exposure through conversation, listening,
-      writing, vocabulary reuse, and correction of recurring mistakes.
-    description_fr: >
-      Maintenir une exposition régulière à l'anglais par la conversation,
-      l'écoute, l'écriture, la réutilisation du vocabulaire et la correction
-      des erreurs récurrentes.
     unlock_requirements:
       - Regular speaking practice
       - Regular listening exposure
@@ -43,24 +32,11 @@ nodes:
     status: available
     requires:
       - english-conversation-practice
-    description: >
-      Identify recurring grammar, pronunciation, vocabulary, and sentence
-      structure problems and deliberately eliminate them over time.
-    description_fr: >
-      Identifier les erreurs récurrentes de grammaire, prononciation,
-      vocabulaire et structure de phrase et les réduire volontairement
-      au fil du temps.
     unlock_requirements:
       - Maintain recurring-error categories
       - Record corrected versions
       - Reuse corrections in later conversations
       - Demonstrate reduction of recurring mistakes
-    evidence_required: true
-
-
-  # ============================================================
-  # SPEAKING
-  # ============================================================
 
   - id: english-conversation-10
     title: Sustain a 10-Minute Conversation
@@ -69,15 +45,11 @@ nodes:
     status: available
     requires:
       - english-conversation-practice
-    description: >
-      Sustain an unscripted conversation without relying excessively
-      on French or prepared answers.
     unlock_requirements:
       - Unscripted conversation
       - Mostly English throughout
       - Can ask for clarification in English
       - Can recover when a word is missing
-    evidence_required: true
 
   - id: english-conversation-30
     title: Sustain a 30-Minute Conversation
@@ -90,7 +62,6 @@ nodes:
       - Follow-up questions
       - Spontaneous answers
       - Limited reliance on translation
-    evidence_required: true
 
   - id: english-conversation-60
     title: Sustain a 60-Minute Conversation
@@ -103,7 +74,6 @@ nodes:
       - Multiple topic changes
       - Ability to explain and clarify ideas
       - Ability to recover naturally from misunderstandings
-    evidence_required: true
 
   - id: english-spontaneous-speaking
     title: Spontaneous Speaking
@@ -112,23 +82,12 @@ nodes:
     requires:
       - english-conversation-60
       - english-error-system
-    description: >
-      Speak without mentally constructing every sentence in French first.
-    description_fr: >
-      Parler sans devoir construire mentalement chaque phrase en français
-      avant de l'exprimer.
     unlock_requirements:
       - Sustained spontaneous answers
       - Natural use of linking expressions
       - Reduced hesitation
       - Paraphrase unknown vocabulary
       - Self-correct without losing the conversation
-    evidence_required: true
-
-
-  # ============================================================
-  # LISTENING
-  # ============================================================
 
   - id: english-listening-clear
     title: Understand Clear Natural Speech
@@ -137,15 +96,11 @@ nodes:
     status: available
     requires:
       - english-conversation-practice
-    description: >
-      Understand the main ideas and important details of natural spoken
-      English without subtitles or translation.
     unlock_requirements:
       - Conversations
       - Interviews
       - Podcasts or videos
       - Summarize the main argument afterward
-    evidence_required: true
 
   - id: english-listening-fast
     title: Understand Fast Unscripted Speech
@@ -153,15 +108,11 @@ nodes:
     type: skill
     requires:
       - english-listening-clear
-    description: >
-      Follow spontaneous speech containing reductions, interruptions,
-      informal vocabulary, and natural speaking speed.
     unlock_requirements:
       - Follow fast conversation
       - Understand common reductions
       - Follow interruptions and topic changes
       - Infer unfamiliar vocabulary from context
-    evidence_required: true
 
   - id: english-meeting-listening
     title: Follow a Professional Discussion
@@ -175,12 +126,6 @@ nodes:
       - Identify disagreements
       - Take useful notes
       - Ask relevant follow-up questions
-    evidence_required: true
-
-
-  # ============================================================
-  # EVERYDAY ENGLISH
-  # ============================================================
 
   - id: english-everyday-scenario
     title: Handle Everyday Life in English
@@ -190,12 +135,6 @@ nodes:
     requires:
       - english-conversation-30
       - english-listening-clear
-    description: >
-      Handle ordinary real-life interactions independently in an
-      English-speaking environment.
-    description_fr: >
-      Gérer de façon autonome les interactions ordinaires de la vie
-      quotidienne dans un environnement anglophone.
     unlock_requirements:
       - Restaurant or café interaction
       - Shopping or customer-service interaction
@@ -203,7 +142,6 @@ nodes:
       - Handle an appointment
       - Resolve a simple misunderstanding
       - Small talk with strangers or acquaintances
-    evidence_required: true
 
   - id: english-social-conversation
     title: Social Conversation
@@ -212,24 +150,12 @@ nodes:
     requires:
       - english-conversation-60
       - english-everyday-scenario
-    description: >
-      Participate naturally in informal conversations involving stories,
-      humor, opinions, disagreement, and changing topics.
-    description_fr: >
-      Participer naturellement à des conversations informelles comportant
-      récits, humour, opinions, désaccords et changements de sujet.
     unlock_requirements:
       - Tell a story
       - Express an opinion
       - Disagree politely
       - Understand common humor
       - Participate in group conversation
-    evidence_required: true
-
-
-  # ============================================================
-  # TECHNICAL COMMUNICATION
-  # ============================================================
 
   - id: english-technical-explanation
     title: Explain a Technical Topic Clearly
@@ -237,19 +163,12 @@ nodes:
     type: skill
     requires:
       - english-conversation-30
-    description: >
-      Explain a technical idea coherently to someone who does not already
-      know the topic.
-    description_fr: >
-      Expliquer de manière cohérente une idée technique à une personne
-      qui ne connaît pas déjà le sujet.
     unlock_requirements:
       - Define the problem
       - Explain key terminology
       - Give an example
       - Explain intuition
       - Answer follow-up questions
-    evidence_required: true
 
   - id: english-actuarial-explanation
     title: Explain an Actuarial Concept
@@ -262,7 +181,6 @@ nodes:
       - Explain one concept to an actuarial audience
       - Answer unscripted questions
       - Use appropriate technical vocabulary
-    evidence_required: true
 
   - id: english-mathematical-explanation
     title: Explain a Mathematical Concept
@@ -275,7 +193,6 @@ nodes:
       - Explain intuition
       - Walk through mathematical reasoning
       - Answer clarification questions
-    evidence_required: true
 
   - id: english-research-explanation
     title: Explain Research
@@ -288,13 +205,7 @@ nodes:
       - Explain methodology
       - Explain results
       - Explain limitations
-      - Separate evidence from interpretation
-    evidence_required: true
-
-
-  # ============================================================
-  # PROFESSIONAL COMMUNICATION
-  # ============================================================
+      - Separate observations from interpretation
 
   - id: english-professional-small-talk
     title: Professional Small Talk
@@ -302,12 +213,6 @@ nodes:
     type: skill
     requires:
       - english-social-conversation
-    unlock_requirements:
-      - Introduce yourself naturally
-      - Discuss work without sounding rehearsed
-      - Maintain networking conversation
-      - Ask natural follow-up questions
-    evidence_required: true
 
   - id: english-interview
     title: Complete a Professional Interview
@@ -317,14 +222,6 @@ nodes:
       - english-spontaneous-speaking
       - english-actuarial-explanation
       - english-listening-clear
-    unlock_requirements:
-      - Professional introduction
-      - Behavioral questions
-      - Technical questions
-      - Unscripted follow-ups
-      - Questions for interviewer
-      - Post-interview correction review
-    evidence_required: true
 
   - id: english-presentation
     title: Deliver a 15-Minute Technical Presentation
@@ -332,13 +229,6 @@ nodes:
     type: project
     requires:
       - english-technical-explanation
-    unlock_requirements:
-      - Structured presentation
-      - Clear transitions
-      - Appropriate technical vocabulary
-      - Minimal dependence on written script
-      - Questions handled afterward
-    evidence_required: true
 
   - id: english-meeting-participation
     title: Participate in a Professional Meeting
@@ -347,13 +237,6 @@ nodes:
     requires:
       - english-meeting-listening
       - english-spontaneous-speaking
-    unlock_requirements:
-      - Follow the discussion
-      - Give an opinion
-      - Ask clarification questions
-      - Respond spontaneously
-      - Summarize an action or conclusion
-    evidence_required: true
 
   - id: english-professional-writing
     title: Professional Writing
@@ -362,25 +245,6 @@ nodes:
     status: available
     requires:
       - english-conversation-practice
-    description: >
-      Write clear professional English without depending heavily on
-      translation or automated rewriting.
-    description_fr: >
-      Écrire un anglais professionnel clair sans dépendre fortement
-      de la traduction ou de la réécriture automatisée.
-    unlock_requirements:
-      - Professional email
-      - Technical explanation
-      - Concise summary
-      - Meeting follow-up
-      - Appropriate tone
-      - Independently revise obvious errors
-    evidence_required: true
-
-
-  # ============================================================
-  # RESEARCH COMMUNICATION
-  # ============================================================
 
   - id: english-research-defense
     title: Defend Research Under Questions
@@ -390,24 +254,6 @@ nodes:
       - english-presentation
       - english-research-explanation
       - research-work-1
-    description: >
-      Present a real research project in English and respond to technical
-      criticism and unscripted questions.
-    description_fr: >
-      Présenter un véritable projet de recherche en anglais et répondre
-      aux critiques techniques ainsi qu'aux questions non préparées.
-    unlock_requirements:
-      - Research presentation
-      - Methodology questions
-      - Limitation questions
-      - Critical challenge
-      - Unscripted answers
-    evidence_required: true
-
-
-  # ============================================================
-  # FUNCTIONAL FLUENCY
-  # ============================================================
 
   - id: english-b2
     title: B2 Functional Fluency
@@ -419,17 +265,8 @@ nodes:
       - english-everyday-scenario
       - english-technical-explanation
       - english-professional-writing
-    description: >
-      Demonstrate independent English use across everyday, technical,
-      and professional situations broadly consistent with B2-level ability.
-    description_fr: >
-      Démontrer une utilisation autonome de l'anglais dans des situations
-      quotidiennes, techniques et professionnelles globalement compatibles
-      avec un niveau B2.
-    evidence_required: true
     notes: >
-      This is an internal evidence-based milestone, not an external
-      CEFR certification.
+      Internal functional milestone. It is not an external CEFR certification.
 
   - id: english-professional-operation
     title: Operate Professionally in English
@@ -441,15 +278,6 @@ nodes:
       - english-meeting-participation
       - english-actuarial-explanation
       - english-professional-writing
-    description: >
-      Function effectively in an English-speaking professional environment
-      across meetings, explanations, interviews, writing, and informal
-      workplace interaction.
-    description_fr: >
-      Fonctionner efficacement dans un environnement professionnel anglophone
-      lors de réunions, explications, entretiens, communications écrites
-      et interactions informelles.
-    evidence_required: true
 
   - id: english-c1
     title: C1 Professional Fluency
@@ -460,12 +288,6 @@ nodes:
       - english-listening-fast
       - english-social-conversation
       - english-presentation
-    description: >
-      Demonstrate flexible, spontaneous, precise English across demanding
-      professional, intellectual, and social situations.
-    description_fr: >
-      Démontrer un anglais flexible, spontané et précis dans des situations
-      professionnelles, intellectuelles et sociales exigeantes.
     unlock_requirements:
       - Sustained spontaneous conversation
       - Strong comprehension of fast natural speech
@@ -474,29 +296,15 @@ nodes:
       - Professional writing
       - Nuanced discussion and disagreement
       - Ability to explain complex ideas precisely
-    evidence_required: true
     notes: >
       Internal mastery milestone. Do not label it an externally certified
-      CEFR C1 result unless external evidence exists.
-
-
-  # ============================================================
-  # OPTIONAL EXTERNAL VALIDATION
-  # ============================================================
+      CEFR C1 result unless an external assessment confirms it.
 
   - id: english-external-validation
     title: External English Proficiency Validation
     title_fr: Validation externe du niveau d'anglais
     type: credential
     status: available
-    description: >
-      Optional external validation through an appropriate recognized
-      English-language assessment if useful for future academic or
-      professional purposes.
-    description_fr: >
-      Validation externe facultative au moyen d'une évaluation reconnue
-      si elle devient utile pour un objectif académique ou professionnel.
-    evidence_required: true
     notes: >
       No particular examination is required by the Becoming system.
       Select one only if a future institution or objective requires it.
