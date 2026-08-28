@@ -1,6 +1,6 @@
 ---
-title: Continuous Random Variables · Method Comparison
-title_fr: Variables aléatoires continues · Comparaison des méthodes
+title: Continuous Random Variables · GLM, GAM, and ANAM
+title_fr: Variables aléatoires continues · GLM, GAM et ANAM
 
 cycle: foundations-01
 cycle_week: 10
@@ -10,92 +10,76 @@ status: planned
 
 active:
   - actuarial-exam-1
-  - research-unified-reproduction
+  - research-pricing-flexible-models
   - physical-training-consistency
 
 maintenance:
   - english-conversation-practice
+  - lean-library-navigation
+  - writing-literary-essay
+
+user_inputs:
+  literary_book: null
 
 quests:
 
   - domain: actuarial
     node: actuarial-exam-1
-    task: Work on continuous univariate random variables and their applications.
-    task_fr: Travailler les variables aléatoires univariées continues et leurs applications.
-    completion:
-      - Review PDF and CDF
-      - Review expectation, variance, percentiles, and conditional probability
-      - Review the main continuous distributions in the P syllabus
-      - Work on insurance-payment applications
-      - Complete at least 40 focused problems
-      - Review all incorrect or uncertain answers
-    completion_fr:
-      - Revoir PDF et CDF
-      - Revoir espérance, variance, percentiles et probabilités conditionnelles
-      - Revoir les principales lois continues du syllabus P
-      - Travailler les applications liées aux paiements d'assurance
-      - Compléter au moins 40 problèmes ciblés
-      - Revoir toutes les réponses incorrectes ou incertaines
+    task: Study continuous univariate random variables and complete at least 40 focused P problems.
+    task_fr: Étudier les variables aléatoires continues univariées et compléter au moins 40 exercices ciblés de P.
 
   - domain: research
-    node: research-unified-reproduction
-    task: Compare the interpretability methods studied so far on one common problem.
-    task_fr: Comparer les méthodes d'interprétabilité étudiées jusqu'ici sur un même problème.
+    node: research-pricing-flexible-models
+    task: Build a small reproducible comparison of a GLM and a more flexible additive model; include ANAM if the implementation is ready.
+    task_fr: Construire une petite comparaison reproductible entre un GLM et un modèle additif plus flexible ; inclure ANAM si l'implémentation est prête.
     completion:
-      - Use one coherent dataset and prediction problem
-      - Fit an interpretable baseline
-      - Fit one nonlinear or black-box model
-      - Apply PDP and ICE
-      - Apply LIME
-      - Apply SHAP
-      - Apply ALE
-      - Compare what the methods agree and disagree about
-      - Keep the notebook reproducible and readable
+      - Common dataset
+      - GLM baseline
+      - Flexible additive model
+      - Comparable metrics
+      - Compare predictive behavior
+      - Compare learned structure
+      - Record where complexity helps and where it does not
     completion_fr:
-      - Utiliser un même jeu de données et un même problème prédictif
-      - Ajuster un modèle de référence interprétable
-      - Ajuster un modèle non linéaire ou boîte noire
-      - Appliquer PDP et ICE
-      - Appliquer LIME
-      - Appliquer SHAP
-      - Appliquer ALE
-      - Comparer les accords et désaccords entre méthodes
-      - Garder le notebook reproductible et lisible
+      - Même jeu de données
+      - GLM de référence
+      - Modèle additif flexible
+      - Mesures comparables
+      - Comparer le comportement prédictif
+      - Comparer les structures apprises
+      - Noter où la complexité aide et où elle n'aide pas
+
+  - domain: writing
+    node: writing-literary-essay
+    task: If the current literary book is finished, draft an 800–1,200 word literary essay; otherwise continue reading.
+    task_fr: Si le livre littéraire en cours est terminé, rédiger un essai de 800 à 1 200 mots ; sinon poursuivre la lecture.
+
+  - domain: lean
+    node: lean-library-navigation
+    task: Find and reuse at least three existing mathlib lemmas in one small proof.
+    task_fr: Trouver et réutiliser au moins trois lemmes existants de mathlib dans une petite preuve.
 
   - domain: english
     node: english-conversation-practice
-    task: Use the conversation as a simulated technical meeting.
-    task_fr: Utiliser la conversation comme simulation d'une réunion technique.
-    completion:
-      - Explain a result
-      - Answer clarification questions
-      - State a recommendation
-      - Summarize the conclusion
-    completion_fr:
-      - Expliquer un résultat
-      - Répondre aux questions de clarification
-      - Formuler une recommandation
-      - Résumer la conclusion
+    task: Use the conversation as a simulated professional meeting.
+    task_fr: Utiliser la conversation comme simulation d'une réunion professionnelle.
 
   - domain: physical
     node: physical-training-consistency
-    task: Complete the normal training week without adding novelty.
-    task_fr: Compléter la semaine normale d'entraînement sans ajouter de nouveauté.
-    completion:
-      - Complete 4 strength sessions
-      - Complete 3 runs
-      - Aim for 12,000–15,000 steps each day
-    completion_fr:
-      - Compléter 4 séances de musculation
-      - Compléter 3 courses
-      - Viser 12 000 à 15 000 pas chaque jour
+    task: Complete the normal weekly training plan.
+    task_fr: Compléter le programme hebdomadaire normal.
 
 completed: []
 ---
 
 ## Weekly Review
+
 ### Progress
+
 ### Bottleneck
+
 ### Discovery
+
 ### Adjustment
+
 ### Roadmap Change
