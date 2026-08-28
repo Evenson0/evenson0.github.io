@@ -1,6 +1,6 @@
 ---
-title: FM Weak Area 1 · Interpretable Models
-title_fr: Faiblesse FM 1 · Modèles interprétables
+title: FM Weak Area 1 · GLM Distributions
+title_fr: Faiblesse FM 1 · Distributions des GLM
 
 cycle: foundations-01
 cycle_week: 2
@@ -10,14 +10,17 @@ status: planned
 
 active:
   - actuarial-fm-foundations
-  - research-intrinsic-models
+  - research-actuarial-glm-tweedie
   - physical-training-consistency
 
 maintenance:
   - english-conversation-practice
+  - lean-fundamentals
+  - writing-reading-practice
 
 user_inputs:
   fm_weakness_1: null
+  literary_book: null
 
 quests:
 
@@ -25,74 +28,59 @@ quests:
     node: actuarial-fm-foundations
     task: Work on FM weakness #1 and complete one timed mixed set.
     task_fr: Travailler la faiblesse FM no 1 et compléter une série mixte chronométrée.
-    completion:
-      - Review the relevant concepts and formulas
-      - Complete targeted problems
-      - Review incorrect or uncertain answers
-      - Complete one timed mixed set
-      - Complete one calculator drill
-      - Update the error log
-    completion_fr:
-      - Revoir les concepts et formules pertinents
-      - Compléter des exercices ciblés
-      - Revoir les réponses incorrectes ou incertaines
-      - Compléter une série mixte chronométrée
-      - Compléter un exercice de calculatrice
-      - Mettre à jour le journal d'erreurs
 
   - domain: research
-    node: research-intrinsic-models
-    task: Compare GLMs, GAMs, trees, and black-box models from an interpretability perspective.
-    task_fr: Comparer GLM, GAM, arbres et modèles boîte noire du point de vue de l'interprétabilité.
+    node: research-actuarial-glm-tweedie
+    task: Read Goldburd pages 16–30 and summarize weights, offsets, insurance distributions, multicollinearity, and GLM limitations.
+    task_fr: Lire les pages 16 à 30 de Goldburd et résumer poids, offsets, distributions d'assurance, multicolinéarité et limites des GLM.
     completion:
-      - Review linear and logistic models
-      - Study GLM interpretability
-      - Study GAM structure
-      - Study decision-tree interpretability
-      - Compare what each model makes directly inspectable
-      - Write one concise technical comparison
-      - Identify at least two unresolved questions
+      - Understand weights and offsets
+      - Review severity distributions
+      - Review frequency distributions
+      - Understand the Tweedie distribution
+      - Review logistic regression
+      - Understand multicollinearity
+      - Write a short GLM limitations note
     completion_fr:
-      - Revoir les modèles linéaires et logistiques
-      - Étudier l'interprétabilité des GLM
-      - Étudier la structure des GAM
-      - Étudier l'interprétabilité des arbres
-      - Comparer ce que chaque modèle permet d'inspecter directement
-      - Rédiger une comparaison technique concise
-      - Identifier au moins deux questions non résolues
+      - Comprendre les poids et offsets
+      - Revoir les distributions de sévérité
+      - Revoir les distributions de fréquence
+      - Comprendre la distribution Tweedie
+      - Revoir la régression logistique
+      - Comprendre la multicolinéarité
+      - Rédiger une courte note sur les limites des GLM
+
+  - domain: writing
+    node: writing-reading-practice
+    task: Read about 70 more pages of the current literary book.
+    task_fr: Lire environ 70 pages supplémentaires du livre littéraire en cours.
+
+  - domain: lean
+    node: lean-fundamentals
+    task: Study propositions as types and formalize one simple proposition yourself.
+    task_fr: Étudier les propositions comme types et formaliser soi-même une proposition simple.
 
   - domain: english
     node: english-conversation-practice
-    task: Use part of the 60-minute conversation to explain one technical idea simply.
-    task_fr: Utiliser une partie de la conversation de 60 minutes pour expliquer simplement une idée technique.
-    completion:
-      - Complete the conversation
-      - Explain one technical idea without a script
-      - Correct recurring mistakes afterward
-    completion_fr:
-      - Compléter la conversation
-      - Expliquer une idée technique sans texte préparé
-      - Corriger ensuite les erreurs récurrentes
+    task: Use part of the conversation to explain one technical idea simply.
+    task_fr: Utiliser une partie de la conversation pour expliquer simplement une idée technique.
 
   - domain: physical
     node: physical-training-consistency
-    task: Repeat the weekly training plan without adding new goals.
-    task_fr: Répéter le programme hebdomadaire sans ajouter de nouveaux objectifs.
-    completion:
-      - Complete 4 strength sessions
-      - Complete 3 runs
-      - Aim for 12,000–15,000 steps each day
-    completion_fr:
-      - Compléter 4 séances de musculation
-      - Compléter 3 courses
-      - Viser 12 000 à 15 000 pas chaque jour
+    task: Complete the normal weekly training plan.
+    task_fr: Compléter le programme hebdomadaire normal.
 
 completed: []
 ---
 
 ## Weekly Review
+
 ### Progress
+
 ### Bottleneck
+
 ### Discovery
+
 ### Adjustment
+
 ### Roadmap Change
