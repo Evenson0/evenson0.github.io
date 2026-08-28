@@ -1,13 +1,24 @@
 cycle: foundations-01
 cycle_week: 1
+
 start_date: 2026-08-30
 end_date: 2026-09-05
-iso_week: 2026-W35
+
 display: Week 01 · Aug 30 – Sep 5, 2026
 display_fr: Semaine 01 · 30 août – 5 septembre 2026
-focus: [actuarial, research, physical]
-maintenance: [english, career, capital]
+
+focus:
+  - actuarial
+  - research
+  - physical
+
+maintenance:
+  - english
+  - career
+  - capital
+
 quests:
+
   - id: w01-fm
     tree: actuarial
     node: actuarial-fm-diagnostic
@@ -16,9 +27,20 @@ quests:
     title_fr: FM — 50 exercices sur la théorie de l'intérêt et un diagnostic mixte
     why: Identify the three topics that need the most work next week.
     why_fr: Identifier les trois sujets qui demandent le plus de travail la semaine prochaine.
-    evidence: [50 reviewed problems, Updated error log]
-    evidence_fr: [50 exercices corrigés, Journal d'erreurs mis à jour]
+    completion:
+      - Complete 50 interest-theory problems
+      - Review all incorrect or uncertain answers
+      - Complete one mixed diagnostic
+      - Identify the three weakest FM areas
+      - Update the error log
+    completion_fr:
+      - Compléter 50 exercices sur la théorie de l'intérêt
+      - Revoir toutes les réponses incorrectes ou incertaines
+      - Compléter un diagnostic mixte
+      - Identifier les trois points faibles principaux en FM
+      - Mettre à jour le journal d'erreurs
     status: planned
+
   - id: w01-interpretability-note
     tree: research
     node: research-interpretability-taxonomy
@@ -27,9 +49,16 @@ quests:
     title_fr: Interprétabilité — lire l'introduction de Molnar et rédiger une note concise
     why: Clarify what an explanation is supposed to explain before studying individual methods.
     why_fr: Préciser ce qu'une explication doit expliquer avant d'étudier les différentes méthodes.
-    evidence: [One research note, Three research questions]
-    evidence_fr: [Une note de recherche, Trois questions de recherche]
+    completion:
+      - Read Molnar's introduction
+      - Write one concise research note
+      - Formulate three research questions
+    completion_fr:
+      - Lire l'introduction de Molnar
+      - Rédiger une note de recherche concise
+      - Formuler trois questions de recherche
     status: planned
+
   - id: w01-english-maintenance
     tree: english
     node: english-conversation-practice
@@ -38,17 +67,30 @@ quests:
     title_fr: Anglais — une conversation de 60 minutes
     why: Maintain practical fluency without competing with FM and Research.
     why_fr: Maintenir l'aisance pratique sans concurrencer FM et la Recherche.
-    evidence: [Conversation completed, Recurring mistakes recorded]
-    evidence_fr: [Conversation terminée, Erreurs récurrentes notées]
+    completion:
+      - Complete one 60-minute conversation
+      - Reuse target expressions
+      - Note recurring mistakes worth revisiting
+    completion_fr:
+      - Compléter une conversation de 60 minutes
+      - Réutiliser les expressions ciblées
+      - Noter les erreurs récurrentes qui méritent d'être retravaillées
     status: planned
+
   - id: w01-physical-process
     tree: physical
     node: physical-process
-    kind: private_process
+    kind: process
     title: Physical — 4 strength sessions, 3 runs, 12,000–15,000 daily steps
     title_fr: Physique — 4 séances de musculation, 3 courses, 12 000 à 15 000 pas par jour
     why: Follow the weekly program consistently.
     why_fr: Suivre le programme hebdomadaire avec régularité.
-    evidence: [Private weekly activity log]
-    evidence_fr: [Suivi hebdomadaire privé]
+    completion:
+      - Complete 4 strength sessions
+      - Complete 3 runs
+      - Aim for 12,000–15,000 steps each day
+    completion_fr:
+      - Compléter 4 séances de musculation
+      - Compléter 3 courses
+      - Viser 12 000 à 15 000 pas chaque jour
     status: planned
