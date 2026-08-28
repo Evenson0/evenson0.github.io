@@ -1,13 +1,11 @@
 ---
-title: FM Diagnostic, Interpretability, and Training
-title_fr: Diagnostic FM, interprétabilité et entraînement
+title: FM Diagnostic · Interpretability
+title_fr: Diagnostic FM · Interprétabilité
 
 cycle: foundations-01
 cycle_week: 1
-
 start_date: 2026-08-30
 end_date: 2026-09-05
-
 status: planned
 
 active:
@@ -39,35 +37,33 @@ quests:
 
   - domain: research
     node: research-interpretability-taxonomy
-    task: Read Molnar's introduction to interpretability and write one concise research note.
-    task_fr: Lire l'introduction de Molnar sur l'interprétabilité et rédiger une note de recherche concise.
+    task: Read the introductory material on model interpretability and write one concise note.
+    task_fr: Lire le matériel introductif sur l'interprétabilité des modèles et rédiger une note concise.
     completion:
-      - Read the selected introductory material
-      - Explain what model interpretability means in your own words
+      - Explain model interpretability in your own words
       - Distinguish the main purposes of interpretability
+      - Identify intrinsic and post-hoc approaches
       - Write one concise research note
       - Formulate at least three research questions
     completion_fr:
-      - Lire le matériel introductif sélectionné
-      - Expliquer avec ses propres mots ce que signifie l'interprétabilité d'un modèle
+      - Expliquer l'interprétabilité des modèles avec ses propres mots
       - Distinguer les principaux objectifs de l'interprétabilité
+      - Identifier les approches intrinsèques et post-hoc
       - Rédiger une note de recherche concise
       - Formuler au moins trois questions de recherche
 
   - domain: english
     node: english-conversation-practice
-    task: Complete one 60-minute English conversation.
-    task_fr: Compléter une conversation de 60 minutes en anglais.
+    task: Complete one 60-minute conversation on general topics.
+    task_fr: Compléter une conversation de 60 minutes sur des sujets généraux.
     completion:
-      - Speak for approximately 60 minutes
       - Stay in English as much as possible
       - Reuse useful expressions deliberately
       - Note recurring mistakes worth revisiting
     completion_fr:
-      - Parler pendant environ 60 minutes
       - Rester en anglais autant que possible
       - Réutiliser volontairement des expressions utiles
-      - Noter les erreurs récurrentes qui méritent d'être retravaillées
+      - Noter les erreurs récurrentes à retravailler
 
   - domain: physical
     node: physical-process
@@ -86,23 +82,8 @@ completed: []
 ---
 
 ## Weekly Review
-
 ### Progress
-
-What actually moved forward this week?
-
 ### Bottleneck
-
-What created the most friction or prevented progress?
-
 ### Discovery
-
-What did I learn that should influence the next week?
-
 ### Adjustment
-
-What should change next week?
-
 ### Roadmap Change
-
-Only record something here if the long-term roadmap itself should change.
