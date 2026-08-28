@@ -1,86 +1,523 @@
 tree: actuarial
+
 source:
-  organization: Casualty Actuarial Society / Society of Actuaries
-  title: 2026 credential requirements and exam schedule
-  checked_at: 2026-08-27
-  url: https://www.soa.org/education/exam-schedule/
+  organization: Casualty Actuarial Society
+  title: 2026 CAS Basic Education and Credentialing Pathway
+  checked_at: 2026-08-28
+  url: https://www.casact.org/exams-and-admissions
+
 nodes:
+
+  # ============================================================
+  # EXAM 2 / FM — CURRENT ACTIVE PATH
+  # ============================================================
+
   - id: actuarial-fm-diagnostic
     title: FM Diagnostic and Error Classification
     title_fr: Diagnostic FM et classification des erreurs
     type: assessment
     status: in_progress
+    description: >
+      Establish the current FM baseline through mixed practice and classify
+      mistakes by topic, concept, calculation, calculator use, and time pressure.
+    description_fr: >
+      Établir le niveau actuel en FM à partir d'exercices mixtes et classer
+      les erreurs par sujet, concept, calcul, utilisation de la calculatrice
+      et gestion du temps.
     evidence_required: true
-    unlock_requirements: [Mixed diagnostic, Error categories, Three weakest syllabus areas, Private error log]
+    unlock_requirements:
+      - Mixed diagnostic completed
+      - Errors classified
+      - Three weakest syllabus areas identified
+      - Private error log created
+
   - id: actuarial-fm-foundations
-    title: FM Foundations and Calculator Workflow
-    title_fr: Fondations FM et utilisation de la calculatrice
+    title: FM Study System and Calculator Workflow
+    title_fr: Système d'étude FM et maîtrise de la calculatrice
     type: foundation
-    requires: [actuarial-fm-diagnostic]
-    unlock_requirements: [Study routine, Formula workflow, Calculator setup and shortcuts]
-  - { id: actuarial-fm-interest, title: Interest Theory, title_fr: Théorie de l'intérêt, type: skill, requires: [actuarial-fm-foundations] }
-  - { id: actuarial-fm-annuities, title: Annuities, title_fr: Rentes, type: skill, requires: [actuarial-fm-interest] }
-  - { id: actuarial-fm-loans, title: Loans, title_fr: Emprunts, type: skill, requires: [actuarial-fm-annuities] }
-  - { id: actuarial-fm-bonds, title: Bonds, title_fr: Obligations, type: skill, requires: [actuarial-fm-loans] }
-  - { id: actuarial-fm-cashflows, title: General Cash Flows and Portfolios, title_fr: Flux monétaires et portefeuilles, type: skill, requires: [actuarial-fm-bonds] }
-  - { id: actuarial-fm-duration, title: Duration, Convexity, and Immunization, title_fr: Durée, convexité et immunisation, type: skill, requires: [actuarial-fm-cashflows] }
+    requires:
+      - actuarial-fm-diagnostic
+    description: >
+      Establish the study, formula, calculator, and error-review workflow
+      that will be used throughout FM preparation.
+    unlock_requirements:
+      - Sustainable study routine
+      - Formula-review workflow
+      - BA II Plus / approved calculator setup
+      - Core calculator operations performed fluently
+
+  # ------------------------------------------------------------
+  # FM SYLLABUS BLOCKS
+  # These are parallel areas, not artificial prerequisites
+  # of one another.
+  # ------------------------------------------------------------
+
+  - id: actuarial-fm-interest
+    title: Interest Rate Measures
+    title_fr: Mesures des taux d'intérêt
+    type: skill
+    requires:
+      - actuarial-fm-foundations
+    description: >
+      Master accumulation and discount functions, effective and nominal
+      rates, discount rates, force of interest, and rate conversion.
+    unlock_requirements:
+      - Solve representative exam-level problems
+      - Convert consistently between rate measures
+      - Explain accumulation and discount relationships
+      - Revisit and correct prior errors
+    evidence_required: true
+
+  - id: actuarial-fm-annuities
+    title: Annuities and Non-Contingent Cash Flows
+    title_fr: Rentes et flux monétaires non contingents
+    type: skill
+    requires:
+      - actuarial-fm-foundations
+    description: >
+      Master present and accumulated values of level and non-level annuities,
+      perpetuities, arithmetic progressions, and geometric progressions.
+    unlock_requirements:
+      - Level annuities
+      - Annuity-due and annuity-immediate
+      - Perpetuities
+      - Arithmetic progression cash flows
+      - Geometric progression cash flows
+      - Exam-level mixed applications
+    evidence_required: true
+
+  - id: actuarial-fm-loans
+    title: Loans
+    title_fr: Emprunts
+    type: skill
+    requires:
+      - actuarial-fm-foundations
+    description: >
+      Master loan valuation, amortization, outstanding balances,
+      principal-interest decomposition, refinancing, balloon payments,
+      and drop payments.
+    unlock_requirements:
+      - Loan payment calculations
+      - Outstanding balance calculations
+      - Principal and interest decomposition
+      - Refinancing problems
+      - Balloon and drop payment problems
+      - Exam-level mixed applications
+    evidence_required: true
+
+  - id: actuarial-fm-bonds
+    title: Bonds
+    title_fr: Obligations
+    type: skill
+    requires:
+      - actuarial-fm-foundations
+    description: >
+      Master bond pricing, book value, yield rate, coupon relationships,
+      premium and discount bonds, and callable bonds where required
+      by the current syllabus.
+    unlock_requirements:
+      - Price bonds from yield
+      - Solve for yield or coupon information
+      - Premium and discount relationships
+      - Book-value calculations
+      - Exam-level mixed applications
+    evidence_required: true
+
+  - id: actuarial-fm-cashflows
+    title: General Cash Flows, Yield Curves, and Portfolios
+    title_fr: Flux monétaires généraux, courbes de taux et portefeuilles
+    type: skill
+    requires:
+      - actuarial-fm-foundations
+    description: >
+      Master valuation using spot rates, forward rates, yield curves,
+      portfolio cash flows, and general rate-of-return concepts.
+    unlock_requirements:
+      - Spot-rate valuation
+      - Forward-rate calculations
+      - Yield-curve calculations
+      - General cash-flow valuation
+      - Portfolio applications
+    evidence_required: true
+
+  - id: actuarial-fm-duration
+    title: Duration, Convexity, Matching, and Immunization
+    title_fr: Durée, convexité, appariement et immunisation
+    type: skill
+    requires:
+      - actuarial-fm-foundations
+    description: >
+      Master Macaulay and modified duration, convexity, cash-flow matching,
+      duration matching, and immunization.
+    unlock_requirements:
+      - Macaulay duration
+      - Modified duration
+      - Convexity
+      - Approximate price sensitivity
+      - Cash-flow matching
+      - Duration matching
+      - Redington and full immunization where required
+    evidence_required: true
+
+  # The SOA currently treats these as separate syllabus topics rather than
+  # requiring completion in this artificial order.
+  # October 2026 uses the current FM syllabus published by the SOA.
+  # https://www.soa.org/education/exam-req/edu-exam-fm-detail/study/
+
+  # ------------------------------------------------------------
+  # CUMULATIVE PREPARATION
+  # ------------------------------------------------------------
+
+  - id: actuarial-fm-error-log
+    title: FM Error Log
+    title_fr: Journal d'erreurs FM
+    type: practice
+    status: in_progress
+    requires:
+      - actuarial-fm-diagnostic
+    description: >
+      Maintain a living record of recurring mistakes and verify that
+      corrected errors stay corrected.
+    description_fr: >
+      Maintenir un registre vivant des erreurs récurrentes et vérifier
+      que les erreurs corrigées ne réapparaissent pas.
+    unlock_requirements:
+      - Errors categorized consistently
+      - Root cause recorded
+      - Corrective action recorded
+      - Old errors revisited
+      - Recurring mistakes materially reduced
+    evidence_required: true
+
   - id: actuarial-fm-mixed
     title: Mixed FM Practice
     title_fr: Pratique FM mixte
     type: practice
-    requires: [actuarial-fm-duration]
-    unlock_requirements: [Cumulative mixed sets, Weak-area remediation, Calculator fluency]
-  - id: actuarial-fm-timed
-    title: Timed Exam Practice
-    title_fr: Pratique chronométrée
-    type: practice
-    requires: [actuarial-fm-mixed]
+    requires:
+      - actuarial-fm-interest
+      - actuarial-fm-annuities
+      - actuarial-fm-loans
+      - actuarial-fm-bonds
+      - actuarial-fm-cashflows
+      - actuarial-fm-duration
+    description: >
+      Transition from isolated syllabus topics to cumulative exam-style
+      problem solving.
+    unlock_requirements:
+      - Multiple cumulative mixed sets
+      - Weak areas deliberately represented
+      - Solutions fully reviewed
+      - Calculator use fluent under mixed conditions
     evidence_required: true
-    unlock_requirements: [Substantial timed simulations, Reviewed solutions, Timing strategy]
-  - id: actuarial-fm-error-log
-    title: Error Log Mastery
-    title_fr: Maîtrise du journal d'erreurs
+
+  - id: actuarial-fm-timed
+    title: Timed FM Practice
+    title_fr: Pratique FM chronométrée
+    type: practice
+    requires:
+      - actuarial-fm-mixed
+    description: >
+      Demonstrate the ability to solve mixed FM problems under realistic
+      examination time pressure.
+    unlock_requirements:
+      - Multiple substantial timed simulations
+      - Every simulation reviewed
+      - Timing failures documented
+      - Guessing and skip strategy defined
+      - Weak topics remediated between simulations
+    evidence_required: true
+
+  - id: actuarial-fm-readiness
+    title: FM Exam Readiness
+    title_fr: Préparation finale à l'examen FM
     type: mastery
-    requires: [actuarial-fm-timed]
-    unlock_requirements: [Recurring errors classified, Corrective action documented, Old errors revisited]
+    requires:
+      - actuarial-fm-mixed
+      - actuarial-fm-timed
+      - actuarial-fm-error-log
+    description: >
+      Reach a stable level of cumulative preparation rather than relying
+      on one isolated practice score.
+    unlock_requirements:
+      - Full syllabus reviewed
+      - Timed practice completed
+      - Major recurring errors addressed
+      - Calculator workflow stable
+      - Final formula review system ready
+      - Exam-day strategy defined
+    evidence_required: true
+
   - id: actuarial-fm-attempt
     title: FM Exam Attempt
     title_fr: Tentative à l'examen FM
     type: exam
-    status: available
-    requires: [actuarial-fm-error-log]
-    exam_window: { start: 2026-10-01, end: 2026-10-12 }
+    requires:
+      - actuarial-fm-readiness
+    exam_window:
+      start: 2026-10-01
+      end: 2026-10-12
+    registration_deadline: 2026-09-02
     appointment_date: null
     evidence_required: true
-    notes: Appointment date belongs in private.yml if desired. An attempt is not a pass.
+    notes: >
+      The October 2026 SOA FM testing window is October 1–12.
+      The personal appointment date may remain in private.yml.
+      Sitting the examination is not equivalent to passing it.
+
   - id: actuarial-fm
-    title: FM Passed
-    title_fr: FM réussi
+    title: Exam 2 / Financial Mathematics
+    title_fr: Examen 2 / Mathématiques financières
     short_title: FM
     type: credential
-    requires: [actuarial-fm-attempt]
+    requires:
+      - actuarial-fm-attempt
     target_date: 2026-10
     evidence_required: true
-    unlock_requirements: [Official passing-result evidence]
-  - { id: actuarial-exam-1, title: Exam 1 / Probability, short_title: P, type: exam }
-  - { id: actuarial-vee-economics, title: VEE Economics, title_fr: VEE Économie, type: credential }
-  - { id: actuarial-vee-accounting, title: VEE Accounting and Finance, title_fr: VEE Comptabilité et finance, type: credential }
-  - { id: actuarial-disc-da, title: DISC Data and Analytics, type: course }
-  - { id: actuarial-disc-rm, title: DISC Risk Management and Insurance Operations, type: course }
-  - { id: actuarial-disc-ia, title: DISC Insurance Accounting, Coverage, Law, and Regulation, type: course }
-  - { id: actuarial-mas-1, title: MAS-I, type: exam }
-  - { id: actuarial-mas-2, title: MAS-II, type: exam }
-  - { id: actuarial-exam-5, title: Exam 5, type: exam }
-  - { id: actuarial-pcpa-exam, title: PCPA Exam, type: exam }
-  - { id: actuarial-pcpa-project, title: PCPA Project, type: project, requires: [actuarial-pcpa-exam] }
-  - { id: actuarial-exam-6, title: Exam 6 — Applicable Jurisdiction, title_fr: Examen 6 — Juridiction applicable, type: exam }
-  - { id: actuarial-cop, title: Course on Professionalism, title_fr: Cours sur le professionnalisme, short_title: COP, type: course }
-  - id: actuarial-acas
-    title: ACAS
-    type: boss
-    requires: [actuarial-exam-1, actuarial-fm, actuarial-vee-economics, actuarial-vee-accounting, actuarial-disc-da, actuarial-disc-rm, actuarial-disc-ia, actuarial-mas-1, actuarial-mas-2, actuarial-exam-5, actuarial-pcpa-exam, actuarial-pcpa-project, actuarial-exam-6, actuarial-cop]
+    unlock_requirements:
+      - Official passing-result evidence
+    source:
+      organization: Society of Actuaries
+      title: Financial Mathematics Exam
+      checked_at: 2026-08-28
+      url: https://www.soa.org/education/exam-req/edu-exam-fm-detail.aspx
+
+
+  # ============================================================
+  # ACAS — PRELIMINARY REQUIREMENTS
+  # ============================================================
+
+  - id: actuarial-exam-1
+    title: Exam 1 / Probability
+    title_fr: Examen 1 / Probabilités
+    short_title: P
+    type: exam
+    status: available
     evidence_required: true
-    notes: Verify individual transition and waiver rules before completion.
-  - { id: actuarial-exam-7, title: Exam 7, type: exam }
-  - { id: actuarial-exam-8, title: Exam 8, type: exam }
-  - { id: actuarial-exam-9, title: Exam 9, type: exam }
+    unlock_requirements:
+      - Official CAS-recognized Exam 1 credit
+
+  - id: actuarial-vee-economics
+    title: VEE Economics
+    title_fr: VEE Économie
+    type: credential
+    status: available
+    evidence_required: true
+    unlock_requirements:
+      - Official VEE Economics credit
+
+  - id: actuarial-vee-accounting
+    title: VEE Accounting and Finance
+    title_fr: VEE Comptabilité et finance
+    type: credential
+    status: available
+    evidence_required: true
+    unlock_requirements:
+      - Official VEE Accounting and Finance credit
+
+
+  # ============================================================
+  # CAS DATA & INSURANCE SERIES COURSES
+  # ============================================================
+
+  - id: actuarial-disc-da
+    title: DISC DA — Introduction to Data and Analytics
+    title_fr: DISC DA — Introduction aux données et à l'analytique
+    type: course
+    status: available
+    evidence_required: true
+
+  - id: actuarial-disc-rm
+    title: DISC RM — Risk Management and Insurance Operations
+    title_fr: DISC RM — Gestion des risques et opérations d'assurance
+    type: course
+    status: available
+    evidence_required: true
+
+  - id: actuarial-disc-ia
+    title: DISC IA — Insurance Accounting, Coverage Analysis, Insurance Law, and Insurance Regulation
+    title_fr: DISC IA — Comptabilité d'assurance, analyse des garanties, droit et réglementation
+    type: course
+    status: available
+    evidence_required: true
+
+
+  # ============================================================
+  # ACAS — CORE EXAMINATIONS
+  # ============================================================
+
+  - id: actuarial-mas-1
+    title: MAS-I — Modern Actuarial Statistics I
+    title_fr: MAS-I — Statistique actuarielle moderne I
+    type: exam
+    status: available
+    evidence_required: true
+
+  - id: actuarial-mas-2
+    title: MAS-II — Modern Actuarial Statistics II
+    title_fr: MAS-II — Statistique actuarielle moderne II
+    type: exam
+    status: available
+    evidence_required: true
+
+  - id: actuarial-exam-5
+    title: Exam 5 — Basic Techniques for Ratemaking and Estimating Claim Liabilities
+    title_fr: Examen 5 — Techniques fondamentales de tarification et d'estimation des provisions
+    short_title: Exam 5
+    type: exam
+    status: available
+    evidence_required: true
+
+  - id: actuarial-exam-6
+    title: Exam 6 — Regulation and Financial Reporting
+    title_fr: Examen 6 — Réglementation et information financière
+    short_title: Exam 6
+    type: exam
+    status: available
+    evidence_required: true
+    notes: >
+      Complete the version appropriate to the candidate's jurisdiction
+      (Canada, United States, International, or Taipei).
+
+
+  # ============================================================
+  # PCPA
+  # ============================================================
+
+  - id: actuarial-pcpa-exam
+    title: PCPA Exam — Property & Casualty Predictive Analytics
+    title_fr: Examen PCPA — Analytique prédictive en assurances IARD
+    short_title: PCPA Exam
+    type: exam
+    status: available
+    description: >
+      Demonstrate practical predictive-analytics knowledge for P&C
+      actuarial applications.
+    description_fr: >
+      Démontrer la maîtrise pratique de l'analytique prédictive appliquée
+      à l'actuariat IARD.
+    evidence_required: true
+    notes: >
+      CAS states that there is no formal prerequisite for the PCPA Exam,
+      but strongly recommends completing MAS-I, MAS-II, and Exam 5 first.
+
+  - id: actuarial-pcpa-project
+    title: PCPA Project — Property & Casualty Predictive Analytics
+    title_fr: Projet PCPA — Analytique prédictive en assurances IARD
+    short_title: PCPA Project
+    type: project
+    requires:
+      - actuarial-pcpa-exam
+    description: >
+      Complete the independent PCPA predictive-modeling project after
+      passing the PCPA Exam.
+    description_fr: >
+      Réaliser de façon indépendante le projet de modélisation prédictive
+      PCPA après avoir réussi l'examen PCPA.
+    evidence_required: true
+    unlock_requirements:
+      - PCPA Exam passed
+      - Official project completion credit
+    notes: >
+      CAS requires the Exam to be passed before the Project.
+      Candidates have one year after passing the exam to complete
+      the project before needing to retake the exam.
+
+
+  # ============================================================
+  # PROFESSIONALISM
+  # ============================================================
+
+  - id: actuarial-cop
+    title: CAS Course on Professionalism
+    title_fr: Cours CAS sur le professionnalisme
+    short_title: COP
+    type: course
+    status: available
+    evidence_required: true
+    notes: >
+      Registration eligibility depends on examination credit.
+      Verify current CAS eligibility requirements before registration.
+
+
+  # ============================================================
+  # ACAS
+  # ============================================================
+
+  - id: actuarial-acas
+    title: Associate of the Casualty Actuarial Society
+    title_fr: Associate de la Casualty Actuarial Society
+    short_title: ACAS
+    type: boss
+    requires:
+      - actuarial-exam-1
+      - actuarial-fm
+      - actuarial-vee-economics
+      - actuarial-vee-accounting
+      - actuarial-disc-da
+      - actuarial-disc-rm
+      - actuarial-disc-ia
+      - actuarial-mas-1
+      - actuarial-mas-2
+      - actuarial-exam-5
+      - actuarial-exam-6
+      - actuarial-pcpa-exam
+      - actuarial-pcpa-project
+      - actuarial-cop
+    evidence_required: true
+    unlock_requirements:
+      - All applicable 2026 Associateship requirements credited by CAS
+      - ACAS credential officially awarded
+    notes: >
+      PCPA Exam and Project are required for candidates earning ACAS
+      on or after January 1, 2026. Individual transition and waiver
+      rules should always be verified before marking completion.
+
+
+  # ============================================================
+  # FCAS
+  # ============================================================
+
+  - id: actuarial-exam-7
+    title: Exam 7 — Advanced Estimation of Claims Liabilities
+    title_fr: Examen 7 — Estimation avancée des provisions pour sinistres
+    short_title: Exam 7
+    type: exam
+    requires:
+      - actuarial-acas
+    evidence_required: true
+
+  - id: actuarial-exam-8
+    title: Exam 8 — Advanced Ratemaking
+    title_fr: Examen 8 — Tarification avancée
+    short_title: Exam 8
+    type: exam
+    requires:
+      - actuarial-acas
+    evidence_required: true
+
+  - id: actuarial-exam-9
+    title: Exam 9 — Risk Management for Actuaries
+    title_fr: Examen 9 — Gestion des risques pour actuaires
+    short_title: Exam 9
+    type: exam
+    requires:
+      - actuarial-acas
+    evidence_required: true
+
+  - id: actuarial-fcas
+    title: Fellow of the Casualty Actuarial Society
+    title_fr: Fellow de la Casualty Actuarial Society
+    short_title: FCAS
+    type: legendary
+    requires:
+      - actuarial-acas
+      - actuarial-exam-7
+      - actuarial-exam-8
+      - actuarial-exam-9
+    evidence_required: true
+    unlock_requirements:
+      - All Associateship requirements completed
+      - Exam 7 credit
+      - Exam 8 credit
+      - Exam 9 credit
+      - FCAS credential officially awarded
