@@ -1,38 +1,119 @@
+# ============================================================
+# LEGENDARY ACHIEVEMENTS
+#
+# These are the small number of long-horizon accomplishments surfaced
+# prominently by Becoming.
+#
+# Detailed requirements belong in the corresponding domain trees.
+# This file should reference the completed mastery node rather than
+# duplicate its internal dependency graph.
+# ============================================================
+
 - id: legendary-fcas
   title: FCAS
+  title_fr: FCAS
   type: legendary
-  requires: [actuarial-acas, actuarial-exam-7, actuarial-exam-8, actuarial-exam-9]
-  description: Fellowship awarded from verified CAS credential records.
+  requires:
+    - actuarial-fcas
+  description: >
+    Fellowship awarded by the Casualty Actuarial Society after completion
+    of all applicable Associateship and Fellowship requirements.
+  description_fr: >
+    Titre de Fellow accordé par la Casualty Actuarial Society après
+    l'accomplissement de toutes les exigences applicables d'Associateship
+    et de Fellowship.
+  evidence_required: true
+
+
 - id: legendary-independent-researcher
   title: Independent Researcher
   title_fr: Chercheur indépendant
   type: legendary
-  requires: [research-r4-independent]
-  description: A sustained body of progressively harder research, ending in strong external validation. The subject may evolve across actuarial science, mathematics, statistics, interpretability, or other fields.
+  requires:
+    - research-r4-independent
+  description: >
+    Demonstrate the ability to independently develop, execute, communicate,
+    and externally validate substantial research across a sustained body
+    of progressively more difficult work.
+  description_fr: >
+    Démontrer la capacité à concevoir, mener, communiquer et faire valider
+    extérieurement des recherches substantielles à travers un corpus
+    durable de travaux progressivement plus exigeants.
+  evidence_required: true
+
+
 - id: legendary-published-author
   title: Published Author
+  title_fr: Auteur publié
   type: legendary
-  requires: [writing-final-manuscript, writing-publication]
-  description: A finished, revised manuscript with actual publication evidence.
+  requires:
+    - writing-published-author
+  description: >
+    Become the published author of a completed and substantially revised book.
+  description_fr: >
+    Devenir l'auteur publié d'un livre achevé et substantiellement révisé.
+  evidence_required: true
+
+
 - id: legendary-lean-contributor
-  title: Lean Contributor
+  title: Lean / mathlib Contributor
+  title_fr: Contributeur Lean / mathlib
   type: legendary
-  requires: [lean-merged-contribution, lean-multiple-contributions]
-  description: Multiple meaningful formal-mathematics contributions understood and maintained by the author.
+  requires:
+    - lean-contributor
+  description: >
+    Demonstrate sustained, independently understood contributions
+    to the Lean mathematical ecosystem.
+  description_fr: >
+    Démontrer des contributions durables et comprises de manière autonome
+    à l'écosystème mathématique Lean.
+  evidence_required: true
+
+
 - id: legendary-portfolio-millionaire
   title: Millionaire — $1M Investable Assets
   title_fr: Millionnaire — 1 M$ d'actifs investissables
+  short_title: $1M
   type: legendary
-  requires: [capital-1000k]
-  description: One million dollars in investable assets, verified privately.
+  requires:
+    - capital-1000k
+  description: >
+    Reach one million in investable assets under the fixed capital
+    definition established in the Capital roadmap.
+  description_fr: >
+    Atteindre un million d'actifs investissables selon la définition
+    fixe du capital établie dans la roadmap Capital.
+  evidence_required: true
+  evidence_visibility: private
+
+
 - id: legendary-professional-english
   title: Professional English Fluency
+  title_fr: Aisance professionnelle en anglais
   type: legendary
-  requires: [english-c1]
-  description: Professional fluency supported by speaking, listening, writing, and technical-defense evidence.
+  requires:
+    - english-c1
+  description: >
+    Demonstrate flexible, spontaneous, and precise English across demanding
+    professional, technical, intellectual, and social situations.
+  description_fr: >
+    Démontrer un anglais flexible, spontané et précis dans des situations
+    professionnelles, techniques, intellectuelles et sociales exigeantes.
+  evidence_required: true
+
+
 - id: legendary-physical-80
-  title: 80 kg
+  title: Reach 80 kg
   title_fr: Atteindre 80 kg
+  short_title: 80 kg
   type: legendary
-  requires: [physical-80]
-  description: Reach the user-defined 80 kg milestone. Exact measurements and weekly records remain private.
+  requires:
+    - physical-80
+  description: >
+    Reach the user-defined long-term 80 kg body-mass milestone.
+    Exact measurements and progress records remain private.
+  description_fr: >
+    Atteindre l'objectif de masse corporelle à long terme de 80 kg.
+    Les mesures exactes et les données de progression restent privées.
+  evidence_required: true
+  evidence_visibility: private
