@@ -1,12 +1,529 @@
 tree: career
+
+title: Career
+title_fr: Carrière
+
+state: maintenance
+
+philosophy:
+  - "Job title and professional capability are not the same thing."
+  - "Career progression requires technical depth, ownership, communication, business impact, and leadership."
+  - "Promotions are external outcomes; readiness can be demonstrated internally."
+  - "Confidential employer information must never be required as public evidence."
+
 nodes:
-  - { id: career-own-analysis, title: Own an Analysis, type: career_milestone, status: available }
-  - { id: career-explain-results, title: Explain Results Clearly, title_fr: Expliquer clairement les résultats, type: career_milestone, requires: [career-own-analysis] }
-  - { id: career-end-to-end, title: Own an End-to-End Project, type: career_milestone, requires: [career-explain-results] }
-  - { id: career-present, title: Present to Decision Makers, type: career_milestone, requires: [career-end-to-end] }
-  - { id: career-implemented, title: Recommendation Implemented, type: career_milestone, requires: [career-present] }
-  - { id: career-impact, title: Measure Business Impact, type: career_milestone, requires: [career-implemented] }
-  - { id: career-resource, title: Internal Subject-Matter Resource, type: mastery, requires: [career-impact] }
-  - { id: career-cross-functional, title: Lead Cross-Functional Work, type: career_milestone, requires: [career-resource] }
-  - { id: career-mentor, title: Mentor Another Analyst, type: career_milestone, requires: [career-resource] }
-  - { id: career-technical-leadership, title: Technical Leadership, type: boss, requires: [career-cross-functional, career-mentor] }
+
+  # ============================================================
+  # CURRENT PROFESSIONAL DEVELOPMENT
+  # ============================================================
+
+  - id: career-professional-development
+    title: Actuarial Professional Development
+    title_fr: Développement professionnel actuariel
+    type: foundation
+    status: maintenance
+    description: >
+      Build the technical, commercial, communication, and leadership
+      capabilities required to take increasing responsibility in P&C
+      actuarial work.
+    description_fr: >
+      Développer les capacités techniques, commerciales, communicationnelles
+      et de leadership nécessaires pour assumer progressivement davantage
+      de responsabilités en actuariat IARD.
+
+  - id: career-analyst-stage
+    title: Actuarial Analyst
+    title_fr: Analyste en actuariat
+    type: career_stage
+    status: in_progress
+    requires:
+      - career-professional-development
+    description: >
+      Current development stage: strengthen independent analytical work,
+      project ownership, business understanding, and communication.
+    description_fr: >
+      Étape actuelle de développement : renforcer l'autonomie analytique,
+      la prise en charge de projets, la compréhension des enjeux d'affaires
+      et la communication.
+
+
+  # ============================================================
+  # BRANCH 1 — ANALYTICAL OWNERSHIP
+  # ============================================================
+
+  - id: career-own-analysis
+    title: Own an Analysis
+    title_fr: Prendre en charge une analyse
+    type: career_milestone
+    status: available
+    requires:
+      - career-analyst-stage
+    description: >
+      Take responsibility for an analysis from question definition
+      through validation and conclusion.
+    description_fr: >
+      Prendre la responsabilité d'une analyse depuis la définition
+      de la question jusqu'à la validation et la conclusion.
+    unlock_requirements:
+      - Clarify the business question
+      - Obtain or prepare appropriate data
+      - Select a defensible method
+      - Validate results
+      - Form a clear conclusion
+    evidence_required: true
+
+  - id: career-end-to-end
+    title: Own an End-to-End Project
+    title_fr: Prendre en charge un projet de bout en bout
+    type: career_milestone
+    requires:
+      - career-own-analysis
+      - career-explain-results
+    description: >
+      Own a substantive actuarial project from initial problem definition
+      through implementation or final recommendation.
+    description_fr: >
+      Prendre en charge un projet actuariel substantiel depuis la définition
+      initiale du problème jusqu'à l'implantation ou à la recommandation finale.
+    unlock_requirements:
+      - Define scope
+      - Build project plan
+      - Complete analytical work
+      - Validate results
+      - Communicate conclusions
+      - Document methodology
+      - Close or transition the project
+    evidence_required: true
+
+  - id: career-multiple-projects
+    title: Build a Portfolio of Owned Projects
+    title_fr: Constituer un portefeuille de projets pris en charge
+    type: mastery
+    requires:
+      - career-end-to-end
+    progress:
+      mode: count
+      current: 0
+      target: 3
+      unit: substantial projects
+    unlock_requirements:
+      - At least three substantial projects
+      - Different analytical problems
+      - Increasing autonomy
+      - Documented lessons from each project
+    evidence_required: true
+
+
+  # ============================================================
+  # BRANCH 2 — COMMUNICATION
+  # ============================================================
+
+  - id: career-explain-results
+    title: Explain Results Clearly
+    title_fr: Expliquer clairement les résultats
+    type: career_milestone
+    status: available
+    requires:
+      - career-analyst-stage
+    description: >
+      Translate technical analysis into conclusions understandable
+      to actuarial and non-actuarial audiences.
+    description_fr: >
+      Transformer une analyse technique en conclusions compréhensibles
+      pour des publics actuariels et non actuariels.
+    unlock_requirements:
+      - Explain methodology simply
+      - Explain uncertainty
+      - Distinguish result from interpretation
+      - State limitations
+      - Answer follow-up questions
+    evidence_required: true
+
+  - id: career-present
+    title: Present to Decision Makers
+    title_fr: Présenter à des décideurs
+    type: career_milestone
+    requires:
+      - career-explain-results
+    description: >
+      Present analysis in a format designed to support an actual decision,
+      not merely report technical results.
+    description_fr: >
+      Présenter une analyse de manière à soutenir une véritable décision,
+      et non simplement à rapporter des résultats techniques.
+    unlock_requirements:
+      - Clear recommendation or decision framing
+      - Concise presentation
+      - Material risks explained
+      - Questions handled
+      - Next action identified
+    evidence_required: true
+
+  - id: career-executive-communication
+    title: Executive Communication
+    title_fr: Communication exécutive
+    type: mastery
+    requires:
+      - career-present
+    description: >
+      Communicate complex actuarial work concisely enough for senior
+      decision makers while preserving the essential uncertainty and trade-offs.
+    description_fr: >
+      Communiquer des travaux actuariels complexes avec suffisamment de
+      concision pour des décideurs seniors tout en conservant les incertitudes
+      et compromis essentiels.
+    unlock_requirements:
+      - Lead with the decision
+      - Explain material financial or risk implications
+      - Distinguish essential detail from technical background
+      - Handle challenge without retreating into jargon
+    evidence_required: true
+
+
+  # ============================================================
+  # BRANCH 3 — BUSINESS IMPACT
+  # ============================================================
+
+  - id: career-business-context
+    title: Understand the Business Behind the Model
+    title_fr: Comprendre l'entreprise derrière le modèle
+    type: skill
+    status: available
+    requires:
+      - career-analyst-stage
+    description: >
+      Understand how actuarial analysis interacts with underwriting,
+      claims, finance, regulation, distribution, operations, and portfolio
+      strategy.
+    description_fr: >
+      Comprendre comment l'analyse actuarielle interagit avec la souscription,
+      les sinistres, la finance, la réglementation, la distribution,
+      les opérations et la stratégie de portefeuille.
+    unlock_requirements:
+      - Identify stakeholders
+      - Understand operational constraints
+      - Understand financial implications
+      - Explain why the analysis matters to the business
+    evidence_required: true
+
+  - id: career-recommendation
+    title: Make a Defensible Business Recommendation
+    title_fr: Formuler une recommandation d'affaires défendable
+    type: career_milestone
+    requires:
+      - career-end-to-end
+      - career-business-context
+      - career-present
+    description: >
+      Move beyond reporting results and recommend an action while
+      explicitly considering uncertainty and trade-offs.
+    description_fr: >
+      Aller au-delà de la présentation des résultats et recommander une
+      action en considérant explicitement l'incertitude et les compromis.
+    unlock_requirements:
+      - Recommendation follows from evidence
+      - Alternatives considered
+      - Risks identified
+      - Assumptions stated
+      - Expected consequence articulated
+    evidence_required: true
+
+  - id: career-implemented
+    title: Recommendation Implemented
+    title_fr: Recommandation mise en œuvre
+    type: career_milestone
+    requires:
+      - career-recommendation
+    description: >
+      Have analytical work materially influence a real business process,
+      model, rule, decision, or implementation.
+    description_fr: >
+      Faire en sorte qu'un travail analytique influence réellement un
+      processus, un modèle, une règle, une décision ou une implantation.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: career-impact
+    title: Measure Business Impact
+    title_fr: Mesurer l'impact d'affaires
+    type: mastery
+    requires:
+      - career-implemented
+    description: >
+      Evaluate what happened after implementation instead of assuming
+      that implementation itself proves success.
+    description_fr: >
+      Évaluer ce qui s'est réellement produit après l'implantation plutôt
+      que de supposer que l'implantation elle-même prouve le succès.
+    unlock_requirements:
+      - Define expected outcome
+      - Define measurable indicator
+      - Compare outcome with expectation where possible
+      - Identify unintended effects
+      - Document lessons learned
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # BRANCH 4 — TECHNICAL DEPTH
+  # ============================================================
+
+  - id: career-deep-expertise
+    title: Develop Deep Expertise in One Actuarial Domain
+    title_fr: Développer une expertise approfondie dans un domaine actuariel
+    type: skill
+    status: available
+    requires:
+      - career-analyst-stage
+    description: >
+      Move beyond general analytical competence and develop depth in
+      a specific actuarial problem area.
+    description_fr: >
+      Aller au-delà d'une compétence analytique générale et développer
+      une expertise approfondie dans un problème actuariel particulier.
+    unlock_requirements:
+      - Relevant technical literature studied
+      - Repeated practical application
+      - Able to explain methodology and limitations
+      - Able to diagnose difficult cases
+    evidence_required: true
+
+  - id: career-peer-review
+    title: Review Another Analyst's Technical Work
+    title_fr: Réviser le travail technique d'un autre analyste
+    type: career_milestone
+    requires:
+      - career-deep-expertise
+    description: >
+      Provide useful technical review rather than only performing
+      one's own analyses.
+    description_fr: >
+      Fournir une révision technique utile plutôt que seulement réaliser
+      ses propres analyses.
+    unlock_requirements:
+      - Identify assumptions
+      - Detect methodological or implementation issues
+      - Suggest improvements
+      - Explain feedback constructively
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: career-resource
+    title: Internal Subject-Matter Resource
+    title_fr: Personne-ressource interne
+    type: mastery
+    requires:
+      - career-deep-expertise
+      - career-peer-review
+      - career-multiple-projects
+    description: >
+      Become someone colleagues intentionally consult for a particular
+      technical or actuarial subject.
+    description_fr: >
+      Devenir une personne que les collègues consultent volontairement
+      pour un sujet technique ou actuariel particulier.
+    unlock_requirements:
+      - Repeated consultation by colleagues
+      - Able to resolve non-routine questions
+      - Share knowledge through documentation or explanation
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: career-methodology-owner
+    title: Own a Technical Methodology
+    title_fr: Être responsable d'une méthodologie technique
+    type: boss
+    requires:
+      - career-resource
+    description: >
+      Take responsibility for the design, documentation, validation,
+      maintenance, or evolution of an important actuarial methodology.
+    description_fr: >
+      Prendre la responsabilité de la conception, documentation, validation,
+      maintenance ou évolution d'une méthodologie actuarielle importante.
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # BRANCH 5 — LEADERSHIP
+  # ============================================================
+
+  - id: career-mentor
+    title: Mentor Another Analyst
+    title_fr: Mentorer un autre analyste
+    type: career_milestone
+    status: available
+    requires:
+      - career-explain-results
+    description: >
+      Help another analyst improve their technical judgment,
+      communication, or project execution.
+    description_fr: >
+      Aider un autre analyste à améliorer son jugement technique,
+      sa communication ou l'exécution de ses projets.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: career-lead-workstream
+    title: Lead a Workstream
+    title_fr: Diriger un volet de travail
+    type: career_milestone
+    requires:
+      - career-end-to-end
+    description: >
+      Coordinate a piece of work involving multiple contributors,
+      dependencies, or stakeholders.
+    description_fr: >
+      Coordonner un volet de travail impliquant plusieurs contributeurs,
+      dépendances ou parties prenantes.
+    unlock_requirements:
+      - Define responsibilities
+      - Coordinate dependencies
+      - Resolve blockers
+      - Maintain quality
+      - Deliver expected outcome
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: career-cross-functional
+    title: Lead Cross-Functional Work
+    title_fr: Diriger un travail interfonctionnel
+    type: career_milestone
+    requires:
+      - career-lead-workstream
+      - career-business-context
+    description: >
+      Lead work involving actuarial and at least one materially different
+      business function.
+    description_fr: >
+      Diriger un travail impliquant l'actuariat et au moins une autre
+      fonction d'affaires significativement différente.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: career-influence
+    title: Influence Without Formal Authority
+    title_fr: Influencer sans autorité formelle
+    type: mastery
+    requires:
+      - career-present
+      - career-cross-functional
+    description: >
+      Build enough credibility and reasoning quality to move a project
+      or decision forward without relying on hierarchical authority.
+    description_fr: >
+      Développer suffisamment de crédibilité et de qualité de raisonnement
+      pour faire avancer un projet ou une décision sans dépendre de
+      l'autorité hiérarchique.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: career-technical-leadership
+    title: Technical Leadership
+    title_fr: Leadership technique
+    type: boss
+    requires:
+      - career-resource
+      - career-mentor
+      - career-cross-functional
+      - career-influence
+    description: >
+      Demonstrate sustained technical leadership through expertise,
+      mentoring, coordination, judgment, and influence.
+    description_fr: >
+      Démontrer un leadership technique durable par l'expertise,
+      le mentorat, la coordination, le jugement et l'influence.
+    evidence_required: true
+
+
+  # ============================================================
+  # ROLE PROGRESSION
+  # ============================================================
+
+  - id: career-senior-readiness
+    title: Senior Analyst Readiness
+    title_fr: Prêt pour un rôle d'analyste senior
+    type: mastery
+    requires:
+      - career-end-to-end
+      - career-present
+      - career-deep-expertise
+      - career-business-context
+    description: >
+      Demonstrate the autonomy, judgment, communication, and technical
+      depth expected from a strong senior analyst regardless of formal title.
+    description_fr: >
+      Démontrer l'autonomie, le jugement, la communication et la profondeur
+      technique attendus d'un analyste senior solide, indépendamment du titre.
+    evidence_required: true
+
+  - id: career-senior-analyst
+    title: Senior Actuarial Analyst
+    title_fr: Analyste actuariel senior
+    type: career_milestone
+    requires:
+      - career-senior-readiness
+    description: >
+      Formal external career milestone. Exact title may vary by employer.
+    description_fr: >
+      Étape professionnelle externe formelle. Le titre exact peut varier
+      selon l'employeur.
+    evidence_required: true
+
+  - id: career-leadership-readiness
+    title: Leadership Role Readiness
+    title_fr: Prêt pour un rôle de leadership
+    type: mastery
+    requires:
+      - career-technical-leadership
+      - career-impact
+      - career-executive-communication
+    description: >
+      Demonstrate the ability to lead important actuarial work before
+      relying on a formal management title.
+    description_fr: >
+      Démontrer la capacité à diriger des travaux actuariels importants
+      avant de dépendre d'un titre formel de gestion.
+    evidence_required: true
+
+  - id: career-director-readiness
+    title: Actuarial Director Readiness
+    title_fr: Prêt pour un rôle de directeur en actuariat
+    type: boss
+    requires:
+      - career-methodology-owner
+      - career-impact
+      - career-executive-communication
+      - career-technical-leadership
+      - career-leadership-readiness
+    description: >
+      Demonstrate the technical judgment, business influence,
+      communication, and leadership required to operate at a director level.
+    description_fr: >
+      Démontrer le jugement technique, l'influence d'affaires,
+      la communication et le leadership nécessaires pour fonctionner
+      au niveau d'un directeur.
+    unlock_requirements:
+      - Own important actuarial decisions
+      - Demonstrate measurable business impact
+      - Lead substantial cross-functional work
+      - Develop other analysts
+      - Communicate with senior leadership
+      - Exercise sound technical judgment under uncertainty
+    evidence_required: true
+
+  - id: career-actuarial-director
+    title: Actuarial Director
+    title_fr: Directeur en actuariat
+    type: legendary
+    requires:
+      - career-director-readiness
+    description: >
+      Formal external career milestone. Exact title and organizational
+      structure may differ across employers.
+    description_fr: >
+      Étape professionnelle externe formelle. Le titre exact et la structure
+      organisationnelle peuvent varier selon l'employeur.
+    evidence_required: true
