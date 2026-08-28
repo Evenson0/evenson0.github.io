@@ -1,0 +1,49 @@
+tree: mathematics
+nodes:
+  - id: mathematics-maturity
+    title: Mathematical Maturity
+    title_fr: Maturité mathématique
+    type: foundation
+    status: dormant
+    description: Read definitions precisely, construct and critique proofs, select examples and counterexamples, and explain structure independently.
+    evidence: [{ type: publication, title: Evenson's Mathematical Workshop, url: /publication/evenson-mathematical-workshop, visibility: public }]
+  - { id: mathematics-analysis, title: Rigorous Analysis, title_fr: Analyse rigoureuse, type: skill, requires: [mathematics-maturity] }
+  - { id: mathematics-measure, title: Measure and Integration, title_fr: Mesure et intégration, type: skill, requires: [mathematics-analysis] }
+  - { id: mathematics-probability, title: Probability Theory, title_fr: Théorie des probabilités, type: skill, requires: [mathematics-measure] }
+  - { id: mathematics-stochastic, title: Stochastic Processes, title_fr: Processus stochastiques, type: skill, requires: [mathematics-probability] }
+  - { id: mathematics-applied-probability, title: Advanced Applied Probability, title_fr: Probabilités appliquées avancées, type: skill, requires: [mathematics-stochastic] }
+  - { id: mathematics-independent-reading, title: Graduate-Level Independent Reading, title_fr: Lecture indépendante de niveau supérieur, type: course, requires: [mathematics-applied-probability] }
+  - id: mathematics-number-theory-foundations
+    title: Number Theory Foundations
+    title_fr: Fondements de la théorie des nombres
+    type: foundation
+    requires: [mathematics-maturity]
+    description: Develop rigorous command of divisibility, prime numbers, the Euclidean algorithm, congruences, and classical proof techniques.
+  - id: mathematics-congruences
+    title: Congruences and Arithmetic Functions
+    title_fr: Congruences et fonctions arithmétiques
+    type: skill
+    requires: [mathematics-number-theory-foundations]
+    description: Work fluently with modular arithmetic, the Chinese remainder theorem, Euler and Möbius functions, and multiplicative structure.
+  - id: mathematics-diophantine
+    title: Diophantine Equations
+    title_fr: Équations diophantiennes
+    type: skill
+    requires: [mathematics-congruences]
+    description: Study integer and rational solutions using congruences, descent, valuations, and carefully chosen examples and counterexamples.
+  - id: mathematics-number-theory-advanced
+    title: Advanced Number Theory Study
+    title_fr: Étude avancée de la théorie des nombres
+    type: course
+    requires: [mathematics-diophantine, mathematics-analysis]
+    description: Complete a serious independent study in analytic, algebraic, or computational number theory, with the direction selected when activated.
+  - id: mathematics-number-theory-exposition
+    title: Number Theory Proof Portfolio
+    title_fr: Portfolio de preuves en théorie des nombres
+    type: project
+    requires: [mathematics-number-theory-advanced]
+    evidence_required: true
+    description: Produce a polished collection of nontrivial proofs, solved problems, exposition, and at least one computational or theoretical exploration.
+  - { id: mathematics-proof-portfolio, title: Proof and Exposition Portfolio, title_fr: Portfolio de preuves et d'exposition, type: project, requires: [mathematics-independent-reading, mathematics-number-theory-exposition] }
+  - { id: mathematics-reproduce-result, title: Reproduce a Nontrivial Mathematical Result, title_fr: Reproduire un résultat mathématique non trivial, type: project, requires: [mathematics-proof-portfolio], evidence_required: true }
+  - { id: mathematics-original-investigation, title: Independent Mathematical Investigation, title_fr: Investigation mathématique indépendante, type: boss, requires: [mathematics-reproduce-result], evidence_required: true }

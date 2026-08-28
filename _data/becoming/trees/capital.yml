@@ -1,0 +1,17 @@
+tree: capital
+private_by_default: true
+nodes:
+  - { id: capital-policy, title: Investment Policy Written, type: financial_milestone, status: available }
+  - { id: capital-liquidity-policy, title: Emergency and Liquidity Policy, title_fr: Politique d'urgence et de liquidité, type: financial_milestone, status: available }
+  - { id: capital-contribution-system, title: Contribution System, type: financial_milestone, requires: [capital-policy] }
+  - { id: capital-risk-framework, title: Risk Framework, type: financial_milestone, requires: [capital-policy] }
+  - { id: capital-records, title: Long-Term Record Keeping, type: financial_milestone, requires: [capital-contribution-system] }
+  - { id: capital-review, title: Periodic Portfolio Review, type: maintenance, requires: [capital-risk-framework, capital-records, capital-liquidity-policy] }
+  - { id: capital-10k, title: $10k Investable Assets, type: financial_milestone, private: true }
+  - { id: capital-25k, title: $25k Investable Assets, type: financial_milestone, private: true, requires: [capital-10k] }
+  - { id: capital-50k, title: $50k Investable Assets, type: financial_milestone, private: true, requires: [capital-25k] }
+  - { id: capital-100k, title: $100k Investable Assets, type: financial_milestone, private: true, requires: [capital-50k] }
+  - { id: capital-250k, title: $250k Investable Assets, type: financial_milestone, private: true, requires: [capital-100k] }
+  - { id: capital-500k, title: $500k Investable Assets, type: financial_milestone, private: true, requires: [capital-250k] }
+  - { id: capital-750k, title: $750k Investable Assets, type: financial_milestone, private: true, requires: [capital-500k] }
+  - { id: capital-1000k, title: $1M Investable Assets, type: boss, private: true, requires: [capital-750k, capital-review] }

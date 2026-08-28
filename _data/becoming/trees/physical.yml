@@ -1,0 +1,29 @@
+tree: physical
+private_by_default: true
+notes: Personal tracking only; not medical advice. Exact measurements belong in private.yml.
+nodes:
+  - id: physical-process
+    title: Private Physical Process
+    title_fr: Processus physique privé
+    type: maintenance
+    status: in_progress
+    private: true
+    description: Track the user-chosen weekly plan of four strength sessions, three runs, and 12,000–15,000 daily steps, with private measurements and a weekly process observation.
+  - { id: physical-138, title: Starting Point — 138 kg, title_fr: Point de départ — 138 kg, type: physical_milestone, private: true, status: available }
+  - { id: physical-130, title: 130 kg milestone, type: physical_milestone, private: true, requires: [physical-138] }
+  - { id: physical-120, title: 120 kg milestone, type: physical_milestone, private: true, requires: [physical-130] }
+  - { id: physical-110, title: 110 kg milestone, type: physical_milestone, private: true, requires: [physical-120] }
+  - { id: physical-below-100, title: Below 100 kg milestone, type: physical_milestone, private: true, requires: [physical-110] }
+  - { id: physical-90, title: 90 kg milestone, type: physical_milestone, private: true, requires: [physical-below-100] }
+  - { id: physical-85, title: 85 kg milestone, type: physical_milestone, private: true, requires: [physical-90] }
+  - { id: physical-80, title: User-Defined 80 kg Target, type: boss, private: true, requires: [physical-85] }
+  - { id: physical-maintenance, title: Target Maintenance, type: maintenance, private: true, requires: [physical-80] }
+  - { id: physical-maintenance-3m, title: Three Months Maintained, type: physical_milestone, private: true, requires: [physical-maintenance] }
+  - { id: physical-maintenance-6m, title: Six Months Maintained, type: physical_milestone, private: true, requires: [physical-maintenance-3m] }
+  - { id: physical-transformation, title: Transformation, type: legendary, private: true, requires: [physical-maintenance-6m, physical-capacity] }
+  - id: physical-capacity
+    title: Physical Capacity — User Defined
+    type: mastery
+    private: true
+    status: available
+    description: A separate branch for hiking, strength, endurance, mobility, or other user-defined performance evidence.

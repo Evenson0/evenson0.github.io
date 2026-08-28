@@ -1,0 +1,21 @@
+tree: english
+nodes:
+  - id: english-conversation-practice
+    title: Recurring Conversation Practice
+    title_fr: Pratique régulière de conversation
+    type: maintenance
+    status: maintenance
+    description: Sustain conversation, actively use target expressions, and record recurring mistakes.
+  - { id: english-conversation-10, title: 10-Minute Conversation, type: skill, status: available, requires: [english-conversation-practice] }
+  - { id: english-conversation-30, title: 30-Minute Conversation, type: skill, requires: [english-conversation-10] }
+  - { id: english-conversation-60, title: 60-Minute Conversation, type: skill, requires: [english-conversation-30] }
+  - { id: english-technical-explanation, title: Explain a Technical Topic Clearly, type: skill, requires: [english-conversation-30] }
+  - { id: english-actuarial-explanation, title: Explain an Actuarial Concept, title_fr: Expliquer un concept actuariel, type: skill, requires: [english-technical-explanation] }
+  - { id: english-mathematical-explanation, title: Explain a Mathematical Concept, title_fr: Expliquer un concept mathématique, type: skill, requires: [english-technical-explanation] }
+  - { id: english-everyday-scenario, title: Handle an Everyday US-Life Scenario, title_fr: Gérer une situation quotidienne aux États-Unis, type: skill, requires: [english-conversation-30] }
+  - { id: english-interview, title: Mock Professional Interview, type: project, requires: [english-conversation-60] }
+  - { id: english-presentation, title: 15-Minute Technical Presentation, type: project, requires: [english-technical-explanation] }
+  - { id: english-research-defense, title: Defend Research Under Questions, type: boss, requires: [english-presentation, research-work-1] }
+  - { id: english-professional-operation, title: Professional Work Session in English, title_fr: Séance de travail professionnelle en anglais, type: mastery, requires: [english-interview, english-research-defense, english-actuarial-explanation, english-mathematical-explanation, english-everyday-scenario] }
+  - { id: english-b2, title: B2 Functional Fluency, type: credential, requires: [english-professional-operation], notes: Do not claim external CEFR certification without verified evidence. }
+  - { id: english-c1, title: C1 Professional Fluency, type: credential, requires: [english-b2], notes: "Requires broad evidence across speaking, listening, writing, and professional explanation; certification is recorded only if external." }

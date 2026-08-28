@@ -1,0 +1,38 @@
+- id: legendary-fcas
+  title: FCAS
+  type: legendary
+  requires: [actuarial-acas, actuarial-exam-7, actuarial-exam-8, actuarial-exam-9]
+  description: Fellowship awarded from verified CAS credential records.
+- id: legendary-independent-researcher
+  title: Independent Researcher
+  title_fr: Chercheur indépendant
+  type: legendary
+  requires: [research-r4-independent]
+  description: A sustained body of progressively harder research, ending in strong external validation. The subject may evolve across actuarial science, mathematics, statistics, interpretability, or other fields.
+- id: legendary-published-author
+  title: Published Author
+  type: legendary
+  requires: [writing-final-manuscript, writing-publication]
+  description: A finished, revised manuscript with actual publication evidence.
+- id: legendary-lean-contributor
+  title: Lean Contributor
+  type: legendary
+  requires: [lean-merged-contribution, lean-multiple-contributions]
+  description: Multiple meaningful formal-mathematics contributions understood and maintained by the author.
+- id: legendary-portfolio-millionaire
+  title: Millionaire — $1M Investable Assets
+  title_fr: Millionnaire — 1 M$ d'actifs investissables
+  type: legendary
+  requires: [capital-1000k]
+  description: One million dollars in investable assets, verified privately.
+- id: legendary-professional-english
+  title: Professional English Fluency
+  type: legendary
+  requires: [english-c1]
+  description: Professional fluency supported by speaking, listening, writing, and technical-defense evidence.
+- id: legendary-physical-80
+  title: 80 kg
+  title_fr: Atteindre 80 kg
+  type: legendary
+  requires: [physical-80]
+  description: Reach the user-defined 80 kg milestone. Exact measurements and weekly records remain private.

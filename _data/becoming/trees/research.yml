@@ -1,0 +1,167 @@
+tree: research
+source_checked: 2026-08-27
+nodes:
+  - id: research-interpretability-taxonomy
+    title: Interpretability Taxonomy
+    title_fr: Taxonomie de l'interprétabilité
+    type: foundation
+    status: in_progress
+    description: Define audience, object, local/global scope, model behavior versus causal mechanism, and the decision an explanation must support.
+    description_fr: Définir le public, l'objet, la portée locale/globale, le comportement du modèle face au mécanisme causal et la décision soutenue.
+    readings: [molnar-iml-book, molnar-history-challenges]
+    evidence_required: true
+    unlock_requirements: [Annotated literature map, Technical note, At least three nontrivial research questions]
+  - id: research-intrinsic-models
+    title: Interpretable Models by Construction
+    title_fr: Modèles interprétables par construction
+    type: skill
+    requires: [research-interpretability-taxonomy]
+    readings: [molnar-iml-book, rudin-black-box]
+    unlock_requirements: [Compare GLM, GAM, decision tree, and explained black box, Include actuarial pricing implications]
+  - id: research-pdp-ice
+    title: PDP and ICE Experiment
+    title_fr: Expérience PDP et ICE
+    type: experiment
+    requires: [research-intrinsic-models]
+    unlock_requirements: [Public or synthetic data, Reproducible notebook, Figure, Discussion of marginalization, heterogeneity, extrapolation, and dependence]
+    evidence_required: true
+  - id: research-lime
+    title: LIME Reproduction
+    title_fr: Reproduction de LIME
+    type: experiment
+    requires: [research-pdp-ice]
+    readings: [ribeiro-lime]
+    unlock_requirements: [One reproduced explanation, Fidelity discussion, Perturbation and locality critique, Two open questions]
+    evidence_required: true
+  - id: research-shapley-shap
+    title: Shapley Values and SHAP
+    title_fr: Valeurs de Shapley et SHAP
+    type: experiment
+    requires: [research-lime]
+    readings: [lundberg-lee-shap]
+    unlock_requirements: [First-principles explanation, Simple SHAP implementation, Explain attribution versus model effect]
+    evidence_required: true
+  - id: research-ale
+    title: ALE and Dependent Predictors
+    title_fr: ALE et prédicteurs dépendants
+    type: experiment
+    requires: [research-shapley-shap]
+    readings: [apley-zhu-ale]
+    unlock_requirements: [Correlated synthetic example, PDP/ICE/ALE comparison, Figure showing disagreement]
+    evidence_required: true
+  - id: research-evaluation-failure
+    title: Failure and Evaluation of Explanations
+    title_fr: Échec et évaluation des explications
+    type: critical_study
+    requires: [research-ale]
+    readings: [rudin-black-box, rudin-grand-challenges, molnar-history-challenges]
+    unlock_requirements: [Critical memo, Define faithfulness and high stakes, Identify instability and non-identifiability]
+    evidence_required: true
+  - id: research-unified-reproduction
+    title: Unified Interpretability Reproduction
+    title_fr: Reproduction unifiée en interprétabilité
+    type: project
+    requires: [research-evaluation-failure]
+    unlock_requirements: [Interpretable baseline, Nonlinear model, PDP, ICE, LIME, SHAP, ALE, permutation importance where appropriate, README and reproducible environment]
+    evidence_required: true
+  - id: research-stress-test
+    title: Explanation Stability Stress Test
+    title_fr: Test de robustesse des explications
+    type: experiment
+    requires: [research-unified-reproduction]
+    unlock_requirements: [Correlated and redundant features, Interaction, Perturbation, Retraining, Reference-sample sensitivity, Document disagreements]
+    evidence_required: true
+  - id: research-interpretability-memo
+    title: Interpretability Foundations Research Memo
+    title_fr: Mémoire de recherche — Fondations de l'interprétabilité
+    type: paper
+    requires: [research-stress-test]
+    unlock_requirements: [Question, Motivation, Taxonomy, Literature, Mathematics, Reproduction, Method comparison, Correlation experiment, Failure modes, Actuarial implications, Limitations, Open questions, Candidate next project]
+    evidence_required: true
+  - id: research-r0-foundations
+    title: R0 — Research Foundations
+    title_fr: R0 — Fondations de recherche
+    type: mastery
+    requires: [research-interpretability-memo]
+    progress: { mode: requirements, current: 0, target: 5, unit: evidence groups }
+    unlock_requirements:
+      - At least six serious foundational readings with annotations
+      - At least three reproducible implementations
+      - One comparative experiment
+      - One substantial technical research memo
+      - At least ten nontrivial research questions captured
+    evidence_required: true
+  - id: research-reproductions-3
+    title: Three Nontrivial Reproductions
+    title_fr: Trois reproductions non triviales
+    type: project
+    requires: [research-r0-foundations]
+    progress: { mode: count, current: 0, target: 3, unit: reproductions }
+    unlock_requirements: [Published-work result reconstructed, Assumptions documented, Discrepancies explained, Reproducible environment]
+  - id: research-work-1
+    title: Research Work I — Reproduction / Synthesis
+    title_fr: Travail de recherche I — Reproduction / Synthèse
+    type: boss
+    requires: [research-reproductions-3]
+    unlock_requirements: [Precise question, Literature, Data provenance, Method, Reproduction, Results, Critique, Limitations, Code, Presentable to a researcher]
+    evidence_required: true
+  - id: research-r1-reproducer
+    title: R1 — Reproducer
+    title_fr: R1 — Reproducteur
+    type: mastery
+    requires: [research-work-1]
+    evidence_required: true
+  - id: research-controlled-investigations
+    title: Controlled Investigations
+    title_fr: Investigations contrôlées
+    type: skill
+    requires: [research-r1-reproducer]
+    unlock_requirements: [Own empirical questions, Sensitivity analysis, Assumption tests, Method comparison, External criticism]
+  - id: research-work-2
+    title: Research Work II — Topic to Emerge
+    title_fr: Travail de recherche II — Sujet à faire émerger
+    type: boss
+    requires: [research-controlled-investigations]
+    unlock_requirements: [Comparative or critical investigation, Topic emerges from prior evidence, External feedback]
+    evidence_required: true
+  - id: research-r2-investigator
+    title: R2 — Investigator
+    title_fr: R2 — Investigateur
+    type: mastery
+    requires: [research-work-2]
+    evidence_required: true
+  - id: research-work-3
+    title: Research Work III — Original Empirical Investigation
+    title_fr: Travail de recherche III — Investigation empirique originale
+    type: boss
+    requires: [research-r2-investigator]
+    unlock_requirements: [Original question, Defensible design, Complete manuscript structure, Precise method, Figures, Limitations, External feedback]
+    evidence_required: true
+  - id: research-work-4
+    title: Research Work IV — Independent Contribution
+    title_fr: Travail de recherche IV — Contribution indépendante
+    type: boss
+    requires: [research-work-3]
+    unlock_requirements: [Clear methodological, empirical, theoretical, computational, or actuarial contribution, Revision after criticism]
+    evidence_required: true
+  - id: research-r3-author
+    title: R3 — Research Author
+    title_fr: R3 — Auteur de recherche
+    type: mastery
+    requires: [research-work-4]
+    evidence_required: true
+  - id: research-work-5
+    title: Research Work V — External Validation
+    title_fr: Travail de recherche V — Validation externe
+    type: boss
+    requires: [research-r3-author]
+    unlock_requirements: [Full manuscript, Serious external feedback, Revision, Formal submission, Acceptance/publication or equivalently strong validation]
+    evidence_required: true
+    notes: Track draft, working paper, preprint, submitted, revise-and-resubmit, accepted, published, and peer-reviewed as distinct states.
+  - id: research-r4-independent
+    title: R4 — Independent Researcher
+    title_fr: R4 — Chercheur indépendant
+    type: legendary
+    requires: [research-work-1, research-work-2, research-work-3, research-work-4, research-work-5]
+    evidence_required: true
+

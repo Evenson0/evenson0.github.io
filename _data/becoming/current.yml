@@ -1,0 +1,54 @@
+cycle: foundations-01
+cycle_week: 1
+start_date: 2026-08-30
+end_date: 2026-09-05
+iso_week: 2026-W35
+display: Week 01 · Aug 30 – Sep 5, 2026
+display_fr: Semaine 01 · 30 août – 5 septembre 2026
+focus: [actuarial, research, physical]
+maintenance: [english, career, capital]
+quests:
+  - id: w01-fm
+    tree: actuarial
+    node: actuarial-fm-diagnostic
+    kind: practice
+    title: FM — 50 problems on interest theory and a mixed diagnostic
+    title_fr: FM — 50 exercices sur la théorie de l'intérêt et un diagnostic mixte
+    why: Identify the three topics that need the most work next week.
+    why_fr: Identifier les trois sujets qui demandent le plus de travail la semaine prochaine.
+    evidence: [50 reviewed problems, Updated error log]
+    evidence_fr: [50 exercices corrigés, Journal d'erreurs mis à jour]
+    status: planned
+  - id: w01-interpretability-note
+    tree: research
+    node: research-interpretability-taxonomy
+    kind: read_write
+    title: Interpretability — read Molnar's introduction and write one concise note
+    title_fr: Interprétabilité — lire l'introduction de Molnar et rédiger une note concise
+    why: Clarify what an explanation is supposed to explain before studying individual methods.
+    why_fr: Préciser ce qu'une explication doit expliquer avant d'étudier les différentes méthodes.
+    evidence: [One research note, Three research questions]
+    evidence_fr: [Une note de recherche, Trois questions de recherche]
+    status: planned
+  - id: w01-english-maintenance
+    tree: english
+    node: english-conversation-practice
+    kind: maintenance
+    title: English — one 60-minute conversation
+    title_fr: Anglais — une conversation de 60 minutes
+    why: Maintain practical fluency without competing with FM and Research.
+    why_fr: Maintenir l'aisance pratique sans concurrencer FM et la Recherche.
+    evidence: [Conversation completed, Recurring mistakes recorded]
+    evidence_fr: [Conversation terminée, Erreurs récurrentes notées]
+    status: planned
+  - id: w01-physical-process
+    tree: physical
+    node: physical-process
+    kind: private_process
+    title: Physical — 4 strength sessions, 3 runs, 12,000–15,000 daily steps
+    title_fr: Physique — 4 séances de musculation, 3 courses, 12 000 à 15 000 pas par jour
+    why: Follow the weekly program consistently.
+    why_fr: Suivre le programme hebdomadaire avec régularité.
+    evidence: [Private weekly activity log]
+    evidence_fr: [Suivi hebdomadaire privé]
+    status: planned

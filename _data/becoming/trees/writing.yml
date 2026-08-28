@@ -1,0 +1,21 @@
+tree: writing
+nodes:
+  - id: writing-polished-essay
+    title: Polished Essay
+    type: article
+    status: available
+    evidence:
+      - { type: blog_post, title: Gödel's Incompleteness Theorems, url: /posts/2026/04/13/godels/incompleteness/theorems, visibility: public }
+      - { type: blog_post, title: You and Your Research, url: /texts/hamming-you-and-your-research/, visibility: public }
+  - { id: writing-10-essays, title: 10 Strong Essays, type: article, requires: [writing-polished-essay], progress: { mode: count, current: 0, target: 10, unit: essays } }
+  - { id: writing-25-essays, title: 25 Strong Essays, type: article, requires: [writing-10-essays], progress: { mode: count, current: 0, target: 25, unit: essays } }
+  - { id: writing-long-form, title: Long-Form Work, type: project, requires: [writing-10-essays] }
+  - { id: writing-research-writer, title: Research Writer, type: mastery, requires: [writing-long-form, research-work-1] }
+  - { id: writing-book-thesis, title: Book Thesis, type: project, requires: [writing-long-form] }
+  - { id: writing-book-outline, title: Book Outline, type: project, requires: [writing-book-thesis] }
+  - { id: writing-three-chapters, title: Three Finished Chapters, type: project, requires: [writing-book-outline] }
+  - { id: writing-half-manuscript, title: 50% Manuscript, type: project, requires: [writing-three-chapters] }
+  - { id: writing-first-draft, title: Complete First Draft, type: project, requires: [writing-half-manuscript] }
+  - { id: writing-editorial-review, title: Editorial Review, type: project, requires: [writing-first-draft] }
+  - { id: writing-final-manuscript, title: Final Manuscript, type: boss, requires: [writing-editorial-review] }
+  - { id: writing-publication, title: Actual Publication, type: publication, requires: [writing-final-manuscript] }

@@ -1,0 +1,62 @@
+- id: research
+  title: Research
+  title_fr: Recherche
+  strategy: active
+  description: Reproduce, investigate, contribute, and submit work for external scrutiny.
+  description_fr: Reproduire, examiner, contribuer et soumettre des travaux à une évaluation externe.
+- id: actuarial
+  title: Actuarial
+  title_fr: Actuariat
+  strategy: active
+  description: Build verified technical competence along the CAS credential pathway.
+  description_fr: Développer des compétences techniques vérifiées dans le parcours CAS.
+- id: mathematics
+  title: Mathematics
+  title_fr: Mathématiques
+  strategy: dormant
+  description: Develop mathematical maturity through proof, exposition, and investigation.
+  description_fr: Développer la maturité mathématique par la preuve, l'exposition et l'investigation.
+- id: lean
+  title: Lean / Formalization
+  title_fr: Lean / Formalisation
+  strategy: dormant
+  description: Formalize mathematics that can be understood, explained, and maintained.
+  description_fr: Formaliser des mathématiques comprises, explicables et maintenables.
+- id: writing
+  title: Writing
+  title_fr: Écriture
+  strategy: dormant
+  description: Turn thinking into polished essays, technical work, research, and books.
+  description_fr: Transformer la réflexion en essais, travaux techniques, recherches et livres aboutis.
+- id: career
+  title: Career
+  title_fr: Carrière
+  strategy: maintenance
+  description: Grow responsibility, technical depth, communication, and useful impact.
+  description_fr: Développer la responsabilité, la profondeur technique, la communication et l'impact.
+- id: building
+  title: Building
+  title_fr: Création
+  strategy: dormant
+  description: Create useful, tested, documented software for real people.
+  description_fr: Créer des logiciels utiles, testés et documentés pour de vrais utilisateurs.
+- id: english
+  title: English
+  title_fr: Anglais
+  strategy: maintenance
+  description: Communicate clearly in daily, technical, and professional settings.
+  description_fr: Communiquer clairement dans la vie quotidienne et les contextes techniques et professionnels.
+- id: capital
+  title: Capital
+  title_fr: Capital
+  strategy: dormant
+  sensitive: true
+  description: Build a durable process and objectively defined investable capital.
+  description_fr: Construire un système durable et un capital investissable défini objectivement.
+- id: physical
+  title: Physical
+  title_fr: Physique
+  strategy: active
+  sensitive: true
+  description: Track private body-mass and user-defined physical-capacity milestones.
+  description_fr: Suivre en privé les étapes de poids et de capacité physique définies par l'utilisateur.

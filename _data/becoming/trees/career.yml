@@ -1,0 +1,12 @@
+tree: career
+nodes:
+  - { id: career-own-analysis, title: Own an Analysis, type: career_milestone, status: available }
+  - { id: career-explain-results, title: Explain Results Clearly, title_fr: Expliquer clairement les résultats, type: career_milestone, requires: [career-own-analysis] }
+  - { id: career-end-to-end, title: Own an End-to-End Project, type: career_milestone, requires: [career-explain-results] }
+  - { id: career-present, title: Present to Decision Makers, type: career_milestone, requires: [career-end-to-end] }
+  - { id: career-implemented, title: Recommendation Implemented, type: career_milestone, requires: [career-present] }
+  - { id: career-impact, title: Measure Business Impact, type: career_milestone, requires: [career-implemented] }
+  - { id: career-resource, title: Internal Subject-Matter Resource, type: mastery, requires: [career-impact] }
+  - { id: career-cross-functional, title: Lead Cross-Functional Work, type: career_milestone, requires: [career-resource] }
+  - { id: career-mentor, title: Mentor Another Analyst, type: career_milestone, requires: [career-resource] }
+  - { id: career-technical-leadership, title: Technical Leadership, type: boss, requires: [career-cross-functional, career-mentor] }

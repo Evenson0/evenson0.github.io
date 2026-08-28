@@ -1,0 +1,82 @@
+- id: molnar-iml-book
+  title: Interpretable Machine Learning
+  authors: [Christoph Molnar]
+  type: living_book
+  topic: interpretability
+  priority: essential
+  status: in_progress
+  source_url: https://christophm.github.io/interpretable-ml-book/
+  linked_nodes: [research-r0-foundations, research-interpretability-taxonomy, research-intrinsic-models, research-pdp-ice, research-shapley-shap, research-ale]
+  notes_path: null
+  source: { organization: Author-maintained web edition, checked_at: 2026-08-27, url: https://christophm.github.io/interpretable-ml-book/ }
+- id: molnar-history-challenges
+  title: "Interpretable Machine Learning — A Brief History, State-of-the-Art and Challenges"
+  authors: [Christoph Molnar, Giuseppe Casalicchio, Bernd Bischl]
+  year: 2020
+  type: conference_paper
+  topic: interpretability-survey
+  priority: high
+  status: planned
+  source_url: https://arxiv.org/abs/2010.09337
+  doi: 10.1007/978-3-030-65965-3_28
+  linked_nodes: [research-r0-foundations, research-evaluation-failure]
+  notes_path: null
+- id: ribeiro-lime
+  title: "Why Should I Trust You?: Explaining the Predictions of Any Classifier"
+  authors: [Marco Tulio Ribeiro, Sameer Singh, Carlos Guestrin]
+  year: 2016
+  type: conference_paper
+  topic: LIME
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1145/2939672.2939778
+  doi: 10.1145/2939672.2939778
+  linked_nodes: [research-lime]
+  notes_path: null
+- id: lundberg-lee-shap
+  title: A Unified Approach to Interpreting Model Predictions
+  authors: [Scott M. Lundberg, Su-In Lee]
+  year: 2017
+  type: conference_paper
+  topic: SHAP
+  priority: essential
+  status: planned
+  source_url: https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html
+  linked_nodes: [research-shapley-shap]
+  notes_path: null
+- id: apley-zhu-ale
+  title: Visualizing the Effects of Predictor Variables in Black Box Supervised Learning Models
+  authors: [Daniel W. Apley, Jingyu Zhu]
+  year: 2020
+  type: journal_paper
+  topic: ALE
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1111/rssb.12377
+  doi: 10.1111/rssb.12377
+  linked_nodes: [research-ale, research-correlated-features]
+  notes_path: null
+- id: rudin-black-box
+  title: Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead
+  authors: [Cynthia Rudin]
+  year: 2019
+  type: journal_paper
+  topic: interpretable-models
+  priority: essential
+  status: planned
+  source_url: https://doi.org/10.1038/s42256-019-0048-x
+  doi: 10.1038/s42256-019-0048-x
+  linked_nodes: [research-intrinsic-models, research-evaluation-failure]
+  notes_path: null
+- id: rudin-grand-challenges
+  title: Interpretable Machine Learning — Fundamental Principles and 10 Grand Challenges
+  authors: [Cynthia Rudin, Chaofan Chen, Zhi Chen, Haiyang Huang, Lesia Semenova, Chudi Zhong]
+  year: 2022
+  type: journal_survey
+  topic: interpretability-challenges
+  priority: high
+  status: planned
+  source_url: https://doi.org/10.1214/21-SS133
+  doi: 10.1214/21-SS133
+  linked_nodes: [research-evaluation-failure, research-r2-investigator]
+  notes_path: null

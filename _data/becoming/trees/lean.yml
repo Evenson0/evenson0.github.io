@@ -1,0 +1,26 @@
+tree: lean
+source:
+  organization: Lean community / mathlib
+  title: Contribution guidance
+  checked_at: 2026-08-27
+  url: https://leanprover-community.github.io/contribute/index.html
+nodes:
+  - { id: lean-fundamentals, title: Lean Fundamentals, title_fr: Fondations de Lean, type: foundation, status: dormant }
+  - { id: lean-theorem-proving, title: Theorem Proving in Lean, title_fr: Theorem Proving in Lean, type: course, requires: [lean-fundamentals] }
+  - { id: lean-mathematics-in-lean, title: Mathematics in Lean, title_fr: Mathematics in Lean, type: course, requires: [lean-theorem-proving] }
+  - { id: lean-proof-portfolio, title: Small Proof Portfolio, title_fr: Petit portfolio de preuves, type: project, requires: [lean-mathematics-in-lean] }
+  - { id: lean-50-exercises, title: 50 Understood Formalizations, title_fr: 50 formalisations comprises, type: project, requires: [lean-proof-portfolio], progress: { mode: count, current: 0, target: 50, unit: understood formalizations } }
+  - { id: lean-standalone-project, title: Nontrivial Standalone Formalization, title_fr: Formalisation autonome non triviale, type: project, requires: [lean-50-exercises], evidence_required: true }
+  - { id: lean-guidelines, title: Read Current mathlib Contribution Guidelines, title_fr: Lire les règles actuelles de contribution à mathlib, type: reading, requires: [lean-standalone-project] }
+  - { id: lean-contribution-discussion, title: Discuss a Contribution, title_fr: Discuter d'une contribution, type: contribution, requires: [lean-guidelines] }
+  - { id: lean-first-pr, title: First Pull Request, title_fr: Première pull request, type: contribution, requires: [lean-contribution-discussion] }
+  - id: lean-merged-contribution
+    title: First Merged Pull Request
+    title_fr: Première pull request fusionnée
+    type: contribution
+    requires: [lean-first-pr]
+    evidence_required: true
+    notes: The user must understand and explain the formalization. Follow current disclosure and LLM-generated labeling rules.
+  - { id: lean-multiple-contributions, title: Multiple Meaningful Contributions, title_fr: Plusieurs contributions significatives, type: contribution, requires: [lean-merged-contribution], evidence_required: true }
+  - { id: lean-own-mathematics, title: Formalize an Original Mathematical Result, title_fr: Formaliser un résultat mathématique personnel, type: boss, requires: [lean-multiple-contributions, mathematics-original-investigation], evidence_required: true }
+  - { id: lean-contributor, title: Lean Contributor, title_fr: Contributeur Lean, type: legendary, requires: [lean-own-mathematics], evidence_required: true }

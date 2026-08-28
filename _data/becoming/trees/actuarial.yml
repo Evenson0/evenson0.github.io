@@ -1,0 +1,86 @@
+tree: actuarial
+source:
+  organization: Casualty Actuarial Society / Society of Actuaries
+  title: 2026 credential requirements and exam schedule
+  checked_at: 2026-08-27
+  url: https://www.soa.org/education/exam-schedule/
+nodes:
+  - id: actuarial-fm-diagnostic
+    title: FM Diagnostic and Error Classification
+    title_fr: Diagnostic FM et classification des erreurs
+    type: assessment
+    status: in_progress
+    evidence_required: true
+    unlock_requirements: [Mixed diagnostic, Error categories, Three weakest syllabus areas, Private error log]
+  - id: actuarial-fm-foundations
+    title: FM Foundations and Calculator Workflow
+    title_fr: Fondations FM et utilisation de la calculatrice
+    type: foundation
+    requires: [actuarial-fm-diagnostic]
+    unlock_requirements: [Study routine, Formula workflow, Calculator setup and shortcuts]
+  - { id: actuarial-fm-interest, title: Interest Theory, title_fr: Théorie de l'intérêt, type: skill, requires: [actuarial-fm-foundations] }
+  - { id: actuarial-fm-annuities, title: Annuities, title_fr: Rentes, type: skill, requires: [actuarial-fm-interest] }
+  - { id: actuarial-fm-loans, title: Loans, title_fr: Emprunts, type: skill, requires: [actuarial-fm-annuities] }
+  - { id: actuarial-fm-bonds, title: Bonds, title_fr: Obligations, type: skill, requires: [actuarial-fm-loans] }
+  - { id: actuarial-fm-cashflows, title: General Cash Flows and Portfolios, title_fr: Flux monétaires et portefeuilles, type: skill, requires: [actuarial-fm-bonds] }
+  - { id: actuarial-fm-duration, title: Duration, Convexity, and Immunization, title_fr: Durée, convexité et immunisation, type: skill, requires: [actuarial-fm-cashflows] }
+  - id: actuarial-fm-mixed
+    title: Mixed FM Practice
+    title_fr: Pratique FM mixte
+    type: practice
+    requires: [actuarial-fm-duration]
+    unlock_requirements: [Cumulative mixed sets, Weak-area remediation, Calculator fluency]
+  - id: actuarial-fm-timed
+    title: Timed Exam Practice
+    title_fr: Pratique chronométrée
+    type: practice
+    requires: [actuarial-fm-mixed]
+    evidence_required: true
+    unlock_requirements: [Substantial timed simulations, Reviewed solutions, Timing strategy]
+  - id: actuarial-fm-error-log
+    title: Error Log Mastery
+    title_fr: Maîtrise du journal d'erreurs
+    type: mastery
+    requires: [actuarial-fm-timed]
+    unlock_requirements: [Recurring errors classified, Corrective action documented, Old errors revisited]
+  - id: actuarial-fm-attempt
+    title: FM Exam Attempt
+    title_fr: Tentative à l'examen FM
+    type: exam
+    status: available
+    requires: [actuarial-fm-error-log]
+    exam_window: { start: 2026-10-01, end: 2026-10-12 }
+    appointment_date: null
+    evidence_required: true
+    notes: Appointment date belongs in private.yml if desired. An attempt is not a pass.
+  - id: actuarial-fm
+    title: FM Passed
+    title_fr: FM réussi
+    short_title: FM
+    type: credential
+    requires: [actuarial-fm-attempt]
+    target_date: 2026-10
+    evidence_required: true
+    unlock_requirements: [Official passing-result evidence]
+  - { id: actuarial-exam-1, title: Exam 1 / Probability, short_title: P, type: exam }
+  - { id: actuarial-vee-economics, title: VEE Economics, title_fr: VEE Économie, type: credential }
+  - { id: actuarial-vee-accounting, title: VEE Accounting and Finance, title_fr: VEE Comptabilité et finance, type: credential }
+  - { id: actuarial-disc-da, title: DISC Data and Analytics, type: course }
+  - { id: actuarial-disc-rm, title: DISC Risk Management and Insurance Operations, type: course }
+  - { id: actuarial-disc-ia, title: DISC Insurance Accounting, Coverage, Law, and Regulation, type: course }
+  - { id: actuarial-mas-1, title: MAS-I, type: exam }
+  - { id: actuarial-mas-2, title: MAS-II, type: exam }
+  - { id: actuarial-exam-5, title: Exam 5, type: exam }
+  - { id: actuarial-pcpa-exam, title: PCPA Exam, type: exam }
+  - { id: actuarial-pcpa-project, title: PCPA Project, type: project, requires: [actuarial-pcpa-exam] }
+  - { id: actuarial-exam-6, title: Exam 6 — Applicable Jurisdiction, title_fr: Examen 6 — Juridiction applicable, type: exam }
+  - { id: actuarial-cop, title: Course on Professionalism, title_fr: Cours sur le professionnalisme, short_title: COP, type: course }
+  - id: actuarial-acas
+    title: ACAS
+    type: boss
+    requires: [actuarial-exam-1, actuarial-fm, actuarial-vee-economics, actuarial-vee-accounting, actuarial-disc-da, actuarial-disc-rm, actuarial-disc-ia, actuarial-mas-1, actuarial-mas-2, actuarial-exam-5, actuarial-pcpa-exam, actuarial-pcpa-project, actuarial-exam-6, actuarial-cop]
+    evidence_required: true
+    notes: Verify individual transition and waiver rules before completion.
+  - { id: actuarial-exam-7, title: Exam 7, type: exam }
+  - { id: actuarial-exam-8, title: Exam 8, type: exam }
+  - { id: actuarial-exam-9, title: Exam 9, type: exam }

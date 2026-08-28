@@ -1,0 +1,17 @@
+tree: building
+nodes:
+  - id: building-prototype
+    title: Working Prototype
+    type: software
+    status: available
+    evidence:
+      - { type: project, title: Financial Math Calculator, url: /tools/financial-math-calculator/, visibility: public }
+  - { id: building-tests, title: Tests, type: software, requires: [building-prototype] }
+  - { id: building-documentation, title: Documentation, type: software, requires: [building-tests] }
+  - { id: building-public-release, title: Public Release, type: software, requires: [building-documentation] }
+  - { id: building-real-user, title: Real User, type: evidence, requires: [building-public-release] }
+  - { id: building-feedback, title: External Issue / Feedback, type: evidence, requires: [building-real-user] }
+  - { id: building-issue-resolved, title: First External Issue Resolved, title_fr: Premier problème externe résolu, type: evidence, requires: [building-feedback] }
+  - { id: building-maintenance, title: First Maintained Tool, title_fr: Premier outil maintenu, type: maintenance, requires: [building-issue-resolved] }
+  - { id: building-multiple-tools, title: Multiple Useful Tools, type: mastery, requires: [building-maintenance] }
+  - { id: building-open-source, title: Open-Source Builder, type: boss, requires: [building-multiple-tools] }
