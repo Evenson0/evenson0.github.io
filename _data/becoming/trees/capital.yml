@@ -1,17 +1,433 @@
 tree: capital
+
+title: Capital
+title_fr: Capital
+
 private_by_default: true
+
+philosophy:
+  - "Capital accumulation and investment skill are not the same thing."
+  - "Portfolio growth is not automatically evidence of investing ability."
+  - "The system should reward consistency, resilience, and disciplined decision-making rather than risk taking."
+  - "Exact balances, contributions, returns, liabilities, and account details remain private."
+  - "All capital milestones should use one explicitly defined base currency."
+
+notes: >
+  Personal financial progress tracking only. This roadmap does not provide
+  individualized investment, tax, or legal advice. Exact financial values
+  belong in private.yml.
+
+
 nodes:
-  - { id: capital-policy, title: Investment Policy Written, type: financial_milestone, status: available }
-  - { id: capital-liquidity-policy, title: Emergency and Liquidity Policy, title_fr: Politique d'urgence et de liquidité, type: financial_milestone, status: available }
-  - { id: capital-contribution-system, title: Contribution System, type: financial_milestone, requires: [capital-policy] }
-  - { id: capital-risk-framework, title: Risk Framework, type: financial_milestone, requires: [capital-policy] }
-  - { id: capital-records, title: Long-Term Record Keeping, type: financial_milestone, requires: [capital-contribution-system] }
-  - { id: capital-review, title: Periodic Portfolio Review, type: maintenance, requires: [capital-risk-framework, capital-records, capital-liquidity-policy] }
-  - { id: capital-10k, title: $10k Investable Assets, type: financial_milestone, private: true }
-  - { id: capital-25k, title: $25k Investable Assets, type: financial_milestone, private: true, requires: [capital-10k] }
-  - { id: capital-50k, title: $50k Investable Assets, type: financial_milestone, private: true, requires: [capital-25k] }
-  - { id: capital-100k, title: $100k Investable Assets, type: financial_milestone, private: true, requires: [capital-50k] }
-  - { id: capital-250k, title: $250k Investable Assets, type: financial_milestone, private: true, requires: [capital-100k] }
-  - { id: capital-500k, title: $500k Investable Assets, type: financial_milestone, private: true, requires: [capital-250k] }
-  - { id: capital-750k, title: $750k Investable Assets, type: financial_milestone, private: true, requires: [capital-500k] }
-  - { id: capital-1000k, title: $1M Investable Assets, type: boss, private: true, requires: [capital-750k, capital-review] }
+
+  # ============================================================
+  # FOUNDATION — FINANCIAL SYSTEM
+  # ============================================================
+
+  - id: capital-system
+    title: Personal Capital System
+    title_fr: Système personnel de capital
+    type: foundation
+    status: available
+    description: >
+      Build a coherent long-term system for liquidity, saving, investing,
+      risk management, record keeping, and periodic review.
+    description_fr: >
+      Construire un système cohérent à long terme pour la liquidité,
+      l'épargne, l'investissement, la gestion des risques, le suivi
+      et les révisions périodiques.
+
+  - id: capital-policy
+    title: Investment Policy Statement
+    title_fr: Politique d'investissement
+    type: financial_milestone
+    status: available
+    requires:
+      - capital-system
+    description: >
+      Write a concise personal investment policy describing objectives,
+      horizon, acceptable risks, asset-allocation principles, rebalancing
+      rules, and situations in which the strategy may legitimately change.
+    description_fr: >
+      Rédiger une politique d'investissement personnelle concise décrivant
+      les objectifs, l'horizon, les risques acceptables, les principes
+      d'allocation, les règles de rééquilibrage et les circonstances
+      pouvant justifier un changement de stratégie.
+    unlock_requirements:
+      - Long-term objectives defined
+      - Time horizon defined
+      - Risk principles defined
+      - Asset-allocation philosophy documented
+      - Rebalancing rule documented
+      - Strategy-change conditions documented
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-base-currency
+    title: Define the Capital Measurement Standard
+    title_fr: Définir la norme de mesure du capital
+    type: financial_milestone
+    status: available
+    requires:
+      - capital-system
+    description: >
+      Define exactly what counts toward capital milestones and the base
+      currency used to measure them.
+    description_fr: >
+      Définir exactement ce qui compte dans les objectifs de capital
+      et la devise de référence utilisée pour les mesurer.
+    unlock_requirements:
+      - Base currency defined
+      - Investable assets definition documented
+      - Treatment of cash documented
+      - Treatment of retirement accounts documented
+      - Treatment of liabilities documented
+      - Treatment of home equity and other illiquid assets documented
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # FINANCIAL RESILIENCE
+  # ============================================================
+
+  - id: capital-liquidity-policy
+    title: Emergency and Liquidity Policy
+    title_fr: Politique d'urgence et de liquidité
+    type: financial_milestone
+    status: available
+    requires:
+      - capital-system
+    description: >
+      Define how much liquidity should remain outside long-term investments
+      and what situations justify using it.
+    description_fr: >
+      Définir le niveau de liquidité à conserver hors des investissements
+      à long terme et les situations qui justifient son utilisation.
+    unlock_requirements:
+      - Liquidity objective defined
+      - Emergency-use criteria defined
+      - Replenishment rule defined
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-liability-policy
+    title: Liability Policy
+    title_fr: Politique de gestion des dettes
+    type: financial_milestone
+    status: available
+    requires:
+      - capital-system
+    description: >
+      Define how liabilities interact with saving and investing decisions
+      instead of evaluating assets in isolation.
+    description_fr: >
+      Définir comment les dettes interagissent avec les décisions d'épargne
+      et d'investissement plutôt que d'évaluer les actifs isolément.
+    unlock_requirements:
+      - Liabilities inventoried privately
+      - Priority rules documented
+      - High-cost debt treatment defined
+      - Borrowing principles documented
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-resilience
+    title: Financial Resilience
+    title_fr: Résilience financière
+    type: mastery
+    requires:
+      - capital-liquidity-policy
+      - capital-liability-policy
+    description: >
+      Establish enough financial resilience that long-term investment
+      decisions are not constantly disrupted by short-term liquidity needs.
+    description_fr: >
+      Établir une résilience financière suffisante pour que les décisions
+      d'investissement à long terme ne soient pas constamment perturbées
+      par des besoins de liquidité à court terme.
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # CONTRIBUTION AND INVESTMENT PROCESS
+  # ============================================================
+
+  - id: capital-contribution-system
+    title: Automated Contribution System
+    title_fr: Système automatisé de contributions
+    type: financial_milestone
+    requires:
+      - capital-policy
+      - capital-liquidity-policy
+    description: >
+      Establish a repeatable contribution process that does not depend
+      on predicting short-term market movements.
+    description_fr: >
+      Établir un processus de contribution répétable qui ne dépend pas
+      de la prévision des mouvements de marché à court terme.
+    unlock_requirements:
+      - Contribution rule defined
+      - Contribution frequency defined
+      - Automation used where practical
+      - Contribution history tracked
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-account-strategy
+    title: Account and Tax Structure
+    title_fr: Structure des comptes et fiscalité
+    type: financial_milestone
+    requires:
+      - capital-policy
+    description: >
+      Define a coherent account-location strategy appropriate to the
+      user's jurisdiction and circumstances.
+    description_fr: >
+      Définir une stratégie cohérente de localisation des actifs entre
+      les comptes selon la juridiction et la situation de l'utilisateur.
+    unlock_requirements:
+      - Relevant account types identified
+      - Contribution limits tracked where relevant
+      - Asset-location principles documented
+    evidence_required: true
+    evidence_visibility: private
+    notes: >
+      Specific tax treatment must be verified under the rules applicable
+      at the time.
+
+  - id: capital-risk-framework
+    title: Investment Risk Framework
+    title_fr: Cadre de gestion du risque d'investissement
+    type: financial_milestone
+    requires:
+      - capital-policy
+    description: >
+      Define portfolio-level risk rules before individual investment
+      decisions are made.
+    description_fr: >
+      Définir les règles de risque au niveau du portefeuille avant
+      de prendre des décisions sur des investissements individuels.
+    unlock_requirements:
+      - Concentration limits considered
+      - Leverage rule documented
+      - Liquidity risk considered
+      - Drawdown tolerance considered
+      - Speculative capital rule defined if applicable
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-records
+    title: Long-Term Investment Record
+    title_fr: Historique d'investissement à long terme
+    type: financial_milestone
+    requires:
+      - capital-contribution-system
+      - capital-base-currency
+    description: >
+      Maintain enough information to distinguish contributions,
+      withdrawals, market performance, and investment decisions.
+    description_fr: >
+      Maintenir suffisamment d'information pour distinguer les contributions,
+      retraits, performances de marché et décisions d'investissement.
+    unlock_requirements:
+      - Contributions tracked
+      - Withdrawals tracked
+      - Portfolio value tracked
+      - Major decisions recorded
+      - Appropriate performance measure selected
+      - Benchmark defined where relevant
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-review
+    title: Periodic Capital Review
+    title_fr: Revue périodique du capital
+    type: maintenance
+    requires:
+      - capital-policy
+      - capital-risk-framework
+      - capital-records
+      - capital-resilience
+    description: >
+      Review the financial system periodically without reacting to every
+      short-term market move.
+    description_fr: >
+      Réviser périodiquement le système financier sans réagir à chaque
+      mouvement de marché à court terme.
+    unlock_requirements:
+      - Contributions reviewed
+      - Asset allocation reviewed
+      - Risk rules checked
+      - Liquidity checked
+      - Significant strategy changes documented
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # CAPITAL ACCUMULATION
+  # ============================================================
+
+  - id: capital-10k
+    title: $10k Investable Assets
+    title_fr: 10 k$ d'actifs investissables
+    type: financial_milestone
+    requires:
+      - capital-base-currency
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-25k
+    title: $25k Investable Assets
+    title_fr: 25 k$ d'actifs investissables
+    type: financial_milestone
+    requires:
+      - capital-10k
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-50k
+    title: $50k Investable Assets
+    title_fr: 50 k$ d'actifs investissables
+    type: financial_milestone
+    requires:
+      - capital-25k
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-100k
+    title: $100k Investable Assets
+    title_fr: 100 k$ d'actifs investissables
+    type: boss
+    requires:
+      - capital-50k
+    description: >
+      First six-figure investable-capital milestone.
+    description_fr: >
+      Premier objectif à six chiffres d'actifs investissables.
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-250k
+    title: $250k Investable Assets
+    title_fr: 250 k$ d'actifs investissables
+    type: financial_milestone
+    requires:
+      - capital-100k
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-500k
+    title: $500k Investable Assets
+    title_fr: 500 k$ d'actifs investissables
+    type: boss
+    requires:
+      - capital-250k
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-750k
+    title: $750k Investable Assets
+    title_fr: 750 k$ d'actifs investissables
+    type: financial_milestone
+    requires:
+      - capital-500k
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-1000k
+    title: $1M Investable Assets
+    title_fr: 1 M$ d'actifs investissables
+    short_title: $1M
+    type: legendary
+    requires:
+      - capital-750k
+      - capital-review
+      - capital-resilience
+    description: >
+      Reach one million in investable assets under the capital definition
+      established by the Becoming system.
+    description_fr: >
+      Atteindre un million d'actifs investissables selon la définition
+      du capital établie dans Becoming.
+    unlock_requirements:
+      - $1M investable-assets threshold verified
+      - Capital definition applied consistently
+      - Financial-resilience framework maintained
+      - Long-term investment process established
+    evidence_required: true
+    evidence_visibility: private
+
+
+  # ============================================================
+  # INVESTMENT SKILL — SEPARATE FROM WEALTH
+  # ============================================================
+
+  - id: capital-investment-journal
+    title: Investment Decision Journal
+    title_fr: Journal des décisions d'investissement
+    type: skill
+    status: available
+    requires:
+      - capital-policy
+    description: >
+      Record important investment decisions before outcomes are known,
+      allowing later evaluation without hindsight bias.
+    description_fr: >
+      Consigner les décisions d'investissement importantes avant que
+      leurs résultats soient connus afin de pouvoir les évaluer sans
+      biais rétrospectif.
+    unlock_requirements:
+      - Thesis recorded before decision
+      - Expected risks recorded
+      - Disconfirming evidence identified
+      - Exit or review conditions defined
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-performance-measurement
+    title: Measure Investment Performance Correctly
+    title_fr: Mesurer correctement la performance d'investissement
+    type: skill
+    requires:
+      - capital-records
+    description: >
+      Distinguish portfolio performance from the effect of deposits and
+      withdrawals and compare results with an appropriate benchmark.
+    description_fr: >
+      Distinguer la performance du portefeuille de l'effet des dépôts
+      et retraits et comparer les résultats à un indice de référence approprié.
+    unlock_requirements:
+      - Understand money-weighted return
+      - Understand time-weighted return
+      - Benchmark selected where appropriate
+      - Contributions separated from investment return
+    evidence_required: true
+    evidence_visibility: private
+
+  - id: capital-investment-process
+    title: Disciplined Investment Process
+    title_fr: Processus d'investissement discipliné
+    type: mastery
+    requires:
+      - capital-investment-journal
+      - capital-performance-measurement
+      - capital-risk-framework
+      - capital-review
+    description: >
+      Demonstrate a repeatable investment process that can be evaluated
+      independently of whether recent markets happened to rise or fall.
+    description_fr: >
+      Démontrer un processus d'investissement répétable pouvant être évalué
+      indépendamment du fait que les marchés récents aient monté ou baissé.
+    unlock_requirements:
+      - Decisions documented prospectively
+      - Risk framework followed
+      - Performance measured appropriately
+      - Benchmark comparisons performed
+      - Mistakes reviewed
+      - Strategy changes justified rather than reactive
+    evidence_required: true
+    evidence_visibility: private
