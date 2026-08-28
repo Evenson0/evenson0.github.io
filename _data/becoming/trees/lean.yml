@@ -3,7 +3,7 @@ tree: lean
 title: Lean
 title_fr: Lean / Formalisation
 
-state: dormant
+state: maintenance
 
 source:
   organization: Lean community / mathlib
@@ -12,53 +12,37 @@ source:
   url: https://leanprover-community.github.io/contribute/index.html
 
 philosophy:
-  - "Lean proficiency, mathematical formalization, and mathlib contribution are related but distinct capabilities."
-  - "A contribution is meaningful only if the contributor understands and can defend the formalization."
-  - "Formalizing original mathematics is an advanced objective, not a prerequisite for becoming a contributor."
-  - "The purpose is to learn formal mathematics deeply, not to maximize pull-request counts."
-  - "AI assistance must follow the current rules of the Lean and mathlib communities."
+  - Lean proficiency, mathematical formalization, and mathlib contribution are related but distinct capabilities.
+  - A small understood formalization each week is more useful than large copied proofs.
+  - Formalizing original mathematics is an advanced objective, not a prerequisite for becoming a contributor.
+  - The goal is to understand formal mathematics deeply, not maximize pull-request counts.
+  - AI assistance must follow current Lean and mathlib community rules.
 
 nodes:
-
-  # ============================================================
-  # LEAN FOUNDATIONS
-  # ============================================================
 
   - id: lean-fundamentals
     title: Lean Fundamentals
     title_fr: Fondations de Lean
     type: foundation
-    status: dormant
+    status: in_progress
     description: >
-      Learn the core language concepts needed to read, write, and
-      understand elementary Lean proofs.
-    description_fr: >
-      Apprendre les concepts fondamentaux du langage nécessaires pour
-      lire, écrire et comprendre des preuves élémentaires en Lean.
+      Learn enough Lean 4 to write elementary theorem statements,
+      construct basic proofs, understand goals, and read common errors.
     unlock_requirements:
-      - Install and use a current Lean 4 environment
-      - Understand expressions and types
-      - Understand propositions as types
-      - Write elementary theorem statements
-      - Use basic tactics
-      - Read Lean error messages
-    evidence_required: true
+      - Working Lean 4 environment
+      - Expressions and types
+      - Propositions as types
+      - Elementary theorem statements
+      - Basic tactic use
+      - Basic error reading
 
   - id: lean-theorem-proving
-    title: Theorem Proving in Lean
-    title_fr: Théorèmes et preuves en Lean
+    title: Theorem Proving Basics
+    title_fr: Bases de la démonstration en Lean
     type: learning_path
-    status: dormant
+    status: available
     requires:
       - lean-fundamentals
-    description: >
-      Work through the core concepts of theorem proving in Lean 4,
-      including propositions, dependent type theory, tactics, induction,
-      structures, and type classes.
-    description_fr: >
-      Étudier les concepts fondamentaux de la démonstration en Lean 4,
-      notamment les propositions, la théorie dépendante des types,
-      les tactiques, l'induction, les structures et les classes de types.
     source:
       organization: Lean
       title: Theorem Proving in Lean 4
@@ -67,117 +51,70 @@ nodes:
     unlock_requirements:
       - Propositions and proofs
       - Quantifiers and equality
-      - Basic and intermediate tactics
-      - Induction and recursion
-      - Structures
-      - Type classes
-      - Exercises completed with understanding
-    evidence_required: true
+      - Basic tactics
+      - Interacting with Lean
+      - Several independently understood proofs
 
   - id: lean-mathematics-in-lean
     title: Mathematics in Lean
     title_fr: Mathematics in Lean
     type: learning_path
-    status: dormant
     requires:
-      - lean-fundamentals
-    description: >
-      Learn how conventional mathematical reasoning and common
-      mathematical structures are represented using Lean and mathlib.
-    description_fr: >
-      Apprendre comment le raisonnement mathématique classique et les
-      structures mathématiques usuelles sont représentés dans Lean et mathlib.
+      - lean-theorem-proving
     source:
       organization: Lean community
       title: Mathematics in Lean
       checked_at: 2026-08-28
       url: https://leanprover-community.github.io/mathematics_in_lean/
     unlock_requirements:
-      - Basic calculation and rewriting
+      - Calculations and rewriting
       - Logic
       - Sets and functions
       - Elementary algebraic structures
-      - Basic mathematical proofs in mathlib
       - Exercises completed with understanding
-    evidence_required: true
-
-
-  # ============================================================
-  # PRACTICAL LEAN FLUENCY
-  # ============================================================
 
   - id: lean-library-navigation
     title: Navigate mathlib
     title_fr: Naviguer dans mathlib
     type: skill
-    status: dormant
     requires:
       - lean-mathematics-in-lean
-    description: >
-      Learn to find existing definitions, lemmas, namespaces,
-      imports, examples, and relevant API rather than proving
-      everything from scratch.
-    description_fr: >
-      Apprendre à trouver les définitions, lemmes, espaces de noms,
-      imports, exemples et API pertinents plutôt que de tout
-      redémontrer depuis zéro.
     unlock_requirements:
       - Find existing definitions
-      - Search for useful lemmas
+      - Search useful lemmas
       - Understand imports
       - Read theorem signatures
-      - Use library documentation
       - Recognize when a result already exists
-    evidence_required: true
 
   - id: lean-debugging
     title: Lean Debugging and Proof Repair
     title_fr: Débogage et réparation de preuves Lean
     type: skill
-    status: dormant
     requires:
       - lean-theorem-proving
-    description: >
-      Diagnose failed elaboration, tactic failures, type mismatches,
-      coercion issues, and broken proofs.
-    description_fr: >
-      Diagnostiquer les échecs d'élaboration, les tactiques qui échouent,
-      les incompatibilités de types, les problèmes de coercition
-      et les preuves cassées.
     unlock_requirements:
       - Interpret common errors
       - Repair broken proofs
+      - Inspect goals and context
       - Simplify unnecessary tactic chains
-      - Inspect goals and local context
-      - Explain why the corrected proof works
-    evidence_required: true
 
   - id: lean-proof-portfolio
     title: Lean Proof Portfolio
     title_fr: Portfolio de preuves Lean
     type: project
-    status: dormant
     requires:
       - lean-theorem-proving
       - lean-mathematics-in-lean
-    description: >
-      Build a small collection of independently understood formal proofs
-      across several mathematical topics.
-    description_fr: >
-      Construire une petite collection de preuves formelles comprises
-      de manière autonome dans plusieurs domaines mathématiques.
     unlock_requirements:
-      - Multiple proof styles represented
+      - Multiple proof styles
       - At least three mathematical topics
-      - Every proof explainable line by line
-      - Proofs revised when better abstractions are discovered
-    evidence_required: true
+      - Every proof explainable
+      - Proofs revised when better abstractions are learned
 
   - id: lean-50-exercises
     title: 50 Understood Formalizations
     title_fr: 50 formalisations comprises
     type: project
-    status: dormant
     requires:
       - lean-proof-portfolio
     progress:
@@ -185,218 +122,85 @@ nodes:
       current: 0
       target: 50
       unit: understood formalizations
-    description: >
-      Complete fifty formalizations that are genuinely understood.
-      The count is a practice-volume milestone, not proof of mastery.
-    description_fr: >
-      Compléter cinquante formalisations réellement comprises.
-      Ce nombre mesure le volume de pratique et non une maîtrise à lui seul.
-    unlock_requirements:
-      - 50 completed formalizations
-      - Each can be explained without relying on generated commentary
-      - Include increasing difficulty
-      - Include theorem statements, not only tactic drills
-    evidence_required: true
-
-
-  # ============================================================
-  # INDEPENDENT FORMALIZATION
-  # ============================================================
 
   - id: lean-standalone-project
     title: Nontrivial Standalone Formalization
     title_fr: Formalisation autonome non triviale
     type: boss
-    status: dormant
     requires:
       - lean-50-exercises
       - lean-library-navigation
       - lean-debugging
-    description: >
-      Formalize a coherent mathematical topic or theorem sequence in
-      a standalone Lean project using mathlib as a dependency.
-    description_fr: >
-      Formaliser un sujet mathématique cohérent ou une suite de théorèmes
-      dans un projet Lean autonome utilisant mathlib comme dépendance.
-    unlock_requirements:
-      - Clear mathematical scope
-      - Appropriate use of existing mathlib
-      - Multiple related definitions or lemmas
-      - Clean project structure
-      - Documentation
-      - No unexplained proof fragments
-      - Public repository when appropriate
-    evidence_required: true
-
-  - id: lean-own-mathematics
-    title: Formalize Your Own Mathematical Work
-    title_fr: Formaliser un travail mathématique personnel
-    type: advanced_project
-    status: dormant
-    requires:
-      - lean-standalone-project
-      - mathematics-original-investigation
-    description: >
-      Formalize a theorem, construction, counterexample, or substantial
-      part of an independently developed mathematical investigation.
-    description_fr: >
-      Formaliser un théorème, une construction, un contre-exemple ou
-      une partie substantielle d'une investigation mathématique personnelle.
-    unlock_requirements:
-      - Mathematical result understood independently
-      - Formal statement justified
-      - Supporting lemmas organized coherently
-      - Formalization explained mathematically and technically
-    evidence_required: true
-
-
-  # ============================================================
-  # MATHLIB CONTRIBUTION PREPARATION
-  # ============================================================
 
   - id: lean-guidelines
     title: Understand Current mathlib Contribution Guidelines
     title_fr: Comprendre les règles actuelles de contribution à mathlib
     type: reading
-    status: dormant
+    status: available
     requires:
-      - lean-proof-portfolio
-    description: >
-      Read and understand the current contribution, style, naming,
-      documentation, review, and AI-use expectations before opening a PR.
-    description_fr: >
-      Lire et comprendre les règles actuelles de contribution, style,
-      nommage, documentation, revue et utilisation de l'IA avant
-      d'ouvrir une pull request.
+      - lean-fundamentals
     source:
       organization: Lean community / mathlib
       checked_at: 2026-08-28
       url: https://leanprover-community.github.io/contribute/index.html
     unlock_requirements:
-      - Contribution scope understood
-      - Style guide reviewed
-      - Naming guidance reviewed
-      - Documentation expectations reviewed
-      - PR workflow understood
+      - Contribution workflow understood
+      - Style and naming guidance reviewed
+      - Zulip workflow understood
       - Current AI policy understood
-    evidence_required: true
 
   - id: lean-community-engagement
     title: Engage with the Lean Community
     title_fr: Participer à la communauté Lean
     type: contribution
-    status: dormant
     requires:
       - lean-guidelines
-    description: >
-      Learn how technical discussion, review, and contribution planning
-      occur in the Lean community before treating GitHub PRs as isolated tasks.
-    description_fr: >
-      Comprendre comment se déroulent les discussions techniques,
-      revues et préparations de contributions dans la communauté Lean
-      avant de considérer les PR GitHub comme des tâches isolées.
     unlock_requirements:
-      - Join or meaningfully use Lean Zulip
-      - Read relevant mathlib discussions
-      - Ask or answer a technical question in own words when appropriate
+      - Read relevant Zulip discussions
       - Understand how potential contributions are discussed
-    evidence_required: true
+      - Ask or answer a technical question in own words when appropriate
 
   - id: lean-contribution-discussion
     title: Discuss a Concrete Contribution
     title_fr: Discuter d'une contribution concrète
     type: contribution
-    status: dormant
     requires:
-      - lean-community-engagement
+      - lean-guidelines
       - lean-library-navigation
-    description: >
-      Identify a concrete contribution and discuss its scope or design
-      with appropriate community members before implementation when useful.
-    description_fr: >
-      Identifier une contribution concrète et discuter de sa portée ou
-      conception avec les membres appropriés de la communauté avant
-      son implémentation lorsque cela est utile.
-    evidence_required: true
-
-
-  # ============================================================
-  # CONTRIBUTION PATH
-  # ============================================================
 
   - id: lean-first-small-contribution
     title: First Small mathlib Contribution
     title_fr: Première petite contribution à mathlib
     type: contribution
-    status: dormant
     requires:
       - lean-guidelines
       - lean-library-navigation
-    description: >
-      Prepare a small useful contribution such as a documentation fix,
-      minor cleanup explicitly welcomed by the project, or a small lemma
-      in an existing theory.
-    description_fr: >
-      Préparer une petite contribution utile, par exemple une correction
-      documentaire, une petite amélioration explicitement souhaitée
-      par le projet ou un lemme dans une théorie existante.
-    evidence_required: true
 
   - id: lean-first-pr
     title: First mathlib Pull Request
     title_fr: Première pull request mathlib
     type: contribution
-    status: dormant
     requires:
       - lean-first-small-contribution
-    unlock_requirements:
-      - Contribution is understood
-      - Local checks pass
-      - PR follows current mathlib conventions
-      - PR description written in the user's own words
-      - AI use disclosed if applicable
-    evidence_required: true
 
   - id: lean-review-cycle
     title: Complete a mathlib Review Cycle
     title_fr: Compléter un cycle de revue mathlib
     type: contribution
-    status: dormant
     requires:
       - lean-first-pr
-    description: >
-      Respond constructively to technical review, revise the formalization,
-      and understand why requested changes improve the contribution.
-    description_fr: >
-      Répondre constructivement à la revue technique, réviser la formalisation
-      et comprendre pourquoi les changements demandés améliorent la contribution.
-    unlock_requirements:
-      - Reviewer comments understood
-      - Revisions made by the user
-      - Design decisions explainable
-      - CI issues resolved where applicable
-      - Review discussion handled without AI-generated comments
-    evidence_required: true
 
   - id: lean-merged-contribution
     title: First Merged mathlib Pull Request
     title_fr: Première pull request mathlib fusionnée
     type: boss
-    status: dormant
     requires:
       - lean-review-cycle
-    evidence_required: true
-    notes: >
-      The user must understand and be able to justify the formalization.
-      Current mathlib policy requires disclosure of AI assistance in the
-      PR description when AI is used. GitHub or Zulip comments must not
-      be generated by an LLM.
 
   - id: lean-multiple-contributions
     title: Multiple Meaningful mathlib Contributions
     title_fr: Plusieurs contributions significatives à mathlib
     type: mastery
-    status: dormant
     requires:
       - lean-merged-contribution
     progress:
@@ -404,75 +208,33 @@ nodes:
       current: 0
       target: 5
       unit: meaningful merged contributions
-    description: >
-      Demonstrate that the first contribution was not a one-off by
-      successfully contributing several useful changes while learning
-      from review.
-    description_fr: >
-      Démontrer que la première contribution n'était pas isolée en
-      apportant plusieurs changements utiles et en progressant grâce
-      aux revues.
-    unlock_requirements:
-      - At least five meaningful merged contributions
-      - More than one type of contribution where feasible
-      - Evidence of improved code and review quality
-      - Contributions independently understood
-    evidence_required: true
 
   - id: lean-review-others
     title: Review Lean Contributions
     title_fr: Réviser des contributions Lean
     type: contribution
-    status: dormant
     requires:
       - lean-multiple-contributions
-    description: >
-      Begin contributing not only code but also useful technical review,
-      where the user's knowledge is sufficient.
-    description_fr: >
-      Commencer à contribuer non seulement par du code mais également
-      par des revues techniques utiles lorsque les connaissances sont suffisantes.
-    evidence_required: true
-
-
-  # ============================================================
-  # MASTERY / LEGENDARY
-  # ============================================================
 
   - id: lean-contributor
     title: Lean / mathlib Contributor
     title_fr: Contributeur Lean / mathlib
     type: legendary
-    status: dormant
     requires:
       - lean-multiple-contributions
-    description: >
-      Demonstrate sustained, independently understood contribution to
-      the Lean mathematical ecosystem.
-    description_fr: >
-      Démontrer une contribution durable et comprise de manière autonome
-      à l'écosystème mathématique Lean.
-    unlock_requirements:
-      - Multiple meaningful merged contributions
-      - Community contribution workflow understood
-      - Review feedback incorporated successfully
-      - Formalizations independently understood
-      - Current contribution and AI policies followed
-    evidence_required: true
+
+  - id: lean-own-mathematics
+    title: Formalize Your Own Mathematical Work
+    title_fr: Formaliser un travail mathématique personnel
+    type: advanced_project
+    requires:
+      - lean-standalone-project
+      - mathematics-original-investigation
 
   - id: lean-research-formalizer
     title: Formalize Original Mathematical Research
     title_fr: Formaliser une recherche mathématique originale
     type: legendary
-    status: dormant
     requires:
       - lean-contributor
       - lean-own-mathematics
-    description: >
-      Combine mathematical research ability and mature Lean formalization
-      by formally verifying a substantial part of original mathematical work.
-    description_fr: >
-      Combiner capacité de recherche mathématique et maîtrise de Lean en
-      vérifiant formellement une partie substantielle d'un travail
-      mathématique original.
-    evidence_required: true
