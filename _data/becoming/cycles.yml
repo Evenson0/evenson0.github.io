@@ -1,19 +1,42 @@
 current_cycle: foundations-01
+
 cycles:
   - id: foundations-01
     title: Foundations
     title_fr: Fondations
     cycle_number: 1
+
     start_date: 2026-08-30
     end_date: 2026-11-21
-    status: active
-    active_domains: [actuarial, research, physical]
-    maintenance_domains: [english, career, capital]
-    dormant_domains: [mathematics, lean, writing, building]
-    objectives:
-      - Sit FM prepared during the official October 2026 examination window.
-      - Complete rigorous foundations in model interpretability.
-      - Maintain practical English progression.
-      - Maintain the private physical process.
-    review_path: _becoming/reviews/cycle-foundations-01.md
 
+    status: active
+
+    active_domains:
+      - actuarial
+      - research
+      - physical
+
+    maintenance_domains:
+      - english
+      - career
+      - capital
+
+    dormant_domains:
+      - mathematics
+      - lean
+      - writing
+      - building
+
+    objectives:
+      - Prepare seriously for FM and sit the October 2026 examination.
+      - Build strong foundations in model interpretability through reading, reproduction, comparison, and synthesis.
+      - Maintain regular English practice without making it a primary cycle workload.
+      - Establish a consistent physical routine across the full twelve-week cycle.
+
+    objectives_fr:
+      - Se préparer sérieusement à FM et passer l'examen d'octobre 2026.
+      - Construire des fondations solides en interprétabilité des modèles par la lecture, la reproduction, la comparaison et la synthèse.
+      - Maintenir une pratique régulière de l'anglais sans en faire une charge principale du cycle.
+      - Établir une routine physique régulière pendant l'ensemble des douze semaines.
+
+    review_path: _becoming/reviews/cycle-foundations-01.md
