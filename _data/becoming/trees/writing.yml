@@ -3,47 +3,63 @@ tree: writing
 title: Writing
 title_fr: Écriture
 
-state: dormant
+state: maintenance
 
 philosophy:
-  - "Writing quality matters more than raw publication count."
-  - "Original essays, technical exposition, research writing, and books are related but distinct forms."
-  - "Translations, transcriptions, reading notes, and republished texts do not count as authored essays."
-  - "A draft is not a publication."
-  - "A completed manuscript and a published book are distinct achievements."
-  - "The objective is to develop a recognizable body of original work, not to optimize output volume."
+  - Writing quality matters more than raw publication count.
+  - Serious reading is part of learning to write.
+  - Original essays, literary writing, technical exposition, research writing, and books are distinct forms.
+  - Translations, transcriptions, summaries, and republished texts do not count as original essays.
+  - A draft is not a publication.
+  - A completed manuscript and a published book are distinct achievements.
 
 nodes:
-
-  # ============================================================
-  # WRITING CRAFT
-  # ============================================================
 
   - id: writing-craft
     title: Writing Craft
     title_fr: Pratique de l'écriture
     type: foundation
-    status: dormant
+    status: in_progress
     description: >
       Develop the ability to formulate an idea, structure an argument,
-      write clearly, revise aggressively, and produce finished original work.
-    description_fr: >
-      Développer la capacité à formuler une idée, structurer un argument,
-      écrire clairement, réviser rigoureusement et produire un travail
-      original achevé.
+      write clearly, revise seriously, and finish original work.
     unlock_requirements:
       - Formulate a clear central idea
-      - Structure an argument coherently
-      - Distinguish introduction, development, and conclusion
+      - Structure an argument
       - Revise for clarity and precision
       - Remove unnecessary material
-      - Produce a finished piece rather than only notes
-    evidence_required: true
+      - Finish pieces rather than accumulating drafts
 
+  - id: writing-reading-practice
+    title: Serious Reading for Writing
+    title_fr: Lecture attentive pour l'écriture
+    type: maintenance
+    status: maintenance
+    description: >
+      Read literature and serious nonfiction attentively enough to notice
+      voice, structure, argument, rhythm, characterization, and ideas
+      that can improve original writing.
 
-  # ============================================================
-  # ESSAYS
-  # ============================================================
+  - id: writing-literary-note
+    title: Literary Note
+    title_fr: Note littéraire
+    type: article
+    status: available
+    requires:
+      - writing-craft
+    description: >
+      Turn a serious observation from reading into a short original piece
+      about style, structure, character, theme, or language.
+
+  - id: writing-literary-essay
+    title: Literary Essay
+    title_fr: Essai littéraire
+    type: article
+    requires:
+      - writing-literary-note
+    description: >
+      Develop a substantial original argument about a literary work
+      rather than producing a plot summary or ordinary review.
 
   - id: writing-polished-essay
     title: First Polished Original Essay
@@ -52,46 +68,27 @@ nodes:
     status: available
     requires:
       - writing-craft
-    description: >
-      Publish or complete one substantial original essay demonstrating
-      a clear thesis, coherent structure, personal reasoning, and revision.
-    description_fr: >
-      Publier ou terminer un essai original substantiel démontrant une
-      thèse claire, une structure cohérente, un raisonnement personnel
-      et un véritable travail de révision.
     unlock_requirements:
       - Original authorship
       - Clear central question or thesis
       - Coherent structure
-      - Evidence or reasoning where appropriate
+      - Personal reasoning
       - Substantive revision
       - Finished version
-    evidence_required: true
-    notes: >
-      Translations, transcriptions, reading notes, summaries, and republished
-      texts do not count toward this milestone.
 
   - id: writing-essay-standard
-    title: Establish a Strong Essay Standard
-    title_fr: Établir un standard d'essai solide
+    title: Strong Essay Standard
+    title_fr: Standard d'essai solide
     type: mastery
     requires:
       - writing-polished-essay
-    description: >
-      Define what counts as a strong essay so that essay-count milestones
-      measure quality rather than simply the number of URLs published.
-    description_fr: >
-      Définir ce qui constitue un essai solide afin que les objectifs
-      quantitatifs mesurent une véritable qualité plutôt qu'un simple
-      nombre de pages publiées.
     unlock_requirements:
       - Original argument or synthesis
       - Meaningful intellectual question
       - Clear structure
       - Revision beyond first draft
-      - Sources used responsibly where necessary
-      - Work the author would still defend publicly
-    evidence_required: true
+      - Responsible use of sources
+      - Work worth defending publicly
 
   - id: writing-10-essays
     title: 10 Strong Original Essays
@@ -104,20 +101,6 @@ nodes:
       current: 0
       target: 10
       unit: qualifying essays
-    description: >
-      Build the first substantial body of original essays across subjects
-      worth developing intellectually.
-    description_fr: >
-      Construire un premier corpus substantiel d'essais originaux sur
-      des sujets qui méritent un développement intellectuel.
-    unlock_requirements:
-      - Ten essays meeting the defined essay standard
-      - Multiple topics or questions represented
-      - Evidence of improvement in structure and argument
-    evidence_required: true
-    notes: >
-      Audit the existing website before setting current progress.
-      Do not automatically count every blog post.
 
   - id: writing-25-essays
     title: 25 Strong Original Essays
@@ -130,18 +113,6 @@ nodes:
       current: 0
       target: 25
       unit: qualifying essays
-    description: >
-      Develop a sustained body of original writing rather than a collection
-      of isolated experiments.
-    description_fr: >
-      Développer un corpus durable de textes originaux plutôt qu'une
-      collection d'expériences isolées.
-    unlock_requirements:
-      - Twenty-five qualifying essays
-      - Recurring intellectual themes identifiable
-      - Clear improvement across time
-      - Several pieces substantially revised
-    evidence_required: true
 
   - id: writing-long-form
     title: Serious Long-Form Essay
@@ -149,19 +120,12 @@ nodes:
     type: project
     requires:
       - writing-polished-essay
-    description: >
-      Produce a sustained essay that develops a difficult question
-      beyond normal blog-post length.
-    description_fr: >
-      Produire un essai soutenu développant une question difficile au-delà
-      de la longueur habituelle d'un article de blogue.
     unlock_requirements:
       - Substantial central question
       - Research or source work where appropriate
       - Multi-section structure
       - Sustained argument
       - Full revision
-    evidence_required: true
 
   - id: writing-essayist
     title: Essayist
@@ -170,39 +134,21 @@ nodes:
     requires:
       - writing-25-essays
       - writing-long-form
-    description: >
-      Demonstrate a sustained and recognizable practice of original
-      essay writing.
-    description_fr: >
-      Démontrer une pratique soutenue et reconnaissable de l'essai original.
-    evidence_required: true
-
-
-  # ============================================================
-  # TECHNICAL AND RESEARCH WRITING
-  # ============================================================
 
   - id: writing-technical-exposition
     title: Technical Exposition
     title_fr: Exposition technique
     type: skill
-    status: dormant
+    status: available
     requires:
       - writing-craft
-    description: >
-      Explain a mathematical, actuarial, statistical, computational,
-      or financial idea clearly without sacrificing technical precision.
-    description_fr: >
-      Expliquer clairement une idée mathématique, actuarielle, statistique,
-      computationnelle ou financière sans sacrifier la précision technique.
     unlock_requirements:
       - Precise definitions
       - Motivation
-      - Intuition separated from formal statements
+      - Intuition
       - Examples
       - Correct notation
-      - Limitations or scope stated
-    evidence_required: true
+      - Appropriate limitations
 
   - id: writing-research-note
     title: Complete Research Note
@@ -210,12 +156,6 @@ nodes:
     type: project
     requires:
       - writing-technical-exposition
-    description: >
-      Write a self-contained technical note built around a research
-      question, literature, analysis, and unresolved issues.
-    description_fr: >
-      Rédiger une note technique autonome construite autour d'une question
-      de recherche, de la littérature, d'une analyse et des questions ouvertes.
     unlock_requirements:
       - Research question
       - Relevant literature
@@ -224,7 +164,6 @@ nodes:
       - Limitations
       - Open questions
       - References
-    evidence_required: true
 
   - id: writing-research-manuscript
     title: Complete Research Manuscript
@@ -233,12 +172,6 @@ nodes:
     requires:
       - writing-research-note
       - research-work-1
-    description: >
-      Convert genuine research work into a complete manuscript suitable
-      for serious external technical review.
-    description_fr: >
-      Transformer un véritable travail de recherche en un manuscrit complet
-      pouvant faire l'objet d'une revue technique externe sérieuse.
     unlock_requirements:
       - Abstract
       - Introduction
@@ -248,8 +181,6 @@ nodes:
       - Discussion
       - Limitations
       - References
-      - Reproducibility information where applicable
-    evidence_required: true
 
   - id: writing-research-writer
     title: Research Writer
@@ -257,18 +188,6 @@ nodes:
     type: mastery
     requires:
       - writing-research-manuscript
-    description: >
-      Demonstrate the ability to communicate original or substantial
-      research in a complete technical manuscript.
-    description_fr: >
-      Démontrer la capacité à communiquer une recherche originale ou
-      substantielle dans un manuscrit technique complet.
-    evidence_required: true
-
-
-  # ============================================================
-  # BOOK — INDEPENDENT BRANCH
-  # ============================================================
 
   - id: writing-book-thesis
     title: Book Thesis
@@ -277,19 +196,12 @@ nodes:
     status: dormant
     requires:
       - writing-craft
-    description: >
-      Define why the book should exist, what central question it addresses,
-      who it is for, and what makes it worth reading.
-    description_fr: >
-      Définir pourquoi le livre doit exister, quelle question centrale
-      il traite, à qui il s'adresse et ce qui justifie sa lecture.
     unlock_requirements:
       - Central idea
       - Intended reader
       - Scope
       - What the book adds
       - What the book deliberately excludes
-    evidence_required: true
 
   - id: writing-book-outline
     title: Book Architecture
@@ -297,18 +209,11 @@ nodes:
     type: project
     requires:
       - writing-book-thesis
-    description: >
-      Transform the book thesis into a coherent chapter-level structure.
-    description_fr: >
-      Transformer la thèse du livre en une structure cohérente au niveau
-      des chapitres.
     unlock_requirements:
       - Complete chapter outline
       - Purpose of every chapter
       - Logical progression
       - Major gaps identified
-      - Redundant material removed
-    evidence_required: true
 
   - id: writing-sample-chapter
     title: Finished Sample Chapter
@@ -316,18 +221,6 @@ nodes:
     type: project
     requires:
       - writing-book-outline
-    description: >
-      Complete one chapter at approximately the quality and voice intended
-      for the final book.
-    description_fr: >
-      Terminer un chapitre avec une qualité et une voix proches de celles
-      visées pour le livre final.
-    unlock_requirements:
-      - Complete chapter
-      - Substantive revision
-      - Style consistent with intended book
-      - External reader feedback where useful
-    evidence_required: true
 
   - id: writing-three-chapters
     title: Three Finished Chapters
@@ -335,11 +228,6 @@ nodes:
     type: project
     requires:
       - writing-sample-chapter
-    unlock_requirements:
-      - Three complete chapters
-      - Chapters fit the book architecture
-      - Major structural problems identified
-    evidence_required: true
 
   - id: writing-half-manuscript
     title: Half Manuscript
@@ -352,15 +240,6 @@ nodes:
       current: 0
       target: 50
       unit: manuscript
-    description: >
-      Reach approximately half of the planned complete manuscript,
-      measured by the book's actual architecture rather than arbitrary
-      page count alone.
-    description_fr: >
-      Atteindre environ la moitié du manuscrit complet prévu, mesurée
-      selon l'architecture réelle du livre plutôt que par un simple
-      nombre arbitraire de pages.
-    evidence_required: true
 
   - id: writing-first-draft
     title: Complete First Draft
@@ -368,18 +247,6 @@ nodes:
     type: boss
     requires:
       - writing-half-manuscript
-    description: >
-      Complete the entire manuscript from beginning to end.
-      Quality may still be uneven; completeness is the milestone.
-    description_fr: >
-      Compléter le manuscrit entier du début à la fin. La qualité peut
-      encore être inégale ; l'objectif ici est la complétude.
-    unlock_requirements:
-      - Every planned chapter drafted
-      - Introduction completed
-      - Conclusion completed
-      - No major placeholder sections
-    evidence_required: true
 
   - id: writing-structural-revision
     title: Structural Revision
@@ -387,20 +254,6 @@ nodes:
     type: project
     requires:
       - writing-first-draft
-    description: >
-      Rework argument, chapter order, pacing, omissions, redundancies,
-      and overall architecture before polishing sentences.
-    description_fr: >
-      Retravailler l'argument, l'ordre des chapitres, le rythme,
-      les omissions, les répétitions et l'architecture générale avant
-      la révision stylistique.
-    unlock_requirements:
-      - Whole manuscript reread
-      - Structural weaknesses identified
-      - Chapters reordered where necessary
-      - Redundancies removed
-      - Missing material addressed
-    evidence_required: true
 
   - id: writing-external-readers
     title: External Reader Feedback
@@ -408,18 +261,6 @@ nodes:
     type: project
     requires:
       - writing-structural-revision
-    description: >
-      Obtain substantive criticism from readers capable of evaluating
-      the manuscript's content, clarity, structure, or market fit.
-    description_fr: >
-      Obtenir des critiques substantielles de lecteurs capables d'évaluer
-      le contenu, la clarté, la structure ou le positionnement du manuscrit.
-    unlock_requirements:
-      - Multiple substantive comments
-      - Criticism documented
-      - Disagreements considered rather than automatically accepted
-      - Revision decisions recorded
-    evidence_required: true
 
   - id: writing-editorial-review
     title: Editorial Revision
@@ -427,13 +268,6 @@ nodes:
     type: project
     requires:
       - writing-external-readers
-    description: >
-      Revise the manuscript after external criticism at structural,
-      argumentative, and sentence levels.
-    description_fr: >
-      Réviser le manuscrit après critique externe aux niveaux structurel,
-      argumentatif et stylistique.
-    evidence_required: true
 
   - id: writing-final-manuscript
     title: Final Manuscript
@@ -441,18 +275,6 @@ nodes:
     type: boss
     requires:
       - writing-editorial-review
-    unlock_requirements:
-      - Complete manuscript
-      - Structural revision completed
-      - External feedback considered
-      - Final prose revision completed
-      - References and supporting material complete where applicable
-    evidence_required: true
-
-
-  # ============================================================
-  # PUBLICATION
-  # ============================================================
 
   - id: writing-publication-path
     title: Choose a Publication Path
@@ -460,19 +282,6 @@ nodes:
     type: milestone
     requires:
       - writing-final-manuscript
-    description: >
-      Select the publication route appropriate to the actual book:
-      traditional publishing, academic/technical publishing,
-      independent publication, or another legitimate route.
-    description_fr: >
-      Choisir la voie de publication adaptée au livre réel :
-      édition traditionnelle, publication académique ou technique,
-      publication indépendante ou autre voie légitime.
-    unlock_requirements:
-      - Publication strategy selected
-      - Requirements understood
-      - Submission or production plan prepared
-    evidence_required: true
 
   - id: writing-publication
     title: Book Published
@@ -480,16 +289,6 @@ nodes:
     type: publication
     requires:
       - writing-publication-path
-    description: >
-      Release the completed book through the chosen legitimate
-      publication route.
-    description_fr: >
-      Publier le livre achevé par la voie de publication légitime choisie.
-    unlock_requirements:
-      - Final work publicly released
-      - Stable bibliographic or publication record
-      - Publication evidence
-    evidence_required: true
 
   - id: writing-published-author
     title: Published Author
@@ -497,8 +296,3 @@ nodes:
     type: legendary
     requires:
       - writing-publication
-    description: >
-      Become the published author of a completed book.
-    description_fr: >
-      Devenir l'auteur publié d'un livre achevé.
-    evidence_required: true
