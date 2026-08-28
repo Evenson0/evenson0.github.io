@@ -1,6 +1,6 @@
 ---
-title: General Probability · ALE
-title_fr: Probabilité générale · ALE
+title: General Probability · ANAM I
+title_fr: Probabilité générale · ANAM I
 
 cycle: foundations-01
 cycle_week: 8
@@ -10,86 +10,72 @@ status: planned
 
 active:
   - actuarial-exam-1
-  - research-ale
+  - research-actuarial-anam
   - physical-training-consistency
 
 maintenance:
   - english-conversation-practice
+  - lean-mathematics-in-lean
+  - writing-reading-practice
+
+user_inputs:
+  literary_book: null
 
 quests:
 
   - domain: actuarial
     node: actuarial-exam-1
-    task: Review general probability and solve a focused set of Exam P problems.
-    task_fr: Revoir la probabilité générale et résoudre une série ciblée de problèmes de l'examen P.
-    completion:
-      - Review sets and probability rules
-      - Review permutations and combinations
-      - Review independence
-      - Review conditional probability
-      - Review Bayes' theorem and total probability
-      - Complete at least 40 focused problems
-      - Review all incorrect or uncertain answers
-    completion_fr:
-      - Revoir ensembles et règles de probabilité
-      - Revoir permutations et combinaisons
-      - Revoir l'indépendance
-      - Revoir les probabilités conditionnelles
-      - Revoir le théorème de Bayes et la probabilité totale
-      - Compléter au moins 40 problèmes ciblés
-      - Revoir toutes les réponses incorrectes ou incertaines
+    task: Review general probability and complete at least 40 focused P problems.
+    task_fr: Revoir la probabilité générale et compléter au moins 40 exercices ciblés de P.
 
   - domain: research
-    node: research-ale
-    task: Study ALE and compare it with PDP when predictors are correlated.
-    task_fr: Étudier ALE et le comparer à PDP lorsque les variables sont corrélées.
+    node: research-actuarial-anam
+    task: Read the first half of Laub, Pho, and Wong and reconstruct the motivation and architecture of ANAM.
+    task_fr: Lire la première moitié de Laub, Pho et Wong et reconstruire la motivation et l'architecture d'ANAM.
     completion:
-      - Understand the ALE construction
-      - Create or select correlated tabular data
-      - Produce PDP and ALE for the same feature
-      - Compare the resulting interpretations
-      - Explain why dependence changes the problem
-      - Write one concise comparison
+      - Understand the pricing problem
+      - Understand why GLMs remain attractive
+      - Understand the additive neural architecture
+      - Understand the intended notion of interpretability
+      - Record technical questions
     completion_fr:
-      - Comprendre la construction d'ALE
-      - Créer ou sélectionner des données tabulaires corrélées
-      - Produire PDP et ALE pour la même variable
-      - Comparer les interprétations obtenues
-      - Expliquer pourquoi la dépendance modifie le problème
-      - Rédiger une comparaison concise
+      - Comprendre le problème de tarification
+      - Comprendre pourquoi les GLM restent attractifs
+      - Comprendre l'architecture neuronale additive
+      - Comprendre la notion d'interprétabilité visée
+      - Noter des questions techniques
+
+  - domain: writing
+    node: writing-reading-practice
+    task: Read about 70–80 pages of the current literary book.
+    task_fr: Lire environ 70 à 80 pages du livre littéraire en cours.
+
+  - domain: lean
+    node: lean-mathematics-in-lean
+    task: Continue Mathematics in Lean Chapter 2 and add one independently understood proof.
+    task_fr: Poursuivre le chapitre 2 de Mathematics in Lean et ajouter une preuve comprise de manière autonome.
 
   - domain: english
     node: english-conversation-practice
-    task: Explain one idea spontaneously without translating each sentence first.
-    task_fr: Expliquer spontanément une idée sans traduire chaque phrase mentalement.
-    completion:
-      - Speak for approximately 60 minutes
-      - Use paraphrasing when vocabulary is missing
-      - Reduce avoidable pauses
-    completion_fr:
-      - Parler pendant environ 60 minutes
-      - Paraphraser lorsque le vocabulaire manque
-      - Réduire les hésitations évitables
+    task: Explain the central idea of the ANAM paper in plain English.
+    task_fr: Expliquer l'idée centrale de l'article ANAM en anglais simple.
 
   - domain: physical
     node: physical-training-consistency
-    task: Complete the normal training week and review consistency across Weeks 01–08.
-    task_fr: Compléter la semaine normale d'entraînement et revoir la régularité des semaines 1 à 8.
-    completion:
-      - Complete the weekly training plan
-      - Count how many of the first eight weeks were substantially completed
-      - Adjust the schedule only if a recurring problem is visible
-    completion_fr:
-      - Compléter le programme hebdomadaire
-      - Compter combien des huit premières semaines ont été substantiellement complétées
-      - Modifier l'horaire seulement si un problème récurrent apparaît
+    task: Complete the normal week and review consistency over Weeks 01–08.
+    task_fr: Compléter la semaine normale et revoir la régularité des semaines 1 à 8.
 
 completed: []
 ---
 
 ## Weekly Review
+
 ### Progress
+
 ### Bottleneck
+
 ### Discovery
+
 ### Adjustment
+
 ### Roadmap Change
