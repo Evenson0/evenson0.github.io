@@ -2,7 +2,7 @@
 permalink: /becoming/
 title: Becoming
 layout: single
-published: false
+published: true
 sitemap: false
 author_profile: false
 becoming_view: overview
