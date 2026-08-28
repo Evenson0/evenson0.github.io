@@ -1,8 +1,15 @@
 # Copy this file to private.yml. That filename is ignored by Git.
 # Important: Jekyll has no authentication; local data can appear in a local build.
+
 nodes: []
+
+# Example:
 # - id: physical-130
 #   status: in_progress
-#   progress: { mode: value, current: 0, target: 0, unit: private }
-evidence: []
+#   progress:
+#     mode: value
+#     current: 0
+#     target: 0
+#     unit: private
+
 journal: []
