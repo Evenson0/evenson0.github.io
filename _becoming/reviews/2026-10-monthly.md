@@ -17,6 +17,5 @@ status: planned
 - Which objective should become harder?
 - What new question appeared?
 - What should be removed from the roadmap?
-- What evidence was created?
 - Was the work still fascinating?
-
+- What should materially change next month?
