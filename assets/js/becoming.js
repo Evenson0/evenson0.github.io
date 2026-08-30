@@ -11,10 +11,14 @@
   root.classList.add('is-enhanced');
 
   const baseurl = root.dataset.baseurl || '';
-  const domains = new Map(data.trees.map(tree => [tree.id, tree]));
+
+  const domains = new Map(
+    (data.trees || []).map(tree => [tree.id, tree])
+  );
+
   const allNodes = [];
 
-  Object.entries(data.treeData).forEach(([treeId, treeData]) => {
+  Object.entries(data.treeData || {}).forEach(([treeId, treeData]) => {
     (treeData.nodes || []).forEach(node => {
       allNodes.push({
         tree: treeId,
@@ -31,7 +35,10 @@
   });
 
   const privateNodes = new Map(
-    ((data.private || {}).nodes || []).map(node => [node.id, node])
+    ((data.private || {}).nodes || []).map(node => [
+      node.id,
+      node
+    ])
   );
 
   const nodes = allNodes.map(node => ({
@@ -39,54 +46,82 @@
     ...(privateNodes.get(node.id) || {})
   }));
 
-  const byId = new Map(nodes.map(node => [node.id, node]));
-  const dependents = new Map(nodes.map(node => [node.id, []]));
+  const byId = new Map(
+    nodes.map(node => [node.id, node])
+  );
+
+  const dependents = new Map(
+    nodes.map(node => [node.id, []])
+  );
 
   nodes.forEach(node => {
-    (node.requires || []).forEach(id => {
-      dependents.get(id)?.push(node.id);
+    (node.requires || []).forEach(requiredId => {
+      dependents.get(requiredId)?.push(node.id);
     });
   });
 
-  const explicitState = node => node.status || null;
+  const explicitState = node =>
+    node.status || null;
 
   const stateOf = (node, trail = new Set()) => {
+    const explicit = explicitState(node);
+
     if (
       [
         'completed',
         'in_progress',
         'maintenance',
         'paused',
-        'dormant'
-      ].includes(explicitState(node))
+        'dormant',
+        'awaiting_result'
+      ].includes(explicit)
     ) {
-      return explicitState(node);
+      return explicit;
     }
 
     if (trail.has(node.id)) {
       return 'locked';
     }
 
-    const nextTrail = new Set(trail).add(node.id);
-    const requirements = node.requires || [];
+    const requirements =
+      node.requires || [];
 
     if (!requirements.length) {
-      return explicitState(node) === 'locked'
+      return explicit === 'locked'
         ? 'locked'
         : 'available';
     }
 
-    return requirements.every(id => (
-      byId.has(id) &&
-      stateOf(byId.get(id), nextTrail) === 'completed'
-    ))
+    const nextTrail =
+      new Set(trail);
+
+    nextTrail.add(node.id);
+
+    return requirements.every(requiredId => {
+      const requiredNode =
+        byId.get(requiredId);
+
+      return (
+        requiredNode &&
+        stateOf(
+          requiredNode,
+          nextTrail
+        ) === 'completed'
+      );
+    })
       ? 'available'
       : 'locked';
   };
 
   nodes.forEach(node => {
-    node.computedStatus = stateOf(node);
+    node.computedStatus =
+      stateOf(node);
   });
+
+  let language =
+    localStorage.getItem(
+      'becoming.language'
+    ) || 'fr';
 
   const translations = {
     active: 'Actif',
@@ -95,189 +130,103 @@
     locked: 'Verrouillé',
     available: 'Disponible',
     in_progress: 'En cours',
+    awaiting_result: 'En attente',
     completed: 'Accompli',
     paused: 'En pause',
-    planned: 'Prévue',
+    planned: 'Prévu',
+
     read: 'Lire',
+    reading: 'Lecture',
     reproduce: 'Reproduire',
     solve: 'Résoudre',
     project: 'Projet',
-    reading: 'Lecture',
     exam: 'Examen',
+    practice: 'Pratique',
     skill: 'Compétence',
     foundation: 'Fondation',
-    legendary: 'Légendaire'
+    mastery: 'Maîtrise',
+    credential: 'Titre',
+    legendary: 'Légendaire',
+    process: 'Processus',
+    milestone: 'Étape'
   };
 
-  let language =
-    localStorage.getItem('becoming.language') || 'fr';
+  const label = value => {
+    if (
+      language === 'fr' &&
+      translations[value]
+    ) {
+      return translations[value];
+    }
 
-  const label = value => (
-    language === 'fr' && translations[value]
-      ? translations[value]
-      : String(value || '')
-          .replace(/_/g, ' ')
-          .replace(/\b\w/g, c => c.toUpperCase())
-  );
-
-  const frenchTitles = {
-    'Own an Analysis': 'Prendre en charge une analyse',
-    'Own an End-to-End Project': 'Prendre en charge un projet de bout en bout',
-    'Present to Decision Makers': 'Présenter aux décideurs',
-    'Recommendation Implemented': 'Recommandation mise en œuvre',
-    'Measure Business Impact': "Mesurer l’impact opérationnel",
-    'Internal Subject-Matter Resource': 'Devenir une référence interne',
-    'Lead Cross-Functional Work': 'Diriger un travail transversal',
-    'Mentor Another Analyst': 'Accompagner un autre analyste',
-    'Technical Leadership': 'Leadership technique'
+    return String(value || '')
+      .replace(/_/g, ' ')
+      .replace(/\b\w/g, character =>
+        character.toUpperCase()
+      );
   };
 
-  const localizedTitle = node => (
+  const localizedTitle = node =>
     language === 'fr'
       ? (
           node.title_fr ||
-          frenchTitles[node.title] ||
           node.title
         )
-      : node.title
-  );
+      : node.title;
+
+  const localizedDescription = node =>
+    language === 'fr'
+      ? (
+          node.description_fr ||
+          node.description ||
+          ''
+        )
+      : (
+          node.description ||
+          ''
+        );
 
   const copy = {
     fr: {
-      eyebrow: 'Progression personnelle · travail réel',
+      eyebrow: 'Progression personnelle',
       subtitle: 'Une carte de ce que j’apprends, construis et deviens.',
       principle: 'Une vision à long terme, traduite en objectifs concrets chaque semaine.',
+      this_week: 'Cette semaine',
       weekly_program: 'Programme concret',
       weekly_objectives: 'Objectifs de la semaine',
       weekly_help: 'Un rappel simple de ce qui compte cette semaine.',
       whole_path: 'Toute la progression',
       current_cycle: 'Période actuelle',
-      current_range: 'Semaine 01 · 30 août – 5 septembre 2026',
       close: 'Fermer',
-      this_week: 'Cette semaine',
-      current_quests: 'Objectifs actuels',
-      active_chapters: 'Domaines actifs',
-      next_goals: 'Prochains objectifs',
-      achievements: 'Accomplissements',
+      long_term_vision: 'Vision à long terme',
       legendary_goals: 'Objectifs légendaires',
       legendary_help: 'Les grandes destinations. Leur progression dépend automatiquement des étapes accomplies dans les domaines ci-dessous.',
-      long_term_vision: 'Vision à long terme',
       domain_path: 'Parcours par domaine',
       progress_path: 'Chemin de progression',
-      progress_help: "Tous les objectifs du domaine sont présentés dans leur ordre logique. Sélectionne une étape pour voir ses conditions et ce qu'elle débloque.",
-      week_after_week: 'Une semaine après l’autre',
-      quest_journal: 'Journal de progression',
-      journal_intro: "Ici restent les objectifs choisis, les difficultés, les découvertes et les ajustements. La revue n'exige pas une semaine parfaite — seulement une semaine honnêtement racontée."
+      progress_help: "Tous les objectifs du domaine sont présentés dans leur ordre logique. Sélectionne une étape pour voir ses conditions et ce qu'elle débloque."
     },
 
     en: {
-      eyebrow: 'Personal progression · real work',
+      eyebrow: 'Personal progression',
       subtitle: "A map of what I'm learning, building, and becoming.",
       principle: 'A long-term vision translated into concrete weekly objectives.',
+      this_week: 'This week',
       weekly_program: 'Concrete program',
       weekly_objectives: 'Objectives for the week',
       weekly_help: 'A simple reminder of what matters this week.',
       whole_path: 'The complete progression',
       current_cycle: 'Current period',
-      current_range: 'Week 01 · Aug 30 – Sep 5, 2026',
       close: 'Close',
-      this_week: 'This week',
-      current_quests: 'Current objectives',
-      active_chapters: 'Active domains',
-      next_goals: 'Next goals',
-      achievements: 'Achievements',
+      long_term_vision: 'Long-term vision',
       legendary_goals: 'Legendary objectives',
       legendary_help: 'The major destinations. Their progress follows automatically from the completed steps below.',
-      long_term_vision: 'Long-term vision',
       domain_path: 'Path by domain',
       progress_path: 'Progression path',
-      progress_help: 'Every goal in the domain is shown in logical order. Select a step to see its requirements and unlocks.',
-      week_after_week: 'One week at a time',
-      quest_journal: 'Progress log',
-      journal_intro: 'This is where chosen goals, difficulties, discoveries, and adjustments remain. The review does not require a perfect week—only an honestly recorded one.'
+      progress_help: 'Every goal in the domain is shown in logical order. Select a step to see its requirements and unlocks.'
     }
   };
 
-  const setLanguage = value => {
-    language = value === 'en' ? 'en' : 'fr';
-
-    localStorage.setItem(
-      'becoming.language',
-      language
-    );
-
-    root.lang = language;
-
-    root
-      .querySelectorAll('[data-i18n]')
-      .forEach(node => {
-        const value =
-          copy[language][node.dataset.i18n];
-
-        if (value) {
-          node.textContent = value;
-        }
-      });
-
-    root
-      .querySelectorAll('[data-title-en]')
-      .forEach(node => {
-        node.textContent =
-          language === 'fr'
-            ? (
-                node.dataset.titleFr ||
-                node.dataset.titleEn
-              )
-            : node.dataset.titleEn;
-      });
-
-    root
-      .querySelectorAll('[data-language]')
-      .forEach(button => {
-        const selected =
-          button.dataset.language === language;
-
-        button.classList.toggle(
-          'is-selected',
-          selected
-        );
-
-        button.setAttribute(
-          'aria-pressed',
-          String(selected)
-        );
-      });
-  };
-
-  root
-    .querySelectorAll('[data-language]')
-    .forEach(button => {
-      button.addEventListener(
-        'click',
-        () => {
-          setLanguage(
-            button.dataset.language
-          );
-
-          renderSelectedWeek();
-          selectTree(selectedTree, false);
-        }
-      );
-    });
-
-  setLanguage(language);
-
-  const safeUrl = url => (
-    !url
-      ? ''
-      : (
-          /^(https?:|mailto:)/.test(url)
-            ? url
-            : `${baseurl}${url}`
-        )
-  );
-
-  const el = (
+  const element = (
     tag,
     className,
     text
@@ -296,21 +245,20 @@
     return node;
   };
 
-  const empty = (
-    target,
-    message
-  ) => {
-    target.replaceChildren(
-      el(
-        'p',
-        'becoming__empty',
-        message
-      )
-    );
+  const safeUrl = url => {
+    if (!url) return '';
+
+    if (
+      /^(https?:|mailto:)/.test(url)
+    ) {
+      return url;
+    }
+
+    return `${baseurl}${url}`;
   };
 
   const reducedMotion =
-    matchMedia(
+    window.matchMedia(
       '(prefers-reduced-motion: reduce)'
     ).matches;
 
@@ -334,8 +282,7 @@
             });
           },
           {
-            threshold: 0.12,
-            rootMargin: '0px 0px -4% 0px'
+            threshold: 0.1
           }
         )
       : null;
@@ -379,76 +326,9 @@
     );
   }
 
-  const focusTarget =
-    document.getElementById(
-      'becoming-focus'
-    );
-
-  (data.current.focus || [])
-    .forEach(id => {
-      const domain =
-        domains.get(id);
-
-      if (!domain || !focusTarget) {
-        return;
-      }
-
-      const item = el(
-        'button',
-        `becoming__focus-item strategy-${domain.strategy}`
-      );
-
-      item.type = 'button';
-      item.dataset.tree = id;
-
-      item.innerHTML =
-        `<span data-title-en="${domain.title}" data-title-fr="${domain.title_fr || domain.title}">${language === 'fr' ? (domain.title_fr || domain.title) : domain.title}</span>` +
-        `<small>${label(domain.strategy)}</small>`;
-
-      item.addEventListener(
-        'click',
-        () => selectTree(id)
-      );
-
-      focusTarget.append(item);
-    });
-
-  const maintenanceTarget =
-    document.getElementById(
-      'becoming-maintenance'
-    );
-
-  (data.current.maintenance || [])
-    .forEach(id => {
-      const domain =
-        domains.get(id);
-
-      if (
-        !domain ||
-        !maintenanceTarget
-      ) {
-        return;
-      }
-
-      const item = el(
-        'button',
-        'becoming__focus-item strategy-maintenance'
-      );
-
-      item.type = 'button';
-      item.dataset.tree = id;
-
-      item.innerHTML =
-        `<span data-title-en="${domain.title}" data-title-fr="${domain.title_fr || domain.title}">${language === 'fr' ? (domain.title_fr || domain.title) : domain.title}</span>` +
-        `<small>${label('maintenance')}</small>`;
-
-      item.addEventListener(
-        'click',
-        () => selectTree(id)
-      );
-
-      maintenanceTarget.append(item);
-    });
+  // ============================================================
+  // WEEKS
+  // ============================================================
 
   const questTarget =
     document.getElementById(
@@ -462,161 +342,402 @@
 
   const cycleWeeks =
     (data.weeks || [])
-      .filter(week => week.cycle_week)
+      .filter(
+        week =>
+          week.cycle_week &&
+          week.start_date &&
+          week.end_date
+      )
       .sort(
         (a, b) =>
-          a.cycle_week -
-          b.cycle_week
+          String(a.start_date)
+            .localeCompare(
+              String(b.start_date)
+            )
       );
+
+  const localIsoDate = () => {
+    const now = new Date();
+
+    const year =
+      now.getFullYear();
+
+    const month =
+      String(
+        now.getMonth() + 1
+      ).padStart(2, '0');
+
+    const day =
+      String(
+        now.getDate()
+      ).padStart(2, '0');
+
+    return `${year}-${month}-${day}`;
+  };
+
+  const today =
+    localIsoDate();
+
+  let currentWeekIndex =
+    cycleWeeks.findIndex(
+      week =>
+        today >=
+          String(week.start_date) &&
+        today <=
+          String(week.end_date)
+    );
+
+  if (
+    currentWeekIndex < 0 &&
+    cycleWeeks.length
+  ) {
+    const nextFutureWeek =
+      cycleWeeks.findIndex(
+        week =>
+          today <
+          String(week.start_date)
+      );
+
+    currentWeekIndex =
+      nextFutureWeek >= 0
+        ? nextFutureWeek
+        : cycleWeeks.length - 1;
+  }
 
   let selectedWeekIndex =
     Math.max(
       0,
-      cycleWeeks.findIndex(
-        week =>
-          week.cycle_week ===
-          data.current.cycle_week
-      )
+      currentWeekIndex
     );
+
+  const currentWeek =
+    cycleWeeks[
+      currentWeekIndex
+    ] ||
+    cycleWeeks[0] ||
+    null;
+
+  const cycleFor = cycleId =>
+    (
+      data.cycles?.cycles ||
+      []
+    ).find(
+      cycle =>
+        cycle.id === cycleId
+    );
+
+  const formatWeekRange = week => {
+    if (!week) return '';
+
+    const start =
+      new Date(
+        `${week.start_date}T12:00:00`
+      );
+
+    const end =
+      new Date(
+        `${week.end_date}T12:00:00`
+      );
+
+    if (language === 'fr') {
+      const startFormatter =
+        new Intl.DateTimeFormat(
+          'fr-CA',
+          {
+            day: 'numeric',
+            month: 'long'
+          }
+        );
+
+      const endFormatter =
+        new Intl.DateTimeFormat(
+          'fr-CA',
+          {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+          }
+        );
+
+      return (
+        `${startFormatter.format(start)} – ` +
+        `${endFormatter.format(end)}`
+      );
+    }
+
+    const startFormatter =
+      new Intl.DateTimeFormat(
+        'en-US',
+        {
+          month: 'short',
+          day: 'numeric'
+        }
+      );
+
+    const endFormatter =
+      new Intl.DateTimeFormat(
+        'en-US',
+        {
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric'
+        }
+      );
+
+    return (
+      `${startFormatter.format(start)} – ` +
+      `${endFormatter.format(end)}`
+    );
+  };
+
+  const renderCurrentWeekHeader = () => {
+    if (!currentWeek) return;
+
+    const cycle =
+      cycleFor(
+        currentWeek.cycle
+      );
+
+    const cycleTitle =
+      language === 'fr'
+        ? (
+            cycle?.title_fr ||
+            cycle?.title ||
+            ''
+          )
+        : (
+            cycle?.title ||
+            ''
+          );
+
+    const cycleTitleNode =
+      document.getElementById(
+        'current-cycle-title'
+      );
+
+    const weekPositionNode =
+      document.getElementById(
+        'current-week-position'
+      );
+
+    const weekRangeNode =
+      document.getElementById(
+        'current-week-range'
+      );
+
+    if (cycleTitleNode) {
+      cycleTitleNode.textContent =
+        cycleTitle;
+    }
+
+    if (weekPositionNode) {
+      weekPositionNode.textContent =
+        language === 'fr'
+          ? `Semaine ${currentWeek.cycle_week} sur ${cycleWeeks.length}`
+          : `Week ${currentWeek.cycle_week} of ${cycleWeeks.length}`;
+    }
+
+    if (weekRangeNode) {
+      weekRangeNode.textContent =
+        formatWeekRange(
+          currentWeek
+        );
+    }
+  };
+
+  const questStatus = quest => {
+    const linkedNode =
+      quest.node
+        ? byId.get(quest.node)
+        : null;
+
+    if (linkedNode) {
+      return linkedNode.computedStatus;
+    }
+
+    return quest.status || 'planned';
+  };
+
+  const questDomain = quest => {
+    if (quest.domain) {
+      return quest.domain;
+    }
+
+    if (quest.tree) {
+      return quest.tree;
+    }
+
+    const linkedNode =
+      quest.node
+        ? byId.get(quest.node)
+        : null;
+
+    return linkedNode?.tree || '';
+  };
+
+  const questTitle = quest => {
+    if (language === 'fr') {
+      return (
+        quest.task_fr ||
+        quest.title_fr ||
+        quest.task ||
+        quest.title ||
+        localizedTitle(
+          byId.get(quest.node) || {}
+        )
+      );
+    }
+
+    return (
+      quest.task ||
+      quest.title ||
+      quest.task_fr ||
+      quest.title_fr ||
+      byId.get(quest.node)?.title ||
+      ''
+    );
+  };
 
   const renderSelectedWeek = () => {
     if (
-      !cycleWeeks.length ||
-      !questTarget
+      !questTarget ||
+      !cycleWeeks.length
     ) {
       return;
     }
 
     const week =
-      cycleWeeks[selectedWeekIndex];
+      cycleWeeks[
+        selectedWeekIndex
+      ];
 
-    const isCurrent =
-      week.cycle_week ===
-      data.current.cycle_week;
+    if (!week) return;
 
-    document
-      .getElementById(
+    const weekLabel =
+      document.getElementById(
         'selected-week-label'
-      )
-      .textContent =
-        `${language === 'fr' ? 'Semaine' : 'Week'} ` +
-        `${String(week.cycle_week).padStart(2, '0')} · ` +
-        `${week.start_date} — ${week.end_date}`;
+      );
 
-    document
-      .getElementById(
+    const weekTitle =
+      document.getElementById(
         'selected-week-title'
-      )
-      .textContent =
+      );
+
+    if (weekLabel) {
+      weekLabel.textContent =
+        `${
+          language === 'fr'
+            ? 'Semaine'
+            : 'Week'
+        } ${String(
+          week.cycle_week
+        ).padStart(2, '0')} · ${
+          formatWeekRange(week)
+        }`;
+    }
+
+    if (weekTitle) {
+      weekTitle.textContent =
         language === 'fr'
           ? (
               week.title_fr ||
               week.title
             )
           : week.title;
-
-    const rawQuests =
-      isCurrent
-        ? (
-            data.current.quests ||
-            []
-          )
-        : (
-            week.quests ||
-            []
-          );
-
-    const quests =
-      isCurrent
-        ? rawQuests
-        : rawQuests;
+    }
 
     questTarget.replaceChildren();
 
+    const quests =
+      week.quests || [];
+
     quests.forEach(
       (quest, index) => {
-        const treeId =
-          quest.tree ||
-          quest.domain;
-
-        const linkedNode =
-          quest.node
-            ? byId.get(quest.node)
-            : null;
-
-        const status =
-          linkedNode?.computedStatus ||
-          quest.status ||
-          week.status ||
-          'planned';
+        const domainId =
+          questDomain(quest);
 
         const domain =
-          domains.get(treeId);
+          domains.get(domainId);
 
         const domainTitle =
           language === 'fr'
             ? (
                 domain?.title_fr ||
                 domain?.title ||
-                label(treeId)
+                label(domainId)
               )
             : (
                 domain?.title ||
-                label(treeId)
+                label(domainId)
               );
 
-        const title =
-          quest.title ||
-          quest.task ||
-          linkedNode?.title ||
-          label(treeId);
+        const status =
+          questStatus(quest);
 
-        const titleFr =
-          quest.title_fr ||
-          quest.task_fr ||
-          linkedNode?.title_fr ||
-          title;
-
-        const item = el(
+        const card = element(
           'article',
           `becoming__quest status-${status}`
         );
 
-        const summary = el(
+        const summary = element(
           'div',
           'becoming__quest-summary'
         );
 
-        summary.innerHTML =
-          `<span class="becoming__quest-rune" aria-hidden="true">${status === 'completed' ? '✓' : String(index + 1).padStart(2, '0')}</span>` +
-          `<span>` +
-          `<small>${domainTitle} · ${label(status)}</small>` +
-          `<strong data-title-en="${title}" data-title-fr="${titleFr}">${language === 'fr' ? titleFr : title}</strong>` +
-          `</span>`;
+        const title =
+          questTitle(quest);
 
-        item.append(summary);
+        summary.innerHTML = `
+          <span
+            class="becoming__quest-rune"
+            aria-hidden="true"
+          >
+            ${
+              status === 'completed'
+                ? '✓'
+                : String(
+                    index + 1
+                  ).padStart(2, '0')
+            }
+          </span>
 
-        questTarget.append(item);
-        observeMotion(item);
+          <span>
+            <small>
+              ${domainTitle} · ${label(status)}
+            </small>
+
+            <strong>
+              ${title}
+            </strong>
+          </span>
+        `;
+
+        card.append(summary);
+
+        questTarget.append(card);
+
+        observeMotion(card);
       }
     );
 
     weekRail
-      ?.querySelectorAll('button')
+      ?.querySelectorAll(
+        'button'
+      )
       .forEach(
         (button, index) => {
+          const selected =
+            index ===
+            selectedWeekIndex;
+
           button.classList.toggle(
             'is-selected',
-            index ===
-              selectedWeekIndex
+            selected
           );
 
           button.setAttribute(
             'aria-pressed',
-            String(
-              index ===
-                selectedWeekIndex
-            )
+            String(selected)
           );
         }
       );
@@ -624,25 +745,38 @@
 
   cycleWeeks.forEach(
     (week, index) => {
-      const button = el(
+      const button = element(
         'button',
         `status-${week.status || 'planned'}`
       );
 
       button.type = 'button';
 
-      button.innerHTML =
-        `<small>${String(week.cycle_week).padStart(2, '0')}</small>` +
-        `<strong>${
-          week.status === 'completed'
-            ? '✓'
-            : (
-                week.cycle_week ===
-                data.current.cycle_week
-                  ? '◆'
-                  : '○'
-              )
-        }</strong>`;
+      let symbol = '○';
+
+      if (
+        week.status ===
+        'completed'
+      ) {
+        symbol = '✓';
+      } else if (
+        index ===
+        currentWeekIndex
+      ) {
+        symbol = '◆';
+      }
+
+      button.innerHTML = `
+        <small>
+          ${String(
+            week.cycle_week
+          ).padStart(2, '0')}
+        </small>
+
+        <strong>
+          ${symbol}
+        </strong>
+      `;
 
       button.setAttribute(
         'aria-label',
@@ -652,7 +786,8 @@
       button.addEventListener(
         'click',
         () => {
-          selectedWeekIndex = index;
+          selectedWeekIndex =
+            index;
 
           renderSelectedWeek();
 
@@ -661,6 +796,7 @@
               reducedMotion
                 ? 'auto'
                 : 'smooth',
+
             block: 'nearest',
             inline: 'center'
           });
@@ -705,41 +841,155 @@
       }
     );
 
-  renderSelectedWeek();
+  // ============================================================
+  // CURRENT DOMAINS
+  // ============================================================
 
-  const nextTarget =
+  const focusTarget =
     document.getElementById(
-      'becoming-next'
+      'becoming-focus'
     );
 
-  const nextNodes =
-    nodes
-      .filter(
-        node =>
-          node.tree !== 'legendary' &&
-          [
-            'available',
-            'in_progress'
-          ].includes(
-            node.computedStatus
+  const maintenanceTarget =
+    document.getElementById(
+      'becoming-maintenance'
+    );
+
+  if (currentWeek) {
+    const activeDomains = [
+      ...new Set(
+        (currentWeek.active || [])
+          .map(nodeId =>
+            byId.get(nodeId)?.tree
           )
+          .filter(Boolean)
       )
-      .slice(0, 7);
+    ];
 
-  if (nextTarget) {
-    nextNodes.forEach(
-      node =>
-        nextTarget.append(
-          nodeRow(node)
-        )
+    activeDomains.forEach(
+      domainId => {
+        const domain =
+          domains.get(domainId);
+
+        if (
+          !domain ||
+          !focusTarget
+        ) {
+          return;
+        }
+
+        const item = element(
+          'button',
+          'becoming__focus-item strategy-active'
+        );
+
+        item.type = 'button';
+        item.textContent =
+          language === 'fr'
+            ? (
+                domain.title_fr ||
+                domain.title
+              )
+            : domain.title;
+
+        item.addEventListener(
+          'click',
+          () =>
+            selectTree(domainId)
+        );
+
+        focusTarget.append(item);
+      }
     );
 
-    if (!nextNodes.length) {
-      empty(
-        nextTarget,
-        'No available milestone. Check prerequisite records.'
-      );
-    }
+    const maintenanceDomains = [
+      ...new Set(
+        (
+          currentWeek.maintenance ||
+          []
+        )
+          .map(nodeId =>
+            byId.get(nodeId)?.tree
+          )
+          .filter(Boolean)
+      )
+    ];
+
+    maintenanceDomains.forEach(
+      domainId => {
+        const domain =
+          domains.get(domainId);
+
+        if (
+          !domain ||
+          !maintenanceTarget
+        ) {
+          return;
+        }
+
+        const item = element(
+          'button',
+          'becoming__focus-item strategy-maintenance'
+        );
+
+        item.type = 'button';
+        item.textContent =
+          language === 'fr'
+            ? (
+                domain.title_fr ||
+                domain.title
+              )
+            : domain.title;
+
+        item.addEventListener(
+          'click',
+          () =>
+            selectTree(domainId)
+        );
+
+        maintenanceTarget.append(
+          item
+        );
+      }
+    );
+  }
+
+  // ============================================================
+  // ROADMAP
+  // ============================================================
+
+  function nodeRow(node) {
+    const button = element(
+      'button',
+      `becoming__node-row status-${node.computedStatus}`
+    );
+
+    button.type = 'button';
+
+    button.innerHTML = `
+      <span
+        class="becoming__state-mark"
+        aria-hidden="true"
+      ></span>
+
+      <span>
+        <strong>
+          ${localizedTitle(node)}
+        </strong>
+
+        <small>
+          ${label(node.computedStatus)} · ${label(node.type)}
+        </small>
+      </span>
+    `;
+
+    button.addEventListener(
+      'click',
+      () =>
+        openDetail(node)
+    );
+
+    return button;
   }
 
   const legendaryTarget =
@@ -751,64 +1001,86 @@
     .filter(
       node =>
         node.tree ===
-          'legendary' &&
-        !node.private
+        'legendary'
     )
     .forEach(node => {
+      const requirements =
+        node.requires || [];
+
       const completed =
-        (node.requires || [])
-          .filter(
-            id =>
-              byId.get(id)
-                ?.computedStatus ===
-              'completed'
-          )
-          .length;
+        requirements.filter(
+          requiredId =>
+            byId.get(requiredId)
+              ?.computedStatus ===
+            'completed'
+        ).length;
 
       const total =
-        (node.requires || []).length;
+        requirements.length;
 
       const progress =
         total
           ? Math.round(
-              (completed / total) *
+              completed /
+                total *
                 100
             )
-          : 0;
+          : (
+              node.computedStatus ===
+              'completed'
+                ? 100
+                : 0
+            );
 
-      const card = el(
+      const card = element(
         'button',
         `becoming__legendary-card status-${node.computedStatus}`
       );
 
       card.type = 'button';
 
-      const displayTitle =
-        localizedTitle(node);
-
-      const statusFr =
-        translations[
-          node.computedStatus
-        ] ||
-        label(
-          node.computedStatus
-        );
-
-      card.innerHTML =
-        `<span class="becoming__legendary-status">` +
-        `<small data-title-en="${String(node.computedStatus).replace(/_/g, ' ')}" data-title-fr="${statusFr}">${label(node.computedStatus)}</small>` +
-        `<b aria-hidden="true">${node.computedStatus === 'completed' ? '✓' : '○'}</b>` +
-        `</span>` +
-        `<strong data-title-en="${node.title}" data-title-fr="${node.title_fr || frenchTitles[node.title] || node.title}">${displayTitle}</strong>` +
-        `<span data-title-en="${completed} / ${total} requirements completed" data-title-fr="${completed} / ${total} conditions accomplies">${completed} / ${total} ${language === 'fr' ? 'conditions accomplies' : 'requirements completed'}</span>` +
-        `<i aria-hidden="true"><em style="width:${progress}%"></em></i>`;
-
       card.dataset.nodeId =
         node.id;
 
+      card.innerHTML = `
+        <span class="becoming__legendary-status">
+          <small>
+            ${label(node.computedStatus)}
+          </small>
+
+          <b aria-hidden="true">
+            ${
+              node.computedStatus ===
+              'completed'
+                ? '✓'
+                : '○'
+            }
+          </b>
+        </span>
+
+        <strong>
+          ${localizedTitle(node)}
+        </strong>
+
+        <span>
+          ${
+            language === 'fr'
+              ? `${completed} / ${total} conditions accomplies`
+              : `${completed} / ${total} requirements completed`
+          }
+        </span>
+
+        <i aria-hidden="true">
+          <em
+            style="width:${progress}%"
+          ></em>
+        </i>
+      `;
+
       card.addEventListener(
         'click',
-        () => openDetail(node)
+        () =>
+          openDetail(node)
       );
 
       legendaryTarget?.append(
@@ -818,75 +1090,17 @@
       observeMotion(card);
     });
 
-  function nodeRow(node) {
-    const button = el(
-      'button',
-      `becoming__node-row status-${node.computedStatus}`
-    );
-
-    button.type = 'button';
-
-    const displayTitle =
-      localizedTitle(node);
-
-    button.innerHTML =
-      `<span class="becoming__state-mark" aria-hidden="true"></span>` +
-      `<span>` +
-      `<strong>${displayTitle}</strong>` +
-      `<small>${label(node.computedStatus)} · ${label(node.type)}</small>` +
-      `</span>`;
-
-    button.setAttribute(
-      'aria-label',
-      `${node.title}, ${label(node.computedStatus)}, ${label(node.type)}`
-    );
-
-    button.addEventListener(
-      'click',
-      () => openDetail(node)
-    );
-
-    return button;
-  }
-
-  const selector =
+  const treeSelector =
     document.getElementById(
       'tree-selector'
     );
 
-  data.trees.forEach(domain => {
-    const button = el(
-      'button',
-      '',
-      language === 'fr'
-        ? (
-            domain.title_fr ||
-            domain.title
-          )
-        : domain.title
-    );
-
-    button.type = 'button';
-    button.dataset.tree = domain.id;
-    button.dataset.titleEn =
-      domain.title;
-    button.dataset.titleFr =
-      domain.title_fr ||
-      domain.title;
-
-    button.addEventListener(
-      'click',
-      () =>
-        selectTree(domain.id)
-    );
-
-    selector?.append(button);
-  });
-
   let selectedTree =
-    new URL(location.href)
-      .searchParams
-      .get('tree') ||
+    new URL(
+      window.location.href
+    ).searchParams.get(
+      'tree'
+    ) ||
     localStorage.getItem(
       'becoming.tree'
     ) ||
@@ -896,18 +1110,68 @@
     selectedTree = 'research';
   }
 
+  (data.trees || []).forEach(
+    domain => {
+      const button = element(
+        'button'
+      );
+
+      button.type = 'button';
+      button.dataset.tree =
+        domain.id;
+
+      button.textContent =
+        language === 'fr'
+          ? (
+              domain.title_fr ||
+              domain.title
+            )
+          : domain.title;
+
+      button.addEventListener(
+        'click',
+        () =>
+          selectTree(domain.id)
+      );
+
+      treeSelector?.append(
+        button
+      );
+    }
+  );
+
+  const search =
+    document.getElementById(
+      'node-search'
+    );
+
+  const statusFilter =
+    document.getElementById(
+      'status-filter'
+    );
+
+  const typeFilter =
+    document.getElementById(
+      'type-filter'
+    );
+
   function selectTree(
     treeId,
     updateHistory = true
   ) {
-    selectedTree = treeId;
+    if (!domains.has(treeId)) {
+      return;
+    }
+
+    selectedTree =
+      treeId;
 
     localStorage.setItem(
       'becoming.tree',
       treeId
     );
 
-    selector
+    treeSelector
       ?.querySelectorAll(
         'button'
       )
@@ -925,46 +1189,75 @@
           'aria-pressed',
           String(selected)
         );
+
+        const domain =
+          domains.get(
+            button.dataset.tree
+          );
+
+        button.textContent =
+          language === 'fr'
+            ? (
+                domain?.title_fr ||
+                domain?.title ||
+                ''
+              )
+            : (
+                domain?.title ||
+                ''
+              );
       });
 
     const domain =
       domains.get(treeId);
 
-    if (!domain) return;
-
-    document
-      .getElementById(
+    const heading =
+      document.getElementById(
         'tree-heading'
-      )
-      .textContent =
+      );
+
+    const summary =
+      document.getElementById(
+        'tree-summary'
+      );
+
+    if (heading) {
+      heading.textContent =
         language === 'fr'
           ? (
               domain.title_fr ||
               domain.title
             )
           : domain.title;
+    }
 
-    document
-      .getElementById(
-        'tree-summary'
-      )
-      .textContent =
-        `${label(domain.strategy)} · ${
-          language === 'fr'
-            ? (
-                domain.description_fr ||
-                domain.description ||
-                ''
-              )
-            : (
-                domain.description ||
-                ''
-              )
-        }`;
+    if (summary) {
+      const strategy =
+        domain.strategy
+          ? `${label(domain.strategy)} · `
+          : '';
+
+      const description =
+        language === 'fr'
+          ? (
+              domain.description_fr ||
+              domain.description ||
+              ''
+            )
+          : (
+              domain.description ||
+              ''
+            );
+
+      summary.textContent =
+        `${strategy}${description}`;
+    }
 
     if (updateHistory) {
       const url =
-        new URL(location.href);
+        new URL(
+          window.location.href
+        );
 
       url.searchParams.set(
         'tree',
@@ -975,10 +1268,8 @@
         'node'
       );
 
-      history.pushState(
-        {
-          tree: treeId
-        },
+      history.replaceState(
+        {},
         '',
         url
       );
@@ -987,20 +1278,203 @@
     renderTree();
   }
 
-  const search =
-    document.getElementById(
-      'node-search'
+  function filteredTreeNodes() {
+    const query =
+      search?.value
+        ?.trim()
+        .toLowerCase() ||
+      '';
+
+    return nodes
+      .filter(
+        node =>
+          node.tree ===
+          selectedTree
+      )
+      .filter(node => {
+        if (!query) return true;
+
+        return [
+          node.title,
+          node.title_fr,
+          node.description,
+          node.description_fr,
+          ...(node.tags || [])
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .toLowerCase()
+          .includes(query);
+      })
+      .filter(node => {
+        if (
+          !statusFilter?.value
+        ) {
+          return true;
+        }
+
+        return (
+          node.computedStatus ===
+          statusFilter.value
+        );
+      })
+      .filter(node => {
+        if (
+          !typeFilter?.value
+        ) {
+          return true;
+        }
+
+        return (
+          node.type ===
+          typeFilter.value
+        );
+      });
+  }
+
+  function renderTree() {
+    const allTreeNodes =
+      nodes.filter(
+        node =>
+          node.tree ===
+          selectedTree
+      );
+
+    if (typeFilter) {
+      const currentValue =
+        typeFilter.value;
+
+      const types = [
+        ...new Set(
+          allTreeNodes.map(
+            node => node.type
+          )
+        )
+      ].sort();
+
+      typeFilter.replaceChildren(
+        new Option(
+          language === 'fr'
+            ? 'Tous'
+            : 'All',
+          ''
+        ),
+        ...types.map(
+          type =>
+            new Option(
+              label(type),
+              type
+            )
+        )
+      );
+
+      typeFilter.value =
+        types.includes(
+          currentValue
+        )
+          ? currentValue
+          : '';
+    }
+
+    const list =
+      document.getElementById(
+        'node-list'
+      );
+
+    if (!list) return;
+
+    const visible =
+      filteredTreeNodes();
+
+    list.replaceChildren();
+
+    let previousActuarialGroup =
+      null;
+
+    visible.forEach(
+      (node, index) => {
+        if (
+          selectedTree ===
+          'actuarial'
+        ) {
+          const group =
+            (
+              node.id ===
+                'actuarial-fm' ||
+              node.id.startsWith(
+                'actuarial-fm-'
+              )
+            )
+              ? 'fm'
+              : 'cas';
+
+          if (
+            group !==
+            previousActuarialGroup
+          ) {
+            const heading =
+              element(
+                'li',
+                'becoming__path-group'
+              );
+
+            heading.textContent =
+              group === 'fm'
+                ? (
+                    language === 'fr'
+                      ? 'Préparation FM'
+                      : 'FM Preparation'
+                  )
+                : (
+                    language === 'fr'
+                      ? 'Parcours CAS / ACAS'
+                      : 'CAS / ACAS Pathway'
+                  );
+
+            list.append(
+              heading
+            );
+
+            previousActuarialGroup =
+              group;
+          }
+        }
+
+        const item =
+          element('li');
+
+        item.style.setProperty(
+          '--reveal-order',
+          index
+        );
+
+        item.append(
+          nodeRow(node)
+        );
+
+        list.append(item);
+
+        observeMotion(item);
+      }
     );
 
-  const statusFilter =
-    document.getElementById(
-      'status-filter'
-    );
+    if (!visible.length) {
+      const item =
+        element('li');
 
-  const typeFilter =
-    document.getElementById(
-      'type-filter'
-    );
+      item.append(
+        element(
+          'p',
+          'becoming__empty',
+          language === 'fr'
+            ? 'Aucun objectif ne correspond à ces filtres.'
+            : 'No milestone matches these filters.'
+        )
+      );
+
+      list.append(item);
+    }
+  }
 
   [
     search,
@@ -1015,195 +1489,9 @@
       );
     });
 
-  let showFullTree = true;
-
-  const nodeGroup = node => {
-    if (
-      node.tree !==
-      'actuarial'
-    ) {
-      return node.tree;
-    }
-
-    return (
-      node.id ===
-        'actuarial-fm' ||
-      node.id.startsWith(
-        'actuarial-fm-'
-      )
-    )
-      ? 'fm'
-      : 'cas';
-  };
-
-  const groupTitle = group => ({
-    fm:
-      language === 'fr'
-        ? 'Préparation FM'
-        : 'FM Preparation',
-
-    cas:
-      language === 'fr'
-        ? 'Parcours CAS / ACAS'
-        : 'CAS / ACAS Pathway'
-  }[group] || '');
-
-  function filteredNodes() {
-    const query =
-      search?.value
-        ?.trim()
-        ?.toLowerCase() ||
-      '';
-
-    return nodes
-      .filter(
-        node =>
-          node.tree ===
-          selectedTree
-      )
-      .filter(
-        node =>
-          !query ||
-          [
-            node.title,
-            node.title_fr,
-            node.description,
-            node.description_fr,
-            ...(node.tags || [])
-          ]
-            .filter(Boolean)
-            .join(' ')
-            .toLowerCase()
-            .includes(query)
-      )
-      .filter(
-        node =>
-          !statusFilter?.value ||
-          node.computedStatus ===
-            statusFilter.value
-      )
-      .filter(
-        node =>
-          !typeFilter?.value ||
-          node.type ===
-            typeFilter.value
-      );
-  }
-
-  function renderTree() {
-    const treeNodes =
-      nodes.filter(
-        node =>
-          node.tree ===
-          selectedTree
-      );
-
-    const types = [
-      ...new Set(
-        treeNodes.map(
-          node => node.type
-        )
-      )
-    ].sort();
-
-    if (typeFilter) {
-      const oldType =
-        typeFilter.value;
-
-      typeFilter.replaceChildren(
-        new Option(
-          'All',
-          ''
-        ),
-        ...types.map(
-          type =>
-            new Option(
-              label(type),
-              type
-            )
-        )
-      );
-
-      typeFilter.value =
-        types.includes(oldType)
-          ? oldType
-          : '';
-    }
-
-    const visible =
-      filteredNodes();
-
-    const list =
-      document.getElementById(
-        'node-list'
-      );
-
-    if (!list) return;
-
-    const rows = [];
-    let previousGroup = null;
-
-    visible.forEach(node => {
-      const group =
-        nodeGroup(node);
-
-      if (
-        selectedTree ===
-          'actuarial' &&
-        group !==
-          previousGroup
-      ) {
-        const heading = el(
-          'li',
-          'becoming__path-group'
-        );
-
-        heading.textContent =
-          groupTitle(group);
-
-        rows.push(heading);
-
-        previousGroup = group;
-      }
-
-      const li = el('li');
-
-      li.append(
-        nodeRow(node)
-      );
-
-      rows.push(li);
-    });
-
-    list.replaceChildren(
-      ...rows
-    );
-
-    rows.forEach(
-      (row, index) => {
-        row.style.setProperty(
-          '--reveal-order',
-          index
-        );
-
-        observeMotion(row);
-      }
-    );
-
-    if (!visible.length) {
-      const li = el('li');
-
-      li.append(
-        el(
-          'p',
-          'becoming__empty',
-          'No milestone matches these filters.'
-        )
-      );
-
-      list.append(li);
-    }
-  }
+  // ============================================================
+  // DETAILS
+  // ============================================================
 
   const detail =
     document.getElementById(
@@ -1220,7 +1508,7 @@
       'detail-scrim'
     );
 
-  let priorFocus;
+  let priorFocus = null;
 
   function openDetail(node) {
     if (
@@ -1232,73 +1520,55 @@
       return;
     }
 
-    root
-      .querySelectorAll(
-        '.becoming__legendary-card'
-      )
-      .forEach(card => {
-        card.classList.toggle(
-          'is-active',
-          card.dataset.nodeId ===
-            node.id
-        );
-      });
-
     priorFocus =
       document.activeElement;
 
-    const reqs =
-      (node.requires || [])
-        .map(id =>
-          byId.get(id)
-        )
-        .filter(Boolean);
-
-    const unlocks =
-      (
-        dependents.get(node.id) ||
-        []
-      )
-        .map(id =>
-          byId.get(id)
-        )
-        .filter(Boolean);
-
     detailContent.replaceChildren();
 
-    const detailDomain =
+    const domain =
       domains.get(node.tree);
 
-    const detailDomainTitle =
-      language === 'fr'
+    const domainTitle =
+      node.tree === 'legendary'
         ? (
-            detailDomain?.title_fr ||
-            detailDomain?.title ||
-            'Légendaire'
+            language === 'fr'
+              ? 'Légendaire'
+              : 'Legendary'
           )
         : (
-            detailDomain?.title ||
-            'Legendary'
+            language === 'fr'
+              ? (
+                  domain?.title_fr ||
+                  domain?.title ||
+                  ''
+                )
+              : (
+                  domain?.title ||
+                  ''
+                )
           );
 
-    const eyebrow = el(
-      'p',
-      'becoming__label',
-      `${detailDomainTitle} · ${label(node.type)}`
-    );
+    const eyebrow =
+      element(
+        'p',
+        'becoming__label',
+        `${domainTitle} · ${label(node.type)}`
+      );
 
-    const title = el(
-      'h2',
-      '',
-      localizedTitle(node)
-    );
+    const title =
+      element(
+        'h2',
+        '',
+        localizedTitle(node)
+      );
 
-    title.id = 'detail-title';
+    title.id =
+      'detail-title';
 
     detailContent.append(
       eyebrow,
       title,
-      el(
+      element(
         'p',
         `becoming__status status-${node.computedStatus}`,
         label(
@@ -1308,12 +1578,133 @@
     );
 
     const description =
-      language === 'fr'
-        ? (
-            node.description_fr ||
-            node.description
+      localizedDescription(node);
+
+    if (description) {
+      detailContent.append(
+        element(
+          'p',
+          'becoming__detail-description',
+          description
+        )
+      );
+    }
+
+    const section = titleText => {
+      const sectionNode =
+        element('section');
+
+      sectionNode.append(
+        element(
+          'h3',
+          '',
+          titleText
+        )
+      );
+
+      detailContent.append(
+        sectionNode
+      );
+
+      return sectionNode;
+    };
+
+    const appendTextList = (
+      titleText,
+      items
+    ) => {
+      if (!items?.length) {
+        return;
+      }
+
+      const target =
+        section(titleText);
+
+      const list =
+        element('ul');
+
+      items.forEach(item => {
+        list.append(
+          element(
+            'li',
+            '',
+            String(item)
           )
-        : node.description;
+        );
+      });
+
+      target.append(list);
+    };
+
+    const appendNodes = (
+      titleText,
+      nodeItems
+    ) => {
+      if (!nodeItems.length) {
+        return;
+      }
+
+      const target =
+        section(titleText);
+
+      nodeItems.forEach(
+        linkedNode => {
+          target.append(
+            nodeRow(linkedNode)
+          );
+        }
+      );
+    };
+
+    const appendLinks = (
+      titleText,
+      items
+    ) => {
+      if (!items?.length) {
+        return;
+      }
+
+      const target =
+        section(titleText);
+
+      const list =
+        element('ul');
+
+      items.forEach(item => {
+        const row =
+          element('li');
+
+        const link =
+          element(
+            item.url
+              ? 'a'
+              : 'span',
+            '',
+            item.title
+          );
+
+        if (item.url) {
+          link.href =
+            safeUrl(item.url);
+        }
+
+        row.append(link);
+
+        if (item.type) {
+          row.append(
+            element(
+              'small',
+              '',
+              ` · ${label(item.type)}`
+            )
+          );
+        }
+
+        list.append(row);
+      });
+
+      target.append(list);
+    };
 
     const why =
       language === 'fr'
@@ -1323,31 +1714,28 @@
           )
         : node.why;
 
-    if (description) {
-      detailContent.append(
-        el(
-          'p',
-          'becoming__detail-description',
-          description
-        )
+    if (why) {
+      appendTextList(
+        language === 'fr'
+          ? 'Pourquoi'
+          : 'Why it matters',
+        [why]
       );
     }
 
-    appendSection(
-      language === 'fr'
-        ? 'Pourquoi'
-        : 'Why it matters',
-      why ? [why] : []
-    );
+    const requirements =
+      (node.requires || [])
+        .map(id => byId.get(id))
+        .filter(Boolean);
 
     appendNodes(
       language === 'fr'
         ? 'Prérequis'
         : 'Requires',
-      reqs
+      requirements
     );
 
-    appendSection(
+    appendTextList(
       language === 'fr'
         ? 'Conditions'
         : 'Unlock requirements',
@@ -1356,7 +1744,7 @@
     );
 
     if (node.progress) {
-      appendSection(
+      appendTextList(
         language === 'fr'
           ? 'Progression'
           : 'Progress',
@@ -1366,7 +1754,7 @@
       );
     }
 
-    appendSection(
+    appendTextList(
       language === 'fr'
         ? 'Prochaines actions'
         : 'Next actions',
@@ -1380,35 +1768,52 @@
       node.resources || []
     );
 
+    const unlocked =
+      (
+        dependents.get(node.id) ||
+        []
+      )
+        .map(id =>
+          byId.get(id)
+        )
+        .filter(Boolean);
+
     appendNodes(
       language === 'fr'
         ? 'Débloque'
         : 'Unlocks',
-      unlocks
+      unlocked
     );
 
     if (
       node.target_date ||
       node.completed_at
     ) {
-      appendSection(
-        'Dates',
-        [
+      const dates = [];
+
+      if (node.target_date) {
+        dates.push(
           `${
-            node.target_date
-              ? `${language === 'fr' ? 'Cible' : 'Target'} : ${node.target_date}`
-              : ''
-          }${
-            node.target_date &&
-            node.completed_at
-              ? ' · '
-              : ''
-          }${
-            node.completed_at
-              ? `${language === 'fr' ? 'Terminé' : 'Completed'} : ${node.completed_at}`
-              : ''
-          }`
-        ]
+            language === 'fr'
+              ? 'Cible'
+              : 'Target'
+          } : ${node.target_date}`
+        );
+      }
+
+      if (node.completed_at) {
+        dates.push(
+          `${
+            language === 'fr'
+              ? 'Terminé'
+              : 'Completed'
+          } : ${node.completed_at}`
+        );
+      }
+
+      appendTextList(
+        'Dates',
+        dates
       );
     }
 
@@ -1421,7 +1826,7 @@
         : node.notes;
 
     if (notes) {
-      appendSection(
+      appendTextList(
         'Notes',
         [notes]
       );
@@ -1436,7 +1841,8 @@
       'false'
     );
 
-    scrim.hidden = false;
+    scrim.hidden =
+      false;
 
     document.body.classList.add(
       'becoming-detail-open'
@@ -1449,7 +1855,9 @@
       ?.focus();
 
     const url =
-      new URL(location.href);
+      new URL(
+        window.location.href
+      );
 
     url.searchParams.set(
       'node',
@@ -1461,113 +1869,6 @@
       '',
       url
     );
-
-    function section(titleText) {
-      const sectionNode =
-        el('section');
-
-      sectionNode.append(
-        el(
-          'h3',
-          '',
-          titleText
-        )
-      );
-
-      detailContent.append(
-        sectionNode
-      );
-
-      return sectionNode;
-    }
-
-    function appendSection(
-      titleText,
-      items
-    ) {
-      if (!items.length) return;
-
-      const target =
-        section(titleText);
-
-      const list =
-        el('ul');
-
-      items.forEach(item => {
-        list.append(
-          el(
-            'li',
-            '',
-            item
-          )
-        );
-      });
-
-      target.append(list);
-    }
-
-    function appendNodes(
-      titleText,
-      items
-    ) {
-      if (!items.length) return;
-
-      const target =
-        section(titleText);
-
-      items.forEach(item => {
-        target.append(
-          nodeRow(item)
-        );
-      });
-    }
-
-    function appendLinks(
-      titleText,
-      items
-    ) {
-      if (!items.length) return;
-
-      const target =
-        section(titleText);
-
-      const list =
-        el('ul');
-
-      items.forEach(item => {
-        const li =
-          el('li');
-
-        const link = el(
-          item.url
-            ? 'a'
-            : 'span',
-          '',
-          item.title
-        );
-
-        if (item.url) {
-          link.href =
-            safeUrl(item.url);
-        }
-
-        li.append(link);
-
-        if (item.type) {
-          li.append(
-            el(
-              'small',
-              '',
-              ` · ${label(item.type)}`
-            )
-          );
-        }
-
-        list.append(li);
-      });
-
-      target.append(list);
-    }
   }
 
   function closeDetail() {
@@ -1587,24 +1888,17 @@
       'true'
     );
 
-    scrim.hidden = true;
-
-    root
-      .querySelectorAll(
-        '.becoming__legendary-card.is-active'
-      )
-      .forEach(card => {
-        card.classList.remove(
-          'is-active'
-        );
-      });
+    scrim.hidden =
+      true;
 
     document.body.classList.remove(
       'becoming-detail-open'
     );
 
     const url =
-      new URL(location.href);
+      new URL(
+        window.location.href
+      );
 
     url.searchParams.delete(
       'node'
@@ -1647,16 +1941,120 @@
     }
   );
 
-  addEventListener(
+  // ============================================================
+  // LANGUAGE
+  // ============================================================
+
+  const setLanguage = value => {
+    language =
+      value === 'en'
+        ? 'en'
+        : 'fr';
+
+    localStorage.setItem(
+      'becoming.language',
+      language
+    );
+
+    root.lang =
+      language;
+
+    root
+      .querySelectorAll(
+        '[data-i18n]'
+      )
+      .forEach(node => {
+        const value =
+          copy[language][
+            node.dataset.i18n
+          ];
+
+        if (value) {
+          node.textContent =
+            value;
+        }
+      });
+
+    root
+      .querySelectorAll(
+        '[data-language]'
+      )
+      .forEach(button => {
+        const selected =
+          button.dataset.language ===
+          language;
+
+        button.classList.toggle(
+          'is-selected',
+          selected
+        );
+
+        button.setAttribute(
+          'aria-pressed',
+          String(selected)
+        );
+      });
+
+    renderCurrentWeekHeader();
+    renderSelectedWeek();
+    selectTree(
+      selectedTree,
+      false
+    );
+  };
+
+  root
+    .querySelectorAll(
+      '[data-language]'
+    )
+    .forEach(button => {
+      button.addEventListener(
+        'click',
+        () => {
+          setLanguage(
+            button.dataset.language
+          );
+        }
+      );
+    });
+
+  // ============================================================
+  // INITIAL RENDER
+  // ============================================================
+
+  setLanguage(language);
+
+  const params =
+    new URL(
+      window.location.href
+    ).searchParams;
+
+  const requestedNode =
+    params.get('node');
+
+  if (
+    requestedNode &&
+    byId.has(requestedNode)
+  ) {
+    openDetail(
+      byId.get(
+        requestedNode
+      )
+    );
+  }
+
+  window.addEventListener(
     'popstate',
     () => {
-      const params =
+      const currentParams =
         new URL(
-          location.href
+          window.location.href
         ).searchParams;
 
       const tree =
-        params.get('tree');
+        currentParams.get(
+          'tree'
+        );
 
       if (
         tree &&
@@ -1668,40 +2066,19 @@
         );
       }
 
-      const node =
-        params.get('node');
+      const nodeId =
+        currentParams.get(
+          'node'
+        );
 
       if (
-        node &&
-        byId.has(node)
+        nodeId &&
+        byId.has(nodeId)
       ) {
         openDetail(
-          byId.get(node)
+          byId.get(nodeId)
         );
       }
     }
   );
-
-  const params =
-    new URL(
-      location.href
-    ).searchParams;
-
-  selectTree(
-    selectedTree,
-    false
-  );
-
-  if (
-    params.get('node') &&
-    byId.has(
-      params.get('node')
-    )
-  ) {
-    openDetail(
-      byId.get(
-        params.get('node')
-      )
-    );
-  }
 })();
