@@ -19,13 +19,6 @@ maintenance:
   - lean-fundamentals
   - writing-reading-practice
 
-user_inputs:
-  literary_books:
-    - "Bonjour tristesse — Françoise Sagan"
-    - "Mort à crédit — Louis-Ferdinand Céline"
-  investment_book:
-    - "The Intelligent Investor — Benjamin Graham"
-
 quests:
 
   - domain: actuarial
@@ -65,8 +58,8 @@ quests:
 
   - domain: writing
     node: writing-reading-practice
-    task: Read Bonjour tristesse, Mort à crédit, and The Intelligent Investor during the week.
-    task_fr: Lire Bonjour tristesse, Mort à crédit et L'Investisseur intelligent pendant la semaine.
+    task: Read Bonjour tristesse, Mort à crédit, and The Intelligent Investor.
+    task_fr: Lire Bonjour tristesse, Mort à crédit et L'Investisseur intelligent.
     completion:
       - Read Bonjour tristesse
       - Continue Mort à crédit
