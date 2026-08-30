@@ -1,6 +1,6 @@
 ---
-title: FM · P · Insurance GLMs
-title_fr: FM · P · GLM en assurance
+title: FM · P · Insurance GLMs · Machine Learning
+title_fr: FM · P · GLM en assurance · Machine Learning
 
 cycle: foundations-01
 cycle_week: 1
@@ -22,20 +22,14 @@ maintenance:
 quests:
 
   - domain: actuarial
-    task: FM studies and exercises. P studies and exercises.
-    task_fr: FM — études et exercices. P — études et exercices.
-    completion:
-      - Study FM
-      - Complete FM exercises
-      - Study Exam P
-      - Complete Exam P exercises
-      - Record important errors or weak areas
-    completion_fr:
-      - Étudier FM
-      - Faire des exercices de FM
-      - Étudier l'examen P
-      - Faire des exercices de P
-      - Noter les erreurs importantes ou les points faibles
+    node: actuarial-fm-diagnostic
+    task: FM studies and exercises.
+    task_fr: FM — études et exercices.
+
+  - domain: actuarial
+    node: actuarial-exam-1
+    task: P studies and exercises.
+    task_fr: P — études et exercices.
 
   - domain: research
     node: research-actuarial-glm-tweedie
@@ -56,33 +50,29 @@ quests:
       - Comprendre les variables continues et catégorielles
       - Écrire trois questions techniques
 
+  - domain: research
+    task: Continue the FUN MOOC Machine Learning in Python with scikit-learn.
+    task_fr: Poursuivre le FUN MOOC Machine Learning in Python with scikit-learn.
+
   - domain: writing
     node: writing-reading-practice
-    task: Read Bonjour tristesse, Mort à crédit, and The Intelligent Investor.
-    task_fr: Lire Bonjour tristesse, Mort à crédit et L'Investisseur intelligent.
-    completion:
-      - Read Bonjour tristesse
-      - Continue Mort à crédit
-      - Read The Intelligent Investor
-      - Record useful literary, intellectual, or investment observations
-    completion_fr:
-      - Lire Bonjour tristesse
-      - Poursuivre Mort à crédit
-      - Lire L'Investisseur intelligent
-      - Noter les observations littéraires, intellectuelles ou financières utiles
+    task: Read Bonjour tristesse.
+    task_fr: Lire Bonjour tristesse.
+
+  - domain: writing
+    node: writing-reading-practice
+    task: Read Mort à crédit.
+    task_fr: Lire Mort à crédit.
+
+  - domain: writing
+    node: writing-reading-practice
+    task: Read The Intelligent Investor.
+    task_fr: Lire L'Investisseur intelligent.
 
   - domain: lean
     node: lean-fundamentals
-    task: Set up Lean 4, review basic expressions and types, and add one tiny understood theorem to your Lean work.
-    task_fr: Installer Lean 4, revoir les expressions et types de base et ajouter un petit théorème compris à ton travail Lean.
-    completion:
-      - Working Lean environment
-      - Understand a basic theorem statement
-      - Formalize one tiny theorem
-    completion_fr:
-      - Environnement Lean fonctionnel
-      - Comprendre l'énoncé d'un théorème simple
-      - Formaliser un petit théorème
+    task: Set up Lean 4, review basic expressions and types, and add one small understood theorem.
+    task_fr: Installer Lean 4, revoir les expressions et types de base et ajouter un petit théorème compris.
 
   - domain: english
     node: english-conversation-practice
