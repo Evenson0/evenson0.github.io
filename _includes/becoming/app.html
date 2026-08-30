@@ -1,76 +1,348 @@
 {% assign b = site.data.becoming %}
-<main id="becoming-app" class="becoming" data-baseurl="{{ site.baseurl | default: '' }}" data-page-view="{{ page.becoming_view | default: 'overview' }}">
-  <noscript><p class="becoming__notice">JavaScript enhances the graph and filters. The complete semantic milestone lists remain below.</p></noscript>
+
+<main
+  id="becoming-app"
+  class="becoming"
+  data-baseurl="{{ site.baseurl | default: '' }}"
+  data-page-view="{{ page.becoming_view | default: 'overview' }}"
+>
+  <noscript>
+    <p class="becoming__notice">
+      JavaScript enhances the roadmap and weekly navigation.
+    </p>
+  </noscript>
+
   <header class="becoming__hero">
     <div class="becoming__hero-top">
-      <p class="becoming__eyebrow" data-i18n="eyebrow">Progression personnelle · preuves réelles</p>
+      <p class="becoming__eyebrow" data-i18n="eyebrow">
+        Progression personnelle
+      </p>
+
       <div class="becoming__language" aria-label="Language / Langue">
-        <button type="button" data-language="fr" class="is-selected">FR</button>
-        <button type="button" data-language="en">EN</button>
+        <button
+          type="button"
+          data-language="fr"
+          class="is-selected"
+        >
+          FR
+        </button>
+
+        <button
+          type="button"
+          data-language="en"
+        >
+          EN
+        </button>
       </div>
     </div>
-    <p class="becoming__lede" data-i18n="subtitle">{{ b.settings.subtitle }}</p>
-    <p class="becoming__principle" data-i18n="principle">Une vision à long terme, traduite en objectifs concrets chaque semaine.</p>
+
+    <p class="becoming__lede" data-i18n="subtitle">
+      Une carte de ce que j'apprends, construis et deviens.
+    </p>
+
+    <p class="becoming__principle" data-i18n="principle">
+      Une vision à long terme, traduite en objectifs concrets chaque semaine.
+    </p>
   </header>
 
-  <nav class="becoming__tabs" aria-label="Becoming sections">
-    <a href="{{ '/becoming/' | relative_url }}"{% if page.becoming_view == 'overview' %} class="is-selected" aria-current="page"{% endif %}><span>01</span><strong data-i18n="this_week">Cette semaine</strong><small data-i18n="weekly_program">Programme concret</small></a>
-    <a href="{{ '/becoming/roadmap/' | relative_url }}"{% if page.becoming_view == 'roadmap' %} class="is-selected" aria-current="page"{% endif %}><span>02</span><strong>Roadmap</strong><small data-i18n="whole_path">Toute la progression</small></a>
+  <nav
+    class="becoming__tabs"
+    aria-label="Becoming sections"
+  >
+    <a
+      href="{{ '/becoming/' | relative_url }}"
+      {% if page.becoming_view == 'overview' %}
+        class="is-selected"
+        aria-current="page"
+      {% endif %}
+    >
+      <span>01</span>
+      <strong data-i18n="this_week">
+        Cette semaine
+      </strong>
+      <small data-i18n="weekly_program">
+        Programme concret
+      </small>
+    </a>
+
+    <a
+      href="{{ '/becoming/roadmap/' | relative_url }}"
+      {% if page.becoming_view == 'roadmap' %}
+        class="is-selected"
+        aria-current="page"
+      {% endif %}
+    >
+      <span>02</span>
+      <strong>Roadmap</strong>
+      <small data-i18n="whole_path">
+        Toute la progression
+      </small>
+    </a>
   </nav>
 
-  <section id="becoming-overview" class="becoming__view" aria-labelledby="overview-heading">
-    <h2 id="overview-heading" data-i18n="this_week">Cette semaine</h2>
-    {% assign current_cycle = b.cycles.cycles | where: "id", b.cycles.current_cycle | first %}
-    <section class="becoming__cycle" aria-label="Current cycle">
-      <div><p class="becoming__label" data-i18n="current_cycle">Cycle actuel</p><strong><span data-i18n="foundations_cycle">Fondations</span> · <span data-i18n="week_of_cycle">Semaine 1 sur 12</span></strong></div>
-      <span data-i18n="current_range">{{ b.current.display_fr }}</span>
+  <section
+    id="becoming-overview"
+    class="becoming__view"
+    aria-labelledby="overview-heading"
+  >
+    <h2
+      id="overview-heading"
+      data-i18n="this_week"
+    >
+      Cette semaine
+    </h2>
+
+    <section
+      class="becoming__cycle"
+      aria-label="Current planning period"
+    >
+      <div>
+        <p
+          class="becoming__label"
+          data-i18n="current_cycle"
+        >
+          Période actuelle
+        </p>
+
+        <strong>
+          <span id="current-cycle-title"></span>
+          ·
+          <span id="current-week-position"></span>
+        </strong>
+      </div>
+
+      <span id="current-week-range"></span>
     </section>
-    <section class="becoming__secondary" aria-labelledby="secondary-heading">
-      <div class="becoming__secondary-head"><div><p class="becoming__label" data-i18n="weekly_program">Programme concret</p><h2 id="secondary-heading" data-i18n="weekly_objectives">Objectifs de la semaine</h2><p class="becoming__section-intro" data-i18n="weekly_help">Un rappel simple de ce qui compte cette semaine.</p></div><div class="becoming__week-arrows"><button id="previous-week" type="button" aria-label="Previous week">←</button><button id="next-week" type="button" aria-label="Next week">→</button></div></div>
-      <div id="week-rail" class="becoming__week-rail" aria-label="Cycle weeks"></div>
-      <div class="becoming__selected-week"><p class="becoming__label" id="selected-week-label"></p><h3 id="selected-week-title"></h3></div>
-      <div id="becoming-quests" class="becoming__quest-stack"></div>
+
+    <section
+      class="becoming__secondary"
+      aria-labelledby="secondary-heading"
+    >
+      <div class="becoming__secondary-head">
+        <div>
+          <p
+            class="becoming__label"
+            data-i18n="weekly_program"
+          >
+            Programme concret
+          </p>
+
+          <h2
+            id="secondary-heading"
+            data-i18n="weekly_objectives"
+          >
+            Objectifs de la semaine
+          </h2>
+
+          <p
+            class="becoming__section-intro"
+            data-i18n="weekly_help"
+          >
+            Un rappel simple de ce qui compte cette semaine.
+          </p>
+        </div>
+
+        <div class="becoming__week-arrows">
+          <button
+            id="previous-week"
+            type="button"
+            aria-label="Previous week"
+          >
+            ←
+          </button>
+
+          <button
+            id="next-week"
+            type="button"
+            aria-label="Next week"
+          >
+            →
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="week-rail"
+        class="becoming__week-rail"
+        aria-label="Planning weeks"
+      ></div>
+
+      <div class="becoming__selected-week">
+        <p
+          class="becoming__label"
+          id="selected-week-label"
+        ></p>
+
+        <h3 id="selected-week-title"></h3>
+      </div>
+
+      <div
+        id="becoming-quests"
+        class="becoming__quest-stack"
+      ></div>
     </section>
-    <div hidden><div id="becoming-focus"></div><div id="becoming-maintenance"></div><div id="becoming-next"></div><div id="becoming-evidence"></div></div>
+
+    <div hidden>
+      <div id="becoming-focus"></div>
+      <div id="becoming-maintenance"></div>
+      <div id="becoming-next"></div>
+    </div>
   </section>
 
-  <section id="becoming-tree" class="becoming__view" aria-labelledby="tree-heading">
-    <section class="becoming__legendary" aria-labelledby="legendary-heading">
-      <div><p class="becoming__label" data-i18n="long_term_vision">Vision à long terme</p><h2 id="legendary-heading" data-i18n="legendary_goals">Objectifs légendaires</h2><p class="becoming__section-intro" data-i18n="legendary_help">Les grandes destinations. Leur progression dépend automatiquement des étapes accomplies dans les domaines ci-dessous.</p></div>
-      <div id="becoming-legendary" class="becoming__legendary-grid"></div>
+  <section
+    id="becoming-tree"
+    class="becoming__view"
+    aria-labelledby="tree-heading"
+  >
+    <section
+      class="becoming__legendary"
+      aria-labelledby="legendary-heading"
+    >
+      <div>
+        <p
+          class="becoming__label"
+          data-i18n="long_term_vision"
+        >
+          Vision à long terme
+        </p>
+
+        <h2
+          id="legendary-heading"
+          data-i18n="legendary_goals"
+        >
+          Objectifs légendaires
+        </h2>
+
+        <p
+          class="becoming__section-intro"
+          data-i18n="legendary_help"
+        >
+          Les grandes destinations. Leur progression dépend automatiquement
+          des étapes accomplies dans les domaines ci-dessous.
+        </p>
+      </div>
+
+      <div
+        id="becoming-legendary"
+        class="becoming__legendary-grid"
+      ></div>
     </section>
-    <div class="becoming__tree-head"><div><p class="becoming__label" data-i18n="domain_path">Parcours par domaine</p><h2 id="tree-heading">Research</h2></div><p id="tree-summary"></p></div>
-    <div class="becoming__tree-selector" id="tree-selector" role="toolbar" aria-label="Choose a progression tree"></div>
-    <button id="toggle-full-tree" class="becoming__expand" type="button" hidden>Show complete tree</button>
-    <div class="becoming__controls" aria-label="Filter milestones" hidden>
-      <label>Search <input id="node-search" type="search" autocomplete="off" placeholder="Title or tag"></label>
-      <label>Status <select id="status-filter"><option value="">All</option><option value="available">Available</option><option value="in_progress">In progress</option><option value="completed">Completed</option><option value="locked">Locked</option><option value="maintenance">Maintenance</option><option value="paused">Paused</option><option value="dormant">Dormant</option></select></label>
-      <label>Type <select id="type-filter"><option value="">All</option></select></label>
-      <button id="fit-tree" type="button">Recentrer</button>
+
+    <div class="becoming__tree-head">
+      <div>
+        <p
+          class="becoming__label"
+          data-i18n="domain_path"
+        >
+          Parcours par domaine
+        </p>
+
+        <h2 id="tree-heading">
+          Research
+        </h2>
+      </div>
+
+      <p id="tree-summary"></p>
     </div>
-    <div class="becoming__map" id="tree-map" aria-label="Visual prerequisite graph" hidden></div>
+
+    <div
+      class="becoming__tree-selector"
+      id="tree-selector"
+      role="toolbar"
+      aria-label="Choose a progression tree"
+    ></div>
+
+    <div
+      class="becoming__controls"
+      hidden
+    >
+      <label>
+        Search
+        <input
+          id="node-search"
+          type="search"
+          autocomplete="off"
+        >
+      </label>
+
+      <label>
+        Status
+        <select id="status-filter">
+          <option value="">All</option>
+          <option value="available">Available</option>
+          <option value="in_progress">In progress</option>
+          <option value="completed">Completed</option>
+          <option value="locked">Locked</option>
+          <option value="maintenance">Maintenance</option>
+          <option value="paused">Paused</option>
+          <option value="dormant">Dormant</option>
+        </select>
+      </label>
+
+      <label>
+        Type
+        <select id="type-filter">
+          <option value="">All</option>
+        </select>
+      </label>
+    </div>
+
     <div class="becoming__semantic">
-      <h3 data-i18n="progress_path">Chemin de progression</h3>
-      <p data-i18n="progress_help">Tous les objectifs du domaine sont présentés dans leur ordre logique. Sélectionne une étape pour voir ses conditions, ses preuves et ce qu'elle débloque.</p>
+      <h3 data-i18n="progress_path">
+        Chemin de progression
+      </h3>
+
+      <p data-i18n="progress_help">
+        Tous les objectifs du domaine sont présentés dans leur ordre logique.
+        Sélectionne une étape pour voir ses conditions et ce qu'elle débloque.
+      </p>
+
       <ol id="node-list"></ol>
     </div>
   </section>
 
-  <aside id="node-detail" class="becoming__detail" role="dialog" aria-modal="true" aria-labelledby="detail-title" aria-hidden="true">
-    <button id="detail-close" class="becoming__detail-close" type="button" aria-label="Close milestone details" data-i18n="close">Fermer</button>
+  <aside
+    id="node-detail"
+    class="becoming__detail"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="detail-title"
+    aria-hidden="true"
+  >
+    <button
+      id="detail-close"
+      class="becoming__detail-close"
+      type="button"
+      aria-label="Close milestone details"
+      data-i18n="close"
+    >
+      Fermer
+    </button>
+
     <div id="detail-content"></div>
   </aside>
-  <div id="detail-scrim" class="becoming__scrim" hidden></div>
+
+  <div
+    id="detail-scrim"
+    class="becoming__scrim"
+    hidden
+  ></div>
 </main>
 
-<script id="becoming-data" type="application/json">
+<script
+  id="becoming-data"
+  type="application/json"
+>
 {
   "settings": {{ b.settings | jsonify }},
   "trees": {{ b.domains | jsonify }},
-  "current": {{ b.current | jsonify }},
+  "cycles": {{ b.cycles | jsonify }},
   "achievements": {{ b.achievements | jsonify }},
   "treeData": {
-    {% for tree in b.domains %}"{{ tree.id }}": {{ b.trees[tree.id] | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
+    {% for tree in b.domains %}
+      "{{ tree.id }}": {{ b.trees[tree.id] | jsonify }}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
   },
   "weeks": {{ site.becoming | jsonify }},
   "private": {% if b.private %}{{ b.private | jsonify }}{% else %}{}{% endif %}
