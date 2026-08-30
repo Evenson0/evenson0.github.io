@@ -21,12 +21,21 @@ maintenance:
   - capital
 
 quests:
+
   - id: w01-fm
     tree: actuarial
     node: actuarial-fm-diagnostic
     kind: practice
-    title: FM — 50 interest-theory problems and one mixed diagnostic
-    title_fr: FM — 50 exercices de théorie de l'intérêt et un diagnostic mixte
+    title: FM — studies and exercises
+    title_fr: FM — études et exercices
+    status: planned
+
+  - id: w01-p
+    tree: actuarial
+    node: actuarial-exam-1
+    kind: practice
+    title: P — studies and exercises
+    title_fr: P — études et exercices
     status: planned
 
   - id: w01-research
@@ -37,12 +46,28 @@ quests:
     title_fr: Goldburd — pages 1 à 15
     status: planned
 
-  - id: w01-reading
+  - id: w01-bonjour-tristesse
     tree: writing
     node: writing-reading-practice
     kind: reading
-    title: Mort à crédit — about 70 pages
-    title_fr: Mort à crédit — environ 70 pages
+    title: Bonjour tristesse — Françoise Sagan
+    title_fr: Bonjour tristesse — Françoise Sagan
+    status: planned
+
+  - id: w01-mort-credit
+    tree: writing
+    node: writing-reading-practice
+    kind: reading
+    title: Mort à crédit — Louis-Ferdinand Céline
+    title_fr: Mort à crédit — Louis-Ferdinand Céline
+    status: planned
+
+  - id: w01-intelligent-investor
+    tree: writing
+    node: writing-reading-practice
+    kind: reading
+    title: The Intelligent Investor — Benjamin Graham
+    title_fr: L'Investisseur intelligent — Benjamin Graham
     status: planned
 
   - id: w01-lean
