@@ -1,6 +1,6 @@
 ---
-title: FM Diagnostic · Insurance GLMs
-title_fr: Diagnostic FM · GLM en assurance
+title: FM · P · Insurance GLMs
+title_fr: FM · P · GLM en assurance
 
 cycle: foundations-01
 cycle_week: 1
@@ -10,6 +10,7 @@ status: planned
 
 active:
   - actuarial-fm-diagnostic
+  - actuarial-exam-1
   - research-actuarial-glm-tweedie
   - physical-process
 
@@ -19,26 +20,29 @@ maintenance:
   - writing-reading-practice
 
 user_inputs:
-  literary_book: "Mort à crédit — Louis-Ferdinand Céline"
+  literary_books:
+    - "Bonjour tristesse — Françoise Sagan"
+    - "Mort à crédit — Louis-Ferdinand Céline"
+  investment_book:
+    - "The Intelligent Investor — Benjamin Graham"
 
 quests:
 
   - domain: actuarial
-    node: actuarial-fm-diagnostic
-    task: Complete 50 interest-theory problems and one mixed FM diagnostic.
-    task_fr: Compléter 50 exercices sur la théorie de l'intérêt et un diagnostic FM mixte.
+    task: FM studies and exercises. P studies and exercises.
+    task_fr: FM — études et exercices. P — études et exercices.
     completion:
-      - Complete 50 interest-theory problems
-      - Review incorrect or uncertain answers
-      - Complete one mixed diagnostic
-      - Identify the three weakest FM areas
-      - Update the error log
+      - Study FM
+      - Complete FM exercises
+      - Study Exam P
+      - Complete Exam P exercises
+      - Record important errors or weak areas
     completion_fr:
-      - Compléter 50 exercices sur la théorie de l'intérêt
-      - Revoir les réponses incorrectes ou incertaines
-      - Compléter un diagnostic mixte
-      - Identifier les trois principaux points faibles en FM
-      - Mettre à jour le journal d'erreurs
+      - Étudier FM
+      - Faire des exercices de FM
+      - Étudier l'examen P
+      - Faire des exercices de P
+      - Noter les erreurs importantes ou les points faibles
 
   - domain: research
     node: research-actuarial-glm-tweedie
@@ -61,14 +65,18 @@ quests:
 
   - domain: writing
     node: writing-reading-practice
-    task: Read about 70 pages of Mort à crédit and record three observations about the writing.
-    task_fr: Lire environ 70 pages de Mort à crédit et noter trois observations sur l'écriture.
+    task: Read Bonjour tristesse, Mort à crédit, and The Intelligent Investor during the week.
+    task_fr: Lire Bonjour tristesse, Mort à crédit et L'Investisseur intelligent pendant la semaine.
     completion:
-      - Read about 70 pages
-      - Note three observations about voice, rhythm, language, structure, or character
+      - Read Bonjour tristesse
+      - Continue Mort à crédit
+      - Read The Intelligent Investor
+      - Record useful literary, intellectual, or investment observations
     completion_fr:
-      - Lire environ 70 pages
-      - Noter trois observations sur la voix, le rythme, la langue, la structure ou les personnages
+      - Lire Bonjour tristesse
+      - Poursuivre Mort à crédit
+      - Lire L'Investisseur intelligent
+      - Noter les observations littéraires, intellectuelles ou financières utiles
 
   - domain: lean
     node: lean-fundamentals
