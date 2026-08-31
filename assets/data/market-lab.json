@@ -1,60 +1,60 @@
 {
-  "updated_at": "2026-08-28T22:24:08.913198+00:00",
+  "updated_at": "2026-08-31T19:08:40.649947+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7711.7598,
-        "change_pct": -0.249,
+        "price": 7676.2998,
+        "change_pct": -0.46,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26402.4238,
-        "change_pct": -0.523,
+        "price": 26293.1855,
+        "change_pct": -0.935,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53559.9883,
-        "change_pct": -0.018,
+        "price": 53215.8086,
+        "change_pct": -0.66,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36553.9219,
-        "change_pct": -0.761,
-        "low_52w": 28434.8008,
+        "price": 36177.1602,
+        "change_pct": -1.031,
+        "low_52w": 28615.5996,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.05,
-        "change_pct": -0.515,
-        "low_52w": 42.52,
+        "price": 53.56,
+        "change_pct": -1.417,
+        "low_52w": 42.79,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2972.3718,
-        "change_pct": -1.392,
+        "price": 2947.1179,
+        "change_pct": -0.85,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10824.2598,
-        "change_pct": 0.294,
+        "price": 10824.2998,
+        "change_pct": 0.295,
         "low_52w": 9116.7002,
         "high_52w": 10910.5996
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 319.7,
-        "change_pct": 1.628,
+        "price": 315.555,
+        "change_pct": 0.31,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 513.53,
-        "change_pct": 1.677,
+        "price": 510.395,
+        "change_pct": -0.61,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 217.55,
-        "change_pct": -4.575,
+        "price": 218.7762,
+        "change_pct": 0.564,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 266.43,
-        "change_pct": 3.969,
+        "price": 258.59,
+        "change_pct": -2.943,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 284.17,
-        "change_pct": 0.247,
+        "price": 282.46,
+        "change_pct": -0.356,
         "low_52w": 199.53,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 212.42,
-        "change_pct": -0.585,
+        "price": 204.95,
+        "change_pct": -4.081,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 175.06,
-        "change_pct": -0.051,
+        "price": 172.32,
+        "change_pct": -1.616,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.73,
-        "change_pct": 1.414,
+        "price": 3.732,
+        "change_pct": 1.468,
         "low_52w": 3.507,
-        "high_52w": 4.072
+        "high_52w": 4.032
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.481,
-        "change_pct": 1.934,
+        "price": 4.502,
+        "change_pct": 2.411,
         "low_52w": 3.512,
-        "high_52w": 4.481
+        "high_52w": 4.502
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.72,
-        "change_pct": 1.027,
+        "price": 4.754,
+        "change_pct": 0.72,
         "low_52w": 3.953,
-        "high_52w": 4.745
+        "high_52w": 4.754
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.206,
-        "change_pct": 0.289,
+        "price": 5.246,
+        "change_pct": 1.06,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3902,
-        "change_pct": 0.195,
+        "price": 1.3856,
+        "change_pct": 0.033,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1587,
-        "change_pct": -0.578,
+        "price": 1.162,
+        "change_pct": -0.314,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3537,
-        "change_pct": -0.437,
+        "price": 1.3548,
+        "change_pct": -0.359,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 160.038,
-        "change_pct": 0.492,
+        "price": 159.78,
+        "change_pct": 0.288,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,33 +197,33 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4504.1001,
-        "change_pct": -2.291,
-        "low_52w": 3431.8,
+        "price": 4481.2998,
+        "change_pct": 0.071,
+        "low_52w": 3549.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 83.44,
-        "change_pct": -0.108,
+        "price": 85.63,
+        "change_pct": 2.674,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.881,
-        "change_pct": -0.894,
+        "price": 2.93,
+        "change_pct": 1.454,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.64,
-        "change_pct": 0.805,
-        "low_52w": 4.4635,
+        "price": 6.6785,
+        "change_pct": 1.775,
+        "low_52w": 4.4825,
         "high_52w": 6.7095
       }
     ]
@@ -231,61 +231,61 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.73
+      "value": 3.732
     },
     {
       "term": "5Y",
-      "value": 4.481
+      "value": 4.502
     },
     {
       "term": "10Y",
-      "value": 4.72
+      "value": 4.754
     },
     {
       "term": "30Y",
-      "value": 5.206
+      "value": 5.246
     }
   ],
   "news": [
     {
-      "title": "Is now the time to buy software stocks?",
-      "link": "https://finance.yahoo.com/video/now-time-buy-software-stocks-160600652.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "After an 'extraordinary' earnings season, here's the next big positive for stocks",
+      "link": "https://finance.yahoo.com/markets/article/after-an-extraordinary-earnings-season-heres-the-next-big-positive-for-stocks-122048479.html",
+      "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "MongoDB (MDB) Increases Despite Market Slip: Here's What You Need to Know",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/mongodb-mdb-increases-despite-market-221502052.html",
+      "title": "QUBT vs. QBTS: Which Quantum Stock Should You Buy or Sell Now?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/qubt-vs-qbts-quantum-stock-190000909.html",
       "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Honeywell International Inc. (HON) Declines More Than Market: Some Information for Investors",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/honeywell-international-inc-hon-declines-221501448.html",
-      "publisher": "Zacks",
+      "title": "Reddit Has Been One of the Worst Stocks in the S&P 500. Here's Why It's a Buy.",
+      "link": "https://www.fool.com/investing/2026/08/31/reddit-one-of-the-worst-sp500-stocks/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Valero Energy (VLO) Gains As Market Dips: What You Should Know",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/valero-energy-vlo-gains-market-220002629.html",
-      "publisher": "Zacks",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Why Badger Meter (BMI) Dipped More Than Broader Market Today",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-badger-meter-bmi-dipped-220001126.html",
-      "publisher": "Zacks",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Is Adobe Stock’s AI Strategy Worth The Near-Term Risk?",
-      "link": "https://www.trefis.com/articles/613489/is-adobe-stocks-ai-strategy-worth-the-near-term-risk/2026-08-28",
+      "title": "The Bill For Oracle's AI Build Arrived Before The Revenue",
+      "link": "https://www.trefis.com/articles/613728/the-bill-for-oracles-ai-build-arrived-before-the-revenue/2026-08-31",
       "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "California Utility Stocks Plummet After Wildfire Legislation Announced",
+      "link": "https://www.investors.com/news/gavin-newsom-california-wildfire-bill-pge-edison-international/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "This Popular Healthcare ETF Is Diluting Your Dividend Income",
+      "link": "https://247wallst.com/investing/2026/08/31/this-popular-healthcare-etf-is-diluting-your-dividend-income/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
