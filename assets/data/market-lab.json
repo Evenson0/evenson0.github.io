@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-09-02T19:31:19.421902+00:00",
+  "updated_at": "2026-09-02T21:59:54.613416+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7670.0,
-        "change_pct": 0.505,
+        "price": 7666.6001,
+        "change_pct": 0.46,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26208.4199,
-        "change_pct": 0.416,
+        "price": 26217.8281,
+        "change_pct": 0.452,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53084.6719,
-        "change_pct": 0.602,
+        "price": 53061.9492,
+        "change_pct": 0.559,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36002.7188,
-        "change_pct": 0.494,
+        "price": 36091.6094,
+        "change_pct": 0.742,
         "low_52w": 28615.5996,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 53.335,
-        "change_pct": 0.386,
+        "price": 53.47,
+        "change_pct": 0.64,
         "low_52w": 42.79,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2959.3279,
-        "change_pct": 1.342,
+        "price": 2953.1663,
+        "change_pct": 1.131,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 325.69,
-        "change_pct": 0.172,
+        "price": 324.96,
+        "change_pct": -0.052,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 496.995,
-        "change_pct": -0.803,
+        "price": 496.82,
+        "change_pct": -0.838,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 224.28,
-        "change_pct": 3.146,
+        "price": 224.41,
+        "change_pct": 3.205,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 255.06,
-        "change_pct": 0.055,
+        "price": 254.98,
+        "change_pct": 0.024,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 286.14,
-        "change_pct": 1.07,
+        "price": 287.89,
+        "change_pct": 1.688,
         "low_52w": 199.53,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 193.94,
-        "change_pct": -0.349,
+        "price": 196.51,
+        "change_pct": 0.971,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 167.57,
-        "change_pct": 0.066,
+        "price": 168.21,
+        "change_pct": 0.448,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3839,
-        "change_pct": -0.083,
+        "price": 1.384,
+        "change_pct": -0.079,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -179,16 +179,16 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3486,
-        "change_pct": -0.475,
+        "price": 1.349,
+        "change_pct": -0.447,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.928,
-        "change_pct": -0.513,
+        "price": 158.669,
+        "change_pct": -0.675,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4425.2998,
-        "change_pct": 1.778,
+        "price": 4434.2998,
+        "change_pct": 1.985,
         "low_52w": 3549.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 90.93,
-        "change_pct": 0.787,
+        "price": 90.63,
+        "change_pct": 0.454,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.988,
-        "change_pct": 2.893,
+        "price": 2.999,
+        "change_pct": 3.271,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6035,
-        "change_pct": 1.491,
+        "price": 6.607,
+        "change_pct": 1.545,
         "low_52w": 4.4825,
         "high_52w": 6.7095
       }
@@ -255,38 +255,52 @@
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Up 250 Points; Caterpillar Bounces Off Critical Price Level (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-jobs-data-ai-stock-credo-earnings/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Abbott (ABT) Exceeds Market Returns: Some Facts to Consider",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/abbott-abt-exceeds-market-returns-215001320.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "2 Energy Stocks for Long-Term Investors and 1 Facing Headwinds",
-      "link": "https://finance.yahoo.com/energy/articles/2-energy-stocks-long-term-190023922.html",
-      "publisher": "StockStory",
+      "title": "AutoZone (AZO) Stock Drops Despite Market Gains: Important Facts to Note",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/autozone-azo-stock-drops-despite-215001845.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "2 Industrials Stocks with Exciting Potential and 1 We Turn Down",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/2-industrials-stocks-exciting-potential-185223349.html",
-      "publisher": "StockStory",
+      "title": "Archrock Inc. (AROC) Exceeds Market Returns: Some Facts to Consider",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/archrock-inc-aroc-exceeds-market-215001075.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Prediction: $1,104 Invested in Nvidia Today Will Be Worth This Much by 2030",
-      "link": "https://www.fool.com/investing/2026/09/02/prediction-1104-invested-in-nvidia-today-2030/",
-      "publisher": "Motley Fool",
+      "title": "Netflix (NFLX) Rises Higher Than Market: Key Facts",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/netflix-nflx-rises-higher-market-214504264.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "3 Boring Stocks That Have Quietly Outlasted Every Bear Market of the Last 50 Years.",
-      "link": "https://247wallst.com/investing/2026/09/02/3-boring-stocks-that-have-quietly-outlasted-every-bear-market-of-the-last-50-years/",
-      "publisher": "24/7 Wall St.",
+      "title": "Costco (COST) Stock Slides as Market Rises: Facts to Know Before You Trade",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/costco-cost-stock-slides-market-214504752.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: The Index Rises as Financials, Health Care Gain as the BoC Holds Rates at 2.25%",
+      "link": "https://finance.yahoo.com/economy/policy/articles/tsx-closer-index-rises-financials-202059016.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "Expectations of Rising Rates and Worries About AI Have Investors Piling Into Big Bank Stocks",
+      "link": "https://www.investopedia.com/expectations-of-rising-rates-and-worries-about-ai-have-investors-piling-into-big-bank-stocks-12076851",
+      "publisher": "Investopedia",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -313,20 +327,6 @@
     {
       "title": "TSX Closer: Index Edges Lower as Base Metals And Industrial Stocks Fall",
       "link": "https://finance.yahoo.com/economy/policy/articles/tsx-closer-index-edges-lower-203345299.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Falls as Base Metals, Energy Weigh; Investors Assess GDP And Trade Tensions",
-      "link": "https://finance.yahoo.com/economy/policy/articles/tsx-closer-index-falls-metals-203338511.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "S&P/TSX Composite Index Turns Lower as Commodity Sectors Fall",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/p-tsx-composite-index-turns-142545860.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
