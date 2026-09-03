@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-09-03T16:29:04.238450+00:00",
+  "updated_at": "2026-09-03T19:28:36.024649+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7740.5,
-        "change_pct": 0.964,
+        "price": 7749.71,
+        "change_pct": 1.084,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26555.0547,
-        "change_pct": 1.286,
+        "price": 26605.6836,
+        "change_pct": 1.479,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53650.7383,
-        "change_pct": 1.11,
+        "price": 53657.9297,
+        "change_pct": 1.123,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36523.3203,
-        "change_pct": 1.196,
+        "price": 36609.7695,
+        "change_pct": 1.436,
         "low_52w": 28751.4004,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.19,
-        "change_pct": 1.347,
+        "price": 54.29,
+        "change_pct": 1.534,
         "low_52w": 43.0,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2964.1587,
-        "change_pct": 0.372,
+        "price": 2965.2454,
+        "change_pct": 0.409,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 330.12,
-        "change_pct": 1.588,
+        "price": 327.78,
+        "change_pct": 0.868,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 512.44,
-        "change_pct": 3.144,
+        "price": 511.055,
+        "change_pct": 2.865,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 227.065,
-        "change_pct": 1.183,
+        "price": 229.6585,
+        "change_pct": 2.339,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 258.4707,
-        "change_pct": 1.369,
+        "price": 258.505,
+        "change_pct": 1.382,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 291.82,
-        "change_pct": 1.365,
+        "price": 292.14,
+        "change_pct": 1.476,
         "low_52w": 199.63,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 197.9,
-        "change_pct": 0.707,
+        "price": 200.82,
+        "change_pct": 2.193,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 169.76,
-        "change_pct": 0.921,
+        "price": 169.93,
+        "change_pct": 1.023,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.748,
-        "change_pct": -0.636,
+        "price": 3.74,
+        "change_pct": -0.848,
         "low_52w": 3.507,
         "high_52w": 4.018
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.495,
-        "change_pct": -1.252,
+        "price": 4.509,
+        "change_pct": -0.945,
         "low_52w": 3.512,
         "high_52w": 4.557
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.744,
-        "change_pct": -1.084,
+        "price": 4.762,
+        "change_pct": -0.709,
         "low_52w": 3.953,
         "high_52w": 4.796
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.23,
-        "change_pct": -0.702,
+        "price": 5.243,
+        "change_pct": -0.456,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3769,
-        "change_pct": -0.901,
+        "price": 1.3795,
+        "change_pct": -0.715,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1639,
-        "change_pct": 0.372,
+        "price": 1.1629,
+        "change_pct": 0.291,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3544,
-        "change_pct": 0.215,
+        "price": 1.3525,
+        "change_pct": 0.069,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 155.386,
-        "change_pct": -3.003,
+        "price": 155.758,
+        "change_pct": -2.77,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4539.7002,
-        "change_pct": 3.971,
+        "price": 4523.5,
+        "change_pct": 3.6,
         "low_52w": 3565.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 91.25,
-        "change_pct": 0.264,
+        "price": 91.54,
+        "change_pct": 0.582,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.896,
-        "change_pct": -2.03,
+        "price": 2.921,
+        "change_pct": -1.184,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.6485,
-        "change_pct": 2.269,
+        "price": 6.6715,
+        "change_pct": 2.623,
         "low_52w": 4.4825,
         "high_52w": 6.7095
       }
@@ -231,60 +231,60 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.748
+      "value": 3.74
     },
     {
       "term": "5Y",
-      "value": 4.495
+      "value": 4.509
     },
     {
       "term": "10Y",
-      "value": 4.744
+      "value": 4.762
     },
     {
       "term": "30Y",
-      "value": 5.23
+      "value": 5.243
     }
   ],
   "news": [
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq surge as traders pare rate-hike bets, bond yields ease",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-3-dow-sp-500-nasdaq-futures-081525933.html",
-      "publisher": "Yahoo Finance",
+      "title": "How Nvidia's latest deal continues to target all points of the AI trade",
+      "link": "https://finance.yahoo.com/video/nvidias-latest-deal-continues-target-143717372.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "3 Reasons We Love O'Reilly (ORLY)",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-love-oreilly-orly-162318833.html",
-      "publisher": "StockStory",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Is Merck Stock Pricing In A Post-Keytruda Future Too Soon?",
-      "link": "https://www.trefis.com/articles/614064/is-merck-stock-pricing-in-a-post-keytruda-future-too-soon/2026-09-03",
-      "publisher": "Trefis",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Does Janus Living (JAN) Have an Attractive Runway for Long-Term Growth?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/does-janus-living-jan-attractive-160707135.html",
-      "publisher": "Insider Monkey",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: Dow Pops 600 Points On This Signal From Fed; Microsoft, Amazon, Nvidia Gain (Live Coverage)",
+      "title": "Stock Market Today: Dow Pops On Fed Official's Dovish Rates View; Nvidia Hovers In Buy Zone (Live Coverage)",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-broadcom-stock-avgo/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Robinhood (HOOD) Positioned with Multiple Long Term Growth Drivers",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/robinhood-hood-positioned-multiple-long-155718430.html",
+      "title": "Market Indexes Rally as Tesla and Goldman Sachs Take the Wheel",
+      "link": "https://www.fool.com/investing/2026/09/03/market-indexes-rally-with-tesla-and-goldman-sachs/",
+      "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "VZ Keeps Climbing. Should You Climb On?",
+      "link": "https://www.trefis.com/articles/614046/vz-keeps-climbing-should-you-climb-on/2026-09-03",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Saylor says Strategy’s Bitcoin-heavy reserve capital surpasses nearly all S&P 500 financial firms",
+      "link": "https://www.thestreet.com/crypto/markets/saylor-says-strategys-bitcoin-heavy-reserve-capital-surpasses-nearly-all-s-p-500-financial-firms",
+      "publisher": "TheStreet",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Apple (AAPL) Faces Mixed Outlook Ahead of Foldable iPhone Launch",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-faces-mixed-outlook-182923490.html",
       "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
