@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-09-04T19:09:56.497308+00:00",
+  "updated_at": "2026-09-04T21:31:55.351334+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7712.23,
-        "change_pct": -0.458,
+        "price": 7718.6001,
+        "change_pct": -0.376,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26482.5176,
-        "change_pct": -0.382,
+        "price": 26506.9902,
+        "change_pct": -0.29,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53370.8789,
-        "change_pct": -0.587,
+        "price": 53414.25,
+        "change_pct": -0.506,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36495.6094,
-        "change_pct": -0.375,
+        "price": 36513.8008,
+        "change_pct": -0.326,
         "low_52w": 28915.9004,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.1,
-        "change_pct": -0.387,
+        "price": 54.11,
+        "change_pct": -0.368,
         "low_52w": 43.27,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2971.8984,
-        "change_pct": 0.122,
+        "price": 2975.6479,
+        "change_pct": 0.249,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 321.88,
-        "change_pct": -1.929,
+        "price": 319.97,
+        "change_pct": -2.511,
         "low_52w": 226.79,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 499.91,
-        "change_pct": -2.001,
+        "price": 499.7,
+        "change_pct": -2.043,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 230.05,
-        "change_pct": 0.7,
+        "price": 230.36,
+        "change_pct": 0.836,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 258.085,
-        "change_pct": -0.315,
+        "price": 258.51,
+        "change_pct": -0.151,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 291.1,
-        "change_pct": -0.434,
+        "price": 291.48,
+        "change_pct": -0.304,
         "low_52w": 199.63,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 201.12,
-        "change_pct": 0.08,
+        "price": 200.76,
+        "change_pct": -0.1,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 170.79,
-        "change_pct": 0.542,
+        "price": 170.58,
+        "change_pct": 0.418,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -153,8 +153,8 @@
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.247,
-        "change_pct": 0.076,
+        "price": 5.246,
+        "change_pct": 0.057,
         "low_52w": 4.539,
         "high_52w": 5.309
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3836,
-        "change_pct": -0.064,
+        "price": 1.3837,
+        "change_pct": -0.057,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1616,
-        "change_pct": 0.263,
+        "price": 1.1621,
+        "change_pct": 0.309,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3516,
-        "change_pct": 0.242,
+        "price": 1.3517,
+        "change_pct": 0.247,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 156.219,
-        "change_pct": -1.701,
+        "price": 156.221,
+        "change_pct": -1.7,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4472.1001,
-        "change_pct": -0.436,
+        "price": 4477.2002,
+        "change_pct": -0.323,
         "low_52w": 3565.8,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 91.52,
-        "change_pct": 0.241,
+        "price": 91.22,
+        "change_pct": -0.088,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.957,
-        "change_pct": 1.51,
+        "price": 2.939,
+        "change_pct": 0.893,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.653,
-        "change_pct": 1.156,
+        "price": 6.668,
+        "change_pct": 1.384,
         "low_52w": 4.4825,
         "high_52w": 6.7095
       }
@@ -243,50 +243,57 @@
     },
     {
       "term": "30Y",
-      "value": 5.247
+      "value": 5.246
     }
   ],
   "news": [
     {
-      "title": "Inspire Medical Systems (INSP): Buy, Sell, or Hold Post Q2 Earnings?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/inspire-medical-systems-insp-buy-185410112.html",
-      "publisher": "StockStory",
+      "title": "Why Cheap LOW Stock Fails Part Of The Value Test",
+      "link": "https://www.trefis.com/articles/614387/why-cheap-low-stock-fails-part-of-the-value-test/2026-09-04",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Crescent Energy (CRGY): 3 Reasons We Love This Stock",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/crescent-energy-crgy-3-reasons-184610648.html",
-      "publisher": "StockStory",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "2 Reasons to Avoid BKR and 1 Stock to Buy Instead",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-avoid-bkr-1-183810140.html",
-      "publisher": "StockStory",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "The Nasdaq, S&P 500, and Dow All Fell Slightly Friday. The Jobs Report Wasn't Really Why.",
-      "link": "https://www.fool.com/investing/2026/09/04/the-nasdaq-sp-500-and-dow-all-fell-slightly-friday/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: Dow Sinks Amid Fears Over Rates; These Retailers Buck Tide (Live Coverage)",
+      "title": "Stock Market Today: Dow Sinks Amid Rate Fears; Sandisk, KLA Lead Nasdaq-100 As Utilities Gain",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-august-jobs-report-lululemon-lulu/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Matthews (MATW): Buy, Sell, or Hold Post Q2 Earnings?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/matthews-matw-buy-sell-hold-182210881.html",
-      "publisher": "StockStory",
+      "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Flash Buy Signals; Apple, Inflation Reports Ahead",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-micron-sandisk-buy-signals-apple-inflation-reports/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Cisco Systems Stock Rose On More Than Its AI Orders",
+      "link": "https://www.trefis.com/articles/614421/cisco-systems-stock-rose-on-more-than-its-ai-orders/2026-09-04",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "S&P 500 Posts Slight Weekly Gain as Energy Climbs, Consumer Discretionary Weighs",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-slight-weekly-204507917.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Update: Wall Street Wraps Mixed Week in Red Following Strong Jobs Report",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-street-wraps-mixed-week-204238792.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: The Index Falls as Energy, Financials Weigh; Canada Posts Surprise August Job Loss",
+      "link": "https://finance.yahoo.com/economy/articles/tsx-closer-index-falls-energy-202607984.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -320,13 +327,6 @@
     {
       "title": "Update: Bank of Canada Holds Rates, Keeps Door Open to Policy Adjustment Amid Upside Inflation and Lower Growth Risks",
       "link": "https://finance.yahoo.com/economy/policy/articles/bank-canada-holds-rates-keeps-155949626.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "Bank of Canada Holds Rates, Keeps Door Open to Policy Adjustment Amid Upside Inflation and Lower Growth Risks",
-      "link": "https://finance.yahoo.com/economy/policy/articles/bank-canada-holds-rates-keeps-141309088.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
