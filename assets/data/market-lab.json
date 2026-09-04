@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T21:31:55.351334+00:00",
+  "updated_at": "2026-09-04T23:22:32.043459+00:00",
   "assets": {
     "Indices": [
       {
@@ -53,8 +53,8 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10831.0898,
-        "change_pct": -0.004,
+        "price": 10831.5,
+        "change_pct": 0.697,
         "low_52w": 9195.7002,
         "high_52w": 10910.5996
       },
@@ -248,20 +248,6 @@
   ],
   "news": [
     {
-      "title": "Why Cheap LOW Stock Fails Part Of The Value Test",
-      "link": "https://www.trefis.com/articles/614387/why-cheap-low-stock-fails-part-of-the-value-test/2026-09-04",
-      "publisher": "Trefis",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: Dow Sinks Amid Rate Fears; Sandisk, KLA Lead Nasdaq-100 As Utilities Gain",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-august-jobs-report-lululemon-lulu/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
       "title": "Dow Jones Futures: Nvidia, Micron, Sandisk Flash Buy Signals; Apple, Inflation Reports Ahead",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-micron-sandisk-buy-signals-apple-inflation-reports/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
@@ -269,24 +255,45 @@
       "time": "Latest"
     },
     {
-      "title": "Cisco Systems Stock Rose On More Than Its AI Orders",
-      "link": "https://www.trefis.com/articles/614421/cisco-systems-stock-rose-on-more-than-its-ai-orders/2026-09-04",
-      "publisher": "Trefis",
+      "title": "Bloom Energy, Illumina, Everpure Rise On S&P 500 Inclusion",
+      "link": "https://www.investors.com/news/bloom-energy-illumina-everpure-rise-sp-500-index-inclusion/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "S&P 500 Posts Slight Weekly Gain as Energy Climbs, Consumer Discretionary Weighs",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-slight-weekly-204507917.html",
-      "publisher": "MT Newswires",
+      "title": "S&P 500, Dow End Lower As Blowout Jobs Report Fans Rate Hike Fears, While Chipmaker Strength Aids Nasdaq —TSLA, NFLX, BE, NVDA In Focus",
+      "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-end-lower-as-blowout-jobs-report-fans-rate-hike-fears-while-chipmaker-strength-aids-nasdaq-tsla-nflx-be-nvda-in-focus/cZsDjVKRJDg",
+      "publisher": "Stocktwits",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: Wall Street Wraps Mixed Week in Red Following Strong Jobs Report",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-street-wraps-mixed-week-204238792.html",
-      "publisher": "MT Newswires",
+      "title": "Steel Dynamics (STLD) Dips More Than Broader Market: What You Should Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/steel-dynamics-stld-dips-more-221502193.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "V.F. (VFC) Gains As Market Dips: What You Should Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/v-f-vfc-gains-market-221502639.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Sirius XM (SIRI) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/sirius-xm-siri-falls-more-221501471.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "This TSX stock was a top gainer with products less vulnerable to U.S. tariffs",
+      "link": "https://financialpost.com/investing/this-tsx-stock-top-gainer-less-vulnerable-tariffs",
+      "publisher": "Financial Post",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "Expectations of Rising Rates and Worries About AI Have Investors Piling Into Big Bank Stocks",
       "link": "https://www.investopedia.com/expectations-of-rising-rates-and-worries-about-ai-have-investors-piling-into-big-bank-stocks-12076851",
       "publisher": "Investopedia",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "Update: Bank of Canada Holds Rates, Keeps Door Open to Policy Adjustment Amid Upside Inflation and Lower Growth Risks",
-      "link": "https://finance.yahoo.com/economy/policy/articles/bank-canada-holds-rates-keeps-155949626.html",
-      "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
     }
