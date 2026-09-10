@@ -378,5 +378,74 @@
   ],
   "generalization": "If A and B are independent, \\(P(A)=kP(B)\\) with \\(k>0\\), and \\(P(A\\cap B)=q\\), then \\(P(B)=\\sqrt{q/k}\\) and \\(P(A)=\\sqrt{kq}\\), provided these values are valid probabilities. Their complements are also independent, so \\(P(A^c\\cap B^c)=(1-P(A))(1-P(B))\\).",
   "answer_text": "B. \\(0.33\\)"
+},
+  {
+  "id": 25,
+  "topic": "Conditional Probability and Bayes' Theorem",
+  "title": "Exercise 25",
+  "statement": "[SOA 25; F00.22] The probability that a randomly chosen male has a circulation problem is 0.25. Males who have a circulation problem are twice as likely to be smokers as those who do not have a circulation problem.\n\nWhat is the conditional probability that a male has a circulation problem given that he is a smoker?",
+  "choices": [
+    "\\(1/4\\)",
+    "\\(1/3\\)",
+    "\\(2/5\\)",
+    "\\(1/2\\)",
+    "\\(2/3\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Let \\(C\\) denote having a circulation problem and \\(S\\) denote being a smoker. We know \\(P(C)=0.25\\) and \\(P(C^c)=0.75\\).",
+    "Set \\(q=P(S\\mid C^c)\\). The statement gives \\(P(S\\mid C)=2q\\).",
+    "By the law of total probability, \\(P(S)=P(S\\mid C)P(C)+P(S\\mid C^c)P(C^c)=2q(0.25)+q(0.75)=1.25q\\).",
+    "The joint probability is \\(P(C\\cap S)=P(C)P(S\\mid C)=0.25(2q)=0.50q\\).",
+    "Therefore, assuming \\(P(S)>0\\), \\(P(C\\mid S)=\\frac{0.50q}{1.25q}=\\frac{2}{5}=0.40\\)."
+  ],
+  "generalization": "If \\(P(A)=p\\) and \\(P(B\\mid A)=rP(B\\mid A^c)\\), then Bayes' theorem gives \\(P(A\\mid B)=\\frac{rp}{rp+1-p}\\), provided \\(P(B)>0\\). The unknown common factor cancels.",
+  "answer_text": "C. \\(2/5\\)"
+},
+{
+  "id": 26,
+  "topic": "Conditional Probability and Bayes' Theorem",
+  "title": "Exercise 26",
+  "statement": "[SOA 19; S01.06] An insurance company issues life insurance policies in three separate categories: standard, preferred, and ultra-preferred. Of the company's policyholders, 50% are standard, 40% are preferred, and 10% are ultra-preferred. Each standard policyholder has probability 0.010 of dying in the next year, each preferred policyholder has probability 0.005 of dying in the next year, and each ultra-preferred policyholder has probability 0.001 of dying in the next year.\n\nA policyholder dies in the next year.\n\nWhat is the probability that the deceased policyholder was ultra-preferred?",
+  "choices": [
+    "\\(0.0001\\)",
+    "\\(0.0010\\)",
+    "\\(0.0071\\)",
+    "\\(0.0141\\)",
+    "\\(0.2817\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Let \\(S\\), \\(R\\), and \\(U\\) denote the standard, preferred, and ultra-preferred categories, respectively. Let \\(D\\) denote death in the next year.",
+    "These categories partition the policyholder population, so \\(P(D)=P(S)P(D\\mid S)+P(R)P(D\\mid R)+P(U)P(D\\mid U)\\).",
+    "Substituting gives \\(P(D)=0.50(0.010)+0.40(0.005)+0.10(0.001)=0.0050+0.0020+0.0001=0.0071\\).",
+    "The probability of being ultra-preferred and dying is \\(P(U\\cap D)=0.10(0.001)=0.0001\\).",
+    "By Bayes' theorem, \\(P(U\\mid D)=\\frac{0.0001}{0.0071}=\\frac{1}{71}\\approx 0.0141\\)."
+  ],
+  "generalization": "For mutually exclusive and exhaustive categories \\(C_1,\\ldots,C_n\\), \\(P(C_k\\mid D)=\\frac{P(C_k)P(D\\mid C_k)}{\\sum_{i=1}^{n}P(C_i)P(D\\mid C_i)}\\), provided \\(P(D)>0\\). Weight each category's event probability by its population share before normalizing.",
+  "answer_text": "D. \\(0.0141\\)"
+},
+{
+  "id": 27,
+  "topic": "Conditional Probability and Bayes' Theorem",
+  "title": "Exercise 27",
+  "statement": "[SOA 18; S03.08] An auto insurance company insures drivers of all ages. An actuary compiled the following statistics on the company's insured drivers:\n\nAge 16–20: probability of accident = 0.06; portion of insured drivers = 0.08.\nAge 21–30: probability of accident = 0.03; portion of insured drivers = 0.15.\nAge 31–65: probability of accident = 0.02; portion of insured drivers = 0.49.\nAge 66–99: probability of accident = 0.04; portion of insured drivers = 0.28.\n\nA randomly selected driver that the company insures has an accident.\n\nCalculate the probability that the driver was 16–20.",
+  "choices": [
+    "\\(0.13\\)",
+    "\\(0.16\\)",
+    "\\(0.19\\)",
+    "\\(0.23\\)",
+    "\\(0.40\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let \\(T\\) denote a driver aged 16–20 and \\(A\\) denote an accident. We want \\(P(T\\mid A)\\), whereas the table gives \\(P(A\\mid T)=0.06\\).",
+    "The probability that a driver is aged 16–20 and has an accident is \\(P(T\\cap A)=P(T)P(A\\mid T)=0.08(0.06)=0.0048\\).",
+    "By the law of total probability, \\(P(A)=0.08(0.06)+0.15(0.03)+0.49(0.02)+0.28(0.04)\\).",
+    "Thus \\(P(A)=0.0048+0.0045+0.0098+0.0112=0.0303\\).",
+    "By Bayes' theorem, \\(P(T\\mid A)=\\frac{0.0048}{0.0303}=\\frac{16}{101}\\approx 0.158416\\). Rounded to two decimal places, the answer is \\(0.16\\)."
+  ],
+  "generalization": "When a table gives population shares \\(w_i\\) and conditional accident probabilities \\(a_i\\), the overall accident probability is \\(\\sum_i w_i a_i\\). Given an accident, the probability of belonging to group \\(k\\) is \\(\\frac{w_k a_k}{\\sum_i w_i a_i}\\). Do not confuse \\(P(A\\mid C_k)\\) with \\(P(C_k\\mid A)\\).",
+  "answer_text": "B. \\(0.16\\)"
 }
 ]
