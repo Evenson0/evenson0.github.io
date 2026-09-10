@@ -447,5 +447,141 @@
   ],
   "generalization": "When a table gives population shares \\(w_i\\) and conditional accident probabilities \\(a_i\\), the overall accident probability is \\(\\sum_i w_i a_i\\). Given an accident, the probability of belonging to group \\(k\\) is \\(\\frac{w_k a_k}{\\sum_i w_i a_i}\\). Do not confuse \\(P(A\\mid C_k)\\) with \\(P(C_k\\mid A)\\).",
   "answer_text": "B. \\(0.16\\)"
+},
+  {
+  "id": 28,
+  "topic": "Discrete Random Variables: Mode",
+  "title": "Exercise 28",
+  "statement": "Each year, there is a 40% probability of no hurricanes hitting Stormy Island. The probability of exactly one hurricane hitting Stormy Island equals the probability of 2 or more hurricanes hitting Stormy Island. What is the mode number of hurricanes that hit Stormy Island in a year?",
+  "choices": [
+    "\\(0\\)",
+    "\\(1\\)",
+    "\\(2\\)",
+    "1 and 2",
+    "It cannot be determined from the information given."
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Let \\(N\\) denote the number of hurricanes in a year. We know \\(P(N=0)=0.4\\) and \\(P(N=1)=P(N\\geq 2)\\).",
+    "The events \\(N=0\\), \\(N=1\\), and \\(N\\geq 2\\) partition all possible outcomes. Therefore, \\(0.4+P(N=1)+P(N\\geq 2)=1\\).",
+    "Since the last two probabilities are equal, \\(P(N=1)=P(N\\geq 2)=0.3\\).",
+    "For every integer \\(n\\geq 2\\), \\(P(N=n)\\leq P(N\\geq 2)=0.3\\).",
+    "Thus \\(P(N=0)=0.4\\) is strictly larger than the probability of any other individual value. The unique mode is \\(0\\)."
+  ],
+  "generalization": "A mode of a discrete random variable is a value maximizing its probability mass. Even without knowing every individual probability, a mode can be identified if each remaining probability is bounded above by a number smaller than the candidate's probability.",
+  "answer_text": "A. \\(0\\)"
+},
+{
+  "id": 29,
+  "topic": "Discrete Random Variables: Mode",
+  "title": "Exercise 29",
+  "statement": "Suppose that \\(N\\) is a random variable with \\(P(N=0)=0.1\\), \\(P(N=1)=0.3\\), \\(P(N=2)=0.2\\), and \\(P(N=3)=0.4\\). Find the mode of \\(N\\).",
+  "choices": [
+    "\\(0\\)",
+    "\\(1\\)",
+    "\\(2\\)",
+    "\\(3\\)",
+    "It cannot be determined from the information given."
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "The probabilities sum to \\(0.1+0.3+0.2+0.4=1\\), so these values account for the entire distribution.",
+    "A mode is a value of \\(N\\) with the largest probability.",
+    "The largest probability is \\(0.4\\), which occurs at \\(N=3\\). Therefore, the mode is \\(3\\)."
+  ],
+  "generalization": "For a discrete probability mass function \\(p(n)\\), the modes are the values attaining \\(\\max_n p(n)\\). The mode is the value of the random variable, not the probability at that value. Multiple values can tie for the maximum.",
+  "answer_text": "D. \\(3\\)"
+},
+{
+  "id": 30,
+  "topic": "Discrete Random Variables: Median",
+  "title": "Exercise 30",
+  "statement": "Each year, there is a 40% probability of no hurricanes hitting Stormy Island. The probability of exactly one hurricane hitting Stormy Island equals the probability of 2 or more hurricanes hitting Stormy Island. What is the median number of hurricanes that hit Stormy Island in a year?",
+  "choices": [
+    "\\(0\\)",
+    "\\(1\\)",
+    "\\(2\\)",
+    "3 or higher",
+    "It cannot be determined from the information given."
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Let \\(N\\) denote the number of hurricanes in a year. We have \\(P(N=0)=0.4\\) and \\(P(N=1)=P(N\\geq 2)\\).",
+    "Since probabilities sum to 1, \\(0.4+2P(N=1)=1\\). Hence \\(P(N=1)=0.3\\) and \\(P(N\\geq 2)=0.3\\).",
+    "The cumulative probabilities are \\(P(N\\leq 0)=0.4\\) and \\(P(N\\leq 1)=0.4+0.3=0.7\\). The cumulative probability crosses 0.5 at \\(1\\).",
+    "Indeed, \\(P(N\\leq 1)=0.7\\geq 0.5\\) and \\(P(N\\geq 1)=0.6\\geq 0.5\\), so \\(1\\) is a median.",
+    "Any number below 1 has at most 0.4 probability below or equal to it, and any number above 1 has at most 0.3 probability above or equal to it. Therefore, the unique median is \\(1\\)."
+  ],
+  "generalization": "A median \\(m\\) satisfies both \\(P(X\\leq m)\\geq 1/2\\) and \\(P(X\\geq m)\\geq 1/2\\). For a discrete distribution, use cumulative probabilities rather than choosing the most likely value. A median need not be unique.",
+  "answer_text": "B. \\(1\\)"
+},
+{
+  "id": 31,
+  "topic": "Discrete Random Variables: Expected Value",
+  "title": "Exercise 31",
+  "statement": "A toy company sells exactly three distinct types of toys: cars, which cost $5, trains, which cost $10, and spaceships, which cost $25. If the number of cars sold is twice the number of trains sold, but half of the number of spaceships sold, what is the average price per toy?",
+  "choices": [
+    "\\(10.7\\)",
+    "\\(12.7\\)",
+    "\\(14.1\\)",
+    "\\(15.4\\)",
+    "\\(17.1\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "Let the number of trains sold be \\(t\\). Then the number of cars sold is \\(2t\\). Since cars are half as numerous as spaceships, the number of spaceships sold is \\(4t\\).",
+    "The sales ratio for cars, trains, and spaceships is therefore \\(2:1:4\\), with \\(7t\\) toys sold in total.",
+    "For a randomly selected toy among those sold, the price probabilities are \\(P(X=5)=2/7\\), \\(P(X=10)=1/7\\), and \\(P(X=25)=4/7\\).",
+    "The average price is \\(E[X]=5\\left(\\frac{2}{7}\\right)+10\\left(\\frac{1}{7}\\right)+25\\left(\\frac{4}{7}\\right)=\\frac{120}{7}\\approx 17.142857\\).",
+    "Rounded to one decimal place, the average price per toy is $17.1."
+  ],
+  "generalization": "If values \\(x_1,\\ldots,x_k\\) occur in proportions \\(r_1:\\cdots:r_k\\), their weighted mean is \\(\\frac{\\sum_i r_i x_i}{\\sum_i r_i}\\). A simple unweighted average is appropriate only when all values have equal weights.",
+  "answer_text": "E. \\(17.1\\)"
+},
+{
+  "id": 32,
+  "topic": "Discrete Random Variables: Expected Value",
+  "title": "Exercise 32",
+  "statement": "Suppose that each side of a six-sided die is equally likely to come up. If the numbers on the first five sides are 2, 2, 3, 5 and 7, and the expected value of a roll is 4, what is the number on the sixth face?",
+  "choices": [
+    "\\(3\\)",
+    "\\(4\\)",
+    "\\(5\\)",
+    "\\(6\\)",
+    "\\(7\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Let \\(x\\) denote the number on the sixth face and \\(Y\\) denote the result of a roll.",
+    "Each face has probability \\(1/6\\), so \\(E[Y]=\\frac{2+2+3+5+7+x}{6}=\\frac{19+x}{6}\\).",
+    "Using \\(E[Y]=4\\), we obtain \\(19+x=24\\).",
+    "Therefore, the number on the sixth face is \\(x=5\\)."
+  ],
+  "generalization": "For \\(k\\) equally likely faces with labels \\(x_1,\\ldots,x_k\\), the expected value is \\(\\mu=\\frac{1}{k}\\sum_i x_i\\). One missing label is \\(x_k=k\\mu-\\sum_{i=1}^{k-1}x_i\\). Repeated labels must be counted once for each face on which they appear.",
+  "answer_text": "C. \\(5\\)"
+},
+{
+  "id": 33,
+  "topic": "Discrete Random Variables: Functions and Moments",
+  "title": "Exercise 33",
+  "statement": "Suppose that \\(P(N=n)\\) is proportional to \\(n\\) for \\(n=1,2,3,4\\), and is 0 otherwise. Find \\(E[(N-2)^2]\\).",
+  "choices": [
+    "\\(1/2\\)",
+    "\\(3/4\\)",
+    "\\(1\\)",
+    "\\(3/2\\)",
+    "\\(2\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "Write \\(P(N=n)=cn\\) for \\(n=1,2,3,4\\). Normalization requires \\(c(1+2+3+4)=1\\), so \\(c=1/10\\).",
+    "Thus the probabilities for \\(N=1,2,3,4\\) are \\(0.1,0.2,0.3,0.4\\), respectively.",
+    "Direct method: \\(E[(N-2)^2]=\\sum_{n=1}^{4}(n-2)^2P(N=n)=0.1(1)+0.2(0)+0.3(1)+0.4(4)=2\\).",
+    "Alternative method: expand \\((N-2)^2=N^2-4N+4\\). By linearity, \\(E[(N-2)^2]=E[N^2]-4E[N]+4\\).",
+    "Compute \\(E[N]=\\frac{1^2+2^2+3^2+4^2}{10}=3\\) and \\(E[N^2]=\\frac{1^3+2^3+3^3+4^3}{10}=10\\).",
+    "Substitution gives \\(E[(N-2)^2]=10-4(3)+4=2\\)."
+  ],
+  "generalization": "For a discrete random variable, \\(E[g(N)]=\\sum_n g(n)P(N=n)\\). In particular, \\(E[(N-a)^2]=E[N^2]-2aE[N]+a^2=\\operatorname{Var}(N)+(E[N]-a)^2\\), assuming a finite second moment. In general, \\(E[(N-a)^2]\\neq(E[N]-a)^2\\).",
+  "answer_text": "E. \\(2\\)"
 }
 ]
