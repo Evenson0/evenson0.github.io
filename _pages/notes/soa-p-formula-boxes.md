@@ -492,6 +492,347 @@ mathjax: true
 
   </section>
 
+
+  <section id="variance-standard-deviation-moments">
+
+  <h2 class="p-section-title">
+    Variance, Standard Deviation, and Moments
+  </h2>
+
+  <p>
+    Let \(X\) be a random variable with finite second moment.
+    Write \(\mu=E[X]\) and \(\sigma^2=\operatorname{Var}(X)\).
+    The formulas below apply to both discrete and continuous
+    random variables.
+  </p>
+
+  <article class="p-formula-box" id="variance-second-moment">
+
+    <span class="p-tag">Variance and second moment</span>
+
+    <h3>Calculate variance from the first two moments</h3>
+
+    <div class="p-equation">
+      \[
+        \operatorname{Var}(X)
+        =E[(X-\mu)^2]
+        =E[X^2]-(E[X])^2
+      \]
+    </div>
+
+    <div class="p-equation">
+      \[
+        E[X^2]=\operatorname{Var}(X)+(E[X])^2
+      \]
+    </div>
+
+    <p>
+      Variance measures the expected squared distance from the mean.
+      To calculate it, subtract the square of the mean from the
+      second raw moment.
+    </p>
+
+    <details class="p-proof">
+      <summary>Show proof</summary>
+      <div class="p-proof-content">
+        <p>
+          Expand the square and use linearity of expectation.
+          Since \(\mu=E[X]\) is a constant,
+        </p>
+
+        <div class="p-math">
+          \[
+          \begin{aligned}
+            \operatorname{Var}(X)
+            &=E[(X-\mu)^2]\\
+            &=E[X^2-2\mu X+\mu^2]\\
+            &=E[X^2]-2\mu E[X]+\mu^2\\
+            &=E[X^2]-2\mu^2+\mu^2\\
+            &=E[X^2]-\mu^2.
+          \end{aligned}
+          \]
+        </div>
+      </div>
+    </details>
+
+    <div class="p-note">
+      <p>
+        <strong>Consequences.</strong>
+        \(\operatorname{Var}(X)\geq 0\), so
+        \(E[X^2]\geq(E[X])^2\).
+        Equality holds exactly when \(X=\mu\) with probability 1.
+      </p>
+      <p>
+        <strong>Common mistake.</strong>
+        \(E[X^2]\) and \((E[X])^2\) are generally different.
+        Their difference is the variance.
+      </p>
+    </div>
+
+  </article>
+
+  <article class="p-formula-box" id="variance-affine-transformation">
+
+    <span class="p-tag">Shifting and scaling</span>
+
+    <h3>Transform the mean and variance</h3>
+
+    <p>For real constants \(a\) and \(b\),</p>
+
+    <div class="p-equation">
+      \[
+        E[aX+b]=aE[X]+b
+      \]
+      \[
+        \operatorname{Var}(aX+b)=a^2\operatorname{Var}(X).
+      \]
+    </div>
+
+    <p>
+      Adding a constant moves every value and the mean by the same
+      amount, leaving the distances from the mean unchanged.
+      Multiplying by \(a\) multiplies squared distances by \(a^2\).
+    </p>
+
+    <details class="p-proof">
+      <summary>Show proof: adding a constant</summary>
+      <div class="p-proof-content">
+        <div class="p-math">
+          \[
+          \begin{aligned}
+            \operatorname{Var}(X+b)
+            &=E[(X+b-E[X+b])^2]\\
+            &=E[(X+b-E[X]-b)^2]\\
+            &=E[(X-E[X])^2]\\
+            &=\operatorname{Var}(X).
+          \end{aligned}
+          \]
+        </div>
+      </div>
+    </details>
+
+    <details class="p-proof">
+      <summary>Show proof: multiplying by a constant</summary>
+      <div class="p-proof-content">
+        <div class="p-math">
+          \[
+          \begin{aligned}
+            \operatorname{Var}(aX)
+            &=E[(aX)^2]-(E[aX])^2\\
+            &=a^2E[X^2]-a^2(E[X])^2\\
+            &=a^2\operatorname{Var}(X).
+          \end{aligned}
+          \]
+        </div>
+
+        <p>
+          Combining scaling with translation gives
+          \(\operatorname{Var}(aX+b)=a^2\operatorname{Var}(X)\).
+          For example,
+          \(\operatorname{Var}(3X)=9\operatorname{Var}(X)\).
+        </p>
+      </div>
+    </details>
+
+  </article>
+
+  <article class="p-formula-box" id="standard-deviation">
+
+    <span class="p-tag">Standard deviation</span>
+
+    <h3>Express dispersion in the original units</h3>
+
+    <div class="p-equation">
+      \[
+        \operatorname{SD}(X)=\sigma_X
+        =\sqrt{\operatorname{Var}(X)}
+      \]
+      \[
+        \operatorname{SD}(aX+b)
+        =|a|\operatorname{SD}(X).
+      \]
+    </div>
+
+    <p>
+      If \(X\) is measured in dollars, its variance is measured in
+      dollars squared, while its standard deviation is measured
+      in dollars. Standard deviation is the root mean square
+      distance from the mean.
+    </p>
+
+    <details class="p-proof">
+      <summary>Show proof of the transformation rule</summary>
+      <div class="p-proof-content">
+        <div class="p-math">
+          \[
+          \begin{aligned}
+            \operatorname{SD}(aX+b)
+            &=\sqrt{\operatorname{Var}(aX+b)}\\
+            &=\sqrt{a^2\operatorname{Var}(X)}\\
+            &=|a|\operatorname{SD}(X).
+          \end{aligned}
+          \]
+        </div>
+        <p>
+          The absolute value is necessary because a standard
+          deviation cannot be negative.
+        </p>
+      </div>
+    </details>
+
+    <div class="p-note">
+      <p>
+        <strong>Interpretation.</strong>
+        Standard deviation does not give a maximum possible distance
+        from the mean. Knowing the mean and standard deviation alone
+        does not determine the exact proportion of observations
+        within one standard deviation of the mean.
+      </p>
+    </div>
+
+  </article>
+
+  <article class="p-formula-box" id="coefficient-of-variation">
+
+    <span class="p-tag">Coefficient of variation</span>
+
+    <h3>Measure dispersion relative to the mean</h3>
+
+    <p>
+      For a random variable with strictly positive mean,
+      the coefficient of variation is
+    </p>
+
+    <div class="p-equation">
+      \[
+        \operatorname{CV}(X)
+        =\frac{\sigma_X}{\mu_X}
+        =\frac{\operatorname{SD}(X)}{E[X]}.
+      \]
+    </div>
+
+    <p>
+      It is dimensionless and may be expressed as a percentage.
+      For example, a mean of 100 and a standard deviation of 20
+      give a coefficient of variation of \(0.20=20\%\).
+    </p>
+
+    <div class="p-equation">
+      \[
+        \operatorname{CV}(cX)=\operatorname{CV}(X),
+        \qquad c>0.
+      \]
+    </div>
+
+    <details class="p-proof">
+      <summary>Show proof of scale invariance</summary>
+      <div class="p-proof-content">
+        <p>For \(c>0\),</p>
+        <div class="p-math">
+          \[
+          \begin{aligned}
+            \operatorname{CV}(cX)
+            &=\frac{\operatorname{SD}(cX)}{E[cX]}\\
+            &=\frac{c\operatorname{SD}(X)}{cE[X]}\\
+            &=\operatorname{CV}(X).
+          \end{aligned}
+          \]
+        </div>
+        <p>
+          Thus, converting monetary amounts from dollars to cents
+          does not change the coefficient of variation.
+        </p>
+      </div>
+    </details>
+
+    <div class="p-note">
+      <p>
+        <strong>Conditions and interpretation.</strong>
+        The coefficient of variation is undefined when the mean
+        is zero. Its usual interpretation as relative dispersion
+        assumes a positive mean and a meaningful zero.
+        With a fixed positive mean, increasing the standard
+        deviation increases the coefficient of variation.
+      </p>
+      <p>
+        Adding a constant generally changes the coefficient of
+        variation: when \(E[X]+b>0\),
+        \[
+          \operatorname{CV}(X+b)
+          =\frac{\operatorname{SD}(X)}{E[X]+b}.
+        \]
+      </p>
+    </div>
+
+  </article>
+
+  <article class="p-formula-box" id="moment-terminology">
+
+    <span class="p-tag">Moment terminology</span>
+
+    <h3>Distinguish raw moments from central moments</h3>
+
+    <p>
+      For a positive integer \(k\), assuming the relevant moments exist:
+    </p>
+
+    <div class="p-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Quantity</th>
+            <th>Terminology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>\(E[X^k]\)</td>
+            <td>\(k\)th raw moment, or moment about zero</td>
+          </tr>
+          <tr>
+            <td>\(E[X]=\mu\)</td>
+            <td>First raw moment; mean</td>
+          </tr>
+          <tr>
+            <td>\(E[X^2]\)</td>
+            <td>Second raw moment</td>
+          </tr>
+          <tr>
+            <td>\(E[(X-\mu)^k]\)</td>
+            <td>\(k\)th central moment</td>
+          </tr>
+          <tr>
+            <td>\(E[X-\mu]=0\)</td>
+            <td>First central moment</td>
+          </tr>
+          <tr>
+            <td>\(E[(X-\mu)^2]=\sigma^2\)</td>
+            <td>Second central moment; variance</td>
+          </tr>
+          <tr>
+            <td>\(E[(X-a)^k]\)</td>
+            <td>\(k\)th moment about a constant \(a\)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="p-note">
+      <p>
+        <strong>Useful connection.</strong>
+        The second moment about \(a\) satisfies
+        \[
+          E[(X-a)^2]
+          =\operatorname{Var}(X)+(E[X]-a)^2.
+        \]
+        It equals the variance when \(a=E[X]\).
+      </p>
+    </div>
+
+  </article>
+
+</section>
+
   <!-- Add future rules here, before the closing div. -->
 
 </div>
