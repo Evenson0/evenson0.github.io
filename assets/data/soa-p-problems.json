@@ -583,5 +583,53 @@
   ],
   "generalization": "For a discrete random variable, \\(E[g(N)]=\\sum_n g(n)P(N=n)\\). In particular, \\(E[(N-a)^2]=E[N^2]-2aE[N]+a^2=\\operatorname{Var}(N)+(E[N]-a)^2\\), assuming a finite second moment. In general, \\(E[(N-a)^2]\\neq(E[N]-a)^2\\).",
   "answer_text": "E. \\(2\\)"
+},
+  {
+  "id": 34,
+  "topic": "Discrete Random Variables: Tail-Sum Formula",
+  "title": "Exercise 34",
+  "statement": "[SOA 475] Let \\(X\\) represent the number of defective parts in a shipment of four.\n\n\\[P(X\\geq x)=\\frac{1}{4}\\left(1-\\frac{x-2}{3}\\right)^2,\\qquad x=1,2,3,4.\\]\n\nCalculate \\(E[X]\\).",
+  "choices": [
+    "\\(0.83\\)",
+    "\\(0.96\\)",
+    "\\(1.39\\)",
+    "\\(1.81\\)",
+    "\\(1.83\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Since \\(X\\) counts defective parts in a shipment of four, its possible values are \\(0,1,2,3,4\\).",
+    "For a nonnegative integer-valued random variable, the tail-sum formula gives \\(E[X]=\\sum_{k=1}^{\\infty}P(X\\geq k)\\). Here, all terms beyond \\(k=4\\) are zero.",
+    "Evaluate the given probabilities: \\(P(X\\geq 1)=\\frac{1}{4}\\left(\\frac{4}{3}\\right)^2=\\frac{4}{9}\\), \\(P(X\\geq 2)=\\frac{1}{4}\\), \\(P(X\\geq 3)=\\frac{1}{9}\\), and \\(P(X\\geq 4)=\\frac{1}{36}\\).",
+    "Therefore, \\(E[X]=\\frac{4}{9}+\\frac{1}{4}+\\frac{1}{9}+\\frac{1}{36}=\\frac{16+9+4+1}{36}=\\frac{5}{6}\\approx 0.833333\\). The answer rounded to two decimal places is \\(0.83\\).",
+    "Alternative method: obtain the probability mass function by subtracting consecutive tails, \\(P(X=k)=P(X\\geq k)-P(X\\geq k+1)\\). Use \\(P(X\\geq 0)=1\\) and \\(P(X\\geq 5)=0\\).",
+    "This gives \\(P(X=0)=\\frac{5}{9}\\), \\(P(X=1)=\\frac{7}{36}\\), \\(P(X=2)=\\frac{5}{36}\\), \\(P(X=3)=\\frac{3}{36}\\), and \\(P(X=4)=\\frac{1}{36}\\).",
+    "Then \\(E[X]=0\\left(\\frac{5}{9}\\right)+1\\left(\\frac{7}{36}\\right)+2\\left(\\frac{5}{36}\\right)+3\\left(\\frac{3}{36}\\right)+4\\left(\\frac{1}{36}\\right)=\\frac{30}{36}=\\frac{5}{6}\\)."
+  ],
+  "generalization": "For a nonnegative integer-valued random variable, \\(E[X]=\\sum_{k=1}^{\\infty}P(X\\geq k)=\\sum_{k=0}^{\\infty}P(X>k)\\). The starting index depends on whether the inequality is weak or strict. Recover individual probabilities using \\(P(X=k)=P(X\\geq k)-P(X\\geq k+1)\\).",
+  "answer_text": "A. \\(0.83\\)"
+},
+{
+  "id": 35,
+  "topic": "Discrete Random Variables: Tail-Sum Formula",
+  "title": "Exercise 35",
+  "statement": "A customer loyalty program tracks the number of times a customer visits a particular store in a month. Let \\(X\\) be the number of visits a randomly chosen customer makes in a month. The probabilities that a customer makes more than \\(k\\) visits are as follows:\n\n\\(P(X>0)=0.80\\)\n\\(P(X>1)=0.50\\)\n\\(P(X>2)=0.20\\)\n\\(P(X>3)=0.05\\)\n\\(P(X>4)=0\\)\n\nFind the expected number of visits a customer makes in a month.",
+  "choices": [
+    "\\(1.25\\)",
+    "\\(1.55\\)",
+    "\\(1.80\\)",
+    "\\(2.05\\)",
+    "\\(2.20\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Since \\(X\\) is a nonnegative integer-valued random variable, use \\(E[X]=\\sum_{k=0}^{\\infty}P(X>k)\\).",
+    "The given condition \\(P(X>4)=0\\) implies that all tail probabilities for \\(k\\geq 4\\) are zero.",
+    "Therefore, \\(E[X]=0.80+0.50+0.20+0.05=1.55\\) visits per month.",
+    "Alternative check: \\(P(X=0)=1-0.80=0.20\\). Subtracting consecutive tails gives \\(P(X=1)=0.30\\), \\(P(X=2)=0.30\\), \\(P(X=3)=0.15\\), and \\(P(X=4)=0.05\\).",
+    "Using the definition of expectation, \\(E[X]=0(0.20)+1(0.30)+2(0.30)+3(0.15)+4(0.05)=1.55\\)."
+  ],
+  "generalization": "If \\(S(k)=P(X>k)\\) for a nonnegative integer-valued random variable, then \\(E[X]=\\sum_{k=0}^{\\infty}S(k)\\). Also, \\(P(X=0)=1-S(0)\\) and \\(P(X=k)=S(k-1)-S(k)\\) for \\(k\\geq 1\\). Tail probabilities are cumulative probabilities, so they should not be treated as individual probability masses.",
+  "answer_text": "B. \\(1.55\\)"
 }
 ]
