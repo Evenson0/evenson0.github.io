@@ -27,146 +27,117 @@ user_inputs:
 
 quests:
 
-  # ============================================================
-  # ACTUARIAL — EXAM P
-  # ============================================================
-
   - domain: actuarial
     node: actuarial-exam-1
-    task: Strengthen counting, conditional probability, independence, unions, intersections, and Bayes-style reasoning through cumulative practice.
-    task_fr: Renforcer le dénombrement, les probabilités conditionnelles, l'indépendance, les unions, les intersections et le raisonnement de type Bayes par une pratique cumulative.
+    task: >
+      From Monday to Saturday, spend 5 hours 15 minutes on P,
+      including corrections. Work on counting, conditional
+      probability, independence, and recurring errors.
+      Stop at the time limit rather than rushing to reach a quota.
+    task_fr: >
+      Du lundi au samedi, consacrer 5 h 15 à P, corrections
+      comprises. Travailler le dénombrement, la probabilité
+      conditionnelle, l'indépendance et les erreurs récurrentes.
+      Respecter le créneau plutôt que se précipiter pour
+      atteindre un quota.
 
     completion:
-      - Review permutations and combinations
-      - Review conditional probability
-      - Review independence
-      - Review unions and intersections
-      - Complete Bayes-style problems
-      - Complete one timed mixed set
-      - Rework recurring Week 01 errors
+      - Practice counting and conditional probability
+      - Include corrections within each session
+      - Complete one short timed mixed set
+      - Rework a few recurring errors without consulting the solution first
 
     completion_fr:
-      - Revoir permutations et combinaisons
-      - Revoir la probabilité conditionnelle
-      - Revoir l'indépendance
-      - Revoir les unions et intersections
-      - Compléter des problèmes de type Bayes
-      - Compléter une série mixte chronométrée
-      - Refaire les erreurs récurrentes de la semaine 01
-
-  # ============================================================
-  # ACTUARIAL — FM MAINTENANCE
-  # ============================================================
+      - Pratiquer le dénombrement et la probabilité conditionnelle
+      - Inclure les corrections dans chaque séance
+      - Compléter une courte série mixte chronométrée
+      - Refaire quelques erreurs récurrentes sans consulter la solution au départ
 
   - domain: actuarial
     node: actuarial-fm-diagnostic
-    task: Keep FM warm with two short sessions focused on interest-rate measures and calculator fluency.
-    task_fr: Maintenir FM actif avec deux courtes séances centrées sur les mesures de taux et la maîtrise de la calculatrice.
-
-    completion:
-      - Complete two short FM sessions
-      - Review rate conversions
-      - Practice calculator workflows
-      - Record recurring errors
-
-    completion_fr:
-      - Compléter deux courtes séances FM
-      - Revoir les conversions de taux
-      - Pratiquer les procédures à la calculatrice
-      - Noter les erreurs récurrentes
-
-  # ============================================================
-  # RESEARCH
-  # ============================================================
+    task: >
+      Maintain FM with two 25-minute sessions, including
+      corrections, on familiar rate conversions and calculator use.
+    task_fr: >
+      Maintenir FM avec deux séances de 25 minutes, corrections
+      comprises, sur les conversions de taux familières et
+      l'utilisation de la calculatrice.
 
   - domain: research
     node: research-actuarial-glm-tweedie
-    task: Read Goldburd pages 16–30 and summarize weights, offsets, insurance distributions, multicollinearity, and GLM limitations.
-    task_fr: Lire les pages 16 à 30 de Goldburd et résumer les poids, offsets, distributions d'assurance, la multicolinéarité et les limites des GLM.
+    task: >
+      Use one 30-minute reading session and one 30-minute writing
+      session. Resume Goldburd from the last page understood,
+      aiming for pages 21–25 if pages 16–20 are already clear.
+      Write 150–250 words on one or two concepts actually studied.
+      Carry the remaining reading forward.
+    task_fr: >
+      Prévoir une séance de lecture de 30 minutes et une séance
+      de rédaction de 30 minutes. Reprendre Goldburd à la dernière
+      page comprise, en visant les pages 21 à 25 si les pages
+      16 à 20 sont déjà claires. Écrire 150 à 250 mots sur un ou
+      deux concepts réellement étudiés. Reporter le reste
+      de la lecture.
 
     completion:
-      - Understand weights and offsets
-      - Review severity distributions
-      - Review frequency distributions
-      - Understand the Tweedie distribution
-      - Review logistic regression
-      - Understand multicollinearity
-      - Write a short GLM limitations note
+      - Study a small passage carefully
+      - Explain one or two concepts in a short note
+      - Record one unresolved question
 
     completion_fr:
-      - Comprendre les poids et offsets
-      - Revoir les distributions de sévérité
-      - Revoir les distributions de fréquence
-      - Comprendre la distribution Tweedie
-      - Revoir la régression logistique
-      - Comprendre la multicolinéarité
-      - Rédiger une courte note sur les limites des GLM
-
-  # ============================================================
-  # READING / WRITING
-  # ============================================================
+      - Étudier attentivement un court passage
+      - Expliquer un ou deux concepts dans une courte note
+      - Noter une question non résolue
 
   - domain: writing
     node: writing-reading-practice
-    task: Read about 70 additional pages of Mort à crédit.
-    task_fr: Lire environ 70 pages supplémentaires de Mort à crédit.
-
-  - domain: writing
-    node: writing-reading-practice
-    task: Continue The Intelligent Investor at a sustainable pace and take brief notes.
-    task_fr: Poursuivre L'Investisseur intelligent à un rythme soutenable et prendre quelques notes.
-
-  # ============================================================
-  # LEAN
-  # ============================================================
+    task: >
+      Read for 70 minutes from Monday to Saturday, aiming for
+      roughly 25–35 pages of Mort à crédit without rushing.
+      The Intelligent Investor may replace one reading session,
+      but does not add another session.
+    task_fr: >
+      Lire pendant 70 minutes du lundi au samedi, en visant
+      environ 25 à 35 pages de Mort à crédit sans se presser.
+      L'Investisseur intelligent peut remplacer un créneau
+      de lecture, mais ne constitue pas une séance supplémentaire.
 
   - domain: lean
     node: lean-fundamentals
-    task: Study propositions as types and formalize one simple proposition yourself.
-    task_fr: Étudier les propositions comme types et formaliser soi-même une proposition simple.
-
-  # ============================================================
-  # ENGLISH
-  # ============================================================
+    task: >
+      Spend 30 minutes on propositions as types and one small
+      logical example. Attempt a simple lemma. If it remains
+      unfinished, keep the attempt and note the next step.
+    task_fr: >
+      Consacrer 30 minutes aux propositions comme types et à
+      un petit exemple logique. Essayer un lemme simple.
+      S'il reste inachevé, conserver la tentative et noter
+      la prochaine étape.
 
   - domain: english
     node: english-conversation-practice
-    task: Complete one English conversation and explain one technical idea simply.
-    task_fr: Compléter une conversation en anglais et expliquer simplement une idée technique.
-
-  # ============================================================
-  # PHYSICAL
-  # ============================================================
+    task: >
+      Complete one 60-minute conversation. Discuss everyday
+      topics and explain one probability idea in simple English.
+    task_fr: >
+      Compléter une conversation de 60 minutes. Aborder des
+      sujets quotidiens et expliquer une idée de probabilité
+      en anglais simple.
 
   - domain: physical
     node: physical-training-consistency
-    task: Complete the normal physical protocol and record the first full consistency week.
-    task_fr: Compléter le protocole physique normal et enregistrer la première semaine complète de régularité.
-
-    completion:
-      - Morning routine followed
-      - Strength schedule followed
-      - Daily movement target pursued
-      - Evening routine followed
-      - Week reviewed without treating individual misses as a reset
-
-    completion_fr:
-      - Routine du matin suivie
-      - Programme de musculation suivi
-      - Objectif de mouvement quotidien poursuivi
-      - Routine du soir suivie
-      - Semaine revue sans considérer un écart isolé comme un recommencement
-
-
-# ============================================================
-# DAILY PLAN
-# ============================================================
+    task: >
+      Use the current physical protocol as the reference for
+      morning routine, strength training, daily movement,
+      and evening routine. Do not add extra sessions to
+      compensate for a missed day.
+    task_fr: >
+      Utiliser le protocole physique actuel comme référence
+      pour le matin, la musculation, le mouvement quotidien
+      et le soir. Ne pas ajouter de séances supplémentaires
+      pour compenser une journée manquée.
 
 days:
-
-  # ============================================================
-  # SUNDAY — SEPTEMBER 13
-  # ============================================================
 
   - date: 2026-09-13
     weekday: sunday
@@ -193,11 +164,6 @@ days:
         text: Read about 15 pages of Mort à crédit.
         text_fr: Lire environ 15 pages de Mort à crédit.
 
-
-  # ============================================================
-  # MONDAY — SEPTEMBER 14
-  # ============================================================
-
   - date: 2026-09-14
     weekday: monday
     title: Counting
@@ -207,181 +173,236 @@ days:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 60–90 min
-        text: Exam P — permutations, combinations, and counting problems.
-        text_fr: Examen P — permutations, combinaisons et problèmes de dénombrement.
+        time: 60 min
+        text: >
+          Work on permutations and combinations for 35 minutes.
+          Use the remaining 25 minutes to correct and understand
+          mistakes. Attempt fewer problems if they are difficult.
+        text_fr: >
+          Travailler les permutations et combinaisons pendant
+          35 minutes. Utiliser les 25 minutes restantes pour
+          corriger et comprendre les erreurs. Faire moins
+          de problèmes s'ils sont difficiles.
 
       - domain: research
         node: research-actuarial-glm-tweedie
-        time: 30–45 min
-        text: Read Goldburd pages 21–25.
-        text_fr: Lire les pages 21 à 25 de Goldburd.
-
-      - domain: writing
-        node: writing-reading-practice
-        time: 25–30 min
-        text: Continue Mort à crédit.
-        text_fr: Poursuivre Mort à crédit.
-
-
-  # ============================================================
-  # TUESDAY — SEPTEMBER 15
-  # ============================================================
+        time: 30 min
+        text: >
+          Resume Goldburd from the last page understood.
+          Aim for pages 21–25 only if pages 16–20 are clear.
+          Stop after 30 minutes and mark where to resume.
+        text_fr: >
+          Reprendre Goldburd à la dernière page comprise.
+          Viser les pages 21 à 25 uniquement si les pages
+          16 à 20 sont claires. Arrêter après 30 minutes
+          et noter où reprendre.
 
   - date: 2026-09-15
     weekday: tuesday
-    title: Independence and Bayes
-    title_fr: Indépendance et Bayes
+    title: Conditional probability
+    title_fr: Probabilité conditionnelle
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 60–75 min
-        text: Exam P — independence, conditional probability, and Bayes-style problems.
-        text_fr: Examen P — indépendance, probabilités conditionnelles et problèmes de type Bayes.
+        time: 45 min
+        text: >
+          Spend 25 minutes on conditional probability,
+          independence, or Bayes problems, then 20 minutes
+          on corrections. Focus on distinguishing the
+          conditioning event from the event being asked about.
+        text_fr: >
+          Consacrer 25 minutes à des problèmes de probabilité
+          conditionnelle, d'indépendance ou de Bayes, puis
+          20 minutes aux corrections. Bien distinguer
+          l'événement conditionnant de l'événement recherché.
 
       - domain: actuarial
         node: actuarial-fm-diagnostic
-        time: 30–45 min
-        text: FM maintenance — effective, nominal, and discount-rate conversions.
-        text_fr: Entretien FM — conversions entre taux effectifs, nominaux et taux d'escompte.
+        time: 25 min
+        text: >
+          Review familiar effective, nominal, and discount-rate
+          conversions. Include corrections within the 25 minutes.
+        text_fr: >
+          Revoir les conversions familières entre taux effectifs,
+          nominaux et taux d'escompte. Inclure les corrections
+          dans les 25 minutes.
 
       - domain: writing
         node: writing-reading-practice
-        time: 25–30 min
-        text: Continue The Intelligent Investor and take brief notes.
-        text_fr: Poursuivre L'Investisseur intelligent et prendre quelques notes.
-
-
-  # ============================================================
-  # WEDNESDAY — SEPTEMBER 16
-  # ============================================================
+        time: 20 min
+        text: >
+          Read Mort à crédit, or use this same slot for
+          The Intelligent Investor. Stop after 20 minutes.
+        text_fr: >
+          Lire Mort à crédit, ou utiliser ce même créneau
+          pour L'Investisseur intelligent. Arrêter après
+          20 minutes.
 
   - date: 2026-09-16
     weekday: wednesday
-    title: Connect the probability tools
-    title_fr: Relier les outils de probabilité
+    title: Connect and explain
+    title_fr: Relier et expliquer
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 60–75 min
-        text: Exam P — mixed counting, unions, intersections, independence, and conditional probability.
-        text_fr: Examen P — série mixte de dénombrement, unions, intersections, indépendance et probabilités conditionnelles.
-
-      - domain: research
-        node: research-actuarial-glm-tweedie
-        time: 30–45 min
-        text: Read Goldburd pages 26–30.
-        text_fr: Lire les pages 26 à 30 de Goldburd.
+        time: 60 min
+        text: >
+          Work on a mixed set covering counting, unions,
+          intersections, and conditional probability.
+          Allow 35 minutes for attempts and 25 minutes
+          for corrections.
+        text_fr: >
+          Travailler une série mixte de dénombrement,
+          d'unions, d'intersections et de probabilité
+          conditionnelle. Prévoir 35 minutes de résolution
+          et 25 minutes de correction.
 
       - domain: lean
         node: lean-fundamentals
-        time: 30–45 min
-        text: Study propositions as types and reproduce two simple examples.
-        text_fr: Étudier les propositions comme types et reproduire deux exemples simples.
-
-
-  # ============================================================
-  # THURSDAY — SEPTEMBER 17
-  # ============================================================
+        time: 30 min
+        text: >
+          Study one example of propositions as types and
+          attempt a small related lemma. Stop after 30 minutes;
+          an understood example and a clear next step are enough.
+        text_fr: >
+          Étudier un exemple de propositions comme types et
+          tenter un petit lemme associé. Arrêter après
+          30 minutes ; un exemple compris et une prochaine
+          étape claire suffisent.
 
   - date: 2026-09-17
     weekday: thursday
-    title: Correct the recurring errors
-    title_fr: Corriger les erreurs récurrentes
+    title: Correct and write
+    title_fr: Corriger et écrire
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 60–90 min
-        text: Rework recurring P errors from Weeks 01–02 and solve new problems targeting those weaknesses.
-        text_fr: Refaire les erreurs P récurrentes des semaines 01 et 02 et résoudre de nouveaux problèmes ciblant ces faiblesses.
+        time: 45 min
+        text: >
+          Choose 3–5 recurring errors. Reattempt the problems
+          without the solutions, then check the reasoning.
+          Work on fewer examples if necessary.
+        text_fr: >
+          Choisir 3 à 5 erreurs récurrentes. Refaire les problèmes
+          sans les solutions, puis vérifier le raisonnement.
+          Traiter moins d'exemples si nécessaire.
 
       - domain: research
         node: research-actuarial-glm-tweedie
-        time: 45–60 min
-        text: Write the short note on weights, offsets, distributions, multicollinearity, and GLM limitations.
-        text_fr: Rédiger la courte note sur les poids, offsets, distributions, la multicolinéarité et les limites des GLM.
+        time: 30 min
+        text: >
+          Write 150–250 words explaining one or two ideas from
+          the Goldburd passage actually studied. Add one question.
+          Do not try to summarize unread sections.
+        text_fr: >
+          Écrire 150 à 250 mots expliquant une ou deux idées
+          du passage de Goldburd réellement étudié. Ajouter
+          une question. Ne pas chercher à résumer les sections
+          qui n'ont pas été lues.
 
       - domain: writing
         node: writing-reading-practice
-        time: 30 min
-        text: Read another 15–20 pages of Mort à crédit.
-        text_fr: Lire 15 à 20 pages supplémentaires de Mort à crédit.
-
-
-  # ============================================================
-  # FRIDAY — SEPTEMBER 18
-  # ============================================================
+        time: 15 min
+        text: Read Mort à crédit for 15 minutes.
+        text_fr: Lire Mort à crédit pendant 15 minutes.
 
   - date: 2026-09-18
     weekday: friday
-    title: Timed probability
-    title_fr: Probabilité chronométrée
+    title: Short timed practice
+    title_fr: Courte pratique chronométrée
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 75–90 min
-        text: Complete one timed mixed P set covering general and conditional probability.
-        text_fr: Compléter une série P mixte chronométrée couvrant la probabilité générale et conditionnelle.
+        time: 45 min
+        text: >
+          Attempt a short mixed P set for 25 minutes without
+          checking solutions, then spend 20 minutes correcting it.
+          Treat this as pacing practice, not a full mock exam.
+        text_fr: >
+          Travailler une courte série P mixte pendant 25 minutes
+          sans consulter les solutions, puis consacrer 20 minutes
+          à la correction. Travailler le rythme ; ce n'est pas
+          une simulation complète d'examen.
 
       - domain: actuarial
         node: actuarial-fm-diagnostic
-        time: 30–45 min
-        text: FM maintenance — short mixed set with calculator practice.
-        text_fr: Entretien FM — courte série mixte avec pratique de la calculatrice.
+        time: 25 min
+        text: >
+          Complete a few familiar FM problems using the calculator.
+          Include corrections and stop after 25 minutes.
+        text_fr: >
+          Faire quelques problèmes FM familiers avec la calculatrice.
+          Inclure les corrections et arrêter après 25 minutes.
+
+      - domain: writing
+        node: writing-reading-practice
+        time: 20 min
+        text: Read Mort à crédit for 20 minutes.
+        text_fr: Lire Mort à crédit pendant 20 minutes.
+
+  - date: 2026-09-19
+    weekday: saturday
+    title: Consolidate without catching up on everything
+    title_fr: Consolider sans tout rattraper
+
+    tasks:
+
+      - domain: actuarial
+        node: actuarial-exam-1
+        time: 60 min
+        text: >
+          Aim for 6–8 targeted or mixed P problems.
+          Use 35 minutes for attempts and 25 minutes for corrections.
+          Reduce the number if necessary. Identify the two
+          weaknesses worth carrying into next week.
+        text_fr: >
+          Viser 6 à 8 problèmes P ciblés ou mixtes.
+          Prévoir 35 minutes de résolution et 25 minutes
+          de correction. Réduire le nombre si nécessaire.
+          Identifier les deux faiblesses à reprendre
+          la semaine suivante.
 
       - domain: english
         node: english-conversation-practice
         time: 60 min
-        text: Complete one English conversation and explain conditional probability in simple English.
-        text_fr: Compléter une conversation en anglais et expliquer simplement la probabilité conditionnelle en anglais.
-
-
-  # ============================================================
-  # SATURDAY — SEPTEMBER 19
-  # ============================================================
-
-  - date: 2026-09-19
-    weekday: saturday
-    title: Consolidate the foundation
-    title_fr: Consolider les fondements
-
-    tasks:
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 90 min
-        text: Complete 30–40 cumulative P problems and fully review the week's errors.
-        text_fr: Compléter 30 à 40 problèmes P cumulatifs et revoir entièrement les erreurs de la semaine.
-
-      - domain: research
-        node: research-actuarial-glm-tweedie
-        time: 30–45 min
-        text: Clean and finalize the GLM distributions and limitations note.
-        text_fr: Nettoyer et finaliser la note sur les distributions et limites des GLM.
-
-      - domain: lean
-        node: lean-fundamentals
-        time: 30–45 min
-        text: Formalize one simple proposition yourself without copying the final proof.
-        text_fr: Formaliser soi-même une proposition simple sans copier la preuve finale.
+        text: >
+          Have a general English conversation and explain one
+          probability idea simply. Include feedback within
+          the hour.
+        text_fr: >
+          Avoir une conversation générale en anglais et expliquer
+          simplement une idée de probabilité. Inclure le retour
+          sur les erreurs dans l'heure prévue.
 
       - domain: writing
         node: writing-reading-practice
-        time: 30 min
-        text: Reach the week's Mort à crédit reading target.
-        text_fr: Atteindre l'objectif de lecture de Mort à crédit pour la semaine.
+        time: 15 min
+        text: >
+          Read for 15 minutes. Do not extend the session
+          to reach a page quota.
+        text_fr: >
+          Lire pendant 15 minutes. Ne pas prolonger la séance
+          pour atteindre un quota de pages.
 
-      - time: 15–20 min
-        text: Complete the Becoming weekly review and prepare Week 03.
-        text_fr: Compléter la revue hebdomadaire Becoming et préparer la semaine 03.
+      - time: 15 min
+        text: >
+          Review what fitted the available time and choose
+          next week's priorities. Carry forward at most two
+          important unfinished items instead of stacking
+          all missed tasks onto the next week.
+        text_fr: >
+          Revoir ce qui tenait dans le temps disponible et
+          choisir les priorités suivantes. Reporter au maximum
+          deux éléments importants inachevés plutôt qu'empiler
+          toutes les tâches manquées sur la semaine suivante.
 
 completed: []
 ---
