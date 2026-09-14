@@ -631,5 +631,162 @@
   ],
   "generalization": "If \\(S(k)=P(X>k)\\) for a nonnegative integer-valued random variable, then \\(E[X]=\\sum_{k=0}^{\\infty}S(k)\\). Also, \\(P(X=0)=1-S(0)\\) and \\(P(X=k)=S(k-1)-S(k)\\) for \\(k\\geq 1\\). Tail probabilities are cumulative probabilities, so they should not be treated as individual probability masses.",
   "answer_text": "B. \\(1.55\\)"
+},
+  {
+  "id": 36,
+  "topic": "Discrete Random Variables: Variance",
+  "title": "Exercise 36",
+  "statement": "Suppose that \\(X\\) can only take on one of the four possible values from the probability distribution given below:\n\n\\(P(X=1)=0.2\\)\n\\(P(X=3)=0.3\\)\n\\(P(X=5)=0.4\\)\n\\(P(X=9)=p\\)\n\nWhat is the variance of \\(X\\)?",
+  "choices": [
+    "\\(5\\)",
+    "\\(17\\)",
+    "\\(21\\)",
+    "\\(17p\\)",
+    "\\(21p\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The probabilities must sum to 1, so \\(p=1-0.2-0.3-0.4=0.1\\).",
+    "Calculate the mean: \\(E[X]=1(0.2)+3(0.3)+5(0.4)+9(0.1)=4\\).",
+    "Calculate the second raw moment: \\(E[X^2]=1^2(0.2)+3^2(0.3)+5^2(0.4)+9^2(0.1)=21\\).",
+    "Therefore, \\(\\operatorname{Var}(X)=E[X^2]-(E[X])^2=21-4^2=5\\)."
+  ],
+  "generalization": "For a discrete distribution, first determine any missing probabilities using normalization. Then calculate \\(E[X]=\\sum_x xp(x)\\) and \\(E[X^2]=\\sum_x x^2p(x)\\). The variance is \\(E[X^2]-(E[X])^2\\), not the second raw moment alone.",
+  "answer_text": "A. \\(5\\)"
+},
+{
+  "id": 37,
+  "topic": "Variance: Linear Transformations",
+  "title": "Exercise 37",
+  "statement": "Given that \\(E[Y]=2\\) and \\(\\operatorname{Var}(Y)=3\\), find \\(\\operatorname{Var}(3Y+4)\\).",
+  "choices": [
+    "\\(3\\)",
+    "\\(9\\)",
+    "\\(13\\)",
+    "\\(27\\)",
+    "\\(31\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "For constants \\(a\\) and \\(b\\), \\(\\operatorname{Var}(aY+b)=a^2\\operatorname{Var}(Y)\\).",
+    "Adding 4 does not change the variance, while multiplying by 3 multiplies the variance by \\(3^2=9\\).",
+    "Therefore, \\(\\operatorname{Var}(3Y+4)=9(3)=27\\). The given mean is not needed."
+  ],
+  "generalization": "For a random variable with finite variance, \\(\\operatorname{Var}(aY+b)=a^2\\operatorname{Var}(Y)\\) and \\(\\operatorname{SD}(aY+b)=|a|\\operatorname{SD}(Y)\\). Translation changes the mean but leaves the variance unchanged.",
+  "answer_text": "D. \\(27\\)"
+},
+{
+  "id": 38,
+  "topic": "Discrete Random Variables: Coefficient of Variation",
+  "title": "Exercise 38",
+  "statement": "Let \\(X\\) be a random variable whose distribution is \\(P(X=1)=P(X=3)=1/4\\) and \\(P(X=8)=1/2\\). What is the coefficient of variation of \\(X\\)?",
+  "choices": [
+    "\\(0.62\\)",
+    "\\(0.77\\)",
+    "\\(1.15\\)",
+    "\\(1.62\\)",
+    "\\(1.90\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Calculate the mean: \\(E[X]=1\\left(\\frac14\\right)+3\\left(\\frac14\\right)+8\\left(\\frac12\\right)=5\\).",
+    "Calculate the second raw moment: \\(E[X^2]=1^2\\left(\\frac14\\right)+3^2\\left(\\frac14\\right)+8^2\\left(\\frac12\\right)=34.5\\).",
+    "The variance is \\(\\operatorname{Var}(X)=34.5-5^2=9.5\\), so \\(\\operatorname{SD}(X)=\\sqrt{9.5}\\).",
+    "Since the mean is positive, \\(\\operatorname{CV}(X)=\\frac{\\operatorname{SD}(X)}{E[X]}=\\frac{\\sqrt{9.5}}{5}\\approx 0.616441\\).",
+    "Rounded to two decimal places, the coefficient of variation is \\(0.62\\)."
+  ],
+  "generalization": "For a positive mean, \\(\\operatorname{CV}(X)=\\frac{\\sqrt{E[X^2]-(E[X])^2}}{E[X]}\\). It measures dispersion relative to the mean and has no units. Use the standard deviation in the numerator, not the variance.",
+  "answer_text": "A. \\(0.62\\)"
+},
+{
+  "id": 39,
+  "topic": "Discrete Uniform Distribution: Expected Value",
+  "title": "Exercise 39",
+  "statement": "Let \\(N\\) be a randomly selected three-digit number, with each integer from 100 through 999 equally likely. What is \\(E[N]\\)?",
+  "choices": [
+    "\\(173.0\\)",
+    "\\(500.0\\)",
+    "\\(500.5\\)",
+    "\\(549.5\\)",
+    "\\(550.0\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "There are \\(999-100+1=900\\) three-digit positive integers, each with probability \\(1/900\\).",
+    "Thus \\(E[N]=\\frac{1}{900}\\sum_{n=100}^{999}n\\).",
+    "Using the arithmetic-series formula, \\(\\sum_{n=100}^{999}n=\\frac{900(100+999)}{2}\\).",
+    "Therefore, \\(E[N]=\\frac{100+999}{2}=549.5\\).",
+    "Equivalently, pairing the smallest and largest values gives \\(100+999=101+998=\\cdots=1099\\). Each pair has average \\(1099/2=549.5\\)."
+  ],
+  "generalization": "If \\(N\\) is uniform on the consecutive integers \\(a,a+1,\\ldots,b\\), then \\(E[N]=(a+b)/2\\). This follows directly from the sum of an arithmetic series and requires equal probabilities.",
+  "answer_text": "D. \\(549.5\\)"
+},
+{
+  "id": 40,
+  "topic": "Coefficient of Variation: Linear Transformations",
+  "title": "Exercise 40",
+  "statement": "Let \\(Y\\) be the outcome of the roll of a fair four-sided die numbered 1 through 4. What is the coefficient of variation of \\(25+100Y\\)?",
+  "choices": [
+    "\\(0.41\\)",
+    "\\(1.21\\)",
+    "\\(2.08\\)",
+    "\\(3.50\\)",
+    "\\(4.47\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Since \\(Y\\) is uniform on \\(\\{1,2,3,4\\}\\), \\(E[Y]=(1+2+3+4)/4=2.5\\).",
+    "Also, \\(E[Y^2]=(1+4+9+16)/4=7.5\\), so \\(\\operatorname{Var}(Y)=7.5-2.5^2=1.25\\).",
+    "Let \\(Z=25+100Y\\). Its mean is \\(E[Z]=25+100(2.5)=275\\).",
+    "Its variance is \\(\\operatorname{Var}(Z)=100^2\\operatorname{Var}(Y)=10000(1.25)=12500\\).",
+    "Therefore, \\(\\operatorname{CV}(Z)=\\frac{\\sqrt{12500}}{275}\\approx 0.406558\\), which rounds to \\(0.41\\)."
+  ],
+  "generalization": "For \\(Z=aX+b\\) with positive mean, \\(\\operatorname{CV}(Z)=\\frac{|a|\\operatorname{SD}(X)}{aE[X]+b}\\). Positive scaling alone preserves the coefficient of variation, but adding a constant generally changes it.",
+  "answer_text": "A. \\(0.41\\)"
+},
+{
+  "id": 41,
+  "topic": "Counting: Multiplication Principle",
+  "title": "Exercise 41",
+  "statement": "An old computer network had 5-character user names. Each of the first 2 characters could be any one of the 26 letters of the alphabet, the 3rd and 4th characters could be any one of the 10 digits, and the 5th character could be any letter or digit. How many possible user names were there?",
+  "choices": [
+    "\\(37{,}440\\)",
+    "\\(97{,}440\\)",
+    "\\(1{,}757{,}600\\)",
+    "\\(2{,}433{,}600\\)",
+    "\\(292{,}032{,}000\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Each of the first two positions has 26 possible letters. No restriction prohibits repetition.",
+    "Each of the third and fourth positions has 10 possible digits.",
+    "The fifth position has \\(26+10=36\\) possibilities because letters and digits are disjoint categories.",
+    "By the multiplication principle, the total number of user names is \\(26\\times26\\times10\\times10\\times36=2{,}433{,}600\\)."
+  ],
+  "generalization": "If each valid partial sequence has \\(n_i\\) choices for position \\(i\\), the total number of complete sequences is \\(\\prod_i n_i\\). Add counts for disjoint alternatives within a position, and multiply counts across successive positions.",
+  "answer_text": "D. \\(2{,}433{,}600\\)"
+},
+{
+  "id": 42,
+  "topic": "Counting: Multiplication Principle",
+  "title": "Exercise 42",
+  "statement": "Find the number of 4-digit passcodes that satisfy both of the following conditions:\n\nThe first and second digits must each be one of 3 through 9.\n\nThe third and fourth digits can be any of 0 through 9, but must be different from each other.",
+  "choices": [
+    "\\(2{,}520\\)",
+    "\\(2{,}592\\)",
+    "\\(3{,}240\\)",
+    "\\(3{,}528\\)",
+    "\\(4{,}410\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "The digits from 3 through 9 give \\(9-3+1=7\\) choices for the first position.",
+    "The second position also has 7 choices. The first two digits are allowed to match.",
+    "The third position has 10 choices, from 0 through 9.",
+    "For each choice of the third digit, the fourth position has 9 choices because it must exclude that digit.",
+    "Therefore, the number of valid passcodes is \\(7\\times7\\times10\\times9=4{,}410\\)."
+  ],
+  "generalization": "Apply distinctness restrictions only where stated. Two ordered positions chosen from \\(m\\) symbols have \\(m^2\\) possibilities when repetition is allowed and \\(m(m-1)\\) when their symbols must differ.",
+  "answer_text": "E. \\(4{,}410\\)"
 }
 ]
