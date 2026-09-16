@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T20:10:55.176915+00:00",
+  "updated_at": "2026-09-16T22:58:58.160240+00:00",
   "assets": {
     "Indices": [
       {
@@ -45,8 +45,8 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2858.0579,
-        "change_pct": -0.426,
+        "price": 2858.8113,
+        "change_pct": -0.4,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.399,
-        "change_pct": 0.648,
+        "price": 1.3988,
+        "change_pct": 0.633,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1472,
-        "change_pct": -0.664,
+        "price": 1.1469,
+        "change_pct": -0.687,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3385,
-        "change_pct": -0.862,
+        "price": 1.3381,
+        "change_pct": -0.886,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 156.187,
-        "change_pct": 1.167,
+        "price": 156.229,
+        "change_pct": 1.194,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4309.7002,
-        "change_pct": -0.533,
+        "price": 4308.7002,
+        "change_pct": -0.556,
         "low_52w": 3678.3,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 102.17,
-        "change_pct": -3.458,
+        "price": 101.97,
+        "change_pct": -3.647,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.89,
-        "change_pct": -0.993,
+        "price": 2.894,
+        "change_pct": -0.856,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.44,
-        "change_pct": 1.123,
+        "price": 6.4495,
+        "change_pct": 1.272,
         "low_52w": 4.541,
         "high_52w": 6.8035
       }
@@ -248,6 +248,13 @@
   ],
   "news": [
     {
+      "title": "Stock market today: Dow sinks 600 points, S&P 500 and Nasdaq fall as Fed hikes rates, bond yields rise",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-16-dow-sp-500-nasdaq-fed-meeting-decision-080356525.html",
+      "publisher": "Yahoo Finance",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
       "title": "Federal Reserve interest rate hikes usually pound stocks, but then something surprising happens",
       "link": "https://finance.yahoo.com/economy/article/federal-reserve-interest-rate-hikes-usually-pound-stocks-but-then-something-surprising-happens-100449563.html",
       "publisher": "Yahoo Finance",
@@ -255,38 +262,38 @@
       "time": "Latest"
     },
     {
-      "title": "Stocks slip as yields rise, but these tailwinds are keeping markets afloat",
-      "link": "https://finance.yahoo.com/video/stocks-slip-yields-rise-tailwinds-203600441.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "Dow Jones Futures: S&P 500 Falls After Fed Rate Hike, Hawkish Warsh; Trump Fumes As AMD, Bloom Energy Lead Stocks To Watch",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp-500-fed-rate-hike-warsh-amd-bloom-energy-stocks-to-watch/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Microsoft Leads S&P 500 Stocks Going Nowhere",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-leads-p-500-stocks-195912814.html",
-      "publisher": "GuruFocus.com",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "I've Analyzed Hundreds of Stocks in 7 Years. Here's My Step-by-Step System for Researching Any Company Before Buying.",
-      "link": "https://www.fool.com/investing/2026/09/16/my-step-by-step-system-for-researching-stocks/",
+      "title": "Why J.B. Hunt Stock Dropped Today",
+      "link": "https://www.fool.com/investing/2026/09/16/why-jb-hunt-stock-dropped-today/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stocks fall as Fed delivers hawkish rate hike",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/asian-markets-nervous-start-ahead-012257597.html",
-      "publisher": "Reuters",
+      "title": "TXO Partners LP (TXO) Declines More Than Market: Some Information for Investors",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/txo-partners-lp-txo-declines-221504118.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "The Fed's Hawkish Pivot Didn't Fix The 10-Year Yield; S&P 500 Slides",
-      "link": "https://www.investors.com/news/federal-reserve-meeting-sept-warsh-10-year-treasury-yield-sp-500/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Ginkgo Bioworks Holdings, Inc. (DNA) Rises As Market Takes a Dip: Key Facts",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ginkgo-bioworks-holdings-inc-dna-221503724.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Falls as Energy Shares Slide With Oil; Investors Weigh Fed Rate Hike",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-energy-202222298.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "Canadian household wealth tops $19 trillion for the first time as equities drive a 'blow-away quarter'",
       "link": "https://financialpost.com/wealth/canadian-household-wealth-tops-19-trillion-first-time-blow-away-quarter",
       "publisher": "Financial Post",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Falls to Six-Week Low As Base Metals Slide; Oil Surges on Middle East Supply Fears",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-six-203057283.html",
-      "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
     }
