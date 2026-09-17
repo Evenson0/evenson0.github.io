@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T20:21:32.835885+00:00",
+  "updated_at": "2026-09-17T23:07:57.251302+00:00",
   "assets": {
     "Indices": [
       {
@@ -53,8 +53,8 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10816.1396,
-        "change_pct": 1.194,
+        "price": 10688.5,
+        "change_pct": 0.285,
         "low_52w": 9208.4004,
         "high_52w": 10910.5996
       },
@@ -163,33 +163,33 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3989,
-        "change_pct": 0.47,
+        "price": 1.3983,
+        "change_pct": -0.037,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.148,
-        "change_pct": -0.502,
+        "price": 1.1481,
+        "change_pct": 0.098,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3355,
-        "change_pct": -0.879,
+        "price": 1.336,
+        "change_pct": -0.175,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 156.006,
-        "change_pct": 0.477,
-        "low_52w": 146.413,
+        "price": 155.936,
+        "change_pct": -0.05,
+        "low_52w": 146.891,
         "high_52w": 163.864
       }
     ],
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4382.6001,
-        "change_pct": -0.112,
+        "price": 4382.0,
+        "change_pct": -0.125,
         "low_52w": 3678.3,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 101.13,
-        "change_pct": -1.269,
+        "price": 101.14,
+        "change_pct": -1.259,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.862,
-        "change_pct": -1.003,
+        "price": 2.864,
+        "change_pct": -0.934,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.613,
-        "change_pct": 2.822,
+        "price": 6.6165,
+        "change_pct": 2.876,
         "low_52w": 4.541,
         "high_52w": 6.8035
       }
@@ -248,9 +248,9 @@
   ],
   "news": [
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq rebound as bond yields slip, oil eases",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html",
-      "publisher": "Yahoo Finance",
+      "title": "The market is ready for a few more rate hikes",
+      "link": "https://finance.yahoo.com/video/market-ready-few-more-rate-201851030.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
@@ -262,31 +262,38 @@
       "time": "Latest"
     },
     {
-      "title": "Warren Buffett Called This 1 ETF the Best Choice for Most Investors -- and History Approves",
-      "link": "https://www.fool.com/investing/2026/09/17/warren-buffett-called-this-1-etf-the-best-choice/",
+      "title": "Why Was Micron Technology Stock Up Today?",
+      "link": "https://www.fool.com/investing/2026/09/17/why-was-micron-technology-stock-up-today/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Rise as Fed's Commitment to Controlling Inflation Sinks Treasury Yields",
-      "link": "https://finance.yahoo.com/economy/policy/articles/us-equity-indexes-rise-fed-195020681.html",
-      "publisher": "MT Newswires",
+      "title": "How much to invest in Ford stock to earn $500 in annual dividends",
+      "link": "https://www.thestreet.com/investing/stocks/ford-dividend-stock-how-much-to-invest-500-annual-income",
+      "publisher": "TheStreet",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "As the Stock Market Flashes a Warning Seen Only 2 Times in 155 Years, Warren Buffett has a Big Warning for Investors",
-      "link": "https://www.fool.com/investing/2026/09/17/as-the-stock-market-flashes-a-warning-only-seen-2/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: Nasdaq Retakes Key Level; Ad Platform Provider Hits Highs (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-fed-reaction-generac-nebius-bloom-energy-spacex/?src=A00220&yptr=yahoo",
+      "title": "Dow Jones Futures Fall After S&P 500, Nasdaq Rebound Above Key Level; Moderna, AMD, SpaceX Flash Buy Signals",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-moderna-amd-spacex-buy-signals/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Prediction: A $5,000 Investment Split Between Micron and Sandisk Will Triple Before 2028",
+      "link": "https://www.fool.com/investing/2026/09/17/prediction-a-5000-investment-split-between-micron/",
+      "publisher": "Motley Fool",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Jumps 1.1% as Base Metals Lead Broad Gains",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-jumps-1-202221348.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "TSX Closer: The Index Rises on Stronger Tech and Financial Issues",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-rises-stronger-202046819.html",
       "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "Canadian household wealth tops $19 trillion for the first time as equities drive a 'blow-away quarter'",
-      "link": "https://financialpost.com/wealth/canadian-household-wealth-tops-19-trillion-first-time-blow-away-quarter",
-      "publisher": "Financial Post",
       "related": "^GSPTSE",
       "time": "Latest"
     }
