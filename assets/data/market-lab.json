@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-09-16T22:58:58.160240+00:00",
+  "updated_at": "2026-09-17T17:03:09.682390+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7551.8101,
-        "change_pct": -0.447,
+        "price": 7636.6602,
+        "change_pct": 1.124,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 25978.4238,
-        "change_pct": -0.012,
+        "price": 26405.9336,
+        "change_pct": 1.646,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 51461.8984,
-        "change_pct": -1.212,
+        "price": 51813.1602,
+        "change_pct": 0.683,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 35491.2695,
-        "change_pct": -0.255,
-        "low_52w": 29315.1992,
+        "price": 35848.7617,
+        "change_pct": 1.007,
+        "low_52w": 29321.6992,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 52.8,
-        "change_pct": -0.208,
-        "low_52w": 43.78,
+        "price": 53.19,
+        "change_pct": 0.739,
+        "low_52w": 43.82,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2858.8113,
-        "change_pct": -0.4,
+        "price": 2890.6311,
+        "change_pct": 1.113,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10688.4697,
-        "change_pct": 0.285,
-        "low_52w": 9195.7002,
+        "price": 10816.1396,
+        "change_pct": 1.194,
+        "low_52w": 9208.4004,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 63484.1016,
-        "change_pct": -0.014,
+        "price": 63923.0,
+        "change_pct": 0.691,
         "low_52w": 44550.8516,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 332.41,
-        "change_pct": 0.323,
+        "price": 336.195,
+        "change_pct": 1.139,
         "low_52w": 237.88,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 490.3,
-        "change_pct": -1.372,
+        "price": 495.6,
+        "change_pct": 1.081,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 213.9,
-        "change_pct": 0.815,
+        "price": 218.9042,
+        "change_pct": 2.34,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 245.96,
-        "change_pct": -0.99,
+        "price": 251.68,
+        "change_pct": 2.326,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 283.06,
-        "change_pct": -0.405,
-        "low_52w": 201.02,
+        "price": 285.2,
+        "change_pct": 0.756,
+        "low_52w": 201.2,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 181.77,
-        "change_pct": 0.537,
+        "price": 179.14,
+        "change_pct": -1.447,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 167.34,
-        "change_pct": -1.333,
+        "price": 166.79,
+        "change_pct": -0.329,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.97,
-        "change_pct": 0.253,
+        "price": 3.965,
+        "change_pct": -0.126,
         "low_52w": 3.507,
         "high_52w": 3.97
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.859,
-        "change_pct": 0.684,
+        "price": 4.797,
+        "change_pct": -1.276,
         "low_52w": 3.512,
         "high_52w": 4.859
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 5.006,
-        "change_pct": 0.2,
+        "price": 4.947,
+        "change_pct": -1.179,
         "low_52w": 3.953,
         "high_52w": 5.006
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.349,
-        "change_pct": -0.28,
+        "price": 5.297,
+        "change_pct": -0.972,
         "low_52w": 4.539,
         "high_52w": 5.364
       }
@@ -164,31 +164,31 @@
         "symbol": "CAD=X",
         "name": "USD / CAD",
         "price": 1.3988,
-        "change_pct": 0.633,
+        "change_pct": 0.457,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1469,
-        "change_pct": -0.687,
+        "price": 1.1477,
+        "change_pct": -0.525,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3381,
-        "change_pct": -0.886,
+        "price": 1.3347,
+        "change_pct": -0.942,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 156.229,
-        "change_pct": 1.194,
+        "price": 156.079,
+        "change_pct": 0.524,
         "low_52w": 146.413,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4308.7002,
-        "change_pct": -0.556,
+        "price": 4399.5,
+        "change_pct": 0.274,
         "low_52w": 3678.3,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 101.97,
-        "change_pct": -3.647,
+        "price": 101.99,
+        "change_pct": -0.43,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.894,
-        "change_pct": -0.856,
+        "price": 2.917,
+        "change_pct": 0.899,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.4495,
-        "change_pct": 1.272,
+        "price": 6.6635,
+        "change_pct": 3.607,
         "low_52w": 4.541,
         "high_52w": 6.8035
       }
@@ -231,19 +231,19 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.97
+      "value": 3.965
     },
     {
       "term": "5Y",
-      "value": 4.859
+      "value": 4.797
     },
     {
       "term": "10Y",
-      "value": 5.006
+      "value": 4.947
     },
     {
       "term": "30Y",
-      "value": 5.349
+      "value": 5.297
     }
   ],
   "news": [
@@ -262,30 +262,30 @@
       "time": "Latest"
     },
     {
-      "title": "Dow Jones Futures: S&P 500 Falls After Fed Rate Hike, Hawkish Warsh; Trump Fumes As AMD, Bloom Energy Lead Stocks To Watch",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp-500-fed-rate-hike-warsh-amd-bloom-energy-stocks-to-watch/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "3 Reasons RNST is Risky and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-rnst-risky-1-165017382.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why J.B. Hunt Stock Dropped Today",
-      "link": "https://www.fool.com/investing/2026/09/16/why-jb-hunt-stock-dropped-today/",
+      "title": "Stock Market Sell-Off: Is It Really Safe to Invest Right Now? Here's What History Says.",
+      "link": "https://www.fool.com/investing/2026/09/17/stock-market-sell-off-is-it-really-safe-to-invest/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "TXO Partners LP (TXO) Declines More Than Market: Some Information for Investors",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/txo-partners-lp-txo-declines-221504118.html",
-      "publisher": "Zacks",
+      "title": "Stocks Look Priced for Perfection. These 3 Dividend ETFs Are Built for the Pullback",
+      "link": "https://247wallst.com/investing/etf/2026/09/17/stocks-look-priced-for-perfection-these-3-dividend-etfs-are-built-for-the-pullback/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Ginkgo Bioworks Holdings, Inc. (DNA) Rises As Market Takes a Dip: Key Facts",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/ginkgo-bioworks-holdings-inc-dna-221503724.html",
-      "publisher": "Zacks",
+      "title": "US Equity Indexes Rise as Treasury Yields Slump After Fed Reaffirms Commitment to Controlling Inflation",
+      "link": "https://finance.yahoo.com/economy/policy/articles/us-equity-indexes-rise-treasury-164240624.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
