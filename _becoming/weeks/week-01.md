@@ -125,29 +125,21 @@ quests:
     node: writing-reading-practice
     task: >
       Read Le Rouge et le Noir from September 21 to September 27:
-      one seventh of the novel each day, based on the pages of
-      your edition. Estimate the necessary time after Monday;
-      this is not a 30-minute target.
+      one seventh of the novel each day.
     task_fr: >
       Lire Le Rouge et le Noir du 21 au 27 septembre :
-      un septième du roman par jour, selon la pagination de
-      l’édition. Estimer le temps nécessaire après lundi ;
-      cette cible ne suppose pas un créneau de 30 minutes.
+      un septième du roman par jour..
 
   - domain: writing
     node: writing-reading-practice
     task: >
       Read portions 1–7 of 31 equal page portions of The Intelligent
       Investor. Start September 21 and finish October 21, including
-      the commentary and appendices you intend to read. Divide the
-      chosen page range into 31; take brief notes within the reading
-      session.
+      the commentary and appendices you intend to read.
     task_fr: >
       Lire les portions 1 à 7 sur 31 portions égales de
       L’Investisseur intelligent. Commencer le 21 septembre et
       terminer le 21 octobre, commentaires et annexes à lire compris.
-      Diviser la plage de pages choisie par 31 ; intégrer les notes
-      brèves à la lecture.
 
 days:
 
