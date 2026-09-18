@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-09-18T16:27:45.680090+00:00",
+  "updated_at": "2026-09-18T19:13:42.813696+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7614.4199,
-        "change_pct": -0.306,
+        "price": 7642.5,
+        "change_pct": 0.062,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26351.9629,
-        "change_pct": -0.251,
+        "price": 26473.0742,
+        "change_pct": 0.207,
         "low_52w": 20794.6406,
         "high_52w": 27093.9004
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 51516.7305,
-        "change_pct": -0.505,
+        "price": 51717.4805,
+        "change_pct": -0.117,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 35679.6797,
-        "change_pct": -0.543,
+        "price": 35777.0781,
+        "change_pct": -0.271,
         "low_52w": 29453.5,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 52.915,
-        "change_pct": -0.592,
+        "price": 53.04,
+        "change_pct": -0.357,
         "low_52w": 44.03,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2848.2109,
-        "change_pct": -0.919,
+        "price": 2855.094,
+        "change_pct": -0.68,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 334.58,
-        "change_pct": -0.718,
+        "price": 336.105,
+        "change_pct": -0.266,
         "low_52w": 237.88,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 493.0927,
-        "change_pct": -0.936,
+        "price": 495.87,
+        "change_pct": -0.378,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 219.42,
-        "change_pct": 0.036,
+        "price": 219.515,
+        "change_pct": 0.08,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 253.425,
-        "change_pct": 0.89,
+        "price": 254.33,
+        "change_pct": 1.25,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 283.34,
-        "change_pct": -0.558,
+        "price": 284.73,
+        "change_pct": -0.07,
         "low_52w": 201.2,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 178.06,
-        "change_pct": -1.083,
+        "price": 178.49,
+        "change_pct": -0.844,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 166.46,
-        "change_pct": -0.763,
+        "price": 166.81,
+        "change_pct": -0.554,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -129,10 +129,10 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 3.982,
-        "change_pct": 0.429,
+        "price": 3.978,
+        "change_pct": 0.328,
         "low_52w": 3.507,
-        "high_52w": 3.982
+        "high_52w": 3.978
       },
       {
         "symbol": "^FVX",
@@ -153,8 +153,8 @@
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.333,
-        "change_pct": 0.699,
+        "price": 5.332,
+        "change_pct": 0.68,
         "low_52w": 4.539,
         "high_52w": 5.364
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4005,
-        "change_pct": 0.123,
+        "price": 1.3988,
+        "change_pct": 0.001,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1473,
-        "change_pct": 0.029,
+        "price": 1.1489,
+        "change_pct": 0.167,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3378,
-        "change_pct": -0.035,
+        "price": 1.3395,
+        "change_pct": 0.091,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 156.85,
-        "change_pct": 0.536,
+        "price": 156.686,
+        "change_pct": 0.431,
         "low_52w": 146.891,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4401.2998,
-        "change_pct": 0.036,
+        "price": 4419.1001,
+        "change_pct": 0.441,
         "low_52w": 3678.3,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 96.64,
-        "change_pct": -5.171,
+        "price": 95.42,
+        "change_pct": -6.368,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.918,
-        "change_pct": 0.586,
+        "price": 2.895,
+        "change_pct": -0.207,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.678,
-        "change_pct": 1.389,
+        "price": 6.6945,
+        "change_pct": 1.64,
         "low_52w": 4.541,
         "high_52w": 6.8035
       }
@@ -231,7 +231,7 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 3.982
+      "value": 3.978
     },
     {
       "term": "5Y",
@@ -243,7 +243,7 @@
     },
     {
       "term": "30Y",
-      "value": 5.333
+      "value": 5.332
     }
   ],
   "news": [
@@ -255,36 +255,36 @@
       "time": "Latest"
     },
     {
-      "title": "Goldman Sachs Delivers Surprising Verdict on Big Tech Stocks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-delivers-surprising-verdict-161802068.html",
-      "publisher": "GuruFocus.com",
+      "title": "The market is ready for a few more rate hikes",
+      "link": "https://finance.yahoo.com/video/the-market-is-ready-for-a-few-more-rate-hikes-201851030.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Pressured As Yields Hit 5%; Strategy Soars As Bitcoin Price Tops $80,500 (Live Coverage)",
+      "title": "COIN Stock Trades at a Premium to Industry: What Should Investors Do?",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/coin-stock-trades-premium-industry-190200724.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today: Dow Pressured Hit 5%; Two Healthcare Names Shine In IBD 50 (Live Coverage)",
       "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-apple-amd-micron-sandisk/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Tesla Stock Fell After Its Last 4 Delivery Reports, Even a Big Beat. Here's What History Says to Expect in October.",
-      "link": "https://www.fool.com/investing/2026/09/18/tesla-stock-fell-after-its-last-4-delivery-reports-even-a-big-beat-here-s-what-history-says-to-expect-in-october/",
-      "publisher": "Motley Fool",
+      "title": "Watsco (WSO): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/watsco-wso-buy-sell-hold-185640089.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "These Steelmakers Sink To Bottom Of S&P 500 After Issuing Weak Guidance",
-      "link": "https://www.investors.com/news/sp-500-stocks-steelmakers-outlook-nue-stld-stock/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "This Nation's Stock Market Is Outperforming All Others This Year. Should You Invest?",
-      "link": "https://www.fool.com/investing/2026/09/18/this-nations-stock-market-is-outperforming-others/",
+      "title": "Warren Buffett Steps Down as Berkshire Hathaway Chairman After 56 Years. Here's What Investors Should Expect Moving Forward.",
+      "link": "https://www.fool.com/investing/2026/09/18/warren-buffett-steps-down-as-berkshire-hathaway-chairman-after-56-years-here-s-what-investors-should-expect-moving-forward/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
