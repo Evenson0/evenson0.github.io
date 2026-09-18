@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T21:44:03.168706+00:00",
+  "updated_at": "2026-09-18T23:37:39.408848+00:00",
   "assets": {
     "Indices": [
       {
@@ -53,8 +53,8 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10659.1299,
-        "change_pct": -1.451,
+        "price": 10816.0996,
+        "change_pct": 1.194,
         "low_52w": 9214.0,
         "high_52w": 10910.5996
       },
@@ -163,8 +163,8 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3987,
-        "change_pct": -0.009,
+        "price": 1.3982,
+        "change_pct": -0.044,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
@@ -255,38 +255,45 @@
       "time": "Latest"
     },
     {
-      "title": "3 Unstoppable Dividend Stocks to Buy Now (1 Yields 5.5%)",
-      "link": "https://www.fool.com/investing/2026/09/18/3-unstoppable-dividend-stocks-buy-now/",
-      "publisher": "Motley Fool",
+      "title": "Dow Jones Futures: Market Still Choppy; Robinhood, Sandisk, AMD, Moderna Surge Into Buy Areas",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-robinhood-sandisk-amd-moderna-surge-buy-areas/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "2 Energy Stocks with Impressive Fundamentals and 1 We Find Risky",
-      "link": "https://finance.yahoo.com/energy/articles/2-energy-stocks-impressive-fundamentals-212040012.html",
-      "publisher": "StockStory",
+      "title": "Annaly Capital Management (NLY) Stock Sinks As Market Gains: Here's Why",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/annaly-capital-management-nly-stock-221503015.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today, Sept. 18: Netflix Falls on Analyst Downgrade and Slashed Price Target",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/09/18/stock-market-today-sept-18-netflix-falls-on-analyst-downgrade-and-slashed-price-target/",
-      "publisher": "Motley Fool",
+      "title": "SolarEdge Technologies (SEDG) Stock Dips While Market Gains: Key Facts",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/solaredge-technologies-sedg-stock-dips-221503239.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nvidia Stock Is Up 21% in Six Months. Here’s What the Street Still Isn’t Pricing In",
-      "link": "https://www.tikr.com/blog/nvidia-stock-is-up-21-in-six-months-heres-what-the-street-still-isnt-pricing-in?ref=yahoofinance",
-      "publisher": "TIKR",
+      "title": "Innovative Industrial Properties (IIPR) Stock Sinks As Market Gains: Here's Why",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/innovative-industrial-properties-iipr-stock-221503611.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Global shares edge higher as central banks double down on inflation fight",
-      "link": "https://finance.yahoo.com/markets/articles/stocks-rise-oil-dips-yen-013424826.html",
-      "publisher": "Reuters",
+      "title": "Jabil (JBL) Rises Higher Than Market: Key Facts",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jabil-jbl-rises-higher-market-221503483.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Ottawa's 'mega deduction' tax write-off could boost these TSX stocks, analysts say",
+      "link": "https://financialpost.com/investing/tax-write-off-boost-tsx-stocks",
+      "publisher": "Financial Post",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -320,13 +327,6 @@
     {
       "title": "TSX Closer: Index Edges Higher as Healthcare Gains Offset Base Metals Weakness; Oil Rises",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-edges-higher-202012457.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "S&P/TSX Composite Index Falls 150 Points Mid-Morning Monday As Base Metal Shares Drop",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/p-tsx-composite-index-falls-143857344.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
