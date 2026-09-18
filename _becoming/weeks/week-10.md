@@ -1,17 +1,18 @@
 ---
-title: FM Re-entry · GLM, GAM, and ANAM
-title_fr: Retour à FM · GLM, GAM et ANAM
+title: FM Bonds & Cash Flows · GLM, GAM, and ANAM
+title_fr: FM Obligations et flux monétaires · GLM, GAM et ANAM
 
 cycle: foundations-01
 cycle_week: 10
 
-start_date: 2026-11-08
-end_date: 2026-11-14
+start_date: 2026-11-23
+end_date: 2026-11-29
 
 status: planned
 
 active:
-  - actuarial-fm-diagnostic
+  - actuarial-fm-bonds
+  - actuarial-fm-cashflows
   - research-pricing-flexible-models
   - physical-training-consistency
 
@@ -22,67 +23,57 @@ maintenance:
 
 quests:
 
-  # ============================================================
-  # ACTUARIAL - FM BECOMES PRIMARY
-  # ============================================================
-
   - domain: actuarial
-    node: actuarial-fm-diagnostic
-    task: Re-enter FM seriously after Exam P, complete a fresh diagnostic, rebuild the error log, and identify the highest-value topics for the December exam.
-    task_fr: Reprendre sérieusement FM après l'examen P, compléter un nouveau diagnostic, reconstruire le journal d'erreurs et identifier les sujets les plus importants pour l'examen de décembre.
+    node: actuarial-fm-bonds
+    task: Build reliable exam-level skill in bond pricing, yield relationships, premium and discount bonds, book value, and mixed bond problems.
+    task_fr: Construire une maîtrise fiable de niveau examen sur la valorisation des obligations, les relations de rendement, les obligations à prime et à escompte, la valeur comptable et les problèmes mixtes.
 
     completion:
-      - Complete one fresh mixed FM diagnostic
-      - Record every meaningful error
-      - Classify errors by concept, setup, algebra, calculator, and time management
-      - Identify the three weakest FM areas
-      - Review interest-rate fundamentals
-      - Review present and accumulated value
-      - Review nominal and effective rate conversions
-      - Review discount rates
-      - Begin annuity review
-      - Establish the November-to-December FM study priorities
+      - Review bond price from yield
+      - Review coupon-rate and yield relationships
+      - Distinguish premium, par, and discount bonds
+      - Review redemption value
+      - Review book value
+      - Solve for unknown yield or coupon information
+      - Complete calculator-based bond problems
+      - Complete exam-level mixed applications
+      - Record recurring bond errors
 
     completion_fr:
-      - Compléter un nouveau diagnostic FM mixte
-      - Noter chaque erreur importante
-      - Classer les erreurs par concept, mise en équation, algèbre, calculatrice et gestion du temps
-      - Identifier les trois principales faiblesses FM
-      - Revoir les bases des taux d'intérêt
-      - Revoir les valeurs actuelles et accumulées
-      - Revoir les conversions entre taux nominaux et effectifs
-      - Revoir les taux d'escompte
-      - Commencer la révision des annuités
-      - Établir les priorités FM de novembre jusqu'à l'examen de décembre
-
-  # ============================================================
-  # EXAM P - CLOSE THE LOOP
-  # ============================================================
+      - Revoir le prix d'une obligation à partir du rendement
+      - Revoir les relations entre taux de coupon et rendement
+      - Distinguer les obligations à prime, au pair et à escompte
+      - Revoir la valeur de remboursement
+      - Revoir la valeur comptable
+      - Résoudre les problèmes de rendement ou de coupon inconnu
+      - Compléter des problèmes d'obligations avec la calculatrice
+      - Compléter des applications mixtes de niveau examen
+      - Noter les erreurs récurrentes sur les obligations
 
   - domain: actuarial
-    node: actuarial-exam-1
-    task: Write a short post-exam review of Exam P, then close the preparation cycle and move forward.
-    task_fr: Rédiger une courte revue post-examen de P, puis fermer le cycle de préparation et passer à la suite.
+    node: actuarial-fm-cashflows
+    task: Develop working fluency with general cash-flow valuation, spot rates, forward rates, yield curves, and portfolio applications.
+    task_fr: Développer une maîtrise opérationnelle de l'évaluation des flux monétaires généraux, des taux spot, des taux forward, des courbes de taux et des applications de portefeuille.
 
     completion:
-      - Record what felt easy
-      - Record what felt difficult
-      - Record any timing problems
-      - Record topics that felt uncertain
-      - Write lessons for a future attempt only if needed
-      - Stop active Exam P preparation after the review
+      - Review general cash-flow valuation
+      - Review spot-rate valuation
+      - Review forward-rate calculations
+      - Review yield curves
+      - Work with multiple cash flows at different rates
+      - Complete portfolio valuation problems
+      - Connect cash-flow valuation to earlier FM topics
+      - Complete one cumulative mixed FM set
 
     completion_fr:
-      - Noter ce qui a semblé facile
-      - Noter ce qui a semblé difficile
-      - Noter les éventuels problèmes de temps
-      - Noter les sujets qui ont semblé incertains
-      - Écrire les leçons pour une éventuelle future tentative seulement si nécessaire
-      - Arrêter la préparation active de P après cette revue
-
-  # ============================================================
-  # RESEARCH
-  # ============================================================
+      - Revoir l'évaluation générale des flux monétaires
+      - Revoir l'évaluation avec les taux spot
+      - Revoir les calculs de taux forward
+      - Revoir les courbes de taux
+      - Travailler avec plusieurs flux soumis à différents taux
+      - Compléter des problèmes de valorisation de portefeuille
+      - Relier l'évaluation des flux aux sujets FM précédents
+      - Compléter une série FM cumulative mixte
 
   - domain: research
     node: research-pricing-flexible-models
@@ -113,161 +104,127 @@ quests:
       - Noter où la complexité apporte peu de valeur
       - Garder le travail reproductible
 
-  # ============================================================
-  # WRITING / READING
-  # ============================================================
-
   - domain: writing
     node: writing-literary-essay
-    task: If Mort à crédit is finished, begin an 800–1,200 word literary essay; otherwise continue reading without forcing the essay.
-    task_fr: Si Mort à crédit est terminé, commencer un essai littéraire de 800 à 1 200 mots ; sinon poursuivre la lecture sans forcer l'essai.
-
-  # ============================================================
-  # LEAN
-  # ============================================================
+    task: If Le Rouge et le Noir is finished, begin an 800–1,200 word literary essay; otherwise continue reading without forcing the essay.
+    task_fr: Si Le Rouge et le Noir est terminé, commencer un essai littéraire de 800 à 1 200 mots ; sinon poursuivre la lecture sans forcer l'essai.
 
   - domain: lean
     node: lean-library-navigation
     task: Learn to search mathlib and reuse existing lemmas in one small proof.
     task_fr: Apprendre à chercher dans mathlib et réutiliser des lemmes existants dans une petite preuve.
 
-  # ============================================================
-  # ENGLISH
-  # ============================================================
-
   - domain: english
     node: english-conversation-practice
     task: Complete one English conversation structured like a professional meeting.
     task_fr: Compléter une conversation en anglais structurée comme une réunion professionnelle.
 
-  # ============================================================
-  # PHYSICAL
-  # ============================================================
-
   - domain: physical
     node: physical-training-consistency
-    task: Return to the normal physical protocol after Exam P week and continue building consistency.
-    task_fr: Revenir au protocole physique normal après la semaine de l'examen P et poursuivre la construction de la régularité.
+    task: Continue the normal physical protocol while balancing FM preparation and recovery.
+    task_fr: Poursuivre le protocole physique normal en équilibrant préparation FM et récupération.
 
     completion:
-      - Resume normal morning routine
-      - Resume normal strength schedule
+      - Maintain normal morning routine
+      - Maintain normal strength schedule
       - Continue daily movement target
-      - Resume normal evening routine
-      - Review recovery after the exam week
+      - Maintain normal evening routine
+      - Review recovery during FM preparation
 
     completion_fr:
-      - Reprendre la routine normale du matin
-      - Reprendre le programme normal de musculation
+      - Maintenir la routine normale du matin
+      - Maintenir le programme normal de musculation
       - Poursuivre l'objectif de mouvement quotidien
-      - Reprendre la routine normale du soir
-      - Revoir la récupération après la semaine d'examen
-
-
-# ============================================================
-# DAILY PLAN
-# ============================================================
+      - Maintenir la routine normale du soir
+      - Revoir la récupération pendant la préparation FM
 
 days:
 
-  # ============================================================
-  # SUNDAY - NOVEMBER 8
-  # ============================================================
-
-  - date: 2026-11-08
-    weekday: sunday
-    title: Close P, reopen FM
-    title_fr: Fermer P, rouvrir FM
+  - date: 2026-11-23
+    weekday: monday
+    title: Actuarial focus · Monday
+    title_fr: Priorité actuarielle · Lundi
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-exam-1
-        time: 30–45 min
-        text: Write the short Exam P post-exam review and close the preparation cycle.
-        text_fr: Rédiger la courte revue post-examen de P et fermer le cycle de préparation.
+        node: actuarial-fm-bonds
+        time: 90 min
+        text: Review bond notation, coupon payments, redemption value, yield rate, and the fundamental bond price equation.
+        text_fr: Revoir la notation des obligations, les coupons, la valeur de remboursement, le rendement et l'équation fondamentale du prix d'une obligation.
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
-        time: 60–90 min
-        text: Reopen the FM material, review the syllabus map, and prepare the diagnostic.
-        text_fr: Reprendre le matériel FM, revoir la carte du programme et préparer le diagnostic.
+        node: actuarial-fm-bonds
+        time: 30–45 min
+        text: Complete 15–20 focused bond-pricing problems.
+        text_fr: Compléter 15 à 20 exercices ciblés de valorisation d'obligations.
 
       - time: 15 min
         text: Define the main FM objective for the period leading to the December exam.
         text_fr: Définir l'objectif principal FM pour la période menant à l'examen de décembre.
 
-
-  # ============================================================
-  # MONDAY - NOVEMBER 9
-  # ============================================================
-
-  - date: 2026-11-09
-    weekday: monday
-    title: Fresh FM diagnostic
-    title_fr: Nouveau diagnostic FM
-
-    tasks:
-
-      - domain: actuarial
-        node: actuarial-fm-diagnostic
-        time: 90–120 min
-        text: Complete a fresh mixed FM diagnostic without reviewing solutions during the session.
-        text_fr: Compléter un nouveau diagnostic FM mixte sans consulter les solutions pendant la séance.
-
-      - domain: actuarial
-        node: actuarial-fm-diagnostic
-        time: 45–60 min
-        text: Review the diagnostic and classify every meaningful error.
-        text_fr: Revoir le diagnostic et classer chaque erreur importante.
-
-
-  # ============================================================
-  # TUESDAY - NOVEMBER 10
-  # ============================================================
-
-  - date: 2026-11-10
+  - date: 2026-11-24
     weekday: tuesday
-    title: Interest-rate foundations
-    title_fr: Fondements des taux d'intérêt
+    title: Actuarial focus · Tuesday
+    title_fr: Priorité actuarielle · Mardi
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
+        node: actuarial-fm-bonds
         time: 75–90 min
-        text: Review effective rates, nominal rates, discount rates, accumulation, and present value.
-        text_fr: Revoir les taux effectifs, les taux nominaux, les taux d'escompte, l'accumulation et la valeur actuelle.
+        text: Study premium, par, and discount bonds and connect coupon rate, yield rate, and price.
+        text_fr: Étudier les obligations à prime, au pair et à escompte et relier taux de coupon, rendement et prix.
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
+        node: actuarial-fm-bonds
         time: 30–45 min
-        text: Complete 15–20 focused problems on rate conversion and value equations.
-        text_fr: Compléter 15 à 20 exercices ciblés sur les conversions de taux et les équations de valeur.
+        text: Solve problems where price, yield, coupon, or redemption information is unknown.
+        text_fr: Résoudre des problèmes où le prix, le rendement, le coupon ou la valeur de remboursement est inconnu.
+
+  - date: 2026-11-25
+    weekday: wednesday
+    title: Actuarial focus · Wednesday
+    title_fr: Priorité actuarielle · Mercredi
+
+    tasks:
+
+      - domain: actuarial
+        node: actuarial-fm-bonds
+        time: 75–90 min
+        text: Review book value and bond value through time, including premium and discount behavior.
+        text_fr: Revoir la valeur comptable et l'évolution de la valeur d'une obligation dans le temps, y compris les comportements à prime et à escompte.
+
+      - domain: actuarial
+        node: actuarial-fm-bonds
+        time: 30–45 min
+        text: Practice bond calculations with the BA II Plus until the workflow is fluent.
+        text_fr: Pratiquer les calculs d'obligations avec la BA II Plus jusqu'à ce que la procédure soit fluide.
 
       - domain: writing
         node: writing-literary-essay
         time: 30 min
-        text: Continue Mort à crédit or outline the literary essay if the book is finished.
-        text_fr: Poursuivre Mort à crédit ou préparer le plan de l'essai littéraire si le livre est terminé.
+        text: Continue Le Rouge et le Noir or outline the literary essay if the book is finished.
+        text_fr: Poursuivre Le Rouge et le Noir ou préparer le plan de l'essai littéraire si le livre est terminé.
 
-
-  # ============================================================
-  # WEDNESDAY - NOVEMBER 11
-  # ============================================================
-
-  - date: 2026-11-11
-    weekday: wednesday
-    title: Repair the weakest FM area
-    title_fr: Corriger la principale faiblesse FM
+  - date: 2026-11-26
+    weekday: thursday
+    title: Actuarial focus · Thursday
+    title_fr: Priorité actuarielle · Jeudi
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
+        node: actuarial-fm-cashflows
         time: 90 min
-        text: Work intensively on the weakest area identified by the FM diagnostic.
-        text_fr: Travailler intensivement sur la principale faiblesse identifiée par le diagnostic FM.
+        text: Review spot rates, discount factors, forward rates, and valuation of multiple cash flows.
+        text_fr: Revoir les taux spot, les facteurs d'actualisation, les taux forward et l'évaluation de plusieurs flux monétaires.
+
+      - domain: actuarial
+        node: actuarial-fm-cashflows
+        time: 30–45 min
+        text: Complete focused spot-rate and forward-rate problems.
+        text_fr: Compléter des exercices ciblés sur les taux spot et forward.
 
       - domain: research
         node: research-pricing-flexible-models
@@ -281,29 +238,18 @@ days:
         text: Practice finding useful lemmas in mathlib for one small proof.
         text_fr: S'entraîner à trouver des lemmes utiles dans mathlib pour une petite preuve.
 
-
-  # ============================================================
-  # THURSDAY - NOVEMBER 12
-  # ============================================================
-
-  - date: 2026-11-12
-    weekday: thursday
-    title: Begin annuities
-    title_fr: Commencer les annuités
+  - date: 2026-11-27
+    weekday: friday
+    title: Actuarial focus · Friday
+    title_fr: Priorité actuarielle · Vendredi
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
+        node: actuarial-fm-cashflows
         time: 75–90 min
-        text: Review annuity-immediate, annuity-due, present value, accumulated value, and basic notation.
-        text_fr: Revoir les annuités immédiates, les annuités à terme à échoir, les valeurs actuelles, les valeurs accumulées et la notation de base.
-
-      - domain: actuarial
-        node: actuarial-fm-diagnostic
-        time: 30–45 min
-        text: Complete a focused annuity problem set.
-        text_fr: Compléter une série ciblée d'exercices sur les annuités.
+        text: Study yield curves and solve general cash-flow valuation problems involving different rates by maturity.
+        text_fr: Étudier les courbes de taux et résoudre des problèmes de valorisation de flux utilisant différents taux selon l'échéance.
 
       - domain: research
         node: research-pricing-flexible-models
@@ -311,29 +257,24 @@ days:
         text: Fit one flexible additive model using the same dataset and target as the GLM.
         text_fr: Ajuster un modèle additif flexible avec le même jeu de données et la même cible que le GLM.
 
-
-  # ============================================================
-  # FRIDAY - NOVEMBER 13
-  # ============================================================
-
-  - date: 2026-11-13
-    weekday: friday
-    title: Mixed FM practice
-    title_fr: Pratique FM mixte
+  - date: 2026-11-28
+    weekday: saturday
+    title: Actuarial focus · Saturday
+    title_fr: Priorité actuarielle · Samedi
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
+        node: actuarial-fm-bonds
         time: 90 min
-        text: Complete a mixed FM set combining interest-rate measures, value equations, and introductory annuities.
-        text_fr: Compléter une série FM mixte combinant mesures de taux, équations de valeur et introduction aux annuités.
+        text: Complete a timed mixed FM set covering bonds, interest theory, annuities, loans, and general cash flows.
+        text_fr: Compléter une série FM mixte chronométrée couvrant obligations, théorie de l'intérêt, annuités, prêts et flux monétaires généraux.
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
-        time: 30–45 min
-        text: Review every error and update the FM error log.
-        text_fr: Revoir chaque erreur et mettre à jour le journal d'erreurs FM.
+        node: actuarial-fm-cashflows
+        time: 45 min
+        text: Review every error and update the FM error log with the root cause and corrective action.
+        text_fr: Revoir chaque erreur et mettre à jour le journal d'erreurs FM avec la cause et l'action corrective.
 
       - domain: english
         node: english-conversation-practice
@@ -341,29 +282,24 @@ days:
         text: Complete an English conversation structured like a professional meeting.
         text_fr: Compléter une conversation en anglais structurée comme une réunion professionnelle.
 
-
-  # ============================================================
-  # SATURDAY - NOVEMBER 14
-  # ============================================================
-
-  - date: 2026-11-14
-    weekday: saturday
-    title: Establish the FM path
-    title_fr: Établir la trajectoire FM
+  - date: 2026-11-29
+    weekday: sunday
+    title: Actuarial focus · Sunday
+    title_fr: Priorité actuarielle · Dimanche
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
+        node: actuarial-fm-bonds
         time: 90–120 min
-        text: Complete a cumulative FM set covering the material reviewed this week and compare performance with Monday's diagnostic.
-        text_fr: Compléter une série FM cumulative couvrant le contenu revu cette semaine et comparer la performance avec le diagnostic de lundi.
+        text: Complete a cumulative FM set covering all material studied since the Exam P transition.
+        text_fr: Compléter une série FM cumulative couvrant tout le contenu étudié depuis la transition après l'examen P.
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
-        time: 30 min
-        text: Rank the three highest-value FM weaknesses for the remaining weeks before the December exam.
-        text_fr: Classer les trois faiblesses FM les plus importantes pour les semaines restantes avant l'examen de décembre.
+        node: actuarial-fm-cashflows
+        time: 30–45 min
+        text: Review the FM error log and define the priorities for the December exam cycle.
+        text_fr: Revoir le journal d'erreurs FM et définir les priorités du cycle menant à l'examen de décembre.
 
       - domain: research
         node: research-pricing-flexible-models
@@ -380,8 +316,8 @@ days:
       - domain: physical
         node: physical-training-consistency
         time: 15 min
-        text: Review the return to the normal physical routine after Exam P.
-        text_fr: Revoir le retour à la routine physique normale après l'examen P.
+        text: Review physical consistency and recovery alongside FM preparation.
+        text_fr: Revoir la régularité physique et la récupération pendant la préparation FM.
 
       - time: 15–20 min
         text: Complete the Becoming weekly review and prepare Week 11.
