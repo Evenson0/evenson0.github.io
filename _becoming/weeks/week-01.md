@@ -5,10 +5,10 @@ title_fr: Diagnostic P · GLM en assurance · Système physique
 cycle: foundations-01
 cycle_week: 1
 
-start_date: 2026-09-06
-end_date: 2026-09-12
+start_date: 2026-09-21
+end_date: 2026-09-27
 
-status: in_progress
+status: planned
 
 active:
   - actuarial-exam-1
@@ -22,14 +22,10 @@ maintenance:
   - writing-reading-practice
 
 user_inputs:
-  literary_book: Mort à crédit
+  literary_book: Le Rouge et le Noir
   finance_book: The Intelligent Investor
 
 quests:
-
-  # ============================================================
-  # ACTUARIAL — EXAM P
-  # ============================================================
 
   - domain: actuarial
     node: actuarial-exam-1
@@ -54,10 +50,6 @@ quests:
       - Revoir l'indépendance
       - Compléter une pratique cumulative
 
-  # ============================================================
-  # ACTUARIAL — FM MAINTENANCE
-  # ============================================================
-
   - domain: actuarial
     node: actuarial-fm-diagnostic
     task: Keep FM warm with two short practice sessions.
@@ -72,10 +64,6 @@ quests:
       - Compléter deux courtes séances FM
       - Revoir les bases de la théorie de l'intérêt
       - Noter les erreurs FM récurrentes
-
-  # ============================================================
-  # RESEARCH
-  # ============================================================
 
   - domain: research
     node: research-actuarial-glm-tweedie
@@ -104,41 +92,15 @@ quests:
     task: Complete two focused sessions of the FUN MOOC Machine Learning in Python with scikit-learn.
     task_fr: Compléter deux séances ciblées du FUN MOOC Machine Learning in Python with scikit-learn.
 
-  # ============================================================
-  # READING / WRITING
-  # ============================================================
-
-  - domain: writing
-    node: writing-reading-practice
-    task: Read 70–100 pages of Mort à crédit.
-    task_fr: Lire 70 à 100 pages de Mort à crédit.
-
-  - domain: writing
-    node: writing-reading-practice
-    task: Read Chapters 1–2 of The Intelligent Investor and take brief notes.
-    task_fr: Lire les chapitres 1 et 2 de L'Investisseur intelligent et prendre quelques notes.
-
-  # ============================================================
-  # LEAN
-  # ============================================================
-
   - domain: lean
     node: lean-fundamentals
     task: Set up Lean 4, review basic expressions and types, and add one small understood theorem.
     task_fr: Installer Lean 4, revoir les expressions et types de base et ajouter un petit théorème compris.
 
-  # ============================================================
-  # ENGLISH
-  # ============================================================
-
   - domain: english
     node: english-conversation-practice
     task: Complete one 60-minute general English conversation.
     task_fr: Compléter une conversation générale de 60 minutes en anglais.
-
-  # ============================================================
-  # PHYSICAL
-  # ============================================================
 
   - domain: physical
     node: physical-process
@@ -159,19 +121,38 @@ quests:
       - Routine du soir suivie régulièrement
       - Processus physique de la semaine revu
 
+  - domain: writing
+    node: writing-reading-practice
+    task: >
+      Read Le Rouge et le Noir from September 21 to September 27:
+      one seventh of the novel each day, based on the pages of
+      your edition. Estimate the necessary time after Monday;
+      this is not a 30-minute target.
+    task_fr: >
+      Lire Le Rouge et le Noir du 21 au 27 septembre :
+      un septième du roman par jour, selon la pagination de
+      l’édition. Estimer le temps nécessaire après lundi ;
+      cette cible ne suppose pas un créneau de 30 minutes.
 
-# ============================================================
-# DAILY PLAN
-# ============================================================
+  - domain: writing
+    node: writing-reading-practice
+    task: >
+      Read portions 1–7 of 31 equal page portions of The Intelligent
+      Investor. Start September 21 and finish October 21, including
+      the commentary and appendices you intend to read. Divide the
+      chosen page range into 31; take brief notes within the reading
+      session.
+    task_fr: >
+      Lire les portions 1 à 7 sur 31 portions égales de
+      L’Investisseur intelligent. Commencer le 21 septembre et
+      terminer le 21 octobre, commentaires et annexes à lire compris.
+      Diviser la plage de pages choisie par 31 ; intégrer les notes
+      brèves à la lecture.
 
 days:
 
-  # ============================================================
-  # SUNDAY — SEPTEMBER 6
-  # ============================================================
-
-  - date: 2026-09-06
-    weekday: sunday
+  - date: 2026-09-21
+    weekday: monday
     title: Establish the baseline
     title_fr: Établir le point de départ
 
@@ -189,23 +170,36 @@ days:
         text: Read Goldburd pages 1–5.
         text_fr: Lire les pages 1 à 5 de Goldburd.
 
-      - domain: writing
-        node: writing-reading-practice
-        time: 25–30 min
-        text: Read about 15 pages of Mort à crédit.
-        text_fr: Lire environ 15 pages de Mort à crédit.
-
       - time: 15 min
         text: Review the Becoming week and identify the three most important outcomes.
         text_fr: Revoir la semaine Becoming et identifier les trois résultats les plus importants.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 1/7 of Le Rouge et le Noir.
+          Target cumulative progress: 1/7 of the novel;
+          finish on September 27.
+        text_fr: >
+          Lire la portion 1/7 du Rouge et le Noir.
+          Cible cumulée : 1/7 du roman ;
+          terminer le 27 septembre.
 
-  # ============================================================
-  # MONDAY — SEPTEMBER 7
-  # ============================================================
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 1/31 of The Intelligent Investor;
+          cumulative target 1/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 1/31 de L’Investisseur intelligent ;
+          cible cumulée 1/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  - date: 2026-09-07
-    weekday: monday
+  - date: 2026-09-22
+    weekday: tuesday
     title: Probability foundations
     title_fr: Fondements de la probabilité
 
@@ -214,8 +208,14 @@ days:
       - domain: actuarial
         node: actuarial-exam-1
         time: 60–90 min
-        text: Exam P — complete 20–25 general probability problems and record every meaningful error.
-        text_fr: Examen P — compléter 20 à 25 exercices de probabilité générale et noter chaque erreur importante.
+        text: >
+          Review general probability and counting
+          (permutations and combinations). Solve a manageable
+          set and include corrections within the session.
+        text_fr: >
+          Revoir la probabilité générale et le dénombrement
+          (permutations et combinaisons). Faire une série ciblée
+          et inclure les corrections dans le créneau.
 
       - domain: research
         node: research-actuarial-glm-tweedie
@@ -225,17 +225,30 @@ days:
 
       - domain: writing
         node: writing-reading-practice
-        time: 30 min
-        text: Read Chapter 1 of The Intelligent Investor and take brief notes.
-        text_fr: Lire le chapitre 1 de L'Investisseur intelligent et prendre quelques notes.
+        time: According to edition / Selon édition
+        text: >
+          Read portion 2/7 of Le Rouge et le Noir.
+          Target cumulative progress: 2/7 of the novel;
+          finish on September 27.
+        text_fr: >
+          Lire la portion 2/7 du Rouge et le Noir.
+          Cible cumulée : 2/7 du roman ;
+          terminer le 27 septembre.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 2/31 of The Intelligent Investor;
+          cumulative target 2/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 2/31 de L’Investisseur intelligent ;
+          cible cumulée 2/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # TUESDAY — SEPTEMBER 8
-  # ============================================================
-
-  - date: 2026-09-08
-    weekday: tuesday
+  - date: 2026-09-23
+    weekday: wednesday
     title: Conditional probability
     title_fr: Probabilité conditionnelle
 
@@ -255,17 +268,30 @@ days:
 
       - domain: writing
         node: writing-reading-practice
-        time: 25–30 min
-        text: Read 15–20 more pages of Mort à crédit.
-        text_fr: Lire 15 à 20 pages supplémentaires de Mort à crédit.
+        time: According to edition / Selon édition
+        text: >
+          Read portion 3/7 of Le Rouge et le Noir.
+          Target cumulative progress: 3/7 of the novel;
+          finish on September 27.
+        text_fr: >
+          Lire la portion 3/7 du Rouge et le Noir.
+          Cible cumulée : 3/7 du roman ;
+          terminer le 27 septembre.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 3/31 of The Intelligent Investor;
+          cumulative target 3/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 3/31 de L’Investisseur intelligent ;
+          cible cumulée 3/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # WEDNESDAY — SEPTEMBER 9
-  # ============================================================
-
-  - date: 2026-09-09
-    weekday: wednesday
+  - date: 2026-09-24
+    weekday: thursday
     title: Produce something
     title_fr: Produire quelque chose
 
@@ -288,13 +314,32 @@ days:
         text: Complete FUN MOOC Machine Learning in Python session 1.
         text_fr: Compléter la première séance du FUN MOOC Machine Learning in Python.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 4/7 of Le Rouge et le Noir.
+          Target cumulative progress: 4/7 of the novel;
+          finish on September 27.
+        text_fr: >
+          Lire la portion 4/7 du Rouge et le Noir.
+          Cible cumulée : 4/7 du roman ;
+          terminer le 27 septembre.
 
-  # ============================================================
-  # THURSDAY — SEPTEMBER 10
-  # ============================================================
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 4/31 of The Intelligent Investor;
+          cumulative target 4/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 4/31 de L’Investisseur intelligent ;
+          cible cumulée 4/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  - date: 2026-09-10
-    weekday: thursday
+  - date: 2026-09-25
+    weekday: friday
     title: Connect the concepts
     title_fr: Relier les concepts
 
@@ -314,17 +359,30 @@ days:
 
       - domain: writing
         node: writing-reading-practice
-        time: 30 min
-        text: Read Chapter 2 of The Intelligent Investor and take brief notes.
-        text_fr: Lire le chapitre 2 de L'Investisseur intelligent et prendre quelques notes.
+        time: According to edition / Selon édition
+        text: >
+          Read portion 5/7 of Le Rouge et le Noir.
+          Target cumulative progress: 5/7 of the novel;
+          finish on September 27.
+        text_fr: >
+          Lire la portion 5/7 du Rouge et le Noir.
+          Cible cumulée : 5/7 du roman ;
+          terminer le 27 septembre.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 5/31 of The Intelligent Investor;
+          cumulative target 5/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 5/31 de L’Investisseur intelligent ;
+          cible cumulée 5/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # FRIDAY — SEPTEMBER 11
-  # ============================================================
-
-  - date: 2026-09-11
-    weekday: friday
+  - date: 2026-09-26
+    weekday: saturday
     title: Test and communicate
     title_fr: Tester et communiquer
 
@@ -348,13 +406,32 @@ days:
         text: Complete one general English conversation.
         text_fr: Compléter une conversation générale de 60 minutes en anglais.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 6/7 of Le Rouge et le Noir.
+          Target cumulative progress: 6/7 of the novel;
+          finish on September 27.
+        text_fr: >
+          Lire la portion 6/7 du Rouge et le Noir.
+          Cible cumulée : 6/7 du roman ;
+          terminer le 27 septembre.
 
-  # ============================================================
-  # SATURDAY — SEPTEMBER 12
-  # ============================================================
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 6/31 of The Intelligent Investor;
+          cumulative target 6/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 6/31 de L’Investisseur intelligent ;
+          cible cumulée 6/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  - date: 2026-09-12
-    weekday: saturday
+  - date: 2026-09-27
+    weekday: sunday
     title: Consolidate and review
     title_fr: Consolider et revoir
 
@@ -383,15 +460,33 @@ days:
         text: Set up Lean 4, review basic expressions and types, and add one small theorem you understand completely.
         text_fr: Installer Lean 4, revoir les expressions et types de base et ajouter un petit théorème entièrement compris.
 
-      - domain: writing
-        node: writing-reading-practice
-        time: 30 min
-        text: Reach the week's 70–100 page target for Mort à crédit.
-        text_fr: Atteindre l'objectif hebdomadaire de 70 à 100 pages de Mort à crédit.
-
       - time: 15–20 min
         text: Complete the Becoming weekly review and prepare Week 02.
         text_fr: Compléter la revue hebdomadaire Becoming et préparer la semaine 02.
+
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 7/7 of Le Rouge et le Noir.
+          Target cumulative progress: 7/7 of the novel;
+          finish on September 27.
+        text_fr: >
+          Lire la portion 7/7 du Rouge et le Noir.
+          Cible cumulée : 7/7 du roman ;
+          terminer le 27 septembre.
+
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 7/31 of The Intelligent Investor;
+          cumulative target 7/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 7/31 de L’Investisseur intelligent ;
+          cible cumulée 7/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
 completed: []
 ---
