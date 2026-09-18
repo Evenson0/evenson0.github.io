@@ -1,12 +1,12 @@
 ---
-title: Conditional Probability · GLM Distributions
-title_fr: Probabilité conditionnelle · Distributions des GLM
+title: Discrete Random Variables · GLM Distributions
+title_fr: Variables aléatoires discrètes · Distributions des GLM
 
 cycle: foundations-01
 cycle_week: 2
 
-start_date: 2026-09-13
-end_date: 2026-09-19
+start_date: 2026-09-28
+end_date: 2026-10-04
 
 status: planned
 
@@ -22,7 +22,7 @@ maintenance:
   - writing-reading-practice
 
 user_inputs:
-  literary_book: Mort à crédit
+  literary_book: Le Rouge et le Noir
   finance_book: The Intelligent Investor
 
 quests:
@@ -30,38 +30,54 @@ quests:
   - domain: actuarial
     node: actuarial-exam-1
     task: >
-      From Monday to Saturday, spend 5 hours 15 minutes on P,
-      including corrections. Work on counting, conditional
-      probability, independence, and recurring errors.
-      Stop at the time limit rather than rushing to reach a quota.
+      Build a strong foundation in discrete random variables,
+      expectation, variance, and the main discrete distributions
+      used on Exam P.
     task_fr: >
-      Du lundi au samedi, consacrer 5 h 15 à P, corrections
-      comprises. Travailler le dénombrement, la probabilité
-      conditionnelle, l'indépendance et les erreurs récurrentes.
-      Respecter le créneau plutôt que se précipiter pour
-      atteindre un quota.
+      Construire une base solide sur les variables aléatoires
+      discrètes, l'espérance, la variance et les principales
+      distributions discrètes de l'examen P.
 
     completion:
-      - Practice counting and conditional probability
-      - Include corrections within each session
-      - Complete one short timed mixed set
-      - Rework a few recurring errors without consulting the solution first
+      - Understand probability mass functions
+      - Compute expectations
+      - Compute variances
+      - Review Bernoulli and binomial distributions
+      - Review geometric distributions
+      - Review Poisson distributions
+      - Complete one timed discrete-probability set
+      - Rework recurring errors
 
     completion_fr:
-      - Pratiquer le dénombrement et la probabilité conditionnelle
-      - Inclure les corrections dans chaque séance
-      - Compléter une courte série mixte chronométrée
-      - Refaire quelques erreurs récurrentes sans consulter la solution au départ
+      - Comprendre les fonctions de masse
+      - Calculer les espérances
+      - Calculer les variances
+      - Revoir les distributions de Bernoulli et binomiale
+      - Revoir les distributions géométriques
+      - Revoir les distributions de Poisson
+      - Compléter une série chronométrée de probabilité discrète
+      - Refaire les erreurs récurrentes
 
   - domain: actuarial
     node: actuarial-fm-diagnostic
     task: >
-      Maintain FM with two 25-minute sessions, including
-      corrections, on familiar rate conversions and calculator use.
+      Keep FM warm with two short sessions without competing
+      with Exam P preparation.
     task_fr: >
-      Maintenir FM avec deux séances de 25 minutes, corrections
-      comprises, sur les conversions de taux familières et
-      l'utilisation de la calculatrice.
+      Maintenir FM actif avec deux courtes séances sans entrer
+      en concurrence avec la préparation de l'examen P.
+
+    completion:
+      - Complete two short FM sessions
+      - Revisit one prior weak area
+      - Complete one small mixed set
+      - Update the FM error log if necessary
+
+    completion_fr:
+      - Compléter deux courtes séances FM
+      - Revoir une ancienne faiblesse
+      - Compléter une petite série mixte
+      - Mettre à jour le journal d'erreurs FM si nécessaire
 
   - domain: research
     node: research-actuarial-glm-tweedie
@@ -88,19 +104,6 @@ quests:
       - Étudier attentivement un court passage
       - Expliquer un ou deux concepts dans une courte note
       - Noter une question non résolue
-
-  - domain: writing
-    node: writing-reading-practice
-    task: >
-      Read for 70 minutes from Monday to Saturday, aiming for
-      roughly 25–35 pages of Mort à crédit without rushing.
-      The Intelligent Investor may replace one reading session,
-      but does not add another session.
-    task_fr: >
-      Lire pendant 70 minutes du lundi au samedi, en visant
-      environ 25 à 35 pages de Mort à crédit sans se presser.
-      L'Investisseur intelligent peut remplacer un créneau
-      de lecture, mais ne constitue pas une séance supplémentaire.
 
   - domain: lean
     node: lean-fundamentals
@@ -137,10 +140,25 @@ quests:
       et le soir. Ne pas ajouter de séances supplémentaires
       pour compenser une journée manquée.
 
+  - domain: writing
+    node: writing-reading-practice
+    task: >
+      Read portions 8–14 of 31 equal page portions of The Intelligent
+      Investor. Start September 21 and finish October 21, including
+      the commentary and appendices you intend to read. Divide the
+      chosen page range into 31; take brief notes within the reading
+      session.
+    task_fr: >
+      Lire les portions 8 à 14 sur 31 portions égales de
+      L’Investisseur intelligent. Commencer le 21 septembre et
+      terminer le 21 octobre, commentaires et annexes à lire compris.
+      Diviser la plage de pages choisie par 31 ; intégrer les notes
+      brèves à la lecture.
+
 days:
 
-  - date: 2026-09-13
-    weekday: sunday
+  - date: 2026-09-28
+    weekday: monday
     title: Review and begin
     title_fr: Revoir et commencer
 
@@ -149,8 +167,15 @@ days:
       - domain: actuarial
         node: actuarial-exam-1
         time: 75–90 min
-        text: Rework the most important Week 01 P errors, then review conditional probability fundamentals.
-        text_fr: Refaire les principales erreurs P de la semaine 01, puis revoir les bases de la probabilité conditionnelle.
+        text: >
+          Exam P — introduce discrete random variables, PMFs,
+          expectation, and variance. Include corrections within
+          the time limit; reduce the number of problems when needed.
+        text_fr: >
+          Examen P — introduire les variables aléatoires discrètes,
+          fonctions de masse, espérance et variance. Inclure les
+          corrections dans le créneau ; réduire le nombre de
+          problèmes si nécessaire.
 
       - domain: research
         node: research-actuarial-glm-tweedie
@@ -160,14 +185,20 @@ days:
 
       - domain: writing
         node: writing-reading-practice
-        time: 30 min
-        text: Read about 15 pages of Mort à crédit.
-        text_fr: Lire environ 15 pages de Mort à crédit.
+        time: According to edition / Selon édition
+        text: >
+          Read portion 8/31 of The Intelligent Investor;
+          cumulative target 8/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 8/31 de L’Investisseur intelligent ;
+          cible cumulée 8/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  - date: 2026-09-14
-    weekday: monday
-    title: Counting
-    title_fr: Dénombrement
+  - date: 2026-09-29
+    weekday: tuesday
+    title: Bernoulli and binomial distributions
+    title_fr: Distributions de Bernoulli et binomiale
 
     tasks:
 
@@ -175,14 +206,15 @@ days:
         node: actuarial-exam-1
         time: 60 min
         text: >
-          Work on permutations and combinations for 35 minutes.
-          Use the remaining 25 minutes to correct and understand
-          mistakes. Attempt fewer problems if they are difficult.
+          Exam P — Bernoulli and binomial distributions with
+          a manageable number of focused problems. Include
+          corrections within the time limit; reduce the number
+          of problems when needed.
         text_fr: >
-          Travailler les permutations et combinaisons pendant
-          35 minutes. Utiliser les 25 minutes restantes pour
-          corriger et comprendre les erreurs. Faire moins
-          de problèmes s'ils sont difficiles.
+          Examen P — distributions de Bernoulli et binomiale
+          avec quelques exercices ciblés. Inclure les corrections
+          dans le créneau ; réduire le nombre de problèmes
+          si nécessaire.
 
       - domain: research
         node: research-actuarial-glm-tweedie
@@ -197,10 +229,22 @@ days:
           16 à 20 sont claires. Arrêter après 30 minutes
           et noter où reprendre.
 
-  - date: 2026-09-15
-    weekday: tuesday
-    title: Conditional probability
-    title_fr: Probabilité conditionnelle
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 9/31 of The Intelligent Investor;
+          cumulative target 9/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 9/31 de L’Investisseur intelligent ;
+          cible cumulée 9/31 de la plage de pages choisie.
+          Garder les notes brèves.
+
+  - date: 2026-09-30
+    weekday: wednesday
+    title: Geometric and Poisson distributions
+    title_fr: Distributions géométrique et de Poisson
 
     tasks:
 
@@ -208,40 +252,34 @@ days:
         node: actuarial-exam-1
         time: 45 min
         text: >
-          Spend 25 minutes on conditional probability,
-          independence, or Bayes problems, then 20 minutes
-          on corrections. Focus on distinguishing the
-          conditioning event from the event being asked about.
+          Exam P — geometric and Poisson distributions with
+          focused practice. Include corrections within the time
+          limit; reduce the number of problems when needed.
         text_fr: >
-          Consacrer 25 minutes à des problèmes de probabilité
-          conditionnelle, d'indépendance ou de Bayes, puis
-          20 minutes aux corrections. Bien distinguer
-          l'événement conditionnant de l'événement recherché.
+          Examen P — distributions géométrique et de Poisson
+          avec pratique ciblée. Inclure les corrections dans
+          le créneau ; réduire le nombre de problèmes si nécessaire.
 
       - domain: actuarial
         node: actuarial-fm-diagnostic
         time: 25 min
-        text: >
-          Review familiar effective, nominal, and discount-rate
-          conversions. Include corrections within the 25 minutes.
-        text_fr: >
-          Revoir les conversions familières entre taux effectifs,
-          nominaux et taux d'escompte. Inclure les corrections
-          dans les 25 minutes.
+        text: FM maintenance — revisit one prior interest-theory weakness.
+        text_fr: Entretien FM — revoir une faiblesse précédente en théorie de l'intérêt.
 
       - domain: writing
         node: writing-reading-practice
-        time: 20 min
+        time: According to edition / Selon édition
         text: >
-          Read Mort à crédit, or use this same slot for
-          The Intelligent Investor. Stop after 20 minutes.
+          Read portion 10/31 of The Intelligent Investor;
+          cumulative target 10/31 of the chosen page range.
+          Keep notes brief.
         text_fr: >
-          Lire Mort à crédit, ou utiliser ce même créneau
-          pour L'Investisseur intelligent. Arrêter après
-          20 minutes.
+          Lire la portion 10/31 de L’Investisseur intelligent ;
+          cible cumulée 10/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  - date: 2026-09-16
-    weekday: wednesday
+  - date: 2026-10-01
+    weekday: thursday
     title: Connect and explain
     title_fr: Relier et expliquer
 
@@ -251,15 +289,13 @@ days:
         node: actuarial-exam-1
         time: 60 min
         text: >
-          Work on a mixed set covering counting, unions,
-          intersections, and conditional probability.
-          Allow 35 minutes for attempts and 25 minutes
-          for corrections.
+          Exam P — mixed discrete random-variable problems.
+          Include corrections within the time limit; reduce
+          the number of problems when needed.
         text_fr: >
-          Travailler une série mixte de dénombrement,
-          d'unions, d'intersections et de probabilité
-          conditionnelle. Prévoir 35 minutes de résolution
-          et 25 minutes de correction.
+          Examen P — problèmes mixtes sur les variables
+          aléatoires discrètes. Inclure les corrections dans
+          le créneau ; réduire le nombre de problèmes si nécessaire.
 
       - domain: lean
         node: lean-fundamentals
@@ -274,8 +310,20 @@ days:
           30 minutes ; un exemple compris et une prochaine
           étape claire suffisent.
 
-  - date: 2026-09-17
-    weekday: thursday
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 11/31 of The Intelligent Investor;
+          cumulative target 11/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 11/31 de L’Investisseur intelligent ;
+          cible cumulée 11/31 de la plage de pages choisie.
+          Garder les notes brèves.
+
+  - date: 2026-10-02
+    weekday: friday
     title: Correct and write
     title_fr: Corriger et écrire
 
@@ -285,13 +333,14 @@ days:
         node: actuarial-exam-1
         time: 45 min
         text: >
-          Choose 3–5 recurring errors. Reattempt the problems
-          without the solutions, then check the reasoning.
-          Work on fewer examples if necessary.
+          Exam P — solve difficult discrete problems and rework
+          recurring errors. Include corrections within the time
+          limit; reduce the number of problems when needed.
         text_fr: >
-          Choisir 3 à 5 erreurs récurrentes. Refaire les problèmes
-          sans les solutions, puis vérifier le raisonnement.
-          Traiter moins d'exemples si nécessaire.
+          Examen P — résoudre des problèmes discrets difficiles
+          et refaire les erreurs récurrentes. Inclure les
+          corrections dans le créneau ; réduire le nombre
+          de problèmes si nécessaire.
 
       - domain: research
         node: research-actuarial-glm-tweedie
@@ -308,12 +357,18 @@ days:
 
       - domain: writing
         node: writing-reading-practice
-        time: 15 min
-        text: Read Mort à crédit for 15 minutes.
-        text_fr: Lire Mort à crédit pendant 15 minutes.
+        time: According to edition / Selon édition
+        text: >
+          Read portion 12/31 of The Intelligent Investor;
+          cumulative target 12/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 12/31 de L’Investisseur intelligent ;
+          cible cumulée 12/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  - date: 2026-09-18
-    weekday: friday
+  - date: 2026-10-03
+    weekday: saturday
     title: Short timed practice
     title_fr: Courte pratique chronométrée
 
@@ -323,33 +378,35 @@ days:
         node: actuarial-exam-1
         time: 45 min
         text: >
-          Attempt a short mixed P set for 25 minutes without
-          checking solutions, then spend 20 minutes correcting it.
-          Treat this as pacing practice, not a full mock exam.
+          Complete one timed Exam P set focused on discrete
+          random variables. Include corrections within the time
+          limit; reduce the number of problems when needed.
         text_fr: >
-          Travailler une courte série P mixte pendant 25 minutes
-          sans consulter les solutions, puis consacrer 20 minutes
-          à la correction. Travailler le rythme ; ce n'est pas
-          une simulation complète d'examen.
+          Compléter une série P chronométrée centrée sur les
+          variables aléatoires discrètes. Inclure les corrections
+          dans le créneau ; réduire le nombre de problèmes
+          si nécessaire.
 
       - domain: actuarial
         node: actuarial-fm-diagnostic
         time: 25 min
-        text: >
-          Complete a few familiar FM problems using the calculator.
-          Include corrections and stop after 25 minutes.
-        text_fr: >
-          Faire quelques problèmes FM familiers avec la calculatrice.
-          Inclure les corrections et arrêter après 25 minutes.
+        text: FM maintenance — complete one short mixed set and review the calculator workflow.
+        text_fr: Entretien FM — compléter une courte série mixte et revoir l'utilisation de la calculatrice.
 
       - domain: writing
         node: writing-reading-practice
-        time: 20 min
-        text: Read Mort à crédit for 20 minutes.
-        text_fr: Lire Mort à crédit pendant 20 minutes.
+        time: According to edition / Selon édition
+        text: >
+          Read portion 13/31 of The Intelligent Investor;
+          cumulative target 13/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 13/31 de L’Investisseur intelligent ;
+          cible cumulée 13/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  - date: 2026-09-19
-    weekday: saturday
+  - date: 2026-10-04
+    weekday: sunday
     title: Consolidate without catching up on everything
     title_fr: Consolider sans tout rattraper
 
@@ -359,16 +416,16 @@ days:
         node: actuarial-exam-1
         time: 60 min
         text: >
-          Aim for 6–8 targeted or mixed P problems.
-          Use 35 minutes for attempts and 25 minutes for corrections.
-          Reduce the number if necessary. Identify the two
-          weaknesses worth carrying into next week.
+          Exam P — complete a cumulative general-probability
+          and discrete-random-variable set, then review every
+          error. Include corrections within the time limit;
+          reduce the number of problems when needed.
         text_fr: >
-          Viser 6 à 8 problèmes P ciblés ou mixtes.
-          Prévoir 35 minutes de résolution et 25 minutes
-          de correction. Réduire le nombre si nécessaire.
-          Identifier les deux faiblesses à reprendre
-          la semaine suivante.
+          Examen P — compléter une série cumulative de
+          probabilité générale et de variables aléatoires
+          discrètes, puis revoir chaque erreur. Inclure les
+          corrections dans le créneau ; réduire le nombre
+          de problèmes si nécessaire.
 
       - domain: english
         node: english-conversation-practice
@@ -382,16 +439,6 @@ days:
           simplement une idée de probabilité. Inclure le retour
           sur les erreurs dans l'heure prévue.
 
-      - domain: writing
-        node: writing-reading-practice
-        time: 15 min
-        text: >
-          Read for 15 minutes. Do not extend the session
-          to reach a page quota.
-        text_fr: >
-          Lire pendant 15 minutes. Ne pas prolonger la séance
-          pour atteindre un quota de pages.
-
       - time: 15 min
         text: >
           Review what fitted the available time and choose
@@ -403,6 +450,18 @@ days:
           choisir les priorités suivantes. Reporter au maximum
           deux éléments importants inachevés plutôt qu'empiler
           toutes les tâches manquées sur la semaine suivante.
+
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 14/31 of The Intelligent Investor;
+          cumulative target 14/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 14/31 de L’Investisseur intelligent ;
+          cible cumulée 14/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
 completed: []
 ---
