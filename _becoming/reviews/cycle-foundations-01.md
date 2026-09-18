@@ -3,8 +3,8 @@ record_type: cycle_review
 title: FM · P&C Pricing · Training Review
 title_fr: Revue — FM · Tarification IARD · Entraînement
 cycle: foundations-01
-start_date: 2026-08-30
-end_date: 2026-11-21
+start_date: 2026-09-21
+end_date: 2026-12-13
 status: planned
 ---
 
