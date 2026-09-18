@@ -1,12 +1,12 @@
 ---
-title: Discrete Random Variables · Building an Insurance GLM
-title_fr: Variables aléatoires discrètes · Construction d'un GLM d'assurance
+title: Continuous Random Variables · Building an Insurance GLM
+title_fr: Variables aléatoires continues · Construction d'un GLM d'assurance
 
 cycle: foundations-01
 cycle_week: 3
 
-start_date: 2026-09-20
-end_date: 2026-09-26
+start_date: 2026-10-05
+end_date: 2026-10-11
 
 status: planned
 
@@ -22,68 +22,74 @@ maintenance:
   - writing-literary-note
 
 user_inputs:
-  literary_book: Mort à crédit
+  literary_book: Le Rouge et le Noir
+  finance_book: The Intelligent Investor
 
 quests:
 
-  # ============================================================
-  # ACTUARIAL — EXAM P
-  # ============================================================
-
   - domain: actuarial
     node: actuarial-exam-1
-    task: Build a strong foundation in discrete random variables, expectation, variance, and the main discrete distributions used on Exam P.
-    task_fr: Construire une base solide sur les variables aléatoires discrètes, l'espérance, la variance et les principales distributions discrètes de l'examen P.
+    task: >
+      Build a strong foundation in continuous random variables,
+      densities, distribution functions, expectation, variance,
+      and the major continuous distributions used on Exam P.
+    task_fr: >
+      Construire une base solide sur les variables aléatoires
+      continues, les densités, les fonctions de répartition,
+      l'espérance, la variance et les principales distributions
+      continues de l'examen P.
 
     completion:
-      - Understand probability mass functions
-      - Compute expectations
-      - Compute variances
-      - Review Bernoulli and binomial distributions
-      - Review geometric distributions
-      - Review Poisson distributions
-      - Complete one timed discrete-probability set
+      - Understand probability density functions
+      - Understand cumulative distribution functions
+      - Move fluently between PDFs and CDFs
+      - Compute expectations and variances
+      - Review uniform distributions
+      - Review exponential distributions
+      - Review normal distributions
+      - Complete one timed continuous-probability set
       - Rework recurring errors
 
     completion_fr:
-      - Comprendre les fonctions de masse
-      - Calculer les espérances
-      - Calculer les variances
-      - Revoir les distributions de Bernoulli et binomiale
-      - Revoir les distributions géométriques
-      - Revoir les distributions de Poisson
-      - Compléter une série chronométrée de probabilité discrète
+      - Comprendre les fonctions de densité
+      - Comprendre les fonctions de répartition
+      - Passer avec aisance des densités aux fonctions de répartition
+      - Calculer espérances et variances
+      - Revoir les distributions uniformes
+      - Revoir les distributions exponentielles
+      - Revoir les distributions normales
+      - Compléter une série chronométrée de probabilité continue
       - Refaire les erreurs récurrentes
-
-  # ============================================================
-  # ACTUARIAL — FM MAINTENANCE
-  # ============================================================
 
   - domain: actuarial
     node: actuarial-fm-diagnostic
-    task: Keep FM warm with two short sessions without competing with Exam P preparation.
-    task_fr: Maintenir FM actif avec deux courtes séances sans entrer en concurrence avec la préparation de l'examen P.
+    task: >
+      Keep FM warm with two short sessions focused on previously
+      studied interest concepts.
+    task_fr: >
+      Maintenir FM actif avec deux courtes séances centrées sur
+      les concepts d'intérêt déjà étudiés.
 
     completion:
       - Complete two short FM sessions
-      - Revisit one prior weak area
-      - Complete one small mixed set
+      - Review rate conversions
+      - Review present and accumulated values
       - Update the FM error log if necessary
 
     completion_fr:
       - Compléter deux courtes séances FM
-      - Revoir une ancienne faiblesse
-      - Compléter une petite série mixte
+      - Revoir les conversions de taux
+      - Revoir les valeurs actuelles et accumulées
       - Mettre à jour le journal d'erreurs FM si nécessaire
-
-  # ============================================================
-  # RESEARCH
-  # ============================================================
 
   - domain: research
     node: research-actuarial-glm-workflow
-    task: Read Goldburd pages 31–42 and design the workflow for a future public-data insurance GLM reproduction.
-    task_fr: Lire les pages 31 à 42 de Goldburd et concevoir le processus d'une future reproduction GLM sur données publiques.
+    task: >
+      Read Goldburd pages 31–42 and design the workflow for a
+      future public-data insurance GLM reproduction.
+    task_fr: >
+      Lire les pages 31 à 42 de Goldburd et concevoir le processus
+      d'une future reproduction GLM sur données publiques.
 
     completion:
       - Understand the model-building process
@@ -101,14 +107,16 @@ quests:
       - Esquisser le processus de la future reproduction
       - Identifier les résultats que la reproduction devra produire
 
-  # ============================================================
-  # WRITING / READING
-  # ============================================================
-
   - domain: writing
     node: writing-literary-note
-    task: Continue Mort à crédit and write 300–500 original words about one feature of its writing.
-    task_fr: Poursuivre Mort à crédit et écrire 300 à 500 mots originaux sur un aspect de son écriture.
+    task: >
+      Revisit Le Rouge et le Noir and write 300–500 original words
+      about one feature of a passage already read; finish reading
+      first if needed.
+    task_fr: >
+      Revenir sur Le Rouge et le Noir et écrire 300 à 500 mots
+      originaux sur un aspect d’un passage déjà lu ; terminer
+      d’abord la lecture si nécessaire.
 
     completion:
       - Continue the week's literary reading
@@ -122,27 +130,23 @@ quests:
       - Écrire 300 à 500 mots originaux
       - Éviter de produire seulement un résumé de l'intrigue
 
-  # ============================================================
-  # LEAN
-  # ============================================================
-
   - domain: lean
     node: lean-theorem-proving
-    task: Study propositions and proofs and add one small logical proof to your Lean work.
-    task_fr: Étudier les propositions et les preuves et ajouter une petite preuve logique au travail Lean.
-
-  # ============================================================
-  # ENGLISH
-  # ============================================================
+    task: >
+      Study propositions and proofs and add one small logical
+      proof to your Lean work.
+    task_fr: >
+      Étudier les propositions et les preuves et ajouter une
+      petite preuve logique au travail Lean.
 
   - domain: english
     node: english-conversation-practice
-    task: Practice everyday situations and spontaneous follow-up questions during one English conversation.
-    task_fr: Travailler des situations quotidiennes et des questions spontanées pendant une conversation en anglais.
-
-  # ============================================================
-  # PHYSICAL
-  # ============================================================
+    task: >
+      Practice everyday situations and spontaneous follow-up
+      questions during one English conversation.
+    task_fr: >
+      Travailler des situations quotidiennes et des questions
+      spontanées pendant une conversation en anglais.
 
   - domain: physical
     node: physical-training-consistency
@@ -163,59 +167,89 @@ quests:
       - Routine du soir suivie régulièrement
       - Problèmes de récupération notés s'ils apparaissent
 
-
-# ============================================================
-# DAILY PLAN
-# ============================================================
+  - domain: writing
+    node: writing-reading-practice
+    task: >
+      Read portions 15–21 of 31 equal page portions of The
+      Intelligent Investor. Start September 21 and finish
+      October 21, including the commentary and appendices
+      you intend to read. Divide the chosen page range into
+      31; take brief notes within the reading session.
+    task_fr: >
+      Lire les portions 15 à 21 sur 31 portions égales de
+      L’Investisseur intelligent. Commencer le 21 septembre
+      et terminer le 21 octobre, commentaires et annexes
+      à lire compris. Diviser la plage de pages choisie
+      par 31 ; intégrer les notes brèves à la lecture.
 
 days:
 
-  # ============================================================
-  # SUNDAY — SEPTEMBER 20
-  # ============================================================
-
-  - date: 2026-09-20
-    weekday: sunday
-    title: Enter discrete probability
-    title_fr: Entrer dans la probabilité discrète
+  - date: 2026-10-05
+    weekday: monday
+    title: Actuarial focus · Monday
+    title_fr: Priorité actuarielle · Lundi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 75–90 min
-        text: Exam P — introduce discrete random variables, PMFs, expectation, and variance.
-        text_fr: Examen P — introduire les variables aléatoires discrètes, fonctions de masse, espérance et variance.
+        text: >
+          Exam P - introduce continuous random variables,
+          PDFs, CDFs, expectation, and variance.
+        text_fr: >
+          Examen P - introduire les variables aléatoires
+          continues, densités, fonctions de répartition,
+          espérance et variance.
 
       - domain: research
         node: research-actuarial-glm-workflow
         time: 30–45 min
-        text: Read Goldburd pages 31–34 and identify the main stages of model building.
-        text_fr: Lire les pages 31 à 34 de Goldburd et identifier les principales étapes de construction d'un modèle.
+        text: >
+          Read Goldburd pages 31–34 and identify the main
+          stages of model building.
+        text_fr: >
+          Lire les pages 31 à 34 de Goldburd et identifier
+          les principales étapes de construction d'un modèle.
 
       - domain: writing
         node: writing-literary-note
         time: 30 min
-        text: Continue Mort à crédit.
-        text_fr: Poursuivre Mort à crédit.
+        text: >
+          Revisit a passage already read in Le Rouge et le Noir,
+          or continue if unfinished.
+        text_fr: >
+          Revenir sur un passage déjà lu du Rouge et le Noir,
+          ou poursuivre si le livre n’est pas terminé.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 15/31 of The Intelligent Investor;
+          cumulative target 15/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 15/31 de L’Investisseur intelligent ;
+          cible cumulée 15/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # MONDAY — SEPTEMBER 21
-  # ============================================================
-
-  - date: 2026-09-21
-    weekday: monday
-    title: Bernoulli and binomial
-    title_fr: Bernoulli et binomiale
+  - date: 2026-10-06
+    weekday: tuesday
+    title: Actuarial focus · Tuesday
+    title_fr: Priorité actuarielle · Mardi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 75–90 min
-        text: Exam P — Bernoulli and binomial distributions with 20–25 focused problems.
-        text_fr: Examen P — distributions de Bernoulli et binomiale avec 20 à 25 exercices ciblés.
+        text: >
+          Exam P - study uniform and exponential distributions
+          and complete 20–25 focused problems.
+        text_fr: >
+          Examen P - étudier les distributions uniforme et
+          exponentielle et compléter 20 à 25 exercices ciblés.
 
       - domain: research
         node: research-actuarial-glm-workflow
@@ -226,32 +260,43 @@ days:
       - domain: writing
         node: writing-literary-note
         time: 25–30 min
-        text: Continue Mort à crédit and mark one passage worth analyzing.
-        text_fr: Poursuivre Mort à crédit et repérer un passage qui mérite d'être analysé.
+        text: Continue Le Rouge et le Noir and mark one passage worth analyzing.
+        text_fr: Poursuivre Le Rouge et le Noir et repérer un passage qui mérite d'être analysé.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 16/31 of The Intelligent Investor;
+          cumulative target 16/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 16/31 de L’Investisseur intelligent ;
+          cible cumulée 16/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # TUESDAY — SEPTEMBER 22
-  # ============================================================
-
-  - date: 2026-09-22
-    weekday: tuesday
-    title: Geometric and Poisson
-    title_fr: Géométrique et Poisson
+  - date: 2026-10-07
+    weekday: wednesday
+    title: Actuarial focus · Wednesday
+    title_fr: Priorité actuarielle · Mercredi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 75 min
-        text: Exam P — geometric and Poisson distributions with focused practice.
-        text_fr: Examen P — distributions géométrique et de Poisson avec pratique ciblée.
+        time: 75–90 min
+        text: >
+          Exam P - study the normal distribution,
+          standardization, probabilities, and related problems.
+        text_fr: >
+          Examen P - étudier la loi normale, la standardisation,
+          les probabilités et les problèmes associés.
 
       - domain: actuarial
         node: actuarial-fm-diagnostic
         time: 30–45 min
-        text: FM maintenance — revisit one prior interest-theory weakness.
-        text_fr: Entretien FM — revoir une faiblesse précédente en théorie de l'intérêt.
+        text: FM maintenance - review rate conversions and present-value relationships.
+        text_fr: Entretien FM - revoir les conversions de taux et les relations de valeur actuelle.
 
       - domain: writing
         node: writing-literary-note
@@ -259,29 +304,45 @@ days:
         text: Continue literary reading.
         text_fr: Poursuivre la lecture littéraire.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 17/31 of The Intelligent Investor;
+          cumulative target 17/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 17/31 de L’Investisseur intelligent ;
+          cible cumulée 17/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # WEDNESDAY — SEPTEMBER 23
-  # ============================================================
-
-  - date: 2026-09-23
-    weekday: wednesday
-    title: Build the modeling workflow
-    title_fr: Construire le processus de modélisation
+  - date: 2026-10-08
+    weekday: thursday
+    title: Actuarial focus · Thursday
+    title_fr: Priorité actuarielle · Jeudi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 60–75 min
-        text: Exam P — mixed discrete random-variable problems.
-        text_fr: Examen P — problèmes mixtes sur les variables aléatoires discrètes.
+        text: >
+          Exam P - mixed problems requiring movement between
+          PDFs, CDFs, probabilities, expectation, and variance.
+        text_fr: >
+          Examen P - problèmes mixtes demandant de passer entre
+          densités, fonctions de répartition, probabilités,
+          espérance et variance.
 
       - domain: research
         node: research-actuarial-glm-workflow
         time: 45–60 min
-        text: Read Goldburd pages 39–42 and sketch the complete GLM reproduction workflow.
-        text_fr: Lire les pages 39 à 42 de Goldburd et esquisser le processus complet de reproduction GLM.
+        text: >
+          Read Goldburd pages 39–42 and sketch the complete
+          GLM reproduction workflow.
+        text_fr: >
+          Lire les pages 39 à 42 de Goldburd et esquisser
+          le processus complet de reproduction GLM.
 
       - domain: lean
         node: lean-theorem-proving
@@ -289,83 +350,128 @@ days:
         text: Study propositions and simple proof structure in Lean.
         text_fr: Étudier les propositions et la structure de preuves simples dans Lean.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 18/31 of The Intelligent Investor;
+          cumulative target 18/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 18/31 de L’Investisseur intelligent ;
+          cible cumulée 18/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # THURSDAY — SEPTEMBER 24
-  # ============================================================
-
-  - date: 2026-09-24
-    weekday: thursday
-    title: Attack difficult problems
-    title_fr: Attaquer les problèmes difficiles
+  - date: 2026-10-09
+    weekday: friday
+    title: Actuarial focus · Friday
+    title_fr: Priorité actuarielle · Vendredi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 75–90 min
-        text: Exam P — solve difficult discrete problems and rework recurring errors.
-        text_fr: Examen P — résoudre des problèmes discrets difficiles et refaire les erreurs récurrentes.
+        text: >
+          Exam P - solve difficult continuous-distribution
+          problems and rework recurring errors.
+        text_fr: >
+          Examen P - résoudre des problèmes difficiles
+          de distributions continues et refaire les erreurs
+          récurrentes.
 
       - domain: research
         node: research-actuarial-glm-workflow
         time: 45 min
-        text: Write the modeling objective and define the expected outputs of the future reproduction.
-        text_fr: Rédiger l'objectif de modélisation et définir les résultats attendus de la future reproduction.
+        text: >
+          Write the modeling objective and define the expected
+          outputs of the future reproduction.
+        text_fr: >
+          Rédiger l'objectif de modélisation et définir
+          les résultats attendus de la future reproduction.
 
       - domain: writing
         node: writing-literary-note
         time: 45 min
-        text: Draft 300–500 original words about one feature of Mort à crédit.
-        text_fr: Rédiger 300 à 500 mots originaux sur un aspect de Mort à crédit.
+        text: Draft 300–500 original words about one feature of Le Rouge et le Noir.
+        text_fr: Rédiger 300 à 500 mots originaux sur un aspect de Le Rouge et le Noir.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 19/31 of The Intelligent Investor;
+          cumulative target 19/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 19/31 de L’Investisseur intelligent ;
+          cible cumulée 19/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # FRIDAY — SEPTEMBER 25
-  # ============================================================
-
-  - date: 2026-09-25
-    weekday: friday
-    title: Timed discrete practice
-    title_fr: Pratique discrète chronométrée
+  - date: 2026-10-10
+    weekday: saturday
+    title: Actuarial focus · Saturday
+    title_fr: Priorité actuarielle · Samedi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 75–90 min
-        text: Complete one timed Exam P set focused on discrete random variables.
-        text_fr: Compléter une série P chronométrée centrée sur les variables aléatoires discrètes.
+        text: >
+          Complete one timed Exam P set focused on continuous
+          random variables and fully review every error.
+        text_fr: >
+          Compléter une série P chronométrée centrée sur les
+          variables aléatoires continues et revoir entièrement
+          chaque erreur.
 
       - domain: actuarial
         node: actuarial-fm-diagnostic
         time: 30–45 min
-        text: FM maintenance — complete one short mixed set and review the calculator workflow.
-        text_fr: Entretien FM — compléter une courte série mixte et revoir l'utilisation de la calculatrice.
+        text: FM maintenance - complete one short mixed set.
+        text_fr: Entretien FM - compléter une courte série mixte.
 
       - domain: english
         node: english-conversation-practice
         time: 60 min
-        text: Complete one general English conversation with spontaneous follow-up questions.
-        text_fr: Compléter une conversation générale en anglais avec des questions spontanées.
+        text: >
+          Complete one general English conversation with
+          spontaneous follow-up questions.
+        text_fr: >
+          Compléter une conversation générale en anglais
+          avec des questions spontanées.
 
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 20/31 of The Intelligent Investor;
+          cumulative target 20/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 20/31 de L’Investisseur intelligent ;
+          cible cumulée 20/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
-  # ============================================================
-  # SATURDAY — SEPTEMBER 26
-  # ============================================================
-
-  - date: 2026-09-26
-    weekday: saturday
-    title: Consolidate discrete probability
-    title_fr: Consolider la probabilité discrète
+  - date: 2026-10-11
+    weekday: sunday
+    title: Actuarial focus · Sunday
+    title_fr: Priorité actuarielle · Dimanche
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 90 min
-        text: Exam P — complete a cumulative general-probability and discrete-random-variable set, then review every error.
-        text_fr: Examen P — compléter une série cumulative de probabilité générale et de variables aléatoires discrètes, puis revoir chaque erreur.
+        text: >
+          Exam P - complete a cumulative set combining general
+          probability, discrete random variables, and continuous
+          random variables.
+        text_fr: >
+          Examen P - compléter une série cumulative combinant
+          probabilité générale, variables aléatoires discrètes
+          et variables aléatoires continues.
 
       - domain: research
         node: research-actuarial-glm-workflow
@@ -388,6 +494,18 @@ days:
       - time: 15–20 min
         text: Complete the Becoming weekly review and prepare Week 04.
         text_fr: Compléter la revue hebdomadaire Becoming et préparer la semaine 04.
+
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: >
+          Read portion 21/31 of The Intelligent Investor;
+          cumulative target 21/31 of the chosen page range.
+          Keep notes brief.
+        text_fr: >
+          Lire la portion 21/31 de L’Investisseur intelligent ;
+          cible cumulée 21/31 de la plage de pages choisie.
+          Garder les notes brèves.
 
 completed: []
 ---
