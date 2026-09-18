@@ -1,12 +1,12 @@
 ---
-title: Multivariate Probability · GLM Validation
-title_fr: Probabilité multivariée · Validation d'un GLM
+title: P Exam Mode · GLM Validation
+title_fr: Mode examen P · Validation d'un GLM
 
 cycle: foundations-01
 cycle_week: 6
 
-start_date: 2026-10-11
-end_date: 2026-10-17
+start_date: 2026-10-26
+end_date: 2026-11-01
 
 status: planned
 
@@ -22,63 +22,49 @@ maintenance:
 
 quests:
 
-  # ============================================================
-  # ACTUARIAL - EXAM P
-  # ============================================================
-
   - domain: actuarial
     node: actuarial-exam-1
-    task: Build a strong foundation in joint distributions, marginal distributions, conditional distributions, covariance, correlation, and multivariate expectation.
-    task_fr: Construire une base solide sur les distributions conjointes, marginales et conditionnelles, la covariance, la corrélation et l'espérance multivariée.
+    task: Enter full Exam P mode with realistic timed simulations, aggressive error review, and targeted repair of the weakest remaining areas.
+    task_fr: Entrer pleinement en mode examen P avec des simulations chronométrées réalistes, une revue intensive des erreurs et une correction ciblée des dernières faiblesses.
 
     completion:
-      - Understand joint PMFs
-      - Understand joint PDFs
-      - Derive marginal distributions
-      - Work with conditional distributions
-      - Compute conditional expectations
-      - Compute covariance
-      - Compute correlation
-      - Review independence in a multivariate setting
-      - Complete one timed multivariate set
-      - Rework recurring errors
+      - Complete at least two substantial timed mixed simulations
+      - Review every simulation completely
+      - Rework every important missed problem
+      - Review correct answers obtained inefficiently
+      - Identify the final two weakest areas
+      - Complete targeted repair sessions
+      - Refine skip and guessing strategy
+      - Refine time-management strategy
+      - Update the complete P error log
 
     completion_fr:
-      - Comprendre les fonctions de masse conjointes
-      - Comprendre les densités conjointes
-      - Déterminer les distributions marginales
-      - Travailler avec les distributions conditionnelles
-      - Calculer les espérances conditionnelles
-      - Calculer la covariance
-      - Calculer la corrélation
-      - Revoir l'indépendance dans un contexte multivarié
-      - Compléter une série multivariée chronométrée
-      - Refaire les erreurs récurrentes
-
-  # ============================================================
-  # ACTUARIAL - FM MAINTENANCE
-  # ============================================================
+      - Compléter au moins deux simulations mixtes chronométrées substantielles
+      - Revoir entièrement chaque simulation
+      - Refaire chaque problème important manqué
+      - Revoir les bonnes réponses obtenues de façon inefficace
+      - Identifier les deux dernières faiblesses principales
+      - Compléter des séances de correction ciblées
+      - Affiner la stratégie de saut et de réponse au hasard
+      - Affiner la stratégie de gestion du temps
+      - Mettre à jour tout le journal d'erreurs P
 
   - domain: actuarial
     node: actuarial-fm-diagnostic
-    task: Keep FM warm with two short sessions while Exam P remains the primary actuarial objective.
-    task_fr: Maintenir FM actif avec deux courtes séances pendant que l'examen P reste l'objectif actuariel principal.
+    task: Complete only one light FM maintenance session this week so that nearly all actuarial energy remains available for Exam P.
+    task_fr: Compléter une seule séance légère d'entretien FM cette semaine afin de conserver presque toute l'énergie actuarielle pour l'examen P.
 
     completion:
-      - Complete two short FM sessions
-      - Revisit one previously studied topic
-      - Complete one small mixed set
+      - Complete one short FM session
+      - Review familiar material only
       - Keep calculator skills active
+      - Do not introduce a major new FM topic
 
     completion_fr:
-      - Compléter deux courtes séances FM
-      - Revoir un sujet déjà étudié
-      - Compléter une petite série mixte
+      - Compléter une courte séance FM
+      - Revoir uniquement du contenu familier
       - Maintenir les automatismes à la calculatrice
-
-  # ============================================================
-  # RESEARCH
-  # ============================================================
+      - Ne pas introduire de nouveau sujet FM important
 
   - domain: research
     node: research-actuarial-glm-validation
@@ -103,27 +89,15 @@ quests:
       - Relier la validation à la pratique de tarification en assurance
       - Rédiger une note technique concise
 
-  # ============================================================
-  # LEAN
-  # ============================================================
-
   - domain: lean
     node: lean-theorem-proving
     task: Spend one focused session repairing, simplifying, or improving a Lean proof already written.
     task_fr: Consacrer une séance ciblée à corriger, simplifier ou améliorer une preuve Lean déjà écrite.
 
-  # ============================================================
-  # ENGLISH
-  # ============================================================
-
   - domain: english
     node: english-conversation-practice
     task: Complete one English conversation and explain covariance or correlation without relying only on formulas.
     task_fr: Compléter une conversation en anglais et expliquer la covariance ou la corrélation sans dépendre uniquement des formules.
-
-  # ============================================================
-  # PHYSICAL
-  # ============================================================
 
   - domain: physical
     node: physical-training-consistency
@@ -146,29 +120,26 @@ quests:
       - Fatigue cumulative revue
       - Problèmes de récupération notés s'ils apparaissent
 
-
-# ============================================================
-# DAILY PLAN
-# ============================================================
-
 days:
 
-  # ============================================================
-  # SUNDAY - OCTOBER 11
-  # ============================================================
-
-  - date: 2026-10-11
-    weekday: sunday
-    title: Enter multivariate probability
-    title_fr: Entrer dans la probabilité multivariée
+  - date: 2026-10-26
+    weekday: monday
+    title: Actuarial focus · Monday
+    title_fr: Priorité actuarielle · Lundi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 90 min
-        text: Exam P - introduce joint distributions, joint PMFs, joint PDFs, and marginal distributions.
-        text_fr: Examen P - introduire les distributions conjointes, fonctions de masse conjointes, densités conjointes et distributions marginales.
+        time: 2–3 h
+        text: Complete a substantial timed mixed Exam P simulation under strict exam-style conditions.
+        text_fr: Compléter une simulation P mixte substantielle et chronométrée dans des conditions strictes proches de l'examen.
+
+      - domain: actuarial
+        node: actuarial-exam-1
+        time: 60 min
+        text: Review the simulation completely and classify every important error.
+        text_fr: Revoir entièrement la simulation et classer chaque erreur importante.
 
       - domain: research
         node: research-actuarial-glm-validation
@@ -176,23 +147,24 @@ days:
         text: Read Goldburd pages 75–78 and identify the main purposes of model validation.
         text_fr: Lire les pages 75 à 78 de Goldburd et identifier les principaux objectifs de validation d'un modèle.
 
-
-  # ============================================================
-  # MONDAY - OCTOBER 12
-  # ============================================================
-
-  - date: 2026-10-12
-    weekday: monday
-    title: Marginal and conditional distributions
-    title_fr: Distributions marginales et conditionnelles
+  - date: 2026-10-27
+    weekday: tuesday
+    title: Actuarial focus · Tuesday
+    title_fr: Priorité actuarielle · Mardi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 75–90 min
-        text: Exam P - derive marginal and conditional distributions from joint models and complete 20–25 focused problems.
-        text_fr: Examen P - déterminer les distributions marginales et conditionnelles à partir de modèles conjoints et compléter 20 à 25 exercices ciblés.
+        text: Rework every important error from Simulation 1 without looking at the final solution first.
+        text_fr: Refaire chaque erreur importante de la première simulation sans regarder immédiatement la solution finale.
+
+      - domain: actuarial
+        node: actuarial-exam-1
+        time: 30 min
+        text: Identify the two weakest areas revealed by the simulation.
+        text_fr: Identifier les deux principales faiblesses révélées par la simulation.
 
       - domain: research
         node: research-actuarial-glm-validation
@@ -200,47 +172,43 @@ days:
         text: Read Goldburd pages 79–82 and take notes on diagnostics and model reliability.
         text_fr: Lire les pages 79 à 82 de Goldburd et prendre des notes sur les diagnostics et la fiabilité du modèle.
 
-
-  # ============================================================
-  # TUESDAY - OCTOBER 13
-  # ============================================================
-
-  - date: 2026-10-13
-    weekday: tuesday
-    title: Covariance and correlation
-    title_fr: Covariance et corrélation
+  - date: 2026-10-28
+    weekday: wednesday
+    title: Actuarial focus · Wednesday
+    title_fr: Priorité actuarielle · Mercredi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 75–90 min
-        text: Exam P - covariance, correlation, expected products, and independence.
-        text_fr: Examen P - covariance, corrélation, espérance des produits et indépendance.
+        time: 90 min
+        text: Complete an intensive targeted session on the weakest remaining Exam P area.
+        text_fr: Compléter une séance intensive ciblée sur la principale faiblesse restante de l'examen P.
 
       - domain: actuarial
         node: actuarial-fm-diagnostic
-        time: 30–45 min
-        text: FM maintenance - review one previously studied interest-theory topic.
-        text_fr: Entretien FM - revoir un sujet de théorie de l'intérêt déjà étudié.
+        time: 20–30 min
+        text: FM maintenance - complete one very light review using familiar problems only.
+        text_fr: Entretien FM - compléter une révision très légère avec uniquement des problèmes familiers.
 
-
-  # ============================================================
-  # WEDNESDAY - OCTOBER 14
-  # ============================================================
-
-  - date: 2026-10-14
-    weekday: wednesday
-    title: Conditional expectation
-    title_fr: Espérance conditionnelle
+  - date: 2026-10-29
+    weekday: thursday
+    title: Actuarial focus · Thursday
+    title_fr: Priorité actuarielle · Jeudi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 75–90 min
-        text: Exam P - conditional expectation and mixed multivariate problems.
-        text_fr: Examen P - espérance conditionnelle et problèmes multivariés mixtes.
+        time: 2–3 h
+        text: Complete a second substantial timed mixed Exam P simulation under strict conditions.
+        text_fr: Compléter une deuxième simulation P mixte substantielle et chronométrée dans des conditions strictes.
+
+      - domain: actuarial
+        node: actuarial-exam-1
+        time: 45–60 min
+        text: Review the highest-value errors immediately after the simulation.
+        text_fr: Revoir immédiatement les erreurs les plus importantes après la simulation.
 
       - domain: research
         node: research-actuarial-glm-validation
@@ -254,23 +222,24 @@ days:
         text: Repair or simplify one Lean proof already written.
         text_fr: Corriger ou simplifier une preuve Lean déjà écrite.
 
-
-  # ============================================================
-  # THURSDAY - OCTOBER 15
-  # ============================================================
-
-  - date: 2026-10-15
-    weekday: thursday
-    title: Cumulative multivariate practice
-    title_fr: Pratique multivariée cumulative
+  - date: 2026-10-30
+    weekday: friday
+    title: Actuarial focus · Friday
+    title_fr: Priorité actuarielle · Vendredi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 90 min
-        text: Complete a cumulative Exam P set combining earlier topics with joint and conditional distributions.
-        text_fr: Compléter une série cumulative de P combinant les sujets précédents avec les distributions conjointes et conditionnelles.
+        text: Fully review Simulation 2 and compare its errors with Simulation 1.
+        text_fr: Revoir entièrement la deuxième simulation et comparer ses erreurs à celles de la première.
+
+      - domain: actuarial
+        node: actuarial-exam-1
+        time: 45–60 min
+        text: Complete targeted problems on the remaining weak areas revealed by both simulations.
+        text_fr: Compléter des problèmes ciblés sur les faiblesses restantes révélées par les deux simulations.
 
       - domain: research
         node: research-actuarial-glm-validation
@@ -278,29 +247,24 @@ days:
         text: Draft the technical note on validation, diagnostics, stability, and insurance-pricing relevance.
         text_fr: Rédiger la première version de la note technique sur la validation, les diagnostics, la stabilité et leur pertinence en tarification d'assurance.
 
-
-  # ============================================================
-  # FRIDAY - OCTOBER 16
-  # ============================================================
-
-  - date: 2026-10-16
-    weekday: friday
-    title: Timed multivariate practice
-    title_fr: Pratique multivariée chronométrée
+  - date: 2026-10-31
+    weekday: saturday
+    title: Actuarial focus · Saturday
+    title_fr: Priorité actuarielle · Samedi
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 75–90 min
-        text: Complete one timed multivariate Exam P block and fully review every error.
-        text_fr: Compléter un bloc P multivarié chronométré et revoir entièrement chaque erreur.
+        text: Complete a shorter timed mixed Exam P block with emphasis on pacing, skipping, and returning to difficult questions.
+        text_fr: Compléter un bloc P mixte chronométré plus court en mettant l'accent sur le rythme, le saut des questions et le retour aux problèmes difficiles.
 
       - domain: actuarial
-        node: actuarial-fm-diagnostic
-        time: 30–45 min
-        text: FM maintenance - complete one short mixed set with calculator practice.
-        text_fr: Entretien FM - compléter une courte série mixte avec pratique de la calculatrice.
+        node: actuarial-exam-1
+        time: 30 min
+        text: Refine the exam strategy for time management, educated guesses, and question order.
+        text_fr: Affiner la stratégie d'examen pour la gestion du temps, les réponses au hasard raisonnées et l'ordre des questions.
 
       - domain: english
         node: english-conversation-practice
@@ -308,29 +272,24 @@ days:
         text: Complete one English conversation and explain covariance, correlation, and independence in plain language.
         text_fr: Compléter une conversation en anglais et expliquer la covariance, la corrélation et l'indépendance en langage simple.
 
-
-  # ============================================================
-  # SATURDAY - OCTOBER 17
-  # ============================================================
-
-  - date: 2026-10-17
-    weekday: saturday
-    title: Consolidate multivariate probability
-    title_fr: Consolider la probabilité multivariée
+  - date: 2026-11-01
+    weekday: sunday
+    title: Actuarial focus · Sunday
+    title_fr: Priorité actuarielle · Dimanche
 
     tasks:
 
       - domain: actuarial
         node: actuarial-exam-1
         time: 90–120 min
-        text: Complete a cumulative Exam P set covering general probability, discrete variables, continuous variables, distributions, and multivariate probability.
-        text_fr: Compléter une série cumulative de P couvrant la probabilité générale, les variables discrètes, les variables continues, les distributions et la probabilité multivariée.
+        text: Review the complete P error log and redo the highest-value unresolved problems.
+        text_fr: Revoir tout le journal d'erreurs P et refaire les problèmes non résolus les plus importants.
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 30 min
-        text: Review the complete P error log and identify the three most important remaining weaknesses.
-        text_fr: Revoir tout le journal d'erreurs P et identifier les trois principales faiblesses restantes.
+        time: 30–45 min
+        text: Write the final list of concepts, mistakes, and strategies that still require attention before November 7.
+        text_fr: Écrire la liste finale des concepts, erreurs et stratégies qui demandent encore de l'attention avant le 7 novembre.
 
       - domain: research
         node: research-actuarial-glm-validation
