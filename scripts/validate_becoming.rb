@@ -21,6 +21,8 @@ VALID_STATUSES = %w[
   planned
 ].freeze
 
+# Ruby Date#wday uses Sunday = 0 through Saturday = 6.
+# Keep this lookup in that order even though weeks start on Monday.
 VALID_WEEKDAYS = %w[
   sunday
   monday
@@ -483,15 +485,15 @@ cycles.each do |cycle|
   end
 
   if start_date &&
-     start_date.wday != 0
+     start_date.wday != 1
 
-    errors << "#{id}: cycle start_date must be Sunday"
+    errors << "#{id}: cycle start_date must be Monday"
   end
 
   if end_date &&
-     end_date.wday != 6
+     end_date.wday != 0
 
-    errors << "#{id}: cycle end_date must be Saturday"
+    errors << "#{id}: cycle end_date must be Sunday"
   end
 
   if start_date &&
@@ -621,16 +623,16 @@ Dir[
 
 
   if start_date &&
-     start_date.wday != 0
+     start_date.wday != 1
 
-    errors << "#{key}: start_date must be Sunday"
+    errors << "#{key}: start_date must be Monday"
   end
 
 
   if end_date &&
-     end_date.wday != 6
+     end_date.wday != 0
 
-    errors << "#{key}: end_date must be Saturday"
+    errors << "#{key}: end_date must be Sunday"
   end
 
 
