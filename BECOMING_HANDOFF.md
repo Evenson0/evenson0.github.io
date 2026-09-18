@@ -59,6 +59,11 @@ Ne jamais inventer une réussite, un examen réussi, une publication, une contri
 
 Les plans futurs sont des plans, pas des accomplissements.
 
+Becoming est aussi le journal et la liste de tâches personnels d'Evenson.
+Il décide lui-même de ce qu'il a accompli. Ne pas exiger de justificatifs
+publics ni ajouter de contrôle obligatoire des preuves. L'absence de bilan
+ou de preuve dans GitHub ne signifie pas qu'une tâche n'a pas été faite.
+
 ---
 
 ## 3. Pages visibles
@@ -179,7 +184,7 @@ foundations-01
 Dates :
 
 ```text
-2026-09-06 -> 2026-11-28
+2026-09-21 -> 2026-12-13
 ```
 
 Domaines principaux :
@@ -200,14 +205,23 @@ Sources :
 
 ```text
 _becoming/weeks/week-01.md
-...
+_becoming/weeks/week-02.md
+_becoming/weeks/week-03.md
+_becoming/weeks/week-04.md
+_becoming/weeks/week-05.md
+_becoming/weeks/week-06.md
+_becoming/weeks/week-07.md
+_becoming/weeks/week-08.md
+_becoming/weeks/week-09.md
+_becoming/weeks/week-10.md
+_becoming/weeks/week-11.md
 _becoming/weeks/week-12.md
 ```
 
 Chaque semaine couvre exactement :
 
 ```text
-Sunday -> Saturday
+Monday -> Sunday
 ```
 
 Structure générale :
@@ -536,13 +550,13 @@ prépare les futures semaines.
 Une nouvelle semaine contient automatiquement sept jours :
 
 ```text
-Sunday
 Monday
 Tuesday
 Wednesday
 Thursday
 Friday
 Saturday
+Sunday
 ```
 
 Le script ne doit pas prolonger silencieusement un cycle terminé.
@@ -555,7 +569,7 @@ Le script ne doit pas prolonger silencieusement un cycle terminé.
 4. changer `current_cycle` ;
 5. générer ensuite les nouvelles semaines.
 
-Ne pas créer artificiellement une Week 13 dans `foundations-01` après le 28 novembre.
+Ne pas créer artificiellement une Week 13 dans `foundations-01` après le 13 décembre.
 
 ---
 
@@ -574,7 +588,7 @@ Il vérifie notamment :
 - cycles ;
 - domaines ;
 - dates ;
-- semaines dimanche à samedi ;
+- semaines lundi à dimanche ;
 - nœuds actifs ;
 - maintenance ;
 - quests ;
@@ -768,7 +782,7 @@ Becoming possède maintenant :
 Le cycle actuel se termine le :
 
 ```text
-2026-11-28
+2026-12-13
 ```
 
 La suite doit être construite à partir de ce qui s'est réellement passé pendant le cycle, pas simplement en prolongeant mécaniquement le plan.
@@ -780,3 +794,9 @@ La suite doit être construite à partir de ce qui s'est réellement passé pend
 Dans une nouvelle conversation :
 
 > Lis d'abord `BECOMING_HANDOFF.md` puis `BECOMING.md`. Inspecte ensuite les fichiers actuellement utilisés par Becoming avant de proposer quoi que ce soit. Continue à partir de l'architecture existante, sans recommencer le projet ni modifier des éléments uniquement pour les moderniser. Je veux travailler sur : [décrire le changement].
+
+## Calendar and reading update — 2026-09-18
+
+The cycle runs September 21–December 13, 2026, Monday–Sunday. Reviews stay on Sunday evening. Exam P stays on November 7; FM stays in December (appointment day unconfirmed). P review is consolidated into seven weeks, with FM primary after P. No result or completion is inferred.
+
+Le Rouge et le Noir: September 21–27, one seventh of the novel daily. The Intelligent Investor: September 21–October 21, one thirty-first of the selected edition daily, including the commentary and appendices intended for reading. Page counts and durations depend on the edition and observed reading speed.
