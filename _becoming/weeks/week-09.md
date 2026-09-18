@@ -1,17 +1,17 @@
 ---
-title: Exam P · Final Week
-title_fr: Examen P · Semaine finale
+title: FM Annuities & Loans · ANAM Maintenance
+title_fr: FM Annuités et prêts · Entretien ANAM
 
 cycle: foundations-01
 cycle_week: 9
 
-start_date: 2026-11-01
-end_date: 2026-11-07
+start_date: 2026-11-16
+end_date: 2026-11-22
 
 status: planned
 
 active:
-  - actuarial-exam-1
+  - actuarial-fm-foundations
   - physical-training-consistency
 
 maintenance:
@@ -20,72 +20,58 @@ maintenance:
 
 quests:
 
-  # ============================================================
-  # ACTUARIAL - EXAM P
-  # ============================================================
-
   - domain: actuarial
-    node: actuarial-exam-1
-    task: Finish Exam P preparation, reduce uncertainty rather than learn large new topics, and sit the examination on November 7, 2026.
-    task_fr: Terminer la préparation de l'examen P, réduire les incertitudes plutôt qu'apprendre de nouveaux gros sujets et passer l'examen le 7 novembre 2026.
+    node: actuarial-fm-foundations
+    task: Make annuities and loans operationally reliable through focused study, calculator fluency, mixed practice, and systematic error review.
+    task_fr: Rendre les annuités et les prêts opérationnellement solides grâce à une étude ciblée, une bonne maîtrise de la calculatrice, une pratique mixte et une revue systématique des erreurs.
 
     completion:
-      - Complete one final substantial simulation
-      - Review the final simulation completely
-      - Repair the highest-value remaining weaknesses
-      - Review the complete error log
-      - Review formulas and recurring setups
-      - Finalize time-management strategy
-      - Finalize skip and guessing strategy
-      - Prepare calculator and required identification
-      - Confirm exam logistics
-      - Sit Exam P on November 7, 2026
-      - Record immediate post-exam observations without attempting a full postmortem
+      - Review annuity-immediate
+      - Review annuity-due
+      - Review deferred annuities
+      - Review perpetuities
+      - Review geometric annuities if applicable
+      - Review loan amortization
+      - Review outstanding balance methods
+      - Review sinking funds
+      - Complete calculator-based annuity and loan problems
+      - Complete one timed mixed set
+      - Update the FM error log
+      - Identify the next highest-value FM weakness
 
     completion_fr:
-      - Compléter une dernière simulation substantielle
-      - Revoir entièrement la dernière simulation
-      - Corriger les dernières faiblesses les plus importantes
-      - Revoir tout le journal d'erreurs
-      - Revoir les formules et mises en équation récurrentes
-      - Finaliser la stratégie de gestion du temps
-      - Finaliser la stratégie de saut et de réponse au hasard
-      - Préparer la calculatrice et les pièces d'identité requises
-      - Confirmer la logistique de l'examen
-      - Passer l'examen P le 7 novembre 2026
-      - Noter quelques observations immédiatement après l'examen sans faire une analyse complète
-
-  # ============================================================
-  # RESEARCH - LIGHT MAINTENANCE
-  # ============================================================
+      - Revoir les annuités immédiates
+      - Revoir les annuités à terme à échoir
+      - Revoir les annuités différées
+      - Revoir les perpétuités
+      - Revoir les annuités géométriques si applicable
+      - Revoir l'amortissement des prêts
+      - Revoir les méthodes de calcul du solde restant
+      - Revoir les fonds d'amortissement
+      - Compléter des problèmes d'annuités et de prêts avec la calculatrice
+      - Compléter une série mixte chronométrée
+      - Mettre à jour le journal d'erreurs FM
+      - Identifier la prochaine faiblesse FM à plus forte valeur
 
   - domain: research
     node: research-actuarial-anam
-    task: Keep ANAM research alive only through light reading or note cleanup if Exam P preparation is on schedule.
-    task_fr: Maintenir la recherche ANAM uniquement par une lecture légère ou le nettoyage de notes si la préparation de P est à jour.
+    task: Keep ANAM research alive only through light reading or note cleanup if FM preparation is on schedule.
+    task_fr: Maintenir la recherche ANAM uniquement par une lecture légère ou le nettoyage de notes si la préparation de FM est à jour.
 
     completion:
-      - No research work competes with final Exam P preparation
+      - No research work competes with FM preparation
       - Existing ANAM notes remain organized
       - Optional light reading completed if energy permits
 
     completion_fr:
-      - Aucun travail de recherche ne concurrence la préparation finale de P
+      - Aucun travail de recherche ne concurrence la préparation de FM
       - Les notes ANAM existantes restent organisées
       - Une lecture légère facultative est faite si l'énergie le permet
 
-  # ============================================================
-  # ENGLISH - LIGHT MAINTENANCE
-  # ============================================================
-
   - domain: english
     node: english-conversation-practice
-    task: Keep English active with one light conversation only if it supports rather than disrupts the exam week.
-    task_fr: Maintenir l'anglais actif avec une seule conversation légère uniquement si elle ne perturbe pas la semaine d'examen.
-
-  # ============================================================
-  # PHYSICAL
-  # ============================================================
+    task: Keep English active with one light conversation only if it supports rather than disrupts the study week.
+    task_fr: Maintenir l'anglais actif avec une seule conversation légère uniquement si elle ne perturbe pas la semaine d'étude.
 
   - domain: physical
     node: physical-training-consistency
@@ -108,119 +94,89 @@ quests:
       - Réduire ou déplacer les séances si elles nuisent à la préparation à l'examen
       - Reprendre la progression normale après l'examen
 
-
-# ============================================================
-# DAILY PLAN
-# ============================================================
-
 days:
 
-  # ============================================================
-  # SUNDAY - NOVEMBER 1
-  # ============================================================
-
-  - date: 2026-11-01
-    weekday: sunday
-    title: Final simulation
-    title_fr: Simulation finale
-
-    tasks:
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 2–3 h
-        text: Complete the final substantial mixed Exam P simulation under realistic exam conditions.
-        text_fr: Compléter la dernière simulation P mixte substantielle dans des conditions réalistes d'examen.
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 60–90 min
-        text: Review the simulation completely and classify the remaining errors by concept, setup, calculation, and time management.
-        text_fr: Revoir entièrement la simulation et classer les dernières erreurs par concept, mise en équation, calcul et gestion du temps.
-
-
-  # ============================================================
-  # MONDAY - NOVEMBER 2
-  # ============================================================
-
-  - date: 2026-11-02
+  - date: 2026-11-16
     weekday: monday
-    title: Repair the simulation
-    title_fr: Corriger la simulation
+    title: Actuarial focus · Monday
+    title_fr: Priorité actuarielle · Lundi
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-exam-1
+        node: actuarial-fm-foundations
         time: 90 min
-        text: Rework every high-value error from the final simulation without immediately consulting the solution.
-        text_fr: Refaire chaque erreur importante de la simulation finale sans consulter immédiatement la solution.
+        text: Review annuity-immediate and annuity-due formulas, interpretation, timing, and value equations.
+        text_fr: Revoir les formules des annuités immédiates et à terme à échoir, leur interprétation, leur chronologie et les équations de valeur.
 
       - domain: actuarial
-        node: actuarial-exam-1
-        time: 30 min
-        text: Reduce the remaining weaknesses to a short ranked list.
-        text_fr: Réduire les faiblesses restantes à une courte liste classée par importance.
+        node: actuarial-fm-foundations
+        time: 30–45 min
+        text: Complete 15–20 focused annuity problems.
+        text_fr: Compléter 15 à 20 exercices ciblés sur les annuités.
+
+  - date: 2026-11-17
+    weekday: tuesday
+    title: Actuarial focus · Tuesday
+    title_fr: Priorité actuarielle · Mardi
+
+    tasks:
+
+      - domain: actuarial
+        node: actuarial-fm-foundations
+        time: 75–90 min
+        text: Study deferred annuities, perpetuities, and timeline translation.
+        text_fr: Étudier les annuités différées, les perpétuités et la traduction des échéanciers.
+
+      - domain: actuarial
+        node: actuarial-fm-foundations
+        time: 30–45 min
+        text: Complete focused problems emphasizing correct valuation dates.
+        text_fr: Compléter des exercices ciblés en mettant l'accent sur le choix correct de la date d'évaluation.
 
       - domain: research
         node: research-actuarial-anam
         time: 20–30 min
-        text: Clean existing ANAM notes only if the Exam P work is complete.
-        text_fr: Nettoyer les notes ANAM existantes uniquement si le travail de préparation à P est terminé.
+        text: Clean existing ANAM notes only if the FM work is complete.
+        text_fr: Nettoyer les notes ANAM existantes uniquement si le travail FM prévu est terminé.
 
-
-  # ============================================================
-  # TUESDAY - NOVEMBER 3
-  # ============================================================
-
-  - date: 2026-11-03
-    weekday: tuesday
-    title: Two weak areas
-    title_fr: Deux dernières faiblesses
-
-    tasks:
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 60–75 min
-        text: Complete targeted practice on the weakest remaining Exam P area.
-        text_fr: Compléter une pratique ciblée sur la principale faiblesse restante de l'examen P.
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 45–60 min
-        text: Complete targeted practice on the second weakest remaining area.
-        text_fr: Compléter une pratique ciblée sur la deuxième faiblesse restante.
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 20 min
-        text: Review the errors immediately and stop once the correction is understood.
-        text_fr: Revoir immédiatement les erreurs et arrêter une fois la correction comprise.
-
-
-  # ============================================================
-  # WEDNESDAY - NOVEMBER 4
-  # ============================================================
-
-  - date: 2026-11-04
+  - date: 2026-11-18
     weekday: wednesday
-    title: Controlled mixed practice
-    title_fr: Pratique mixte contrôlée
+    title: Actuarial focus · Wednesday
+    title_fr: Priorité actuarielle · Mercredi
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-exam-1
-        time: 60–75 min
-        text: Complete a moderate mixed Exam P set with emphasis on clean setup, pacing, and avoiding careless errors.
-        text_fr: Compléter une série P mixte modérée en mettant l'accent sur une mise en équation propre, le rythme et l'évitement des erreurs d'inattention.
+        node: actuarial-fm-foundations
+        time: 90 min
+        text: Review loan amortization, payment determination, interest portions, principal portions, and outstanding balances.
+        text_fr: Revoir l'amortissement des prêts, le calcul des paiements, les portions d'intérêt, les portions de capital et les soldes restants.
 
       - domain: actuarial
-        node: actuarial-exam-1
+        node: actuarial-fm-foundations
         time: 30–45 min
-        text: Review the set and revisit only the concepts that still produce uncertainty.
-        text_fr: Revoir la série et reprendre uniquement les concepts qui produisent encore de l'incertitude.
+        text: Practice BA II Plus loan and annuity workflows until the calculator sequence becomes automatic.
+        text_fr: Pratiquer les procédures BA II Plus pour les prêts et annuités jusqu'à ce que la séquence à la calculatrice devienne automatique.
+
+  - date: 2026-11-19
+    weekday: thursday
+    title: Actuarial focus · Thursday
+    title_fr: Priorité actuarielle · Jeudi
+
+    tasks:
+
+      - domain: actuarial
+        node: actuarial-fm-foundations
+        time: 75–90 min
+        text: Solve outstanding-balance problems using both prospective and retrospective methods.
+        text_fr: Résoudre des problèmes de solde restant avec les méthodes prospective et rétrospective.
+
+      - domain: actuarial
+        node: actuarial-fm-foundations
+        time: 30 min
+        text: Compare the two methods and record when each is faster or less error-prone.
+        text_fr: Comparer les deux méthodes et noter dans quels cas chacune est plus rapide ou moins sujette aux erreurs.
 
       - domain: english
         node: english-conversation-practice
@@ -228,59 +184,37 @@ days:
         text: Complete one light English conversation only if it feels restorative.
         text_fr: Compléter une conversation légère en anglais uniquement si elle est reposante.
 
-
-  # ============================================================
-  # THURSDAY - NOVEMBER 5
-  # ============================================================
-
-  - date: 2026-11-05
-    weekday: thursday
-    title: Error log and strategy
-    title_fr: Journal d'erreurs et stratégie
-
-    tasks:
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 60 min
-        text: Review the complete Exam P error log and redo only the highest-value unresolved examples.
-        text_fr: Revoir tout le journal d'erreurs P et refaire uniquement les exemples non résolus les plus importants.
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 30 min
-        text: Review formulas, distribution recognition, common setups, and calculator procedures.
-        text_fr: Revoir les formules, la reconnaissance des distributions, les mises en équation courantes et les procédures à la calculatrice.
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 20 min
-        text: Finalize pacing, skipping, returning, and educated-guessing strategy.
-        text_fr: Finaliser la stratégie de rythme, de saut, de retour aux questions et de réponse au hasard raisonnée.
-
-
-  # ============================================================
-  # FRIDAY - NOVEMBER 6
-  # ============================================================
-
-  - date: 2026-11-06
+  - date: 2026-11-20
     weekday: friday
-    title: Light review only
-    title_fr: Révision légère seulement
+    title: Actuarial focus · Friday
+    title_fr: Priorité actuarielle · Vendredi
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-exam-1
-        time: 30–45 min
-        text: Complete only a light review of familiar formulas, recurring setups, and a few easy representative problems.
-        text_fr: Faire uniquement une révision légère des formules familières, des mises en équation récurrentes et de quelques problèmes représentatifs faciles.
+        node: actuarial-fm-foundations
+        time: 75–90 min
+        text: Review sinking funds and solve mixed loan and annuity problems requiring multiple value equations.
+        text_fr: Revoir les fonds d'amortissement et résoudre des problèmes mixtes de prêts et d'annuités demandant plusieurs équations de valeur.
+
+  - date: 2026-11-21
+    weekday: saturday
+    title: Actuarial focus · Saturday
+    title_fr: Priorité actuarielle · Samedi
+
+    tasks:
 
       - domain: actuarial
-        node: actuarial-exam-1
-        time: 20 min
-        text: Prepare the calculator, identification, exam confirmation, route, timing, and anything required for tomorrow.
-        text_fr: Préparer la calculatrice, les pièces d'identité, la confirmation de l'examen, le trajet, l'horaire et tout ce qui est requis pour demain.
+        node: actuarial-fm-foundations
+        time: 90 min
+        text: Complete a timed mixed FM set focused on annuities, loans, rate conversions, and value equations.
+        text_fr: Compléter une série FM mixte chronométrée centrée sur les annuités, les prêts, les conversions de taux et les équations de valeur.
+
+      - domain: actuarial
+        node: actuarial-fm-foundations
+        time: 45 min
+        text: Review every error and every correct answer reached through an inefficient method.
+        text_fr: Revoir chaque erreur ainsi que chaque bonne réponse obtenue avec une méthode inefficace.
 
       - domain: physical
         node: physical-training-consistency
@@ -289,36 +223,31 @@ days:
         text_fr: Garder le mouvement léger et donner priorité à la récupération et au sommeil.
 
       - time: 10 min
-        text: Stop studying early enough to arrive at the exam rested.
-        text_fr: Arrêter d'étudier suffisamment tôt pour arriver reposé à l'examen.
+        text: Stop studying early enough to protect sleep and recover.
+        text_fr: Arrêter d'étudier suffisamment tôt pour préserver le sommeil et récupérer.
 
-
-  # ============================================================
-  # SATURDAY - NOVEMBER 7
-  # ============================================================
-
-  - date: 2026-11-07
-    weekday: saturday
-    title: Exam P
-    title_fr: Examen P
+  - date: 2026-11-22
+    weekday: sunday
+    title: Actuarial focus · Sunday
+    title_fr: Priorité actuarielle · Dimanche
 
     tasks:
 
       - domain: actuarial
-        node: actuarial-exam-1
-        time: Exam
-        text: Sit Exam P.
-        text_fr: Passer l'examen P.
+        node: actuarial-fm-foundations
+        time: 90–120 min
+        text: Complete a cumulative FM set combining interest theory, annuities, and loans.
+        text_fr: Compléter une série FM cumulative combinant théorie de l'intérêt, annuités et prêts.
 
       - domain: actuarial
-        node: actuarial-exam-1
-        time: 10 min
-        text: After the exam, record only immediate observations about timing, difficulty, and topics that felt uncertain.
-        text_fr: Après l'examen, noter uniquement les observations immédiates sur le temps, la difficulté et les sujets qui ont semblé incertains.
+        node: actuarial-fm-foundations
+        time: 30 min
+        text: Review the FM error log and identify the highest-value weakness for Week 10.
+        text_fr: Revoir le journal d'erreurs FM et identifier la faiblesse la plus importante à traiter pendant la semaine 10.
 
-      - time: Rest of day
-        text: Stop Exam P preparation and recover. Do not begin the full postmortem today.
-        text_fr: Arrêter la préparation à P et récupérer. Ne pas commencer l'analyse complète de l'examen aujourd'hui.
+      - time: 15–20 min
+        text: Complete the Becoming weekly review and prepare Week 10.
+        text_fr: Compléter la revue hebdomadaire Becoming et préparer la semaine 10.
 
 completed: []
 ---
