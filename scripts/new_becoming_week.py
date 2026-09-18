@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create the next Sunday-Saturday Becoming week inside the current cycle."""
+"""Create the next Monday-Sunday Becoming week inside the current cycle."""
 
 from datetime import date, timedelta
 from pathlib import Path
@@ -151,13 +151,13 @@ def build_days(
     start: date,
 ) -> str:
     weekday_names = [
-        "sunday",
         "monday",
         "tuesday",
         "wednesday",
         "thursday",
         "friday",
         "saturday",
+        "sunday",
     ]
 
     blocks = []
