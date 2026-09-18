@@ -13,7 +13,7 @@ WEEKS_DIR = ROOT / "_becoming" / "weeks"
 CYCLES_FILE = ROOT / "_data" / "becoming" / "cycles.yml"
 
 CYCLE_ID = "foundations-01"
-NEW_START = date(2026, 9, 6)
+NEW_START = date(2026, 9, 21)
 NUMBER_OF_WEEKS = 12
 
 
@@ -29,6 +29,24 @@ def replace_week_dates(
     text = path.read_text(
         encoding="utf-8"
     )
+
+    existing_start = re.search(
+        r"^start_date:\s*(\d{4}-\d{2}-\d{2})",
+        text,
+        re.MULTILINE,
+    )
+
+    if (
+        not existing_start
+        or date.fromisoformat(
+            existing_start.group(1)
+        ) != start_date
+    ):
+        raise RuntimeError(
+            "Date-only reset refused: update daily dates, "
+            "weekdays, reading deadlines and the fixed "
+            "November 7 Exam P schedule together."
+        )
 
     text, start_count = re.subn(
         r"^start_date:\s*\d{4}-\d{2}-\d{2}\s*$",
