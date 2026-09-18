@@ -35,6 +35,11 @@ The general rule is:
 
 > No evidence -> no permanent unlock.
 
+This principle prevents the assistant from inventing achievements. Becoming
+is also Evenson's personal journal and to-do list: he decides what he has
+completed. Do not require public evidence, add mandatory proof validation,
+or interpret an empty repository review as evidence that no work occurred.
+
 ---
 
 ## Visible pages
@@ -185,7 +190,7 @@ foundations-01
 Current dates:
 
 ```text
-2026-09-06 -> 2026-11-28
+2026-09-21 -> 2026-12-13
 ```
 
 Its principal active domains are:
@@ -225,11 +230,20 @@ The current cycle uses:
 
 ```text
 week-01.md
-...
+week-02.md
+week-03.md
+week-04.md
+week-05.md
+week-06.md
+week-07.md
+week-08.md
+week-09.md
+week-10.md
+week-11.md
 week-12.md
 ```
 
-Each week runs exactly Sunday through Saturday.
+Each week runs exactly Monday through Sunday.
 
 General front matter:
 
@@ -311,7 +325,7 @@ days:
         text_fr: Compléter une série ciblée d'exercices.
 ```
 
-Each week should contain exactly seven dates matching the Sunday-to-Saturday range.
+Each week should contain exactly seven dates matching the Monday-to-Sunday range.
 
 Daily tasks may contain:
 
@@ -841,7 +855,13 @@ Becoming currently includes:
 The current cycle ends on:
 
 ```text
-2026-11-28
+2026-12-13
 ```
 
 The next cycle should be designed from actual evidence gathered during this one.
+
+## Calendar and reading update — 2026-09-18
+
+The cycle runs September 21–December 13, 2026, Monday–Sunday. Reviews stay on Sunday evening. Exam P stays on November 7; FM stays in December (appointment day unconfirmed). P review is consolidated into seven weeks, with FM primary after P. No result or completion is inferred.
+
+Le Rouge et le Noir: September 21–27, one seventh of the novel daily. The Intelligent Investor: September 21–October 21, one thirty-first of the selected edition daily, including the commentary and appendices intended for reading. Page counts and durations depend on the edition and observed reading speed.
