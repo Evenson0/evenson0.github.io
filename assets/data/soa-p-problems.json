@@ -788,5 +788,145 @@
   ],
   "generalization": "Apply distinctness restrictions only where stated. Two ordered positions chosen from \\(m\\) symbols have \\(m^2\\) possibilities when repetition is allowed and \\(m(m-1)\\) when their symbols must differ.",
   "answer_text": "E. \\(4{,}410\\)"
+},
+  {
+  "id": 43,
+  "topic": "Conditional Probability and Sampling Without Replacement",
+  "title": "Exercise 43",
+  "statement": "Urn I contains seven red and three black balls, and urn II contains four red and five black balls. After a randomly selected ball is transferred from urn I to urn II, two balls are randomly drawn from urn II without replacement. What is the probability that both balls drawn from urn II are red?",
+  "choices": [
+    "\\(47/100\\)",
+    "\\(9/20\\)",
+    "\\(28/125\\)",
+    "\\(44/225\\)",
+    "\\(8/25\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "Condition on the color of the transferred ball. A red ball is transferred with probability \\(7/10\\), and a black ball with probability \\(3/10\\).",
+    "If a red ball is transferred, urn II contains 5 red and 5 black balls. The conditional probability of drawing two red balls is \\(\\frac{5}{10}\\frac{4}{9}=\\frac{2}{9}\\).",
+    "If a black ball is transferred, urn II contains 4 red and 6 black balls. The conditional probability of drawing two red balls is \\(\\frac{4}{10}\\frac{3}{9}=\\frac{2}{15}\\).",
+    "By the law of total probability, the desired probability is \\(\\frac{7}{10}\\frac{2}{9}+\\frac{3}{10}\\frac{2}{15}=\\frac{7}{45}+\\frac{1}{25}=\\frac{44}{225}\\)."
+  ],
+  "generalization": "When a transfer changes an urn's composition, condition on what was transferred before calculating the sampling probability. For an urn containing \\(r\\) red balls among \\(n\\) balls, the probability of two red draws without replacement is \\(\\binom{r}{2}/\\binom{n}{2}=r(r-1)/(n(n-1))\\).",
+  "answer_text": "D. \\(44/225\\)"
+},
+{
+  "id": 44,
+  "topic": "Counting and Hypergeometric Probability",
+  "title": "Exercise 44",
+  "statement": "If thirteen cards are randomly chosen without replacement from an ordinary 52-card deck, what is the probability of obtaining exactly three aces?",
+  "choices": [
+    "\\(\\frac{\\binom{13}{4}\\binom{4}{3}\\binom{49}{10}}{\\binom{52}{13}}\\)",
+    "\\(\\frac{\\binom{52}{4}\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)",
+    "\\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)",
+    "\\(\\frac{3!49!}{52!}\\)",
+    "\\(\\frac{\\binom{3}{1}\\binom{49}{10}}{(52)(51)\\cdots(39)}\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "There are \\(\\binom{52}{13}\\) equally likely unordered hands of 13 cards.",
+    "Choose exactly 3 of the deck's 4 aces in \\(\\binom{4}{3}\\) ways.",
+    "The remaining 10 cards must all be non-aces. There are 48 non-aces, giving \\(\\binom{48}{10}\\) choices.",
+    "Therefore, the probability is \\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\).",
+    "Do not select the remaining cards from all 49 cards left after choosing three aces: that would allow the fourth ace and violate the requirement of exactly three aces."
+  ],
+  "generalization": "For a sample of size \\(n\\) drawn uniformly without replacement from \\(N\\) objects containing \\(K\\) successes, the probability of exactly \\(k\\) successes is \\(\\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}\\), for feasible values of \\(k\\).",
+  "answer_text": "C. \\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)"
+},
+{
+  "id": 45,
+  "topic": "Counting: Restricted Card Hands",
+  "title": "Exercise 45",
+  "statement": "[110.S88.16] What is the probability that a hand of five cards chosen randomly and without replacement from a standard deck of 52 cards contains the king of spades, exactly one other king, and exactly two queens?",
+  "choices": [
+    "\\(\\frac{\\binom{4}{2}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)",
+    "\\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)",
+    "\\(\\frac{\\binom{7}{3}\\binom{44}{1}}{\\binom{52}{5}}\\)",
+    "\\(\\frac{\\binom{4}{1}\\binom{7}{3}\\binom{44}{1}}{\\binom{52}{5}}\\)",
+    "\\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{11}{1}}{\\binom{52}{5}}\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "There are \\(\\binom{52}{5}\\) equally likely five-card hands.",
+    "The king of spades is required, so there is exactly one way to include that card.",
+    "Choose the other king from the remaining three kings in \\(\\binom{3}{1}\\) ways.",
+    "Choose exactly two of the four queens in \\(\\binom{4}{2}\\) ways.",
+    "The fifth card must be neither a king nor a queen. There are \\(52-4-4=44\\) such cards.",
+    "The number of favorable hands is \\(\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}=3\\cdot6\\cdot44=792\\). Therefore, the probability is \\(\\frac{792}{\\binom{52}{5}}\\)."
+  ],
+  "generalization": "When a particular card is required, fix that card first and count the remaining choices. For exact rank counts, all leftover cards must come from outside the constrained ranks. Use unordered combinations consistently in both numerator and denominator.",
+  "answer_text": "B. \\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)"
+},
+{
+  "id": 46,
+  "topic": "Binomial Distribution",
+  "title": "Exercise 46",
+  "statement": "In a game, a player flips 2 fair coins and loses if both are heads. Assume all coin flips are independent. What is the probability that a player loses exactly 3 times in 5 plays of the game?",
+  "choices": [
+    "\\(10\\cdot\\frac{3^2}{4^5}\\)",
+    "\\(\\frac{10}{4^5}\\)",
+    "\\(\\frac{1}{4^3}\\)",
+    "\\(\\frac{1}{2^5}\\)",
+    "\\(\\frac{10}{2^5}\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "In one play, the player loses only on two heads, so \\(p=P(\\text{loss})=\\frac12\\frac12=\\frac14\\).",
+    "The probability of not losing a play is \\(1-p=3/4\\).",
+    "Let \\(L\\) be the number of losses in five independent plays. Then \\(L\\sim\\operatorname{Binomial}(5,1/4)\\).",
+    "There are \\(\\binom{5}{3}=10\\) ways to choose which three plays are losses.",
+    "Thus \\(P(L=3)=\\binom{5}{3}\\left(\\frac14\\right)^3\\left(\\frac34\\right)^2=10\\cdot\\frac{3^2}{4^5}=\\frac{45}{512}\\).",
+    "The probability of losing a play is \\(1/4\\), not \\(1/2\\): a play consists of two coin flips."
+  ],
+  "generalization": "For \\(n\\) independent trials with a constant event probability \\(p\\), the number of occurrences is binomial: \\(P(X=k)=\\binom{n}{k}p^k(1-p)^{n-k}\\). First identify what constitutes one trial and calculate its event probability.",
+  "answer_text": "A. \\(10\\cdot\\frac{3^2}{4^5}\\)"
+},
+{
+  "id": 47,
+  "topic": "Independent Binomial Random Variables",
+  "title": "Exercise 47",
+  "statement": "[110.S90.28] I have two unfair coins: a gold coin that comes up heads with probability 0.3, and a silver coin that comes up heads with probability 0.1. If I flip the gold coin 5 times and the silver coin 10 times, what is the probability that the gold coin comes up heads exactly 3 times and the silver coin comes up heads exactly 6 times? Assume all flips are independent.",
+  "choices": [
+    "\\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)",
+    "\\(\\binom{5}{3}(0.3)^3(0.7)^2+\\binom{10}{6}(0.1)^6(0.9)^4\\)",
+    "\\(\\left(1-\\binom{5}{3}(0.3)^3(0.7)^2\\right)\\left(1-\\binom{10}{6}(0.1)^6(0.9)^4\\right)\\)",
+    "\\(1-\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)",
+    "\\(\\left(1-\\binom{5}{3}(0.3)^3(0.7)^2\\right)+\\left(1-\\binom{10}{6}(0.1)^6(0.9)^4\\right)\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "Let \\(G\\) and \\(S\\) count heads from the gold and silver coins. Then \\(G\\sim\\operatorname{Binomial}(5,0.3)\\) and \\(S\\sim\\operatorname{Binomial}(10,0.1)\\).",
+    "The gold-coin probability is \\(P(G=3)=\\binom{5}{3}(0.3)^3(0.7)^2\\).",
+    "The silver-coin probability is \\(P(S=6)=\\binom{10}{6}(0.1)^6(0.9)^4\\).",
+    "Because the two collections of flips are independent, \\(P(G=3,S=6)=P(G=3)P(S=6)\\).",
+    "Therefore, the answer is \\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)."
+  ],
+  "generalization": "For independent binomial counts, multiply the individual probabilities to obtain a joint probability. Do not combine trials with different success probabilities into a single ordinary binomial model.",
+  "answer_text": "A. \\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)"
+},
+{
+  "id": 48,
+  "topic": "Binomial Distribution: Cumulative Probability",
+  "title": "Exercise 48",
+  "statement": "[SOA 37; S00.40] A company prices its hurricane insurance using the following assumptions:\n\n1. In any calendar year, there can be at most one hurricane.\n2. In any calendar year, the probability of a hurricane is 0.05.\n3. The number of hurricanes in any calendar year is independent of the number of hurricanes in any other calendar year.\n\nUsing the company's assumptions, calculate the probability that there are fewer than 3 hurricanes in a 20-year period.",
+  "choices": [
+    "\\(0.06\\)",
+    "\\(0.19\\)",
+    "\\(0.38\\)",
+    "\\(0.62\\)",
+    "\\(0.92\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "Each year is an independent Bernoulli trial with hurricane probability \\(0.05\\). Thus the total number of hurricanes satisfies \\(X\\sim\\operatorname{Binomial}(20,0.05)\\).",
+    "Fewer than 3 hurricanes means \\(X=0,1,2\\), so \\(P(X<3)=P(X=0)+P(X=1)+P(X=2)\\).",
+    "The zero-hurricane probability is \\(P(X=0)=(0.95)^{20}\\approx 0.358486\\).",
+    "The one-hurricane probability is \\(P(X=1)=\\binom{20}{1}(0.05)(0.95)^{19}\\approx 0.377354\\).",
+    "The two-hurricane probability is \\(P(X=2)=\\binom{20}{2}(0.05)^2(0.95)^{18}\\approx 0.188677\\).",
+    "Adding gives \\(P(X<3)\\approx 0.924516\\), which rounds to \\(0.92\\)."
+  ],
+  "generalization": "For \\(X\\sim\\operatorname{Binomial}(n,p)\\) and an integer threshold \\(r\\), \\(P(X<r)=\\sum_{k=0}^{r-1}\\binom{n}{k}p^k(1-p)^{n-k}\\). Distinguish fewer than \\(r\\) from at most \\(r\\), which includes the term \\(X=r\\).",
+  "answer_text": "E. \\(0.92\\)"
 }
 ]
