@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-09-21T18:13:22.366047+00:00",
+  "updated_at": "2026-09-21T22:01:16.780467+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7762.6299,
-        "change_pct": 1.466,
+        "price": 7764.7002,
+        "change_pct": 1.493,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 27088.0527,
-        "change_pct": 2.132,
+        "price": 27122.0938,
+        "change_pct": 2.261,
         "low_52w": 20794.6406,
-        "high_52w": 27093.9004
+        "high_52w": 27122.0938
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 52018.8516,
-        "change_pct": 0.651,
+        "price": 52048.8281,
+        "change_pct": 0.709,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 35954.9688,
-        "change_pct": 0.414,
+        "price": 36009.3984,
+        "change_pct": 0.566,
         "low_52w": 29732.0,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 53.34,
-        "change_pct": 0.566,
+        "price": 53.41,
+        "change_pct": 0.698,
         "low_52w": 44.34,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2875.2532,
-        "change_pct": 0.519,
+        "price": 2875.3601,
+        "change_pct": 0.523,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 337.88,
-        "change_pct": 0.521,
+        "price": 338.98,
+        "change_pct": 0.848,
         "low_52w": 245.27,
         "high_52w": 340.08
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 499.255,
-        "change_pct": 1.109,
+        "price": 501.61,
+        "change_pct": 1.586,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 227.1899,
-        "change_pct": 2.213,
+        "price": 227.38,
+        "change_pct": 2.299,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 258.3,
-        "change_pct": 1.809,
+        "price": 258.45,
+        "change_pct": 1.868,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 288.58,
-        "change_pct": 1.452,
+        "price": 289.64,
+        "change_pct": 1.825,
         "low_52w": 201.2,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 189.79,
-        "change_pct": 5.827,
+        "price": 193.38,
+        "change_pct": 7.829,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 164.43,
-        "change_pct": -1.35,
+        "price": 165.03,
+        "change_pct": -0.99,
         "low_52w": 127.18,
         "high_52w": 183.92
       }
@@ -137,24 +137,24 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.836,
-        "change_pct": -0.412,
+        "price": 4.834,
+        "change_pct": -0.453,
         "low_52w": 3.512,
         "high_52w": 4.859
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.97,
-        "change_pct": -0.56,
+        "price": 4.963,
+        "change_pct": -0.7,
         "low_52w": 3.953,
         "high_52w": 5.006
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.303,
-        "change_pct": -0.525,
+        "price": 5.296,
+        "change_pct": -0.657,
         "low_52w": 4.539,
         "high_52w": 5.364
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.403,
-        "change_pct": 0.282,
+        "price": 1.4031,
+        "change_pct": 0.292,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1471,
-        "change_pct": -0.048,
+        "price": 1.1468,
+        "change_pct": -0.071,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3372,
-        "change_pct": 0.106,
+        "price": 1.3368,
+        "change_pct": 0.078,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 157.478,
-        "change_pct": 0.864,
+        "price": 157.343,
+        "change_pct": 0.778,
         "low_52w": 147.083,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4383.3999,
-        "change_pct": -0.938,
+        "price": 4381.0,
+        "change_pct": -0.992,
         "low_52w": 3768.1001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 92.12,
-        "change_pct": -8.156,
+        "price": 91.97,
+        "change_pct": -8.305,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.843,
-        "change_pct": -2.37,
+        "price": 2.829,
+        "change_pct": -2.85,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.7665,
-        "change_pct": 2.29,
+        "price": 6.792,
+        "change_pct": 2.676,
         "low_52w": 4.573,
         "high_52w": 6.8035
       }
@@ -235,58 +235,65 @@
     },
     {
       "term": "5Y",
-      "value": 4.836
+      "value": 4.834
     },
     {
       "term": "10Y",
-      "value": 4.97
+      "value": 4.963
     },
     {
       "term": "30Y",
-      "value": 5.303
+      "value": 5.296
     }
   ],
   "news": [
     {
-      "title": "Stock market today: Nasdaq surges 2%, Dow and S&P 500 gain as chip stocks rally, oil prices fall",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-21-dow-sp-500-nasdaq-080214605.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Resilient market warning signs and a John Summit NYSE DJ set",
-      "link": "https://finance.yahoo.com/video/resilient-market-warning-signs-john-140227430.html",
+      "title": "Warren Buffett will go down as the 'greatest investor of all time'",
+      "link": "https://finance.yahoo.com/video/warren-buffett-down-greatest-investor-203100448.html",
       "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Advance as Communication Services, Technology Giants Jump Amid Slumping Crude Oil",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-advance-communication-180405761.html",
+      "title": "2 Reasons to Sell MMSI and 1 Stock to Buy Instead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-sell-mmsi-1-215825955.html",
+      "publisher": "StockStory",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Nike (NKE) Brings in LVMH’s Alexandre Arnault as it Drops Out of the S&P 100",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nike-nke-brings-lvmh-alexandre-214913830.html",
+      "publisher": "Insider Monkey",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Goldman Sachs (GS) Rises Higher Than Market: Key Facts",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-gs-rises-higher-214507076.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Exxon Mobil Holdings (XOM) Stock Drops Despite Market Gains: Important Facts to Note",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/exxon-mobil-holdings-xom-stock-214507501.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Enbridge (ENB) Stock Sinks As Market Gains: Here's Why",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/enbridge-enb-stock-sinks-market-214507055.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: The Index Closes Higher as Tech, Base Metals and Financials Gain",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-higher-202426685.html",
       "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Uranium Stocks Are Rallying. Why NXE Got Initiated At Overweight.",
-      "link": "https://www.investors.com/news/nuclear-smr-stocks-rally-nexgen-energy-nxe-initiated-overweight/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "VOO and SPYM Track the Same S&P 500, Yet Only One Is Allowed in Your Kid’s Trump Account",
-      "link": "https://247wallst.com/investing/etf/2026/09/21/voo-and-spym-track-the-same-sp-500-yet-only-one-is-allowed-in-your-kids-trump-account/",
-      "publisher": "24/7 Wall St.",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Update: Equities Rise Intraday as Chip Stocks Rally",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/equities-rise-intraday-chip-stocks-175229305.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPC",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -320,13 +327,6 @@
     {
       "title": "TSX Closer: Index Falls as Technology, Health Care Weigh; Energy Gains on Surging Oil Prices",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-technology-202158011.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Edges Higher as Healthcare Gains Offset Base Metals Weakness; Oil Rises",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-edges-higher-202012457.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
