@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T20:12:49.307393+00:00",
+  "updated_at": "2026-09-22T22:59:38.847028+00:00",
   "assets": {
     "Indices": [
       {
@@ -45,8 +45,8 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2890.8953,
-        "change_pct": 0.54,
+        "price": 2889.9189,
+        "change_pct": 0.506,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4063,
-        "change_pct": 0.495,
+        "price": 1.4066,
+        "change_pct": 0.51,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1453,
-        "change_pct": -0.229,
+        "price": 1.145,
+        "change_pct": -0.263,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3347,
-        "change_pct": -0.314,
+        "price": 1.3343,
+        "change_pct": -0.338,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 157.376,
-        "change_pct": 0.21,
+        "price": 157.45,
+        "change_pct": 0.257,
         "low_52w": 147.083,
         "high_52w": 163.864
       }
@@ -213,18 +213,18 @@
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.156,
-        "change_pct": 11.283,
+        "price": 3.172,
+        "change_pct": 11.848,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.907,
-        "change_pct": 3.298,
+        "price": 6.9015,
+        "change_pct": 3.215,
         "low_52w": 4.573,
-        "high_52w": 6.907
+        "high_52w": 6.9015
       }
     ]
   },
@@ -248,45 +248,52 @@
   ],
   "news": [
     {
-      "title": "The return of the AI rally: What's fueling the latest push into tech?",
-      "link": "https://finance.yahoo.com/video/return-ai-rally-whats-fueling-125206390.html",
+      "title": "Where to find 'relative value' outside of US equities",
+      "link": "https://finance.yahoo.com/video/where-relative-value-outside-us-204204013.html",
       "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Warren Buffett will go down as the 'greatest investor of all time'",
-      "link": "https://finance.yahoo.com/video/warren-buffett-down-greatest-investor-203100448.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "VTI’s 3,000 Extra Stocks Cost Holders $393,400 Per $500,000 Over the Past Decade",
+      "link": "https://247wallst.com/investing/etf/2026/09/22/vtis-3000-extra-stocks-cost-holders-393400-per-500000-over-the-past-decade/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "iShares Semiconductor ETF vs. iShares U.S. Technology ETF: Which Is the Better Buy Right Now?",
-      "link": "https://www.fool.com/coverage/etfs/2026/09/22/ishares-semiconductor-etf-vs-ishares-u-s-technology-etf-which-is-the-better-buy-right-now/",
-      "publisher": "Motley Fool",
+      "title": "The Market Is Near Another All-Time High and You’re 66 With Cash to Invest. Buying Now Feels Like the Top. These 3 ETFs Are How You Get In Anyway",
+      "link": "https://247wallst.com/investing/etf/2026/09/22/the-market-is-near-another-all-time-high-and-youre-66-with-cash-to-invest-buying-now-feels-like-the-top-these-3-etfs-are-how-you-get-in-anyway/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Has Arista Networks Stock Quietly Become A Different Bet?",
-      "link": "https://www.trefis.com/articles/616165/has-arista-networks-stock-quietly-become-a-different-bet/2026-09-22",
-      "publisher": "Trefis",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: Dow Skids As Trump Threatens Iran; This Medical Play Hits A Buy Zone (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-peace-hopes-oil-prices-treasury-yields/?src=A00220&yptr=yahoo",
+      "title": "Dow Jones Futures: Nasdaq Hits New High; Sandisk, Micron Trigger Buy Signals",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nasdaq-hits-high-sandisk-micron-buy-signals/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Adobe Is Down 32% This Year: Is ADBE Stock Dead Money or Due for a Bounce?",
-      "link": "https://247wallst.com/investing/2026/09/22/adobe-is-down-32-this-year-is-adbe-stock-dead-money-or-due-for-a-bounce/",
-      "publisher": "24/7 Wall St.",
+      "title": "Rocket Lab Corporation (RKLB) Stock Moves 2.99%: What You Should Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-corporation-rklb-stock-221507513.html",
+      "publisher": "Zacks",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "AST SpaceMobile, Inc. (ASTS) Stock Moves 2.91%: What You Should Know",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-inc-asts-stock-221506971.html",
+      "publisher": "Zacks",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Closes Higher as Technology, Healthcare and Base Metals Lead Gains",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-higher-202417973.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -320,13 +327,6 @@
     {
       "title": "TSX Closer: Index Falls as Energy Shares Slide With Oil; Investors Weigh Fed Rate Hike",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-energy-202222298.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Falls as Technology, Health Care Weigh; Energy Gains on Surging Oil Prices",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-technology-202158011.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
