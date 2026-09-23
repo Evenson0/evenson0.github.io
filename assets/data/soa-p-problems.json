@@ -928,5 +928,121 @@
   ],
   "generalization": "For \\(X\\sim\\operatorname{Binomial}(n,p)\\) and an integer threshold \\(r\\), \\(P(X<r)=\\sum_{k=0}^{r-1}\\binom{n}{k}p^k(1-p)^{n-k}\\). Distinguish fewer than \\(r\\) from at most \\(r\\), which includes the term \\(X=r\\).",
   "answer_text": "E. \\(0.92\\)"
+},
+  {
+  "id": 49,
+  "topic": "Sampling Without Replacement",
+  "title": "Exercise 49",
+  "statement": "A drawer contains four white socks, six red socks, and two black socks. Two socks are taken at random from the drawer without replacement. What is the probability that both socks will be the same color?",
+  "choices": [
+    "\\(1/66\\)",
+    "\\(1/11\\)",
+    "\\(5/22\\)",
+    "\\(1/3\\)",
+    "\\(7/18\\)"
+  ],
+  "correct": 3,
+  "solution_steps": [
+    "There are \\(4+6+2=12\\) socks, giving \\(\\binom{12}{2}=66\\) equally likely unordered pairs.",
+    "The favorable cases are mutually exclusive: two white socks, two red socks, or two black socks.",
+    "Their counts are \\(\\binom{4}{2}=6\\), \\(\\binom{6}{2}=15\\), and \\(\\binom{2}{2}=1\\), respectively.",
+    "Therefore, \\(P(\\text{same color})=\\frac{6+15+1}{66}=\\frac{22}{66}=\\frac13\\).",
+    "Equivalently, using sequential draws gives \\(\\frac4{12}\\frac3{11}+\\frac6{12}\\frac5{11}+\\frac2{12}\\frac1{11}=\\frac13\\)."
+  ],
+  "generalization": "If a population contains \\(n_i\\) objects of category \\(i\\), with total \\(N=\\sum_i n_i\\geq2\\), two uniform draws without replacement have the same category with probability \\(\\frac{\\sum_i\\binom{n_i}{2}}{\\binom{N}{2}}=\\sum_i\\frac{n_i(n_i-1)}{N(N-1)}\\).",
+  "answer_text": "D. \\(1/3\\)"
+},
+{
+  "id": 50,
+  "topic": "Sampling With Replacement",
+  "title": "Exercise 50",
+  "statement": "A drawer contains four white socks, six red socks, and two black socks. Two socks are taken at random from the drawer with replacement. What is the probability that both socks will be the same color?",
+  "choices": [
+    "\\(1/66\\)",
+    "\\(1/11\\)",
+    "\\(5/22\\)",
+    "\\(1/3\\)",
+    "\\(7/18\\)"
+  ],
+  "correct": 4,
+  "solution_steps": [
+    "With replacement and independent random draws, the color probabilities remain \\(P(W)=4/12\\), \\(P(R)=6/12\\), and \\(P(B)=2/12\\).",
+    "The probability of two white socks is \\((4/12)^2=1/9\\).",
+    "The probability of two red socks is \\((6/12)^2=1/4\\), and the probability of two black socks is \\((2/12)^2=1/36\\).",
+    "These cases are mutually exclusive, so \\(P(\\text{same color})=\\frac19+\\frac14+\\frac1{36}=\\frac{14}{36}=\\frac7{18}\\).",
+    "Unlike sampling without replacement, the second draw still has 12 available socks and the original color counts."
+  ],
+  "generalization": "For two independent draws with category probabilities \\(p_1,\\ldots,p_m\\), the probability of matching categories is \\(\\sum_{i=1}^{m}p_i^2\\). Multiply probabilities within each matching case, then add over the mutually exclusive categories.",
+  "answer_text": "E. \\(7/18\\)"
+},
+{
+  "id": 51,
+  "topic": "Sampling Without Replacement: Stopping Rules",
+  "title": "Exercise 51",
+  "statement": "[110.S88.35] A box contains 35 gems, of which ten are real diamonds and 25 are fake diamonds. Gems are randomly taken out of the box, one at a time without replacement. What is the probability that exactly two fakes are selected before the second real diamond is selected?",
+  "choices": [
+    "\\(\\frac{225}{5236}\\)",
+    "\\(\\frac{675}{5236}\\)",
+    "\\(\\frac{\\binom{25}{2}\\binom{10}{2}}{\\binom{35}{4}}\\)",
+    "\\(\\binom{3}{2}\\left(\\frac{10}{35}\\right)^2\\left(\\frac{25}{35}\\right)^2\\)",
+    "\\(\\binom{4}{2}\\left(\\frac{10}{35}\\right)^2\\left(\\frac{25}{35}\\right)^2\\)"
+  ],
+  "correct": 1,
+  "solution_steps": [
+    "Exactly two fakes before the second real diamond means that the fourth draw is real, while the first three draws contain exactly one real diamond and two fakes.",
+    "Writing \\(R\\) for real and \\(F\\) for fake, the possible sequences are \\(RFFR\\), \\(FRFR\\), and \\(FFRR\\).",
+    "Each sequence has probability \\(\\frac{10\\cdot9\\cdot25\\cdot24}{35\\cdot34\\cdot33\\cdot32}\\). The order of the numerator factors changes, but their product is the same.",
+    "Adding the three mutually exclusive sequences gives \\(3\\frac{10\\cdot9\\cdot25\\cdot24}{35\\cdot34\\cdot33\\cdot32}=\\frac{675}{5236}\\).",
+    "Alternatively, the probability of one real and two fakes in the first three draws is \\(\\frac{\\binom{10}{1}\\binom{25}{2}}{\\binom{35}{3}}\\). Given that event, 9 of the remaining 32 gems are real.",
+    "Thus the answer is also \\(\\frac{\\binom{10}{1}\\binom{25}{2}}{\\binom{35}{3}}\\frac9{32}\\). Merely requiring two real diamonds among the first four draws does not enforce that the fourth draw is the second real diamond."
+  ],
+  "generalization": "In uniform sampling without replacement from \\(N\\) objects containing \\(K\\) successes, the probability of exactly \\(f\\) failures before the \\(r\\)th success is \\(\\frac{\\binom{K}{r-1}\\binom{N-K}{f}}{\\binom{N}{r+f-1}}\\frac{K-r+1}{N-r-f+1}\\), for \\(1\\leq r\\leq K\\) and \\(0\\leq f\\leq N-K\\). This is a negative hypergeometric stopping problem: the last draw must be a success.",
+  "answer_text": "B. \\(\\frac{675}{5236}\\)"
+},
+{
+  "id": 52,
+  "topic": "Multinomial Distribution",
+  "title": "Exercise 52",
+  "statement": "[110.S88.07] A bag contains 10 balls, 5 of which are white, 3 are red, and two are black. If three balls are drawn with replacement from the bag, what is the probability that one ball of each color is drawn?",
+  "choices": [
+    "\\(0.03\\)",
+    "\\(0.09\\)",
+    "\\(0.18\\)",
+    "\\(0.40\\)",
+    "\\(0.84\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "The independent draws have constant color probabilities \\(p_W=5/10\\), \\(p_R=3/10\\), and \\(p_B=2/10\\).",
+    "We need category counts \\((1,1,1)\\) in three draws, so use the multinomial formula.",
+    "There are \\(\\frac{3!}{1!1!1!}=6\\) possible orders of the three colors.",
+    "Each order has probability \\(\\frac5{10}\\frac3{10}\\frac2{10}=0.03\\).",
+    "Therefore, the desired probability is \\(6(0.03)=0.18\\)."
+  ],
+  "generalization": "For \\(n\\) independent trials with constant category probabilities \\(p_i\\), the probability of counts \\(k_i\\) summing to \\(n\\) is \\(\\frac{n!}{\\prod_i k_i!}\\prod_i p_i^{k_i}\\). The factorial coefficient accounts for all orders producing those counts.",
+  "answer_text": "C. \\(0.18\\)"
+},
+{
+  "id": 53,
+  "topic": "Multinomial Distribution",
+  "title": "Exercise 53",
+  "statement": "[110.F86.16] A random sample of size 6 is selected with replacement from an urn that contains 10 red, 5 white, and 5 blue balls. What is the probability that the sample contains 2 balls of each color?",
+  "choices": [
+    "\\(1/1024\\)",
+    "\\(1/646\\)",
+    "\\(45/512\\)",
+    "\\(75/646\\)",
+    "\\(45/64\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "There are 20 balls. On each independent draw, the color probabilities are \\(p_R=10/20=1/2\\), \\(p_W=5/20=1/4\\), and \\(p_B=5/20=1/4\\).",
+    "We need exactly two occurrences of each color in six draws.",
+    "The number of color sequences with these counts is \\(\\frac{6!}{2!2!2!}=90\\).",
+    "Each such sequence has probability \\(\\left(\\frac12\\right)^2\\left(\\frac14\\right)^2\\left(\\frac14\\right)^2=\\frac1{1024}\\).",
+    "Therefore, the probability is \\(90\\cdot\\frac1{1024}=\\frac{45}{512}\\)."
+  ],
+  "generalization": "When repeated independent draws must produce specified counts in several categories, use one multinomial coefficient to count the possible orders. Multiplying separate binomial probabilities for the category counts is incorrect because those counts are dependent and must sum to the fixed sample size.",
+  "answer_text": "C. \\(45/512\\)"
 }
 ]
