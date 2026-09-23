@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T20:25:59.991758+00:00",
+  "updated_at": "2026-09-23T23:13:11.918366+00:00",
   "assets": {
     "Indices": [
       {
@@ -53,8 +53,8 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10705.2598,
-        "change_pct": -0.314,
+        "price": 10739.0,
+        "change_pct": 0.75,
         "low_52w": 9214.0,
         "high_52w": 10910.5996
       },
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4098,
-        "change_pct": 0.464,
+        "price": 1.4101,
+        "change_pct": 0.249,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1388,
-        "change_pct": -0.666,
+        "price": 1.1387,
+        "change_pct": -0.533,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3242,
-        "change_pct": -0.962,
+        "price": 1.3243,
+        "change_pct": -0.748,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.32,
-        "change_pct": 0.604,
+        "price": 158.255,
+        "change_pct": 0.502,
         "low_52w": 147.083,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4321.2002,
-        "change_pct": -1.261,
+        "price": 4324.2002,
+        "change_pct": -1.193,
         "low_52w": 3768.1001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 92.7,
-        "change_pct": -1.998,
+        "price": 92.22,
+        "change_pct": -2.506,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.168,
-        "change_pct": 6.847,
+        "price": 3.171,
+        "change_pct": 6.948,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.779,
-        "change_pct": 0.288,
+        "price": 6.7875,
+        "change_pct": 0.414,
         "low_52w": 4.5845,
         "high_52w": 6.8035
       }
@@ -255,38 +255,45 @@
       "time": "Latest"
     },
     {
-      "title": "Wall Street ends down as oil prices, Treasury yields rise",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-muted-mideast-114116425.html",
-      "publisher": "Reuters",
+      "title": "Looking for consumer and investor sentiment trends? Turn to social media.",
+      "link": "https://finance.yahoo.com/video/looking-consumer-investor-sentiment-trends-173227182.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "If I Could Only Buy and Hold 1 ETF for the Next 20 Years, Here's Where I'd Invest",
-      "link": "https://www.fool.com/investing/2026/09/23/if-i-could-only-buy-and-hold-1-etf-for-the-next-20/",
-      "publisher": "Motley Fool",
+      "title": "Washington’s oil lever is depleted, John Divine says the next move is in the VIX and natural gas",
+      "link": "https://www.thestreet.com/crypto/markets/washingtons-oil-lever-is-depleted-john-divine-says-the-next-move-is-in-the-vix-and-natural-gas",
+      "publisher": "TheStreet",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Meta’s Muse AI Agent Triggers Worries About Brokerage Stocks",
-      "link": "https://www.barrons.com/advisor/articles/meta-muse-ai-agent-brokerage-stocks-37d46fcc?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Ball (BALL): Buy, Sell, or Hold Post Q2 Earnings?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ball-ball-buy-sell-hold-225222039.html",
+      "publisher": "StockStory",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Palantir Could Be Big Winner as Air Traffic Control Goes AI. The Stock Is Rising.",
-      "link": "https://www.barrons.com/articles/palantir-stock-ai-faa-air-traffic-control-373cce03?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Steve Weiss Dumped an Energy Stock That Tripled the S&P 500 Over a Decade",
+      "link": "https://247wallst.com/investing/2026/09/23/steve-weiss-dumped-an-energy-stock-that-tripled-the-sp-500-over-a-decade/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why Disney Is Raising Streaming Prices—Again",
-      "link": "https://www.barrons.com/articles/disney-stock-streaming-prices-hulu-espn-829da9ac?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Dow Jones Futures: Stocks Fall As Treasury Yields Soar; Palantir, Palo Alto Flash Buy Signals",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-treasury-yields-soar-palantir-palo-alto-buy-signal/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Falls 1.6% as Base Metals, Financials Drag; Oil Rises on US-Iran Tensions",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-1-202226244.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "Ottawa's 'mega deduction' tax write-off could boost these TSX stocks, analysts say",
       "link": "https://financialpost.com/investing/tax-write-off-boost-tsx-stocks",
       "publisher": "Financial Post",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: The Index Ends Lower as Industrials, Energy Weigh",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-ends-lower-202110448.html",
-      "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
     }
