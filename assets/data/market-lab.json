@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:32:44.947929+00:00",
+  "updated_at": "2026-09-24T23:31:14.227692+00:00",
   "assets": {
     "Indices": [
       {
@@ -53,8 +53,8 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10679.9902,
-        "change_pct": -0.236,
+        "price": 10705.2998,
+        "change_pct": -0.314,
         "low_52w": 9214.0,
         "high_52w": 10910.5996
       },
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4142,
-        "change_pct": 0.543,
+        "price": 1.4144,
+        "change_pct": 0.279,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1375,
-        "change_pct": -0.635,
+        "price": 1.138,
+        "change_pct": -0.013,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3213,
-        "change_pct": -0.978,
+        "price": 1.3216,
+        "change_pct": -0.196,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.922,
-        "change_pct": 0.926,
+        "price": 158.814,
+        "change_pct": 0.347,
         "low_52w": 147.083,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4300.2998,
-        "change_pct": -0.419,
+        "price": 4307.7998,
+        "change_pct": -0.245,
         "low_52w": 3768.1001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 95.19,
-        "change_pct": 3.288,
+        "price": 94.07,
+        "change_pct": 2.072,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.311,
-        "change_pct": 9.527,
+        "price": 3.271,
+        "change_pct": 8.204,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.759,
-        "change_pct": 1.213,
+        "price": 6.774,
+        "change_pct": 1.438,
         "low_52w": 4.7,
         "high_52w": 6.8035
       }
@@ -248,44 +248,44 @@
   ],
   "news": [
     {
-      "title": "S&P 500 ends marginally lower as investors focus on US-Iran war",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-fall-middle-102658799.html",
-      "publisher": "Reuters",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq trims losses as hopes of Hormuz deal offset rising bond yields",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-24-dow-sp-500-nasdaq-080352893.html",
+      "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Trade Mixed Amid Higher Crude Oil, Treasury Yields",
-      "link": "https://finance.yahoo.com/economy/articles/us-equity-indexes-trade-mixed-195903937.html",
-      "publisher": "MT Newswires",
+      "title": "META Stock Is Set For Its Best Month In Over 13 Years — It’s Inches Away From $2 Trillion Market Cap",
+      "link": "https://stocktwits.com/news-articles/markets/equity/meta-stock-is-set-for-its-best-month-in-over-13-years-it-s-inches-away-from-2-trillion-market-cap/cZMJ1cpRBab",
+      "publisher": "Stocktwits",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Is IBM Stock's Upside Built On Growth It Is Not Guiding To?",
-      "link": "https://www.trefis.com/articles/616419/is-ibm-stocks-upside-built-on-growth-it-is-not-guiding-to/2026-09-24",
-      "publisher": "Trefis",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "9-24-2026: Trump-Xi Summit, Surging Yields + AI Disruption Trade Fears",
-      "link": "https://finance.yahoo.com/video/9-24-2026-trump-xi-193312855.html",
-      "publisher": "NYSE",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock Market Today: Nasdaq Trims Losses As Yields, Oil Jump; Costco Slides (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-nvidia-stock-nvda-buy-point/?src=A00220&yptr=yahoo",
+      "title": "Dow Jones Futures: Market Rally Resilient As Yields, Oil Prices Keep Rising; Tesla Event On Deck",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-resilient-yields-oil-prices-rising-tesla-semi-event/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "If This Rally Extends, Here’s the S&P 500’s Upside Target",
-      "link": "https://www.barrons.com/articles/sp-500-rally-upside-target-technical-analysis-b759eb94?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "What Could Send Autodesk Stock Higher?",
+      "link": "https://www.trefis.com/articles/616462/what-could-send-autodesk-stock-higher/2026-09-24",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "The Market Looks Expensive. This ETF Pays a 11.86% Yield While You Wait for It to Come Down",
+      "link": "https://247wallst.com/investing/etf/2026/09/24/the-market-looks-expensive-this-etf-pays-a-11-86-yield-while-you-wait-for-it-to-come-down/",
+      "publisher": "24/7 Wall St.",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "SPY’s 9.45 Basis Points Hides $6,450 a Decade on $100,000 Versus Cheaper Peers",
+      "link": "https://247wallst.com/investing/etf/2026/09/24/spys-9-45-basis-points-hides-6450-a-decade-on-100000-versus-cheaper-peers/",
+      "publisher": "24/7 Wall St.",
       "related": "^GSPC",
       "time": "Latest"
     },
