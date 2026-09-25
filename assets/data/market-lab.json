@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T20:32:29.924832+00:00",
+  "updated_at": "2026-09-25T23:36:42.931187+00:00",
   "assets": {
     "Indices": [
       {
@@ -45,7 +45,7 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2837.5518,
+        "price": 2837.552,
         "change_pct": 0.07,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
@@ -53,8 +53,8 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10695.25,
-        "change_pct": 0.143,
+        "price": 10680.0,
+        "change_pct": -0.236,
         "low_52w": 9214.0,
         "high_52w": 10910.5996
       },
@@ -163,16 +163,16 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4144,
-        "change_pct": 0.276,
+        "price": 1.4139,
+        "change_pct": 0.242,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1396,
-        "change_pct": 0.124,
+        "price": 1.1392,
+        "change_pct": 0.09,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
@@ -180,15 +180,15 @@
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
         "price": 1.3246,
-        "change_pct": 0.034,
+        "change_pct": 0.037,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 157.263,
-        "change_pct": -0.633,
+        "price": 157.185,
+        "change_pct": -0.682,
         "low_52w": 147.083,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4323.7998,
-        "change_pct": 0.6,
+        "price": 4320.5,
+        "change_pct": 0.523,
         "low_52w": 3771.1001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 92.74,
-        "change_pct": -1.977,
+        "price": 92.44,
+        "change_pct": -2.294,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.242,
-        "change_pct": -1.668,
+        "price": 3.251,
+        "change_pct": -1.395,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.7735,
-        "change_pct": 0.819,
+        "price": 6.779,
+        "change_pct": 0.9,
         "low_52w": 4.7,
         "high_52w": 6.8035
       }
@@ -255,37 +255,37 @@
       "time": "Latest"
     },
     {
-      "title": "US Equity Indexes Rose This Week as Mega-Cap Tech Jumps While Iran Proposes Conditional Reopening of Hormuz Chokepoint",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rose-week-202553968.html",
-      "publisher": "MT Newswires",
+      "title": "Why Richard Ross is buying semiconductors after the AI pullback",
+      "link": "https://www.thestreet.com/investing/why-richard-ross-is-buying-semiconductors-after-the-ai-pullback",
+      "publisher": "TheStreet",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Surges 450 Points On Iran Peace Hopes; Micron Rises (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-peace-hopes-micron-sandisk/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "S&P 500, Dow, Nasdaq End Week Higher On Chipmaker Strength, Easing Oil Amid Signs Of Easing US-Iran Conflict — META, COST, MSFT, CRWD, SKHY In Focus",
+      "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-end-week-higher-on-chipmaker-strength-easing-oil-amid-signs-of-easing-us-iran-conflict-meta-cost-msft-crwd-skhy-in-focus/cZMOFkXRBOV",
+      "publisher": "Stocktwits",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Wall Street ends higher as investors buy AI stocks; Microsoft rallies",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-gain-ai-095035646.html",
-      "publisher": "Reuters",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "How Much Should One Number Worry Starbucks Shareholders?",
-      "link": "https://www.trefis.com/articles/616648/how-much-should-one-number-worry-starbucks-shareholders/2026-09-25",
+      "title": "What Needs To Be True To Buy Twist Bioscience Stock Now?",
+      "link": "https://www.trefis.com/articles/616634/what-needs-to-be-true-to-buy-twist-bioscience-stock-now/2026-09-25",
       "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Jump as Crude Oil Slides Amid Iran's Conditional Proposal to Reopen Hormuz Chokepoint",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-jump-crude-193839642.html",
-      "publisher": "MT Newswires",
+      "title": "Is Bloom Energy Stock's Drop A Chance To Buy?",
+      "link": "https://www.trefis.com/articles/616641/is-bloom-energy-stocks-drop-a-chance-to-buy/2026-09-25",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Are You Sure You Understand Kinross Gold Stock's Risk?",
+      "link": "https://www.trefis.com/articles/616646/are-you-sure-you-understand-kinross-gold-stocks-risk/2026-09-25",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
