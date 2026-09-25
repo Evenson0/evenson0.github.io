@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-09-25T17:15:44.215815+00:00",
+  "updated_at": "2026-09-25T20:32:29.924832+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7742.0698,
-        "change_pct": 0.492,
+        "price": 7743.4102,
+        "change_pct": 0.51,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 27092.916,
-        "change_pct": 0.57,
+        "price": 27068.7168,
+        "change_pct": 0.48,
         "low_52w": 20794.6406,
         "high_52w": 27244.2793
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 51759.5508,
-        "change_pct": 0.798,
+        "price": 51828.6211,
+        "change_pct": 0.932,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 35739.0117,
-        "change_pct": 0.091,
+        "price": 35800.8906,
+        "change_pct": 0.264,
         "low_52w": 29732.0,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 53.0,
-        "change_pct": 0.094,
+        "price": 53.08,
+        "change_pct": 0.246,
         "low_52w": 44.34,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2842.3245,
-        "change_pct": 0.238,
+        "price": 2837.5518,
+        "change_pct": 0.07,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 339.71,
-        "change_pct": 1.128,
+        "price": 341.07,
+        "change_pct": 1.533,
         "low_52w": 245.27,
-        "high_52w": 340.08
+        "high_52w": 341.07
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 517.55,
-        "change_pct": 3.94,
+        "price": 516.17,
+        "change_pct": 3.663,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 225.2908,
-        "change_pct": 0.317,
+        "price": 225.07,
+        "change_pct": 0.218,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 250.48,
-        "change_pct": 0.441,
+        "price": 249.67,
+        "change_pct": 0.116,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 284.9,
-        "change_pct": 0.989,
+        "price": 285.63,
+        "change_pct": 1.248,
         "low_52w": 201.2,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 201.51,
-        "change_pct": -1.846,
+        "price": 201.2,
+        "change_pct": -1.997,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 171.19,
-        "change_pct": 0.955,
+        "price": 170.9,
+        "change_pct": 0.784,
         "low_52w": 128.08,
         "high_52w": 183.92
       }
@@ -137,58 +137,58 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 5.023,
-        "change_pct": -0.04,
+        "price": 5.007,
+        "change_pct": -0.358,
         "low_52w": 3.512,
         "high_52w": 5.025
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 5.192,
-        "change_pct": 0.581,
+        "price": 5.184,
+        "change_pct": 0.426,
         "low_52w": 3.953,
-        "high_52w": 5.192
+        "high_52w": 5.184
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.51,
-        "change_pct": 0.897,
+        "price": 5.504,
+        "change_pct": 0.787,
         "low_52w": 4.539,
-        "high_52w": 5.51
+        "high_52w": 5.504
       }
     ],
     "FX": [
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4151,
-        "change_pct": 0.325,
+        "price": 1.4144,
+        "change_pct": 0.276,
         "low_52w": 1.3492,
         "high_52w": 1.4235
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1393,
-        "change_pct": 0.101,
+        "price": 1.1396,
+        "change_pct": 0.124,
         "low_52w": 1.1354,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3243,
-        "change_pct": 0.008,
+        "price": 1.3246,
+        "change_pct": 0.034,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 157.323,
-        "change_pct": -0.595,
+        "price": 157.263,
+        "change_pct": -0.633,
         "low_52w": 147.083,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4326.6001,
-        "change_pct": 0.665,
+        "price": 4323.7998,
+        "change_pct": 0.6,
         "low_52w": 3771.1001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 92.1,
-        "change_pct": -2.653,
+        "price": 92.74,
+        "change_pct": -1.977,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.199,
-        "change_pct": -2.972,
+        "price": 3.242,
+        "change_pct": -1.668,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.768,
-        "change_pct": 0.737,
+        "price": 6.7735,
+        "change_pct": 0.819,
         "low_52w": 4.7,
         "high_52w": 6.8035
       }
@@ -235,51 +235,65 @@
     },
     {
       "term": "5Y",
-      "value": 5.023
+      "value": 5.007
     },
     {
       "term": "10Y",
-      "value": 5.192
+      "value": 5.184
     },
     {
       "term": "30Y",
-      "value": 5.51
+      "value": 5.504
     }
   ],
   "news": [
     {
-      "title": "How to fix overvalued AI companies and a McDonald's market play",
-      "link": "https://finance.yahoo.com/video/fix-overvalued-ai-companies-mcdonalds-165755634.html",
-      "publisher": "Yahoo Finance Video",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq trims losses as hopes of Hormuz deal offset rising bond yields",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-24-dow-sp-500-nasdaq-080352893.html",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq notch weekly wins as market shrugs off bond sell-off, oil prices ease",
+      "link": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Michael Burry Ignores AI Cheers and Hunts for Mispriced Risk",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-ignores-ai-cheers-170018724.html",
-      "publisher": "GuruFocus.com",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Update: US Equity Indexes Rise as Crude Oil Slumps After Iran's Conditional Proposal to Reopen Strait of Hormuz",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/us-equity-indexes-rise-crude-165746768.html",
+      "title": "US Equity Indexes Rose This Week as Mega-Cap Tech Jumps While Iran Proposes Conditional Reopening of Hormuz Chokepoint",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-rose-week-202553968.html",
       "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "10 stocks rule the S&P 500: Brent Schutte on what to buy instead",
-      "link": "https://www.thestreet.com/video/10-stock-rule-the-sp-500-brent-schutte-on-what-to-buy-instead",
-      "publisher": "TheStreet",
+      "title": "Stock Market Today: Dow Surges 450 Points On Iran Peace Hopes; Micron Rises (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-peace-hopes-micron-sandisk/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Wall Street ends higher as investors buy AI stocks; Microsoft rallies",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-gain-ai-095035646.html",
+      "publisher": "Reuters",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "How Much Should One Number Worry Starbucks Shareholders?",
+      "link": "https://www.trefis.com/articles/616648/how-much-should-one-number-worry-starbucks-shareholders/2026-09-25",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Update: US Equity Indexes Jump as Crude Oil Slides Amid Iran's Conditional Proposal to Reopen Hormuz Chokepoint",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-jump-crude-193839642.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Edges Higher as Financials, Base Metals Gain",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-edges-higher-202340164.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -315,20 +329,6 @@
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-1-202226244.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "Lithium Argentina (TSX:LAR) Is Up 8.5% After S&P/TSX Index Addition And Equity Raise - What's Changed",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/lithium-argentina-tsx-lar-8-151700084.html",
-      "publisher": "Simply Wall St.",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "Tech stocks gain after tech titan dinner with Trump and China's Xi Jinping: AlphaCheck",
-      "link": "https://finance.yahoo.com/markets/article/tech-stocks-gain-after-tech-titan-dinner-with-trump-and-chinas-xi-jinping-alphacheck-135107178.html",
-      "publisher": "Yahoo Finance",
-      "related": "^TNX",
       "time": "Latest"
     }
   ],
