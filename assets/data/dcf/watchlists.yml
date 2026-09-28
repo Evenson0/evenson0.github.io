@@ -1,0 +1,18 @@
+# Yahoo Finance watchlists — imported 2026-09-28 (read-only, via Yahoo sign-in)
+# Source of truth for the DCF Lab symbol universe.
+# Note: ^GSPC and ^VIX are indices, not companies — the DCF pipeline should skip them.
+watchlists:
+  - name: "Insurance"
+    symbols: [OIG]
+  - name: "50%"
+    symbols: [ADMA, SOUN, KOPN, EOSE, KDK]
+  - name: "ETF"
+    symbols: [VOOG]
+  - name: "Compagnie Aérienne"
+    symbols: [DAL, ALK, UAL]
+  - name: "Day Trading"
+    symbols: []
+  - name: "Quantique"
+    symbols: [QNT, IONQ, QBTS]
+  - name: "My Watchlist"
+    symbols: [MELI, BBW, BIRK, SFM, ZTS, TPW.AX, ERO, QXO, QBTS, IONQ, ALK, LUV, DAL, ONDS, UMAC, AAL, KDK, EOSE, KOPN, SOUN, ADMA, PLTR, UBER, LULU, KLAR, ^GSPC, MOH, ACHR, NKE, ABCL, AIRS, SPCX, ^VIX, SION, TD, TD.TO, ACB, TENX, QTRX, MNDY, AIOT, SOFI, TSLA, AAPL, NVDA, AMZN, MSFT, META]
