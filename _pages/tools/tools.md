@@ -376,6 +376,15 @@ tool_theme: atlas
       </div>
     </a>
 
+    <a href="/tools/chain-ladder/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Chain Ladder Lab</h3>
+        <p class="lab-card-desc">
+          Estimate unpaid claim liabilities with the chain-ladder method: edit a loss triangle, select development factors, and project ultimates and reserves.
+        </p>
+      </div>
+    </a>
+
   </div>
 
 <h2 class="lab-section-title">Quantitative Finance</h2>
