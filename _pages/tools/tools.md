@@ -424,6 +424,15 @@ tool_theme: atlas
       </div>
     </a>
 
+    <a href="/tools/dcf-lab/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>DCF Lab</h3>
+        <p class="lab-card-desc">
+          Value any stock in your watchlists with a discounted cash flow model: automatic fundamentals, editable assumptions, scenarios, and sensitivity tables.
+        </p>
+      </div>
+    </a>
+
   </div>
 
 </div>
