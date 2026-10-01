@@ -833,6 +833,399 @@ mathjax: true
 
 </section>
 
+<section id="binomial-multinomial-hypergeometric">
+
+  <h2 class="p-section-title">
+    Binomial, Multinomial, and Hypergeometric Distributions
+  </h2>
+
+  <p>
+    These distributions count outcomes in a fixed number of trials
+    or draws. To choose the appropriate model, identify the categories,
+    check whether trials are independent, and determine whether
+    sampling is performed without replacement.
+  </p>
+
+  <article class="p-formula-box" id="binomial-distribution">
+
+    <span class="p-tag">Binomial distribution</span>
+
+    <h3>Count successes in independent trials</h3>
+
+    <p>
+      Use a binomial distribution when there are a fixed number
+      \(n\) of independent trials. Each trial is classified as
+      success or failure, with the same success probability \(p\).
+      Let \(X\) count the successes.
+    </p>
+
+    <div class="p-equation">
+      \[
+        X\sim\operatorname{Binomial}(n,p)
+      \]
+      \[
+        P(X=k)=\binom{n}{k}p^k(1-p)^{n-k},
+        \qquad k=0,\ldots,n.
+      \]
+    </div>
+
+    <p>
+      Here, \(n\) is the number of trials, \(p\) is the success
+      probability, and \(k\) is the desired number of successes.
+    </p>
+
+    <div class="p-equation">
+      \[
+        E[X]=np,
+        \qquad
+        \operatorname{Var}(X)=np(1-p).
+      \]
+    </div>
+
+    <details class="p-proof">
+      <summary>Why does the probability formula work?</summary>
+      <div class="p-proof-content">
+        <p>
+          A particular sequence containing \(k\) successes and
+          \(n-k\) failures has probability
+          \(p^k(1-p)^{n-k}\), by independence.
+        </p>
+        <p>
+          There are \(\binom{n}{k}\) ways to choose the positions
+          of the successes. These sequences are mutually exclusive,
+          so their probabilities add:
+        </p>
+        <div class="p-math">
+          \[
+            P(X=k)=\binom{n}{k}p^k(1-p)^{n-k}.
+          \]
+        </div>
+      </div>
+    </details>
+
+    <div class="p-note">
+      <p>
+        <strong>Example.</strong>
+        A coin has probability \(0.3\) of heads on each independent
+        flip. In five flips, the probability of exactly two heads is
+        \[
+          P(X=2)=\binom{5}{2}(0.3)^2(0.7)^3=0.3087.
+        \]
+      </p>
+      <p>
+        <strong>Recognition tip.</strong>
+        Uniform random sampling with replacement often gives this
+        model. Replacement itself is not required: the mathematical
+        conditions are independent trials and a constant success
+        probability.
+      </p>
+    </div>
+
+  </article>
+
+  <article class="p-formula-box" id="multinomial-distribution">
+
+    <span class="p-tag">Multinomial distribution</span>
+
+    <h3>Count outcomes in several categories</h3>
+
+    <p>
+      The multinomial distribution generalizes the binomial model.
+      Perform a fixed number \(n\) of independent trials, each producing
+      exactly one of \(m\) mutually exclusive and exhaustive categories.
+      The category probabilities remain constant across trials:
+    </p>
+
+    <div class="p-equation">
+      \[
+        p_i\geq 0,
+        \qquad
+        \sum_{i=1}^{m}p_i=1.
+      \]
+    </div>
+
+    <p>
+      Let \(X_i\) count outcomes in category \(i\). Then
+      \(X_1+\cdots+X_m=n\).
+    </p>
+
+    <div class="p-equation">
+      \[
+        P(X_1=k_1,\ldots,X_m=k_m)
+        =
+        \frac{n!}{k_1!\cdots k_m!}
+        \prod_{i=1}^{m}p_i^{k_i},
+      \]
+      \[
+        k_i\in\{0,1,\ldots,n\},
+        \qquad
+        \sum_{i=1}^{m}k_i=n.
+      \]
+    </div>
+
+    <div class="p-equation">
+      \[
+        E[X_i]=np_i,
+        \qquad
+        \operatorname{Var}(X_i)=np_i(1-p_i).
+      \]
+      \[
+        \operatorname{Cov}(X_i,X_j)=-np_ip_j,
+        \qquad i\ne j.
+      \]
+    </div>
+
+    <details class="p-proof">
+      <summary>Why does the probability formula work?</summary>
+      <div class="p-proof-content">
+        <p>
+          A particular sequence with category counts
+          \(k_1,\ldots,k_m\) has probability
+          \(\prod_{i=1}^{m}p_i^{k_i}\).
+        </p>
+        <p>
+          Choose \(k_1\) positions for category 1, then \(k_2\)
+          of the remaining positions for category 2, and continue:
+        </p>
+        <div class="p-math">
+          \[
+            \binom{n}{k_1}
+            \binom{n-k_1}{k_2}\cdots
+            =\frac{n!}{k_1!\cdots k_m!}.
+          \]
+        </div>
+        <p>
+          Multiplying the number of sequences by the probability
+          of each sequence gives the multinomial formula.
+        </p>
+      </div>
+    </details>
+
+    <div class="p-note">
+      <p>
+        <strong>Example.</strong>
+        A drawer contains 5 black, 3 blue, and 2 white socks.
+        Select one sock uniformly, record its color, replace it,
+        and mix the drawer before each new draw.
+        In six independent draws, the probability of obtaining
+        exactly two socks of each color is
+        \[
+          \frac{6!}{2!2!2!}(0.5)^2(0.3)^2(0.2)^2
+          =0.081.
+        \]
+      </p>
+      <p>
+        <strong>Important distinction.</strong>
+        The trials are independent, but the category counts
+        generally are not: they must add up to \(n\).
+        Each individual count satisfies
+        \(X_i\sim\operatorname{Binomial}(n,p_i)\).
+      </p>
+      <p>
+        With two categories, the multinomial formula reduces to
+        the binomial formula for the count in one category.
+      </p>
+    </div>
+
+  </article>
+
+  <article class="p-formula-box" id="hypergeometric-distribution">
+
+    <span class="p-tag">Hypergeometric distribution</span>
+
+    <h3>Count successes when sampling without replacement</h3>
+
+    <p>
+      Consider a population of \(N\) objects, containing \(K\)
+      successes and \(N-K\) failures. Select \(n\) objects uniformly
+      without replacement, so every subset of size \(n\) is equally
+      likely. Let \(X\) count the selected successes.
+    </p>
+
+    <div class="p-equation">
+      \[
+        P(X=k)
+        =
+        \frac{\binom{K}{k}\binom{N-K}{n-k}}
+             {\binom{N}{n}}.
+      \]
+      \[
+        \max(0,n-(N-K))\leq k\leq\min(n,K),
+        \qquad k\text{ an integer}.
+      \]
+    </div>
+
+    <p>
+      The numerator chooses the required successes and failures.
+      The denominator counts all possible samples.
+    </p>
+
+    <div class="p-equation">
+      \[
+        E[X]=n\frac{K}{N}.
+      \]
+      \[
+        \operatorname{Var}(X)
+        =
+        n\frac{K}{N}\left(1-\frac{K}{N}\right)
+        \frac{N-n}{N-1},
+        \qquad N>1.
+      \]
+    </div>
+
+    <p>
+      The factor \((N-n)/(N-1)\) is the finite population correction.
+      Compared with independent sampling with replacement, sampling
+      without replacement reduces the variance of the count.
+    </p>
+
+    <details class="p-proof">
+      <summary>Why does the probability formula work?</summary>
+      <div class="p-proof-content">
+        <p>
+          There are \(\binom{N}{n}\) equally likely unordered samples.
+          To obtain exactly \(k\) successes, choose \(k\) of the
+          \(K\) successes and \(n-k\) of the \(N-K\) failures.
+        </p>
+        <div class="p-math">
+          \[
+            \text{Favorable samples}
+            =\binom{K}{k}\binom{N-K}{n-k}.
+          \]
+        </div>
+        <p>
+          Divide the favorable count by the total count.
+          The bounds on \(k\) ensure that neither category is
+          asked to supply more objects than it contains.
+        </p>
+      </div>
+    </details>
+
+    <div class="p-note">
+      <p>
+        <strong>Example.</strong>
+        An urn contains 7 red and 3 black balls. Draw 4 balls
+        uniformly without replacement. The probability of exactly
+        3 red balls is
+        \[
+          P(X=3)
+          =\frac{\binom{7}{3}\binom{3}{1}}{\binom{10}{4}}
+          =\frac{105}{210}
+          =\frac12.
+        \]
+      </p>
+      <p>
+        <strong>Conditional versus marginal probabilities.</strong>
+        Without replacement, the probability of a red draw depends
+        on the previous results. In this urn,
+        \[
+          P(R_2\mid R_1)=\frac69,
+          \qquad
+          P(R_2)=\frac7{10}.
+        \]
+        Before observing any results, every draw position has
+        marginal red probability \(7/10\). The changing
+        conditional probabilities reveal the dependence.
+      </p>
+    </div>
+
+  </article>
+
+  <article class="p-formula-box" id="counting-distributions-comparison">
+
+    <span class="p-tag">Model selection</span>
+
+    <h3>Choose the model from the sampling mechanism</h3>
+
+    <div class="p-table-wrap" style="overflow-x: auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Binomial</th>
+            <th>Multinomial</th>
+            <th>Hypergeometric</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>What is counted?</td>
+            <td>Successes in \(n\) trials</td>
+            <td>Counts in \(m\) categories over \(n\) trials</td>
+            <td>Successes in a sample of size \(n\)</td>
+          </tr>
+          <tr>
+            <td>Model conditions</td>
+            <td>Independent trials; constant \(p\)</td>
+            <td>Independent trials; constant category probabilities</td>
+            <td>Uniform sampling without replacement</td>
+          </tr>
+          <tr>
+            <td>Categories</td>
+            <td>Success and failure</td>
+            <td>Mutually exclusive and exhaustive categories</td>
+            <td>Success and failure</td>
+          </tr>
+          <tr>
+            <td>Typical example</td>
+            <td>Number of heads in repeated coin flips</td>
+            <td>Counts of each face in repeated die rolls</td>
+            <td>Number of aces in a card hand</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="p-note">
+      <p>
+        <strong>Several categories without replacement.</strong>
+        Use the multivariate hypergeometric distribution.
+        If category \(i\) contains \(N_i\) objects and
+        \(\sum_i N_i=N\), then
+        \[
+          P(X_1=k_1,\ldots,X_m=k_m)
+          =
+          \frac{\prod_{i=1}^{m}\binom{N_i}{k_i}}
+               {\binom{N}{n}},
+          \qquad
+          \sum_i k_i=n,\quad 0\leq k_i\leq N_i.
+        \]
+        For example, this counts kings, queens, and other cards
+        simultaneously in a uniformly selected hand.
+      </p>
+    </div>
+
+    <h3>Common mistakes</h3>
+
+    <ul>
+      <li>
+        Independence alone does not imply a binomial model:
+        the success probability must also be constant and the
+        number of trials fixed.
+      </li>
+      <li>
+        Several categories do not automatically imply a multinomial
+        model. Check the sampling mechanism first.
+      </li>
+      <li>
+        Sampling without replacement is hypergeometric here because
+        the sample is uniform and the population category counts
+        are fixed.
+      </li>
+      <li>
+        Independent trials do not make multinomial category counts
+        independent.
+      </li>
+      <li>
+        For an integer-valued count, “fewer than \(r\)” means
+        \(X\leq r-1\), while “at most \(r\)” means \(X\leq r\).
+      </li>
+    </ul>
+
+  </article>
+
+</section>
+
   <!-- Add future rules here, before the closing div. -->
 
 </div>
