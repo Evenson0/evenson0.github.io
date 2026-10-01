@@ -1,0 +1,70 @@
+{
+  "asOf": "2026-09-30",
+  "fx": {
+    "pair": "USD/CAD",
+    "rate": 1.4245
+  },
+  "reviewReturn": 0.1,
+  "positions": [
+    {
+      "ticker": "AIRS",
+      "company": "AirSculpt Technologies",
+      "currentUsd": 1.76,
+      "reviewUsd": 2.21,
+      "risk": "High",
+      "thesis": "A small-cap execution and turnaround case where improved procedure demand and clinic productivity can create outsized equity moves.",
+      "thesis_fr": "Un dossier de petite capitalisation axé sur l’exécution et le redressement, où une amélioration de la demande et de la productivité des cliniques peut produire des mouvements boursiers importants.",
+      "focus": "Procedure volume, revenue per case, profitability, cash conversion and leverage.",
+      "focus_fr": "Volume de procédures, revenu par intervention, rentabilité, conversion en trésorerie et levier financier.",
+      "catalyst": "Quarterly earnings and evidence that demand and clinic productivity are stabilizing.",
+      "catalyst_fr": "Résultats trimestriels et signes de stabilisation de la demande et de la productivité des cliniques.",
+      "riskNote": "Small-cap liquidity, discretionary demand, operating leverage and balance-sheet pressure.",
+      "riskNote_fr": "Liquidité d’une petite capitalisation, demande discrétionnaire, levier opérationnel et pression sur le bilan."
+    },
+    {
+      "ticker": "SFM",
+      "company": "Sprouts Farmers Market",
+      "currentUsd": 66.39,
+      "reviewUsd": 74.51,
+      "risk": "Moderate",
+      "thesis": "A profitable specialty-grocery growth story centered on store expansion, traffic, merchandising discipline and sustained unit economics.",
+      "thesis_fr": "Une histoire de croissance rentable dans l’épicerie spécialisée, fondée sur l’expansion du réseau, le trafic, la discipline commerciale et l’économie unitaire.",
+      "focus": "Comparable sales, traffic, new-store productivity, gross margin and earnings growth.",
+      "focus_fr": "Ventes comparables, trafic, productivité des nouveaux magasins, marge brute et croissance des bénéfices.",
+      "catalyst": "Earnings, comparable-sales momentum and new-store execution.",
+      "catalyst_fr": "Résultats, dynamique des ventes comparables et exécution des nouvelles ouvertures.",
+      "riskNote": "Valuation compression, slowing traffic, food inflation shifts and execution risk from expansion.",
+      "riskNote_fr": "Compression de valorisation, ralentissement du trafic, variation de l’inflation alimentaire et risque d’exécution lié à l’expansion."
+    },
+    {
+      "ticker": "AAL",
+      "company": "American Airlines Group",
+      "currentUsd": 13.4,
+      "reviewUsd": 16.32,
+      "risk": "Moderate-high",
+      "thesis": "A cyclical airline recovery case where earnings power depends on demand, pricing, capacity discipline and balance-sheet improvement.",
+      "thesis_fr": "Un dossier cyclique de reprise aérienne où la capacité bénéficiaire dépend de la demande, des prix, de la discipline de capacité et de l’amélioration du bilan.",
+      "focus": "Revenue per available seat mile, unit costs, fuel, free cash flow and debt reduction.",
+      "focus_fr": "Revenu par siège-mille disponible, coûts unitaires, carburant, flux de trésorerie disponible et réduction de la dette.",
+      "catalyst": "Quarterly guidance, travel demand, margin recovery and deleveraging progress.",
+      "catalyst_fr": "Prévisions trimestrielles, demande de voyages, reprise des marges et progression du désendettement.",
+      "riskNote": "Fuel prices, macro sensitivity, leverage, labor costs and industry capacity.",
+      "riskNote_fr": "Prix du carburant, sensibilité macroéconomique, endettement, coûts de main-d’œuvre et capacité du secteur."
+    },
+    {
+      "ticker": "MNDY",
+      "company": "monday.com",
+      "currentUsd": 79.24,
+      "reviewUsd": 83.86,
+      "risk": "High",
+      "thesis": "A high-growth software case driven by durable revenue growth, enterprise adoption, operating leverage and continued product expansion.",
+      "thesis_fr": "Un dossier logiciel à forte croissance porté par la croissance durable des revenus, l’adoption en entreprise, le levier opérationnel et l’élargissement de l’offre.",
+      "focus": "Revenue growth, net retention, enterprise mix, operating margin and free cash flow.",
+      "focus_fr": "Croissance des revenus, rétention nette, poids des grands comptes, marge opérationnelle et flux de trésorerie disponible.",
+      "catalyst": "Earnings, enterprise adoption, margin progression and evidence that growth remains durable.",
+      "catalyst_fr": "Résultats, adoption en entreprise, progression des marges et confirmation de la durabilité de la croissance.",
+      "riskNote": "High expectations, valuation sensitivity and sharp repricing if growth or guidance decelerates.",
+      "riskNote_fr": "Attentes élevées, sensibilité de la valorisation et forte réévaluation possible si la croissance ou les prévisions ralentissent."
+    }
+  ]
+}
