@@ -432,6 +432,16 @@ tool_theme: atlas
         </p>
       </div>
     </a>
+    <a href="/tools/portfolio-lab/" class="lab-card-link">
+      <div class="lab-card">
+        <h3>Portfolio Lab</h3>
+        <p class="lab-card-desc">
+          Track public investment theses, review levels, catalysts, risks and decision discipline
+          without exposing private account balances.
+        </p>
+      </div>
+    </a>
+
 
   </div>
 
