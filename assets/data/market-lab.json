@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-09-30T22:19:45.042987+00:00",
+  "updated_at": "2026-10-01T18:26:46.150323+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7651.54,
-        "change_pct": -0.252,
+        "price": 7668.4399,
+        "change_pct": 0.221,
         "low_52w": 6343.7202,
         "high_52w": 7798.9902
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26861.0645,
-        "change_pct": 0.237,
+        "price": 26918.7051,
+        "change_pct": 0.215,
         "low_52w": 20794.6406,
         "high_52w": 27244.2793
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 50906.0508,
-        "change_pct": -0.864,
+        "price": 50904.3984,
+        "change_pct": -0.003,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 35235.8711,
-        "change_pct": -0.633,
+        "price": 35134.9414,
+        "change_pct": -0.287,
         "low_52w": 29777.8008,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 52.35,
-        "change_pct": -0.721,
+        "price": 52.235,
+        "change_pct": -0.22,
         "low_52w": 44.45,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2796.864,
-        "change_pct": -0.394,
+        "price": 2803.9558,
+        "change_pct": 0.254,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10606.0,
-        "change_pct": -0.289,
-        "low_52w": 9350.4004,
+        "price": 10428.2695,
+        "change_pct": -1.676,
+        "low_52w": 9354.5996,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 65481.2695,
-        "change_pct": -0.602,
+        "price": 66753.7188,
+        "change_pct": 1.943,
         "low_52w": 44550.8516,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 333.02,
-        "change_pct": 1.099,
+        "price": 329.6,
+        "change_pct": -1.027,
         "low_52w": 245.27,
         "high_52w": 341.07
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 512.9,
-        "change_pct": 0.774,
+        "price": 515.39,
+        "change_pct": 0.485,
         "low_52w": 352.83,
         "high_52w": 542.07
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 228.38,
-        "change_pct": 0.515,
+        "price": 231.075,
+        "change_pct": 1.18,
         "low_52w": 165.17,
         "high_52w": 235.74
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 249.15,
-        "change_pct": 1.005,
+        "price": 249.17,
+        "change_pct": 0.008,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 279.94,
-        "change_pct": -1.179,
+        "price": 275.15,
+        "change_pct": -1.711,
         "low_52w": 201.2,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 210.92,
-        "change_pct": 0.419,
+        "price": 213.19,
+        "change_pct": 1.076,
         "low_52w": 130.71,
         "high_52w": 249.71
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 169.4,
-        "change_pct": -1.017,
+        "price": 166.7,
+        "change_pct": -1.594,
         "low_52w": 128.08,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 4.03,
-        "change_pct": -0.861,
+        "price": 4.003,
+        "change_pct": -0.67,
         "low_52w": 3.507,
         "high_52w": 4.07
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 5.089,
-        "change_pct": 0.514,
+        "price": 5.014,
+        "change_pct": -1.474,
         "low_52w": 3.512,
         "high_52w": 5.089
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 5.293,
-        "change_pct": 0.723,
+        "price": 5.243,
+        "change_pct": -0.945,
         "low_52w": 3.953,
         "high_52w": 5.293
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.638,
-        "change_pct": 0.787,
+        "price": 5.607,
+        "change_pct": -0.55,
         "low_52w": 4.539,
         "high_52w": 5.638
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.423,
-        "change_pct": 0.373,
+        "price": 1.4241,
+        "change_pct": 0.347,
         "low_52w": 1.3492,
-        "high_52w": 1.4235
+        "high_52w": 1.4241
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1337,
-        "change_pct": -0.317,
-        "low_52w": 1.1337,
+        "price": 1.1233,
+        "change_pct": -0.947,
+        "low_52w": 1.1233,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3267,
-        "change_pct": 0.093,
+        "price": 1.3188,
+        "change_pct": -0.34,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 157.39,
-        "change_pct": 0.018,
+        "price": 158.209,
+        "change_pct": 0.511,
         "low_52w": 147.083,
         "high_52w": 163.864
       }
@@ -197,33 +197,33 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4187.7002,
-        "change_pct": 0.191,
+        "price": 4201.8999,
+        "change_pct": 0.363,
         "low_52w": 3868.1001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 90.23,
-        "change_pct": 0.951,
+        "price": 93.01,
+        "change_pct": 2.864,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.009,
-        "change_pct": -0.066,
+        "price": 2.972,
+        "change_pct": -1.785,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.631,
-        "change_pct": 1.337,
-        "low_52w": 4.805,
+        "price": 6.5585,
+        "change_pct": -0.008,
+        "low_52w": 4.8305,
         "high_52w": 6.8035
       }
     ]
@@ -231,61 +231,61 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 4.03
+      "value": 4.003
     },
     {
       "term": "5Y",
-      "value": 5.089
+      "value": 5.014
     },
     {
       "term": "10Y",
-      "value": 5.293
+      "value": 5.243
     },
     {
       "term": "30Y",
-      "value": 5.638
+      "value": 5.607
     }
   ],
   "news": [
     {
-      "title": "Sandisk bulls had a surprising third quarter",
-      "link": "https://finance.yahoo.com/markets/stocks/article/sandisk-bulls-had-a-surprising-third-quarter-105830766.html",
-      "publisher": "Yahoo Finance",
+      "title": "Rocket Lab Stock Rises on Record Electron Launch Deal and Citi Buy Rating",
+      "link": "https://www.barrons.com/articles/rocket-lab-stock-electron-launch-deal-4cf55182?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Trump Account investment options, rules, and guidelines: What you need to know",
-      "link": "https://finance.yahoo.com/personal-finance/investing/article/trump-account-investment-options-120000216.html",
-      "publisher": "Yahoo Personal Finance",
+      "title": "Corteva Stock Isn’t Really Down 80%",
+      "link": "https://www.barrons.com/articles/corteva-stock-price-vylor-spinoff-81e019e7?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Dow Knocked Down, Nasdaq Pares Gain; Micron Holds Firm After Earnings Soar",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-micron-earnings-mu-stock/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Fund Winners and Losers: Bitcoin Battered Bonds in the Third Quarter",
+      "link": "https://www.barrons.com/articles/funds-bitcoin-bonds-885b2ca0?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Micron Reports Another Beat-and-Raise Earnings. The Stock Is Unchanged.",
+      "title": "Why Micron’s Dazzling Earnings Report Is Barely Moving the Stock",
       "link": "https://www.barrons.com/articles/micron-earnings-stock-price-6c25895f?siteid=yhoof2&yptr=yahoo",
       "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Micron Earnings Could Be the Catalyst This Wildly Popular ETF Needs",
-      "link": "https://www.barrons.com/articles/micron-technology-ai-stock-earnings-dram-etf-cfd52805?siteid=yhoof2&yptr=yahoo",
+      "title": "The Chinese Car Market Is Still a Mess",
+      "link": "https://www.barrons.com/articles/byd-deliveries-china-ev-market-nio-li-xpeng-9a315bf5?siteid=yhoof2&yptr=yahoo",
       "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Citi Downgrades Moderna Stock, Warning $80 Billion Valuation Asks Too Much of Cancer Pipeline",
-      "link": "https://www.barrons.com/articles/moderna-stock-sell-downgrade-7abc9620?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Where to invest for Q4 2026",
+      "link": "https://moneyweek.com/investments/where-to-invest",
+      "publisher": "Moneyweek",
       "related": "^GSPC",
       "time": "Latest"
     },
