@@ -1044,5 +1044,75 @@
   ],
   "generalization": "When repeated independent draws must produce specified counts in several categories, use one multinomial coefficient to count the possible orders. Multiplying separate binomial probabilities for the category counts is incorrect because those counts are dependent and must sum to the fixed sample size.",
   "answer_text": "C. \\(45/512\\)"
+},
+  {
+  "id": 54,
+  "topic": "Geometric Distribution",
+  "title": "Exercise 54",
+  "statement": "[110.S92.35] Ten percent of all new businesses fail within the first year. The records of new businesses are examined until a business that failed within the first year is found. Let \\(X\\) be the total number of businesses examined prior to finding a business that failed within the first year, excluding that business. Assuming independent outcomes with a constant failure probability, what is the probability mass function of \\(X\\)?",
+  "choices": [
+    "\\((0.1)(0.9)^x,\\quad x=0,1,2,3,\\ldots\\)",
+    "\\((0.9)(0.1)^x,\\quad x=0,1,2,3,\\ldots\\)",
+    "\\((0.1x)(0.9)^x,\\quad x=1,2,3,\\ldots\\)",
+    "\\((0.9x)(0.1)^x,\\quad x=1,2,3,\\ldots\\)",
+    "\\((0.1)(x-1)(0.9)^x,\\quad x=2,3,\\ldots\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "The stopping event is finding a business that failed within its first year. Its probability is \\(p=0.1\\).",
+    "The variable \\(X\\) counts the businesses examined before that stopping event. Therefore, \\(X\\) can equal 0 if the first business examined failed.",
+    "For \\(X=x\\), the first \\(x\\) businesses must not have failed within their first year, and the next business must have failed.",
+    "By independence, \\(P(X=x)=(0.9)^x(0.1)\\), for \\(x=0,1,2,\\ldots\\).",
+    "In geometric-distribution terminology, finding a failed business is called a success because it is the event being sought. This terminology does not describe the business's financial outcome."
+  ],
+  "generalization": "For independent trials with constant success probability \\(p>0\\), the number \\(X\\) of failures before the first success has \\(P(X=x)=(1-p)^xp\\) for \\(x=0,1,\\ldots\\). If instead \\(T\\) counts all trials including the first success, then \\(T=X+1\\) and \\(P(T=t)=(1-p)^{t-1}p\\) for \\(t=1,2,\\ldots\\).",
+  "answer_text": "A. \\((0.1)(0.9)^x,\\quad x=0,1,2,3,\\ldots\\)"
+},
+{
+  "id": 55,
+  "topic": "Geometric Distribution: Mean and Variance",
+  "title": "Exercise 55",
+  "statement": "An unfair coin is weighted so that the expected number of tails before the first heads is 3. Assuming independent flips with a constant probability of heads, what is the standard deviation of the number of tails that come up before the first heads?",
+  "choices": [
+    "\\(\\sqrt{6}\\)",
+    "\\(3\\)",
+    "\\(\\sqrt{12}\\)",
+    "\\(\\sqrt{21}\\)",
+    "\\(9\\)"
+  ],
+  "correct": 2,
+  "solution_steps": [
+    "Let \\(T\\) count the tails before the first heads, and let \\(p\\) be the probability of heads. Then \\(T\\) follows a geometric distribution on \\(\\{0,1,2,\\ldots\\}\\).",
+    "For this convention, \\(E[T]=(1-p)/p\\). The given mean implies \\((1-p)/p=3\\).",
+    "Solving gives \\(1-p=3p\\), so \\(p=1/4\\).",
+    "The variance is \\(\\operatorname{Var}(T)=\\frac{1-p}{p^2}=\\frac{3/4}{(1/4)^2}=12\\).",
+    "Therefore, \\(\\operatorname{SD}(T)=\\sqrt{12}\\)."
+  ],
+  "generalization": "For a geometric count of failures before the first success, \\(\\mu=(1-p)/p\\), so \\(p=1/(\\mu+1)\\). Consequently, \\(\\operatorname{Var}(T)=\\mu(\\mu+1)\\) and \\(\\operatorname{SD}(T)=\\sqrt{\\mu(\\mu+1)}\\). Counting the successful trial adds 1 to the mean but leaves the variance unchanged.",
+  "answer_text": "C. \\(\\sqrt{12}\\)"
+},
+{
+  "id": 56,
+  "topic": "Independent Trials and Complementary Events",
+  "title": "Exercise 56",
+  "statement": "[110.F86.04] A pair of fair six-sided dice is tossed 10 times in succession. Assume all rolls are independent. What is the probability of observing no sums of 7 and no sums of 11 in any of the 10 tosses?",
+  "choices": [
+    "\\(\\left(\\frac{28}{36}\\right)^{10}\\)",
+    "\\(\\left(\\frac{30}{36}\\right)^{10}\\left(\\frac{34}{36}\\right)^{10}\\)",
+    "\\(\\left[1-\\left(\\frac{6}{36}\\right)\\left(\\frac{2}{36}\\right)\\right]^{10}\\)",
+    "\\(1-\\left(\\frac{8}{36}\\right)^{10}\\)",
+    "\\(\\left[1-\\left(\\frac{6}{36}\\right)^{10}\\right]\\left[1-\\left(\\frac{2}{36}\\right)^{10}\\right]\\)"
+  ],
+  "correct": 0,
+  "solution_steps": [
+    "One toss of the pair of dice has 36 equally likely ordered outcomes.",
+    "There are 6 outcomes with sum 7: \\((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\\). There are 2 outcomes with sum 11: \\((5,6),(6,5)\\).",
+    "These sums are mutually exclusive within one toss, so \\(P(\\text{sum is 7 or 11})=\\frac6{36}+\\frac2{36}=\\frac8{36}\\).",
+    "Thus the probability of avoiding both sums in one toss is \\(1-\\frac8{36}=\\frac{28}{36}\\).",
+    "Since the 10 tosses are independent, the probability of avoiding both sums every time is \\(\\left(\\frac{28}{36}\\right)^{10}=\\left(\\frac79\\right)^{10}\\).",
+    "Do not multiply the probability of no 7s by the probability of no 11s: those two events are not independent. Independence applies across separate tosses."
+  ],
+  "generalization": "If mutually exclusive forbidden outcomes have total probability \\(q\\) on each of \\(n\\) independent trials, the probability of avoiding every forbidden outcome is \\((1-q)^n\\). Equivalently, the number of forbidden outcomes is binomial with parameters \\(n\\) and \\(q\\), and the desired probability is its mass at zero.",
+  "answer_text": "A. \\(\\left(\\frac{28}{36}\\right)^{10}\\)"
 }
 ]
