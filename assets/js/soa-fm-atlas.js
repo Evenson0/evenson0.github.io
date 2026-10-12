@@ -254,6 +254,83 @@
     });
     document.head.append(script);
   }
+
+  // Match tagged JSON exercises to each concept without changing the problem bank.
+  // The exercise id deep-link is supported by the FM practice tool.
+  const relatedTopics = {
+    "fm-rates":["effective rates","effective interest rate","effective discount","nominal interest rate","nominal discount rate","discount factor"],
+    "fm-force-interest":["force of interest"],
+    "fm-spot-rates":["Spot Rates","Forward Rates","Yield Curves"],
+    "fm-annuity-immediate-pv":["annuities-immediate and present value"],
+    "fm-annuity-due-pv":["annuities-due and present value"],
+    "fm-annuity-immediate-fv":["annuities-immediate and accumulated value"],
+    "fm-annuity-due-fv":["annuities-due and accumulated value"],
+    "fm-pq-method":["Increasing Annuities: Arithmetic"],
+    "fm-arithmetic-annuities":["Increasing Annuities: Arithmetic","Decreasing Annuities: Arithmetic"],
+    "fm-geometric-annuities":["Geometric Varying Annuities"],
+    "fm-geometric-increasing-pv":["Geometric Varying Annuities"],
+    "fm-immunization-zero-coupon":["Full Immunization and Dedication","Redington Immunization"],
+    "fm-macaulay-duration":["Macaulay Duration"],
+    "fm-loan-amortization":["Amortization Schedules"],
+    "fm-amortization-schedule":["Amortization Schedules"],
+    "fm-principal-repaid":["Amortization Schedules"],
+    "fm-annuity-relations":["Annuity Tricks","annuities-immediate vs annuities-due"],
+    "fm-annuity-timing":["annuities-immediate vs annuities-due"],
+    "fm-increasing-annuity-table":["Increasing Annuities: Arithmetic"],
+    "fm-bond-price":["Price of a Bond"],
+    "fm-bond-par":["Premium and Discount"],
+    "fm-bond-premium-formula":["Premium and Discount"],
+    "fm-bond-book-value":["Bond Amortization"],
+    "fm-makeham":["Price of a Bond"]
+  };
+  let fmProblems=null;
+  function renderRelated() {
+    const target=get("fm-related-content");
+    if(!target)return;
+    target.replaceChildren();
+    if(!fmProblems){
+      target.append(element("p","fm-atlas__related-intro","Loading the FM practice bank..."));
+      return;
+    }
+    const note=byId.get(selectedId);
+    const ids=note.type==="chapter"?note.children.map(x=>x.id):[note.id];
+    const rules=[...new Set(ids.flatMap(id=>relatedTopics[id]||[]).map(normalize))];
+    const candidates=fmProblems.filter(problem=>{
+      const topic=normalize(problem.topic);
+      return rules.some(rule=>topic.includes(rule));
+    });
+    if(!candidates.length){
+      target.append(element("p","fm-atlas__related-intro","No exercise is currently tagged for this concept. You can still explore all FM questions through the practice tool."));
+      return;
+    }
+    const shown=candidates.slice(0,note.type==="chapter"?8:6);
+    target.append(element("p","fm-atlas__related-intro",
+      String(candidates.length)+" tagged exercises in your bank · Select an ID to open that question directly."));
+    const ul=element("ul","fm-atlas__related-list");
+    shown.forEach(problem=>{
+      const li=document.createElement("li"), a=document.createElement("a");
+      a.href=root.dataset.practiceBaseUrl+"?id="+encodeURIComponent(String(problem.id));
+      const number=element("strong","",String(problem.id).padStart(3,"0")+" / PRACTICE");
+      const topic=element("small","",String(problem.topic||"Financial mathematics"));
+      a.append(number,topic);li.append(a);ul.append(li);
+    });
+    target.append(ul);
+  }
+  async function loadPracticeIndex() {
+    const target=get("fm-related-content");
+    try {
+      const response=await fetch(root.dataset.practiceUrl);
+      if(!response.ok)throw new Error("FM exercises returned HTTP "+response.status);
+      const data=await response.json();
+      if(!Array.isArray(data))throw new Error("Unexpected FM practice format");
+      fmProblems=data.filter(item=>Number.isInteger(Number(item.id))&&typeof item.topic==="string");
+      renderRelated();
+    } catch(error) {
+      console.warn("Unable to load related FM exercises:",error);
+      if(target)target.textContent="Related exercise links are temporarily unavailable. Use All exercises above.";
+    }
+  }
+
   function renderReader() {
     const note=byId.get(selectedId);
     const ch=note.type==="chapter"?note:byId.get(note.chapterId);
@@ -283,6 +360,7 @@
     get("pa-next-label").textContent=next?next.short:"End of notes";
     get("pa-chapter-link").href=get("pa-classic-link").href+(note.type==="article"?"#"+note.id:"");
     math();
+    renderRelated();
   }
   function choose(id,drill) {
     if(!byId.has(id))return;
@@ -353,4 +431,5 @@
   if(byId.has(initial))choose(initial,true);
   else {renderReader();renderGraph();renderList();}
   get("pa-status").textContent="Tip: press / to search. Review marks are stored only in this browser.";
+  loadPracticeIndex();
 })();
