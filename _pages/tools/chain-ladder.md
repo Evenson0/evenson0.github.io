@@ -226,6 +226,56 @@ author_profile: true
       width: 70px;
     }
   }
+
+  /* Accessible contrast on both light and dark blog themes. */
+  .cl-shell {
+    color:#17283c;
+    background:#f7f9fd;
+    border:1px solid #c9d5e5;
+    color-scheme:light;
+  }
+  .cl-shell :is(h1,h2,h3,strong,table,th,td,label) { color:#17283c; }
+  .cl-shell :is(.cl-lead,.cl-sublead,.cl-section-desc,.cl-note) { color:#344761; opacity:1; }
+  .cl-shell .cl-table-wrap { background:#fff; border-color:#c8d5e4; }
+  .cl-shell table.cl-table th { background:#edf3fb; color:#1e3955; opacity:1; }
+  .cl-shell table.cl-table td { background:#fff; color:#17283c; }
+  .cl-shell table.cl-table tr.cl-total td,
+  .cl-shell table.cl-table tr.cl-total th { background:#e6efff; }
+  .cl-shell table.cl-table td.cl-projected { background:#dfeeff; color:#12417b; }
+  .cl-shell table.cl-table td.cl-na { color:#596e88; opacity:1; }
+  .cl-shell .cl-input { color:#112d4b; background:#fff; border:1px solid #9aafca; color-scheme:light; }
+  .cl-shell .cl-btn { background:#fff; border-color:#9eb3cd; color:#183b61; }
+  .cl-shell .cl-btn.primary { background:#dceaff; color:#134786; border-color:#8eb6ea; }
+  .cl-shell .cl-btn:hover { border-color:#2563eb; }
+  .cl-shell .cl-formula { background:#edf3fb; color:#203850; border-color:#c4d3e6; }
+  .cl-shell .cl-nav a { color:#164ea0; text-decoration:underline!important; }
+  .cl-shell .cl-error { color:#a01e2d; background:#fff1f2; padding:.6rem .8rem; border-radius:8px; }
+  .cl-shell .cl-table caption { text-align:left; color:#a01e2d; font-size:.85rem;padding:.65rem; }
+  .cl-shell .cl-language { display:flex;justify-content:flex-end;gap:.35rem;margin-bottom:1rem; }
+  .cl-shell .cl-language button { border:1px solid #97afcb;border-radius:9px;padding:.4rem .65rem;background:#fff;color:#1c436b;font-weight:800;cursor:pointer; }
+  .cl-shell .cl-language button[aria-pressed="true"] { background:#164d91;color:#fff;border-color:#164d91; }
+  .cl-shell :is(button,a,input):focus-visible {outline:3px solid #2563eb;outline-offset:2px;}
+  html[data-theme="dark"] .cl-shell {
+    color:#edf5ff;background:#111f32;border-color:#425875;color-scheme:dark;
+  }
+  html[data-theme="dark"] .cl-shell :is(h1,h2,h3,strong,table,th,td,label) { color:#edf5ff; }
+  html[data-theme="dark"] .cl-shell :is(.cl-lead,.cl-sublead,.cl-section-desc,.cl-note) { color:#c9d6e9; }
+  html[data-theme="dark"] .cl-shell .cl-table-wrap { background:#192b42;border-color:#486181; }
+  html[data-theme="dark"] .cl-shell table.cl-table th { background:#263b56;color:#f0f6ff; }
+  html[data-theme="dark"] .cl-shell table.cl-table td { background:#192b42;color:#edf5ff; }
+  html[data-theme="dark"] .cl-shell table.cl-table tr.cl-total :is(td,th) {background:#254263;}
+  html[data-theme="dark"] .cl-shell table.cl-table td.cl-projected { background:#294a71;color:#f2f8ff; }
+  html[data-theme="dark"] .cl-shell table.cl-table td.cl-na {color:#b9c7dc;}
+  html[data-theme="dark"] .cl-shell .cl-input {color:#fff;background:#0e2035;border-color:#6983a4;color-scheme:dark;}
+  html[data-theme="dark"] .cl-shell .cl-btn {background:#223854;color:#eef5ff;border-color:#657f9e;}
+  html[data-theme="dark"] .cl-shell .cl-btn.primary {background:#26496d;color:#f5f9ff;}
+  html[data-theme="dark"] .cl-shell .cl-formula {background:#203750;color:#eff6ff;border-color:#546f91;}
+  html[data-theme="dark"] .cl-shell .cl-nav a {color:#9ecbff;}
+  html[data-theme="dark"] .cl-shell .cl-error {color:#ffb4bf;background:#48252e;}
+  html[data-theme="dark"] .cl-shell .cl-table caption {color:#ffc4cf;}
+  html[data-theme="dark"] .cl-shell .cl-language button {color:#ebf4ff;background:#1b3450;border-color:#718dab;}
+  html[data-theme="dark"] .cl-shell .cl-language button[aria-pressed="true"] {background:#a9d1ff;color:#11253b;}
+
 </style>
 
 <div class="cl-shell">
