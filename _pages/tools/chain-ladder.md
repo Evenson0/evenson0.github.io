@@ -421,6 +421,8 @@ const CL_COPY = {
     paid:"Payé à ce jour",ldf:"FDP jusqu’à l’ultime",ultimate:"Coût ultime",reserve:"Provision non réglée",total:"Total",
     correction:"Corrige le triangle pour recalculer les résultats.",
     gap:"Une cellule vide précède une valeur observée plus récente. Complète la cellule manquante ou supprime les valeurs suivantes.",
+    decreasing:"Les paiements cumulés ne peuvent pas diminuer entre deux âges de développement.",
+    negative:"Un paiement cumulé ne peut pas être négatif.",
     selectFactor:"Facteur sélectionné",to:"à",invalidTail:"Le facteur de queue doit être supérieur ou égal à 1.",
     caption:"Paiements cumulés en milliers",completedCaption:"Paiements observés et projetés en milliers",
     resultsCaption:"Provisions estimées par année de survenance"
@@ -667,7 +669,7 @@ function clRenderCompleted() {
   const comp = clCompleteTriangle(clTri, clSelected, clTail);
   const t = document.getElementById("cl-completed");
   let html = "<thead><tr><th class='cl-rowhead'>Accident year</th>";
-  CL_DEVS.forEach(d => { html += "<th>" + d + " mo</th>"; });
+  CL_DEVS.forEach(d => { html += "<th>" + d + " " + clT("month","mo") + "</th>"; });
   html += "</tr></thead><tbody>";
   for (let i = 0; i < clTri.length; i++) {
     html += "<tr><th class='cl-rowhead'>" + CL_YEARS[i] + "</th>";
@@ -724,6 +726,21 @@ function clValidate() {
       }
     }
   }
+  // A cumulative paid-loss triangle must be nonnegative and nondecreasing.
+  for (let i = 0; i < clTri.length; i++) {
+    for (let j = 0; j < CL_DEVS.length; j++) {
+      const v = clTri[i][j];
+      if (!clIsNum(v)) continue;
+      if (v < 0) {
+        clShowError("AY " + CL_YEARS[i] + ": " + clT("negative","Cumulative paid losses must be nonnegative."));
+        return false;
+      }
+      if (j > 0 && clIsNum(clTri[i][j - 1]) && v < clTri[i][j - 1] - 1e-9) {
+        clShowError("AY " + CL_YEARS[i] + ": " + clT("decreasing","Cumulative paid losses cannot decrease across development ages."));
+        return false;
+      }
+    }
+  }
   clShowError(null);
   return true;
 }
@@ -762,6 +779,8 @@ document.getElementById("cl-reset").addEventListener("click", () => {
 
 document.getElementById("cl-clear").addEventListener("click", () => {
   clTri = CL_DEFAULT.map(r => r.map(() => null));
+  // A new, empty triangle should not retain the previous example's selections.
+  clSelected = Array(CL_DEVS.length - 1).fill(null);
   clRenderAll(true);
 });
 
