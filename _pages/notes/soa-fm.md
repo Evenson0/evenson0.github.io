@@ -11,7 +11,9 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
 <link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/soa-fm-atlas.css' | relative_url }}">
 
-<section class="p-atlas p-notes fm-atlas" id="fm-atlas" aria-label="SOA Exam FM Knowledge Atlas">
+<section class="p-atlas p-notes fm-atlas" id="fm-atlas" aria-label="SOA Exam FM Knowledge Atlas"
+  data-practice-url="{{ '/assets/data/soa-fm-problems.json' | relative_url }}"
+  data-practice-base-url="{{ '/tools/soa-fm-practice/' | relative_url }}">
   <header class="p-atlas__hero">
     <p class="p-atlas__eyebrow"><span class="p-atlas__dot" aria-hidden="true"></span> Quantitative Laboratory / Financial Mathematics</p>
     <h2>Financial math, <span>mapped.</span></h2>
@@ -93,6 +95,16 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
         Explore the graph or browse the outline to open a topic.
       </p>
       <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"></div>
+      <section class="fm-atlas__related" aria-labelledby="fm-related-heading">
+        <div class="fm-atlas__related-heading">
+          <div>
+            <p class="p-atlas__reading-label">FROM THEORY TO PRACTICE</p>
+            <h3 id="fm-related-heading">Related FM exercises</h3>
+          </div>
+          <a class="p-atlas__smallbtn" href="{{ '/tools/soa-fm-practice/' | relative_url }}">All exercises ↗</a>
+        </div>
+        <div id="fm-related-content" aria-live="polite">Finding related exercises...</div>
+      </section>
       <div class="p-atlas__footer-nav" aria-label="Reading navigation">
         <button type="button" id="pa-prev" disabled>← <span id="pa-prev-label">Previous</span></button>
         <button type="button" id="pa-next">Next → <span id="pa-next-label">Next</span></button>
