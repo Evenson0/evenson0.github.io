@@ -299,7 +299,7 @@ author_profile: true
   <hr class="cl-rule">
 
   <h2 class="cl-section-title" data-cl-i18n="triangleTitle">1 · Loss triangle</h2>
-  <p class="cl-section-desc">
+  <p class="cl-section-desc" data-cl-i18n="triangleDesc">
     Cumulative paid losses by accident year (rows) and development age in months
     (columns). Cells beyond the latest diagonal are not yet observed.
   </p>
@@ -318,7 +318,7 @@ author_profile: true
   <hr class="cl-rule">
 
   <h2 class="cl-section-title" data-cl-i18n="factorTitle">2 · Development factors</h2>
-  <p class="cl-section-desc">
+  <p class="cl-section-desc" data-cl-i18n="factorDesc">
     The volume-weighted age-to-age factor for each development interval is
     computed from the triangle. The <em>selected</em> factors — the actuary's
     judgment — drive the projection and can be edited freely.
@@ -339,7 +339,7 @@ author_profile: true
   <hr class="cl-rule">
 
   <h2 class="cl-section-title" data-cl-i18n="completedTitle">3 · Completed triangle</h2>
-  <p class="cl-section-desc">
+  <p class="cl-section-desc" data-cl-i18n="completedDesc">
     Observed values in normal type; projected values in
     <span style="font-style:italic; background:rgba(59,130,246,0.10); padding:0 6px; border-radius:6px;">highlight</span>.
   </p>
@@ -351,7 +351,7 @@ author_profile: true
   <hr class="cl-rule">
 
   <h2 class="cl-section-title" data-cl-i18n="resultsTitle">4 · Ultimates &amp; reserves</h2>
-  <p class="cl-section-desc">
+  <p class="cl-section-desc" data-cl-i18n="resultsDesc">
     Ultimate loss = latest observed × loss development factor (LDF) to ultimate.
     Outstanding reserve = ultimate − paid to date.
   </p>
@@ -372,7 +372,7 @@ author_profile: true
     U<sub>i</sub> = C<sub>i,latest</sub> × LDF<sub>i</sub>
   </div>
 
-  <p class="cl-note">
+  <p class="cl-note" data-cl-i18n="assumptions">
     <strong>Assumptions.</strong> The chain ladder assumes that historical
     development patterns persist: no calendar-year effects (inflation, legal
     changes), a stable mix of business, and that past development predicts
@@ -380,13 +380,13 @@ author_profile: true
     accident years; alternatives include simple averages or averages excluding
     outliers.
   </p>
-  <p class="cl-note">
+  <p class="cl-note" data-cl-i18n="limits">
     <strong>Limits.</strong> It extrapolates mechanically and reacts slowly to
     regime changes. In practice it is one method among several (Bornhuetter–Ferguson,
     expected loss ratio, Benktander) and selections are validated against
     diagnostics such as actual-vs-expected development.
   </p>
-  <p class="cl-note" style="opacity:0.6;">
+  <p class="cl-note" style="opacity:0.6;" data-cl-i18n="disclaimer">
     For illustration and education only — not actuarial advice.
   </p>
 
