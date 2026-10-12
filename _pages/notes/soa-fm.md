@@ -30,7 +30,6 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
       </div>
       <nav class="p-atlas__links" aria-label="Related Exam FM resources">
         <a class="p-atlas__link p-atlas__link--primary" href="{{ '/tools/soa-fm-practice/' | relative_url }}" data-i18n="practice">Practice questions ↗</a>
-        <a class="p-atlas__link" id="pa-classic-link" href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}" data-i18n="classic">Classic formula guide ↗</a>
         <a class="p-atlas__link" href="{{ '/notes/' | relative_url }}" data-i18n="allNotes">All notes ↗</a>
         {% assign p_pdf = site.static_files | where: "path", "/assets/pdf/soa-fm-notes.pdf" | first %}
         {% if p_pdf %}
@@ -89,7 +88,6 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
         <span class="p-atlas__crumb" id="pa-crumb">Probability / Chapter</span>
         <div class="p-atlas__reader-actions">
           <button class="p-atlas__smallbtn" type="button" id="pa-reviewed" aria-pressed="false" data-i18n="markReviewed">Mark reviewed</button>
-          <a class="p-atlas__link" id="pa-chapter-link" href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}">Permanent section ↗</a>
         </div>
       </div>
 
@@ -98,7 +96,7 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
       <p class="p-atlas__reader-hint" id="pa-reading-hint">
         Explore the graph or browse the outline to open a topic.
       </p>
-      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"><p>Explore the graph or chapter outline above. If the interactive reader does not appear, you can still access the complete notes through the Classic formula guide.</p></div>
+      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"><p>Choose a chapter or note to read its complete explanation and formulas.</p></div>
       <section class="fm-atlas__related" aria-labelledby="fm-related-heading">
         <div class="fm-atlas__related-heading">
           <div>
@@ -117,13 +115,14 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
   </div>
 
   <noscript>
-    <p>This interactive atlas requires JavaScript. All notes remain readable in the
-      <a href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}">classic formula guide</a>.
-    </p>
+    <p>The interactive graph requires JavaScript. The complete FM notes are available below.</p>
+    <div class="fm-shell"><div class="fm-proof-grid">
+      {% include soa-fm-guide-cards.html %}
+    </div></div>
   </noscript>
 </section>
 
-<!-- Shared FM formula cards power both the interactive reader and classic guide. -->
+<!-- Single source of FM formulas for the interactive atlas and its static reading fallback. -->
 <template id="fm-atlas-source">
 {% include soa-fm-guide-cards.html %}
 </template>
