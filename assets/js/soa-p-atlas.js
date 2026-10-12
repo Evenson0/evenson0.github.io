@@ -163,34 +163,37 @@
   }
   function renderGraph() {
     graph.replaceChildren();
-    graph.setAttribute("viewBox","0 0 720 520");
+    // A vertically organized graph keeps node labels readable in a narrow sidebar.
+    graph.setAttribute("viewBox","0 0 440 520");
     graph.setAttribute("aria-label","Interactive concept graph. Tab to a topic and press Enter to open.");
     const q=term(), visible=chaptersFor(q);
+    const cx=84, cy=260, nx=306;
     get("pa-back-to-map").hidden=!focusId;
     if(!focusId||!byId.has(focusId)) {
       get("pa-map-subtitle").textContent="Select a chapter to explore its concepts.";
-      const locations=[[188,135],[532,135],[188,390],[532,390]];
-      visible.forEach(ch=>{const xy=locations[chapters.indexOf(ch)];link(360,260,xy[0],xy[1],selectedId===ch.id);});
-      center(360,260,"Exam P",chapters.length+" modules");
-      visible.forEach(ch=>{
-        const xy=locations[chapters.indexOf(ch)];
-        graphNode(ch,xy[0],xy[1],246,88,childrenFor(ch,q).length+" NOTES");
+      visible.forEach((ch,i)=>{
+        const y=(i+1)*520/(visible.length+1);
+        link(cx,cy,nx,y,selectedId===ch.id);
       });
-      if(!visible.length)label(graph,"No matching topics",360,440,30);
+      center(cx,cy,"Exam P",chapters.length+" modules");
+      visible.forEach((ch,i)=>{
+        const y=(i+1)*520/(visible.length+1);
+        graphNode(ch,nx,y,232,76,childrenFor(ch,q).length+" NOTES");
+      });
+      if(!visible.length)label(graph,"No matching topics",305,260,25);
     } else {
       const ch=byId.get(focusId), children=childrenFor(ch,q);
       get("pa-map-subtitle").textContent=ch.title;
-      const locations=[[164,112],[556,112],[164,262],[556,262],[164,412],[556,412]];
       children.forEach((note,i)=>{
-        const xy=locations[i];
-        if(xy)link(360,260,xy[0],xy[1],selectedId===note.id);
+        const y=(i+1)*520/(children.length+1);
+        link(cx,cy,nx,y,selectedId===note.id);
       });
-      center(360,260,"TOPICS",String(children.length).padStart(2,"0")+" linked",ch);
+      center(cx,cy,"TOPICS",String(children.length).padStart(2,"0")+" linked",ch);
       children.forEach((note,i)=>{
-        const xy=locations[i];
-        if(xy)graphNode(note,xy[0],xy[1],235,80,"NOTE "+String(ch.children.indexOf(note)+1).padStart(2,"0"));
+        const y=(i+1)*520/(children.length+1);
+        graphNode(note,nx,y,232,76,"NOTE "+String(ch.children.indexOf(note)+1).padStart(2,"0"));
       });
-      if(!children.length)label(graph,"No matches in this chapter",360,484,34);
+      if(!children.length)label(graph,"No matches",305,260,25);
     }
   }
   function renderLegend() {
