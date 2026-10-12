@@ -333,3 +333,44 @@
   .p-atlas.fm-atlas .fm-formula-row {padding:.6rem;}
   .p-atlas.fm-atlas .fm-atlas__overview-list a {align-items:flex-start;}
 }
+
+/* Contextual practice links within the selected FM formula note. */
+.p-atlas.fm-atlas .fm-atlas__related {
+  border-top:1px solid var(--pa-line);
+  margin-top:1.75rem;
+  padding-top:1.5rem;
+}
+.p-atlas.fm-atlas .fm-atlas__related-heading {
+  display:flex;justify-content:space-between;align-items:center;
+  gap:1rem;flex-wrap:wrap;margin-bottom:.9rem;
+}
+.p-atlas.fm-atlas .fm-atlas__related-heading h3 {
+  margin:.3rem 0 0;font-size:1.05rem;
+  color:var(--pa-ink);font-weight:750;
+}
+.p-atlas.fm-atlas .fm-atlas__related-list {
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,215px),1fr));
+  gap:.6rem;list-style:none;padding:0;margin:0;
+}
+.p-atlas.fm-atlas .fm-atlas__related-list li { margin:0; }
+.p-atlas.fm-atlas .fm-atlas__related-list a {
+  display:block;min-height:76px;
+  border:1px solid var(--pa-line);
+  background:var(--pa-surface-soft);
+  padding:.75rem .85rem;border-radius:11px;
+  text-decoration:none!important;color:var(--pa-ink);
+}
+.p-atlas.fm-atlas .fm-atlas__related-list a:hover {
+  color:var(--pa-accent);border-color:var(--pa-accent);
+}
+.p-atlas.fm-atlas .fm-atlas__related-list strong {
+  display:block;font:750 .78rem "JetBrains Mono",monospace;
+  color:var(--pa-accent);margin-bottom:.35rem;
+}
+.p-atlas.fm-atlas .fm-atlas__related-list small {
+  display:block;line-height:1.55;color:var(--pa-muted);
+  font-size:.76rem;overflow-wrap:anywhere;
+}
+.p-atlas.fm-atlas .fm-atlas__related-intro {
+  color:var(--pa-muted);font-size:.8rem;margin:0 0 .8rem;
+}
