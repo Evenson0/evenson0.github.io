@@ -183,3 +183,183 @@ html[data-theme="dark"] .p-atlas__link--primary,html[data-theme="dark"] .p-atlas
  .p-atlas__link, .p-atlas__map .map-node rect { transition:none; }
  .p-atlas__link:hover { transform:none; }
 }
+
+
+/* High-contrast tokens for both Exam P and Exam FM, including inherited site themes. */
+.p-atlas.p-notes {
+  --pa-ink:#152339;
+  --pa-muted:#40536b;
+  --pa-line:#bfcbdc;
+  --pa-surface:#ffffff;
+  --pa-surface-soft:#f3f6fb;
+  --pa-accent:#194dad;
+  --pa-accent-soft:#eaf1ff;
+  --pa-focus:#184dad;
+  --pa-purple:#7040ac;
+  --pa-green:#126f5d;
+  --pa-amber:#885218;
+  --pa-cyan:#11647e;
+  color-scheme:light;
+  color:var(--pa-ink);
+}
+html[data-theme="dark"] .p-atlas.p-notes {
+  --pa-ink:#f2f6ff;
+  --pa-muted:#c2cfe2;
+  --pa-line:#50627e;
+  --pa-surface:#18263b;
+  --pa-surface-soft:#101d30;
+  --pa-accent:#add0ff;
+  --pa-accent-soft:#253d5f;
+  --pa-focus:#aed0ff;
+  --pa-purple:#c6a9f5;
+  --pa-green:#8bdfcb;
+  --pa-amber:#f3c47f;
+  --pa-cyan:#9fe3f6;
+  color-scheme:dark;
+}
+.p-atlas.p-notes :is(.p-atlas__hero,.p-atlas__explorer,.p-atlas__reader,
+ .p-atlas__graph-stage,.p-atlas__group,.p-atlas__group-label,.p-atlas__items,
+ .p-atlas__reading-content,.p-atlas__reading-content section,
+ .p-atlas__reading-content article) {
+  color:var(--pa-ink);
+}
+.p-atlas.p-notes :is(.p-atlas__hero h2,.p-atlas__panel-heading h3,
+ .p-atlas__reader-title,.p-atlas__reading-content h2,.p-atlas__reading-content h3,
+ .p-atlas__reading-content h4,.p-atlas__reading-content strong,
+ .p-atlas__reading-content th,.p-atlas__reading-content td) {
+  color:var(--pa-ink);
+}
+.p-atlas.p-notes .p-atlas__hero h2 span,
+.p-atlas.p-notes .p-atlas__eyebrow,
+.p-atlas.p-notes .p-atlas__reading-label,
+.p-atlas.p-notes .p-atlas__link:not(.p-atlas__link--primary):hover {
+  color:var(--pa-accent);
+}
+.p-atlas.p-notes :is(.p-atlas__lede,.p-atlas__metric small,.p-atlas__reader-hint,
+ .p-atlas__crumb,.p-atlas__status,.p-atlas__graph-footer,
+ .p-atlas__legend button,.p-atlas__item-btn) {
+  color:var(--pa-muted);
+}
+.p-atlas.p-notes .p-atlas__reader a:not(.p-atlas__link):not(.p-atlas__smallbtn) {
+  color:var(--pa-accent);
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.p-atlas.p-notes .p-atlas__link,
+.p-atlas.p-notes .p-atlas__link:visited {
+  color:var(--pa-ink);
+  background:var(--pa-surface);
+  border-color:var(--pa-line);
+}
+.p-atlas.p-notes .p-atlas__link--primary,
+.p-atlas.p-notes .p-atlas__link--primary:visited {
+  background:#184dad;
+  color:#ffffff !important;
+  border-color:#184dad;
+}
+html[data-theme="dark"] .p-atlas.p-notes .p-atlas__link--primary,
+html[data-theme="dark"] .p-atlas.p-notes .p-atlas__link--primary:visited {
+  background:#add0ff;
+  color:#13213a !important;
+  border-color:#add0ff;
+}
+.p-atlas.p-notes :is(.p-atlas__switch,.p-atlas__smallbtn,
+ .p-atlas__back,.p-atlas__chapter-btn,.p-atlas__item-btn,
+ .p-atlas__footer-nav button,.p-atlas__legend button) {
+  color:var(--pa-ink);
+}
+.p-atlas.p-notes .p-atlas__switch button {
+  color:var(--pa-muted);
+}
+.p-atlas.p-notes .p-atlas__switch button[aria-pressed="true"] {
+  color:var(--pa-accent);
+  background:var(--pa-accent-soft);
+}
+.p-atlas.p-notes .p-atlas__chapter-btn[aria-current="true"],
+.p-atlas.p-notes .p-atlas__item-btn[aria-current="true"] {
+  color:var(--pa-accent);
+}
+.p-atlas.p-notes .p-atlas__search {
+  background:var(--pa-surface);
+  color:var(--pa-ink);
+  border-color:var(--pa-line);
+}
+.p-atlas.p-notes .p-atlas__search::placeholder {
+  color:var(--pa-muted);
+}
+.p-atlas.p-notes :is(.p-equation,.fm-formula-row,.p-note,.fm-proof-note,
+ .p-formula-box,.fm-toggle,.p-proof,.fm-atlas__callout) {
+  color:var(--pa-ink);
+}
+.p-atlas.p-notes :is(.p-equation,.fm-formula-row) {
+  overflow-x:auto;
+}
+.p-atlas.p-notes .p-atlas__map .map-node text { fill:var(--pa-ink); }
+.p-atlas.p-notes .p-atlas__map .map-node .map-node-meta { fill:var(--pa-muted); }
+.p-atlas.p-notes .p-atlas__map .map-center-text { fill:var(--pa-accent); }
+.p-atlas.p-notes .p-atlas__map .map-center-sub { fill:var(--pa-muted); }
+.p-atlas.p-notes .p-atlas__map .map-node rect {
+  fill:var(--pa-surface);
+  stroke:var(--pa-line);
+}
+.p-atlas.p-notes .p-atlas__map .map-node:hover rect,
+.p-atlas.p-notes .p-atlas__map .map-node.is-active rect,
+.p-atlas.p-notes .p-atlas__map .map-node:focus-visible rect {
+  fill:var(--pa-accent-soft);
+  stroke:var(--map-tone);
+}
+/* The mode and language controls remain visible even on narrow screens. */
+.p-atlas__toolbar .p-atlas__languages { margin-left:auto; }
+.p-atlas__languages button { min-width:42px; }
+.p-atlas__local-lesson { margin:0 0 1.25rem; }
+.p-atlas__local-lesson h3 { font-size:1.05rem; margin:.8rem 0; }
+.p-atlas__local-lesson p { line-height:1.85;max-width:76ch; }
+.p-atlas__local-formula {
+  border:1px solid var(--pa-line);
+  border-left:3px solid var(--pa-accent);
+  border-radius:12px;
+  padding:1rem;
+  margin:1rem 0;
+  background:var(--pa-accent-soft);
+  overflow-x:auto;
+}
+.p-atlas__original-details {
+  margin:1.3rem 0;
+  border:1px solid var(--pa-line);
+  border-radius:12px;
+  background:var(--pa-surface-soft);
+  overflow:hidden;
+}
+.p-atlas__original-details > summary {
+  display:list-item;
+  cursor:pointer;
+  padding:.8rem 1rem;
+  color:var(--pa-accent);
+  font-weight:750;
+  background:var(--pa-accent-soft);
+}
+.p-atlas__original-inner { padding:1rem; }
+.p-atlas__local-list {display:grid;gap:.5rem;padding:0;list-style:none;margin:1rem 0;}
+.p-atlas__local-list li {margin:0;}
+.p-atlas__local-list button {
+  display:block;width:100%;
+  text-align:left;
+  color:var(--pa-ink);
+  border:1px solid var(--pa-line);
+  background:var(--pa-surface-soft);
+  border-radius:10px;
+  padding:.75rem .85rem;
+}
+.p-atlas__local-list button:hover,
+.p-atlas__local-list button:focus-visible {
+  border-color:var(--pa-accent);
+  color:var(--pa-accent);
+}
+.p-atlas.p-notes .p-atlas__reading-content mjx-container,
+.p-atlas.p-notes .p-atlas__reading-content .MathJax {
+  color:var(--pa-ink);
+}
+@media(max-width:620px){
+  .p-atlas__toolbar .p-atlas__languages {margin-left:0;}
+  .p-atlas__local-formula {padding:.75rem;}
+}
