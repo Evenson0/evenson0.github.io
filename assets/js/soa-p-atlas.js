@@ -181,7 +181,7 @@
         const y=(i+1)*520/(visible.length+1);
         graphNode(ch,nx,y,232,76,childrenFor(ch,q).length+" "+(locale.lang==="fr"?"FICHES":"NOTES"));
       });
-      if(!visible.length)label(graph,"No matching topics",305,260,25);
+      if(!visible.length)label(graph,locale.t("noMatchGraph","No matching topics"),305,260,25);
     } else {
       const ch=byId.get(focusId), children=childrenFor(ch,q);
       get("pa-map-subtitle").textContent=locale.title(ch);
@@ -189,12 +189,12 @@
         const y=(i+1)*520/(children.length+1);
         link(cx,cy,nx,y,selectedId===note.id);
       });
-      center(cx,cy,"TOPICS",String(children.length).padStart(2,"0")+" linked",ch);
+      center(cx,cy,locale.lang==="fr"?"NOTIONS":"TOPICS",String(children.length).padStart(2,"0")+(locale.lang==="fr"?" liens":" linked"),ch);
       children.forEach((note,i)=>{
         const y=(i+1)*520/(children.length+1);
-        graphNode(note,nx,y,232,76,"NOTE "+String(ch.children.indexOf(note)+1).padStart(2,"0"));
+        graphNode(note,nx,y,232,76,(locale.lang==="fr"?"FICHE ":"NOTE ")+String(ch.children.indexOf(note)+1).padStart(2,"0"));
       });
-      if(!children.length)label(graph,"No matches",305,260,25);
+      if(!children.length)label(graph,locale.t("noMatchChapter","No matches"),305,260,25);
     }
   }
   function renderLegend() {
@@ -298,8 +298,8 @@
     if(focusId&&!chaptersFor(q).some(ch=>ch.id===focusId))focusId=null;
     renderList();renderGraph();progress();
     get("pa-status").textContent=chaptersFor(q).length
-      ?"Tip: press / to search. Review marks are stored only in this browser."
-      :"No matching topics. Clear search to restore the map.";
+      ?locale.t("tip","Tip: press / to search. Review marks are stored only in this browser.")
+      :locale.t("noResults","No matching topics. Clear search to restore the map.");
   });
   document.addEventListener("keydown",event=>{
     const target=event.target;
