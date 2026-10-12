@@ -190,7 +190,7 @@ author_profile: true
       <div class="note-links">
         <a
           class="note-btn"
-          href="{{ '/notes/soa-p/' | relative_url }}?v=atlas-20261012-fixed">
+          href="{{ '/notes/soa-p/' | relative_url }}?v=atlas-20261012-p-clean">
           Explore notes atlas
         </a>
 
