@@ -62,8 +62,8 @@
   let mode=window.matchMedia("(max-width:720px)").matches?"outline":"graph";
   const normalize=value=>String(value||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
   const term=()=>normalize(search.value.trim());
-  const chapterMatches=(ch,q)=>!q||normalize(ch.title+" "+ch.short+" "+ch.category).includes(q);
-  const noteMatches=(note,q)=>!q||normalize(note.title+" "+note.short+" "+note.source.textContent).includes(q);
+  const chapterMatches=(ch,q)=>!q||normalize(ch.title+" "+ch.short+" "+ch.category+" "+(window.SOA_ATLAS_LANGUAGE.fr["p"][ch.id]?.title||"")+" "+(window.SOA_ATLAS_LANGUAGE.fr["p"][ch.id]?.intro||"")).includes(q);
+  const noteMatches=(note,q)=>!q||normalize(note.title+" "+note.short+" "+note.source.textContent+" "+(window.SOA_ATLAS_LANGUAGE.fr["p"][note.id]?.title||"")+" "+(window.SOA_ATLAS_LANGUAGE.fr["p"][note.id]?.intro||"")).includes(q);
   const childrenFor=(ch,q)=>ch.children.filter(note=>chapterMatches(ch,q)||noteMatches(note,q));
   const chaptersFor=q=>chapters.filter(ch=>chapterMatches(ch,q)||childrenFor(ch,q).length);
   function element(tag,cls,label) {
@@ -238,9 +238,7 @@
     get("pa-crumb").textContent=locale.category(ch.category)+" / "+(note.type==="chapter"?locale.t("chapter","Chapter"):locale.t("formulaNote","Formula note"));
     get("pa-reader-label").textContent=note.type==="chapter"?locale.t("chapterOverview","CHAPTER OVERVIEW"):locale.t("researchNote","RESEARCH NOTE");
     get("pa-reader-title").textContent=locale.title(note);
-    get("pa-reading-hint").textContent=note.type==="chapter"
-      ?"Complete chapter · Select a smaller node for focused reading."
-      :"From "+ch.title+" · Formulas, derivations and worked examples.";
+    get("pa-reading-hint").textContent=locale.lang==="fr"?(note.type==="chapter"?locale.t("chapterHint","Chapter overview."):locale.t("noteHint","Original explanation below.")):(note.type==="chapter"?"Complete chapter · Select a smaller node for focused reading.":"From "+ch.title+" · Formulas, derivations and worked examples.");
     if(window.MathJax&&typeof window.MathJax.typesetClear==="function") {
       try{window.MathJax.typesetClear([content]);}catch(_){}
     }
