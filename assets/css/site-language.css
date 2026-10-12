@@ -18,7 +18,11 @@
 }
 .masthead .site-language-switch .site-language-button {
   appearance:none;
-  display:inline-flex;
+  display:inline-flex !important;
+  position:static !important;
+  float:none !important;
+  width:auto !important;
+  height:auto !important;
   justify-content:center;
   align-items:center;
   min-width:36px;
@@ -91,3 +95,8 @@ html[data-site-lang="en"] [data-site-content-lang="en"] {
   font-size:.82rem;
   line-height:1.7;
 }
+
+/* Without JavaScript, default to the English source instead of showing two copies. */
+[data-site-content-lang="fr"] { display:none; }
+html[data-site-lang="fr"] [data-site-content-lang="fr"] {display:block;}
+html[data-site-lang="fr"] [data-site-content-lang="en"] {display:none;}
