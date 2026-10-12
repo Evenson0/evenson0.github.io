@@ -51,6 +51,7 @@
   }
   const notes=chapters.flatMap(ch=>[ch].concat(ch.children));
   const byId=new Map(notes.map(note=>[note.id,note]));
+  const locale=window.createSOAAtlasLocale(root,"p",()=>{renderReader();renderGraph();renderList();renderLegend();progress();if(typeof renderRelated==="function")renderRelated();});
   let reviewed=new Set();
   try {
     const saved=JSON.parse(localStorage.getItem(storageKey)||"[]");
@@ -246,7 +247,7 @@
     const copy=note.source.cloneNode(true);
     const heading=copy.querySelector(note.type==="chapter"?":scope > h2":":scope > h3");
     if(heading)heading.remove();
-    content.replaceChildren(copy);
+    locale.lesson(note,ch,copy,content,choose,math);
     const mark=get("pa-reviewed");
     mark.textContent=reviewed.has(note.id)?"✓ Reviewed":"Mark reviewed";
     mark.classList.toggle("is-reviewed",reviewed.has(note.id));
@@ -317,6 +318,7 @@
     try{id=decodeURIComponent(location.hash.slice(6));}catch(_){return;}
     if(byId.has(id)&&id!==selectedId)choose(id,true);
   });
+  locale.apply();
   setMode(mode);
   progress();renderLegend();
   let initial="";
