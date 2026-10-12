@@ -5,8 +5,8 @@ title_fr: Diagnostic P · GLM en assurance · Système physique
 cycle: foundations-01
 cycle_week: 1
 
-start_date: 2026-09-21
-end_date: 2026-09-27
+start_date: 2026-10-12
+end_date: 2026-10-18
 
 status: planned
 
@@ -22,7 +22,7 @@ maintenance:
   - writing-reading-practice
 
 user_inputs:
-  literary_book: Le Rouge et le Noir
+  literary_book: Adieu
   finance_book: The Intelligent Investor
 
 quests:
@@ -124,26 +124,26 @@ quests:
   - domain: writing
     node: writing-reading-practice
     task: >
-      Read Le Rouge et le Noir from September 21 to September 27:
-      one seventh of the novel each day.
+      Read Adieu from October 12 to October 18:
+      one seventh of the story each day.
     task_fr: >
-      Lire Le Rouge et le Noir du 21 au 27 septembre :
-      un septième du roman par jour..
+      Lire Adieu du 12 au 18 octobre :
+      un septième du récit par jour.
 
   - domain: writing
     node: writing-reading-practice
     task: >
       Read portions 1–7 of 31 equal page portions of The Intelligent
-      Investor. Start September 21 and finish October 21, including
+      Investor. Start October 12 and finish November 11, including
       the commentary and appendices you intend to read.
     task_fr: >
       Lire les portions 1 à 7 sur 31 portions égales de
-      L’Investisseur intelligent. Commencer le 21 septembre et
-      terminer le 21 octobre, commentaires et annexes à lire compris.
+      L’Investisseur intelligent. Commencer le 12 octobre et
+      terminer le 11 novembre, commentaires et annexes à lire compris.
 
 days:
 
-  - date: 2026-09-21
+  - date: 2026-10-12
     weekday: monday
     title: Establish the baseline
     title_fr: Établir le point de départ
@@ -170,13 +170,13 @@ days:
         node: writing-reading-practice
         time: According to edition / Selon édition
         text: >
-          Read portion 1/7 of Le Rouge et le Noir.
-          Target cumulative progress: 1/7 of the novel;
-          finish on September 27.
+          Read portion 1/7 of Adieu.
+          Target cumulative progress: 1/7 of the story;
+          finish on October 18.
         text_fr: >
-          Lire la portion 1/7 du Rouge et le Noir.
+          Lire la portion 1/7 de Adieu.
           Cible cumulée : 1/7 du roman ;
-          terminer le 27 septembre.
+          terminer le 18 octobre.
 
       - domain: writing
         node: writing-reading-practice
@@ -190,7 +190,7 @@ days:
           cible cumulée 1/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-09-22
+  - date: 2026-10-13
     weekday: tuesday
     title: Probability foundations
     title_fr: Fondements de la probabilité
@@ -219,13 +219,13 @@ days:
         node: writing-reading-practice
         time: According to edition / Selon édition
         text: >
-          Read portion 2/7 of Le Rouge et le Noir.
-          Target cumulative progress: 2/7 of the novel;
-          finish on September 27.
+          Read portion 2/7 of Adieu.
+          Target cumulative progress: 2/7 of the story;
+          finish on October 18.
         text_fr: >
-          Lire la portion 2/7 du Rouge et le Noir.
+          Lire la portion 2/7 de Adieu.
           Cible cumulée : 2/7 du roman ;
-          terminer le 27 septembre.
+          terminer le 18 octobre.
 
       - domain: writing
         node: writing-reading-practice
@@ -239,7 +239,7 @@ days:
           cible cumulée 2/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-09-23
+  - date: 2026-10-14
     weekday: wednesday
     title: Conditional probability
     title_fr: Probabilité conditionnelle
@@ -262,13 +262,13 @@ days:
         node: writing-reading-practice
         time: According to edition / Selon édition
         text: >
-          Read portion 3/7 of Le Rouge et le Noir.
-          Target cumulative progress: 3/7 of the novel;
-          finish on September 27.
+          Read portion 3/7 of Adieu.
+          Target cumulative progress: 3/7 of the story;
+          finish on October 18.
         text_fr: >
-          Lire la portion 3/7 du Rouge et le Noir.
+          Lire la portion 3/7 de Adieu.
           Cible cumulée : 3/7 du roman ;
-          terminer le 27 septembre.
+          terminer le 18 octobre.
 
       - domain: writing
         node: writing-reading-practice
@@ -282,7 +282,7 @@ days:
           cible cumulée 3/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-09-24
+  - date: 2026-10-15
     weekday: thursday
     title: Produce something
     title_fr: Produire quelque chose
@@ -310,13 +310,13 @@ days:
         node: writing-reading-practice
         time: According to edition / Selon édition
         text: >
-          Read portion 4/7 of Le Rouge et le Noir.
-          Target cumulative progress: 4/7 of the novel;
-          finish on September 27.
+          Read portion 4/7 of Adieu.
+          Target cumulative progress: 4/7 of the story;
+          finish on October 18.
         text_fr: >
-          Lire la portion 4/7 du Rouge et le Noir.
+          Lire la portion 4/7 de Adieu.
           Cible cumulée : 4/7 du roman ;
-          terminer le 27 septembre.
+          terminer le 18 octobre.
 
       - domain: writing
         node: writing-reading-practice
@@ -330,7 +330,7 @@ days:
           cible cumulée 4/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-09-25
+  - date: 2026-10-16
     weekday: friday
     title: Connect the concepts
     title_fr: Relier les concepts
@@ -353,13 +353,13 @@ days:
         node: writing-reading-practice
         time: According to edition / Selon édition
         text: >
-          Read portion 5/7 of Le Rouge et le Noir.
-          Target cumulative progress: 5/7 of the novel;
-          finish on September 27.
+          Read portion 5/7 of Adieu.
+          Target cumulative progress: 5/7 of the story;
+          finish on October 18.
         text_fr: >
-          Lire la portion 5/7 du Rouge et le Noir.
+          Lire la portion 5/7 de Adieu.
           Cible cumulée : 5/7 du roman ;
-          terminer le 27 septembre.
+          terminer le 18 octobre.
 
       - domain: writing
         node: writing-reading-practice
@@ -373,7 +373,7 @@ days:
           cible cumulée 5/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-09-26
+  - date: 2026-10-17
     weekday: saturday
     title: Test and communicate
     title_fr: Tester et communiquer
@@ -402,13 +402,13 @@ days:
         node: writing-reading-practice
         time: According to edition / Selon édition
         text: >
-          Read portion 6/7 of Le Rouge et le Noir.
-          Target cumulative progress: 6/7 of the novel;
-          finish on September 27.
+          Read portion 6/7 of Adieu.
+          Target cumulative progress: 6/7 of the story;
+          finish on October 18.
         text_fr: >
-          Lire la portion 6/7 du Rouge et le Noir.
+          Lire la portion 6/7 de Adieu.
           Cible cumulée : 6/7 du roman ;
-          terminer le 27 septembre.
+          terminer le 18 octobre.
 
       - domain: writing
         node: writing-reading-practice
@@ -422,7 +422,7 @@ days:
           cible cumulée 6/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-09-27
+  - date: 2026-10-18
     weekday: sunday
     title: Consolidate and review
     title_fr: Consolider et revoir
@@ -460,13 +460,13 @@ days:
         node: writing-reading-practice
         time: According to edition / Selon édition
         text: >
-          Read portion 7/7 of Le Rouge et le Noir.
-          Target cumulative progress: 7/7 of the novel;
-          finish on September 27.
+          Read portion 7/7 of Adieu.
+          Target cumulative progress: 7/7 of the story;
+          finish on October 18.
         text_fr: >
-          Lire la portion 7/7 du Rouge et le Noir.
+          Lire la portion 7/7 de Adieu.
           Cible cumulée : 7/7 du roman ;
-          terminer le 27 septembre.
+          terminer le 18 octobre.
 
       - domain: writing
         node: writing-reading-practice

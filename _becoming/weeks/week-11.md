@@ -5,8 +5,8 @@ title_fr: Pratique mixte FM · Explicabilité en tarification IARD
 cycle: foundations-01
 cycle_week: 11
 
-start_date: 2026-11-30
-end_date: 2026-12-06
+start_date: 2026-12-21
+end_date: 2026-12-27
 
 status: planned
 
@@ -92,7 +92,7 @@ quests:
 
 days:
 
-  - date: 2026-11-30
+  - date: 2026-12-21
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -121,7 +121,7 @@ days:
         text: Begin Kuo and Lupton and identify the central explainability problem in insurance pricing.
         text_fr: Commencer Kuo et Lupton et identifier le problème central d'explicabilité en tarification d'assurance.
 
-  - date: 2026-12-01
+  - date: 2026-12-22
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -150,7 +150,7 @@ days:
         text: Continue literary reading or revise the existing essay.
         text_fr: Poursuivre la lecture littéraire ou réviser l'essai existant.
 
-  - date: 2026-12-02
+  - date: 2026-12-23
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -179,7 +179,7 @@ days:
         text: Continue Kuo and Lupton and distinguish intrinsic from post-hoc explanations.
         text_fr: Poursuivre Kuo et Lupton et distinguer les explications intrinsèques des explications post-hoc.
 
-  - date: 2026-12-03
+  - date: 2026-12-24
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -208,7 +208,7 @@ days:
         text: Read the mathlib contribution guidelines and note the requirements for a small contribution.
         text_fr: Lire les règles de contribution à mathlib et noter les exigences pour une petite contribution.
 
-  - date: 2026-12-04
+  - date: 2026-12-25
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -243,7 +243,7 @@ days:
         text: Continue the literary work without allowing it to displace FM.
         text_fr: Poursuivre le travail littéraire sans lui permettre de prendre la place de FM.
 
-  - date: 2026-12-05
+  - date: 2026-12-26
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -272,7 +272,7 @@ days:
         text: Discuss the explainability research in English and respond to critical follow-up questions.
         text_fr: Discuter de la recherche sur l'explicabilité en anglais et répondre à des questions critiques de suivi.
 
-  - date: 2026-12-06
+  - date: 2026-12-27
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche

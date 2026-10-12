@@ -5,8 +5,8 @@ title_fr: FM Annuités et prêts · Entretien ANAM
 cycle: foundations-01
 cycle_week: 9
 
-start_date: 2026-11-16
-end_date: 2026-11-22
+start_date: 2026-12-07
+end_date: 2026-12-13
 
 status: planned
 
@@ -96,7 +96,7 @@ quests:
 
 days:
 
-  - date: 2026-11-16
+  - date: 2026-12-07
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -115,7 +115,7 @@ days:
         text: Complete 15–20 focused annuity problems.
         text_fr: Compléter 15 à 20 exercices ciblés sur les annuités.
 
-  - date: 2026-11-17
+  - date: 2026-12-08
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -140,7 +140,7 @@ days:
         text: Clean existing ANAM notes only if the FM work is complete.
         text_fr: Nettoyer les notes ANAM existantes uniquement si le travail FM prévu est terminé.
 
-  - date: 2026-11-18
+  - date: 2026-12-09
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -159,7 +159,7 @@ days:
         text: Practice BA II Plus loan and annuity workflows until the calculator sequence becomes automatic.
         text_fr: Pratiquer les procédures BA II Plus pour les prêts et annuités jusqu'à ce que la séquence à la calculatrice devienne automatique.
 
-  - date: 2026-11-19
+  - date: 2026-12-10
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -184,7 +184,7 @@ days:
         text: Complete one light English conversation only if it feels restorative.
         text_fr: Compléter une conversation légère en anglais uniquement si elle est reposante.
 
-  - date: 2026-11-20
+  - date: 2026-12-11
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -197,7 +197,7 @@ days:
         text: Review sinking funds and solve mixed loan and annuity problems requiring multiple value equations.
         text_fr: Revoir les fonds d'amortissement et résoudre des problèmes mixtes de prêts et d'annuités demandant plusieurs équations de valeur.
 
-  - date: 2026-11-21
+  - date: 2026-12-12
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -226,7 +226,7 @@ days:
         text: Stop studying early enough to protect sleep and recover.
         text_fr: Arrêter d'étudier suffisamment tôt pour préserver le sommeil et récupérer.
 
-  - date: 2026-11-22
+  - date: 2026-12-13
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche

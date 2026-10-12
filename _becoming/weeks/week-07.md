@@ -1,12 +1,12 @@
 ---
-title: Exam P — November 7 · GLM Reproduction (Optional)
-title_fr: Examen P — 7 novembre · Reproduction GLM (facultative)
+title: Probability Consolidation · GLM Reproduction (Optional)
+title_fr: Consolidation des probabilités · Reproduction GLM (facultative)
 
 cycle: foundations-01
 cycle_week: 7
 
-start_date: 2026-11-02
-end_date: 2026-11-08
+start_date: 2026-11-23
+end_date: 2026-11-29
 
 status: planned
 
@@ -21,45 +21,23 @@ maintenance:
   - writing-reading-practice
 
 user_inputs:
-  literary_book: Le Rouge et le Noir
+  literary_book: À choisir / To be selected
 
 quests:
 
   - domain: actuarial
     node: actuarial-exam-1
-    task: Finish Exam P preparation, reduce uncertainty rather than learn large new topics, and sit the examination on November 7, 2026.
-    task_fr: Terminer la préparation de l'examen P, réduire les incertitudes plutôt qu'apprendre de nouveaux gros sujets et passer l'examen le 7 novembre 2026.
-
-    completion:
-      - Repair the highest-value remaining weaknesses
-      - Review the complete error log
-      - Review formulas and recurring setups
-      - Finalize time-management strategy
-      - Finalize skip and guessing strategy
-      - Prepare calculator and required identification
-      - Confirm exam logistics
-      - Sit Exam P on November 7, 2026
-      - Record immediate post-exam observations without attempting a full postmortem
-
-    completion_fr:
-      - Corriger les dernières faiblesses les plus importantes
-      - Revoir tout le journal d'erreurs
-      - Revoir les formules et mises en équation récurrentes
-      - Finaliser la stratégie de gestion du temps
-      - Finaliser la stratégie de saut et de réponse au hasard
-      - Préparer la calculatrice et les pièces d'identité requises
-      - Confirmer la logistique de l'examen
-      - Passer l'examen P le 7 novembre 2026
-      - Noter quelques observations immédiatement après l'examen sans faire une analyse complète
+    task: Consolidate probability knowledge using the planned exercises and error log. The Exam P appointment remains November 7, 2026, in Week 4.
+    task_fr: Consolider les probabilités avec les exercices prévus et le journal d'erreurs. Le rendez-vous de l'examen P reste le 7 novembre 2026, en semaine 4.
 
   - domain: research
     node: research-actuarial-glm-reproduction
     task: >
-      Optional during the P exam week: Finish Goldburd pages 86–104
+      Optional: Finish Goldburd pages 86–104
       and build the first complete reproducible version of the
       insurance GLM project.
     task_fr: >
-      Facultatif pendant la semaine de l’examen P : Terminer les
+      Facultatif : Terminer les
       pages 86 à 104 de Goldburd et construire la première version
       complète et reproductible du projet GLM d'assurance.
 
@@ -92,33 +70,33 @@ quests:
   - domain: writing
     node: writing-reading-practice
     task: >
-      Optional during the P exam week: Revisit selected passages
-      of Le Rouge et le Noir; if unfinished, continue without
+      Optional: Revisit selected passages
+      of the selected literary book; if unfinished, continue without
       a catch-up quota while keeping P primary.
     task_fr: >
-      Facultatif pendant la semaine de l’examen P : Revenir sur
-      quelques passages du Rouge et le Noir ; si le livre est
+      Facultatif : Revenir sur
+      quelques passages du livre choisi ; si le livre est
       inachevé, poursuivre sans quota de rattrapage en gardant
       P prioritaire.
 
   - domain: lean
     node: lean-mathematics-in-lean
     task: >
-      Optional during the P exam week: Begin Mathematics in Lean
+      Optional: Begin Mathematics in Lean
       Chapter 2 and complete one small calculation proof.
     task_fr: >
-      Facultatif pendant la semaine de l’examen P : Commencer
+      Facultatif : Commencer
       le chapitre 2 de Mathematics in Lean et compléter
       une petite preuve de calcul.
 
   - domain: english
     node: english-conversation-practice
     task: >
-      Optional during the P exam week: Complete one English
+      Optional: Complete one English
       conversation focused partly on professional introductions
       and work-related conversation.
     task_fr: >
-      Facultatif pendant la semaine de l’examen P : Compléter
+      Facultatif : Compléter
       une conversation en anglais portant en partie sur
       les présentations professionnelles et les conversations
       liées au travail.
@@ -146,7 +124,7 @@ quests:
 
 days:
 
-  - date: 2026-11-02
+  - date: 2026-11-23
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -182,14 +160,14 @@ days:
         time: 25–30 min
         text: >
           Optional, only if P preparation is on schedule:
-          Revisit a passage already read in Le Rouge et le Noir,
+          Revisit a passage already read in the selected literary book,
           or continue if unfinished.
         text_fr: >
           Facultatif, uniquement si la préparation P est à jour :
-          Revenir sur un passage déjà lu du Rouge et le Noir,
+          Revenir sur un passage déjà lu du livre choisi,
           ou poursuivre si le livre n’est pas terminé.
 
-  - date: 2026-11-03
+  - date: 2026-11-24
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -235,7 +213,7 @@ days:
           Facultatif, uniquement si la préparation P est à jour :
           Poursuivre la lecture littéraire.
 
-  - date: 2026-11-04
+  - date: 2026-11-25
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -266,7 +244,7 @@ days:
           Finaliser les données, la variable cible et
           les prédicteurs de la reproduction GLM.
 
-  - date: 2026-11-05
+  - date: 2026-11-26
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -314,7 +292,7 @@ days:
           Facultatif, uniquement si la préparation P est à jour :
           Commencer le chapitre 2 de Mathematics in Lean.
 
-  - date: 2026-11-06
+  - date: 2026-11-27
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -323,15 +301,14 @@ days:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 30–45 min
-        text: Complete only a light review of familiar formulas, recurring setups, and a few easy representative problems.
-        text_fr: Faire uniquement une révision légère des formules familières, des mises en équation récurrentes et de quelques problèmes représentatifs faciles.
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 20 min
-        text: Prepare the calculator, identification, exam confirmation, route, timing, and anything required for tomorrow.
-        text_fr: Préparer la calculatrice, les pièces d'identité, la confirmation de l'examen, le trajet, l'horaire et tout ce qui est requis pour demain.
+        time: 90 min
+        text: >
+          Complete a cumulative Exam P set combining earlier
+          topics with joint and conditional distributions.
+        text_fr: >
+          Compléter une série cumulative de P combinant
+          les sujets précédents avec les distributions
+          conjointes et conditionnelles.
 
       - domain: research
         node: research-actuarial-glm-reproduction
@@ -344,7 +321,7 @@ days:
           Produire les diagnostics de base et commencer
           la validation du modèle.
 
-  - date: 2026-11-07
+  - date: 2026-11-28
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -353,17 +330,11 @@ days:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: Exam
-        text: Sit Exam P.
-        text_fr: Passer l'examen P.
+        time: 75–90 min
+        text: Complete one timed multivariate Exam P block and fully review every error.
+        text_fr: Compléter un bloc P multivarié chronométré et revoir entièrement chaque erreur.
 
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 10 min
-        text: After the exam, record only immediate observations about timing, difficulty, and topics that felt uncertain.
-        text_fr: Après l'examen, noter uniquement les observations immédiates sur le temps, la difficulté et les sujets qui ont semblé incertains.
-
-  - date: 2026-11-08
+  - date: 2026-11-29
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche
@@ -372,9 +343,26 @@ days:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 15 min
-        text: Make a brief post-exam review without assuming a result. Close P preparation; FM becomes the main actuarial focus.
-        text_fr: Faire un bref bilan post-examen sans supposer le résultat. Clore la préparation P ; FM devient la priorité actuarielle.
+        time: 90–120 min
+        text: >
+          Complete a cumulative Exam P set covering general
+          probability, discrete variables, continuous variables,
+          distributions, and multivariate probability.
+        text_fr: >
+          Compléter une série cumulative de P couvrant
+          la probabilité générale, les variables discrètes,
+          les variables continues, les distributions
+          et la probabilité multivariée.
+
+      - domain: actuarial
+        node: actuarial-exam-1
+        time: 30 min
+        text: >
+          Review the complete P error log and identify
+          the three most important remaining weaknesses.
+        text_fr: >
+          Revoir tout le journal d'erreurs P et identifier
+          les trois principales faiblesses restantes.
 
 completed: []
 ---

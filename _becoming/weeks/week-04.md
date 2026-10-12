@@ -1,12 +1,12 @@
 ---
-title: Multivariate Probability · GLM Model Form
-title_fr: Probabilité multivariée · Forme d'un GLM
+title: Multivariate Probability · Exam P November 7 · GLM Model Form
+title_fr: Probabilité multivariée · Examen P le 7 novembre · Forme d'un GLM
 
 cycle: foundations-01
 cycle_week: 4
 
-start_date: 2026-10-12
-end_date: 2026-10-18
+start_date: 2026-11-02
+end_date: 2026-11-08
 
 status: planned
 
@@ -22,7 +22,7 @@ maintenance:
   - mathematics-proof-writing
 
 user_inputs:
-  literary_book: Le Rouge et le Noir
+  literary_book: À choisir / To be selected
   finance_book: The Intelligent Investor
 
 quests:
@@ -165,20 +165,25 @@ quests:
     node: writing-reading-practice
     task: >
       Read portions 22–28 of 31 equal page portions of The
-      Intelligent Investor. Start September 21 and finish
-      October 21, including the commentary and appendices
+      Intelligent Investor. Start October 12 and finish
+      November 11, including the commentary and appendices
       you intend to read. Divide the chosen page range into
       31; take brief notes within the reading session.
     task_fr: >
       Lire les portions 22 à 28 sur 31 portions égales de
-      L’Investisseur intelligent. Commencer le 21 septembre
-      et terminer le 21 octobre, commentaires et annexes
+      L’Investisseur intelligent. Commencer le 12 octobre
+      et terminer le 11 novembre, commentaires et annexes
       à lire compris. Diviser la plage de pages choisie
       par 31 ; intégrer les notes brèves à la lecture.
 
+  - domain: actuarial
+    node: actuarial-exam-1
+    task: Sit Exam P on November 7, 2026. This appointment is fixed despite the cycle shift.
+    task_fr: Passer l'examen P le 7 novembre 2026. Ce rendez-vous reste fixe malgré le décalage du cycle.
+
 days:
 
-  - date: 2026-10-12
+  - date: 2026-11-02
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -228,7 +233,7 @@ days:
           cible cumulée 22/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-13
+  - date: 2026-11-03
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -268,7 +273,7 @@ days:
           cible cumulée 23/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-14
+  - date: 2026-11-04
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -305,7 +310,7 @@ days:
           cible cumulée 24/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-15
+  - date: 2026-11-05
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -347,7 +352,7 @@ days:
           cible cumulée 25/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-16
+  - date: 2026-11-06
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -356,14 +361,15 @@ days:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 90 min
-        text: >
-          Complete a cumulative Exam P set combining earlier
-          topics with joint and conditional distributions.
-        text_fr: >
-          Compléter une série cumulative de P combinant
-          les sujets précédents avec les distributions
-          conjointes et conditionnelles.
+        time: 30–45 min
+        text: Complete only a light review of familiar formulas, recurring setups, and a few easy representative problems.
+        text_fr: Faire uniquement une révision légère des formules familières, des mises en équation récurrentes et de quelques problèmes représentatifs faciles.
+
+      - domain: actuarial
+        node: actuarial-exam-1
+        time: 20 min
+        text: Prepare the calculator, identification, exam confirmation, route, timing, and anything required for tomorrow.
+        text_fr: Préparer la calculatrice, les pièces d'identité, la confirmation de l'examen, le trajet, l'horaire et tout ce qui est requis pour demain.
 
       - domain: research
         node: research-actuarial-glm-model-form
@@ -394,7 +400,7 @@ days:
           cible cumulée 26/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-17
+  - date: 2026-11-07
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -403,9 +409,15 @@ days:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 75–90 min
-        text: Complete one timed multivariate Exam P block and fully review every error.
-        text_fr: Compléter un bloc P multivarié chronométré et revoir entièrement chaque erreur.
+        time: Exam
+        text: Sit Exam P.
+        text_fr: Passer l'examen P.
+
+      - domain: actuarial
+        node: actuarial-exam-1
+        time: 10 min
+        text: After the exam, record only immediate observations about timing, difficulty, and topics that felt uncertain.
+        text_fr: Après l'examen, noter uniquement les observations immédiates sur le temps, la difficulté et les sujets qui ont semblé incertains.
 
       - domain: actuarial
         node: actuarial-fm-diagnostic
@@ -436,7 +448,7 @@ days:
           cible cumulée 27/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-18
+  - date: 2026-11-08
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche
@@ -445,26 +457,9 @@ days:
 
       - domain: actuarial
         node: actuarial-exam-1
-        time: 90–120 min
-        text: >
-          Complete a cumulative Exam P set covering general
-          probability, discrete variables, continuous variables,
-          distributions, and multivariate probability.
-        text_fr: >
-          Compléter une série cumulative de P couvrant
-          la probabilité générale, les variables discrètes,
-          les variables continues, les distributions
-          et la probabilité multivariée.
-
-      - domain: actuarial
-        node: actuarial-exam-1
-        time: 30 min
-        text: >
-          Review the complete P error log and identify
-          the three most important remaining weaknesses.
-        text_fr: >
-          Revoir tout le journal d'erreurs P et identifier
-          les trois principales faiblesses restantes.
+        time: 15 min
+        text: Make a brief post-exam review without assuming a result. The remaining planned probability sessions serve as consolidation.
+        text_fr: Faire un bref bilan post-examen sans supposer le résultat. Les séances de probabilités restantes servent à consolider les acquis.
 
       - domain: research
         node: research-actuarial-glm-model-form

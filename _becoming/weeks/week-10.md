@@ -5,8 +5,8 @@ title_fr: FM Obligations et flux monétaires · GLM, GAM et ANAM
 cycle: foundations-01
 cycle_week: 10
 
-start_date: 2026-11-23
-end_date: 2026-11-29
+start_date: 2026-12-14
+end_date: 2026-12-20
 
 status: planned
 
@@ -106,8 +106,8 @@ quests:
 
   - domain: writing
     node: writing-literary-essay
-    task: If Le Rouge et le Noir is finished, begin an 800–1,200 word literary essay; otherwise continue reading without forcing the essay.
-    task_fr: Si Le Rouge et le Noir est terminé, commencer un essai littéraire de 800 à 1 200 mots ; sinon poursuivre la lecture sans forcer l'essai.
+    task: If the selected literary book is finished, begin an 800–1,200 word literary essay; otherwise continue reading without forcing the essay.
+    task_fr: Si le livre choisi est terminé, commencer un essai littéraire de 800 à 1 200 mots ; sinon poursuivre la lecture sans forcer l'essai.
 
   - domain: lean
     node: lean-library-navigation
@@ -140,7 +140,7 @@ quests:
 
 days:
 
-  - date: 2026-11-23
+  - date: 2026-12-14
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -163,7 +163,7 @@ days:
         text: Define the main FM objective for the period leading to the December exam.
         text_fr: Définir l'objectif principal FM pour la période menant à l'examen de décembre.
 
-  - date: 2026-11-24
+  - date: 2026-12-15
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -182,7 +182,7 @@ days:
         text: Solve problems where price, yield, coupon, or redemption information is unknown.
         text_fr: Résoudre des problèmes où le prix, le rendement, le coupon ou la valeur de remboursement est inconnu.
 
-  - date: 2026-11-25
+  - date: 2026-12-16
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -204,10 +204,10 @@ days:
       - domain: writing
         node: writing-literary-essay
         time: 30 min
-        text: Continue Le Rouge et le Noir or outline the literary essay if the book is finished.
-        text_fr: Poursuivre Le Rouge et le Noir ou préparer le plan de l'essai littéraire si le livre est terminé.
+        text: Continue the selected literary book or outline the literary essay if the book is finished.
+        text_fr: Poursuivre le livre choisi ou préparer le plan de l'essai littéraire si le livre est terminé.
 
-  - date: 2026-11-26
+  - date: 2026-12-17
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -238,7 +238,7 @@ days:
         text: Practice finding useful lemmas in mathlib for one small proof.
         text_fr: S'entraîner à trouver des lemmes utiles dans mathlib pour une petite preuve.
 
-  - date: 2026-11-27
+  - date: 2026-12-18
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -257,7 +257,7 @@ days:
         text: Fit one flexible additive model using the same dataset and target as the GLM.
         text_fr: Ajuster un modèle additif flexible avec le même jeu de données et la même cible que le GLM.
 
-  - date: 2026-11-28
+  - date: 2026-12-19
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -282,7 +282,7 @@ days:
         text: Complete an English conversation structured like a professional meeting.
         text_fr: Compléter une conversation en anglais structurée comme une réunion professionnelle.
 
-  - date: 2026-11-29
+  - date: 2026-12-20
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche

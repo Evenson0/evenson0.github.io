@@ -5,8 +5,8 @@ title_fr: Préparation finale FM · Équité en tarification IARD
 cycle: foundations-01
 cycle_week: 12
 
-start_date: 2026-12-07
-end_date: 2026-12-13
+start_date: 2026-12-28
+end_date: 2027-01-03
 
 status: planned
 
@@ -108,7 +108,7 @@ quests:
 
 days:
 
-  - date: 2026-12-07
+  - date: 2026-12-28
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -137,7 +137,7 @@ days:
         text: Select the fairness or calibration paper and read the introduction and research question.
         text_fr: Sélectionner l'article sur l'équité ou la calibration et lire l'introduction ainsi que la question de recherche.
 
-  - date: 2026-12-08
+  - date: 2026-12-29
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -166,7 +166,7 @@ days:
         text: Continue or revise the literary essay if it is worth keeping.
         text_fr: Poursuivre ou réviser l'essai littéraire s'il mérite d'être conservé.
 
-  - date: 2026-12-09
+  - date: 2026-12-30
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -195,7 +195,7 @@ days:
         text: Continue the selected paper and identify exactly how fairness or calibration is defined.
         text_fr: Poursuivre l'article sélectionné et identifier précisément comment l'équité ou la calibration y est définie.
 
-  - date: 2026-12-10
+  - date: 2026-12-31
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -224,7 +224,7 @@ days:
         text: Explain the potential contribution in your own words and verify that you you understand the relevant code or theorem.
         text_fr: Expliquer la contribution potentielle avec ses propres mots et vérifier que le code ou le théorème concerné est bien compris.
 
-  - date: 2026-12-11
+  - date: 2027-01-01
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -259,7 +259,7 @@ days:
         text: Finish the literary essay if the argument is now coherent; otherwise complete it privately.
         text_fr: Terminer l'essai littéraire si l'argument est maintenant cohérent ; sinon le compléter en privé.
 
-  - date: 2026-12-12
+  - date: 2027-01-02
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -288,7 +288,7 @@ days:
         text: Present the current P&C pricing research direction in English and defend the most promising research question.
         text_fr: Présenter en anglais la direction actuelle de recherche en tarification IARD et défendre la question de recherche la plus prometteuse.
 
-  - date: 2026-12-13
+  - date: 2027-01-03
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche

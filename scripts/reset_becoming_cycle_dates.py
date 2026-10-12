@@ -13,7 +13,7 @@ WEEKS_DIR = ROOT / "_becoming" / "weeks"
 CYCLES_FILE = ROOT / "_data" / "becoming" / "cycles.yml"
 
 CYCLE_ID = "foundations-01"
-NEW_START = date(2026, 9, 21)
+NEW_START = date(2026, 10, 12)
 NUMBER_OF_WEEKS = 12
 
 

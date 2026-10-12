@@ -5,8 +5,8 @@ title_fr: Variables aléatoires discrètes · Distributions des GLM
 cycle: foundations-01
 cycle_week: 2
 
-start_date: 2026-09-28
-end_date: 2026-10-04
+start_date: 2026-10-19
+end_date: 2026-10-25
 
 status: planned
 
@@ -22,7 +22,7 @@ maintenance:
   - writing-reading-practice
 
 user_inputs:
-  literary_book: Le Rouge et le Noir
+  literary_book: J’irai cracher sur vos tombes
   finance_book: The Intelligent Investor
 
 quests:
@@ -144,20 +144,25 @@ quests:
     node: writing-reading-practice
     task: >
       Read portions 8–14 of 31 equal page portions of The Intelligent
-      Investor. Start September 21 and finish October 21, including
+      Investor. Start October 12 and finish November 11, including
       the commentary and appendices you intend to read. Divide the
       chosen page range into 31; take brief notes within the reading
       session.
     task_fr: >
       Lire les portions 8 à 14 sur 31 portions égales de
-      L’Investisseur intelligent. Commencer le 21 septembre et
-      terminer le 21 octobre, commentaires et annexes à lire compris.
+      L’Investisseur intelligent. Commencer le 12 octobre et
+      terminer le 11 novembre, commentaires et annexes à lire compris.
       Diviser la plage de pages choisie par 31 ; intégrer les notes
       brèves à la lecture.
 
+  - domain: writing
+    node: writing-reading-practice
+    task: Read J’irai cracher sur vos tombes during the week, dividing the book into seven daily portions.
+    task_fr: Lire J’irai cracher sur vos tombes pendant la semaine, en répartissant le livre en sept portions quotidiennes.
+
 days:
 
-  - date: 2026-09-28
+  - date: 2026-10-19
     weekday: monday
     title: Review and begin
     title_fr: Revoir et commencer
@@ -195,7 +200,13 @@ days:
           cible cumulée 8/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-09-29
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 1/7 of J’irai cracher sur vos tombes.
+        text_fr: Lire la portion 1/7 de J’irai cracher sur vos tombes.
+
+  - date: 2026-10-20
     weekday: tuesday
     title: Bernoulli and binomial distributions
     title_fr: Distributions de Bernoulli et binomiale
@@ -241,7 +252,13 @@ days:
           cible cumulée 9/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-09-30
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 2/7 of J’irai cracher sur vos tombes.
+        text_fr: Lire la portion 2/7 de J’irai cracher sur vos tombes.
+
+  - date: 2026-10-21
     weekday: wednesday
     title: Geometric and Poisson distributions
     title_fr: Distributions géométrique et de Poisson
@@ -278,7 +295,13 @@ days:
           cible cumulée 10/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-01
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 3/7 of J’irai cracher sur vos tombes.
+        text_fr: Lire la portion 3/7 de J’irai cracher sur vos tombes.
+
+  - date: 2026-10-22
     weekday: thursday
     title: Connect and explain
     title_fr: Relier et expliquer
@@ -322,7 +345,13 @@ days:
           cible cumulée 11/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-02
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 4/7 of J’irai cracher sur vos tombes.
+        text_fr: Lire la portion 4/7 de J’irai cracher sur vos tombes.
+
+  - date: 2026-10-23
     weekday: friday
     title: Correct and write
     title_fr: Corriger et écrire
@@ -367,7 +396,13 @@ days:
           cible cumulée 12/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-03
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 5/7 of J’irai cracher sur vos tombes.
+        text_fr: Lire la portion 5/7 de J’irai cracher sur vos tombes.
+
+  - date: 2026-10-24
     weekday: saturday
     title: Short timed practice
     title_fr: Courte pratique chronométrée
@@ -405,7 +440,13 @@ days:
           cible cumulée 13/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-04
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 6/7 of J’irai cracher sur vos tombes.
+        text_fr: Lire la portion 6/7 de J’irai cracher sur vos tombes.
+
+  - date: 2026-10-25
     weekday: sunday
     title: Consolidate without catching up on everything
     title_fr: Consolider sans tout rattraper
@@ -462,6 +503,12 @@ days:
           Lire la portion 14/31 de L’Investisseur intelligent ;
           cible cumulée 14/31 de la plage de pages choisie.
           Garder les notes brèves.
+
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 7/7 of J’irai cracher sur vos tombes.
+        text_fr: Lire la portion 7/7 de J’irai cracher sur vos tombes.
 
 completed: []
 ---

@@ -5,8 +5,8 @@ title_fr: Transformations · Amélioration d'un GLM
 cycle: foundations-01
 cycle_week: 5
 
-start_date: 2026-10-19
-end_date: 2026-10-25
+start_date: 2026-11-09
+end_date: 2026-11-15
 
 status: planned
 
@@ -22,7 +22,7 @@ maintenance:
   - writing-reading-practice
 
 user_inputs:
-  literary_book: Le Rouge et le Noir
+  literary_book: À choisir / To be selected
   finance_book: The Intelligent Investor
 
 quests:
@@ -152,20 +152,20 @@ quests:
     node: writing-reading-practice
     task: >
       Read portions 29–31 of 31 equal page portions of The
-      Intelligent Investor. Start September 21 and finish
-      October 21, including the commentary and appendices
+      Intelligent Investor. Start October 12 and finish
+      November 11, including the commentary and appendices
       you intend to read. Divide the chosen page range into
       31; take brief notes within the reading session.
     task_fr: >
       Lire les portions 29 à 31 sur 31 portions égales de
-      L’Investisseur intelligent. Commencer le 21 septembre
-      et terminer le 21 octobre, commentaires et annexes
+      L’Investisseur intelligent. Commencer le 12 octobre
+      et terminer le 11 novembre, commentaires et annexes
       à lire compris. Diviser la plage de pages choisie
       par 31 ; intégrer les notes brèves à la lecture.
 
 days:
 
-  - date: 2026-10-19
+  - date: 2026-11-09
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -204,7 +204,7 @@ days:
           cible cumulée 29/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-20
+  - date: 2026-11-10
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -239,7 +239,7 @@ days:
           cible cumulée 30/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-21
+  - date: 2026-11-11
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -279,7 +279,7 @@ days:
           cible cumulée 31/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-22
+  - date: 2026-11-12
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -312,7 +312,7 @@ days:
         text: Study several basic Lean tactics through small examples.
         text_fr: Étudier plusieurs tactiques Lean de base à travers de petits exemples.
 
-  - date: 2026-10-23
+  - date: 2026-11-13
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -346,7 +346,7 @@ days:
           Rédiger le résumé technique sur l'ajustement,
           la comparaison, les résidus et la stabilité.
 
-  - date: 2026-10-24
+  - date: 2026-11-14
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -375,7 +375,7 @@ days:
           Compléter une conversation en anglais et expliquer
           clairement un concept probabiliste ou actuariel.
 
-  - date: 2026-10-25
+  - date: 2026-11-15
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche

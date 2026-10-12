@@ -5,8 +5,8 @@ title_fr: Mode examen P · Validation d'un GLM
 cycle: foundations-01
 cycle_week: 6
 
-start_date: 2026-10-26
-end_date: 2026-11-01
+start_date: 2026-11-16
+end_date: 2026-11-22
 
 status: planned
 
@@ -122,7 +122,7 @@ quests:
 
 days:
 
-  - date: 2026-10-26
+  - date: 2026-11-16
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -147,7 +147,7 @@ days:
         text: Read Goldburd pages 75–78 and identify the main purposes of model validation.
         text_fr: Lire les pages 75 à 78 de Goldburd et identifier les principaux objectifs de validation d'un modèle.
 
-  - date: 2026-10-27
+  - date: 2026-11-17
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -172,7 +172,7 @@ days:
         text: Read Goldburd pages 79–82 and take notes on diagnostics and model reliability.
         text_fr: Lire les pages 79 à 82 de Goldburd et prendre des notes sur les diagnostics et la fiabilité du modèle.
 
-  - date: 2026-10-28
+  - date: 2026-11-18
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -191,7 +191,7 @@ days:
         text: FM maintenance - complete one very light review using familiar problems only.
         text_fr: Entretien FM - compléter une révision très légère avec uniquement des problèmes familiers.
 
-  - date: 2026-10-29
+  - date: 2026-11-19
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -222,7 +222,7 @@ days:
         text: Repair or simplify one Lean proof already written.
         text_fr: Corriger ou simplifier une preuve Lean déjà écrite.
 
-  - date: 2026-10-30
+  - date: 2026-11-20
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -247,7 +247,7 @@ days:
         text: Draft the technical note on validation, diagnostics, stability, and insurance-pricing relevance.
         text_fr: Rédiger la première version de la note technique sur la validation, les diagnostics, la stabilité et leur pertinence en tarification d'assurance.
 
-  - date: 2026-10-31
+  - date: 2026-11-21
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -272,7 +272,7 @@ days:
         text: Complete one English conversation and explain covariance, correlation, and independence in plain language.
         text_fr: Compléter une conversation en anglais et expliquer la covariance, la corrélation et l'indépendance en langage simple.
 
-  - date: 2026-11-01
+  - date: 2026-11-22
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche
@@ -288,8 +288,8 @@ days:
       - domain: actuarial
         node: actuarial-exam-1
         time: 30–45 min
-        text: Write the final list of concepts, mistakes, and strategies that still require attention before November 7.
-        text_fr: Écrire la liste finale des concepts, erreurs et stratégies qui demandent encore de l'attention avant le 7 novembre.
+        text: Write the final list of concepts, mistakes, and strategies that still require attention during consolidation.
+        text_fr: Écrire la liste finale des concepts, erreurs et stratégies qui demandent encore de l'attention pendant la consolidation.
 
       - domain: research
         node: research-actuarial-glm-validation

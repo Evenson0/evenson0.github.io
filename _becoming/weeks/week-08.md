@@ -5,8 +5,8 @@ title_fr: Retour à FM · ANAM I
 cycle: foundations-01
 cycle_week: 8
 
-start_date: 2026-11-09
-end_date: 2026-11-15
+start_date: 2026-11-30
+end_date: 2026-12-06
 
 status: planned
 
@@ -133,7 +133,7 @@ quests:
 
 days:
 
-  - date: 2026-11-09
+  - date: 2026-11-30
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -158,7 +158,7 @@ days:
         text: Begin the ANAM paper and reconstruct the pricing problem it is trying to solve.
         text_fr: Commencer l'article ANAM et reconstruire le problème de tarification qu'il cherche à résoudre.
 
-  - date: 2026-11-10
+  - date: 2026-12-01
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -183,7 +183,7 @@ days:
         text: Continue ANAM and focus on why the authors retain an additive structure.
         text_fr: Poursuivre ANAM et se concentrer sur les raisons du maintien d'une structure additive.
 
-  - date: 2026-11-11
+  - date: 2026-12-02
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -208,7 +208,7 @@ days:
         text: Read for recovery rather than for a page-count target.
         text_fr: Lire pour récupérer plutôt que pour atteindre un objectif de pages.
 
-  - date: 2026-11-12
+  - date: 2026-12-03
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -227,7 +227,7 @@ days:
         text: Continue the first half of ANAM and map the additive neural architecture.
         text_fr: Poursuivre la première moitié d'ANAM et cartographier l'architecture neuronale additive.
 
-  - date: 2026-11-13
+  - date: 2026-12-04
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -252,7 +252,7 @@ days:
         text: Continue ANAM and write down the paper's intended meaning of interpretability.
         text_fr: Poursuivre ANAM et noter précisément ce que l'article entend par interprétabilité.
 
-  - date: 2026-11-14
+  - date: 2026-12-05
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -277,7 +277,7 @@ days:
         text: Complete one light English conversation only if energy permits.
         text_fr: Compléter une conversation légère en anglais seulement si l'énergie le permet.
 
-  - date: 2026-11-15
+  - date: 2026-12-06
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche

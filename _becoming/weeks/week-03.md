@@ -5,8 +5,8 @@ title_fr: Variables aléatoires continues · Construction d'un GLM d'assurance
 cycle: foundations-01
 cycle_week: 3
 
-start_date: 2026-10-05
-end_date: 2026-10-11
+start_date: 2026-10-26
+end_date: 2026-11-01
 
 status: planned
 
@@ -22,7 +22,7 @@ maintenance:
   - writing-literary-note
 
 user_inputs:
-  literary_book: Le Rouge et le Noir
+  literary_book: Facino Cane
   finance_book: The Intelligent Investor
 
 quests:
@@ -110,11 +110,11 @@ quests:
   - domain: writing
     node: writing-literary-note
     task: >
-      Revisit Le Rouge et le Noir and write 300–500 original words
+      Revisit Facino Cane and write 300–500 original words
       about one feature of a passage already read; finish reading
       first if needed.
     task_fr: >
-      Revenir sur Le Rouge et le Noir et écrire 300 à 500 mots
+      Revenir sur Facino Cane et écrire 300 à 500 mots
       originaux sur un aspect d’un passage déjà lu ; terminer
       d’abord la lecture si nécessaire.
 
@@ -171,20 +171,25 @@ quests:
     node: writing-reading-practice
     task: >
       Read portions 15–21 of 31 equal page portions of The
-      Intelligent Investor. Start September 21 and finish
-      October 21, including the commentary and appendices
+      Intelligent Investor. Start October 12 and finish
+      November 11, including the commentary and appendices
       you intend to read. Divide the chosen page range into
       31; take brief notes within the reading session.
     task_fr: >
       Lire les portions 15 à 21 sur 31 portions égales de
-      L’Investisseur intelligent. Commencer le 21 septembre
-      et terminer le 21 octobre, commentaires et annexes
+      L’Investisseur intelligent. Commencer le 12 octobre
+      et terminer le 11 novembre, commentaires et annexes
       à lire compris. Diviser la plage de pages choisie
       par 31 ; intégrer les notes brèves à la lecture.
 
+  - domain: writing
+    node: writing-reading-practice
+    task: Read Facino Cane during the week, dividing the book into seven daily portions.
+    task_fr: Lire Facino Cane pendant la semaine, en répartissant le livre en sept portions quotidiennes.
+
 days:
 
-  - date: 2026-10-05
+  - date: 2026-10-26
     weekday: monday
     title: Actuarial focus · Monday
     title_fr: Priorité actuarielle · Lundi
@@ -216,10 +221,10 @@ days:
         node: writing-literary-note
         time: 30 min
         text: >
-          Revisit a passage already read in Le Rouge et le Noir,
+          Revisit a passage already read in Facino Cane,
           or continue if unfinished.
         text_fr: >
-          Revenir sur un passage déjà lu du Rouge et le Noir,
+          Revenir sur un passage déjà lu de Facino Cane,
           ou poursuivre si le livre n’est pas terminé.
 
       - domain: writing
@@ -234,7 +239,13 @@ days:
           cible cumulée 15/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-06
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 1/7 of Facino Cane.
+        text_fr: Lire la portion 1/7 de Facino Cane.
+
+  - date: 2026-10-27
     weekday: tuesday
     title: Actuarial focus · Tuesday
     title_fr: Priorité actuarielle · Mardi
@@ -260,8 +271,8 @@ days:
       - domain: writing
         node: writing-literary-note
         time: 25–30 min
-        text: Continue Le Rouge et le Noir and mark one passage worth analyzing.
-        text_fr: Poursuivre Le Rouge et le Noir et repérer un passage qui mérite d'être analysé.
+        text: Continue Facino Cane and mark one passage worth analyzing.
+        text_fr: Poursuivre Facino Cane et repérer un passage qui mérite d'être analysé.
 
       - domain: writing
         node: writing-reading-practice
@@ -275,7 +286,13 @@ days:
           cible cumulée 16/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-07
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 2/7 of Facino Cane.
+        text_fr: Lire la portion 2/7 de Facino Cane.
+
+  - date: 2026-10-28
     weekday: wednesday
     title: Actuarial focus · Wednesday
     title_fr: Priorité actuarielle · Mercredi
@@ -316,7 +333,13 @@ days:
           cible cumulée 17/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-08
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 3/7 of Facino Cane.
+        text_fr: Lire la portion 3/7 de Facino Cane.
+
+  - date: 2026-10-29
     weekday: thursday
     title: Actuarial focus · Thursday
     title_fr: Priorité actuarielle · Jeudi
@@ -362,7 +385,13 @@ days:
           cible cumulée 18/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-09
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 4/7 of Facino Cane.
+        text_fr: Lire la portion 4/7 de Facino Cane.
+
+  - date: 2026-10-30
     weekday: friday
     title: Actuarial focus · Friday
     title_fr: Priorité actuarielle · Vendredi
@@ -393,8 +422,8 @@ days:
       - domain: writing
         node: writing-literary-note
         time: 45 min
-        text: Draft 300–500 original words about one feature of Le Rouge et le Noir.
-        text_fr: Rédiger 300 à 500 mots originaux sur un aspect de Le Rouge et le Noir.
+        text: Draft 300–500 original words about one feature of Facino Cane.
+        text_fr: Rédiger 300 à 500 mots originaux sur un aspect de Facino Cane.
 
       - domain: writing
         node: writing-reading-practice
@@ -408,7 +437,13 @@ days:
           cible cumulée 19/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-10
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 5/7 of Facino Cane.
+        text_fr: Lire la portion 5/7 de Facino Cane.
+
+  - date: 2026-10-31
     weekday: saturday
     title: Actuarial focus · Saturday
     title_fr: Priorité actuarielle · Samedi
@@ -454,7 +489,13 @@ days:
           cible cumulée 20/31 de la plage de pages choisie.
           Garder les notes brèves.
 
-  - date: 2026-10-11
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 6/7 of Facino Cane.
+        text_fr: Lire la portion 6/7 de Facino Cane.
+
+  - date: 2026-11-01
     weekday: sunday
     title: Actuarial focus · Sunday
     title_fr: Priorité actuarielle · Dimanche
@@ -506,6 +547,12 @@ days:
           Lire la portion 21/31 de L’Investisseur intelligent ;
           cible cumulée 21/31 de la plage de pages choisie.
           Garder les notes brèves.
+
+      - domain: writing
+        node: writing-reading-practice
+        time: According to edition / Selon édition
+        text: Read portion 7/7 of Facino Cane.
+        text_fr: Lire la portion 7/7 de Facino Cane.
 
 completed: []
 ---
