@@ -128,4 +128,5 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
 {% include soa-fm-guide-cards.html %}
 </template>
 <script defer src="{{ '/assets/js/soa-atlas-language.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
+<script defer src="{{ '/assets/js/soa-atlas-ui.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
 <script defer src="{{ '/assets/js/soa-fm-atlas.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
