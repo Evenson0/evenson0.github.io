@@ -1,101 +1,33 @@
 ---
-title: "SOA P Formula Boxes"
+title: "Exam P Notes"
 permalink: /notes/soa-p/formula-boxes/
-layout: single
-author_profile: true
-mathjax: true
+layout: null
+sitemap: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/soa-p-notes.css' | relative_url }}">
-
-<div class="p-notes" id="p-formula-guide">
-
-  <div class="p-hero">
-    <h2>Probability: Formulas and Methods</h2>
-
-    <p>
-      A growing problem-solving guide with formulas,
-      explanations, and worked examples for SOA Exam P.
-    </p>
-
-    <div class="p-actions">
-      <a
-        href="{{ '/tools/soa-p-practice/' | relative_url }}"
-        class="p-btn p-btn-secondary">
-        Open the P practice tool
-      </a>
-
-      <a
-        href="{{ '/notes/soa-p/' | relative_url }}"
-        class="p-btn">
-        Back to P notes
-      </a>
-    </div>
-  </div>
-
-{% include soa-p-guide-sections.html %}
-
-  <!-- Add future rules here, before the closing div. -->
-
-</div>
-
-<script>
-(function () {
-  const guide = document.getElementById('p-formula-guide');
-
-  function typesetGuide() {
-    const mj = window.MathJax;
-
-    if (mj && typeof mj.typesetPromise === 'function') {
-      const ready = mj.startup && mj.startup.promise
-        ? mj.startup.promise
-        : Promise.resolve();
-
-      ready
-        .then(function () {
-          return mj.typesetPromise([guide]);
-        })
-        .catch(function (error) {
-          console.error('Unable to render guide formulas:', error);
-        });
-    }
-  }
-
-  const existingLoader = document.querySelector(
-    'script[src*="mathjax"], script[src*="MathJax"]'
-  );
-
-  if (
-    window.MathJax &&
-    typeof window.MathJax.typesetPromise === 'function'
-  ) {
-    typesetGuide();
-  } else if (existingLoader) {
-    existingLoader.addEventListener('load', typesetGuide, { once: true });
-  } else {
-    window.MathJax = {
-      tex: {
-        inlineMath: [['\\(', '\\)']],
-        displayMath: [['\\[', '\\]']]
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exam P Notes · Redirecting</title>
+  <link rel="canonical" href="{{ '/notes/soa-p/' | absolute_url }}">
+  <meta http-equiv="refresh" content="0;url={{ '/notes/soa-p/' | relative_url }}">
+  <script>
+    (function () {
+      var target = "{{ '/notes/soa-p/' | relative_url }}";
+      var oldHash = window.location.hash.slice(1);
+      if (oldHash) {
+        var id = oldHash.indexOf("note=") === 0 ? oldHash.slice(5) : oldHash;
+        try { id = decodeURIComponent(id); } catch (error) {}
+        target += "#note=" + encodeURIComponent(id);
       }
-    };
-
-    const script = document.createElement('script');
-    script.src =
-      'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-    script.async = true;
-    document.head.appendChild(script);
-  }
-
-  guide.querySelectorAll('details').forEach(function (details) {
-    details.addEventListener('toggle', function () {
-      if (details.open) {
-        typesetGuide();
-      }
-    });
-  });
-})();
-</script>
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>This guide is now part of the <a href="{{ '/notes/soa-p/' | relative_url }}">interactive SOA Exam P Notes</a>.</p>
+</body>
+</html>
