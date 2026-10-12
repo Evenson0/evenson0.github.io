@@ -182,16 +182,16 @@ author_profile: true
       <h3>SOA P Exam Notes</h3>
 
       <p>
-        Personal probability notes for SOA Exam P, with worked
-        examples, a practice tool, and Formula Boxes explaining
-        key results and problem-solving methods.
+        Explore an interactive probability knowledge graph with
+        connected chapters, searchable formula notes, detailed
+        explanations, worked examples and a practice tool.
       </p>
 
       <div class="note-links">
         <a
           class="note-btn"
           href="{{ '/notes/soa-p/' | relative_url }}">
-          Open page
+          Explore notes atlas
         </a>
 
         <a
