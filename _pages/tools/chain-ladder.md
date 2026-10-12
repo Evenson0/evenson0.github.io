@@ -506,16 +506,24 @@ function clRenderTriangle() {
   });
 }
 
-function clRenderFactors() {
+function clRenderFactors(preserveFactorFocus = false) {
   const computed = clComputeFactors(clTri);
   const t = document.getElementById("cl-factors");
+  // Do not replace the active factor input on every keystroke.
+  if (preserveFactorFocus && t.querySelector("input.cl-factor:focus")) {
+    const cells = t.querySelectorAll(".cl-computed-row td");
+    if (cells.length === computed.length) {
+      cells.forEach((td, j) => { td.textContent = clFmtFactor(computed[j]); });
+      return;
+    }
+  }
   let html = "<thead><tr><th class='cl-rowhead'>Factor</th>";
   for (let j = 0; j < CL_DEVS.length - 1; j++) {
     html += "<th>" + CL_DEVS[j] + "→" + CL_DEVS[j + 1] + "</th>";
   }
   html += "</tr></thead><tbody>";
 
-  html += "<tr><th class='cl-rowhead'>Computed (vol.-wtd avg)</th>";
+  html += "<tr class='cl-computed-row'><th class='cl-rowhead'>Computed (vol.-wtd avg)</th>";
   computed.forEach(f => { html += "<td>" + clFmtFactor(f) + "</td>"; });
   html += "</tr>";
 
@@ -533,7 +541,7 @@ function clRenderFactors() {
       const j = +inp.dataset.j;
       const v = parseFloat(inp.value);
       clSelected[j] = inp.value.trim() === "" ? null : (isFinite(v) && v > 0 ? v : null);
-      clRenderAll(false);
+      clRenderAll(false, true);
     });
   });
 }
@@ -594,9 +602,7 @@ function clValidate() {
     for (let j = 0; j < CL_DEVS.length; j++) {
       if (!clIsNum(clTri[i][j])) seenMissing = true;
       else if (seenMissing) {
-        clShowError("Row AY " + CL_YEARS[i] + " has a gap: every observed cell must be " +
-          "followed only by observed cells up to the latest diagonal. " +
-          "Clear the cells after the gap.");
+        clShowError("AY " + CL_YEARS[i] + ": missing cell before a later observed value. Fill the gap or clear later cells.");
         return false;
       }
     }
@@ -605,10 +611,21 @@ function clValidate() {
   return true;
 }
 
-function clRenderAll(rebuildInputs) {
+function clRenderAll(rebuildInputs, preserveFactorFocus = false) {
   if (rebuildInputs) clRenderTriangle();
-  if (!clValidate()) { clRenderFactors(); return; }
-  clRenderFactors();
+  const valid = clValidate();
+  clRenderFactors(preserveFactorFocus);
+  if (!valid) {
+    // Never display projections or reserves calculated from an earlier valid triangle.
+    ["cl-completed", "cl-results"].forEach(id => {
+      const table = document.getElementById(id);
+      table.replaceChildren();
+      const caption = document.createElement("caption");
+      caption.textContent = "Correct the loss triangle to recalculate results.";
+      table.append(caption);
+    });
+    return;
+  }
   clRenderCompleted();
   clRenderResults();
 }
