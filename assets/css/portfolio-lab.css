@@ -13,3 +13,28 @@ html[data-theme="dark"] .tool-theme-portfolio-lab,html[data-theme="dark"] .tool-
 @media(max-width:900px){.pl-hero__grid,.pl-method{grid-template-columns:1fr}.pl-grid{grid-template-columns:repeat(2,1fr)}.pl-detail__grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.pl-statusbar{grid-template-columns:repeat(2,1fr)}.pl-section__head,.pl-detail__head{display:block}.pl-section__head p{margin-top:.8rem}.pl-detail__numbers{margin-top:1rem}.pl-grid,.pl-detail__grid,.pl-method__grid{grid-template-columns:1fr}.pl-hero h1{font-size:3.9rem}.pl-footer{display:block}.pl-footer p{margin-top:.5rem!important}}
 @media(prefers-reduced-motion:reduce){.pl-card{transition:none}}
+
+
+/* Strong and predictable contrast irrespective of the Minimal Mistakes site theme. */
+.pl-shell, .pl-shell main { color:#12293a; background:#f5f8fa; }
+.pl-shell :is(.pl-statusbar,.pl-section,.pl-detail-section,.pl-method) { color:#12293a; }
+.pl-shell .pl-statusbar div { color:#12293a; background:#ffffff; }
+.pl-shell .pl-statusbar strong { color:#12293a; }
+.pl-shell :is(.pl-card,.pl-card:visited,.pl-card__ticker,.pl-card__price,.pl-card__meta strong) { color:#12293a; }
+.pl-shell .pl-card { background:#f8fbfc; }
+.pl-shell .pl-card:hover,.pl-shell .pl-card.is-active { color:#11283b; background:#e8f2f8; }
+.pl-shell .pl-detail-section { color:#12293a; }
+.pl-shell :is(.pl-detail__head h3,.pl-detail__numbers strong,.pl-detail__grid h4,.pl-method h3) { color:#12293a; }
+.pl-shell .pl-detail__grid article,.pl-shell .pl-method article { color:#12293a; background:#ffffff; }
+.pl-shell .pl-table-wrap { background:#fff; }
+.pl-shell :is(th,td) { color:#12293a; }
+.pl-shell .pl-shell__notice { margin:0; padding:.85rem 1rem; border-top:1px solid var(--pl-line);background:#ebf4f9;color:#25506a;font-size:.78rem;line-height:1.7; }
+.pl-shell .pl-shell__notice strong { color:#163b52; }
+.pl-shell .pl-empty { color:#355469; background:#f8fbfc; }
+.pl-shell button:focus-visible,.pl-shell a:focus-visible { outline:3px solid #176b98;outline-offset:3px; }
+.pl-shell .pl-lang button:focus-visible { outline:2px solid #ffffff; outline-offset:2px; }
+.pl-shell .pl-lang button[aria-pressed="true"] {background:#fff;color:#082d44;}
+.pl-shell .pl-risk--high { color:#9e3039; }
+.pl-shell .pl-risk--moderate-high { color:#91520b; }
+.pl-shell .pl-risk--moderate { color:#14644f; }
+@media(max-width:650px){.pl-shell .pl-shell__notice{padding:.8rem;}}
