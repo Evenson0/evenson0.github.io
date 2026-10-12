@@ -1226,6 +1226,185 @@ mathjax: true
 
 </section>
 
+<section id="geometric-starting-at-zero-and-one">
+
+  <h2 class="p-section-title">Geometric Distribution: Starting at 0 or 1</h2>
+
+  <p>
+    Repeat independent Bernoulli trials with constant success probability
+    \(0&lt;p&lt;1\), and write \(q=1-p\). Stop at the first success.
+    The two geometric conventions describe the same experiment,
+    but count different things.
+  </p>
+
+  <div class="p-table-wrap" style="overflow-x: auto;">
+    <table>
+      <caption>Check what the random variable counts before choosing a formula</caption>
+      <thead>
+        <tr>
+          <th scope="col">Quantity</th>
+          <th scope="col">Starting at 0: \(X\)</th>
+          <th scope="col">Starting at 1: \(T\)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">What is counted?</th><td>Failures before the first success</td><td>Trials up to and including the first success</td></tr>
+        <tr><th scope="row">Possible values</th><td>\(0,1,2,\ldots\)</td><td>\(1,2,3,\ldots\)</td></tr>
+        <tr><th scope="row">Probability mass function</th><td>\(P(X=k)=q^kp\)</td><td>\(P(T=k)=q^{k-1}p\)</td></tr>
+        <tr><th scope="row">Mean</th><td>\(E[X]=q/p\)</td><td>\(E[T]=1/p\)</td></tr>
+        <tr><th scope="row">Variance</th><td>\(\operatorname{Var}(X)=q/p^2\)</td><td>\(\operatorname{Var}(T)=q/p^2\)</td></tr>
+        <tr><th scope="row">Standard deviation</th><td>\(\sqrt{q}/p\)</td><td>\(\sqrt{q}/p\)</td></tr>
+        <tr><th scope="row">CDF, integer \(k\geq0\)</th><td>\(P(X\leq k)=1-q^{k+1}\)</td><td>\(P(T\leq k)=1-q^k\)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <article class="p-formula-box" id="geometric-counting-conventions">
+    <span class="p-tag">Counting convention</span>
+    <h3>One extra trial changes the mean, not the variance</h3>
+    <div class="p-equation">
+      \[
+        \boxed{T=X+1},\qquad
+        E[T]=E[X]+1,\qquad
+        \operatorname{Var}(T)=\operatorname{Var}(X).
+      \]
+    </div>
+    <p>
+      For the sequence failure, failure, failure, success,
+      \(X=3\) and \(T=4\). If the first trial is a success,
+      \(X=0\) and \(T=1\).
+    </p>
+    <details class="p-proof">
+      <summary>Why the probability formulas work</summary>
+      <div class="p-proof-content">
+        <p>
+          The event \(X=k\) requires exactly \(k\) failures followed
+          by one success. Independence gives \(q^kp\).
+          For \(T=k\), there are \(k-1\) failures followed by one
+          success, giving \(q^{k-1}p\).
+        </p>
+        <p>
+          There is no binomial coefficient: the stopping success must
+          be last, so only one sequence qualifies for each count.
+        </p>
+      </div>
+    </details>
+    <div class="p-note">
+      <p>
+        <strong>Recognition tip.</strong>
+        “Before the first success” excludes the success and starts at 0.
+        “Number of trials until the first success” includes the success
+        and starts at 1. Always read the definition of the variable;
+        the notation \(\operatorname{Geometric}(p)\) alone does not
+        identify the convention.
+      </p>
+    </div>
+  </article>
+
+  <article class="p-formula-box" id="geometric-tail-probabilities">
+    <span class="p-tag">Tail probabilities</span>
+    <h3>Keep strict and non-strict inequalities separate</h3>
+    <p>For integers \(k\geq0\),</p>
+    <div class="p-equation">
+      \[
+        P(X\geq k)=q^k,\qquad P(X&gt;k)=q^{k+1},
+        \qquad P(T&gt;k)=q^k.
+      \]
+    </div>
+    <p>For integers \(k\geq1\), \(P(T\geq k)=q^{k-1}\).</p>
+    <p>
+      For example, \(T&gt;k\) means the first \(k\) trials all failed.
+      The same event is \(X\geq k\).
+    </p>
+    <details class="p-proof">
+      <summary>Derive the mean and variance</summary>
+      <div class="p-proof-content">
+        <p>Using the tail-sum formula for a nonnegative integer-valued variable,</p>
+        <div class="p-math">
+          \[
+            E[T]=\sum_{k=0}^{\infty}P(T&gt;k)
+            =\sum_{k=0}^{\infty}q^k=\frac1p,
+            \qquad E[X]=\frac1p-1=\frac qp.
+          \]
+        </div>
+        <p>
+          Differentiating the geometric series twice gives
+          \(\sum_{k=0}^{\infty}k(k-1)q^k=2q^2/(1-q)^3\).
+          Therefore,
+        </p>
+        <div class="p-math">
+          \[
+            E[X(X-1)]=\frac{2q^2}{p^2},
+          \]
+          \[
+            \operatorname{Var}(X)
+            =E[X(X-1)]+E[X]-(E[X])^2
+            =\frac{2q^2}{p^2}+\frac qp-\frac{q^2}{p^2}
+            =\frac q{p^2}.
+          \]
+        </div>
+        <p>Since \(T=X+1\), the variance is the same for \(T\).</p>
+      </div>
+    </details>
+  </article>
+
+  <article class="p-formula-box" id="geometric-worked-examples">
+    <span class="p-tag">Worked examples</span>
+    <h3>Translate the wording into a count</h3>
+    <div class="p-note">
+      <p>
+        <strong>Business records.</strong>
+        Each business independently has a 10% probability of failing
+        in its first year. Examine records until finding the first
+        such business. If \(X\) counts the records examined
+        <em>before</em> that record, then
+      </p>
+      <div class="p-math">
+        \[
+          P(X=k)=0.9^k(0.1),\quad k=0,1,\ldots,\qquad E[X]=9.
+        \]
+      </div>
+      <p>
+        Including the final record gives \(T=X+1\), so \(E[T]=10\).
+        Here a business failure is the statistical “success”:
+        success means the event that stops the experiment.
+      </p>
+    </div>
+    <div class="p-note">
+      <p>
+        <strong>Coin flips.</strong>
+        Independent flips produce an expected 3 tails before the first
+        head. Let \(p=P(\text{heads})\). Then
+      </p>
+      <div class="p-math">
+        \[
+          \frac{1-p}{p}=3
+          \quad\Longrightarrow\quad p=\frac14.
+        \]
+        \[
+          E[T]=4,\qquad
+          \operatorname{Var}(X)=\operatorname{Var}(T)
+          =\frac{3/4}{(1/4)^2}=12,\qquad
+          \operatorname{SD}(X)=\operatorname{SD}(T)=\sqrt{12}.
+        \]
+      </div>
+      <p>
+        If a mean \(\mu\) is given, first identify the convention:
+        starting at 0 gives \(p=1/(\mu+1)\) and variance
+        \(\mu(\mu+1)\); starting at 1 gives \(p=1/\mu\)
+        and variance \(\mu(\mu-1)\).
+      </p>
+    </div>
+    <p>
+      <strong>Boundary case.</strong>
+      If \(p=1\), the first trial always succeeds: \(X=0\), \(T=1\),
+      and both variances are zero. If \(p=0\), a success never occurs,
+      so there is no finite geometric waiting time.
+    </p>
+  </article>
+
+</section>
+
   <!-- Add future rules here, before the closing div. -->
 
 </div>
