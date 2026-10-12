@@ -113,6 +113,24 @@
     "Try the tool":"Essayer l’outil",
     "Main themes":"Thèmes principaux",
     "About these notes":"À propos de ces notes",
+    "Hikes":"Randonnées",
+    "Awaiting":"À découvrir",
+    "Visited place":"Lieu visité",
+    "Awaiting place":"Lieu à découvrir",
+    "Completed hike":"Randonnée effectuée",
+    "Some places remain in memory longer than they remain in time. This page is where I keep the traces of journeys, landscapes, monuments, cities, and hikes that felt large enough to deserve remembrance.":"Certains lieux restent plus longtemps dans la mémoire que dans le temps. Je conserve ici les traces des voyages, des paysages, des monuments, des villes et des randonnées qui méritent de ne pas être oubliés.",
+    "A map of what I have visited, what I am still pursuing, and what still waits for me somewhere in the world.":"Une carte des lieux que j’ai visités, de ceux que je veux encore découvrir et de ce qui m’attend quelque part dans le monde.",
+    "From Theory to Practice":"De la théorie à la pratique",
+    "Series":"Séries",
+    "Open exercises":"Ouvrir les exercices",
+    "Published":"Publié",
+    "Reference":"Référence",
+    "Resources":"Ressources",
+    "Study":"Étude",
+    "Sections":"Sections",
+    "Chapter":"Chapitre",
+    "Topics":"Notions",
+    "Part":"Partie",
     "Planned contents":"Contenu prévu",
     "Insurance fundamentals":"Fondements de l’assurance",
     "Pricing and ratemaking":"Tarification",
@@ -283,7 +301,13 @@
     originals.forEach((original,node) => {
       if (!node.isConnected || hasSkippedAncestor(node))return;
       const en = normalize(original);
-      const localized = language==="fr" ? strings[en] : en;
+      let localized = strings[en];
+      // Checklist markers in List 100 are part of the same text node.
+      if (!localized) {
+        const marked = en.match(/^([✓✗])\s*(.+)$/);
+        if (marked && strings[marked[2]]) localized = marked[1] + " " + strings[marked[2]];
+      }
+      if (language!=="fr") localized=en;
       if (!localized) return;
       // Keep leading/trailing whitespace to avoid collapsing inline content.
       const prefix=(original.match(/^\s*/)||[""])[0];
