@@ -140,12 +140,12 @@ author_profile: true
       <div class="note-tag">Actuarial Science</div>
       <h3>SOA FM Exam Notes</h3>
       <p>
-        A growing set of personal notes for the SOA Exam FM, covering interest theory,
-        present value, accumulated value, discount rates, annuities, loans, bonds,
-        duration, immunization, and related topics.
+        Explore the interactive Exam FM Knowledge Atlas: a concept graph, 24 formula
+        notes with full derivations, and searchable chapters covering interest theory,
+        annuities, loans, bonds, duration, and immunization.
       </p>
       <div class="note-links">
-        <a class="note-btn" href="/notes/soa-fm/">Open page</a>
+        <a class="note-btn" href="{{ '/notes/soa-fm/' | relative_url }}">Explore notes atlas</a>
         <a class="note-btn"
            href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}"
            target="_blank"
