@@ -1,0 +1,93 @@
+/* Shared bilingual language switch for every page of the Jekyll site. */
+.masthead .site-language-item {
+  display:flex;
+  align-items:center;
+  margin:0 .35rem;
+  padding:0 !important;
+  flex-shrink:0;
+}
+.masthead .site-language-switch {
+  display:inline-flex;
+  align-items:center;
+  gap:2px;
+  border:1px solid rgba(91,110,137,.45);
+  border-radius:10px;
+  background:rgba(121,145,175,.07);
+  padding:3px;
+  white-space:nowrap;
+}
+.masthead .site-language-switch .site-language-button {
+  appearance:none;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-width:36px;
+  min-height:30px;
+  border:0 !important;
+  padding:.3rem .48rem !important;
+  margin:0 !important;
+  border-radius:7px;
+  background:transparent !important;
+  box-shadow:none !important;
+  color:#344662 !important;
+  cursor:pointer;
+  font-family:Inter,system-ui,sans-serif !important;
+  font-size:.7rem !important;
+  font-weight:800 !important;
+  line-height:1.1 !important;
+  letter-spacing:.035em;
+  text-transform:uppercase;
+}
+.masthead .site-language-switch .site-language-button[aria-pressed="true"] {
+  background:#224e8a !important;
+  color:#fff !important;
+}
+.masthead .site-language-switch .site-language-button:hover {
+  background:rgba(34,78,138,.15) !important;
+}
+.masthead .site-language-switch .site-language-button[aria-pressed="true"]:hover {
+  background:#163f76 !important;
+  color:#fff !important;
+}
+html[data-theme="dark"] .masthead .site-language-switch,
+html[data-site-theme="dark"] .masthead .site-language-switch {
+  border-color:#647993;
+  background:#263248;
+}
+html[data-theme="dark"] .masthead .site-language-switch .site-language-button,
+html[data-site-theme="dark"] .masthead .site-language-switch .site-language-button {
+  color:#e3ebf5 !important;
+}
+html[data-theme="dark"] .masthead .site-language-switch .site-language-button[aria-pressed="true"],
+html[data-site-theme="dark"] .masthead .site-language-switch .site-language-button[aria-pressed="true"] {
+  background:#abd1ff !important;
+  color:#10213b !important;
+}
+.masthead .site-language-switch .site-language-button:focus-visible {
+  outline:3px solid #3879d3 !important;
+  outline-offset:2px;
+}
+@media(max-width:768px) {
+  .masthead .site-language-item {margin:0 .12rem;}
+  .masthead .site-language-switch {padding:2px;gap:0;}
+  .masthead .site-language-switch .site-language-button {min-width:32px;min-height:30px;font-size:.68rem!important;padding:.3rem .28rem!important;}
+}
+/* For pages with authored French and English variants, never hide the chosen language. */
+html[data-site-lang="fr"] [data-site-content-lang="en"],
+html[data-site-lang="en"] [data-site-content-lang="fr"] {
+  display:none !important;
+}
+html[data-site-lang="fr"] [data-site-content-lang="fr"],
+html[data-site-lang="en"] [data-site-content-lang="en"] {
+  display:block;
+}
+.site-translation-notice {
+  margin:1.2rem 0;
+  padding:.65rem .85rem;
+  border-left:3px solid #537aab;
+  background:rgba(77,119,168,.07);
+  border-radius:0 9px 9px 0;
+  color:inherit;
+  font-size:.82rem;
+  line-height:1.7;
+}
