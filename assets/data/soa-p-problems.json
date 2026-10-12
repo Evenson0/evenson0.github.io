@@ -168,951 +168,1039 @@
     "answer_text": "B. \\(0.4\\)"
   },
   {
-  "id": 8,
-  "topic": "Union and Set Difference",
-  "title": "Exercise 8",
-  "statement": "An analysis of an insurance company's policyholders finds the following:\n\ni. Twice as many policyholders buy auto insurance as buy home insurance.\nii. 70% of policyholders buy either auto insurance or home insurance.\niii. 20% of policyholders buy both auto insurance and home insurance.\n\nWhat fraction of policyholders buy home insurance but not auto insurance?",
-  "choices": [
-    "\\(10.0\\%\\)",
-    "\\(20.0\\%\\)",
-    "\\(23.3\\%\\)",
-    "\\(25.0\\%\\)",
-    "\\(30.0\\%\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "Let \\(A\\) denote buying auto insurance and \\(H\\) buying home insurance. We are given \\(P(A)=2P(H)\\), \\(P(A\\cup H)=0.7\\), and \\(P(A\\cap H)=0.2\\).",
-    "Here, 'either auto insurance or home insurance' describes the inclusive union, which includes policyholders who buy both.",
-    "Apply the addition rule: \\(P(A\\cup H)=P(A)+P(H)-P(A\\cap H)\\).",
-    "Substituting gives \\(0.7=2P(H)+P(H)-0.2\\), so \\(3P(H)=0.9\\) and \\(P(H)=0.3\\).",
-    "Home insurance but not auto insurance is the event \\(H\\cap A^c\\). Its probability is \\(P(H\\cap A^c)=P(H)-P(A\\cap H)=0.3-0.2=0.1\\).",
-    "Therefore, the required fraction is \\(10.0\\%\\)."
-  ],
-  "generalization": "If \\(P(A)=kP(B)\\), \\(P(A\\cup B)=u\\), and \\(P(A\\cap B)=q\\), then \\(P(B)=(u+q)/(k+1)\\). The probability of B only is \\(P(B\\cap A^c)=P(B)-q\\).",
-  "answer_text": "A. \\(10.0\\%\\)"
-},
-{
-  "id": 9,
-  "topic": "Complements and Set Partitions",
-  "title": "Exercise 9",
-  "statement": "You are given that \\(P(A\\cap B^c)=0.3\\) and \\(P((A\\cup B)^c)=0.4\\). What is \\(P(B)\\)?",
-  "choices": [
-    "\\(0.2\\)",
-    "\\(0.3\\)",
-    "\\(0.5\\)",
-    "\\(0.6\\)",
-    "\\(0.7\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "By De Morgan's law, \\((A\\cup B)^c=A^c\\cap B^c\\). Hence, \\(P(A^c\\cap B^c)=0.4\\).",
-    "Partition \\(B^c\\) according to whether A occurs: \\(B^c=(A\\cap B^c)\\cup(A^c\\cap B^c)\\).",
-    "These two regions are disjoint, so \\(P(B^c)=P(A\\cap B^c)+P(A^c\\cap B^c)=0.3+0.4=0.7\\).",
-    "Using the complement rule gives \\(P(B)=1-P(B^c)=1-0.7=0.3\\)."
-  ],
-  "generalization": "Any event B can be partitioned using another event A: \\(P(B)=P(A\\cap B)+P(A^c\\cap B)\\). Similarly, \\(P(B)=1-P(A\\cap B^c)-P(A^c\\cap B^c)\\).",
-  "answer_text": "B. \\(0.3\\)"
-},
-{
-  "id": 10,
-  "topic": "Inclusion-Exclusion and Counting",
-  "title": "Exercise 10",
-  "statement": "[SOA 5; F00.03] An auto insurance company has 10,000 policyholders. Each policyholder is classified as:\n\ni. young or old;\nii. male or female; and\niii. married or single.\n\nOf these policyholders, 3,000 are young, 4,600 are male, and 7,000 are married. The policyholders can also be classified as 1,320 young males, 3,010 married males, and 1,400 young married persons. Finally, 600 of the policyholders are young married males.\n\nHow many of the company's policyholders are young, female, and single?",
-  "choices": [
-    "\\(280\\)",
-    "\\(423\\)",
-    "\\(486\\)",
-    "\\(880\\)",
-    "\\(896\\)"
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "Let Y denote young policyholders, M male policyholders, and R married policyholders. We seek the number in \\(Y\\cap M^c\\cap R^c\\).",
-    "There are 3,000 young policyholders, of whom 1,320 are male. Therefore, there are \\(3000-1320=1680\\) young female policyholders.",
-    "There are 1,400 young married policyholders, of whom 600 are male. Therefore, there are \\(1400-600=800\\) young married female policyholders.",
-    "Subtract young married females from all young females: \\(1680-800=880\\).",
-    "Equivalently, inclusion-exclusion within Y gives \\(|Y\\cap M^c\\cap R^c|=|Y|-|Y\\cap M|-|Y\\cap R|+|Y\\cap M\\cap R|\\).",
-    "Substituting gives \\(3000-1320-1400+600=880\\). The overall counts of male and married policyholders are not needed."
-  ],
-  "generalization": "To count members of A who belong to neither B nor C, use \\(|A\\cap B^c\\cap C^c|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|\\). Add back the triple intersection because it was subtracted twice.",
-  "answer_text": "D. \\(880\\)"
-},
-{
-  "id": 11,
-  "topic": "Inclusion-Exclusion and Complements",
-  "title": "Exercise 11",
-  "statement": "[SOA 100] A survey of 100 TV watchers revealed that over the last year:\n\ni. 34 watched CBS.\nii. 15 watched NBC.\niii. 10 watched ABC.\niv. 7 watched CBS and NBC.\nv. 6 watched CBS and ABC.\nvi. 5 watched NBC and ABC.\nvii. 4 watched CBS, NBC, and ABC.\nviii. 18 watched HGTV and of these, none watched CBS, NBC, or ABC.\n\nCalculate how many of the 100 TV watchers did not watch any of the four channels (CBS, NBC, ABC, or HGTV).",
-  "choices": [
-    "\\(1\\)",
-    "\\(37\\)",
-    "\\(45\\)",
-    "\\(55\\)",
-    "\\(82\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "Let C, N, A, and H denote the sets of viewers who watched CBS, NBC, ABC, and HGTV, respectively.",
-    "Use inclusion-exclusion for the first three channels: \\(|C\\cup N\\cup A|=|C|+|N|+|A|-|C\\cap N|-|C\\cap A|-|N\\cap A|+|C\\cap N\\cap A|\\).",
-    "Substituting gives \\(|C\\cup N\\cup A|=34+15+10-7-6-5+4=45\\).",
-    "The pairwise intersection counts include the viewers who watched all three channels. The triple intersection must therefore be added back once.",
-    "None of the 18 HGTV viewers watched any of the other three channels, so \\(|C\\cup N\\cup A\\cup H|=45+18=63\\).",
-    "The number who watched none of the four channels is \\(100-63=37\\)."
-  ],
-  "generalization": "For three events, \\(P(A\\cup B\\cup C)=P(A)+P(B)+P(C)-P(A\\cap B)-P(A\\cap C)-P(B\\cap C)+P(A\\cap B\\cap C)\\). The same identity holds for finite set counts. To find how many belong to none of the sets, subtract the union count from the total.",
-  "answer_text": "B. \\(37\\)"
-},
-{
-  "id": 12,
-  "topic": "Set Difference with Three Events",
-  "title": "Exercise 12",
-  "statement": "Suppose that A, B, and C are events such that:\n\ni. \\(P(A)=0.6\\) and \\(P(B)=P(C)=0.5\\).\nii. \\(P(A\\cap B)=P(A\\cap C)=0.3\\), but \\(P(B\\cap C)=0.2\\).\niii. \\(P(A\\cap B\\cap C)=0.1\\).\n\nFind \\(P(A^c\\cap B^c\\cap C)\\).",
-  "choices": [
-    "\\(0.0\\)",
-    "\\(0.1\\)",
-    "\\(0.2\\)",
-    "\\(0.3\\)",
-    "\\(0.4\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "The event \\(A^c\\cap B^c\\cap C\\) means that C occurs while neither A nor B occurs. This is the C-only region.",
-    "Start with all of C, subtract its overlap with A and its overlap with B, then add back the triple intersection.",
-    "Thus, \\(P(A^c\\cap B^c\\cap C)=P(C)-P(A\\cap C)-P(B\\cap C)+P(A\\cap B\\cap C)\\).",
-    "Substituting gives \\(0.5-0.3-0.2+0.1=0.1\\).",
-    "The triple intersection is added back because it belongs to both subtracted intersections and would otherwise be removed twice."
-  ],
-  "generalization": "For any three events, \\(P(C\\cap A^c\\cap B^c)=P(C)-P(C\\cap A)-P(C\\cap B)+P(A\\cap B\\cap C)\\). This is inclusion-exclusion applied within C.",
-  "answer_text": "B. \\(0.1\\)"
-},
-{
-  "id": 13,
-  "topic": "De Morgan's Laws",
-  "title": "Exercise 13",
-  "statement": "[Course 110; F86.11] Let \\(P(A\\cap B)=0.2\\), \\(P(A)=0.6\\), and \\(P(B)=0.5\\). Find \\(P(A^c\\cup B^c)\\).",
-  "choices": [
-    "\\(0.1\\)",
-    "\\(0.3\\)",
-    "\\(0.7\\)",
-    "\\(0.8\\)",
-    "\\(0.9\\)"
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "By De Morgan's law, \\(A^c\\cup B^c=(A\\cap B)^c\\).",
-    "This event includes every outcome except those in which both A and B occur.",
-    "Apply the complement rule: \\(P(A^c\\cup B^c)=1-P(A\\cap B)\\).",
-    "Therefore, \\(P(A^c\\cup B^c)=1-0.2=0.8\\). The individual probabilities of A and B are not needed."
-  ],
-  "generalization": "De Morgan's laws give \\(A^c\\cup B^c=(A\\cap B)^c\\) and \\(A^c\\cap B^c=(A\\cup B)^c\\). Consequently, 'not both' has probability \\(1-P(A\\cap B)\\), while 'neither' has probability \\(1-P(A\\cup B)\\).",
-  "answer_text": "D. \\(0.8\\)"
-},
-{
-  "id": 14,
-  "topic": "Conditional Probability",
-  "title": "Exercise 14",
-  "statement": "Let X be the sum of the roll of two fair six-sided dice. Find \\(P(X=8\\mid X=7\\text{ or }X=8)\\).",
-  "choices": [
-    "\\(1/9\\)",
-    "\\(5/36\\)",
-    "\\(2/5\\)",
-    "\\(4/11\\)",
-    "\\(5/11\\)"
-  ],
-  "correct": 4,
-  "solution_steps": [
-    "The two dice are rolled independently, giving 36 equally likely ordered outcomes.",
-    "A sum of 7 occurs in six outcomes: \\((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\\). Hence, \\(P(X=7)=6/36\\).",
-    "A sum of 8 occurs in five outcomes: \\((2,6),(3,5),(4,4),(5,3),(6,2)\\). Hence, \\(P(X=8)=5/36\\).",
-    "The events \\(X=7\\) and \\(X=8\\) are mutually exclusive, so \\(P(X=7\\text{ or }X=8)=11/36\\).",
-    "Since \\(\\{X=8\\}\\subseteq\\{X=7\\text{ or }X=8\\}\\), conditional probability gives \\(P(X=8\\mid X=7\\text{ or }X=8)=\\dfrac{5/36}{11/36}=\\dfrac{5}{11}\\).",
-    "The two possible sums are not equally likely. Conditioning restricts the sample space to 11 equally likely ordered outcomes, five of which have sum 8."
-  ],
-  "generalization": "If \\(A\\subseteq B\\) and \\(P(B)>0\\), then \\(P(A\\mid B)=P(A)/P(B)\\). In a finite equally likely sample space, conditional probability can be computed by counting favorable outcomes within the conditioning event.",
-  "answer_text": "E. \\(\\dfrac{5}{11}\\)"
-},
-{
-  "id": 15,
-  "topic": "Conditional Probability and Set Partitions",
-  "title": "Exercise 15",
-  "statement": "[SOA 9; S03.05] An insurance company examines its pool of auto insurance customers and gathers the following information:\n\ni. All customers insure at least one car.\nii. 70% of customers insure more than one car.\niii. 20% of the customers insure a sports car.\niv. Of those customers who insure more than one car, 15% insure a sports car.\n\nCalculate the probability that a randomly selected customer insures exactly one car and that car is not a sports car.",
-  "choices": [
-    "\\(0.13\\)",
-    "\\(0.21\\)",
-    "\\(0.24\\)",
-    "\\(0.25\\)",
-    "\\(0.30\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "Let M denote insuring more than one car and S denote insuring a sports car. We are given \\(P(M)=0.7\\), \\(P(S)=0.2\\), and \\(P(S\\mid M)=0.15\\).",
-    "Because every customer insures at least one car, \\(M^c\\) means insuring exactly one car. Thus, \\(P(M^c)=1-0.7=0.3\\).",
-    "Convert the conditional probability into a joint probability: \\(P(M\\cap S)=P(M)P(S\\mid M)=0.7(0.15)=0.105\\).",
-    "Partition sports-car customers by number of cars: \\(P(M^c\\cap S)=P(S)-P(M\\cap S)=0.2-0.105=0.095\\).",
-    "Among the customers who insure exactly one car, remove those whose car is a sports car: \\(P(M^c\\cap S^c)=0.3-0.095=0.205\\).",
-    "The exact probability is \\(0.205\\), or \\(20.5\\%\\). Rounded to two decimal places, it is \\(0.21\\), corresponding to choice B."
-  ],
-  "generalization": "Given \\(P(A)\\), \\(P(B)\\), and \\(P(B\\mid A)\\), first compute \\(P(A\\cap B)=P(A)P(B\\mid A)\\). Then \\(P(A^c\\cap B^c)=1-P(A)-P(B)+P(A)P(B\\mid A)\\). A conditional percentage must be multiplied by the probability of its conditioning group.",
-  "answer_text": "B. \\(0.21\\) (exact probability: \\(0.205\\))"
-},
-{
-  "id": 16,
-  "topic": "Independent Events",
-  "title": "Exercise 16",
-  "statement": "[SOA 10; F00.30] An actuary studying the insurance preferences of automobile owners makes the following conclusions:\n\ni. An automobile owner is twice as likely to purchase collision coverage as disability coverage.\nii. The event that an automobile owner purchases collision coverage is independent of the event that he or she purchases disability coverage.\niii. The probability that an automobile owner purchases both collision and disability coverages is 0.15.\n\nWhat is the probability that an automobile owner purchases neither collision nor disability coverage?",
-  "choices": [
-    "\\(0.18\\)",
-    "\\(0.33\\)",
-    "\\(0.48\\)",
-    "\\(0.67\\)",
-    "\\(0.82\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "Let C denote purchasing collision coverage and D purchasing disability coverage. Write \\(P(D)=d\\), so \\(P(C)=2d\\).",
-    "By independence, \\(P(C\\cap D)=P(C)P(D)=2d^2\\). The given intersection probability implies \\(2d^2=0.15\\).",
-    "Since d is a probability, take the nonnegative root: \\(d=\\sqrt{0.15/2}=\\sqrt{0.075}\\approx0.273861\\).",
-    "Therefore, \\(P(C)=2\\sqrt{0.075}\\approx0.547723\\).",
-    "The probability of neither coverage is \\(P(C^c\\cap D^c)=1-P(C\\cup D)=1-P(C)-P(D)+P(C\\cap D)\\).",
-    "Substituting without intermediate rounding gives \\(P(C^c\\cap D^c)=1.15-3\\sqrt{0.075}\\approx0.328416\\).",
-    "Rounded to two decimal places, the required probability is \\(0.33\\). As a check, independence also gives \\(P(C^c\\cap D^c)=(1-P(C))(1-P(D))\\)."
-  ],
-  "generalization": "If A and B are independent, \\(P(A)=kP(B)\\) with \\(k>0\\), and \\(P(A\\cap B)=q\\), then \\(P(B)=\\sqrt{q/k}\\) and \\(P(A)=\\sqrt{kq}\\), provided these values are valid probabilities. Their complements are also independent, so \\(P(A^c\\cap B^c)=(1-P(A))(1-P(B))\\).",
-  "answer_text": "B. \\(0.33\\)"
-},
+    "id": 8,
+    "topic": "Union and Set Difference",
+    "title": "Exercise 8",
+    "statement": "An analysis of an insurance company's policyholders finds the following:\n\ni. Twice as many policyholders buy auto insurance as buy home insurance.\nii. 70% of policyholders buy either auto insurance or home insurance.\niii. 20% of policyholders buy both auto insurance and home insurance.\n\nWhat fraction of policyholders buy home insurance but not auto insurance?",
+    "choices": [
+      "\\(10.0\\%\\)",
+      "\\(20.0\\%\\)",
+      "\\(23.3\\%\\)",
+      "\\(25.0\\%\\)",
+      "\\(30.0\\%\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "Let \\(A\\) denote buying auto insurance and \\(H\\) buying home insurance. We are given \\(P(A)=2P(H)\\), \\(P(A\\cup H)=0.7\\), and \\(P(A\\cap H)=0.2\\).",
+      "Here, 'either auto insurance or home insurance' describes the inclusive union, which includes policyholders who buy both.",
+      "Apply the addition rule: \\(P(A\\cup H)=P(A)+P(H)-P(A\\cap H)\\).",
+      "Substituting gives \\(0.7=2P(H)+P(H)-0.2\\), so \\(3P(H)=0.9\\) and \\(P(H)=0.3\\).",
+      "Home insurance but not auto insurance is the event \\(H\\cap A^c\\). Its probability is \\(P(H\\cap A^c)=P(H)-P(A\\cap H)=0.3-0.2=0.1\\).",
+      "Therefore, the required fraction is \\(10.0\\%\\)."
+    ],
+    "generalization": "If \\(P(A)=kP(B)\\), \\(P(A\\cup B)=u\\), and \\(P(A\\cap B)=q\\), then \\(P(B)=(u+q)/(k+1)\\). The probability of B only is \\(P(B\\cap A^c)=P(B)-q\\).",
+    "answer_text": "A. \\(10.0\\%\\)"
+  },
   {
-  "id": 25,
-  "topic": "Conditional Probability and Bayes' Theorem",
-  "title": "Exercise 25",
-  "statement": "[SOA 25; F00.22] The probability that a randomly chosen male has a circulation problem is 0.25. Males who have a circulation problem are twice as likely to be smokers as those who do not have a circulation problem.\n\nWhat is the conditional probability that a male has a circulation problem given that he is a smoker?",
-  "choices": [
-    "\\(1/4\\)",
-    "\\(1/3\\)",
-    "\\(2/5\\)",
-    "\\(1/2\\)",
-    "\\(2/3\\)"
-  ],
-  "correct": 2,
-  "solution_steps": [
-    "Let \\(C\\) denote having a circulation problem and \\(S\\) denote being a smoker. We know \\(P(C)=0.25\\) and \\(P(C^c)=0.75\\).",
-    "Set \\(q=P(S\\mid C^c)\\). The statement gives \\(P(S\\mid C)=2q\\).",
-    "By the law of total probability, \\(P(S)=P(S\\mid C)P(C)+P(S\\mid C^c)P(C^c)=2q(0.25)+q(0.75)=1.25q\\).",
-    "The joint probability is \\(P(C\\cap S)=P(C)P(S\\mid C)=0.25(2q)=0.50q\\).",
-    "Therefore, assuming \\(P(S)>0\\), \\(P(C\\mid S)=\\frac{0.50q}{1.25q}=\\frac{2}{5}=0.40\\)."
-  ],
-  "generalization": "If \\(P(A)=p\\) and \\(P(B\\mid A)=rP(B\\mid A^c)\\), then Bayes' theorem gives \\(P(A\\mid B)=\\frac{rp}{rp+1-p}\\), provided \\(P(B)>0\\). The unknown common factor cancels.",
-  "answer_text": "C. \\(2/5\\)"
-},
-{
-  "id": 26,
-  "topic": "Conditional Probability and Bayes' Theorem",
-  "title": "Exercise 26",
-  "statement": "[SOA 19; S01.06] An insurance company issues life insurance policies in three separate categories: standard, preferred, and ultra-preferred. Of the company's policyholders, 50% are standard, 40% are preferred, and 10% are ultra-preferred. Each standard policyholder has probability 0.010 of dying in the next year, each preferred policyholder has probability 0.005 of dying in the next year, and each ultra-preferred policyholder has probability 0.001 of dying in the next year.\n\nA policyholder dies in the next year.\n\nWhat is the probability that the deceased policyholder was ultra-preferred?",
-  "choices": [
-    "\\(0.0001\\)",
-    "\\(0.0010\\)",
-    "\\(0.0071\\)",
-    "\\(0.0141\\)",
-    "\\(0.2817\\)"
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "Let \\(S\\), \\(R\\), and \\(U\\) denote the standard, preferred, and ultra-preferred categories, respectively. Let \\(D\\) denote death in the next year.",
-    "These categories partition the policyholder population, so \\(P(D)=P(S)P(D\\mid S)+P(R)P(D\\mid R)+P(U)P(D\\mid U)\\).",
-    "Substituting gives \\(P(D)=0.50(0.010)+0.40(0.005)+0.10(0.001)=0.0050+0.0020+0.0001=0.0071\\).",
-    "The probability of being ultra-preferred and dying is \\(P(U\\cap D)=0.10(0.001)=0.0001\\).",
-    "By Bayes' theorem, \\(P(U\\mid D)=\\frac{0.0001}{0.0071}=\\frac{1}{71}\\approx 0.0141\\)."
-  ],
-  "generalization": "For mutually exclusive and exhaustive categories \\(C_1,\\ldots,C_n\\), \\(P(C_k\\mid D)=\\frac{P(C_k)P(D\\mid C_k)}{\\sum_{i=1}^{n}P(C_i)P(D\\mid C_i)}\\), provided \\(P(D)>0\\). Weight each category's event probability by its population share before normalizing.",
-  "answer_text": "D. \\(0.0141\\)"
-},
-{
-  "id": 27,
-  "topic": "Conditional Probability and Bayes' Theorem",
-  "title": "Exercise 27",
-  "statement": "[SOA 18; S03.08] An auto insurance company insures drivers of all ages. An actuary compiled the following statistics on the company's insured drivers:\n\nAge 16–20: probability of accident = 0.06; portion of insured drivers = 0.08.\nAge 21–30: probability of accident = 0.03; portion of insured drivers = 0.15.\nAge 31–65: probability of accident = 0.02; portion of insured drivers = 0.49.\nAge 66–99: probability of accident = 0.04; portion of insured drivers = 0.28.\n\nA randomly selected driver that the company insures has an accident.\n\nCalculate the probability that the driver was 16–20.",
-  "choices": [
-    "\\(0.13\\)",
-    "\\(0.16\\)",
-    "\\(0.19\\)",
-    "\\(0.23\\)",
-    "\\(0.40\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "Let \\(T\\) denote a driver aged 16–20 and \\(A\\) denote an accident. We want \\(P(T\\mid A)\\), whereas the table gives \\(P(A\\mid T)=0.06\\).",
-    "The probability that a driver is aged 16–20 and has an accident is \\(P(T\\cap A)=P(T)P(A\\mid T)=0.08(0.06)=0.0048\\).",
-    "By the law of total probability, \\(P(A)=0.08(0.06)+0.15(0.03)+0.49(0.02)+0.28(0.04)\\).",
-    "Thus \\(P(A)=0.0048+0.0045+0.0098+0.0112=0.0303\\).",
-    "By Bayes' theorem, \\(P(T\\mid A)=\\frac{0.0048}{0.0303}=\\frac{16}{101}\\approx 0.158416\\). Rounded to two decimal places, the answer is \\(0.16\\)."
-  ],
-  "generalization": "When a table gives population shares \\(w_i\\) and conditional accident probabilities \\(a_i\\), the overall accident probability is \\(\\sum_i w_i a_i\\). Given an accident, the probability of belonging to group \\(k\\) is \\(\\frac{w_k a_k}{\\sum_i w_i a_i}\\). Do not confuse \\(P(A\\mid C_k)\\) with \\(P(C_k\\mid A)\\).",
-  "answer_text": "B. \\(0.16\\)"
-},
+    "id": 9,
+    "topic": "Complements and Set Partitions",
+    "title": "Exercise 9",
+    "statement": "You are given that \\(P(A\\cap B^c)=0.3\\) and \\(P((A\\cup B)^c)=0.4\\). What is \\(P(B)\\)?",
+    "choices": [
+      "\\(0.2\\)",
+      "\\(0.3\\)",
+      "\\(0.5\\)",
+      "\\(0.6\\)",
+      "\\(0.7\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "By De Morgan's law, \\((A\\cup B)^c=A^c\\cap B^c\\). Hence, \\(P(A^c\\cap B^c)=0.4\\).",
+      "Partition \\(B^c\\) according to whether A occurs: \\(B^c=(A\\cap B^c)\\cup(A^c\\cap B^c)\\).",
+      "These two regions are disjoint, so \\(P(B^c)=P(A\\cap B^c)+P(A^c\\cap B^c)=0.3+0.4=0.7\\).",
+      "Using the complement rule gives \\(P(B)=1-P(B^c)=1-0.7=0.3\\)."
+    ],
+    "generalization": "Any event B can be partitioned using another event A: \\(P(B)=P(A\\cap B)+P(A^c\\cap B)\\). Similarly, \\(P(B)=1-P(A\\cap B^c)-P(A^c\\cap B^c)\\).",
+    "answer_text": "B. \\(0.3\\)"
+  },
   {
-  "id": 28,
-  "topic": "Discrete Random Variables: Mode",
-  "title": "Exercise 28",
-  "statement": "Each year, there is a 40% probability of no hurricanes hitting Stormy Island. The probability of exactly one hurricane hitting Stormy Island equals the probability of 2 or more hurricanes hitting Stormy Island. What is the mode number of hurricanes that hit Stormy Island in a year?",
-  "choices": [
-    "\\(0\\)",
-    "\\(1\\)",
-    "\\(2\\)",
-    "1 and 2",
-    "It cannot be determined from the information given."
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "Let \\(N\\) denote the number of hurricanes in a year. We know \\(P(N=0)=0.4\\) and \\(P(N=1)=P(N\\geq 2)\\).",
-    "The events \\(N=0\\), \\(N=1\\), and \\(N\\geq 2\\) partition all possible outcomes. Therefore, \\(0.4+P(N=1)+P(N\\geq 2)=1\\).",
-    "Since the last two probabilities are equal, \\(P(N=1)=P(N\\geq 2)=0.3\\).",
-    "For every integer \\(n\\geq 2\\), \\(P(N=n)\\leq P(N\\geq 2)=0.3\\).",
-    "Thus \\(P(N=0)=0.4\\) is strictly larger than the probability of any other individual value. The unique mode is \\(0\\)."
-  ],
-  "generalization": "A mode of a discrete random variable is a value maximizing its probability mass. Even without knowing every individual probability, a mode can be identified if each remaining probability is bounded above by a number smaller than the candidate's probability.",
-  "answer_text": "A. \\(0\\)"
-},
-{
-  "id": 29,
-  "topic": "Discrete Random Variables: Mode",
-  "title": "Exercise 29",
-  "statement": "Suppose that \\(N\\) is a random variable with \\(P(N=0)=0.1\\), \\(P(N=1)=0.3\\), \\(P(N=2)=0.2\\), and \\(P(N=3)=0.4\\). Find the mode of \\(N\\).",
-  "choices": [
-    "\\(0\\)",
-    "\\(1\\)",
-    "\\(2\\)",
-    "\\(3\\)",
-    "It cannot be determined from the information given."
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "The probabilities sum to \\(0.1+0.3+0.2+0.4=1\\), so these values account for the entire distribution.",
-    "A mode is a value of \\(N\\) with the largest probability.",
-    "The largest probability is \\(0.4\\), which occurs at \\(N=3\\). Therefore, the mode is \\(3\\)."
-  ],
-  "generalization": "For a discrete probability mass function \\(p(n)\\), the modes are the values attaining \\(\\max_n p(n)\\). The mode is the value of the random variable, not the probability at that value. Multiple values can tie for the maximum.",
-  "answer_text": "D. \\(3\\)"
-},
-{
-  "id": 30,
-  "topic": "Discrete Random Variables: Median",
-  "title": "Exercise 30",
-  "statement": "Each year, there is a 40% probability of no hurricanes hitting Stormy Island. The probability of exactly one hurricane hitting Stormy Island equals the probability of 2 or more hurricanes hitting Stormy Island. What is the median number of hurricanes that hit Stormy Island in a year?",
-  "choices": [
-    "\\(0\\)",
-    "\\(1\\)",
-    "\\(2\\)",
-    "3 or higher",
-    "It cannot be determined from the information given."
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "Let \\(N\\) denote the number of hurricanes in a year. We have \\(P(N=0)=0.4\\) and \\(P(N=1)=P(N\\geq 2)\\).",
-    "Since probabilities sum to 1, \\(0.4+2P(N=1)=1\\). Hence \\(P(N=1)=0.3\\) and \\(P(N\\geq 2)=0.3\\).",
-    "The cumulative probabilities are \\(P(N\\leq 0)=0.4\\) and \\(P(N\\leq 1)=0.4+0.3=0.7\\). The cumulative probability crosses 0.5 at \\(1\\).",
-    "Indeed, \\(P(N\\leq 1)=0.7\\geq 0.5\\) and \\(P(N\\geq 1)=0.6\\geq 0.5\\), so \\(1\\) is a median.",
-    "Any number below 1 has at most 0.4 probability below or equal to it, and any number above 1 has at most 0.3 probability above or equal to it. Therefore, the unique median is \\(1\\)."
-  ],
-  "generalization": "A median \\(m\\) satisfies both \\(P(X\\leq m)\\geq 1/2\\) and \\(P(X\\geq m)\\geq 1/2\\). For a discrete distribution, use cumulative probabilities rather than choosing the most likely value. A median need not be unique.",
-  "answer_text": "B. \\(1\\)"
-},
-{
-  "id": 31,
-  "topic": "Discrete Random Variables: Expected Value",
-  "title": "Exercise 31",
-  "statement": "A toy company sells exactly three distinct types of toys: cars, which cost $5, trains, which cost $10, and spaceships, which cost $25. If the number of cars sold is twice the number of trains sold, but half of the number of spaceships sold, what is the average price per toy?",
-  "choices": [
-    "\\(10.7\\)",
-    "\\(12.7\\)",
-    "\\(14.1\\)",
-    "\\(15.4\\)",
-    "\\(17.1\\)"
-  ],
-  "correct": 4,
-  "solution_steps": [
-    "Let the number of trains sold be \\(t\\). Then the number of cars sold is \\(2t\\). Since cars are half as numerous as spaceships, the number of spaceships sold is \\(4t\\).",
-    "The sales ratio for cars, trains, and spaceships is therefore \\(2:1:4\\), with \\(7t\\) toys sold in total.",
-    "For a randomly selected toy among those sold, the price probabilities are \\(P(X=5)=2/7\\), \\(P(X=10)=1/7\\), and \\(P(X=25)=4/7\\).",
-    "The average price is \\(E[X]=5\\left(\\frac{2}{7}\\right)+10\\left(\\frac{1}{7}\\right)+25\\left(\\frac{4}{7}\\right)=\\frac{120}{7}\\approx 17.142857\\).",
-    "Rounded to one decimal place, the average price per toy is $17.1."
-  ],
-  "generalization": "If values \\(x_1,\\ldots,x_k\\) occur in proportions \\(r_1:\\cdots:r_k\\), their weighted mean is \\(\\frac{\\sum_i r_i x_i}{\\sum_i r_i}\\). A simple unweighted average is appropriate only when all values have equal weights.",
-  "answer_text": "E. \\(17.1\\)"
-},
-{
-  "id": 32,
-  "topic": "Discrete Random Variables: Expected Value",
-  "title": "Exercise 32",
-  "statement": "Suppose that each side of a six-sided die is equally likely to come up. If the numbers on the first five sides are 2, 2, 3, 5 and 7, and the expected value of a roll is 4, what is the number on the sixth face?",
-  "choices": [
-    "\\(3\\)",
-    "\\(4\\)",
-    "\\(5\\)",
-    "\\(6\\)",
-    "\\(7\\)"
-  ],
-  "correct": 2,
-  "solution_steps": [
-    "Let \\(x\\) denote the number on the sixth face and \\(Y\\) denote the result of a roll.",
-    "Each face has probability \\(1/6\\), so \\(E[Y]=\\frac{2+2+3+5+7+x}{6}=\\frac{19+x}{6}\\).",
-    "Using \\(E[Y]=4\\), we obtain \\(19+x=24\\).",
-    "Therefore, the number on the sixth face is \\(x=5\\)."
-  ],
-  "generalization": "For \\(k\\) equally likely faces with labels \\(x_1,\\ldots,x_k\\), the expected value is \\(\\mu=\\frac{1}{k}\\sum_i x_i\\). One missing label is \\(x_k=k\\mu-\\sum_{i=1}^{k-1}x_i\\). Repeated labels must be counted once for each face on which they appear.",
-  "answer_text": "C. \\(5\\)"
-},
-{
-  "id": 33,
-  "topic": "Discrete Random Variables: Functions and Moments",
-  "title": "Exercise 33",
-  "statement": "Suppose that \\(P(N=n)\\) is proportional to \\(n\\) for \\(n=1,2,3,4\\), and is 0 otherwise. Find \\(E[(N-2)^2]\\).",
-  "choices": [
-    "\\(1/2\\)",
-    "\\(3/4\\)",
-    "\\(1\\)",
-    "\\(3/2\\)",
-    "\\(2\\)"
-  ],
-  "correct": 4,
-  "solution_steps": [
-    "Write \\(P(N=n)=cn\\) for \\(n=1,2,3,4\\). Normalization requires \\(c(1+2+3+4)=1\\), so \\(c=1/10\\).",
-    "Thus the probabilities for \\(N=1,2,3,4\\) are \\(0.1,0.2,0.3,0.4\\), respectively.",
-    "Direct method: \\(E[(N-2)^2]=\\sum_{n=1}^{4}(n-2)^2P(N=n)=0.1(1)+0.2(0)+0.3(1)+0.4(4)=2\\).",
-    "Alternative method: expand \\((N-2)^2=N^2-4N+4\\). By linearity, \\(E[(N-2)^2]=E[N^2]-4E[N]+4\\).",
-    "Compute \\(E[N]=\\frac{1^2+2^2+3^2+4^2}{10}=3\\) and \\(E[N^2]=\\frac{1^3+2^3+3^3+4^3}{10}=10\\).",
-    "Substitution gives \\(E[(N-2)^2]=10-4(3)+4=2\\)."
-  ],
-  "generalization": "For a discrete random variable, \\(E[g(N)]=\\sum_n g(n)P(N=n)\\). In particular, \\(E[(N-a)^2]=E[N^2]-2aE[N]+a^2=\\operatorname{Var}(N)+(E[N]-a)^2\\), assuming a finite second moment. In general, \\(E[(N-a)^2]\\neq(E[N]-a)^2\\).",
-  "answer_text": "E. \\(2\\)"
-},
+    "id": 10,
+    "topic": "Inclusion-Exclusion and Counting",
+    "title": "Exercise 10",
+    "statement": "[SOA 5; F00.03] An auto insurance company has 10,000 policyholders. Each policyholder is classified as:\n\ni. young or old;\nii. male or female; and\niii. married or single.\n\nOf these policyholders, 3,000 are young, 4,600 are male, and 7,000 are married. The policyholders can also be classified as 1,320 young males, 3,010 married males, and 1,400 young married persons. Finally, 600 of the policyholders are young married males.\n\nHow many of the company's policyholders are young, female, and single?",
+    "choices": [
+      "\\(280\\)",
+      "\\(423\\)",
+      "\\(486\\)",
+      "\\(880\\)",
+      "\\(896\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "Let Y denote young policyholders, M male policyholders, and R married policyholders. We seek the number in \\(Y\\cap M^c\\cap R^c\\).",
+      "There are 3,000 young policyholders, of whom 1,320 are male. Therefore, there are \\(3000-1320=1680\\) young female policyholders.",
+      "There are 1,400 young married policyholders, of whom 600 are male. Therefore, there are \\(1400-600=800\\) young married female policyholders.",
+      "Subtract young married females from all young females: \\(1680-800=880\\).",
+      "Equivalently, inclusion-exclusion within Y gives \\(|Y\\cap M^c\\cap R^c|=|Y|-|Y\\cap M|-|Y\\cap R|+|Y\\cap M\\cap R|\\).",
+      "Substituting gives \\(3000-1320-1400+600=880\\). The overall counts of male and married policyholders are not needed."
+    ],
+    "generalization": "To count members of A who belong to neither B nor C, use \\(|A\\cap B^c\\cap C^c|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|\\). Add back the triple intersection because it was subtracted twice.",
+    "answer_text": "D. \\(880\\)"
+  },
   {
-  "id": 34,
-  "topic": "Discrete Random Variables: Tail-Sum Formula",
-  "title": "Exercise 34",
-  "statement": "[SOA 475] Let \\(X\\) represent the number of defective parts in a shipment of four.\n\n\\[P(X\\geq x)=\\frac{1}{4}\\left(1-\\frac{x-2}{3}\\right)^2,\\qquad x=1,2,3,4.\\]\n\nCalculate \\(E[X]\\).",
-  "choices": [
-    "\\(0.83\\)",
-    "\\(0.96\\)",
-    "\\(1.39\\)",
-    "\\(1.81\\)",
-    "\\(1.83\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "Since \\(X\\) counts defective parts in a shipment of four, its possible values are \\(0,1,2,3,4\\).",
-    "For a nonnegative integer-valued random variable, the tail-sum formula gives \\(E[X]=\\sum_{k=1}^{\\infty}P(X\\geq k)\\). Here, all terms beyond \\(k=4\\) are zero.",
-    "Evaluate the given probabilities: \\(P(X\\geq 1)=\\frac{1}{4}\\left(\\frac{4}{3}\\right)^2=\\frac{4}{9}\\), \\(P(X\\geq 2)=\\frac{1}{4}\\), \\(P(X\\geq 3)=\\frac{1}{9}\\), and \\(P(X\\geq 4)=\\frac{1}{36}\\).",
-    "Therefore, \\(E[X]=\\frac{4}{9}+\\frac{1}{4}+\\frac{1}{9}+\\frac{1}{36}=\\frac{16+9+4+1}{36}=\\frac{5}{6}\\approx 0.833333\\). The answer rounded to two decimal places is \\(0.83\\).",
-    "Alternative method: obtain the probability mass function by subtracting consecutive tails, \\(P(X=k)=P(X\\geq k)-P(X\\geq k+1)\\). Use \\(P(X\\geq 0)=1\\) and \\(P(X\\geq 5)=0\\).",
-    "This gives \\(P(X=0)=\\frac{5}{9}\\), \\(P(X=1)=\\frac{7}{36}\\), \\(P(X=2)=\\frac{5}{36}\\), \\(P(X=3)=\\frac{3}{36}\\), and \\(P(X=4)=\\frac{1}{36}\\).",
-    "Then \\(E[X]=0\\left(\\frac{5}{9}\\right)+1\\left(\\frac{7}{36}\\right)+2\\left(\\frac{5}{36}\\right)+3\\left(\\frac{3}{36}\\right)+4\\left(\\frac{1}{36}\\right)=\\frac{30}{36}=\\frac{5}{6}\\)."
-  ],
-  "generalization": "For a nonnegative integer-valued random variable, \\(E[X]=\\sum_{k=1}^{\\infty}P(X\\geq k)=\\sum_{k=0}^{\\infty}P(X>k)\\). The starting index depends on whether the inequality is weak or strict. Recover individual probabilities using \\(P(X=k)=P(X\\geq k)-P(X\\geq k+1)\\).",
-  "answer_text": "A. \\(0.83\\)"
-},
-{
-  "id": 35,
-  "topic": "Discrete Random Variables: Tail-Sum Formula",
-  "title": "Exercise 35",
-  "statement": "A customer loyalty program tracks the number of times a customer visits a particular store in a month. Let \\(X\\) be the number of visits a randomly chosen customer makes in a month. The probabilities that a customer makes more than \\(k\\) visits are as follows:\n\n\\(P(X>0)=0.80\\)\n\\(P(X>1)=0.50\\)\n\\(P(X>2)=0.20\\)\n\\(P(X>3)=0.05\\)\n\\(P(X>4)=0\\)\n\nFind the expected number of visits a customer makes in a month.",
-  "choices": [
-    "\\(1.25\\)",
-    "\\(1.55\\)",
-    "\\(1.80\\)",
-    "\\(2.05\\)",
-    "\\(2.20\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "Since \\(X\\) is a nonnegative integer-valued random variable, use \\(E[X]=\\sum_{k=0}^{\\infty}P(X>k)\\).",
-    "The given condition \\(P(X>4)=0\\) implies that all tail probabilities for \\(k\\geq 4\\) are zero.",
-    "Therefore, \\(E[X]=0.80+0.50+0.20+0.05=1.55\\) visits per month.",
-    "Alternative check: \\(P(X=0)=1-0.80=0.20\\). Subtracting consecutive tails gives \\(P(X=1)=0.30\\), \\(P(X=2)=0.30\\), \\(P(X=3)=0.15\\), and \\(P(X=4)=0.05\\).",
-    "Using the definition of expectation, \\(E[X]=0(0.20)+1(0.30)+2(0.30)+3(0.15)+4(0.05)=1.55\\)."
-  ],
-  "generalization": "If \\(S(k)=P(X>k)\\) for a nonnegative integer-valued random variable, then \\(E[X]=\\sum_{k=0}^{\\infty}S(k)\\). Also, \\(P(X=0)=1-S(0)\\) and \\(P(X=k)=S(k-1)-S(k)\\) for \\(k\\geq 1\\). Tail probabilities are cumulative probabilities, so they should not be treated as individual probability masses.",
-  "answer_text": "B. \\(1.55\\)"
-},
+    "id": 11,
+    "topic": "Inclusion-Exclusion and Complements",
+    "title": "Exercise 11",
+    "statement": "[SOA 100] A survey of 100 TV watchers revealed that over the last year:\n\ni. 34 watched CBS.\nii. 15 watched NBC.\niii. 10 watched ABC.\niv. 7 watched CBS and NBC.\nv. 6 watched CBS and ABC.\nvi. 5 watched NBC and ABC.\nvii. 4 watched CBS, NBC, and ABC.\nviii. 18 watched HGTV and of these, none watched CBS, NBC, or ABC.\n\nCalculate how many of the 100 TV watchers did not watch any of the four channels (CBS, NBC, ABC, or HGTV).",
+    "choices": [
+      "\\(1\\)",
+      "\\(37\\)",
+      "\\(45\\)",
+      "\\(55\\)",
+      "\\(82\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "Let C, N, A, and H denote the sets of viewers who watched CBS, NBC, ABC, and HGTV, respectively.",
+      "Use inclusion-exclusion for the first three channels: \\(|C\\cup N\\cup A|=|C|+|N|+|A|-|C\\cap N|-|C\\cap A|-|N\\cap A|+|C\\cap N\\cap A|\\).",
+      "Substituting gives \\(|C\\cup N\\cup A|=34+15+10-7-6-5+4=45\\).",
+      "The pairwise intersection counts include the viewers who watched all three channels. The triple intersection must therefore be added back once.",
+      "None of the 18 HGTV viewers watched any of the other three channels, so \\(|C\\cup N\\cup A\\cup H|=45+18=63\\).",
+      "The number who watched none of the four channels is \\(100-63=37\\)."
+    ],
+    "generalization": "For three events, \\(P(A\\cup B\\cup C)=P(A)+P(B)+P(C)-P(A\\cap B)-P(A\\cap C)-P(B\\cap C)+P(A\\cap B\\cap C)\\). The same identity holds for finite set counts. To find how many belong to none of the sets, subtract the union count from the total.",
+    "answer_text": "B. \\(37\\)"
+  },
   {
-  "id": 36,
-  "topic": "Discrete Random Variables: Variance",
-  "title": "Exercise 36",
-  "statement": "Suppose that \\(X\\) can only take on one of the four possible values from the probability distribution given below:\n\n\\(P(X=1)=0.2\\)\n\\(P(X=3)=0.3\\)\n\\(P(X=5)=0.4\\)\n\\(P(X=9)=p\\)\n\nWhat is the variance of \\(X\\)?",
-  "choices": [
-    "\\(5\\)",
-    "\\(17\\)",
-    "\\(21\\)",
-    "\\(17p\\)",
-    "\\(21p\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "The probabilities must sum to 1, so \\(p=1-0.2-0.3-0.4=0.1\\).",
-    "Calculate the mean: \\(E[X]=1(0.2)+3(0.3)+5(0.4)+9(0.1)=4\\).",
-    "Calculate the second raw moment: \\(E[X^2]=1^2(0.2)+3^2(0.3)+5^2(0.4)+9^2(0.1)=21\\).",
-    "Therefore, \\(\\operatorname{Var}(X)=E[X^2]-(E[X])^2=21-4^2=5\\)."
-  ],
-  "generalization": "For a discrete distribution, first determine any missing probabilities using normalization. Then calculate \\(E[X]=\\sum_x xp(x)\\) and \\(E[X^2]=\\sum_x x^2p(x)\\). The variance is \\(E[X^2]-(E[X])^2\\), not the second raw moment alone.",
-  "answer_text": "A. \\(5\\)"
-},
-{
-  "id": 37,
-  "topic": "Variance: Linear Transformations",
-  "title": "Exercise 37",
-  "statement": "Given that \\(E[Y]=2\\) and \\(\\operatorname{Var}(Y)=3\\), find \\(\\operatorname{Var}(3Y+4)\\).",
-  "choices": [
-    "\\(3\\)",
-    "\\(9\\)",
-    "\\(13\\)",
-    "\\(27\\)",
-    "\\(31\\)"
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "For constants \\(a\\) and \\(b\\), \\(\\operatorname{Var}(aY+b)=a^2\\operatorname{Var}(Y)\\).",
-    "Adding 4 does not change the variance, while multiplying by 3 multiplies the variance by \\(3^2=9\\).",
-    "Therefore, \\(\\operatorname{Var}(3Y+4)=9(3)=27\\). The given mean is not needed."
-  ],
-  "generalization": "For a random variable with finite variance, \\(\\operatorname{Var}(aY+b)=a^2\\operatorname{Var}(Y)\\) and \\(\\operatorname{SD}(aY+b)=|a|\\operatorname{SD}(Y)\\). Translation changes the mean but leaves the variance unchanged.",
-  "answer_text": "D. \\(27\\)"
-},
-{
-  "id": 38,
-  "topic": "Discrete Random Variables: Coefficient of Variation",
-  "title": "Exercise 38",
-  "statement": "Let \\(X\\) be a random variable whose distribution is \\(P(X=1)=P(X=3)=1/4\\) and \\(P(X=8)=1/2\\). What is the coefficient of variation of \\(X\\)?",
-  "choices": [
-    "\\(0.62\\)",
-    "\\(0.77\\)",
-    "\\(1.15\\)",
-    "\\(1.62\\)",
-    "\\(1.90\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "Calculate the mean: \\(E[X]=1\\left(\\frac14\\right)+3\\left(\\frac14\\right)+8\\left(\\frac12\\right)=5\\).",
-    "Calculate the second raw moment: \\(E[X^2]=1^2\\left(\\frac14\\right)+3^2\\left(\\frac14\\right)+8^2\\left(\\frac12\\right)=34.5\\).",
-    "The variance is \\(\\operatorname{Var}(X)=34.5-5^2=9.5\\), so \\(\\operatorname{SD}(X)=\\sqrt{9.5}\\).",
-    "Since the mean is positive, \\(\\operatorname{CV}(X)=\\frac{\\operatorname{SD}(X)}{E[X]}=\\frac{\\sqrt{9.5}}{5}\\approx 0.616441\\).",
-    "Rounded to two decimal places, the coefficient of variation is \\(0.62\\)."
-  ],
-  "generalization": "For a positive mean, \\(\\operatorname{CV}(X)=\\frac{\\sqrt{E[X^2]-(E[X])^2}}{E[X]}\\). It measures dispersion relative to the mean and has no units. Use the standard deviation in the numerator, not the variance.",
-  "answer_text": "A. \\(0.62\\)"
-},
-{
-  "id": 39,
-  "topic": "Discrete Uniform Distribution: Expected Value",
-  "title": "Exercise 39",
-  "statement": "Let \\(N\\) be a randomly selected three-digit number, with each integer from 100 through 999 equally likely. What is \\(E[N]\\)?",
-  "choices": [
-    "\\(173.0\\)",
-    "\\(500.0\\)",
-    "\\(500.5\\)",
-    "\\(549.5\\)",
-    "\\(550.0\\)"
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "There are \\(999-100+1=900\\) three-digit positive integers, each with probability \\(1/900\\).",
-    "Thus \\(E[N]=\\frac{1}{900}\\sum_{n=100}^{999}n\\).",
-    "Using the arithmetic-series formula, \\(\\sum_{n=100}^{999}n=\\frac{900(100+999)}{2}\\).",
-    "Therefore, \\(E[N]=\\frac{100+999}{2}=549.5\\).",
-    "Equivalently, pairing the smallest and largest values gives \\(100+999=101+998=\\cdots=1099\\). Each pair has average \\(1099/2=549.5\\)."
-  ],
-  "generalization": "If \\(N\\) is uniform on the consecutive integers \\(a,a+1,\\ldots,b\\), then \\(E[N]=(a+b)/2\\). This follows directly from the sum of an arithmetic series and requires equal probabilities.",
-  "answer_text": "D. \\(549.5\\)"
-},
-{
-  "id": 40,
-  "topic": "Coefficient of Variation: Linear Transformations",
-  "title": "Exercise 40",
-  "statement": "Let \\(Y\\) be the outcome of the roll of a fair four-sided die numbered 1 through 4. What is the coefficient of variation of \\(25+100Y\\)?",
-  "choices": [
-    "\\(0.41\\)",
-    "\\(1.21\\)",
-    "\\(2.08\\)",
-    "\\(3.50\\)",
-    "\\(4.47\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "Since \\(Y\\) is uniform on \\(\\{1,2,3,4\\}\\), \\(E[Y]=(1+2+3+4)/4=2.5\\).",
-    "Also, \\(E[Y^2]=(1+4+9+16)/4=7.5\\), so \\(\\operatorname{Var}(Y)=7.5-2.5^2=1.25\\).",
-    "Let \\(Z=25+100Y\\). Its mean is \\(E[Z]=25+100(2.5)=275\\).",
-    "Its variance is \\(\\operatorname{Var}(Z)=100^2\\operatorname{Var}(Y)=10000(1.25)=12500\\).",
-    "Therefore, \\(\\operatorname{CV}(Z)=\\frac{\\sqrt{12500}}{275}\\approx 0.406558\\), which rounds to \\(0.41\\)."
-  ],
-  "generalization": "For \\(Z=aX+b\\) with positive mean, \\(\\operatorname{CV}(Z)=\\frac{|a|\\operatorname{SD}(X)}{aE[X]+b}\\). Positive scaling alone preserves the coefficient of variation, but adding a constant generally changes it.",
-  "answer_text": "A. \\(0.41\\)"
-},
-{
-  "id": 41,
-  "topic": "Counting: Multiplication Principle",
-  "title": "Exercise 41",
-  "statement": "An old computer network had 5-character user names. Each of the first 2 characters could be any one of the 26 letters of the alphabet, the 3rd and 4th characters could be any one of the 10 digits, and the 5th character could be any letter or digit. How many possible user names were there?",
-  "choices": [
-    "\\(37{,}440\\)",
-    "\\(97{,}440\\)",
-    "\\(1{,}757{,}600\\)",
-    "\\(2{,}433{,}600\\)",
-    "\\(292{,}032{,}000\\)"
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "Each of the first two positions has 26 possible letters. No restriction prohibits repetition.",
-    "Each of the third and fourth positions has 10 possible digits.",
-    "The fifth position has \\(26+10=36\\) possibilities because letters and digits are disjoint categories.",
-    "By the multiplication principle, the total number of user names is \\(26\\times26\\times10\\times10\\times36=2{,}433{,}600\\)."
-  ],
-  "generalization": "If each valid partial sequence has \\(n_i\\) choices for position \\(i\\), the total number of complete sequences is \\(\\prod_i n_i\\). Add counts for disjoint alternatives within a position, and multiply counts across successive positions.",
-  "answer_text": "D. \\(2{,}433{,}600\\)"
-},
-{
-  "id": 42,
-  "topic": "Counting: Multiplication Principle",
-  "title": "Exercise 42",
-  "statement": "Find the number of 4-digit passcodes that satisfy both of the following conditions:\n\nThe first and second digits must each be one of 3 through 9.\n\nThe third and fourth digits can be any of 0 through 9, but must be different from each other.",
-  "choices": [
-    "\\(2{,}520\\)",
-    "\\(2{,}592\\)",
-    "\\(3{,}240\\)",
-    "\\(3{,}528\\)",
-    "\\(4{,}410\\)"
-  ],
-  "correct": 4,
-  "solution_steps": [
-    "The digits from 3 through 9 give \\(9-3+1=7\\) choices for the first position.",
-    "The second position also has 7 choices. The first two digits are allowed to match.",
-    "The third position has 10 choices, from 0 through 9.",
-    "For each choice of the third digit, the fourth position has 9 choices because it must exclude that digit.",
-    "Therefore, the number of valid passcodes is \\(7\\times7\\times10\\times9=4{,}410\\)."
-  ],
-  "generalization": "Apply distinctness restrictions only where stated. Two ordered positions chosen from \\(m\\) symbols have \\(m^2\\) possibilities when repetition is allowed and \\(m(m-1)\\) when their symbols must differ.",
-  "answer_text": "E. \\(4{,}410\\)"
-},
+    "id": 12,
+    "topic": "Set Difference with Three Events",
+    "title": "Exercise 12",
+    "statement": "Suppose that A, B, and C are events such that:\n\ni. \\(P(A)=0.6\\) and \\(P(B)=P(C)=0.5\\).\nii. \\(P(A\\cap B)=P(A\\cap C)=0.3\\), but \\(P(B\\cap C)=0.2\\).\niii. \\(P(A\\cap B\\cap C)=0.1\\).\n\nFind \\(P(A^c\\cap B^c\\cap C)\\).",
+    "choices": [
+      "\\(0.0\\)",
+      "\\(0.1\\)",
+      "\\(0.2\\)",
+      "\\(0.3\\)",
+      "\\(0.4\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "The event \\(A^c\\cap B^c\\cap C\\) means that C occurs while neither A nor B occurs. This is the C-only region.",
+      "Start with all of C, subtract its overlap with A and its overlap with B, then add back the triple intersection.",
+      "Thus, \\(P(A^c\\cap B^c\\cap C)=P(C)-P(A\\cap C)-P(B\\cap C)+P(A\\cap B\\cap C)\\).",
+      "Substituting gives \\(0.5-0.3-0.2+0.1=0.1\\).",
+      "The triple intersection is added back because it belongs to both subtracted intersections and would otherwise be removed twice."
+    ],
+    "generalization": "For any three events, \\(P(C\\cap A^c\\cap B^c)=P(C)-P(C\\cap A)-P(C\\cap B)+P(A\\cap B\\cap C)\\). This is inclusion-exclusion applied within C.",
+    "answer_text": "B. \\(0.1\\)"
+  },
   {
-  "id": 43,
-  "topic": "Conditional Probability and Sampling Without Replacement",
-  "title": "Exercise 43",
-  "statement": "Urn I contains seven red and three black balls, and urn II contains four red and five black balls. After a randomly selected ball is transferred from urn I to urn II, two balls are randomly drawn from urn II without replacement. What is the probability that both balls drawn from urn II are red?",
-  "choices": [
-    "\\(47/100\\)",
-    "\\(9/20\\)",
-    "\\(28/125\\)",
-    "\\(44/225\\)",
-    "\\(8/25\\)"
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "Condition on the color of the transferred ball. A red ball is transferred with probability \\(7/10\\), and a black ball with probability \\(3/10\\).",
-    "If a red ball is transferred, urn II contains 5 red and 5 black balls. The conditional probability of drawing two red balls is \\(\\frac{5}{10}\\frac{4}{9}=\\frac{2}{9}\\).",
-    "If a black ball is transferred, urn II contains 4 red and 6 black balls. The conditional probability of drawing two red balls is \\(\\frac{4}{10}\\frac{3}{9}=\\frac{2}{15}\\).",
-    "By the law of total probability, the desired probability is \\(\\frac{7}{10}\\frac{2}{9}+\\frac{3}{10}\\frac{2}{15}=\\frac{7}{45}+\\frac{1}{25}=\\frac{44}{225}\\)."
-  ],
-  "generalization": "When a transfer changes an urn's composition, condition on what was transferred before calculating the sampling probability. For an urn containing \\(r\\) red balls among \\(n\\) balls, the probability of two red draws without replacement is \\(\\binom{r}{2}/\\binom{n}{2}=r(r-1)/(n(n-1))\\).",
-  "answer_text": "D. \\(44/225\\)"
-},
-{
-  "id": 44,
-  "topic": "Counting and Hypergeometric Probability",
-  "title": "Exercise 44",
-  "statement": "If thirteen cards are randomly chosen without replacement from an ordinary 52-card deck, what is the probability of obtaining exactly three aces?",
-  "choices": [
-    "\\(\\frac{\\binom{13}{4}\\binom{4}{3}\\binom{49}{10}}{\\binom{52}{13}}\\)",
-    "\\(\\frac{\\binom{52}{4}\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)",
-    "\\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)",
-    "\\(\\frac{3!49!}{52!}\\)",
-    "\\(\\frac{\\binom{3}{1}\\binom{49}{10}}{(52)(51)\\cdots(39)}\\)"
-  ],
-  "correct": 2,
-  "solution_steps": [
-    "There are \\(\\binom{52}{13}\\) equally likely unordered hands of 13 cards.",
-    "Choose exactly 3 of the deck's 4 aces in \\(\\binom{4}{3}\\) ways.",
-    "The remaining 10 cards must all be non-aces. There are 48 non-aces, giving \\(\\binom{48}{10}\\) choices.",
-    "Therefore, the probability is \\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\).",
-    "Do not select the remaining cards from all 49 cards left after choosing three aces: that would allow the fourth ace and violate the requirement of exactly three aces."
-  ],
-  "generalization": "For a sample of size \\(n\\) drawn uniformly without replacement from \\(N\\) objects containing \\(K\\) successes, the probability of exactly \\(k\\) successes is \\(\\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}\\), for feasible values of \\(k\\).",
-  "answer_text": "C. \\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)"
-},
-{
-  "id": 45,
-  "topic": "Counting: Restricted Card Hands",
-  "title": "Exercise 45",
-  "statement": "[110.S88.16] What is the probability that a hand of five cards chosen randomly and without replacement from a standard deck of 52 cards contains the king of spades, exactly one other king, and exactly two queens?",
-  "choices": [
-    "\\(\\frac{\\binom{4}{2}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)",
-    "\\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)",
-    "\\(\\frac{\\binom{7}{3}\\binom{44}{1}}{\\binom{52}{5}}\\)",
-    "\\(\\frac{\\binom{4}{1}\\binom{7}{3}\\binom{44}{1}}{\\binom{52}{5}}\\)",
-    "\\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{11}{1}}{\\binom{52}{5}}\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "There are \\(\\binom{52}{5}\\) equally likely five-card hands.",
-    "The king of spades is required, so there is exactly one way to include that card.",
-    "Choose the other king from the remaining three kings in \\(\\binom{3}{1}\\) ways.",
-    "Choose exactly two of the four queens in \\(\\binom{4}{2}\\) ways.",
-    "The fifth card must be neither a king nor a queen. There are \\(52-4-4=44\\) such cards.",
-    "The number of favorable hands is \\(\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}=3\\cdot6\\cdot44=792\\). Therefore, the probability is \\(\\frac{792}{\\binom{52}{5}}\\)."
-  ],
-  "generalization": "When a particular card is required, fix that card first and count the remaining choices. For exact rank counts, all leftover cards must come from outside the constrained ranks. Use unordered combinations consistently in both numerator and denominator.",
-  "answer_text": "B. \\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)"
-},
-{
-  "id": 46,
-  "topic": "Binomial Distribution",
-  "title": "Exercise 46",
-  "statement": "In a game, a player flips 2 fair coins and loses if both are heads. Assume all coin flips are independent. What is the probability that a player loses exactly 3 times in 5 plays of the game?",
-  "choices": [
-    "\\(10\\cdot\\frac{3^2}{4^5}\\)",
-    "\\(\\frac{10}{4^5}\\)",
-    "\\(\\frac{1}{4^3}\\)",
-    "\\(\\frac{1}{2^5}\\)",
-    "\\(\\frac{10}{2^5}\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "In one play, the player loses only on two heads, so \\(p=P(\\text{loss})=\\frac12\\frac12=\\frac14\\).",
-    "The probability of not losing a play is \\(1-p=3/4\\).",
-    "Let \\(L\\) be the number of losses in five independent plays. Then \\(L\\sim\\operatorname{Binomial}(5,1/4)\\).",
-    "There are \\(\\binom{5}{3}=10\\) ways to choose which three plays are losses.",
-    "Thus \\(P(L=3)=\\binom{5}{3}\\left(\\frac14\\right)^3\\left(\\frac34\\right)^2=10\\cdot\\frac{3^2}{4^5}=\\frac{45}{512}\\).",
-    "The probability of losing a play is \\(1/4\\), not \\(1/2\\): a play consists of two coin flips."
-  ],
-  "generalization": "For \\(n\\) independent trials with a constant event probability \\(p\\), the number of occurrences is binomial: \\(P(X=k)=\\binom{n}{k}p^k(1-p)^{n-k}\\). First identify what constitutes one trial and calculate its event probability.",
-  "answer_text": "A. \\(10\\cdot\\frac{3^2}{4^5}\\)"
-},
-{
-  "id": 47,
-  "topic": "Independent Binomial Random Variables",
-  "title": "Exercise 47",
-  "statement": "[110.S90.28] I have two unfair coins: a gold coin that comes up heads with probability 0.3, and a silver coin that comes up heads with probability 0.1. If I flip the gold coin 5 times and the silver coin 10 times, what is the probability that the gold coin comes up heads exactly 3 times and the silver coin comes up heads exactly 6 times? Assume all flips are independent.",
-  "choices": [
-    "\\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)",
-    "\\(\\binom{5}{3}(0.3)^3(0.7)^2+\\binom{10}{6}(0.1)^6(0.9)^4\\)",
-    "\\(\\left(1-\\binom{5}{3}(0.3)^3(0.7)^2\\right)\\left(1-\\binom{10}{6}(0.1)^6(0.9)^4\\right)\\)",
-    "\\(1-\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)",
-    "\\(\\left(1-\\binom{5}{3}(0.3)^3(0.7)^2\\right)+\\left(1-\\binom{10}{6}(0.1)^6(0.9)^4\\right)\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "Let \\(G\\) and \\(S\\) count heads from the gold and silver coins. Then \\(G\\sim\\operatorname{Binomial}(5,0.3)\\) and \\(S\\sim\\operatorname{Binomial}(10,0.1)\\).",
-    "The gold-coin probability is \\(P(G=3)=\\binom{5}{3}(0.3)^3(0.7)^2\\).",
-    "The silver-coin probability is \\(P(S=6)=\\binom{10}{6}(0.1)^6(0.9)^4\\).",
-    "Because the two collections of flips are independent, \\(P(G=3,S=6)=P(G=3)P(S=6)\\).",
-    "Therefore, the answer is \\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)."
-  ],
-  "generalization": "For independent binomial counts, multiply the individual probabilities to obtain a joint probability. Do not combine trials with different success probabilities into a single ordinary binomial model.",
-  "answer_text": "A. \\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)"
-},
-{
-  "id": 48,
-  "topic": "Binomial Distribution: Cumulative Probability",
-  "title": "Exercise 48",
-  "statement": "[SOA 37; S00.40] A company prices its hurricane insurance using the following assumptions:\n\n1. In any calendar year, there can be at most one hurricane.\n2. In any calendar year, the probability of a hurricane is 0.05.\n3. The number of hurricanes in any calendar year is independent of the number of hurricanes in any other calendar year.\n\nUsing the company's assumptions, calculate the probability that there are fewer than 3 hurricanes in a 20-year period.",
-  "choices": [
-    "\\(0.06\\)",
-    "\\(0.19\\)",
-    "\\(0.38\\)",
-    "\\(0.62\\)",
-    "\\(0.92\\)"
-  ],
-  "correct": 4,
-  "solution_steps": [
-    "Each year is an independent Bernoulli trial with hurricane probability \\(0.05\\). Thus the total number of hurricanes satisfies \\(X\\sim\\operatorname{Binomial}(20,0.05)\\).",
-    "Fewer than 3 hurricanes means \\(X=0,1,2\\), so \\(P(X<3)=P(X=0)+P(X=1)+P(X=2)\\).",
-    "The zero-hurricane probability is \\(P(X=0)=(0.95)^{20}\\approx 0.358486\\).",
-    "The one-hurricane probability is \\(P(X=1)=\\binom{20}{1}(0.05)(0.95)^{19}\\approx 0.377354\\).",
-    "The two-hurricane probability is \\(P(X=2)=\\binom{20}{2}(0.05)^2(0.95)^{18}\\approx 0.188677\\).",
-    "Adding gives \\(P(X<3)\\approx 0.924516\\), which rounds to \\(0.92\\)."
-  ],
-  "generalization": "For \\(X\\sim\\operatorname{Binomial}(n,p)\\) and an integer threshold \\(r\\), \\(P(X<r)=\\sum_{k=0}^{r-1}\\binom{n}{k}p^k(1-p)^{n-k}\\). Distinguish fewer than \\(r\\) from at most \\(r\\), which includes the term \\(X=r\\).",
-  "answer_text": "E. \\(0.92\\)"
-},
+    "id": 13,
+    "topic": "De Morgan's Laws",
+    "title": "Exercise 13",
+    "statement": "[Course 110; F86.11] Let \\(P(A\\cap B)=0.2\\), \\(P(A)=0.6\\), and \\(P(B)=0.5\\). Find \\(P(A^c\\cup B^c)\\).",
+    "choices": [
+      "\\(0.1\\)",
+      "\\(0.3\\)",
+      "\\(0.7\\)",
+      "\\(0.8\\)",
+      "\\(0.9\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "By De Morgan's law, \\(A^c\\cup B^c=(A\\cap B)^c\\).",
+      "This event includes every outcome except those in which both A and B occur.",
+      "Apply the complement rule: \\(P(A^c\\cup B^c)=1-P(A\\cap B)\\).",
+      "Therefore, \\(P(A^c\\cup B^c)=1-0.2=0.8\\). The individual probabilities of A and B are not needed."
+    ],
+    "generalization": "De Morgan's laws give \\(A^c\\cup B^c=(A\\cap B)^c\\) and \\(A^c\\cap B^c=(A\\cup B)^c\\). Consequently, 'not both' has probability \\(1-P(A\\cap B)\\), while 'neither' has probability \\(1-P(A\\cup B)\\).",
+    "answer_text": "D. \\(0.8\\)"
+  },
   {
-  "id": 49,
-  "topic": "Sampling Without Replacement",
-  "title": "Exercise 49",
-  "statement": "A drawer contains four white socks, six red socks, and two black socks. Two socks are taken at random from the drawer without replacement. What is the probability that both socks will be the same color?",
-  "choices": [
-    "\\(1/66\\)",
-    "\\(1/11\\)",
-    "\\(5/22\\)",
-    "\\(1/3\\)",
-    "\\(7/18\\)"
-  ],
-  "correct": 3,
-  "solution_steps": [
-    "There are \\(4+6+2=12\\) socks, giving \\(\\binom{12}{2}=66\\) equally likely unordered pairs.",
-    "The favorable cases are mutually exclusive: two white socks, two red socks, or two black socks.",
-    "Their counts are \\(\\binom{4}{2}=6\\), \\(\\binom{6}{2}=15\\), and \\(\\binom{2}{2}=1\\), respectively.",
-    "Therefore, \\(P(\\text{same color})=\\frac{6+15+1}{66}=\\frac{22}{66}=\\frac13\\).",
-    "Equivalently, using sequential draws gives \\(\\frac4{12}\\frac3{11}+\\frac6{12}\\frac5{11}+\\frac2{12}\\frac1{11}=\\frac13\\)."
-  ],
-  "generalization": "If a population contains \\(n_i\\) objects of category \\(i\\), with total \\(N=\\sum_i n_i\\geq2\\), two uniform draws without replacement have the same category with probability \\(\\frac{\\sum_i\\binom{n_i}{2}}{\\binom{N}{2}}=\\sum_i\\frac{n_i(n_i-1)}{N(N-1)}\\).",
-  "answer_text": "D. \\(1/3\\)"
-},
-{
-  "id": 50,
-  "topic": "Sampling With Replacement",
-  "title": "Exercise 50",
-  "statement": "A drawer contains four white socks, six red socks, and two black socks. Two socks are taken at random from the drawer with replacement. What is the probability that both socks will be the same color?",
-  "choices": [
-    "\\(1/66\\)",
-    "\\(1/11\\)",
-    "\\(5/22\\)",
-    "\\(1/3\\)",
-    "\\(7/18\\)"
-  ],
-  "correct": 4,
-  "solution_steps": [
-    "With replacement and independent random draws, the color probabilities remain \\(P(W)=4/12\\), \\(P(R)=6/12\\), and \\(P(B)=2/12\\).",
-    "The probability of two white socks is \\((4/12)^2=1/9\\).",
-    "The probability of two red socks is \\((6/12)^2=1/4\\), and the probability of two black socks is \\((2/12)^2=1/36\\).",
-    "These cases are mutually exclusive, so \\(P(\\text{same color})=\\frac19+\\frac14+\\frac1{36}=\\frac{14}{36}=\\frac7{18}\\).",
-    "Unlike sampling without replacement, the second draw still has 12 available socks and the original color counts."
-  ],
-  "generalization": "For two independent draws with category probabilities \\(p_1,\\ldots,p_m\\), the probability of matching categories is \\(\\sum_{i=1}^{m}p_i^2\\). Multiply probabilities within each matching case, then add over the mutually exclusive categories.",
-  "answer_text": "E. \\(7/18\\)"
-},
-{
-  "id": 51,
-  "topic": "Sampling Without Replacement: Stopping Rules",
-  "title": "Exercise 51",
-  "statement": "[110.S88.35] A box contains 35 gems, of which ten are real diamonds and 25 are fake diamonds. Gems are randomly taken out of the box, one at a time without replacement. What is the probability that exactly two fakes are selected before the second real diamond is selected?",
-  "choices": [
-    "\\(\\frac{225}{5236}\\)",
-    "\\(\\frac{675}{5236}\\)",
-    "\\(\\frac{\\binom{25}{2}\\binom{10}{2}}{\\binom{35}{4}}\\)",
-    "\\(\\binom{3}{2}\\left(\\frac{10}{35}\\right)^2\\left(\\frac{25}{35}\\right)^2\\)",
-    "\\(\\binom{4}{2}\\left(\\frac{10}{35}\\right)^2\\left(\\frac{25}{35}\\right)^2\\)"
-  ],
-  "correct": 1,
-  "solution_steps": [
-    "Exactly two fakes before the second real diamond means that the fourth draw is real, while the first three draws contain exactly one real diamond and two fakes.",
-    "Writing \\(R\\) for real and \\(F\\) for fake, the possible sequences are \\(RFFR\\), \\(FRFR\\), and \\(FFRR\\).",
-    "Each sequence has probability \\(\\frac{10\\cdot9\\cdot25\\cdot24}{35\\cdot34\\cdot33\\cdot32}\\). The order of the numerator factors changes, but their product is the same.",
-    "Adding the three mutually exclusive sequences gives \\(3\\frac{10\\cdot9\\cdot25\\cdot24}{35\\cdot34\\cdot33\\cdot32}=\\frac{675}{5236}\\).",
-    "Alternatively, the probability of one real and two fakes in the first three draws is \\(\\frac{\\binom{10}{1}\\binom{25}{2}}{\\binom{35}{3}}\\). Given that event, 9 of the remaining 32 gems are real.",
-    "Thus the answer is also \\(\\frac{\\binom{10}{1}\\binom{25}{2}}{\\binom{35}{3}}\\frac9{32}\\). Merely requiring two real diamonds among the first four draws does not enforce that the fourth draw is the second real diamond."
-  ],
-  "generalization": "In uniform sampling without replacement from \\(N\\) objects containing \\(K\\) successes, the probability of exactly \\(f\\) failures before the \\(r\\)th success is \\(\\frac{\\binom{K}{r-1}\\binom{N-K}{f}}{\\binom{N}{r+f-1}}\\frac{K-r+1}{N-r-f+1}\\), for \\(1\\leq r\\leq K\\) and \\(0\\leq f\\leq N-K\\). This is a negative hypergeometric stopping problem: the last draw must be a success.",
-  "answer_text": "B. \\(\\frac{675}{5236}\\)"
-},
-{
-  "id": 52,
-  "topic": "Multinomial Distribution",
-  "title": "Exercise 52",
-  "statement": "[110.S88.07] A bag contains 10 balls, 5 of which are white, 3 are red, and two are black. If three balls are drawn with replacement from the bag, what is the probability that one ball of each color is drawn?",
-  "choices": [
-    "\\(0.03\\)",
-    "\\(0.09\\)",
-    "\\(0.18\\)",
-    "\\(0.40\\)",
-    "\\(0.84\\)"
-  ],
-  "correct": 2,
-  "solution_steps": [
-    "The independent draws have constant color probabilities \\(p_W=5/10\\), \\(p_R=3/10\\), and \\(p_B=2/10\\).",
-    "We need category counts \\((1,1,1)\\) in three draws, so use the multinomial formula.",
-    "There are \\(\\frac{3!}{1!1!1!}=6\\) possible orders of the three colors.",
-    "Each order has probability \\(\\frac5{10}\\frac3{10}\\frac2{10}=0.03\\).",
-    "Therefore, the desired probability is \\(6(0.03)=0.18\\)."
-  ],
-  "generalization": "For \\(n\\) independent trials with constant category probabilities \\(p_i\\), the probability of counts \\(k_i\\) summing to \\(n\\) is \\(\\frac{n!}{\\prod_i k_i!}\\prod_i p_i^{k_i}\\). The factorial coefficient accounts for all orders producing those counts.",
-  "answer_text": "C. \\(0.18\\)"
-},
-{
-  "id": 53,
-  "topic": "Multinomial Distribution",
-  "title": "Exercise 53",
-  "statement": "[110.F86.16] A random sample of size 6 is selected with replacement from an urn that contains 10 red, 5 white, and 5 blue balls. What is the probability that the sample contains 2 balls of each color?",
-  "choices": [
-    "\\(1/1024\\)",
-    "\\(1/646\\)",
-    "\\(45/512\\)",
-    "\\(75/646\\)",
-    "\\(45/64\\)"
-  ],
-  "correct": 2,
-  "solution_steps": [
-    "There are 20 balls. On each independent draw, the color probabilities are \\(p_R=10/20=1/2\\), \\(p_W=5/20=1/4\\), and \\(p_B=5/20=1/4\\).",
-    "We need exactly two occurrences of each color in six draws.",
-    "The number of color sequences with these counts is \\(\\frac{6!}{2!2!2!}=90\\).",
-    "Each such sequence has probability \\(\\left(\\frac12\\right)^2\\left(\\frac14\\right)^2\\left(\\frac14\\right)^2=\\frac1{1024}\\).",
-    "Therefore, the probability is \\(90\\cdot\\frac1{1024}=\\frac{45}{512}\\)."
-  ],
-  "generalization": "When repeated independent draws must produce specified counts in several categories, use one multinomial coefficient to count the possible orders. Multiplying separate binomial probabilities for the category counts is incorrect because those counts are dependent and must sum to the fixed sample size.",
-  "answer_text": "C. \\(45/512\\)"
-},
+    "id": 14,
+    "topic": "Conditional Probability",
+    "title": "Exercise 14",
+    "statement": "Let X be the sum of the roll of two fair six-sided dice. Find \\(P(X=8\\mid X=7\\text{ or }X=8)\\).",
+    "choices": [
+      "\\(1/9\\)",
+      "\\(5/36\\)",
+      "\\(2/5\\)",
+      "\\(4/11\\)",
+      "\\(5/11\\)"
+    ],
+    "correct": 4,
+    "solution_steps": [
+      "The two dice are rolled independently, giving 36 equally likely ordered outcomes.",
+      "A sum of 7 occurs in six outcomes: \\((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\\). Hence, \\(P(X=7)=6/36\\).",
+      "A sum of 8 occurs in five outcomes: \\((2,6),(3,5),(4,4),(5,3),(6,2)\\). Hence, \\(P(X=8)=5/36\\).",
+      "The events \\(X=7\\) and \\(X=8\\) are mutually exclusive, so \\(P(X=7\\text{ or }X=8)=11/36\\).",
+      "Since \\(\\{X=8\\}\\subseteq\\{X=7\\text{ or }X=8\\}\\), conditional probability gives \\(P(X=8\\mid X=7\\text{ or }X=8)=\\dfrac{5/36}{11/36}=\\dfrac{5}{11}\\).",
+      "The two possible sums are not equally likely. Conditioning restricts the sample space to 11 equally likely ordered outcomes, five of which have sum 8."
+    ],
+    "generalization": "If \\(A\\subseteq B\\) and \\(P(B)>0\\), then \\(P(A\\mid B)=P(A)/P(B)\\). In a finite equally likely sample space, conditional probability can be computed by counting favorable outcomes within the conditioning event.",
+    "answer_text": "E. \\(\\dfrac{5}{11}\\)"
+  },
   {
-  "id": 54,
-  "topic": "Geometric Distribution",
-  "title": "Exercise 54",
-  "statement": "[110.S92.35] Ten percent of all new businesses fail within the first year. The records of new businesses are examined until a business that failed within the first year is found. Let \\(X\\) be the total number of businesses examined prior to finding a business that failed within the first year, excluding that business. Assuming independent outcomes with a constant failure probability, what is the probability mass function of \\(X\\)?",
-  "choices": [
-    "\\((0.1)(0.9)^x,\\quad x=0,1,2,3,\\ldots\\)",
-    "\\((0.9)(0.1)^x,\\quad x=0,1,2,3,\\ldots\\)",
-    "\\((0.1x)(0.9)^x,\\quad x=1,2,3,\\ldots\\)",
-    "\\((0.9x)(0.1)^x,\\quad x=1,2,3,\\ldots\\)",
-    "\\((0.1)(x-1)(0.9)^x,\\quad x=2,3,\\ldots\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "The stopping event is finding a business that failed within its first year. Its probability is \\(p=0.1\\).",
-    "The variable \\(X\\) counts the businesses examined before that stopping event. Therefore, \\(X\\) can equal 0 if the first business examined failed.",
-    "For \\(X=x\\), the first \\(x\\) businesses must not have failed within their first year, and the next business must have failed.",
-    "By independence, \\(P(X=x)=(0.9)^x(0.1)\\), for \\(x=0,1,2,\\ldots\\).",
-    "In geometric-distribution terminology, finding a failed business is called a success because it is the event being sought. This terminology does not describe the business's financial outcome."
-  ],
-  "generalization": "For independent trials with constant success probability \\(p>0\\), the number \\(X\\) of failures before the first success has \\(P(X=x)=(1-p)^xp\\) for \\(x=0,1,\\ldots\\). If instead \\(T\\) counts all trials including the first success, then \\(T=X+1\\) and \\(P(T=t)=(1-p)^{t-1}p\\) for \\(t=1,2,\\ldots\\).",
-  "answer_text": "A. \\((0.1)(0.9)^x,\\quad x=0,1,2,3,\\ldots\\)"
-},
-{
-  "id": 55,
-  "topic": "Geometric Distribution: Mean and Variance",
-  "title": "Exercise 55",
-  "statement": "An unfair coin is weighted so that the expected number of tails before the first heads is 3. Assuming independent flips with a constant probability of heads, what is the standard deviation of the number of tails that come up before the first heads?",
-  "choices": [
-    "\\(\\sqrt{6}\\)",
-    "\\(3\\)",
-    "\\(\\sqrt{12}\\)",
-    "\\(\\sqrt{21}\\)",
-    "\\(9\\)"
-  ],
-  "correct": 2,
-  "solution_steps": [
-    "Let \\(T\\) count the tails before the first heads, and let \\(p\\) be the probability of heads. Then \\(T\\) follows a geometric distribution on \\(\\{0,1,2,\\ldots\\}\\).",
-    "For this convention, \\(E[T]=(1-p)/p\\). The given mean implies \\((1-p)/p=3\\).",
-    "Solving gives \\(1-p=3p\\), so \\(p=1/4\\).",
-    "The variance is \\(\\operatorname{Var}(T)=\\frac{1-p}{p^2}=\\frac{3/4}{(1/4)^2}=12\\).",
-    "Therefore, \\(\\operatorname{SD}(T)=\\sqrt{12}\\)."
-  ],
-  "generalization": "For a geometric count of failures before the first success, \\(\\mu=(1-p)/p\\), so \\(p=1/(\\mu+1)\\). Consequently, \\(\\operatorname{Var}(T)=\\mu(\\mu+1)\\) and \\(\\operatorname{SD}(T)=\\sqrt{\\mu(\\mu+1)}\\). Counting the successful trial adds 1 to the mean but leaves the variance unchanged.",
-  "answer_text": "C. \\(\\sqrt{12}\\)"
-},
-{
-  "id": 56,
-  "topic": "Independent Trials and Complementary Events",
-  "title": "Exercise 56",
-  "statement": "[110.F86.04] A pair of fair six-sided dice is tossed 10 times in succession. Assume all rolls are independent. What is the probability of observing no sums of 7 and no sums of 11 in any of the 10 tosses?",
-  "choices": [
-    "\\(\\left(\\frac{28}{36}\\right)^{10}\\)",
-    "\\(\\left(\\frac{30}{36}\\right)^{10}\\left(\\frac{34}{36}\\right)^{10}\\)",
-    "\\(\\left[1-\\left(\\frac{6}{36}\\right)\\left(\\frac{2}{36}\\right)\\right]^{10}\\)",
-    "\\(1-\\left(\\frac{8}{36}\\right)^{10}\\)",
-    "\\(\\left[1-\\left(\\frac{6}{36}\\right)^{10}\\right]\\left[1-\\left(\\frac{2}{36}\\right)^{10}\\right]\\)"
-  ],
-  "correct": 0,
-  "solution_steps": [
-    "One toss of the pair of dice has 36 equally likely ordered outcomes.",
-    "There are 6 outcomes with sum 7: \\((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\\). There are 2 outcomes with sum 11: \\((5,6),(6,5)\\).",
-    "These sums are mutually exclusive within one toss, so \\(P(\\text{sum is 7 or 11})=\\frac6{36}+\\frac2{36}=\\frac8{36}\\).",
-    "Thus the probability of avoiding both sums in one toss is \\(1-\\frac8{36}=\\frac{28}{36}\\).",
-    "Since the 10 tosses are independent, the probability of avoiding both sums every time is \\(\\left(\\frac{28}{36}\\right)^{10}=\\left(\\frac79\\right)^{10}\\).",
-    "Do not multiply the probability of no 7s by the probability of no 11s: those two events are not independent. Independence applies across separate tosses."
-  ],
-  "generalization": "If mutually exclusive forbidden outcomes have total probability \\(q\\) on each of \\(n\\) independent trials, the probability of avoiding every forbidden outcome is \\((1-q)^n\\). Equivalently, the number of forbidden outcomes is binomial with parameters \\(n\\) and \\(q\\), and the desired probability is its mass at zero.",
-  "answer_text": "A. \\(\\left(\\frac{28}{36}\\right)^{10}\\)"
-}
+    "id": 15,
+    "topic": "Conditional Probability and Set Partitions",
+    "title": "Exercise 15",
+    "statement": "[SOA 9; S03.05] An insurance company examines its pool of auto insurance customers and gathers the following information:\n\ni. All customers insure at least one car.\nii. 70% of customers insure more than one car.\niii. 20% of the customers insure a sports car.\niv. Of those customers who insure more than one car, 15% insure a sports car.\n\nCalculate the probability that a randomly selected customer insures exactly one car and that car is not a sports car.",
+    "choices": [
+      "\\(0.13\\)",
+      "\\(0.21\\)",
+      "\\(0.24\\)",
+      "\\(0.25\\)",
+      "\\(0.30\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "Let M denote insuring more than one car and S denote insuring a sports car. We are given \\(P(M)=0.7\\), \\(P(S)=0.2\\), and \\(P(S\\mid M)=0.15\\).",
+      "Because every customer insures at least one car, \\(M^c\\) means insuring exactly one car. Thus, \\(P(M^c)=1-0.7=0.3\\).",
+      "Convert the conditional probability into a joint probability: \\(P(M\\cap S)=P(M)P(S\\mid M)=0.7(0.15)=0.105\\).",
+      "Partition sports-car customers by number of cars: \\(P(M^c\\cap S)=P(S)-P(M\\cap S)=0.2-0.105=0.095\\).",
+      "Among the customers who insure exactly one car, remove those whose car is a sports car: \\(P(M^c\\cap S^c)=0.3-0.095=0.205\\).",
+      "The exact probability is \\(0.205\\), or \\(20.5\\%\\). Rounded to two decimal places, it is \\(0.21\\), corresponding to choice B."
+    ],
+    "generalization": "Given \\(P(A)\\), \\(P(B)\\), and \\(P(B\\mid A)\\), first compute \\(P(A\\cap B)=P(A)P(B\\mid A)\\). Then \\(P(A^c\\cap B^c)=1-P(A)-P(B)+P(A)P(B\\mid A)\\). A conditional percentage must be multiplied by the probability of its conditioning group.",
+    "answer_text": "B. \\(0.21\\) (exact probability: \\(0.205\\))"
+  },
+  {
+    "id": 16,
+    "topic": "Independent Events",
+    "title": "Exercise 16",
+    "statement": "[SOA 10; F00.30] An actuary studying the insurance preferences of automobile owners makes the following conclusions:\n\ni. An automobile owner is twice as likely to purchase collision coverage as disability coverage.\nii. The event that an automobile owner purchases collision coverage is independent of the event that he or she purchases disability coverage.\niii. The probability that an automobile owner purchases both collision and disability coverages is 0.15.\n\nWhat is the probability that an automobile owner purchases neither collision nor disability coverage?",
+    "choices": [
+      "\\(0.18\\)",
+      "\\(0.33\\)",
+      "\\(0.48\\)",
+      "\\(0.67\\)",
+      "\\(0.82\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "Let C denote purchasing collision coverage and D purchasing disability coverage. Write \\(P(D)=d\\), so \\(P(C)=2d\\).",
+      "By independence, \\(P(C\\cap D)=P(C)P(D)=2d^2\\). The given intersection probability implies \\(2d^2=0.15\\).",
+      "Since d is a probability, take the nonnegative root: \\(d=\\sqrt{0.15/2}=\\sqrt{0.075}\\approx0.273861\\).",
+      "Therefore, \\(P(C)=2\\sqrt{0.075}\\approx0.547723\\).",
+      "The probability of neither coverage is \\(P(C^c\\cap D^c)=1-P(C\\cup D)=1-P(C)-P(D)+P(C\\cap D)\\).",
+      "Substituting without intermediate rounding gives \\(P(C^c\\cap D^c)=1.15-3\\sqrt{0.075}\\approx0.328416\\).",
+      "Rounded to two decimal places, the required probability is \\(0.33\\). As a check, independence also gives \\(P(C^c\\cap D^c)=(1-P(C))(1-P(D))\\)."
+    ],
+    "generalization": "If A and B are independent, \\(P(A)=kP(B)\\) with \\(k>0\\), and \\(P(A\\cap B)=q\\), then \\(P(B)=\\sqrt{q/k}\\) and \\(P(A)=\\sqrt{kq}\\), provided these values are valid probabilities. Their complements are also independent, so \\(P(A^c\\cap B^c)=(1-P(A))(1-P(B))\\).",
+    "answer_text": "B. \\(0.33\\)"
+  },
+  {
+    "id": 25,
+    "topic": "Conditional Probability and Bayes' Theorem",
+    "title": "Exercise 25",
+    "statement": "[SOA 25; F00.22] The probability that a randomly chosen male has a circulation problem is 0.25. Males who have a circulation problem are twice as likely to be smokers as those who do not have a circulation problem.\n\nWhat is the conditional probability that a male has a circulation problem given that he is a smoker?",
+    "choices": [
+      "\\(1/4\\)",
+      "\\(1/3\\)",
+      "\\(2/5\\)",
+      "\\(1/2\\)",
+      "\\(2/3\\)"
+    ],
+    "correct": 2,
+    "solution_steps": [
+      "Let \\(C\\) denote having a circulation problem and \\(S\\) denote being a smoker. We know \\(P(C)=0.25\\) and \\(P(C^c)=0.75\\).",
+      "Set \\(q=P(S\\mid C^c)\\). The statement gives \\(P(S\\mid C)=2q\\).",
+      "By the law of total probability, \\(P(S)=P(S\\mid C)P(C)+P(S\\mid C^c)P(C^c)=2q(0.25)+q(0.75)=1.25q\\).",
+      "The joint probability is \\(P(C\\cap S)=P(C)P(S\\mid C)=0.25(2q)=0.50q\\).",
+      "Therefore, assuming \\(P(S)>0\\), \\(P(C\\mid S)=\\frac{0.50q}{1.25q}=\\frac{2}{5}=0.40\\)."
+    ],
+    "generalization": "If \\(P(A)=p\\) and \\(P(B\\mid A)=rP(B\\mid A^c)\\), then Bayes' theorem gives \\(P(A\\mid B)=\\frac{rp}{rp+1-p}\\), provided \\(P(B)>0\\). The unknown common factor cancels.",
+    "answer_text": "C. \\(2/5\\)"
+  },
+  {
+    "id": 26,
+    "topic": "Conditional Probability and Bayes' Theorem",
+    "title": "Exercise 26",
+    "statement": "[SOA 19; S01.06] An insurance company issues life insurance policies in three separate categories: standard, preferred, and ultra-preferred. Of the company's policyholders, 50% are standard, 40% are preferred, and 10% are ultra-preferred. Each standard policyholder has probability 0.010 of dying in the next year, each preferred policyholder has probability 0.005 of dying in the next year, and each ultra-preferred policyholder has probability 0.001 of dying in the next year.\n\nA policyholder dies in the next year.\n\nWhat is the probability that the deceased policyholder was ultra-preferred?",
+    "choices": [
+      "\\(0.0001\\)",
+      "\\(0.0010\\)",
+      "\\(0.0071\\)",
+      "\\(0.0141\\)",
+      "\\(0.2817\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "Let \\(S\\), \\(R\\), and \\(U\\) denote the standard, preferred, and ultra-preferred categories, respectively. Let \\(D\\) denote death in the next year.",
+      "These categories partition the policyholder population, so \\(P(D)=P(S)P(D\\mid S)+P(R)P(D\\mid R)+P(U)P(D\\mid U)\\).",
+      "Substituting gives \\(P(D)=0.50(0.010)+0.40(0.005)+0.10(0.001)=0.0050+0.0020+0.0001=0.0071\\).",
+      "The probability of being ultra-preferred and dying is \\(P(U\\cap D)=0.10(0.001)=0.0001\\).",
+      "By Bayes' theorem, \\(P(U\\mid D)=\\frac{0.0001}{0.0071}=\\frac{1}{71}\\approx 0.0141\\)."
+    ],
+    "generalization": "For mutually exclusive and exhaustive categories \\(C_1,\\ldots,C_n\\), \\(P(C_k\\mid D)=\\frac{P(C_k)P(D\\mid C_k)}{\\sum_{i=1}^{n}P(C_i)P(D\\mid C_i)}\\), provided \\(P(D)>0\\). Weight each category's event probability by its population share before normalizing.",
+    "answer_text": "D. \\(0.0141\\)"
+  },
+  {
+    "id": 27,
+    "topic": "Conditional Probability and Bayes' Theorem",
+    "title": "Exercise 27",
+    "statement": "[SOA 18; S03.08] An auto insurance company insures drivers of all ages. An actuary compiled the following statistics on the company's insured drivers:\n\nAge 16–20: probability of accident = 0.06; portion of insured drivers = 0.08.\nAge 21–30: probability of accident = 0.03; portion of insured drivers = 0.15.\nAge 31–65: probability of accident = 0.02; portion of insured drivers = 0.49.\nAge 66–99: probability of accident = 0.04; portion of insured drivers = 0.28.\n\nA randomly selected driver that the company insures has an accident.\n\nCalculate the probability that the driver was 16–20.",
+    "choices": [
+      "\\(0.13\\)",
+      "\\(0.16\\)",
+      "\\(0.19\\)",
+      "\\(0.23\\)",
+      "\\(0.40\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "Let \\(T\\) denote a driver aged 16–20 and \\(A\\) denote an accident. We want \\(P(T\\mid A)\\), whereas the table gives \\(P(A\\mid T)=0.06\\).",
+      "The probability that a driver is aged 16–20 and has an accident is \\(P(T\\cap A)=P(T)P(A\\mid T)=0.08(0.06)=0.0048\\).",
+      "By the law of total probability, \\(P(A)=0.08(0.06)+0.15(0.03)+0.49(0.02)+0.28(0.04)\\).",
+      "Thus \\(P(A)=0.0048+0.0045+0.0098+0.0112=0.0303\\).",
+      "By Bayes' theorem, \\(P(T\\mid A)=\\frac{0.0048}{0.0303}=\\frac{16}{101}\\approx 0.158416\\). Rounded to two decimal places, the answer is \\(0.16\\)."
+    ],
+    "generalization": "When a table gives population shares \\(w_i\\) and conditional accident probabilities \\(a_i\\), the overall accident probability is \\(\\sum_i w_i a_i\\). Given an accident, the probability of belonging to group \\(k\\) is \\(\\frac{w_k a_k}{\\sum_i w_i a_i}\\). Do not confuse \\(P(A\\mid C_k)\\) with \\(P(C_k\\mid A)\\).",
+    "answer_text": "B. \\(0.16\\)"
+  },
+  {
+    "id": 28,
+    "topic": "Discrete Random Variables: Mode",
+    "title": "Exercise 28",
+    "statement": "Each year, there is a 40% probability of no hurricanes hitting Stormy Island. The probability of exactly one hurricane hitting Stormy Island equals the probability of 2 or more hurricanes hitting Stormy Island. What is the mode number of hurricanes that hit Stormy Island in a year?",
+    "choices": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "1 and 2",
+      "It cannot be determined from the information given."
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "Let \\(N\\) denote the number of hurricanes in a year. We know \\(P(N=0)=0.4\\) and \\(P(N=1)=P(N\\geq 2)\\).",
+      "The events \\(N=0\\), \\(N=1\\), and \\(N\\geq 2\\) partition all possible outcomes. Therefore, \\(0.4+P(N=1)+P(N\\geq 2)=1\\).",
+      "Since the last two probabilities are equal, \\(P(N=1)=P(N\\geq 2)=0.3\\).",
+      "For every integer \\(n\\geq 2\\), \\(P(N=n)\\leq P(N\\geq 2)=0.3\\).",
+      "Thus \\(P(N=0)=0.4\\) is strictly larger than the probability of any other individual value. The unique mode is \\(0\\)."
+    ],
+    "generalization": "A mode of a discrete random variable is a value maximizing its probability mass. Even without knowing every individual probability, a mode can be identified if each remaining probability is bounded above by a number smaller than the candidate's probability.",
+    "answer_text": "A. \\(0\\)"
+  },
+  {
+    "id": 29,
+    "topic": "Discrete Random Variables: Mode",
+    "title": "Exercise 29",
+    "statement": "Suppose that \\(N\\) is a random variable with \\(P(N=0)=0.1\\), \\(P(N=1)=0.3\\), \\(P(N=2)=0.2\\), and \\(P(N=3)=0.4\\). Find the mode of \\(N\\).",
+    "choices": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "It cannot be determined from the information given."
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "The probabilities sum to \\(0.1+0.3+0.2+0.4=1\\), so these values account for the entire distribution.",
+      "A mode is a value of \\(N\\) with the largest probability.",
+      "The largest probability is \\(0.4\\), which occurs at \\(N=3\\). Therefore, the mode is \\(3\\)."
+    ],
+    "generalization": "For a discrete probability mass function \\(p(n)\\), the modes are the values attaining \\(\\max_n p(n)\\). The mode is the value of the random variable, not the probability at that value. Multiple values can tie for the maximum.",
+    "answer_text": "D. \\(3\\)"
+  },
+  {
+    "id": 30,
+    "topic": "Discrete Random Variables: Median",
+    "title": "Exercise 30",
+    "statement": "Each year, there is a 40% probability of no hurricanes hitting Stormy Island. The probability of exactly one hurricane hitting Stormy Island equals the probability of 2 or more hurricanes hitting Stormy Island. What is the median number of hurricanes that hit Stormy Island in a year?",
+    "choices": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "3 or higher",
+      "It cannot be determined from the information given."
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "Let \\(N\\) denote the number of hurricanes in a year. We have \\(P(N=0)=0.4\\) and \\(P(N=1)=P(N\\geq 2)\\).",
+      "Since probabilities sum to 1, \\(0.4+2P(N=1)=1\\). Hence \\(P(N=1)=0.3\\) and \\(P(N\\geq 2)=0.3\\).",
+      "The cumulative probabilities are \\(P(N\\leq 0)=0.4\\) and \\(P(N\\leq 1)=0.4+0.3=0.7\\). The cumulative probability crosses 0.5 at \\(1\\).",
+      "Indeed, \\(P(N\\leq 1)=0.7\\geq 0.5\\) and \\(P(N\\geq 1)=0.6\\geq 0.5\\), so \\(1\\) is a median.",
+      "Any number below 1 has at most 0.4 probability below or equal to it, and any number above 1 has at most 0.3 probability above or equal to it. Therefore, the unique median is \\(1\\)."
+    ],
+    "generalization": "A median \\(m\\) satisfies both \\(P(X\\leq m)\\geq 1/2\\) and \\(P(X\\geq m)\\geq 1/2\\). For a discrete distribution, use cumulative probabilities rather than choosing the most likely value. A median need not be unique.",
+    "answer_text": "B. \\(1\\)"
+  },
+  {
+    "id": 31,
+    "topic": "Discrete Random Variables: Expected Value",
+    "title": "Exercise 31",
+    "statement": "A toy company sells exactly three distinct types of toys: cars, which cost $5, trains, which cost $10, and spaceships, which cost $25. If the number of cars sold is twice the number of trains sold, but half of the number of spaceships sold, what is the average price per toy?",
+    "choices": [
+      "\\(10.7\\)",
+      "\\(12.7\\)",
+      "\\(14.1\\)",
+      "\\(15.4\\)",
+      "\\(17.1\\)"
+    ],
+    "correct": 4,
+    "solution_steps": [
+      "Let the number of trains sold be \\(t\\). Then the number of cars sold is \\(2t\\). Since cars are half as numerous as spaceships, the number of spaceships sold is \\(4t\\).",
+      "The sales ratio for cars, trains, and spaceships is therefore \\(2:1:4\\), with \\(7t\\) toys sold in total.",
+      "For a randomly selected toy among those sold, the price probabilities are \\(P(X=5)=2/7\\), \\(P(X=10)=1/7\\), and \\(P(X=25)=4/7\\).",
+      "The average price is \\(E[X]=5\\left(\\frac{2}{7}\\right)+10\\left(\\frac{1}{7}\\right)+25\\left(\\frac{4}{7}\\right)=\\frac{120}{7}\\approx 17.142857\\).",
+      "Rounded to one decimal place, the average price per toy is $17.1."
+    ],
+    "generalization": "If values \\(x_1,\\ldots,x_k\\) occur in proportions \\(r_1:\\cdots:r_k\\), their weighted mean is \\(\\frac{\\sum_i r_i x_i}{\\sum_i r_i}\\). A simple unweighted average is appropriate only when all values have equal weights.",
+    "answer_text": "E. \\(17.1\\)"
+  },
+  {
+    "id": 32,
+    "topic": "Discrete Random Variables: Expected Value",
+    "title": "Exercise 32",
+    "statement": "Suppose that each side of a six-sided die is equally likely to come up. If the numbers on the first five sides are 2, 2, 3, 5 and 7, and the expected value of a roll is 4, what is the number on the sixth face?",
+    "choices": [
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(7\\)"
+    ],
+    "correct": 2,
+    "solution_steps": [
+      "Let \\(x\\) denote the number on the sixth face and \\(Y\\) denote the result of a roll.",
+      "Each face has probability \\(1/6\\), so \\(E[Y]=\\frac{2+2+3+5+7+x}{6}=\\frac{19+x}{6}\\).",
+      "Using \\(E[Y]=4\\), we obtain \\(19+x=24\\).",
+      "Therefore, the number on the sixth face is \\(x=5\\)."
+    ],
+    "generalization": "For \\(k\\) equally likely faces with labels \\(x_1,\\ldots,x_k\\), the expected value is \\(\\mu=\\frac{1}{k}\\sum_i x_i\\). One missing label is \\(x_k=k\\mu-\\sum_{i=1}^{k-1}x_i\\). Repeated labels must be counted once for each face on which they appear.",
+    "answer_text": "C. \\(5\\)"
+  },
+  {
+    "id": 33,
+    "topic": "Discrete Random Variables: Functions and Moments",
+    "title": "Exercise 33",
+    "statement": "Suppose that \\(P(N=n)\\) is proportional to \\(n\\) for \\(n=1,2,3,4\\), and is 0 otherwise. Find \\(E[(N-2)^2]\\).",
+    "choices": [
+      "\\(1/2\\)",
+      "\\(3/4\\)",
+      "\\(1\\)",
+      "\\(3/2\\)",
+      "\\(2\\)"
+    ],
+    "correct": 4,
+    "solution_steps": [
+      "Write \\(P(N=n)=cn\\) for \\(n=1,2,3,4\\). Normalization requires \\(c(1+2+3+4)=1\\), so \\(c=1/10\\).",
+      "Thus the probabilities for \\(N=1,2,3,4\\) are \\(0.1,0.2,0.3,0.4\\), respectively.",
+      "Direct method: \\(E[(N-2)^2]=\\sum_{n=1}^{4}(n-2)^2P(N=n)=0.1(1)+0.2(0)+0.3(1)+0.4(4)=2\\).",
+      "Alternative method: expand \\((N-2)^2=N^2-4N+4\\). By linearity, \\(E[(N-2)^2]=E[N^2]-4E[N]+4\\).",
+      "Compute \\(E[N]=\\frac{1^2+2^2+3^2+4^2}{10}=3\\) and \\(E[N^2]=\\frac{1^3+2^3+3^3+4^3}{10}=10\\).",
+      "Substitution gives \\(E[(N-2)^2]=10-4(3)+4=2\\)."
+    ],
+    "generalization": "For a discrete random variable, \\(E[g(N)]=\\sum_n g(n)P(N=n)\\). In particular, \\(E[(N-a)^2]=E[N^2]-2aE[N]+a^2=\\operatorname{Var}(N)+(E[N]-a)^2\\), assuming a finite second moment. In general, \\(E[(N-a)^2]\\neq(E[N]-a)^2\\).",
+    "answer_text": "E. \\(2\\)"
+  },
+  {
+    "id": 34,
+    "topic": "Discrete Random Variables: Tail-Sum Formula",
+    "title": "Exercise 34",
+    "statement": "[SOA 475] Let \\(X\\) represent the number of defective parts in a shipment of four.\n\n\\[P(X\\geq x)=\\frac{1}{4}\\left(1-\\frac{x-2}{3}\\right)^2,\\qquad x=1,2,3,4.\\]\n\nCalculate \\(E[X]\\).",
+    "choices": [
+      "\\(0.83\\)",
+      "\\(0.96\\)",
+      "\\(1.39\\)",
+      "\\(1.81\\)",
+      "\\(1.83\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "Since \\(X\\) counts defective parts in a shipment of four, its possible values are \\(0,1,2,3,4\\).",
+      "For a nonnegative integer-valued random variable, the tail-sum formula gives \\(E[X]=\\sum_{k=1}^{\\infty}P(X\\geq k)\\). Here, all terms beyond \\(k=4\\) are zero.",
+      "Evaluate the given probabilities: \\(P(X\\geq 1)=\\frac{1}{4}\\left(\\frac{4}{3}\\right)^2=\\frac{4}{9}\\), \\(P(X\\geq 2)=\\frac{1}{4}\\), \\(P(X\\geq 3)=\\frac{1}{9}\\), and \\(P(X\\geq 4)=\\frac{1}{36}\\).",
+      "Therefore, \\(E[X]=\\frac{4}{9}+\\frac{1}{4}+\\frac{1}{9}+\\frac{1}{36}=\\frac{16+9+4+1}{36}=\\frac{5}{6}\\approx 0.833333\\). The answer rounded to two decimal places is \\(0.83\\).",
+      "Alternative method: obtain the probability mass function by subtracting consecutive tails, \\(P(X=k)=P(X\\geq k)-P(X\\geq k+1)\\). Use \\(P(X\\geq 0)=1\\) and \\(P(X\\geq 5)=0\\).",
+      "This gives \\(P(X=0)=\\frac{5}{9}\\), \\(P(X=1)=\\frac{7}{36}\\), \\(P(X=2)=\\frac{5}{36}\\), \\(P(X=3)=\\frac{3}{36}\\), and \\(P(X=4)=\\frac{1}{36}\\).",
+      "Then \\(E[X]=0\\left(\\frac{5}{9}\\right)+1\\left(\\frac{7}{36}\\right)+2\\left(\\frac{5}{36}\\right)+3\\left(\\frac{3}{36}\\right)+4\\left(\\frac{1}{36}\\right)=\\frac{30}{36}=\\frac{5}{6}\\)."
+    ],
+    "generalization": "For a nonnegative integer-valued random variable, \\(E[X]=\\sum_{k=1}^{\\infty}P(X\\geq k)=\\sum_{k=0}^{\\infty}P(X>k)\\). The starting index depends on whether the inequality is weak or strict. Recover individual probabilities using \\(P(X=k)=P(X\\geq k)-P(X\\geq k+1)\\).",
+    "answer_text": "A. \\(0.83\\)"
+  },
+  {
+    "id": 35,
+    "topic": "Discrete Random Variables: Tail-Sum Formula",
+    "title": "Exercise 35",
+    "statement": "A customer loyalty program tracks the number of times a customer visits a particular store in a month. Let \\(X\\) be the number of visits a randomly chosen customer makes in a month. The probabilities that a customer makes more than \\(k\\) visits are as follows:\n\n\\(P(X>0)=0.80\\)\n\\(P(X>1)=0.50\\)\n\\(P(X>2)=0.20\\)\n\\(P(X>3)=0.05\\)\n\\(P(X>4)=0\\)\n\nFind the expected number of visits a customer makes in a month.",
+    "choices": [
+      "\\(1.25\\)",
+      "\\(1.55\\)",
+      "\\(1.80\\)",
+      "\\(2.05\\)",
+      "\\(2.20\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "Since \\(X\\) is a nonnegative integer-valued random variable, use \\(E[X]=\\sum_{k=0}^{\\infty}P(X>k)\\).",
+      "The given condition \\(P(X>4)=0\\) implies that all tail probabilities for \\(k\\geq 4\\) are zero.",
+      "Therefore, \\(E[X]=0.80+0.50+0.20+0.05=1.55\\) visits per month.",
+      "Alternative check: \\(P(X=0)=1-0.80=0.20\\). Subtracting consecutive tails gives \\(P(X=1)=0.30\\), \\(P(X=2)=0.30\\), \\(P(X=3)=0.15\\), and \\(P(X=4)=0.05\\).",
+      "Using the definition of expectation, \\(E[X]=0(0.20)+1(0.30)+2(0.30)+3(0.15)+4(0.05)=1.55\\)."
+    ],
+    "generalization": "If \\(S(k)=P(X>k)\\) for a nonnegative integer-valued random variable, then \\(E[X]=\\sum_{k=0}^{\\infty}S(k)\\). Also, \\(P(X=0)=1-S(0)\\) and \\(P(X=k)=S(k-1)-S(k)\\) for \\(k\\geq 1\\). Tail probabilities are cumulative probabilities, so they should not be treated as individual probability masses.",
+    "answer_text": "B. \\(1.55\\)"
+  },
+  {
+    "id": 36,
+    "topic": "Discrete Random Variables: Variance",
+    "title": "Exercise 36",
+    "statement": "Suppose that \\(X\\) can only take on one of the four possible values from the probability distribution given below:\n\n\\(P(X=1)=0.2\\)\n\\(P(X=3)=0.3\\)\n\\(P(X=5)=0.4\\)\n\\(P(X=9)=p\\)\n\nWhat is the variance of \\(X\\)?",
+    "choices": [
+      "\\(5\\)",
+      "\\(17\\)",
+      "\\(21\\)",
+      "\\(17p\\)",
+      "\\(21p\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "The probabilities must sum to 1, so \\(p=1-0.2-0.3-0.4=0.1\\).",
+      "Calculate the mean: \\(E[X]=1(0.2)+3(0.3)+5(0.4)+9(0.1)=4\\).",
+      "Calculate the second raw moment: \\(E[X^2]=1^2(0.2)+3^2(0.3)+5^2(0.4)+9^2(0.1)=21\\).",
+      "Therefore, \\(\\operatorname{Var}(X)=E[X^2]-(E[X])^2=21-4^2=5\\)."
+    ],
+    "generalization": "For a discrete distribution, first determine any missing probabilities using normalization. Then calculate \\(E[X]=\\sum_x xp(x)\\) and \\(E[X^2]=\\sum_x x^2p(x)\\). The variance is \\(E[X^2]-(E[X])^2\\), not the second raw moment alone.",
+    "answer_text": "A. \\(5\\)"
+  },
+  {
+    "id": 37,
+    "topic": "Variance: Linear Transformations",
+    "title": "Exercise 37",
+    "statement": "Given that \\(E[Y]=2\\) and \\(\\operatorname{Var}(Y)=3\\), find \\(\\operatorname{Var}(3Y+4)\\).",
+    "choices": [
+      "\\(3\\)",
+      "\\(9\\)",
+      "\\(13\\)",
+      "\\(27\\)",
+      "\\(31\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "For constants \\(a\\) and \\(b\\), \\(\\operatorname{Var}(aY+b)=a^2\\operatorname{Var}(Y)\\).",
+      "Adding 4 does not change the variance, while multiplying by 3 multiplies the variance by \\(3^2=9\\).",
+      "Therefore, \\(\\operatorname{Var}(3Y+4)=9(3)=27\\). The given mean is not needed."
+    ],
+    "generalization": "For a random variable with finite variance, \\(\\operatorname{Var}(aY+b)=a^2\\operatorname{Var}(Y)\\) and \\(\\operatorname{SD}(aY+b)=|a|\\operatorname{SD}(Y)\\). Translation changes the mean but leaves the variance unchanged.",
+    "answer_text": "D. \\(27\\)"
+  },
+  {
+    "id": 38,
+    "topic": "Discrete Random Variables: Coefficient of Variation",
+    "title": "Exercise 38",
+    "statement": "Let \\(X\\) be a random variable whose distribution is \\(P(X=1)=P(X=3)=1/4\\) and \\(P(X=8)=1/2\\). What is the coefficient of variation of \\(X\\)?",
+    "choices": [
+      "\\(0.62\\)",
+      "\\(0.77\\)",
+      "\\(1.15\\)",
+      "\\(1.62\\)",
+      "\\(1.90\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "Calculate the mean: \\(E[X]=1\\left(\\frac14\\right)+3\\left(\\frac14\\right)+8\\left(\\frac12\\right)=5\\).",
+      "Calculate the second raw moment: \\(E[X^2]=1^2\\left(\\frac14\\right)+3^2\\left(\\frac14\\right)+8^2\\left(\\frac12\\right)=34.5\\).",
+      "The variance is \\(\\operatorname{Var}(X)=34.5-5^2=9.5\\), so \\(\\operatorname{SD}(X)=\\sqrt{9.5}\\).",
+      "Since the mean is positive, \\(\\operatorname{CV}(X)=\\frac{\\operatorname{SD}(X)}{E[X]}=\\frac{\\sqrt{9.5}}{5}\\approx 0.616441\\).",
+      "Rounded to two decimal places, the coefficient of variation is \\(0.62\\)."
+    ],
+    "generalization": "For a positive mean, \\(\\operatorname{CV}(X)=\\frac{\\sqrt{E[X^2]-(E[X])^2}}{E[X]}\\). It measures dispersion relative to the mean and has no units. Use the standard deviation in the numerator, not the variance.",
+    "answer_text": "A. \\(0.62\\)"
+  },
+  {
+    "id": 39,
+    "topic": "Discrete Uniform Distribution: Expected Value",
+    "title": "Exercise 39",
+    "statement": "Let \\(N\\) be a randomly selected three-digit number, with each integer from 100 through 999 equally likely. What is \\(E[N]\\)?",
+    "choices": [
+      "\\(173.0\\)",
+      "\\(500.0\\)",
+      "\\(500.5\\)",
+      "\\(549.5\\)",
+      "\\(550.0\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "There are \\(999-100+1=900\\) three-digit positive integers, each with probability \\(1/900\\).",
+      "Thus \\(E[N]=\\frac{1}{900}\\sum_{n=100}^{999}n\\).",
+      "Using the arithmetic-series formula, \\(\\sum_{n=100}^{999}n=\\frac{900(100+999)}{2}\\).",
+      "Therefore, \\(E[N]=\\frac{100+999}{2}=549.5\\).",
+      "Equivalently, pairing the smallest and largest values gives \\(100+999=101+998=\\cdots=1099\\). Each pair has average \\(1099/2=549.5\\)."
+    ],
+    "generalization": "If \\(N\\) is uniform on the consecutive integers \\(a,a+1,\\ldots,b\\), then \\(E[N]=(a+b)/2\\). This follows directly from the sum of an arithmetic series and requires equal probabilities.",
+    "answer_text": "D. \\(549.5\\)"
+  },
+  {
+    "id": 40,
+    "topic": "Coefficient of Variation: Linear Transformations",
+    "title": "Exercise 40",
+    "statement": "Let \\(Y\\) be the outcome of the roll of a fair four-sided die numbered 1 through 4. What is the coefficient of variation of \\(25+100Y\\)?",
+    "choices": [
+      "\\(0.41\\)",
+      "\\(1.21\\)",
+      "\\(2.08\\)",
+      "\\(3.50\\)",
+      "\\(4.47\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "Since \\(Y\\) is uniform on \\(\\{1,2,3,4\\}\\), \\(E[Y]=(1+2+3+4)/4=2.5\\).",
+      "Also, \\(E[Y^2]=(1+4+9+16)/4=7.5\\), so \\(\\operatorname{Var}(Y)=7.5-2.5^2=1.25\\).",
+      "Let \\(Z=25+100Y\\). Its mean is \\(E[Z]=25+100(2.5)=275\\).",
+      "Its variance is \\(\\operatorname{Var}(Z)=100^2\\operatorname{Var}(Y)=10000(1.25)=12500\\).",
+      "Therefore, \\(\\operatorname{CV}(Z)=\\frac{\\sqrt{12500}}{275}\\approx 0.406558\\), which rounds to \\(0.41\\)."
+    ],
+    "generalization": "For \\(Z=aX+b\\) with positive mean, \\(\\operatorname{CV}(Z)=\\frac{|a|\\operatorname{SD}(X)}{aE[X]+b}\\). Positive scaling alone preserves the coefficient of variation, but adding a constant generally changes it.",
+    "answer_text": "A. \\(0.41\\)"
+  },
+  {
+    "id": 41,
+    "topic": "Counting: Multiplication Principle",
+    "title": "Exercise 41",
+    "statement": "An old computer network had 5-character user names. Each of the first 2 characters could be any one of the 26 letters of the alphabet, the 3rd and 4th characters could be any one of the 10 digits, and the 5th character could be any letter or digit. How many possible user names were there?",
+    "choices": [
+      "\\(37{,}440\\)",
+      "\\(97{,}440\\)",
+      "\\(1{,}757{,}600\\)",
+      "\\(2{,}433{,}600\\)",
+      "\\(292{,}032{,}000\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "Each of the first two positions has 26 possible letters. No restriction prohibits repetition.",
+      "Each of the third and fourth positions has 10 possible digits.",
+      "The fifth position has \\(26+10=36\\) possibilities because letters and digits are disjoint categories.",
+      "By the multiplication principle, the total number of user names is \\(26\\times26\\times10\\times10\\times36=2{,}433{,}600\\)."
+    ],
+    "generalization": "If each valid partial sequence has \\(n_i\\) choices for position \\(i\\), the total number of complete sequences is \\(\\prod_i n_i\\). Add counts for disjoint alternatives within a position, and multiply counts across successive positions.",
+    "answer_text": "D. \\(2{,}433{,}600\\)"
+  },
+  {
+    "id": 42,
+    "topic": "Counting: Multiplication Principle",
+    "title": "Exercise 42",
+    "statement": "Find the number of 4-digit passcodes that satisfy both of the following conditions:\n\nThe first and second digits must each be one of 3 through 9.\n\nThe third and fourth digits can be any of 0 through 9, but must be different from each other.",
+    "choices": [
+      "\\(2{,}520\\)",
+      "\\(2{,}592\\)",
+      "\\(3{,}240\\)",
+      "\\(3{,}528\\)",
+      "\\(4{,}410\\)"
+    ],
+    "correct": 4,
+    "solution_steps": [
+      "The digits from 3 through 9 give \\(9-3+1=7\\) choices for the first position.",
+      "The second position also has 7 choices. The first two digits are allowed to match.",
+      "The third position has 10 choices, from 0 through 9.",
+      "For each choice of the third digit, the fourth position has 9 choices because it must exclude that digit.",
+      "Therefore, the number of valid passcodes is \\(7\\times7\\times10\\times9=4{,}410\\)."
+    ],
+    "generalization": "Apply distinctness restrictions only where stated. Two ordered positions chosen from \\(m\\) symbols have \\(m^2\\) possibilities when repetition is allowed and \\(m(m-1)\\) when their symbols must differ.",
+    "answer_text": "E. \\(4{,}410\\)"
+  },
+  {
+    "id": 43,
+    "topic": "Conditional Probability and Sampling Without Replacement",
+    "title": "Exercise 43",
+    "statement": "Urn I contains seven red and three black balls, and urn II contains four red and five black balls. After a randomly selected ball is transferred from urn I to urn II, two balls are randomly drawn from urn II without replacement. What is the probability that both balls drawn from urn II are red?",
+    "choices": [
+      "\\(47/100\\)",
+      "\\(9/20\\)",
+      "\\(28/125\\)",
+      "\\(44/225\\)",
+      "\\(8/25\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "Condition on the color of the transferred ball. A red ball is transferred with probability \\(7/10\\), and a black ball with probability \\(3/10\\).",
+      "If a red ball is transferred, urn II contains 5 red and 5 black balls. The conditional probability of drawing two red balls is \\(\\frac{5}{10}\\frac{4}{9}=\\frac{2}{9}\\).",
+      "If a black ball is transferred, urn II contains 4 red and 6 black balls. The conditional probability of drawing two red balls is \\(\\frac{4}{10}\\frac{3}{9}=\\frac{2}{15}\\).",
+      "By the law of total probability, the desired probability is \\(\\frac{7}{10}\\frac{2}{9}+\\frac{3}{10}\\frac{2}{15}=\\frac{7}{45}+\\frac{1}{25}=\\frac{44}{225}\\)."
+    ],
+    "generalization": "When a transfer changes an urn's composition, condition on what was transferred before calculating the sampling probability. For an urn containing \\(r\\) red balls among \\(n\\) balls, the probability of two red draws without replacement is \\(\\binom{r}{2}/\\binom{n}{2}=r(r-1)/(n(n-1))\\).",
+    "answer_text": "D. \\(44/225\\)"
+  },
+  {
+    "id": 44,
+    "topic": "Counting and Hypergeometric Probability",
+    "title": "Exercise 44",
+    "statement": "If thirteen cards are randomly chosen without replacement from an ordinary 52-card deck, what is the probability of obtaining exactly three aces?",
+    "choices": [
+      "\\(\\frac{\\binom{13}{4}\\binom{4}{3}\\binom{49}{10}}{\\binom{52}{13}}\\)",
+      "\\(\\frac{\\binom{52}{4}\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)",
+      "\\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)",
+      "\\(\\frac{3!49!}{52!}\\)",
+      "\\(\\frac{\\binom{3}{1}\\binom{49}{10}}{(52)(51)\\cdots(39)}\\)"
+    ],
+    "correct": 2,
+    "solution_steps": [
+      "There are \\(\\binom{52}{13}\\) equally likely unordered hands of 13 cards.",
+      "Choose exactly 3 of the deck's 4 aces in \\(\\binom{4}{3}\\) ways.",
+      "The remaining 10 cards must all be non-aces. There are 48 non-aces, giving \\(\\binom{48}{10}\\) choices.",
+      "Therefore, the probability is \\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\).",
+      "Do not select the remaining cards from all 49 cards left after choosing three aces: that would allow the fourth ace and violate the requirement of exactly three aces."
+    ],
+    "generalization": "For a sample of size \\(n\\) drawn uniformly without replacement from \\(N\\) objects containing \\(K\\) successes, the probability of exactly \\(k\\) successes is \\(\\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}\\), for feasible values of \\(k\\).",
+    "answer_text": "C. \\(\\frac{\\binom{4}{3}\\binom{48}{10}}{\\binom{52}{13}}\\)"
+  },
+  {
+    "id": 45,
+    "topic": "Counting: Restricted Card Hands",
+    "title": "Exercise 45",
+    "statement": "[110.S88.16] What is the probability that a hand of five cards chosen randomly and without replacement from a standard deck of 52 cards contains the king of spades, exactly one other king, and exactly two queens?",
+    "choices": [
+      "\\(\\frac{\\binom{4}{2}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)",
+      "\\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)",
+      "\\(\\frac{\\binom{7}{3}\\binom{44}{1}}{\\binom{52}{5}}\\)",
+      "\\(\\frac{\\binom{4}{1}\\binom{7}{3}\\binom{44}{1}}{\\binom{52}{5}}\\)",
+      "\\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{11}{1}}{\\binom{52}{5}}\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "There are \\(\\binom{52}{5}\\) equally likely five-card hands.",
+      "The king of spades is required, so there is exactly one way to include that card.",
+      "Choose the other king from the remaining three kings in \\(\\binom{3}{1}\\) ways.",
+      "Choose exactly two of the four queens in \\(\\binom{4}{2}\\) ways.",
+      "The fifth card must be neither a king nor a queen. There are \\(52-4-4=44\\) such cards.",
+      "The number of favorable hands is \\(\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}=3\\cdot6\\cdot44=792\\). Therefore, the probability is \\(\\frac{792}{\\binom{52}{5}}\\)."
+    ],
+    "generalization": "When a particular card is required, fix that card first and count the remaining choices. For exact rank counts, all leftover cards must come from outside the constrained ranks. Use unordered combinations consistently in both numerator and denominator.",
+    "answer_text": "B. \\(\\frac{\\binom{3}{1}\\binom{4}{2}\\binom{44}{1}}{\\binom{52}{5}}\\)"
+  },
+  {
+    "id": 46,
+    "topic": "Binomial Distribution",
+    "title": "Exercise 46",
+    "statement": "In a game, a player flips 2 fair coins and loses if both are heads. Assume all coin flips are independent. What is the probability that a player loses exactly 3 times in 5 plays of the game?",
+    "choices": [
+      "\\(10\\cdot\\frac{3^2}{4^5}\\)",
+      "\\(\\frac{10}{4^5}\\)",
+      "\\(\\frac{1}{4^3}\\)",
+      "\\(\\frac{1}{2^5}\\)",
+      "\\(\\frac{10}{2^5}\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "In one play, the player loses only on two heads, so \\(p=P(\\text{loss})=\\frac12\\frac12=\\frac14\\).",
+      "The probability of not losing a play is \\(1-p=3/4\\).",
+      "Let \\(L\\) be the number of losses in five independent plays. Then \\(L\\sim\\operatorname{Binomial}(5,1/4)\\).",
+      "There are \\(\\binom{5}{3}=10\\) ways to choose which three plays are losses.",
+      "Thus \\(P(L=3)=\\binom{5}{3}\\left(\\frac14\\right)^3\\left(\\frac34\\right)^2=10\\cdot\\frac{3^2}{4^5}=\\frac{45}{512}\\).",
+      "The probability of losing a play is \\(1/4\\), not \\(1/2\\): a play consists of two coin flips."
+    ],
+    "generalization": "For \\(n\\) independent trials with a constant event probability \\(p\\), the number of occurrences is binomial: \\(P(X=k)=\\binom{n}{k}p^k(1-p)^{n-k}\\). First identify what constitutes one trial and calculate its event probability.",
+    "answer_text": "A. \\(10\\cdot\\frac{3^2}{4^5}\\)"
+  },
+  {
+    "id": 47,
+    "topic": "Independent Binomial Random Variables",
+    "title": "Exercise 47",
+    "statement": "[110.S90.28] I have two unfair coins: a gold coin that comes up heads with probability 0.3, and a silver coin that comes up heads with probability 0.1. If I flip the gold coin 5 times and the silver coin 10 times, what is the probability that the gold coin comes up heads exactly 3 times and the silver coin comes up heads exactly 6 times? Assume all flips are independent.",
+    "choices": [
+      "\\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)",
+      "\\(\\binom{5}{3}(0.3)^3(0.7)^2+\\binom{10}{6}(0.1)^6(0.9)^4\\)",
+      "\\(\\left(1-\\binom{5}{3}(0.3)^3(0.7)^2\\right)\\left(1-\\binom{10}{6}(0.1)^6(0.9)^4\\right)\\)",
+      "\\(1-\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)",
+      "\\(\\left(1-\\binom{5}{3}(0.3)^3(0.7)^2\\right)+\\left(1-\\binom{10}{6}(0.1)^6(0.9)^4\\right)\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "Let \\(G\\) and \\(S\\) count heads from the gold and silver coins. Then \\(G\\sim\\operatorname{Binomial}(5,0.3)\\) and \\(S\\sim\\operatorname{Binomial}(10,0.1)\\).",
+      "The gold-coin probability is \\(P(G=3)=\\binom{5}{3}(0.3)^3(0.7)^2\\).",
+      "The silver-coin probability is \\(P(S=6)=\\binom{10}{6}(0.1)^6(0.9)^4\\).",
+      "Because the two collections of flips are independent, \\(P(G=3,S=6)=P(G=3)P(S=6)\\).",
+      "Therefore, the answer is \\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)."
+    ],
+    "generalization": "For independent binomial counts, multiply the individual probabilities to obtain a joint probability. Do not combine trials with different success probabilities into a single ordinary binomial model.",
+    "answer_text": "A. \\(\\binom{5}{3}(0.3)^3(0.7)^2\\binom{10}{6}(0.1)^6(0.9)^4\\)"
+  },
+  {
+    "id": 48,
+    "topic": "Binomial Distribution: Cumulative Probability",
+    "title": "Exercise 48",
+    "statement": "[SOA 37; S00.40] A company prices its hurricane insurance using the following assumptions:\n\n1. In any calendar year, there can be at most one hurricane.\n2. In any calendar year, the probability of a hurricane is 0.05.\n3. The number of hurricanes in any calendar year is independent of the number of hurricanes in any other calendar year.\n\nUsing the company's assumptions, calculate the probability that there are fewer than 3 hurricanes in a 20-year period.",
+    "choices": [
+      "\\(0.06\\)",
+      "\\(0.19\\)",
+      "\\(0.38\\)",
+      "\\(0.62\\)",
+      "\\(0.92\\)"
+    ],
+    "correct": 4,
+    "solution_steps": [
+      "Each year is an independent Bernoulli trial with hurricane probability \\(0.05\\). Thus the total number of hurricanes satisfies \\(X\\sim\\operatorname{Binomial}(20,0.05)\\).",
+      "Fewer than 3 hurricanes means \\(X=0,1,2\\), so \\(P(X<3)=P(X=0)+P(X=1)+P(X=2)\\).",
+      "The zero-hurricane probability is \\(P(X=0)=(0.95)^{20}\\approx 0.358486\\).",
+      "The one-hurricane probability is \\(P(X=1)=\\binom{20}{1}(0.05)(0.95)^{19}\\approx 0.377354\\).",
+      "The two-hurricane probability is \\(P(X=2)=\\binom{20}{2}(0.05)^2(0.95)^{18}\\approx 0.188677\\).",
+      "Adding gives \\(P(X<3)\\approx 0.924516\\), which rounds to \\(0.92\\)."
+    ],
+    "generalization": "For \\(X\\sim\\operatorname{Binomial}(n,p)\\) and an integer threshold \\(r\\), \\(P(X<r)=\\sum_{k=0}^{r-1}\\binom{n}{k}p^k(1-p)^{n-k}\\). Distinguish fewer than \\(r\\) from at most \\(r\\), which includes the term \\(X=r\\).",
+    "answer_text": "E. \\(0.92\\)"
+  },
+  {
+    "id": 49,
+    "topic": "Sampling Without Replacement",
+    "title": "Exercise 49",
+    "statement": "A drawer contains four white socks, six red socks, and two black socks. Two socks are taken at random from the drawer without replacement. What is the probability that both socks will be the same color?",
+    "choices": [
+      "\\(1/66\\)",
+      "\\(1/11\\)",
+      "\\(5/22\\)",
+      "\\(1/3\\)",
+      "\\(7/18\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "There are \\(4+6+2=12\\) socks, giving \\(\\binom{12}{2}=66\\) equally likely unordered pairs.",
+      "The favorable cases are mutually exclusive: two white socks, two red socks, or two black socks.",
+      "Their counts are \\(\\binom{4}{2}=6\\), \\(\\binom{6}{2}=15\\), and \\(\\binom{2}{2}=1\\), respectively.",
+      "Therefore, \\(P(\\text{same color})=\\frac{6+15+1}{66}=\\frac{22}{66}=\\frac13\\).",
+      "Equivalently, using sequential draws gives \\(\\frac4{12}\\frac3{11}+\\frac6{12}\\frac5{11}+\\frac2{12}\\frac1{11}=\\frac13\\)."
+    ],
+    "generalization": "If a population contains \\(n_i\\) objects of category \\(i\\), with total \\(N=\\sum_i n_i\\geq2\\), two uniform draws without replacement have the same category with probability \\(\\frac{\\sum_i\\binom{n_i}{2}}{\\binom{N}{2}}=\\sum_i\\frac{n_i(n_i-1)}{N(N-1)}\\).",
+    "answer_text": "D. \\(1/3\\)"
+  },
+  {
+    "id": 50,
+    "topic": "Sampling With Replacement",
+    "title": "Exercise 50",
+    "statement": "A drawer contains four white socks, six red socks, and two black socks. Two socks are taken at random from the drawer with replacement. What is the probability that both socks will be the same color?",
+    "choices": [
+      "\\(1/66\\)",
+      "\\(1/11\\)",
+      "\\(5/22\\)",
+      "\\(1/3\\)",
+      "\\(7/18\\)"
+    ],
+    "correct": 4,
+    "solution_steps": [
+      "With replacement and independent random draws, the color probabilities remain \\(P(W)=4/12\\), \\(P(R)=6/12\\), and \\(P(B)=2/12\\).",
+      "The probability of two white socks is \\((4/12)^2=1/9\\).",
+      "The probability of two red socks is \\((6/12)^2=1/4\\), and the probability of two black socks is \\((2/12)^2=1/36\\).",
+      "These cases are mutually exclusive, so \\(P(\\text{same color})=\\frac19+\\frac14+\\frac1{36}=\\frac{14}{36}=\\frac7{18}\\).",
+      "Unlike sampling without replacement, the second draw still has 12 available socks and the original color counts."
+    ],
+    "generalization": "For two independent draws with category probabilities \\(p_1,\\ldots,p_m\\), the probability of matching categories is \\(\\sum_{i=1}^{m}p_i^2\\). Multiply probabilities within each matching case, then add over the mutually exclusive categories.",
+    "answer_text": "E. \\(7/18\\)"
+  },
+  {
+    "id": 51,
+    "topic": "Sampling Without Replacement: Stopping Rules",
+    "title": "Exercise 51",
+    "statement": "[110.S88.35] A box contains 35 gems, of which ten are real diamonds and 25 are fake diamonds. Gems are randomly taken out of the box, one at a time without replacement. What is the probability that exactly two fakes are selected before the second real diamond is selected?",
+    "choices": [
+      "\\(\\frac{225}{5236}\\)",
+      "\\(\\frac{675}{5236}\\)",
+      "\\(\\frac{\\binom{25}{2}\\binom{10}{2}}{\\binom{35}{4}}\\)",
+      "\\(\\binom{3}{2}\\left(\\frac{10}{35}\\right)^2\\left(\\frac{25}{35}\\right)^2\\)",
+      "\\(\\binom{4}{2}\\left(\\frac{10}{35}\\right)^2\\left(\\frac{25}{35}\\right)^2\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "Exactly two fakes before the second real diamond means that the fourth draw is real, while the first three draws contain exactly one real diamond and two fakes.",
+      "Writing \\(R\\) for real and \\(F\\) for fake, the possible sequences are \\(RFFR\\), \\(FRFR\\), and \\(FFRR\\).",
+      "Each sequence has probability \\(\\frac{10\\cdot9\\cdot25\\cdot24}{35\\cdot34\\cdot33\\cdot32}\\). The order of the numerator factors changes, but their product is the same.",
+      "Adding the three mutually exclusive sequences gives \\(3\\frac{10\\cdot9\\cdot25\\cdot24}{35\\cdot34\\cdot33\\cdot32}=\\frac{675}{5236}\\).",
+      "Alternatively, the probability of one real and two fakes in the first three draws is \\(\\frac{\\binom{10}{1}\\binom{25}{2}}{\\binom{35}{3}}\\). Given that event, 9 of the remaining 32 gems are real.",
+      "Thus the answer is also \\(\\frac{\\binom{10}{1}\\binom{25}{2}}{\\binom{35}{3}}\\frac9{32}\\). Merely requiring two real diamonds among the first four draws does not enforce that the fourth draw is the second real diamond."
+    ],
+    "generalization": "In uniform sampling without replacement from \\(N\\) objects containing \\(K\\) successes, the probability of exactly \\(f\\) failures before the \\(r\\)th success is \\(\\frac{\\binom{K}{r-1}\\binom{N-K}{f}}{\\binom{N}{r+f-1}}\\frac{K-r+1}{N-r-f+1}\\), for \\(1\\leq r\\leq K\\) and \\(0\\leq f\\leq N-K\\). This is a negative hypergeometric stopping problem: the last draw must be a success.",
+    "answer_text": "B. \\(\\frac{675}{5236}\\)"
+  },
+  {
+    "id": 52,
+    "topic": "Multinomial Distribution",
+    "title": "Exercise 52",
+    "statement": "[110.S88.07] A bag contains 10 balls, 5 of which are white, 3 are red, and two are black. If three balls are drawn with replacement from the bag, what is the probability that one ball of each color is drawn?",
+    "choices": [
+      "\\(0.03\\)",
+      "\\(0.09\\)",
+      "\\(0.18\\)",
+      "\\(0.40\\)",
+      "\\(0.84\\)"
+    ],
+    "correct": 2,
+    "solution_steps": [
+      "The independent draws have constant color probabilities \\(p_W=5/10\\), \\(p_R=3/10\\), and \\(p_B=2/10\\).",
+      "We need category counts \\((1,1,1)\\) in three draws, so use the multinomial formula.",
+      "There are \\(\\frac{3!}{1!1!1!}=6\\) possible orders of the three colors.",
+      "Each order has probability \\(\\frac5{10}\\frac3{10}\\frac2{10}=0.03\\).",
+      "Therefore, the desired probability is \\(6(0.03)=0.18\\)."
+    ],
+    "generalization": "For \\(n\\) independent trials with constant category probabilities \\(p_i\\), the probability of counts \\(k_i\\) summing to \\(n\\) is \\(\\frac{n!}{\\prod_i k_i!}\\prod_i p_i^{k_i}\\). The factorial coefficient accounts for all orders producing those counts.",
+    "answer_text": "C. \\(0.18\\)"
+  },
+  {
+    "id": 53,
+    "topic": "Multinomial Distribution",
+    "title": "Exercise 53",
+    "statement": "[110.F86.16] A random sample of size 6 is selected with replacement from an urn that contains 10 red, 5 white, and 5 blue balls. What is the probability that the sample contains 2 balls of each color?",
+    "choices": [
+      "\\(1/1024\\)",
+      "\\(1/646\\)",
+      "\\(45/512\\)",
+      "\\(75/646\\)",
+      "\\(45/64\\)"
+    ],
+    "correct": 2,
+    "solution_steps": [
+      "There are 20 balls. On each independent draw, the color probabilities are \\(p_R=10/20=1/2\\), \\(p_W=5/20=1/4\\), and \\(p_B=5/20=1/4\\).",
+      "We need exactly two occurrences of each color in six draws.",
+      "The number of color sequences with these counts is \\(\\frac{6!}{2!2!2!}=90\\).",
+      "Each such sequence has probability \\(\\left(\\frac12\\right)^2\\left(\\frac14\\right)^2\\left(\\frac14\\right)^2=\\frac1{1024}\\).",
+      "Therefore, the probability is \\(90\\cdot\\frac1{1024}=\\frac{45}{512}\\)."
+    ],
+    "generalization": "When repeated independent draws must produce specified counts in several categories, use one multinomial coefficient to count the possible orders. Multiplying separate binomial probabilities for the category counts is incorrect because those counts are dependent and must sum to the fixed sample size.",
+    "answer_text": "C. \\(45/512\\)"
+  },
+  {
+    "id": 54,
+    "topic": "Geometric Distribution",
+    "title": "Exercise 54",
+    "statement": "[110.S92.35] Ten percent of all new businesses fail within the first year. The records of new businesses are examined until a business that failed within the first year is found. Let \\(X\\) be the total number of businesses examined prior to finding a business that failed within the first year, excluding that business. Assuming independent outcomes with a constant failure probability, what is the probability mass function of \\(X\\)?",
+    "choices": [
+      "\\((0.1)(0.9)^x,\\quad x=0,1,2,3,\\ldots\\)",
+      "\\((0.9)(0.1)^x,\\quad x=0,1,2,3,\\ldots\\)",
+      "\\((0.1x)(0.9)^x,\\quad x=1,2,3,\\ldots\\)",
+      "\\((0.9x)(0.1)^x,\\quad x=1,2,3,\\ldots\\)",
+      "\\((0.1)(x-1)(0.9)^x,\\quad x=2,3,\\ldots\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "The stopping event is finding a business that failed within its first year. Its probability is \\(p=0.1\\).",
+      "The variable \\(X\\) counts the businesses examined before that stopping event. Therefore, \\(X\\) can equal 0 if the first business examined failed.",
+      "For \\(X=x\\), the first \\(x\\) businesses must not have failed within their first year, and the next business must have failed.",
+      "By independence, \\(P(X=x)=(0.9)^x(0.1)\\), for \\(x=0,1,2,\\ldots\\).",
+      "In geometric-distribution terminology, finding a failed business is called a success because it is the event being sought. This terminology does not describe the business's financial outcome."
+    ],
+    "generalization": "For independent trials with constant success probability \\(p>0\\), the number \\(X\\) of failures before the first success has \\(P(X=x)=(1-p)^xp\\) for \\(x=0,1,\\ldots\\). If instead \\(T\\) counts all trials including the first success, then \\(T=X+1\\) and \\(P(T=t)=(1-p)^{t-1}p\\) for \\(t=1,2,\\ldots\\).",
+    "answer_text": "A. \\((0.1)(0.9)^x,\\quad x=0,1,2,3,\\ldots\\)"
+  },
+  {
+    "id": 55,
+    "topic": "Geometric Distribution: Mean and Variance",
+    "title": "Exercise 55",
+    "statement": "An unfair coin is weighted so that the expected number of tails before the first heads is 3. Assuming independent flips with a constant probability of heads, what is the standard deviation of the number of tails that come up before the first heads?",
+    "choices": [
+      "\\(\\sqrt{6}\\)",
+      "\\(3\\)",
+      "\\(\\sqrt{12}\\)",
+      "\\(\\sqrt{21}\\)",
+      "\\(9\\)"
+    ],
+    "correct": 2,
+    "solution_steps": [
+      "Let \\(T\\) count the tails before the first heads, and let \\(p\\) be the probability of heads. Then \\(T\\) follows a geometric distribution on \\(\\{0,1,2,\\ldots\\}\\).",
+      "For this convention, \\(E[T]=(1-p)/p\\). The given mean implies \\((1-p)/p=3\\).",
+      "Solving gives \\(1-p=3p\\), so \\(p=1/4\\).",
+      "The variance is \\(\\operatorname{Var}(T)=\\frac{1-p}{p^2}=\\frac{3/4}{(1/4)^2}=12\\).",
+      "Therefore, \\(\\operatorname{SD}(T)=\\sqrt{12}\\)."
+    ],
+    "generalization": "For a geometric count of failures before the first success, \\(\\mu=(1-p)/p\\), so \\(p=1/(\\mu+1)\\). Consequently, \\(\\operatorname{Var}(T)=\\mu(\\mu+1)\\) and \\(\\operatorname{SD}(T)=\\sqrt{\\mu(\\mu+1)}\\). Counting the successful trial adds 1 to the mean but leaves the variance unchanged.",
+    "answer_text": "C. \\(\\sqrt{12}\\)"
+  },
+  {
+    "id": 56,
+    "topic": "Independent Trials and Complementary Events",
+    "title": "Exercise 56",
+    "statement": "[110.F86.04] A pair of fair six-sided dice is tossed 10 times in succession. Assume all rolls are independent. What is the probability of observing no sums of 7 and no sums of 11 in any of the 10 tosses?",
+    "choices": [
+      "\\(\\left(\\frac{28}{36}\\right)^{10}\\)",
+      "\\(\\left(\\frac{30}{36}\\right)^{10}\\left(\\frac{34}{36}\\right)^{10}\\)",
+      "\\(\\left[1-\\left(\\frac{6}{36}\\right)\\left(\\frac{2}{36}\\right)\\right]^{10}\\)",
+      "\\(1-\\left(\\frac{8}{36}\\right)^{10}\\)",
+      "\\(\\left[1-\\left(\\frac{6}{36}\\right)^{10}\\right]\\left[1-\\left(\\frac{2}{36}\\right)^{10}\\right]\\)"
+    ],
+    "correct": 0,
+    "solution_steps": [
+      "One toss of the pair of dice has 36 equally likely ordered outcomes.",
+      "There are 6 outcomes with sum 7: \\((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\\). There are 2 outcomes with sum 11: \\((5,6),(6,5)\\).",
+      "These sums are mutually exclusive within one toss, so \\(P(\\text{sum is 7 or 11})=\\frac6{36}+\\frac2{36}=\\frac8{36}\\).",
+      "Thus the probability of avoiding both sums in one toss is \\(1-\\frac8{36}=\\frac{28}{36}\\).",
+      "Since the 10 tosses are independent, the probability of avoiding both sums every time is \\(\\left(\\frac{28}{36}\\right)^{10}=\\left(\\frac79\\right)^{10}\\).",
+      "Do not multiply the probability of no 7s by the probability of no 11s: those two events are not independent. Independence applies across separate tosses."
+    ],
+    "generalization": "If mutually exclusive forbidden outcomes have total probability \\(q\\) on each of \\(n\\) independent trials, the probability of avoiding every forbidden outcome is \\((1-q)^n\\). Equivalently, the number of forbidden outcomes is binomial with parameters \\(n\\) and \\(q\\), and the desired probability is its mass at zero.",
+    "answer_text": "A. \\(\\left(\\frac{28}{36}\\right)^{10}\\)"
+  },
+  {
+    "id": 57,
+    "topic": "Geometric Distribution",
+    "title": "Exercise 57",
+    "statement": "A fair six-sided die is rolled until it comes up 6. What is the probability that the number of rolls will be exactly 5 given that it takes at least 2 rolls?",
+    "choices": [
+      "\\(0.08\\)",
+      "\\(0.10\\)",
+      "\\(0.12\\)",
+      "\\(0.14\\)",
+      "\\(0.48\\)"
+    ],
+    "correct": 1,
+    "solution_steps": [
+      "Let \\(X\\) be the number of rolls needed for the first 6. Then \\(X\\sim\\operatorname{Geometric}(1/6)\\) with support \\(\\{1,2,3,\\ldots\\}\\).",
+      "We want \\(P(X=5\\mid X\\geq 2)\\).",
+      "Method 1: Use conditional probability. Since \\(X=5\\) implies \\(X\\geq 2\\), we have \\(P(X=5\\mid X\\geq 2)=\\frac{P(X=5)}{P(X\\geq 2)}\\).",
+      "The geometric probability mass function gives \\(P(X=5)=\\left(\\frac{5}{6}\\right)^4\\frac{1}{6}\\).",
+      "Since \\(X\\geq 2\\) means that the first roll is not 6, \\(P(X\\geq 2)=1-P(X=1)=\\frac{5}{6}\\).",
+      "Therefore, \\(P(X=5\\mid X\\geq 2)=\\frac{\\left(\\frac{5}{6}\\right)^4\\frac{1}{6}}{\\frac{5}{6}}=\\left(\\frac{5}{6}\\right)^3\\frac{1}{6}=\\frac{125}{1296}\\approx 0.09645\\).",
+      "Method 2: Direct reasoning. Given that the first roll was not 6, rolls 2, 3, and 4 must not be 6, and roll 5 must be 6.",
+      "By independence, the probability is \\(\\left(\\frac{5}{6}\\right)^3\\frac{1}{6}\\approx 0.09645\\).",
+      "The closest choice is B, 0.10."
+    ],
+    "generalization": "For \\(X\\sim\\operatorname{Geometric}(p)\\) counting trials until the first success on \\(\\{1,2,\\ldots\\}\\), \\(P(X=k)=(1-p)^{k-1}p\\), \\(P(X\\geq k)=(1-p)^{k-1}\\), and \\(P(X>k)=(1-p)^k\\). The memoryless property is \\(P(X>m+n\\mid X>m)=P(X>n)\\) for integers \\(m,n\\geq 0\\). Equivalently, \\(P(X=m+n\\mid X>m)=P(X=n)\\) when \\(n\\geq 1\\). Here \\(P(X=5\\mid X\\geq 2)=P(X=4)\\).",
+    "answer_text": "B. \\(0.10\\)"
+  },
+  {
+    "id": 58,
+    "topic": "Conditional Probability",
+    "title": "Exercise 58",
+    "statement": "A fair die is rolled repeatedly. Let X be the number of rolls needed to obtain a 5 and Y the number of rolls needed to obtain a 6. Find P(X = 1 | Y = 2).",
+    "choices": [
+      "\\(0\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": 2,
+    "solution_steps": [
+      "Let \\(X\\) be the number of rolls until the first 5, and \\(Y\\) the number until the first 6. We want \\(P(X=1\\mid Y=2)\\).",
+      "Method 1: Direct conditional reasoning.",
+      "Given \\(Y=2\\), the first roll is not 6 and the second roll is 6.",
+      "Therefore, the first roll is one of \\(\\{1,2,3,4,5\\}\\), with five equally likely possibilities.",
+      "The event \\(X=1\\) means that the first roll is 5, which is exactly one of these five possibilities.",
+      "Hence \\(P(X=1\\mid Y=2)=\\frac{1}{5}\\).",
+      "Method 2: Use the conditional probability formula.",
+      "We have \\(P(X=1\\mid Y=2)=\\frac{P(X=1,Y=2)}{P(Y=2)}\\).",
+      "For both events, the first roll must be 5 and the second roll 6, so \\(P(X=1,Y=2)=\\frac{1}{6}\\cdot\\frac{1}{6}=\\frac{1}{36}\\).",
+      "For \\(Y=2\\), the first roll must not be 6 and the second must be 6, giving \\(P(Y=2)=\\frac{5}{6}\\cdot\\frac{1}{6}=\\frac{5}{36}\\).",
+      "Thus \\(P(X=1\\mid Y=2)=\\frac{1/36}{5/36}=\\frac{1}{5}\\).",
+      "The correct answer is C."
+    ],
+    "generalization": "Conditional probability satisfies \\(P(A\\mid B)=P(A\\cap B)/P(B)\\), provided \\(P(B)>0\\). Conditioning restricts the possible outcomes to those consistent with the known event. Knowing that the first 6 occurs on roll 2 means roll 1 is uniformly distributed over \\(\\{1,2,3,4,5\\}\\), so \\(P(X=1\\mid Y=2)=1/5\\), whereas \\(P(X=1)=1/6\\). The individual die rolls are independent, but the waiting times \\(X\\) and \\(Y\\) are not independent because they come from the same sequence.",
+    "answer_text": "C. \\(\\frac{1}{5}\\)"
+  },
+  {
+    "id": 59,
+    "topic": "Conditional Probability",
+    "title": "Exercise 59",
+    "statement": "A fair die is rolled repeatedly. Let X be the number of rolls needed to obtain a 5 and Y the number of rolls needed to obtain a 6. Find P(X = 3 | Y = 2).",
+    "choices": [
+      "\\(0\\)",
+      "\\(\\frac{25}{216}\\)",
+      "\\(\\frac{5}{36}\\)",
+      "\\(\\frac{2}{15}\\)",
+      "\\(\\frac{1}{5}\\)"
+    ],
+    "correct": 3,
+    "solution_steps": [
+      "Let \\(X\\) count the rolls until the first 5 and \\(Y\\) count the rolls until the first 6. We seek \\(P(X=3\\mid Y=2)\\).",
+      "Method 1: Direct conditional reasoning.",
+      "Given \\(Y=2\\), roll 1 is not a 6 and roll 2 is exactly a 6.",
+      "Among the five equally likely results for roll 1, namely \\(\\{1,2,3,4,5\\}\\), four are not 5. Therefore, the conditional probability that roll 1 is not 5 is \\(\\frac{4}{5}\\).",
+      "Roll 2 is already known to be 6, so it cannot be the first 5.",
+      "Roll 3 must be 5. It remains independent of the first two rolls, so its probability of being 5 is \\(\\frac{1}{6}\\).",
+      "Therefore, \\(P(X=3\\mid Y=2)=\\frac{4}{5}\\cdot\\frac{1}{6}=\\frac{2}{15}\\).",
+      "Method 2: Use the conditional probability formula.",
+      "We have \\(P(X=3\\mid Y=2)=\\frac{P(X=3,Y=2)}{P(Y=2)}\\).",
+      "For \\(X=3\\) and \\(Y=2\\), roll 1 is neither 5 nor 6, roll 2 is 6, and roll 3 is 5. By independence, \\(P(X=3,Y=2)=\\frac{4}{6}\\cdot\\frac{1}{6}\\cdot\\frac{1}{6}=\\frac{4}{216}\\).",
+      "Also \\(P(Y=2)=\\frac{5}{6}\\cdot\\frac{1}{6}=\\frac{5}{36}\\).",
+      "Dividing gives \\(P(X=3\\mid Y=2)=\\frac{4/216}{5/36}=\\frac{2}{15}\\).",
+      "The correct answer is D."
+    ],
+    "generalization": "Conditioning on the first appearance of a specified face constrains earlier rolls but does not affect later independent rolls. Here, given \\(Y=2\\), roll 1 is uniform on \\(\\{1,2,3,4,5\\}\\), roll 2 is fixed at 6, and roll 3 is still uniform on \\(\\{1,2,3,4,5,6\\}\\). Thus \\(P(X=3\\mid Y=2)=\\frac{4}{5}\\cdot\\frac{1}{6}\\). More generally, for independent rolls of a fair \\(s\\)-sided die and two distinct target faces, if \\(X\\) and \\(Y\\) are their first occurrence times and integers \\(x>y\\geq 1\\), then \\(P(X=x\\mid Y=y)=\\left(\\frac{s-2}{s-1}\\right)^{y-1}\\left(\\frac{s-1}{s}\\right)^{x-y-1}\\frac{1}{s}\\). If \\(x=y\\), this probability is zero because the two distinct faces cannot first appear on the same roll.",
+    "answer_text": "D. \\(\\frac{2}{15}\\)"
+  }
 ]
