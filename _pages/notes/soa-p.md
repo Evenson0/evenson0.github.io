@@ -8,8 +8,8 @@ mathjax: false
 description: "Explore probability concepts through an interactive knowledge graph, structured notes, derivations and worked examples for SOA Exam P."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/soa-p-notes.css' | relative_url }}?v=atlas-20261012-fixed">
-<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}?v=atlas-20261012-fixed">
+<link rel="stylesheet" href="{{ '/assets/css/soa-p-notes.css' | relative_url }}?v=atlas-20261012-p-clean">
+<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}?v=atlas-20261012-p-clean">
 
 <section class="p-atlas p-notes" id="p-atlas" aria-label="SOA Exam P Knowledge Atlas">
   <header class="p-atlas__hero">
@@ -110,4 +110,4 @@ description: "Explore probability concepts through an interactive knowledge grap
 <template id="p-atlas-source">
 {% include soa-p-guide-sections.html %}
 </template>
-<script defer src="{{ '/assets/js/soa-p-atlas.js' | relative_url }}?v=atlas-20261012-fixed"></script>
+<script defer src="{{ '/assets/js/soa-p-atlas.js' | relative_url }}?v=atlas-20261012-p-clean"></script>
