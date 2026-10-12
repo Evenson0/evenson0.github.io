@@ -8,8 +8,8 @@ mathjax: false
 description: "Explore Exam FM financial mathematics through an interactive knowledge graph, cash-flow formulas, worked examples and derivations."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/soa-fm-atlas.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}?v=atlas-20261012-fixed">
+<link rel="stylesheet" href="{{ '/assets/css/soa-fm-atlas.css' | relative_url }}?v=atlas-20261012-fixed">
 
 <section class="p-atlas p-notes fm-atlas" id="fm-atlas" aria-label="SOA Exam FM Knowledge Atlas"
   data-practice-url="{{ '/assets/data/soa-fm-problems.json' | relative_url }}"
@@ -94,7 +94,7 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
       <p class="p-atlas__reader-hint" id="pa-reading-hint">
         Explore the graph or browse the outline to open a topic.
       </p>
-      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"></div>
+      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"><p>Explore the graph or chapter outline above. If the interactive reader does not appear, you can still access the complete notes through the Classic formula guide.</p></div>
       <section class="fm-atlas__related" aria-labelledby="fm-related-heading">
         <div class="fm-atlas__related-heading">
           <div>
@@ -123,4 +123,4 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
 <template id="fm-atlas-source">
 {% include soa-fm-guide-cards.html %}
 </template>
-<script defer src="{{ '/assets/js/soa-fm-atlas.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/soa-fm-atlas.js' | relative_url }}?v=atlas-20261012-fixed"></script>
