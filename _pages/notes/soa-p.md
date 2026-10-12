@@ -8,8 +8,8 @@ mathjax: false
 description: "Explore probability concepts through an interactive knowledge graph, structured notes, derivations and worked examples for SOA Exam P."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/soa-p-notes.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/soa-p-notes.css' | relative_url }}?v=atlas-20261012-fixed">
+<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}?v=atlas-20261012-fixed">
 
 <section class="p-atlas p-notes" id="p-atlas" aria-label="SOA Exam P Knowledge Atlas">
   <header class="p-atlas__hero">
@@ -92,7 +92,7 @@ description: "Explore probability concepts through an interactive knowledge grap
       <p class="p-atlas__reader-hint" id="pa-reading-hint">
         Explore the graph or browse the outline to open a topic.
       </p>
-      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"></div>
+      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"><p>Explore the graph or chapter outline above. If the interactive reader does not appear, you can still access the complete notes through the Classic formula guide.</p></div>
       <div class="p-atlas__footer-nav" aria-label="Reading navigation">
         <button type="button" id="pa-prev" disabled>← <span id="pa-prev-label">Previous</span></button>
         <button type="button" id="pa-next">Next → <span id="pa-next-label">Next</span></button>
@@ -111,4 +111,4 @@ description: "Explore probability concepts through an interactive knowledge grap
 <template id="p-atlas-source">
 {% include soa-p-guide-sections.html %}
 </template>
-<script defer src="{{ '/assets/js/soa-p-atlas.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/soa-p-atlas.js' | relative_url }}?v=atlas-20261012-fixed"></script>
