@@ -108,9 +108,20 @@
     }
   };
 
+  function safeLanguage() {
+    const requested = new URLSearchParams(window.location.search).get("lang");
+    if (requested === "fr" || requested === "en") return requested;
+    try {
+      const saved = localStorage.getItem("portfolioLab.language");
+      return saved === "fr" ? "fr" : "en";
+    } catch (_) {
+      return "en";
+    }
+  }
+
   const state = {
     data: null,
-    lang: localStorage.getItem("portfolioLab.language") || "en",
+    lang: safeLanguage(),
     selected: null
   };
 
@@ -156,6 +167,7 @@
     });
     document.querySelectorAll(".pl-lang button").forEach((button) => {
       button.classList.toggle("is-active", button.dataset.lang === state.lang);
+      button.setAttribute("aria-pressed", String(button.dataset.lang === state.lang));
     });
   }
 
@@ -247,8 +259,8 @@
   document.querySelectorAll(".pl-lang button").forEach((button) => {
     button.addEventListener("click", () => {
       state.lang = button.dataset.lang;
-      localStorage.setItem("portfolioLab.language", state.lang);
-      render();
+      try { localStorage.setItem("portfolioLab.language", state.lang); } catch (_) {}
+      if (state.data) render(); else applyStaticTranslations();
     });
   });
 
@@ -258,12 +270,18 @@
       return response.json();
     })
     .then((data) => {
+      if (!data || !Array.isArray(data.positions) || !data.fx ||
+          !(Number(data.fx.rate) > 0) || !data.asOf) {
+        throw new Error("Invalid Portfolio Lab snapshot schema");
+      }
       state.data = data;
       state.selected = data.positions[0]?.ticker || null;
       render();
     })
     .catch((error) => {
       console.error("Portfolio Lab data error:", error);
-      $("plCards").innerHTML = '<div class="pl-empty">Portfolio data could not be loaded.</div>';
+      $("plCards").innerHTML = '<div class="pl-empty">Portfolio snapshot unavailable. Please refresh the page.</div>';
+      $("plDetail").innerHTML = '<div class="pl-empty">No position details available.</div>';
+      $("plTable").replaceChildren();
     });
 })();
