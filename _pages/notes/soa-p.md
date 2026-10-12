@@ -115,4 +115,5 @@ description: "Explore probability concepts through an interactive knowledge grap
 {% include soa-p-guide-sections.html %}
 </template>
 <script defer src="{{ '/assets/js/soa-atlas-language.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
+<script defer src="{{ '/assets/js/soa-atlas-ui.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
 <script defer src="{{ '/assets/js/soa-p-atlas.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
