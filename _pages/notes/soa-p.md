@@ -23,12 +23,11 @@ description: "Explore probability concepts through an interactive knowledge grap
     <div class="p-atlas__hero-bottom">
       <div class="p-atlas__metrics" aria-label="Notes statistics">
         <div class="p-atlas__metric"><strong id="pa-chapter-count">04</strong><small>Chapters</small></div>
-        <div class="p-atlas__metric"><strong id="pa-topic-count">16</strong><small>Formula notes</small></div>
+        <div class="p-atlas__metric"><strong id="pa-topic-count">16</strong><small>Study notes</small></div>
         <div class="p-atlas__metric"><strong id="pa-reviewed-count">00</strong><small>Reviewed here</small></div>
       </div>
       <nav class="p-atlas__links" aria-label="Related Exam P resources">
         <a class="p-atlas__link p-atlas__link--primary" href="{{ '/tools/soa-p-practice/' | relative_url }}">Practice questions ↗</a>
-        <a class="p-atlas__link" id="pa-classic-link" href="{{ '/notes/soa-p/formula-boxes/' | relative_url }}">Classic formula guide ↗</a>
         <a class="p-atlas__link" href="{{ '/notes/' | relative_url }}">All notes ↗</a>
         {% assign p_pdf = site.static_files | where: "path", "/assets/pdf/soa-p-notes.pdf" | first %}
         {% if p_pdf %}
@@ -83,7 +82,6 @@ description: "Explore probability concepts through an interactive knowledge grap
         <span class="p-atlas__crumb" id="pa-crumb">Probability / Chapter</span>
         <div class="p-atlas__reader-actions">
           <button class="p-atlas__smallbtn" type="button" id="pa-reviewed" aria-pressed="false">Mark reviewed</button>
-          <a class="p-atlas__link" id="pa-chapter-link" href="{{ '/notes/soa-p/formula-boxes/' | relative_url }}">Permanent section ↗</a>
         </div>
       </div>
 
@@ -92,7 +90,7 @@ description: "Explore probability concepts through an interactive knowledge grap
       <p class="p-atlas__reader-hint" id="pa-reading-hint">
         Explore the graph or browse the outline to open a topic.
       </p>
-      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"><p>Explore the graph or chapter outline above. If the interactive reader does not appear, you can still access the complete notes through the Classic formula guide.</p></div>
+      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"><p>Select a chapter in the graph or outline to read its complete formulas and worked examples.</p></div>
       <div class="p-atlas__footer-nav" aria-label="Reading navigation">
         <button type="button" id="pa-prev" disabled>← <span id="pa-prev-label">Previous</span></button>
         <button type="button" id="pa-next">Next → <span id="pa-next-label">Next</span></button>
@@ -101,13 +99,14 @@ description: "Explore probability concepts through an interactive knowledge grap
   </div>
 
   <noscript>
-    <p>This interactive atlas requires JavaScript. All notes remain readable in the
-      <a href="{{ '/notes/soa-p/formula-boxes/' | relative_url }}">classic formula guide</a>.
-    </p>
+    <p>The interactive graph requires JavaScript. You can still read all Exam P notes below.</p>
+    <div class="p-notes" id="p-atlas-static-notes">
+      {% include soa-p-guide-sections.html %}
+    </div>
   </noscript>
 </section>
 
-<!-- One shared source for the graph, reading pane and classic formula guide. -->
+<!-- Single source of truth for the Exam P atlas and no-JavaScript reading fallback. -->
 <template id="p-atlas-source">
 {% include soa-p-guide-sections.html %}
 </template>
