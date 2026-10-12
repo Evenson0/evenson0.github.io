@@ -131,6 +131,18 @@
     "Chapter":"Chapitre",
     "Topics":"Notions",
     "Part":"Partie",
+    "Gödel’s Incompleteness Theorems":"Les théorèmes d’incomplétude de Gödel",
+    "The Monty Hall Problem and Christopher Boone":"Le problème de Monty Hall et Christopher Boone",
+    "Richard Hamming, You and Your Research":"Richard Hamming : vous et votre recherche",
+    "Gradient Descent Writes Code Better Than Us":"La descente de gradient écrit du code mieux que nous",
+    "Mathematical Workshop #1":"Atelier mathématique nº 1",
+    "Mathematical Workshop #2":"Atelier mathématique nº 2",
+    "Mathematical Workshop #3":"Atelier mathématique nº 3",
+    "Mathematical Workshop #4":"Atelier mathématique nº 4",
+    "Mathematical Workshop #5":"Atelier mathématique nº 5",
+    "Mathematical Workshop #6":"Atelier mathématique nº 6",
+    "Mathematical Workshop #7":"Atelier mathématique nº 7",
+    "An article in English":"Un article en anglais",
     "Planned contents":"Contenu prévu",
     "Insurance fundamentals":"Fondements de l’assurance",
     "Pricing and ratemaking":"Tarification",
@@ -334,6 +346,22 @@
     document.documentElement.dataset.siteLang=language;
     translateExplicit();
     translateText();
+    showOriginalLanguageNotice();
+  }
+  function showOriginalLanguageNotice() {
+    const path = location.pathname;
+    const articlePage = /^\/(?:posts\/|workshop\/\d+\/?$|texts\/hamming-)/.test(path);
+    const target = document.querySelector(".page__content");
+    if (!articlePage || !target) return;
+    let notice = target.querySelector(".site-translation-notice");
+    if (language==="fr" && !target.querySelector('[data-site-content-lang="fr"]')) {
+      if (!notice) {
+        notice=document.createElement("p");
+        notice.className="site-translation-notice";
+        target.insertBefore(notice,target.firstChild);
+      }
+      notice.textContent="Cette page propose la navigation en français, mais le texte intégral de cet article est encore disponible uniquement en anglais.";
+    } else if (notice)notice.remove();
   }
   function save(next) {
     language=next;
