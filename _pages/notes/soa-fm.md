@@ -1,250 +1,114 @@
 ---
-title: "SOA FM Exam Notes"
+title: "SOA Exam FM Notes"
 permalink: /notes/soa-fm/
 layout: single
-author_profile: true
+author_profile: false
+classes: wide
 mathjax: false
+description: "Explore Exam FM financial mathematics through an interactive knowledge graph, cash-flow formulas, worked examples and derivations."
 ---
 
-<style>
-  .fm-shell {
-    --fm-border: rgba(127,127,127,0.18);
-    --fm-border-strong: rgba(127,127,127,0.26);
-    --fm-bg-1: rgba(127,127,127,0.05);
-    --fm-bg-2: rgba(127,127,127,0.025);
-    --fm-blue: #2563eb;
-    --fm-blue-soft: rgba(37,99,235,0.10);
-    --fm-green: #15803d;
-    --fm-green-soft: rgba(21,128,61,0.10);
-    --fm-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  }
+<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/soa-fm-atlas.css' | relative_url }}">
 
-  .fm-hero {
-    border: 1px solid var(--fm-border);
-    border-radius: 20px;
-    padding: 1.5rem 1.4rem;
-    background: linear-gradient(135deg, var(--fm-bg-1), var(--fm-bg-2));
-    margin-bottom: 1.6rem;
-  }
-
-  .fm-hero h2 {
-    margin: 0 0 0.8rem 0;
-    font-size: 1.6rem;
-  }
-
-  .fm-hero p {
-    margin: 0;
-    line-height: 1.75;
-    font-size: 1.02rem;
-  }
-
-  .fm-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin-top: 1.2rem;
-  }
-
-  .fm-btn {
-    display: inline-block;
-    text-decoration: none !important;
-    padding: 0.72rem 1rem;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 0.95rem;
-    border: 1px solid var(--fm-border);
-    transition: all 0.18s ease;
-  }
-
-  .fm-btn-primary {
-    background: var(--fm-blue-soft);
-    color: var(--fm-blue) !important;
-    border-color: rgba(37,99,235,0.18);
-  }
-
-  .fm-btn-secondary {
-    background: var(--fm-green-soft);
-    color: var(--fm-green) !important;
-    border-color: rgba(21,128,61,0.18);
-  }
-
-  .fm-btn:hover {
-    text-decoration: none !important;
-    transform: translateY(-1px);
-    box-shadow: var(--fm-shadow);
-  }
-
-  .fm-section-title {
-    margin: 2rem 0 0.9rem 0;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-
-  .fm-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    margin-top: 0.8rem;
-  }
-
-  .fm-card {
-    border: 1px solid var(--fm-border);
-    border-radius: 18px;
-    padding: 1.1rem;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(127,127,127,0.03));
-    box-shadow: var(--fm-shadow);
-  }
-
-  .fm-card-number {
-    display: inline-block;
-    font-size: 0.78rem;
-    font-weight: 700;
-    padding: 0.28rem 0.62rem;
-    border-radius: 999px;
-    background: rgba(37,99,235,0.09);
-    color: var(--fm-blue);
-    margin-bottom: 0.7rem;
-  }
-
-  .fm-card h3 {
-    margin: 0 0 0.45rem 0;
-    font-size: 1.06rem;
-    line-height: 1.35;
-  }
-
-  .fm-weight {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--fm-green);
-    margin-bottom: 0.55rem;
-  }
-
-  .fm-card p {
-    margin: 0;
-    line-height: 1.68;
-    font-size: 0.96rem;
-  }
-
-  .fm-note {
-    margin-top: 1.8rem;
-    padding: 1rem 1.1rem;
-    border-left: 3px solid rgba(37,99,235,0.55);
-    background: rgba(37,99,235,0.045);
-    border-radius: 10px;
-    line-height: 1.7;
-    font-size: 0.97rem;
-  }
-
-  .fm-list {
-    margin: 0.6rem 0 0 0;
-    padding-left: 1.2rem;
-  }
-
-  .fm-list li {
-    margin-bottom: 0.35rem;
-  }
-</style>
-
-<div class="fm-shell">
-
-  <div class="fm-hero">
-    <h2>SOA Exam FM</h2>
-    <p>
-      These notes are my personal study notes for the SOA Exam FM. They are designed as a growing
-      reference in financial mathematics, with definitions, formulas, examples, exercises, and
-      problem-solving intuition. The material follows the main structure of the FM syllabus and is
-      supported by a separate practice tool for active preparation.
+<section class="p-atlas p-notes fm-atlas" id="fm-atlas" aria-label="SOA Exam FM Knowledge Atlas">
+  <header class="p-atlas__hero">
+    <p class="p-atlas__eyebrow"><span class="p-atlas__dot" aria-hidden="true"></span> Quantitative Laboratory / Financial Mathematics</p>
+    <h2>Financial math, <span>mapped.</span></h2>
+    <p class="p-atlas__lede">
+      A connected library of Exam FM notes: interest theory, annuities, loans,
+      bonds, and asset-liability management. Explore the graph to connect formulas;
+      switch to the chapter outline for focused reading and derivations.
     </p>
+    <div class="p-atlas__hero-bottom">
+      <div class="p-atlas__metrics" aria-label="Notes statistics">
+        <div class="p-atlas__metric"><strong id="pa-chapter-count">05</strong><small>Chapters</small></div>
+        <div class="p-atlas__metric"><strong id="pa-topic-count">24</strong><small>Formula notes</small></div>
+        <div class="p-atlas__metric"><strong id="pa-reviewed-count">00</strong><small>Reviewed here</small></div>
+      </div>
+      <nav class="p-atlas__links" aria-label="Related Exam FM resources">
+        <a class="p-atlas__link p-atlas__link--primary" href="{{ '/tools/soa-fm-practice/' | relative_url }}">Practice questions ↗</a>
+        <a class="p-atlas__link" id="pa-classic-link" href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}">Classic formula guide ↗</a>
+        <a class="p-atlas__link" href="{{ '/notes/' | relative_url }}">All notes ↗</a>
+        {% assign p_pdf = site.static_files | where: "path", "/assets/pdf/soa-p-notes.pdf" | first %}
+        {% if p_pdf %}
+        <a class="p-atlas__link" href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF notes ↗</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
 
-    <div class="fm-actions">
-      <a href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}"
-         class="fm-btn fm-btn-primary"
-         target="_blank"
-         rel="noopener noreferrer">
-        Open the PDF notes
-      </a>
-
-      <a href="/tools/soa-fm-practice/" class="fm-btn fm-btn-secondary">
-        Open the FM practice tool
-      </a>
-
-      <a href="/notes/soa-fm/formula-boxes/" class="fm-btn fm-btn-primary">
-        Open the Formula Boxes
-      </a>
+  <div class="p-atlas__toolbar">
+    <div class="p-atlas__search-box">
+      <input class="p-atlas__search" id="pa-search" type="search"
+        placeholder="Search topics, definitions, formulas..." autocomplete="off"
+        aria-label="Search all Exam FM notes">
+    </div>
+    <div class="p-atlas__switch" role="group" aria-label="Choose notes navigation">
+      <button id="pa-graph-tab" type="button" aria-pressed="true">◈ Graph</button>
+      <button id="pa-outline-tab" type="button" aria-pressed="false">☷ Outline</button>
     </div>
   </div>
 
-  <div class="fm-section-title">Core Topics</div>
+  <div class="p-atlas__workspace">
+    <aside class="p-atlas__explorer" aria-label="Explore Exam FM topics">
+      <div class="p-atlas__panel-heading">
+        <h3 id="pa-explorer-title">Knowledge graph</h3>
+        <span id="pa-result-count">24 / 24 topics</span>
+      </div>
 
-  <div class="fm-grid">
-    <div class="fm-card">
-      <div class="fm-card-number">Chapter 1</div>
-      <h3>Time Value of Money</h3>
-      <div class="fm-weight">Weight: 5–15%</div>
-      <p>
-        This chapter covers the foundations of financial mathematics: simple and compound interest,
-        accumulation functions, present value, accumulated value, discount factors, nominal and
-        effective rates, force of interest, inflation, real rates, and equations of value.
-      </p>
-    </div>
+      <div id="pa-graph-panel">
+        <div class="p-atlas__graph-stage">
+          <svg class="p-atlas__map" id="pa-map" viewBox="0 0 440 520"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Interactive map of financial mathematics chapters and notes"></svg>
+        </div>
+        <div class="p-atlas__graph-footer">
+          <span id="pa-map-subtitle">Select a chapter to explore its concepts.</span>
+          <button class="p-atlas__back" id="pa-back-to-map" type="button" hidden>← All chapters</button>
+        </div>
+        <div class="p-atlas__legend" id="pa-legend" aria-label="Jump to a chapter"></div>
+      </div>
 
-    <div class="fm-card">
-      <div class="fm-card-number">Chapter 2</div>
-      <h3>Annuities and Non-Contingent Cash Flows</h3>
-      <div class="fm-weight">Weight: 20–30%</div>
-      <p>
-        This part studies level annuities, annuities-immediate, annuities-due, perpetuities,
-        and increasing or decreasing cash-flow patterns.
+      <div id="pa-outline-panel" hidden>
+        <nav class="p-atlas__outline" id="pa-outline" aria-label="Chapter and topic list"></nav>
+      </div>
+      <p class="p-atlas__status" id="pa-status" role="status" aria-live="polite">
+        Select a chapter or note to begin.
       </p>
-    </div>
+    </aside>
 
-    <div class="fm-card">
-      <div class="fm-card-number">Chapter 3</div>
-      <h3>Loans</h3>
-      <div class="fm-weight">Weight: 15–25%</div>
-      <p>
-        Here the emphasis is on loan structure and amortization. Topics include principal,
-        payment schedules, outstanding balance, interest and principal components of each payment,
-        balloon payments, refinancing, and loan valuation formulas.
-      </p>
-    </div>
+    <main class="p-atlas__reader" id="pa-reader" aria-label="Selected Exam FM note" tabindex="-1">
+      <div class="p-atlas__reader-top">
+        <span class="p-atlas__crumb" id="pa-crumb">Probability / Chapter</span>
+        <div class="p-atlas__reader-actions">
+          <button class="p-atlas__smallbtn" type="button" id="pa-reviewed" aria-pressed="false">Mark reviewed</button>
+          <a class="p-atlas__link" id="pa-chapter-link" href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}">Permanent section ↗</a>
+        </div>
+      </div>
 
-    <div class="fm-card">
-      <div class="fm-card-number">Chapter 4</div>
-      <h3>Bonds</h3>
-      <div class="fm-weight">Weight: 15–25%</div>
-      <p>
-        This chapter introduces bond pricing and yield. It includes coupon rates, redemption value,
-        premium and discount amortization, book value, market value, callable bonds,
-        and accumulated value with reinvestment of coupons.
+      <span class="p-atlas__reading-label" id="pa-reader-label">CHAPTER OVERVIEW</span>
+      <h2 class="p-atlas__reader-title" id="pa-reader-title">Select a chapter</h2>
+      <p class="p-atlas__reader-hint" id="pa-reading-hint">
+        Explore the graph or browse the outline to open a topic.
       </p>
-    </div>
-
-    <div class="fm-card">
-      <div class="fm-card-number">Chapter 5</div>
-      <h3>General Cash Flows, Portfolios, and Asset Liability Management</h3>
-      <div class="fm-weight">Weight: 20–30%</div>
-      <p>
-        This final part develops the broader theory of financial cash flows. It includes yield rates,
-        spot and forward rates, yield curves, duration, convexity, matching, immunization,
-        and portfolio construction for asset-liability management.
-      </p>
-    </div>
+      <div class="p-atlas__reading-content" id="pa-reading-content" aria-live="off"></div>
+      <div class="p-atlas__footer-nav" aria-label="Reading navigation">
+        <button type="button" id="pa-prev" disabled>← <span id="pa-prev-label">Previous</span></button>
+        <button type="button" id="pa-next">Next → <span id="pa-next-label">Next</span></button>
+      </div>
+    </main>
   </div>
 
-  <div class="fm-section-title">What these notes aim to provide</div>
+  <noscript>
+    <p>This interactive atlas requires JavaScript. All notes remain readable in the
+      <a href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}">classic formula guide</a>.
+    </p>
+  </noscript>
+</section>
 
-  <ul class="fm-list">
-    <li>Clear definitions and notation</li>
-    <li>Compact formulas and relationships</li>
-    <li>Worked examples with structured solutions</li>
-    <li>Exercises in FM exam style</li>
-    <li>A growing companion resource for systematic preparation</li>
-  </ul>
-
-  <div class="fm-note">
-    <strong>Last updated:</strong> June 7, 2026. For active preparation,
-    you can also use the FM practice tool to work through exercises and reinforce the main concepts.
-  </div>
-
-</div>
+<!-- Shared FM formula cards power both the interactive reader and classic guide. -->
+<template id="fm-atlas-source">
+{% include soa-fm-guide-cards.html %}
+</template>
+<script defer src="{{ '/assets/js/soa-fm-atlas.js' | relative_url }}"></script>
