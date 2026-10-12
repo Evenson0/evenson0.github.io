@@ -211,14 +211,14 @@
       const y=(i+1)*height/(leaves.length+1);
       link(cx,cy,nx,y,selectedId===item.id);
     });
-    center(cx,cy,focused?"TOPICS":"Exam FM",focused?String(leaves.length)+" linked":"5 modules",focused);
+    center(cx,cy,focused?(locale.lang==="fr"?"NOTIONS":"TOPICS"):"Exam FM",focused?String(leaves.length)+(locale.lang==="fr"?" liens":" linked"):"5 modules",focused);
     leaves.forEach((item,i)=>{
       const y=(i+1)*height/(leaves.length+1);
-      const caption=focused?"NOTE "+String(focused.children.indexOf(item)+1).padStart(2,"0"):
-        childrenFor(item,q).length+" NOTES";
+      const caption=focused?(locale.lang==="fr"?"FICHE ":"NOTE ")+String(focused.children.indexOf(item)+1).padStart(2,"0"):
+        childrenFor(item,q).length+" "+(locale.lang==="fr"?"FICHES":"NOTES");
       graphNode(item,nx,y,232,76,caption);
     });
-    if(!leaves.length)label(graph,"No matching topics",300,cy,25);
+    if(!leaves.length)label(graph,locale.t("noMatchGraph","No matching topics"),300,cy,25);
   }
   function renderLegend() {
     const target=get("pa-legend");
@@ -404,8 +404,8 @@
     if(focusId&&!chaptersFor(q).some(ch=>ch.id===focusId))focusId=null;
     renderList();renderGraph();progress();
     get("pa-status").textContent=chaptersFor(q).length
-      ?"Tip: press / to search. Review marks are stored only in this browser."
-      :"No matching topics. Clear search to restore the map.";
+      ?locale.t("tip","Tip: press / to search. Review marks are stored only in this browser.")
+      :locale.t("noResults","No matching topics. Clear search to restore the map.");
   });
   document.addEventListener("keydown",event=>{
     const target=event.target;
