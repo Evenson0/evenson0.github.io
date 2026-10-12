@@ -18,27 +18,35 @@ main:
   #  url: /teaching/
     
   - title: "Portfolio"
+    title_fr: "Portfolio"
     url: /portfolio/
         
   - title: "Blog"
+    title_fr: "Blog"
     url: /blog/
 
   - title: "Mathematical Workshop"
+    title_fr: "Atelier mathématique"
     url: /workshop/
 
   - title: "Notes"
+    title_fr: "Notes"
     url: /notes/
     
   - title: "CV"
+    title_fr: "CV"
     url: /cv/
 
   - title: "List 100"
+    title_fr: "Liste 100"
     url: /list-100/
 
   - title: "Tools"
+    title_fr: "Outils"
     url: /tools/
     
   - title: "Memories"
+    title_fr: "Souvenirs"
     url: /memories/
     
    #- title: "CV"
