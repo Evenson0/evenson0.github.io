@@ -386,7 +386,9 @@ async function loadProblems() {
 
     loadSolvedProgress();
     updateProblemCounter();
-    loadRandomProblem();
+    // Allow chapter notes to link to a specific exercise by its stable JSON id.
+    const requestedId = new URLSearchParams(window.location.search).get('id');
+    loadRandomProblem(requestedId);
   } catch (error) {
     document.getElementById('problemTitle').innerText = 'Error';
     document.getElementById('problemStatement').innerText = 'Unable to load the problems file.';
@@ -408,10 +410,15 @@ function getRandomProblemIndexExcludingCurrent() {
   return randomIndex;
 }
 
-function loadRandomProblem() {
+function loadRandomProblem(requestedId = null) {
   if (!problems.length) return;
 
-  const randomIndex = getRandomProblemIndexExcludingCurrent();
+  const exactIndex = requestedId !== null
+    ? problems.findIndex(problem => String(problem.id) === String(requestedId))
+    : -1;
+  const randomIndex = exactIndex >= 0
+    ? exactIndex
+    : getRandomProblemIndexExcludingCurrent();
   currentProblem = problems[randomIndex];
 
   document.getElementById('problemTitle').innerText = currentProblem.title;
