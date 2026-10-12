@@ -145,7 +145,7 @@ author_profile: true
         annuities, loans, bonds, duration, and immunization.
       </p>
       <div class="note-links">
-        <a class="note-btn" href="{{ '/notes/soa-fm/' | relative_url }}?v=atlas-20261012-fixed">Explore notes atlas</a>
+        <a class="note-btn" href="{{ '/notes/soa-fm/' | relative_url }}?v=atlas-fm-unified-20261012">Explore notes atlas</a>
         <a class="note-btn"
            href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}"
            target="_blank"
