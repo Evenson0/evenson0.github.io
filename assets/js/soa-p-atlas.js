@@ -46,7 +46,7 @@
     return chapter;
   });
   if(!chapters.length) {
-    get("pa-status").textContent="Notes could not be loaded. Please use the classic Formula Boxes page.";
+    get("pa-status").textContent="The notes could not be initialized. Please refresh the page."
     return;
   }
   const notes=chapters.flatMap(ch=>[ch].concat(ch.children));
@@ -227,7 +227,7 @@
     script.async=true;
     script.addEventListener("load",math,{once:true});
     script.addEventListener("error",()=>{
-      get("pa-status").textContent="The math renderer could not load. The classic Formula Boxes page is also available.";
+      get("pa-status").textContent="The mathematical notation could not be displayed. Please refresh to retry."
     });
     document.head.append(script);
   }
@@ -255,7 +255,6 @@
     get("pa-prev").disabled=!prev;get("pa-next").disabled=!next;
     get("pa-prev-label").textContent=prev?prev.short:"Beginning";
     get("pa-next-label").textContent=next?next.short:"End of notes";
-    get("pa-chapter-link").href=get("pa-classic-link").href+"#"+note.id;
     math();
   }
   function choose(id,drill) {
