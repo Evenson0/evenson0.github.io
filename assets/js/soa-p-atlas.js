@@ -81,13 +81,13 @@
     get("pa-topic-count").textContent=String(count).padStart(2,"0");
     get("pa-reviewed-count").textContent=String([...reviewed].filter(id=>byId.get(id)?.type==="article").length).padStart(2,"0");
     const q=term(), visible=chaptersFor(q).reduce((sum,ch)=>sum+childrenFor(ch,q).length,0);
-    get("pa-result-count").textContent=visible+" / "+count+" topics";
+    get("pa-result-count").textContent=visible+" / "+count+" "+locale.t("topics","topics");
   }
   function renderList() {
     list.replaceChildren();
     const q=term(), visible=chaptersFor(q);
     if(!visible.length) {
-      list.append(element("p","p-atlas__empty","No matching note. Try another keyword."));
+      list.append(element("p","p-atlas__empty",locale.t("noResults","No matching note. Try another keyword.")));
       return;
     }
     visible.forEach(ch=>{
@@ -95,13 +95,13 @@
       wrap.style.setProperty("--group-color","var(--pa-"+(ch.tone==="blue"?"accent":ch.tone)+")");
       const heading=element("div","p-atlas__group-label");
       heading.append(element("span","p-atlas__group-bullet"));
-      const b=makeButton(ch.title,"p-atlas__chapter-btn",()=>choose(ch.id,true));
+      const b=makeButton(locale.title(ch),"p-atlas__chapter-btn",()=>choose(ch.id,true));
       b.setAttribute("aria-current",String(selectedId===ch.id));
       heading.append(b,element("span","p-atlas__group-count",String(childrenFor(ch,q).length).padStart(2,"0")));
       wrap.append(heading);
       const items=element("div","p-atlas__items");
       childrenFor(ch,q).forEach(note=>{
-        const item=makeButton(note.title,"p-atlas__item-btn",()=>choose(note.id,true));
+        const item=makeButton(locale.title(note),"p-atlas__item-btn",()=>choose(note.id,true));
         item.setAttribute("aria-current",String(note.id===selectedId));
         if(reviewed.has(note.id))item.append(element("span","done","✓"));
         items.append(item);
@@ -135,12 +135,12 @@
   }
   function graphNode(note,x,y,width,height,annotation) {
     const g=s("g",{"class":"map-node"+(selectedId===note.id?" is-active":""),
-      "data-tone":note.tone,role:"button",tabindex:0,"aria-label":"Open "+note.title},graph);
+      "data-tone":note.tone,role:"button",tabindex:0,"aria-label":"Open "+locale.title(note)},graph);
     s("rect",{x:x-width/2,y:y-height/2,width,height,rx:15},g);
     s("circle",{cx:x-width/2+17,cy:y-height/2+16,r:4,"class":"map-node-dot"},g);
-    label(g,note.short,x,y-3,25);
+    label(g,locale.short(note),x,y-3,25);
     s("text",{x,y:y+height/2-12,"class":"map-node-meta","text-anchor":"middle"},g).textContent=annotation;
-    s("title",{},g).textContent=note.title;
+    s("title",{},g).textContent=locale.title(note);
     const click=()=>choose(note.id,true);
     g.addEventListener("click",click);
     g.addEventListener("keydown",e=>{
@@ -151,7 +151,7 @@
     const g=s("g",{},graph);
     if(note) {
       g.setAttribute("role","button");g.setAttribute("tabindex","0");
-      g.setAttribute("aria-label","Open "+note.title);
+      g.setAttribute("aria-label","Open "+locale.title(note));
       g.style.cursor="pointer";
       g.addEventListener("click",()=>choose(note.id,true));
       g.addEventListener("keydown",e=>{
@@ -171,7 +171,7 @@
     const cx=84, cy=260, nx=306;
     get("pa-back-to-map").hidden=!focusId;
     if(!focusId||!byId.has(focusId)) {
-      get("pa-map-subtitle").textContent="Select a chapter to explore its concepts.";
+      get("pa-map-subtitle").textContent=locale.t("chooseChapter","Select a chapter to explore its concepts.");
       visible.forEach((ch,i)=>{
         const y=(i+1)*520/(visible.length+1);
         link(cx,cy,nx,y,selectedId===ch.id);
@@ -179,12 +179,12 @@
       center(cx,cy,"Exam P",chapters.length+" modules");
       visible.forEach((ch,i)=>{
         const y=(i+1)*520/(visible.length+1);
-        graphNode(ch,nx,y,232,76,childrenFor(ch,q).length+" NOTES");
+        graphNode(ch,nx,y,232,76,childrenFor(ch,q).length+" "+(locale.lang==="fr"?"FICHES":"NOTES"));
       });
       if(!visible.length)label(graph,"No matching topics",305,260,25);
     } else {
       const ch=byId.get(focusId), children=childrenFor(ch,q);
-      get("pa-map-subtitle").textContent=ch.title;
+      get("pa-map-subtitle").textContent=locale.title(ch);
       children.forEach((note,i)=>{
         const y=(i+1)*520/(children.length+1);
         link(cx,cy,nx,y,selectedId===note.id);
@@ -201,7 +201,7 @@
     const target=get("pa-legend");
     target.replaceChildren();
     chapters.forEach(ch=>{
-      const b=makeButton(ch.short,"",()=>choose(ch.id,true));
+      const b=makeButton(locale.short(ch),"",()=>choose(ch.id,true));
       b.style.setProperty("--legend-color","var(--pa-"+(ch.tone==="blue"?"accent":ch.tone)+")");
       b.setAttribute("aria-current",String(selectedId===ch.id||focusId===ch.id));
       target.append(b);
@@ -235,9 +235,9 @@
   function renderReader() {
     const note=byId.get(selectedId);
     const ch=note.type==="chapter"?note:byId.get(note.chapterId);
-    get("pa-crumb").textContent=ch.category+" / "+(note.type==="chapter"?"Chapter":"Formula note");
-    get("pa-reader-label").textContent=note.type==="chapter"?"CHAPTER OVERVIEW":"RESEARCH NOTE";
-    get("pa-reader-title").textContent=note.title;
+    get("pa-crumb").textContent=locale.category(ch.category)+" / "+(note.type==="chapter"?locale.t("chapter","Chapter"):locale.t("formulaNote","Formula note"));
+    get("pa-reader-label").textContent=note.type==="chapter"?locale.t("chapterOverview","CHAPTER OVERVIEW"):locale.t("researchNote","RESEARCH NOTE");
+    get("pa-reader-title").textContent=locale.title(note);
     get("pa-reading-hint").textContent=note.type==="chapter"
       ?"Complete chapter · Select a smaller node for focused reading."
       :"From "+ch.title+" · Formulas, derivations and worked examples.";
@@ -249,13 +249,13 @@
     if(heading)heading.remove();
     locale.lesson(note,ch,copy,content,choose,math);
     const mark=get("pa-reviewed");
-    mark.textContent=reviewed.has(note.id)?"✓ Reviewed":"Mark reviewed";
+    mark.textContent=reviewed.has(note.id)?locale.t("isReviewed","✓ Reviewed"):locale.t("markReviewed","Mark reviewed");
     mark.classList.toggle("is-reviewed",reviewed.has(note.id));
     mark.setAttribute("aria-pressed",String(reviewed.has(note.id)));
     const index=notes.findIndex(n=>n.id===note.id),prev=notes[index-1],next=notes[index+1];
     get("pa-prev").disabled=!prev;get("pa-next").disabled=!next;
-    get("pa-prev-label").textContent=prev?prev.short:"Beginning";
-    get("pa-next-label").textContent=next?next.short:"End of notes";
+    get("pa-prev-label").textContent=prev?locale.short(prev):locale.t("start","Beginning");
+    get("pa-next-label").textContent=next?locale.short(next):locale.t("end","End of notes");
     math();
   }
   function choose(id,drill) {
@@ -282,7 +282,7 @@
     get("pa-outline-panel").hidden=next!=="outline";
     get("pa-graph-tab").setAttribute("aria-pressed",String(next==="graph"));
     get("pa-outline-tab").setAttribute("aria-pressed",String(next==="outline"));
-    get("pa-explorer-title").textContent=next==="graph"?"Knowledge graph":"Chapter explorer";
+    get("pa-explorer-title").textContent=next==="graph"?locale.t("graphTitle","Knowledge graph"):locale.t("outlineTitle","Chapter explorer");
     if(next==="graph")renderGraph();else renderList();
   }
   get("pa-graph-tab").addEventListener("click",()=>setMode("graph"));
@@ -327,5 +327,5 @@
   }
   if(byId.has(initial))choose(initial,true);
   else {renderReader();renderGraph();renderList();}
-  get("pa-status").textContent="Tip: press / to search. Review marks are stored only in this browser.";
+  get("pa-status").textContent=locale.t("tip","Tip: press / to search. Review marks are stored only in this browser.");
 })();
