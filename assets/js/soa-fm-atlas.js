@@ -358,7 +358,6 @@
     get("pa-prev").disabled=!prev;get("pa-next").disabled=!next;
     get("pa-prev-label").textContent=prev?locale.short(prev):locale.t("start","Beginning");
     get("pa-next-label").textContent=next?locale.short(next):locale.t("end","End of notes");
-    get("pa-chapter-link").href=get("pa-classic-link").href+(note.type==="article"?"#"+note.id:"");
     math();
     renderRelated();
   }
