@@ -8,33 +8,33 @@ mathjax: false
 description: "Explore Exam FM financial mathematics through an interactive knowledge graph, cash-flow formulas, worked examples and derivations."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}?v=atlas-20261012-fixed">
-<link rel="stylesheet" href="{{ '/assets/css/soa-fm-atlas.css' | relative_url }}?v=atlas-20261012-fixed">
+<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}?v=atlas-bilingual-20261012">
+<link rel="stylesheet" href="{{ '/assets/css/soa-fm-atlas.css' | relative_url }}?v=atlas-bilingual-20261012">
 
 <section class="p-atlas p-notes fm-atlas" id="fm-atlas" aria-label="SOA Exam FM Knowledge Atlas"
   data-practice-url="{{ '/assets/data/soa-fm-problems.json' | relative_url }}"
   data-practice-base-url="{{ '/tools/soa-fm-practice/' | relative_url }}">
   <header class="p-atlas__hero">
-    <p class="p-atlas__eyebrow"><span class="p-atlas__dot" aria-hidden="true"></span> Quantitative Laboratory / Financial Mathematics</p>
-    <h2>Financial math, <span>mapped.</span></h2>
-    <p class="p-atlas__lede">
+    <p class="p-atlas__eyebrow" data-i18n="eyebrowFM"><span class="p-atlas__dot" aria-hidden="true"></span> Quantitative Laboratory / Financial Mathematics</p>
+    <h2 data-atlas-hero="FM">Financial math, <span>mapped.</span></h2>
+    <p class="p-atlas__lede" data-i18n="ledeFM">
       A connected library of Exam FM notes: interest theory, annuities, loans,
       bonds, and asset-liability management. Explore the graph to connect formulas;
       switch to the chapter outline for focused reading and derivations.
     </p>
     <div class="p-atlas__hero-bottom">
       <div class="p-atlas__metrics" aria-label="Notes statistics">
-        <div class="p-atlas__metric"><strong id="pa-chapter-count">05</strong><small>Chapters</small></div>
-        <div class="p-atlas__metric"><strong id="pa-topic-count">24</strong><small>Formula notes</small></div>
-        <div class="p-atlas__metric"><strong id="pa-reviewed-count">00</strong><small>Reviewed here</small></div>
+        <div class="p-atlas__metric"><strong id="pa-chapter-count">05</strong><small data-i18n="chapters">Chapters</small></div>
+        <div class="p-atlas__metric"><strong id="pa-topic-count">24</strong><small data-i18n="notes">Formula notes</small></div>
+        <div class="p-atlas__metric"><strong id="pa-reviewed-count">00</strong><small data-i18n="reviewed">Reviewed here</small></div>
       </div>
       <nav class="p-atlas__links" aria-label="Related Exam FM resources">
-        <a class="p-atlas__link p-atlas__link--primary" href="{{ '/tools/soa-fm-practice/' | relative_url }}">Practice questions ↗</a>
-        <a class="p-atlas__link" id="pa-classic-link" href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}">Classic formula guide ↗</a>
-        <a class="p-atlas__link" href="{{ '/notes/' | relative_url }}">All notes ↗</a>
-        {% assign p_pdf = site.static_files | where: "path", "/assets/pdf/soa-p-notes.pdf" | first %}
+        <a class="p-atlas__link p-atlas__link--primary" href="{{ '/tools/soa-fm-practice/' | relative_url }}" data-i18n="practice">Practice questions ↗</a>
+        <a class="p-atlas__link" id="pa-classic-link" href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}" data-i18n="classic">Classic formula guide ↗</a>
+        <a class="p-atlas__link" href="{{ '/notes/' | relative_url }}" data-i18n="allNotes">All notes ↗</a>
+        {% assign p_pdf = site.static_files | where: "path", "/assets/pdf/soa-fm-notes.pdf" | first %}
         {% if p_pdf %}
-        <a class="p-atlas__link" href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF notes ↗</a>
+        <a class="p-atlas__link" href="{{ '/assets/pdf/soa-fm-notes.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" data-i18n="pdf">PDF notes ↗</a>
         {% endif %}
       </nav>
     </div>
@@ -42,20 +42,24 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
 
   <div class="p-atlas__toolbar">
     <div class="p-atlas__search-box">
-      <input class="p-atlas__search" id="pa-search" type="search"
+      <input class="p-atlas__search" id="pa-search" data-i18n-placeholder="search" type="search"
         placeholder="Search topics, definitions, formulas..." autocomplete="off"
         aria-label="Search all Exam FM notes">
     </div>
+    <div class="p-atlas__switch p-atlas__languages" role="group" aria-label="Language / Langue">
+      <button id="pa-lang-fr" type="button" lang="fr" aria-pressed="false" aria-label="Français">FR</button>
+      <button id="pa-lang-en" type="button" lang="en" aria-pressed="true" aria-label="English">EN</button>
+    </div>
     <div class="p-atlas__switch" role="group" aria-label="Choose notes navigation">
-      <button id="pa-graph-tab" type="button" aria-pressed="true">◈ Graph</button>
-      <button id="pa-outline-tab" type="button" aria-pressed="false">☷ Outline</button>
+      <button id="pa-graph-tab" data-i18n="graphTab" type="button" aria-pressed="true">◈ Graph</button>
+      <button id="pa-outline-tab" data-i18n="outlineTab" type="button" aria-pressed="false">☷ Outline</button>
     </div>
   </div>
 
   <div class="p-atlas__workspace">
     <aside class="p-atlas__explorer" aria-label="Explore Exam FM topics">
       <div class="p-atlas__panel-heading">
-        <h3 id="pa-explorer-title">Knowledge graph</h3>
+        <h3 id="pa-explorer-title" data-i18n="graphTitle">Knowledge graph</h3>
         <span id="pa-result-count">24 / 24 topics</span>
       </div>
 
@@ -67,7 +71,7 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
         </div>
         <div class="p-atlas__graph-footer">
           <span id="pa-map-subtitle">Select a chapter to explore its concepts.</span>
-          <button class="p-atlas__back" id="pa-back-to-map" type="button" hidden>← All chapters</button>
+          <button class="p-atlas__back" id="pa-back-to-map" data-i18n="returnGraph" type="button" hidden>← All chapters</button>
         </div>
         <div class="p-atlas__legend" id="pa-legend" aria-label="Jump to a chapter"></div>
       </div>
@@ -84,7 +88,7 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
       <div class="p-atlas__reader-top">
         <span class="p-atlas__crumb" id="pa-crumb">Probability / Chapter</span>
         <div class="p-atlas__reader-actions">
-          <button class="p-atlas__smallbtn" type="button" id="pa-reviewed" aria-pressed="false">Mark reviewed</button>
+          <button class="p-atlas__smallbtn" type="button" id="pa-reviewed" aria-pressed="false" data-i18n="markReviewed">Mark reviewed</button>
           <a class="p-atlas__link" id="pa-chapter-link" href="{{ '/notes/soa-fm/formula-boxes/' | relative_url }}">Permanent section ↗</a>
         </div>
       </div>
@@ -98,10 +102,10 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
       <section class="fm-atlas__related" aria-labelledby="fm-related-heading">
         <div class="fm-atlas__related-heading">
           <div>
-            <p class="p-atlas__reading-label">FROM THEORY TO PRACTICE</p>
-            <h3 id="fm-related-heading">Related FM exercises</h3>
+            <p class="p-atlas__reading-label" data-i18n="theoryPractice">FROM THEORY TO PRACTICE</p>
+            <h3 id="fm-related-heading" data-i18n="related">Related FM exercises</h3>
           </div>
-          <a class="p-atlas__smallbtn" href="{{ '/tools/soa-fm-practice/' | relative_url }}">All exercises ↗</a>
+          <a class="p-atlas__smallbtn" href="{{ '/tools/soa-fm-practice/' | relative_url }}" data-i18n="allExercises">All exercises ↗</a>
         </div>
         <div id="fm-related-content" aria-live="polite">Finding related exercises...</div>
       </section>
@@ -123,4 +127,5 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
 <template id="fm-atlas-source">
 {% include soa-fm-guide-cards.html %}
 </template>
-<script defer src="{{ '/assets/js/soa-fm-atlas.js' | relative_url }}?v=atlas-20261012-fixed"></script>
+<script defer src="{{ '/assets/js/soa-atlas-language.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
+<script defer src="{{ '/assets/js/soa-fm-atlas.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
