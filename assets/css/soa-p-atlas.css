@@ -90,7 +90,7 @@ html[data-theme="dark"] .p-atlas__link--primary,html[data-theme="dark"] .p-atlas
 .p-atlas__panel-heading h3 { font:750 .98rem Inter,system-ui,sans-serif;letter-spacing:-.015em;margin:0;color:var(--pa-ink); }
 .p-atlas__panel-heading span { font:700 .72rem "JetBrains Mono",ui-monospace,monospace;color:var(--pa-muted); }
 .p-atlas__graph-stage { margin-top:1rem;border:1px solid var(--pa-line);border-radius:16px;overflow:hidden;background-color:var(--pa-surface-soft);background-image:radial-gradient(var(--pa-line) .75px,transparent .75px);background-size:20px 20px; }
-.p-atlas__map { display:block;width:100%;height:auto;aspect-ratio:720/520; }
+.p-atlas__map { display:block;width:100%;height:auto;aspect-ratio:440/520; }
 .p-atlas__map .map-link { stroke:var(--pa-line);stroke-width:2;fill:none; }
 .p-atlas__map .map-link--active { stroke:var(--pa-accent);stroke-width:2.4; }
 .p-atlas__map .map-center { fill:var(--pa-surface);stroke:var(--pa-accent);stroke-width:2.5; }
