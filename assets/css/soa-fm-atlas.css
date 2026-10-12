@@ -1,0 +1,335 @@
+/* Original FM formula presentation, plus visual integration with Notes Atlas. */
+
+  .fm-shell {
+    --fm-border: rgba(127,127,127,0.18);
+    --fm-bg-1: rgba(127,127,127,0.05);
+    --fm-bg-2: rgba(127,127,127,0.025);
+    --fm-blue: #2563eb;
+    --fm-green: #15803d;
+    --fm-green-soft: rgba(21,128,61,0.10);
+    --fm-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+
+  .fm-hero {
+    border: 1px solid var(--fm-border);
+    border-radius: 20px;
+    padding: 1.5rem 1.4rem;
+    background: linear-gradient(135deg, var(--fm-bg-1), var(--fm-bg-2));
+    margin-bottom: 1.6rem;
+  }
+
+  .fm-hero h2 {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.6rem;
+  }
+
+  .fm-hero p {
+    margin: 0;
+    line-height: 1.75;
+    font-size: 1.02rem;
+  }
+
+  .fm-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+  }
+
+  .fm-btn {
+    display: inline-block;
+    text-decoration: none !important;
+    padding: 0.72rem 1rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: 1px solid var(--fm-border);
+    transition: all 0.18s ease;
+  }
+
+  .fm-btn-secondary {
+    background: var(--fm-green-soft);
+    color: var(--fm-green) !important;
+    border-color: rgba(21,128,61,0.18);
+  }
+
+  .fm-proof-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 0.9rem;
+  }
+
+  .fm-proof-card {
+    border: 1px solid var(--fm-border);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(127,127,127,0.045), rgba(127,127,127,0.02));
+    box-shadow: var(--fm-shadow);
+    overflow: hidden;
+  }
+
+  .fm-card-summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 1.05rem 1.1rem;
+    user-select: none;
+  }
+
+  .fm-card-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .fm-card-summary::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 0.55rem;
+    color: var(--fm-blue);
+    font-weight: 900;
+    transition: transform 0.18s ease;
+  }
+
+  .fm-card-toggle[open] > .fm-card-summary::before {
+    transform: rotate(90deg);
+  }
+
+  .fm-card-summary h3 {
+    display: inline;
+    margin: 0;
+    font-size: 1.02rem;
+  }
+
+  .fm-card-content {
+    padding: 0 1.1rem 1.1rem 1.1rem;
+    border-top: 1px solid var(--fm-border);
+  }
+
+  .fm-card-content p {
+    margin: 0.45rem 0;
+    line-height: 1.68;
+  }
+
+  .fm-proof-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.22rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(37,99,235,0.09);
+    color: var(--fm-blue);
+    margin-right: 0.55rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .fm-proof-note {
+    margin-top: 0.75rem;
+    padding: 0.8rem 0.9rem;
+    border-left: 3px solid rgba(21,128,61,0.55);
+    background: rgba(21,128,61,0.055);
+    border-radius: 10px;
+    line-height: 1.65;
+    font-size: 0.95rem;
+  }
+
+  .fm-formula-row {
+    margin: 0.75rem 0;
+    padding: 0.75rem 0.85rem;
+    border-radius: 12px;
+    background: rgba(127,127,127,0.045);
+    line-height: 1.65;
+  }
+
+  .fm-formula-row strong {
+    display: inline-block;
+    min-width: 5.8rem;
+  }
+
+  .fm-toggle {
+    margin-top: 0.9rem;
+    border: 1px solid var(--fm-border);
+    border-radius: 14px;
+    background: rgba(127,127,127,0.035);
+    overflow: hidden;
+  }
+
+  .fm-toggle summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 0.85rem 0.95rem;
+    font-weight: 800;
+    color: var(--fm-blue);
+    user-select: none;
+  }
+
+  .fm-toggle summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .fm-toggle summary::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 0.45rem;
+    transition: transform 0.18s ease;
+  }
+
+  .fm-toggle[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .fm-toggle-content {
+    padding: 0 0.95rem 0.95rem 0.95rem;
+    border-top: 1px solid var(--fm-border);
+  }
+
+  .fm-table-wrap {
+    overflow-x: auto;
+    margin-top: 0.9rem;
+  }
+
+  .fm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+
+  .fm-table th,
+  .fm-table td {
+    border: 1px solid var(--fm-border);
+    padding: 0.55rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .fm-table th {
+    background: rgba(37,99,235,0.08);
+    font-weight: 800;
+  }
+
+  mjx-container {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 0;
+  }
+
+  @media (max-width: 600px) {
+    .fm-hero {
+      padding: 1.2rem 1rem;
+    }
+
+    .fm-card-summary {
+      padding: 1rem 0.9rem;
+    }
+
+    .fm-card-content {
+      padding: 0 0.9rem 1rem 0.9rem;
+    }
+
+    .fm-formula-row strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      min-width: 0;
+    }
+  }
+
+
+/* FM atlas overrides. Inherits visual tokens and layout from SOA P atlas. */
+.p-atlas.fm-atlas {
+  --fm-border:var(--pa-line);
+  --fm-bg-1:var(--pa-surface-soft);
+  --fm-bg-2:var(--pa-surface);
+  --fm-blue:var(--pa-accent);
+  --fm-green:var(--pa-green);
+  --fm-green-soft:var(--pa-surface-soft);
+  --fm-shadow:none;
+}
+.p-atlas.fm-atlas .p-atlas__reader {
+  scroll-margin-top:1.2rem;
+}
+.p-atlas.fm-atlas .fm-card-content {
+  border-top:0;
+  padding:0;
+}
+.p-atlas.fm-atlas .fm-card-content p {
+  line-height:1.85;
+  margin:.85rem 0;
+  max-width:78ch;
+}
+.p-atlas.fm-atlas .fm-formula-row {
+  padding:.9rem 1rem;
+  background:var(--pa-accent-soft);
+  border:1px solid var(--pa-line);
+  border-radius:12px;
+  overflow-x:auto;
+}
+.p-atlas.fm-atlas .fm-formula-row mjx-container[display="true"] {
+  margin:.3rem 0;
+}
+.p-atlas.fm-atlas .fm-toggle {
+  background:var(--pa-surface-soft);
+  border-color:var(--pa-line);
+  box-shadow:none;
+  border-radius:12px;
+}
+.p-atlas.fm-atlas .fm-toggle summary {
+  color:var(--pa-accent);
+  font-weight:700;
+}
+.p-atlas.fm-atlas .fm-proof-note {
+  border-left-color:var(--pa-green);
+  background:var(--pa-surface-soft);
+  border-radius:10px;
+  padding:.95rem 1.05rem;
+}
+.p-atlas.fm-atlas .fm-table th,
+.p-atlas.fm-atlas .fm-table td {
+  border-color:var(--pa-line);
+  color:var(--pa-ink);
+  padding:.65rem;
+}
+.p-atlas.fm-atlas .fm-table th {
+  background:var(--pa-accent-soft);
+}
+.p-atlas.fm-atlas .fm-proof-label {
+  background:var(--pa-accent-soft);
+  color:var(--pa-accent);
+}
+.p-atlas.fm-atlas .fm-atlas__overview > p {
+  color:var(--pa-muted);
+  line-height:1.8;
+}
+.p-atlas.fm-atlas .fm-atlas__overview-list {
+  display:grid;gap:.6rem;list-style:none;padding:0;margin:1.2rem 0;
+}
+.p-atlas.fm-atlas .fm-atlas__overview-list a {
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;background:var(--pa-surface-soft);
+  border:1px solid var(--pa-line);border-radius:11px;
+  padding:.7rem .9rem;text-decoration:none!important;
+  font-size:.88rem;font-weight:650;color:var(--pa-ink);
+}
+.p-atlas.fm-atlas .fm-atlas__overview-list a:hover {
+  border-color:var(--pa-accent);color:var(--pa-accent);
+}
+.p-atlas.fm-atlas .fm-atlas__overview-list small {
+  font-family:"JetBrains Mono",monospace;
+  color:var(--pa-muted);font-size:.7rem;white-space:nowrap;
+}
+.p-atlas.fm-atlas .fm-atlas__callout {
+  padding:1rem 1.15rem;border-radius:12px;
+  border:1px solid var(--pa-line);background:var(--pa-accent-soft);
+  font-size:.87rem;color:var(--pa-muted);
+}
+.p-atlas.fm-atlas .p-atlas__map {
+  width:100%;height:auto;
+}
+@media(max-width:620px) {
+  .p-atlas.fm-atlas .fm-formula-row {padding:.6rem;}
+  .p-atlas.fm-atlas .fm-atlas__overview-list a {align-items:flex-start;}
+}
