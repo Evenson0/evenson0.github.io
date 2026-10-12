@@ -95,8 +95,8 @@
   let mode=window.matchMedia("(max-width:720px)").matches?"outline":"graph";
   const normalize=value=>String(value||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
   const term=()=>normalize(search.value.trim());
-  const chapterMatches=(ch,q)=>!q||normalize(ch.title+" "+ch.short+" "+ch.category).includes(q);
-  const noteMatches=(note,q)=>!q||normalize(note.title+" "+note.short+" "+note.source.textContent).includes(q);
+  const chapterMatches=(ch,q)=>!q||normalize(ch.title+" "+ch.short+" "+ch.category+" "+(window.SOA_ATLAS_LANGUAGE.fr["fm"][ch.id]?.title||"")+" "+(window.SOA_ATLAS_LANGUAGE.fr["fm"][ch.id]?.intro||"")).includes(q);
+  const noteMatches=(note,q)=>!q||normalize(note.title+" "+note.short+" "+note.source.textContent+" "+(window.SOA_ATLAS_LANGUAGE.fr["fm"][note.id]?.title||"")+" "+(window.SOA_ATLAS_LANGUAGE.fr["fm"][note.id]?.intro||"")).includes(q);
   const childrenFor=(ch,q)=>ch.children.filter(note=>chapterMatches(ch,q)||noteMatches(note,q));
   const chaptersFor=q=>chapters.filter(ch=>chapterMatches(ch,q)||childrenFor(ch,q).length);
   function element(tag,cls,label) {
@@ -342,9 +342,7 @@
       try{window.MathJax.typesetClear([content,heading]);}catch(_){}
     }
     heading.textContent=locale.title(note);
-    get("pa-reading-hint").textContent=note.type==="chapter"?
-      "Browse this chapter or select a node to open an individual proof.":
-      "From "+ch.title+" · Formula, explanation and original derivations.";
+    get("pa-reading-hint").textContent=locale.lang==="fr"?(note.type==="chapter"?locale.t("chapterHint","Chapter overview."):locale.t("noteHint","Original explanation below.")):(note.type==="chapter"?"Browse this chapter or select a node to open an individual proof.":"From "+ch.title+" · Formula, explanation and original derivations.");
     if(note.type==="chapter"){
       content.replaceChildren(note.source.cloneNode(true));
     } else {
