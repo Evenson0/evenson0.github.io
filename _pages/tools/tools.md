@@ -376,7 +376,7 @@ tool_theme: atlas
       </div>
     </a>
 
-    <a href="/tools/chain-ladder/" class="lab-card-link">
+    <a href="{{ '/tools/chain-ladder/' | relative_url }}?v=lab-20261012-2" class="lab-card-link">
       <div class="lab-card">
         <h3>Chain Ladder Lab</h3>
         <p class="lab-card-desc">
@@ -432,7 +432,7 @@ tool_theme: atlas
         </p>
       </div>
     </a>
-    <a href="/tools/portfolio-lab/" class="lab-card-link">
+    <a href="{{ '/tools/portfolio-lab/' | relative_url }}?v=lab-20261012-2" class="lab-card-link">
       <div class="lab-card">
         <h3>Portfolio Lab</h3>
         <p class="lab-card-desc">
