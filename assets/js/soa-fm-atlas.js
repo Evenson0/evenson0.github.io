@@ -290,7 +290,7 @@
     if(!target)return;
     target.replaceChildren();
     if(!fmProblems){
-      target.append(element("p","fm-atlas__related-intro","Loading the FM practice bank..."));
+      target.append(element("p","fm-atlas__related-intro",locale.t("loadingProblems","Loading the FM practice bank...")));
       return;
     }
     const note=byId.get(selectedId);
@@ -301,17 +301,17 @@
       return rules.some(rule=>topic.includes(rule));
     });
     if(!candidates.length){
-      target.append(element("p","fm-atlas__related-intro","No exercise is currently tagged for this concept. You can still explore all FM questions through the practice tool."));
+      target.append(element("p","fm-atlas__related-intro",locale.t("noRelated","No exercise is currently tagged for this concept. You can still explore all FM questions through the practice tool.")));
       return;
     }
     const shown=candidates.slice(0,note.type==="chapter"?8:6);
     target.append(element("p","fm-atlas__related-intro",
-      String(candidates.length)+" tagged exercises in your bank · Select an ID to open that question directly."));
+      String(candidates.length)+" "+locale.t("practiceCount","tagged exercises in your bank · Select an ID to open that question directly.")));
     const ul=element("ul","fm-atlas__related-list");
     shown.forEach(problem=>{
       const li=document.createElement("li"), a=document.createElement("a");
       a.href=root.dataset.practiceBaseUrl+"?id="+encodeURIComponent(String(problem.id));
-      const number=element("strong","",String(problem.id).padStart(3,"0")+" / PRACTICE");
+      const number=element("strong","",String(problem.id).padStart(3,"0")+" / "+locale.t("practiceTag","PRACTICE"));
       const topic=element("small","",String(problem.topic||"Financial mathematics"));
       a.append(number,topic);li.append(a);ul.append(li);
     });
