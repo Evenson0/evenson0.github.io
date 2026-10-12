@@ -278,15 +278,19 @@ author_profile: true
 
 </style>
 
-<div class="cl-shell">
+<div class="cl-shell" id="cl-app">
+  <div class="cl-language" role="group" aria-label="Language / Langue">
+    <button type="button" data-cl-lang="fr" aria-pressed="false">FR</button>
+    <button type="button" data-cl-lang="en" aria-pressed="true">EN</button>
+  </div>
 
   <h1 class="cl-section-title">Chain Ladder Lab</h1>
 
-  <p class="cl-lead">
+  <p class="cl-lead" data-cl-i18n="lead">
     Estimate unpaid claim liabilities with the chain-ladder method — the workhorse
     of non-life loss reserving.
   </p>
-  <p class="cl-sublead">
+  <p class="cl-sublead" data-cl-i18n="sublead">
     Edit the cumulative paid-loss triangle below (values in $000). Age-to-age
     factors are computed automatically as volume-weighted averages; override the
     selected factors or the tail factor to see how the reserve responds.
@@ -294,7 +298,7 @@ author_profile: true
 
   <hr class="cl-rule">
 
-  <h2 class="cl-section-title">1 · Loss triangle</h2>
+  <h2 class="cl-section-title" data-cl-i18n="triangleTitle">1 · Loss triangle</h2>
   <p class="cl-section-desc">
     Cumulative paid losses by accident year (rows) and development age in months
     (columns). Cells beyond the latest diagonal are not yet observed.
@@ -305,15 +309,15 @@ author_profile: true
   </div>
 
   <div class="cl-controls">
-    <button class="cl-btn" id="cl-reset">Reset example</button>
-    <button class="cl-btn" id="cl-clear">Clear triangle</button>
+    <button class="cl-btn" id="cl-reset" data-cl-i18n="reset">Reset example</button>
+    <button class="cl-btn" id="cl-clear" data-cl-i18n="clear">Clear triangle</button>
   </div>
 
   <div class="cl-error" id="cl-error" style="display:none;"></div>
 
   <hr class="cl-rule">
 
-  <h2 class="cl-section-title">2 · Development factors</h2>
+  <h2 class="cl-section-title" data-cl-i18n="factorTitle">2 · Development factors</h2>
   <p class="cl-section-desc">
     The volume-weighted age-to-age factor for each development interval is
     computed from the triangle. The <em>selected</em> factors — the actuary's
@@ -325,16 +329,16 @@ author_profile: true
   </div>
 
   <div class="cl-controls">
-    <button class="cl-btn primary" id="cl-copy-factors">Copy computed → selected</button>
+    <button class="cl-btn primary" id="cl-copy-factors" data-cl-i18n="copyFactors">Copy computed → selected</button>
     <label class="cl-tail">
-      Tail factor
+      <span data-cl-i18n="tail">Tail factor</span>
       <input class="cl-input cl-factor" type="number" id="cl-tail" value="1.000" step="0.001" min="1">
     </label>
   </div>
 
   <hr class="cl-rule">
 
-  <h2 class="cl-section-title">3 · Completed triangle</h2>
+  <h2 class="cl-section-title" data-cl-i18n="completedTitle">3 · Completed triangle</h2>
   <p class="cl-section-desc">
     Observed values in normal type; projected values in
     <span style="font-style:italic; background:rgba(59,130,246,0.10); padding:0 6px; border-radius:6px;">highlight</span>.
@@ -346,7 +350,7 @@ author_profile: true
 
   <hr class="cl-rule">
 
-  <h2 class="cl-section-title">4 · Ultimates &amp; reserves</h2>
+  <h2 class="cl-section-title" data-cl-i18n="resultsTitle">4 · Ultimates &amp; reserves</h2>
   <p class="cl-section-desc">
     Ultimate loss = latest observed × loss development factor (LDF) to ultimate.
     Outstanding reserve = ultimate − paid to date.
@@ -358,7 +362,7 @@ author_profile: true
 
   <hr class="cl-rule">
 
-  <h2 class="cl-section-title">How it works</h2>
+  <h2 class="cl-section-title" data-cl-i18n="howTitle">How it works</h2>
 
   <div class="cl-formula">
     f<sub>j</sub> = &Sigma;<sub>i</sub> C<sub>i,j+1</sub> / &Sigma;<sub>i</sub> C<sub>i,j</sub>
@@ -387,8 +391,8 @@ author_profile: true
   </p>
 
   <div class="cl-nav">
-    <a href="/tools/financial-math-calculator/">← Previous</a>
-    <a href="/tools/">Quantitative Laboratory →</a>
+    <a href="/tools/financial-math-calculator/" data-cl-i18n="previous">← Previous</a>
+    <a href="/tools/" data-cl-i18n="labLink">Quantitative Laboratory →</a>
   </div>
 
 </div>
