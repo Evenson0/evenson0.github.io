@@ -55,7 +55,8 @@
       riskModerate: "Moderate",
       reached: "Reached",
       near: "Near review",
-      monitoringStatus: "Monitoring"
+      monitoringStatus: "Monitoring",
+      snapshotNotice: "Historical snapshot only: prices and USD/CAD conversion reflect the date above, not live market quotations. The tracked list can change independently of these dated prices."
     },
     fr: {
       eyebrow: "REGISTRE PUBLIC DE RECHERCHE",
@@ -104,7 +105,8 @@
       riskModerate: "Modéré",
       reached: "Atteint",
       near: "Proche",
-      monitoringStatus: "Suivi"
+      monitoringStatus: "Suivi",
+      snapshotNotice: "Instantané historique seulement : les prix et le taux USD/CAD correspondent à la date ci-dessus et ne sont pas des cotations en temps réel. La liste suivie peut changer indépendamment de ces anciens prix."
     }
   };
 
