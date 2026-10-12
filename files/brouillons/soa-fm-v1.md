@@ -1,6 +1,7 @@
 ---
 title: "SOA FM Exam Notes"
-permalink: /notes/soa-fm/
+published: false
+sitemap: false
 layout: single
 author_profile: true
 ---
