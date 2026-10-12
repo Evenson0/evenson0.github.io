@@ -196,12 +196,6 @@ author_profile: true
 
         <a
           class="note-btn"
-          href="{{ '/notes/soa-p/formula-boxes/' | relative_url }}">
-          Formula Boxes
-        </a>
-
-        <a
-          class="note-btn"
           href="{{ '/tools/soa-p-practice/' | relative_url }}">
           Practice
         </a>
