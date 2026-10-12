@@ -290,7 +290,10 @@
         if (!originals.has(node)) {
           const raw = node.nodeValue;
           if (!raw || !normalize(raw) || raw.length > 1700) continue;
-          if (!Object.prototype.hasOwnProperty.call(strings,normalize(raw))) continue;
+          const text=normalize(raw);
+          const listText=text.match(/^([✓✗])\s*(.+)$/);
+          if (!Object.prototype.hasOwnProperty.call(strings,text) &&
+              !(listText && Object.prototype.hasOwnProperty.call(strings,listText[2]))) continue;
           originals.set(node,raw);
         }
       }
