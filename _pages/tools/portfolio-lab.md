@@ -5,7 +5,7 @@ layout: single
 author_profile: false
 tool_theme: portfolio-lab
 ---
-<link rel="stylesheet" href="{{ '/assets/css/portfolio-lab.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/portfolio-lab.css' | relative_url }}?v=portfolio-20261012-2">
 
 <div class="pl-shell" id="plApp" data-source="{{ '/assets/data/portfolio-lab.json' | relative_url }}">
   <header class="pl-hero">
@@ -43,6 +43,8 @@ tool_theme: portfolio-lab
     <div><span data-i18n="tracked">Tracked positions</span><strong id="plTracked">—</strong></div>
     <div><span data-i18n="privacy">Privacy</span><strong data-i18n="privacyValue">Balances hidden</strong></div>
   </section>
+
+  <p class="pl-shell__notice" data-i18n="snapshotNotice">Historical snapshot only: prices and USD/CAD conversion reflect the date above, not live market quotations. The tracked list can change independently of these dated prices.</p>
 
   <main>
     <section class="pl-section">
@@ -136,8 +138,4 @@ tool_theme: portfolio-lab
   </footer>
 </div>
 
-{% assign portfolio_lab_cache = site.github.build_revision | default: site.time %}
-<script
-  src="{{ '/assets/js/portfolio-lab.js' | relative_url }}?v={{ portfolio_lab_cache | date: '%s' }}"
-  defer
-></script>
+<script src="{{ '/assets/js/portfolio-lab.js' | relative_url }}?v=portfolio-20261012-2" defer></script>
