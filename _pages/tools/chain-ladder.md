@@ -398,6 +398,69 @@ author_profile: true
 </div>
 
 <script>
+
+const CL_COPY = {
+  fr: {
+    lead:"Estime les provisions pour sinistres non réglés à l’aide de la méthode Chain Ladder, une méthode classique de provisionnement en assurance de dommages.",
+    sublead:"Modifie le triangle de paiements cumulés (valeurs en milliers). Les facteurs de développement sont calculés automatiquement par moyenne pondérée des volumes. Sélectionne les facteurs et un facteur de queue pour observer l’effet sur les provisions.",
+    triangleTitle:"1 · Triangle des sinistres",
+    factorTitle:"2 · Facteurs de développement",
+    completedTitle:"3 · Triangle complété",
+    resultsTitle:"4 · Coûts ultimes et provisions",
+    howTitle:"Méthodologie",
+    triangleDesc:"Paiements cumulés par année de survenance (lignes) et âge de développement en mois (colonnes). Les cellules au-delà de la diagonale ne sont pas encore observées.",
+    factorDesc:"Les facteurs âge-à-âge sont calculés à partir des observations disponibles, avec pondération par le volume. Les facteurs sélectionnés, modifiables, servent à la projection.",
+    completedDesc:"Valeurs historiques observées en texte ordinaire ; estimations projetées surlignées.",
+    resultsDesc:"Coût ultime = dernier paiement cumulé observé × facteur de développement jusqu’à l’ultime. Provision non réglée = coût ultime − paiements à ce jour.",
+    reset:"Rétablir l’exemple",clear:"Effacer le triangle",copyFactors:"Copier les facteurs calculés → sélectionnés",
+    tail:"Facteur de queue",previous:"← Outil précédent",labLink:"Laboratoire quantitatif →",
+    assumptions:"Hypothèses. La méthode suppose que les tendances historiques de développement restent pertinentes. Les variations d’inflation, de législation, du portefeuille ou du traitement des réclamations peuvent perturber la projection. La moyenne pondérée privilégie les années les plus volumineuses.",
+    limits:"Limites. La projection reste mécanique et sensible aux changements de régime. En pratique, on la compare à d’autres méthodes (Bornhuetter–Ferguson, ratio de sinistralité attendu, Benktander) et on valide les facteurs.",
+    disclaimer:"Exemple pédagogique seulement : il ne constitue pas un avis actuariel.",
+    accidentYear:"Année de survenance",month:"mois",factor:"Facteur",computed:"Calculé (pondéré)",selected:"Sélectionné",
+    paid:"Payé à ce jour",ldf:"FDP jusqu’à l’ultime",ultimate:"Coût ultime",reserve:"Provision non réglée",total:"Total",
+    correction:"Corrige le triangle pour recalculer les résultats.",
+    gap:"Une cellule vide précède une valeur observée plus récente. Complète la cellule manquante ou supprime les valeurs suivantes.",
+    selectFactor:"Facteur sélectionné",to:"à",invalidTail:"Le facteur de queue doit être supérieur ou égal à 1.",
+    caption:"Paiements cumulés en milliers",completedCaption:"Paiements observés et projetés en milliers",
+    resultsCaption:"Provisions estimées par année de survenance"
+  }
+};
+const CL_APP = document.getElementById("cl-app");
+function clPreferredLanguage() {
+  const query=new URLSearchParams(window.location.search).get("lang");
+  if(query==="en"||query==="fr")return query;
+  try {
+    const saved=localStorage.getItem("chain-ladder-lang") || localStorage.getItem("soa-atlas-lang");
+    return saved==="fr"?"fr":"en";
+  } catch (_) {return "en";}
+}
+let clLang=clPreferredLanguage();
+function clT(key,en) {
+  return clLang==="fr"?(CL_COPY.fr[key]||en):en;
+}
+function clTranslate() {
+  CL_APP.lang=clLang;
+  CL_APP.querySelectorAll("[data-cl-i18n]").forEach(el=>{
+    if(!el.dataset.originalEn)el.dataset.originalEn=el.textContent.replace(/\s+/g," ").trim();
+    el.textContent=clT(el.dataset.clI18n,el.dataset.originalEn);
+  });
+  CL_APP.querySelectorAll("[data-cl-lang]").forEach(btn=>{
+    btn.setAttribute("aria-pressed",String(btn.dataset.clLang===clLang));
+  });
+}
+CL_APP.querySelectorAll("[data-cl-lang]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    clLang=btn.dataset.clLang==="fr"?"fr":"en";
+    try{localStorage.setItem("chain-ladder-lang",clLang);}catch(_){}
+    const address=new URL(window.location.href);
+    address.searchParams.set("lang",clLang);
+    history.replaceState(null,"",address.pathname+address.search+address.hash);
+    clTranslate();
+    clRenderAll(true);
+  });
+});
+
 // MATH-START — pure calculation logic (no DOM); unit-tested via node.
 const CL_YEARS = [2019, 2020, 2021, 2022, 2023, 2024];
 const CL_DEVS = ["12", "24", "36", "48", "60", "72"];
@@ -507,7 +570,7 @@ let clTail = 1.0;
 
 function clFmtMoney(x) {
   if (!clIsNum(x)) return "–";
-  return x.toLocaleString("en-US", { maximumFractionDigits: 0 });
+  return x.toLocaleString(clLang === "fr" ? "fr-CA" : "en-US", { maximumFractionDigits: 0 });
 }
 
 function clFmtFactor(x) {
@@ -531,8 +594,8 @@ function clObserved(i, j) {
 
 function clRenderTriangle() {
   const t = document.getElementById("cl-triangle");
-  let html = "<thead><tr><th class='cl-rowhead'>Accident year</th>";
-  CL_DEVS.forEach(d => { html += "<th>" + d + " mo</th>"; });
+  let html = "<thead><tr><th class='cl-rowhead'>"+clT("accidentYear","Accident year")+"</th>";
+  CL_DEVS.forEach(d => { html += "<th>" + d + " " + clT("month","mo") + "</th>"; });
   html += "</tr></thead><tbody>";
   for (let i = 0; i < clTri.length; i++) {
     html += "<tr><th class='cl-rowhead'>" + CL_YEARS[i] + "</th>";
@@ -571,22 +634,22 @@ function clRenderFactors(preserveFactorFocus = false) {
       return;
     }
   }
-  let html = "<thead><tr><th class='cl-rowhead'>Factor</th>";
+  let html = "<thead><tr><th class='cl-rowhead'>"+clT("factor","Factor")+"</th>";
   for (let j = 0; j < CL_DEVS.length - 1; j++) {
     html += "<th>" + CL_DEVS[j] + "→" + CL_DEVS[j + 1] + "</th>";
   }
   html += "</tr></thead><tbody>";
 
-  html += "<tr class='cl-computed-row'><th class='cl-rowhead'>Computed (vol.-wtd avg)</th>";
+  html += "<tr class='cl-computed-row'><th class='cl-rowhead'>"+clT("computed","Computed (vol.-wtd avg)")+"</th>";
   computed.forEach(f => { html += "<td>" + clFmtFactor(f) + "</td>"; });
   html += "</tr>";
 
-  html += "<tr><th class='cl-rowhead'>Selected</th>";
+  html += "<tr><th class='cl-rowhead'>"+clT("selected","Selected")+"</th>";
   for (let j = 0; j < CL_DEVS.length - 1; j++) {
     const v = clIsNum(clSelected[j]) ? clSelected[j].toFixed(3) : "";
     html += "<td><input class='cl-input cl-factor' type='number' min='0' step='0.001' " +
-      "data-j='" + j + "' value='" + v + "' aria-label='Selected factor " +
-      CL_DEVS[j] + " to " + CL_DEVS[j + 1] + "'></td>";
+      "data-j='" + j + "' value='" + v + "' aria-label='"+clT("selectFactor","Selected factor")+" " +
+      CL_DEVS[j] + " "+clT("to","to")+" " + CL_DEVS[j + 1] + "'></td>";
   }
   html += "</tr></tbody>";
   t.innerHTML = html;
@@ -626,9 +689,9 @@ function clRenderCompleted() {
 function clRenderResults() {
   const rows = clResults(clTri, clSelected, clTail);
   const t = document.getElementById("cl-results");
-  let html = "<thead><tr><th class='cl-rowhead'>Accident year</th>" +
-    "<th>Paid to date</th><th>LDF to ult.</th><th>Ultimate</th>" +
-    "<th>Outstanding reserve</th></tr></thead><tbody>";
+  let html = "<thead><tr><th class='cl-rowhead'>"+clT("accidentYear","Accident year")+"</th>" +
+    "<th>"+clT("paid","Paid to date")+"</th><th>"+clT("ldf","LDF to ult.")+"</th><th>"+clT("ultimate","Ultimate")+"</th>" +
+    "<th>"+clT("reserve","Outstanding reserve")+"</th></tr></thead><tbody>";
   let tPaid = 0, tUlt = 0, tRes = 0, ok = true;
   rows.forEach(r => {
     html += "<tr><th class='cl-rowhead'>" + r.year + "</th>" +
@@ -640,7 +703,7 @@ function clRenderResults() {
     if (clIsNum(r.ultimate)) tUlt += r.ultimate; else ok = false;
     if (clIsNum(r.reserve)) tRes += r.reserve; else ok = false;
   });
-  html += "<tr class='cl-total'><th class='cl-rowhead'>Total</th>" +
+  html += "<tr class='cl-total'><th class='cl-rowhead'>"+clT("total","Total")+"</th>" +
     "<td>" + (ok ? clFmtMoney(tPaid) : "–") + "</td><td>–</td>" +
     "<td>" + (ok ? clFmtMoney(tUlt) : "–") + "</td>" +
     "<td>" + (ok ? clFmtMoney(tRes) : "–") + "</td></tr>";
@@ -656,7 +719,7 @@ function clValidate() {
     for (let j = 0; j < CL_DEVS.length; j++) {
       if (!clIsNum(clTri[i][j])) seenMissing = true;
       else if (seenMissing) {
-        clShowError("AY " + CL_YEARS[i] + ": missing cell before a later observed value. Fill the gap or clear later cells.");
+        clShowError("AY " + CL_YEARS[i] + ": "+clT("gap","Missing cell before a later observed value. Fill the gap or clear later cells."));
         return false;
       }
     }
@@ -675,7 +738,7 @@ function clRenderAll(rebuildInputs, preserveFactorFocus = false) {
       const table = document.getElementById(id);
       table.replaceChildren();
       const caption = document.createElement("caption");
-      caption.textContent = "Correct the loss triangle to recalculate results.";
+      caption.textContent = clT("correction","Correct the loss triangle to recalculate results.");
       table.append(caption);
     });
     return;
@@ -714,5 +777,6 @@ document.getElementById("cl-tail").addEventListener("input", (e) => {
 });
 
 clInitSelected();
+clTranslate();
 clRenderAll(true);
 </script>
