@@ -59,7 +59,7 @@ description: "Explore probability concepts through an interactive knowledge grap
 
       <div id="pa-graph-panel">
         <div class="p-atlas__graph-stage">
-          <svg class="p-atlas__map" id="pa-map" viewBox="0 0 720 520"
+          <svg class="p-atlas__map" id="pa-map" viewBox="0 0 440 520"
             xmlns="http://www.w3.org/2000/svg"
             aria-label="Interactive map of probability chapters and notes"></svg>
         </div>
