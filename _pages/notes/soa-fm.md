@@ -8,8 +8,8 @@ mathjax: false
 description: "Explore Exam FM financial mathematics through an interactive knowledge graph, cash-flow formulas, worked examples and derivations."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}?v=atlas-bilingual-20261012">
-<link rel="stylesheet" href="{{ '/assets/css/soa-fm-atlas.css' | relative_url }}?v=atlas-bilingual-20261012">
+<link rel="stylesheet" href="{{ '/assets/css/soa-p-atlas.css' | relative_url }}?v=atlas-fm-unified-20261012">
+<link rel="stylesheet" href="{{ '/assets/css/soa-fm-atlas.css' | relative_url }}?v=atlas-fm-unified-20261012">
 
 <section class="p-atlas p-notes fm-atlas" id="fm-atlas" aria-label="SOA Exam FM Knowledge Atlas"
   data-practice-url="{{ '/assets/data/soa-fm-problems.json' | relative_url }}"
@@ -126,6 +126,6 @@ description: "Explore Exam FM financial mathematics through an interactive knowl
 <template id="fm-atlas-source">
 {% include soa-fm-guide-cards.html %}
 </template>
-<script defer src="{{ '/assets/js/soa-atlas-language.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
-<script defer src="{{ '/assets/js/soa-atlas-ui.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
-<script defer src="{{ '/assets/js/soa-fm-atlas.js' | relative_url }}?v=atlas-bilingual-20261012"></script>
+<script defer src="{{ '/assets/js/soa-atlas-language.js' | relative_url }}?v=atlas-fm-unified-20261012"></script>
+<script defer src="{{ '/assets/js/soa-atlas-ui.js' | relative_url }}?v=atlas-fm-unified-20261012"></script>
+<script defer src="{{ '/assets/js/soa-fm-atlas.js' | relative_url }}?v=atlas-fm-unified-20261012"></script>
