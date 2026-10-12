@@ -662,14 +662,42 @@ author_profile: true
   const grid = document.getElementById("memories-grid");
   const filterButtons = document.querySelectorAll(".memories-filter");
 
+  const memFr = {
+    "montreal": "Une ville devenue une partie de ma vie.",
+    "new-york": "À mes yeux, la plus belle ville du monde.",
+    "san-diego": "Mon premier souvenir de voyage en Californie.",
+    "los-angeles": "Un autre chapitre de mes voyages californiens.",
+    "pic-de-l-ours": "Une longue boucle exigeante, avec une véritable atmosphère de montagne.",
+    "mont-megantic": "Une randonnée où la montagne et le ciel se rejoignent dans le souvenir.",
+    "mont-gosford": "Le plus haut sommet du sud du Québec, atteint à pied.",
+    "nahanni": "Un paysage nordique immense, silencieux et puissant.",
+    "yukon-aurora": "Un ciel étonnant, vivant et inoubliable.",
+    "grand-canyon": "Un lieu assez vaste pour rappeler notre petitesse.",
+    "petra": "Une cité sculptée dans la pierre et le temps.",
+    "machu-picchu": "Une rencontre exceptionnelle entre l’altitude, la beauté et l’histoire.",
+    "galapagos": "Un lieu où la nature semble plus ancienne et plus originelle.",
+    "torres-del-paine": "Des tours de granit, du vent, des glaciers et de grands espaces."
+};
+  const memLang = document.documentElement.dataset.siteLang === "fr" ? "fr" : "en";
+  const memLabelsFr = {
+    "Visited":"Visité","Awaiting":"À découvrir","Hike":"Randonnée","Place":"Lieu",
+    "Hard":"Difficile","Difficult":"Difficile","city":"ville",
+    "trail":"sentier","wilderness":"nature sauvage","nature":"nature",
+    "landscape":"paysage","historical site":"site historique",
+    "Distance:":"Distance :","Duration:":"Durée :","Difficulty:":"Difficulté :",
+    "Start:":"Départ :","Open memory":"Ouvrir ce souvenir"
+  };
+  function memT(text) { return memLang === "fr" ? (memLabelsFr[text] || text) : text; }
+  function memExcerpt(item) { return memLang === "fr" ? (memFr[item.slug] || item.excerpt) : item.excerpt; }
+
   function getStatusClass(status) {
     if (status === "visited") return "memory-status-visited";
     return "memory-status-awaiting";
   }
 
   function getStatusLabel(status) {
-    if (status === "visited") return "Visited";
-    return "Awaiting";
+    if (status === "visited") return memT("Visited");
+    return memT("Awaiting");
   }
 
   function getMarkerColor(status) {
@@ -691,12 +719,12 @@ author_profile: true
 
   function buildTags(item) {
     const tags = [
-      `<span class="memory-tag">${item.category === "hike" ? "Hike" : "Place"}</span>`,
-      `<span class="memory-tag">${item.type}</span>`
+      `<span class="memory-tag">${item.category === "hike" ? memT("Hike") : memT("Place")}</span>`,
+      `<span class="memory-tag">${memT(item.type)}</span>`
     ];
 
     if (item.difficulty) {
-      tags.push(`<span class="memory-tag">${item.difficulty}</span>`);
+      tags.push(`<span class="memory-tag">${memT(item.difficulty)}</span>`);
     }
 
     return tags.join("");
@@ -705,10 +733,10 @@ author_profile: true
   function buildPopupMeta(item) {
     let extra = "";
 
-    if (item.distance) extra += `<small><strong>Distance:</strong> ${item.distance}</small>`;
-    if (item.duration) extra += `<small><strong>Duration:</strong> ${item.duration}</small>`;
-    if (item.difficulty) extra += `<small><strong>Difficulty:</strong> ${item.difficulty}</small>`;
-    if (item.address) extra += `<small><strong>Start:</strong> ${item.address}</small>`;
+    if (item.distance) extra += `<small><strong>${memT("Distance:")}</strong> ${item.distance}</small>`;
+    if (item.duration) extra += `<small><strong>${memT("Duration:")}</strong> ${item.duration}</small>`;
+    if (item.difficulty) extra += `<small><strong>${memT("Difficulty:")}</strong> ${item.difficulty}</small>`;
+    if (item.address) extra += `<small><strong>${memT("Start:")}</strong> ${item.address}</small>`;
 
     return extra;
   }
@@ -725,7 +753,7 @@ author_profile: true
         <div class="memory-card-body">
           <div class="memory-card-meta">${item.location}</div>
           <h3 class="memory-card-title">${item.title}</h3>
-          <p class="memory-card-text">${item.excerpt}</p>
+          <p class="memory-card-text">${memExcerpt(item)}</p>
           <div class="memory-card-tags">${buildTags(item)}</div>
           <div class="memory-card-footer">
             <span class="memory-status ${getStatusClass(item.status)}">${getStatusLabel(item.status)}</span>
@@ -764,8 +792,8 @@ author_profile: true
           <h3>${item.title}</h3>
           <small>${item.location}</small>
           ${buildPopupMeta(item)}
-          <p>${item.excerpt}</p>
-          <a class="memory-popup-link" href="${item.url}">Open memory</a>
+          <p>${memExcerpt(item)}</p>
+          <a class="memory-popup-link" href="${item.url}">${memT("Open memory")}</a>
         </div>
       `);
 
