@@ -382,6 +382,7 @@
   document.addEventListener("click",event=>{
     const button=event.target instanceof Element ? event.target.closest("[data-site-lang-choice]") : null;
     if (button) {
+      event.preventDefault();
       const next=button.dataset.siteLangChoice;
       if(next!=="fr"&&next!=="en")return;
       save(next);
