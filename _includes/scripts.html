@@ -1,8 +1,7 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
-<script>
-{% include site-translation-extras.js %}
-{% include site-language-runtime.js %}
-</script>
+<!-- External files are not collapsed by the HTML minifier; keep order for dictionary and controller. -->
+<script defer src="{{ base_path }}/assets/js/site-translation-extras.js?v=fr-20261013-live"></script>
+<script defer src="{{ base_path }}/assets/js/site-language.js?v=fr-20261013-live"></script>
 
 {% include analytics.html %}
