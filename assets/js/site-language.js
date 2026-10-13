@@ -267,6 +267,8 @@
     "About these notes":"À propos de ces notes"
   };
 
+  Object.assign(strings,window.SITE_TRANSLATION_EXTRAS || {});
+
   // Preserve originals so switching from FR back to EN restores the actual text.
   const originals = new Map();
   let language = "en";
