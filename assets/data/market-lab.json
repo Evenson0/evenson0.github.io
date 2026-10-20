@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T20:39:35.300881+00:00",
+  "updated_at": "2026-10-20T23:26:42.927329+00:00",
   "assets": {
     "Indices": [
       {
@@ -53,8 +53,8 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10733.0,
-        "change_pct": -0.294,
+        "price": 10764.7002,
+        "change_pct": -1.077,
         "low_52w": 9403.5996,
         "high_52w": 10910.5996
       },
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4057,
-        "change_pct": -0.439,
+        "price": 1.4066,
+        "change_pct": -0.279,
         "low_52w": 1.3492,
         "high_52w": 1.428
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1238,
-        "change_pct": 0.116,
+        "price": 1.1231,
+        "change_pct": 0.135,
         "low_52w": 1.116,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3381,
-        "change_pct": 0.34,
+        "price": 1.3373,
+        "change_pct": 0.488,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.172,
-        "change_pct": 0.232,
+        "price": 158.289,
+        "change_pct": -0.148,
         "low_52w": 150.774,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4140.5,
-        "change_pct": -0.471,
+        "price": 4136.3999,
+        "change_pct": -0.57,
         "low_52w": 3960.5,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 98.04,
-        "change_pct": -5.422,
+        "price": 98.28,
+        "change_pct": -5.19,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.997,
-        "change_pct": -1.995,
+        "price": 2.994,
+        "change_pct": -2.093,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.612,
-        "change_pct": 1.132,
+        "price": 6.61,
+        "change_pct": 1.101,
         "low_52w": 4.926,
         "high_52w": 6.8035
       }
