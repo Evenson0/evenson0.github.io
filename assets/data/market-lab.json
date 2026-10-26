@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-10-26T18:42:32.994816+00:00",
+  "updated_at": "2026-10-26T22:53:43.050008+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7678.6299,
-        "change_pct": 0.721,
+        "price": 7676.77,
+        "change_pct": 0.696,
         "low_52w": 6343.7202,
         "high_52w": 7818.9302
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 26204.252,
-        "change_pct": 0.959,
+        "price": 26169.3809,
+        "change_pct": 0.825,
         "low_52w": 20794.6406,
         "high_52w": 27599.7891
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 52347.7617,
-        "change_pct": 0.254,
+        "price": 52361.5781,
+        "change_pct": 0.28,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 35994.4883,
-        "change_pct": 0.576,
+        "price": 35944.1602,
+        "change_pct": 0.436,
         "low_52w": 29777.8008,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.23,
-        "change_pct": 0.612,
+        "price": 54.13,
+        "change_pct": 0.427,
         "low_52w": 44.51,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2791.0645,
-        "change_pct": 0.546,
+        "price": 2786.4241,
+        "change_pct": 0.379,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 342.89,
-        "change_pct": -1.392,
+        "price": 343.91,
+        "change_pct": -1.099,
         "low_52w": 246.63,
         "high_52w": 348.22
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 532.24,
-        "change_pct": 1.474,
+        "price": 532.6,
+        "change_pct": 1.542,
         "low_52w": 352.83,
         "high_52w": 543.45
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 216.02,
-        "change_pct": 2.399,
+        "price": 216.0,
+        "change_pct": 2.389,
         "low_52w": 165.17,
         "high_52w": 239.24
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 248.78,
-        "change_pct": 0.315,
+        "price": 249.09,
+        "change_pct": 0.44,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 284.46,
-        "change_pct": 0.955,
+        "price": 284.26,
+        "change_pct": 0.884,
         "low_52w": 204.01,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 236.64,
-        "change_pct": 0.169,
+        "price": 235.93,
+        "change_pct": -0.131,
         "low_52w": 130.71,
         "high_52w": 252.53
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 173.38,
-        "change_pct": 0.51,
+        "price": 173.0,
+        "change_pct": 0.29,
         "low_52w": 128.08,
         "high_52w": 183.92
       }
@@ -137,24 +137,24 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.821,
-        "change_pct": 0.333,
+        "price": 4.824,
+        "change_pct": 0.395,
         "low_52w": 3.512,
         "high_52w": 5.089
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.984,
-        "change_pct": -0.08,
+        "price": 4.986,
+        "change_pct": -0.04,
         "low_52w": 3.962,
         "high_52w": 5.311
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.298,
-        "change_pct": -0.32,
+        "price": 5.301,
+        "change_pct": -0.263,
         "low_52w": 4.547,
         "high_52w": 5.665
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4018,
-        "change_pct": 0.114,
+        "price": 1.4014,
+        "change_pct": 0.081,
         "low_52w": 1.3492,
         "high_52w": 1.428
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1187,
-        "change_pct": -0.308,
+        "price": 1.1178,
+        "change_pct": -0.386,
         "low_52w": 1.116,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3351,
-        "change_pct": -0.393,
+        "price": 1.3343,
+        "change_pct": -0.456,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 157.424,
-        "change_pct": 0.594,
+        "price": 157.468,
+        "change_pct": 0.622,
         "low_52w": 151.731,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4029.8,
-        "change_pct": 0.546,
+        "price": 4027.3,
+        "change_pct": 0.484,
         "low_52w": 3960.5,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 101.86,
-        "change_pct": -1.365,
+        "price": 101.38,
+        "change_pct": -1.83,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.021,
-        "change_pct": 14.432,
+        "price": 3.04,
+        "change_pct": 15.152,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.55,
-        "change_pct": 1.143,
+        "price": 6.551,
+        "change_pct": 1.158,
         "low_52w": 4.926,
         "high_52w": 6.8035
       }
@@ -235,15 +235,15 @@
     },
     {
       "term": "5Y",
-      "value": 4.821
+      "value": 4.824
     },
     {
       "term": "10Y",
-      "value": 4.984
+      "value": 4.986
     },
     {
       "term": "30Y",
-      "value": 5.298
+      "value": 5.301
     }
   ],
   "news": [
