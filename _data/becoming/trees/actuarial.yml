@@ -10,14 +10,14 @@ nodes:
 
   # ============================================================
   # EXAM 2 / FM
-  # CURRENTLY MAINTAINED UNTIL EXAM P, THEN PRIMARY FOCUS
+  # OUTSIDE THE CURRENT STUDY CYCLE
   # ============================================================
 
   - id: actuarial-fm-diagnostic
     title: FM Diagnostic and Error Classification
     title_fr: Diagnostic FM et classification des erreurs
     type: assessment
-    status: in_progress
+    status: paused
 
     description: >
       Establish the current FM baseline through mixed practice and classify
@@ -208,7 +208,7 @@ nodes:
     title: FM Error Log
     title_fr: Journal d'erreurs FM
     type: practice
-    status: in_progress
+    status: paused
 
     requires:
       - actuarial-fm-diagnostic
@@ -313,16 +313,16 @@ nodes:
       - actuarial-fm-readiness
 
     appointment_date: null
-    target_date: 2026-12
+    target_date: null
 
     notes: >
-      Planned personal FM attempt in December 2026.
+      FM is outside the current study cycle; no new target date is set.
       The exact appointment date and testing-window details should be
       recorded once confirmed. Sitting the examination is not equivalent
       to passing it.
 
     notes_fr: >
-      Tentative personnelle à l'examen FM prévue en décembre 2026.
+      FM est retiré du cycle actuel ; aucune nouvelle date cible n’est fixée.
       La date exacte du rendez-vous et les détails de la fenêtre d'examen
       seront ajoutés une fois confirmés. Passer l'examen ne signifie pas
       automatiquement l'avoir réussi.
@@ -336,7 +336,7 @@ nodes:
     requires:
       - actuarial-fm-attempt
 
-    target_date: 2026-12
+    target_date: null
 
     unlock_requirements:
       - Official passing result recorded
@@ -360,15 +360,15 @@ nodes:
     type: exam
     status: in_progress
 
-    appointment_date: 2026-11-07
-    target_date: 2026-11-07
+    appointment_date: 2027-01-16
+    target_date: 2027-01-16
 
     description: >
-      Prepare for and sit Exam P on November 7, 2026, with cumulative
+      Prepare for and sit Exam P on January 16, 2027, with cumulative
       probability practice, systematic error review, and timed mixed sets.
 
     description_fr: >
-      Se préparer à l'examen P du 7 novembre 2026 et le passer en utilisant
+      Se préparer à l'examen P du 16 janvier 2027 et le passer en utilisant
       une pratique cumulative de la probabilité, une revue systématique
       des erreurs et des séries mixtes chronométrées.
 
@@ -380,7 +380,7 @@ nodes:
       - Multiple mixed sets completed
       - Timed practice completed
       - Recurring errors reviewed
-      - Exam sat on November 7, 2026
+      - Exam sat on January 16, 2027
       - Official CAS-recognized Exam 1 credit
 
 

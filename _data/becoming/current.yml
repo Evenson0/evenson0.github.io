@@ -1,28 +1,18 @@
 cycle: foundations-01
-
 quests:
-
-  - id: current-p
-    node: actuarial-exam-1
-    title: Prepare for Exam P
-    title_fr: Préparer l'examen P
-
-  - id: current-fm
-    node: actuarial-fm-diagnostic
-    title: Keep FM warm
-    title_fr: Maintenir FM actif
-
-  - id: current-research
-    node: research-actuarial-glm-tweedie
-    title: Build the insurance GLM foundation
-    title_fr: Construire les bases des GLM en assurance
-
-  - id: current-physical
-    node: physical-process
-    title: Establish the physical protocol
-    title_fr: Mettre en place le protocole physique
-
-  - id: current-english
-    node: english-conversation-practice
-    title: Maintain English conversation practice
-    title_fr: Maintenir la pratique de conversation en anglais
+- id: current-p
+  node: actuarial-exam-1
+  title: Prepare for Exam P
+  title_fr: Préparer l'examen P
+- id: current-research
+  node: research-actuarial-glm-tweedie
+  title: Build the insurance GLM foundation
+  title_fr: Construire les bases des GLM en assurance
+- id: current-physical
+  node: physical-process
+  title: Establish the physical protocol
+  title_fr: Mettre en place le protocole physique
+- id: current-english
+  node: english-conversation-practice
+  title: Maintain English conversation practice
+  title_fr: Maintenir la pratique de conversation en anglais

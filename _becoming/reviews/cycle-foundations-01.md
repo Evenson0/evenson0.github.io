@@ -1,10 +1,10 @@
 ---
 record_type: cycle_review
-title: FM · P&C Pricing · Training Review
-title_fr: Revue — FM · Tarification IARD · Entraînement
+title: P · P&C Pricing · Training Review
+title_fr: Revue — P · Tarification IARD · Entraînement
 cycle: foundations-01
-start_date: 2026-10-12
-end_date: 2027-01-03
+start_date: 2026-11-02
+end_date: 2027-01-24
 status: planned
 ---
 
@@ -16,7 +16,7 @@ What materially moved forward during this planning period?
 
 ### Actuarial
 
-- What is the FM result or current state?
+- What is the P result or current state?
 - What should happen next in the actuarial roadmap?
 - Which P topics should receive the next block of attention?
 

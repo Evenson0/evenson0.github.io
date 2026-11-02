@@ -190,7 +190,7 @@ foundations-01
 Current dates:
 
 ```text
-2026-09-21 -> 2026-12-13
+2026-11-02 -> 2027-01-24
 ```
 
 Its principal active domains are:
@@ -430,56 +430,11 @@ assets/images/becoming/physical/routine-du-soir.png
 
 ## Current actuarial planning logic
 
-The current cycle has two actuarial phases.
+P is the sole actuarial study priority. The appointment is **January 16, 2027**, as provided by Evenson. FM is removed from this cycle’s weekly schedule and current quests; its long-term nodes remain, without a target date.
 
-### Phase 1 - Exam P primary
+Weeks 1–5: diagnostic and foundations. Weeks 6–10: cumulative practice, timed sets and mocks. Week 11: light final review and the January 16 exam. Week 12: debrief without assuming a result or automatically restarting FM.
 
-Exam P is scheduled for:
-
-```text
-2026-11-07
-```
-
-Before that date:
-
-- Exam P is the primary actuarial objective;
-- FM remains in light maintenance;
-- P practice becomes increasingly mixed and timed;
-- the error log and exam strategy become more important near the exam;
-- the final P week does not include a normal FM study load.
-
-### Phase 2 - FM primary
-
-After Exam P:
-
-- record a short post-exam review;
-- stop active P preparation;
-- complete a fresh FM diagnostic;
-- classify weaknesses and errors;
-- make FM the primary actuarial objective.
-
-FM is planned for December 2026.
-
-Do not invent an exact appointment date until it is confirmed.
-
-The FM tree currently includes work on:
-
-```text
-diagnostic
-study system and calculator workflow
-interest rates
-annuities
-loans
-bonds
-general cash flows
-duration and immunization
-error log
-mixed practice
-timed practice
-readiness
-attempt
-credential
-```
+November 7 is optional, with no catch-up debt. Secondary tasks on exam day are optional too. The physical protocol is unchanged and should be adapted to actual availability.
 
 ---
 
@@ -846,7 +801,7 @@ Becoming currently includes:
 - a seven-day plan inside each week;
 - browser-checkable daily tasks;
 - a separate permanent physical protocol;
-- a P-to-FM actuarial transition;
+- a P-focused plan through January 16, 2027;
 - an active P&C pricing research path;
 - bilingual FR / EN rendering;
 - a structural validator;
@@ -855,13 +810,13 @@ Becoming currently includes:
 The current cycle ends on:
 
 ```text
-2026-12-13
+2027-01-24
 ```
 
 The next cycle should be designed from actual evidence gathered during this one.
 
-## Calendar and reading update — 2026-09-18
+## Calendar and reading update — 2026-11-02
 
-The cycle runs September 21–December 13, 2026, Monday–Sunday. Reviews stay on Sunday evening. Exam P stays on November 7; FM stays in December (appointment day unconfirmed). P review is consolidated into seven weeks, with FM primary after P. No result or completion is inferred.
+The twelve-week cycle runs November 2, 2026–January 24, 2027. Sunday reviews remain. Exam P is January 16, 2027; FM is removed from this cycle. No completion or result is inferred.
 
-Le Rouge et le Noir: September 21–27, one seventh of the novel daily. The Intelligent Investor: September 21–October 21, one thirty-first of the selected edition daily, including the commentary and appendices intended for reading. Page counts and durations depend on the edition and observed reading speed.
+The existing activities and reading sequence are preserved: Week 1 Adieu (November 2–8), Week 2 J’irai cracher sur vos tombes (November 9–15), Week 3 Facino Cane (November 16–22). Later reading choices remain as already planned. The Intelligent Investor keeps its 31 portions, November 2–December 2, including the intended commentary and appendices. These are planning targets, not claims of completed reading. Resume from the actual reading position when needed, without catch-up debt.

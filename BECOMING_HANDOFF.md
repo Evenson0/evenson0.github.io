@@ -1,6 +1,6 @@
 # Becoming - état du projet et consignes de reprise
 
-Dernière mise à jour : septembre 2026.
+Dernière mise à jour : 2 novembre 2026.
 
 ## 1. Règle de reprise
 
@@ -184,7 +184,7 @@ foundations-01
 Dates :
 
 ```text
-2026-09-21 -> 2026-12-13
+2026-11-02 -> 2027-01-24
 ```
 
 Domaines principaux :
@@ -279,47 +279,11 @@ Cette structure garde ensemble la stratégie de la semaine, son exécution quoti
 
 ## 5. Cycle actuariel actuel
 
-Le cycle suit deux phases.
+P est la seule priorité d’étude actuarielle du cycle. L’examen est prévu le **16 janvier 2027**, date communiquée par Evenson. FM est retiré des semaines et des objectifs courants ; ses nœuds restent dans le parcours à long terme, sans date cible.
 
-### Phase 1 - Exam P primary
+Semaines 1–5 : diagnostic et fondements ; semaines 6–10 : consolidation, séries mixtes et simulations ; semaine 11 : révision légère et examen le samedi 16 janvier ; semaine 12 : bilan sans résultat supposé ni reprise automatique de FM.
 
-Exam P est prévu le :
-
-```text
-2026-11-07
-```
-
-Avant cette date :
-
-- P est la priorité actuarielle ;
-- FM reste en maintenance légère ;
-- la pratique devient progressivement plus mixte ;
-- les simulations et la revue d'erreurs prennent de plus en plus d'importance ;
-- la semaine de l'examen P ne contient pas de vraie séance FM.
-
-### Phase 2 - FM primary
-
-Après Exam P :
-
-- faire une courte revue post-examen ;
-- fermer la préparation active de P ;
-- effectuer un nouveau diagnostic FM ;
-- identifier les faiblesses principales ;
-- faire de FM la priorité actuarielle.
-
-La préparation FM se concentre ensuite notamment sur :
-
-- théorie de l'intérêt ;
-- annuités ;
-- prêts ;
-- obligations ;
-- flux monétaires ;
-- pratique cumulative ;
-- pratique chronométrée.
-
-FM est prévu en décembre 2026.
-
-Ne pas inventer de date exacte tant qu'elle n'est pas confirmée.
+Le samedi 7 novembre est facultatif, sans dette de rattrapage. Les activités secondaires du jour de l’examen sont également facultatives. Le protocole physique reste inchangé et s’adapte à la disponibilité réelle.
 
 ---
 
@@ -569,7 +533,7 @@ Le script ne doit pas prolonger silencieusement un cycle terminé.
 4. changer `current_cycle` ;
 5. générer ensuite les nouvelles semaines.
 
-Ne pas créer artificiellement une Week 13 dans `foundations-01` après le 13 décembre.
+Ne pas créer artificiellement une Week 13 dans `foundations-01` après le 24 janvier 2027.
 
 ---
 
@@ -773,7 +737,7 @@ Becoming possède maintenant :
 - un plan jour par jour ;
 - des tâches quotidiennes cochables ;
 - un protocole physique permanent ;
-- une transition P -> FM ;
+- une préparation P jusqu’au 16 janvier 2027 ;
 - une trajectoire de recherche en tarification IARD ;
 - une interface FR / EN ;
 - un validateur ;
@@ -782,7 +746,7 @@ Becoming possède maintenant :
 Le cycle actuel se termine le :
 
 ```text
-2026-12-13
+2027-01-24
 ```
 
 La suite doit être construite à partir de ce qui s'est réellement passé pendant le cycle, pas simplement en prolongeant mécaniquement le plan.
@@ -795,8 +759,8 @@ Dans une nouvelle conversation :
 
 > Lis d'abord `BECOMING_HANDOFF.md` puis `BECOMING.md`. Inspecte ensuite les fichiers actuellement utilisés par Becoming avant de proposer quoi que ce soit. Continue à partir de l'architecture existante, sans recommencer le projet ni modifier des éléments uniquement pour les moderniser. Je veux travailler sur : [décrire le changement].
 
-## Calendar and reading update — 2026-09-18
+## Calendar and reading update — 2026-11-02
 
-The cycle runs September 21–December 13, 2026, Monday–Sunday. Reviews stay on Sunday evening. Exam P stays on November 7; FM stays in December (appointment day unconfirmed). P review is consolidated into seven weeks, with FM primary after P. No result or completion is inferred.
+The twelve-week cycle runs November 2, 2026–January 24, 2027. Sunday reviews remain. Exam P is January 16, 2027; FM is removed from this cycle. No completion or result is inferred.
 
-Le Rouge et le Noir: September 21–27, one seventh of the novel daily. The Intelligent Investor: September 21–October 21, one thirty-first of the selected edition daily, including the commentary and appendices intended for reading. Page counts and durations depend on the edition and observed reading speed.
+The existing activities and reading sequence are preserved: Week 1 Adieu (November 2–8), Week 2 J’irai cracher sur vos tombes (November 9–15), Week 3 Facino Cane (November 16–22). Later reading choices remain as already planned. The Intelligent Investor keeps its 31 portions, November 2–December 2, including the intended commentary and appendices. These are planning targets, not claims of completed reading. Resume from the actual reading position when needed, without catch-up debt.
