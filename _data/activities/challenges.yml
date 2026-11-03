@@ -196,29 +196,27 @@
   issued: '2026-11-03'
   due: '2026-11-30'
   title:
-    fr: Un détour qui mérite de rester
-    en: A detour worth remembering
-  difficulty: easy
+    fr: "Entrer seul dans un lieu d'inconnus"
+    en: "Enter a room of strangers on your own"
+  difficulty: stretch
   effort:
-    fr: 45–60 min · budget libre, gratuit possible
-    en: 45–60 min · your budget, free is possible
+    fr: "3–5 h · avant le 30 novembre"
+    en: "3–5 h · before November 30"
   action:
-    fr: 'Découvre un lieu culturel ou un coin de ta ville que tu ne connais pas : bibliothèque, librairie ou promenade
-      accessible. Prends le temps de regarder et garde cinq lignes de souvenir.'
-    en: 'Explore an unfamiliar cultural place or part of your city: a library, bookstore or accessible walk. Take
-      time to notice things and keep five lines of memory.'
+    fr: "Assiste seul à un événement culturel ou citoyen inhabituel. Pose une question ou échange avec une personne inconnue. Écris dix lignes sur ce que tu en as appris."
+    en: "Attend an unfamiliar cultural or civic event alone. Ask a question or converse with someone new. Write ten lines on what you learned."
   why:
-    fr: Faire une place à l’expérience et à la curiosité, au-delà des examens et du travail.
-    en: Make room for experience and curiosity beyond exams and work.
+    fr: "Découvrir au-delà des habitudes et exercer le courage social."
+    en: "Explore beyond your habits and develop social courage."
   done_when:
-    fr: Une découverte réellement vécue et une courte note personnelle. Une sortie locale suffit.
-    en: A real discovery and a short personal note. A local outing is enough.
+    fr: "Une sortie nouvelle, un échange réel et dix lignes de réflexion."
+    en: "One new outing, a genuine interaction and ten lines of reflection."
   minimum:
-    fr: Un détour de vingt minutes dans un endroit accessible.
-    en: A twenty-minute detour somewhere accessible.
+    fr: "Assiste seul à une rencontre nouvelle et parle à une personne."
+    en: "Attend a new gathering alone and talk to one person."
   stretch:
-    fr: Invite une personne ou transforme la note en un petit récit.
-    en: Invite someone along or turn the note into a short story.
+    fr: "Propose une conversation ultérieure, sans exiger de réponse."
+    en: "Offer a follow-up conversation without requiring a reply."
   targets:
   - explore
   - books
