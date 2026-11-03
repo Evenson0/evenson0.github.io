@@ -260,32 +260,27 @@
   issued: '2026-11-03'
   due: '2027-11-02'
   title:
-    fr: Un premier manuscrit de recherche
-    en: A first research manuscript
+    fr: "Un manuscrit digne d'une évaluation scientifique"
+    en: "A manuscript worthy of scientific review"
   difficulty: ambitious
   effort:
-    fr: Un projet progressif · revues trimestrielles
-    en: A progressive project · quarterly reviews
+    fr: "100–150 h sur 12 mois · travail cumulé"
+    en: "100–150 h across twelve months · cumulative effort"
   action:
-    fr: À partir de la reproduction, formule une question limitée en tarification IARD. Mène une comparaison reproductible
-      et rédige un document avec question, méthode, résultats et limites. Sollicite une lecture critique.
-    en: Starting from the reproduction, formulate a narrow P&C pricing question. Run a reproducible comparison
-      and write a document with the question, method, results and limitations. Request a critical reading.
+    fr: "Pose une question précise en tarification IARD. Critique la littérature, compare des modèles sur données autorisées, teste leur robustesse et rédige un manuscrit reproductible. Sollicite deux lecteurs qualifiés ou une évaluation scientifique."
+    en: "Frame a focused P&C pricing question. Critically review literature, compare models on permitted data, test robustness and write a reproducible manuscript. Seek two qualified readers or scientific review."
   why:
-    fr: Avancer concrètement vers l’article actuariel et ton projet de recherche, avec une ambition ajustée aux
-      résultats.
-    en: Make tangible progress toward an actuarial paper and your research goal, adjusting ambition to the results.
+    fr: "Construire un vrai dossier de recherche indépendant pour un futur doctorat."
+    en: "Build genuine independent research toward future doctoral study."
   done_when:
-    fr: Un manuscrit complet et une demande de retour envoyée. Une publication acceptée n’est pas exigée et ne
-      sera jamais supposée.
-    en: A complete manuscript and a feedback request sent. Journal acceptance is not required and will never be
-      assumed.
+    fr: "Un manuscrit et son code sont achevés ; une demande de revue est envoyée. L'acceptation n'est pas requise."
+    en: "A manuscript and its code are complete; review has been requested. Acceptance is not required."
   minimum:
-    fr: Une note technique reproductible qui répond honnêtement à une question précise.
-    en: A reproducible technical note that honestly answers one precise question.
+    fr: "Working paper reproductible de 10 à 15 pages, partagé pour critique."
+    en: "A reproducible 10–15-page working paper shared for criticism."
   stretch:
-    fr: Après critique, prépare une version publique clairement présentée comme travail en cours.
-    en: After feedback, prepare a public version clearly labeled as work in progress.
+    fr: "Prépare une soumission à une conférence ou une revue sérieuse."
+    en: "Prepare a submission to a serious conference or journal."
   targets:
   - research
   parents: *id001
