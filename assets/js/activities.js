@@ -52,7 +52,7 @@
   }
   const COPY = {
     fr: {
-      yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Trois propositions pour commencer. Un seul défi suffit.', exploreHint: 'Explore à ton rythme : fais ton choix parmi les horizons et les domaines.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
+      yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', showWeekAll: 'Voir toutes les missions de la semaine', showWeekLess: 'Réduire la sélection', weeklyFocus: 'Missions de la semaine', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Un vaste choix pour exercer ton courage, ton esprit et ta créativité. Choisis une ou deux missions, pas toute la liste.', exploreHint: 'Explore à ton rythme : fais ton choix parmi les horizons et les domaines.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
       eyebrow: 'ACTIVITIES · LE CARNET DES POSSIBLES', hero: 'Des défis qui donnent envie d’oser.', promise: 'Pas de points artificiels. Des expériences et des réalisations.',
       mentor: 'LE MOT DU MENTOR', load: 'Les défis réutilisent les séances de Becoming. Les grands horizons se construisent avec les petites actions.',
       challenges: 'Les défis', journal: 'Le journal', filter: 'État', search: 'Rechercher', yourturn: 'À TOI DE JOUER',
@@ -80,7 +80,7 @@
       sourceMentor: 'Proposition du mentor', sourceUser: 'Retour d’Evenson', noCompletion: 'Les décisions partagées sont conservées ici, sans résultat inventé.'
     },
     en: {
-      yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'Three ideas to start. Taking on one is plenty.', exploreHint: 'Explore at your own pace: choose a time horizon and theme.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
+      yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', showWeekAll: 'Show all weekly missions', showWeekLess: 'Show fewer missions', weeklyFocus: 'This week’s missions', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'A rich menu for courage, learning and creation. Choose one or two missions, not all of them.', exploreHint: 'Explore at your own pace: choose a time horizon and theme.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
       eyebrow: 'ACTIVITIES · THE POSSIBILITY JOURNAL', hero: 'Challenges worth taking on.', promise: 'No artificial points. Real experiences and achievements.',
       mentor: 'FROM YOUR MENTOR', load: 'Challenges reuse Becoming sessions. Longer horizons grow from small actions.',
       challenges: 'Challenges', journal: 'Journal', filter: 'Status', search: 'Search', yourturn: 'YOUR TURN',
@@ -116,7 +116,7 @@
   let lang = 'fr';
   try { lang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('evenson.site.language') || document.documentElement.dataset.siteLang || 'fr'; } catch (_) {}
   if (!COPY[lang]) lang = 'fr';
-  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false, shownCount = 12;
+  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false, shownCount = 12, showWeekAll = false;
   const byId = Object.fromEntries(data.challenges.map(c => [c.id, c]));
   const targets = Object.fromEntries(data.config.targets.map(t => [t.id, t]));
   const categories = Object.fromEntries((data.config.categories || []).map(c => [c.id, c]));
@@ -311,9 +311,15 @@
       const eligible = weeks.filter(c => c.period_start <= today());
       const latest = (eligible.length ? eligible : weeks).reduce((date, c) => c.period_start > date ? c.period_start : date, '');
       const selection = weeks.filter(c => c.period_start === latest);
-      selection.forEach(c => cards.append(renderCard(c)));
+      selection.slice(0, showWeekAll ? selection.length : 4).forEach(c => cards.append(renderCard(c)));
+      if (selection.length > 4) {
+        cards.append(button(t(showWeekAll ? 'showWeekLess' : 'showWeekAll') + ' (' + selection.length + ')', () => {
+          showWeekAll = !showWeekAll;
+          render();
+        }, 'act-load-more act-week-toggle'));
+      }
       if (!selection.length) cards.append(el('p', 'act-empty', t('empty')));
-      $('act-results-count').textContent = selection.length + ' ' + t('results');
+      $('act-results-count').textContent = t('weeklyFocus') + ' · ' + selection.length + ' ' + t('results');
     } else if (view === 'explore') {
       const rank = {week: 0, month: 1, quarter: 2, season: 3, halfyear: 4, year: 5};
       const selected = visibleChallenges(data, horizon, status, query, lang, category).sort((a, b) =>
