@@ -361,3 +361,100 @@
   targets:
   - audience
   parents: []
+- id: ACT-202611-Q2
+  horizon: quarter
+  category: fitness
+  period: quarter-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-02-02'
+  difficulty: ambitious
+  title:
+    fr: "Parcourir 10 km : du premier pas à l'endurance"
+    en: "Cover 10 km: from first steps to endurance"
+  effort:
+    fr: "3 mois · progression graduelle, sans chrono"
+    en: "3 months · gradual progression, no pace target"
+  action:
+    fr: "Construis une progression adaptée de 1 km à 5 km, puis jusqu'à un parcours total de 10 km. Alterne course et marche aussi longtemps que nécessaire ; choisis une surface sûre ou un tapis en hiver. Ne cherche jamais à compenser une semaine manquée par une hausse brutale de distance."
+    en: "Build a suitable progression from 1 to 5 km, then a full 10 km route. Use run/walk intervals as needed; choose a safe surface or treadmill in winter. Never make up for a missed week with a sudden mileage increase."
+  why:
+    fr: "Découvrir ce qu'une progression patiente permet d'accomplir physiquement."
+    en: "Discover what patient physical progression can achieve."
+  done_when:
+    fr: "Un parcours de 10 km a été parcouru, avec le mode (course/marche) et une réflexion honnête sur le parcours."
+    en: "A 10 km route was completed, recording run/walk portions and a candid reflection."
+  minimum:
+    fr: "Parcours 7 km à allure adaptée avec un plan réaliste pour les 10 km."
+    en: "Cover 7 km at a suitable pace with a realistic plan to reach 10 km."
+  stretch:
+    fr: "Cours la totalité des 10 km si tu y es prêt, sans priorité donnée à la vitesse."
+    en: "Run all 10 km if prepared, without prioritizing speed."
+  targets:
+  - fitness-goal
+  parents: []
+- id: ACT-202611-Q3
+  horizon: quarter
+  category: speaking
+  period: quarter-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-02-02'
+  difficulty: ambitious
+  title:
+    fr: "Donner ma première mini-conférence de 20 minutes"
+    en: "Deliver my first twenty-minute talk"
+  effort:
+    fr: "12–20 h · présentation après le 16 janvier"
+    en: "12–20 h · presentation after January 16"
+  action:
+    fr: "Prépare une vraie conférence de 20 minutes sur un résultat de probabilités, un outil de ton blog ou une question actuarielle. Invite un groupe et présente après le 16 janvier, en acceptant les questions ; si aucun auditoire n'est disponible, publie une vidéo complète et sollicite des critiques."
+    en: "Prepare a real twenty-minute talk on probability, a tool from your blog or an actuarial question. Invite a group and present after January 16, handling questions. If no audience is available, publish a full video and invite criticism."
+  why:
+    fr: "Passer du travail solitaire au partage structuré de connaissances."
+    en: "Move from solitary work to structured knowledge sharing."
+  done_when:
+    fr: "Une présentation de 20 minutes a réellement été donnée ou publiée et les questions ou réactions ont été analysées."
+    en: "A twenty-minute presentation was genuinely delivered or published and reactions or questions were reviewed."
+  minimum:
+    fr: "Enregistre 15 minutes d'exposé complet et invite deux personnes à le commenter."
+    en: "Record a full fifteen-minute talk and invite two people to comment."
+  stretch:
+    fr: "Présente en anglais devant un groupe scientifique ou professionnel."
+    en: "Present in English to a scientific or professional group."
+  targets:
+  - talk
+  parents: []
+- id: ACT-202611-H2
+  horizon: halfyear
+  category: travel
+  period: halfyear-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Organiser et vivre une escapade aux États-Unis"
+    en: "Plan and take a short trip to the United States"
+  effort:
+    fr: "6 mois de préparation · 1 à 3 jours de voyage selon budget"
+    en: "Six months of planning · 1–3 travel days depending on budget"
+  action:
+    fr: "Choisis une ville ou un lieu américain que tu n'as pas encore exploré, fixe un budget, vérifie les formalités d'entrée et organise un court séjour ou une visite d'une journée. Réalise l'escapade si le budget, le temps et les conditions le permettent ; consigne cinq découvertes."
+    en: "Choose a US city or place you have not yet explored, set a budget, check entry requirements and arrange a short stay or day trip. Take the trip if budget, time and circumstances allow; record five discoveries."
+  why:
+    fr: "Faire de la découverte du monde une expérience réelle, et non seulement un projet vague."
+    en: "Make exploring the world a lived experience rather than a vague wish."
+  done_when:
+    fr: "Une visite volontaire dans un lieu nouveau aux États-Unis a été vécue et cinq observations ont été consignées ; les contraintes financières et administratives sont respectées."
+    en: "A deliberate visit to a new US place took place and five observations were recorded; financial and entry requirements were respected."
+  minimum:
+    fr: "Un itinéraire réaliste, un budget vérifié et une date possible pour partir, sans obligation de dépenser."
+    en: "A realistic itinerary, checked budget and possible departure date, with no obligation to spend."
+  stretch:
+    fr: "Partage une courte chronique de voyage personnelle avec photos prises par toi."
+    en: "Share a short personal travel story with photos you took."
+  targets:
+  - travel-goal
+  - explore
+  parents: []
