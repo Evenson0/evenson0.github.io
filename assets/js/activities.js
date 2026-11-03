@@ -108,7 +108,7 @@
       sourceMentor: 'Mentor proposal', sourceUser: 'Evenson’s report', noCompletion: 'Shared decisions are kept here, without invented outcomes.'
     }
   };
-  const KEY = 'evenson.activities.drafts.v1';
+  const KEY = 'evenson.activities.drafts.v2';
   let storageOK = true;
   let rawDrafts;
   try { rawDrafts = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (_) { storageOK = false; }
