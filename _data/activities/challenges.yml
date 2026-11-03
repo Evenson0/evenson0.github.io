@@ -99,67 +99,70 @@
   - ACT-202611-M2
 - id: ACT-202611-M1
   horizon: month
+  category: build
   period: month-2026-11
   period_start: '2026-11-03'
   issued: '2026-11-03'
   due: '2026-11-30'
   title:
-    fr: "Une étude actuarielle reproductible de bout en bout"
-    en: "A reproducible actuarial study"
+    fr: "Créer un entraînement SOA P vraiment agréable sur mobile"
+    en: "Build a friendly mobile SOA P practice experience"
   difficulty: ambitious
   effort:
-    fr: "12–16 h · séances de recherche"
-    en: "12–16 h · research sessions"
+    fr: "15–25 h · sur le mois de novembre"
+    en: "15–25 h · across November"
   action:
-    fr: "Sur données ouvertes ou synthétiques, implémente un GLM de fréquence avec offset d'exposition et un modèle comparatif. Évalue-les hors échantillon, examine un diagnostic et publie code, résultats, limites et procédure de reproduction. Aucune donnée employeur."
-    en: "Using open or synthetic data, implement a frequency GLM with an exposure offset and a comparator. Evaluate out of sample, examine a diagnostic and publish code, results, limitations and reproduction instructions. No employer data."
+    fr: "Crée une première version mobile de ton outil de préparation P : navigation tactile simple, progression sauvegardée, explications lisibles, filtres par thème et mode entraînement. Intègre 15 à 20 exercices originaux ou des liens officiels, sans recopier des énoncés protégés sans autorisation. Précise qu'il s'agit d'un outil indépendant de la SOA."
+    en: "Build a mobile-first version of your Exam P practice tool: easy touch navigation, saved progress, readable explanations, topic filters and practice mode. Use 15–20 original questions or official links; do not republish protected question text without permission. Clearly label it as independent from SOA."
   why:
-    fr: "Transformer tes lectures GLM en recherche exécutable et critiquable."
-    en: "Turn GLM reading into runnable, debatable research."
+    fr: "Créer un outil qu'un étudiant aurait réellement envie d'utiliser dans le métro ou sur téléphone."
+    en: "Build a tool students would genuinely enjoy using on their phones."
   done_when:
-    fr: "Un dépôt public reproduit deux modèles et leur comparaison avec README et note méthodologique de deux pages."
-    en: "A public repository reproduces two models and their comparison with a README and two-page methods note."
+    fr: "Un prototype utilisable sur smartphone est publié avec 15 exercices testés, sauvegarde locale et README ; une autre personne a été invitée à le tester."
+    en: "A usable smartphone prototype is public with 15 tested exercises, local progress saving and a README; someone else has been invited to test it."
   minimum:
-    fr: "Un GLM, une baseline, une mesure de validation et un exemple entièrement reproductible."
-    en: "One GLM, one baseline, a validation metric and a fully reproducible example."
+    fr: "Un prototype mobile utilisable avec 10 questions originales, corrigés et progression locale."
+    en: "A usable mobile prototype with 10 original questions, explanations and local progress."
   stretch:
-    fr: "Teste la surdispersion ou les valeurs aberrantes et sollicite une critique technique."
-    en: "Test overdispersion or outliers and request technical criticism."
+    fr: "Ajoute mode examen chronométré, thème sombre, FR/EN et test de navigation sur deux téléphones."
+    en: "Add timed exam mode, dark mode, FR/EN and usability checks on two phones."
   targets:
-  - research
+  - builder
+  - acas
   parents:
   - ACT-202611-H1
 - id: ACT-202611-M2
   horizon: month
+  category: social
   period: month-2026-11
   period_start: '2026-11-03'
   issued: '2026-11-03'
   due: '2026-11-30'
   title:
-    fr: "Publier un essai que tu es prêt à défendre"
-    en: "Publish an essay you can defend"
+    fr: "Construire un observatoire de mon compte X sans spam"
+    en: "Build a spam-free X account observatory"
   difficulty: ambitious
   effort:
-    fr: "8–12 h · lecture et rédaction"
-    en: "8–12 h · reading and writing"
+    fr: "10–16 h · prototype et tableau de bord"
+    en: "10–16 h · prototype and dashboard"
   action:
-    fr: "Écris 1 500 à 2 000 mots sur une question littéraire, politique ou philosophique : thèse contestable, deux sources, meilleure objection, réponse. Demande une lecture critique, révise puis publie sur ton blog."
-    en: "Write 1,500–2,000 words on a literary, political or philosophical question: a debatable thesis, two sources, the strongest objection and a response. Ask for criticism, revise and publish on your blog."
+    fr: "Construis un petit outil en lecture seule qui suit l'évolution de ton compte X à partir d'exports autorisés ou d'une API approuvée : abonnés, impressions, publications et engagement quand ces données existent. Prévois une saisie CSV manuelle si l'API n'est pas disponible. Aucune publication, réponse, abonnement ou message automatisé."
+    en: "Build a read-only tool to monitor your X account using permitted exports or approved API access: followers, impressions, posts and engagement where available. Include manual CSV input if the API is unavailable. Never automate posting, replies, follows or messages."
   why:
-    fr: "Passer d'opinions privées à une pensée signée, argumentée et exposée."
-    en: "Move from private opinions to accountable, reasoned, exposed thinking."
+    fr: "Comprendre ta progression et ce qui intéresse réellement ton audience sans créer une machine à bruit."
+    en: "Understand your progress and what resonates without building a noise machine."
   done_when:
-    fr: "Un essai sourcé et révisé existe publiquement et une demande de critique a été envoyée."
-    en: "A sourced, revised essay is public and a critique request has been sent."
+    fr: "Un tableau de bord local fonctionne sur des données autorisées et produit un bilan hebdomadaire reproductible, sans publier ni conserver de secrets en clair."
+    en: "A local dashboard works on permitted data and produces a reproducible weekly summary without publishing or storing plaintext secrets."
   minimum:
-    fr: "Publie 1 000 mots avec thèse, objection sérieuse et deux sources."
-    en: "Publish 1,000 words with a thesis, serious objection and two sources."
+    fr: "Un script hors ligne qui compare deux exports CSV et décrit les variations."
+    en: "An offline script that compares two CSV exports and explains the changes."
   stretch:
-    fr: "Traduis-le en anglais et soumets-le à une publication extérieure."
-    en: "Translate it into English and submit it to an external publication."
+    fr: "Ajoute analyses par thème de publication, graphiques de tendances et tests automatisés."
+    en: "Add topic-level analysis, trend charts and automated tests."
   targets:
-  - books
-  - writing
+  - audience
+  - builder
   parents: *id001
 - id: ACT-202611-Q1
   horizon: quarter
