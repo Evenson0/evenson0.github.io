@@ -166,127 +166,133 @@
   parents: *id001
 - id: ACT-202611-Q1
   horizon: quarter
+  category: math
   period: quarter-2026-11
   period_start: '2026-11-03'
   issued: '2026-11-03'
   due: '2027-02-02'
   title:
-    fr: "Donner une conférence de vingt minutes"
-    en: "Deliver a twenty-minute talk"
+    fr: "Résoudre 100 questions SOA P et enrichir mon blog"
+    en: "Solve 100 SOA P questions and grow my blog"
   difficulty: ambitious
   effort:
-    fr: "15–20 h sur 3 mois · après P"
-    en: "15–20 h across 3 months · after P"
+    fr: "60–100 h · préparation P et publication cumulées"
+    en: "60–100 h · combined Exam P preparation and publishing"
   action:
-    fr: "Prépare une conférence de vingt minutes sur une idée mathématique ou actuarielle. Invite un groupe à l'écouter après le 16 janvier ; si personne n'est disponible, publie l'exposé filmé et sollicite des critiques."
-    en: "Prepare a twenty-minute talk on mathematics or actuarial work. Invite a group after January 16; if nobody is available, publish the recorded talk and request criticism."
+    fr: "Travaille 100 questions des ressources officielles SOA Sample P et consigne pour chacune une solution rédigée par toi : méthode, justification, piège et référence vers l'énoncé officiel. Publie un index consultable sur le blog. Ne reproduis pas les énoncés ou les corrigés officiels sans autorisation. Vise un premier ensemble utile avant l'examen P du 16 janvier."
+    en: "Work through 100 questions from official SOA Sample P resources and write your own solution for each: method, justification, common trap and link to the original question where possible. Publish a browsable blog index. Do not reproduce copyrighted prompts or official answers without permission. Aim for a useful first set before January 16."
   why:
-    fr: "Apprendre à soutenir publiquement des idées sérieuses."
-    en: "Learn to stand behind serious ideas in public."
+    fr: "Transformer les exercices de préparation en une bibliothèque explicative durable et partageable."
+    en: "Turn exam preparation into a lasting, shareable explanation library."
   done_when:
-    fr: "L'exposé est donné ou publié, avec bilan des questions."
-    en: "The talk is delivered or published, with a review of questions."
+    fr: "Cent questions sont résolues et vérifiées, indexées dans le blog avec une explication originale et une référence conforme pour chacune."
+    en: "One hundred questions are solved and checked, indexed on the blog with an original explanation and lawful reference for each."
   minimum:
-    fr: "Quinze minutes filmées et partagées pour critique."
-    en: "Fifteen recorded minutes shared for criticism."
+    fr: "Cinquante solutions originales vérifiées et publiées dans une interface consultable, comme jalon intermédiaire."
+    en: "Fifty verified original solutions published in a browsable interface as an intermediate milestone."
   stretch:
-    fr: "Présente en anglais devant un vrai groupe."
-    en: "Present in English before a live group."
+    fr: "Ajoute filtres par notion, difficulté, version FR/EN et navigation mobile reliée à ton outil P."
+    en: "Add topic and difficulty filters, FR/EN versions and mobile navigation connected to your Exam P tool."
   targets:
-  - talk
+  - acas
+  - builder
   parents: *id001
 - id: ACT-202611-S1
   horizon: season
+  category: outdoors
   period: autumn-2026
   period_start: '2026-11-03'
   issued: '2026-11-03'
   due: '2026-11-30'
   title:
-    fr: "Entrer seul dans un lieu d'inconnus"
-    en: "Enter a room of strangers on your own"
+    fr: "Une vraie randonnée au Mont-Saint-Bruno"
+    en: "Hike at Mont-Saint-Bruno"
   difficulty: stretch
   effort:
-    fr: "3–5 h · avant le 30 novembre"
-    en: "3–5 h · before November 30"
+    fr: "Une demi-journée · transport et marche"
+    en: "Half a day · travel and walk"
   action:
-    fr: "Assiste seul à un événement culturel ou citoyen inhabituel. Pose une question ou échange avec une personne inconnue. Écris dix lignes sur ce que tu en as appris."
-    en: "Attend an unfamiliar cultural or civic event alone. Ask a question or converse with someone new. Write ten lines on what you learned."
+    fr: "Effectue la boucle pédestre du Grand-Duc (environ 3,5 km) au parc national du Mont-Saint-Bruno avant la fin de novembre, après vérification des conditions et de l'accès à la Sépaq. Profite du paysage sans écran et note trois observations. Si les conditions ne sont pas sûres, reporte la sortie au lieu de prendre un risque."
+    en: "Hike the roughly 3.5 km Grand-Duc trail in Mont-Saint-Bruno National Park before November ends, checking park access and trail conditions with Sépaq first. Explore without your phone in hand and record three observations. Postpone if conditions are unsafe."
   why:
-    fr: "Découvrir au-delà des habitudes et exercer le courage social."
-    en: "Explore beyond your habits and develop social courage."
+    fr: "Créer un souvenir concret hors des livres et du travail, au contact de la nature."
+    en: "Create a real memory beyond work and books, outdoors."
   done_when:
-    fr: "Une sortie nouvelle, un échange réel et dix lignes de réflexion."
-    en: "One new outing, a genuine interaction and ten lines of reflection."
+    fr: "La randonnée a été réellement parcourue et trois observations personnelles ont été notées ; l'accès et la météo ont été vérifiés."
+    en: "The hike was actually completed and three personal observations recorded; access and weather were checked."
   minimum:
-    fr: "Assiste seul à une rencontre nouvelle et parle à une personne."
-    en: "Attend a new gathering alone and talk to one person."
+    fr: "Parcours sûr de 1,5 km dans le même parc, selon l'état du sentier."
+    en: "A safe 1.5 km route in the same park, depending on trail conditions."
   stretch:
-    fr: "Propose une conversation ultérieure, sans exiger de réponse."
-    en: "Offer a follow-up conversation without requiring a reply."
+    fr: "Invite une personne et raconte la sortie en un récit court sans IA."
+    en: "Invite someone and write a short account of the outing without AI."
   targets:
   - explore
-  - books
+  - fitness-goal
   parents: *id001
 - id: ACT-202611-H1
   horizon: halfyear
+  category: build
   period: halfyear-2026-11
   period_start: '2026-11-03'
   issued: '2026-11-03'
   due: '2027-05-02'
   title:
-    fr: "Livrer un outil mathématique open source robuste"
-    en: "Ship a robust open-source mathematical tool"
+    fr: "Livrer un outil mathématique open source que d'autres peuvent utiliser"
+    en: "Ship an open-source mathematical tool others can use"
   difficulty: ambitious
   effort:
-    fr: "50–70 h sur 6 mois · effort cumulé"
-    en: "50–70 h across six months · cumulative effort"
+    fr: "50–70 h sur six mois · projets partagés"
+    en: "50–70 h across six months · shared projects"
   action:
-    fr: "Transforme ton étude actuarielle en outil open source : interface, installation, exemples, tests automatiques et limites documentées. Demande une revue de code externe et corrige une faiblesse."
-    en: "Turn your actuarial study into an open-source tool: interface, installation, examples, automated tests and documented limitations. Request external code review and fix a weakness."
+    fr: "Transforme un de tes prototypes mathématiques ou actuariels en outil public solide : fonctionnalités utiles, documentation, jeux de tests, exemples reproductibles et version stable. Sollicite un test extérieur et améliore l'interface selon le retour. Tu peux prolonger ton simulateur SOA P."
+    en: "Turn one mathematical or actuarial prototype into a solid public tool: useful features, documentation, automated tests, reproducible examples and a stable release. Request an external usability test and improve the interface. Your Exam P app could be the foundation."
   why:
-    fr: "Construire un outil que d'autres peuvent vérifier et réutiliser."
-    en: "Build something others can inspect and reuse."
+    fr: "Faire avancer un portfolio concret plutôt que multiplier les brouillons jamais terminés."
+    en: "Build a concrete portfolio instead of accumulating unfinished prototypes."
   done_when:
-    fr: "Une version publique fonctionne avec tests, documentation, exemple reproductible et demande de revue."
-    en: "A public release works with tests, documentation, reproducible example and a review request."
+    fr: "Une version stable et testée est en ligne, documentée et réellement utilisable sur téléphone ou ordinateur."
+    en: "A stable tested version is published, documented and genuinely usable on phone or desktop."
   minimum:
-    fr: "Un outil étroit mais utilisable, testé et documenté."
-    en: "A narrow but usable, tested and documented tool."
+    fr: "Une version étroite mais aboutie et documentée avec tests de base."
+    en: "A narrow but polished documented version with basic tests."
   stretch:
-    fr: "Ajoute une fonction avancée ou formalise une propriété mathématique en Lean."
-    en: "Add an advanced feature or formalize a mathematical property in Lean."
+    fr: "Ajoute une contribution mathématique vérifiable ou une formalisation Lean, puis sollicite une revue externe."
+    en: "Add a verifiable mathematical contribution or Lean formalization, then seek outside review."
   targets:
+  - builder
   - research
   parents:
   - ACT-202611-Y1
 - id: ACT-202611-Y1
   horizon: year
+  category: research
   period: year-2026-11
   period_start: '2026-11-03'
   issued: '2026-11-03'
   due: '2027-11-02'
   title:
-    fr: "Un manuscrit digne d'une évaluation scientifique"
-    en: "A manuscript worthy of scientific review"
+    fr: "Un vrai manuscrit de recherche actuarielle"
+    en: "A genuine actuarial research manuscript"
   difficulty: ambitious
   effort:
-    fr: "100–150 h sur 12 mois · travail cumulé"
-    en: "100–150 h across twelve months · cumulative effort"
+    fr: "100–150 h sur douze mois · temps cumulable"
+    en: "100–150 h across twelve months · cumulative time"
   action:
-    fr: "Pose une question précise en tarification IARD. Critique la littérature, compare des modèles sur données autorisées, teste leur robustesse et rédige un manuscrit reproductible. Sollicite deux lecteurs qualifiés ou une évaluation scientifique."
-    en: "Frame a focused P&C pricing question. Critically review literature, compare models on permitted data, test robustness and write a reproducible manuscript. Seek two qualified readers or scientific review."
+    fr: "Choisis une question de tarification IARD que tu peux étudier avec données ouvertes ou synthétiques. Analyse la littérature, reproduis un résultat, compare des modèles et teste la robustesse. Rédige un working paper avec code, limites et références, puis sollicite une critique qualifiée."
+    en: "Choose a P&C pricing research question answerable with open or synthetic data. Review literature, reproduce a result, compare models and test robustness. Write a working paper with code, limitations and references, then seek qualified criticism."
   why:
-    fr: "Construire un vrai dossier de recherche indépendant pour un futur doctorat."
-    en: "Build genuine independent research toward future doctoral study."
+    fr: "Construire ton identité de chercheur indépendant en vue de futurs travaux doctoraux."
+    en: "Build your independent-research identity toward doctoral work."
   done_when:
-    fr: "Un manuscrit et son code sont achevés ; une demande de revue est envoyée. L'acceptation n'est pas requise."
-    en: "A manuscript and its code are complete; review has been requested. Acceptance is not required."
+    fr: "Un working paper complet et reproductible existe et a été envoyé pour lecture critique, sans prétendre qu'il est accepté par une revue."
+    en: "A complete reproducible working paper exists and has been sent for critical reading, without claiming journal acceptance."
   minimum:
-    fr: "Working paper reproductible de 10 à 15 pages, partagé pour critique."
-    en: "A reproducible 10–15-page working paper shared for criticism."
+    fr: "Une note technique reproductible de dix pages soumise à un lecteur critique."
+    en: "A ten-page reproducible technical note sent to a critical reader."
   stretch:
-    fr: "Prépare une soumission à une conférence ou une revue sérieuse."
-    en: "Prepare a submission to a serious conference or journal."
+    fr: "Présente les résultats à un groupe et prépare une soumission scientifique appropriée."
+    en: "Present results to a group and prepare an appropriate scientific submission."
   targets:
   - research
   parents: *id001
