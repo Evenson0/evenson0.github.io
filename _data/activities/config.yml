@@ -4,58 +4,64 @@ timezone: America/Toronto
 intro:
   fr: "Des missions pour apprendre, créer, publier, bouger et découvrir. Choisis ce qui t'attire, puis raconte ce que tu as tenté."
   en: "Missions to learn, build, publish, move and explore. Choose what draws you in, then share what you tried."
+annual_vision:
+  start: '2026-11-03'
+  end: '2027-11-02'
+  max_focus: 3
+  headline: {fr: "365 jours pour devenir quelqu'un que tu n'as jamais été", en: "365 days to do what you have never done"}
+  subtitle: {fr: "Des ambitions audacieuses, des choix libres, des progrès réels.", en: "Bold ambitions, free choices, real progress."}
 mentor_note:
-  fr: "Ton défi n'est pas d'en faire toujours plus : c'est d'oser quelque chose qui compte. Essaie un défi à la fois. P reste prioritaire jusqu'au 16 janvier, et tes choix restent libres."
-  en: "Your challenge isn't to do more of everything: it's to try something that matters. Take on one at a time. Exam P stays a priority until January 16, and your choices are yours."
+  fr: "365 jours pour accomplir des premières : sport, livres, anglais, actuariat, montagne, recherche et création. Choisis deux ou trois grandes ambitions pour l'année, puis une action concrète cette semaine. Le courage se mesure au chemin réellement parcouru."
+  en: "365 days to achieve new firsts: endurance, books, English, exams, mountains, research and building. Choose two or three major ambitions for the year, then one concrete action this week. Courage lives in the journey you actually take."
 horizons:
 - id: week
   label:
     fr: Semaine
     en: Week
-  quota: 3
+  quota: 6
   cadence:
-    fr: 3 propositions · choisir 1 à 3
-    en: 3 proposals · choose 1–3
+    fr: 6 possibilités · n'en choisir qu'une suffit
+    en: 6 ideas · choosing one is plenty
 - id: month
   label:
     fr: Mois
     en: Month
-  quota: 4
+  quota: 14
   cadence:
-    fr: 4 pistes · choisis tes projets
-    en: 4 ideas · choose your projects
+    fr: 14 pistes maximum · n'en poursuivre que 1 ou 2
+    en: Up to 14 ideas · pursue only 1 or 2
 - id: quarter
   label:
     fr: 3 mois
     en: 3 months
-  quota: 3
+  quota: 12
   cadence:
-    fr: 3 défis de progression · période glissante
-    en: 3 growth challenges · rolling period
+    fr: 12 projets disponibles · prioriser 1
+    en: 12 available projects · prioritize one
 - id: season
   label:
     fr: Saison
     en: Season
-  quota: 1
+  quota: 7
   cadence:
-    fr: 1 expérience · au rythme des saisons
-    en: 1 experience · follow the seasons
+    fr: Jusqu'à 7 expériences · choisir selon la saison
+    en: Up to 7 experiences · choose by season
 - id: halfyear
   label:
     fr: 6 mois
     en: 6 months
-  quota: 2
+  quota: 9
   cadence:
-    fr: 2 grands projets au choix
-    en: 2 long-term projects to choose from
+    fr: 9 grands défis proposés · sélectionner
+    en: 9 major possibilities · select carefully
 - id: year
   label:
     fr: Année
     en: Year
-  quota: 1
+  quota: 14
   cadence:
-    fr: 1 cap · découpé en étapes
-    en: 1 direction · broken into steps
+    fr: 14 grandes ambitions possibles · en élire 2 à 3
+    en: 14 life-changing possibilities · select 2 or 3
 categories:
 - id: math
   label: {fr: "Maths & actuariat", en: "Math & actuarial"}
@@ -75,6 +81,14 @@ categories:
   label: {fr: "Voyages", en: "Travel"}
 - id: research
   label: {fr: "Recherche", en: "Research"}
+- id: health
+  label: {fr: "Santé & transformation", en: "Health & wellbeing"}
+- id: community
+  label: {fr: "Rencontres & contribution", en: "People & contribution"}
+- id: career
+  label: {fr: "Études & carrière", en: "Education & career"}
+- id: creativity
+  label: {fr: "Art & création", en: "Arts & creation"}
 targets:
 - id: acas
   label:
