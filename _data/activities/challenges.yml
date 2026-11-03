@@ -1,97 +1,100 @@
 - id: ACT-202611-W1
   horizon: week
+  category: fitness
   period: 2026-W45
   period_start: '2026-11-02'
   issued: '2026-11-03'
   due: '2026-11-08'
   title:
-    fr: "La preuve qui résiste à la critique"
-    en: "A proof that withstands criticism"
+    fr: "Le premier kilomètre"
+    en: "The first kilometre"
   difficulty: stretch
   effort:
-    fr: "3–4 h · séances P existantes"
-    en: "3–4 h · existing P sessions"
+    fr: "30–60 min · une sortie, échauffement compris"
+    en: "30–60 min · one outing, warm-up included"
   action:
-    fr: "Choisis un problème P difficile. Construis une solution plausible mais erronée, explique sa faille, puis démontre le résultat correct par deux méthodes indépendantes, dont une simulation reproductible. Fais examiner la note par une autre personne."
-    en: "Choose a difficult Exam P problem. Construct a plausible but wrong solution, identify its flaw, then establish the right result using two independent methods, including a reproducible simulation. Ask someone to scrutinize your note."
+    fr: "Choisis un parcours sûr de 1 km, échauffe-toi et essaie de le parcourir en courant à ton rythme. Si nécessaire, alterne course et marche. Note la distance, ton ressenti et ce que tu ferais différemment la prochaine fois."
+    en: "Choose a safe 1 km route, warm up and try to run it at a comfortable pace. Alternate running and walking if needed. Record the distance, how it felt and what you would change next time."
   why:
-    fr: "Développer un réflexe de mathématicien : démontrer, réfuter et accepter la critique."
-    en: "Develop a mathematician's reflex: prove, refute and welcome criticism."
+    fr: "Commencer une progression concrète vers 5 puis 10 km, sans chercher une performance de vitesse."
+    en: "Start a real progression toward 5 km and then 10 km, without chasing a pace target."
   done_when:
-    fr: "Une note complète contient le faux raisonnement, la correction, deux vérifications et une demande de critique envoyée. Aucune réponse extérieure n'est exigée."
-    en: "A complete note contains the false argument, correction, two checks and a critique request. No outside reply is required."
+    fr: "Tu as parcouru 1 km avec une portion courue et noté un bref bilan. Aucun temps minimum n'est exigé."
+    en: "You covered 1 km with some running and recorded a short reflection. No minimum pace is required."
   minimum:
-    fr: "Une preuve et un contre-exemple numérique expliqués et partagés pour critique."
-    en: "A proof and an explained numerical counterexample shared for criticism."
+    fr: "Un parcours mesuré de 1 km en alternant marche et course selon ton niveau."
+    en: "A measured 1 km route alternating walking and running as needed."
   stretch:
-    fr: "Publie une note pédagogique bilingue et le code de simulation sur ton blog."
-    en: "Publish a bilingual teaching note and simulation code on your blog."
+    fr: "Cours 1 km d'une traite si tu es à l'aise, sans forcer à travers une douleur."
+    en: "Run 1 km continuously if comfortable, without pushing through pain."
   targets:
-  - acas
+  - fitness-goal
   parents: &id001 []
 - id: ACT-202611-W2
   horizon: week
+  category: speaking
   period: 2026-W45
   period_start: '2026-11-02'
   issued: '2026-11-03'
   due: '2026-11-08'
   title:
-    fr: "Huit minutes en anglais face à un vrai auditeur"
-    en: "Eight minutes of live English"
+    fr: "Expliquer les probabilités en anglais devant quelqu'un"
+    en: "Explain probability live in English"
   difficulty: stretch
   effort:
-    fr: "2–3 h · préparation et échange"
-    en: "2–3 h · preparation and conversation"
+    fr: "2 h · préparation et échange"
+    en: "2 h · preparation and conversation"
   action:
-    fr: "Explique sans lire un texte une idée actuarielle ou mathématique pendant huit minutes en anglais à une vraie personne, puis réponds à trois questions spontanées. Consigne les moments où tu as dû improviser."
-    en: "Without reading a script, explain a mathematical or actuarial idea in English for eight minutes to a real listener, then answer three unscripted questions. Reflect on moments when you had to improvise."
+    fr: "Prépare une explication de 8 minutes sur une idée de probabilité sans lire tes notes, présente-la en anglais à une personne et réponds à au moins deux questions imprévues."
+    en: "Prepare an eight-minute explanation of a probability concept without reading your notes, deliver it in English to a real person and answer at least two unscripted questions."
   why:
-    fr: "Être capable de soutenir une pensée technique en anglais sous le regard d'autrui."
-    en: "Practice defending a technical idea in English under real questioning."
+    fr: "Développer la capacité de prendre la parole, pas uniquement la prononciation en solitaire."
+    en: "Build the skill of speaking publicly, not just practicing pronunciation alone."
   done_when:
-    fr: "L'exposé a été donné en direct avec questions et tu as noté deux améliorations. L'enregistrement peut rester privé."
-    en: "The talk was delivered live with questions and you noted two improvements. Any recording may stay private."
+    fr: "Une personne a écouté l'exposé et posé des questions ; tu as noté deux pistes d'amélioration."
+    en: "A person listened to your talk and asked questions; you noted two things to improve."
   minimum:
-    fr: "Cinq minutes sans lire et une question spontanée."
-    en: "Five minutes without reading and one spontaneous question."
+    fr: "Cinq minutes en anglais et une question spontanée."
+    en: "Five minutes in English and one spontaneous question."
   stretch:
-    fr: "Présente devant trois personnes et réponds dix minutes en anglais."
-    en: "Present to three people and answer questions for ten minutes in English."
+    fr: "Recommence devant trois personnes et échange dix minutes sans script."
+    en: "Repeat before three people and discuss for ten minutes without a script."
   targets:
   - talk
   parents:
   - ACT-202611-Q1
 - id: ACT-202611-W3
   horizon: week
+  category: writing
   period: 2026-W45
   period_start: '2026-11-02'
   issued: '2026-11-03'
   due: '2026-11-08'
   title:
-    fr: "Défendre une idée contre sa meilleure objection"
-    en: "Defend an idea against its best objection"
+    fr: "Un texte entièrement écrit sans IA : qu'est-ce que le courage ?"
+    en: "Write without AI: what is courage?"
   difficulty: stretch
   effort:
-    fr: "3–4 h · lecture et écriture"
-    en: "3–4 h · reading and writing"
+    fr: "3–5 h · réflexion, rédaction, relecture"
+    en: "3–5 h · reflection, writing and revision"
   action:
-    fr: "À partir d'Adieu ou d'une lecture philosophique, écris 600 à 800 mots : thèse précise, argument, objection charitable et réponse. Fais lire ton texte à quelqu'un en lui demandant ce qui ne convainc pas."
-    en: "Using Adieu or a philosophical reading, write 600–800 words: a precise thesis, argument, fair objection and reply. Ask someone to read it and identify what fails to convince."
+    fr: "Écris seul un essai de 800 à 1 200 mots sur la question « Le courage consiste-t-il à agir malgré la peur ? ». Aucun outil d'IA générative pour trouver la thèse, construire le plan, rédiger ou réviser. Utilise seulement tes lectures et ton jugement ; fais lire le texte par quelqu'un si tu le souhaites."
+    en: "Independently write an 800–1,200-word essay on 'Is courage acting despite fear?'. Use no generative AI to form the thesis, outline, draft or revise. Rely on your reading and judgment; optionally ask a person to read it."
   why:
-    fr: "Apprendre à défendre un texte devant la critique plutôt qu'à produire des notes sans risque."
-    en: "Learn to defend writing against criticism instead of collecting risk-free notes."
+    fr: "Tester ta propre voix intellectuelle sans déléguer la pensée ni la formulation."
+    en: "Test your own intellectual voice without outsourcing thought or wording."
   done_when:
-    fr: "Un essai structuré a été envoyé pour critique et tu as formulé sa principale faiblesse. Aucune réponse n'est requise."
-    en: "A structured essay was shared for criticism and you identified its main weakness. No reply is required."
+    fr: "Un texte personnel abouti est écrit et relu sans IA ; il peut rester privé si tu le souhaites."
+    en: "A complete personal essay was written and revised without AI; it may remain private."
   minimum:
-    fr: "400 mots structurés avec objection réelle, transmis à un lecteur."
-    en: "400 structured words with a genuine objection, shared with a reader."
+    fr: "Rédige 600 mots cohérents, entièrement sans IA."
+    en: "Write 600 coherent words entirely without AI."
   stretch:
-    fr: "Publie une version bilingue, révisée et sourcée sur ton blog."
-    en: "Publish a revised, sourced, bilingual version on your blog."
+    fr: "Publie le texte tel que tu l'assumes et défends oralement ta thèse devant un lecteur."
+    en: "Publish the text as your own work and defend its thesis in conversation."
   targets:
-  - books
   - writing
+  - books
   parents:
   - ACT-202611-M2
 - id: ACT-202611-M1
