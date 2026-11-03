@@ -8,20 +8,21 @@ sitemap: false
 excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et progresser."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=3">
+<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=4">
 
 <div class="activities-app" id="activities-app" data-lang="fr">
   <header class="act-hero">
     <div class="act-hero-bar">
-      <span class="act-eyebrow" data-copy="eyebrow">ACTIVITIES · LE CARNET DES POSSIBLES</span>
+      <span class="act-eyebrow" data-copy="eyebrow">ACTIVITIES · PROTOCOLE D'AUDACE</span>
       <div class="act-language" aria-label="Language / Langue">
         <button type="button" data-act-lang="fr" aria-pressed="true">FR</button>
         <button type="button" data-act-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
-    <h2 data-copy="hero">Des défis qui donnent envie d'oser.</h2>
+    <h2 data-copy="hero">Deviens capable de ce qui te paraît impossible aujourd'hui.</h2>
     <p id="act-intro">Choisis un défi, tente-le et garde une trace de ce que tu as appris.</p>
-    <p class="act-promise" data-copy="promise">Pas de points artificiels. Des expériences et des réalisations.</p>
+    <p class="act-promise" data-copy="promise">Des exploits qui comptent, pas des points à collectionner.</p>
+    <div class="act-training-axes" aria-label="Axes de progression"><span data-copy="axisMind">Esprit</span><span data-copy="axisBody">Corps</span><span data-copy="axisCourage">Courage</span><span data-copy="axisCreation">Création</span></div>
   </header>
 
   <aside class="act-mentor" aria-labelledby="act-mentor-title">
@@ -106,4 +107,4 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
   </noscript>
 </div>
 <script id="activities-data" type="application/json">{{ site.data.activities | jsonify | replace: '<', '\u003c' }}</script>
-<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=3"></script>
+<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=4"></script>
