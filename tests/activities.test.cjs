@@ -3,8 +3,8 @@ const assert = require('node:assert/strict');
 const model = require('../assets/js/activities.js');
 const data = {
   challenges: [
-    {id:'W1', horizon:'week', due:'2020-01-01', title:{fr:'Un défi P',en:'A P challenge'},action:{fr:'Expliquer',en:'Explain'}},
-    {id:'Y1', horizon:'year', title:{fr:'Écrire',en:'Write'},action:{fr:'Un article',en:'A paper'}}
+    {id:'W1', category:'math', horizon:'week', due:'2020-01-01', title:{fr:'Un défi P',en:'A P challenge'},action:{fr:'Expliquer',en:'Explain'}},
+    {id:'Y1', category:'writing', horizon:'year', title:{fr:'Écrire',en:'Write'},action:{fr:'Un article',en:'A paper'}}
   ],
   events: [{challenge:'W1',status:'proposed'}, {challenge:'Y1',status:'proposed'}, {challenge:'Y1',status:'accepted'}]
 };
@@ -39,4 +39,11 @@ test('Reports preserve user text and include notes without a decision', () => {
   const result = model.buildReport(data,{W1:{status:'',note:text}},{noteOnly:'Retour libre'},'fr','2026-11-03');
   assert.ok(result.includes('W1 — Un défi P\nRetour libre\n'+text));
   assert.equal(model.buildReport(data,{}, {},'fr','2026-11-03'),'');
+});
+
+test('Category filtering stays optional and composes with horizons', () => {
+  assert.equal(model.visibleChallenges(data,'all','all','','fr','math').length,1);
+  assert.equal(model.visibleChallenges(data,'all','all','','fr','writing')[0].id,'Y1');
+  assert.equal(model.visibleChallenges(data,'week','all','','fr','writing').length,0);
+  assert.equal(model.visibleChallenges(data,'all','all','','fr').length,2);
 });
