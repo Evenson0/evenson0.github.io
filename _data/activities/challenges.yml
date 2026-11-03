@@ -5,31 +5,27 @@
   issued: '2026-11-03'
   due: '2026-11-08'
   title:
-    fr: Démonter une erreur mathématique convaincante
-    en: Expose a convincing mathematical mistake
-  difficulty: focused
+    fr: "La preuve qui résiste à la critique"
+    en: "A proof that withstands criticism"
+  difficulty: stretch
   effort:
-    fr: 3–4 h · durant les séances P
-    en: 3–4 h · within your P sessions
+    fr: "3–4 h · séances P existantes"
+    en: "3–4 h · existing P sessions"
   action:
-    fr: 'Résous dix questions P variées sans regarder les solutions. Corrige-les et classe trois erreurs ou hésitations
-      : concept, calcul, lecture ou temps.'
-    en: 'Solve ten varied P questions without looking at solutions. Review them and classify three errors or hesitations:
-      concept, calculation, reading or time.'
+    fr: "Choisis un problème P difficile. Construis une solution plausible mais erronée, explique sa faille, puis démontre le résultat correct par deux méthodes indépendantes, dont une simulation reproductible. Fais examiner la note par une autre personne."
+    en: "Choose a difficult Exam P problem. Construct a plausible but wrong solution, identify its flaw, then establish the right result using two independent methods, including a reproducible simulation. Ask someone to scrutinize your note."
   why:
-    fr: Donner une direction précise à tes prochaines séances, plutôt que travailler au hasard.
-    en: Give your next study sessions a clear direction rather than practicing at random.
+    fr: "Développer un réflexe de mathématicien : démontrer, réfuter et accepter la critique."
+    en: "Develop a mathematician's reflex: prove, refute and welcome criticism."
   done_when:
-    fr: Les dix questions sont revues et tu sais quelles trois difficultés travailler ensuite. Ton propre bilan
-      suffit.
-    en: The ten questions are reviewed and you know which three difficulties to work on next. Your own report
-      is enough.
+    fr: "Une note complète contient le faux raisonnement, la correction, deux vérifications et une demande de critique envoyée. Aucune réponse extérieure n'est exigée."
+    en: "A complete note contains the false argument, correction, two checks and a critique request. No outside reply is required."
   minimum:
-    fr: Cinq questions corrigées et une difficulté expliquée.
-    en: Five corrected questions and one explained difficulty.
+    fr: "Une preuve et un contre-exemple numérique expliqués et partagés pour critique."
+    en: "A proof and an explained numerical counterexample shared for criticism."
   stretch:
-    fr: Refais deux erreurs 48 heures plus tard sans aide.
-    en: Reattempt two missed questions 48 hours later without help.
+    fr: "Publie une note pédagogique bilingue et le code de simulation sur ton blog."
+    en: "Publish a bilingual teaching note and simulation code on your blog."
   targets:
   - acas
   parents: &id001 []
