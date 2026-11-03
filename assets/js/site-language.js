@@ -9,7 +9,7 @@
 
   const STORAGE = "evenson.site.language";
   const localButtons = '#pa-lang-fr,#pa-lang-en,[data-cl-lang],[data-lang].pl-lang button,.pl-lang button[data-lang]';
-  const skipSelector = "script,style,noscript,code,pre,textarea,svg,math,mjx-container,.MathJax,.p-atlas,.cl-shell,.pl-shell,[contenteditable],.site-language-switch";
+  const skipSelector = "script,style,noscript,code,pre,textarea,svg,math,mjx-container,.MathJax,.p-atlas,.cl-shell,.pl-shell,.activities-app,[contenteditable],.site-language-switch";
   const strings = {
     "Follow":"Suivre",
     "Follow:":"Suivre :",

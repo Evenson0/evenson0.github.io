@@ -1,0 +1,313 @@
+- id: ACT-202611-W1
+  horizon: week
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  title:
+    fr: Dix questions, trois vraies faiblesses
+    en: Ten questions, three real weaknesses
+  difficulty: focused
+  effort:
+    fr: 60–90 min · dans ta séance P
+    en: 60–90 min · within your P session
+  action:
+    fr: 'Résous dix questions P variées sans regarder les solutions. Corrige-les et classe trois erreurs ou hésitations
+      : concept, calcul, lecture ou temps.'
+    en: 'Solve ten varied P questions without looking at solutions. Review them and classify three errors or hesitations:
+      concept, calculation, reading or time.'
+  why:
+    fr: Donner une direction précise à tes prochaines séances, plutôt que travailler au hasard.
+    en: Give your next study sessions a clear direction rather than practicing at random.
+  done_when:
+    fr: Les dix questions sont revues et tu sais quelles trois difficultés travailler ensuite. Ton propre bilan
+      suffit.
+    en: The ten questions are reviewed and you know which three difficulties to work on next. Your own report
+      is enough.
+  minimum:
+    fr: Cinq questions corrigées et une difficulté expliquée.
+    en: Five corrected questions and one explained difficulty.
+  stretch:
+    fr: Refais deux erreurs 48 heures plus tard sans aide.
+    en: Reattempt two missed questions 48 hours later without help.
+  targets:
+  - acas
+  parents: &id001 []
+- id: ACT-202611-W2
+  horizon: week
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  title:
+    fr: Trois minutes sans te cacher derrière les formules
+    en: Three minutes beyond the formulas
+  difficulty: stretch
+  effort:
+    fr: 15 min · dans ta pratique d’anglais
+    en: 15 min · within your English practice
+  action:
+    fr: Enregistre trois minutes en anglais pour expliquer une idée de probabilité à une personne non spécialiste.
+      Une seule prise, puis relève deux expressions à améliorer.
+    en: Record three minutes in English explaining a probability idea to a non-specialist. Use one take, then
+      identify two expressions to improve.
+  why:
+    fr: Construire la confiance et la clarté dont tu auras besoin pour parler en public.
+    en: Build the confidence and clarity you will need for public speaking.
+  done_when:
+    fr: Tu as enregistré, réécouté et choisi deux améliorations. Tu peux garder l’audio privé.
+    en: You recorded, listened back and chose two improvements. The recording can stay private.
+  minimum:
+    fr: Une minute, avec tes notes.
+    en: One minute, using notes.
+  stretch:
+    fr: Explique ensuite l’idée à une personne et invite-la à poser une question.
+    en: Then explain the idea to someone and invite a question.
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Q1
+- id: ACT-202611-W3
+  horizon: week
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  title:
+    fr: Sauver une idée de ta lecture
+    en: Keep one idea from your reading
+  difficulty: easy
+  effort:
+    fr: 10–15 min · après la lecture
+    en: 10–15 min · after reading
+  action:
+    fr: 'À partir d’un passage réellement lu dans Adieu, écris environ 100 mots : ce qui te touche, ce que tu
+      contestes et pourquoi. Pas besoin d’avoir terminé le livre.'
+    en: Using a passage you actually read in Adieu, write about 100 words on what moves you, what you question
+      and why. You do not need to have finished the book.
+  why:
+    fr: Transformer la lecture en voix personnelle, un premier pas vers l’écriture.
+    en: Turn reading into a personal voice, a first step toward writing.
+  done_when:
+    fr: Un paragraphe personnel existe, même imparfait.
+    en: A personal paragraph exists, even if imperfect.
+  minimum:
+    fr: Trois phrases et la référence du passage.
+    en: Three sentences and a reference to the passage.
+  stretch:
+    fr: Réécris le paragraphe une fois pour supprimer les phrases vagues.
+    en: Revise it once to remove vague sentences.
+  targets:
+  - books
+  - writing
+  parents:
+  - ACT-202611-M2
+- id: ACT-202611-M1
+  horizon: month
+  period: month-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2026-11-30'
+  title:
+    fr: Un GLM que tu peux expliquer
+    en: A GLM you can explain
+  difficulty: focused
+  effort:
+    fr: 2 h réparties · séances GLM existantes
+    en: 2 h spread out · existing GLM sessions
+  action:
+    fr: Écris une page sur les trois composantes d’un GLM d’assurance et construis un petit exemple fictif. Note
+      une limite du modèle et trois questions encore ouvertes.
+    en: Write one page on the three components of an insurance GLM and build a small fictional example. Note one
+      model limitation and three open questions.
+  why:
+    fr: Passer de la lecture à un objet de recherche que tu comprends et peux discuter.
+    en: Move from reading to a research artifact you understand and can discuss.
+  done_when:
+    fr: Une page, un exemple et les questions sont réunis dans une note.
+    en: One page, one example and the questions are collected in a note.
+  minimum:
+    fr: Une demi-page et un exemple entièrement expliqué.
+    en: Half a page and one fully explained example.
+  stretch:
+    fr: Reproduis le petit exemple en R ou Python.
+    en: Reproduce the small example in R or Python.
+  targets:
+  - research
+  parents:
+  - ACT-202611-H1
+- id: ACT-202611-M2
+  horizon: month
+  period: month-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2026-11-30'
+  title:
+    fr: Faire lire un vrai texte
+    en: Let someone read your writing
+  difficulty: stretch
+  effort:
+    fr: 2 h réparties · séances d’écriture
+    en: 2 h spread out · writing sessions
+  action:
+    fr: Développe une idée tirée d’Adieu, de J’irai cracher sur vos tombes ou de Facino Cane en 500 à 800 mots.
+      Fais une révision, puis partage le texte avec une personne de ton choix en demandant un retour précis.
+    en: Develop an idea from Adieu, J’irai cracher sur vos tombes or Facino Cane into 500–800 words. Revise it
+      once, then share it with someone you choose and ask for specific feedback.
+  why:
+    fr: Pratiquer l’écriture et accepter de montrer un travail encore perfectible.
+    en: Practice writing and allow an imperfect piece to meet a reader.
+  done_when:
+    fr: Le texte est révisé et partagé. La réponse du lecteur n’est pas une condition de réussite.
+    en: The text is revised and shared. A reply from the reader is not required.
+  minimum:
+    fr: 300 mots révisés, partagés avec une personne.
+    en: 300 revised words, shared with one person.
+  stretch:
+    fr: Si un retour arrive, rédige une seconde version et note ce que tu as changé.
+    en: If feedback arrives, write a second version and note what changed.
+  targets:
+  - books
+  - writing
+  parents: *id001
+- id: ACT-202611-Q1
+  horizon: quarter
+  period: quarter-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-02-02'
+  title:
+    fr: Prendre la parole pour de vrai
+    en: Take the floor for real
+  difficulty: stretch
+  effort:
+    fr: 3 h réparties · après P pour la présentation
+    en: 3 h spread out · present after P
+  action:
+    fr: Prépare une présentation de huit minutes sur une idée mathématique ou actuarielle que tu maîtrises. Propose-la
+      à deux personnes ou à un petit groupe ; vise une présentation après le 16 janvier.
+    en: Prepare an eight-minute presentation on a mathematical or actuarial idea you understand. Offer it to two
+      people or a small group; aim to present after January 16.
+  why:
+    fr: Construire une première marche vers les conférences de ta Liste 100.
+    en: Build a first step toward the talks on your List 100.
+  done_when:
+    fr: Une répétition enregistrée et une invitation envoyée ; si une date est convenue, la présentation est faite.
+      Le bilan distingue ces étapes.
+    en: A recorded rehearsal and an invitation sent; if a date is agreed, the presentation is delivered. The review
+      distinguishes these steps.
+  minimum:
+    fr: Une présentation enregistrée de cinq minutes et une invitation envoyée.
+    en: A recorded five-minute presentation and one invitation sent.
+  stretch:
+    fr: Présente en anglais et prévois cinq minutes de questions.
+    en: Present in English and allow five minutes for questions.
+  targets:
+  - talk
+  parents: *id001
+- id: ACT-202611-S1
+  horizon: season
+  period: autumn-2026
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2026-11-30'
+  title:
+    fr: Un détour qui mérite de rester
+    en: A detour worth remembering
+  difficulty: easy
+  effort:
+    fr: 45–60 min · budget libre, gratuit possible
+    en: 45–60 min · your budget, free is possible
+  action:
+    fr: 'Découvre un lieu culturel ou un coin de ta ville que tu ne connais pas : bibliothèque, librairie ou promenade
+      accessible. Prends le temps de regarder et garde cinq lignes de souvenir.'
+    en: 'Explore an unfamiliar cultural place or part of your city: a library, bookstore or accessible walk. Take
+      time to notice things and keep five lines of memory.'
+  why:
+    fr: Faire une place à l’expérience et à la curiosité, au-delà des examens et du travail.
+    en: Make room for experience and curiosity beyond exams and work.
+  done_when:
+    fr: Une découverte réellement vécue et une courte note personnelle. Une sortie locale suffit.
+    en: A real discovery and a short personal note. A local outing is enough.
+  minimum:
+    fr: Un détour de vingt minutes dans un endroit accessible.
+    en: A twenty-minute detour somewhere accessible.
+  stretch:
+    fr: Invite une personne ou transforme la note en un petit récit.
+    en: Invite someone along or turn the note into a short story.
+  targets:
+  - explore
+  - books
+  parents: *id001
+- id: ACT-202611-H1
+  horizon: halfyear
+  period: halfyear-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  title:
+    fr: Une reproduction qui tient debout
+    en: A reproduction that holds up
+  difficulty: ambitious
+  effort:
+    fr: 12–20 h réparties · temps de recherche
+    en: 12–20 h spread out · research time
+  action:
+    fr: Choisis un exemple publié de tarification GLM avec des données utilisables. Reproduis un résultat, documente
+      les étapes, puis change une hypothèse et compare. Commence petit ; précise les limites.
+    en: Choose a published GLM pricing example with usable data. Reproduce one result, document the steps, then
+      change one assumption and compare. Start small and state the limitations.
+  why:
+    fr: Construire un premier travail reproductible pour ton parcours de chercheur.
+    en: Build a first reproducible piece of work for your research path.
+  done_when:
+    fr: Un notebook exécutable, les données ou leur mode d’accès, une comparaison et une note de limites. Aucune
+      nouveauté scientifique n’est présumée.
+    en: An executable notebook, the data or access instructions, a comparison and a limitations note. No scientific
+      novelty is assumed.
+  minimum:
+    fr: Un exemple restreint, reproductible de bout en bout.
+    en: One narrow example reproducible end to end.
+  stretch:
+    fr: Demande une critique technique à un pair et consigne les corrections.
+    en: Ask a peer for technical criticism and record the corrections.
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-202611-Y1
+  horizon: year
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  title:
+    fr: Un premier manuscrit de recherche
+    en: A first research manuscript
+  difficulty: ambitious
+  effort:
+    fr: Un projet progressif · revues trimestrielles
+    en: A progressive project · quarterly reviews
+  action:
+    fr: À partir de la reproduction, formule une question limitée en tarification IARD. Mène une comparaison reproductible
+      et rédige un document avec question, méthode, résultats et limites. Sollicite une lecture critique.
+    en: Starting from the reproduction, formulate a narrow P&C pricing question. Run a reproducible comparison
+      and write a document with the question, method, results and limitations. Request a critical reading.
+  why:
+    fr: Avancer concrètement vers l’article actuariel et ton projet de recherche, avec une ambition ajustée aux
+      résultats.
+    en: Make tangible progress toward an actuarial paper and your research goal, adjusting ambition to the results.
+  done_when:
+    fr: Un manuscrit complet et une demande de retour envoyée. Une publication acceptée n’est pas exigée et ne
+      sera jamais supposée.
+    en: A complete manuscript and a feedback request sent. Journal acceptance is not required and will never be
+      assumed.
+  minimum:
+    fr: Une note technique reproductible qui répond honnêtement à une question précise.
+    en: A reproducible technical note that honestly answers one precise question.
+  stretch:
+    fr: Après critique, prépare une version publique clairement présentée comme travail en cours.
+    en: After feedback, prepare a public version clearly labeled as work in progress.
+  targets:
+  - research
+  parents: *id001

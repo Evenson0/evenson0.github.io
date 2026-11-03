@@ -1,0 +1,105 @@
+version: 1
+launched: '2026-11-03'
+timezone: America/Toronto
+intro:
+  fr: Des défis pour apprendre, oser et vivre davantage. Une trace de ce que je choisis, de ce que je tente et
+    de ce que j’en retiens.
+  en: Challenges to learn, dare and experience more. A record of what I choose, what I try and what I take from
+    it.
+mentor_note:
+  fr: Cette semaine, choisis un défi ; les deux autres sont des invitations. P reste prioritaire jusqu’au 16 janvier.
+    Une petite action honnête vaut mieux qu’un programme impossible à tenir.
+  en: Choose one challenge this week; the other two are invitations. P stays first until January 16. One honest
+    action is worth more than an impossible schedule.
+horizons:
+- id: week
+  label:
+    fr: Semaine
+    en: Week
+  quota: 3
+  cadence:
+    fr: 3 propositions · choisir 1 à 3
+    en: 3 proposals · choose 1–3
+- id: month
+  label:
+    fr: Mois
+    en: Month
+  quota: 2
+  cadence:
+    fr: 2 projets · avancer par petits pas
+    en: 2 projects · progress in small steps
+- id: quarter
+  label:
+    fr: 3 mois
+    en: 3 months
+  quota: 1
+  cadence:
+    fr: 1 défi ambitieux · période glissante
+    en: 1 stretch challenge · rolling period
+- id: season
+  label:
+    fr: Saison
+    en: Season
+  quota: 1
+  cadence:
+    fr: 1 expérience · au rythme des saisons
+    en: 1 experience · follow the seasons
+- id: halfyear
+  label:
+    fr: 6 mois
+    en: 6 months
+  quota: 1
+  cadence:
+    fr: 1 réalisation de fond
+    en: 1 substantial project
+- id: year
+  label:
+    fr: Année
+    en: Year
+  quota: 1
+  cadence:
+    fr: 1 cap · découpé en étapes
+    en: 1 direction · broken into steps
+targets:
+- id: acas
+  label:
+    fr: Vers ACAS
+    en: Toward ACAS
+  source: List 100 · 25
+  url: /list-100/
+  node: actuarial-exam-1
+- id: talk
+  label:
+    fr: Prendre la parole
+    en: Give talks
+  source: List 100 · 6
+  url: /list-100/
+  node: english-conversation-practice
+- id: books
+  label:
+    fr: Lire 1 000 livres
+    en: Read 1,000 books
+  source: List 100 · 21
+  url: /list-100/
+  node: writing-reading-practice
+- id: writing
+  label:
+    fr: Devenir écrivain
+    en: Become a writer
+  source: List 100 · 30
+  url: /list-100/
+  node: writing-reading-practice
+- id: research
+  label:
+    fr: Écrire un article actuariel
+    en: Write an actuarial paper
+  source: List 100 · 20
+  url: /list-100/
+  node: research-actuarial-glm-tweedie
+- id: explore
+  label:
+    fr: Vivre des découvertes
+    en: Experience discoveries
+  source: List 100 · 23
+  url: /list-100/
+  node: null
