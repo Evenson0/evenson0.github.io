@@ -1239,3 +1239,198 @@
   - explore
   - fitness-goal
   parents: []
+- id: ACT-202611-S2
+  horizon: season
+  category: outdoors
+  period: winter-2026
+  period_start: '2026-12-01'
+  issued: '2026-11-03'
+  due: '2027-02-28'
+  difficulty: stretch
+  title:
+    fr: "Ma première randonnée hivernale préparée"
+    en: "My first well-prepared winter hike"
+  effort:
+    fr: "Une sortie / projet sur la saison, effort variable"
+    en: "One outing / project in the season, variable effort"
+  action:
+    fr: "Découvre une sortie hivernale de trois à six kilomètres avec équipement adapté, météo vérifiée, itinéraire partagé et possibilité de rentrer facilement. Choisis une activité guidée si nécessaire ; reporte en cas de danger."
+    en: "Try a three-to-six-kilometre winter outing with proper gear, checked weather, shared route and an easy way back. Choose a guided activity if appropriate; defer when conditions are unsafe."
+  why:
+    fr: "Vivre un moment nouveau hors de la routine : Ma première randonnée hivernale préparée."
+    en: "Experience something new outside everyday routines: My first well-prepared winter hike."
+  done_when:
+    fr: "Une sortie hivernale préparée a été vécue et consignée avec un bilan de sécurité."
+    en: "A prepared winter outing took place and was recorded with a safety review."
+  minimum:
+    fr: "Une boucle de deux à trois kilomètres en conditions sûres."
+    en: "A safe two-to-three-kilometre loop."
+  stretch:
+    fr: "Une randonnée guidée en raquettes de six kilomètres."
+    en: "A guided six-kilometre snowshoe trek."
+  targets:
+  - explore
+  - fitness-goal
+  parents: []
+- id: ACT-202611-S3
+  horizon: season
+  category: creativity
+  period: winter-2026
+  period_start: '2026-12-01'
+  issued: '2026-11-03'
+  due: '2027-02-28'
+  difficulty: stretch
+  title:
+    fr: "Créer une œuvre avec mes mains, sans écran"
+    en: "Make something tangible without a screen"
+  effort:
+    fr: "Une sortie / projet sur la saison, effort variable"
+    en: "One outing / project in the season, variable effort"
+  action:
+    fr: "Inscris-toi à un atelier de dessin, céramique, photographie analogique ou écriture manuscrite. Termine un objet ou un carnet de création et décris ce qui t'a surpris."
+    en: "Attend an in-person drawing, ceramics, analog photography or handwriting workshop. Finish a physical object or creative notebook and describe what surprised you."
+  why:
+    fr: "Vivre un moment nouveau hors de la routine : Créer une œuvre avec mes mains, sans écran."
+    en: "Experience something new outside everyday routines: Make something tangible without a screen."
+  done_when:
+    fr: "Une œuvre physique existe, résultat d'un apprentissage nouveau sans substitution par IA."
+    en: "A physical work exists from a new skill learned without AI substitution."
+  minimum:
+    fr: "Participe à un atelier et produis un objet achevé."
+    en: "Attend one workshop and finish an object."
+  stretch:
+    fr: "Partage ton œuvre à une personne qui ne connaissait pas ton projet."
+    en: "Share your creation with someone who did not know your project."
+  targets:
+  - explore
+  parents: []
+- id: ACT-202611-S4
+  horizon: season
+  category: community
+  period: spring-2027
+  period_start: '2027-03-01'
+  issued: '2026-11-03'
+  due: '2027-05-31'
+  difficulty: stretch
+  title:
+    fr: "Contribuer à une cause sur le terrain"
+    en: "Contribute to a cause in the real world"
+  effort:
+    fr: "Une sortie / projet sur la saison, effort variable"
+    en: "One outing / project in the season, variable effort"
+  action:
+    fr: "Choisis une association locale en fonction de tes convictions et de tes possibilités, puis participe à une activité bénévole concrète. Respecte la confidentialité des personnes rencontrées."
+    en: "Choose a local association aligned with your interests and availability, then participate in a real volunteer activity. Respect the privacy of everyone involved."
+  why:
+    fr: "Vivre un moment nouveau hors de la routine : Contribuer à une cause sur le terrain."
+    en: "Experience something new outside everyday routines: Contribute to a cause in the real world."
+  done_when:
+    fr: "Une action bénévole a effectivement été réalisée et tu as réfléchi à son impact."
+    en: "One genuine volunteer action occurred and you reflected on its effects."
+  minimum:
+    fr: "Participe à une journée d'action bénévole."
+    en: "Participate in one volunteering day."
+  stretch:
+    fr: "Prends part à un second projet ou organise une contribution collective."
+    en: "Join a second project or organize a collective contribution."
+  targets:
+  - explore
+  parents: []
+- id: ACT-202611-S5
+  horizon: season
+  category: outdoors
+  period: summer-2027
+  period_start: '2027-06-01'
+  issued: '2026-11-03'
+  due: '2027-08-31'
+  difficulty: stretch
+  title:
+    fr: "Atteindre le Mont-du-Lac-des-Cygnes"
+    en: "Reach Mont-du-Lac-des-Cygnes"
+  effort:
+    fr: "Une sortie / projet sur la saison, effort variable"
+    en: "One outing / project in the season, variable effort"
+  action:
+    fr: "Prépare le sentier de 8,6 km aller-retour au parc national des Grands-Jardins, classé difficile, avec dénivelé d'environ 480 m. N'y va que lorsque ta forme, ton équipement, la météo et l'accès officiel le permettent."
+    en: "Prepare for the 8.6 km out-and-back Mont-du-Lac-des-Cygnes trail in Grands-Jardins National Park, rated difficult with roughly 480 m ascent. Attempt only if fitness, gear, weather and park access make it appropriate."
+  why:
+    fr: "Vivre un moment nouveau hors de la routine : Atteindre le Mont-du-Lac-des-Cygnes."
+    en: "Experience something new outside everyday routines: Reach Mont-du-Lac-des-Cygnes."
+  done_when:
+    fr: "Une randonnée de sommet documentée a été réalisée dans des conditions sûres, ou reportée si nécessaire."
+    en: "A documented summit outing was completed safely or deferred when necessary."
+  minimum:
+    fr: "Complète d'abord une randonnée modérée de 6 à 8 km et évalue la préparation."
+    en: "First complete a moderate six-to-eight-kilometre hike and assess readiness."
+  stretch:
+    fr: "Atteins le sommet prévu et raconte ce que tu as observé."
+    en: "Reach the planned summit and describe what you experienced."
+  targets:
+  - explore
+  - fitness-goal
+  parents: []
+- id: ACT-202611-S6
+  horizon: season
+  category: outdoors
+  period: summer-2027
+  period_start: '2027-06-01'
+  issued: '2026-11-03'
+  due: '2027-08-31'
+  difficulty: stretch
+  title:
+    fr: "Passer une nuit sous les étoiles"
+    en: "Spend a night under the stars"
+  effort:
+    fr: "Une sortie / projet sur la saison, effort variable"
+    en: "One outing / project in the season, variable effort"
+  action:
+    fr: "Organise une première nuit de camping légal dans un lieu accessible : réserve, météo, équipement, eau, plan de sécurité et retour. Apprends à monter le camp et à respecter les lieux."
+    en: "Organize a first legal overnight camping trip at an accessible site: booking, weather, equipment, water, safety and return plan. Learn to set up camp and respect the environment."
+  why:
+    fr: "Vivre un moment nouveau hors de la routine : Passer une nuit sous les étoiles."
+    en: "Experience something new outside everyday routines: Spend a night under the stars."
+  done_when:
+    fr: "Une nuit en plein air a été réellement vécue et un récit personnel existe."
+    en: "One outdoor overnight experience actually happened and a personal account exists."
+  minimum:
+    fr: "Passe une soirée d'observation de la nature puis reviens en sécurité."
+    en: "Spend an evening observing nature and return safely."
+  stretch:
+    fr: "Combine le camping avec une longue randonnée adaptée."
+    en: "Combine the camping trip with a suitable long hike."
+  targets:
+  - explore
+  parents: []
+- id: ACT-202611-S7
+  horizon: season
+  category: outdoors
+  period: autumn-2027
+  period_start: '2027-09-01'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: stretch
+  title:
+    fr: "Une grande randonnée de 15 à 20 km"
+    en: "A major 15–20 km hike"
+  effort:
+    fr: "Une sortie / projet sur la saison, effort variable"
+    en: "One outing / project in the season, variable effort"
+  action:
+    fr: "Choisis un parcours balisé de 15 à 20 km en terrain approprié, avec météo favorable, dénivelé adapté et équipement testé. Réalise-le avec un partenaire ou un plan de sécurité solide selon les conditions."
+    en: "Choose a marked 15–20 km route on suitable terrain with favorable weather, appropriate elevation gain and tested gear. Complete it with a partner or a strong safety plan as conditions warrant."
+  why:
+    fr: "Vivre un moment nouveau hors de la routine : Une grande randonnée de 15 à 20 km."
+    en: "Experience something new outside everyday routines: A major 15–20 km hike."
+  done_when:
+    fr: "Une longue randonnée de 15 km ou plus a été achevée et consignée sans compromettre la sécurité."
+    en: "A hike of at least 15 km was completed and documented without compromising safety."
+  minimum:
+    fr: "Parcours 12 km en terrain adapté pour éprouver ton endurance."
+    en: "Cover 12 km on suitable terrain as an endurance test."
+  stretch:
+    fr: "Réalise une journée de randonnée montagneuse avec 20 km cumulés si ton niveau le permet."
+    en: "Complete a mountainous hiking day totaling 20 km if ready."
+  targets:
+  - explore
+  - fitness-goal
+  parents: []
