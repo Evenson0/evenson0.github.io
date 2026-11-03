@@ -36,29 +36,27 @@
   issued: '2026-11-03'
   due: '2026-11-08'
   title:
-    fr: Trois minutes sans te cacher derrière les formules
-    en: Three minutes beyond the formulas
+    fr: "Huit minutes en anglais face à un vrai auditeur"
+    en: "Eight minutes of live English"
   difficulty: stretch
   effort:
-    fr: 15 min · dans ta pratique d’anglais
-    en: 15 min · within your English practice
+    fr: "2–3 h · préparation et échange"
+    en: "2–3 h · preparation and conversation"
   action:
-    fr: Enregistre trois minutes en anglais pour expliquer une idée de probabilité à une personne non spécialiste.
-      Une seule prise, puis relève deux expressions à améliorer.
-    en: Record three minutes in English explaining a probability idea to a non-specialist. Use one take, then
-      identify two expressions to improve.
+    fr: "Explique sans lire un texte une idée actuarielle ou mathématique pendant huit minutes en anglais à une vraie personne, puis réponds à trois questions spontanées. Consigne les moments où tu as dû improviser."
+    en: "Without reading a script, explain a mathematical or actuarial idea in English for eight minutes to a real listener, then answer three unscripted questions. Reflect on moments when you had to improvise."
   why:
-    fr: Construire la confiance et la clarté dont tu auras besoin pour parler en public.
-    en: Build the confidence and clarity you will need for public speaking.
+    fr: "Être capable de soutenir une pensée technique en anglais sous le regard d'autrui."
+    en: "Practice defending a technical idea in English under real questioning."
   done_when:
-    fr: Tu as enregistré, réécouté et choisi deux améliorations. Tu peux garder l’audio privé.
-    en: You recorded, listened back and chose two improvements. The recording can stay private.
+    fr: "L'exposé a été donné en direct avec questions et tu as noté deux améliorations. L'enregistrement peut rester privé."
+    en: "The talk was delivered live with questions and you noted two improvements. Any recording may stay private."
   minimum:
-    fr: Une minute, avec tes notes.
-    en: One minute, using notes.
+    fr: "Cinq minutes sans lire et une question spontanée."
+    en: "Five minutes without reading and one spontaneous question."
   stretch:
-    fr: Explique ensuite l’idée à une personne et invite-la à poser une question.
-    en: Then explain the idea to someone and invite a question.
+    fr: "Présente devant trois personnes et réponds dix minutes en anglais."
+    en: "Present to three people and answer questions for ten minutes in English."
   targets:
   - talk
   parents:
@@ -70,29 +68,27 @@
   issued: '2026-11-03'
   due: '2026-11-08'
   title:
-    fr: Sauver une idée de ta lecture
-    en: Keep one idea from your reading
-  difficulty: easy
+    fr: "Défendre une idée contre sa meilleure objection"
+    en: "Defend an idea against its best objection"
+  difficulty: stretch
   effort:
-    fr: 10–15 min · après la lecture
-    en: 10–15 min · after reading
+    fr: "3–4 h · lecture et écriture"
+    en: "3–4 h · reading and writing"
   action:
-    fr: 'À partir d’un passage réellement lu dans Adieu, écris environ 100 mots : ce qui te touche, ce que tu
-      contestes et pourquoi. Pas besoin d’avoir terminé le livre.'
-    en: Using a passage you actually read in Adieu, write about 100 words on what moves you, what you question
-      and why. You do not need to have finished the book.
+    fr: "À partir d'Adieu ou d'une lecture philosophique, écris 600 à 800 mots : thèse précise, argument, objection charitable et réponse. Fais lire ton texte à quelqu'un en lui demandant ce qui ne convainc pas."
+    en: "Using Adieu or a philosophical reading, write 600–800 words: a precise thesis, argument, fair objection and reply. Ask someone to read it and identify what fails to convince."
   why:
-    fr: Transformer la lecture en voix personnelle, un premier pas vers l’écriture.
-    en: Turn reading into a personal voice, a first step toward writing.
+    fr: "Apprendre à défendre un texte devant la critique plutôt qu'à produire des notes sans risque."
+    en: "Learn to defend writing against criticism instead of collecting risk-free notes."
   done_when:
-    fr: Un paragraphe personnel existe, même imparfait.
-    en: A personal paragraph exists, even if imperfect.
+    fr: "Un essai structuré a été envoyé pour critique et tu as formulé sa principale faiblesse. Aucune réponse n'est requise."
+    en: "A structured essay was shared for criticism and you identified its main weakness. No reply is required."
   minimum:
-    fr: Trois phrases et la référence du passage.
-    en: Three sentences and a reference to the passage.
+    fr: "400 mots structurés avec objection réelle, transmis à un lecteur."
+    en: "400 structured words with a genuine objection, shared with a reader."
   stretch:
-    fr: Réécris le paragraphe une fois pour supprimer les phrases vagues.
-    en: Revise it once to remove vague sentences.
+    fr: "Publie une version bilingue, révisée et sourcée sur ton blog."
+    en: "Publish a revised, sourced, bilingual version on your blog."
   targets:
   - books
   - writing
@@ -105,29 +101,27 @@
   issued: '2026-11-03'
   due: '2026-11-30'
   title:
-    fr: Un GLM que tu peux expliquer
-    en: A GLM you can explain
-  difficulty: focused
+    fr: "Une étude actuarielle reproductible de bout en bout"
+    en: "A reproducible actuarial study"
+  difficulty: ambitious
   effort:
-    fr: 2 h réparties · séances GLM existantes
-    en: 2 h spread out · existing GLM sessions
+    fr: "12–16 h · séances de recherche"
+    en: "12–16 h · research sessions"
   action:
-    fr: Écris une page sur les trois composantes d’un GLM d’assurance et construis un petit exemple fictif. Note
-      une limite du modèle et trois questions encore ouvertes.
-    en: Write one page on the three components of an insurance GLM and build a small fictional example. Note one
-      model limitation and three open questions.
+    fr: "Sur données ouvertes ou synthétiques, implémente un GLM de fréquence avec offset d'exposition et un modèle comparatif. Évalue-les hors échantillon, examine un diagnostic et publie code, résultats, limites et procédure de reproduction. Aucune donnée employeur."
+    en: "Using open or synthetic data, implement a frequency GLM with an exposure offset and a comparator. Evaluate out of sample, examine a diagnostic and publish code, results, limitations and reproduction instructions. No employer data."
   why:
-    fr: Passer de la lecture à un objet de recherche que tu comprends et peux discuter.
-    en: Move from reading to a research artifact you understand and can discuss.
+    fr: "Transformer tes lectures GLM en recherche exécutable et critiquable."
+    en: "Turn GLM reading into runnable, debatable research."
   done_when:
-    fr: Une page, un exemple et les questions sont réunis dans une note.
-    en: One page, one example and the questions are collected in a note.
+    fr: "Un dépôt public reproduit deux modèles et leur comparaison avec README et note méthodologique de deux pages."
+    en: "A public repository reproduces two models and their comparison with a README and two-page methods note."
   minimum:
-    fr: Une demi-page et un exemple entièrement expliqué.
-    en: Half a page and one fully explained example.
+    fr: "Un GLM, une baseline, une mesure de validation et un exemple entièrement reproductible."
+    en: "One GLM, one baseline, a validation metric and a fully reproducible example."
   stretch:
-    fr: Reproduis le petit exemple en R ou Python.
-    en: Reproduce the small example in R or Python.
+    fr: "Teste la surdispersion ou les valeurs aberrantes et sollicite une critique technique."
+    en: "Test overdispersion or outliers and request technical criticism."
   targets:
   - research
   parents:
@@ -139,29 +133,27 @@
   issued: '2026-11-03'
   due: '2026-11-30'
   title:
-    fr: Faire lire un vrai texte
-    en: Let someone read your writing
-  difficulty: stretch
+    fr: "Publier un essai que tu es prêt à défendre"
+    en: "Publish an essay you can defend"
+  difficulty: ambitious
   effort:
-    fr: 2 h réparties · séances d’écriture
-    en: 2 h spread out · writing sessions
+    fr: "8–12 h · lecture et rédaction"
+    en: "8–12 h · reading and writing"
   action:
-    fr: Développe une idée tirée d’Adieu, de J’irai cracher sur vos tombes ou de Facino Cane en 500 à 800 mots.
-      Fais une révision, puis partage le texte avec une personne de ton choix en demandant un retour précis.
-    en: Develop an idea from Adieu, J’irai cracher sur vos tombes or Facino Cane into 500–800 words. Revise it
-      once, then share it with someone you choose and ask for specific feedback.
+    fr: "Écris 1 500 à 2 000 mots sur une question littéraire, politique ou philosophique : thèse contestable, deux sources, meilleure objection, réponse. Demande une lecture critique, révise puis publie sur ton blog."
+    en: "Write 1,500–2,000 words on a literary, political or philosophical question: a debatable thesis, two sources, the strongest objection and a response. Ask for criticism, revise and publish on your blog."
   why:
-    fr: Pratiquer l’écriture et accepter de montrer un travail encore perfectible.
-    en: Practice writing and allow an imperfect piece to meet a reader.
+    fr: "Passer d'opinions privées à une pensée signée, argumentée et exposée."
+    en: "Move from private opinions to accountable, reasoned, exposed thinking."
   done_when:
-    fr: Le texte est révisé et partagé. La réponse du lecteur n’est pas une condition de réussite.
-    en: The text is revised and shared. A reply from the reader is not required.
+    fr: "Un essai sourcé et révisé existe publiquement et une demande de critique a été envoyée."
+    en: "A sourced, revised essay is public and a critique request has been sent."
   minimum:
-    fr: 300 mots révisés, partagés avec une personne.
-    en: 300 revised words, shared with one person.
+    fr: "Publie 1 000 mots avec thèse, objection sérieuse et deux sources."
+    en: "Publish 1,000 words with a thesis, serious objection and two sources."
   stretch:
-    fr: Si un retour arrive, rédige une seconde version et note ce que tu as changé.
-    en: If feedback arrives, write a second version and note what changed.
+    fr: "Traduis-le en anglais et soumets-le à une publication extérieure."
+    en: "Translate it into English and submit it to an external publication."
   targets:
   - books
   - writing
