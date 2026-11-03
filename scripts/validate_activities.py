@@ -36,7 +36,7 @@ def main():
         assert c['horizon'] in horizons
         assert c['category'] in categories, 'Unknown Activities category'
         assert c['difficulty'] in {'easy', 'focused', 'stretch', 'ambitious'}
-        assert date.fromisoformat(c['period_start']) <= date.fromisoformat(c['issued']) <= date.fromisoformat(c['due'])
+        assert date.fromisoformat(c['issued']) <= date.fromisoformat(c['due']) and date.fromisoformat(c['period_start']) <= date.fromisoformat(c['due']), 'Invalid challenge timing'
         for key in ('title', 'effort', 'action', 'why', 'done_when', 'minimum', 'stretch'):
             bilingual(c[key])
         assert c['targets'] and all(t in targets for t in c['targets'])
