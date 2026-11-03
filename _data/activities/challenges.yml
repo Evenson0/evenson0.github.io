@@ -96,7 +96,8 @@
   targets:
   - writing
   - books
-  parents: []
+  parents:
+  - ACT-202611-Y9
 - id: ACT-202611-M1
   horizon: month
   category: build
@@ -199,6 +200,7 @@
   - builder
   parents:
   - ACT-202611-H1
+  - ACT-202611-Y4
 - id: ACT-202611-S1
   horizon: season
   category: outdoors
@@ -231,7 +233,8 @@
   targets:
   - explore
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-Y7
 - id: ACT-202611-H1
   horizon: halfyear
   category: build
@@ -265,7 +268,7 @@
   - builder
   - research
   parents:
-  - ACT-202611-Y1
+  - ACT-202611-Y12
 - id: ACT-202611-Y1
   horizon: year
   category: research
@@ -362,7 +365,8 @@
     en: "Write a standout educational thread and publish the code behind your metrics review."
   targets:
   - audience
-  parents: []
+  parents:
+  - ACT-202611-Q10
 - id: ACT-202611-Q2
   horizon: quarter
   category: fitness
@@ -394,7 +398,9 @@
     en: "Run all 10 km if prepared, without prioritizing speed."
   targets:
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-Q5
+  - ACT-202611-Y2
 - id: ACT-202611-Q3
   horizon: quarter
   category: speaking
@@ -426,7 +432,8 @@
     en: "Present in English to a scientific or professional group."
   targets:
   - talk
-  parents: []
+  parents:
+  - ACT-202611-Y5
 - id: ACT-202611-H2
   horizon: halfyear
   category: travel
@@ -459,7 +466,8 @@
   targets:
   - travel-goal
   - explore
-  parents: []
+  parents:
+  - ACT-202611-Y10
 - id: ACT-202611-Y2
   horizon: year
   category: fitness
@@ -849,7 +857,8 @@
     en: "Pass FM and convert your notes into a polished blog guide."
   targets:
   - acas
-  parents: []
+  parents:
+  - ACT-202611-H6
 - id: ACT-202611-Q5
   horizon: quarter
   category: fitness
@@ -881,7 +890,8 @@
     en: "Finish an official 21.1 km event under appropriate conditions."
   targets:
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-Y2
 - id: ACT-202611-Q6
   horizon: quarter
   category: speaking
@@ -913,7 +923,8 @@
     en: "Present a ten-minute argument in English and defend it in discussion."
   targets:
   - talk
-  parents: []
+  parents:
+  - ACT-202611-H4
 - id: ACT-202611-Q7
   horizon: quarter
   category: writing
@@ -945,7 +956,8 @@
     en: "Ask two readers to review a chapter and revise its structure."
   targets:
   - writing
-  parents: []
+  parents:
+  - ACT-202611-H3
 - id: ACT-202611-Q8
   horizon: quarter
   category: outdoors
@@ -978,7 +990,8 @@
   targets:
   - explore
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-H5
 - id: ACT-202611-Q9
   horizon: quarter
   category: math
@@ -1011,7 +1024,8 @@
   targets:
   - research
   - builder
-  parents: []
+  parents:
+  - ACT-202611-Y8
 - id: ACT-202611-Q10
   horizon: quarter
   category: social
@@ -1043,7 +1057,8 @@
     en: "Build an original educational series with sourced graphics."
   targets:
   - audience
-  parents: []
+  parents:
+  - ACT-202611-Y12
 - id: ACT-202611-M5
   horizon: month
   category: writing
@@ -1075,7 +1090,8 @@
     en: "Finish chapter one and ask a real person for feedback."
   targets:
   - writing
-  parents: []
+  parents:
+  - ACT-202611-Q7
 - id: ACT-202611-M6
   horizon: month
   category: math
@@ -1108,7 +1124,8 @@
   targets:
   - acas
   - builder
-  parents: []
+  parents:
+  - ACT-202611-Q1
 - id: ACT-202611-M7
   horizon: month
   category: speaking
@@ -1140,7 +1157,8 @@
     en: "Host a fifteen-minute mini-debate in English."
   targets:
   - talk
-  parents: []
+  parents:
+  - ACT-202611-Q6
 - id: ACT-202611-M8
   horizon: month
   category: health
@@ -1172,7 +1190,8 @@
     en: "Have a health professional review your adjustments."
   targets:
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-Y6
 - id: ACT-202611-M9
   horizon: month
   category: community
@@ -1205,7 +1224,8 @@
   targets:
   - explore
   - talk
-  parents: []
+  parents:
+  - ACT-202611-H7
 - id: ACT-202611-M10
   horizon: month
   category: outdoors
@@ -1238,7 +1258,8 @@
   targets:
   - explore
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-Q8
 - id: ACT-202611-S2
   horizon: season
   category: outdoors
@@ -1271,7 +1292,8 @@
   targets:
   - explore
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-Y7
 - id: ACT-202611-S3
   horizon: season
   category: creativity
@@ -1368,7 +1390,8 @@
   targets:
   - explore
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-H5
 - id: ACT-202611-S6
   horizon: season
   category: outdoors
@@ -1400,7 +1423,8 @@
     en: "Combine the camping trip with a suitable long hike."
   targets:
   - explore
-  parents: []
+  parents:
+  - ACT-202611-Y7
 - id: ACT-202611-S7
   horizon: season
   category: outdoors
@@ -1433,7 +1457,8 @@
   targets:
   - explore
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-Y7
 - id: ACT-202611-H3
   horizon: halfyear
   category: writing
@@ -1465,7 +1490,8 @@
     en: "Arrange critical reading of two chapters with real readers."
   targets:
   - writing
-  parents: []
+  parents:
+  - ACT-202611-Y3
 - id: ACT-202611-H4
   horizon: halfyear
   category: speaking
@@ -1497,7 +1523,8 @@
     en: "Present in an academic or professional setting and request feedback."
   targets:
   - talk
-  parents: []
+  parents:
+  - ACT-202611-Y5
 - id: ACT-202611-H5
   horizon: halfyear
   category: outdoors
@@ -1530,7 +1557,8 @@
   targets:
   - explore
   - fitness-goal
-  parents: []
+  parents:
+  - ACT-202611-Y7
 - id: ACT-202611-H6
   horizon: halfyear
   category: math
@@ -1562,7 +1590,8 @@
     en: "Pass both exams if preparation and timing allow."
   targets:
   - acas
-  parents: []
+  parents:
+  - ACT-202611-Y4
 - id: ACT-202611-H7
   horizon: halfyear
   category: career
@@ -1595,7 +1624,8 @@
   targets:
   - builder
   - research
-  parents: []
+  parents:
+  - ACT-202611-Y11
 - id: ACT-202611-W4
   horizon: week
   category: math
@@ -1628,7 +1658,8 @@
   targets:
   - acas
   - builder
-  parents: []
+  parents:
+  - ACT-202611-Q1
 - id: ACT-202611-W5
   horizon: week
   category: community
@@ -1661,7 +1692,8 @@
   targets:
   - explore
   - talk
-  parents: []
+  parents:
+  - ACT-202611-H7
 - id: ACT-202611-W6
   horizon: week
   category: creativity
