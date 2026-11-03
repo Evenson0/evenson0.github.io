@@ -17,10 +17,14 @@ def main():
              for n in yaml.safe_load(p.read_text())['nodes']}
     horizons = {h['id']: h for h in config['horizons']}
     assert len(horizons) == 6
+    categories = {c['id']: c for c in config['categories']}
+    assert len(categories) == len(config['categories'])
     targets = {t['id']: t for t in config['targets']}
     assert len(targets) == len(config['targets'])
     def bilingual(value):
         assert isinstance(value, dict) and all(isinstance(value.get(k), str) and value[k].strip() for k in ('fr', 'en'))
+    for category in categories.values():
+        bilingual(category['label'])
     for target in targets.values():
         bilingual(target['label'])
         assert target['url'].startswith('/') and not target['url'].startswith('//')
@@ -30,6 +34,7 @@ def main():
     counts = Counter()
     for c in challenges:
         assert c['horizon'] in horizons
+        assert c['category'] in categories, 'Unknown Activities category'
         assert c['difficulty'] in {'easy', 'focused', 'stretch', 'ambitious'}
         assert date.fromisoformat(c['period_start']) <= date.fromisoformat(c['issued']) <= date.fromisoformat(c['due'])
         for key in ('title', 'effort', 'action', 'why', 'done_when', 'minimum', 'stretch'):
