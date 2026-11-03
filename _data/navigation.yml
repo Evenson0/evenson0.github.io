@@ -29,9 +29,9 @@ main:
     title_fr: "Atelier mathématique"
     url: /workshop/
 
-  - title: "Activities"
-    title_fr: "Activités"
-    url: /activities/
+  # - title: "Activities"
+  #   title_fr: "Activités"
+  #   url: /activities/
 
   - title: "Notes"
     title_fr: "Notes"
