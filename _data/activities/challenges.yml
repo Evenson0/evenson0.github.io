@@ -228,31 +228,27 @@
   issued: '2026-11-03'
   due: '2027-05-02'
   title:
-    fr: Une reproduction qui tient debout
-    en: A reproduction that holds up
+    fr: "Livrer un outil mathématique open source robuste"
+    en: "Ship a robust open-source mathematical tool"
   difficulty: ambitious
   effort:
-    fr: 12–20 h réparties · temps de recherche
-    en: 12–20 h spread out · research time
+    fr: "50–70 h sur 6 mois · effort cumulé"
+    en: "50–70 h across six months · cumulative effort"
   action:
-    fr: Choisis un exemple publié de tarification GLM avec des données utilisables. Reproduis un résultat, documente
-      les étapes, puis change une hypothèse et compare. Commence petit ; précise les limites.
-    en: Choose a published GLM pricing example with usable data. Reproduce one result, document the steps, then
-      change one assumption and compare. Start small and state the limitations.
+    fr: "Transforme ton étude actuarielle en outil open source : interface, installation, exemples, tests automatiques et limites documentées. Demande une revue de code externe et corrige une faiblesse."
+    en: "Turn your actuarial study into an open-source tool: interface, installation, examples, automated tests and documented limitations. Request external code review and fix a weakness."
   why:
-    fr: Construire un premier travail reproductible pour ton parcours de chercheur.
-    en: Build a first reproducible piece of work for your research path.
+    fr: "Construire un outil que d'autres peuvent vérifier et réutiliser."
+    en: "Build something others can inspect and reuse."
   done_when:
-    fr: Un notebook exécutable, les données ou leur mode d’accès, une comparaison et une note de limites. Aucune
-      nouveauté scientifique n’est présumée.
-    en: An executable notebook, the data or access instructions, a comparison and a limitations note. No scientific
-      novelty is assumed.
+    fr: "Une version publique fonctionne avec tests, documentation, exemple reproductible et demande de revue."
+    en: "A public release works with tests, documentation, reproducible example and a review request."
   minimum:
-    fr: Un exemple restreint, reproductible de bout en bout.
-    en: One narrow example reproducible end to end.
+    fr: "Un outil étroit mais utilisable, testé et documenté."
+    en: "A narrow but usable, tested and documented tool."
   stretch:
-    fr: Demande une critique technique à un pair et consigne les corrections.
-    en: Ask a peer for technical criticism and record the corrections.
+    fr: "Ajoute une fonction avancée ou formalise une propriété mathématique en Lean."
+    en: "Add an advanced feature or formalize a mathematical property in Lean."
   targets:
   - research
   parents:
