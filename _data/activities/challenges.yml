@@ -165,31 +165,27 @@
   issued: '2026-11-03'
   due: '2027-02-02'
   title:
-    fr: Prendre la parole pour de vrai
-    en: Take the floor for real
-  difficulty: stretch
+    fr: "Donner une conférence de vingt minutes"
+    en: "Deliver a twenty-minute talk"
+  difficulty: ambitious
   effort:
-    fr: 3 h réparties · après P pour la présentation
-    en: 3 h spread out · present after P
+    fr: "15–20 h sur 3 mois · après P"
+    en: "15–20 h across 3 months · after P"
   action:
-    fr: Prépare une présentation de huit minutes sur une idée mathématique ou actuarielle que tu maîtrises. Propose-la
-      à deux personnes ou à un petit groupe ; vise une présentation après le 16 janvier.
-    en: Prepare an eight-minute presentation on a mathematical or actuarial idea you understand. Offer it to two
-      people or a small group; aim to present after January 16.
+    fr: "Prépare une conférence de vingt minutes sur une idée mathématique ou actuarielle. Invite un groupe à l'écouter après le 16 janvier ; si personne n'est disponible, publie l'exposé filmé et sollicite des critiques."
+    en: "Prepare a twenty-minute talk on mathematics or actuarial work. Invite a group after January 16; if nobody is available, publish the recorded talk and request criticism."
   why:
-    fr: Construire une première marche vers les conférences de ta Liste 100.
-    en: Build a first step toward the talks on your List 100.
+    fr: "Apprendre à soutenir publiquement des idées sérieuses."
+    en: "Learn to stand behind serious ideas in public."
   done_when:
-    fr: Une répétition enregistrée et une invitation envoyée ; si une date est convenue, la présentation est faite.
-      Le bilan distingue ces étapes.
-    en: A recorded rehearsal and an invitation sent; if a date is agreed, the presentation is delivered. The review
-      distinguishes these steps.
+    fr: "L'exposé est donné ou publié, avec bilan des questions."
+    en: "The talk is delivered or published, with a review of questions."
   minimum:
-    fr: Une présentation enregistrée de cinq minutes et une invitation envoyée.
-    en: A recorded five-minute presentation and one invitation sent.
+    fr: "Quinze minutes filmées et partagées pour critique."
+    en: "Fifteen recorded minutes shared for criticism."
   stretch:
-    fr: Présente en anglais et prévois cinq minutes de questions.
-    en: Present in English and allow five minutes for questions.
+    fr: "Présente en anglais devant un vrai groupe."
+    en: "Present in English before a live group."
   targets:
   - talk
   parents: *id001
