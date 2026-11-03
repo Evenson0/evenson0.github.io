@@ -2255,3 +2255,1059 @@
   - explore
   parents:
   - ACT-202611-Y7
+- id: ACT-2026W47-X01
+  horizon: week
+  category: math
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-03'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Douze problèmes P sans solution sous les yeux"
+    en: "Twelve Exam P problems without looking at answers"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis douze problèmes difficiles de domaines différents. Résous-les en conditions sérieuses, corrige chaque hésitation et rédige trois démonstrations originales de tes erreurs majeures."
+    en: "Choose twelve difficult problems from distinct topics. Work independently, review hesitation and write three original explanations of major errors."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Douze problèmes P sans solution sous les yeux."
+    en: "A real-world test of your abilities: Twelve Exam P problems without looking at answers."
+  done_when:
+    fr: "Un dossier de douze réponses contrôlées et trois explications originales."
+    en: "Twelve checked answers and three original explanations."
+  minimum:
+    fr: "Une démonstration ou correction complète, datée et vérifiée."
+    en: "One complete, dated and checked proof or correction."
+  stretch:
+    fr: "Publie la démonstration pédagogique et fais-la vérifier par un lecteur."
+    en: "Publish a teaching proof and invite a reader to check it."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Q1
+- id: ACT-2026W47-X02
+  horizon: week
+  category: build
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-03'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Faire survivre l'application P à un rechargement"
+    en: "Make the Exam P app survive a reload"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Ajoute une sauvegarde locale des réponses et de l'avancement dans le prototype mobile. Teste reprise, effacement contrôlé et fonctionnement hors connexion quand cela est possible."
+    en: "Add local persistence for answers and progress in the mobile prototype. Test resuming, intentional reset and offline behavior where feasible."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Faire survivre l'application P à un rechargement."
+    en: "A real-world test of your abilities: Make the Exam P app survive a reload."
+  done_when:
+    fr: "Un parcours mobile restaurable après fermeture et rechargement."
+    en: "A mobile practice flow that can resume after closing and reloading."
+  minimum:
+    fr: "Un prototype exécutable avec comportement principal testé."
+    en: "A runnable prototype with its key behavior tested."
+  stretch:
+    fr: "Fais tester le prototype par deux personnes et corrige une faiblesse."
+    en: "Get two people to test the prototype and fix a weakness."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-M1
+- id: ACT-2026W47-X03
+  horizon: week
+  category: writing
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-03'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Écrire le procès de tes propres excuses, sans IA"
+    en: "Put your excuses on trial without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Rédige un dialogue de 1 200 mots entre une voix qui justifie ton inaction et une autre qui examine les faits. Interdiction d'utiliser l'IA pour écrire ou réviser la pièce."
+    en: "Write a 1,200-word dialogue between a voice justifying inaction and another examining evidence. Do not use AI to write or revise the piece."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Écrire le procès de tes propres excuses, sans IA."
+    en: "A real-world test of your abilities: Put your excuses on trial without AI."
+  done_when:
+    fr: "Un dialogue complet avec des arguments contradictoires, écrit par toi."
+    en: "A complete argumentative dialogue written entirely by you."
+  minimum:
+    fr: "Un texte personnel complet d'au moins 700 mots, relu sans IA."
+    en: "A complete original text of at least 700 words, self-edited without AI."
+  stretch:
+    fr: "Soumets ton texte à un lecteur exigeant et révise-le sans IA."
+    en: "Ask a demanding reader for feedback and revise without AI."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2026W47-X04
+  horizon: week
+  category: speaking
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-03'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Demander spontanément la parole en anglais"
+    en: "Volunteer to speak in English"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Dans un échange réel et approprié, propose une intervention de cinq minutes en anglais sur ton travail intellectuel, puis accueille au moins une question sans script. Pas d'obligation de perturber une réunion professionnelle."
+    en: "In a suitable real setting, volunteer a five-minute English explanation of your intellectual work, then invite an unscripted question. Do not disrupt a professional meeting."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Demander spontanément la parole en anglais."
+    en: "A real-world test of your abilities: Volunteer to speak in English."
+  done_when:
+    fr: "Une intervention proposée et donnée à un auditeur volontaire."
+    en: "A talk offered and delivered to a willing listener."
+  minimum:
+    fr: "Un vrai échange de cinq minutes et une question improvisée."
+    en: "A real five-minute conversation and an unscripted question."
+  stretch:
+    fr: "Prolonge la discussion à vingt minutes sans texte préparé."
+    en: "Extend the discussion to twenty minutes without a script."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2026W47-X05
+  horizon: week
+  category: fitness
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-03'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Deux sorties qui bâtissent l'endurance, pas l'ego"
+    en: "Two sessions for endurance, not ego"
+  effort:
+    fr: "1–3 h, récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Effectue deux sorties course-marche adaptées, espacées pour la récupération. Compare respiration et effort, non la vitesse, et conserve une base qui te semble répétable."
+    en: "Complete two suitable run-walk outings with recovery between them. Compare breathing and effort rather than pace, and find a repeatable baseline."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Deux sorties qui bâtissent l'endurance, pas l'ego."
+    en: "A real-world test of your abilities: Two sessions for endurance, not ego."
+  done_when:
+    fr: "Deux séances réalisées avec notes de récupération et aucune augmentation forcée."
+    en: "Two completed sessions with recovery notes and no forced increase."
+  minimum:
+    fr: "Une séance adaptée, avec échauffement et récupération notés."
+    en: "One suitable session with warm-up and recovery recorded."
+  stretch:
+    fr: "Répète une deuxième séance seulement si la récupération est bonne."
+    en: "Repeat another session only if recovery is good."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-2026W47-X06
+  horizon: week
+  category: research
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-03'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Poisson ou négative binomiale : qui gagne ?"
+    en: "Poisson or negative binomial: who wins?"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Simule un petit portefeuille de sinistres surdispersé, ajuste un modèle de Poisson et une alternative adaptée, puis compare prédiction et limites sans prétendre à une étude réelle."
+    en: "Simulate a small overdispersed claim portfolio, fit a Poisson model and an appropriate alternative, then compare predictions and limitations without claiming real-world validation."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Poisson ou négative binomiale : qui gagne ?."
+    en: "A real-world test of your abilities: Poisson or negative binomial: who wins?."
+  done_when:
+    fr: "Une comparaison reproductible avec graphique et commentaire critique."
+    en: "A reproducible comparison with a plot and critical discussion."
+  minimum:
+    fr: "Une expérience limitée mais reproductible et honnêtement commentée."
+    en: "A limited yet reproducible and honestly discussed experiment."
+  stretch:
+    fr: "Invite une critique méthodologique extérieure et note ce qu'elle change."
+    en: "Invite outside methodological criticism and record what changes."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2026W47-X07
+  horizon: week
+  category: community
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-03'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Prendre place dans une vraie conversation savante"
+    en: "Join a real intellectual conversation"
+  effort:
+    fr: "1–4 h"
+    en: "1–4 h"
+  action:
+    fr: "Assiste à un séminaire public, club de lecture ou atelier accessible, puis apporte une question de fond et discute avec quelqu'un. L'objectif est d'être participant, pas spectateur silencieux."
+    en: "Attend an accessible public seminar, book club or workshop, ask a substantive question and talk with someone. Participate rather than remain a silent observer."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Prendre place dans une vraie conversation savante."
+    en: "A real-world test of your abilities: Join a real intellectual conversation."
+  done_when:
+    fr: "Une question substantielle posée et un échange réel consigné."
+    en: "A substantive question asked and a real exchange recorded."
+  minimum:
+    fr: "Une interaction réelle ou une invitation sincère, sans résultat imposé."
+    en: "A real interaction or sincere invitation without requiring a reply."
+  stretch:
+    fr: "Invite la personne à un échange supplémentaire sans l'imposer."
+    en: "Offer a follow-up exchange without pressuring anyone."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2026W47-X08
+  horizon: week
+  category: social
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-03'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Créer un fil X qui apprend vraiment quelque chose"
+    en: "Create an X thread that genuinely teaches"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Rédige un fil original en trois à cinq publications sur une intuition trompeuse en maths, avec un calcul clair et une référence. Publie manuellement et note les questions éventuelles."
+    en: "Write an original three-to-five-post thread on a misleading math intuition, with a clear calculation and citation. Publish manually and note any questions."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Créer un fil X qui apprend vraiment quelque chose."
+    en: "A real-world test of your abilities: Create an X thread that genuinely teaches."
+  done_when:
+    fr: "Un fil original publié et relu, sans automatisation d'interactions."
+    en: "A proofread original thread published without automated interactions."
+  minimum:
+    fr: "Une publication manuelle personnelle et un premier bilan."
+    en: "One manually published original post and an initial review."
+  stretch:
+    fr: "Réponds toi-même à une critique et améliore le contenu suivant."
+    en: "Personally respond to criticism and improve the next post."
+  targets:
+  - audience
+  parents:
+  - ACT-202611-Q10
+- id: ACT-2026W48-X01
+  horizon: week
+  category: math
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-03'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Inventer ton propre problème de probabilité"
+    en: "Invent your own probability problem"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Conçois un problème inédit de probabilité avec solution vérifiée, une fausse piste plausible et une simulation indépendante. Propose-le à une autre personne pour tester sa clarté."
+    en: "Create an original probability problem with checked solution, plausible false path and independent simulation. Offer it to someone to test clarity."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Inventer ton propre problème de probabilité."
+    en: "A real-world test of your abilities: Invent your own probability problem."
+  done_when:
+    fr: "Un énoncé original et un corrigé rigoureux prêts pour le blog."
+    en: "An original question and rigorous solution ready for your blog."
+  minimum:
+    fr: "Une démonstration ou correction complète, datée et vérifiée."
+    en: "One complete, dated and checked proof or correction."
+  stretch:
+    fr: "Publie la démonstration pédagogique et fais-la vérifier par un lecteur."
+    en: "Publish a teaching proof and invite a reader to check it."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Q1
+- id: ACT-2026W48-X02
+  horizon: week
+  category: build
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-03'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Rendre le prototype P accessible au clavier"
+    en: "Make the Exam P prototype keyboard accessible"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Audite la navigation de ton application sur mobile et au clavier, corrige trois obstacles concrets et vérifie textes contrastés, focus et boutons accessibles."
+    en: "Audit your app's mobile and keyboard navigation, fix three concrete barriers and check contrast, focus and accessible controls."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Rendre le prototype P accessible au clavier."
+    en: "A real-world test of your abilities: Make the Exam P prototype keyboard accessible."
+  done_when:
+    fr: "Trois améliorations d'accessibilité vérifiées sur le prototype."
+    en: "Three verified accessibility fixes in the prototype."
+  minimum:
+    fr: "Un prototype exécutable avec comportement principal testé."
+    en: "A runnable prototype with its key behavior tested."
+  stretch:
+    fr: "Fais tester le prototype par deux personnes et corrige une faiblesse."
+    en: "Get two people to test the prototype and fix a weakness."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2026W48-X03
+  horizon: week
+  category: writing
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-03'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Une nouvelle complète en quinze cents mots, sans IA"
+    en: "A complete 1,500-word short story without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris une nouvelle de 1 500 mots dont le personnage doit prendre une décision coûteuse. Soigne la fin et fais une révision entièrement personnelle."
+    en: "Write a 1,500-word short story in which the protagonist faces a costly choice. Craft the ending and revise independently."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Une nouvelle complète en quinze cents mots, sans IA."
+    en: "A real-world test of your abilities: A complete 1,500-word short story without AI."
+  done_when:
+    fr: "Une nouvelle entière, du début à la fin, écrite sans IA."
+    en: "A complete beginning-to-end story written without AI."
+  minimum:
+    fr: "Un texte personnel complet d'au moins 700 mots, relu sans IA."
+    en: "A complete original text of at least 700 words, self-edited without AI."
+  stretch:
+    fr: "Soumets ton texte à un lecteur exigeant et révise-le sans IA."
+    en: "Ask a demanding reader for feedback and revise without AI."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2026W48-X04
+  horizon: week
+  category: speaking
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-03'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Défendre ton projet comme devant un jury"
+    en: "Defend your project like an oral examination"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Présente ton meilleur outil en anglais pendant sept minutes à un auditeur réel. Demande-lui de jouer un jury sceptique et de poser au moins deux objections."
+    en: "Present your best tool in English for seven minutes to a real listener. Ask them to be a skeptical reviewer and raise at least two objections."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Défendre ton projet comme devant un jury."
+    en: "A real-world test of your abilities: Defend your project like an oral examination."
+  done_when:
+    fr: "Une soutenance simulée avec un bilan des objections."
+    en: "A mock defense with a review of the objections."
+  minimum:
+    fr: "Un vrai échange de cinq minutes et une question improvisée."
+    en: "A real five-minute conversation and an unscripted question."
+  stretch:
+    fr: "Prolonge la discussion à vingt minutes sans texte préparé."
+    en: "Extend the discussion to twenty minutes without a script."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2026W48-X05
+  horizon: week
+  category: outdoors
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-03'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Une traversée du Mont-Royal à ton rythme"
+    en: "Cross Mount Royal at your own pace"
+  effort:
+    fr: "2–5 h, conditions à vérifier"
+    en: "2–5 h, conditions to check"
+  action:
+    fr: "Choisis un parcours balisé et accessible du Mont-Royal, vérifie les conditions, marche à ton rythme et repère trois éléments historiques ou naturels. Ne prends pas de sentiers fermés."
+    en: "Choose an accessible marked Mount Royal route, check conditions, walk at a suitable pace and identify three historic or natural details. Avoid closed paths."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Une traversée du Mont-Royal à ton rythme."
+    en: "A real-world test of your abilities: Cross Mount Royal at your own pace."
+  done_when:
+    fr: "Une sortie réalisée sur un itinéraire sûr, avec trois observations."
+    en: "A walk on a safe route with three recorded observations."
+  minimum:
+    fr: "Un itinéraire documenté et une sortie sûre lorsque les conditions le permettent."
+    en: "A documented route and safe outing when conditions permit."
+  stretch:
+    fr: "Écris un récit illustré de tes propres observations."
+    en: "Write an account illustrated with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2026W48-X06
+  horizon: week
+  category: career
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-03'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Poser une vraie question à un chercheur"
+    en: "Ask a researcher a meaningful question"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Lis une publication d'un chercheur qui travaille en actuariat ou en mathématiques. Prépare une question précise, propose-la par un canal approprié sans insistance et documente ta propre réflexion."
+    en: "Read a paper by an actuarial or mathematical researcher. Prepare a focused question, send it through an appropriate channel without pressure and document your own thinking."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Poser une vraie question à un chercheur."
+    en: "A real-world test of your abilities: Ask a researcher a meaningful question."
+  done_when:
+    fr: "Une lecture sérieuse et une demande de critique ou question bien formulée envoyée."
+    en: "A serious reading and one well-formed question or critique request sent."
+  minimum:
+    fr: "Une lecture approfondie suivie d'une question envoyée sans insistance."
+    en: "One thorough reading followed by a respectful question."
+  stretch:
+    fr: "Compare le retour éventuel à ta lecture, sans attendre de réponse."
+    en: "Compare any feedback with your own reading, without requiring a reply."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2026W48-X07
+  horizon: week
+  category: social
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-03'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Construire un tableau de bord X sans aucun envoi"
+    en: "Build an X dashboard that never posts"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "À partir de deux exports autorisés ou fichiers CSV d'exemple, montre évolution des abonnés et fréquence de publication sur un graphique, sans coder la moindre action d'écriture sur X."
+    en: "Using two permitted exports or sample CSVs, chart follower changes and posting frequency without coding any X write action."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Construire un tableau de bord X sans aucun envoi."
+    en: "A real-world test of your abilities: Build an X dashboard that never posts."
+  done_when:
+    fr: "Un petit tableau de bord local en lecture seule et documenté."
+    en: "A documented local read-only dashboard."
+  minimum:
+    fr: "Une publication manuelle personnelle et un premier bilan."
+    en: "One manually published original post and an initial review."
+  stretch:
+    fr: "Réponds toi-même à une critique et améliore le contenu suivant."
+    en: "Personally respond to criticism and improve the next post."
+  targets:
+  - audience
+  parents:
+  - ACT-202611-M2
+- id: ACT-2026W48-X08
+  horizon: week
+  category: creativity
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-03'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Faire une série photo qui raconte Montréal autrement"
+    en: "Make a photo essay showing a different Montreal"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Choisis un détail urbain méconnu, prends huit photographies originales et sélectionne un ordre qui raconte quelque chose. Ajoute un court texte de ta main, sans utiliser d'images d'autrui."
+    en: "Choose an overlooked city detail, take eight original photographs and sequence them to tell a story. Add a brief text in your own words, without using others' images."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Faire une série photo qui raconte Montréal autrement."
+    en: "A real-world test of your abilities: Make a photo essay showing a different Montreal."
+  done_when:
+    fr: "Une série photo cohérente et une courte légende personnelle."
+    en: "A coherent photo series with a personal caption."
+  minimum:
+    fr: "Un prototype jouable ou une création réellement terminée."
+    en: "A playable prototype or genuinely finished creation."
+  stretch:
+    fr: "Fais une démonstration et corrige un vrai problème d'usage."
+    en: "Demo the creation and fix one genuine usability issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2026W49-X01
+  horizon: week
+  category: math
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-03'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Simuler un examen P puis démolir tes erreurs"
+    en: "Take an Exam P mock, then dissect mistakes"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Effectue une épreuve blanche P chronométrée issue de ressources autorisées et analyse les cinq erreurs ou hésitations les plus coûteuses avec corrections rédigées."
+    en: "Take a timed Exam P mock using permitted materials and analyze the five most costly errors or hesitations with written corrections."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Simuler un examen P puis démolir tes erreurs."
+    en: "A real-world test of your abilities: Take an Exam P mock, then dissect mistakes."
+  done_when:
+    fr: "Une simulation datée et cinq analyses d'erreurs expliquées."
+    en: "A dated mock exam and five explained error analyses."
+  minimum:
+    fr: "Une démonstration ou correction complète, datée et vérifiée."
+    en: "One complete, dated and checked proof or correction."
+  stretch:
+    fr: "Publie la démonstration pédagogique et fais-la vérifier par un lecteur."
+    en: "Publish a teaching proof and invite a reader to check it."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-2026W49-X02
+  horizon: week
+  category: build
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-03'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Mettre ton outil P entre les mains d'un utilisateur"
+    en: "Put your Exam P tool in someone's hands"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Déploie une version mobile minimale contenant dix exercices originaux, réponses et explications. Fais réaliser un parcours complet à une personne volontaire et corrige une difficulté majeure."
+    en: "Deploy a mobile minimum version with ten original questions, answers and explanations. Invite a volunteer to complete a flow and fix a major obstacle."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Mettre ton outil P entre les mains d'un utilisateur."
+    en: "A real-world test of your abilities: Put your Exam P tool in someone's hands."
+  done_when:
+    fr: "Une version publique utilisable et un correctif issu d'un test."
+    en: "A usable public version and a fix informed by user testing."
+  minimum:
+    fr: "Un prototype exécutable avec comportement principal testé."
+    en: "A runnable prototype with its key behavior tested."
+  stretch:
+    fr: "Fais tester le prototype par deux personnes et corrige une faiblesse."
+    en: "Get two people to test the prototype and fix a weakness."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2026W49-X03
+  horizon: week
+  category: writing
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-03'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Machiavel et Aristote : un conflit d'idées sans IA"
+    en: "Machiavelli versus Aristotle: an argument without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris une confrontation de 1 000 mots entre une idée de Machiavel et une idée d'Aristote, appuyée sur des passages réellement lus. Aucune rédaction ni correction par IA."
+    en: "Write a 1,000-word confrontation between a claim from Machiavelli and one from Aristotle, citing passages you actually read. No AI drafting or editing."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Machiavel et Aristote : un conflit d'idées sans IA."
+    en: "A real-world test of your abilities: Machiavelli versus Aristotle: an argument without AI."
+  done_when:
+    fr: "Un texte argumenté avec références précises et objections honnêtes."
+    en: "A reasoned essay with exact references and fair objections."
+  minimum:
+    fr: "Un texte personnel complet d'au moins 700 mots, relu sans IA."
+    en: "A complete original text of at least 700 words, self-edited without AI."
+  stretch:
+    fr: "Soumets ton texte à un lecteur exigeant et révise-le sans IA."
+    en: "Ask a demanding reader for feedback and revise without AI."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2026W49-X04
+  horizon: week
+  category: fitness
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-03'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Parcourir trois kilomètres en contrôlant l'effort"
+    en: "Cover 3 km with controlled effort"
+  effort:
+    fr: "1–3 h, récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Si le kilomètre initial et la récupération se passent bien, effectue un parcours mesuré de trois kilomètres en course-marche, sans chercher de vitesse. Sinon, répète la distance actuelle en sécurité."
+    en: "If the initial kilometre and recovery went well, complete a measured 3 km run-walk route without racing. Otherwise repeat your current safe distance."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Parcourir trois kilomètres en contrôlant l'effort."
+    en: "A real-world test of your abilities: Cover 3 km with controlled effort."
+  done_when:
+    fr: "Un parcours adapté et une note de progression sans douleur ignorée."
+    en: "A suitable route and progress note without ignoring pain."
+  minimum:
+    fr: "Une séance adaptée, avec échauffement et récupération notés."
+    en: "One suitable session with warm-up and recovery recorded."
+  stretch:
+    fr: "Répète une deuxième séance seulement si la récupération est bonne."
+    en: "Repeat another session only if recovery is good."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Q2
+- id: ACT-2026W49-X05
+  horizon: week
+  category: research
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-03'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Réduire une intuition de recherche à une question testable"
+    en: "Turn a research intuition into a testable question"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Formule une question précise en tarification IARD avec hypothèse, données permises, indicateur de succès, deux méthodes à comparer et trois limites méthodologiques."
+    en: "Frame a precise P&C pricing research question with hypothesis, allowed data, success metric, two competing methods and three methodological limitations."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Réduire une intuition de recherche à une question testable."
+    en: "A real-world test of your abilities: Turn a research intuition into a testable question."
+  done_when:
+    fr: "Une fiche de recherche d'une à deux pages réellement testable."
+    en: "A one-to-two-page genuinely testable research brief."
+  minimum:
+    fr: "Une expérience limitée mais reproductible et honnêtement commentée."
+    en: "A limited yet reproducible and honestly discussed experiment."
+  stretch:
+    fr: "Invite une critique méthodologique extérieure et note ce qu'elle change."
+    en: "Invite outside methodological criticism and record what changes."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2026W49-X06
+  horizon: week
+  category: speaking
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-03'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Tenir un vrai échange anglais de trente minutes"
+    en: "Hold a real thirty-minute English conversation"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Organise une conversation spontanée de 30 minutes avec un interlocuteur anglophone volontaire autour de science, études et projets, sans réponses préparées."
+    en: "Arrange an unscripted thirty-minute conversation with a willing English speaker about science, study and projects, without prepared answers."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Tenir un vrai échange anglais de trente minutes."
+    en: "A real-world test of your abilities: Hold a real thirty-minute English conversation."
+  done_when:
+    fr: "Une conversation entière et une auto-évaluation de la fluidité."
+    en: "A full conversation and a fluency self-assessment."
+  minimum:
+    fr: "Un vrai échange de cinq minutes et une question improvisée."
+    en: "A real five-minute conversation and an unscripted question."
+  stretch:
+    fr: "Prolonge la discussion à vingt minutes sans texte préparé."
+    en: "Extend the discussion to twenty minutes without a script."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2026W49-X07
+  horizon: week
+  category: community
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-03'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Offrir une aide mathématique à quelqu'un"
+    en: "Help someone understand mathematics"
+  effort:
+    fr: "1–4 h"
+    en: "1–4 h"
+  action:
+    fr: "Propose à une personne qui en a envie une séance gratuite pour expliquer un concept de probabilité ; prépare un exemple, laisse-la poser des questions puis note ce que tu as appris à enseigner."
+    en: "Offer a willing person a free explanation of a probability concept; prepare an example, invite questions and reflect on what teaching taught you."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Offrir une aide mathématique à quelqu'un."
+    en: "A real-world test of your abilities: Help someone understand mathematics."
+  done_when:
+    fr: "Une explication réellement offerte et un bilan pédagogique."
+    en: "A real teaching session and a teaching reflection."
+  minimum:
+    fr: "Une interaction réelle ou une invitation sincère, sans résultat imposé."
+    en: "A real interaction or sincere invitation without requiring a reply."
+  stretch:
+    fr: "Invite la personne à un échange supplémentaire sans l'imposer."
+    en: "Offer a follow-up exchange without pressuring anyone."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2026W49-X08
+  horizon: week
+  category: outdoors
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-03'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Première sortie nature en conditions de début d'hiver"
+    en: "Take a safe early-winter nature outing"
+  effort:
+    fr: "2–5 h, conditions à vérifier"
+    en: "2–5 h, conditions to check"
+  action:
+    fr: "Choisis un parcours accessible et officiellement ouvert, vérifie froid, terrain et transport, marche à un rythme confortable et raconte une découverte."
+    en: "Choose an accessible officially open trail, check cold, terrain and transport, walk at a comfortable pace and describe one discovery."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Première sortie nature en conditions de début d'hiver."
+    en: "A real-world test of your abilities: Take a safe early-winter nature outing."
+  done_when:
+    fr: "Une sortie sûre documentée ou un report motivé par des conditions défavorables."
+    en: "A documented safe outing or a safety-based decision to defer."
+  minimum:
+    fr: "Un itinéraire documenté et une sortie sûre lorsque les conditions le permettent."
+    en: "A documented route and safe outing when conditions permit."
+  stretch:
+    fr: "Écris un récit illustré de tes propres observations."
+    en: "Write an account illustrated with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2026W50-X01
+  horizon: week
+  category: math
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-03'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Créer l'atlas de tes cinq erreurs P les plus dangereuses"
+    en: "Build an atlas of your five costliest Exam P mistakes"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "À partir de vraies copies de travail, sélectionne cinq erreurs récurrentes et écris pour chacune un contre-exemple, la règle correcte et un exercice nouveau que tu résous sans aide."
+    en: "Use your own practice work to identify five recurring mistakes. For each, write a counterexample, the correct rule and a new independently solved exercise."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Créer l'atlas de tes cinq erreurs P les plus dangereuses."
+    en: "A real-world test of your abilities: Build an atlas of your five costliest Exam P mistakes."
+  done_when:
+    fr: "Un atlas personnel de cinq erreurs et cinq réparations testées."
+    en: "A personal atlas of five mistakes and five tested corrections."
+  minimum:
+    fr: "Une démonstration ou correction complète, datée et vérifiée."
+    en: "One complete, dated and checked proof or correction."
+  stretch:
+    fr: "Publie la démonstration pédagogique et fais-la vérifier par un lecteur."
+    en: "Publish a teaching proof and invite a reader to check it."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-2026W50-X02
+  horizon: week
+  category: build
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-03'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Créer une correction interactive pour ton application P"
+    en: "Build an interactive explanation in the Exam P app"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Implémente deux solutions étape par étape dans ton application P, avec indices facultatifs, vérification de réponse et affichage lisible sur téléphone."
+    en: "Implement two step-by-step solutions in your Exam P app, with optional hints, answer checking and phone-friendly presentation."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Créer une correction interactive pour ton application P."
+    en: "A real-world test of your abilities: Build an interactive explanation in the Exam P app."
+  done_when:
+    fr: "Deux corrigés interactifs testés avec navigation compréhensible."
+    en: "Two tested interactive explanations with understandable navigation."
+  minimum:
+    fr: "Un prototype exécutable avec comportement principal testé."
+    en: "A runnable prototype with its key behavior tested."
+  stretch:
+    fr: "Fais tester le prototype par deux personnes et corrige une faiblesse."
+    en: "Get two people to test the prototype and fix a weakness."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-M1
+- id: ACT-2026W50-X03
+  horizon: week
+  category: writing
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-03'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Écrire les deux mille mots du premier chapitre, sans IA"
+    en: "Write the first 2,000 words of chapter one without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Rédige le début réel de ton livre : un chapitre de 2 000 mots qui pose une question, une tension ou un personnage, sans AI pour l'intrigue, la prose ou la correction."
+    en: "Write the actual beginning of your book: a 2,000-word chapter establishing a question, tension or character, without AI for plotting, prose or editing."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Écrire les deux mille mots du premier chapitre, sans IA."
+    en: "A real-world test of your abilities: Write the first 2,000 words of chapter one without AI."
+  done_when:
+    fr: "Un chapitre complet qui ouvre un véritable manuscrit personnel."
+    en: "A complete chapter opening a genuine personal manuscript."
+  minimum:
+    fr: "Un texte personnel complet d'au moins 700 mots, relu sans IA."
+    en: "A complete original text of at least 700 words, self-edited without AI."
+  stretch:
+    fr: "Soumets ton texte à un lecteur exigeant et révise-le sans IA."
+    en: "Ask a demanding reader for feedback and revise without AI."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2026W50-X04
+  horizon: week
+  category: speaking
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-03'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Expliquer le GLM de Poisson en anglais, sans diapositives"
+    en: "Explain the Poisson GLM in English without slides"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Devant un auditeur volontaire, explique en anglais pendant douze minutes la variable réponse, l'offset et les limites d'un modèle de fréquence ; réponds à deux questions."
+    en: "To a willing listener, explain the response, exposure offset and limits of a frequency model in English for twelve minutes; answer two questions."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Expliquer le GLM de Poisson en anglais, sans diapositives."
+    en: "A real-world test of your abilities: Explain the Poisson GLM in English without slides."
+  done_when:
+    fr: "Un exposé vivant et deux réponses improvisées."
+    en: "A live talk and two unscripted answers."
+  minimum:
+    fr: "Un vrai échange de cinq minutes et une question improvisée."
+    en: "A real five-minute conversation and an unscripted question."
+  stretch:
+    fr: "Prolonge la discussion à vingt minutes sans texte préparé."
+    en: "Extend the discussion to twenty minutes without a script."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2026W50-X05
+  horizon: week
+  category: fitness
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-03'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Installer deux entraînements qui respectent la récupération"
+    en: "Build two workouts that respect recovery"
+  effort:
+    fr: "1–3 h, récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Planifie puis réalise deux séances aérobies adaptées dans la semaine, en notant échauffement, durée et récupération. Ne cumule pas avec d'autres séances si la fatigue est excessive."
+    en: "Plan and complete two suitable aerobic sessions within the week, recording warm-up, duration and recovery. Do not stack extra sessions when fatigue is high."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Installer deux entraînements qui respectent la récupération."
+    en: "A real-world test of your abilities: Build two workouts that respect recovery."
+  done_when:
+    fr: "Deux séances de qualité ou une séance avec ajustement justifié selon la récupération."
+    en: "Two quality sessions or one with a justified recovery adjustment."
+  minimum:
+    fr: "Une séance adaptée, avec échauffement et récupération notés."
+    en: "One suitable session with warm-up and recovery recorded."
+  stretch:
+    fr: "Répète une deuxième séance seulement si la récupération est bonne."
+    en: "Repeat another session only if recovery is good."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-2026W50-X06
+  horizon: week
+  category: research
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-03'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Refaire un GLM de bout en bout sans copier un tutoriel"
+    en: "Rebuild a GLM end to end without copying a tutorial"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Sur des données synthétiques nouvelles, prépare les variables, ajuste un GLM avec offset, sépare entraînement et validation, trace les diagnostics et écris tes décisions méthodologiques."
+    en: "Using fresh synthetic data, prepare variables, fit an offset GLM, split training and validation, inspect diagnostics and explain your methodological choices."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Refaire un GLM de bout en bout sans copier un tutoriel."
+    en: "A real-world test of your abilities: Rebuild a GLM end to end without copying a tutorial."
+  done_when:
+    fr: "Un notebook autonome et reproductible sans données employeur."
+    en: "A self-contained reproducible notebook without employer data."
+  minimum:
+    fr: "Une expérience limitée mais reproductible et honnêtement commentée."
+    en: "A limited yet reproducible and honestly discussed experiment."
+  stretch:
+    fr: "Invite une critique méthodologique extérieure et note ce qu'elle change."
+    en: "Invite outside methodological criticism and record what changes."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2026W50-X07
+  horizon: week
+  category: social
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-03'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Publier deux idées utiles et mesurer les vrais retours"
+    en: "Publish two useful ideas and measure genuine feedback"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Crée deux contenus X personnels sur des sujets différents : un mathématique, un philosophique. Observe les métriques autorisées et distingue portée, compréhension et conversations réelles."
+    en: "Make two original X posts on different subjects: one mathematical, one philosophical. Observe permitted metrics and distinguish reach, understanding and real conversations."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Publier deux idées utiles et mesurer les vrais retours."
+    en: "A real-world test of your abilities: Publish two useful ideas and measure genuine feedback."
+  done_when:
+    fr: "Deux publications originales et une comparaison honnête des réponses."
+    en: "Two original posts and an honest comparison of their responses."
+  minimum:
+    fr: "Une publication manuelle personnelle et un premier bilan."
+    en: "One manually published original post and an initial review."
+  stretch:
+    fr: "Réponds toi-même à une critique et améliore le contenu suivant."
+    en: "Personally respond to criticism and improve the next post."
+  targets:
+  - audience
+  parents:
+  - ACT-202611-Q10
+- id: ACT-2026W50-X08
+  horizon: week
+  category: creativity
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-03'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Créer un mini-jeu mathématique jouable en un week-end"
+    en: "Build a playable math mini-game in a weekend"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Construis un petit jeu interactif original autour d'une intuition probabiliste, avec une règle claire, un état de victoire et un test auprès d'un ami."
+    en: "Build a small original interactive game around a probability intuition, with clear rules, a win state and a playtest with a friend."
+  why:
+    fr: "Une mise à l'épreuve dans le réel : Créer un mini-jeu mathématique jouable en un week-end."
+    en: "A real-world test of your abilities: Build a playable math mini-game in a weekend."
+  done_when:
+    fr: "Un jeu simple mais entièrement jouable et documenté."
+    en: "A simple but fully playable and documented game."
+  minimum:
+    fr: "Un prototype jouable ou une création réellement terminée."
+    en: "A playable prototype or genuinely finished creation."
+  stretch:
+    fr: "Fais une démonstration et corrige un vrai problème d'usage."
+    en: "Demo the creation and fix one genuine usability issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
