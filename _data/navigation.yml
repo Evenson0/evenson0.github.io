@@ -37,17 +37,17 @@ main:
     title_fr: "CV"
     url: /cv/
 
-  - title: "List 100"
-    title_fr: "Liste 100"
-    url: /list-100/
+  # - title: "List 100"
+  #   title_fr: "Liste 100"
+  #   url: /list-100/
 
   - title: "Tools"
     title_fr: "Outils"
     url: /tools/
     
-  - title: "Memories"
-    title_fr: "Souvenirs"
-    url: /memories/
+  # - title: "Memories"
+  #   title_fr: "Souvenirs"
+  #   url: /memories/
     
    #- title: "CV"
     # url: /cv-json/
