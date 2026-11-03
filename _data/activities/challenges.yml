@@ -818,3 +818,229 @@
   - builder
   - audience
   parents: []
+- id: ACT-202611-Q4
+  horizon: quarter
+  category: math
+  period: quarter-2027-02
+  period_start: '2027-02-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Préparer FM jusqu'à une épreuve réelle"
+    en: "Prepare FM for a real exam sitting"
+  effort:
+    fr: "90–160 h · selon les acquis"
+    en: "90–160 h · depending on preparation"
+  action:
+    fr: "Établis ton programme FM après le bilan de P, travaille les chapitres les plus faibles, complète deux simulations et présente l'épreuve lors d'une fenêtre officielle choisie et confirmée."
+    en: "After reviewing P, build an FM study plan, work on weak areas, complete two mock exams and sit the exam during a confirmed official window."
+  why:
+    fr: "Une étape mesurable vers une grande ambition : Préparer FM jusqu'à une épreuve réelle."
+    en: "A measurable step toward a major ambition: Prepare FM for a real exam sitting."
+  done_when:
+    fr: "Une séance d'examen FM réelle a été passée et ton bilan est consigné, indépendamment du résultat."
+    en: "You sat the actual FM exam and recorded a candid review regardless of score."
+  minimum:
+    fr: "Deux simulations complètes et une décision documentée sur la fenêtre d'examen."
+    en: "Two full mock exams and a documented exam-window decision."
+  stretch:
+    fr: "Réussis FM et transforme tes notes en support de cours clair sur le blog."
+    en: "Pass FM and convert your notes into a polished blog guide."
+  targets:
+  - acas
+  parents: []
+- id: ACT-202611-Q5
+  horizon: quarter
+  category: fitness
+  period: quarter-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-03'
+  due: '2027-08-02'
+  difficulty: ambitious
+  title:
+    fr: "Un premier semi-marathon de 21,1 km"
+    en: "Complete a first half marathon"
+  effort:
+    fr: "12 semaines · entraînement progressif"
+    en: "12 weeks · progressive training"
+  action:
+    fr: "Après avoir construit une base stable sur 5 puis 10 km, suis une préparation progressive avec semaines de récupération et vise une sortie longue ou un événement de 21,1 km, uniquement si le niveau physique le permet."
+    en: "After building a consistent 5 km and 10 km base, follow a gradual plan with recovery weeks and aim for a 21.1 km long run or event only if your fitness supports it."
+  why:
+    fr: "Une étape mesurable vers une grande ambition : Un premier semi-marathon de 21,1 km."
+    en: "A measurable step toward a major ambition: Complete a first half marathon."
+  done_when:
+    fr: "Un semi-marathon a été terminé sans douleur anormale, ou la décision de le reporter a été prise sur des critères de santé et de préparation."
+    en: "A half marathon was finished without abnormal pain, or a safety-based decision to defer was made."
+  minimum:
+    fr: "Atteins 15 km à allure maîtrisée, sans blessure ni précipitation."
+    en: "Reach 15 km at a controlled effort without injury or rushing."
+  stretch:
+    fr: "Termine une course officielle de 21,1 km dans des conditions adaptées."
+    en: "Finish an official 21.1 km event under appropriate conditions."
+  targets:
+  - fitness-goal
+  parents: []
+- id: ACT-202611-Q6
+  horizon: quarter
+  category: speaking
+  period: quarter-2027-02
+  period_start: '2027-02-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Quatre conversations anglaises sans filet"
+    en: "Four unscripted English conversations"
+  effort:
+    fr: "8–12 h incluant préparation"
+    en: "8–12 h including preparation"
+  action:
+    fr: "Organise quatre échanges de 30 minutes en anglais avec des personnes réelles. Choisis chaque fois un sujet complexe : science, politique, métier, lecture. Prépare seulement quelques mots, sans écrire les réponses."
+    en: "Arrange four real 30-minute conversations in English. Each time discuss a complex topic: science, politics, work or books. Prepare only vocabulary notes, not scripted answers."
+  why:
+    fr: "Une étape mesurable vers une grande ambition : Quatre conversations anglaises sans filet."
+    en: "A measurable step toward a major ambition: Four unscripted English conversations."
+  done_when:
+    fr: "Quatre conversations spontanées ont eu lieu et une évolution concrète de la fluidité est décrite."
+    en: "Four spontaneous conversations took place and changes in fluency were documented."
+  minimum:
+    fr: "Deux conversations de 30 minutes avec questions improvisées."
+    en: "Two thirty-minute conversations with unscripted questions."
+  stretch:
+    fr: "Présente dix minutes d'argumentation en anglais et défends tes idées en débat."
+    en: "Present a ten-minute argument in English and defend it in discussion."
+  targets:
+  - talk
+  parents: []
+- id: ACT-202611-Q7
+  horizon: quarter
+  category: writing
+  period: quarter-2027-02
+  period_start: '2027-02-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Écrire les dix mille premiers mots de mon livre"
+    en: "Write the first ten thousand words of my book"
+  effort:
+    fr: "30–45 h · écriture autonome"
+    en: "30–45 h · independent writing"
+  action:
+    fr: "Choisis la forme et le lecteur visé, écris un plan de chapitres puis dix mille mots de prose entièrement personnelle en évitant l'IA générative pour la rédaction."
+    en: "Choose your format and intended audience, outline chapters and write ten thousand words of fully original prose without using generative AI to draft it."
+  why:
+    fr: "Une étape mesurable vers une grande ambition : Écrire les dix mille premiers mots de mon livre."
+    en: "A measurable step toward a major ambition: Write the first ten thousand words of my book."
+  done_when:
+    fr: "Un plan cohérent et dix mille mots existent, dont deux chapitres relus sans IA."
+    en: "A coherent outline and ten thousand words exist, including two self-edited chapters."
+  minimum:
+    fr: "Rédige six mille mots et un sommaire de douze chapitres."
+    en: "Write six thousand words and a twelve-chapter outline."
+  stretch:
+    fr: "Fais lire un chapitre à deux lecteurs et revois sa structure."
+    en: "Ask two readers to review a chapter and revise its structure."
+  targets:
+  - writing
+  parents: []
+- id: ACT-202611-Q8
+  horizon: quarter
+  category: outdoors
+  period: quarter-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-03'
+  due: '2027-08-02'
+  difficulty: ambitious
+  title:
+    fr: "Gravir deux montagnes québécoises"
+    en: "Summit two Quebec mountains"
+  effort:
+    fr: "2 à 4 journées avec déplacement"
+    en: "2–4 days including travel"
+  action:
+    fr: "Sélectionne deux randonnées de sommet adaptées à ton expérience, prépare le parcours, l'eau, la météo et la sécurité puis complète les ascensions par temps favorable. Monte progressivement en difficulté."
+    en: "Choose two summit hikes suited to your experience, prepare route, water, weather and safety, then complete them in favorable conditions. Increase difficulty progressively."
+  why:
+    fr: "Une étape mesurable vers une grande ambition : Gravir deux montagnes québécoises."
+    en: "A measurable step toward a major ambition: Summit two Quebec mountains."
+  done_when:
+    fr: "Deux ascensions préparées et vécues, chacune documentée dans un carnet de randonnée."
+    en: "Two prepared summit outings were completed and logged in a hiking journal."
+  minimum:
+    fr: "Une ascension nouvelle exigeante mais adaptée, préparée et réussie."
+    en: "One new challenging but suitable summit hike completed safely."
+  stretch:
+    fr: "Ajoute une marche de crête technique avec accompagnement approprié."
+    en: "Add a more technical ridge hike with suitable support."
+  targets:
+  - explore
+  - fitness-goal
+  parents: []
+- id: ACT-202611-Q9
+  horizon: quarter
+  category: math
+  period: quarter-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-03'
+  due: '2027-08-02'
+  difficulty: ambitious
+  title:
+    fr: "Dix preuves Lean qui compilent"
+    en: "Ten Lean proofs that compile"
+  effort:
+    fr: "25–45 h d'apprentissage et preuve"
+    en: "25–45 h of learning and proof work"
+  action:
+    fr: "Choisis dix lemmes accessibles mais utiles, formalise chaque preuve en Lean dans un dépôt public, et documente les hypothèses et le code. Cherche un pair pour commenter le projet."
+    en: "Choose ten approachable but useful lemmas, formalize each in Lean in a public repository, and document assumptions and code. Ask a peer to review the project."
+  why:
+    fr: "Une étape mesurable vers une grande ambition : Dix preuves Lean qui compilent."
+    en: "A measurable step toward a major ambition: Ten Lean proofs that compile."
+  done_when:
+    fr: "Un dépôt comporte dix preuves vérifiées par le compilateur et une demande de retour technique."
+    en: "A repository contains ten compiler-checked proofs and one technical review request."
+  minimum:
+    fr: "Cinq preuves Lean reproductibles et expliquées."
+    en: "Five reproducible, explained Lean proofs."
+  stretch:
+    fr: "Ouvre une proposition de contribution mathlib conforme aux règles du projet."
+    en: "Open a mathlib contribution proposal that follows project conventions."
+  targets:
+  - research
+  - builder
+  parents: []
+- id: ACT-202611-Q10
+  horizon: quarter
+  category: social
+  period: quarter-2027-02
+  period_start: '2027-02-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Douze semaines pour bâtir une voix sur X"
+    en: "Twelve weeks to build a voice on X"
+  effort:
+    fr: "12–18 h sur le trimestre"
+    en: "12–18 h across the quarter"
+  action:
+    fr: "Publie régulièrement des idées originales sur deux thèmes précis et analyse honnêtement les réactions à partir de données autorisées. Engage-toi dans des conversations humaines pertinentes sans aucune automatisation de publication ou d'abonnement."
+    en: "Share original ideas consistently on two focused themes and examine legitimate analytics. Join relevant human conversations without any automated posting or follower activity."
+  why:
+    fr: "Une étape mesurable vers une grande ambition : Douze semaines pour bâtir une voix sur X."
+    en: "A measurable step toward a major ambition: Twelve weeks to build a voice on X."
+  done_when:
+    fr: "Un corpus d'au moins douze publications substantielles et un bilan sur trois mois existent, sans objectif d'abonnés imposé."
+    en: "A collection of at least twelve substantive posts and a three-month reflection exist, without a forced follower count."
+  minimum:
+    fr: "Six publications de qualité et deux analyses comparatives du compte."
+    en: "Six quality posts and two comparative account analyses."
+  stretch:
+    fr: "Conçois une série pédagogique originale accompagnée de graphiques sourcés."
+    en: "Build an original educational series with sourced graphics."
+  targets:
+  - audience
+  parents: []
