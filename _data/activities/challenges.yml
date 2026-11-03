@@ -1044,3 +1044,198 @@
   targets:
   - audience
   parents: []
+- id: ACT-202611-M5
+  horizon: month
+  category: writing
+  period: month-2026-12
+  period_start: '2026-12-01'
+  issued: '2026-11-03'
+  due: '2026-12-31'
+  difficulty: stretch
+  title:
+    fr: "Première pierre du livre : synopsis et 3 000 mots"
+    en: "Book foundations: synopsis and 3,000 words"
+  effort:
+    fr: "12–20 h personnelles"
+    en: "12–20 personal hours"
+  action:
+    fr: "Choisis ton genre littéraire, écris une promesse de lecture, trace l'arc narratif ou argumentatif, puis rédige 3 000 mots sans IA. Établis une routine que tu peux maintenir pendant P."
+    en: "Choose your genre, write a reader promise, outline the narrative or argument, then draft 3,000 words without AI. Set a writing practice compatible with Exam P."
+  why:
+    fr: "Construire une étape concrète vers une réalisation plus grande : Première pierre du livre : synopsis et 3 000 mots."
+    en: "Build a concrete step toward a larger ambition: Book foundations: synopsis and 3,000 words."
+  done_when:
+    fr: "Un synopsis de deux pages et 3 000 mots originaux sont produits sans déléguer la rédaction."
+    en: "A two-page synopsis and 3,000 original words are produced without outsourcing the writing."
+  minimum:
+    fr: "Synopsis, plan de douze chapitres et 1 500 mots rédigés."
+    en: "Synopsis, twelve-chapter outline and 1,500 written words."
+  stretch:
+    fr: "Termine le premier chapitre et demande une critique humaine."
+    en: "Finish chapter one and ask a real person for feedback."
+  targets:
+  - writing
+  parents: []
+- id: ACT-202611-M6
+  horizon: month
+  category: math
+  period: month-2026-12
+  period_start: '2026-12-01'
+  issued: '2026-11-03'
+  due: '2026-12-31'
+  difficulty: stretch
+  title:
+    fr: "Vingt-cinq solutions originales SOA Sample P"
+    en: "Twenty-five original SOA Sample P solutions"
+  effort:
+    fr: "12–24 h incluses dans la préparation P"
+    en: "12–24 h integrated into Exam P preparation"
+  action:
+    fr: "Résous 25 problèmes du SOA Sample P dans le cadre de tes séances P puis rédige 25 corrigés entièrement originaux avec références officielles, méthodes et pièges. Intègre-les à ton blog sans recopier les énoncés protégés."
+    en: "Solve 25 SOA Sample P questions during your existing sessions, then write 25 entirely original explanations with official references, methods and traps. Add them to your blog without copying protected questions."
+  why:
+    fr: "Construire une étape concrète vers une réalisation plus grande : Vingt-cinq solutions originales SOA Sample P."
+    en: "Build a concrete step toward a larger ambition: Twenty-five original SOA Sample P solutions."
+  done_when:
+    fr: "Vingt-cinq solutions vérifiées sont disponibles dans un index utilisable."
+    en: "Twenty-five checked explanations are available in a usable index."
+  minimum:
+    fr: "Dix corrigés originaux complets et référencés publiés."
+    en: "Ten complete, original, referenced solutions published."
+  stretch:
+    fr: "Ajoute un mode de révision mobile lié à ton prototype."
+    en: "Add a mobile revision mode linked to your prototype."
+  targets:
+  - acas
+  - builder
+  parents: []
+- id: ACT-202611-M7
+  horizon: month
+  category: speaking
+  period: month-2027-01
+  period_start: '2027-01-01'
+  issued: '2026-11-03'
+  due: '2027-01-31'
+  difficulty: stretch
+  title:
+    fr: "Une heure d'anglais vivant"
+    en: "An hour of real English"
+  effort:
+    fr: "2–4 h incluant préparation"
+    en: "2–4 h including preparation"
+  action:
+    fr: "Organise un échange d'une heure, en anglais, avec un véritable interlocuteur : mathématiques, société, travail et goûts personnels. Ne prépare pas de script ; note cinq expressions réellement utiles après la rencontre."
+    en: "Arrange a one-hour real English conversation spanning mathematics, society, work and personal interests. Do not prepare a script; record five genuinely useful phrases afterward."
+  why:
+    fr: "Construire une étape concrète vers une réalisation plus grande : Une heure d'anglais vivant."
+    en: "Build a concrete step toward a larger ambition: An hour of real English."
+  done_when:
+    fr: "Une heure d'échange spontané a réellement eu lieu, avec un bilan honnête."
+    en: "A full hour of spontaneous conversation took place, with an honest review."
+  minimum:
+    fr: "Trente minutes de conversation réelle, avec imprévus."
+    en: "Thirty minutes of unscripted live conversation."
+  stretch:
+    fr: "Anime un mini-débat de quinze minutes en anglais."
+    en: "Host a fifteen-minute mini-debate in English."
+  targets:
+  - talk
+  parents: []
+- id: ACT-202611-M8
+  horizon: month
+  category: health
+  period: month-2027-02
+  period_start: '2027-02-01'
+  issued: '2026-11-03'
+  due: '2027-02-28'
+  difficulty: stretch
+  title:
+    fr: "Créer un environnement qui soutient ma santé"
+    en: "Build an environment that supports my health"
+  effort:
+    fr: "4 semaines · intégré à la vie courante"
+    en: "4 weeks · woven into daily life"
+  action:
+    fr: "Avec des conseils professionnels adaptés, teste sur un mois des repas satisfaisants, un horaire de sommeil réaliste et des séances de mouvement récupérables. Observe ton énergie et ta constance, sans publier chiffres de santé ni imposer de restriction extrême."
+    en: "With suitable professional guidance, test satisfying meals, a realistic sleep schedule and recoverable movement sessions over a month. Review energy and consistency without publishing health numbers or extreme restriction."
+  why:
+    fr: "Construire une étape concrète vers une réalisation plus grande : Créer un environnement qui soutient ma santé."
+    en: "Build a concrete step toward a larger ambition: Build an environment that supports my health."
+  done_when:
+    fr: "Un bilan privé décrit les habitudes qui ont aidé et celles à revoir."
+    en: "A private review documents which habits helped and which should change."
+  minimum:
+    fr: "Choisis deux habitudes soutenables et évalue-les durant quatre semaines."
+    en: "Choose two sustainable habits and review them over four weeks."
+  stretch:
+    fr: "Fais valider les ajustements de ton programme par un professionnel de santé."
+    en: "Have a health professional review your adjustments."
+  targets:
+  - fitness-goal
+  parents: []
+- id: ACT-202611-M9
+  horizon: month
+  category: community
+  period: month-2027-03
+  period_start: '2027-03-01'
+  issued: '2026-11-03'
+  due: '2027-03-31'
+  difficulty: stretch
+  title:
+    fr: "Rencontrer cinq personnes hors de mon cercle"
+    en: "Meet five people outside my usual circle"
+  effort:
+    fr: "4–8 h de sorties et préparation"
+    en: "4–8 h of outings and preparation"
+  action:
+    fr: "Participe à deux activités publiques ou universitaires, fais connaissance avec cinq nouvelles personnes et pose des questions sincères sur leurs parcours. N'utilise pas de messages automatisés et ne traite pas les gens comme des statistiques."
+    en: "Attend two public or academic activities, get to know five new people and ask sincere questions about their journeys. Do not automate outreach or treat people as metrics."
+  why:
+    fr: "Construire une étape concrète vers une réalisation plus grande : Rencontrer cinq personnes hors de mon cercle."
+    en: "Build a concrete step toward a larger ambition: Meet five people outside my usual circle."
+  done_when:
+    fr: "Deux activités vécues et cinq conversations substantielles avec un bref bilan de découvertes."
+    en: "Two events attended and five substantial conversations, followed by a brief reflection."
+  minimum:
+    fr: "Une activité nouvelle et deux conversations approfondies."
+    en: "One new activity and two in-depth conversations."
+  stretch:
+    fr: "Organise à ton tour une petite rencontre de partage intellectuel."
+    en: "Organize a small intellectual exchange yourself."
+  targets:
+  - explore
+  - talk
+  parents: []
+- id: ACT-202611-M10
+  horizon: month
+  category: outdoors
+  period: month-2027-04
+  period_start: '2027-04-01'
+  issued: '2026-11-03'
+  due: '2027-04-30'
+  difficulty: stretch
+  title:
+    fr: "Préparer ma première grande randonnée de montagne"
+    en: "Prepare my first major mountain hike"
+  effort:
+    fr: "4–7 h de préparation, sortie distincte"
+    en: "4–7 h to prepare, outing separate"
+  action:
+    fr: "Choisis un parcours de montagne adapté à ton expérience, vérifie le dénivelé et le dégel, prépare transport, carte, météo, équipement et plan de sécurité. Organise une première sortie modérée si les conditions sont bonnes."
+    en: "Choose a mountain route matching your experience, check ascent and spring thaw, arrange transport, maps, weather checks, equipment and a safety plan. Attempt a moderate outing if conditions are suitable."
+  why:
+    fr: "Construire une étape concrète vers une réalisation plus grande : Préparer ma première grande randonnée de montagne."
+    en: "Build a concrete step toward a larger ambition: Prepare my first major mountain hike."
+  done_when:
+    fr: "Un itinéraire complet et sûr est prêt ; une sortie d'essai a eu lieu si les sentiers sont ouverts."
+    en: "A complete safe route plan exists; a trial outing occurred if trails were open."
+  minimum:
+    fr: "Budget, itinéraire, matériel et solution de rechange sont documentés."
+    en: "Budget, route, equipment and fallback plan are documented."
+  stretch:
+    fr: "Organise une randonnée de groupe avec responsabilités claires."
+    en: "Organize a group hike with clear responsibilities."
+  targets:
+  - explore
+  - fitness-goal
+  parents: []
