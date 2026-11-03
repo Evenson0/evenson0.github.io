@@ -2,13 +2,11 @@ version: 1
 launched: '2026-11-03'
 timezone: America/Toronto
 intro:
-  fr: Des défis pour apprendre, oser et vivre davantage. Une trace de ce que je choisis, de ce que je tente et
-    de ce que j’en retiens.
-  en: Challenges to learn, dare and experience more. A record of what I choose, what I try and what I take from
-    it.
+  fr: "Des missions pour apprendre, créer, publier, bouger et découvrir. Choisis ce qui t'attire, puis raconte ce que tu as tenté."
+  en: "Missions to learn, build, publish, move and explore. Choose what draws you in, then share what you tried."
 mentor_note:
-  fr: "Activities doit proposer des expériences et réalisations dont Evenson sera fier dans cinq ans. Choisis au plus un défi exigeant cette semaine, selon ta disponibilité ; P reste prioritaire jusqu'au 16 janvier. L'ambition tient à la qualité, au courage et au regard critique, pas au nombre d'exercices."
-  en: "Activities should propose experiences and achievements Evenson can be proud of in five years. Choose at most one demanding challenge this week as time permits; Exam P stays first until January 16. Ambition comes from quality, courage and scrutiny, not exercise counts."
+  fr: "Ton défi n'est pas d'en faire toujours plus : c'est d'oser quelque chose qui compte. Essaie un défi à la fois. P reste prioritaire jusqu'au 16 janvier, et tes choix restent libres."
+  en: "Your challenge isn't to do more of everything: it's to try something that matters. Take on one at a time. Exam P stays a priority until January 16, and your choices are yours."
 horizons:
 - id: week
   label:
@@ -22,18 +20,18 @@ horizons:
   label:
     fr: Mois
     en: Month
-  quota: 2
+  quota: 4
   cadence:
-    fr: 2 projets · avancer par petits pas
-    en: 2 projects · progress in small steps
+    fr: 4 pistes · choisis tes projets
+    en: 4 ideas · choose your projects
 - id: quarter
   label:
     fr: 3 mois
     en: 3 months
-  quota: 1
+  quota: 3
   cadence:
-    fr: 1 défi ambitieux · période glissante
-    en: 1 stretch challenge · rolling period
+    fr: 3 défis de progression · période glissante
+    en: 3 growth challenges · rolling period
 - id: season
   label:
     fr: Saison
@@ -46,10 +44,10 @@ horizons:
   label:
     fr: 6 mois
     en: 6 months
-  quota: 1
+  quota: 2
   cadence:
-    fr: 1 réalisation de fond
-    en: 1 substantial project
+    fr: 2 grands projets au choix
+    en: 2 long-term projects to choose from
 - id: year
   label:
     fr: Année
@@ -58,6 +56,25 @@ horizons:
   cadence:
     fr: 1 cap · découpé en étapes
     en: 1 direction · broken into steps
+categories:
+- id: math
+  label: {fr: "Maths & actuariat", en: "Math & actuarial"}
+- id: build
+  label: {fr: "Créer des outils", en: "Build tools"}
+- id: writing
+  label: {fr: "Écriture", en: "Writing"}
+- id: speaking
+  label: {fr: "Expression & anglais", en: "Speaking & English"}
+- id: social
+  label: {fr: "X & rayonnement", en: "X & audience"}
+- id: fitness
+  label: {fr: "Course & forme", en: "Running & fitness"}
+- id: outdoors
+  label: {fr: "Nature & découvertes", en: "Outdoors & discovery"}
+- id: travel
+  label: {fr: "Voyages", en: "Travel"}
+- id: research
+  label: {fr: "Recherche", en: "Research"}
 targets:
 - id: acas
   label:
@@ -99,5 +116,25 @@ targets:
     fr: Vivre des découvertes
     en: Experience discoveries
   source: List 100 · 23
+  url: /list-100/
+  node: null
+- id: fitness-goal
+  label: {fr: "Progresser physiquement", en: "Physical progress"}
+  source: Becoming
+  url: /becoming/
+  node: null
+- id: builder
+  label: {fr: "Construire mes outils", en: "Build my tools"}
+  source: Portfolio
+  url: /portfolio/
+  node: null
+- id: audience
+  label: {fr: "Partager mon travail", en: "Share my work"}
+  source: List 100
+  url: /list-100/
+  node: null
+- id: travel-goal
+  label: {fr: "Explorer le monde", en: "Explore the world"}
+  source: List 100
   url: /list-100/
   node: null
