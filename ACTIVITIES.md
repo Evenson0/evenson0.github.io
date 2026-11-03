@@ -1,6 +1,6 @@
 # Activities — mentoring and history
 
-Activities (`/activities/`) connects concrete challenges to Becoming and List 100. It is a personal record of choices, attempts and lessons, not a second achievement validator. The section is visible in the menu; keep List 100 and Memories commented out there.
+Activities (`/activities/`) connects concrete challenges to Becoming and List 100. It is a personal record of choices, attempts and lessons, not a second achievement validator. The section is hidden from the header menu but remains accessible through its direct URL, like List 100 and Memories.
 
 ## Files
 
