@@ -1727,3 +1727,531 @@
   - builder
   - explore
   parents: []
+- id: ACT-2026W45-X01
+  horizon: week
+  category: math
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Prouver une probabilité de deux façons"
+    en: "Prove one probability two ways"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis un résultat de probabilité difficile ; construis une preuve analytique et une validation indépendante par simulation. Raconte une erreur que tu aurais pu commettre."
+    en: "Pick a difficult probability result; create an analytic proof and an independent simulation check. Explain a plausible mistake."
+  why:
+    fr: "Une mission de courage et de maîtrise : Prouver une probabilité de deux façons."
+    en: "A mission of courage and mastery: Prove one probability two ways."
+  done_when:
+    fr: "Une note rigoureuse avec deux approches vérifiables."
+    en: "A rigorous note with two verifiable approaches."
+  minimum:
+    fr: "Une solution indépendante, vérifiée et expliquée."
+    en: "One independent, checked, explained solution."
+  stretch:
+    fr: "Présente le résultat à une personne critique et révise l'explication."
+    en: "Show the result to a critical reader and improve the explanation."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Q1
+- id: ACT-2026W45-X02
+  horizon: week
+  category: build
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Dessiner le simulateur P que tu voudrais utiliser"
+    en: "Design the Exam P tool you wish existed"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Dessine trois écrans mobiles complets et rends-les cliquables dans un prototype. Fais accomplir un exercice à une personne et observe une difficulté réelle."
+    en: "Design three complete mobile screens and make them clickable in a prototype. Ask someone to work through an exercise and note a real usability problem."
+  why:
+    fr: "Une mission de courage et de maîtrise : Dessiner le simulateur P que tu voudrais utiliser."
+    en: "A mission of courage and mastery: Design the Exam P tool you wish existed."
+  done_when:
+    fr: "Un parcours interactif de trois écrans et une amélioration tirée d'un test."
+    en: "An interactive three-screen flow and one change informed by testing."
+  minimum:
+    fr: "Un prototype utilisable avec au moins une fonctionnalité vérifiée."
+    en: "A usable prototype with at least one tested feature."
+  stretch:
+    fr: "Fais tester la version à deux personnes et corrige une faiblesse importante."
+    en: "Ask two people to test the version and fix a significant flaw."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-M1
+- id: ACT-2026W45-X03
+  horizon: week
+  category: writing
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Écrire ton manifeste de transformation sans IA"
+    en: "Write your transformation manifesto without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris à la main ou au clavier, sans génération ni correction par IA, un manifeste personnel de 900 mots : ce que tu veux construire, tes principes non négociables, tes sacrifices raisonnables et ce que tu refuses de devenir."
+    en: "Without AI generation or revision, write a 900-word personal manifesto: what you will build, your nonnegotiable principles, reasonable trade-offs and who you refuse to become."
+  why:
+    fr: "Une mission de courage et de maîtrise : Écrire ton manifeste de transformation sans IA."
+    en: "A mission of courage and mastery: Write your transformation manifesto without AI."
+  done_when:
+    fr: "Un manifeste personnel achevé, relu par toi et daté."
+    en: "A completed, self-revised and dated personal manifesto."
+  minimum:
+    fr: "Un texte complet de 600 mots révisé par toi, sans IA."
+    en: "A complete 600-word essay self-edited without AI."
+  stretch:
+    fr: "Partage le texte avec un lecteur exigeant et réécris un passage toi-même."
+    en: "Share with a demanding reader and revise a passage yourself."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2026W45-X04
+  horizon: week
+  category: social
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Publier une idée mathématique que tu peux défendre"
+    en: "Publish a mathematical idea you can defend"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Publie sur X une explication originale avec un petit exemple chiffré, puis réponds toi-même à une question ou une objection réelle si elle arrive. N'utilise aucun bot de diffusion."
+    en: "Publish an original math explanation with a numerical example on X, and personally address a genuine question or objection if one arrives. No posting bot."
+  why:
+    fr: "Une mission de courage et de maîtrise : Publier une idée mathématique que tu peux défendre."
+    en: "A mission of courage and mastery: Publish a mathematical idea you can defend."
+  done_when:
+    fr: "Une publication originale expliquée et consignée, sans métrique d'audience imposée."
+    en: "One documented original post, without a required audience metric."
+  minimum:
+    fr: "Une publication personnelle substantielle et aucune interaction automatisée."
+    en: "One substantial personal post with no automated engagement."
+  stretch:
+    fr: "Ajoute une démonstration visuelle et une réponse personnelle à une critique."
+    en: "Add a visual demonstration and a personal response to criticism."
+  targets:
+  - audience
+  parents:
+  - ACT-202611-M4
+- id: ACT-2026W45-X05
+  horizon: week
+  category: research
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Démasquer un diagnostic trompeur de GLM"
+    en: "Expose a misleading GLM diagnostic"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Crée des données synthétiques avec un cas aberrant, ajuste un GLM de Poisson puis montre par un graphique et une note comment ce point peut tromper l'analyse."
+    en: "Create synthetic data with an outlier, fit a Poisson GLM and show with a plot and note how that point can mislead analysis."
+  why:
+    fr: "Une mission de courage et de maîtrise : Démasquer un diagnostic trompeur de GLM."
+    en: "A mission of courage and mastery: Expose a misleading GLM diagnostic."
+  done_when:
+    fr: "Un notebook reproductible et un diagnostic expliqué."
+    en: "A reproducible notebook and explained diagnostic."
+  minimum:
+    fr: "Une expérience limitée, reproductible et honnêtement interprétée."
+    en: "One limited, reproducible and honestly interpreted experiment."
+  stretch:
+    fr: "Publie les données autorisées, le code et une limite méthodologique."
+    en: "Publish permitted data, code and a methodological limitation."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2026W45-X06
+  horizon: week
+  category: community
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Demander une critique que tu n'aimerais pas entendre"
+    en: "Invite criticism you might not enjoy"
+  effort:
+    fr: "1–4 h"
+    en: "1–4 h"
+  action:
+    fr: "Présente une idée personnelle à une personne de confiance et demande-lui quelle faiblesse t'échappe. Écoute sans te défendre immédiatement, puis note ce que tu décides de changer ou non."
+    en: "Share an idea with someone you trust and ask which weakness you are missing. Listen before defending, then record what you decide to change or keep."
+  why:
+    fr: "Une mission de courage et de maîtrise : Demander une critique que tu n'aimerais pas entendre."
+    en: "A mission of courage and mastery: Invite criticism you might not enjoy."
+  done_when:
+    fr: "Une demande de critique faite et une réflexion rédigée, sans exiger de réponse."
+    en: "A critique request made and a written reflection, without requiring a reply."
+  minimum:
+    fr: "Une invitation ou question sincère faite à une personne réelle."
+    en: "One sincere invitation or question offered to a real person."
+  stretch:
+    fr: "Participe à un deuxième échange et prends note d'un désaccord fécond."
+    en: "Join a second exchange and reflect on a constructive disagreement."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2026W45-X07
+  horizon: week
+  category: creativity
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Raconter une histoire avec six photos"
+    en: "Tell a story in six photographs"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Photographie six scènes originales dans ton environnement pour créer un petit récit sans texte explicatif. Choisis l'ordre et donne un titre à cette série."
+    en: "Photograph six original scenes around you to make a short visual story without explanatory text. Choose the order and give it a title."
+  why:
+    fr: "Une mission de courage et de maîtrise : Raconter une histoire avec six photos."
+    en: "A mission of courage and mastery: Tell a story in six photographs."
+  done_when:
+    fr: "Une série de six photographies composée et titrée."
+    en: "A titled, composed six-photo story."
+  minimum:
+    fr: "Une petite œuvre personnelle finie, non générée par IA."
+    en: "A small finished original work, not AI-generated."
+  stretch:
+    fr: "Fais découvrir le résultat à un public de ton choix."
+    en: "Share the result with an audience of your choice."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2026W45-X08
+  horizon: week
+  category: outdoors
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-03'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Découvrir un espace vert inconnu sans GPS permanent"
+    en: "Explore an unfamiliar park without constant GPS"
+  effort:
+    fr: "2–5 h selon trajet et conditions"
+    en: "2–5 h depending on route and conditions"
+  action:
+    fr: "Choisis un parc accessible et nouveau pour toi, prépare ton trajet et explore-le avec une promenade adaptée et un retour sûr. Note trois détails que tu n'aurais pas remarqués en marchant distraitement."
+    en: "Pick an accessible park new to you, plan travel and explore at a suitable pace with a safe way back. Record three details you would usually miss."
+  why:
+    fr: "Une mission de courage et de maîtrise : Découvrir un espace vert inconnu sans GPS permanent."
+    en: "A mission of courage and mastery: Explore an unfamiliar park without constant GPS."
+  done_when:
+    fr: "Une découverte réellement vécue et trois observations personnelles."
+    en: "A real outing and three personal observations."
+  minimum:
+    fr: "Une sortie prudente et adaptée, ou un itinéraire documenté si les conditions ne permettent pas de sortir."
+    en: "A safe suitable outing, or a documented plan when conditions prevent going."
+  stretch:
+    fr: "Rédige un récit personnel illustré de tes propres observations."
+    en: "Write a personal account illustrated with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2026W46-X01
+  horizon: week
+  category: math
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "L'énigme de Bayes qui résiste à l'intuition"
+    en: "The Bayes puzzle that defeats intuition"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis un problème avancé de Bayes, propose une réponse intuitive puis vérifie-la avec calcul conditionnel et simulation. Transforme l'erreur en une explication originale pour ton blog."
+    en: "Select an advanced Bayes puzzle, make an intuitive prediction, then check it with conditional probability and simulation. Turn the error into a blog explanation."
+  why:
+    fr: "Une mission de courage et de maîtrise : L'énigme de Bayes qui résiste à l'intuition."
+    en: "A mission of courage and mastery: The Bayes puzzle that defeats intuition."
+  done_when:
+    fr: "Une démonstration contrôlée et une note originale publiée ou prête à publier."
+    en: "A checked proof and an original write-up published or ready to publish."
+  minimum:
+    fr: "Une solution indépendante, vérifiée et expliquée."
+    en: "One independent, checked, explained solution."
+  stretch:
+    fr: "Présente le résultat à une personne critique et révise l'explication."
+    en: "Show the result to a critical reader and improve the explanation."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Q1
+- id: ACT-2026W46-X02
+  horizon: week
+  category: build
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Faire tester ton prototype P par quelqu'un"
+    en: "Get a real person to test your P prototype"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Rends cinq écrans de l'outil P utilisables sur téléphone et propose un test de dix minutes à quelqu'un. Note trois frictions et corrige celle qui gêne le plus."
+    en: "Make five screens of the Exam P app usable on a phone and invite someone to run a ten-minute test. Note three frictions and fix the most disruptive one."
+  why:
+    fr: "Une mission de courage et de maîtrise : Faire tester ton prototype P par quelqu'un."
+    en: "A mission of courage and mastery: Get a real person to test your P prototype."
+  done_when:
+    fr: "Un prototype testable et une correction concrète."
+    en: "A testable prototype and a concrete fix."
+  minimum:
+    fr: "Un prototype utilisable avec au moins une fonctionnalité vérifiée."
+    en: "A usable prototype with at least one tested feature."
+  stretch:
+    fr: "Fais tester la version à deux personnes et corrige une faiblesse importante."
+    en: "Ask two people to test the version and fix a significant flaw."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-M1
+- id: ACT-2026W46-X03
+  horizon: week
+  category: writing
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Écrire contre ta propre conviction, sans IA"
+    en: "Argue against your own belief without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis une conviction philosophique ou politique personnelle, puis écris 1 000 mots défendant honnêtement l'objection la plus solide. Aucun outil d'IA pour les idées, le plan, la rédaction ou la correction."
+    en: "Choose one of your philosophical or political convictions and write 1,000 words fairly defending its strongest counterargument. Use no AI for ideation, outlining, writing or editing."
+  why:
+    fr: "Une mission de courage et de maîtrise : Écrire contre ta propre conviction, sans IA."
+    en: "A mission of courage and mastery: Argue against your own belief without AI."
+  done_when:
+    fr: "Un texte achevé qui prend l'objection au sérieux."
+    en: "A finished essay that takes the counterargument seriously."
+  minimum:
+    fr: "Un texte complet de 600 mots révisé par toi, sans IA."
+    en: "A complete 600-word essay self-edited without AI."
+  stretch:
+    fr: "Partage le texte avec un lecteur exigeant et réécris un passage toi-même."
+    en: "Share with a demanding reader and revise a passage yourself."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2026W46-X04
+  horizon: week
+  category: speaking
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Tenir une conversation technique en anglais en direct"
+    en: "Have a live technical conversation in English"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Explique en anglais à une personne un concept d'assurance, puis réponds à ses questions pendant au moins dix minutes sans script. Note les expressions qui te manquaient."
+    en: "Explain an insurance concept in English to one person and answer questions for at least ten unscripted minutes. Record the phrases you struggled to find."
+  why:
+    fr: "Une mission de courage et de maîtrise : Tenir une conversation technique en anglais en direct."
+    en: "A mission of courage and mastery: Have a live technical conversation in English."
+  done_when:
+    fr: "Une conversation réelle et un court bilan de fluidité."
+    en: "A real conversation and short fluency review."
+  minimum:
+    fr: "Un échange réel de cinq minutes sans texte lu."
+    en: "A genuine five-minute exchange without reading a script."
+  stretch:
+    fr: "Anime dix minutes de questions non préparées."
+    en: "Handle ten minutes of unscripted questions."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2026W46-X05
+  horizon: week
+  category: fitness
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Construire une séance course-marche de référence"
+    en: "Establish a sustainable run-walk baseline"
+  effort:
+    fr: "1–2 h, récupération comprise"
+    en: "1–2 h including recovery"
+  action:
+    fr: "Sur parcours sûr ou tapis, échauffe-toi, effectue une sortie course-marche adaptée, puis note l'effort perçu et la récupération. Aucun objectif de vitesse ou de hausse forcée."
+    en: "On a safe route or treadmill, warm up, complete a suitable run-walk session and record perceived effort and recovery. No pace target or forced progression."
+  why:
+    fr: "Une mission de courage et de maîtrise : Construire une séance course-marche de référence."
+    en: "A mission of courage and mastery: Establish a sustainable run-walk baseline."
+  done_when:
+    fr: "Une séance de référence mesurée et un bilan de récupération."
+    en: "A measured baseline session and recovery review."
+  minimum:
+    fr: "Une séance adaptée effectivement réalisée et notée, avec récupération."
+    en: "One suitable completed session, recorded with recovery."
+  stretch:
+    fr: "Reproduis une seconde séance adaptée dans la semaine si ta récupération le permet."
+    en: "Repeat a suitable second session if recovery permits."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Q2
+- id: ACT-2026W46-X06
+  horizon: week
+  category: community
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Oser poser la question que tu évites en public"
+    en: "Ask the public question you usually avoid"
+  effort:
+    fr: "1–4 h"
+    en: "1–4 h"
+  action:
+    fr: "Participe à une rencontre ou discussion ouverte, prépare une question sincère qui te fait hésiter et pose-la avec respect. Si l'événement change, propose la question dans un cadre équivalent."
+    en: "Attend an open meeting or conversation, prepare a genuine question that makes you hesitate and ask it respectfully. Use an equivalent setting if plans change."
+  why:
+    fr: "Une mission de courage et de maîtrise : Oser poser la question que tu évites en public."
+    en: "A mission of courage and mastery: Ask the public question you usually avoid."
+  done_when:
+    fr: "Une question réellement posée et un apprentissage noté."
+    en: "A genuinely asked question and a recorded insight."
+  minimum:
+    fr: "Une invitation ou question sincère faite à une personne réelle."
+    en: "One sincere invitation or question offered to a real person."
+  stretch:
+    fr: "Participe à un deuxième échange et prends note d'un désaccord fécond."
+    en: "Join a second exchange and reflect on a constructive disagreement."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Q3
+- id: ACT-2026W46-X07
+  horizon: week
+  category: research
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Dériver le GLM de Poisson avant de coder"
+    en: "Derive the Poisson GLM before coding"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Rédige la log-vraisemblance du Poisson avec offset, ses dérivées essentielles et une explication de la fréquence ; puis reproduis le calcul sur un minuscule jeu synthétique."
+    en: "Derive the Poisson log-likelihood with an offset and its essential derivatives, explain claim frequency, then reproduce the calculation on tiny synthetic data."
+  why:
+    fr: "Une mission de courage et de maîtrise : Dériver le GLM de Poisson avant de coder."
+    en: "A mission of courage and mastery: Derive the Poisson GLM before coding."
+  done_when:
+    fr: "Une dérivation justifiée et un calcul contrôlé."
+    en: "A justified derivation and a verified calculation."
+  minimum:
+    fr: "Une expérience limitée, reproductible et honnêtement interprétée."
+    en: "One limited, reproducible and honestly interpreted experiment."
+  stretch:
+    fr: "Publie les données autorisées, le code et une limite méthodologique."
+    en: "Publish permitted data, code and a methodological limitation."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2026W46-X08
+  horizon: week
+  category: outdoors
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Explorer un sentier balisé avec un vrai plan"
+    en: "Take a real marked trail with a plan"
+  effort:
+    fr: "2–5 h selon trajet et conditions"
+    en: "2–5 h depending on route and conditions"
+  action:
+    fr: "Choisis un sentier facile ou modéré ouvert près de ton lieu de vie, vérifie météo et accès, prépare trajet et équipement puis réalise une sortie adaptée. Ne force jamais une sortie en conditions incertaines."
+    en: "Choose an open easy or moderate marked trail near home, check weather and access, plan transport and gear, then complete a suitable outing. Never force an outing in unsafe conditions."
+  why:
+    fr: "Une mission de courage et de maîtrise : Explorer un sentier balisé avec un vrai plan."
+    en: "A mission of courage and mastery: Take a real marked trail with a plan."
+  done_when:
+    fr: "Une sortie balisée et une note de parcours en sécurité."
+    en: "A marked-trail outing and safe route notes."
+  minimum:
+    fr: "Une sortie prudente et adaptée, ou un itinéraire documenté si les conditions ne permettent pas de sortir."
+    en: "A safe suitable outing, or a documented plan when conditions prevent going."
+  stretch:
+    fr: "Rédige un récit personnel illustré de tes propres observations."
+    en: "Write a personal account illustrated with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
