@@ -29,6 +29,12 @@
         (!term || [challenge.id, challenge.title[lang], challenge.action[lang]].join(' ').toLocaleLowerCase().includes(term));
     });
   }
+  function latestWeeklyChallenges(challenges, date) {
+    const eligible = challenges.filter(c => c.horizon === 'week' && c.period_start <= date);
+    if (!eligible.length) return [];
+    const current = eligible.reduce((max, c) => c.period_start > max ? c.period_start : max, '');
+    return eligible.filter(c => c.period_start === current);
+  }
   function buildReport(data, drafts, labels, lang, today) {
     const lines = data.challenges.filter(c => drafts[c.id]).map(c => {
       const draft = drafts[c.id];
@@ -39,7 +45,7 @@
     return lines.length ? 'Activities · ' + today + '\n\n' + lines.join('\n\n') : '';
   }
   if (typeof module === 'object' && module.exports) {
-    module.exports = {statusOf, cleanDrafts, visibleChallenges, buildReport};
+    module.exports = {statusOf, cleanDrafts, visibleChallenges, buildReport, latestWeeklyChallenges};
     return;
   }
   const root = document.getElementById('activities-app');
@@ -309,10 +315,7 @@
     journal.replaceChildren();
 
     if (view === 'challenges') {
-      const weeks = data.challenges.filter(c => c.horizon === 'week');
-      const eligible = weeks.filter(c => c.period_start <= today());
-      const latest = (eligible.length ? eligible : weeks).reduce((date, c) => c.period_start > date ? c.period_start : date, '');
-      const selection = weeks.filter(c => c.period_start === latest);
+      const selection = latestWeeklyChallenges(data.challenges, today());
       selection.slice(0, showWeekAll ? selection.length : 4).forEach(c => cards.append(renderCard(c)));
       if (selection.length > 4) {
         cards.append(button(t(showWeekAll ? 'showWeekLess' : 'showWeekAll') + ' (' + selection.length + ')', () => {
