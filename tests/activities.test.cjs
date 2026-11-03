@@ -47,3 +47,17 @@ test('Category filtering stays optional and composes with horizons', () => {
   assert.equal(model.visibleChallenges(data,'week','all','','fr','writing').length,0);
   assert.equal(model.visibleChallenges(data,'all','all','','fr').length,2);
 });
+
+test('Current-week selection ignores later weeks already announced', () => {
+  const challenges = [
+    {id: 'wk45-a', horizon: 'week', period_start: '2026-11-02'},
+    {id: 'wk45-b', horizon: 'week', period_start: '2026-11-02'},
+    {id: 'wk46', horizon: 'week', period_start: '2026-11-09'},
+    {id: 'wk47', horizon: 'week', period_start: '2026-11-16'},
+    {id: 'year', horizon: 'year', period_start: '2026-11-03'}
+  ];
+  assert.deepEqual(model.latestWeeklyChallenges(challenges, '2026-11-03').map(c => c.id), ['wk45-a', 'wk45-b']);
+  assert.deepEqual(model.latestWeeklyChallenges(challenges, '2026-11-10').map(c => c.id), ['wk46']);
+  assert.deepEqual(model.latestWeeklyChallenges(challenges, '2026-11-01'), []);
+  assert.deepEqual(model.latestWeeklyChallenges(challenges, '2026-11-24').map(c => c.id), ['wk47']);
+});
