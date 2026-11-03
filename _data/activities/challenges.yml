@@ -296,3 +296,68 @@
   targets:
   - research
   parents: *id001
+- id: ACT-202611-M3
+  horizon: month
+  category: fitness
+  period: month-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2026-11-30'
+  difficulty: stretch
+  title:
+    fr: "Atteindre les 5 km à mon rythme"
+    en: "Reach 5 km at my own pace"
+  effort:
+    fr: "4 semaines · 2 à 3 sorties adaptées par semaine"
+    en: "4 weeks · 2 to 3 suitable outings each week"
+  action:
+    fr: "Après ton premier kilomètre, progresse vers un parcours total de 5 km. Alterne course et marche selon ton niveau, note les sorties et privilégie une augmentation graduelle plutôt que la vitesse. Le 5 km peut se faire sur tapis si les conditions extérieures sont mauvaises."
+    en: "After the first kilometre, build toward a total 5 km route. Alternate running and walking according to your level, log your outings and increase gradually rather than chasing speed. A treadmill is fine when outdoor conditions are poor."
+  why:
+    fr: "Passer d'une première sortie à une distance dont tu seras fier, sans brûler les étapes."
+    en: "Move from a first outing to a distance you can be proud of without rushing."
+  done_when:
+    fr: "Un parcours de 5 km est réellement terminé, avec la part courue et la part marchée notées honnêtement."
+    en: "A real 5 km route is completed with the running and walking portions recorded accurately."
+  minimum:
+    fr: "Termine 3 km en course/marche et note le plan pour atteindre 5 km."
+    en: "Complete 3 km with run/walk intervals and record a plan for 5 km."
+  stretch:
+    fr: "Cours 5 km en continu seulement si ton niveau actuel le permet, sans objectif de chrono."
+    en: "Run 5 km continuously only if your current fitness supports it, with no time target."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Q2
+- id: ACT-202611-M4
+  horizon: month
+  category: social
+  period: month-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2026-11-30'
+  difficulty: stretch
+  title:
+    fr: "Faire grandir mon compte X par la valeur de mes idées"
+    en: "Grow my X account through useful ideas"
+  effort:
+    fr: "6–10 h · réparties sur un mois"
+    en: "6–10 h · spread over a month"
+  action:
+    fr: "Choisis deux sujets que tu maîtrises (maths, actuariat, programmation, lecture). Publie huit contributions originales sur X avec une vraie idée ou démonstration, réponds personnellement à des discussions pertinentes et fais un bilan des statistiques disponibles. Zéro automatisation des publications ou interactions, zéro achat d'abonnés."
+    en: "Choose two topics you know well (math, actuarial work, programming, reading). Publish eight original X posts containing real ideas or demonstrations, respond personally to relevant discussions and review available metrics. No automated posting or interactions and no purchased followers."
+  why:
+    fr: "Construire une voix publique crédible et voir quels contenus aident réellement des lecteurs."
+    en: "Build a credible public voice and learn what helps real readers."
+  done_when:
+    fr: "Huit contributions authentiques sont publiées et une note compare la situation de départ et l'arrivée, sans exiger un nombre précis d'abonnés."
+    en: "Eight genuine posts are published and a note compares starting and ending metrics without requiring a follower threshold."
+  minimum:
+    fr: "Quatre contributions substantielles et un bilan qualitatif de ce qui a suscité des échanges."
+    en: "Four substantial posts and a qualitative account of meaningful interactions."
+  stretch:
+    fr: "Rédige un fil pédagogique remarquable et publie le code de ton analyse statistique."
+    en: "Write a standout educational thread and publish the code behind your metrics review."
+  targets:
+  - audience
+  parents: []
