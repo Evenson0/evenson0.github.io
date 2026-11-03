@@ -151,7 +151,7 @@
     updateReport();
   }
   function openChallenge(id) {
-    horizon = 'all'; status = 'all'; query = ''; view = 'challenges';
+    horizon = 'all'; status = 'all'; category = 'all'; query = ''; view = 'explore';
     $('act-status-filter').value = status; $('act-search').value = '';
     render();
     const card = document.getElementById(id);
@@ -159,46 +159,104 @@
     history.replaceState(null, '', location.pathname + location.search + '#' + id);
   }
   function renderCard(c) {
-    const card = el('article', 'act-card'); card.id = c.id; card.tabIndex = -1;
-    const current = statusOf(c.id, data.events);
+    const card = el('article', 'act-card');
+    card.id = c.id;
+    card.tabIndex = -1;
+    const published = statusOf(c.id, data.events);
     const top = el('div', 'act-card-top');
-    top.append(el('span', 'act-id', c.id), el('span', 'act-tag', t(c.difficulty)));
-    const title = el('h3', '', loc(c.title)); title.id = c.id + '-title'; card.setAttribute('aria-labelledby', title.id);
+    const cat = categories[c.category];
+    top.append(
+      el('span', 'act-topic', cat ? loc(cat.label) : c.category),
+      el('span', 'act-period', horizonLabels[c.horizon] ? loc(horizonLabels[c.horizon].label) : c.horizon)
+    );
+    const title = el('h3', '', loc(c.title));
+    title.id = c.id + '-title';
+    card.setAttribute('aria-labelledby', title.id);
     const meta = el('p', 'act-meta');
-    meta.append(el('span', 'act-status', t(current)), el('span', '', t('due') + ' · ' + displayDate(c.due)));
-    if (c.due < today() && !CLOSED.has(current)) meta.append(el('span', 'act-waiting', t('review')));
-    const criterion = el('p', 'act-criterion'); criterion.append(el('strong', '', t('criterion')), document.createTextNode(loc(c.done_when)));
-    const details = el('details'); details.append(el('summary', '', t('details')));
+    meta.append(
+      el('span', '', loc(c.effort)),
+      el('span', '', t('due') + ' · ' + displayDate(c.due))
+    );
+    if (published !== 'proposed') meta.append(el('span', 'act-status', t(published)));
+    else if (c.due < today()) meta.append(el('span', 'act-waiting', t('review')));
+    const criterion = el('p', 'act-criterion');
+    criterion.append(el('strong', '', t('criterion')), document.createTextNode(loc(c.done_when)));
+
+    const details = el('details', 'act-details');
+    details.append(el('summary', '', t('details')));
     const dl = el('dl');
-    [['why', c.why], ['minimum', c.minimum], ['stretchLabel', c.stretch]].forEach(([key, value]) => dl.append(el('dt', '', t(key)), el('dd', '', loc(value))));
+    [['why', c.why], ['minimum', c.minimum], ['stretchLabel', c.stretch]].forEach(([key, value]) => {
+      dl.append(el('dt', '', t(key)), el('dd', '', loc(value)));
+    });
     details.append(dl);
     const links = el('div', 'act-links');
     c.targets.forEach(id => {
       const target = targets[id];
       if (!target) return;
-      const a = el('a', '', loc(target.label) + ' ↗');
-      a.href = target.url; a.title = target.source;
+      const a = el('a', '', loc(target.label));
+      a.href = target.url;
+      a.title = target.source;
       links.append(a);
     });
-    details.append(el('p', 'act-meta', t('toward')), links);
+    if (links.childNodes.length) details.append(el('p', 'act-meta', t('toward')), links);
     (c.parents || []).forEach(id => {
       if (byId[id]) details.append(button(t('parent') + ' · ' + loc(byId[id].title), () => openChallenge(id)));
     });
-    const response = el('details', 'act-response'); response.append(el('summary', '', t('reply')));
-    const draft = drafts[c.id]; response.open = !!draft;
-    const selectLabel = el('label', '', t('decision')); selectLabel.htmlFor = c.id + '-decision';
-    const select = el('select'); select.id = selectLabel.htmlFor;
-    const placeholder = el('option', '', t('choose')); placeholder.value = ''; select.append(placeholder);
-    STATES.filter(s => s !== 'proposed').forEach(s => { const option = el('option', '', t(s)); option.value = s; select.append(option); });
+    details.append(el('p', 'act-id', c.id));
+
+    const response = el('details', 'act-response');
+    response.id = c.id + '-response';
+    response.append(el('summary', '', t('reply')));
+    const draft = drafts[c.id];
+    response.open = !!draft;
+    const selectLabel = el('label', '', t('decision'));
+    selectLabel.htmlFor = c.id + '-decision';
+    const select = el('select');
+    select.id = selectLabel.htmlFor;
+    const placeholder = el('option', '', t('choose'));
+    placeholder.value = '';
+    select.append(placeholder);
+    STATES.filter(state => state !== 'proposed').forEach(state => {
+      const option = el('option', '', t(state));
+      option.value = state;
+      select.append(option);
+    });
     select.value = draft ? draft.status : '';
-    const noteLabel = el('label', '', t('noteLabel')); noteLabel.htmlFor = c.id + '-note';
-    const note = el('textarea'); note.id = noteLabel.htmlFor; note.maxLength = 1200; note.rows = 3; note.placeholder = t('notePlaceholder'); note.value = draft ? draft.note : '';
-    const badge = el('p', 'act-draft-note', draft ? t('draft') : '');
-    select.addEventListener('change', () => saveDraft(c.id, select, note, badge));
-    note.addEventListener('input', () => saveDraft(c.id, select, note, badge));
-    const clear = button(t('clear'), () => { select.value = ''; note.value = ''; saveDraft(c.id, select, note, badge); });
+    const noteLabel = el('label', '', t('noteLabel'));
+    noteLabel.htmlFor = c.id + '-note';
+    const note = el('textarea');
+    note.id = noteLabel.htmlFor;
+    note.maxLength = 1200;
+    note.rows = 3;
+    note.placeholder = t('notePlaceholder');
+    note.value = draft ? draft.note : '';
+    const badge = el('p', 'act-draft-note', draft ? t('draftAction') : '');
+
+    const choose = button(draft ? t('editChoice') : t('tryIt'), () => {
+      if (!drafts[c.id]) {
+        select.value = 'accepted';
+        saveAndRefresh();
+      }
+      response.open = true;
+      choose.textContent = t('editChoice');
+      response.scrollIntoView({block: 'nearest'});
+      select.focus({preventScroll: true});
+    }, 'act-choose');
+    choose.setAttribute('aria-controls', response.id);
+    function saveAndRefresh() {
+      saveDraft(c.id, select, note, badge);
+      choose.textContent = drafts[c.id] ? t('editChoice') : t('tryIt');
+      badge.textContent = drafts[c.id] ? t('draftAction') : '';
+    }
+    select.addEventListener('change', saveAndRefresh);
+    note.addEventListener('input', saveAndRefresh);
+    const clear = button(t('clear'), () => {
+      select.value = '';
+      note.value = '';
+      saveAndRefresh();
+    }, 'act-clear');
     response.append(selectLabel, select, noteLabel, note, badge, clear);
-    card.append(top, title, meta, el('p', 'act-meta', loc(c.effort)), el('p', '', loc(c.action)), criterion, details, response);
+    card.append(top, title, meta, el('p', 'act-action', loc(c.action)), criterion, choose, details, response);
     return card;
   }
   function render() {
@@ -209,47 +267,88 @@
     root.querySelectorAll('[data-act-view]').forEach(node => node.setAttribute('aria-pressed', String(node.dataset.actView === view)));
     $('act-intro').textContent = loc(data.config.intro);
     $('act-mentor-note').textContent = loc(data.config.mentor_note);
-    const stats = $('act-stats'); stats.replaceChildren();
-    const all = data.challenges.map(c => statusOf(c.id, data.events));
-    [[all.filter(s => s === 'proposed').length, 'proposedCount'], [all.filter(s => ['accepted', 'in_progress'].includes(s)).length, 'activeCount'], [all.filter(s => s === 'completed').length, 'doneCount']].forEach(([count, label]) => {
-      const item = el('div', 'act-stat'); item.append(el('strong', '', String(count)), el('span', '', t(label))); stats.append(item);
-    });
-    const horizons = $('act-horizons'); horizons.replaceChildren();
+    $('act-view-hint').textContent = t(view === 'challenges' ? 'weekHint' : view === 'explore' ? 'exploreHint' : 'journalHint');
+    $('act-discovery-controls').hidden = view !== 'explore';
+
+    const horizons = $('act-horizons');
+    horizons.replaceChildren();
     [{id: 'all', label: {fr: COPY.fr.all, en: COPY.en.all}}, ...data.config.horizons].forEach(h => {
       const btn = button(loc(h.label), () => { horizon = h.id; render(); });
-      btn.setAttribute('aria-pressed', String(horizon === h.id)); horizons.append(btn);
+      btn.setAttribute('aria-pressed', String(horizon === h.id));
+      horizons.append(btn);
     });
     const period = data.config.horizons.find(h => h.id === horizon);
     $('act-cadence').textContent = period ? loc(period.cadence) : t('allCadence');
-    const filter = $('act-status-filter'); filter.replaceChildren();
-    ['all', 'open', ...STATES].forEach(s => { const option = el('option', '', t(s === 'all' ? 'allStates' : s)); option.value = s; filter.append(option); }); filter.value = status;
-    const chosen = visibleChallenges(data, horizon, status, query, lang);
-    const cards = $('act-cards'); const journal = $('act-journal');
-    cards.hidden = view !== 'challenges'; journal.hidden = view !== 'journal';
-    cards.replaceChildren(); journal.replaceChildren();
+
+    const topics = $('act-category-filter');
+    topics.replaceChildren();
+    [{id: 'all', label: {fr: COPY.fr.allDomains, en: COPY.en.allDomains}}, ...(data.config.categories || [])].forEach(item => {
+      const option = el('option', '', loc(item.label));
+      option.value = item.id;
+      topics.append(option);
+    });
+    topics.value = category;
+    const filter = $('act-status-filter');
+    filter.replaceChildren();
+    ['all', 'open', ...STATES].forEach(state => {
+      const option = el('option', '', t(state === 'all' ? 'allStates' : state));
+      option.value = state;
+      filter.append(option);
+    });
+    filter.value = status;
+    const cards = $('act-cards');
+    const journal = $('act-journal');
+    cards.hidden = view === 'journal';
+    journal.hidden = view !== 'journal';
+    cards.replaceChildren();
+    journal.replaceChildren();
+
     if (view === 'challenges') {
-      chosen.forEach(c => cards.append(renderCard(c)));
-      if (!chosen.length) cards.append(el('p', 'act-empty', t('empty')));
-      $('act-results-count').textContent = chosen.length + ' ' + t('results');
+      const weeks = data.challenges.filter(c => c.horizon === 'week');
+      const newest = weeks.reduce((date, c) => c.period_start > date ? c.period_start : date, '');
+      const selection = weeks.filter(c => c.period_start === newest);
+      selection.forEach(c => cards.append(renderCard(c)));
+      if (!selection.length) cards.append(el('p', 'act-empty', t('empty')));
+      $('act-results-count').textContent = selection.length + ' ' + t('results');
+    } else if (view === 'explore') {
+      const rank = {week: 0, month: 1, quarter: 2, season: 3, halfyear: 4, year: 5};
+      const selected = visibleChallenges(data, horizon, status, query, lang, category).sort((a, b) =>
+        rank[a.horizon] - rank[b.horizon] || a.due.localeCompare(b.due));
+      selected.forEach(c => cards.append(renderCard(c)));
+      if (!selected.length) cards.append(el('p', 'act-empty', t('empty')));
+      $('act-results-count').textContent = selected.length + ' ' + t('results');
     } else {
-      const ids = new Set(chosen.map(c => c.id));
-      const events = data.events.filter(e => ids.has(e.challenge)).slice().reverse();
       journal.append(el('p', 'act-cadence', t('noCompletion')));
+      const history = (showAllHistory ? data.events : data.events.filter(e => e.source === 'user')).slice().reverse();
       const list = el('ol', 'act-timeline');
-      events.forEach(e => {
-        const item = el('li'); const date = el('time', '', displayDate(e.date)); date.dateTime = e.date;
-        const content = el('div'); const heading = el('h3', '', t(e.status) + ' · ' + loc(byId[e.challenge].title));
-        content.append(heading, el('p', '', loc(e.note)), el('p', 'act-meta', e.challenge + ' · ' + t(e.source === 'mentor' ? 'sourceMentor' : 'sourceUser')));
-        item.append(date, content); list.append(item);
+      history.forEach(event => {
+        const challenge = byId[event.challenge];
+        if (!challenge) return;
+        const item = el('li');
+        const date = el('time', '', displayDate(event.date));
+        date.dateTime = event.date;
+        const content = el('div');
+        content.append(
+          el('h3', '', t(event.status) + ' · ' + loc(challenge.title)),
+          el('p', '', loc(event.note)),
+          el('p', 'act-meta', event.challenge + ' · ' + t(event.source === 'mentor' ? 'sourceMentor' : 'sourceUser'))
+        );
+        item.append(date, content);
+        list.append(item);
       });
       journal.append(list);
-      if (!events.length) journal.append(el('p', 'act-empty', t('noHistory')));
-      $('act-results-count').textContent = events.length + ' ' + t('entries');
+      if (!history.length) journal.append(el('p', 'act-empty', t('noHistory')));
+      journal.append(button(t(showAllHistory ? 'lessHistory' : 'moreHistory'), () => {
+        showAllHistory = !showAllHistory;
+        render();
+      }, 'act-history-button'));
+      $('act-results-count').textContent = history.length + ' ' + t('entries');
     }
     updateReport();
     if (!storageOK) notice(t('storageError'));
   }
   $('act-status-filter').addEventListener('change', event => { status = event.target.value; render(); });
+  $('act-category-filter').addEventListener('change', event => { category = event.target.value; render(); });
   $('act-search').addEventListener('input', event => { query = event.target.value; render(); });
   root.querySelectorAll('[data-act-view]').forEach(node => node.addEventListener('click', () => { view = node.dataset.actView; render(); }));
   root.querySelectorAll('[data-act-lang]').forEach(node => node.addEventListener('click', () => {
