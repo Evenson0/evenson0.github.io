@@ -13,7 +13,7 @@ Read `BECOMING_HANDOFF.md`, then `BECOMING.md`, the current Becoming week, List 
 
 ## Cadence and capacity
 
-Current proposal ceilings: up to **3 per week, 4 per month, 3 per rolling quarter, 1 per meteorological season in Montréal (Mar–May, Jun–Aug, Sep–Nov, Dec–Feb), 2 per rolling six months, and 1 per rolling year**. These are capacity limits for varied choices, not a workload to complete. First rolling periods begin November 3, 2026. These are proposal ceilings, not mandatory workloads.
+Catalog ceilings: up to **6 per week, 14 per month, 12 per rolling quarter, 7 per meteorological season in Montréal (Mar–May, Jun–Aug, Sep–Nov, Dec–Feb), 9 per rolling six months and 14 per year**. These are maximum catalog alternatives, not required work. The current catalog contains 52 proposals across multiple current and future periods. New items can be proposed now for future windows; issued is the real proposal date and may precede period_start. Do not backdate history or force users to engage with all options.
 
 A single weekly Sunday-evening review handles all horizons; propose the next weekly batch and any longer period beginning before the following review. Review longer horizons at their actual end dates. Do not replace a long project every week. Period IDs distinguish batches; each challenge ID is permanent. Repeated runs must not duplicate a batch.
 
@@ -41,6 +41,20 @@ Activities is not an exam drill or habit tracker. Offer challenging and memorabl
 
 Evenson requested a more intuitive page and more exciting **real-world and project-oriented** challenge catalog. Current records now deliberately include P sample solutions, mobile P practice, an original no-AI essay, ethical X analysis and content experiments, 1/5/10 km running, a Mont-Saint-Bruno hike, a US experience, public speaking, open-source building and a research manuscript. Those are **proposals**, not commitments or achievements. The linked progression should re-use work when possible and never imply progress from silence.
 
+## 365-day ambition cycle (November 3, 2026 — November 2, 2027)
+
+The user requested an extraordinary year with life-changing first achievements. Annual vision in config records dates and recommends choosing **two or three annual focus quests at most**. The page displays an annual highlight and keeps three simple views: This week / Explore / Journal. Explore initially renders twelve matching cards and expands on demand. The weekly view must show the latest period already started, never a future one prematurely.
+
+Annual themes include a marathon, writing a full book in one's own voice, four actuarial exam sittings, real English conversational ability, a personally evaluated physical transformation, five significant hikes, Lean contribution, twelve original essays, travel, doctoral preparation, a tool used by real people, and an actuarial research manuscript. These are **possibilities**, not commitments. The mentor must challenge unrealistic combinations and help focus on the few projects that would make the biggest difference.
+
+- A full marathon is not a straightforward continuation of a 1 km run; progression should include 5 km, 10 km and a half marathon with adequate recovery and assessment when appropriate. The official Montréal 2027 marathon is listed for September 19, 2027, but participation depends on readiness and is never automatically booked. A safe decision to defer matters.
+- A contemplated 30 kg weight change is a sensitive personal goal, not a reason for extreme restriction or an inflexible obligation. Encourage professional input, gradual habits and private tracking. Never publish private measurements, health details or dieting logs.
+- Four actuarial exams means four distinct exam sittings if attended; four passes are aspirational and cannot be assumed. Maintain January 16, 2027 P priority, then verify prerequisites and official schedules before later exam planning.
+- Book writing without AI means that the original prose and creative choices must come from the user. Mentoring must not impersonate independent authorship.
+- Hiking, travel, running and ambitious projects depend on safety, weather, finances, preparedness and lawful access. Never commit the user to bookings or spending.
+
+Proposals remain proposed in public event history until the user actually reports a decision. Linking challenges never implies that goals were completed or must all be attempted.
+
 ## Weekly delivery
 
 Read actual history, ask briefly about unresolved choices, provide a candid observation and a small next step, and publish appropriate new proposals to this section. Include IDs, effort and the Activities link in the conversational check-in. Update `config.mentor_note` so the public page reflects the latest review rather than permanently saying “first week.” For a quiet week, maintain the current proposals and ask for a short report; do not invent outcomes or reset the calendar.
@@ -49,7 +63,7 @@ All new content has French and English text plus a category chosen from `config.
 
 SOA-specific content must link to permitted official materials, with original explanations; do not republish copyrighted sample question texts or solutions without permission. Unofficial tools must not imply Society of Actuaries endorsement. X monitoring must be read-only and use authorized data exports or permitted API access; never auto-post, auto-follow, auto-reply, scrape unlawfully or expose tokens. Running challenges must allow gradual and appropriate progression with walking intervals and safe weather alternatives. Travel challenges depend on budget, documentation and real user choice.
 
-All new content has French and English text. Use dated records, stable IDs and concrete wording. Check before publishing:
+Use dated records, stable IDs, bilingual copy and accurate categories. Never mark an annual ambition complete from a smaller exercise. Check before publishing:
 
 ```bash
 python3 scripts/validate_activities.py
