@@ -1596,3 +1596,102 @@
   - builder
   - research
   parents: []
+- id: ACT-202611-W4
+  horizon: week
+  category: math
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: stretch
+  title:
+    fr: "Éclaircir un piège de probabilité et le publier"
+    en: "Expose a probability trap and publish it"
+  effort:
+    fr: "3–5 h intégrées à la préparation P"
+    en: "3–5 h within Exam P study"
+  action:
+    fr: "Choisis un problème SOA P qui t'a trompé, montre pourquoi une réponse plausible est fausse, établis une solution rigoureuse et vérifie-la par simulation. Publie une note originale sur ton blog, sans recopier l'énoncé officiel."
+    en: "Choose an SOA P problem that fooled you, explain why a plausible solution is wrong, establish a rigorous answer and check it with simulation. Publish an original note on your blog without copying the official question."
+  why:
+    fr: "Sortir de la routine avec une petite réalisation mémorable : Éclaircir un piège de probabilité et le publier."
+    en: "Break routine with a memorable completed challenge: Expose a probability trap and publish it."
+  done_when:
+    fr: "Une explication autonome, corrigée et reproductible est publiée et référencée."
+    en: "A standalone checked reproducible explanation is published with a reference."
+  minimum:
+    fr: "Une preuve écrite et une simulation exécutable avant publication."
+    en: "A written proof and runnable simulation ready for publication."
+  stretch:
+    fr: "Demande une critique extérieure et corrige une faiblesse réelle."
+    en: "Request outside criticism and address a real weakness."
+  targets:
+  - acas
+  - builder
+  parents: []
+- id: ACT-202611-W5
+  horizon: week
+  category: community
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: stretch
+  title:
+    fr: "Oser une vraie conversation avec un inconnu"
+    en: "Dare to have a meaningful conversation with someone new"
+  effort:
+    fr: "2–4 h comprenant la rencontre"
+    en: "2–4 h including the event"
+  action:
+    fr: "Participe à une activité publique adaptée à tes centres d'intérêt et commence une discussion de dix minutes avec quelqu'un que tu ne connais pas. Privilégie l'écoute, la curiosité et le respect des limites."
+    en: "Attend a public activity aligned with your interests and initiate a ten-minute conversation with someone new. Prioritize listening, curiosity and respecting boundaries."
+  why:
+    fr: "Sortir de la routine avec une petite réalisation mémorable : Oser une vraie conversation avec un inconnu."
+    en: "Break routine with a memorable completed challenge: Dare to have a meaningful conversation with someone new."
+  done_when:
+    fr: "Une conversation de fond a eu lieu et tu en retires une idée nouvelle."
+    en: "A substantial conversation took place and you took away a new idea."
+  minimum:
+    fr: "Va à une rencontre et pose une vraie question à une personne."
+    en: "Attend an event and ask someone a real question."
+  stretch:
+    fr: "Reviens à une deuxième rencontre et partage à ton tour une idée."
+    en: "Attend a second gathering and contribute an idea of your own."
+  targets:
+  - explore
+  - talk
+  parents: []
+- id: ACT-202611-W6
+  horizon: week
+  category: creativity
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-03'
+  due: '2026-11-15'
+  difficulty: stretch
+  title:
+    fr: "Créer quelque chose de surprenant en un week-end"
+    en: "Make something surprising in one weekend"
+  effort:
+    fr: "3–6 h sur une fin de semaine"
+    en: "3–6 h over one weekend"
+  action:
+    fr: "Fabrique une petite création finie hors de ton travail : une photo racontant une histoire, un mini-jeu, une nouvelle courte ou un dessin. Présente le résultat à une autre personne sans demander à l'IA de le faire à ta place."
+    en: "Make a finished creation outside your regular work: a photo story, micro-game, short fiction or drawing. Show it to someone without asking AI to create it for you."
+  why:
+    fr: "Sortir de la routine avec une petite réalisation mémorable : Créer quelque chose de surprenant en un week-end."
+    en: "Break routine with a memorable completed challenge: Make something surprising in one weekend."
+  done_when:
+    fr: "Une création originale terminée existe et a été montrée à quelqu'un."
+    en: "A finished original creation exists and has been shared with someone."
+  minimum:
+    fr: "Termine une œuvre de format limité qui te semble personnelle."
+    en: "Finish one small but personally meaningful work."
+  stretch:
+    fr: "Publie l'œuvre et raconte ta démarche créative."
+    en: "Publish the work and explain your creative process."
+  targets:
+  - builder
+  - explore
+  parents: []
