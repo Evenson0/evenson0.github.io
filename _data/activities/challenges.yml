@@ -1434,3 +1434,165 @@
   - explore
   - fitness-goal
   parents: []
+- id: ACT-202611-H3
+  horizon: halfyear
+  category: writing
+  period: halfyear-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "La moitié de mon premier livre"
+    en: "Halfway through my first book"
+  effort:
+    fr: "70–100 h de rédaction cumulées"
+    en: "70–100 cumulative writing hours"
+  action:
+    fr: "Écris 20 000 mots originaux, avec un plan cohérent et une première révision de trois chapitres. N'utilise pas l'IA pour créer la prose ; préserve ton temps d'étude pour P."
+    en: "Write 20,000 original words, with a coherent outline and a first revision of three chapters. Do not use AI to create the prose; protect time needed for Exam P."
+  why:
+    fr: "Achever un projet de fond plutôt que poursuivre une simple routine : La moitié de mon premier livre."
+    en: "Complete a substantial project instead of merely following a routine: Halfway through my first book."
+  done_when:
+    fr: "Un manuscrit partiel de 20 000 mots a été écrit et trois chapitres sont relus."
+    en: "A 20,000-word partial manuscript exists and three chapters have been revised."
+  minimum:
+    fr: "Douze mille mots et un plan de livre viable."
+    en: "Twelve thousand words and a viable book outline."
+  stretch:
+    fr: "Organise une lecture critique de deux chapitres auprès de vrais lecteurs."
+    en: "Arrange critical reading of two chapters with real readers."
+  targets:
+  - writing
+  parents: []
+- id: ACT-202611-H4
+  horizon: halfyear
+  category: speaking
+  period: halfyear-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Présenter un sujet complexe en anglais sans lire"
+    en: "Present a complex idea in English without a script"
+  effort:
+    fr: "35–60 h de pratique intégrée"
+    en: "35–60 hours of integrated practice"
+  action:
+    fr: "Prépare et donne un exposé de 20 minutes en anglais, suivi d'une discussion spontanée. Pratique au préalable avec des interlocuteurs et enregistre un bilan de clarté et de fluidité."
+    en: "Prepare and deliver a twenty-minute English presentation followed by unscripted discussion. Practice with real speakers beforehand and record a clarity and fluency review."
+  why:
+    fr: "Achever un projet de fond plutôt que poursuivre une simple routine : Présenter un sujet complexe en anglais sans lire."
+    en: "Complete a substantial project instead of merely following a routine: Present a complex idea in English without a script."
+  done_when:
+    fr: "Un exposé complet en anglais a réellement été présenté et questionné."
+    en: "A full English talk was actually delivered and questioned."
+  minimum:
+    fr: "Un exposé de dix minutes avec cinq minutes de questions spontanées."
+    en: "A ten-minute presentation with five minutes of spontaneous questions."
+  stretch:
+    fr: "Présente dans un contexte universitaire ou professionnel et sollicite une critique."
+    en: "Present in an academic or professional setting and request feedback."
+  targets:
+  - talk
+  parents: []
+- id: ACT-202611-H5
+  horizon: halfyear
+  category: outdoors
+  period: halfyear-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Trois grandes randonnées documentées"
+    en: "Three documented major hikes"
+  effort:
+    fr: "3 à 6 journées selon la logistique"
+    en: "3–6 days depending on logistics"
+  action:
+    fr: "Effectue trois randonnées majeures distinctes au Québec, incluant au moins une montagne. Choisis des sentiers adaptés, prépare les trajets, vérifie les conditions et écris un récit de chaque aventure."
+    en: "Complete three separate major Quebec hikes, including at least one mountain. Choose suitable trails, plan transport, check conditions and write about every adventure."
+  why:
+    fr: "Achever un projet de fond plutôt que poursuivre une simple routine : Trois grandes randonnées documentées."
+    en: "Complete a substantial project instead of merely following a routine: Three documented major hikes."
+  done_when:
+    fr: "Trois grandes randonnées ont réellement eu lieu avec parcours et observations consignés."
+    en: "Three major hikes actually took place with routes and observations recorded."
+  minimum:
+    fr: "Deux sorties exigeantes mais adaptées, accomplies en sécurité."
+    en: "Two demanding but suitable outings completed safely."
+  stretch:
+    fr: "Relie-les à un petit carnet de randonnée illustré de tes propres photos."
+    en: "Turn the trips into a hiking journal with your own photos."
+  targets:
+  - explore
+  - fitness-goal
+  parents: []
+- id: ACT-202611-H6
+  horizon: halfyear
+  category: math
+  period: halfyear-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Deux véritables passages d'examens actuariels"
+    en: "Two real actuarial exam sittings"
+  effort:
+    fr: "200–350 h cumulées · estimation non contraignante"
+    en: "200–350 cumulative hours · nonbinding estimate"
+  action:
+    fr: "Prépare P en priorité pour janvier, puis choisis FM ou une suite pertinente selon le résultat et les fenêtres officielles. Préserve les séances de consolidation et analyse chaque expérience sans te juger sur un seul résultat."
+    en: "Prioritize P for January, then choose FM or another suitable step based on results and official windows. Protect consolidation sessions and review each experience without defining yourself by one outcome."
+  why:
+    fr: "Achever un projet de fond plutôt que poursuivre une simple routine : Deux véritables passages d'examens actuariels."
+    en: "Complete a substantial project instead of merely following a routine: Two real actuarial exam sittings."
+  done_when:
+    fr: "Deux passages d'examens professionnels ont effectivement eu lieu, avec comptes rendus distincts et résultats reportés fidèlement."
+    en: "Two professional exam sittings occurred, with separate reviews and faithfully recorded outcomes."
+  minimum:
+    fr: "Une épreuve passée et un second programme d'étude solide prêt à être exécuté."
+    en: "One exam sat and a solid second study plan ready to execute."
+  stretch:
+    fr: "Réussis les deux examens si la préparation et les dates le permettent."
+    en: "Pass both exams if preparation and timing allow."
+  targets:
+  - acas
+  parents: []
+- id: ACT-202611-H7
+  horizon: halfyear
+  category: career
+  period: halfyear-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Faire reconnaître une compétence par une vraie audience"
+    en: "Earn recognition from a real audience"
+  effort:
+    fr: "30–60 h · travail et rencontres"
+    en: "30–60 h · work and meetings"
+  action:
+    fr: "Choisis un outil, un essai technique ou une démonstration mathématique. Présente-le à deux communautés différentes (groupe d'étude, équipe scientifique, utilisateurs ou événement public), demande des retours et améliore le résultat."
+    en: "Choose a tool, technical essay or mathematical demonstration. Share it with two distinct communities (study group, scientific team, users or public event), invite criticism and improve the result."
+  why:
+    fr: "Achever un projet de fond plutôt que poursuivre une simple routine : Faire reconnaître une compétence par une vraie audience."
+    en: "Complete a substantial project instead of merely following a routine: Earn recognition from a real audience."
+  done_when:
+    fr: "Deux présentations ou démonstrations ont réellement eu lieu et ont produit une version améliorée du travail."
+    en: "Two actual presentations or demonstrations happened and informed an improved version of the work."
+  minimum:
+    fr: "Présente une fois un travail à un groupe et intègre deux améliorations."
+    en: "Present work to one group and implement two improvements."
+  stretch:
+    fr: "Obtiens une collaboration scientifique ou une contribution externe, sans présumer la réponse."
+    en: "Invite a scientific collaboration or outside contribution without assuming acceptance."
+  targets:
+  - builder
+  - research
+  parents: []
