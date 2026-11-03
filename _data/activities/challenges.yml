@@ -654,3 +654,167 @@
   - explore
   - fitness-goal
   parents: []
+- id: ACT-202611-Y8
+  horizon: year
+  category: math
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Faire accepter une contribution mathématique à Lean"
+    en: "Contribute verified mathematics to Lean"
+  effort:
+    fr: "70–120 h · apprentissage et contribution"
+    en: "70–120 h · learning and contribution"
+  action:
+    fr: "Choisis un lemme accessible non redondant, apprends les conventions de mathlib, prépare une preuve Lean avec tests, ouvre une proposition de contribution et traite les retours. L'acceptation des mainteneurs reste hors de ton contrôle."
+    en: "Choose a useful non-duplicate lemma, learn mathlib conventions, write a tested Lean proof, open a contribution proposal and respond to review. Maintainer acceptance is beyond your control."
+  why:
+    fr: "Une réalisation concrète et exigeante dans le domaine : Faire accepter une contribution mathématique à Lean."
+    en: "A meaningful and challenging accomplishment: Contribute verified mathematics to Lean."
+  done_when:
+    fr: "Une preuve Lean originale est documentée et une proposition sérieuse a été soumise aux mainteneurs ou à un pair technique."
+    en: "An original documented Lean proof exists and a serious contribution proposal has been offered to maintainers or a technical peer."
+  minimum:
+    fr: "Formalise dix résultats simples avec tests reproductibles."
+    en: "Formalize ten straightforward results with reproducible tests."
+  stretch:
+    fr: "Obtiens une contribution acceptée dans mathlib ou une revue technique approfondie."
+    en: "Get an accepted mathlib contribution or substantial technical review."
+  targets:
+  - research
+  - builder
+  parents: []
+- id: ACT-202611-Y9
+  horizon: year
+  category: writing
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Écrire douze essais originaux sans IA"
+    en: "Write twelve original essays without AI"
+  effort:
+    fr: "90–130 h · pensée personnelle"
+    en: "90–130 h · independent thinking"
+  action:
+    fr: "Rédige douze essais argumentés, un par mois, en littérature, philosophie, politique ou mathématiques. N'utilise pas l'IA pour les idées, les phrases ou les révisions de ces textes. Révise en t'appuyant sur des sources et des lecteurs réels, et publie une sélection."
+    en: "Write twelve argued essays, one per month, on literature, philosophy, politics or mathematics. Do not use AI to generate ideas, prose or revisions. Revise using sources and real readers, and publish a selection."
+  why:
+    fr: "Une réalisation concrète et exigeante dans le domaine : Écrire douze essais originaux sans IA."
+    en: "A meaningful and challenging accomplishment: Write twelve original essays without AI."
+  done_when:
+    fr: "Douze essais personnels achevés ont été relus ; au moins six sont accessibles publiquement, avec leurs sources."
+    en: "Twelve personal essays are finished and self-reviewed; at least six are publicly available with sources."
+  minimum:
+    fr: "Six essais profonds achevés et entièrement personnels."
+    en: "Six substantial essays completed independently."
+  stretch:
+    fr: "Constitue une collection cohérente de douze textes en vue d'un recueil."
+    en: "Assemble twelve essays into a coherent collection."
+  targets:
+  - writing
+  parents: []
+- id: ACT-202611-Y10
+  horizon: year
+  category: travel
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Découvrir deux endroits américains entièrement nouveaux"
+    en: "Explore two completely new US destinations"
+  effort:
+    fr: "2 escapades · budget et disponibilité à confirmer"
+    en: "2 trips · budget and availability to be checked"
+  action:
+    fr: "Choisis deux villes ou régions des États-Unis que tu ne connais pas, prépare des itinéraires avec budget et formalités d'entrée vérifiés, puis réalise ces voyages si les circonstances le permettent. Note des expériences authentiques plutôt qu'une liste de lieux cochés."
+    en: "Choose two US cities or regions new to you, plan itineraries with a verified budget and entry requirements, then travel if circumstances allow. Record genuine experiences rather than ticking a sightseeing list."
+  why:
+    fr: "Une réalisation concrète et exigeante dans le domaine : Découvrir deux endroits américains entièrement nouveaux."
+    en: "A meaningful and challenging accomplishment: Explore two completely new US destinations."
+  done_when:
+    fr: "Deux nouveaux lieux ont été réellement visités et chacun a suscité un récit personnel ; aucun achat ou réservation ne se fait automatiquement."
+    en: "Two new places were genuinely visited and each inspired a personal account; nothing is automatically booked or purchased."
+  minimum:
+    fr: "Organise une escapade réaliste et réalise une première découverte."
+    en: "Plan a realistic trip and complete one new experience."
+  stretch:
+    fr: "Ajoute un voyage en solo ou une activité culturelle hors des habitudes."
+    en: "Add a solo trip or an unusual cultural experience."
+  targets:
+  - travel-goal
+  - explore
+  parents: []
+- id: ACT-202611-Y11
+  horizon: year
+  category: career
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Construire un dossier crédible pour un futur doctorat"
+    en: "Build a credible future PhD application portfolio"
+  effort:
+    fr: "70–120 h supplémentaires selon les études"
+    en: "70–120 extra hours depending on coursework"
+  action:
+    fr: "Suis un cours de niveau supérieur approprié si l'inscription est confirmée, produis un travail remarquable et réunis un portefeuille de recherche, résultats, notes et candidatures potentielles. Demande des retours à des professeurs sans supposer d'admission."
+    en: "Take a suitable graduate-level course if registration is confirmed, produce exceptional work and assemble a research portfolio with results, notes and possible applications. Seek faculty feedback without assuming admission."
+  why:
+    fr: "Une réalisation concrète et exigeante dans le domaine : Construire un dossier crédible pour un futur doctorat."
+    en: "A meaningful and challenging accomplishment: Build a credible future PhD application portfolio."
+  done_when:
+    fr: "Un projet universitaire solide et un dossier de candidature préparatoire existent, avec au moins une demande de critique envoyée."
+    en: "A strong graduate-level project and preliminary application portfolio exist, with at least one critique request sent."
+  minimum:
+    fr: "Achève un projet théorique ou appliqué de niveau maîtrise et documente les exigences de trois programmes."
+    en: "Complete a master's-level theoretical or applied project and document entry requirements for three programs."
+  stretch:
+    fr: "Soumets une candidature appropriée si tu réponds aux critères et si le calendrier le permet."
+    en: "Submit a suitable application if eligibility and timing permit."
+  targets:
+  - research
+  - builder
+  parents: []
+- id: ACT-202611-Y12
+  horizon: year
+  category: build
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Lancer un outil numérique que de vrais utilisateurs apprécient"
+    en: "Launch a digital tool real users appreciate"
+  effort:
+    fr: "100–180 h cumulées · réutilise les projets existants"
+    en: "100–180 cumulative hours · reuse existing projects"
+  action:
+    fr: "Choisis un seul outil parmi tes prototypes, améliore l'expérience mobile, la documentation, la fiabilité et l'accessibilité. Invite dix personnes à l'essayer, observe ce qui les bloque sans collecter de données sensibles et publie une version corrigée."
+    en: "Select one of your prototypes, improve its mobile experience, documentation, reliability and accessibility. Invite ten people to try it, note usability blockers without collecting sensitive data and publish a revised release."
+  why:
+    fr: "Une réalisation concrète et exigeante dans le domaine : Lancer un outil numérique que de vrais utilisateurs apprécient."
+    en: "A meaningful and challenging accomplishment: Launch a digital tool real users appreciate."
+  done_when:
+    fr: "Un outil stable est disponible et une campagne de dix invitations au test a été faite ; les corrections sont consignées, même si certains invités ne répondent pas."
+    en: "A stable tool is available and ten invitations to test it were sent; fixes are documented even if some invitees never reply."
+  minimum:
+    fr: "Un outil public vérifié par trois testeurs volontaires et amélioré selon leurs retours."
+    en: "A public tool reviewed by three voluntary testers and improved from their feedback."
+  stretch:
+    fr: "Atteins des utilisateurs réguliers et maintiens une feuille de route transparente."
+    en: "Gain recurring users and maintain a transparent roadmap."
+  targets:
+  - builder
+  - audience
+  parents: []
