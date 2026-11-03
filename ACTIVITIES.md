@@ -31,7 +31,7 @@ Preserve prior events and all finished, declined or stopped challenges. Log a co
 
 The repository is public. Publish only challenge decisions and a short, appropriate summary of lessons. Do not copy sensitive personal circumstances, confidential employer information, recordings or full private notes. If a report contains such details, retain only its non-sensitive status and a neutral summary. No emails or messages to other people are sent by this workflow.
 
-Browser controls save drafts on the current device under `evenson.activities.drafts.v1`. They never write public history or mark published counters complete. The user copies the report to the conversation; update the repository from that report. A draft is not a confirmed report until the user transmits it. Keep this distinction clear in the interface.
+Browser controls save current drafts on the device under `evenson.activities.drafts.v2` (the v1 key remains untouched, preventing notes on superseded proposals from being mislabeled as responses to revised challenges). They never write public history or mark published counters complete. The user copies the report to the conversation; update the repository from that report. A draft is not a confirmed report until the user transmits it. Keep this distinction clear in the interface.
 
 ## Ambition rule (2026-11-03)
 
