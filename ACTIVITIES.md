@@ -33,6 +33,10 @@ The repository is public. Publish only challenge decisions and a short, appropri
 
 Browser controls save drafts on the current device under `evenson.activities.drafts.v1`. They never write public history or mark published counters complete. The user copies the report to the conversation; update the repository from that report. A draft is not a confirmed report until the user transmits it. Keep this distinction clear in the interface.
 
+## Ambition rule (2026-11-03)
+
+Activities is not an exam drill or habit tracker. Offer challenging and memorable achievements: original work subject to critique, real public speaking, a meaningful new experience or a contribution that builds lasting pride. Avoid trivial quantity targets. Keep challenges realistic, voluntary and respectful of current commitments.
+
 ## Weekly delivery
 
 Read actual history, ask briefly about unresolved choices, provide a candid observation and a small next step, and publish appropriate new proposals to this section. Include IDs, effort and the Activities link in the conversational check-in. Update `config.mentor_note` so the public page reflects the latest review rather than permanently saying “first week.” For a quiet week, maintain the current proposals and ask for a short report; do not invent outcomes or reset the calendar.
