@@ -4103,3 +4103,531 @@
   - audience
   parents:
   - ACT-202611-Q10
+- id: ACT-2027W01-X01
+  horizon: week
+  category: math
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-03'
+  due: '2027-01-10'
+  difficulty: ambitious
+  title:
+    fr: "Un examen blanc P sans filet"
+    en: "A full Exam P mock without shortcuts"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Effectue une simulation P chronométrée, analyse chaque erreur et corrige trois faiblesses conceptuelles."
+    en: "Take a timed P mock, analyze every mistake and address three conceptual weaknesses."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Un examen blanc P sans filet."
+    en: "Build real ability without abandoning priorities: A full Exam P mock without shortcuts."
+  done_when:
+    fr: "Simulation complète et plan correctif daté."
+    en: "Complete mock and dated corrective plan."
+  minimum:
+    fr: "Une correction vérifiée ou un diagnostic final pertinent."
+    en: "One checked correction or meaningful final diagnostic."
+  stretch:
+    fr: "Demande un avis extérieur sur la solution sans augmenter la charge d'examen."
+    en: "Invite review without increasing exam-week workload."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-2027W01-X02
+  horizon: week
+  category: build
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-03'
+  due: '2027-01-10'
+  difficulty: ambitious
+  title:
+    fr: "Une carte interactive des notions P"
+    en: "An interactive map of Exam P topics"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Relie conditionnement, espérance et distributions dans une carte mobile avec exercices originaux consultables."
+    en: "Connect conditioning, expectation and distributions in a mobile concept map with original practice exercises."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Une carte interactive des notions P."
+    en: "Build real ability without abandoning priorities: An interactive map of Exam P topics."
+  done_when:
+    fr: "Carte fonctionnelle et navigable sur mobile."
+    en: "Working navigable mobile map."
+  minimum:
+    fr: "Une version stable dont le fonctionnement essentiel est vérifié."
+    en: "A stable build with tested essential functionality."
+  stretch:
+    fr: "Teste sur un deuxième appareil si cela ne nuit pas à P."
+    en: "Test on another device if it does not displace P."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-M1
+- id: ACT-2027W01-X03
+  horizon: week
+  category: writing
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-03'
+  due: '2027-01-10'
+  difficulty: ambitious
+  title:
+    fr: "L'ambition mérite-t-elle ses sacrifices ? Sans IA"
+    en: "Is ambition worth its sacrifices? No AI"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Écris 900 mots sans IA avec thèse, objection et réponse sur le prix raisonnable de l'ambition."
+    en: "Write a 900-word no-AI essay with thesis, counterargument and reply on reasonable ambition costs."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : L'ambition mérite-t-elle ses sacrifices ? Sans IA."
+    en: "Build real ability without abandoning priorities: Is ambition worth its sacrifices? No AI."
+  done_when:
+    fr: "Essai argumenté personnel révisé sans IA."
+    en: "Self-revised personal argumentative essay."
+  minimum:
+    fr: "Un texte complet relu par toi sans IA."
+    en: "A complete text self-edited without AI."
+  stretch:
+    fr: "Fais lire le texte à une personne choisie, sans le faire réécrire par IA."
+    en: "Share with a chosen reader, without AI rewriting."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027W01-X04
+  horizon: week
+  category: speaking
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-03'
+  due: '2027-01-10'
+  difficulty: ambitious
+  title:
+    fr: "Vingt minutes d'actuariat en anglais"
+    en: "Twenty minutes of actuarial English"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Discute vingt minutes en anglais avec un auditeur volontaire des modèles de risque et de tes idées, sans script."
+    en: "Discuss risk models and your ideas in English with a willing listener for twenty minutes without a script."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Vingt minutes d'actuariat en anglais."
+    en: "Build real ability without abandoning priorities: Twenty minutes of actuarial English."
+  done_when:
+    fr: "Vrai dialogue avec questions spontanées."
+    en: "Real dialogue with unscripted questions."
+  minimum:
+    fr: "Un échange spontané avec une question non préparée."
+    en: "An unscripted exchange with one unexpected question."
+  stretch:
+    fr: "Échange dix minutes supplémentaires si le temps le permet."
+    en: "Continue the discussion ten more minutes if time allows."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W01-X05
+  horizon: week
+  category: fitness
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-03'
+  due: '2027-01-10'
+  difficulty: ambitious
+  title:
+    fr: "Deux sorties faciles sans dette sportive"
+    en: "Two easy sessions without training debt"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Effectue deux séances de mouvement adaptées, ou une seule si la récupération l'impose ; protège ton sommeil et P."
+    en: "Do two suitable movement sessions, or one if recovery requires it; protect sleep and Exam P."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Deux sorties faciles sans dette sportive."
+    en: "Build real ability without abandoning priorities: Two easy sessions without training debt."
+  done_when:
+    fr: "Mouvement adapté consigné, récupération respectée."
+    en: "Suitable logged movement with recovery respected."
+  minimum:
+    fr: "Une séance adaptée et une récupération respectée."
+    en: "One suitable session with recovery respected."
+  stretch:
+    fr: "Ajoute uniquement de la mobilité douce si tu récupères bien."
+    en: "Add only gentle mobility if recovery is good."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-2027W01-X06
+  horizon: week
+  category: research
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-03'
+  due: '2027-01-10'
+  difficulty: ambitious
+  title:
+    fr: "Une preuve Lean que tu comprends vraiment"
+    en: "One Lean proof you truly understand"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Écris un lemme Lean simple, vérifie la compilation et explique chaque tactique dans une note personnelle."
+    en: "Write a simple Lean lemma, compile it and explain every tactic in your own notes."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Une preuve Lean que tu comprends vraiment."
+    en: "Build real ability without abandoning priorities: One Lean proof you truly understand."
+  done_when:
+    fr: "Preuve Lean compilable et expliquée."
+    en: "Compiling explained Lean proof."
+  minimum:
+    fr: "Une question ou preuve techniquement vérifiée."
+    en: "A technically checked question or proof."
+  stretch:
+    fr: "Demande une critique lorsque les priorités d'examen sont terminées."
+    en: "Ask for critique after exam priorities."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2027W01-X07
+  horizon: week
+  category: community
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-03'
+  due: '2027-01-10'
+  difficulty: ambitious
+  title:
+    fr: "Enseigner une erreur de probabilité"
+    en: "Teach a probability misconception"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Explique une erreur P fréquente à un étudiant volontaire et guide-le vers la correction sans donner immédiatement la réponse."
+    en: "Explain a common P mistake to a willing learner and guide them without immediately revealing the answer."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Enseigner une erreur de probabilité."
+    en: "Build real ability without abandoning priorities: Teach a probability misconception."
+  done_when:
+    fr: "Séance réelle et réflexion pédagogique."
+    en: "Real teaching session and learning reflection."
+  minimum:
+    fr: "Une interaction sincère avec une personne réelle."
+    en: "A sincere interaction with a real person."
+  stretch:
+    fr: "Propose un autre échange sans obligation de réponse."
+    en: "Offer follow-up without requiring a reply."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W01-X08
+  horizon: week
+  category: creativity
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-03'
+  due: '2027-01-10'
+  difficulty: ambitious
+  title:
+    fr: "Une histoire d'hiver en six photos"
+    en: "A winter story in six photos"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Crée une série originale de six photos sur un contraste entre ville et nature avec une légende écrite par toi."
+    en: "Create six original photos contrasting city and nature with a caption in your own voice."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Une histoire d'hiver en six photos."
+    en: "Build real ability without abandoning priorities: A winter story in six photos."
+  done_when:
+    fr: "Série photo composée et titrée."
+    en: "Composed and titled photo story."
+  minimum:
+    fr: "Une création personnelle achevée."
+    en: "One finished personal creation."
+  stretch:
+    fr: "Partage la création avec un lecteur volontaire."
+    en: "Share the creation with a willing viewer."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027W02-X01
+  horizon: week
+  category: math
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-03'
+  due: '2027-01-17'
+  difficulty: ambitious
+  title:
+    fr: "La précision finale avant P"
+    en: "Final precision before Exam P"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Révise les points faibles identifiés avant le 16 janvier, allège la charge juste avant l'épreuve et note tes impressions après seulement si tu as réellement passé P."
+    en: "Review known weak spots before January 16, taper before the sitting and record a reflection only if you actually take Exam P."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : La précision finale avant P."
+    en: "Build real ability without abandoning priorities: Final precision before Exam P."
+  done_when:
+    fr: "Révision mesurée et bilan honnête si l'épreuve a lieu."
+    en: "Measured revision and honest review if the sitting occurs."
+  minimum:
+    fr: "Une correction vérifiée ou un diagnostic final pertinent."
+    en: "One checked correction or meaningful final diagnostic."
+  stretch:
+    fr: "Demande un avis extérieur sur la solution sans augmenter la charge d'examen."
+    en: "Invite review without increasing exam-week workload."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-2027W02-X02
+  horizon: week
+  category: build
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-03'
+  due: '2027-01-17'
+  difficulty: ambitious
+  title:
+    fr: "La discipline de ne rien lancer avant P"
+    en: "The discipline of not launching before Exam P"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Gèle les nouvelles fonctionnalités de ton simulateur, vérifie seulement l'essentiel et note les améliorations à reprendre après l'examen."
+    en: "Freeze new simulator features, check only essentials and document ideas to revisit after the exam."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : La discipline de ne rien lancer avant P."
+    en: "Build real ability without abandoning priorities: The discipline of not launching before Exam P."
+  done_when:
+    fr: "Version stabilisée sans nouveau risque technique."
+    en: "Stable version without new technical risk."
+  minimum:
+    fr: "Une version stable dont le fonctionnement essentiel est vérifié."
+    en: "A stable build with tested essential functionality."
+  stretch:
+    fr: "Teste sur un deuxième appareil si cela ne nuit pas à P."
+    en: "Test on another device if it does not displace P."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-M1
+- id: ACT-2027W02-X03
+  horizon: week
+  category: writing
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-03'
+  due: '2027-01-17'
+  difficulty: ambitious
+  title:
+    fr: "Lettre à toi-même après P, sans IA"
+    en: "Letter to yourself after Exam P without AI"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Après l'épreuve prévue, écris 800 mots sans IA sur ce que la préparation t'a appris, sans inventer de résultat ; reporte si P est reporté."
+    en: "After the planned sitting, write 800 no-AI words on what preparation taught you, without inventing results; defer if P moves."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Lettre à toi-même après P, sans IA."
+    en: "Build real ability without abandoning priorities: Letter to yourself after Exam P without AI."
+  done_when:
+    fr: "Une réflexion personnelle sincère après le vrai examen."
+    en: "A genuine reflection after the actual exam."
+  minimum:
+    fr: "Un texte complet relu par toi sans IA."
+    en: "A complete text self-edited without AI."
+  stretch:
+    fr: "Fais lire le texte à une personne choisie, sans le faire réécrire par IA."
+    en: "Share with a chosen reader, without AI rewriting."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2027W02-X04
+  horizon: week
+  category: speaking
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-03'
+  due: '2027-01-17'
+  difficulty: ambitious
+  title:
+    fr: "Expliquer une difficulté surmontée en anglais"
+    en: "Explain an overcome difficulty in English"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Après tes engagements prioritaires, raconte à un vrai auditeur une difficulté mathématique surmontée et réponds à ses questions."
+    en: "After higher priorities, tell a real listener about a mathematical difficulty you overcame and answer questions."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Expliquer une difficulté surmontée en anglais."
+    en: "Build real ability without abandoning priorities: Explain an overcome difficulty in English."
+  done_when:
+    fr: "Échange libre sur un apprentissage réel."
+    en: "Unscripted exchange about genuine learning."
+  minimum:
+    fr: "Un échange spontané avec une question non préparée."
+    en: "An unscripted exchange with one unexpected question."
+  stretch:
+    fr: "Échange dix minutes supplémentaires si le temps le permet."
+    en: "Continue the discussion ten more minutes if time allows."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W02-X05
+  horizon: week
+  category: fitness
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-03'
+  due: '2027-01-17'
+  difficulty: ambitious
+  title:
+    fr: "Bouger doucement sans épuisement"
+    en: "Move gently without exhaustion"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Choisis une marche ou séance légère compatible avec le repos nécessaire pour P, sans viser distance ou vitesse."
+    en: "Choose an easy walk or light workout compatible with rest before P, without a speed or distance target."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Bouger doucement sans épuisement."
+    en: "Build real ability without abandoning priorities: Move gently without exhaustion."
+  done_when:
+    fr: "Mouvement léger sans compromettre la récupération."
+    en: "Light activity without compromising recovery."
+  minimum:
+    fr: "Une séance adaptée et une récupération respectée."
+    en: "One suitable session with recovery respected."
+  stretch:
+    fr: "Ajoute uniquement de la mobilité douce si tu récupères bien."
+    en: "Add only gentle mobility if recovery is good."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-2027W02-X06
+  horizon: week
+  category: research
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-03'
+  due: '2027-01-17'
+  difficulty: ambitious
+  title:
+    fr: "Une question scientifique pour après P"
+    en: "One research question for after Exam P"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Après l'examen seulement, formule une question testable de tarification IARD pour la prochaine période de recherche."
+    en: "Only after the sitting, frame one testable P&C pricing question for the next research period."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Une question scientifique pour après P."
+    en: "Build real ability without abandoning priorities: One research question for after Exam P."
+  done_when:
+    fr: "Question claire et testable si disponibilité."
+    en: "A clear testable question if time allows."
+  minimum:
+    fr: "Une question ou preuve techniquement vérifiée."
+    en: "A technically checked question or proof."
+  stretch:
+    fr: "Demande une critique lorsque les priorités d'examen sont terminées."
+    en: "Ask for critique after exam priorities."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2027W02-X07
+  horizon: week
+  category: community
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-03'
+  due: '2027-01-17'
+  difficulty: ambitious
+  title:
+    fr: "Remercier quelqu'un qui t'a fait progresser"
+    en: "Thank someone who helped you progress"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Envoie un remerciement personnel précis à une personne qui t'a transmis un apprentissage important, sans exiger de réponse."
+    en: "Send a specific personal thank-you to someone who taught you something important, without requiring a reply."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Remercier quelqu'un qui t'a fait progresser."
+    en: "Build real ability without abandoning priorities: Thank someone who helped you progress."
+  done_when:
+    fr: "Un message sincère adressé à une vraie personne."
+    en: "A sincere message sent to a real person."
+  minimum:
+    fr: "Une interaction sincère avec une personne réelle."
+    en: "A sincere interaction with a real person."
+  stretch:
+    fr: "Propose un autre échange sans obligation de réponse."
+    en: "Offer follow-up without requiring a reply."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W02-X08
+  horizon: week
+  category: outdoors
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-03'
+  due: '2027-01-17'
+  difficulty: ambitious
+  title:
+    fr: "Trouver un moment de silence dehors après P"
+    en: "Find quiet outside after Exam P"
+  effort:
+    fr: "1–4 h · secondaire et facultatif autour de P"
+    en: "1–4 h · secondary and optional around Exam P"
+  action:
+    fr: "Si tu en as envie après l'épreuve, fais une sortie nature simple et sûre, sans objectif de performance, puis note une observation."
+    en: "If you feel like it after the sitting, take a simple safe nature outing without a performance target and record an observation."
+  why:
+    fr: "Cultiver une capacité réelle sans abandonner les priorités : Trouver un moment de silence dehors après P."
+    en: "Build real ability without abandoning priorities: Find quiet outside after Exam P."
+  done_when:
+    fr: "Pause sereine en plein air ou report sans culpabilité."
+    en: "A peaceful outdoor pause or guilt-free deferral."
+  minimum:
+    fr: "Une sortie sûre ou un report justifié par les conditions."
+    en: "A safe outing or safety-based deferral."
+  stretch:
+    fr: "Rédige un court récit personnel de l'expérience."
+    en: "Write a brief personal account."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
