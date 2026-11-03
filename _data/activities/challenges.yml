@@ -460,3 +460,197 @@
   - travel-goal
   - explore
   parents: []
+- id: ACT-202611-Y2
+  horizon: year
+  category: fitness
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-09-19'
+  difficulty: ambitious
+  title:
+    fr: "Marathon : franchir 42,195 km"
+    en: "Marathon: cross 42.195 km"
+  effort:
+    fr: "150–250 h cumulées · entraînement à adapter"
+    en: "150–250 cumulative hours · tailored training"
+  action:
+    fr: "Bâtis une endurance de débutant vers 5 km, 10 km, puis un semi-marathon avant d'envisager le Marathon de Montréal du 19 septembre 2027. Évalue ta préparation avec un professionnel de santé si tu débutes, privilégie les périodes de récupération et reporte le marathon si tu n'es pas prêt."
+    en: "Build from beginner endurance to 5 km, 10 km and then a half marathon before considering the September 19, 2027 Montreal Marathon. Seek a health professional's assessment if new to running, prioritize recovery and defer the marathon if unprepared."
+  why:
+    fr: "Faire de « Marathon : franchir 42,195 km » une vraie première, vécue ou produite dans le réel."
+    en: "Turn \"Marathon: cross 42.195 km\" into a genuine first, achieved in the real world."
+  done_when:
+    fr: "Une course de 42,195 km terminée sans ignorer les signaux de santé ; si la préparation est insuffisante, un semi-marathon réalisé et le report responsable sont un jalon valable."
+    en: "A 42.195 km race completed without ignoring health signals; if preparation is insufficient, a completed half marathon and responsible deferral count as a meaningful milestone."
+  minimum:
+    fr: "Termine un semi-marathon avec une préparation adéquate et détermine si le marathon est raisonnable."
+    en: "Finish a half marathon with adequate preparation and decide whether a marathon is appropriate."
+  stretch:
+    fr: "Prends le départ du marathon officiel uniquement si la préparation et la santé le permettent."
+    en: "Start the official marathon only if training and health support it."
+  targets:
+  - fitness-goal
+  parents: []
+- id: ACT-202611-Y3
+  horizon: year
+  category: writing
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Écrire un livre complet sans déléguer ma plume"
+    en: "Write an entire book in my own voice"
+  effort:
+    fr: "120–200 h sur un an · écriture personnelle"
+    en: "120–200 h across a year · original writing"
+  action:
+    fr: "Choisis un roman ou un essai long, établis un plan, écris 12 à 18 chapitres pour un premier manuscrit de 30 000 à 45 000 mots, puis effectue une révision structurée. Aucun texte généré par IA ne doit remplacer ta plume."
+    en: "Choose a novel or long-form nonfiction book, outline it, write 12 to 18 chapters for a 30,000–45,000-word first manuscript, then complete a structured revision. Do not outsource the actual prose to generative AI."
+  why:
+    fr: "Faire de « Écrire un livre complet sans déléguer ma plume » une vraie première, vécue ou produite dans le réel."
+    en: "Turn \"Write an entire book in my own voice\" into a genuine first, achieved in the real world."
+  done_when:
+    fr: "Un manuscrit complet du début à la fin existe, a été relu par toi et proposé à deux lecteurs volontaires ; aucune publication n'est présumée."
+    en: "A complete start-to-finish manuscript exists, has been self-edited and offered to two willing readers; publication is not assumed."
+  minimum:
+    fr: "Une version complète et cohérente d'au moins 25 000 mots, même imparfaite."
+    en: "A coherent full draft of at least 25,000 words, even if imperfect."
+  stretch:
+    fr: "Prépare un dossier éditorial et propose le manuscrit à une maison d'édition ou à des bêta-lecteurs."
+    en: "Prepare an editorial package and pitch the manuscript to a publisher or beta readers."
+  targets:
+  - writing
+  - books
+  parents: []
+- id: ACT-202611-Y4
+  horizon: year
+  category: math
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Présenter quatre examens actuariels distincts"
+    en: "Sit four distinct actuarial exams"
+  effort:
+    fr: "400–750 h d'étude · estimation à réviser"
+    en: "400–750 study hours · revise estimate"
+  action:
+    fr: "Organise quatre tentatives d'examens compatibles avec ton parcours CAS en commençant par P le 16 janvier 2027 si ce rendez-vous est maintenu. Étudie ensuite FM, puis une matière CAS appropriée ; vérifie les prérequis et les calendriers officiels avant d'ajouter des dates. Note séparément tentative, résultat et réussite."
+    en: "Plan four exam sittings aligned with the CAS pathway, starting with Exam P on January 16, 2027 if that appointment stands. Then study FM and appropriate CAS material, verifying prerequisites and official schedules before setting dates. Track sittings, outcomes and passes separately."
+  why:
+    fr: "Faire de « Présenter quatre examens actuariels distincts » une vraie première, vécue ou produite dans le réel."
+    en: "Turn \"Sit four distinct actuarial exams\" into a genuine first, achieved in the real world."
+  done_when:
+    fr: "Quatre examens professionnels distincts ont réellement été passés ; les résultats, favorables ou non, sont consignés sans invention et sans double comptage."
+    en: "Four distinct professional exams have actually been taken, with outcomes honestly recorded regardless of pass or fail, without double counting."
+  minimum:
+    fr: "Prépare et passe sérieusement deux examens choisis selon les résultats et le calendrier."
+    en: "Prepare for and sit two exams chosen in light of results and scheduling."
+  stretch:
+    fr: "Viser quatre réussites, mais ne jamais sacrifier la maîtrise ou la santé pour atteindre le chiffre."
+    en: "Aim for four passes without sacrificing mastery or health to hit a number."
+  targets:
+  - acas
+  parents: []
+- id: ACT-202611-Y5
+  horizon: year
+  category: speaking
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Devenir véritablement autonome en anglais"
+    en: "Become genuinely independent in English"
+  effort:
+    fr: "150–250 h cumulées · intégrées à la vie courante"
+    en: "150–250 cumulative hours · part of everyday life"
+  action:
+    fr: "Développe une pratique de conversation régulière, participe à douze échanges longs avec des anglophones, produis quatre présentations de 15 minutes et lis deux livres en anglais. Mesure ton point de départ et ta progression au moyen d'une évaluation cohérente du niveau B2 ou supérieur."
+    en: "Build regular conversation practice, take part in twelve extended conversations with English speakers, deliver four fifteen-minute presentations and read two books in English. Assess your starting point and progress consistently toward B2 or beyond."
+  why:
+    fr: "Faire de « Devenir véritablement autonome en anglais » une vraie première, vécue ou produite dans le réel."
+    en: "Turn \"Become genuinely independent in English\" into a genuine first, achieved in the real world."
+  done_when:
+    fr: "Une évaluation crédible confirme les compétences atteintes ; douze conversations et quatre présentations ont eu lieu, avec un bilan des points encore difficiles."
+    en: "A credible assessment documents skills reached; twelve conversations and four presentations occurred, with reflection on remaining challenges."
+  minimum:
+    fr: "Tenir une conversation spontanée de 30 minutes et donner une présentation claire de 15 minutes."
+    en: "Hold a spontaneous thirty-minute conversation and give a clear fifteen-minute presentation."
+  stretch:
+    fr: "Atteindre un niveau B2 solide ou C1 évalué, et prononcer une présentation publique en anglais."
+    en: "Reach assessed solid B2 or C1 proficiency and deliver a public presentation in English."
+  targets:
+  - talk
+  parents: []
+- id: ACT-202611-Y6
+  horizon: year
+  category: health
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Une transformation physique durable : objectif envisagé de 30 kg"
+    en: "Sustainable physical change: an aspirational 30 kg goal"
+  effort:
+    fr: "12 mois · changements progressifs et suivi privé"
+    en: "12 months · gradual change and private follow-up"
+  action:
+    fr: "Construis avec un professionnel de santé un objectif pondéral pertinent et une démarche graduelle qui soutient ton énergie, tes entraînements et ton bien-être. Tu envisages jusqu'à 30 kg sur l'année, mais ajuste la cible aux recommandations cliniques ; garde chiffres, mensurations et dossiers privés."
+    en: "Work with a healthcare professional to choose an appropriate weight goal and a gradual approach supporting your energy, exercise and wellbeing. You are considering up to 30 kg over a year, but adapt the target to clinical guidance; keep measurements and medical details private."
+  why:
+    fr: "Faire de « Une transformation physique durable : objectif envisagé de 30 kg » une vraie première, vécue ou produite dans le réel."
+    en: "Turn \"Sustainable physical change: an aspirational 30 kg goal\" into a genuine first, achieved in the real world."
+  done_when:
+    fr: "Une démarche durable a été suivie et réévaluée avec soin, et un bilan personnel confirme les progrès vers la cible validée sans exiger que les chiffres soient publiés."
+    en: "A sustainable plan was followed and appropriately reviewed, with a private progress assessment against the validated goal and no public disclosure of numbers."
+  minimum:
+    fr: "Un programme réaliste construit avec un professionnel et maintenu plusieurs mois, avec un bilan des habitudes et de la forme."
+    en: "A realistic professionally informed plan maintained over several months, with a review of habits and wellbeing."
+  stretch:
+    fr: "Atteindre la cible personnalisée, éventuellement 30 kg si cela reste pertinent et sûr, sans mesures extrêmes."
+    en: "Reach the personalized goal, potentially 30 kg only if it remains appropriate and safe, without extreme measures."
+  targets:
+  - fitness-goal
+  parents: []
+- id: ACT-202611-Y7
+  horizon: year
+  category: outdoors
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-03'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Cinq grandes randonnées qui restent en mémoire"
+    en: "Five memorable major hikes"
+  effort:
+    fr: "8 à 12 journées de sortie sur un an"
+    en: "8 to 12 outdoor days across a year"
+  action:
+    fr: "Planifie et réalise cinq randonnées majeures de difficulté progressive, dont au moins deux sorties de montagne et une aventure de plusieurs heures. Choisis des sentiers ouverts, consulte la météo, prépare équipement, sécurité et transport, et préserve les milieux naturels."
+    en: "Plan and complete five progressively more challenging hikes, including at least two mountain outings and one multi-hour adventure. Choose open trails, check weather, prepare equipment, safety and transportation, and respect nature."
+  why:
+    fr: "Faire de « Cinq grandes randonnées qui restent en mémoire » une vraie première, vécue ou produite dans le réel."
+    en: "Turn \"Five memorable major hikes\" into a genuine first, achieved in the real world."
+  done_when:
+    fr: "Cinq sorties significatives ont été réalisées et chacune possède une courte trace personnelle, avec parcours et conditions notés."
+    en: "Five meaningful outings were completed, each with a personal account and recorded route and conditions."
+  minimum:
+    fr: "Trois belles randonnées de difficulté croissante réalisées en sécurité."
+    en: "Three rewarding hikes of increasing difficulty completed safely."
+  stretch:
+    fr: "Ajoute une randonnée de sommet exigeante ou une sortie guidée sur deux jours, selon le niveau réel."
+    en: "Add a demanding summit hike or guided two-day outing, as fitness allows."
+  targets:
+  - explore
+  - fitness-goal
+  parents: []
