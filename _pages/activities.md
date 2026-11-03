@@ -8,7 +8,7 @@ sitemap: false
 excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et progresser."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=2">
+<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=3">
 
 <div class="activities-app" id="activities-app" data-lang="fr">
   <header class="act-hero">
@@ -28,6 +28,15 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
     <span class="act-eyebrow" id="act-mentor-title" data-copy="mentor">LE MOT DU MENTOR</span>
     <p id="act-mentor-note"></p>
   </aside>
+
+  <section class="act-annual-vision" aria-labelledby="act-year-heading">
+    <div>
+      <p class="act-eyebrow">OBJECTIF · NOVEMBRE 2026 — NOVEMBRE 2027</p>
+      <h3 id="act-year-heading">365 jours pour réaliser des premières</h3>
+      <p id="act-year-subtitle">Des ambitions audacieuses, des choix libres, des progrès réels.</p>
+    </div>
+    <button type="button" id="act-year-cta" class="act-primary">Explorer mes grandes ambitions</button>
+  </section>
 
   <nav class="act-views" aria-label="Parcourir Activities">
     <button type="button" data-act-view="challenges" aria-pressed="true" data-copy="weekTab">Cette semaine</button>
@@ -97,4 +106,4 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
   </noscript>
 </div>
 <script id="activities-data" type="application/json">{{ site.data.activities | jsonify | replace: '<', '\u003c' }}</script>
-<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=2"></script>
+<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=3"></script>
