@@ -52,7 +52,7 @@
   }
   const COPY = {
     fr: {
-      weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Trois propositions pour commencer. Un seul défi suffit.', exploreHint: 'Explore à ton rythme : fais ton choix parmi les horizons et les domaines.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
+      yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Trois propositions pour commencer. Un seul défi suffit.', exploreHint: 'Explore à ton rythme : fais ton choix parmi les horizons et les domaines.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
       eyebrow: 'ACTIVITIES · LE CARNET DES POSSIBLES', hero: 'Des défis qui donnent envie d’oser.', promise: 'Pas de points artificiels. Des expériences et des réalisations.',
       mentor: 'LE MOT DU MENTOR', load: 'Les défis réutilisent les séances de Becoming. Les grands horizons se construisent avec les petites actions.',
       challenges: 'Les défis', journal: 'Le journal', filter: 'État', search: 'Rechercher', yourturn: 'À TOI DE JOUER',
@@ -80,7 +80,7 @@
       sourceMentor: 'Proposition du mentor', sourceUser: 'Retour d’Evenson', noCompletion: 'Les décisions partagées sont conservées ici, sans résultat inventé.'
     },
     en: {
-      weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'Three ideas to start. Taking on one is plenty.', exploreHint: 'Explore at your own pace: choose a time horizon and theme.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
+      yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'Three ideas to start. Taking on one is plenty.', exploreHint: 'Explore at your own pace: choose a time horizon and theme.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
       eyebrow: 'ACTIVITIES · THE POSSIBILITY JOURNAL', hero: 'Challenges worth taking on.', promise: 'No artificial points. Real experiences and achievements.',
       mentor: 'FROM YOUR MENTOR', load: 'Challenges reuse Becoming sessions. Longer horizons grow from small actions.',
       challenges: 'Challenges', journal: 'Journal', filter: 'Status', search: 'Search', yourturn: 'YOUR TURN',
@@ -116,7 +116,7 @@
   let lang = 'fr';
   try { lang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('evenson.site.language') || document.documentElement.dataset.siteLang || 'fr'; } catch (_) {}
   if (!COPY[lang]) lang = 'fr';
-  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false;
+  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false, shownCount = 12;
   const byId = Object.fromEntries(data.challenges.map(c => [c.id, c]));
   const targets = Object.fromEntries(data.config.targets.map(t => [t.id, t]));
   const categories = Object.fromEntries((data.config.categories || []).map(c => [c.id, c]));
@@ -267,13 +267,16 @@
     root.querySelectorAll('[data-act-view]').forEach(node => node.setAttribute('aria-pressed', String(node.dataset.actView === view)));
     $('act-intro').textContent = loc(data.config.intro);
     $('act-mentor-note').textContent = loc(data.config.mentor_note);
+    $('act-year-cta').textContent = t('yearCta');
+    $('act-year-heading').textContent = loc(data.config.annual_vision.headline);
+    $('act-year-subtitle').textContent = loc(data.config.annual_vision.subtitle);
     $('act-view-hint').textContent = t(view === 'challenges' ? 'weekHint' : view === 'explore' ? 'exploreHint' : 'journalHint');
     $('act-discovery-controls').hidden = view !== 'explore';
 
     const horizons = $('act-horizons');
     horizons.replaceChildren();
     [{id: 'all', label: {fr: COPY.fr.all, en: COPY.en.all}}, ...data.config.horizons].forEach(h => {
-      const btn = button(loc(h.label), () => { horizon = h.id; render(); });
+      const btn = button(loc(h.label), () => { horizon = h.id; shownCount = 12; render(); });
       btn.setAttribute('aria-pressed', String(horizon === h.id));
       horizons.append(btn);
     });
@@ -305,8 +308,9 @@
 
     if (view === 'challenges') {
       const weeks = data.challenges.filter(c => c.horizon === 'week');
-      const newest = weeks.reduce((date, c) => c.period_start > date ? c.period_start : date, '');
-      const selection = weeks.filter(c => c.period_start === newest);
+      const eligible = weeks.filter(c => c.period_start <= today());
+      const latest = (eligible.length ? eligible : weeks).reduce((date, c) => c.period_start > date ? c.period_start : date, '');
+      const selection = weeks.filter(c => c.period_start === latest);
       selection.forEach(c => cards.append(renderCard(c)));
       if (!selection.length) cards.append(el('p', 'act-empty', t('empty')));
       $('act-results-count').textContent = selection.length + ' ' + t('results');
@@ -314,9 +318,10 @@
       const rank = {week: 0, month: 1, quarter: 2, season: 3, halfyear: 4, year: 5};
       const selected = visibleChallenges(data, horizon, status, query, lang, category).sort((a, b) =>
         rank[a.horizon] - rank[b.horizon] || a.due.localeCompare(b.due));
-      selected.forEach(c => cards.append(renderCard(c)));
+      selected.slice(0, shownCount).forEach(c => cards.append(renderCard(c)));
+      if (selected.length > shownCount) cards.append(button(t('moreChallenges'), () => { shownCount += 12; render(); }, 'act-load-more'));
       if (!selected.length) cards.append(el('p', 'act-empty', t('empty')));
-      $('act-results-count').textContent = selected.length + ' ' + t('results');
+      $('act-results-count').textContent = Math.min(selected.length, shownCount) + ' / ' + selected.length + ' ' + t('results');
     } else {
       journal.append(el('p', 'act-cadence', t('noCompletion')));
       const history = (showAllHistory ? data.events : data.events.filter(e => e.source === 'user')).slice().reverse();
@@ -347,9 +352,14 @@
     updateReport();
     if (!storageOK) notice(t('storageError'));
   }
-  $('act-status-filter').addEventListener('change', event => { status = event.target.value; render(); });
-  $('act-category-filter').addEventListener('change', event => { category = event.target.value; render(); });
-  $('act-search').addEventListener('input', event => { query = event.target.value; render(); });
+  $('act-year-cta').addEventListener('click', () => {
+    view = 'explore'; horizon = 'year'; category = 'all'; status = 'all'; query = ''; shownCount = 12;
+    $('act-search').value = ''; render();
+    $('act-discovery-controls').scrollIntoView({block: 'start', behavior: 'smooth'});
+  });
+  $('act-status-filter').addEventListener('change', event => { status = event.target.value; shownCount = 12; render(); });
+  $('act-category-filter').addEventListener('change', event => { category = event.target.value; shownCount = 12; render(); });
+  $('act-search').addEventListener('input', event => { query = event.target.value; shownCount = 12; render(); });
   root.querySelectorAll('[data-act-view]').forEach(node => node.addEventListener('click', () => { view = node.dataset.actView; render(); }));
   root.querySelectorAll('[data-act-lang]').forEach(node => node.addEventListener('click', () => {
     lang = node.dataset.actLang;
