@@ -19,11 +19,12 @@
     });
     return result;
   }
-  function visibleChallenges(data, horizon, status, query, lang) {
+  function visibleChallenges(data, horizon, status, query, lang, category = 'all') {
     const term = query.trim().toLocaleLowerCase();
     return data.challenges.filter(challenge => {
       const current = statusOf(challenge.id, data.events);
       return (horizon === 'all' || challenge.horizon === horizon) &&
+        (category === 'all' || challenge.category === category) &&
         (status === 'all' || (status === 'open' ? !CLOSED.has(current) : current === status)) &&
         (!term || [challenge.id, challenge.title[lang], challenge.action[lang]].join(' ').toLocaleLowerCase().includes(term));
     });
@@ -51,12 +52,13 @@
   }
   const COPY = {
     fr: {
-      eyebrow: 'LE CARNET DES POSSIBLES', hero: 'De l’intention à l’expérience.', promise: 'Je propose. Tu choisis. On garde la trace.',
-      mentor: 'LE POINT DE DÉPART', load: 'Les défis réutilisent les séances de Becoming. Les grands horizons se construisent avec les petites actions.',
+      weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Trois propositions pour commencer. Un seul défi suffit.', exploreHint: 'Explore à ton rythme : fais ton choix parmi les horizons et les domaines.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
+      eyebrow: 'ACTIVITIES · LE CARNET DES POSSIBLES', hero: 'Des défis qui donnent envie d’oser.', promise: 'Pas de points artificiels. Des expériences et des réalisations.',
+      mentor: 'LE MOT DU MENTOR', load: 'Les défis réutilisent les séances de Becoming. Les grands horizons se construisent avec les petites actions.',
       challenges: 'Les défis', journal: 'Le journal', filter: 'État', search: 'Rechercher', yourturn: 'À TOI DE JOUER',
-      reportTitle: 'Ton prochain retour', reportHelp: 'Choisis « Répondre » sur un défi, ou dis-moi directement ici ce que tu acceptes, refuses, reportes ou réalises.',
-      localHint: 'Les réponses saisies ici restent sur cet appareil. Copie ton bilan dans notre conversation pour que je mette à jour l’historique partagé. Évite les détails personnels que tu ne souhaites pas publier.',
-      reportLabel: 'Bilan à transmettre', copy: 'Copier mon bilan', methodTitle: 'Comment les défis évoluent',
+      reportTitle: 'Ton retour', reportHelp: 'Clique sur « Je le tente » puis copie ton bilan pour me l’envoyer dans notre conversation.',
+      localHint: 'Tes choix restent des brouillons sur cet appareil : rien n’est envoyé ou publié automatiquement.',
+      reportLabel: 'Bilan à transmettre', copy: 'Copier le bilan', methodTitle: 'Comment ça marche ?',
       rule1: 'Chaque semaine : jusqu’à trois propositions, ajustées à ta disponibilité et à tes retours.',
       rule2: 'Deux défis mensuels et un par grand horizon. Une action peut faire avancer plusieurs objectifs ; elle n’est pas comptée plusieurs fois comme travail supplémentaire.',
       rule3: 'Tu décides. Un refus ou un report reste une décision utile. Une échéance dépassée appelle un bilan, jamais un échec automatique.',
@@ -65,10 +67,10 @@
       proposed: 'Proposé', accepted: 'Accepté', in_progress: 'En cours', completed: 'Réalisé', declined: 'Refusé', deferred: 'Reporté', stopped: 'Arrêté',
       easy: 'Accessible', focused: 'Approfondissement', stretch: 'Sortie de confort', ambitious: 'Ambitieux',
       proposedCount: 'propositions ouvertes', activeCount: 'défis engagés', doneCount: 'réalisations racontées',
-      allCadence: '3 / semaine · 2 / mois · 1 / trimestre, saison, semestre et année. Des propositions, pas des obligations.',
-      results: 'défi(s)', entries: 'entrée(s)', due: 'Cible', review: 'À revoir ensemble', criterion: 'Le repère concret', details: 'Pourquoi, variantes et liens',
+      allCadence: 'Des défis sur plusieurs horizons. Aucun n’est obligatoire : choisis ce qui te motive.',
+      results: 'défi(s)', entries: 'entrée(s)', due: 'Cible', review: 'À revoir ensemble', criterion: 'Le défi est réussi si…', details: 'Variantes et détails',
       why: 'Ce que cela construit', minimum: 'Version courte', stretchLabel: 'Pour aller plus loin', toward: 'Un pas vers',
-      parent: 'Fait avancer', reply: 'Répondre', decision: 'Ta décision', choose: 'Choisir…', noteLabel: 'Ton retour (facultatif)',
+      parent: 'Fait avancer', reply: 'Faire un bilan', decision: 'Ta décision', choose: 'Choisir…', noteLabel: 'Ton retour (facultatif)',
       notePlaceholder: 'Ce que tu as fait, découvert ou décidé. Tu peux aussi proposer une autre date.', clear: 'Effacer ce brouillon',
       draft: 'Brouillon local · à transmettre', empty: 'Aucun défi pour ces filtres. Essaie un autre horizon ou affiche tous les états.',
       noHistory: 'Aucune entrée pour ces filtres.', noReport: 'Tes réponses apparaîtront ici. Tu peux aussi me répondre directement dans la conversation.',
@@ -78,12 +80,13 @@
       sourceMentor: 'Proposition du mentor', sourceUser: 'Retour d’Evenson', noCompletion: 'Les décisions partagées sont conservées ici, sans résultat inventé.'
     },
     en: {
-      eyebrow: 'A NOTEBOOK OF POSSIBILITIES', hero: 'From intention to experience.', promise: 'I propose. You choose. We keep the story.',
-      mentor: 'THE STARTING POINT', load: 'Challenges reuse Becoming sessions. Longer horizons grow from small actions.',
+      weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'Three ideas to start. Taking on one is plenty.', exploreHint: 'Explore at your own pace: choose a time horizon and theme.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
+      eyebrow: 'ACTIVITIES · THE POSSIBILITY JOURNAL', hero: 'Challenges worth taking on.', promise: 'No artificial points. Real experiences and achievements.',
+      mentor: 'FROM YOUR MENTOR', load: 'Challenges reuse Becoming sessions. Longer horizons grow from small actions.',
       challenges: 'Challenges', journal: 'Journal', filter: 'Status', search: 'Search', yourturn: 'YOUR TURN',
-      reportTitle: 'Your next check-in', reportHelp: 'Choose “Reply” on a challenge, or tell me in our conversation what you accept, decline, defer or complete.',
-      localHint: 'Responses entered here stay on this device. Copy your check-in into our conversation so I can update the shared history. Leave out personal details you do not want published.',
-      reportLabel: 'Check-in to share', copy: 'Copy my check-in', methodTitle: 'How challenges evolve',
+      reportTitle: 'Your check-in', reportHelp: 'Choose “I’ll try it”, then copy your check-in into our conversation.',
+      localHint: 'Choices remain drafts on this device: nothing is sent or published automatically.',
+      reportLabel: 'Check-in to share', copy: 'Copy check-in', methodTitle: 'How it works',
       rule1: 'Each week: up to three proposals, adapted to your availability and feedback.',
       rule2: 'Two monthly challenges and one per longer horizon. One action may advance several goals; it is not counted repeatedly as extra work.',
       rule3: 'You decide. Declining or deferring is a useful decision. A passed date calls for a review, never an automatic failure.',
@@ -92,10 +95,10 @@
       proposed: 'Proposed', accepted: 'Accepted', in_progress: 'In progress', completed: 'Completed', declined: 'Declined', deferred: 'Deferred', stopped: 'Stopped',
       easy: 'Accessible', focused: 'Focused work', stretch: 'Outside your comfort zone', ambitious: 'Ambitious',
       proposedCount: 'open proposals', activeCount: 'engaged challenges', doneCount: 'reported completions',
-      allCadence: '3 / week · 2 / month · 1 / quarter, season, half-year and year. Proposals, not obligations.',
-      results: 'challenge(s)', entries: 'entry/entries', due: 'Target', review: 'Review together', criterion: 'The concrete milestone', details: 'Purpose, alternatives and links',
+      allCadence: 'Challenges across several horizons. None are mandatory: choose what motivates you.',
+      results: 'challenge(s)', entries: 'entry/entries', due: 'Target', review: 'Review together', criterion: 'Success means…', details: 'Options and details',
       why: 'What this builds', minimum: 'Short version', stretchLabel: 'Go further', toward: 'A step toward',
-      parent: 'Helps advance', reply: 'Reply', decision: 'Your decision', choose: 'Choose…', noteLabel: 'Your reflection (optional)',
+      parent: 'Helps advance', reply: 'Add a check-in', decision: 'Your decision', choose: 'Choose…', noteLabel: 'Your reflection (optional)',
       notePlaceholder: 'What you did, discovered or decided. You can also suggest a different date.', clear: 'Clear this draft',
       draft: 'Local draft · ready to share', empty: 'No challenges match these filters. Try another horizon or display all statuses.',
       noHistory: 'No entries match these filters.', noReport: 'Your responses will appear here. You can also reply directly in our conversation.',
@@ -113,9 +116,11 @@
   let lang = 'fr';
   try { lang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('evenson.site.language') || document.documentElement.dataset.siteLang || 'fr'; } catch (_) {}
   if (!COPY[lang]) lang = 'fr';
-  let horizon = 'week', status = 'all', query = '', view = 'challenges';
+  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false;
   const byId = Object.fromEntries(data.challenges.map(c => [c.id, c]));
   const targets = Object.fromEntries(data.config.targets.map(t => [t.id, t]));
+  const categories = Object.fromEntries((data.config.categories || []).map(c => [c.id, c]));
+  const horizonLabels = Object.fromEntries(data.config.horizons.map(h => [h.id, h]));
   const $ = id => document.getElementById(id);
   const t = key => COPY[lang][key] || key;
   const loc = value => value[lang] || value.fr;
