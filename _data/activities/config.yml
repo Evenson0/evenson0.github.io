@@ -11,17 +11,17 @@ annual_vision:
   headline: {fr: "365 jours pour devenir quelqu'un que tu n'as jamais été", en: "365 days to do what you have never done"}
   subtitle: {fr: "Des ambitions audacieuses, des choix libres, des progrès réels.", en: "Bold ambitions, free choices, real progress."}
 mentor_note:
-  fr: "365 jours pour accomplir des premières : sport, livres, anglais, actuariat, montagne, recherche et création. Choisis deux ou trois grandes ambitions pour l'année, puis une action concrète cette semaine. Le courage se mesure au chemin réellement parcouru."
-  en: "365 days to achieve new firsts: endurance, books, English, exams, mountains, research and building. Choose two or three major ambitions for the year, then one concrete action this week. Courage lives in the journey you actually take."
+  fr: "Mode audace : chaque semaine, ose une mission qui t'intimide et construis quelque chose dont tu seras fier. Choisis librement parmi les propositions : la vraie puissance est de tenir tes engagements, de préserver ton énergie et de recommencer avec intelligence."
+  en: "Courage mode: every week, dare a mission that intimidates you and build something worth remembering. Choose freely from the proposals: real strength comes from honoring commitments, protecting energy, and starting again wisely."
 horizons:
 - id: week
   label:
     fr: Semaine
     en: Week
-  quota: 6
+  quota: 14
   cadence:
-    fr: 6 possibilités · n'en choisir qu'une suffit
-    en: 6 ideas · choosing one is plenty
+    fr: 12 possibilités ou plus · une seule vraie victoire compte
+    en: 12 or more choices · one meaningful win counts
 - id: month
   label:
     fr: Mois
