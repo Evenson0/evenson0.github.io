@@ -29,7 +29,8 @@
     en: "Run 1 km continuously if comfortable, without pushing through pain."
   targets:
   - fitness-goal
-  parents: &id001 []
+  parents:
+  - ACT-202611-M3
 - id: ACT-202611-W2
   horizon: week
   category: speaking
@@ -62,7 +63,7 @@
   targets:
   - talk
   parents:
-  - ACT-202611-Q1
+  - ACT-202611-Q3
 - id: ACT-202611-W3
   horizon: week
   category: writing
@@ -95,8 +96,7 @@
   targets:
   - writing
   - books
-  parents:
-  - ACT-202611-M2
+  parents: []
 - id: ACT-202611-M1
   horizon: month
   category: build
@@ -163,7 +163,8 @@
   targets:
   - audience
   - builder
-  parents: *id001
+  parents:
+  - ACT-202611-M4
 - id: ACT-202611-Q1
   horizon: quarter
   category: math
@@ -196,7 +197,8 @@
   targets:
   - acas
   - builder
-  parents: *id001
+  parents:
+  - ACT-202611-H1
 - id: ACT-202611-S1
   horizon: season
   category: outdoors
@@ -229,7 +231,7 @@
   targets:
   - explore
   - fitness-goal
-  parents: *id001
+  parents: []
 - id: ACT-202611-H1
   horizon: halfyear
   category: build
@@ -295,7 +297,7 @@
     en: "Present results to a group and prepare an appropriate scientific submission."
   targets:
   - research
-  parents: *id001
+  parents: []
 - id: ACT-202611-M3
   horizon: month
   category: fitness
