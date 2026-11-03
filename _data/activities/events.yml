@@ -142,3 +142,115 @@
   note:
     fr: "Proposition révisée à la demande d'Evenson pour une ambition plus forte, sans prétendre qu'elle a été acceptée ou réalisée."
     en: "Proposal revised at Evenson's request for greater ambition; no acceptance or completion is implied."
+- id: revision-diversite-ACT-202611-W1
+  challenge: ACT-202611-W1
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: revision-diversite-ACT-202611-W2
+  challenge: ACT-202611-W2
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: revision-diversite-ACT-202611-W3
+  challenge: ACT-202611-W3
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: revision-diversite-ACT-202611-M1
+  challenge: ACT-202611-M1
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: revision-diversite-ACT-202611-M2
+  challenge: ACT-202611-M2
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: revision-diversite-ACT-202611-Q1
+  challenge: ACT-202611-Q1
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: revision-diversite-ACT-202611-S1
+  challenge: ACT-202611-S1
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: revision-diversite-ACT-202611-H1
+  challenge: ACT-202611-H1
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: revision-diversite-ACT-202611-Y1
+  challenge: ACT-202611-Y1
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Défi réorienté à la demande d'Evenson : objectifs variés, concrets et réalisables sur un horizon adapté. Aucune décision ni réalisation présumée."
+    en: "Challenge diversified at Evenson's request with concrete goals and suitable time horizons. No decision or completion is implied."
+- id: proposal-ACT-202611-M3
+  challenge: ACT-202611-M3
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle proposition parmi les défis à explorer ; aucun engagement automatique."
+    en: "New proposal among the challenges to explore; no automatic commitment."
+- id: proposal-ACT-202611-M4
+  challenge: ACT-202611-M4
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle proposition parmi les défis à explorer ; aucun engagement automatique."
+    en: "New proposal among the challenges to explore; no automatic commitment."
+- id: proposal-ACT-202611-Q2
+  challenge: ACT-202611-Q2
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle proposition parmi les défis à explorer ; aucun engagement automatique."
+    en: "New proposal among the challenges to explore; no automatic commitment."
+- id: proposal-ACT-202611-Q3
+  challenge: ACT-202611-Q3
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle proposition parmi les défis à explorer ; aucun engagement automatique."
+    en: "New proposal among the challenges to explore; no automatic commitment."
+- id: proposal-ACT-202611-H2
+  challenge: ACT-202611-H2
+  date: '2026-11-03'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle proposition parmi les défis à explorer ; aucun engagement automatique."
+    en: "New proposal among the challenges to explore; no automatic commitment."
