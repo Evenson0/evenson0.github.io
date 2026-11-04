@@ -1,60 +1,60 @@
 {
-  "updated_at": "2026-11-03T19:31:00.820488+00:00",
+  "updated_at": "2026-11-04T00:13:02.949176+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7573.8901,
-        "change_pct": 0.431,
+        "price": 7568.9199,
+        "change_pct": 0.365,
         "low_52w": 6343.7202,
         "high_52w": 7818.9302
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 25383.5918,
-        "change_pct": 0.871,
+        "price": 25372.0098,
+        "change_pct": 0.825,
         "low_52w": 20794.6406,
         "high_52w": 27599.7891
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 51827.1914,
-        "change_pct": -0.302,
+        "price": 51786.7188,
+        "change_pct": -0.379,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 35561.2383,
-        "change_pct": -0.67,
+        "price": 35532.2812,
+        "change_pct": -0.751,
         "low_52w": 29777.8008,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 53.57,
-        "change_pct": -0.925,
+        "price": 53.47,
+        "change_pct": -1.11,
         "low_52w": 44.51,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2824.5454,
-        "change_pct": 0.665,
+        "price": 2812.4473,
+        "change_pct": 0.234,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10638.4297,
-        "change_pct": -1.142,
+        "price": 10761.2998,
+        "change_pct": 0.294,
         "low_52w": 9507.4004,
         "high_52w": 10910.5996
       },
@@ -71,8 +71,8 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 332.16,
-        "change_pct": -1.821,
+        "price": 331.9,
+        "change_pct": -1.898,
         "low_52w": 246.63,
         "high_52w": 348.91
       },
@@ -95,32 +95,32 @@
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 251.405,
-        "change_pct": 2.351,
+        "price": 250.69,
+        "change_pct": 2.06,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 284.74,
-        "change_pct": -0.514,
+        "price": 285.42,
+        "change_pct": -0.276,
         "low_52w": 204.01,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 203.18,
-        "change_pct": -6.644,
+        "price": 200.19,
+        "change_pct": -8.018,
         "low_52w": 130.71,
         "high_52w": 252.53
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 177.05,
-        "change_pct": -0.169,
+        "price": 176.95,
+        "change_pct": -0.226,
         "low_52w": 128.08,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 4.028,
-        "change_pct": 1.155,
+        "price": 4.025,
+        "change_pct": 1.08,
         "low_52w": 3.507,
         "high_52w": 4.088
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.741,
-        "change_pct": 1.023,
+        "price": 4.743,
+        "change_pct": 1.065,
         "low_52w": 3.512,
         "high_52w": 5.089
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.946,
-        "change_pct": 1.063,
+        "price": 4.952,
+        "change_pct": 1.185,
         "low_52w": 3.962,
         "high_52w": 5.311
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.318,
-        "change_pct": 0.93,
+        "price": 5.324,
+        "change_pct": 1.044,
         "low_52w": 4.633,
         "high_52w": 5.665
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4001,
-        "change_pct": 0.216,
+        "price": 1.4004,
+        "change_pct": 0.15,
         "low_52w": 1.3492,
         "high_52w": 1.428
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1196,
-        "change_pct": 0.348,
+        "price": 1.1204,
+        "change_pct": 0.111,
         "low_52w": 1.113,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3419,
-        "change_pct": 0.248,
+        "price": 1.3429,
+        "change_pct": 0.14,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.762,
-        "change_pct": 0.688,
+        "price": 158.548,
+        "change_pct": 0.401,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 3934.2,
-        "change_pct": -0.892,
+        "price": 3945.6001,
+        "change_pct": -0.605,
         "low_52w": 3898.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 95.95,
-        "change_pct": -0.529,
+        "price": 96.59,
+        "change_pct": 0.135,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.897,
-        "change_pct": 1.436,
+        "price": 2.895,
+        "change_pct": 1.366,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.389,
-        "change_pct": -2.361,
+        "price": 6.41,
+        "change_pct": -2.04,
         "low_52w": 4.926,
         "high_52w": 6.8035
       }
@@ -231,103 +231,103 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 4.028
+      "value": 4.025
     },
     {
       "term": "5Y",
-      "value": 4.741
+      "value": 4.743
     },
     {
       "term": "10Y",
-      "value": 4.946
+      "value": 4.952
     },
     {
       "term": "30Y",
-      "value": 5.318
+      "value": 5.324
     }
   ],
   "news": [
     {
-      "title": "Rocket Lab Stock Rises on Record Electron Launch Deal and Citi Buy Rating",
-      "link": "https://www.barrons.com/articles/rocket-lab-stock-electron-launch-deal-4cf55182?siteid=yhoof2&yptr=yahoo",
+      "title": "S&P 500, Nasdaq Recover From AI Rout On US Midterm Election Day —  META, AAPL, AMD, SKHY In Focus",
+      "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-recover-from-ai-rout-on-us-midterm-election-day-meta-aapl-amd-skhy-in-focus/cNGXlSbR9dS",
+      "publisher": "Stocktwits",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Futures Rise as First Polls Close",
+      "link": "https://www.barrons.com/livecoverage/election-results-midterms-2026/card/stock-futures-rise-as-first-polls-close-CHzutsBrQeqBLyQuwrUv?siteid=yhoof2&yptr=yahoo",
       "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Corteva Stock Isn’t Really Down 80%",
-      "link": "https://www.barrons.com/articles/corteva-stock-price-vylor-spinoff-81e019e7?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Stock Market Today, Nov. 3: Markets Edge Higher as Semiconductor Stocks Rebound",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/11/03/stock-market-today-nov-3-markets-edge-higher-as-semiconductor-stocks-rebound/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Fund Winners and Losers: Bitcoin Battered Bonds in the Third Quarter",
-      "link": "https://www.barrons.com/articles/funds-bitcoin-bonds-885b2ca0?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Stock Market Today, Nov. 3: Marvell Shares Edge Higher After Premarket Drop on $115 Billion Lumentum Deal",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/11/03/stock-market-today-nov-3-marvell-shares-edge-higher-after-premarket-drop-on-usd115-billion-lumentum-deal/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Why Micron’s Dazzling Earnings Report Is Barely Moving the Stock",
-      "link": "https://www.barrons.com/articles/micron-earnings-stock-price-6c25895f?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Investors ready for possible shake-up in Congress as US awaits election results",
+      "link": "https://finance.yahoo.com/news/investors-ready-possible-shake-congress-100659339.html",
+      "publisher": "Reuters",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "The Chinese Car Market Is Still a Mess",
-      "link": "https://www.barrons.com/articles/byd-deliveries-china-ev-market-nio-li-xpeng-9a315bf5?siteid=yhoof2&yptr=yahoo",
-      "publisher": "Barrons.com",
+      "title": "Stock Market Today, Nov. 3: Grab Holdings Jumps 9% on Q3 Revenue Beat and Raised 2026 Outlook",
+      "link": "https://www.fool.com/coverage/stock-market-today/2026/11/03/stock-market-today-nov-3-grab-holdings-jumps-9-on-q3-revenue-beat-and-raised-2026-outlook/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Where to invest for Q4 2026",
-      "link": "https://moneyweek.com/investments/where-to-invest",
-      "publisher": "Moneyweek",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX falls as month-end selling and global rate worries weigh",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-tick-higher-ahead-114612701.html",
-      "publisher": "Investing.com",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Edges Lower as the Telecom and Energy Sectors Weaken",
-      "link": "https://finance.yahoo.com/economy/articles/tsx-closer-index-edges-lower-202811915.html",
+      "title": "TSX Closer: The Index Drops Nearly 250 Points as Technology, Base Metals and Financial Stocks Drag",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-drops-nearly-212213985.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
     },
     {
-      "title": "TSX futures nearly flat after GDP data showed Canada’s growth stalled in July",
-      "link": "https://finance.yahoo.com/economy/articles/tsx-futures-edge-higher-ahead-115013427.html",
+      "title": "TSX futures drop amid rise in oil prices; U.S. midterm elections ahead",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-drop-amid-rise-131011513.html",
       "publisher": "Investing.com",
       "related": "^GSPTSE",
       "time": "Latest"
     },
     {
-      "title": "TSX Closer: Index Falls as Telecom And Base Metals Weigh; Oil Edges Higher",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-falls-telecom-202430195.html",
+      "title": "TSX Closer: Index Gains on Industrials And Telecom Strength Despite Steep Drop in Energy",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-gains-industrials-212457717.html",
       "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
     },
     {
-      "title": "TSX Closer: Index Edges Higher as Financials, Base Metals Gain",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-edges-higher-202340164.html",
-      "publisher": "MT Newswires",
+      "title": "TELUS Corporation (TU) Slashes Dividend by 55% as Shares Slide, Bristol Gate Notes",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/telus-corporation-tu-slashes-dividend-195748944.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPTSE",
       "time": "Latest"
     },
     {
-      "title": "TSX slips as investors remain cautious after sharp weekly selloff",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-slips-investors-remain-cautious-143808974.html",
-      "publisher": "Investing.com",
+      "title": "Shopify Inc. (SHOP) Surges 30% as Revenue Climbs 34%, Bristol Gate Highlights Market Concentration",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/shopify-inc-shop-surges-30-195730667.html",
+      "publisher": "Insider Monkey",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "Why Bristol Gate Canadian Equity Strategy Bought OR Royalties Inc. (OR) After Gold’s Pullback",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/why-bristol-gate-canadian-equity-195641938.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPTSE",
       "time": "Latest"
     }
