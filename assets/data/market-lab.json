@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-11-04T19:49:29.006149+00:00",
+  "updated_at": "2026-11-05T00:55:20.121326+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7702.9502,
-        "change_pct": 1.771,
+        "price": 7688.6201,
+        "change_pct": 1.581,
         "low_52w": 6343.7202,
         "high_52w": 7818.9302
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 25835.6191,
-        "change_pct": 1.827,
+        "price": 25736.5137,
+        "change_pct": 1.437,
         "low_52w": 20794.6406,
         "high_52w": 27599.7891
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 53348.9492,
-        "change_pct": 3.017,
+        "price": 53356.1211,
+        "change_pct": 3.031,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36319.1719,
-        "change_pct": 2.215,
+        "price": 36341.3984,
+        "change_pct": 2.277,
         "low_52w": 29777.8008,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.72,
-        "change_pct": 2.338,
+        "price": 54.77,
+        "change_pct": 2.431,
         "low_52w": 44.51,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2854.6047,
-        "change_pct": 1.499,
+        "price": 2856.9497,
+        "change_pct": 1.582,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10829.21,
-        "change_pct": 1.794,
+        "price": 10638.4004,
+        "change_pct": -1.142,
         "low_52w": 9507.4004,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 63081.8594,
-        "change_pct": -0.329,
+        "price": 62311.25,
+        "change_pct": -1.222,
         "low_52w": 48537.6992,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 352.82,
-        "change_pct": 6.303,
+        "price": 349.51,
+        "change_pct": 5.306,
         "low_52w": 246.63,
-        "high_52w": 352.82
+        "high_52w": 349.51
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 557.51,
-        "change_pct": 7.01,
+        "price": 555.8,
+        "change_pct": 6.682,
         "low_52w": 352.83,
-        "high_52w": 557.51
+        "high_52w": 555.8
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 203.44,
-        "change_pct": -1.572,
+        "price": 200.13,
+        "change_pct": -3.174,
         "low_52w": 165.17,
         "high_52w": 239.24
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 268.5,
-        "change_pct": 7.104,
+        "price": 266.03,
+        "change_pct": 6.119,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 292.49,
-        "change_pct": 2.477,
+        "price": 292.57,
+        "change_pct": 2.505,
         "low_52w": 204.01,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 212.13,
-        "change_pct": 5.964,
+        "price": 212.71,
+        "change_pct": 6.254,
         "low_52w": 130.71,
         "high_52w": 252.53
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 179.34,
-        "change_pct": 1.351,
+        "price": 180.44,
+        "change_pct": 1.972,
         "low_52w": 128.08,
         "high_52w": 183.92
       }
@@ -137,24 +137,24 @@
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.686,
-        "change_pct": -1.202,
+        "price": 4.689,
+        "change_pct": -1.139,
         "low_52w": 3.512,
         "high_52w": 5.089
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.89,
-        "change_pct": -1.252,
+        "price": 4.894,
+        "change_pct": -1.171,
         "low_52w": 3.962,
         "high_52w": 5.311
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.28,
-        "change_pct": -0.826,
+        "price": 5.282,
+        "change_pct": -0.789,
         "low_52w": 4.633,
         "high_52w": 5.665
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.3971,
-        "change_pct": -0.084,
+        "price": 1.3958,
+        "change_pct": -0.335,
         "low_52w": 1.3492,
         "high_52w": 1.428
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1223,
-        "change_pct": 0.279,
+        "price": 1.125,
+        "change_pct": 0.38,
         "low_52w": 1.113,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3466,
-        "change_pct": 0.421,
+        "price": 1.3487,
+        "change_pct": 0.392,
         "low_52w": 1.3022,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.488,
-        "change_pct": 0.363,
+        "price": 158.147,
+        "change_pct": -0.203,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 4070.3999,
-        "change_pct": 3.299,
+        "price": 4101.7998,
+        "change_pct": 4.096,
         "low_52w": 3898.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 88.42,
-        "change_pct": -7.982,
+        "price": 87.93,
+        "change_pct": -8.492,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 2.956,
-        "change_pct": 2.107,
+        "price": 2.943,
+        "change_pct": 1.658,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.4195,
-        "change_pct": 0.643,
+        "price": 6.4215,
+        "change_pct": 0.674,
         "low_52w": 4.926,
         "high_52w": 6.8035
       }
@@ -235,18 +235,25 @@
     },
     {
       "term": "5Y",
-      "value": 4.686
+      "value": 4.689
     },
     {
       "term": "10Y",
-      "value": 4.89
+      "value": 4.894
     },
     {
       "term": "30Y",
-      "value": 5.28
+      "value": 5.282
     }
   ],
   "news": [
+    {
+      "title": "Blue wave sparks Wall Street rally after midterms",
+      "link": "https://finance.yahoo.com/video/blue-wave-sparks-wall-street-rally-after-midterms-212358122.html",
+      "publisher": "Yahoo Finance Video",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
     {
       "title": "Stocks shrugged off the blue wave overnight — history says don't trust the bounce yet",
       "link": "https://finance.yahoo.com/markets/article/stocks-shrugged-off-the-blue-wave-overnight--history-says-dont-trust-the-bounce-yet-153846605.html",
@@ -262,31 +269,31 @@
       "time": "Latest"
     },
     {
-      "title": "Stock market today: Dow rallies 1,500 points, S&P 500 and Nasdaq gain after Democrats win control of Congress",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-earnings-140752043.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Market Expert Sees These Reasons For Optimism After Midterms",
-      "link": "https://www.investors.com/news/midterm-election-stock-market-trump/?src=A00220&yptr=yahoo",
+      "title": "Dow Jones Futures Rise After Apple, Microsoft, Amazon Flash Buy Signals In Postelection Rally. CoreWeave, SpaceX Skid.",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-elections-oil-apple-microsoft-amazon-buy-signals-coreweave-spacex-skid/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Micron Sinks 6% as Democratic Sweep Stokes Fears of an AI “Slowdown in Build”",
-      "link": "https://www.tikr.com/blog/micron-sinks-6-as-democratic-sweep-stokes-fears-of-an-ai-slowdown-in-build?ref=yahoofinance&tlnk=yf-261104-99f4g74r",
-      "publisher": "TIKR",
+      "title": "What Is Going On With Zoom Stock?",
+      "link": "https://www.trefis.com/stock/zm/articles/622277/what-is-going-on-with-zoom-stock/2026-11-04",
+      "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "If You Invested $1,000 in Uber at Its IPO, Here’s What You’d Have Now",
-      "link": "https://247wallst.com/investing/2026/11/04/if-you-invested-1000-in-uber-at-its-ipo-heres-what-youd-have-now/",
-      "publisher": "24/7 Wall St.",
+      "title": "If You'd Invested $5,000 in VOO 15 Years Ago, Here's What You'd Have Today",
+      "link": "https://www.fool.com/investing/2026/11/04/if-youd-invested-5000-in-voo-15-years-ago-heres-wh/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: The Index Jumps More Than 800 Points as Telecom and Financial Stocks Rally",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-jumps-more-211427951.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "TSX futures drop amid rise in oil prices; U.S. midterm elections ahead",
       "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-drop-amid-rise-131011513.html",
       "publisher": "Investing.com",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Gains on Industrials And Telecom Strength Despite Steep Drop in Energy",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-gains-industrials-212457717.html",
-      "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
     }
