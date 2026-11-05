@@ -58,6 +58,7 @@
   }
   const COPY = {
     fr: {
+      catalogChallenges: 'défis', catalogHorizons: 'horizons', catalogDomains: 'domaines', catalogSources: 'inspirations',
       inspirationTitle: 'Ils ont osé avant toi : les inspirations', inspirationIntro: 'Des parcours vérifiables pour inventer tes propres défis, sans chercher à copier une vie entière.',
       axisMind: 'Esprit', axisBody: 'Corps', axisCourage: 'Courage', axisCreation: 'Création',
       yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', showWeekAll: 'Voir toutes les missions de la semaine', showWeekLess: 'Réduire la sélection', weeklyFocus: 'Missions de la semaine', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Un vaste choix pour exercer ton courage, ton esprit et ta créativité. Choisis une ou deux missions, pas toute la liste.', exploreHint: 'Explore à ton rythme : fais ton choix parmi les horizons et les domaines.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
@@ -88,6 +89,7 @@
       sourceMentor: 'Proposition du mentor', sourceUser: 'Retour d’Evenson', noCompletion: 'Les décisions partagées sont conservées ici, sans résultat inventé.'
     },
     en: {
+      catalogChallenges: 'challenges', catalogHorizons: 'horizons', catalogDomains: 'domains', catalogSources: 'inspirations',
       inspirationTitle: 'They dared: sources of inspiration', inspirationIntro: 'Verifiable journeys that inspire your own challenges, without trying to copy an entire life.',
       axisMind: 'Mind', axisBody: 'Body', axisCourage: 'Courage', axisCreation: 'Creation',
       yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', showWeekAll: 'Show all weekly missions', showWeekLess: 'Show fewer missions', weeklyFocus: 'This week’s missions', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'A rich menu for courage, learning and creation. Choose one or two missions, not all of them.', exploreHint: 'Explore at your own pace: choose a time horizon and theme.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
@@ -290,6 +292,12 @@
     $('act-year-cta').textContent = t('yearCta');
     $('act-year-heading').textContent = loc(data.config.annual_vision.headline);
     $('act-year-subtitle').textContent = loc(data.config.annual_vision.subtitle);
+    $('act-stats').textContent = [
+      data.challenges.length + ' ' + t('catalogChallenges'),
+      data.config.horizons.length + ' ' + t('catalogHorizons'),
+      (data.config.categories || []).length + ' ' + t('catalogDomains'),
+      (data.inspirations || []).length + ' ' + t('catalogSources')
+    ].join(' · ');
     const inspirationList = $('act-inspiration-list');
     if (inspirationList) {
       inspirationList.replaceChildren();
