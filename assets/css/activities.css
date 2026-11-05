@@ -205,3 +205,5 @@ html[data-theme="dark"] .activities-app { --act-accent: #81debf; }
 @media (max-width:720px) {
   .act-inspiration-grid { grid-template-columns: 1fr; }
 }
+
+.act-annual-vision .act-stats { margin: .55rem 0 0; color: var(--act-accent); font: 600 .72rem/1.6 Monaco, Consolas, monospace; }
