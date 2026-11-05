@@ -97,8 +97,8 @@
       reportTitle: 'Your check-in', reportHelp: 'Choose “I’ll try it”, then copy your check-in into our conversation.',
       localHint: 'Choices remain drafts on this device: nothing is sent or published automatically.',
       reportLabel: 'Check-in to share', copy: 'Copy check-in', methodTitle: 'How it works',
-      rule1: 'Each week: up to three proposals, adapted to your availability and feedback.',
-      rule2: 'Two monthly challenges and one per longer horizon. One action may advance several goals; it is not counted repeatedly as extra work.',
+      rule1: 'The catalog offers many choices. Take on one major mission and optionally one complementary mission.',
+      rule2: 'Weekly missions build toward bigger goals; the same effort is never counted twice.',
       rule3: 'You decide. Declining or deferring is a useful decision. A passed date calls for a review, never an automatic failure.',
       rule4: 'The history keeps proposals, decisions and lessons. Your account is enough; public evidence is never required.',
       listLink: 'List 100 ↗', memoriesLink: 'Memories ↗', all: 'All horizons', allStates: 'All statuses', open: 'To follow up',
@@ -209,6 +209,16 @@
       links.append(a);
     });
     if (links.childNodes.length) details.append(el('p', 'act-meta', t('toward')), links);
+    if (c.inspiration) {
+      const model = (data.inspirations || []).find(item => item.id === c.inspiration);
+      if (model && /^https:\/\//.test(model.url)) {
+        const source = el('a', 'act-source-link', model.name);
+        source.href = model.url;
+        source.rel = 'noopener noreferrer';
+        source.target = '_blank';
+        details.append(el('p', 'act-meta', source));
+      }
+    }
     (c.parents || []).forEach(id => {
       if (byId[id]) details.append(button(t('parent') + ' · ' + loc(byId[id].title), () => openChallenge(id)));
     });
