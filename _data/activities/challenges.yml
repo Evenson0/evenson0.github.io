@@ -4631,3 +4631,1013 @@
   - explore
   parents:
   - ACT-202611-Y7
+- id: ACT-2026W45-R01
+  horizon: week
+  category: research
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-05'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Classer des données pour une vraie recherche"
+    en: "Classify real research observations"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Choisis un projet Zooniverse et effectue des classifications selon son protocole, puis explique quelle erreur humaine peut biaiser le résultat."
+    en: "Choose a Zooniverse project, complete classifications following its protocol, then explain how human error might bias the results."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer classer des données pour une vraie recherche."
+    en: "Borrow a real-world approach to classify real research observations."
+  done_when:
+    fr: "Une participation réelle et une note critique du protocole."
+    en: "Actual participation and a critical protocol note."
+  minimum:
+    fr: "Une expérience limitée reproductible."
+    en: "One small reproducible experiment."
+  stretch:
+    fr: "Demande une critique de méthode et corrige une limite."
+    en: "Ask for methods criticism and address a limitation."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+  inspiration: zooniverse
+- id: ACT-2026W45-R02
+  horizon: week
+  category: career
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-05'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Le défi Scott Young : te tester sans professeur"
+    en: "The Scott Young challenge: test yourself without a teacher"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Choisis une notion avancée accessible sur MIT OCW, étudie-la seul et résous un problème évalué sans corrigé, puis contrôle la réponse."
+    en: "Choose an advanced topic on MIT OCW, self-study it and solve an assessed problem without seeing the answer first, then check your work."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer le défi scott young : te tester sans professeur."
+    en: "Borrow a real-world approach to the scott young challenge: test yourself without a teacher."
+  done_when:
+    fr: "Un exercice avancé résolu et audité sans tutorat."
+    en: "One advanced exercise solved and audited independently."
+  minimum:
+    fr: "Une note argumentée que tu peux soumettre à la critique."
+    en: "One defensible note open to criticism."
+  stretch:
+    fr: "Compare ton analyse à un retour externe éventuel."
+    en: "Compare your analysis with any external feedback."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+  inspiration: young
+- id: ACT-2026W45-R03
+  horizon: week
+  category: outdoors
+  period: 2026-W45
+  period_start: '2026-11-02'
+  issued: '2026-11-05'
+  due: '2026-11-08'
+  difficulty: ambitious
+  title:
+    fr: "Marcher comme un écrivain : écrire trois observations"
+    en: "Walk like a writer: capture three observations"
+  effort:
+    fr: "2–5 h · conditions à vérifier"
+    en: "2–5 h · check conditions"
+  action:
+    fr: "Fais une promenade adaptée puis écris trois scènes observées, concrètes et originales, que tu pourrais réemployer dans un livre, sans IA."
+    en: "Take a suitable walk and write three concrete original observed scenes that could belong in a book, without AI."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer marcher comme un écrivain : écrire trois observations."
+    en: "Borrow a real-world approach to walk like a writer: capture three observations."
+  done_when:
+    fr: "Trois scènes personnelles issues d'une vraie sortie."
+    en: "Three personal scenes from a genuine outing."
+  minimum:
+    fr: "Une sortie sûre ou un itinéraire préparé si la météo empêche le départ."
+    en: "A safe outing or prepared route if weather prevents travel."
+  stretch:
+    fr: "Rédige un récit illustré de tes propres observations."
+    en: "Write a story illustrated with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y3
+  inspiration: murakami
+- id: ACT-2026W46-R01
+  horizon: week
+  category: speaking
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-05'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Visiter un club de parole en anglais"
+    en: "Visit an English-speaking club"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Cherche un club Toastmasters ouvert aux visiteurs, vérifie sa réunion et assiste comme invité si elle convient, puis note ce que tu as appris."
+    en: "Find a Toastmasters club welcoming guests, verify its meeting and visit if suitable, then record what you learned."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer visiter un club de parole en anglais."
+    en: "Borrow a real-world approach to visit an english-speaking club."
+  done_when:
+    fr: "Visite vécue ou invitation réellement demandée, avec apprentissage."
+    en: "An attended visit or actual visit request, with a takeaway."
+  minimum:
+    fr: "Un échange réel avec une question improvisée."
+    en: "A real exchange including an unscripted question."
+  stretch:
+    fr: "Prolonge le débat dix minutes sans notes."
+    en: "Continue the discussion ten minutes without notes."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: toastmasters
+- id: ACT-2026W46-R02
+  horizon: week
+  category: math
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-05'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "L'énigme Project Euler qui exige une preuve"
+    en: "A Project Euler puzzle demanding proof"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis un problème inédit pour toi dans Project Euler, trouve une stratégie algorithmique et justifie sa correction sur des cas simples sans divulguer la solution réservée."
+    en: "Choose a new Project Euler problem, design an algorithm and justify correctness on simple cases without disclosing restricted solutions."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer l'énigme project euler qui exige une preuve."
+    en: "Borrow a real-world approach to a project euler puzzle demanding proof."
+  done_when:
+    fr: "Un programme testé et un raisonnement mathématique documenté."
+    en: "Tested code and a documented mathematical argument."
+  minimum:
+    fr: "Une preuve ou explication rigoureuse vérifiée."
+    en: "One rigorous checked proof or explanation."
+  stretch:
+    fr: "Fais vérifier le raisonnement par une autre personne."
+    en: "Invite someone else to check the reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+  inspiration: euler
+- id: ACT-2026W46-R03
+  horizon: week
+  category: community
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-05'
+  due: '2026-11-15'
+  difficulty: ambitious
+  title:
+    fr: "Corriger une erreur cartographique vérifiable"
+    en: "Fix a verifiable mapping error"
+  effort:
+    fr: "1–4 h"
+    en: "1–4 h"
+  action:
+    fr: "Dans OpenStreetMap, repère un détail public erroné que tu peux vérifier, corrige-le dans le respect des règles et conserve l'identifiant du changement."
+    en: "In OpenStreetMap, find a public map detail you can verify, correct it according to guidelines and record the change ID."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer corriger une erreur cartographique vérifiable."
+    en: "Borrow a real-world approach to fix a verifiable mapping error."
+  done_when:
+    fr: "Une contribution cartographique exacte et traçable."
+    en: "One accurate traceable map contribution."
+  minimum:
+    fr: "Une interaction respectueuse réellement engagée."
+    en: "One respectful genuine interaction."
+  stretch:
+    fr: "Propose une seconde contribution sans insister."
+    en: "Offer a second contribution without pressuring anyone."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2026W47-R01
+  horizon: week
+  category: math
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-05'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Un problème Putnam sans tricher"
+    en: "A Putnam problem without shortcuts"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis un problème historique Putnam et accorde-toi une vraie tentative de preuve autonome avant toute consultation de solution."
+    en: "Choose a historical Putnam problem and make a substantial independent proof attempt before seeing any solution."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer un problème putnam sans tricher."
+    en: "Borrow a real-world approach to a putnam problem without shortcuts."
+  done_when:
+    fr: "Une tentative structurée et une analyse du point de blocage."
+    en: "A structured attempt and analysis of what blocked you."
+  minimum:
+    fr: "Une preuve ou explication rigoureuse vérifiée."
+    en: "One rigorous checked proof or explanation."
+  stretch:
+    fr: "Fais vérifier le raisonnement par une autre personne."
+    en: "Invite someone else to check the reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2026W47-R02
+  horizon: week
+  category: writing
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-05'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Une page de fiction en anglais sans IA"
+    en: "One page of English fiction without AI"
+  effort:
+    fr: "2–5 h"
+    en: "2–5 h"
+  action:
+    fr: "Écris une nouvelle de 600 à 900 mots directement en anglais, sans génération ni correction IA, avec début, conflit et fin."
+    en: "Write a 600–900-word story directly in English without AI generation or revision, with beginning, conflict and ending."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer une page de fiction en anglais sans ia."
+    en: "Borrow a real-world approach to one page of english fiction without ai."
+  done_when:
+    fr: "Une nouvelle anglaise complète écrite par toi."
+    en: "A full original English story written independently."
+  minimum:
+    fr: "Un texte complet original de 600 mots, sans IA si demandé."
+    en: "One complete original 600-word piece, without AI when specified."
+  stretch:
+    fr: "Fais lire le texte à un lecteur exigeant et révise par toi-même."
+    en: "Ask a demanding reader for feedback and revise yourself."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+  inspiration: murakami
+- id: ACT-2026W47-R03
+  horizon: week
+  category: outdoors
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-05'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Préparer une carte de sortie sans GPS continu"
+    en: "Plan a hike without relying on constant GPS"
+  effort:
+    fr: "2–5 h · conditions à vérifier"
+    en: "2–5 h · check conditions"
+  action:
+    fr: "Choisis un parcours balisé accessible, trace son itinéraire et les points de repli, puis vérifie sur carte avant de sortir en sécurité."
+    en: "Choose a suitable marked route, map its course and escape points, and check the map before a safe outing."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer préparer une carte de sortie sans gps continu."
+    en: "Borrow a real-world approach to plan a hike without relying on constant gps."
+  done_when:
+    fr: "Une carte annotée de trajet et une décision de sécurité."
+    en: "An annotated route map and safety decision."
+  minimum:
+    fr: "Une sortie sûre ou un itinéraire préparé si la météo empêche le départ."
+    en: "A safe outing or prepared route if weather prevents travel."
+  stretch:
+    fr: "Rédige un récit illustré de tes propres observations."
+    en: "Write a story illustrated with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+  inspiration: sepaq
+- id: ACT-2026W47-R04
+  horizon: week
+  category: community
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-05'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Écouter l'histoire d'une personne plus expérimentée"
+    en: "Listen to an elder's experience"
+  effort:
+    fr: "1–4 h"
+    en: "1–4 h"
+  action:
+    fr: "Demande à une personne consentante de raconter un choix décisif de sa vie, écoute pendant vingt minutes sans recentrer la conversation sur toi."
+    en: "Invite a willing older or more experienced person to describe a defining decision and listen for twenty minutes without redirecting the story to yourself."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer écouter l'histoire d'une personne plus expérimentée."
+    en: "Borrow a real-world approach to listen to an elder's experience."
+  done_when:
+    fr: "Un échange réel et trois leçons personnelles respectueuses."
+    en: "A real exchange and three respectful personal lessons."
+  minimum:
+    fr: "Une interaction respectueuse réellement engagée."
+    en: "One respectful genuine interaction."
+  stretch:
+    fr: "Propose une seconde contribution sans insister."
+    en: "Offer a second contribution without pressuring anyone."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2026W47-R05
+  horizon: week
+  category: build
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-05'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Écrire un test qui démasque un bug invisible"
+    en: "Write a test that exposes a hidden bug"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Dans un de tes outils mathématiques, conçois un cas limite qui échouait silencieusement puis ajoute un test de régression automatisé."
+    en: "In a mathematical tool, design a boundary case that previously failed silently, then add an automated regression test."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer écrire un test qui démasque un bug invisible."
+    en: "Borrow a real-world approach to write a test that exposes a hidden bug."
+  done_when:
+    fr: "Un test rouge puis vert et l'explication de la cause."
+    en: "A failing-then-passing test with root-cause explanation."
+  minimum:
+    fr: "Une correction ou prototype exécutable et testé."
+    en: "A runnable tested fix or prototype."
+  stretch:
+    fr: "Fais tester le résultat à une autre personne."
+    en: "Ask someone else to test the result."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+  inspiration: sciencepython
+- id: ACT-2026W47-R06
+  horizon: week
+  category: speaking
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-05'
+  due: '2026-11-22'
+  difficulty: ambitious
+  title:
+    fr: "Expliquer un théorème sans tableau"
+    en: "Explain a theorem without a whiteboard"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Explique oralement un résultat probabiliste à une personne curieuse en utilisant seulement une analogie précise, puis vérifie ce qu'elle a compris."
+    en: "Explain a probability result to a curious listener using only a precise analogy, then check their understanding."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer expliquer un théorème sans tableau."
+    en: "Borrow a real-world approach to explain a theorem without a whiteboard."
+  done_when:
+    fr: "Une explication donnée et une correction de confusion identifiée."
+    en: "A delivered explanation and correction of one misunderstanding."
+  minimum:
+    fr: "Un échange réel avec une question improvisée."
+    en: "A real exchange including an unscripted question."
+  stretch:
+    fr: "Prolonge le débat dix minutes sans notes."
+    en: "Continue the discussion ten minutes without notes."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: feynman
+- id: ACT-2026W48-R01
+  horizon: week
+  category: research
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-05'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Rendre reproductible une vieille expérience R"
+    en: "Make an old R experiment reproducible"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Reprends un notebook R personnel, isole les dépendances et produis une commande permettant de refaire les figures sans manipulations manuelles."
+    en: "Take an old personal R notebook, isolate dependencies and create a command that regenerates figures without manual steps."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer rendre reproductible une vieille expérience r."
+    en: "Borrow a real-world approach to make an old r experiment reproducible."
+  done_when:
+    fr: "Une exécution de bout en bout documentée."
+    en: "A documented end-to-end run."
+  minimum:
+    fr: "Une expérience limitée reproductible."
+    en: "One small reproducible experiment."
+  stretch:
+    fr: "Demande une critique de méthode et corrige une limite."
+    en: "Ask for methods criticism and address a limitation."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+  inspiration: sciencepython
+- id: ACT-2026W48-R02
+  horizon: week
+  category: speaking
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-05'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Improviser une objection en anglais"
+    en: "Improvise an objection in English"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Trouve un partenaire et demande-lui de critiquer un argument de ta présentation ; réponds sans texte écrit, puis réécoute ou résume les difficultés."
+    en: "Find a partner to critique a presentation argument; respond without a script, then review or summarize difficulties."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer improviser une objection en anglais."
+    en: "Borrow a real-world approach to improvise an objection in english."
+  done_when:
+    fr: "Un échange d'objections réel et un plan de progrès."
+    en: "A genuine objection exchange and improvement plan."
+  minimum:
+    fr: "Un échange réel avec une question improvisée."
+    en: "A real exchange including an unscripted question."
+  stretch:
+    fr: "Prolonge le débat dix minutes sans notes."
+    en: "Continue the discussion ten minutes without notes."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: toastmasters
+- id: ACT-2026W48-R03
+  horizon: week
+  category: career
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-05'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Lire la première page d'un article de recherche comme un arbitre"
+    en: "Read a paper's first page like a referee"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Sélectionne un article GLM récent, identifie la nouveauté revendiquée, l'hypothèse fragile et une expérience qui la testerait."
+    en: "Choose a recent GLM article, identify its claimed contribution, a fragile assumption and an experiment to test it."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer lire la première page d'un article de recherche comme un arbitre."
+    en: "Borrow a real-world approach to read a paper's first page like a referee."
+  done_when:
+    fr: "Une note d'arbitrage critique en une page."
+    en: "A one-page critical referee note."
+  minimum:
+    fr: "Une note argumentée que tu peux soumettre à la critique."
+    en: "One defensible note open to criticism."
+  stretch:
+    fr: "Compare ton analyse à un retour externe éventuel."
+    en: "Compare your analysis with any external feedback."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2026W48-R04
+  horizon: week
+  category: creativity
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-05'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Dessiner un quartier comme un cartographe-poète"
+    en: "Draw a neighborhood like a poet-cartographer"
+  effort:
+    fr: "2–5 h"
+    en: "2–5 h"
+  action:
+    fr: "Visite un secteur familier en sécurité, dessine une carte subjective de cinq lieux qui comptent et explique le sens de chacun."
+    en: "Safely visit a familiar area, sketch a subjective map of five meaningful places and explain each."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer dessiner un quartier comme un cartographe-poète."
+    en: "Borrow a real-world approach to draw a neighborhood like a poet-cartographer."
+  done_when:
+    fr: "Une carte dessinée et un récit original."
+    en: "An illustrated map and original account."
+  minimum:
+    fr: "Une création personnelle achevée."
+    en: "One finished original creation."
+  stretch:
+    fr: "Présente ta création à une personne curieuse."
+    en: "Show your creation to someone curious."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2026W48-R05
+  horizon: week
+  category: math
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-05'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Comprendre un objet mathématique en Lean"
+    en: "Understand a mathematical object in Lean"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Dans Mathematics in Lean, reconstruis un exemple sans copier, modifie une hypothèse et prédis ce que le compilateur refusera."
+    en: "In Mathematics in Lean, rebuild an example without copying, change an assumption and predict what the compiler will reject."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer comprendre un objet mathématique en lean."
+    en: "Borrow a real-world approach to understand a mathematical object in lean."
+  done_when:
+    fr: "Un exemple compilable et une contre-expérience expliquée."
+    en: "A compiling example and explained counter-experiment."
+  minimum:
+    fr: "Une preuve ou explication rigoureuse vérifiée."
+    en: "One rigorous checked proof or explanation."
+  stretch:
+    fr: "Fais vérifier le raisonnement par une autre personne."
+    en: "Invite someone else to check the reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+  inspiration: mathlib
+- id: ACT-2026W48-R06
+  horizon: week
+  category: social
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-05'
+  due: '2026-11-29'
+  difficulty: ambitious
+  title:
+    fr: "Publier une preuve pédagogique en images"
+    en: "Publish a visual teaching proof"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Transforme une idée mathématique en trois illustrations originales que tu partages manuellement avec explications, puis demande une critique de clarté."
+    en: "Turn a mathematical idea into three original illustrations, publish manually with explanations and invite clarity feedback."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer publier une preuve pédagogique en images."
+    en: "Borrow a real-world approach to publish a visual teaching proof."
+  done_when:
+    fr: "Trois visuels personnels avec explication vérifiée."
+    en: "Three original visuals and a checked explanation."
+  minimum:
+    fr: "Un contenu original publié manuellement."
+    en: "One manually published original item."
+  stretch:
+    fr: "Recueille une critique humaine et ajuste la clarté."
+    en: "Seek human critique and improve clarity."
+  targets:
+  - audience
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2026W49-R01
+  horizon: week
+  category: math
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-05'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Un défi d'algorithme sans solution automatique"
+    en: "An algorithm challenge without automatic answers"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis une énigme Advent of Code archivée, résous-la avec tests personnels avant de comparer avec des explications publiques."
+    en: "Choose an archived Advent of Code puzzle and solve using personal tests before comparing with published explanations."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer un défi d'algorithme sans solution automatique."
+    en: "Borrow a real-world approach to an algorithm challenge without automatic answers."
+  done_when:
+    fr: "Un script autonome et des tests de cas limites."
+    en: "An independent script and edge-case tests."
+  minimum:
+    fr: "Une preuve ou explication rigoureuse vérifiée."
+    en: "One rigorous checked proof or explanation."
+  stretch:
+    fr: "Fais vérifier le raisonnement par une autre personne."
+    en: "Invite someone else to check the reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2026W49-R02
+  horizon: week
+  category: speaking
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-05'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Raconter un échec d'apprentissage en anglais"
+    en: "Describe a learning failure in English"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Parle en anglais à une personne consentante d'une difficulté réelle sans te justifier, puis explique ce que tu modifieras dans ta méthode."
+    en: "Tell a willing listener in English about a real learning struggle without excuses, then explain what you will change."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer raconter un échec d'apprentissage en anglais."
+    en: "Borrow a real-world approach to describe a learning failure in english."
+  done_when:
+    fr: "Une conversation honnête et un engagement concret."
+    en: "An honest conversation and concrete next step."
+  minimum:
+    fr: "Un échange réel avec une question improvisée."
+    en: "A real exchange including an unscripted question."
+  stretch:
+    fr: "Prolonge le débat dix minutes sans notes."
+    en: "Continue the discussion ten minutes without notes."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: young
+- id: ACT-2026W49-R03
+  horizon: week
+  category: community
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-05'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Faire du bénévolat scientifique en ligne"
+    en: "Volunteer for citizen science online"
+  effort:
+    fr: "1–4 h"
+    en: "1–4 h"
+  action:
+    fr: "Contribue à un projet Zooniverse et lis les consignes de qualité ; compare deux types de classifications pour saisir leurs biais possibles."
+    en: "Contribute to a Zooniverse project and read quality guidelines; compare two classification types to identify potential biases."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer faire du bénévolat scientifique en ligne."
+    en: "Borrow a real-world approach to volunteer for citizen science online."
+  done_when:
+    fr: "Une participation et une réflexion sur la qualité des données."
+    en: "Participation and reflection on data quality."
+  minimum:
+    fr: "Une interaction respectueuse réellement engagée."
+    en: "One respectful genuine interaction."
+  stretch:
+    fr: "Propose une seconde contribution sans insister."
+    en: "Offer a second contribution without pressuring anyone."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+  inspiration: zooniverse
+- id: ACT-2026W49-R04
+  horizon: week
+  category: outdoors
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-05'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Préparer un itinéraire de montagne pour l'été prochain"
+    en: "Plan next summer's mountain route"
+  effort:
+    fr: "2–5 h · conditions à vérifier"
+    en: "2–5 h · check conditions"
+  action:
+    fr: "À partir des fiches Sépaq, choisis un sentier progressif et calcule distance, dénivelé, temps, budget, matériel et conditions de report."
+    en: "Using Sépaq trail sheets, choose a progressive route and assess distance, ascent, duration, budget, equipment and deferral conditions."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer préparer un itinéraire de montagne pour l'été prochain."
+    en: "Borrow a real-world approach to plan next summer's mountain route."
+  done_when:
+    fr: "Un itinéraire documenté et adapté à ton niveau réel."
+    en: "A documented route fitted to actual ability."
+  minimum:
+    fr: "Une sortie sûre ou un itinéraire préparé si la météo empêche le départ."
+    en: "A safe outing or prepared route if weather prevents travel."
+  stretch:
+    fr: "Rédige un récit illustré de tes propres observations."
+    en: "Write a story illustrated with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+  inspiration: sepaq
+- id: ACT-2026W49-R05
+  horizon: week
+  category: writing
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-05'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Une chronique mathématique sans IA"
+    en: "A math column without AI"
+  effort:
+    fr: "2–5 h"
+    en: "2–5 h"
+  action:
+    fr: "Rédige 900 mots en français sur une idée scientifique étonnante, avec introduction, démonstration accessible et objection, sans génération IA."
+    en: "Write 900 French words about a surprising scientific idea with an introduction, accessible proof and objection, without AI generation."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer une chronique mathématique sans ia."
+    en: "Borrow a real-world approach to a math column without ai."
+  done_when:
+    fr: "Une chronique originale vérifiée et datée."
+    en: "A checked dated original column."
+  minimum:
+    fr: "Un texte complet original de 600 mots, sans IA si demandé."
+    en: "One complete original 600-word piece, without AI when specified."
+  stretch:
+    fr: "Fais lire le texte à un lecteur exigeant et révise par toi-même."
+    en: "Ask a demanding reader for feedback and revise yourself."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2026W49-R06
+  horizon: week
+  category: fitness
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-05'
+  due: '2026-12-06'
+  difficulty: ambitious
+  title:
+    fr: "Un test d'endurance sans chrono humiliant"
+    en: "A noncompetitive endurance assessment"
+  effort:
+    fr: "1–3 h · récupération incluse"
+    en: "1–3 h · including recovery"
+  action:
+    fr: "Fais un parcours course-marche adapté et note confort, respiration et récupération sans forcer une distance qui dépasserait ta préparation."
+    en: "Complete a suitable walk-run route and log comfort, breathing and recovery without forcing beyond training."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer un test d'endurance sans chrono humiliant."
+    en: "Borrow a real-world approach to a noncompetitive endurance assessment."
+  done_when:
+    fr: "Un point de départ utile pour une progression durable."
+    en: "A useful baseline for sustainable progress."
+  minimum:
+    fr: "Une séance adaptée avec récupération notée."
+    en: "One suitable workout and a recovery note."
+  stretch:
+    fr: "Prolonge seulement si ton niveau et la récupération le permettent."
+    en: "Progress only if fitness and recovery permit."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+  inspiration: murakami
+- id: ACT-2026W50-R01
+  horizon: week
+  category: math
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-05'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Un résultat de probabilité que tu peux enseigner à un enfant"
+    en: "A probability result you can teach a child"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Conçois un exemple de probabilité compréhensible sans jargon puis dérive rigoureusement ce qui se cache derrière."
+    en: "Design a probability example accessible without jargon, then rigorously derive the underlying result."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer un résultat de probabilité que tu peux enseigner à un enfant."
+    en: "Borrow a real-world approach to a probability result you can teach a child."
+  done_when:
+    fr: "Deux explications cohérentes, intuitive et formelle."
+    en: "Two coherent explanations, intuitive and formal."
+  minimum:
+    fr: "Une preuve ou explication rigoureuse vérifiée."
+    en: "One rigorous checked proof or explanation."
+  stretch:
+    fr: "Fais vérifier le raisonnement par une autre personne."
+    en: "Invite someone else to check the reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+  inspiration: feynman
+- id: ACT-2026W50-R02
+  horizon: week
+  category: build
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-05'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Contribuer un correctif à un vrai projet open source"
+    en: "Contribute a fix to a real open-source project"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Repère un petit problème de documentation ou de test dans un projet Python scientifique, reproduis-le et prépare un correctif suivant son guide."
+    en: "Find a small docs or test issue in a scientific Python project, reproduce it and prepare a fix following contribution guidelines."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer contribuer un correctif à un vrai projet open source."
+    en: "Borrow a real-world approach to contribute a fix to a real open-source project."
+  done_when:
+    fr: "Un correctif autonome testé ou une PR proposée, sans présumer l'acceptation."
+    en: "A tested standalone fix or proposed PR without assuming acceptance."
+  minimum:
+    fr: "Une correction ou prototype exécutable et testé."
+    en: "A runnable tested fix or prototype."
+  stretch:
+    fr: "Fais tester le résultat à une autre personne."
+    en: "Ask someone else to test the result."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+  inspiration: sciencepython
+- id: ACT-2026W50-R03
+  horizon: week
+  category: speaking
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-05'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Ton premier discours devant un club"
+    en: "Your first speech before a club"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Si l'accès le permet, propose un mini-discours de cinq minutes dans un groupe d'expression ou Toastmasters et recueille un retour précis."
+    en: "If access permits, offer a five-minute talk in a speaking group or Toastmasters and seek specific feedback."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer ton premier discours devant un club."
+    en: "Borrow a real-world approach to your first speech before a club."
+  done_when:
+    fr: "Un discours donné ou une candidature respectueuse envoyée."
+    en: "A delivered speech or respectful proposal sent."
+  minimum:
+    fr: "Un échange réel avec une question improvisée."
+    en: "A real exchange including an unscripted question."
+  stretch:
+    fr: "Prolonge le débat dix minutes sans notes."
+    en: "Continue the discussion ten minutes without notes."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: toastmasters
+- id: ACT-2026W50-R04
+  horizon: week
+  category: community
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-05'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Aider un nouvel arrivant sur une question concrète"
+    en: "Help a newcomer with a practical issue"
+  effort:
+    fr: "1–4 h"
+    en: "1–4 h"
+  action:
+    fr: "Avec le consentement d'une personne, explique une démarche académique ou technologique que tu maîtrises, sans te présenter comme conseiller officiel."
+    en: "With someone's consent, explain an academic or technical process you understand, without posing as an official adviser."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer aider un nouvel arrivant sur une question concrète."
+    en: "Borrow a real-world approach to help a newcomer with a practical issue."
+  done_when:
+    fr: "Une aide réelle et adaptée, sans révéler de détails privés."
+    en: "Actual suitable help without disclosing private details."
+  minimum:
+    fr: "Une interaction respectueuse réellement engagée."
+    en: "One respectful genuine interaction."
+  stretch:
+    fr: "Propose une seconde contribution sans insister."
+    en: "Offer a second contribution without pressuring anyone."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2026W50-R05
+  horizon: week
+  category: writing
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-05'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Une scène avec un héros qui échoue intelligemment"
+    en: "A scene where a hero fails intelligently"
+  effort:
+    fr: "2–5 h"
+    en: "2–5 h"
+  action:
+    fr: "Rédige 1 000 mots de fiction sans IA dans lesquels le personnage doit abandonner une stratégie brillante mais dangereuse."
+    en: "Write 1,000 words of fiction without AI where the protagonist must abandon a brilliant but dangerous strategy."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer une scène avec un héros qui échoue intelligemment."
+    en: "Borrow a real-world approach to a scene where a hero fails intelligently."
+  done_when:
+    fr: "Une scène achevée avec un véritable choix moral."
+    en: "A complete scene with a meaningful moral choice."
+  minimum:
+    fr: "Un texte complet original de 600 mots, sans IA si demandé."
+    en: "One complete original 600-word piece, without AI when specified."
+  stretch:
+    fr: "Fais lire le texte à un lecteur exigeant et révise par toi-même."
+    en: "Ask a demanding reader for feedback and revise yourself."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+  inspiration: murakami
+- id: ACT-2026W50-R06
+  horizon: week
+  category: research
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-05'
+  due: '2026-12-13'
+  difficulty: ambitious
+  title:
+    fr: "Défendre un choix statistique contre son concurrent"
+    en: "Defend a statistical model choice against a rival"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Prends des données synthétiques de fréquence et rédige un argument falsifiable pour choisir un modèle face à un autre."
+    en: "Use synthetic frequency data and write a falsifiable argument for one model over an alternative."
+  why:
+    fr: "S'inspirer d'une démarche éprouvée pour développer défendre un choix statistique contre son concurrent."
+    en: "Borrow a real-world approach to defend a statistical model choice against a rival."
+  done_when:
+    fr: "Un notebook et une comparaison critiquable."
+    en: "A notebook and a critique-ready comparison."
+  minimum:
+    fr: "Une expérience limitée reproductible."
+    en: "One small reproducible experiment."
+  stretch:
+    fr: "Demande une critique de méthode et corrige une limite."
+    en: "Ask for methods criticism and address a limitation."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
