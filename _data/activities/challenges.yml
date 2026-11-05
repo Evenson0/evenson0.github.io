@@ -6649,3 +6649,1818 @@
   - research
   parents:
   - ACT-202611-Y1
+- id: ACT-2027W03-R01
+  horizon: week
+  category: math
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-05'
+  due: '2027-01-24'
+  difficulty: ambitious
+  title:
+    fr: "Reprendre une formule FM par la preuve"
+    en: "Rebuild an FM formula from first principles"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Après ton bilan P, dérive une formule de valeur actuelle à partir d'une équation de valeur et vérifie deux exemples numériques."
+    en: "After reviewing Exam P, derive a present-value formula from an equation of value and test two numeric examples."
+  why:
+    fr: "Un défi de progression réelle : Reprendre une formule FM par la preuve."
+    en: "A challenge for real progress: Rebuild an FM formula from first principles."
+  done_when:
+    fr: "Une preuve et deux contrôles indépendants."
+    en: "A derivation and two independent checks."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-2027W03-R02
+  horizon: week
+  category: writing
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-05'
+  due: '2027-01-24'
+  difficulty: ambitious
+  title:
+    fr: "Le premier chapitre que tu veux vraiment signer"
+    en: "The first chapter you are willing to sign"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris 1 500 mots entièrement personnels pour ton livre sans IA, puis relis la logique narrative ou argumentative."
+    en: "Write 1,500 entirely personal words for your book without AI, then revise narrative or argumentative logic."
+  why:
+    fr: "Un défi de progression réelle : Le premier chapitre que tu veux vraiment signer."
+    en: "A challenge for real progress: The first chapter you are willing to sign."
+  done_when:
+    fr: "Un chapitre partiel original qui tient debout."
+    en: "A coherent original partial chapter."
+  minimum:
+    fr: "Un texte original relu par toi sans IA lorsque demandé."
+    en: "One original self-edited text without AI when required."
+  stretch:
+    fr: "Invite une critique humaine sans déléguer ta plume."
+    en: "Seek human critique without outsourcing your writing."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2027W03-R03
+  horizon: week
+  category: fitness
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-05'
+  due: '2027-01-24'
+  difficulty: ambitious
+  title:
+    fr: "Choisir une progression 5 km appropriée"
+    en: "Choose a suitable 5K progression"
+  effort:
+    fr: "1–3 h · récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Évalue tes sorties actuelles et prépare une progression 5 km avec alternance course-marche et récupération adaptée, sans calendrier inflexible."
+    en: "Assess existing sessions and design a 5K progression with suitable run-walk intervals and recovery, without rigid deadlines."
+  why:
+    fr: "Un défi de progression réelle : Choisir une progression 5 km appropriée."
+    en: "A challenge for real progress: Choose a suitable 5K progression."
+  done_when:
+    fr: "Un programme prudent adapté à ton niveau constaté."
+    en: "A prudent plan matched to observed ability."
+  minimum:
+    fr: "Une séance adaptée, réalisée sans ignorer la récupération."
+    en: "One suitable session respecting recovery."
+  stretch:
+    fr: "Progression supplémentaire uniquement si l'état physique le permet."
+    en: "Progress only if your condition permits."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-2027W03-R04
+  horizon: week
+  category: speaking
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-05'
+  due: '2027-01-24'
+  difficulty: ambitious
+  title:
+    fr: "Premier discours en anglais après P"
+    en: "First English talk after Exam P"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Présente en anglais une idée de probabilité pendant dix minutes à une personne volontaire puis réponds aux objections."
+    en: "Present a probability idea in English for ten minutes to a willing listener, then take objections."
+  why:
+    fr: "Un défi de progression réelle : Premier discours en anglais après P."
+    en: "A challenge for real progress: First English talk after Exam P."
+  done_when:
+    fr: "Un discours réel et un retour sur sa clarté."
+    en: "A real talk and clarity feedback."
+  minimum:
+    fr: "Un échange réel avec questions."
+    en: "A genuine exchange with questions."
+  stretch:
+    fr: "Accepte une objection imprévue et reformule-la loyalement."
+    en: "Accept an unplanned objection and restate it fairly."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W03-R05
+  horizon: week
+  category: research
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-05'
+  due: '2027-01-24'
+  difficulty: ambitious
+  title:
+    fr: "Lister les trois hypothèses les plus fragiles d'un GLM"
+    en: "Identify a GLM's three frailest assumptions"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Sur un problème synthétique, écris trois hypothèses falsifiables et conçois pour chacune un diagnostic reproductible."
+    en: "On a synthetic problem, write three falsifiable assumptions and a reproducible diagnostic for each."
+  why:
+    fr: "Un défi de progression réelle : Lister les trois hypothèses les plus fragiles d'un GLM."
+    en: "A challenge for real progress: Identify a GLM's three frailest assumptions."
+  done_when:
+    fr: "Trois diagnostics implémentés et interprétés."
+    en: "Three implemented and interpreted diagnostics."
+  minimum:
+    fr: "Une expérience ou note critique reproductible."
+    en: "One reproducible experiment or critique."
+  stretch:
+    fr: "Demande une lecture critique et corrige une hypothèse."
+    en: "Request critique and correct an assumption."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2027W04-R01
+  horizon: week
+  category: math
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Attaquer une énigme Project Euler sans solution"
+    en: "Attack a Project Euler puzzle independently"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis un problème nouveau et construis algorithme, tests limites et preuve de l'approche sans publier de réponse réservée."
+    en: "Choose a new problem and build an algorithm, boundary tests and proof without publishing restricted answers."
+  why:
+    fr: "Un défi de progression réelle : Attaquer une énigme Project Euler sans solution."
+    en: "A challenge for real progress: Attack a Project Euler puzzle independently."
+  done_when:
+    fr: "Un programme testé et un raisonnement justifié."
+    en: "Tested code and a justified argument."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2027W04-R02
+  horizon: week
+  category: community
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Assister à une prise de parole organisée"
+    en: "Attend a structured public speaking session"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Visite un Toastmasters accessible, après confirmation des détails, et note trois techniques que tu pourrais pratiquer."
+    en: "Visit an accessible Toastmasters club after verifying meeting details and record three techniques worth practicing."
+  why:
+    fr: "Un défi de progression réelle : Assister à une prise de parole organisée."
+    en: "A challenge for real progress: Attend a structured public speaking session."
+  done_when:
+    fr: "Une visite ou invitation réellement effectuée."
+    en: "An actual visit or invitation."
+  minimum:
+    fr: "Une interaction réelle respectueuse."
+    en: "A respectful real interaction."
+  stretch:
+    fr: "Organise un second échange si l'intérêt est mutuel."
+    en: "Arrange a second exchange if interest is mutual."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W04-R03
+  horizon: week
+  category: build
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Tester le module de progression mobile P"
+    en: "Test mobile progress tracking for Exam P"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Vérifie qu'une session interrompue se reprend sans perdre ni divulguer des données personnelles et ajoute un test automatisé."
+    en: "Check that an interrupted session resumes without losing or disclosing personal data and add an automated test."
+  why:
+    fr: "Un défi de progression réelle : Tester le module de progression mobile P."
+    en: "A challenge for real progress: Test mobile progress tracking for Exam P."
+  done_when:
+    fr: "Une reprise fiable testée."
+    en: "Reliable tested session resumption."
+  minimum:
+    fr: "Un outil ou correctif utilisable et testé."
+    en: "One usable tested tool or fix."
+  stretch:
+    fr: "Fais tester à deux personnes et corrige un irritant."
+    en: "Test with two people and fix an issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2027W04-R04
+  horizon: week
+  category: writing
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Écrire mille mots de pensée personnelle sans IA"
+    en: "Write 1,000 words of independent thinking"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Construis un essai sur la discipline intellectuelle où tu argumentes aussi contre ton opinion de départ."
+    en: "Write an essay on intellectual discipline that fairly argues against your starting view."
+  why:
+    fr: "Un défi de progression réelle : Écrire mille mots de pensée personnelle sans IA."
+    en: "A challenge for real progress: Write 1,000 words of independent thinking."
+  done_when:
+    fr: "Un essai personnel avec objection sérieuse."
+    en: "A personal essay with a serious counterargument."
+  minimum:
+    fr: "Un texte original relu par toi sans IA lorsque demandé."
+    en: "One original self-edited text without AI when required."
+  stretch:
+    fr: "Invite une critique humaine sans déléguer ta plume."
+    en: "Seek human critique without outsourcing your writing."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027W04-R05
+  horizon: week
+  category: outdoors
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Planifier une aventure hivernale réversible"
+    en: "Plan a reversible winter outing"
+  effort:
+    fr: "2–5 h selon conditions"
+    en: "2–5 h, check conditions"
+  action:
+    fr: "Sélectionne un trajet ouvert et accessible, prépare les options de retour, l'horaire de lumière et les vêtements requis avant une sortie adaptée."
+    en: "Select an open accessible route and prepare return options, daylight schedule and suitable clothing before a safe outing."
+  why:
+    fr: "Un défi de progression réelle : Planifier une aventure hivernale réversible."
+    en: "A challenge for real progress: Plan a reversible winter outing."
+  done_when:
+    fr: "Un plan de sécurité et une sortie seulement si appropriée."
+    en: "A safety plan and an outing only if suitable."
+  minimum:
+    fr: "Une sortie sûre ou un plan reporté pour raison valable."
+    en: "One safe outing or justified deferral plan."
+  stretch:
+    fr: "Raconte la sortie avec tes propres observations."
+    en: "Record the outing with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2027W05-R01
+  horizon: week
+  category: research
+  period: 2027-W05
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-07'
+  difficulty: ambitious
+  title:
+    fr: "Contribuer à Zooniverse puis auditer un biais"
+    en: "Contribute to Zooniverse and audit a bias"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Participe à des classifications de science citoyenne et explique comment la sélection des données peut modifier les conclusions."
+    en: "Participate in citizen-science classifications and explain how data selection might alter conclusions."
+  why:
+    fr: "Un défi de progression réelle : Contribuer à Zooniverse puis auditer un biais."
+    en: "A challenge for real progress: Contribute to Zooniverse and audit a bias."
+  done_when:
+    fr: "Une participation réelle et une note critique."
+    en: "Real participation and a critical note."
+  minimum:
+    fr: "Une expérience ou note critique reproductible."
+    en: "One reproducible experiment or critique."
+  stretch:
+    fr: "Demande une lecture critique et corrige une hypothèse."
+    en: "Request critique and correct an assumption."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W05-R02
+  horizon: week
+  category: speaking
+  period: 2027-W05
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-07'
+  difficulty: ambitious
+  title:
+    fr: "Dire non avec tact dans une conversation difficile"
+    en: "Practice a respectful no in a hard conversation"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Dans un jeu de rôle avec un partenaire consentant, présente un refus argumenté sans agressivité et invite un retour sur le ton."
+    en: "In a roleplay with a consenting partner, present a reasoned refusal without aggression and invite feedback on tone."
+  why:
+    fr: "Un défi de progression réelle : Dire non avec tact dans une conversation difficile."
+    en: "A challenge for real progress: Practice a respectful no in a hard conversation."
+  done_when:
+    fr: "Un exercice réel et une révision de ta formulation."
+    en: "A real exercise and revised phrasing."
+  minimum:
+    fr: "Un échange réel avec questions."
+    en: "A genuine exchange with questions."
+  stretch:
+    fr: "Accepte une objection imprévue et reformule-la loyalement."
+    en: "Accept an unplanned objection and restate it fairly."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W05-R03
+  horizon: week
+  category: math
+  period: 2027-W05
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-07'
+  difficulty: ambitious
+  title:
+    fr: "Formaliser une équivalence en Lean"
+    en: "Formalize an equivalence in Lean"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris une preuve Lean d'une équivalence élémentaire sans copier sa solution, puis explique le rôle de chaque hypothèse."
+    en: "Write a Lean proof of an elementary equivalence without copying the solution, and explain each assumption."
+  why:
+    fr: "Un défi de progression réelle : Formaliser une équivalence en Lean."
+    en: "A challenge for real progress: Formalize an equivalence in Lean."
+  done_when:
+    fr: "Un lemme compilable et expliqué."
+    en: "A compiling explained lemma."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2027W05-R04
+  horizon: week
+  category: creativity
+  period: 2027-W05
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-07'
+  difficulty: ambitious
+  title:
+    fr: "Une photo par idée de ton prochain livre"
+    en: "One photograph per theme of your next book"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Prends six images originales qui représentent six thèmes de ton livre, puis compose une planche avec légendes personnelles."
+    en: "Take six original photos representing six themes of your book, then make a contact sheet with original captions."
+  why:
+    fr: "Un défi de progression réelle : Une photo par idée de ton prochain livre."
+    en: "A challenge for real progress: One photograph per theme of your next book."
+  done_when:
+    fr: "Six images et une interprétation cohérente."
+    en: "Six images and a coherent interpretation."
+  minimum:
+    fr: "Une création personnelle terminée."
+    en: "One completed original creation."
+  stretch:
+    fr: "Montre ta création et demande un retour."
+    en: "Show your creation and invite feedback."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2027W05-R05
+  horizon: week
+  category: fitness
+  period: 2027-W05
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-07'
+  difficulty: ambitious
+  title:
+    fr: "Développer la constance sans accélération forcée"
+    en: "Build consistency without forcing progression"
+  effort:
+    fr: "1–3 h · récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Planifie deux séances de mouvement adaptées séparées par récupération et vérifie que tu peux les répéter sans fatigue excessive."
+    en: "Plan two suitable movement sessions separated by recovery and check repeatability without excessive fatigue."
+  why:
+    fr: "Un défi de progression réelle : Développer la constance sans accélération forcée."
+    en: "A challenge for real progress: Build consistency without forcing progression."
+  done_when:
+    fr: "Deux séances adaptées et un bilan de récupération."
+    en: "Two suitable sessions and recovery review."
+  minimum:
+    fr: "Une séance adaptée, réalisée sans ignorer la récupération."
+    en: "One suitable session respecting recovery."
+  stretch:
+    fr: "Progression supplémentaire uniquement si l'état physique le permet."
+    en: "Progress only if your condition permits."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-2027W06-R01
+  horizon: week
+  category: build
+  period: 2027-W06
+  period_start: '2027-02-08'
+  issued: '2026-11-05'
+  due: '2027-02-14'
+  difficulty: ambitious
+  title:
+    fr: "Créer un graphique actuariel que personne ne peut mal lire"
+    en: "Build an actuarial chart that resists misreading"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "À partir de données synthétiques, conçois une visualisation de fréquence et teste sa compréhension auprès d'une personne."
+    en: "Using synthetic data, build a claim-frequency visualization and ask someone to interpret it."
+  why:
+    fr: "Un défi de progression réelle : Créer un graphique actuariel que personne ne peut mal lire."
+    en: "A challenge for real progress: Build an actuarial chart that resists misreading."
+  done_when:
+    fr: "Un graphique accessible corrigé après un test."
+    en: "An accessible chart revised after testing."
+  minimum:
+    fr: "Un outil ou correctif utilisable et testé."
+    en: "One usable tested tool or fix."
+  stretch:
+    fr: "Fais tester à deux personnes et corrige un irritant."
+    en: "Test with two people and fix an issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2027W06-R02
+  horizon: week
+  category: writing
+  period: 2027-W06
+  period_start: '2027-02-08'
+  issued: '2026-11-05'
+  due: '2027-02-14'
+  difficulty: ambitious
+  title:
+    fr: "Une nouvelle dialoguée entièrement sans IA"
+    en: "A dialogue-driven story entirely without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris une nouvelle de 1 200 mots où deux personnages défendent des visions opposées de la réussite et changent légèrement d'avis."
+    en: "Write a 1,200-word story in which two characters defend different views of success and slightly revise their beliefs."
+  why:
+    fr: "Un défi de progression réelle : Une nouvelle dialoguée entièrement sans IA."
+    en: "A challenge for real progress: A dialogue-driven story entirely without AI."
+  done_when:
+    fr: "Une nouvelle rédigée et relue par toi."
+    en: "A story written and self-edited."
+  minimum:
+    fr: "Un texte original relu par toi sans IA lorsque demandé."
+    en: "One original self-edited text without AI when required."
+  stretch:
+    fr: "Invite une critique humaine sans déléguer ta plume."
+    en: "Seek human critique without outsourcing your writing."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2027W06-R03
+  horizon: week
+  category: math
+  period: 2027-W06
+  period_start: '2027-02-08'
+  issued: '2026-11-05'
+  due: '2027-02-14'
+  difficulty: ambitious
+  title:
+    fr: "Une solution Putnam avec une tentative sans indice"
+    en: "One Putnam solution after an unaided attempt"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Tente un problème d'archive Putnam avec une vraie recherche autonome et écris ce qui te bloquait avant de consulter le corrigé."
+    en: "Attempt an archived Putnam problem independently and document your obstacle before seeing a solution."
+  why:
+    fr: "Un défi de progression réelle : Une solution Putnam avec une tentative sans indice."
+    en: "A challenge for real progress: One Putnam solution after an unaided attempt."
+  done_when:
+    fr: "Une tentative mathématique et un bilan honnête."
+    en: "A mathematical attempt and an honest review."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2027W06-R04
+  horizon: week
+  category: community
+  period: 2027-W06
+  period_start: '2027-02-08'
+  issued: '2026-11-05'
+  due: '2027-02-14'
+  difficulty: ambitious
+  title:
+    fr: "Partager gratuitement une compétence vérifiable"
+    en: "Share one useful skill for free"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Offre à une personne qui le souhaite une séance d'initiation à R ou Python, laisse-la coder un exemple et recueille ses questions."
+    en: "Offer a willing person an introduction to R or Python, let them code an example and collect questions."
+  why:
+    fr: "Un défi de progression réelle : Partager gratuitement une compétence vérifiable."
+    en: "A challenge for real progress: Share one useful skill for free."
+  done_when:
+    fr: "Une séance donnée et un exemple réutilisable."
+    en: "A delivered lesson and reusable example."
+  minimum:
+    fr: "Une interaction réelle respectueuse."
+    en: "A respectful real interaction."
+  stretch:
+    fr: "Organise un second échange si l'intérêt est mutuel."
+    en: "Arrange a second exchange if interest is mutual."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W06-R05
+  horizon: week
+  category: outdoors
+  period: 2027-W06
+  period_start: '2027-02-08'
+  issued: '2026-11-05'
+  due: '2027-02-14'
+  difficulty: ambitious
+  title:
+    fr: "Marcher dans un lieu inconnu et relever des indices"
+    en: "Walk somewhere new and notice evidence"
+  effort:
+    fr: "2–5 h selon conditions"
+    en: "2–5 h, check conditions"
+  action:
+    fr: "Dans un parc sûr, cherche cinq indices de changement saisonnier, photographie-les sans déranger l'environnement et consigne tes observations."
+    en: "In a safe park, find five signs of seasonal change, photograph them without disturbance and log observations."
+  why:
+    fr: "Un défi de progression réelle : Marcher dans un lieu inconnu et relever des indices."
+    en: "A challenge for real progress: Walk somewhere new and notice evidence."
+  done_when:
+    fr: "Cinq observations datées et personnelles."
+    en: "Five dated original observations."
+  minimum:
+    fr: "Une sortie sûre ou un plan reporté pour raison valable."
+    en: "One safe outing or justified deferral plan."
+  stretch:
+    fr: "Raconte la sortie avec tes propres observations."
+    en: "Record the outing with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2027W07-R01
+  horizon: week
+  category: career
+  period: 2027-W07
+  period_start: '2027-02-15'
+  issued: '2026-11-05'
+  due: '2027-02-21'
+  difficulty: ambitious
+  title:
+    fr: "Évaluer honnêtement un programme de doctorat"
+    en: "Honestly assess a PhD pathway"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Compare ton dossier actuel aux exigences publiées d'un programme, en séparant obstacles surmontables et prérequis non remplis."
+    en: "Compare your current academic profile with published program requirements, distinguishing solvable gaps from unmet prerequisites."
+  why:
+    fr: "Un défi de progression réelle : Évaluer honnêtement un programme de doctorat."
+    en: "A challenge for real progress: Honestly assess a PhD pathway."
+  done_when:
+    fr: "Une grille de préparation sourcée sans optimisme fictif."
+    en: "A sourced readiness matrix without invented optimism."
+  minimum:
+    fr: "Une comparaison documentée et critique."
+    en: "A documented critical comparison."
+  stretch:
+    fr: "Fais relire ton analyse par un interlocuteur compétent."
+    en: "Ask a knowledgeable person to review your assessment."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W07-R02
+  horizon: week
+  category: research
+  period: 2027-W07
+  period_start: '2027-02-15'
+  issued: '2026-11-05'
+  due: '2027-02-21'
+  difficulty: ambitious
+  title:
+    fr: "Reproduire un graphique scientifique"
+    en: "Reproduce one scientific figure"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Sélectionne une figure publiée avec données ou code autorisés, reproduis-la et note exactement les écarts."
+    en: "Select a published figure with permitted data/code, reproduce it and document discrepancies."
+  why:
+    fr: "Un défi de progression réelle : Reproduire un graphique scientifique."
+    en: "A challenge for real progress: Reproduce one scientific figure."
+  done_when:
+    fr: "Une reproduction exécutable et ses limites."
+    en: "A runnable reproduction and its limitations."
+  minimum:
+    fr: "Une expérience ou note critique reproductible."
+    en: "One reproducible experiment or critique."
+  stretch:
+    fr: "Demande une lecture critique et corrige une hypothèse."
+    en: "Request critique and correct an assumption."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2027W07-R03
+  horizon: week
+  category: speaking
+  period: 2027-W07
+  period_start: '2027-02-15'
+  issued: '2026-11-05'
+  due: '2027-02-21'
+  difficulty: ambitious
+  title:
+    fr: "Raconter une démonstration en anglais sans notation"
+    en: "Explain a proof in English without symbols"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Explique à une personne volontaire le sens d'une démonstration sans écrire de formules puis réponds à sa principale incompréhension."
+    en: "Explain the meaning of a proof to a willing person without writing formulas, then address their main confusion."
+  why:
+    fr: "Un défi de progression réelle : Raconter une démonstration en anglais sans notation."
+    en: "A challenge for real progress: Explain a proof in English without symbols."
+  done_when:
+    fr: "Un échange de pédagogie réelle."
+    en: "A genuine teaching exchange."
+  minimum:
+    fr: "Un échange réel avec questions."
+    en: "A genuine exchange with questions."
+  stretch:
+    fr: "Accepte une objection imprévue et reformule-la loyalement."
+    en: "Accept an unplanned objection and restate it fairly."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W07-R04
+  horizon: week
+  category: build
+  period: 2027-W07
+  period_start: '2027-02-15'
+  issued: '2026-11-05'
+  due: '2027-02-21'
+  difficulty: ambitious
+  title:
+    fr: "Créer un outil d'analyse X strictement hors ligne"
+    en: "Create a strictly offline X analytics tool"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Compare deux exports CSV autorisés de ton compte X et affiche tendance et incertitudes sans publier ni appeler l'API."
+    en: "Compare two permitted X CSV exports and show trends and uncertainties without posting or calling the API."
+  why:
+    fr: "Un défi de progression réelle : Créer un outil d'analyse X strictement hors ligne."
+    en: "A challenge for real progress: Create a strictly offline X analytics tool."
+  done_when:
+    fr: "Un tableau de bord local fonctionnel."
+    en: "A working local dashboard."
+  minimum:
+    fr: "Un outil ou correctif utilisable et testé."
+    en: "One usable tested tool or fix."
+  stretch:
+    fr: "Fais tester à deux personnes et corrige un irritant."
+    en: "Test with two people and fix an issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2027W07-R05
+  horizon: week
+  category: fitness
+  period: 2027-W07
+  period_start: '2027-02-15'
+  issued: '2026-11-05'
+  due: '2027-02-21'
+  difficulty: ambitious
+  title:
+    fr: "Une séance de renforcement compatible avec la course"
+    en: "Strengthen sustainably for running"
+  effort:
+    fr: "1–3 h · récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Avec une charge adaptée et technique maîtrisée, teste une séance douce de renforcement général puis note tes sensations et la récupération."
+    en: "With suitable loading and technique, try a gentle whole-body strength session and record recovery."
+  why:
+    fr: "Un défi de progression réelle : Une séance de renforcement compatible avec la course."
+    en: "A challenge for real progress: Strengthen sustainably for running."
+  done_when:
+    fr: "Une séance sécuritaire et un bilan de forme."
+    en: "One safe session and fitness reflection."
+  minimum:
+    fr: "Une séance adaptée, réalisée sans ignorer la récupération."
+    en: "One suitable session respecting recovery."
+  stretch:
+    fr: "Progression supplémentaire uniquement si l'état physique le permet."
+    en: "Progress only if your condition permits."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-2027W08-R01
+  horizon: week
+  category: writing
+  period: 2027-W08
+  period_start: '2027-02-22'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Ton chapitre philosophique sans aide générative"
+    en: "Your philosophy chapter without generative help"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Rédige 1 500 mots autour d'une question qui te poursuit et cite deux livres réellement lus, sans IA pour le plan ni la rédaction."
+    en: "Write 1,500 words on a question that stays with you, citing two genuinely read books and using no AI for outline or drafting."
+  why:
+    fr: "Un défi de progression réelle : Ton chapitre philosophique sans aide générative."
+    en: "A challenge for real progress: Your philosophy chapter without generative help."
+  done_when:
+    fr: "Un chapitre personnel argumenté et sourcé."
+    en: "A sourced original argumentative chapter."
+  minimum:
+    fr: "Un texte original relu par toi sans IA lorsque demandé."
+    en: "One original self-edited text without AI when required."
+  stretch:
+    fr: "Invite une critique humaine sans déléguer ta plume."
+    en: "Seek human critique without outsourcing your writing."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2027W08-R02
+  horizon: week
+  category: outdoors
+  period: 2027-W08
+  period_start: '2027-02-22'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Randonner dans la neige en observateur"
+    en: "Observe while walking a snowy trail"
+  effort:
+    fr: "2–5 h selon conditions"
+    en: "2–5 h, check conditions"
+  action:
+    fr: "Choisis un itinéraire sûr et ouvert, vérifie les conditions puis observe l'environnement plutôt que de chercher la vitesse."
+    en: "Choose a safe open trail, verify conditions and observe the surroundings rather than chase speed."
+  why:
+    fr: "Un défi de progression réelle : Randonner dans la neige en observateur."
+    en: "A challenge for real progress: Observe while walking a snowy trail."
+  done_when:
+    fr: "Une sortie sûre et un carnet d'observations."
+    en: "A safe outing and observation journal."
+  minimum:
+    fr: "Une sortie sûre ou un plan reporté pour raison valable."
+    en: "One safe outing or justified deferral plan."
+  stretch:
+    fr: "Raconte la sortie avec tes propres observations."
+    en: "Record the outing with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2027W08-R03
+  horizon: week
+  category: math
+  period: 2027-W08
+  period_start: '2027-02-22'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Dériver une équation de valeur FM avec contre-exemple"
+    en: "Derive an FM equation of value with a counterexample"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Dérive une relation de taux ou de rente et invente un cas où une erreur de signe donne une réponse plausible mais fausse."
+    en: "Derive an interest or annuity relationship and invent a case where a sign error gives a plausible wrong answer."
+  why:
+    fr: "Un défi de progression réelle : Dériver une équation de valeur FM avec contre-exemple."
+    en: "A challenge for real progress: Derive an FM equation of value with a counterexample."
+  done_when:
+    fr: "Une dérivation et un contre-exemple calculé."
+    en: "A derivation and numerical counterexample."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-2027W08-R04
+  horizon: week
+  category: community
+  period: 2027-W08
+  period_start: '2027-02-22'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Écouter une histoire de migration sans l'exploiter"
+    en: "Listen to a migration story respectfully"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Si une personne le souhaite, écoute son parcours et demande ce qu'elle considère le plus mal compris, sans publier de détail personnel."
+    en: "If someone wishes, listen to their journey and ask what others misunderstand, without publishing personal details."
+  why:
+    fr: "Un défi de progression réelle : Écouter une histoire de migration sans l'exploiter."
+    en: "A challenge for real progress: Listen to a migration story respectfully."
+  done_when:
+    fr: "Un échange respectueux et un apprentissage non divulgué."
+    en: "A respectful conversation and private lesson."
+  minimum:
+    fr: "Une interaction réelle respectueuse."
+    en: "A respectful real interaction."
+  stretch:
+    fr: "Organise un second échange si l'intérêt est mutuel."
+    en: "Arrange a second exchange if interest is mutual."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W08-R05
+  horizon: week
+  category: creativity
+  period: 2027-W08
+  period_start: '2027-02-22'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Photographier une idée abstraite"
+    en: "Photograph an abstract concept"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Exprime la notion de risque par cinq photos prises par toi et rédige une courte interprétation sans image d'autrui."
+    en: "Express the concept of risk with five photos you took and write a short interpretation without others' images."
+  why:
+    fr: "Un défi de progression réelle : Photographier une idée abstraite."
+    en: "A challenge for real progress: Photograph an abstract concept."
+  done_when:
+    fr: "Une série visuelle originale et cohérente."
+    en: "An original coherent visual series."
+  minimum:
+    fr: "Une création personnelle terminée."
+    en: "One completed original creation."
+  stretch:
+    fr: "Montre ta création et demande un retour."
+    en: "Show your creation and invite feedback."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027W09-R01
+  horizon: week
+  category: math
+  period: 2027-W09
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-07'
+  difficulty: ambitious
+  title:
+    fr: "Réécrire un algorithme par invariant"
+    en: "Prove an algorithm with a loop invariant"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis un algorithme simple et donne un invariant qui démontre son comportement ; vérifie sur des exemples adversariaux."
+    en: "Choose a simple algorithm and derive an invariant proving its behavior; check adversarial examples."
+  why:
+    fr: "Un défi de progression réelle : Réécrire un algorithme par invariant."
+    en: "A challenge for real progress: Prove an algorithm with a loop invariant."
+  done_when:
+    fr: "Un invariant exact et des tests."
+    en: "An exact invariant and tests."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2027W09-R02
+  horizon: week
+  category: build
+  period: 2027-W09
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-07'
+  difficulty: ambitious
+  title:
+    fr: "Soumettre un petit correctif mathlib bien ciblé"
+    en: "Prepare a narrowly scoped mathlib contribution"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Lis les règles de mathlib, ajoute un lemme ou correctif documentaire testé dans un fork et invite une revue avant toute PR."
+    en: "Read mathlib rules, add a tested lemma or documentation fix in a fork and invite review before any PR."
+  why:
+    fr: "Un défi de progression réelle : Soumettre un petit correctif mathlib bien ciblé."
+    en: "A challenge for real progress: Prepare a narrowly scoped mathlib contribution."
+  done_when:
+    fr: "Un changement prêt pour revue et vérifié."
+    en: "A checked review-ready change."
+  minimum:
+    fr: "Un outil ou correctif utilisable et testé."
+    en: "One usable tested tool or fix."
+  stretch:
+    fr: "Fais tester à deux personnes et corrige un irritant."
+    en: "Test with two people and fix an issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2027W09-R03
+  horizon: week
+  category: speaking
+  period: 2027-W09
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-07'
+  difficulty: ambitious
+  title:
+    fr: "Faire une présentation de sept minutes sans notes"
+    en: "Deliver a seven-minute talk without notes"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Explique une idée mathématique en anglais sans lire un texte devant un auditeur volontaire et invite trois questions."
+    en: "Explain a mathematical idea in English without a script to a willing listener and invite three questions."
+  why:
+    fr: "Un défi de progression réelle : Faire une présentation de sept minutes sans notes."
+    en: "A challenge for real progress: Deliver a seven-minute talk without notes."
+  done_when:
+    fr: "Un discours réellement donné et un retour."
+    en: "A genuinely delivered talk and feedback."
+  minimum:
+    fr: "Un échange réel avec questions."
+    en: "A genuine exchange with questions."
+  stretch:
+    fr: "Accepte une objection imprévue et reformule-la loyalement."
+    en: "Accept an unplanned objection and restate it fairly."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W09-R04
+  horizon: week
+  category: career
+  period: 2027-W09
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-07'
+  difficulty: ambitious
+  title:
+    fr: "Écrire à un chercheur avec une question précise"
+    en: "Ask a researcher a precise question"
+  effort:
+    fr: "2–4 h"
+    en: "2–4 h"
+  action:
+    fr: "Lis un article et formule une question technique polie, puis envoie-la si le canal est approprié, sans attendre de réponse."
+    en: "Read a paper, formulate a respectful technical question and send it through an appropriate channel without expecting a reply."
+  why:
+    fr: "Un défi de progression réelle : Écrire à un chercheur avec une question précise."
+    en: "A challenge for real progress: Ask a researcher a precise question."
+  done_when:
+    fr: "Une question rigoureuse envoyée ou prête à envoyer."
+    en: "A rigorous question sent or ready to send."
+  minimum:
+    fr: "Une comparaison documentée et critique."
+    en: "A documented critical comparison."
+  stretch:
+    fr: "Fais relire ton analyse par un interlocuteur compétent."
+    en: "Ask a knowledgeable person to review your assessment."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W09-R05
+  horizon: week
+  category: fitness
+  period: 2027-W09
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-07'
+  difficulty: ambitious
+  title:
+    fr: "Évaluer une marche longue avant une vraie montagne"
+    en: "Assess a longer walk before a mountain"
+  effort:
+    fr: "1–3 h · récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Choisis une marche adaptée à ton niveau avec itinéraire et retour sûr ; note la fatigue et ajuste le futur dénivelé prévu."
+    en: "Choose a walk suited to your level with a safe route and return; record fatigue and adjust planned future ascent."
+  why:
+    fr: "Un défi de progression réelle : Évaluer une marche longue avant une vraie montagne."
+    en: "A challenge for real progress: Assess a longer walk before a mountain."
+  done_when:
+    fr: "Un repère d'endurance prudent."
+    en: "A cautious endurance benchmark."
+  minimum:
+    fr: "Une séance adaptée, réalisée sans ignorer la récupération."
+    en: "One suitable session respecting recovery."
+  stretch:
+    fr: "Progression supplémentaire uniquement si l'état physique le permet."
+    en: "Progress only if your condition permits."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2027W10-R01
+  horizon: week
+  category: research
+  period: 2027-W10
+  period_start: '2027-03-08'
+  issued: '2026-11-05'
+  due: '2027-03-14'
+  difficulty: ambitious
+  title:
+    fr: "Transformer un notebook en note scientifique"
+    en: "Turn a notebook into a scientific note"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Rédige problème, méthode, résultats et limites d'un notebook GLM en deux pages plutôt que d'accumuler des graphiques sans interprétation."
+    en: "Write the problem, method, findings and limits of a GLM notebook in two pages rather than accumulating uninterpreted figures."
+  why:
+    fr: "Un défi de progression réelle : Transformer un notebook en note scientifique."
+    en: "A challenge for real progress: Turn a notebook into a scientific note."
+  done_when:
+    fr: "Une note scientifique courte reproductible."
+    en: "A short reproducible scientific note."
+  minimum:
+    fr: "Une expérience ou note critique reproductible."
+    en: "One reproducible experiment or critique."
+  stretch:
+    fr: "Demande une lecture critique et corrige une hypothèse."
+    en: "Request critique and correct an assumption."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2027W10-R02
+  horizon: week
+  category: writing
+  period: 2027-W10
+  period_start: '2027-03-08'
+  issued: '2026-11-05'
+  due: '2027-03-14'
+  difficulty: ambitious
+  title:
+    fr: "Une page de dialogue en anglais sans IA"
+    en: "A page of English dialogue without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris un dialogue fictif de 900 mots en anglais sans IA, avec deux personnages intelligents en désaccord sur une question morale."
+    en: "Write a 900-word fictional English dialogue without AI, with two intelligent characters disagreeing over a moral question."
+  why:
+    fr: "Un défi de progression réelle : Une page de dialogue en anglais sans IA."
+    en: "A challenge for real progress: A page of English dialogue without AI."
+  done_when:
+    fr: "Un dialogue original relu par toi."
+    en: "An original self-edited dialogue."
+  minimum:
+    fr: "Un texte original relu par toi sans IA lorsque demandé."
+    en: "One original self-edited text without AI when required."
+  stretch:
+    fr: "Invite une critique humaine sans déléguer ta plume."
+    en: "Seek human critique without outsourcing your writing."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2027W10-R03
+  horizon: week
+  category: community
+  period: 2027-W10
+  period_start: '2027-03-08'
+  issued: '2026-11-05'
+  due: '2027-03-14'
+  difficulty: ambitious
+  title:
+    fr: "Animer un mini-cercle de lecture"
+    en: "Host a tiny reading circle"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Invite deux lecteurs volontaires autour d'un texte précis, prépare deux questions ouvertes et laisse chacun développer son argument."
+    en: "Invite two willing readers around a specific text, prepare two open questions and let each argue."
+  why:
+    fr: "Un défi de progression réelle : Animer un mini-cercle de lecture."
+    en: "A challenge for real progress: Host a tiny reading circle."
+  done_when:
+    fr: "Une discussion tenue ou invitations envoyées avec ordre du jour."
+    en: "A held discussion or sent invitations with an agenda."
+  minimum:
+    fr: "Une interaction réelle respectueuse."
+    en: "A respectful real interaction."
+  stretch:
+    fr: "Organise un second échange si l'intérêt est mutuel."
+    en: "Arrange a second exchange if interest is mutual."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W10-R04
+  horizon: week
+  category: build
+  period: 2027-W10
+  period_start: '2027-03-08'
+  issued: '2026-11-05'
+  due: '2027-03-14'
+  difficulty: ambitious
+  title:
+    fr: "Rendre un exemple mathématique utilisable sans installation"
+    en: "Make a math example usable without installation"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Transforme une démonstration en petit outil web autonome avec affichage lisible, partageable par lien et une erreur d'entrée gérée."
+    en: "Turn a demonstration into a standalone web tool with readable UI, link sharing and input-error handling."
+  why:
+    fr: "Un défi de progression réelle : Rendre un exemple mathématique utilisable sans installation."
+    en: "A challenge for real progress: Make a math example usable without installation."
+  done_when:
+    fr: "Un outil en ligne exécutable et testé."
+    en: "A runnable tested online tool."
+  minimum:
+    fr: "Un outil ou correctif utilisable et testé."
+    en: "One usable tested tool or fix."
+  stretch:
+    fr: "Fais tester à deux personnes et corrige un irritant."
+    en: "Test with two people and fix an issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2027W10-R05
+  horizon: week
+  category: outdoors
+  period: 2027-W10
+  period_start: '2027-03-08'
+  issued: '2026-11-05'
+  due: '2027-03-14'
+  difficulty: ambitious
+  title:
+    fr: "Une observation de biodiversité documentée"
+    en: "Document a biodiversity observation"
+  effort:
+    fr: "2–5 h selon conditions"
+    en: "2–5 h, check conditions"
+  action:
+    fr: "Sur une promenade sûre, observe et photographie une espèce commune sans la déranger et documente lieu général, date et incertitude d'identification."
+    en: "On a safe walk, observe and photograph a common species without disturbing it and document general area, date and identification uncertainty."
+  why:
+    fr: "Un défi de progression réelle : Une observation de biodiversité documentée."
+    en: "A challenge for real progress: Document a biodiversity observation."
+  done_when:
+    fr: "Une observation de nature datée avec prudence."
+    en: "One cautiously documented dated nature observation."
+  minimum:
+    fr: "Une sortie sûre ou un plan reporté pour raison valable."
+    en: "One safe outing or justified deferral plan."
+  stretch:
+    fr: "Raconte la sortie avec tes propres observations."
+    en: "Record the outing with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2027W11-R01
+  horizon: week
+  category: math
+  period: 2027-W11
+  period_start: '2027-03-15'
+  issued: '2026-11-05'
+  due: '2027-03-21'
+  difficulty: ambitious
+  title:
+    fr: "Vérifier un calcul de risque par simulation"
+    en: "Check a risk calculation with simulation"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Sur une loi de fréquence simple, dérive l'espérance puis contrôle par simulation Monte Carlo et intervalle d'erreur."
+    en: "For a simple frequency distribution, derive expectation then check by Monte Carlo and error bounds."
+  why:
+    fr: "Un défi de progression réelle : Vérifier un calcul de risque par simulation."
+    en: "A challenge for real progress: Check a risk calculation with simulation."
+  done_when:
+    fr: "Une preuve et un contrôle chiffré reproductible."
+    en: "A proof and reproducible numerical check."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2027W11-R02
+  horizon: week
+  category: speaking
+  period: 2027-W11
+  period_start: '2027-03-15'
+  issued: '2026-11-05'
+  due: '2027-03-21'
+  difficulty: ambitious
+  title:
+    fr: "Faire une explication publique suivie de questions"
+    en: "Deliver a short public explanation with Q&A"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Propose une mini-présentation de mathématiques de cinq minutes dans un cadre volontaire et accepte les questions sans script."
+    en: "Offer a five-minute math explanation in a willing setting and take unscripted questions."
+  why:
+    fr: "Un défi de progression réelle : Faire une explication publique suivie de questions."
+    en: "A challenge for real progress: Deliver a short public explanation with Q&A."
+  done_when:
+    fr: "Une présentation réelle et une critique sollicitée."
+    en: "A real talk and requested feedback."
+  minimum:
+    fr: "Un échange réel avec questions."
+    en: "A genuine exchange with questions."
+  stretch:
+    fr: "Accepte une objection imprévue et reformule-la loyalement."
+    en: "Accept an unplanned objection and restate it fairly."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W11-R03
+  horizon: week
+  category: writing
+  period: 2027-W11
+  period_start: '2027-03-15'
+  issued: '2026-11-05'
+  due: '2027-03-21'
+  difficulty: ambitious
+  title:
+    fr: "Une chronique sur la discipline sans héroïsme toxique"
+    en: "An essay on discipline without toxic heroics"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris 1 200 mots sans IA opposant rigueur et obstination, avec un argument qui reconnaît l'importance de la récupération."
+    en: "Write 1,200 no-AI words contrasting rigor and stubbornness, acknowledging recovery in the argument."
+  why:
+    fr: "Un défi de progression réelle : Une chronique sur la discipline sans héroïsme toxique."
+    en: "A challenge for real progress: An essay on discipline without toxic heroics."
+  done_when:
+    fr: "Un essai défendable avec objection."
+    en: "A defensible essay with a counterargument."
+  minimum:
+    fr: "Un texte original relu par toi sans IA lorsque demandé."
+    en: "One original self-edited text without AI when required."
+  stretch:
+    fr: "Invite une critique humaine sans déléguer ta plume."
+    en: "Seek human critique without outsourcing your writing."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027W11-R04
+  horizon: week
+  category: research
+  period: 2027-W11
+  period_start: '2027-03-15'
+  issued: '2026-11-05'
+  due: '2027-03-21'
+  difficulty: ambitious
+  title:
+    fr: "Relire une PR open source comme un mainteneur"
+    en: "Review an open-source PR like a maintainer"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Choisis une PR publique adaptée à tes compétences, exécute ses tests si possible, puis rédige une revue technique respectueuse."
+    en: "Choose a public PR suited to your skills, run its tests if possible and write a respectful technical review."
+  why:
+    fr: "Un défi de progression réelle : Relire une PR open source comme un mainteneur."
+    en: "A challenge for real progress: Review an open-source PR like a maintainer."
+  done_when:
+    fr: "Une revue argumentée ou un commentaire proposé."
+    en: "A reasoned review or proposed comment."
+  minimum:
+    fr: "Une expérience ou note critique reproductible."
+    en: "One reproducible experiment or critique."
+  stretch:
+    fr: "Demande une lecture critique et corrige une hypothèse."
+    en: "Request critique and correct an assumption."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2027W11-R05
+  horizon: week
+  category: fitness
+  period: 2027-W11
+  period_start: '2027-03-15'
+  issued: '2026-11-05'
+  due: '2027-03-21'
+  difficulty: ambitious
+  title:
+    fr: "Préparer une marche de printemps progressive"
+    en: "Plan a progressive spring walk"
+  effort:
+    fr: "1–3 h · récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Après vérification météo, choisis une sortie appropriée à ton niveau et mesure seulement confort, équipement et récupération."
+    en: "After checking weather, choose a route suited to your level and measure comfort, gear and recovery only."
+  why:
+    fr: "Un défi de progression réelle : Préparer une marche de printemps progressive."
+    en: "A challenge for real progress: Plan a progressive spring walk."
+  done_when:
+    fr: "Un itinéraire et un bilan de sortie adaptés."
+    en: "A suitable route and outing reflection."
+  minimum:
+    fr: "Une séance adaptée, réalisée sans ignorer la récupération."
+    en: "One suitable session respecting recovery."
+  stretch:
+    fr: "Progression supplémentaire uniquement si l'état physique le permet."
+    en: "Progress only if your condition permits."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2027W12-R01
+  horizon: week
+  category: math
+  period: 2027-W12
+  period_start: '2027-03-22'
+  issued: '2026-11-05'
+  due: '2027-03-28'
+  difficulty: ambitious
+  title:
+    fr: "Formaliser une identité en Lean avec un pair"
+    en: "Formalize an identity in Lean with peer review"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris une identité algébrique en Lean, fais vérifier le compilateur et demande à un autre contributeur comment simplifier le code."
+    en: "Write an algebraic identity in Lean, compile it and ask another contributor how to simplify the code."
+  why:
+    fr: "Un défi de progression réelle : Formaliser une identité en Lean avec un pair."
+    en: "A challenge for real progress: Formalize an identity in Lean with peer review."
+  done_when:
+    fr: "Une preuve compilée et une demande de revue."
+    en: "A compiled proof and a review request."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-2027W12-R02
+  horizon: week
+  category: build
+  period: 2027-W12
+  period_start: '2027-03-22'
+  issued: '2026-11-05'
+  due: '2027-03-28'
+  difficulty: ambitious
+  title:
+    fr: "Concevoir un graphique d'incertitude honnête"
+    en: "Design an honest uncertainty chart"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "À partir de données synthétiques, construis un graphique avec incertitude et teste la lecture de ses limites auprès d'un non-spécialiste."
+    en: "Using synthetic data, build an uncertainty-aware chart and test a non-specialist's understanding of its limitations."
+  why:
+    fr: "Un défi de progression réelle : Concevoir un graphique d'incertitude honnête."
+    en: "A challenge for real progress: Design an honest uncertainty chart."
+  done_when:
+    fr: "Une visualisation corrigée après un test."
+    en: "A visualization improved after testing."
+  minimum:
+    fr: "Un outil ou correctif utilisable et testé."
+    en: "One usable tested tool or fix."
+  stretch:
+    fr: "Fais tester à deux personnes et corrige un irritant."
+    en: "Test with two people and fix an issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2027W12-R03
+  horizon: week
+  category: community
+  period: 2027-W12
+  period_start: '2027-03-22'
+  issued: '2026-11-05'
+  due: '2027-03-28'
+  difficulty: ambitious
+  title:
+    fr: "Participer à un atelier citoyen non partisan"
+    en: "Join a nonpartisan civic workshop"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Assiste à une rencontre publique de citoyenneté ou de science et pose une question constructive, sans chercher à convaincre tout le monde."
+    en: "Attend a public civic or science meeting and ask a constructive question without trying to persuade everyone."
+  why:
+    fr: "Un défi de progression réelle : Participer à un atelier citoyen non partisan."
+    en: "A challenge for real progress: Join a nonpartisan civic workshop."
+  done_when:
+    fr: "Une participation réelle et une réflexion personnelle."
+    en: "Real participation and a personal reflection."
+  minimum:
+    fr: "Une interaction réelle respectueuse."
+    en: "A respectful real interaction."
+  stretch:
+    fr: "Organise un second échange si l'intérêt est mutuel."
+    en: "Arrange a second exchange if interest is mutual."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027W12-R04
+  horizon: week
+  category: writing
+  period: 2027-W12
+  period_start: '2027-03-22'
+  issued: '2026-11-05'
+  due: '2027-03-28'
+  difficulty: ambitious
+  title:
+    fr: "Écrire une nouvelle de voyage imaginaire sans IA"
+    en: "Write an imagined travel story without AI"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris un récit original de 1 000 mots à partir d'une destination que tu veux découvrir, en distinguant les faits vérifiables de la fiction."
+    en: "Write an original 1,000-word story about a destination you want to explore, distinguishing verified facts from fiction."
+  why:
+    fr: "Un défi de progression réelle : Écrire une nouvelle de voyage imaginaire sans IA."
+    en: "A challenge for real progress: Write an imagined travel story without AI."
+  done_when:
+    fr: "Un récit complet et cohérent écrit par toi."
+    en: "A full coherent story written independently."
+  minimum:
+    fr: "Un texte original relu par toi sans IA lorsque demandé."
+    en: "One original self-edited text without AI when required."
+  stretch:
+    fr: "Invite une critique humaine sans déléguer ta plume."
+    en: "Seek human critique without outsourcing your writing."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-2027W12-R05
+  horizon: week
+  category: outdoors
+  period: 2027-W12
+  period_start: '2027-03-22'
+  issued: '2026-11-05'
+  due: '2027-03-28'
+  difficulty: ambitious
+  title:
+    fr: "Observer le retour du printemps sur un sentier"
+    en: "Notice spring returning on a trail"
+  effort:
+    fr: "2–5 h selon conditions"
+    en: "2–5 h, check conditions"
+  action:
+    fr: "Choisis un sentier officiellement ouvert, vérifie conditions de dégel et photographie cinq signes saisonniers sans sortir des chemins."
+    en: "Choose an officially open trail, check thaw conditions and photograph five seasonal signs without leaving paths."
+  why:
+    fr: "Un défi de progression réelle : Observer le retour du printemps sur un sentier."
+    en: "A challenge for real progress: Notice spring returning on a trail."
+  done_when:
+    fr: "Cinq observations prises en sécurité."
+    en: "Five safely gathered observations."
+  minimum:
+    fr: "Une sortie sûre ou un plan reporté pour raison valable."
+    en: "One safe outing or justified deferral plan."
+  stretch:
+    fr: "Raconte la sortie avec tes propres observations."
+    en: "Record the outing with your own observations."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-2027W13-R01
+  horizon: week
+  category: math
+  period: 2027-W13
+  period_start: '2027-03-29'
+  issued: '2026-11-05'
+  due: '2027-04-04'
+  difficulty: ambitious
+  title:
+    fr: "Répondre à une question actuarielle en trois méthodes"
+    en: "Answer an actuarial question three ways"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Sur un problème de fréquence, produis une réponse mathématique, numérique et graphique, puis compare leurs écarts."
+    en: "For a claim-frequency problem, produce analytic, numerical and visual answers and compare discrepancies."
+  why:
+    fr: "Un défi de progression réelle : Répondre à une question actuarielle en trois méthodes."
+    en: "A challenge for real progress: Answer an actuarial question three ways."
+  done_when:
+    fr: "Trois représentations cohérentes et une critique."
+    en: "Three coherent representations and a critique."
+  minimum:
+    fr: "Une méthode défendue et contrôlée."
+    en: "One defended and checked method."
+  stretch:
+    fr: "Fais vérifier ton raisonnement par une autre personne."
+    en: "Have another person check your reasoning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y1
+- id: ACT-2027W13-R02
+  horizon: week
+  category: speaking
+  period: 2027-W13
+  period_start: '2027-03-29'
+  issued: '2026-11-05'
+  due: '2027-04-04'
+  difficulty: ambitious
+  title:
+    fr: "Diriger un mini-séminaire de vingt minutes"
+    en: "Lead a twenty-minute micro-seminar"
+  effort:
+    fr: "1–3 h"
+    en: "1–3 h"
+  action:
+    fr: "Propose une séance à un petit groupe volontaire, présente un problème mathématique et anime questions et contre-exemples."
+    en: "Offer a session to a willing small group, present a math problem and host questions and counterexamples."
+  why:
+    fr: "Un défi de progression réelle : Diriger un mini-séminaire de vingt minutes."
+    en: "A challenge for real progress: Lead a twenty-minute micro-seminar."
+  done_when:
+    fr: "Une séance tenue ou une invitation envoyée."
+    en: "A delivered session or a sent invitation."
+  minimum:
+    fr: "Un échange réel avec questions."
+    en: "A genuine exchange with questions."
+  stretch:
+    fr: "Accepte une objection imprévue et reformule-la loyalement."
+    en: "Accept an unplanned objection and restate it fairly."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-2027W13-R03
+  horizon: week
+  category: build
+  period: 2027-W13
+  period_start: '2027-03-29'
+  issued: '2026-11-05'
+  due: '2027-04-04'
+  difficulty: ambitious
+  title:
+    fr: "Une documentation qu'un étranger peut suivre"
+    en: "Documentation a stranger can follow"
+  effort:
+    fr: "3–6 h"
+    en: "3–6 h"
+  action:
+    fr: "Rédige un guide d'installation et un exemple complet pour un outil de ton blog, puis teste les étapes sur environnement propre."
+    en: "Write installation instructions and a complete example for a blog tool, then test them in a clean environment."
+  why:
+    fr: "Un défi de progression réelle : Une documentation qu'un étranger peut suivre."
+    en: "A challenge for real progress: Documentation a stranger can follow."
+  done_when:
+    fr: "Un guide réellement exécutable."
+    en: "Truly runnable documentation."
+  minimum:
+    fr: "Un outil ou correctif utilisable et testé."
+    en: "One usable tested tool or fix."
+  stretch:
+    fr: "Fais tester à deux personnes et corrige un irritant."
+    en: "Test with two people and fix an issue."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-2027W13-R04
+  horizon: week
+  category: writing
+  period: 2027-W13
+  period_start: '2027-03-29'
+  issued: '2026-11-05'
+  due: '2027-04-04'
+  difficulty: ambitious
+  title:
+    fr: "Un essai de 1 500 mots sans IA, prêt à publier"
+    en: "A 1,500-word no-AI essay ready to publish"
+  effort:
+    fr: "3–5 h"
+    en: "3–5 h"
+  action:
+    fr: "Écris un essai argumenté à partir d'une lecture politique ou philosophique, avec objection et sources, et révise-le seul."
+    en: "Write an argumentative essay based on political or philosophical reading, with objection and sources, and revise it alone."
+  why:
+    fr: "Un défi de progression réelle : Un essai de 1 500 mots sans IA, prêt à publier."
+    en: "A challenge for real progress: A 1,500-word no-AI essay ready to publish."
+  done_when:
+    fr: "Un essai original documenté."
+    en: "An original documented essay."
+  minimum:
+    fr: "Un texte original relu par toi sans IA lorsque demandé."
+    en: "One original self-edited text without AI when required."
+  stretch:
+    fr: "Invite une critique humaine sans déléguer ta plume."
+    en: "Seek human critique without outsourcing your writing."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027W13-R05
+  horizon: week
+  category: fitness
+  period: 2027-W13
+  period_start: '2027-03-29'
+  issued: '2026-11-05'
+  due: '2027-04-04'
+  difficulty: ambitious
+  title:
+    fr: "Un parcours de printemps qui prépare la montagne"
+    en: "A spring route preparing for mountains"
+  effort:
+    fr: "1–3 h · récupération comprise"
+    en: "1–3 h including recovery"
+  action:
+    fr: "Choisis une marche adaptée avec dénivelé modéré et plan de repli, puis mesure récupération sans transformer la sortie en course."
+    en: "Choose a suitable walk with moderate ascent and fallback plan, then assess recovery without turning it into a race."
+  why:
+    fr: "Un défi de progression réelle : Un parcours de printemps qui prépare la montagne."
+    en: "A challenge for real progress: A spring route preparing for mountains."
+  done_when:
+    fr: "Une sortie prudente et un bilan de préparation."
+    en: "A cautious outing and preparation review."
+  minimum:
+    fr: "Une séance adaptée, réalisée sans ignorer la récupération."
+    en: "One suitable session respecting recovery."
+  stretch:
+    fr: "Progression supplémentaire uniquement si l'état physique le permet."
+    en: "Progress only if your condition permits."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y7
