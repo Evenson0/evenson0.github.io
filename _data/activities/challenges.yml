@@ -9454,3 +9454,993 @@
   - explore
   parents:
   - ACT-202611-Y11
+- id: ACT-202705M-R01
+  horizon: month
+  category: fitness
+  period: month-2027-05
+  period_start: '2027-05-01'
+  issued: '2026-11-05'
+  due: '2027-05-31'
+  difficulty: ambitious
+  title:
+    fr: "Une vraie course de 10 km selon ton état de préparation"
+    en: "A real 10K suited to your readiness"
+  effort:
+    fr: "Progression adaptée à ton état, récupération comprise"
+    en: "Tailored progression including recovery"
+  action:
+    fr: "Si la progression et la récupération le permettent, réalise 10 km en course-marche ou sur une épreuve adaptée ; sinon vise un jalon inférieur sans te blesser."
+    en: "If training and recovery permit, complete a 10K run-walk or suitable event; otherwise choose a safer milestone without injury."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une vraie course de 10 km selon ton état de préparation."
+    en: "A meaningful experience or achievement for this month: A real 10K suited to your readiness."
+  done_when:
+    fr: "Une distance réalisée et un bilan d'endurance sans surenchère."
+    en: "An achieved distance and an honest endurance reflection."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-202705M-R02
+  horizon: month
+  category: outdoors
+  period: month-2027-05
+  period_start: '2027-05-01'
+  issued: '2026-11-05'
+  due: '2027-05-31'
+  difficulty: ambitious
+  title:
+    fr: "Une première montagne avec un vrai plan d'ascension"
+    en: "A first mountain with a real ascent plan"
+  effort:
+    fr: "Une ou deux sorties + préparation"
+    en: "One or two outings plus planning"
+  action:
+    fr: "Prépare un sommet balisé de difficulté compatible avec ta forme et réalise-le si météo, accès, équipement et transport le permettent."
+    en: "Plan a marked summit suited to fitness and complete it only if weather, access, gear and transport allow."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une première montagne avec un vrai plan d'ascension."
+    en: "A meaningful experience or achievement for this month: A first mountain with a real ascent plan."
+  done_when:
+    fr: "Une ascension prudente ou un report fondé sur la sécurité."
+    en: "A cautious summit or safety-based deferral."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-202705M-R03
+  horizon: month
+  category: writing
+  period: month-2027-05
+  period_start: '2027-05-01'
+  issued: '2026-11-05'
+  due: '2027-05-31'
+  difficulty: ambitious
+  title:
+    fr: "Un manuscrit de 15 000 mots que tu peux lire"
+    en: "A readable 15,000-word manuscript"
+  effort:
+    fr: "12–25 h selon les projets"
+    en: "12–25 h depending on project"
+  action:
+    fr: "Achève et relis sans IA un ensemble cohérent de chapitres qui conduit vers une première version complète."
+    en: "Complete and self-edit a coherent set of chapters without AI to move toward a full first draft."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Un manuscrit de 15 000 mots que tu peux lire."
+    en: "A meaningful experience or achievement for this month: A readable 15,000-word manuscript."
+  done_when:
+    fr: "Un manuscrit partiel cohérent et relu."
+    en: "A coherent self-reviewed partial manuscript."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202705M-R04
+  horizon: month
+  category: research
+  period: month-2027-05
+  period_start: '2027-05-01'
+  issued: '2026-11-05'
+  due: '2027-05-31'
+  difficulty: ambitious
+  title:
+    fr: "Une expérience robuste avec intervalle de confiance"
+    en: "A robust experiment with uncertainty estimates"
+  effort:
+    fr: "12–25 h"
+    en: "12–25 h"
+  action:
+    fr: "Évalue deux modèles de fréquence sur données ouvertes ou synthétiques avec validation hors échantillon et incertitude documentée."
+    en: "Evaluate two claim-frequency models on open or synthetic data with out-of-sample validation and documented uncertainty."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une expérience robuste avec intervalle de confiance."
+    en: "A meaningful experience or achievement for this month: A robust experiment with uncertainty estimates."
+  done_when:
+    fr: "Une analyse reproductible montrant résultats et limites."
+    en: "A reproducible analysis showing results and limitations."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-202705M-R05
+  horizon: month
+  category: community
+  period: month-2027-05
+  period_start: '2027-05-01'
+  issued: '2026-11-05'
+  due: '2027-05-31'
+  difficulty: ambitious
+  title:
+    fr: "Organiser un petit atelier gratuit de mathématiques"
+    en: "Host a free math micro-workshop"
+  effort:
+    fr: "4–10 h"
+    en: "4–10 h"
+  action:
+    fr: "Propose un atelier ouvert à quelques volontaires, avec thème, exercices originaux et feuille de retour, sans promettre une audience."
+    en: "Offer a micro-workshop to willing learners with a theme, original exercises and feedback sheet, without assuming an audience."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Organiser un petit atelier gratuit de mathématiques."
+    en: "A meaningful experience or achievement for this month: Host a free math micro-workshop."
+  done_when:
+    fr: "Un atelier tenu ou une invitation sérieuse adressée."
+    en: "A held workshop or serious invitation."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202706M-R01
+  horizon: month
+  category: outdoors
+  period: month-2027-06
+  period_start: '2027-06-01'
+  issued: '2026-11-05'
+  due: '2027-06-30'
+  difficulty: ambitious
+  title:
+    fr: "Atteindre le Mont-du-Lac-des-Cygnes si prêt"
+    en: "Reach Mont-du-Lac-des-Cygnes if ready"
+  effort:
+    fr: "Une ou deux sorties + préparation"
+    en: "One or two outings plus planning"
+  action:
+    fr: "Sur la base du sentier difficile de 8,6 km de la Sépaq, vérifie condition, dénivelé de 480 m, accès et météo avant d'envisager la randonnée."
+    en: "Using Sépaq's difficult 8.6 km trail with 480 m ascent, verify readiness, access and weather before considering the hike."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Atteindre le Mont-du-Lac-des-Cygnes si prêt."
+    en: "A meaningful experience or achievement for this month: Reach Mont-du-Lac-des-Cygnes if ready."
+  done_when:
+    fr: "Une ascension sûre ou une décision argumentée de reporter."
+    en: "A safe summit or a reasoned deferral."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-202706M-R02
+  horizon: month
+  category: build
+  period: month-2027-06
+  period_start: '2027-06-01'
+  issued: '2026-11-05'
+  due: '2027-06-30'
+  difficulty: ambitious
+  title:
+    fr: "Publier une version 1.0 documentée d'un outil"
+    en: "Publish a documented 1.0 release of a tool"
+  effort:
+    fr: "10–20 h"
+    en: "10–20 h"
+  action:
+    fr: "Choisis un projet mathématique, fige une interface stable, ajoute tests et guide d'installation, puis publie un numéro de version."
+    en: "Choose a mathematical project, freeze a stable interface, add tests and installation guide, then publish a release version."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Publier une version 1.0 documentée d'un outil."
+    en: "A meaningful experience or achievement for this month: Publish a documented 1.0 release of a tool."
+  done_when:
+    fr: "Une version installable et un changelog."
+    en: "An installable version and changelog."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-202706M-R03
+  horizon: month
+  category: writing
+  period: month-2027-06
+  period_start: '2027-06-01'
+  issued: '2026-11-05'
+  due: '2027-06-30'
+  difficulty: ambitious
+  title:
+    fr: "Les vingt mille mots du livre sans prose générée"
+    en: "Twenty thousand book words without generated prose"
+  effort:
+    fr: "12–25 h selon les projets"
+    en: "12–25 h depending on project"
+  action:
+    fr: "Ajoute des chapitres personnels jusqu'à vingt mille mots cohérents et demande une lecture critique d'un passage."
+    en: "Add original chapters toward twenty thousand coherent words and invite critique of one passage."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Les vingt mille mots du livre sans prose générée."
+    en: "A meaningful experience or achievement for this month: Twenty thousand book words without generated prose."
+  done_when:
+    fr: "Un manuscrit intermédiaire solide et relu."
+    en: "A solid intermediate draft with self-review."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202706M-R04
+  horizon: month
+  category: speaking
+  period: month-2027-06
+  period_start: '2027-06-01'
+  issued: '2026-11-05'
+  due: '2027-06-30'
+  difficulty: ambitious
+  title:
+    fr: "Animer un échange public de science en anglais"
+    en: "Host a public science conversation in English"
+  effort:
+    fr: "5–12 h"
+    en: "5–12 h"
+  action:
+    fr: "Propose un exposé anglais sur un modèle actuariel à un petit groupe, puis anime une discussion sans texte préparé."
+    en: "Offer an English actuarial talk to a small group and facilitate an unscripted discussion."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Animer un échange public de science en anglais."
+    en: "A meaningful experience or achievement for this month: Host a public science conversation in English."
+  done_when:
+    fr: "Une intervention réelle ou une proposition acceptée pour date future."
+    en: "An actual talk or a future accepted invitation."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-202706M-R05
+  horizon: month
+  category: travel
+  period: month-2027-06
+  period_start: '2027-06-01'
+  issued: '2026-11-05'
+  due: '2027-06-30'
+  difficulty: ambitious
+  title:
+    fr: "Un voyage court à la rencontre d'une autre culture"
+    en: "Take a short trip into another culture"
+  effort:
+    fr: "Préparation et budget à définir"
+    en: "Planning and budget to be set"
+  action:
+    fr: "Choisis une destination accessible que tu connais peu, planifie coût, transport, documents et rencontres culturelles ; pars seulement si les moyens le permettent."
+    en: "Choose an accessible unfamiliar destination, plan cost, travel documents and cultural experiences; go only if circumstances permit."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Un voyage court à la rencontre d'une autre culture."
+    en: "A meaningful experience or achievement for this month: Take a short trip into another culture."
+  done_when:
+    fr: "Un voyage vécu ou un budget et itinéraire réalistes."
+    en: "A trip taken or a realistic budget and itinerary."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - travel-goal
+  parents:
+  - ACT-202611-Y10
+- id: ACT-202707M-R01
+  horizon: month
+  category: fitness
+  period: month-2027-07
+  period_start: '2027-07-01'
+  issued: '2026-11-05'
+  due: '2027-07-31'
+  difficulty: ambitious
+  title:
+    fr: "Préparer un semi-marathon avec récupération vérifiée"
+    en: "Prepare for a half marathon with recovery checks"
+  effort:
+    fr: "Progression adaptée à ton état, récupération comprise"
+    en: "Tailored progression including recovery"
+  action:
+    fr: "Si une base régulière 10 km est acquise et les conseils appropriés suivis, évalue un programme progressif vers 21,1 km sans ignorer douleur et fatigue."
+    en: "If a consistent 10K base exists and appropriate guidance is followed, assess a gradual route to 21.1 km without ignoring pain or fatigue."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Préparer un semi-marathon avec récupération vérifiée."
+    en: "A meaningful experience or achievement for this month: Prepare for a half marathon with recovery checks."
+  done_when:
+    fr: "Une progression évaluée et un jalon adapté réalisé."
+    en: "An assessed progression and suitable milestone completed."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-202707M-R02
+  horizon: month
+  category: outdoors
+  period: month-2027-07
+  period_start: '2027-07-01'
+  issued: '2026-11-05'
+  due: '2027-07-31'
+  difficulty: ambitious
+  title:
+    fr: "Une randonnée de sommet que tu n'aurais pas osée"
+    en: "A summit hike you once thought impossible"
+  effort:
+    fr: "Une ou deux sorties + préparation"
+    en: "One or two outings plus planning"
+  action:
+    fr: "Choisis un sommet exigeant mais compatible avec ton niveau, prépare sécurité, terrain, météo et plan de repli, et tente-le prudemment."
+    en: "Choose a demanding but suitable summit, plan safety, terrain, weather and fallback, and attempt carefully."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une randonnée de sommet que tu n'aurais pas osée."
+    en: "A meaningful experience or achievement for this month: A summit hike you once thought impossible."
+  done_when:
+    fr: "Une vraie aventure en montagne terminée en sécurité ou reportée."
+    en: "A real mountain outing safely completed or deferred."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-202707M-R03
+  horizon: month
+  category: math
+  period: month-2027-07
+  period_start: '2027-07-01'
+  issued: '2026-11-05'
+  due: '2027-07-31'
+  difficulty: ambitious
+  title:
+    fr: "Créer vingt preuves Lean reliées dans un petit corpus"
+    en: "Build twenty connected Lean proofs"
+  effort:
+    fr: "12–25 h"
+    en: "12–25 h"
+  action:
+    fr: "Dans un dépôt personnel, formalise des propriétés d'un domaine mathématique cohérent, vérifie chaque fichier et documente les dépendances."
+    en: "In a personal repo, formalize properties in one coherent math area, compile each file and document dependencies."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Créer vingt preuves Lean reliées dans un petit corpus."
+    en: "A meaningful experience or achievement for this month: Build twenty connected Lean proofs."
+  done_when:
+    fr: "Un corpus de preuves reproductibles et organisé."
+    en: "An organized reproducible proof corpus."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-202707M-R04
+  horizon: month
+  category: writing
+  period: month-2027-07
+  period_start: '2027-07-01'
+  issued: '2026-11-05'
+  due: '2027-07-31'
+  difficulty: ambitious
+  title:
+    fr: "Une confrontation philosophique de 2 000 mots sans IA"
+    en: "A 2,000-word philosophical confrontation without AI"
+  effort:
+    fr: "12–25 h selon les projets"
+    en: "12–25 h depending on project"
+  action:
+    fr: "Écris un essai opposant deux conceptions de la liberté ou de l'ambition, en utilisant des passages vérifiés et une objection solide."
+    en: "Write an essay contrasting two accounts of freedom or ambition, using verified passages and a serious counterargument."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une confrontation philosophique de 2 000 mots sans IA."
+    en: "A meaningful experience or achievement for this month: A 2,000-word philosophical confrontation without AI."
+  done_when:
+    fr: "Un essai personnel documenté et révisé sans IA."
+    en: "A sourced personal essay revised without AI."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-202707M-R05
+  horizon: month
+  category: career
+  period: month-2027-07
+  period_start: '2027-07-01'
+  issued: '2026-11-05'
+  due: '2027-07-31'
+  difficulty: ambitious
+  title:
+    fr: "Faire critiquer ton portefeuille par un chercheur"
+    en: "Have a researcher critique your portfolio"
+  effort:
+    fr: "6–12 h"
+    en: "6–12 h"
+  action:
+    fr: "Présente un dossier de deux pages contenant projets, preuves et limites, puis sollicite un retour professionnel ou universitaire sans présumer une réponse."
+    en: "Present a two-page portfolio of projects, evidence and limitations, then seek professional or academic feedback without presuming a response."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Faire critiquer ton portefeuille par un chercheur."
+    en: "A meaningful experience or achievement for this month: Have a researcher critique your portfolio."
+  done_when:
+    fr: "Un dossier précis et une demande de revue envoyée."
+    en: "A focused portfolio and a sent review request."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202708M-R01
+  horizon: month
+  category: outdoors
+  period: month-2027-08
+  period_start: '2027-08-01'
+  issued: '2026-11-05'
+  due: '2027-08-31'
+  difficulty: ambitious
+  title:
+    fr: "Une aventure de randonnée sur deux jours, si préparé"
+    en: "A prepared two-day hiking adventure"
+  effort:
+    fr: "Une ou deux sorties + préparation"
+    en: "One or two outings plus planning"
+  action:
+    fr: "Planifie une randonnée avec nuitée légale, refuges ou camping, vérifie eau, transport, itinéraire, météo et compétences ; privilégie un groupe adapté."
+    en: "Plan a legal overnight hike with hut or camping, checking water, transport, route, weather and skills; choose a suitable group."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une aventure de randonnée sur deux jours, si préparé."
+    en: "A meaningful experience or achievement for this month: A prepared two-day hiking adventure."
+  done_when:
+    fr: "Une sortie encadrée ou un plan prêt et sûr."
+    en: "A guided outing or a ready safe plan."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-202708M-R02
+  horizon: month
+  category: writing
+  period: month-2027-08
+  period_start: '2027-08-01'
+  issued: '2026-11-05'
+  due: '2027-08-31'
+  difficulty: ambitious
+  title:
+    fr: "Lire ton livre comme un éditeur indépendant"
+    en: "Read your book like an independent editor"
+  effort:
+    fr: "12–25 h selon les projets"
+    en: "12–25 h depending on project"
+  action:
+    fr: "Imprime ou relis ton manuscrit, marque les ruptures de cohérence et révise trois chapitres sans IA de rédaction."
+    en: "Print or read your manuscript, mark coherence gaps and revise three chapters without AI drafting."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Lire ton livre comme un éditeur indépendant."
+    en: "A meaningful experience or achievement for this month: Read your book like an independent editor."
+  done_when:
+    fr: "Trois chapitres améliorés avec décisions éditoriales expliquées."
+    en: "Three improved chapters with documented editorial choices."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202708M-R03
+  horizon: month
+  category: build
+  period: month-2027-08
+  period_start: '2027-08-01'
+  issued: '2026-11-05'
+  due: '2027-08-31'
+  difficulty: ambitious
+  title:
+    fr: "Une PR scientifique Python avec tests et réponse aux critiques"
+    en: "A Scientific Python PR with tests and review response"
+  effort:
+    fr: "10–20 h"
+    en: "10–20 h"
+  action:
+    fr: "Prépare un correctif utile dans une bibliothèque ouverte appropriée, soumets une PR seulement si les conventions sont respectées, puis réponds aux critiques."
+    en: "Prepare a useful fix in a suitable open library, submit a PR if conventions are met, then respond to review."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une PR scientifique Python avec tests et réponse aux critiques."
+    en: "A meaningful experience or achievement for this month: A Scientific Python PR with tests and review response."
+  done_when:
+    fr: "Une PR de qualité proposée ou un patch prêt à être révisé."
+    en: "A quality proposed PR or a review-ready patch."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-202708M-R04
+  horizon: month
+  category: speaking
+  period: month-2027-08
+  period_start: '2027-08-01'
+  issued: '2026-11-05'
+  due: '2027-08-31'
+  difficulty: ambitious
+  title:
+    fr: "Faire un débat intégralement en anglais"
+    en: "Hold a debate entirely in English"
+  effort:
+    fr: "5–12 h"
+    en: "5–12 h"
+  action:
+    fr: "Organise avec un partenaire volontaire un débat de trente minutes sur une question de science ou de société, sans lire de texte."
+    en: "Arrange a thirty-minute English debate with a willing partner on science or society without reading a script."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Faire un débat intégralement en anglais."
+    en: "A meaningful experience or achievement for this month: Hold a debate entirely in English."
+  done_when:
+    fr: "Un débat réel et un bilan de fluidité."
+    en: "A real debate and a fluency review."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-202708M-R05
+  horizon: month
+  category: community
+  period: month-2027-08
+  period_start: '2027-08-01'
+  issued: '2026-11-05'
+  due: '2027-08-31'
+  difficulty: ambitious
+  title:
+    fr: "Une journée de contribution scientifique ouverte"
+    en: "A day contributing to open science"
+  effort:
+    fr: "4–10 h"
+    en: "4–10 h"
+  action:
+    fr: "Consacre une journée adaptée à l'amélioration d'un outil open source, à une recherche participative ou à une action éducative, sans données confidentielles."
+    en: "Dedicate a suitable day to improving open tools, citizen science or educational service without confidential data."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une journée de contribution scientifique ouverte."
+    en: "A meaningful experience or achievement for this month: A day contributing to open science."
+  done_when:
+    fr: "Une contribution réelle traçable et une réflexion."
+    en: "A real traceable contribution and reflection."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202709M-R01
+  horizon: month
+  category: fitness
+  period: month-2027-09
+  period_start: '2027-09-01'
+  issued: '2026-11-05'
+  due: '2027-09-30'
+  difficulty: ambitious
+  title:
+    fr: "Choisir honnêtement marathon, semi ou autre distance"
+    en: "Choose marathon, half marathon or another distance honestly"
+  effort:
+    fr: "Progression adaptée à ton état, récupération comprise"
+    en: "Tailored progression including recovery"
+  action:
+    fr: "Selon ta préparation réelle et l'avis approprié, décide si le 19 septembre peut être un marathon sûr ; sinon inscris-toi à une distance adaptée seulement si tu le souhaites."
+    en: "Based on actual training and suitable advice, decide whether a September 19 marathon would be safe; otherwise choose a suitable shorter goal if desired."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Choisir honnêtement marathon, semi ou autre distance."
+    en: "A meaningful experience or achievement for this month: Choose marathon, half marathon or another distance honestly."
+  done_when:
+    fr: "Une décision physique responsable puis une distance adaptée, sans risque inutile."
+    en: "A responsible fitness decision and suitable completed distance, without unnecessary risk."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-202709M-R02
+  horizon: month
+  category: writing
+  period: month-2027-09
+  period_start: '2027-09-01'
+  issued: '2026-11-05'
+  due: '2027-09-30'
+  difficulty: ambitious
+  title:
+    fr: "Le manuscrit du livre entre les mains de deux lecteurs"
+    en: "Put the book draft in two readers' hands"
+  effort:
+    fr: "12–25 h selon les projets"
+    en: "12–25 h depending on project"
+  action:
+    fr: "Finalise une version lisible et propose-la à deux lecteurs volontaires en précisant le type de critique attendu ; n'exige pas de réponse."
+    en: "Finish a readable draft and offer it to two willing readers with requested feedback topics; do not demand replies."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Le manuscrit du livre entre les mains de deux lecteurs."
+    en: "A meaningful experience or achievement for this month: Put the book draft in two readers' hands."
+  done_when:
+    fr: "Un manuscrit achevé et deux invitations à lecture."
+    en: "A completed manuscript and two reading invitations."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202709M-R03
+  horizon: month
+  category: research
+  period: month-2027-09
+  period_start: '2027-09-01'
+  issued: '2026-11-05'
+  due: '2027-09-30'
+  difficulty: ambitious
+  title:
+    fr: "Présenter les résultats d'un working paper"
+    en: "Present working-paper findings"
+  effort:
+    fr: "12–25 h"
+    en: "12–25 h"
+  action:
+    fr: "Prépare une présentation de quinze minutes sur tes travaux actuariels avec graphiques reproductibles et limites, puis propose-la à un groupe."
+    en: "Prepare a fifteen-minute presentation of actuarial findings with reproducible charts and limitations, then offer it to a group."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Présenter les résultats d'un working paper."
+    en: "A meaningful experience or achievement for this month: Present working-paper findings."
+  done_when:
+    fr: "Une présentation donnée ou soumise pour revue."
+    en: "A talk delivered or proposed for review."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-202709M-R04
+  horizon: month
+  category: travel
+  period: month-2027-09
+  period_start: '2027-09-01'
+  issued: '2026-11-05'
+  due: '2027-09-30'
+  difficulty: ambitious
+  title:
+    fr: "Une escapade culturelle racontée dans ta propre langue"
+    en: "A cultural trip told in your own words"
+  effort:
+    fr: "Préparation et budget à définir"
+    en: "Planning and budget to be set"
+  action:
+    fr: "Si voyage réel, visite un lieu historique nouveau et écris un récit original vérifiant cinq faits ; sinon prépare un parcours sans réservation."
+    en: "If traveling, visit a new historic place and write an original account with five checked facts; otherwise plan a route without booking."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une escapade culturelle racontée dans ta propre langue."
+    en: "A meaningful experience or achievement for this month: A cultural trip told in your own words."
+  done_when:
+    fr: "Une expérience culturelle documentée ou un plan précis."
+    en: "A documented cultural experience or a precise plan."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - travel-goal
+  parents:
+  - ACT-202611-Y10
+- id: ACT-202709M-R05
+  horizon: month
+  category: math
+  period: month-2027-09
+  period_start: '2027-09-01'
+  issued: '2026-11-05'
+  due: '2027-09-30'
+  difficulty: ambitious
+  title:
+    fr: "Construire un mini-cours de probabilités en anglais"
+    en: "Build an English probability micro-course"
+  effort:
+    fr: "12–25 h"
+    en: "12–25 h"
+  action:
+    fr: "Produis trois leçons originales courtes avec exemples interactifs et un test, puis sollicite une relecture anglophone."
+    en: "Produce three short original lessons with interactive examples and a test, then invite English-language review."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Construire un mini-cours de probabilités en anglais."
+    en: "A meaningful experience or achievement for this month: Build an English probability micro-course."
+  done_when:
+    fr: "Un mini-cours autonome et vérifiable."
+    en: "A standalone verifiable micro-course."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-202710M-R01
+  horizon: month
+  category: research
+  period: month-2027-10
+  period_start: '2027-10-01'
+  issued: '2026-11-05'
+  due: '2027-10-31'
+  difficulty: ambitious
+  title:
+    fr: "Achever une note de recherche de niveau working paper"
+    en: "Complete a working-paper-level research note"
+  effort:
+    fr: "12–25 h"
+    en: "12–25 h"
+  action:
+    fr: "Rassemble introduction, littérature, méthodes, résultats reproductibles, limites et bibliographie en une version cohérente."
+    en: "Assemble introduction, literature, methods, reproducible results, limitations and references into a coherent draft."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Achever une note de recherche de niveau working paper."
+    en: "A meaningful experience or achievement for this month: Complete a working-paper-level research note."
+  done_when:
+    fr: "Un manuscrit complet prêt pour critique."
+    en: "A full manuscript ready for critique."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-202710M-R02
+  horizon: month
+  category: writing
+  period: month-2027-10
+  period_start: '2027-10-01'
+  issued: '2026-11-05'
+  due: '2027-10-31'
+  difficulty: ambitious
+  title:
+    fr: "Une version complète du premier livre"
+    en: "Complete the first draft of your book"
+  effort:
+    fr: "12–25 h selon les projets"
+    en: "12–25 h depending on project"
+  action:
+    fr: "Termine la continuité du manuscrit de bout en bout, même imparfaite, puis effectue une relecture structurale personnelle sans IA."
+    en: "Complete the book from beginning to end, even imperfectly, then perform a no-AI structural self-edit."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une version complète du premier livre."
+    en: "A meaningful experience or achievement for this month: Complete the first draft of your book."
+  done_when:
+    fr: "Un premier livre entier existant hors de tes idées."
+    en: "A complete first book existing beyond plans."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202710M-R03
+  horizon: month
+  category: career
+  period: month-2027-10
+  period_start: '2027-10-01'
+  issued: '2026-11-05'
+  due: '2027-10-31'
+  difficulty: ambitious
+  title:
+    fr: "Préparer le dossier d'un futur doctorat en actuariat"
+    en: "Prepare a future actuarial PhD application"
+  effort:
+    fr: "6–12 h"
+    en: "6–12 h"
+  action:
+    fr: "Établis une grille d'exigences et preuves : cours, recommandations potentielles, écrits de recherche, lacunes et plans réalistes."
+    en: "Build a requirements-and-evidence matrix: courses, potential references, research writing, gaps and realistic plans."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Préparer le dossier d'un futur doctorat en actuariat."
+    en: "A meaningful experience or achievement for this month: Prepare a future actuarial PhD application."
+  done_when:
+    fr: "Un dossier de préparation honnête et priorisé."
+    en: "An honest prioritized readiness portfolio."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202710M-R04
+  horizon: month
+  category: outdoors
+  period: month-2027-10
+  period_start: '2027-10-01'
+  issued: '2026-11-05'
+  due: '2027-10-31'
+  difficulty: ambitious
+  title:
+    fr: "Une longue randonnée d'automne adaptée à ton endurance"
+    en: "A long autumn hike suited to your endurance"
+  effort:
+    fr: "Une ou deux sorties + préparation"
+    en: "One or two outings plus planning"
+  action:
+    fr: "Planifie une randonnée ambitieuse sur sentier ouvert avec distance, météo, dénivelé et équipement compatibles avec ton niveau."
+    en: "Plan an ambitious open-trail hike with distance, weather, elevation and equipment suited to ability."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Une longue randonnée d'automne adaptée à ton endurance."
+    en: "A meaningful experience or achievement for this month: A long autumn hike suited to your endurance."
+  done_when:
+    fr: "Une randonnée vécue prudemment ou reportée à juste titre."
+    en: "A safely completed hike or justified deferral."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-202710M-R05
+  horizon: month
+  category: community
+  period: month-2027-10
+  period_start: '2027-10-01'
+  issued: '2026-11-05'
+  due: '2027-10-31'
+  difficulty: ambitious
+  title:
+    fr: "Présenter ton année d'apprentissage à un vrai public"
+    en: "Present your year of learning to a real audience"
+  effort:
+    fr: "4–10 h"
+    en: "4–10 h"
+  action:
+    fr: "Prépare un exposé honnête sur trois projets réalisés, une erreur majeure et une leçon, puis propose-le à une communauté volontaire."
+    en: "Prepare an honest presentation on three actual projects, a major mistake and a lesson, then offer it to a willing community."
+  why:
+    fr: "Une expérience ou réalisation marquante de ce mois : Présenter ton année d'apprentissage à un vrai public."
+    en: "A meaningful experience or achievement for this month: Present your year of learning to a real audience."
+  done_when:
+    fr: "Un exposé proposé ou donné, sans inventions de succès."
+    en: "An offered or delivered talk without invented accomplishments."
+  minimum:
+    fr: "Une étape préparatoire substantielle documentée avec un résultat sous ton contrôle."
+    en: "A substantive documented intermediate step with an outcome you control."
+  stretch:
+    fr: "Expose ton résultat à une critique ou un test extérieur si le contexte le permet."
+    en: "Expose the result to outside feedback or testing where possible."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
