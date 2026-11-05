@@ -10444,3 +10444,408 @@
   - explore
   parents:
   - ACT-202611-Y11
+- id: ACT-202611Q-R01
+  horizon: quarter
+  category: career
+  period: quarter-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-05'
+  due: '2027-02-02'
+  difficulty: ambitious
+  title:
+    fr: "Un cycle de treize semaines à la Franklin"
+    en: "A thirteen-week Franklin experiment"
+  effort:
+    fr: "13 semaines · bilans courts"
+    en: "13 weeks · short reviews"
+  action:
+    fr: "Choisis une vertu pratique — persévérance, écoute ou courage — et réalise treize bilans hebdomadaires sans jugement punitif."
+    en: "Choose a practical virtue—perseverance, listening or courage—and record thirteen weekly reviews without punitive self-judgment."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Un cycle de treize semaines à la Franklin."
+    en: "A genuinely demanding quarterly milestone: A thirteen-week Franklin experiment."
+  done_when:
+    fr: "Treize bilans sincères et une conclusion sur ce qui a vraiment changé."
+    en: "Thirteen candid reviews and a conclusion on genuine change."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+  inspiration: franklin
+- id: ACT-202611Q-R02
+  horizon: quarter
+  category: build
+  period: quarter-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-05'
+  due: '2027-02-02'
+  difficulty: ambitious
+  title:
+    fr: "Créer trente mini-problèmes de mathématiques originaux"
+    en: "Create thirty original mathematical mini-problems"
+  effort:
+    fr: "20–40 h cumulées"
+    en: "20–40 cumulative hours"
+  action:
+    fr: "Conçois trente problèmes d'algèbre ou de probabilités avec solutions vérifiées et navigation mobile, sans reproduire d'énoncés protégés."
+    en: "Design thirty algebra or probability problems with checked solutions and mobile navigation, without copying protected questions."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Créer trente mini-problèmes de mathématiques originaux."
+    en: "A genuinely demanding quarterly milestone: Create thirty original mathematical mini-problems."
+  done_when:
+    fr: "Une bibliothèque originale de trente énoncés et corrigés testés."
+    en: "An original library of thirty tested problems and explanations."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+  inspiration: euler
+- id: ACT-202611Q-R03
+  horizon: quarter
+  category: speaking
+  period: quarter-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-05'
+  due: '2027-02-02'
+  difficulty: ambitious
+  title:
+    fr: "Devenir capable de présenter trois idées en anglais"
+    en: "Learn to present three ideas in English"
+  effort:
+    fr: "12–20 h"
+    en: "12–20 h"
+  action:
+    fr: "Prépare trois exposés courts en anglais portant sur science, littérature et expérience personnelle, avec véritables questions des auditeurs."
+    en: "Prepare three short English talks on science, literature and personal experience, inviting real listener questions."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Devenir capable de présenter trois idées en anglais."
+    en: "A genuinely demanding quarterly milestone: Learn to present three ideas in English."
+  done_when:
+    fr: "Trois prestations réelles ou invitations documentées."
+    en: "Three actual talks or documented invitations."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: toastmasters
+- id: ACT-202702Q-R01
+  horizon: quarter
+  category: writing
+  period: quarter-2027-02
+  period_start: '2027-02-03'
+  issued: '2026-11-05'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Quinze mille mots de livre sans prose générée"
+    en: "Fifteen thousand book words without generated prose"
+  effort:
+    fr: "45–65 h"
+    en: "45–65 h"
+  action:
+    fr: "Rédige et relis quinze mille mots de ton manuscrit avec structure, voix originale et critique d'un chapitre par un lecteur volontaire."
+    en: "Write and self-edit fifteen thousand book words with structure, original voice and one chapter offered to a reader."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Quinze mille mots de livre sans prose générée."
+    en: "A genuinely demanding quarterly milestone: Fifteen thousand book words without generated prose."
+  done_when:
+    fr: "Un manuscrit cohérent de quinze mille mots."
+    en: "A coherent fifteen-thousand-word manuscript."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+  inspiration: murakami
+- id: ACT-202702Q-R02
+  horizon: quarter
+  category: math
+  period: quarter-2027-02
+  period_start: '2027-02-03'
+  issued: '2026-11-05'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Construire une théorie Lean en dix lemmes reliés"
+    en: "Build a Lean theory in ten linked lemmas"
+  effort:
+    fr: "30–55 h"
+    en: "30–55 h"
+  action:
+    fr: "Formalise un petit domaine mathématique cohérent avec dix lemmes compilables et guide de reproduction, puis invite une revue."
+    en: "Formalize a coherent small math area with ten compiling lemmas and a reproduction guide, then invite review."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Construire une théorie Lean en dix lemmes reliés."
+    en: "A genuinely demanding quarterly milestone: Build a Lean theory in ten linked lemmas."
+  done_when:
+    fr: "Dix preuves reliées et une demande de critique."
+    en: "Ten connected proofs and a review request."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+  inspiration: mathlib
+- id: ACT-202702Q-R03
+  horizon: quarter
+  category: community
+  period: quarter-2027-02
+  period_start: '2027-02-03'
+  issued: '2026-11-05'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Un trimestre de rencontres intellectuelles réelles"
+    en: "A quarter of genuine intellectual gatherings"
+  effort:
+    fr: "3 à 6 sorties"
+    en: "3–6 outings"
+  action:
+    fr: "Participe à trois rencontres académiques ou culturelles, pose des questions substantielles et écris les désaccords qui t'ont aidé à réfléchir."
+    en: "Attend three academic or cultural gatherings, ask substantial questions and record disagreements that improved your thinking."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Un trimestre de rencontres intellectuelles réelles."
+    en: "A genuinely demanding quarterly milestone: A quarter of genuine intellectual gatherings."
+  done_when:
+    fr: "Trois participations vécues et un journal d'idées."
+    en: "Three attended gatherings and an ideas journal."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202705Q-R01
+  horizon: quarter
+  category: outdoors
+  period: quarter-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-05'
+  due: '2027-08-02'
+  difficulty: ambitious
+  title:
+    fr: "Deux randonnées majeures au Québec préparées sérieusement"
+    en: "Prepare and complete two major Quebec hikes"
+  effort:
+    fr: "2–4 journées + préparation"
+    en: "2–4 outing days plus planning"
+  action:
+    fr: "Choisis deux randonnées adaptées à ton niveau, planifie dénivelé, transport, équipement et replis, puis réalise-les seulement en conditions sûres."
+    en: "Choose two hikes fitted to readiness, plan ascent, transport, gear and fallback, then complete only when conditions are safe."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Deux randonnées majeures au Québec préparées sérieusement."
+    en: "A genuinely demanding quarterly milestone: Prepare and complete two major Quebec hikes."
+  done_when:
+    fr: "Deux sorties significatives ou des reports motivés par la sécurité."
+    en: "Two significant hikes or safety-based deferrals."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+  inspiration: sepaq
+- id: ACT-202705Q-R02
+  horizon: quarter
+  category: research
+  period: quarter-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-05'
+  due: '2027-08-02'
+  difficulty: ambitious
+  title:
+    fr: "Une reproduction actuarielle comparée à un modèle concurrent"
+    en: "A reproduced actuarial result versus a rival model"
+  effort:
+    fr: "25–50 h"
+    en: "25–50 h"
+  action:
+    fr: "Reproduis une étude sur données ouvertes et confronte son résultat à un second modèle en expliquant erreurs et incertitudes."
+    en: "Reproduce a study with open data and compare its findings to a second model, explaining errors and uncertainty."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Une reproduction actuarielle comparée à un modèle concurrent."
+    en: "A genuinely demanding quarterly milestone: A reproduced actuarial result versus a rival model."
+  done_when:
+    fr: "Un dépôt scientifique et une note critique reproductibles."
+    en: "A reproducible scientific repo and critical note."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-202705Q-R03
+  horizon: quarter
+  category: fitness
+  period: quarter-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-05'
+  due: '2027-08-02'
+  difficulty: ambitious
+  title:
+    fr: "Valider la préparation avant tout semi-marathon"
+    en: "Validate readiness before any half marathon"
+  effort:
+    fr: "Progression adaptée · pas de volume imposé"
+    en: "Tailored progression · no fixed volume"
+  action:
+    fr: "Si une base régulière existe, évalue endurance, récupération et progression vers 21,1 km avec un professionnel approprié ; choisis la distance la plus sûre."
+    en: "If a consistent base exists, assess endurance, recovery and progression toward 21.1 km with appropriate professional input; choose the safest distance."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Valider la préparation avant tout semi-marathon."
+    en: "A genuinely demanding quarterly milestone: Validate readiness before any half marathon."
+  done_when:
+    fr: "Une décision de course réfléchie et un jalon adapté."
+    en: "A reasoned race decision and suitable milestone."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+  inspiration: murakami
+- id: ACT-202708Q-R01
+  horizon: quarter
+  category: speaking
+  period: quarter-2027-08
+  period_start: '2027-08-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Trois conférences techniques dans deux langues"
+    en: "Three technical talks in two languages"
+  effort:
+    fr: "12–20 h"
+    en: "12–20 h"
+  action:
+    fr: "Donne ou propose trois exposés devant des personnes volontaires, dont au moins un en anglais ; prépare questions et bilan des critiques."
+    en: "Deliver or offer three talks to willing people, including one in English; plan Q&A and review criticism."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Trois conférences techniques dans deux langues."
+    en: "A genuinely demanding quarterly milestone: Three technical talks in two languages."
+  done_when:
+    fr: "Trois interventions données ou invitations substantielles envoyées."
+    en: "Three delivered talks or substantial invitations sent."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: toastmasters
+- id: ACT-202708Q-R02
+  horizon: quarter
+  category: build
+  period: quarter-2027-08
+  period_start: '2027-08-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Faire auditer ton meilleur outil par des utilisateurs"
+    en: "Have users audit your best tool"
+  effort:
+    fr: "20–40 h cumulées"
+    en: "20–40 cumulative hours"
+  action:
+    fr: "Choisis un outil numérique abouti, organise cinq tests volontaires, corrige les problèmes prioritaires et publie une version stable documentée."
+    en: "Choose a mature digital tool, arrange five voluntary usability tests, fix priority problems and publish a documented stable version."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Faire auditer ton meilleur outil par des utilisateurs."
+    en: "A genuinely demanding quarterly milestone: Have users audit your best tool."
+  done_when:
+    fr: "Une version améliorée avec rapport de tests et limites."
+    en: "An improved release with testing report and limitations."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+  inspiration: sciencepython
+- id: ACT-202708Q-R03
+  horizon: quarter
+  category: travel
+  period: quarter-2027-08
+  period_start: '2027-08-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Trois expériences culturelles nouvelles et documentées"
+    en: "Three new documented cultural experiences"
+  effort:
+    fr: "3 sorties · budget selon moyens"
+    en: "3 outings · budget to fit means"
+  action:
+    fr: "Choisis trois activités ou lieux que tu ne fréquenterais pas normalement, vérifie accès et coût, puis réalise les visites accessibles avec récits personnels."
+    en: "Choose three activities or places you would not normally visit, check access and cost, then complete feasible visits with personal accounts."
+  why:
+    fr: "Une étape trimestrielle réellement exigeante : Trois expériences culturelles nouvelles et documentées."
+    en: "A genuinely demanding quarterly milestone: Three new documented cultural experiences."
+  done_when:
+    fr: "Trois expériences vécues ou reports décidés librement."
+    en: "Three actual experiences or freely chosen deferrals."
+  minimum:
+    fr: "Une première étape complète et vérifiable sur cette ambition."
+    en: "A complete verifiable first milestone toward this ambition."
+  stretch:
+    fr: "Présente le résultat à un regard critique et documente les corrections."
+    en: "Present results to a critical reviewer and document revisions."
+  targets:
+  - travel-goal
+  parents:
+  - ACT-202611-Y10
