@@ -1262,3 +1262,1659 @@
   note:
     fr: "Mission proposée dans le catalogue hebdomadaire d'audace. Défi facultatif, même si la période est ultérieure ; Evenson choisit librement."
     en: "Proposed in the weekly courage catalog. Optional even if the period is in the future; Evenson chooses freely."
+- id: proposal-ACT-2026W45-R01
+  challenge: ACT-2026W45-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W45-R02
+  challenge: ACT-2026W45-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W45-R03
+  challenge: ACT-2026W45-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W46-R01
+  challenge: ACT-2026W46-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W46-R02
+  challenge: ACT-2026W46-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W46-R03
+  challenge: ACT-2026W46-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W47-R01
+  challenge: ACT-2026W47-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W47-R02
+  challenge: ACT-2026W47-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W47-R03
+  challenge: ACT-2026W47-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W47-R04
+  challenge: ACT-2026W47-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W47-R05
+  challenge: ACT-2026W47-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W47-R06
+  challenge: ACT-2026W47-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W48-R01
+  challenge: ACT-2026W48-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W48-R02
+  challenge: ACT-2026W48-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W48-R03
+  challenge: ACT-2026W48-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W48-R04
+  challenge: ACT-2026W48-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W48-R05
+  challenge: ACT-2026W48-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W48-R06
+  challenge: ACT-2026W48-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W49-R01
+  challenge: ACT-2026W49-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W49-R02
+  challenge: ACT-2026W49-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W49-R03
+  challenge: ACT-2026W49-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W49-R04
+  challenge: ACT-2026W49-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W49-R05
+  challenge: ACT-2026W49-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W49-R06
+  challenge: ACT-2026W49-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W50-R01
+  challenge: ACT-2026W50-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W50-R02
+  challenge: ACT-2026W50-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W50-R03
+  challenge: ACT-2026W50-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W50-R04
+  challenge: ACT-2026W50-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W50-R05
+  challenge: ACT-2026W50-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W50-R06
+  challenge: ACT-2026W50-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W51-R01
+  challenge: ACT-2026W51-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W51-R02
+  challenge: ACT-2026W51-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W51-R03
+  challenge: ACT-2026W51-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W51-R04
+  challenge: ACT-2026W51-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W51-R05
+  challenge: ACT-2026W51-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W51-R06
+  challenge: ACT-2026W51-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W52-R01
+  challenge: ACT-2026W52-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W52-R02
+  challenge: ACT-2026W52-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W52-R03
+  challenge: ACT-2026W52-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W52-R04
+  challenge: ACT-2026W52-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W52-R05
+  challenge: ACT-2026W52-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W52-R06
+  challenge: ACT-2026W52-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W53-R01
+  challenge: ACT-2026W53-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W53-R02
+  challenge: ACT-2026W53-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W53-R03
+  challenge: ACT-2026W53-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W53-R04
+  challenge: ACT-2026W53-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W53-R05
+  challenge: ACT-2026W53-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2026W53-R06
+  challenge: ACT-2026W53-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W01-R01
+  challenge: ACT-2027W01-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W01-R02
+  challenge: ACT-2027W01-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W01-R03
+  challenge: ACT-2027W01-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W01-R04
+  challenge: ACT-2027W01-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W01-R05
+  challenge: ACT-2027W01-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W01-R06
+  challenge: ACT-2027W01-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W02-R01
+  challenge: ACT-2027W02-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W02-R02
+  challenge: ACT-2027W02-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W02-R03
+  challenge: ACT-2027W02-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W02-R04
+  challenge: ACT-2027W02-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W02-R05
+  challenge: ACT-2027W02-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W02-R06
+  challenge: ACT-2027W02-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W03-R01
+  challenge: ACT-2027W03-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W03-R02
+  challenge: ACT-2027W03-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W03-R03
+  challenge: ACT-2027W03-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W03-R04
+  challenge: ACT-2027W03-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W03-R05
+  challenge: ACT-2027W03-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W04-R01
+  challenge: ACT-2027W04-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W04-R02
+  challenge: ACT-2027W04-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W04-R03
+  challenge: ACT-2027W04-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W04-R04
+  challenge: ACT-2027W04-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W04-R05
+  challenge: ACT-2027W04-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W05-R01
+  challenge: ACT-2027W05-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W05-R02
+  challenge: ACT-2027W05-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W05-R03
+  challenge: ACT-2027W05-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W05-R04
+  challenge: ACT-2027W05-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W05-R05
+  challenge: ACT-2027W05-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W06-R01
+  challenge: ACT-2027W06-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W06-R02
+  challenge: ACT-2027W06-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W06-R03
+  challenge: ACT-2027W06-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W06-R04
+  challenge: ACT-2027W06-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W06-R05
+  challenge: ACT-2027W06-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W07-R01
+  challenge: ACT-2027W07-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W07-R02
+  challenge: ACT-2027W07-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W07-R03
+  challenge: ACT-2027W07-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W07-R04
+  challenge: ACT-2027W07-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W07-R05
+  challenge: ACT-2027W07-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W08-R01
+  challenge: ACT-2027W08-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W08-R02
+  challenge: ACT-2027W08-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W08-R03
+  challenge: ACT-2027W08-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W08-R04
+  challenge: ACT-2027W08-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W08-R05
+  challenge: ACT-2027W08-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W09-R01
+  challenge: ACT-2027W09-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W09-R02
+  challenge: ACT-2027W09-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W09-R03
+  challenge: ACT-2027W09-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W09-R04
+  challenge: ACT-2027W09-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W09-R05
+  challenge: ACT-2027W09-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W10-R01
+  challenge: ACT-2027W10-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W10-R02
+  challenge: ACT-2027W10-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W10-R03
+  challenge: ACT-2027W10-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W10-R04
+  challenge: ACT-2027W10-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W10-R05
+  challenge: ACT-2027W10-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W11-R01
+  challenge: ACT-2027W11-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W11-R02
+  challenge: ACT-2027W11-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W11-R03
+  challenge: ACT-2027W11-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W11-R04
+  challenge: ACT-2027W11-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W11-R05
+  challenge: ACT-2027W11-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W12-R01
+  challenge: ACT-2027W12-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W12-R02
+  challenge: ACT-2027W12-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W12-R03
+  challenge: ACT-2027W12-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W12-R04
+  challenge: ACT-2027W12-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W12-R05
+  challenge: ACT-2027W12-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W13-R01
+  challenge: ACT-2027W13-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W13-R02
+  challenge: ACT-2027W13-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W13-R03
+  challenge: ACT-2027W13-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W13-R04
+  challenge: ACT-2027W13-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027W13-R05
+  challenge: ACT-2027W13-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611M-R01
+  challenge: ACT-202611M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611M-R02
+  challenge: ACT-202611M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611M-R03
+  challenge: ACT-202611M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611M-R04
+  challenge: ACT-202611M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611M-R05
+  challenge: ACT-202611M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202612M-R01
+  challenge: ACT-202612M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202612M-R02
+  challenge: ACT-202612M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202612M-R03
+  challenge: ACT-202612M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202612M-R04
+  challenge: ACT-202612M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202612M-R05
+  challenge: ACT-202612M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202701M-R01
+  challenge: ACT-202701M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202701M-R02
+  challenge: ACT-202701M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202701M-R03
+  challenge: ACT-202701M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202701M-R04
+  challenge: ACT-202701M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202701M-R05
+  challenge: ACT-202701M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202702M-R01
+  challenge: ACT-202702M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202702M-R02
+  challenge: ACT-202702M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202702M-R03
+  challenge: ACT-202702M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202702M-R04
+  challenge: ACT-202702M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202702M-R05
+  challenge: ACT-202702M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202703M-R01
+  challenge: ACT-202703M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202703M-R02
+  challenge: ACT-202703M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202703M-R03
+  challenge: ACT-202703M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202703M-R04
+  challenge: ACT-202703M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202703M-R05
+  challenge: ACT-202703M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202704M-R01
+  challenge: ACT-202704M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202704M-R02
+  challenge: ACT-202704M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202704M-R03
+  challenge: ACT-202704M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202704M-R04
+  challenge: ACT-202704M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202704M-R05
+  challenge: ACT-202704M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202705M-R01
+  challenge: ACT-202705M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202705M-R02
+  challenge: ACT-202705M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202705M-R03
+  challenge: ACT-202705M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202705M-R04
+  challenge: ACT-202705M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202705M-R05
+  challenge: ACT-202705M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202706M-R01
+  challenge: ACT-202706M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202706M-R02
+  challenge: ACT-202706M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202706M-R03
+  challenge: ACT-202706M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202706M-R04
+  challenge: ACT-202706M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202706M-R05
+  challenge: ACT-202706M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202707M-R01
+  challenge: ACT-202707M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202707M-R02
+  challenge: ACT-202707M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202707M-R03
+  challenge: ACT-202707M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202707M-R04
+  challenge: ACT-202707M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202707M-R05
+  challenge: ACT-202707M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202708M-R01
+  challenge: ACT-202708M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202708M-R02
+  challenge: ACT-202708M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202708M-R03
+  challenge: ACT-202708M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202708M-R04
+  challenge: ACT-202708M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202708M-R05
+  challenge: ACT-202708M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202709M-R01
+  challenge: ACT-202709M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202709M-R02
+  challenge: ACT-202709M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202709M-R03
+  challenge: ACT-202709M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202709M-R04
+  challenge: ACT-202709M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202709M-R05
+  challenge: ACT-202709M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202710M-R01
+  challenge: ACT-202710M-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202710M-R02
+  challenge: ACT-202710M-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202710M-R03
+  challenge: ACT-202710M-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202710M-R04
+  challenge: ACT-202710M-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202710M-R05
+  challenge: ACT-202710M-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611Q-R01
+  challenge: ACT-202611Q-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611Q-R02
+  challenge: ACT-202611Q-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611Q-R03
+  challenge: ACT-202611Q-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202702Q-R01
+  challenge: ACT-202702Q-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202702Q-R02
+  challenge: ACT-202702Q-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202702Q-R03
+  challenge: ACT-202702Q-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202705Q-R01
+  challenge: ACT-202705Q-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202705Q-R02
+  challenge: ACT-202705Q-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202705Q-R03
+  challenge: ACT-202705Q-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202708Q-R01
+  challenge: ACT-202708Q-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202708Q-R02
+  challenge: ACT-202708Q-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202708Q-R03
+  challenge: ACT-202708Q-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R01
+  challenge: ACT-2027S-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R02
+  challenge: ACT-2027S-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R03
+  challenge: ACT-2027S-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R04
+  challenge: ACT-2027S-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R05
+  challenge: ACT-2027S-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R06
+  challenge: ACT-2027S-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R07
+  challenge: ACT-2027S-R07
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R08
+  challenge: ACT-2027S-R08
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R09
+  challenge: ACT-2027S-R09
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027S-R10
+  challenge: ACT-2027S-R10
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027H-R01
+  challenge: ACT-2027H-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027H-R02
+  challenge: ACT-2027H-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027H-R03
+  challenge: ACT-2027H-R03
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027H-R04
+  challenge: ACT-2027H-R04
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027H-R05
+  challenge: ACT-2027H-R05
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027H-R06
+  challenge: ACT-2027H-R06
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027H-R07
+  challenge: ACT-2027H-R07
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-2027H-R08
+  challenge: ACT-2027H-R08
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611Y-R01
+  challenge: ACT-202611Y-R01
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-202611Y-R02
+  challenge: ACT-202611Y-R02
+  date: '2026-11-05'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
+    en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
