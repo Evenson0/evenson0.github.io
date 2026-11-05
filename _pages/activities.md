@@ -8,7 +8,7 @@ sitemap: false
 excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et progresser."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=4">
+<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=5">
 
 <div class="activities-app" id="activities-app" data-lang="fr">
   <header class="act-hero">
@@ -87,6 +87,12 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
     </div>
   </section>
 
+  <details class="act-inspirations" id="act-inspirations">
+    <summary data-copy="inspirationTitle">Des exemples réels pour oser davantage</summary>
+    <p data-copy="inspirationIntro">Ces personnes et communautés nourrissent les missions. Il ne s'agit pas de copier leur vie, mais d'emprunter leur manière de créer, d'apprendre et d'oser.</p>
+    <div id="act-inspiration-list" class="act-inspiration-grid"></div>
+  </details>
+
   <details class="act-method">
     <summary data-copy="methodTitle">Comment ça marche ?</summary>
     <ol>
@@ -107,4 +113,4 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
   </noscript>
 </div>
 <script id="activities-data" type="application/json">{{ site.data.activities | jsonify | replace: '<', '\u003c' }}</script>
-<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=4"></script>
+<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=5"></script>
