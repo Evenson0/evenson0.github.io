@@ -58,6 +58,7 @@
   }
   const COPY = {
     fr: {
+      inspirationTitle: 'Ils ont osé avant toi : les inspirations', inspirationIntro: 'Des parcours vérifiables pour inventer tes propres défis, sans chercher à copier une vie entière.',
       axisMind: 'Esprit', axisBody: 'Corps', axisCourage: 'Courage', axisCreation: 'Création',
       yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', showWeekAll: 'Voir toutes les missions de la semaine', showWeekLess: 'Réduire la sélection', weeklyFocus: 'Missions de la semaine', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Un vaste choix pour exercer ton courage, ton esprit et ta créativité. Choisis une ou deux missions, pas toute la liste.', exploreHint: 'Explore à ton rythme : fais ton choix parmi les horizons et les domaines.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
       eyebrow: 'ACTIVITIES · PROTOCOLE D’AUDACE', hero: 'Deviens capable de ce qui te paraît impossible aujourd’hui.', promise: 'Des exploits qui comptent, pas des points à collectionner.',
@@ -66,8 +67,8 @@
       reportTitle: 'Ton retour', reportHelp: 'Clique sur « Je le tente » puis copie ton bilan pour me l’envoyer dans notre conversation.',
       localHint: 'Tes choix restent des brouillons sur cet appareil : rien n’est envoyé ou publié automatiquement.',
       reportLabel: 'Bilan à transmettre', copy: 'Copier le bilan', methodTitle: 'Comment ça marche ?',
-      rule1: 'Chaque semaine : jusqu’à trois propositions, ajustées à ta disponibilité et à tes retours.',
-      rule2: 'Deux défis mensuels et un par grand horizon. Une action peut faire avancer plusieurs objectifs ; elle n’est pas comptée plusieurs fois comme travail supplémentaire.',
+      rule1: 'Le catalogue offre beaucoup de choix. Choisis une mission majeure et, si tu le souhaites, une deuxième mission complémentaire.',
+      rule2: 'Les défis hebdomadaires nourrissent les grandes ambitions ; un même travail ne compte pas deux fois.',
       rule3: 'Tu décides. Un refus ou un report reste une décision utile. Une échéance dépassée appelle un bilan, jamais un échec automatique.',
       rule4: 'L’historique conserve les propositions, décisions et leçons. Ton récit suffit ; aucune preuve publique n’est exigée.',
       listLink: 'Liste 100 ↗', memoriesLink: 'Memories ↗', all: 'Tous les horizons', allStates: 'Tous les états', open: 'À suivre',
@@ -87,6 +88,7 @@
       sourceMentor: 'Proposition du mentor', sourceUser: 'Retour d’Evenson', noCompletion: 'Les décisions partagées sont conservées ici, sans résultat inventé.'
     },
     en: {
+      inspirationTitle: 'They dared: sources of inspiration', inspirationIntro: 'Verifiable journeys that inspire your own challenges, without trying to copy an entire life.',
       axisMind: 'Mind', axisBody: 'Body', axisCourage: 'Courage', axisCreation: 'Creation',
       yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', showWeekAll: 'Show all weekly missions', showWeekLess: 'Show fewer missions', weeklyFocus: 'This week’s missions', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'A rich menu for courage, learning and creation. Choose one or two missions, not all of them.', exploreHint: 'Explore at your own pace: choose a time horizon and theme.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
       eyebrow: 'ACTIVITIES · THE COURAGE PROTOCOL', hero: 'Become capable of what seems impossible today.', promise: 'Achievements that matter, not points to collect.',
@@ -278,6 +280,22 @@
     $('act-year-cta').textContent = t('yearCta');
     $('act-year-heading').textContent = loc(data.config.annual_vision.headline);
     $('act-year-subtitle').textContent = loc(data.config.annual_vision.subtitle);
+    const inspirationList = $('act-inspiration-list');
+    if (inspirationList) {
+      inspirationList.replaceChildren();
+      (data.inspirations || []).forEach(item => {
+        const card = el('article', 'act-inspiration-item');
+        card.append(el('strong', '', item.name), el('p', '', loc(item.archetype)), el('p', '', loc(item.lesson)));
+        if (/^https:\/\//.test(item.url)) {
+          const link = el('a', '', t('inspirationTitle') + ' · ' + item.name);
+          link.href = item.url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          card.append(link);
+        }
+        inspirationList.append(card);
+      });
+    }
     $('act-view-hint').textContent = t(view === 'challenges' ? 'weekHint' : view === 'explore' ? 'exploreHint' : 'journalHint');
     $('act-discovery-controls').hidden = view !== 'explore';
 
