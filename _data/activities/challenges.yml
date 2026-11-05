@@ -10849,3 +10849,677 @@
   - travel-goal
   parents:
   - ACT-202611-Y10
+- id: ACT-2027S-R01
+  horizon: season
+  category: outdoors
+  period: autumn-2026
+  period_start: '2026-09-01'
+  issued: '2026-11-05'
+  due: '2026-11-30'
+  difficulty: ambitious
+  title:
+    fr: "Une soirée d'observation du ciel d'automne"
+    en: "An autumn night sky observation"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Choisis un lieu sûr et autorisé, vérifie météo et heures, puis observe et identifie trois objets célestes avec une application ou carte du ciel."
+    en: "Choose a safe permitted place, check weather and timing, then observe and identify three celestial objects using a sky map or app."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Une soirée d'observation du ciel d'automne."
+    en: "A chosen achievement beyond everyday boundaries: An autumn night sky observation."
+  done_when:
+    fr: "Une observation réelle ou un report météo avec guide préparé."
+    en: "One genuine observation or weather-based deferral with a prepared guide."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+  inspiration: sepaq
+- id: ACT-2027S-R02
+  horizon: season
+  category: creativity
+  period: autumn-2026
+  period_start: '2026-09-01'
+  issued: '2026-11-05'
+  due: '2026-11-30'
+  difficulty: ambitious
+  title:
+    fr: "Découvrir une exposition et en créer une critique sans IA"
+    en: "Discover an exhibition and write a no-AI critique"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Visite une exposition accessible et écris 800 mots sans IA sur une œuvre qui t'a surpris, sans confondre ton jugement avec un simple résumé."
+    en: "Visit an accessible exhibition and write 800 no-AI words about one surprising work, giving your own judgment rather than a summary."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Découvrir une exposition et en créer une critique sans IA."
+    en: "A chosen achievement beyond everyday boundaries: Discover an exhibition and write a no-AI critique."
+  done_when:
+    fr: "Une visite vécue et une critique personnelle achevée."
+    en: "A real visit and a completed personal critique."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027S-R03
+  horizon: season
+  category: speaking
+  period: winter-2026
+  period_start: '2026-12-01'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Entrer dans un atelier d'improvisation"
+    en: "Enter an improvisation workshop"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Choisis un atelier ouvert aux débutants et participe volontairement à un exercice de parole spontanée, idéalement en anglais si adapté."
+    en: "Choose a beginner-friendly workshop and volunteer for a spontaneous speaking exercise, ideally in English if suitable."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Entrer dans un atelier d'improvisation."
+    en: "A chosen achievement beyond everyday boundaries: Enter an improvisation workshop."
+  done_when:
+    fr: "Un atelier fréquenté et une expérience de prise de parole vécue."
+    en: "An attended workshop and real unscripted speaking experience."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: toastmasters
+- id: ACT-2027S-R04
+  horizon: season
+  category: creativity
+  period: winter-2026
+  period_start: '2026-12-01'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Créer un carnet illustré d'hiver"
+    en: "Create an illustrated winter journal"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Compose une collection de cinq dessins ou photographies originales accompagnées de textes écrits sans IA, en privilégiant observation et composition."
+    en: "Create five original drawings or photos with no-AI prose, emphasizing observation and composition."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Créer un carnet illustré d'hiver."
+    en: "A chosen achievement beyond everyday boundaries: Create an illustrated winter journal."
+  done_when:
+    fr: "Un carnet créatif complet et personnel."
+    en: "A complete original creative journal."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y9
+  inspiration: murakami
+- id: ACT-2027S-R05
+  horizon: season
+  category: outdoors
+  period: spring-2027
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-05-31'
+  difficulty: ambitious
+  title:
+    fr: "Un inventaire de biodiversité près de chez toi"
+    en: "Make a nearby biodiversity inventory"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Sur trois promenades sûres, note des espèces observées sans les déranger ; utilise une identification prudente et corrige tes erreurs."
+    en: "On three safe walks, log observed species without disturbance; identify cautiously and correct mistakes."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Un inventaire de biodiversité près de chez toi."
+    en: "A chosen achievement beyond everyday boundaries: Make a nearby biodiversity inventory."
+  done_when:
+    fr: "Trois sorties documentées et une liste d'observations incertaines signalées."
+    en: "Three documented outings and a list with uncertainties stated."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+  inspiration: zooniverse
+- id: ACT-2027S-R06
+  horizon: season
+  category: community
+  period: spring-2027
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-05-31'
+  difficulty: ambitious
+  title:
+    fr: "Une journée de contribution citoyenne à la cartographie"
+    en: "A citizen-mapping contribution day"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Contribue à un projet OpenStreetMap utile et autorisé ou aide à corriger une carte publique à partir de vérifications réelles, sans données personnelles."
+    en: "Contribute to a legitimate OpenStreetMap project or correct a public map from verified observations, without personal data."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Une journée de contribution citoyenne à la cartographie."
+    en: "A chosen achievement beyond everyday boundaries: A citizen-mapping contribution day."
+  done_when:
+    fr: "Une contribution géographique traçable et documentée."
+    en: "A traceable documented geographic contribution."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-2027S-R07
+  horizon: season
+  category: outdoors
+  period: summer-2027
+  period_start: '2027-06-01'
+  issued: '2026-11-05'
+  due: '2027-08-31'
+  difficulty: ambitious
+  title:
+    fr: "Explorer le Mont-Mégantic en randonnée préparée"
+    en: "Explore Mont-Mégantic with proper preparation"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Évalue un sentier officiel comme la boucle difficile de 10,1 km du Mont-Saint-Joseph ; ne pars que si ta condition physique, la météo et l'accès le permettent."
+    en: "Assess an official trail such as the challenging 10.1 km Mont-Saint-Joseph loop; go only if fitness, weather and access permit."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Explorer le Mont-Mégantic en randonnée préparée."
+    en: "A chosen achievement beyond everyday boundaries: Explore Mont-Mégantic with proper preparation."
+  done_when:
+    fr: "Une sortie préparée et sûre ou un report fondé sur la sécurité."
+    en: "A prepared safe outing or an evidence-based deferral."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+  inspiration: sepaq
+- id: ACT-2027S-R08
+  horizon: season
+  category: creativity
+  period: summer-2027
+  period_start: '2027-06-01'
+  issued: '2026-11-05'
+  due: '2027-08-31'
+  difficulty: ambitious
+  title:
+    fr: "Créer un récit photo d'un ciel étoilé"
+    en: "Make an original night-sky photo essay"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Lors d'une sortie légale et sécuritaire, photographie le ciel ou le paysage nocturne et construis un récit de six images prises par toi."
+    en: "During a safe lawful outing, photograph the sky or night landscape and build a six-photo original story."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Créer un récit photo d'un ciel étoilé."
+    en: "A chosen achievement beyond everyday boundaries: Make an original night-sky photo essay."
+  done_when:
+    fr: "Une série photo originale avec notes sur les conditions de prise de vue."
+    en: "An original photo series with notes on shooting conditions."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027S-R09
+  horizon: season
+  category: outdoors
+  period: autumn-2027
+  period_start: '2027-09-01'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Préparer la traversée des Caps du Saguenay"
+    en: "Prepare a Saguenay Les Caps multiday traverse"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Évalue sérieusement le parcours difficile de 27 à 32 km sur trois jours, les refuges, eau, logistique, saison et compétence ; réalise-le seulement si prêt et autorisé."
+    en: "Seriously assess the difficult 27–32 km three-day Les Caps route, huts, water, logistics, season and skills; attempt only when ready and permitted."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Préparer la traversée des Caps du Saguenay."
+    en: "A chosen achievement beyond everyday boundaries: Prepare a Saguenay Les Caps multiday traverse."
+  done_when:
+    fr: "Un plan d'expédition vérifié et, si approprié, une traversée sûre."
+    en: "A checked expedition plan and, if appropriate, a safe traverse."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+  inspiration: sepaq
+- id: ACT-2027S-R10
+  horizon: season
+  category: community
+  period: autumn-2027
+  period_start: '2027-09-01'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Créer une rencontre publique entre actuaires et curieux"
+    en: "Create a public encounter between actuaries and curious minds"
+  effort:
+    fr: "Une expérience saisonnière avec préparation"
+    en: "One seasonal experience plus preparation"
+  action:
+    fr: "Propose une discussion accessible sur une question d'assurance de dommages, avec exemples publics, questions ouvertes et aucune donnée confidentielle."
+    en: "Offer an accessible discussion on a P&C insurance question with public examples, open Q&A and no confidential data."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Créer une rencontre publique entre actuaires et curieux."
+    en: "A chosen achievement beyond everyday boundaries: Create a public encounter between actuaries and curious minds."
+  done_when:
+    fr: "Une rencontre organisée ou une invitation publique concrète."
+    en: "An organized event or concrete public invitation."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y13
+- id: ACT-2027H-R01
+  horizon: halfyear
+  category: math
+  period: halfyear-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-05'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Vingt énigmes Project Euler résolues avec méthode"
+    en: "Twenty Project Euler puzzles solved thoughtfully"
+  effort:
+    fr: "Plusieurs séances cumulées sur six mois"
+    en: "Several cumulative sessions across six months"
+  action:
+    fr: "Résous vingt problèmes nouveaux pour toi en documentant en privé les invariants, méthodes et tests sans divulguer les solutions interdites."
+    en: "Solve twenty new-to-you puzzles and privately document invariants, methods and tests without publishing restricted answers."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Vingt énigmes Project Euler résolues avec méthode."
+    en: "A chosen achievement beyond everyday boundaries: Twenty Project Euler puzzles solved thoughtfully."
+  done_when:
+    fr: "Vingt réponses vérifiées et un carnet personnel d'approches."
+    en: "Twenty verified answers and a private methods notebook."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+  inspiration: euler
+- id: ACT-2027H-R02
+  horizon: halfyear
+  category: career
+  period: halfyear-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-05'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Un cours mathématique MIT OCW mené jusqu'à l'évaluation"
+    en: "Complete a math MIT OCW course through assessment"
+  effort:
+    fr: "Plusieurs séances cumulées sur six mois"
+    en: "Several cumulative sessions across six months"
+  action:
+    fr: "Suis un cours accessible de probabilités ou d'algèbre sur MIT OCW, exécute les devoirs et exercices disponibles et compare tes résultats honnêtement."
+    en: "Self-study a suitable probability or algebra MIT OCW course, complete available assignments and assessments, and review results honestly."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Un cours mathématique MIT OCW mené jusqu'à l'évaluation."
+    en: "A chosen achievement beyond everyday boundaries: Complete a math MIT OCW course through assessment."
+  done_when:
+    fr: "Un portefeuille de devoirs réalisés et un bilan d'apprentissage."
+    en: "A portfolio of completed assignments and learning review."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+  inspiration: young
+- id: ACT-2027H-R03
+  horizon: halfyear
+  category: research
+  period: halfyear-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-05'
+  due: '2027-05-02'
+  difficulty: ambitious
+  title:
+    fr: "Un vrai parcours de science participative"
+    en: "A genuine citizen-science journey"
+  effort:
+    fr: "Plusieurs séances cumulées sur six mois"
+    en: "Several cumulative sessions across six months"
+  action:
+    fr: "Contribue régulièrement à un projet de recherche citoyenne, lis son protocole et construis une note sur la fiabilité et les limites des observations."
+    en: "Contribute periodically to a citizen-science project, read its protocol and write about observation reliability and limitations."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Un vrai parcours de science participative."
+    en: "A chosen achievement beyond everyday boundaries: A genuine citizen-science journey."
+  done_when:
+    fr: "Des contributions effectives et un rapport critique personnel."
+    en: "Actual contributions and a personal critical report."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+  inspiration: zooniverse
+- id: ACT-2027H-R04
+  horizon: halfyear
+  category: research
+  period: halfyear-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Trois projets scientifiques reproductibles dans ton portefeuille"
+    en: "Three reproducible scientific portfolio projects"
+  effort:
+    fr: "Plusieurs séances cumulées sur six mois"
+    en: "Several cumulative sessions across six months"
+  action:
+    fr: "Achève trois petits projets distincts de statistiques du risque, probabilités ou formalisation Lean avec documentation, tests et limites."
+    en: "Complete three distinct risk-statistics, probability or Lean formalization projects with documentation, tests and limitations."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Trois projets scientifiques reproductibles dans ton portefeuille."
+    en: "A chosen achievement beyond everyday boundaries: Three reproducible scientific portfolio projects."
+  done_when:
+    fr: "Trois dépôts ou dossiers exécutable et critiquables."
+    en: "Three runnable critique-ready repositories or folders."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+  inspiration: sciencepython
+- id: ACT-2027H-R05
+  horizon: halfyear
+  category: writing
+  period: halfyear-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Six essais sans IA qui forment un recueil"
+    en: "Six no-AI essays forming a collection"
+  effort:
+    fr: "Plusieurs séances cumulées sur six mois"
+    en: "Several cumulative sessions across six months"
+  action:
+    fr: "Écris et révise six essais originaux liés par une question centrale, en citant les sources et sans déléguer la prose à une IA."
+    en: "Write and self-edit six original essays unified by a central question, citing sources and not outsourcing prose to AI."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Six essais sans IA qui forment un recueil."
+    en: "A chosen achievement beyond everyday boundaries: Six no-AI essays forming a collection."
+  done_when:
+    fr: "Un recueil de six essais cohérents."
+    en: "A coherent six-essay collection."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-2027H-R06
+  horizon: halfyear
+  category: speaking
+  period: halfyear-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Deux conférences techniques avec de vraies questions"
+    en: "Two technical talks with real Q&A"
+  effort:
+    fr: "Plusieurs séances cumulées sur six mois"
+    en: "Several cumulative sessions across six months"
+  action:
+    fr: "Présente deux recherches ou outils devant des groupes volontaires et traite les critiques en français ou en anglais."
+    en: "Present two studies or tools to willing groups and address criticism in French or English."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Deux conférences techniques avec de vraies questions."
+    en: "A chosen achievement beyond everyday boundaries: Two technical talks with real Q&A."
+  done_when:
+    fr: "Deux interventions réalisées ou propositions substantielles envoyées."
+    en: "Two delivered talks or substantial invitations sent."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+  inspiration: toastmasters
+- id: ACT-2027H-R07
+  horizon: halfyear
+  category: outdoors
+  period: halfyear-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Une progression vers deux jours de randonnée autonome"
+    en: "Progress toward a two-day self-supported hike"
+  effort:
+    fr: "Plusieurs séances cumulées sur six mois"
+    en: "Several cumulative sessions across six months"
+  action:
+    fr: "Après plusieurs sorties préparatoires, planifie l'équipement et la sécurité d'une randonnée avec nuitée autorisée, accompagnement approprié et voie de repli."
+    en: "After preparatory outings, plan equipment and safety for a lawful overnight hike with suitable companions and fallback route."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Une progression vers deux jours de randonnée autonome."
+    en: "A chosen achievement beyond everyday boundaries: Progress toward a two-day self-supported hike."
+  done_when:
+    fr: "Une aventure sûre réalisée ou un plan révisé selon le niveau."
+    en: "A safe adventure or a readiness-adjusted plan."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+  inspiration: sepaq
+- id: ACT-2027H-R08
+  horizon: halfyear
+  category: community
+  period: halfyear-2027-05
+  period_start: '2027-05-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Lancer un atelier mathématique ouvert aux débutants"
+    en: "Launch an open beginner-friendly math workshop"
+  effort:
+    fr: "Plusieurs séances cumulées sur six mois"
+    en: "Several cumulative sessions across six months"
+  action:
+    fr: "Conçois un atelier de probabilités gratuit avec trois expériences interactives, invite des participants et recueille leur retour sans présumer du public."
+    en: "Design a free probability workshop with three interactive experiments, invite participants and request feedback without assuming attendance."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Lancer un atelier mathématique ouvert aux débutants."
+    en: "A chosen achievement beyond everyday boundaries: Launch an open beginner-friendly math workshop."
+  done_when:
+    fr: "Un atelier tenu ou invitations sérieuses avec matériel prêt."
+    en: "A delivered workshop or serious invitations with ready materials."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y13
+- id: ACT-202611Y-R01
+  horizon: year
+  category: community
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Créer une série publique de six ateliers scientifiques"
+    en: "Create a public series of six science workshops"
+  effort:
+    fr: "Un projet de fond sur douze mois"
+    en: "A substantial twelve-month project"
+  action:
+    fr: "Conçois six rencontres accessibles mêlant probabilités, statistiques, code, risque et méthode scientifique ; propose chaque atelier à une communauté et documente les questions reçues."
+    en: "Design six accessible gatherings covering probability, statistics, coding, risk and scientific method; offer each to a community and document questions received."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Créer une série publique de six ateliers scientifiques."
+    en: "A chosen achievement beyond everyday boundaries: Create a public series of six science workshops."
+  done_when:
+    fr: "Six ateliers tenus ou six propositions publiques substantielles avec matériel et invitations."
+    en: "Six delivered sessions or six substantial public proposals with materials and invitations."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+  inspiration: feynman
+- id: ACT-202611Y-R02
+  horizon: year
+  category: research
+  period: year-2026-11
+  period_start: '2026-11-03'
+  issued: '2026-11-05'
+  due: '2027-11-02'
+  difficulty: ambitious
+  title:
+    fr: "Publier un atlas libre sur les risques catastrophes"
+    en: "Publish an open catastrophe-risk atlas"
+  effort:
+    fr: "Un projet de fond sur douze mois"
+    en: "A substantial twelve-month project"
+  action:
+    fr: "Crée un atlas pédagogique de risques inondation, séisme ou tempête à partir de sources publiques et jeux de données ouverts ou synthétiques, avec méthodologie, carte, code et incertitude ; jamais de données employeur."
+    en: "Create an educational flood, earthquake or storm risk atlas using public or synthetic data with methods, map, code and uncertainty; never use employer data."
+  why:
+    fr: "Une réalisation choisie pour dépasser les frontières habituelles : Publier un atlas libre sur les risques catastrophes."
+    en: "A chosen achievement beyond everyday boundaries: Publish an open catastrophe-risk atlas."
+  done_when:
+    fr: "Un atlas ouvert, sourcé et reproductible explicitant clairement qu'il ne constitue pas un outil professionnel de tarification."
+    en: "A sourced reproducible open atlas clearly labeled as not a professional pricing tool."
+  minimum:
+    fr: "Une préparation complète et une première étape notable qui respecte les conditions de sécurité."
+    en: "A complete plan and one significant milestone that respects safety conditions."
+  stretch:
+    fr: "Présente l'expérience ou le travail à une personne extérieure pour critique et apprentissage."
+    en: "Share the experience or work with someone else for feedback and learning."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+  inspiration: sciencepython
