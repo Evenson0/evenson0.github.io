@@ -1,0 +1,120 @@
+- id: murakami
+  name: "Haruki Murakami"
+  archetype:
+    fr: "L’écrivain qui court"
+    en: "The running novelist"
+  lesson:
+    fr: "Entrelacer un manuscrit personnel et une progression d’endurance, sans sacrifier l’un à l’autre."
+    en: "Interweave original writing and endurance progression without sacrificing one to the other."
+  url: "https://www.newyorker.com/magazine/2008/06/09/haruki-murakami-the-running-novelist"
+  connects:
+  - ACT-202611-Y2
+  - ACT-202611-Y3
+- id: young
+  name: "Scott H. Young"
+  archetype:
+    fr: "L’autodidacte qui mesure ses acquis"
+    en: "The self-directed learner who tests understanding"
+  lesson:
+    fr: "Construire un parcours d’études ouvert avec évaluations, code et résultats vérifiables — sans imiter une cadence extrême."
+    en: "Build an open learning path with assessments, code and verifiable results without imitating an extreme pace."
+  url: "https://www.scotthyoung.com/blog/2018/03/15/how-successful-was-mit-challenge/"
+  connects:
+  - ACT-202611-Y4
+  - ACT-202611-Y11
+- id: franklin
+  name: "Benjamin Franklin"
+  archetype:
+    fr: "L’expérience personnelle de treize semaines"
+    en: "The thirteen-week personal experiment"
+  lesson:
+    fr: "Choisir une compétence à travailler intensément chaque semaine et faire un bilan honnête."
+    en: "Choose one capacity to practice deliberately each week and reflect honestly."
+  url: "https://www.gutenberg.org/files/148/148-h/148-h.htm"
+  connects:
+  - ACT-202611-Y5
+  - ACT-202611-Y9
+- id: feynman
+  name: "Richard Feynman (méthode d’explication)"
+  archetype:
+    fr: "Comprendre jusqu’à pouvoir expliquer"
+    en: "Understand deeply enough to teach"
+  lesson:
+    fr: "Démontrer une idée, l’enseigner clairement, puis identifier les endroits où l’explication échoue."
+    en: "Prove an idea, teach it clearly and identify where the explanation breaks down."
+  url: "https://dornsife.usc.edu/sergey-lototsky/wp-content/uploads/sites/211/2023/06/StudyLikeFeynman.pdf"
+  connects:
+  - ACT-202611-Q1
+  - ACT-202611-Q3
+- id: mathlib
+  name: "Communauté mathlib"
+  archetype:
+    fr: "Construire des mathématiques vérifiées collectivement"
+    en: "Build verified mathematics together"
+  lesson:
+    fr: "Faire une contribution Lean petite, réutilisable, testée et ouverte à la revue."
+    en: "Make a small reusable tested Lean contribution open to review."
+  url: "https://leanprover-community.github.io/contribute/index.html"
+  connects:
+  - ACT-202611-Y8
+  - ACT-202611-H1
+- id: euler
+  name: "Project Euler"
+  archetype:
+    fr: "Allier mathématiques et programmation"
+    en: "Combine mathematical insight and code"
+  lesson:
+    fr: "Résoudre des énigmes de façon originale, tester la solution et documenter les idées sans publier de réponses non autorisées."
+    en: "Solve puzzles with original methods, test results and document ideas without publishing restricted answers."
+  url: "https://projecteuler.net/archives"
+  connects:
+  - ACT-202611-Q1
+  - ACT-202611-H1
+- id: toastmasters
+  name: "Toastmasters"
+  archetype:
+    fr: "S’exposer volontairement à la prise de parole"
+    en: "Deliberate public speaking practice"
+  lesson:
+    fr: "Tester une première réunion, puis présenter un exposé et apprendre à recevoir une critique."
+    en: "Try a club meeting, then deliver a talk and learn from feedback."
+  url: "https://www.toastmasters.org/find-a-club"
+  connects:
+  - ACT-202611-Q3
+  - ACT-202611-Y5
+- id: zooniverse
+  name: "Zooniverse"
+  archetype:
+    fr: "Contribuer à une recherche plus grande que soi"
+    en: "Contribute to research beyond yourself"
+  lesson:
+    fr: "Participer à un projet de science citoyenne et expliquer son protocole et ses limites."
+    en: "Contribute to a citizen-science project and explain its protocol and limitations."
+  url: "https://www.zooniverse.org/"
+  connects:
+  - ACT-202611-Y1
+  - ACT-202611-Y11
+- id: sepaq
+  name: "Sépaq — grandes randonnées"
+  archetype:
+    fr: "La progression vers les grands itinéraires"
+    en: "Progress toward serious trails"
+  lesson:
+    fr: "Préparer des randonnées graduelles avec itinéraire, météo, compétences et sécurité."
+    en: "Prepare progressively harder hikes with route, weather, skills and safety."
+  url: "https://www.sepaq.com/pq/sag/annexes/randonnee_pedestre_longue.dot?language_id=2"
+  connects:
+  - ACT-202611-Y7
+  - ACT-202611-Y2
+- id: sciencepython
+  name: "Scientific Python"
+  archetype:
+    fr: "L’open source utile aux autres"
+    en: "Open source that serves others"
+  lesson:
+    fr: "Commencer avec une correction documentée, puis proposer une amélioration scientifique testée."
+    en: "Start with a documented fix, then propose a tested scientific improvement."
+  url: "https://learn.scientific-python.org/contributors/getting-started/"
+  connects:
+  - ACT-202611-Y12
+  - ACT-202611-Y1
