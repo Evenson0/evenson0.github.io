@@ -13,6 +13,7 @@ def main():
     config = yaml.safe_load((DATA / 'config.yml').read_text())
     challenges = yaml.safe_load((DATA / 'challenges.yml').read_text())
     events = yaml.safe_load((DATA / 'events.yml').read_text())
+    inspirations = yaml.safe_load((DATA / 'inspirations.yml').read_text())
     nodes = {n['id'] for p in (ROOT / '_data/becoming/trees').glob('*.yml')
              for n in yaml.safe_load(p.read_text())['nodes']}
     horizons = {h['id']: h for h in config['horizons']}
@@ -29,12 +30,20 @@ def main():
         bilingual(target['label'])
         assert target['url'].startswith('/') and not target['url'].startswith('//')
         assert target['node'] is None or target['node'] in nodes
+    inspiration_ids = {i['id'] for i in inspirations}
+    assert len(inspiration_ids) == len(inspirations), 'Duplicate source inspiration'
+    for i in inspirations:
+        assert i['name'].strip(), 'Empty inspiration name'
+        bilingual(i['archetype'])
+        bilingual(i['lesson'])
+        assert i['url'].startswith('https://'), 'Inspiration URL must be HTTPS'
     ids = {c['id'] for c in challenges}
     assert len(ids) == len(challenges), 'Duplicate challenge ID'
     counts = Counter()
     for c in challenges:
         assert c['horizon'] in horizons
         assert c['category'] in categories, 'Unknown Activities category'
+        assert c.get('inspiration') is None or c['inspiration'] in inspiration_ids, 'Unknown inspiration'
         assert c['difficulty'] in {'easy', 'focused', 'stretch', 'ambitious'}
         assert date.fromisoformat(c['issued']) <= date.fromisoformat(c['due']) and date.fromisoformat(c['period_start']) <= date.fromisoformat(c['due']), 'Invalid challenge timing'
         for key in ('title', 'effort', 'action', 'why', 'done_when', 'minimum', 'stretch'):
@@ -43,6 +52,8 @@ def main():
         assert all(p in ids and p != c['id'] for p in c['parents'])
         counts[c['horizon'], c['period']] += 1
     assert all(n <= horizons[h]['quota'] for (h, _), n in counts.items()), 'Period quota exceeded'
+    for inspiration in inspirations:
+        assert inspiration['connects'] and all(ref in ids for ref in inspiration['connects']), 'Invalid inspiration challenge reference'
     mapping = {c['id']: c for c in challenges}
     def visit(id, path):
         assert id not in path, 'Cyclic challenge relationship'
@@ -64,6 +75,6 @@ def main():
         elif event['status'] != 'proposed':
             assert event['source'] == 'user', 'Decisions and outcomes must come from the user'
     assert proposed == ids, 'Every challenge needs a proposal event'
-    print(f'Activities valid: {len(challenges)} challenges, {len(events)} events, 6 horizons; all translations and references present.')
+    print(f'Activities valid: {len(challenges)} challenges, {len(events)} events, {len(inspirations)} inspiration sources; translations and references present.')
 
 if __name__ == '__main__': main()
