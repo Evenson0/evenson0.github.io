@@ -8464,3 +8464,993 @@
   - fitness-goal
   parents:
   - ACT-202611-Y7
+- id: ACT-202611M-R01
+  horizon: month
+  category: math
+  period: month-2026-11
+  period_start: '2026-11-01'
+  issued: '2026-11-05'
+  due: '2026-11-30'
+  difficulty: ambitious
+  title:
+    fr: "Le portfolio des dix questions P les plus instructives"
+    en: "A portfolio of ten revealing Exam P problems"
+  effort:
+    fr: "8–15 h · à articuler aux études"
+    en: "8–15 h · integrated with studies"
+  action:
+    fr: "Choisis dix problèmes SOA P qui t'ont réellement mis en difficulté et rédige tes propres solutions vérifiées avec numéros de référence, sans reproduire les énoncés."
+    en: "Choose ten SOA Exam P problems that truly challenged you and write your own checked solutions with source numbers, without copying question text."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Le portfolio des dix questions P les plus instructives."
+    en: "A meaningful achievement to pursue this month: A portfolio of ten revealing Exam P problems."
+  done_when:
+    fr: "Dix solutions originales accessibles et correctement référencées."
+    en: "Ten original accessible properly referenced explanations."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser le portfolio des dix questions p les plus instructives."
+    en: "A documented meaningful milestone toward a portfolio of ten revealing exam p problems."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Q1
+- id: ACT-202611M-R02
+  horizon: month
+  category: writing
+  period: month-2026-11
+  period_start: '2026-11-01'
+  issued: '2026-11-05'
+  due: '2026-11-30'
+  difficulty: ambitious
+  title:
+    fr: "Publier ton premier essai long entièrement sans IA"
+    en: "Publish your first long no-AI essay"
+  effort:
+    fr: "8–16 h"
+    en: "8–16 h"
+  action:
+    fr: "Rédige et révise toi-même 1 500 mots sur le courage intellectuel avec deux sources, une objection et une conclusion que tu assumes."
+    en: "Personally write and revise 1,500 words on intellectual courage with two sources, one objection and a conclusion you stand behind."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Publier ton premier essai long entièrement sans IA."
+    en: "A meaningful achievement to pursue this month: Publish your first long no-AI essay."
+  done_when:
+    fr: "Un essai complet rendu public avec ton accord."
+    en: "A complete essay publicly shared by choice."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser publier ton premier essai long entièrement sans ia."
+    en: "A documented meaningful milestone toward publish your first long no-ai essay."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y9
+- id: ACT-202611M-R03
+  horizon: month
+  category: career
+  period: month-2026-11
+  period_start: '2026-11-01'
+  issued: '2026-11-05'
+  due: '2026-11-30'
+  difficulty: ambitious
+  title:
+    fr: "Évaluer un programme supérieur sans embellir tes prérequis"
+    en: "Assess a graduate program without exaggeration"
+  effort:
+    fr: "5–10 h"
+    en: "5–10 h"
+  action:
+    fr: "Lis les exigences de trois cours ou programmes pertinents et évalue tes acquis, tes lacunes et un plan de progression vérifiable."
+    en: "Read requirements of three relevant graduate courses or programs and assess strengths, gaps and a verifiable development plan."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Évaluer un programme supérieur sans embellir tes prérequis."
+    en: "A meaningful achievement to pursue this month: Assess a graduate program without exaggeration."
+  done_when:
+    fr: "Un tableau de décision sourcé et une étape sous ton contrôle."
+    en: "A sourced decision table and one action under your control."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser évaluer un programme supérieur sans embellir tes prérequis."
+    en: "A documented meaningful milestone toward assess a graduate program without exaggeration."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202611M-R04
+  horizon: month
+  category: build
+  period: month-2026-11
+  period_start: '2026-11-01'
+  issued: '2026-11-05'
+  due: '2026-11-30'
+  difficulty: ambitious
+  title:
+    fr: "Livrer un mini-atlas de probabilités utilisable sur téléphone"
+    en: "Ship a phone-friendly probability mini-atlas"
+  effort:
+    fr: "10–18 h"
+    en: "10–18 h"
+  action:
+    fr: "Transforme dix notions Exam P en cartes interactives lisibles sur téléphone avec navigation claire et corrigés originaux."
+    en: "Turn ten Exam P topics into phone-readable interactive cards with clear navigation and original explanations."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Livrer un mini-atlas de probabilités utilisable sur téléphone."
+    en: "A meaningful achievement to pursue this month: Ship a phone-friendly probability mini-atlas."
+  done_when:
+    fr: "Un mini-atlas déployé et testé."
+    en: "A deployed tested mini-atlas."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser livrer un mini-atlas de probabilités utilisable sur téléphone."
+    en: "A documented meaningful milestone toward ship a phone-friendly probability mini-atlas."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-202611M-R05
+  horizon: month
+  category: community
+  period: month-2026-11
+  period_start: '2026-11-01'
+  issued: '2026-11-05'
+  due: '2026-11-30'
+  difficulty: ambitious
+  title:
+    fr: "Une conversation qui élargit ton monde"
+    en: "A conversation that broadens your world"
+  effort:
+    fr: "4–8 h"
+    en: "4–8 h"
+  action:
+    fr: "Participe à une activité sociale ou culturelle nouvelle, échange réellement avec une personne inconnue et écris ce que cette rencontre a changé."
+    en: "Attend a new social or cultural activity, genuinely talk with someone unfamiliar and write what changed in your thinking."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Une conversation qui élargit ton monde."
+    en: "A meaningful achievement to pursue this month: A conversation that broadens your world."
+  done_when:
+    fr: "Une rencontre vécue et un retour personnel respectueux."
+    en: "An actual encounter and respectful personal reflection."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser une conversation qui élargit ton monde."
+    en: "A documented meaningful milestone toward a conversation that broadens your world."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202612M-R01
+  horizon: month
+  category: math
+  period: month-2026-12
+  period_start: '2026-12-01'
+  issued: '2026-11-05'
+  due: '2026-12-31'
+  difficulty: ambitious
+  title:
+    fr: "Apprendre un module MIT OCW et réussir son test"
+    en: "Study an MIT OCW module and pass its self-test"
+  effort:
+    fr: "8–15 h · à articuler aux études"
+    en: "8–15 h · integrated with studies"
+  action:
+    fr: "Choisis un module mathématique pertinent sur MIT OCW, étudie-le puis réalise une évaluation disponible sans regarder les solutions."
+    en: "Choose a relevant MIT OCW math module, study it and complete an available assessment without looking up solutions."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Apprendre un module MIT OCW et réussir son test."
+    en: "A meaningful achievement to pursue this month: Study an MIT OCW module and pass its self-test."
+  done_when:
+    fr: "Une évaluation faite et des erreurs analysées."
+    en: "A completed assessment with analyzed mistakes."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser apprendre un module mit ocw et réussir son test."
+    en: "A documented meaningful milestone toward study an mit ocw module and pass its self-test."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202612M-R02
+  horizon: month
+  category: build
+  period: month-2026-12
+  period_start: '2026-12-01'
+  issued: '2026-11-05'
+  due: '2026-12-31'
+  difficulty: ambitious
+  title:
+    fr: "L'atelier Advent of Code en Python et R"
+    en: "An Advent of Code workshop in Python and R"
+  effort:
+    fr: "10–18 h"
+    en: "10–18 h"
+  action:
+    fr: "Résous plusieurs énigmes d'archives Advent of Code avec des tests personnels puis implémente une même logique dans deux langages."
+    en: "Solve several archived Advent of Code puzzles using your own tests, then implement one idea in two languages."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : L'atelier Advent of Code en Python et R."
+    en: "A meaningful achievement to pursue this month: An Advent of Code workshop in Python and R."
+  done_when:
+    fr: "Des solutions autonomes testées et documentées sans publication interdite."
+    en: "Tested documented independent solutions respecting sharing rules."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser l'atelier advent of code en python et r."
+    en: "A documented meaningful milestone toward an advent of code workshop in python and r."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-202612M-R03
+  horizon: month
+  category: writing
+  period: month-2026-12
+  period_start: '2026-12-01'
+  issued: '2026-11-05'
+  due: '2026-12-31'
+  difficulty: ambitious
+  title:
+    fr: "Un récit de fin d'année sans IA, courageux et précis"
+    en: "A brave, specific no-AI year-end essay"
+  effort:
+    fr: "8–16 h"
+    en: "8–16 h"
+  action:
+    fr: "Écris 2 000 mots sans IA sur trois décisions de l'année, leurs conséquences et ce que tu aurais dû comprendre plus tôt."
+    en: "Write 2,000 words without AI on three decisions, their consequences and what you should have understood sooner."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Un récit de fin d'année sans IA, courageux et précis."
+    en: "A meaningful achievement to pursue this month: A brave, specific no-AI year-end essay."
+  done_when:
+    fr: "Un texte personnel complet que tu peux conserver privé."
+    en: "A complete personal piece you may keep private."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser un récit de fin d'année sans ia, courageux et précis."
+    en: "A documented meaningful milestone toward a brave, specific no-ai year-end essay."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202612M-R04
+  horizon: month
+  category: speaking
+  period: month-2026-12
+  period_start: '2026-12-01'
+  issued: '2026-11-05'
+  due: '2026-12-31'
+  difficulty: ambitious
+  title:
+    fr: "Quatre conversations en anglais sur quatre domaines"
+    en: "Four English talks on four domains"
+  effort:
+    fr: "6–10 h"
+    en: "6–10 h"
+  action:
+    fr: "Organise des échanges réels sur science, littérature, travail et voyage ; pour chaque conversation, demande une question imprévue."
+    en: "Arrange real conversations about science, literature, work and travel; invite an unscripted question in each."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Quatre conversations en anglais sur quatre domaines."
+    en: "A meaningful achievement to pursue this month: Four English talks on four domains."
+  done_when:
+    fr: "Quatre conversations documentées sans enregistrement obligatoire."
+    en: "Four documented conversations with no recording requirement."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser quatre conversations en anglais sur quatre domaines."
+    en: "A documented meaningful milestone toward four english talks on four domains."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-202612M-R05
+  horizon: month
+  category: social
+  period: month-2026-12
+  period_start: '2026-12-01'
+  issued: '2026-11-05'
+  due: '2026-12-31'
+  difficulty: ambitious
+  title:
+    fr: "Une série de publications mathématiques utiles sur X"
+    en: "A useful mathematical X series"
+  effort:
+    fr: "5–9 h"
+    en: "5–9 h"
+  action:
+    fr: "Publie manuellement quatre explications originales illustrées et compare clarté, échanges et questions sans acheter de visibilité."
+    en: "Manually publish four illustrated original explanations and compare clarity, exchanges and questions without buying reach."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Une série de publications mathématiques utiles sur X."
+    en: "A meaningful achievement to pursue this month: A useful mathematical X series."
+  done_when:
+    fr: "Quatre publications substantielles et un bilan qualitatif."
+    en: "Four substantive posts and a qualitative review."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser une série de publications mathématiques utiles sur x."
+    en: "A documented meaningful milestone toward a useful mathematical x series."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - audience
+  parents:
+  - ACT-202611-Q10
+- id: ACT-202701M-R01
+  horizon: month
+  category: math
+  period: month-2027-01
+  period_start: '2027-01-01'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Clore la préparation P avec un bilan défendable"
+    en: "Close Exam P preparation with a defensible review"
+  effort:
+    fr: "8–15 h · à articuler aux études"
+    en: "8–15 h · integrated with studies"
+  action:
+    fr: "Confronte tes dernières simulations et tes notes ; consigne l'examen passé seulement s'il a vraiment eu lieu, sans inventer de résultat."
+    en: "Compare your final mocks and notes; record the exam sitting only if it actually occurred, without inventing a result."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Clore la préparation P avec un bilan défendable."
+    en: "A meaningful achievement to pursue this month: Close Exam P preparation with a defensible review."
+  done_when:
+    fr: "Un bilan fidèle des efforts, erreurs et prochaines décisions."
+    en: "A faithful review of effort, mistakes and next decisions."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser clore la préparation p avec un bilan défendable."
+    en: "A documented meaningful milestone toward close exam p preparation with a defensible review."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-202701M-R02
+  horizon: month
+  category: writing
+  period: month-2027-01
+  period_start: '2027-01-01'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Décider du type de livre que tu écriras réellement"
+    en: "Choose the book you will actually write"
+  effort:
+    fr: "8–16 h"
+    en: "8–16 h"
+  action:
+    fr: "Écris un synopsis de deux pages sans IA, compare roman et essai selon ta voix et fixe un premier chapitre test."
+    en: "Write a two-page no-AI synopsis, compare fiction and essay in terms of your own voice and choose a test chapter."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Décider du type de livre que tu écriras réellement."
+    en: "A meaningful achievement to pursue this month: Choose the book you will actually write."
+  done_when:
+    fr: "Un projet de livre défini avec plan et lecteur visé."
+    en: "A defined book project with outline and intended reader."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser décider du type de livre que tu écriras réellement."
+    en: "A documented meaningful milestone toward choose the book you will actually write."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202701M-R03
+  horizon: month
+  category: speaking
+  period: month-2027-01
+  period_start: '2027-01-01'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Premier entretien en anglais exigeant de 45 minutes"
+    en: "First demanding 45-minute English interview"
+  effort:
+    fr: "6–10 h"
+    en: "6–10 h"
+  action:
+    fr: "Demande à une personne de mener un entretien d'entraînement en anglais sur ton parcours et un problème technique, puis analyse tes réponses."
+    en: "Ask someone to conduct a 45-minute practice interview in English covering your background and a technical problem, then review answers."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Premier entretien en anglais exigeant de 45 minutes."
+    en: "A meaningful achievement to pursue this month: First demanding 45-minute English interview."
+  done_when:
+    fr: "Un entretien simulé vécu et un retour précis."
+    en: "A completed mock interview and specific feedback."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser premier entretien en anglais exigeant de 45 minutes."
+    en: "A documented meaningful milestone toward first demanding 45-minute english interview."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-202701M-R04
+  horizon: month
+  category: fitness
+  period: month-2027-01
+  period_start: '2027-01-01'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Établir un vrai point de départ pour les 5 km"
+    en: "Set a genuine 5K baseline"
+  effort:
+    fr: "Adapté à la condition et récupération"
+    en: "Based on fitness and recovery"
+  action:
+    fr: "À partir d'un niveau de course-marche réellement observé, prépare une progression douce incluant récupération et alternatives par météo défavorable."
+    en: "Based on genuinely observed run-walk fitness, design a gentle progression with recovery and weather alternatives."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Établir un vrai point de départ pour les 5 km."
+    en: "A meaningful achievement to pursue this month: Set a genuine 5K baseline."
+  done_when:
+    fr: "Un point de départ et un plan adaptatif prudents."
+    en: "A realistic baseline and adaptable cautious plan."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser établir un vrai point de départ pour les 5 km."
+    en: "A documented meaningful milestone toward set a genuine 5k baseline."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-202701M-R05
+  horizon: month
+  category: research
+  period: month-2027-01
+  period_start: '2027-01-01'
+  issued: '2026-11-05'
+  due: '2027-01-31'
+  difficulty: ambitious
+  title:
+    fr: "Définir une question de recherche actuarielle digne d'étude"
+    en: "Define a worthy actuarial research question"
+  effort:
+    fr: "10–18 h"
+    en: "10–18 h"
+  action:
+    fr: "Choisis une question de fréquence ou de tarification, identifie deux références et écris un protocole testable sur données ouvertes ou synthétiques."
+    en: "Choose a frequency or pricing question, find two references and write a testable protocol using open or synthetic data."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Définir une question de recherche actuarielle digne d'étude."
+    en: "A meaningful achievement to pursue this month: Define a worthy actuarial research question."
+  done_when:
+    fr: "Une proposition de recherche reproductible et délimitée."
+    en: "A reproducible scoped research proposal."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser définir une question de recherche actuarielle digne d'étude."
+    en: "A documented meaningful milestone toward define a worthy actuarial research question."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-202702M-R01
+  horizon: month
+  category: math
+  period: month-2027-02
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Un mois de mathématiques formalisées en Lean"
+    en: "A month of formal mathematics in Lean"
+  effort:
+    fr: "8–15 h · à articuler aux études"
+    en: "8–15 h · integrated with studies"
+  action:
+    fr: "Sélectionne cinq lemmes progressifs, formalise-les et documente les tactiques et hypothèses de façon reproductible."
+    en: "Choose five progressively challenging lemmas, formalize them and document tactics and assumptions reproducibly."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Un mois de mathématiques formalisées en Lean."
+    en: "A meaningful achievement to pursue this month: A month of formal mathematics in Lean."
+  done_when:
+    fr: "Cinq preuves compilées et expliquées."
+    en: "Five compiled explained proofs."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser un mois de mathématiques formalisées en lean."
+    en: "A documented meaningful milestone toward a month of formal mathematics in lean."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y8
+- id: ACT-202702M-R02
+  horizon: month
+  category: build
+  period: month-2027-02
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Première vraie proposition de contribution open source"
+    en: "First serious open-source contribution proposal"
+  effort:
+    fr: "10–18 h"
+    en: "10–18 h"
+  action:
+    fr: "Choisis une issue scientifique Python ou mathlib adaptée, prépare un changement testé, suis les conventions et propose une revue."
+    en: "Choose a suitable Scientific Python or mathlib issue, prepare a tested change, follow conventions and seek review."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Première vraie proposition de contribution open source."
+    en: "A meaningful achievement to pursue this month: First serious open-source contribution proposal."
+  done_when:
+    fr: "Une correction présentée avec preuves de test, sans présumer acceptation."
+    en: "One proposed change with tests, without assuming acceptance."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser première vraie proposition de contribution open source."
+    en: "A documented meaningful milestone toward first serious open-source contribution proposal."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-202702M-R03
+  horizon: month
+  category: writing
+  period: month-2027-02
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Rédiger les cinq mille mots suivants du livre, sans IA"
+    en: "Write the next five thousand words of your book without AI"
+  effort:
+    fr: "8–16 h"
+    en: "8–16 h"
+  action:
+    fr: "Rédige sans génération IA plusieurs scènes ou sections qui font progresser ton manuscrit et révise la cohérence des transitions."
+    en: "Without AI generation, draft sections moving your book forward and revise their transitions."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Rédiger les cinq mille mots suivants du livre, sans IA."
+    en: "A meaningful achievement to pursue this month: Write the next five thousand words of your book without AI."
+  done_when:
+    fr: "Un ensemble cohérent de 5 000 mots originaux."
+    en: "A coherent 5,000-word original increment."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser rédiger les cinq mille mots suivants du livre, sans ia."
+    en: "A documented meaningful milestone toward write the next five thousand words of your book without ai."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202702M-R04
+  horizon: month
+  category: speaking
+  period: month-2027-02
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Donner une conférence de quinze minutes en anglais"
+    en: "Give a fifteen-minute English talk"
+  effort:
+    fr: "6–10 h"
+    en: "6–10 h"
+  action:
+    fr: "Présente un outil ou résultat mathématique à une personne ou petit groupe volontaire puis réponds spontanément aux questions."
+    en: "Present a tool or mathematical result to a willing listener or small group then answer spontaneous questions."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Donner une conférence de quinze minutes en anglais."
+    en: "A meaningful achievement to pursue this month: Give a fifteen-minute English talk."
+  done_when:
+    fr: "Un exposé réel et une synthèse des objections."
+    en: "A real presentation and summary of questions."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser donner une conférence de quinze minutes en anglais."
+    en: "A documented meaningful milestone toward give a fifteen-minute english talk."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-202702M-R05
+  horizon: month
+  category: outdoors
+  period: month-2027-02
+  period_start: '2027-02-01'
+  issued: '2026-11-05'
+  due: '2027-02-28'
+  difficulty: ambitious
+  title:
+    fr: "Une sortie hivernale préparée comme une expédition"
+    en: "A winter outing prepared like an expedition"
+  effort:
+    fr: "Une ou deux sorties selon les conditions"
+    en: "One or two outings as conditions permit"
+  action:
+    fr: "Choisis un lieu balisé accessible et traite sérieusement la météo, équipement, lumière du jour, retour et capacité physique."
+    en: "Choose an accessible marked place and seriously plan weather, gear, daylight, return and physical readiness."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Une sortie hivernale préparée comme une expédition."
+    en: "A meaningful achievement to pursue this month: A winter outing prepared like an expedition."
+  done_when:
+    fr: "Une randonnée sûre ou un report réfléchi."
+    en: "A safe hike or a thoughtful deferral."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser une sortie hivernale préparée comme une expédition."
+    en: "A documented meaningful milestone toward a winter outing prepared like an expedition."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-202703M-R01
+  horizon: month
+  category: research
+  period: month-2027-03
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-31'
+  difficulty: ambitious
+  title:
+    fr: "Une étude GLM réplicable avec diagnostic de robustesse"
+    en: "A reproducible GLM robustness study"
+  effort:
+    fr: "10–18 h"
+    en: "10–18 h"
+  action:
+    fr: "Construis une analyse sur données autorisées, ajuste deux modèles, teste des observations influentes et publie les limites."
+    en: "Build an analysis on permitted data, fit two models, test influential observations and publish limitations."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Une étude GLM réplicable avec diagnostic de robustesse."
+    en: "A meaningful achievement to pursue this month: A reproducible GLM robustness study."
+  done_when:
+    fr: "Un dépôt reproductible et un rapport méthodologique."
+    en: "A reproducible repository and methodological report."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser une étude glm réplicable avec diagnostic de robustesse."
+    en: "A documented meaningful milestone toward a reproducible glm robustness study."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-202703M-R02
+  horizon: month
+  category: speaking
+  period: month-2027-03
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-31'
+  difficulty: ambitious
+  title:
+    fr: "Deux rencontres Toastmasters et un discours"
+    en: "Two Toastmasters visits and a speech"
+  effort:
+    fr: "6–10 h"
+    en: "6–10 h"
+  action:
+    fr: "Repère un club accessible, confirme les horaires et tente une intervention volontaire si le cadre et ton emploi du temps le permettent."
+    en: "Find an accessible club, confirm the schedule and try a voluntary speech if circumstances allow."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Deux rencontres Toastmasters et un discours."
+    en: "A meaningful achievement to pursue this month: Two Toastmasters visits and a speech."
+  done_when:
+    fr: "Des visites réelles et un discours proposé ou livré."
+    en: "Real visits and a proposed or delivered speech."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser deux rencontres toastmasters et un discours."
+    en: "A documented meaningful milestone toward two toastmasters visits and a speech."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-202703M-R03
+  horizon: month
+  category: social
+  period: month-2027-03
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-31'
+  difficulty: ambitious
+  title:
+    fr: "Audit honnête de trois mois de contenu sur X"
+    en: "An honest three-month X content audit"
+  effort:
+    fr: "5–9 h"
+    en: "5–9 h"
+  action:
+    fr: "À partir de données autorisées, compare les publications scientifiques, lectures et projets, sans automatisation d'engagement ni obsession des abonnés."
+    en: "Using permitted metrics, compare science, reading and project posts without automated engagement or follower obsession."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Audit honnête de trois mois de contenu sur X."
+    en: "A meaningful achievement to pursue this month: An honest three-month X content audit."
+  done_when:
+    fr: "Une analyse de qualité des contributions et de leurs limites."
+    en: "A quality assessment of contributions and limitations."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser audit honnête de trois mois de contenu sur x."
+    en: "A documented meaningful milestone toward an honest three-month x content audit."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - audience
+  parents:
+  - ACT-202611-Q10
+- id: ACT-202703M-R04
+  horizon: month
+  category: community
+  period: month-2027-03
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-31'
+  difficulty: ambitious
+  title:
+    fr: "Organiser une discussion de livres plutôt que la commenter"
+    en: "Host a book discussion instead of merely posting"
+  effort:
+    fr: "4–8 h"
+    en: "4–8 h"
+  action:
+    fr: "Choisis un texte exigeant, invite trois lecteurs volontaires et anime une conversation avec désaccord argumenté."
+    en: "Choose a demanding text, invite three willing readers and host a discussion with reasoned disagreement."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Organiser une discussion de livres plutôt que la commenter."
+    en: "A meaningful achievement to pursue this month: Host a book discussion instead of merely posting."
+  done_when:
+    fr: "Une discussion tenue ou des invitations concrètes envoyées."
+    en: "A held discussion or concrete invitations sent."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser organiser une discussion de livres plutôt que la commenter."
+    en: "A documented meaningful milestone toward host a book discussion instead of merely posting."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202703M-R05
+  horizon: month
+  category: fitness
+  period: month-2027-03
+  period_start: '2027-03-01'
+  issued: '2026-11-05'
+  due: '2027-03-31'
+  difficulty: ambitious
+  title:
+    fr: "Atteindre 5 km course-marche si le niveau le permet"
+    en: "Reach a run-walk 5K if ready"
+  effort:
+    fr: "Adapté à la condition et récupération"
+    en: "Based on fitness and recovery"
+  action:
+    fr: "Selon ta progression et les conseils adaptés, complète 5 km en alternant course et marche sans objectif de vitesse, ou choisis un jalon inférieur sûr."
+    en: "Depending on progress and suitable guidance, complete 5 km with run-walk intervals and no pace target, or choose a safer shorter milestone."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Atteindre 5 km course-marche si le niveau le permet."
+    en: "A meaningful achievement to pursue this month: Reach a run-walk 5K if ready."
+  done_when:
+    fr: "Une distance réalisée ou un jalon adapté honnêtement évalué."
+    en: "A completed distance or an honestly assessed safer milestone."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser atteindre 5 km course-marche si le niveau le permet."
+    en: "A documented meaningful milestone toward reach a run-walk 5k if ready."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-202704M-R01
+  horizon: month
+  category: outdoors
+  period: month-2027-04
+  period_start: '2027-04-01'
+  issued: '2026-11-05'
+  due: '2027-04-30'
+  difficulty: ambitious
+  title:
+    fr: "Préparer deux sommets québécois avec logistique complète"
+    en: "Prepare two Quebec summits with complete logistics"
+  effort:
+    fr: "Une ou deux sorties selon les conditions"
+    en: "One or two outings as conditions permit"
+  action:
+    fr: "Compare deux randonnées de montagne, dénivelés, durées, météo, équipement, retour et hébergement éventuel avant toute décision."
+    en: "Compare two mountain hikes, elevation, duration, weather, gear, return and possible lodging before committing."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Préparer deux sommets québécois avec logistique complète."
+    en: "A meaningful achievement to pursue this month: Prepare two Quebec summits with complete logistics."
+  done_when:
+    fr: "Deux plans réalistes et des critères de report."
+    en: "Two realistic plans and deferral criteria."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser préparer deux sommets québécois avec logistique complète."
+    en: "A documented meaningful milestone toward prepare two quebec summits with complete logistics."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-202704M-R02
+  horizon: month
+  category: math
+  period: month-2027-04
+  period_start: '2027-04-01'
+  issued: '2026-11-05'
+  due: '2027-04-30'
+  difficulty: ambitious
+  title:
+    fr: "Construire un module complet de statistiques du risque"
+    en: "Build a complete risk statistics module"
+  effort:
+    fr: "8–15 h · à articuler aux études"
+    en: "8–15 h · integrated with studies"
+  action:
+    fr: "Relie fréquence, sévérité et coût pur dans un mini-cours avec exemples synthétiques, preuves et exercices originaux."
+    en: "Connect frequency, severity and pure premium in a mini-course with synthetic examples, proofs and original exercises."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Construire un module complet de statistiques du risque."
+    en: "A meaningful achievement to pursue this month: Build a complete risk statistics module."
+  done_when:
+    fr: "Un chapitre de notes pédagogique testé et référencé."
+    en: "A tested referenced teaching chapter."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser construire un module complet de statistiques du risque."
+    en: "A documented meaningful milestone toward build a complete risk statistics module."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y11
+- id: ACT-202704M-R03
+  horizon: month
+  category: writing
+  period: month-2027-04
+  period_start: '2027-04-01'
+  issued: '2026-11-05'
+  due: '2027-04-30'
+  difficulty: ambitious
+  title:
+    fr: "Achever dix mille mots de manuscrit originaux"
+    en: "Complete ten thousand original manuscript words"
+  effort:
+    fr: "8–16 h"
+    en: "8–16 h"
+  action:
+    fr: "Après avoir choisi ton livre, rédige et révise dix mille mots sans IA en sollicitant une critique humaine sur un chapitre."
+    en: "After choosing the book, write and revise ten thousand no-AI words and seek human critique of one chapter."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Achever dix mille mots de manuscrit originaux."
+    en: "A meaningful achievement to pursue this month: Complete ten thousand original manuscript words."
+  done_when:
+    fr: "Dix mille mots cohérents et un chapitre proposé à relecture."
+    en: "Ten thousand coherent words and a chapter offered for review."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser achever dix mille mots de manuscrit originaux."
+    en: "A documented meaningful milestone toward complete ten thousand original manuscript words."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-202704M-R04
+  horizon: month
+  category: build
+  period: month-2027-04
+  period_start: '2027-04-01'
+  issued: '2026-11-05'
+  due: '2027-04-30'
+  difficulty: ambitious
+  title:
+    fr: "Mettre ton simulateur P à l'épreuve de dix usages réels"
+    en: "Stress-test your Exam P tool with ten real uses"
+  effort:
+    fr: "10–18 h"
+    en: "10–18 h"
+  action:
+    fr: "Invite plusieurs utilisateurs à faire un parcours et recueille leurs problèmes sans collecte indiscrète de données personnelles."
+    en: "Invite several people to complete an app flow and collect usability problems without intrusive personal data collection."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Mettre ton simulateur P à l'épreuve de dix usages réels."
+    en: "A meaningful achievement to pursue this month: Stress-test your Exam P tool with ten real uses."
+  done_when:
+    fr: "Un rapport de tests et les deux corrections prioritaires."
+    en: "A usability report and two priority fixes."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser mettre ton simulateur p à l'épreuve de dix usages réels."
+    en: "A documented meaningful milestone toward stress-test your exam p tool with ten real uses."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-202704M-R05
+  horizon: month
+  category: community
+  period: month-2027-04
+  period_start: '2027-04-01'
+  issued: '2026-11-05'
+  due: '2027-04-30'
+  difficulty: ambitious
+  title:
+    fr: "Contribuer à une cause scientifique ou éducative"
+    en: "Contribute to science or education"
+  effort:
+    fr: "4–8 h"
+    en: "4–8 h"
+  action:
+    fr: "Participe à une activité de mentorat ou de recherche citoyenne volontaire et consigne ce que cette contribution t'a appris."
+    en: "Join a volunteering or citizen-science activity and document what the contribution taught you."
+  why:
+    fr: "Une réalisation concrète et intéressante pour ce mois : Contribuer à une cause scientifique ou éducative."
+    en: "A meaningful achievement to pursue this month: Contribute to science or education."
+  done_when:
+    fr: "Une contribution réelle et un bilan respectueux."
+    en: "A real contribution and respectful reflection."
+  minimum:
+    fr: "Une version intermédiaire documentée qui fait réellement progresser contribuer à une cause scientifique ou éducative."
+    en: "A documented meaningful milestone toward contribute to science or education."
+  stretch:
+    fr: "Expose le résultat à une critique réelle et améliore-le sans augmenter artificiellement la charge."
+    en: "Invite real critique and improve the result without artificially adding workload."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
