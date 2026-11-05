@@ -11184,7 +11184,7 @@
   targets:
   - explore
   parents:
-  - ACT-202611-Y13
+  - ACT-202611Y-R01
 - id: ACT-2027H-R01
   horizon: halfyear
   category: math
@@ -11454,7 +11454,7 @@
   targets:
   - explore
   parents:
-  - ACT-202611-Y13
+  - ACT-202611Y-R01
 - id: ACT-202611Y-R01
   horizon: year
   category: community
