@@ -165,3 +165,43 @@ html[data-theme="dark"] .activities-app { --act-accent: #81debf; }
 .act-training-axes { display:flex; flex-wrap:wrap; gap:.42rem; margin-top:1.25rem; }
 .act-training-axes span { display:inline-flex; align-items:center; font-size:.75rem; font-weight:700; letter-spacing:.025em; padding:.25rem .76rem; border-radius:999px; border:1px solid var(--act-line); background:var(--act-bg); color:var(--act-ink); }
 .act-week-toggle { min-height:48px; }
+
+/* Research-backed role models are optional reading, not required tasks. */
+.act-inspirations {
+  margin: 1.5rem 0 0;
+  padding: .8rem 1rem;
+  border: 1px solid var(--act-soft-line);
+  border-radius: 14px;
+  background: var(--act-panel);
+}
+.act-inspirations > summary {
+  min-height: 42px;
+  cursor: pointer;
+  font-size: .91rem;
+  font-weight: 650;
+  padding: .25rem 0;
+}
+.act-inspirations > p {
+  margin: .4rem 0 1rem;
+  font-size: .84rem;
+  color: var(--act-muted);
+}
+.act-inspiration-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: .75rem;
+}
+.act-inspiration-item {
+  border: 1px solid var(--act-soft-line);
+  border-radius: 11px;
+  background: var(--act-bg);
+  padding: .9rem;
+  min-width: 0;
+}
+.act-inspiration-item strong { display: block; margin-bottom: .25rem; font-size: .85rem; }
+.act-inspiration-item p { margin: .25rem 0; font-size: .78rem; }
+.act-inspiration-item p:nth-of-type(2) { color: var(--act-muted); }
+.act-inspiration-item a { display: inline-block; margin-top: .5rem; font-size: .75rem; overflow-wrap: anywhere; }
+@media (max-width:720px) {
+  .act-inspiration-grid { grid-template-columns: 1fr; }
+}
