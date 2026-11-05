@@ -8,7 +8,7 @@ sitemap: false
 excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et progresser."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=5">
+<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=6">
 
 <div class="activities-app" id="activities-app" data-lang="fr">
   <header class="act-hero">
@@ -35,6 +35,7 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
       <p class="act-eyebrow">OBJECTIF · NOVEMBRE 2026 — NOVEMBRE 2027</p>
       <h3 id="act-year-heading">365 jours pour réaliser des premières</h3>
       <p id="act-year-subtitle">Des ambitions audacieuses, des choix libres, des progrès réels.</p>
+      <p class="act-stats" id="act-stats"></p>
     </div>
     <button type="button" id="act-year-cta" class="act-primary">Explorer mes grandes ambitions</button>
   </section>
@@ -113,4 +114,4 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
   </noscript>
 </div>
 <script id="activities-data" type="application/json">{{ site.data.activities | jsonify | replace: '<', '\u003c' }}</script>
-<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=5"></script>
+<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=6"></script>
