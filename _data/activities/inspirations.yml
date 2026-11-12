@@ -118,3 +118,27 @@
   connects:
   - ACT-202611-Y12
   - ACT-202611-Y1
+- id: runyon
+  name: "Joel Runyon"
+  archetype:
+    fr: "Impossible List : des accomplissements qui dépassent l'ancien soi"
+    en: "Impossible List: achievements that go beyond the former self"
+  lesson:
+    fr: "Remplacer les intentions par des épreuves mesurées et des réalisations effectivement terminées ; construire chaque palier avant le suivant."
+    en: "Replace intentions with measurable trials and truly completed outcomes; build each step before the next."
+  url: "https://impossiblehq.com/impossible-list/"
+  connects:
+  - ACT-OD26-01-BOSS
+  - ACT-202611-Y2
+- id: kamb
+  name: "Steve Kamb — Epic Quest"
+  archetype:
+    fr: "Une quête de vie en niveaux, avec de vrais boss"
+    en: "A level-based life quest with real boss challenges"
+  lesson:
+    fr: "Chaque semaine entraîne cinq compétences ; une épreuve de terrain facultative transforme l'entraînement en expérience réelle."
+    en: "Five skills trained each week; an optional real-world boss transforms practice into lived achievement."
+  url: "https://www.nerdfitness.com/blog/my-life-is-a-game-a-major-epic-quest-update-plus-a-request/"
+  connects:
+  - ACT-OD26-04-BOSS
+  - ACT-202611-Y12
