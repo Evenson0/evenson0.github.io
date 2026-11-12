@@ -294,3 +294,13 @@ html[data-theme="dark"] .activities-app { --act-accent: #81debf; }
   .act-odyssey-ladder { gap: .15rem; }
   .act-step { font-size: .62rem; padding: .18rem 0; }
 }
+
+
+/* Optional boss battles produce evidence beyond study drills. */
+.act-boss { grid-column: 1 / -1; border-left: 4px solid var(--act-accent); }
+.act-boss-label {
+  margin-left: auto; font: 700 .7rem/1.4 Monaco, Consolas, monospace;
+  letter-spacing: .02em; color: var(--act-accent);
+}
+.act-boss .act-action { max-width: 950px; }
+@media (max-width:720px) { .act-boss { grid-column: 1; } }
