@@ -3398,3 +3398,91 @@
   note:
     fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
     en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-01-BOSS
+  challenge: ACT-OD26-01-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-02-BOSS
+  challenge: ACT-OD26-02-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-03-BOSS
+  challenge: ACT-OD26-03-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-04-BOSS
+  challenge: ACT-OD26-04-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-05-BOSS
+  challenge: ACT-OD26-05-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-06-BOSS
+  challenge: ACT-OD26-06-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-07-BOSS
+  challenge: ACT-OD26-07-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-08-BOSS
+  challenge: ACT-OD26-08-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-09-BOSS
+  challenge: ACT-OD26-09-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-11-BOSS
+  challenge: ACT-OD26-11-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
+- id: proposal-ACT-OD26-12-BOSS
+  challenge: ACT-OD26-12-BOSS
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "BOSS du parcours 12 semaines : épreuve de terrain facultative, avec résultat réel à documenter. Aucune réalisation présumée."
+    en: "Optional real-world boss trial of the 12-week track, with a verifiable outcome. No achievement assumed."
