@@ -19,11 +19,12 @@
     });
     return result;
   }
-  function visibleChallenges(data, horizon, status, query, lang, category = 'all', periodWindow = 'all', referenceDate = '') {
+  function visibleChallenges(data, horizon, status, query, lang, category = 'all', periodWindow = 'all', referenceDate = '', includeLegacy = true) {
     const term = query.trim().toLocaleLowerCase();
     return data.challenges.filter(challenge => {
       const current = statusOf(challenge.id, data.events);
-      return (periodWindow !== 'current' || (challenge.period_start <= referenceDate && challenge.due >= referenceDate)) &&
+      return (includeLegacy || challenge.horizon !== 'week' || challenge.series === 'odyssee') &&
+        (periodWindow !== 'current' || (challenge.period_start <= referenceDate && challenge.due >= referenceDate)) &&
         (horizon === 'all' || challenge.horizon === horizon) &&
         (category === 'all' || challenge.category === category) &&
         (status === 'all' || (status === 'open' ? !CLOSED.has(current) : current === status)) &&
@@ -34,7 +35,9 @@
     const eligible = challenges.filter(c => c.horizon === 'week' && c.period_start <= date && (!c.due || c.due >= date));
     if (!eligible.length) return [];
     const current = eligible.reduce((max, c) => c.period_start > max ? c.period_start : max, '');
-    return eligible.filter(c => c.period_start === current);
+    const weekly = eligible.filter(c => c.period_start === current);
+    const odyssey = weekly.filter(c => c.series === 'odyssee');
+    return odyssey.length ? odyssey : weekly;
   }
   function buildReport(data, drafts, labels, lang, today) {
     const lines = data.challenges.filter(c => drafts[c.id]?.status === 'completed' && statusOf(c.id, data.events) !== 'completed').map(c => {
@@ -59,11 +62,12 @@
   }
   const COPY = {
     fr: {
+      odysseyTitle: '12 SEMAINES · 5 ÉPREUVES PAR SEMAINE', odysseyIntro: 'Des productions réelles, cinq mesures suivies, des niveaux de difficulté croissante.', odysseyCurrent: 'Niveau en cours', odysseyDonePublic: 'validées dans le carnet', odysseyDoneLocal: 'cochées sur cet appareil', odysseyFuture: 'prévu', odysseyWeek: 'Semaine', legacyToggle: 'Voir les anciens défis hebdomadaires', measureLabel: 'MESURE À NOTER', tierLabel: 'NIVEAU',
       markDone: '✓ Je l’ai réalisé', alreadyDone: '✓ Déjà enregistré', optionalNote: 'Ajouter une note (facultatif)', allPeriods: 'Voir aussi les périodes passées et futures',
       catalogChallenges: 'défis', catalogHorizons: 'horizons', catalogDomains: 'domaines', catalogSources: 'inspirations',
       inspirationTitle: 'Ils ont osé avant toi : les inspirations', inspirationIntro: 'Des parcours vérifiables pour inventer tes propres défis, sans chercher à copier une vie entière.',
       axisMind: 'Esprit', axisBody: 'Corps', axisCourage: 'Courage', axisCreation: 'Création',
-      yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', showWeekAll: 'Voir toutes les missions de la semaine', showWeekLess: 'Réduire la sélection', weeklyFocus: 'Missions de la semaine', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Tu peux tenter tous les défis qui t’inspirent. Dimanche, coche uniquement ceux que tu as réellement terminés.', exploreHint: 'Retrouve les défis de la période en cours, ou affiche les périodes passées et futures.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
+      yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', showWeekAll: 'Voir toutes les missions de la semaine', showWeekLess: 'Réduire la sélection', weeklyFocus: 'Missions de la semaine', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Chaque épreuve a une durée, un résultat précis et une mesure. Note tes chiffres réels ; dimanche, coche ce qui est réellement livré.', exploreHint: 'Par défaut : protocole mesurable et grands objectifs. Les anciennes idées restent accessibles en archives.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
       eyebrow: 'ACTIVITIES · PROTOCOLE D’AUDACE', hero: 'Deviens capable de ce qui te paraît impossible aujourd’hui.', promise: 'Des exploits qui comptent, pas des points à collectionner.',
       mentor: 'LE MOT DU MENTOR', load: 'Les défis réutilisent les séances de Becoming. Les grands horizons se construisent avec les petites actions.',
       challenges: 'Les défis', journal: 'Le journal', filter: 'État', search: 'Rechercher', yourturn: 'À TOI DE JOUER',
@@ -91,11 +95,12 @@
       sourceMentor: 'Proposition du mentor', sourceUser: 'Retour d’Evenson', noCompletion: 'Les décisions partagées sont conservées ici, sans résultat inventé.'
     },
     en: {
+      odysseyTitle: '12 WEEKS · 5 TRIALS EACH WEEK', odysseyIntro: 'Real deliverables, five tracked metrics and progressively harder levels.', odysseyCurrent: 'Current level', odysseyDonePublic: 'confirmed in journal', odysseyDoneLocal: 'checked on this device', odysseyFuture: 'planned', odysseyWeek: 'Week', legacyToggle: 'Show the earlier weekly challenges', measureLabel: 'MEASURE TO RECORD', tierLabel: 'LEVEL',
       markDone: '✓ I completed it', alreadyDone: '✓ Already recorded', optionalNote: 'Add a note (optional)', allPeriods: 'Also show past and future periods',
       catalogChallenges: 'challenges', catalogHorizons: 'horizons', catalogDomains: 'domains', catalogSources: 'inspirations',
       inspirationTitle: 'They dared: sources of inspiration', inspirationIntro: 'Verifiable journeys that inspire your own challenges, without trying to copy an entire life.',
       axisMind: 'Mind', axisBody: 'Body', axisCourage: 'Courage', axisCreation: 'Creation',
-      yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', showWeekAll: 'Show all weekly missions', showWeekLess: 'Show fewer missions', weeklyFocus: 'This week’s missions', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'Try any challenges that inspire you. On Sunday, tick only the ones you truly completed.', exploreHint: 'Browse the current period, or show past and future periods when needed.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
+      yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', showWeekAll: 'Show all weekly missions', showWeekLess: 'Show fewer missions', weeklyFocus: 'This week’s missions', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'Each trial has a timeframe, deliverable and metric. Record actual results; on Sunday tick only what you truly shipped.', exploreHint: 'By default: measurable trials and long-term goals. Earlier ideas remain in the archive.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
       eyebrow: 'ACTIVITIES · THE COURAGE PROTOCOL', hero: 'Become capable of what seems impossible today.', promise: 'Achievements that matter, not points to collect.',
       mentor: 'FROM YOUR MENTOR', load: 'Challenges reuse Becoming sessions. Longer horizons grow from small actions.',
       challenges: 'Challenges', journal: 'Journal', filter: 'Status', search: 'Search', yourturn: 'YOUR TURN',
@@ -131,7 +136,7 @@
   let lang = 'fr';
   try { lang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('evenson.site.language') || document.documentElement.dataset.siteLang || 'fr'; } catch (_) {}
   if (!COPY[lang]) lang = 'fr';
-  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false, shownCount = 12, showWeekAll = false, showAllPeriods = false;
+  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false, shownCount = 12, showWeekAll = false, showAllPeriods = false, showLegacy = false;
   const byId = Object.fromEntries(data.challenges.map(c => [c.id, c]));
   const targets = Object.fromEntries(data.config.targets.map(t => [t.id, t]));
   const categories = Object.fromEntries((data.config.categories || []).map(c => [c.id, c]));
@@ -189,6 +194,7 @@
       el('span', 'act-topic', cat ? loc(cat.label) : c.category),
       el('span', 'act-period', horizonLabels[c.horizon] ? loc(horizonLabels[c.horizon].label) : c.horizon)
     );
+    if (c.series === 'odyssee') top.append(el('span', 'act-level', t('tierLabel') + ' ' + String(c.level).padStart(2, '0') + '/12'));
     const title = el('h3', '', loc(c.title));
     title.id = c.id + '-title';
     card.setAttribute('aria-labelledby', title.id);
@@ -201,6 +207,8 @@
     else if (c.due < today()) meta.append(el('span', 'act-waiting', t('review')));
     const criterion = el('p', 'act-criterion');
     criterion.append(el('strong', '', t('criterion')), document.createTextNode(loc(c.done_when)));
+    const measure = c.measure ? el('p', 'act-measure') : null;
+    if (measure) measure.append(el('strong', '', t('measureLabel')), document.createTextNode(loc(c.measure)));
 
     const details = el('details', 'act-details');
     details.append(el('summary', '', t('details')));
@@ -255,7 +263,7 @@
     note.id = noteLabel.htmlFor;
     note.rows = 3;
     note.maxLength = 1200;
-    note.placeholder = t('notePlaceholder');
+    note.placeholder = c.measure ? loc(c.measure) : t('notePlaceholder');
     note.value = draft?.note || '';
     note.disabled = alreadyReported;
     response.append(noteLabel, note);
@@ -267,7 +275,9 @@
     note.addEventListener('input', () => {
       if (checked.checked && !alreadyReported) saveCompletion(c.id, true, note.value);
     });
-    card.append(top, title, meta, el('p', 'act-action', loc(c.action)), criterion, completion, details, response);
+    card.append(top, title, meta, el('p', 'act-action', loc(c.action)), criterion);
+    if (measure) card.append(measure);
+    card.append(completion, details, response);
     return card;
   }
   function render() {
@@ -281,6 +291,35 @@
     $('act-year-cta').textContent = t('yearCta');
     $('act-year-heading').textContent = loc(data.config.annual_vision.headline);
     $('act-year-subtitle').textContent = loc(data.config.annual_vision.subtitle);
+    const program = data.challenges.filter(c => c.series === 'odyssee');
+    const levels = Array.from({length: 12}, (_, i) => {
+      const trials = program.filter(c => c.level === i + 1);
+      return {level: i + 1, trials, start: trials[0]?.period_start || '', end: trials[0]?.due || ''};
+    });
+    const activeLevel = levels.find(v => v.start && v.start <= today() && v.end >= today());
+    $('act-odyssey-title').textContent = t('odysseyTitle');
+    $('act-odyssey-intro').textContent = t('odysseyIntro');
+    const ladder = $('act-odyssey-ladder');
+    ladder.replaceChildren();
+    levels.forEach(v => {
+      const confirmed = v.trials.filter(c => statusOf(c.id, data.events) === 'completed').length;
+      const local = v.trials.filter(c => statusOf(c.id, data.events) !== 'completed' && drafts[c.id]?.status === 'completed').length;
+      const step = el('span', 'act-step');
+      step.textContent = String(v.level).padStart(2, '0');
+      step.title = t('odysseyWeek') + ' ' + v.level + ': ' + confirmed + ' ' + t('odysseyDonePublic') + ', ' + local + ' ' + t('odysseyDoneLocal');
+      if (v.start > today()) step.classList.add('is-future');
+      if (activeLevel && v.level === activeLevel.level) step.classList.add('is-active');
+      if (confirmed > 0) step.classList.add('has-confirmed');
+      if (local > 0) step.classList.add('has-local');
+      ladder.append(step);
+    });
+    if (activeLevel) {
+      const confirmed = activeLevel.trials.filter(c => statusOf(c.id, data.events) === 'completed').length;
+      const local = activeLevel.trials.filter(c => statusOf(c.id, data.events) !== 'completed' && drafts[c.id]?.status === 'completed').length;
+      $('act-odyssey-progress').textContent = t('odysseyCurrent') + ' ' + activeLevel.level + '/12 · ' + confirmed + '/5 ' + t('odysseyDonePublic') + ' · ' + local + '/5 ' + t('odysseyDoneLocal');
+    } else {
+      $('act-odyssey-progress').textContent = '';
+    }
     $('act-stats').textContent = [
       data.challenges.length + ' ' + t('catalogChallenges'),
       data.config.horizons.length + ' ' + t('catalogHorizons'),
@@ -306,6 +345,7 @@
     $('act-view-hint').textContent = t(view === 'challenges' ? 'weekHint' : view === 'explore' ? 'exploreHint' : 'journalHint');
     $('act-discovery-controls').hidden = view !== 'explore';
     $('act-all-periods').checked = showAllPeriods;
+    $('act-show-legacy').checked = showLegacy;
 
     const horizons = $('act-horizons');
     horizons.replaceChildren();
@@ -353,7 +393,7 @@
       $('act-results-count').textContent = t('weeklyFocus') + ' · ' + selection.length + ' ' + t('results');
     } else if (view === 'explore') {
       const rank = {week: 0, month: 1, quarter: 2, season: 3, halfyear: 4, year: 5};
-      const selected = visibleChallenges(data, horizon, status, query, lang, category, showAllPeriods ? 'all' : 'current', today()).sort((a, b) =>
+      const selected = visibleChallenges(data, horizon, status, query, lang, category, showAllPeriods ? 'all' : 'current', today(), showLegacy).sort((a, b) =>
         rank[a.horizon] - rank[b.horizon] || a.due.localeCompare(b.due));
       selected.slice(0, shownCount).forEach(c => cards.append(renderCard(c)));
       if (selected.length > shownCount) cards.append(button(t('moreChallenges'), () => { shownCount += 12; render(); }, 'act-load-more'));
@@ -395,6 +435,7 @@
     $('act-discovery-controls').scrollIntoView({block: 'start', behavior: 'smooth'});
   });
   $('act-all-periods').addEventListener('change', event => { showAllPeriods = event.target.checked; shownCount = 12; render(); });
+  $('act-show-legacy').addEventListener('change', event => { showLegacy = event.target.checked; shownCount = 12; render(); });
   $('act-status-filter').addEventListener('change', event => { status = event.target.value; shownCount = 12; render(); });
   $('act-category-filter').addEventListener('change', event => { category = event.target.value; shownCount = 12; render(); });
   $('act-search').addEventListener('input', event => { query = event.target.value; shownCount = 12; render(); });
