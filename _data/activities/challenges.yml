@@ -11523,3 +11523,1173 @@
   parents:
   - ACT-202611-Y1
   inspiration: sciencepython
+- id: ACT-OD26-01-P
+  horizon: week
+  category: math
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-12'
+  due: '2026-11-15'
+  difficulty: ambitious
+  series: odyssee
+  level: 1
+  axis: precision
+  title:
+    fr: "ÉTABLIR TON NIVEAU P : 15 QUESTIONS SANS FILET"
+    en: "ESTABLISH YOUR P BASELINE: 15 UNAIDED QUESTIONS"
+  effort:
+    fr: "3.5 h · hors repos"
+    en: "3.5 h · excluding rest"
+  action:
+    fr: "Choisis 15 questions distinctes dans les exercices publics SOA P, couvre au moins 3 thèmes, mets 90 minutes au chrono, sans notes ni aide. Corrige ensuite les 15 réponses et classe chaque erreur : concept, algèbre, lecture ou gestion du temps."
+    en: "Select 15 distinct public SOA P sample problems from at least 3 topics. Work 90 minutes timed with no notes or help. Review all 15 and tag each error as concept, algebra, reading or timing."
+  why:
+    fr: "Semaine 1/12 : progression mesurable sur établir ton niveau p : 15 questions sans filet."
+    en: "Week 1/12: measurable progression toward establish your p baseline: 15 unaided questions."
+  done_when:
+    fr: "15 tentatives chronométrées et une fiche indiquant bonnes réponses /15, minutes utilisées, sujets et causes de toutes les erreurs."
+    en: "15 timed attempts with a score /15, elapsed minutes, topics and an error cause for every mistake."
+  measure:
+    fr: "Score /15 ; minutes ; nombre d'erreurs par catégorie."
+    en: "Score /15; minutes; errors by cause."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-01-BUILD
+  horizon: week
+  category: build
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-12'
+  due: '2026-11-15'
+  difficulty: ambitious
+  series: odyssee
+  level: 1
+  axis: fabrication
+  title:
+    fr: "METTRE EN LIGNE UNE PAGE QUI RÉSOUT UN VRAI PROBLÈME"
+    en: "SHIP A PAGE THAT SOLVES ONE REAL PROBLEM"
+  effort:
+    fr: "2.5 h · hors repos"
+    en: "2.5 h · excluding rest"
+  action:
+    fr: "Sur ton blog, construis une petite page P originale : une question probabiliste nouvelle, saisie utilisateur, correction calculée et un cas limite testé. Ajoute 3 tests automatisés et conserve le commit."
+    en: "Build one original Exam P web page on your blog: one new probability problem, user input, computed feedback and a tested edge case. Add 3 automated tests and save the commit."
+  why:
+    fr: "Semaine 1/12 : progression mesurable sur mettre en ligne une page qui résout un vrai problème."
+    en: "Week 1/12: measurable progression toward ship a page that solves one real problem."
+  done_when:
+    fr: "Une page exécutable sur mobile, un lien de commit et 3 tests qui réussissent."
+    en: "A phone-usable page, commit URL and 3 passing tests."
+  measure:
+    fr: "1 fonction utilisable ; 3 tests verts ; 1 commit."
+    en: "1 usable feature; 3 passing tests; 1 commit."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-01-EN
+  horizon: week
+  category: speaking
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-12'
+  due: '2026-11-15'
+  difficulty: ambitious
+  series: odyssee
+  level: 1
+  axis: expression
+  title:
+    fr: "ENREGISTRER 3 MINUTES D'ANGLAIS SANS SCRIPT"
+    en: "RECORD 3 MINUTES OF UNSCRIPTED ENGLISH"
+  effort:
+    fr: "0.75 h · hors repos"
+    en: "0.75 h · excluding rest"
+  action:
+    fr: "Enregistre en privé 3 minutes continues en anglais expliquant une probabilité conditionnelle avec un exemple chiffré. Une seule prise ; réécoute et compte les pauses de plus de 3 secondes et les passages au français."
+    en: "Privately record 3 continuous minutes in English explaining conditional probability with a numerical example. One take; replay and count pauses longer than 3 seconds and switches to French."
+  why:
+    fr: "Semaine 1/12 : progression mesurable sur enregistrer 3 minutes d'anglais sans script."
+    en: "Week 1/12: measurable progression toward record 3 minutes of unscripted english."
+  done_when:
+    fr: "Un fichier audio privé de 3 min et une fiche avec nombre de pauses et passages au français. Aucune publication imposée."
+    en: "A private 3-minute recording and counts of pauses and switches to French. No public sharing required."
+  measure:
+    fr: "Durée sans script ; pauses >3s ; passages au français."
+    en: "Unscripted duration; pauses >3s; French switches."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-01-BOOK
+  horizon: week
+  category: writing
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-12'
+  due: '2026-11-15'
+  difficulty: ambitious
+  series: odyssee
+  level: 1
+  axis: creation
+  title:
+    fr: "ÉCRIRE 600 MOTS SIGNÉS SANS UNE LIGNE D'IA"
+    en: "WRITE 600 SELF-AUTHORED WORDS WITHOUT AI"
+  effort:
+    fr: "2 h · hors repos"
+    en: "2 h · excluding rest"
+  action:
+    fr: "Écris sans IA 600 mots d'une scène ou d'un chapitre de ton futur livre : début, tension et décision irréversible. Relis seul et retire 10 % des phrases faibles sans perdre le sens. Conserve les deux versions."
+    en: "Write 600 no-AI words for a scene or chapter of your future book: opening, tension and an irreversible choice. Self-edit by removing 10% of weak wording without losing meaning. Keep both versions."
+  why:
+    fr: "Semaine 1/12 : progression mesurable sur écrire 600 mots signés sans une ligne d'ia."
+    en: "Week 1/12: measurable progression toward write 600 self-authored words without ai."
+  done_when:
+    fr: "Un texte original de 600 mots avant révision et deux versions datées, gardées privées si tu préfères."
+    en: "An original 600-word draft and two dated versions, private if preferred."
+  measure:
+    fr: "Mots avant/après ; taux de réduction ; deux versions."
+    en: "Words before/after; reduction rate; two versions."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-01-MOVE
+  horizon: week
+  category: fitness
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-12'
+  due: '2026-11-15'
+  difficulty: ambitious
+  series: odyssee
+  level: 1
+  axis: endurance
+  title:
+    fr: "ÉTABLIR UNE BASE D'ENDURANCE MESURÉE"
+    en: "MEASURE YOUR ENDURANCE STARTING POINT"
+  effort:
+    fr: "1 h · hors repos"
+    en: "1 h · excluding rest"
+  action:
+    fr: "Sur un parcours sûr ou un tapis, réalise 20 minutes de course-marche à allure confortable après échauffement, en alternant si besoin. Note distance, durée, ressenti d'effort 1–10 et récupération le lendemain. Ne force pas une vitesse."
+    en: "On a safe route or treadmill, complete 20 minutes of comfortable run-walk after warming up, taking walking breaks as needed. Record distance, duration, effort 1–10 and next-day recovery. Do not force pace."
+  why:
+    fr: "Semaine 1/12 : progression mesurable sur établir une base d'endurance mesurée."
+    en: "Week 1/12: measurable progression toward measure your endurance starting point."
+  done_when:
+    fr: "Une sortie adaptée de 20 minutes et des mesures privées de distance, effort et récupération ; si la course n'est pas adaptée, marche et documente la base."
+    en: "A suitable 20-minute outing with private distance, effort and recovery measures; walk if running is unsuitable."
+  measure:
+    fr: "Distance en 20 min ; effort /10 ; récupération à J+1."
+    en: "Distance in 20 min; effort /10; next-day recovery."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-02-P
+  horizon: week
+  category: math
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-12'
+  due: '2026-11-22'
+  difficulty: ambitious
+  series: odyssee
+  level: 2
+  axis: precision
+  title:
+    fr: "20 QUESTIONS P CIBLÉES EN 110 MINUTES"
+    en: "20 TARGETED P PROBLEMS IN 110 MINUTES"
+  effort:
+    fr: "4 h · hors repos"
+    en: "4 h · excluding rest"
+  action:
+    fr: "À partir des faiblesses de la semaine précédente, prends 20 questions publiques SOA, dont au moins 10 sur tes deux thèmes les plus faibles. Chronomètre 110 minutes, puis corrige et refais sans aide 5 erreurs après un jour."
+    en: "Using last week's weaknesses, take 20 public SOA questions, at least 10 from your two weakest topics. Time 110 minutes, then review and independently redo 5 misses on a later day."
+  why:
+    fr: "Semaine 2/12 : progression mesurable sur 20 questions p ciblées en 110 minutes."
+    en: "Week 2/12: measurable progression toward 20 targeted p problems in 110 minutes."
+  done_when:
+    fr: "20 réponses notées /20, un tableau des erreurs et 5 résolutions répétées sans corrigé."
+    en: "20 scored answers /20, an error table and 5 independently redone solutions."
+  measure:
+    fr: "Score /20 ; erreurs de thèmes faibles ; rappels corrects /5."
+    en: "Score /20; weak-topic misses; correctly recalled /5."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-02-BUILD
+  horizon: week
+  category: build
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-12'
+  due: '2026-11-22'
+  difficulty: ambitious
+  series: odyssee
+  level: 2
+  axis: fabrication
+  title:
+    fr: "PASSER D'UN DÉMO À 5 EXERCICES INTERACTIFS"
+    en: "EXPAND A DEMO TO 5 INTERACTIVE PROBLEMS"
+  effort:
+    fr: "3 h · hors repos"
+    en: "3 h · excluding rest"
+  action:
+    fr: "Étends ton outil P à 5 exercices originaux indépendants. Chaque exercice doit accepter une réponse, afficher l'explication correcte et être testable sur téléphone. Écris au moins 8 tests."
+    en: "Expand your P tool to 5 independent original problems. Each accepts an answer, shows a correct explanation and works on a phone. Write at least 8 tests."
+  why:
+    fr: "Semaine 2/12 : progression mesurable sur passer d'un démo à 5 exercices interactifs."
+    en: "Week 2/12: measurable progression toward expand a demo to 5 interactive problems."
+  done_when:
+    fr: "5 exercices réellement utilisables, 8 tests réussis et un commit documenté."
+    en: "5 actually usable problems, 8 passing tests and a documented commit."
+  measure:
+    fr: "5 exercices ; 8 tests verts ; URL de version."
+    en: "5 problems; 8 passing tests; version URL."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-02-EN
+  horizon: week
+  category: speaking
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-12'
+  due: '2026-11-22'
+  difficulty: ambitious
+  series: odyssee
+  level: 2
+  axis: expression
+  title:
+    fr: "5 MINUTES : EXPLIQUER BAYES SANS FRANÇAIS"
+    en: "5 MINUTES: EXPLAIN BAYES WITHOUT FRENCH"
+  effort:
+    fr: "1.1 h · hors repos"
+    en: "1.1 h · excluding rest"
+  action:
+    fr: "Enregistre en anglais, sans script, une explication de Bayes et d'un faux positif avec des nombres. Une seule prise de 5 minutes ; transcris toi-même dix phrases puis corrige les fautes grammaticales repérées."
+    en: "Record an unscripted English explanation of Bayes and false positives with numbers. One 5-minute take; transcribe ten sentences yourself and correct the grammar you find."
+  why:
+    fr: "Semaine 2/12 : progression mesurable sur 5 minutes : expliquer bayes sans français."
+    en: "Week 2/12: measurable progression toward 5 minutes: explain bayes without french."
+  done_when:
+    fr: "Audio privé de 5 minutes, dix phrases transcrites et erreurs repérées."
+    en: "A private 5-minute recording, ten transcribed sentences and documented errors."
+  measure:
+    fr: "5 min ; pauses >3 s ; passages FR ; erreurs sur 10 phrases."
+    en: "5 min; >3s pauses; French switches; errors in 10 sentences."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-02-BOOK
+  horizon: week
+  category: writing
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-12'
+  due: '2026-11-22'
+  difficulty: ambitious
+  series: odyssee
+  level: 2
+  axis: creation
+  title:
+    fr: "900 MOTS : UN CHAPITRE AVEC UNE VRAIE FIN"
+    en: "900 WORDS: A CHAPTER WITH A REAL ENDING"
+  effort:
+    fr: "2.5 h · hors repos"
+    en: "2.5 h · excluding rest"
+  action:
+    fr: "Rédige 900 mots originaux sans IA poursuivant ton texte de la semaine 1. Ajoute une décision et une conséquence concrètes ; réécris l'introduction une fois sans assistance et conserve les deux versions."
+    en: "Write 900 original no-AI words continuing the previous week's work. Add a concrete choice and consequence; independently rewrite the opening once and keep both versions."
+  why:
+    fr: "Semaine 2/12 : progression mesurable sur 900 mots : un chapitre avec une vraie fin."
+    en: "Week 2/12: measurable progression toward 900 words: a chapter with a real ending."
+  done_when:
+    fr: "900 nouveaux mots rédigés par toi ; chapitre continu et introduction révisée."
+    en: "900 new self-authored words; a continuous chapter with a revised opening."
+  measure:
+    fr: "900 nouveaux mots ; total cumulé visé 1 500 ; 2 introductions."
+    en: "900 new words; cumulative aim 1,500; 2 openings."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-02-MOVE
+  horizon: week
+  category: fitness
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-12'
+  due: '2026-11-22'
+  difficulty: ambitious
+  series: odyssee
+  level: 2
+  axis: endurance
+  title:
+    fr: "DEUX SÉANCES D'ENDURANCE AVEC RÉCUPÉRATION"
+    en: "TWO ENDURANCE SESSIONS WITH RECOVERY"
+  effort:
+    fr: "1.5 h · hors repos"
+    en: "1.5 h · excluding rest"
+  action:
+    fr: "Si ta première séance a été bien tolérée, effectue deux séances de course-marche faciles de 20–25 minutes séparées par récupération. Compare distance et effort à durée semblable ; sinon répète ou réduis sans forcer."
+    en: "If the first outing was tolerated, complete two easy 20–25 minute run-walk sessions with recovery between. Compare distance and effort at comparable duration; otherwise repeat or reduce safely."
+  why:
+    fr: "Semaine 2/12 : progression mesurable sur deux séances d'endurance avec récupération."
+    en: "Week 2/12: measurable progression toward two endurance sessions with recovery."
+  done_when:
+    fr: "Deux séances adaptées enregistrées (ou un ajustement de récupération justifié) et comparaison à la base initiale."
+    en: "Two suitable logged sessions (or a justified recovery adjustment) compared against baseline."
+  measure:
+    fr: "Séances /2 ; durée et distance ; effort moyen ; fatigue J+1."
+    en: "Sessions /2; duration/distance; mean effort; next-day fatigue."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-03-P
+  horizon: week
+  category: math
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-12'
+  due: '2026-11-29'
+  difficulty: ambitious
+  series: odyssee
+  level: 3
+  axis: precision
+  title:
+    fr: "25 QUESTIONS P ET 10 ERREURS ÉLIMINÉES"
+    en: "25 P PROBLEMS AND 10 ERRORS REPAIRED"
+  effort:
+    fr: "4.5 h · hors repos"
+    en: "4.5 h · excluding rest"
+  action:
+    fr: "Fais 25 questions SOA publiques en 140 minutes en mélangeant tous les thèmes ; reprends 10 anciennes questions ratées, espacées d'au moins 48 h, sans consulter les réponses avant."
+    en: "Complete 25 public SOA questions in 140 minutes across topics; redo 10 previously missed questions after at least 48 hours without looking up answers."
+  why:
+    fr: "Semaine 3/12 : progression mesurable sur 25 questions p et 10 erreurs éliminées."
+    en: "Week 3/12: measurable progression toward 25 p problems and 10 errors repaired."
+  done_when:
+    fr: "Score /25, journal détaillé des mauvaises réponses et 10 répétitions notées /10."
+    en: "Score /25, detailed miss log and ten scored independent recalls /10."
+  measure:
+    fr: "Score /25 ; rappels /10 ; temps moyen par bonne réponse."
+    en: "Score /25; recalls /10; minutes per correct answer."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-03-BUILD
+  horizon: week
+  category: build
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-12'
+  due: '2026-11-29'
+  difficulty: ambitious
+  series: odyssee
+  level: 3
+  axis: fabrication
+  title:
+    fr: "CRÉER UN MODE EXAMEN QUI SURVIT AU RECHARGEMENT"
+    en: "BUILD AN EXAM MODE THAT SURVIVES RELOAD"
+  effort:
+    fr: "3.5 h · hors repos"
+    en: "3.5 h · excluding rest"
+  action:
+    fr: "Ajoute à ton outil un chronomètre, cinq exercices affichés dans un ordre variable et un état local restauré après rechargement. Vérifie au moins 12 cas de test, dont fermeture/reprise."
+    en: "Add a timer, five problems in randomized order and local resume after reload. Test at least 12 cases including closing and resuming."
+  why:
+    fr: "Semaine 3/12 : progression mesurable sur créer un mode examen qui survit au rechargement."
+    en: "Week 3/12: measurable progression toward build an exam mode that survives reload."
+  done_when:
+    fr: "Mode examen utilisable en mobile, sauvegarde/restauration testée et 12 tests verts."
+    en: "A mobile-usable exam mode, tested save/resume and 12 passing tests."
+  measure:
+    fr: "5 problèmes chronométrés ; reprise ; 12 tests."
+    en: "5 timed problems; resume; 12 tests."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-03-EN
+  horizon: week
+  category: speaking
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-12'
+  due: '2026-11-29'
+  difficulty: ambitious
+  series: odyssee
+  level: 3
+  axis: expression
+  title:
+    fr: "6 MINUTES : DÉFENDRE UN CHOIX DE MODÈLE"
+    en: "6 MINUTES: DEFEND A MODEL CHOICE"
+  effort:
+    fr: "1.2 h · hors repos"
+    en: "1.2 h · excluding rest"
+  action:
+    fr: "Enregistre un exposé anglais de 6 minutes sans texte sur fréquence Poisson et limites. Prépare à l'avance trois questions critiques sur des cartes et réponds-y à voix haute en 90 secondes chacune après l'exposé."
+    en: "Record a 6-minute unscripted English explanation of Poisson frequency and limitations. Prepare three critical question cards beforehand and answer each aloud in 90 seconds after your talk."
+  why:
+    fr: "Semaine 3/12 : progression mesurable sur 6 minutes : défendre un choix de modèle."
+    en: "Week 3/12: measurable progression toward 6 minutes: defend a model choice."
+  done_when:
+    fr: "Une présentation privée de 6 minutes, trois réponses enregistrées et décompte des pauses."
+    en: "A private 6-minute presentation, three recorded answers and pause counts."
+  measure:
+    fr: "6 min + 3 × 90 s ; pauses ; termes techniques maîtrisés."
+    en: "6 min + 3 × 90s; pauses; technical terms used accurately."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-03-BOOK
+  horizon: week
+  category: writing
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-12'
+  due: '2026-11-29'
+  difficulty: ambitious
+  series: odyssee
+  level: 3
+  axis: creation
+  title:
+    fr: "1 100 MOTS : ÉCRIRE L'OBJECTION QUI DÉTRUIT TA THÈSE"
+    en: "1,100 WORDS: WRITE THE OBJECTION THAT CHALLENGES YOUR THESIS"
+  effort:
+    fr: "3 h · hors repos"
+    en: "3 h · excluding rest"
+  action:
+    fr: "Écris 1 100 mots de ton essai ou livre sans IA. Si essai : donne à l'objection la plus forte au moins 300 mots. Si fiction : écris la scène où le plan du protagoniste échoue et change la suite."
+    en: "Write 1,100 no-AI words of your book or essay. For nonfiction give the strongest counterargument at least 300 words; for fiction write the scene where the protagonist's plan fails and changes what follows."
+  why:
+    fr: "Semaine 3/12 : progression mesurable sur 1 100 mots : écrire l'objection qui détruit ta thèse."
+    en: "Week 3/12: measurable progression toward 1,100 words: write the objection that challenges your thesis."
+  done_when:
+    fr: "1 100 mots nouveaux avec une objection ou un retournement concret qui modifie le manuscrit."
+    en: "1,100 new words including a concrete objection or reversal that changes the manuscript."
+  measure:
+    fr: "1 100 mots ; total 2 600 ; objection/scène identifiée."
+    en: "1,100 words; cumulative 2,600; labeled objection/scene."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-03-MOVE
+  horizon: week
+  category: fitness
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-12'
+  due: '2026-11-29'
+  difficulty: ambitious
+  series: odyssee
+  level: 3
+  axis: endurance
+  title:
+    fr: "REFAIRE 25 MINUTES ET COMPARER L'EFFORT"
+    en: "REPEAT 25 MINUTES AND COMPARE EFFORT"
+  effort:
+    fr: "1.5 h · hors repos"
+    en: "1.5 h · excluding rest"
+  action:
+    fr: "Effectue deux séances adaptées d'environ 25 minutes, avec récupération. Sur le même parcours qu'en semaine 1 si possible, relève distance et effort 1–10 ; progression seulement si confortable."
+    en: "Complete two suitable ~25-minute sessions with recovery. On the same route as week 1 if possible, log distance and effort 1–10; progress only if comfortable."
+  why:
+    fr: "Semaine 3/12 : progression mesurable sur refaire 25 minutes et comparer l'effort."
+    en: "Week 3/12: measurable progression toward repeat 25 minutes and compare effort."
+  done_when:
+    fr: "Deux séances ou adaptation justifiée, et une comparaison écrite base/semaine 3 sans objectif de vitesse."
+    en: "Two sessions or justified adjustment, plus a written baseline-vs-week-3 comparison without pace target."
+  measure:
+    fr: "Durée 25 min ; km ; effort /10 ; récupéré oui/non."
+    en: "25-minute duration; km; effort /10; recovered yes/no."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-04-P
+  horizon: week
+  category: math
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-12'
+  due: '2026-12-06'
+  difficulty: ambitious
+  series: odyssee
+  level: 4
+  axis: precision
+  title:
+    fr: "PREMIER EXAMEN P BLANC COMPLET"
+    en: "FIRST FULL EXAM P MOCK"
+  effort:
+    fr: "5 h · hors repos"
+    en: "5 h · excluding rest"
+  action:
+    fr: "Effectue une simulation complète P sur ressources publiques autorisées, en respectant la durée du format officiel de ta session ; conserve score, temps et un tableau de chaque erreur. Reprends les 8 plus coûteuses sans corrigé le lendemain."
+    en: "Take a full P mock using permitted public resources, respecting the official timing for your sitting. Record score, time and every missed item's cause. Redo eight costly errors unaided the next day."
+  why:
+    fr: "Semaine 4/12 : progression mesurable sur premier examen p blanc complet."
+    en: "Week 4/12: measurable progression toward first full exam p mock."
+  done_when:
+    fr: "Une simulation complète datée et 8 résolutions corrigées, avec tableau de la performance par thème."
+    en: "One dated full mock plus eight corrected solutions and a topic-by-topic performance table."
+  measure:
+    fr: "Score total/total officiel ; temps ; 8 corrections ; erreurs par thème."
+    en: "Official-format score; time; 8 corrections; topic misses."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-04-BUILD
+  horizon: week
+  category: build
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-12'
+  due: '2026-12-06'
+  difficulty: ambitious
+  series: odyssee
+  level: 4
+  axis: fabrication
+  title:
+    fr: "PUBLIER LA VERSION 0.1 DE L'ATELIER P"
+    en: "PUBLISH VERSION 0.1 OF THE P LAB"
+  effort:
+    fr: "4 h · hors repos"
+    en: "4 h · excluding rest"
+  action:
+    fr: "Publie 10 exercices originaux avec solutions générées/testées, navigation mobile, reprise de session et au moins 15 tests automatisés. Fais faire un parcours à un volontaire et note 3 problèmes."
+    en: "Publish 10 original problems with tested/generated solutions, mobile navigation, resumed sessions and at least 15 automated tests. Ask one volunteer to try a flow and record 3 issues."
+  why:
+    fr: "Semaine 4/12 : progression mesurable sur publier la version 0.1 de l'atelier p."
+    en: "Week 4/12: measurable progression toward publish version 0.1 of the p lab."
+  done_when:
+    fr: "URL v0.1, 10 exercices, 15 tests verts et compte rendu de 1 test utilisateur réel (si volontaire disponible)."
+    en: "A v0.1 URL, ten problems, 15 passing tests and a report from one real user test (if a volunteer is available)."
+  measure:
+    fr: "10 exercices ; 15 tests ; 3 irritants observés ou test sollicité."
+    en: "10 problems; 15 tests; 3 issues observed or test requested."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-04-EN
+  horizon: week
+  category: speaking
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-12'
+  due: '2026-12-06'
+  difficulty: ambitious
+  series: odyssee
+  level: 4
+  axis: expression
+  title:
+    fr: "7 MINUTES : EXPOSE TON OUTIL EN ANGLAIS À UNE PERSONNE"
+    en: "7 MINUTES: DEMO YOUR TOOL IN ENGLISH TO SOMEONE"
+  effort:
+    fr: "1.5 h · hors repos"
+    en: "1.5 h · excluding rest"
+  action:
+    fr: "Présente ton prototype pendant 7 minutes en anglais à une personne volontaire, téléphone ou navigateur ouvert, puis demande au moins deux objections précises. Si personne disponible, enregistre une démonstration avec 2 objections préparées."
+    en: "Present your prototype in English for 7 minutes to a willing person, app open, then request at least two specific objections. If no one is available, record a demo addressing two prewritten objections."
+  why:
+    fr: "Semaine 4/12 : progression mesurable sur 7 minutes : expose ton outil en anglais à une personne."
+    en: "Week 4/12: measurable progression toward 7 minutes: demo your tool in english to someone."
+  done_when:
+    fr: "Une démonstration enregistrée ou réalisée en direct, deux objections traitées et une liste d'améliorations."
+    en: "A recorded or live demo with two objections answered and an improvement list."
+  measure:
+    fr: "7 min sans script ; 2 objections ; nombre de blocages."
+    en: "7 unscripted minutes; 2 objections; stumbling points."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-04-BOOK
+  horizon: week
+  category: writing
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-12'
+  due: '2026-12-06'
+  difficulty: ambitious
+  series: odyssee
+  level: 4
+  axis: creation
+  title:
+    fr: "1 200 MOTS + UNE RÉÉCRITURE QUI AMÉLIORE LE TEXTE"
+    en: "1,200 WORDS PLUS A SUBSTANTIVE REVISION"
+  effort:
+    fr: "3 h · hors repos"
+    en: "3 h · excluding rest"
+  action:
+    fr: "Écris 1 200 nouveaux mots sans IA. Choisis ensuite les 500 mots les moins réussis de ton manuscrit, réécris-les seul et conserve avant/après pour comparer cohérence et précision."
+    en: "Write 1,200 new no-AI words. Then pick the weakest 500 words of the manuscript, rewrite them independently and preserve before/after for comparison."
+  why:
+    fr: "Semaine 4/12 : progression mesurable sur 1 200 mots + une réécriture qui améliore le texte."
+    en: "Week 4/12: measurable progression toward 1,200 words plus a substantive revision."
+  done_when:
+    fr: "1 200 nouveaux mots et un segment réécrit de 500 mots avec deux versions datées."
+    en: "1,200 new words and a rewritten 500-word passage with dated before/after copies."
+  measure:
+    fr: "1 200 mots ; total 3 800 ; 500 mots révisés."
+    en: "1,200 words; cumulative 3,800; 500 words revised."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-04-MOVE
+  horizon: week
+  category: fitness
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-12'
+  due: '2026-12-06'
+  difficulty: ambitious
+  series: odyssee
+  level: 4
+  axis: endurance
+  title:
+    fr: "30 MINUTES D'ENDURANCE RÉPÉTABLE"
+    en: "A REPEATABLE 30-MINUTE ENDURANCE SESSION"
+  effort:
+    fr: "1.75 h · hors repos"
+    en: "1.75 h · excluding rest"
+  action:
+    fr: "Si les semaines précédentes ont été bien tolérées, tente 2 × 30 minutes course-marche faciles dans la semaine avec récupération ; sinon conserve l'étape antérieure. Note distance, effort et récupération."
+    en: "If earlier weeks went well, try two easy 30-minute run-walk sessions with recovery; otherwise maintain the previous step. Record distance, effort and recovery."
+  why:
+    fr: "Semaine 4/12 : progression mesurable sur 30 minutes d'endurance répétable."
+    en: "Week 4/12: measurable progression toward a repeatable 30-minute endurance session."
+  done_when:
+    fr: "Deux séances adaptées avec durée et distance, ou un maintien justifié du niveau actuel."
+    en: "Two suitable logged sessions with duration and distance, or a justified decision to maintain the current level."
+  measure:
+    fr: "30 min ×2 si adapté ; km ; RPE /10 ; récupération."
+    en: "30min ×2 if suitable; km; RPE /10; recovery."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-05-P
+  horizon: week
+  category: math
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-12'
+  due: '2026-12-13'
+  difficulty: ambitious
+  series: odyssee
+  level: 5
+  axis: precision
+  title:
+    fr: "DEUXIÈME BLANC P : CHASSER LES ERREURS RÉCURRENTES"
+    en: "SECOND P MOCK: TARGET RECURRING ERRORS"
+  effort:
+    fr: "5 h · hors repos"
+    en: "5 h · excluding rest"
+  action:
+    fr: "Fais un second blanc P sur une série différente de questions publiques avec le même temps officiel. Compare les erreurs par concept au premier blanc, et refais 10 anciennes erreurs sans aide. Ne compare pas naïvement deux scores d'épreuves de difficultés différentes."
+    en: "Take a second official-format P mock using different public questions at the same time allowance. Compare conceptual error types with the first mock and redo ten past errors independently. Do not equate scores across unequal mock difficulty."
+  why:
+    fr: "Semaine 5/12 : progression mesurable sur deuxième blanc p : chasser les erreurs récurrentes."
+    en: "Week 5/12: measurable progression toward second p mock: target recurring errors."
+  done_when:
+    fr: "Un second blanc daté, dix rappels /10, et un tableau montrant quelles catégories d'erreurs persistent."
+    en: "A dated second mock, ten recalls /10 and a table showing persistent error categories."
+  measure:
+    fr: "Score nouveau blanc ; erreurs récurrentes ; rappels /10."
+    en: "New mock score; recurring mistakes; recalls /10."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-05-BUILD
+  horizon: week
+  category: build
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-12'
+  due: '2026-12-13'
+  difficulty: ambitious
+  series: odyssee
+  level: 5
+  axis: fabrication
+  title:
+    fr: "DES TESTS QUI CASSENT TON APPLICATION P"
+    en: "BREAK YOUR P APP WITH TESTS"
+  effort:
+    fr: "3.5 h · hors repos"
+    en: "3.5 h · excluding rest"
+  action:
+    fr: "Crée 20 tests automatisés dont au moins 5 cas limites : réponse vide, borne impossible, probabilité 0/1, rechargement et format malformé. Corrige les bogues découverts et documente la cause de trois d'entre eux."
+    en: "Create 20 automated tests including at least five edge cases: empty answer, impossible boundary, probability 0/1, reload and malformed input. Fix discovered bugs and document root causes for three."
+  why:
+    fr: "Semaine 5/12 : progression mesurable sur des tests qui cassent ton application p."
+    en: "Week 5/12: measurable progression toward break your p app with tests."
+  done_when:
+    fr: "20 tests verts et trois bogues corrigés ou cas vérifiés sans bogue, avec journal."
+    en: "20 passing tests and three fixed bugs or verified non-bugs with a log."
+  measure:
+    fr: "20 tests ; 5 bords ; 3 causes analysées."
+    en: "20 tests; 5 edges; 3 analyzed causes."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-05-EN
+  horizon: week
+  category: speaking
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-12'
+  due: '2026-12-13'
+  difficulty: ambitious
+  series: odyssee
+  level: 5
+  axis: expression
+  title:
+    fr: "8 MINUTES : EXPLIQUER UN RÉSULTAT SOUS QUESTIONS"
+    en: "8 MINUTES: EXPLAIN A RESULT UNDER QUESTIONING"
+  effort:
+    fr: "1.3 h · hors repos"
+    en: "1.3 h · excluding rest"
+  action:
+    fr: "Enregistre 8 minutes en anglais sur un résultat mathématique que tu sais démontrer. Après le discours, tire au hasard trois cartes questions et réponds dans une limite de 90 secondes par question."
+    en: "Record 8 minutes in English on a math result you can prove. Afterward randomly draw three question cards and answer within 90 seconds each."
+  why:
+    fr: "Semaine 5/12 : progression mesurable sur 8 minutes : expliquer un résultat sous questions."
+    en: "Week 5/12: measurable progression toward 8 minutes: explain a result under questioning."
+  done_when:
+    fr: "Un exposé de 8 min et trois réponses limitées au chrono, avec une évaluation des pauses et imprécisions."
+    en: "An 8-minute talk and three timed replies with pause and imprecision assessment."
+  measure:
+    fr: "8 min ; 3 réponses ≤90 s ; imprécisions factuelles."
+    en: "8min; 3 replies ≤90s; factual inaccuracies."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-05-BOOK
+  horizon: week
+  category: writing
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-12'
+  due: '2026-12-13'
+  difficulty: ambitious
+  series: odyssee
+  level: 5
+  axis: creation
+  title:
+    fr: "1 500 MOTS : LE CHAPITRE QUI RÉSISTE À LA CRITIQUE"
+    en: "1,500 WORDS: A CHAPTER THAT CAN TAKE CRITICISM"
+  effort:
+    fr: "3.5 h · hors repos"
+    en: "3.5 h · excluding rest"
+  action:
+    fr: "Rédige 1 500 mots sans IA, puis donne un chapitre à une personne de confiance en lui demandant 3 critiques concrètes de clarté, structure et force. Si aucun retour, écris toi-même les 3 objections."
+    en: "Write 1,500 no-AI words, then ask a trusted reader for three concrete critiques on clarity, structure and force. If feedback is unavailable, write your own three objections."
+  why:
+    fr: "Semaine 5/12 : progression mesurable sur 1 500 mots : le chapitre qui résiste à la critique."
+    en: "Week 5/12: measurable progression toward 1,500 words: a chapter that can take criticism."
+  done_when:
+    fr: "1 500 nouveaux mots, un chapitre autonome, et trois critiques réelles ou auto-objections documentées."
+    en: "1,500 new words, a self-contained chapter and three documented outside or self-generated criticisms."
+  measure:
+    fr: "1 500 mots ; total 5 300 ; 3 critiques identifiées."
+    en: "1,500 words; cumulative 5,300; 3 critiques."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-05-MOVE
+  horizon: week
+  category: fitness
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-12'
+  due: '2026-12-13'
+  difficulty: ambitious
+  series: odyssee
+  level: 5
+  axis: endurance
+  title:
+    fr: "COMPARER LA MÊME DISTANCE À UN EFFORT PLUS STABLE"
+    en: "COMPARE THE SAME ROUTE AT A STEADIER EFFORT"
+  effort:
+    fr: "1.75 h · hors repos"
+    en: "1.75 h · excluding rest"
+  action:
+    fr: "Répète une sortie sur un parcours mesuré semblable à la semaine 1, puis ajoute une deuxième séance facile adaptée. Compare vitesse seulement à effort comparable ; privilégie respiration confortable et récupération."
+    en: "Repeat a measured route similar to week 1, then add another suitable easy session. Compare pace only at similar effort; prioritize comfortable breathing and recovery."
+  why:
+    fr: "Semaine 5/12 : progression mesurable sur comparer la même distance à un effort plus stable."
+    en: "Week 5/12: measurable progression toward compare the same route at a steadier effort."
+  done_when:
+    fr: "Deux séances appropriées et un tableau S1/S5 : durée, distance, effort, récupération."
+    en: "Two appropriate sessions plus a W1/W5 table: time, distance, effort and recovery."
+  measure:
+    fr: "Delta distance à effort comparable ; récupération J+1."
+    en: "Distance change at comparable effort; next-day recovery."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-06-P
+  horizon: week
+  category: math
+  period: 2026-W51
+  period_start: '2026-12-14'
+  issued: '2026-11-12'
+  due: '2026-12-20'
+  difficulty: ambitious
+  series: odyssee
+  level: 6
+  axis: precision
+  title:
+    fr: "BLANC P + VÉRIFICATION DES 12 PLUS GRANDES LACUNES"
+    en: "P MOCK PLUS 12 MOST SERIOUS GAPS"
+  effort:
+    fr: "5 h · hors repos"
+    en: "5 h · excluding rest"
+  action:
+    fr: "Passe un blanc de format officiel sur questions publiques. Identifie 12 erreurs ou hésitations importantes, puis recrée 12 exemples analogues originaux et résous-les sans aide, sans recopier les énoncés SOA."
+    en: "Complete an official-format mock on public questions. Identify 12 major errors or hesitations; then invent 12 analogous original examples and solve independently, without copying SOA question text."
+  why:
+    fr: "Semaine 6/12 : progression mesurable sur blanc p + vérification des 12 plus grandes lacunes."
+    en: "Week 6/12: measurable progression toward p mock plus 12 most serious gaps."
+  done_when:
+    fr: "Un blanc noté et 12 problèmes analogues originaux avec corrigés contrôlés."
+    en: "A scored mock and 12 original analogous problems with checked solutions."
+  measure:
+    fr: "Score du blanc ; 12 exercices originaux ; corrections vérifiées /12."
+    en: "Mock score; 12 original questions; checked solutions /12."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-06-BUILD
+  horizon: week
+  category: build
+  period: 2026-W51
+  period_start: '2026-12-14'
+  issued: '2026-11-12'
+  due: '2026-12-20'
+  difficulty: ambitious
+  series: odyssee
+  level: 6
+  axis: fabrication
+  title:
+    fr: "FAIRE TESTER TA V0.2 PAR 2 PERSONNES"
+    en: "HAVE TWO PEOPLE TEST VERSION 0.2"
+  effort:
+    fr: "4 h · hors repos"
+    en: "4 h · excluding rest"
+  action:
+    fr: "Ajoute un tableau d'erreurs (thème, fréquence, dernier essai) à ton outil P sans collecter d'informations personnelles. Organise deux tests volontaires de dix minutes ; classe 5 irritants et corrige les 2 premiers."
+    en: "Add an error dashboard (topic, frequency, last attempt) to your P tool without gathering personal information. Arrange two voluntary ten-minute tests, rank five pain points and fix the top two."
+  why:
+    fr: "Semaine 6/12 : progression mesurable sur faire tester ta v0.2 par 2 personnes."
+    en: "Week 6/12: measurable progression toward have two people test version 0.2."
+  done_when:
+    fr: "Une v0.2 testable, deux essais utilisateurs réels ou invitations documentées, et 2 corrections validées."
+    en: "A testable v0.2, two real user tests or documented invitations, and two verified fixes."
+  measure:
+    fr: "2 testeurs ; 5 problèmes ; 2 corrections ; 25 tests."
+    en: "2 testers; 5 issues; 2 fixes; 25 tests."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-06-EN
+  horizon: week
+  category: speaking
+  period: 2026-W51
+  period_start: '2026-12-14'
+  issued: '2026-11-12'
+  due: '2026-12-20'
+  difficulty: ambitious
+  series: odyssee
+  level: 6
+  axis: expression
+  title:
+    fr: "9 MINUTES : SOUTENANCE ANGLAISE D'UN ALGORITHME"
+    en: "9 MINUTES: DEFEND AN ALGORITHM IN ENGLISH"
+  effort:
+    fr: "1.5 h · hors repos"
+    en: "1.5 h · excluding rest"
+  action:
+    fr: "Présente en anglais en 9 minutes le fonctionnement, les tests et deux limites de ton outil, puis prends quatre questions, dont une sur un cas limite. Enregistre ou demande une critique volontaire."
+    en: "Present your tool's logic, tests and two limitations in English in 9 minutes, then take four questions, including one about an edge case. Record privately or invite a voluntary critique."
+  why:
+    fr: "Semaine 6/12 : progression mesurable sur 9 minutes : soutenance anglaise d'un algorithme."
+    en: "Week 6/12: measurable progression toward 9 minutes: defend an algorithm in english."
+  done_when:
+    fr: "Une soutenance de 9 min, quatre questions traitées et un relevé des erreurs techniques d'explication."
+    en: "A 9-minute defense, four answered questions and a log of technical explanation mistakes."
+  measure:
+    fr: "9 min + 4 réponses ; termes exacts ; pauses >3 s."
+    en: "9min + 4 replies; accurate terms; >3s pauses."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-06-BOOK
+  horizon: week
+  category: writing
+  period: 2026-W51
+  period_start: '2026-12-14'
+  issued: '2026-11-12'
+  due: '2026-12-20'
+  difficulty: ambitious
+  series: odyssee
+  level: 6
+  axis: creation
+  title:
+    fr: "1 700 MOTS : CONSTRUIRE LA PREMIÈRE PARTIE DU LIVRE"
+    en: "1,700 WORDS: BUILD THE FIRST PART OF THE BOOK"
+  effort:
+    fr: "3.5 h · hors repos"
+    en: "3.5 h · excluding rest"
+  action:
+    fr: "Écris 1 700 mots nouveaux sans IA, assemble les fragments écrits depuis novembre en une partie ordonnée, puis supprime au moins trois contradictions ou ruptures de continuité."
+    en: "Write 1,700 new no-AI words, assemble drafts since November into an ordered section, and remove at least three contradictions or continuity breaks."
+  why:
+    fr: "Semaine 6/12 : progression mesurable sur 1 700 mots : construire la première partie du livre."
+    en: "Week 6/12: measurable progression toward 1,700 words: build the first part of the book."
+  done_when:
+    fr: "Un manuscrit partiel ordonné, 1 700 nouveaux mots, trois incohérences corrigées."
+    en: "An ordered partial manuscript, 1,700 new words and three fixed inconsistencies."
+  measure:
+    fr: "1 700 nouveaux ; total 7 000 ; 3 incohérences corrigées."
+    en: "1,700 new; cumulative 7,000; 3 inconsistencies fixed."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-06-MOVE
+  horizon: week
+  category: fitness
+  period: 2026-W51
+  period_start: '2026-12-14'
+  issued: '2026-11-12'
+  due: '2026-12-20'
+  difficulty: ambitious
+  series: odyssee
+  level: 6
+  axis: endurance
+  title:
+    fr: "DEUX SORTIES FACILES ET UN BILAN DE RÉCUPÉRATION"
+    en: "TWO EASY OUTINGS AND A RECOVERY REVIEW"
+  effort:
+    fr: "1.5 h · hors repos"
+    en: "1.5 h · excluding rest"
+  action:
+    fr: "Répète deux sorties faciles de durée adaptée, sans accroître la distance si tu observes douleurs ou récupération lente. Note pour chacune temps, distance et effort, puis choisis de maintenir ou réduire la charge."
+    en: "Repeat two suitably easy outings, without increasing distance if pain or slow recovery occurs. Log time, distance and effort for each, then choose to maintain or reduce load."
+  why:
+    fr: "Semaine 6/12 : progression mesurable sur deux sorties faciles et un bilan de récupération."
+    en: "Week 6/12: measurable progression toward two easy outings and a recovery review."
+  done_when:
+    fr: "Deux sorties adaptées et une décision documentée sur la progression ou la récupération."
+    en: "Two suitable outings and a documented decision on progression or recovery."
+  measure:
+    fr: "2 sorties ; km et minutes ; RPE ; récupération."
+    en: "2 outings; distance and time; RPE; recovery."
+  minimum:
+    fr: "Si le niveau actuel ne permet pas la cible, réalise une tentative sérieuse chronométrée, consigne le résultat et l'obstacle précis ; ne déclare pas l'objectif complet sans le livrable exigé."
+    en: "If current ability prevents the target, make an earnest timed attempt and record the result and precise obstacle; do not claim completion without the required deliverable."
+  stretch:
+    fr: "Soumets le travail à une vérification indépendante ou améliore la mesure sans cacher les erreurs. Ne sacrifie pas le sommeil, la sécurité ni l'étude prioritaire de P."
+    en: "Seek independent review or improve the metric without hiding errors. Do not sacrifice sleep, safety or priority Exam P study."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
