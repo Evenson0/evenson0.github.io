@@ -8,7 +8,7 @@ sitemap: false
 excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et progresser."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=9">
+<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=10">
 
 <div class="activities-app" id="activities-app" data-lang="fr">
   <header class="act-hero">
@@ -19,7 +19,7 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
         <button type="button" data-act-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
-    <h1 data-copy="hero">Deviens capable de ce qui te paraît impossible aujourd'hui.</h1>
+    <h1 data-copy="hero">12 semaines. Des résultats, pas des intentions.</h1>
     <p id="act-intro">Choisis un défi, tente-le et garde une trace de ce que tu as appris.</p>
     <p class="act-promise" data-copy="promise">Des exploits qui comptent, pas des points à collectionner.</p>
     <div class="act-training-axes" aria-label="Axes de progression"><span data-copy="axisMind">Esprit</span><span data-copy="axisBody">Corps</span><span data-copy="axisCourage">Courage</span><span data-copy="axisCreation">Création</span></div>
@@ -116,6 +116,7 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
       <li data-copy="rule4">Le carnet garde les décisions et les leçons. Toi seul valides tes réalisations.</li>
     </ol>
     <div class="act-links">
+      <a href="https://github.com/Evenson0/evenson0.github.io/blob/master/ODYSSEE.md" target="_blank" rel="noopener noreferrer">Programme 12 semaines</a>
       <a href="{{ '/becoming/' | relative_url }}">Becoming</a>
       <a href="{{ '/list-100/' | relative_url }}" data-copy="listLink">Liste 100</a>
       <a href="{{ '/memories/' | relative_url }}" data-copy="memoriesLink">Memories</a>
@@ -127,4 +128,4 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
   </noscript>
 </div>
 <script id="activities-data" type="application/json">{{ site.data.activities | jsonify | replace: '<', '\u003c' }}</script>
-<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=9"></script>
+<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=10"></script>
