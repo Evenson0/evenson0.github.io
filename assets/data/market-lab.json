@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-11-11T19:39:18.161936+00:00",
+  "updated_at": "2026-11-12T01:41:21.093031+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7628.5,
-        "change_pct": 1.43,
+        "price": 7619.3799,
+        "change_pct": 1.309,
         "low_52w": 6343.7202,
         "high_52w": 7818.9302
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 25543.2344,
-        "change_pct": 1.904,
+        "price": 25466.1895,
+        "change_pct": 1.597,
         "low_52w": 20794.6406,
         "high_52w": 27599.7891
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 52474.7891,
-        "change_pct": 0.465,
+        "price": 52486.4883,
+        "change_pct": 0.487,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 36444.0703,
-        "change_pct": 0.756,
+        "price": 36411.7188,
+        "change_pct": 0.667,
         "low_52w": 29906.5996,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 54.835,
-        "change_pct": 0.892,
+        "price": 54.82,
+        "change_pct": 0.865,
         "low_52w": 44.51,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2844.6082,
-        "change_pct": 0.823,
+        "price": 2846.2625,
+        "change_pct": 0.882,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10835.4697,
-        "change_pct": 0.78,
+        "price": 10751.5996,
+        "change_pct": -0.29,
         "low_52w": 9507.4004,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 60459.5781,
-        "change_pct": 2.865,
+        "price": 61407.8086,
+        "change_pct": 1.568,
         "low_52w": 48537.6992,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 354.965,
-        "change_pct": 1.852,
+        "price": 348.51,
+        "change_pct": -0.622,
         "low_52w": 246.63,
-        "high_52w": 354.965
+        "high_52w": 350.69
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 521.19,
-        "change_pct": -2.245,
+        "price": 533.16,
+        "change_pct": -2.205,
         "low_52w": 352.83,
         "high_52w": 555.8
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 175.295,
-        "change_pct": 3.792,
+        "price": 168.89,
+        "change_pct": -5.474,
         "low_52w": 165.17,
         "high_52w": 239.24
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 266.652,
-        "change_pct": -1.557,
+        "price": 270.87,
+        "change_pct": 1.476,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 290.21,
-        "change_pct": 0.922,
+        "price": 290.0,
+        "change_pct": 0.849,
         "low_52w": 205.46,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 212.88,
-        "change_pct": 2.287,
+        "price": 212.57,
+        "change_pct": 2.138,
         "low_52w": 130.71,
         "high_52w": 252.53
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 181.37,
-        "change_pct": 0.873,
+        "price": 181.69,
+        "change_pct": 1.051,
         "low_52w": 128.08,
         "high_52w": 183.92
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4242,
-        "change_pct": 0.872,
+        "price": 1.4246,
+        "change_pct": 0.423,
         "low_52w": 1.3492,
         "high_52w": 1.428
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.1096,
-        "change_pct": -1.124,
-        "low_52w": 1.1096,
+        "price": 1.11,
+        "change_pct": -0.617,
+        "low_52w": 1.11,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
         "price": 1.328,
-        "change_pct": -1.207,
+        "change_pct": -0.515,
         "low_52w": 1.3062,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.842,
-        "change_pct": 1.177,
+        "price": 159.635,
+        "change_pct": 0.586,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 3996.2,
-        "change_pct": -0.844,
+        "price": 3998.3,
+        "change_pct": -0.792,
         "low_52w": 3898.8999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 86.51,
-        "change_pct": 0.546,
+        "price": 85.68,
+        "change_pct": -0.418,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.216,
-        "change_pct": -2.427,
+        "price": 3.274,
+        "change_pct": -0.667,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 6.2745,
-        "change_pct": 0.884,
+        "price": 6.2485,
+        "change_pct": 0.466,
         "low_52w": 4.9595,
         "high_52w": 6.8035
       }
@@ -248,45 +248,52 @@
   ],
   "news": [
     {
-      "title": "Stock market today: Nasdaq, S&P 500, Dow rise as Nvidia stock recovers, chip stocks rally after CoreWeave earnings",
-      "link": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html",
-      "publisher": "Yahoo Finance",
+      "title": "Market rally offers a much-needed boost for investors, CoreWeave beats third-quarter estimates",
+      "link": "https://finance.yahoo.com/video/market-rally-offers-a-much-needed-boost-for-investors-coreweave-beats-third-quarter-estimates-184231615.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Tractor Supply Turned $1,000 Into Over $3,200 in 10 Years. Then Came 2026",
-      "link": "https://247wallst.com/investing/2026/11/11/tractor-supply-turned-1000-into-over-3200-in-10-years-then-came-2026/",
-      "publisher": "24/7 Wall St.",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Update: US Equity Indexes Jump as CoreWeave's Strong Quarterly Results, Guidance Boost AI Trade",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-jump-coreweave-185545602.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Bloom Energy stock surges as CoreWeave earnings spur rally in power stocks",
-      "link": "https://finance.yahoo.com/markets/stocks/article/bloom-energy-stock-surges-as-coreweave-earnings-spur-rally-in-power-stocks-185358201.html",
-      "publisher": "Yahoo Finance",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Is TE Connectivity’s Buyback Still Lifting Earnings Per Share?",
-      "link": "https://www.trefis.com/stock/tel/articles/624323/is-te-connectivitys-buyback-still-lifting-earnings-per-share/2026-11-11",
+      "title": "What Happened To NuScale Power Stock Over The Past Year?",
+      "link": "https://www.trefis.com/stock/smr/articles/624304/what-happened-to-nuscale-power-stock-over-the-past-year/2026-11-11",
       "publisher": "Trefis",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today: Nasdaq Soars On AI Rally, But This Major Tech Icon Gets Left Out (Live Coverage)",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-coreweave-earnings-crwv-nvidia-stock-nvda/?src=A00220&yptr=yahoo",
+      "title": "Dow Jones Futures: Techs Tumble As Nvidia May Oust CEO Huang; AI Stocks Slide, But Not AMD",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-coreweave-sandisk-nvidia-amd-nebius-bloom/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Wall St futures fall as Nvidia slides on report of possible CEO ouster",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-fall-nvidia-011540333.html",
+      "publisher": "Investing.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "How Much Could You Lose In Credo Stock?",
+      "link": "https://www.trefis.com/stock/crdo/articles/624229/how-much-could-you-lose-in-credo-stock/2026-11-11",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "What Is The One Risk Every Avis Budget Investor Should Know?",
+      "link": "https://www.trefis.com/stock/car/articles/624306/what-is-the-one-risk-every-avis-budget-investor-should-know/2026-11-11",
+      "publisher": "Trefis",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Rises More Than 240 Points as Technology, Energy and Base Metals Stocks Make Gains",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-rises-more-212032986.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "Canadian stock futures climb on tech-led recovery",
       "link": "https://finance.yahoo.com/markets/stocks/articles/canadian-stock-futures-climb-tech-130548273.html",
       "publisher": "Investing.com",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "These stocks could be Budget 2026 winners, according to analysts",
-      "link": "https://financialpost.com/investing/stocks-canada-federal-budget-2026-winners-analysts/",
-      "publisher": "Financial Post",
       "related": "^GSPTSE",
       "time": "Latest"
     }
