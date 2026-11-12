@@ -2,17 +2,17 @@ version: 1
 launched: '2026-11-03'
 timezone: America/Toronto
 intro:
-  fr: "Des missions pour apprendre, créer, publier, bouger et découvrir. Choisis ce qui t'attire, puis raconte ce que tu as tenté."
-  en: "Missions to learn, build, publish, move and explore. Choose what draws you in, then share what you tried."
+  fr: "Tous les défis de la période sont proposés. Essaie ceux qui te motivent ; le dimanche ou en fin de période, coche uniquement les réalisations réelles. Les non cochés ne sont pas des échecs."
+  en: "All challenges are available for the period. Try what interests you; on Sunday or at period-end, tick only what you actually finished. Unchecked challenges are not failures."
 annual_vision:
   start: '2026-11-03'
   end: '2027-11-02'
   max_focus: 3
   headline: {fr: "365 jours pour devenir quelqu'un que tu n'as jamais été", en: "365 days to do what you have never done"}
-  subtitle: {fr: "Des ambitions audacieuses, des choix libres, des progrès réels.", en: "Bold ambitions, free choices, real progress."}
+  subtitle: {fr: "Des ambitions audacieuses, des bilans sincères, des progrès réels.", en: "Bold ambitions, candid check-ins, real progress."}
 mentor_note:
-  fr: "Revue du 8 novembre 2026 : aucun statut utilisateur reçu ; le silence n'est pas un échec. Pour le 9–15 novembre, privilégie ACT-202611-W4 : transforme une erreur P en preuve écrite, simulation reproductible et note originale (3–5 h au total, en réutilisant les séances P ; réserver 1–2 h à la simulation et à la rédaction). Premier pas : choisir un exercice de ton journal d'erreurs. La preuve et le code prêts constituent le jalon intermédiaire ; la publication achève la mission. En option, ACT-2026W46-X04 : explique cette idée appliquée à un exemple d'assurance fictif, puis échange dix minutes sans script, dans l'heure d'anglais déjà prévue. Ces propositions nourrissent les ambitions annuelles d'examens et d'anglais sans additionner les mêmes heures. P reste prioritaire pour le 16 janvier 2027 ; FM reste hors du cycle. Retour simple : ID — statut — une phrase."
-  en: "Review of November 8, 2026: no user status report received; silence is not failure. For November 9–15, prioritize ACT-202611-W4: turn one P mistake into a written proof, reproducible simulation and original note (3–5 h total, reusing P sessions; reserve 1–2 h for simulation and writing). First step: select an exercise from your error log. A ready proof and runnable code are the intermediate milestone; publication completes the mission. Optionally, ACT-2026W46-X04: explain this idea through a fictional insurance example, then discuss it for ten unscripted minutes within the English hour already planned. These proposals support the annual exam and English ambitions without counting the same hours twice. P remains the priority for January 16, 2027; FM stays outside the cycle. Simple reply: ID — status — one sentence."
+  fr: "Semaine du 9 au 15 novembre 2026 : 14 défis hebdomadaires disponibles, sans inscription préalable. Explore les missions qui t'intéressent ; dimanche 15 novembre, coche celles que tu as terminées et transmets le bilan dans notre conversation. Le lundi 16 novembre, les propositions de la semaine suivante s'affichent automatiquement. Même règle pour les mois, trimestres, saisons, semestres et années : une réalisation est enregistrée uniquement sur ton retour explicite ; les autres restent des propositions. Préserve sommeil, récupération et priorité à l'examen P du 16 janvier."
+  en: "November 9–15, 2026: 14 weekly challenges are available without prior commitment. Try what appeals to you; on Sunday, November 15, tick what you finished and share the summary in our conversation. The following week's batch appears automatically on Monday, November 16. The same approach applies to monthly, quarterly, seasonal, six-month and annual horizons: completion is recorded only from your explicit report; the rest remain proposals. Protect sleep, recovery and your January 16 Exam P priority."
 horizons:
 - id: week
   label:
@@ -20,48 +20,48 @@ horizons:
     en: Week
   quota: 14
   cadence:
-    fr: 12 possibilités ou plus · une seule vraie victoire compte
-    en: 12 or more choices · one meaningful win counts
+    fr: 14 missions proposées · coche seulement les réalisations
+    en: 14 missions proposed · tick only completions
 - id: month
   label:
     fr: Mois
     en: Month
   quota: 14
   cadence:
-    fr: 14 pistes maximum · n'en poursuivre que 1 ou 2
-    en: Up to 14 ideas · pursue only 1 or 2
+    fr: Défis du mois · bilan à la fin du mois
+    en: Monthly challenges · check in at month-end
 - id: quarter
   label:
     fr: 3 mois
     en: 3 months
   quota: 12
   cadence:
-    fr: 12 projets disponibles · prioriser 1
-    en: 12 available projects · prioritize one
+    fr: Défis sur trois mois · bilan de trimestre
+    en: Three-month challenges · quarterly check-in
 - id: season
   label:
     fr: Saison
     en: Season
   quota: 7
   cadence:
-    fr: Jusqu'à 7 expériences · choisir selon la saison
-    en: Up to 7 experiences · choose by season
+    fr: Défis de saison · bilan en fin de saison
+    en: Seasonal challenges · review at season-end
 - id: halfyear
   label:
     fr: 6 mois
     en: 6 months
   quota: 9
   cadence:
-    fr: 9 grands défis proposés · sélectionner
-    en: 9 major possibilities · select carefully
+    fr: Défis de six mois · bilan à leur échéance
+    en: Six-month challenges · check in at period-end
 - id: year
   label:
     fr: Année
     en: Year
   quota: 14
   cadence:
-    fr: 14 grandes ambitions possibles · en élire 2 à 3
-    en: 14 life-changing possibilities · select 2 or 3
+    fr: Grandes ambitions · bilan après douze mois
+    en: Annual ambitions · review after twelve months
 categories:
 - id: math
   label: {fr: "Maths & actuariat", en: "Math & actuarial"}
