@@ -13,9 +13,9 @@
     challenges.forEach(challenge => {
       const item = raw[challenge.id];
       if (!item || typeof item !== 'object') return;
-      const status = STATES.includes(item.status) && item.status !== 'proposed' ? item.status : '';
+      const status = item.status === 'completed' ? 'completed' : '';
       const note = typeof item.note === 'string' ? item.note.slice(0, 1200) : '';
-      if (status || note.trim()) result[challenge.id] = {status, note};
+      if (status === 'completed') result[challenge.id] = {status, note};
     });
     return result;
   }
@@ -36,10 +36,10 @@
     return eligible.filter(c => c.period_start === current);
   }
   function buildReport(data, drafts, labels, lang, today) {
-    const lines = data.challenges.filter(c => drafts[c.id]).map(c => {
+    const lines = data.challenges.filter(c => drafts[c.id]?.status === 'completed' && statusOf(c.id, data.events) !== 'completed').map(c => {
       const draft = drafts[c.id];
       return c.id + ' — ' + c.title[lang] + '\n' +
-        (draft.status ? labels[draft.status] : labels.noteOnly) +
+        labels.completed +
         (draft.note.trim() ? '\n' + draft.note.trim() : '');
     });
     return lines.length ? 'Activities · ' + today + '\n\n' + lines.join('\n\n') : '';
@@ -120,7 +120,7 @@
       sourceMentor: 'Mentor proposal', sourceUser: 'Evenson’s report', noCompletion: 'Shared decisions are kept here, without invented outcomes.'
     }
   };
-  const KEY = 'evenson.activities.drafts.v2';
+  const KEY = 'evenson.activities.drafts.v3';
   let storageOK = true;
   let rawDrafts;
   try { rawDrafts = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (_) { storageOK = false; }
@@ -153,12 +153,11 @@
     $('act-report-text').value = report;
     $('act-report-text').placeholder = t('noReport');
   }
-  function saveDraft(id, select, note, badge) {
-    if (select.value || note.value.trim()) drafts[id] = {status: select.value, note: note.value};
+  function saveCompletion(id, checked, note) {
+    if (checked) drafts[id] = {status: 'completed', note: note.slice(0, 1200)};
     else delete drafts[id];
     try { localStorage.setItem(KEY, JSON.stringify(drafts)); storageOK = true; }
     catch (_) { storageOK = false; }
-    badge.textContent = drafts[id] ? t('draft') : '';
     notice(t(storageOK ? 'saved' : 'storageError'));
     updateReport();
   }
@@ -226,59 +225,40 @@
     });
     details.append(el('p', 'act-id', c.id));
 
-    const response = el('details', 'act-response');
-    response.id = c.id + '-response';
-    response.append(el('summary', '', t('reply')));
     const draft = drafts[c.id];
-    response.open = !!draft;
-    const selectLabel = el('label', '', t('decision'));
-    selectLabel.htmlFor = c.id + '-decision';
-    const select = el('select');
-    select.id = selectLabel.htmlFor;
-    const placeholder = el('option', '', t('choose'));
-    placeholder.value = '';
-    select.append(placeholder);
-    STATES.filter(state => state !== 'proposed').forEach(state => {
-      const option = el('option', '', t(state));
-      option.value = state;
-      select.append(option);
-    });
-    select.value = draft ? draft.status : '';
+    const alreadyReported = published === 'completed';
+    const completion = el('label', 'act-completion-toggle');
+    completion.htmlFor = c.id + '-complete';
+    const checked = el('input');
+    checked.type = 'checkbox';
+    checked.id = completion.htmlFor;
+    checked.checked = alreadyReported || draft?.status === 'completed';
+    checked.disabled = alreadyReported;
+    const completionText = el('span', 'act-completion-text', t(alreadyReported ? 'alreadyDone' : 'markDone'));
+    completion.append(checked, completionText);
+    completion.classList.toggle('is-checked', checked.checked);
+
+    const response = el('details', 'act-response');
+    response.append(el('summary', '', t('optionalNote')));
     const noteLabel = el('label', '', t('noteLabel'));
     noteLabel.htmlFor = c.id + '-note';
     const note = el('textarea');
     note.id = noteLabel.htmlFor;
-    note.maxLength = 1200;
     note.rows = 3;
+    note.maxLength = 1200;
     note.placeholder = t('notePlaceholder');
-    note.value = draft ? draft.note : '';
-    const badge = el('p', 'act-draft-note', draft ? t('draftAction') : '');
+    note.value = draft?.note || '';
+    note.disabled = alreadyReported;
+    response.append(noteLabel, note);
 
-    const choose = button(draft ? t('editChoice') : t('tryIt'), () => {
-      if (!drafts[c.id]) {
-        select.value = 'accepted';
-        saveAndRefresh();
-      }
-      response.open = true;
-      choose.textContent = t('editChoice');
-      response.scrollIntoView({block: 'nearest'});
-      select.focus({preventScroll: true});
-    }, 'act-choose');
-    choose.setAttribute('aria-controls', response.id);
-    function saveAndRefresh() {
-      saveDraft(c.id, select, note, badge);
-      choose.textContent = drafts[c.id] ? t('editChoice') : t('tryIt');
-      badge.textContent = drafts[c.id] ? t('draftAction') : '';
-    }
-    select.addEventListener('change', saveAndRefresh);
-    note.addEventListener('input', saveAndRefresh);
-    const clear = button(t('clear'), () => {
-      select.value = '';
-      note.value = '';
-      saveAndRefresh();
-    }, 'act-clear');
-    response.append(selectLabel, select, noteLabel, note, badge, clear);
-    card.append(top, title, meta, el('p', 'act-action', loc(c.action)), criterion, choose, details, response);
+    checked.addEventListener('change', () => {
+      saveCompletion(c.id, checked.checked, note.value);
+      completion.classList.toggle('is-checked', checked.checked);
+    });
+    note.addEventListener('input', () => {
+      if (checked.checked && !alreadyReported) saveCompletion(c.id, true, note.value);
+    });
+    card.append(top, title, meta, el('p', 'act-action', loc(c.action)), criterion, completion, details, response);
     return card;
   }
   function render() {
