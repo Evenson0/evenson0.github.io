@@ -62,7 +62,8 @@
   }
   const COPY = {
     fr: {
-      odysseyTitle: '12 SEMAINES · 5 ÉPREUVES PAR SEMAINE', odysseyIntro: 'Des productions réelles, cinq mesures suivies, des niveaux de difficulté croissante.', odysseyCurrent: 'Niveau en cours', odysseyDonePublic: 'validées dans le carnet', odysseyDoneLocal: 'cochées sur cet appareil', odysseyFuture: 'prévu', odysseyWeek: 'Semaine', legacyToggle: 'Voir les anciens défis hebdomadaires', measureLabel: 'MESURE À NOTER', tierLabel: 'NIVEAU',
+      bossLabel: 'BOSS DE TERRAIN · FACULTATIF',
+      odysseyTitle: '12 SEMAINES · 5 ÉPREUVES + 1 BOSS', odysseyIntro: 'Cinq entraînements mesurables et une épreuve de terrain facultative. Semaine P allégée.', odysseyCurrent: 'Niveau en cours', odysseyDonePublic: 'validées dans le carnet', odysseyDoneLocal: 'cochées sur cet appareil', odysseyFuture: 'prévu', odysseyWeek: 'Semaine', legacyToggle: 'Voir les anciens défis hebdomadaires', measureLabel: 'MESURE À NOTER', tierLabel: 'NIVEAU',
       markDone: '✓ Je l’ai réalisé', alreadyDone: '✓ Déjà enregistré', optionalNote: 'Ajouter une note (facultatif)', allPeriods: 'Voir aussi les périodes passées et futures',
       catalogChallenges: 'défis', catalogHorizons: 'horizons', catalogDomains: 'domaines', catalogSources: 'inspirations',
       inspirationTitle: 'Ils ont osé avant toi : les inspirations', inspirationIntro: 'Des parcours vérifiables pour inventer tes propres défis, sans chercher à copier une vie entière.',
@@ -95,7 +96,8 @@
       sourceMentor: 'Proposition du mentor', sourceUser: 'Retour d’Evenson', noCompletion: 'Les décisions partagées sont conservées ici, sans résultat inventé.'
     },
     en: {
-      odysseyTitle: '12 WEEKS · 5 TRIALS EACH WEEK', odysseyIntro: 'Real deliverables, five tracked metrics and progressively harder levels.', odysseyCurrent: 'Current level', odysseyDonePublic: 'confirmed in journal', odysseyDoneLocal: 'checked on this device', odysseyFuture: 'planned', odysseyWeek: 'Week', legacyToggle: 'Show the earlier weekly challenges', measureLabel: 'MEASURE TO RECORD', tierLabel: 'LEVEL',
+      bossLabel: 'REAL-WORLD BOSS · OPTIONAL',
+      odysseyTitle: '12 WEEKS · 5 TRIALS + 1 BOSS', odysseyIntro: 'Five measurable training trials and an optional real-world boss. Exam P week is lighter.', odysseyCurrent: 'Current level', odysseyDonePublic: 'confirmed in journal', odysseyDoneLocal: 'checked on this device', odysseyFuture: 'planned', odysseyWeek: 'Week', legacyToggle: 'Show the earlier weekly challenges', measureLabel: 'MEASURE TO RECORD', tierLabel: 'LEVEL',
       markDone: '✓ I completed it', alreadyDone: '✓ Already recorded', optionalNote: 'Add a note (optional)', allPeriods: 'Also show past and future periods',
       catalogChallenges: 'challenges', catalogHorizons: 'horizons', catalogDomains: 'domains', catalogSources: 'inspirations',
       inspirationTitle: 'They dared: sources of inspiration', inspirationIntro: 'Verifiable journeys that inspire your own challenges, without trying to copy an entire life.',
@@ -185,6 +187,7 @@
   }
   function renderCard(c) {
     const card = el('article', 'act-card');
+    if (c.boss) card.classList.add('act-boss');
     card.id = c.id;
     card.tabIndex = -1;
     const published = statusOf(c.id, data.events);
@@ -195,6 +198,7 @@
       el('span', 'act-period', horizonLabels[c.horizon] ? loc(horizonLabels[c.horizon].label) : c.horizon)
     );
     if (c.series === 'odyssee') top.append(el('span', 'act-level', t('tierLabel') + ' ' + String(c.level).padStart(2, '0') + '/12'));
+    if (c.boss) top.append(el('span', 'act-boss-label', t('bossLabel')));
     const title = el('h3', '', loc(c.title));
     title.id = c.id + '-title';
     card.setAttribute('aria-labelledby', title.id);
@@ -316,7 +320,7 @@
     if (activeLevel) {
       const confirmed = activeLevel.trials.filter(c => statusOf(c.id, data.events) === 'completed').length;
       const local = activeLevel.trials.filter(c => statusOf(c.id, data.events) !== 'completed' && drafts[c.id]?.status === 'completed').length;
-      $('act-odyssey-progress').textContent = t('odysseyCurrent') + ' ' + activeLevel.level + '/12 · ' + confirmed + '/5 ' + t('odysseyDonePublic') + ' · ' + local + '/5 ' + t('odysseyDoneLocal');
+      $('act-odyssey-progress').textContent = t('odysseyCurrent') + ' ' + activeLevel.level + '/12 · ' + confirmed + '/' + activeLevel.trials.length + ' ' + t('odysseyDonePublic') + ' · ' + local + '/' + activeLevel.trials.length + ' ' + t('odysseyDoneLocal');
     } else {
       $('act-odyssey-progress').textContent = '';
     }
@@ -382,8 +386,8 @@
 
     if (view === 'challenges') {
       const selection = latestWeeklyChallenges(data.challenges, today());
-      selection.slice(0, showWeekAll ? selection.length : 5).forEach(c => cards.append(renderCard(c)));
-      if (selection.length > 5) {
+      selection.slice(0, showWeekAll ? selection.length : 6).forEach(c => cards.append(renderCard(c)));
+      if (selection.length > 6) {
         cards.append(button(t(showWeekAll ? 'showWeekLess' : 'showWeekAll') + ' (' + selection.length + ')', () => {
           showWeekAll = !showWeekAll;
           render();
