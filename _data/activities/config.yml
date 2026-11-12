@@ -11,17 +11,17 @@ annual_vision:
   headline: {fr: "365 jours pour devenir quelqu'un que tu n'as jamais été", en: "365 days to do what you have never done"}
   subtitle: {fr: "Des ambitions audacieuses, des bilans sincères, des progrès réels.", en: "Bold ambitions, candid check-ins, real progress."}
 mentor_note:
-  fr: "Semaine du 9 au 15 novembre 2026 : 14 défis hebdomadaires disponibles, sans inscription préalable. Explore les missions qui t'intéressent ; dimanche 15 novembre, coche celles que tu as terminées et transmets le bilan dans notre conversation. Le lundi 16 novembre, les propositions de la semaine suivante s'affichent automatiquement. Même règle pour les mois, trimestres, saisons, semestres et années : une réalisation est enregistrée uniquement sur ton retour explicite ; les autres restent des propositions. Préserve sommeil, récupération et priorité à l'examen P du 16 janvier."
-  en: "November 9–15, 2026: 14 weekly challenges are available without prior commitment. Try what appeals to you; on Sunday, November 15, tick what you finished and share the summary in our conversation. The following week's batch appears automatically on Monday, November 16. The same approach applies to monthly, quarterly, seasonal, six-month and annual horizons: completion is recorded only from your explicit report; the rest remain proposals. Protect sleep, recovery and your January 16 Exam P priority."
+  fr: "Nouveau protocole : 12 semaines, 5 épreuves progressives par semaine jusqu'au 31 janvier 2027. Chaque épreuve fixe une production contrôlable, une mesure précise et un critère de réussite. Les premiers essais servent de points de départ : seules tes vraies notes et mesures peuvent démontrer une amélioration. La semaine de P (11–17 janvier) est allégée. Les 347 anciens défis restent accessibles dans les archives ; aucun n'est un échec faute de coche."
+  en: "New protocol: 12 weeks with 5 progressive trials each week through January 31, 2027. Each trial sets a verifiable output, precise metric and pass condition. Initial attempts establish baselines; only your own recorded measurements can demonstrate improvement. Exam P week (January 11–17) is lighter. The 347 previous proposals remain accessible in the archive; unchecked work is never a failure."
 horizons:
 - id: week
   label:
     fr: Semaine
     en: Week
-  quota: 14
+  quota: 20
   cadence:
-    fr: 14 missions proposées · coche seulement les réalisations
-    en: 14 missions proposed · tick only completions
+    fr: 5 épreuves mesurables par semaine · archives disponibles
+    en: 5 measurable weekly trials · archived challenges available
 - id: month
   label:
     fr: Mois
