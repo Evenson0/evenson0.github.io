@@ -85,3 +85,28 @@ test('Weekly view chooses the most recent started week without exposing future w
   assert.deepEqual(model.latestWeeklyChallenges(expired,'2026-11-12').map(c=>c.id),['current']);
   assert.deepEqual(model.latestWeeklyChallenges(expired,'2026-11-16'),[]);
 });
+
+test('Odyssey takes precedence over vague legacy tasks in the same active week', () => {
+  const items = [
+    {id:'old1',horizon:'week',period_start:'2026-11-09',due:'2026-11-15'},
+    {id:'OD1',horizon:'week',series:'odyssee',level:1,period_start:'2026-11-09',due:'2026-11-15'},
+    {id:'OD2',horizon:'week',series:'odyssee',level:1,period_start:'2026-11-09',due:'2026-11-15'},
+    {id:'next',horizon:'week',series:'odyssee',level:2,period_start:'2026-11-16',due:'2026-11-22'}
+  ];
+  assert.deepEqual(model.latestWeeklyChallenges(items,'2026-11-12').map(x=>x.id), ['OD1','OD2']);
+  assert.deepEqual(model.latestWeeklyChallenges(items,'2026-11-16').map(x=>x.id), ['next']);
+  assert.deepEqual(model.latestWeeklyChallenges(items.filter(x=>!x.series),'2026-11-12').map(x=>x.id), ['old1']);
+});
+
+test('The explorer hides old weekly proposals unless archive is explicitly requested', () => {
+  const data = {
+    challenges: [
+      {id:'OD',series:'odyssee',horizon:'week',category:'math',period_start:'2026-11-09',due:'2026-11-15',title:{fr:'Épreuve chronométrée',en:'Timed trial'},action:{fr:'Chronométrer',en:'Time'}},
+      {id:'legacy',horizon:'week',category:'math',period_start:'2026-11-09',due:'2026-11-15',title:{fr:'Exploration vague',en:'Vague exploration'},action:{fr:'Explorer',en:'Explore'}},
+      {id:'annual',horizon:'year',category:'research',period_start:'2026-11-03',due:'2027-11-02',title:{fr:'Étude annuelle',en:'Annual study'},action:{fr:'Étudier',en:'Study'}}
+    ],
+    events:[]
+  };
+  assert.deepEqual(model.visibleChallenges(data,'all','all','','fr','all','current','2026-11-12',false).map(x=>x.id), ['OD','annual']);
+  assert.deepEqual(model.visibleChallenges(data,'all','all','','fr','all','current','2026-11-12',true).map(x=>x.id), ['OD','legacy','annual']);
+});
