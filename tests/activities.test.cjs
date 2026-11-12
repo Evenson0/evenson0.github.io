@@ -78,4 +78,10 @@ test('Weekly view chooses the most recent started week without exposing future w
   assert.deepEqual(model.latestWeeklyChallenges(challenges,'2026-11-15').map(c=>c.id),['current1','current2']);
   assert.deepEqual(model.latestWeeklyChallenges(challenges,'2026-11-16').map(c=>c.id),['future']);
   assert.deepEqual(model.latestWeeklyChallenges(challenges,'2026-11-01'),[]);
+  const expired=[
+    {id:'prior',horizon:'week',period_start:'2026-11-02',due:'2026-11-08'},
+    {id:'current',horizon:'week',period_start:'2026-11-09',due:'2026-11-15'}
+  ];
+  assert.deepEqual(model.latestWeeklyChallenges(expired,'2026-11-12').map(c=>c.id),['current']);
+  assert.deepEqual(model.latestWeeklyChallenges(expired,'2026-11-16'),[]);
 });
