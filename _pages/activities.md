@@ -8,7 +8,7 @@ sitemap: false
 excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et progresser."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=8">
+<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=9">
 
 <div class="activities-app" id="activities-app" data-lang="fr">
   <header class="act-hero">
@@ -40,6 +40,17 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
     <button type="button" id="act-year-cta" class="act-primary">Explorer mes grandes ambitions</button>
   </section>
 
+  <section class="act-odyssey" aria-label="Progression sur douze semaines">
+    <div class="act-odyssey-head">
+      <div>
+        <span class="act-eyebrow" data-copy="odysseyTitle" id="act-odyssey-title">12 SEMAINES · 5 ÉPREUVES PAR SEMAINE</span>
+        <p id="act-odyssey-intro">Des résultats mesurables, pas des tâches vagues.</p>
+      </div>
+      <p class="act-odyssey-progress" id="act-odyssey-progress" aria-live="polite"></p>
+    </div>
+    <div class="act-odyssey-ladder" id="act-odyssey-ladder" role="img" aria-label="Progression des douze semaines"></div>
+  </section>
+
   <nav class="act-views" aria-label="Parcourir Activities">
     <button type="button" data-act-view="challenges" aria-pressed="true" data-copy="weekTab">Cette semaine</button>
     <button type="button" data-act-view="explore" aria-pressed="false" data-copy="exploreTab">Explorer les défis</button>
@@ -67,6 +78,7 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
       </details>
     </div>
     <label class="act-period-toggle"><input type="checkbox" id="act-all-periods"><span data-copy="allPeriods">Voir aussi les périodes passées et futures</span></label>
+    <label class="act-period-toggle"><input type="checkbox" id="act-show-legacy"><span data-copy="legacyToggle">Voir les anciens défis hebdomadaires</span></label>
     <p class="act-cadence" id="act-cadence"></p>
   </div>
 
@@ -115,4 +127,4 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
   </noscript>
 </div>
 <script id="activities-data" type="application/json">{{ site.data.activities | jsonify | replace: '<', '\u003c' }}</script>
-<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=8"></script>
+<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=9"></script>
