@@ -12693,3 +12693,1173 @@
   - fitness-goal
   parents:
   - ACT-202611-Y2
+- id: ACT-OD26-07-P
+  horizon: week
+  category: math
+  period: 2026-W52
+  period_start: '2026-12-21'
+  issued: '2026-11-12'
+  due: '2026-12-27'
+  difficulty: ambitious
+  series: odyssee
+  level: 7
+  axis: precision
+  title:
+    fr: "20 QUESTIONS P : TESTER LA RÉTENTION À 7 JOURS"
+    en: "20 P PROBLEMS: TEST SEVEN-DAY RETENTION"
+  effort:
+    fr: "3 h · hors récupération"
+    en: "3 h · excluding recovery"
+  action:
+    fr: "Résous 20 exercices SOA P sélectionnés parmi tes anciennes lacunes, sans notes, en 120 minutes maximum. Sépare les questions déjà vues des nouvelles, et reprends après 7 jours celles de l'ancienne semaine."
+    en: "Solve 20 SOA P problems selected from prior weaknesses, without notes, within 120 minutes. Distinguish seen from new questions and repeat last week's errors after seven days."
+  why:
+    fr: "Semaine 7/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/12: a scored trial and verifiable result."
+  done_when:
+    fr: "20 réponses chronométrées, deux scores séparés anciennes/nouvelles et une fiche indiquant les erreurs récurrentes."
+    en: "20 timed answers, separate old/new scores and a list of recurring errors."
+  measure:
+    fr: "Vues / nouvelles justes ; score /20 ; erreurs persistantes."
+    en: "Correct seen/new; score /20; persistent errors."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-07-BUILD
+  horizon: week
+  category: build
+  period: 2026-W52
+  period_start: '2026-12-21'
+  issued: '2026-11-12'
+  due: '2026-12-27'
+  difficulty: ambitious
+  series: odyssee
+  level: 7
+  axis: fabrication
+  title:
+    fr: "AJOUTER 5 CAS LIMITES ET UN RAPPORT DE TEST"
+    en: "ADD FIVE EDGE CASES AND A TEST REPORT"
+  effort:
+    fr: "2.5 h · hors récupération"
+    en: "2.5 h · excluding recovery"
+  action:
+    fr: "Sur ton application P, crée cinq cas limites nouveaux (valeurs 0/1, remise, mauvaises unités, réponses vides, entrée non numérique) et porte les tests automatisés à 30. Publie un rapport de ce qui cassait."
+    en: "In your P app, add five new edge cases (0/1, replacement, wrong units, blanks, invalid numeric input) and bring automated tests to 30. Publish a report on what failed."
+  why:
+    fr: "Semaine 7/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/12: a scored trial and verifiable result."
+  done_when:
+    fr: "30 tests verts, 5 limites démontrées et un journal de bogues public sans données privées."
+    en: "30 passing tests, five demonstrated edge cases and a public bug log without private data."
+  measure:
+    fr: "30 tests ; 5 cas limite ; nombres de bogues corrigés."
+    en: "30 tests; 5 edge cases; bugs fixed."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-07-EN
+  horizon: week
+  category: speaking
+  period: 2026-W52
+  period_start: '2026-12-21'
+  issued: '2026-11-12'
+  due: '2026-12-27'
+  difficulty: ambitious
+  series: odyssee
+  level: 7
+  axis: expression
+  title:
+    fr: "10 MINUTES : EXPOSÉ SANS NOTES SUR LE RISQUE"
+    en: "10 MINUTES: AN UNSCRIPTED RISK TALK"
+  effort:
+    fr: "1.4 h · hors récupération"
+    en: "1.4 h · excluding recovery"
+  action:
+    fr: "En anglais, fais un exposé de dix minutes sans notes sur le coût pur en assurance à partir d'un exemple fictif chiffré. Enregistre et relève cinq erreurs de vocabulaire ou précision que tu corriges dans une deuxième prise de 2 min."
+    en: "In English, give a ten-minute unscripted explanation of insurance pure premium with a numerical synthetic example. Record and identify five language or factual errors, then correct them in a second two-minute take."
+  why:
+    fr: "Semaine 7/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Audio de dix minutes, cinq corrections explicitées et deuxième prise corrective de deux minutes."
+    en: "Ten-minute recording, five explicit corrections and a two-minute corrective take."
+  measure:
+    fr: "10 min ; 5 erreurs ; 2 min corrigées ; pauses >3 s."
+    en: "10min; five errors; 2min corrections; >3s pauses."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-07-BOOK
+  horizon: week
+  category: writing
+  period: 2026-W52
+  period_start: '2026-12-21'
+  issued: '2026-11-12'
+  due: '2026-12-27'
+  difficulty: ambitious
+  series: odyssee
+  level: 7
+  axis: creation
+  title:
+    fr: "1 800 MOTS : UNE SECTION QUE TU POURRAIS PUBLIER"
+    en: "1,800 WORDS: A SECTION WORTH PUBLISHING"
+  effort:
+    fr: "3.5 h · hors récupération"
+    en: "3.5 h · excluding recovery"
+  action:
+    fr: "Écris 1 800 mots nouveaux sans IA et organise-les en une section autonome avec ouverture, progression et chute ou conclusion. Coupe 10 % du superflu sur un passage de 600 mots."
+    en: "Write 1,800 new no-AI words and organize them into a self-contained section with opening, progression and ending. Cut ten percent of unnecessary wording from a 600-word passage."
+  why:
+    fr: "Semaine 7/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/12: a scored trial and verifiable result."
+  done_when:
+    fr: "1 800 nouveaux mots, une section autonome et une version avant/après d'un passage révisé."
+    en: "1,800 new words, one self-contained section and before/after text of a revised passage."
+  measure:
+    fr: "1 800 mots ; total 8 800 ; coupe de 10 % sur 600 mots."
+    en: "1,800 words; cumulative 8,800; cut 10% of 600 words."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-07-MOVE
+  horizon: week
+  category: fitness
+  period: 2026-W52
+  period_start: '2026-12-21'
+  issued: '2026-11-12'
+  due: '2026-12-27'
+  difficulty: ambitious
+  series: odyssee
+  level: 7
+  axis: endurance
+  title:
+    fr: "PROTÉGER LA CONTINUITÉ D'ENDURANCE PENDANT LES FÊTES"
+    en: "PROTECT ENDURANCE CONTINUITY DURING HOLIDAYS"
+  effort:
+    fr: "1.25 h · hors récupération"
+    en: "1.25 h · excluding recovery"
+  action:
+    fr: "Si déplacements ou fatigue, maintiens une ou deux séances de marche/course-marche adaptées de 20–30 minutes, sans compensation. Note durée, distance et récupération ; l'objectif est zéro dette de fatigue."
+    en: "If travel or fatigue intervenes, maintain one or two suitable 20–30 minute walk/run-walk sessions without catch-up. Record time, distance and recovery; avoid carrying training fatigue."
+  why:
+    fr: "Semaine 7/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Une ou deux séances appropriées, avec note de récupération ; une seule suffit si c'est la décision raisonnable."
+    en: "One or two suitable sessions with recovery notes; a single session counts when that is the appropriate choice."
+  measure:
+    fr: "Minutes et distance ; effort /10 ; récupération J+1."
+    en: "Minutes/distance; effort /10; next-day recovery."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-08-P
+  horizon: week
+  category: math
+  period: 2026-W53
+  period_start: '2026-12-28'
+  issued: '2026-11-12'
+  due: '2027-01-03'
+  difficulty: ambitious
+  series: odyssee
+  level: 8
+  axis: precision
+  title:
+    fr: "BLANC P #4 ET TABLEAU DE PROGRÈS SUR 4 SIMULATIONS"
+    en: "P MOCK #4 AND FOUR-MOCK PROGRESS TABLE"
+  effort:
+    fr: "5 h · hors récupération"
+    en: "5 h · excluding recovery"
+  action:
+    fr: "Fais un autre blanc officiel de préparation P sur questions autorisées et chronométrées. Assemble les résultats des quatre blancs avec répartition par thème, temps et taux d'erreurs récurrentes. Ne compare pas les scores comme si les tirages avaient la même difficulté."
+    en: "Take another timed P mock on permitted questions. Assemble all four mock results by topic, time and recurring-error rates. Do not pretend separately drawn mocks have identical difficulty."
+  why:
+    fr: "Semaine 8/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Un blanc complet et un tableau daté des quatre simulations, avec deux lacunes prioritaires choisies sur preuves."
+    en: "One full mock and a dated four-mock comparison with two evidence-based priority gaps."
+  measure:
+    fr: "4 blancs comparés ; temps ; thèmes ; 2 faiblesses prioritaires."
+    en: "4 mocks compared; time; topics; two priority weaknesses."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-08-BUILD
+  horizon: week
+  category: build
+  period: 2026-W53
+  period_start: '2026-12-28'
+  issued: '2026-11-12'
+  due: '2027-01-03'
+  difficulty: ambitious
+  series: odyssee
+  level: 8
+  axis: fabrication
+  title:
+    fr: "LANCER UNE VERSION P À 15 EXERCICES ORIGINAUX"
+    en: "RELEASE A 15-PROBLEM ORIGINAL P APP"
+  effort:
+    fr: "3.5 h · hors récupération"
+    en: "3.5 h · excluding recovery"
+  action:
+    fr: "Ajoute cinq exercices originaux à la v0.2, publie v0.3 avec mode chronométré et tableau de progression, teste trente cas dont reprise de session et saisies aberrantes."
+    en: "Add five original problems to v0.2 and release v0.3 with timed mode and progress dashboard. Test thirty cases including resume and malformed input."
+  why:
+    fr: "Semaine 8/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Une version v0.3 en ligne avec 15 questions originales et 30 tests verts."
+    en: "An online v0.3 with 15 original questions and 30 passing tests."
+  measure:
+    fr: "15 exercices ; 30 tests ; lien de version ; zéro perte de progression au rechargement."
+    en: "15 problems; 30 tests; version URL; no progress loss on reload."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-08-EN
+  horizon: week
+  category: speaking
+  period: 2026-W53
+  period_start: '2026-12-28'
+  issued: '2026-11-12'
+  due: '2027-01-03'
+  difficulty: ambitious
+  series: odyssee
+  level: 8
+  axis: expression
+  title:
+    fr: "10 MINUTES : FAIRE FACE À 5 QUESTIONS IMPROVISÉES"
+    en: "10 MINUTES: HANDLE FIVE UNPREPARED QUESTIONS"
+  effort:
+    fr: "1.6 h · hors récupération"
+    en: "1.6 h · excluding recovery"
+  action:
+    fr: "Fais une présentation anglaise de dix minutes sur une idée mathématique puis réponds oralement à cinq questions tirées au hasard d'une liste préparée sans en lire les réponses. Mesure délai de démarrage et pauses."
+    en: "Deliver a ten-minute English presentation on a math idea, then orally answer five randomly selected question cards without reading answers. Measure start delay and pauses."
+  why:
+    fr: "Semaine 8/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Un audio de dix minutes et cinq réponses improvisées, avec cinq évaluations rapides de clarté."
+    en: "A ten-minute recording plus five improvised responses with five clarity ratings."
+  measure:
+    fr: "10 min + 5 réponses ; pauses ; réponses précises /5."
+    en: "10min + 5 replies; pauses; accurate replies /5."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-08-BOOK
+  horizon: week
+  category: writing
+  period: 2026-W53
+  period_start: '2026-12-28'
+  issued: '2026-11-12'
+  due: '2027-01-03'
+  difficulty: ambitious
+  series: odyssee
+  level: 8
+  axis: creation
+  title:
+    fr: "RÉVISER 1 000 MOTS ET ÉCRIRE 1 200 MOTS NEUFS"
+    en: "REVISE 1,000 WORDS AND DRAFT 1,200 MORE"
+  effort:
+    fr: "3.3 h · hors récupération"
+    en: "3.3 h · excluding recovery"
+  action:
+    fr: "Écris 1 200 nouveaux mots sans IA, puis relis 1 000 mots antérieurs en surlignant chaque phrase qui ne sert ni le raisonnement ni l'histoire. Réécris et conserve un extrait avant/après."
+    en: "Write 1,200 new no-AI words, then review 1,000 earlier words and flag sentences that serve neither argument nor story. Rewrite and preserve before/after excerpts."
+  why:
+    fr: "Semaine 8/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/12: a scored trial and verifiable result."
+  done_when:
+    fr: "1 200 nouveaux mots, 1 000 mots revus, et une décision éditoriale justifiée pour chaque coupe majeure."
+    en: "1,200 new words, 1,000 reviewed words and reasoned editorial decisions for major cuts."
+  measure:
+    fr: "1 200 nouveaux ; total 10 000 ; 1 000 révisés."
+    en: "1,200 new; cumulative 10,000; 1,000 revised."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-08-MOVE
+  horizon: week
+  category: fitness
+  period: 2026-W53
+  period_start: '2026-12-28'
+  issued: '2026-11-12'
+  due: '2027-01-03'
+  difficulty: ambitious
+  series: odyssee
+  level: 8
+  axis: endurance
+  title:
+    fr: "TESTER LA MÊME SÉANCE QU'EN SEMAINE 1"
+    en: "RETEST THE SAME SESSION AS IN WEEK ONE"
+  effort:
+    fr: "1.2 h · hors récupération"
+    en: "1.2 h · excluding recovery"
+  action:
+    fr: "Sur un trajet comparable, refais vingt minutes de marche/course-marche au même effort perçu, après échauffement et seulement si ton état le permet. Compare la distance et récupération aux valeurs de la première semaine, sans chercher de vitesse maximale."
+    en: "On a comparable route, repeat twenty minutes of walk/run-walk at similar perceived effort, after warm-up and only if ready. Compare distance and recovery against week one without racing."
+  why:
+    fr: "Semaine 8/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Une mesure S1/S8 à durée et effort comparables, avec note des facteurs météo/terrain."
+    en: "A W1/W8 measure at comparable duration and effort with weather/terrain caveats."
+  measure:
+    fr: "Delta distance sur 20 min à effort semblable ; fatigue J+1."
+    en: "Distance change over 20min at similar effort; next-day fatigue."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-09-P
+  horizon: week
+  category: math
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-12'
+  due: '2027-01-10'
+  difficulty: ambitious
+  series: odyssee
+  level: 9
+  axis: precision
+  title:
+    fr: "DERNIER GRAND BLANC P AVANT L'ÉPREUVE"
+    en: "FINAL BIG P MOCK BEFORE EXAM DAY"
+  effort:
+    fr: "5 h · hors récupération"
+    en: "5 h · excluding recovery"
+  action:
+    fr: "Passe une simulation P complète, dans les conditions de durée et de matériel de l'examen prévu. Classe chaque erreur en quatre causes, puis travaille les cinq récurrences de plus forte valeur corrective ; pas de nouveau programme."
+    en: "Take one complete P mock under your sitting's time and materials restrictions. Tag each error into four causes, then work the five most valuable recurring weaknesses; start no new study program."
+  why:
+    fr: "Semaine 9/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Un blanc complet, son score et une liste priorisée de cinq corrections démontrées sans aide."
+    en: "A complete mock, its score and a prioritized list of five independently demonstrated corrections."
+  measure:
+    fr: "Score du blanc ; temps ; cinq corrections ; erreurs récurrentes."
+    en: "Mock score; elapsed time; five corrections; recurring errors."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-09-BUILD
+  horizon: week
+  category: build
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-12'
+  due: '2027-01-10'
+  difficulty: ambitious
+  series: odyssee
+  level: 9
+  axis: fabrication
+  title:
+    fr: "VERROUILLER V0.3 : AUCUN NOUVEAU GROS CHANTIER"
+    en: "FREEZE V0.3: NO MAJOR NEW PROJECTS"
+  effort:
+    fr: "1.2 h · hors récupération"
+    en: "1.2 h · excluding recovery"
+  action:
+    fr: "Avant la semaine P, exécute trente tests de ton outil sans nouvelles fonctionnalités, corrige seulement un défaut critique éventuel et rédige un README de dix lignes pour une reprise après l'examen."
+    en: "Before exam week, run thirty app tests without adding features, fix only any critical issue and write a ten-line README for resuming after the exam."
+  why:
+    fr: "Semaine 9/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/12: a scored trial and verifiable result."
+  done_when:
+    fr: "30 tests exécutés, état de la version consigné et README de reprise écrit."
+    en: "Thirty tests run, version state recorded and a resumption README."
+  measure:
+    fr: "30 tests ; version gelée ; README de 10 lignes."
+    en: "30 tests; frozen version; ten-line README."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-09-EN
+  horizon: week
+  category: speaking
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-12'
+  due: '2027-01-10'
+  difficulty: ambitious
+  series: odyssee
+  level: 9
+  axis: expression
+  title:
+    fr: "6 MINUTES D'ANGLAIS : ANALYSER UN EXEMPLE P"
+    en: "SIX ENGLISH MINUTES: REVIEW A P EXAMPLE"
+  effort:
+    fr: "1 h · hors récupération"
+    en: "1 h · excluding recovery"
+  action:
+    fr: "Enregistre six minutes d'anglais technique sur un exercice P original avec schéma et calcul numérique, sans script. Note trois termes difficiles à utiliser et corrige leur prononciation."
+    en: "Record six unscripted English minutes explaining an original P example with diagram and numbers. Log three difficult terms and correct their pronunciation."
+  why:
+    fr: "Semaine 9/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Enregistrement privé de six minutes, trois termes ciblés et une reprise ciblée."
+    en: "A private six-minute recording, three target words and a corrective practice clip."
+  measure:
+    fr: "6 min ; 3 termes corrigés ; passages au français."
+    en: "6min; three corrected terms; French switches."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-09-BOOK
+  horizon: week
+  category: writing
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-12'
+  due: '2027-01-10'
+  difficulty: ambitious
+  series: odyssee
+  level: 9
+  axis: creation
+  title:
+    fr: "600 MOTS : ÉCRIRE PEU MAIS SANS IA"
+    en: "600 WORDS: WRITE LESS, WITHOUT AI"
+  effort:
+    fr: "1.5 h · hors récupération"
+    en: "1.5 h · excluding recovery"
+  action:
+    fr: "Écris 600 mots sans IA pour ton livre dans une seule séance, puis corrige les fautes de logique à tête reposée. Ne prolonge pas au détriment du sommeil ou de la préparation P."
+    en: "Write 600 no-AI book words in one sitting, then correct logical gaps after a break. Do not extend this at the cost of sleep or Exam P prep."
+  why:
+    fr: "Semaine 9/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/12: a scored trial and verifiable result."
+  done_when:
+    fr: "600 mots originaux complets, datés et relus par toi."
+    en: "Six hundred original dated self-reviewed words."
+  measure:
+    fr: "600 nouveaux mots ; total 10 600 ; temps d'écriture."
+    en: "600 new words; cumulative 10,600; drafting time."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-09-MOVE
+  horizon: week
+  category: fitness
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-12'
+  due: '2027-01-10'
+  difficulty: ambitious
+  series: odyssee
+  level: 9
+  axis: endurance
+  title:
+    fr: "ENTRETENIR L'ENDURANCE SANS CRÉER DE FATIGUE"
+    en: "MAINTAIN ENDURANCE WITHOUT ADDING FATIGUE"
+  effort:
+    fr: "1 h · hors récupération"
+    en: "1 h · excluding recovery"
+  action:
+    fr: "Fais une ou deux sorties très faciles adaptées avec récupération complète ; reporte sans culpabilité si la fatigue ou la préparation de l'examen l'imposent. Ne poursuis aucune douleur."
+    en: "Do one or two suitably easy outings with full recovery; defer freely when fatigue or exam prep warrants it. Never train through pain."
+  why:
+    fr: "Semaine 9/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Une séance adaptée consignée si réalisable ; sinon une décision de récupération explicite (pas un échec)."
+    en: "One suitable logged session if feasible; otherwise an explicit recovery decision (not failure)."
+  measure:
+    fr: "Minutes faciles ; effort /10 ; qualité de récupération."
+    en: "Easy minutes; effort /10; recovery quality."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-10-P
+  horizon: week
+  category: math
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-12'
+  due: '2027-01-17'
+  difficulty: ambitious
+  series: odyssee
+  level: 10
+  axis: precision
+  title:
+    fr: "EXAM P : SUIVRE LE PLAN ET FAIRE UN BILAN FACTUEL"
+    en: "EXAM P: FOLLOW THE PLAN AND DEBRIEF FACTUALLY"
+  effort:
+    fr: "3 h · hors récupération"
+    en: "3 h · excluding recovery"
+  action:
+    fr: "Si la session P du 16 janvier est bien confirmée, effectue seulement les révisions prévues avant et présente-toi à l'épreuve avec ta stratégie de temps. Après la session, rédige 5 observations factuelles sur la gestion de l'épreuve, sans citer de question confidentielle et sans inventer le résultat."
+    en: "If the January 16 P sitting is confirmed, do only planned taper review and follow your timing strategy at the exam. Afterward write five factual observations about exam management, revealing no confidential question and inventing no result."
+  why:
+    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 10/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Séance P effectivement présentée (si maintenue) et cinq observations de stratégie sans contenu d'examen ; si date modifiée, signaler le report sans cocher l'épreuve."
+    en: "The actual P sitting attended (if scheduled) and five strategy observations without exam content; if rescheduled, report deferral instead of marking completion."
+  measure:
+    fr: "Présence réelle à P ; 5 observations de gestion ; résultat non présumé."
+    en: "Actual P attendance; five strategy notes; result not assumed."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-10-BUILD
+  horizon: week
+  category: build
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-12'
+  due: '2027-01-17'
+  difficulty: ambitious
+  series: odyssee
+  level: 10
+  axis: fabrication
+  title:
+    fr: "OPTIONNEL : NE PAS CODER PENDANT P"
+    en: "OPTIONAL: DO NOT CODE DURING EXAM WEEK"
+  effort:
+    fr: "0.25 h · hors récupération"
+    en: "0.25 h · excluding recovery"
+  action:
+    fr: "Gèle le développement de l'app cette semaine. Conserve une liste de trois améliorations éventuelles pour après l'examen ; ne touche au code que pour une panne bloquante."
+    en: "Freeze development this week. Keep a list of three future improvements and touch code only for a critical issue."
+  why:
+    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 10/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Une liste de trois idées datée, sans chantier concurrent lancé avant P."
+    en: "A dated list of three ideas, with no competing coding project launched before P."
+  measure:
+    fr: "0 nouvelle fonctionnalité ; 3 idées classées."
+    en: "Zero new features; three ideas prioritized."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-10-EN
+  horizon: week
+  category: speaking
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-12'
+  due: '2027-01-17'
+  difficulty: ambitious
+  series: odyssee
+  level: 10
+  axis: expression
+  title:
+    fr: "OPTIONNEL : 3 MINUTES DE RETOUR EN ANGLAIS"
+    en: "OPTIONAL: THREE ENGLISH MINUTES OF REFLECTION"
+  effort:
+    fr: "0.2 h · hors récupération"
+    en: "0.2 h · excluding recovery"
+  action:
+    fr: "Après la date de l'examen, si tu le souhaites, enregistre trois minutes d'anglais sur ce que la préparation t'a appris, sans mentionner de questions secrètes. Un seul essai suffit."
+    en: "After exam day, if you wish, record three English minutes on what preparing taught you, with no secret exam content. One take is enough."
+  why:
+    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 10/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Une courte prise privée de trois minutes seulement si l'énergie le permet."
+    en: "A short private three-minute clip only if energy permits."
+  measure:
+    fr: "3 min ; facultatif ; aucune divulgation d'examen."
+    en: "3 min; optional; no exam disclosure."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-10-BOOK
+  horizon: week
+  category: writing
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-12'
+  due: '2027-01-17'
+  difficulty: ambitious
+  series: odyssee
+  level: 10
+  axis: creation
+  title:
+    fr: "OPTIONNEL : UNE PAGE DE JOURNAL SANS IA"
+    en: "OPTIONAL: ONE NO-AI JOURNAL PAGE"
+  effort:
+    fr: "0.4 h · hors récupération"
+    en: "0.4 h · excluding recovery"
+  action:
+    fr: "Si disponible après P, écris une page personnelle (300 mots) sans IA sur ce que tu as découvert dans ta façon d'apprendre. Ne prétends pas connaître ton résultat."
+    en: "If time allows after P, write a private 300-word no-AI reflection on what you discovered about how you learn. Do not claim to know your result."
+  why:
+    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 10/12: a scored trial and verifiable result."
+  done_when:
+    fr: "300 mots personnels si tu as envie de ce bilan, sans pression de publication."
+    en: "Three hundred personal words if you want the reflection, with no publication pressure."
+  measure:
+    fr: "300 mots ; facultatif ; 1 leçon concrète."
+    en: "300 words; optional; one concrete lesson."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-10-MOVE
+  horizon: week
+  category: fitness
+  period: 2027-W02
+  period_start: '2027-01-11'
+  issued: '2026-11-12'
+  due: '2027-01-17'
+  difficulty: ambitious
+  series: odyssee
+  level: 10
+  axis: endurance
+  title:
+    fr: "OPTIONNEL : UNE MARCHE DE RÉCUPÉRATION"
+    en: "OPTIONAL: ONE RECOVERY WALK"
+  effort:
+    fr: "0.5 h · hors récupération"
+    en: "0.5 h · excluding recovery"
+  action:
+    fr: "Choisis une marche courte confortable si tu le souhaites, avec repos et hydratation adaptés, sans objectif de vitesse ou de distance. L'absence de sortie n'est pas un échec."
+    en: "Choose a short comfortable walk if desired with suitable rest and hydration, with no speed or distance target. Skipping it is not failure."
+  why:
+    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 10/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Une marche douce réellement effectuée, uniquement si souhaitée."
+    en: "A gentle walk actually completed only if wanted."
+  measure:
+    fr: "Minutes de marche facultatives ; sensations."
+    en: "Optional walking minutes; sensations."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-11-P
+  horizon: week
+  category: math
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-12'
+  due: '2027-01-24'
+  difficulty: ambitious
+  series: odyssee
+  level: 11
+  axis: precision
+  title:
+    fr: "CONSTRUIRE UN GLM POISSON SUR DONNÉES SIMULÉES"
+    en: "BUILD A POISSON GLM ON SYNTHETIC DATA"
+  effort:
+    fr: "4 h · hors récupération"
+    en: "4 h · excluding recovery"
+  action:
+    fr: "Génère 1 000 contrats synthétiques avec exposition et sinistres, choisis une vraie relation fréquence/exposition, ajuste un GLM Poisson avec offset et reproduis manuellement le calcul de vraisemblance sur 5 contrats."
+    en: "Generate 1,000 synthetic policies with exposures and claim counts, fit a Poisson GLM with exposure offset and manually reproduce likelihood calculations on five records."
+  why:
+    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 11/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Un notebook reproductible avec graine fixe, tableau de 1 000 contrats, offset vérifié et 5 calculs manuels cohérents."
+    en: "A reproducible seeded notebook with 1,000 policies, verified offset and five matching manual calculations."
+  measure:
+    fr: "1 000 lignes ; 1 offset ; 5 calculs manuels vérifiés."
+    en: "1,000 rows; one offset; five verified manual calculations."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y1
+- id: ACT-OD26-11-BUILD
+  horizon: week
+  category: build
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-12'
+  due: '2027-01-24'
+  difficulty: ambitious
+  series: odyssee
+  level: 11
+  axis: fabrication
+  title:
+    fr: "PUBLIER UNE EXPÉRIENCE GLM REPRODUCTIBLE"
+    en: "PUBLISH A REPRODUCIBLE GLM EXPERIMENT"
+  effort:
+    fr: "4 h · hors récupération"
+    en: "4 h · excluding recovery"
+  action:
+    fr: "Transforme le notebook de probabilité/frequence en dépôt indépendant : requirements ou environnement, README, commande unique pour régénérer 2 graphiques et 10 tests automatisés sur données synthétiques."
+    en: "Turn the probability/frequency notebook into a self-contained repository: dependencies, README, one command regenerating two charts and ten automated tests on synthetic data."
+  why:
+    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 11/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Dépôt partageable sans données employeur, 2 graphiques reconstruits par commande et 10 tests verts."
+    en: "A shareable repo without employer data, two reproducible charts and ten passing tests."
+  measure:
+    fr: "2 figures reproductibles ; 10 tests ; 1 commande d'exécution."
+    en: "Two reproducible plots; ten tests; one run command."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-11-EN
+  horizon: week
+  category: speaking
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-12'
+  due: '2027-01-24'
+  difficulty: ambitious
+  series: odyssee
+  level: 11
+  axis: expression
+  title:
+    fr: "10 MINUTES : DÉFENDRE LE GLM FACE À 4 OBJECTIONS"
+    en: "TEN MINUTES: DEFEND A GLM AGAINST FOUR OBJECTIONS"
+  effort:
+    fr: "1.5 h · hors récupération"
+    en: "1.5 h · excluding recovery"
+  action:
+    fr: "Expose en anglais pendant dix minutes l'offset, le choix de loi et deux limites de ta simulation ; réponds à 4 questions difficiles préparées par une personne volontaire ou tirées au hasard de cartes."
+    en: "Explain offset, distribution choice and two simulation limitations in English for ten minutes; answer four tough questions from a willing reviewer or shuffled cards."
+  why:
+    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 11/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Dix minutes en anglais avec quatre réponses précises et une auto-évaluation des corrections à apporter."
+    en: "Ten English minutes with four accurate replies and a self-review of required corrections."
+  measure:
+    fr: "10 min ; 4 réponses ; imprécisions factuelles repérées."
+    en: "Ten minutes; four replies; factual mistakes logged."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-11-BOOK
+  horizon: week
+  category: writing
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-12'
+  due: '2027-01-24'
+  difficulty: ambitious
+  series: odyssee
+  level: 11
+  axis: creation
+  title:
+    fr: "1 200 MOTS : RETROUVER LE LIVRE APRÈS P"
+    en: "1,200 WORDS: RETURN TO THE BOOK AFTER P"
+  effort:
+    fr: "3 h · hors récupération"
+    en: "3 h · excluding recovery"
+  action:
+    fr: "Ajoute 1 200 mots nouveaux sans IA à ton manuscrit, puis relis le plan de la première partie et corrige deux contradictions ou transitions faibles."
+    en: "Add 1,200 new no-AI words to the manuscript, then review the first part's outline and fix two contradictions or weak transitions."
+  why:
+    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 11/12: a scored trial and verifiable result."
+  done_when:
+    fr: "1 200 mots nouveaux et deux transitions documentées comme améliorées."
+    en: "1,200 new words and two documented improved transitions."
+  measure:
+    fr: "1 200 mots ; total 11 800 ; 2 transitions améliorées."
+    en: "1,200 words; cumulative 11,800; two improvements."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-11-MOVE
+  horizon: week
+  category: fitness
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-12'
+  due: '2027-01-24'
+  difficulty: ambitious
+  series: odyssee
+  level: 11
+  axis: endurance
+  title:
+    fr: "REPRENDRE UNE ROUTINE AÉROBIE APRÈS L'EXAMEN"
+    en: "RESUME AEROBIC TRAINING AFTER THE EXAM"
+  effort:
+    fr: "1.75 h · hors récupération"
+    en: "1.75 h · excluding recovery"
+  action:
+    fr: "Si repos et récupération sont adéquats, organise deux séances faciles de marche/course-marche de 25–35 minutes, avec jours de repos et mesures comparables au niveau de décembre."
+    en: "With suitable rest and recovery, arrange two easy 25–35 minute walk/run-walk sessions with rest days and measures comparable to December."
+  why:
+    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 11/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Deux séances adaptées et un tableau de reprise sans accélération forcée."
+    en: "Two suitable sessions and a return-to-training log without forced progression."
+  measure:
+    fr: "2 séances ; distance, temps, effort, récupération."
+    en: "Two sessions; distance, time, effort, recovery."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
+- id: ACT-OD26-12-P
+  horizon: week
+  category: math
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-12'
+  due: '2027-01-31'
+  difficulty: ambitious
+  series: odyssee
+  level: 12
+  axis: precision
+  title:
+    fr: "COMPARER DEUX MODÈLES DE FRÉQUENCE HORS ÉCHANTILLON"
+    en: "COMPARE TWO CLAIM-FREQUENCY MODELS OUT OF SAMPLE"
+  effort:
+    fr: "4.5 h · hors récupération"
+    en: "4.5 h · excluding recovery"
+  action:
+    fr: "Sur les 1 000 contrats synthétiques, sépare entraînement et validation avec une graine fixe. Compare le GLM Poisson à une alternative justifiée, rapporte deux métriques de prédiction et une limite identifiée."
+    en: "On the 1,000 synthetic policies, use a fixed-seed train/validation split. Compare Poisson GLM with a justified alternative, report two predictive metrics and one identified limitation."
+  why:
+    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 12/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Un tableau comparatif reproductible avec deux métriques de validation, code et critique de méthode."
+    en: "A reproducible comparison table with two holdout metrics, code and methodological critique."
+  measure:
+    fr: "2 modèles ; 2 métriques hors échantillon ; 1 limite."
+    en: "Two models; two holdout metrics; one limitation."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y1
+- id: ACT-OD26-12-BUILD
+  horizon: week
+  category: build
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-12'
+  due: '2027-01-31'
+  difficulty: ambitious
+  series: odyssee
+  level: 12
+  axis: fabrication
+  title:
+    fr: "LANCER UNE V1.0 DE TON LABORATOIRE DE RISQUE"
+    en: "RELEASE V1.0 OF YOUR RISK LAB"
+  effort:
+    fr: "4 h · hors récupération"
+    en: "4 h · excluding recovery"
+  action:
+    fr: "Regroupe simulation, estimation et graphiques du mini-projet dans une version exécutable depuis un environnement neuf. Ajoute 15 tests et un guide d'installation testé en repartant de zéro."
+    en: "Package simulation, fitting and plots into a version runnable from a fresh environment. Add 15 tests and installation instructions verified from scratch."
+  why:
+    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 12/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Une v1.0 partageable, une commande de lancement, 15 tests verts et 3 étapes documentées pour reproduire les figures."
+    en: "A shareable v1.0, one run command, 15 passing tests and documented figure-reproduction steps."
+  measure:
+    fr: "1 lancement neuf ; 15 tests ; 2 figures reproduites."
+    en: "One clean install/run; 15 tests; two replicated figures."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-12-EN
+  horizon: week
+  category: speaking
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-12'
+  due: '2027-01-31'
+  difficulty: ambitious
+  series: odyssee
+  level: 12
+  axis: expression
+  title:
+    fr: "12 MINUTES : MICRO-SOUTENANCE SCIENTIFIQUE EN ANGLAIS"
+    en: "TWELVE MINUTES: ENGLISH SCIENTIFIC MINI-DEFENSE"
+  effort:
+    fr: "1.75 h · hors récupération"
+    en: "1.75 h · excluding recovery"
+  action:
+    fr: "Présente ton étude GLM en anglais pendant douze minutes sans lire de texte : hypothèse, données synthétiques, résultats, deux limites. Ajoute cinq questions de revue traitées oralement et évalue les erreurs."
+    en: "Give a twelve-minute unscripted English defense of your GLM study: hypothesis, synthetic data, results, two limitations. Answer five review questions aloud and assess errors."
+  why:
+    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 12/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Douze minutes de soutenance, cinq réponses et une grille de qualité avec exactitude des notions et hésitations."
+    en: "A twelve-minute defense, five answers and a rubric for concept accuracy and hesitation."
+  measure:
+    fr: "12 min ; 5 objections ; termes corrects /5 ; pauses."
+    en: "12min; five objections; correct technical terms /5; pauses."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-12-BOOK
+  horizon: week
+  category: writing
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-12'
+  due: '2027-01-31'
+  difficulty: ambitious
+  series: odyssee
+  level: 12
+  axis: creation
+  title:
+    fr: "1 500 MOTS ET BILAN DE 12 SEMAINES DE MANUSCRIT"
+    en: "1,500 WORDS AND A TWELVE-WEEK MANUSCRIPT REVIEW"
+  effort:
+    fr: "3.5 h · hors récupération"
+    en: "3.5 h · excluding recovery"
+  action:
+    fr: "Ajoute 1 500 mots sans IA, assemble les 12 semaines en un manuscrit suivi, compte les mots réellement utilisables après révision, identifie 3 faiblesses structurales et définis le chapitre suivant."
+    en: "Add 1,500 no-AI words, assemble the twelve weeks into a continuous manuscript, count words still usable after editing, identify three structural weaknesses and outline the next chapter."
+  why:
+    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 12/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Un manuscrit ordonné de mots réellement écrits, 1 500 mots nouveaux, 3 faiblesses précises et 1 prochain chapitre cadré."
+    en: "An ordered manuscript of genuinely authored words, 1,500 new words, three specific gaps and a next-chapter plan."
+  measure:
+    fr: "1 500 nouveaux ; total théorique 13 300 si étapes faites ; 3 faiblesses."
+    en: "1,500 new; 13,300 projected if prior work done; three gaps."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - writing
+  parents:
+  - ACT-202611-Y3
+- id: ACT-OD26-12-MOVE
+  horizon: week
+  category: fitness
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-12'
+  due: '2027-01-31'
+  difficulty: ambitious
+  series: odyssee
+  level: 12
+  axis: endurance
+  title:
+    fr: "12 SEMAINES : MESURER LES GAINS SANS FAUSSER LES CHIFFRES"
+    en: "TWELVE WEEKS: MEASURE GAINS WITHOUT DISTORTION"
+  effort:
+    fr: "1.25 h · hors récupération"
+    en: "1.25 h · excluding recovery"
+  action:
+    fr: "Sur une sortie sûre de 20 minutes comparable à la semaine 1, note distance et effort, puis compare trois mesures conservées (S1, S8, S12). Explique différences de météo, parcours et récupération. Si non prêt, utilise une marche équivalente."
+    en: "On a safe 20-minute outing comparable to week one, record distance and effort and compare three actual measures (W1, W8, W12). Explain weather, terrain and recovery differences. If not ready, use a comparable walk."
+  why:
+    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 12/12: a scored trial and verifiable result."
+  done_when:
+    fr: "Trois points datés (ou ceux réellement disponibles) et une analyse sincère de distance, effort et récupération, sans prétendre à un progrès non mesuré."
+    en: "Three dated points (or those actually available) and a candid comparison of distance, effort and recovery, without invented gains."
+  measure:
+    fr: "Delta S1/S8/S12 à effort comparable ; RPE ; récupération."
+    en: "W1/W8/W12 change at comparable effort; RPE; recovery."
+  minimum:
+    fr: "Si tu ne réussis pas la cible, conserve la mesure et l'erreur exacte pour la prochaine semaine ; ne coche pas comme achevée une épreuve sans le résultat exigé."
+    en: "If you miss the target, preserve the exact measurement and failure for the next week; do not mark a trial done without the stated deliverable."
+  stretch:
+    fr: "Invite une critique extérieure ou documente une méthode plus solide, sans surenchère dangereuse ni privation de sommeil."
+    en: "Invite outside critique or document a more rigorous method without unsafe escalation or sleep sacrifice."
+  targets:
+  - fitness-goal
+  parents:
+  - ACT-202611-Y2
