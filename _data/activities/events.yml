@@ -2918,3 +2918,483 @@
   note:
     fr: "Nouvelle mission de la banque d'inspirations documentées, adaptée aux objectifs d'Activities. Proposition uniquement : Evenson choisit s'il veut l'entreprendre."
     en: "New mission from the sourced inspiration library, adapted to Activities goals. Proposal only: Evenson chooses whether to pursue it."
+- id: proposal-ACT-OD26-01-P
+  challenge: ACT-OD26-01-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-01-BUILD
+  challenge: ACT-OD26-01-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-01-EN
+  challenge: ACT-OD26-01-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-01-BOOK
+  challenge: ACT-OD26-01-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-01-MOVE
+  challenge: ACT-OD26-01-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-02-P
+  challenge: ACT-OD26-02-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-02-BUILD
+  challenge: ACT-OD26-02-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-02-EN
+  challenge: ACT-OD26-02-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-02-BOOK
+  challenge: ACT-OD26-02-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-02-MOVE
+  challenge: ACT-OD26-02-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-03-P
+  challenge: ACT-OD26-03-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-03-BUILD
+  challenge: ACT-OD26-03-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-03-EN
+  challenge: ACT-OD26-03-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-03-BOOK
+  challenge: ACT-OD26-03-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-03-MOVE
+  challenge: ACT-OD26-03-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-04-P
+  challenge: ACT-OD26-04-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-04-BUILD
+  challenge: ACT-OD26-04-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-04-EN
+  challenge: ACT-OD26-04-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-04-BOOK
+  challenge: ACT-OD26-04-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-04-MOVE
+  challenge: ACT-OD26-04-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-05-P
+  challenge: ACT-OD26-05-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-05-BUILD
+  challenge: ACT-OD26-05-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-05-EN
+  challenge: ACT-OD26-05-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-05-BOOK
+  challenge: ACT-OD26-05-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-05-MOVE
+  challenge: ACT-OD26-05-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-06-P
+  challenge: ACT-OD26-06-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-06-BUILD
+  challenge: ACT-OD26-06-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-06-EN
+  challenge: ACT-OD26-06-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-06-BOOK
+  challenge: ACT-OD26-06-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-06-MOVE
+  challenge: ACT-OD26-06-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-07-P
+  challenge: ACT-OD26-07-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-07-BUILD
+  challenge: ACT-OD26-07-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-07-EN
+  challenge: ACT-OD26-07-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-07-BOOK
+  challenge: ACT-OD26-07-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-07-MOVE
+  challenge: ACT-OD26-07-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-08-P
+  challenge: ACT-OD26-08-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-08-BUILD
+  challenge: ACT-OD26-08-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-08-EN
+  challenge: ACT-OD26-08-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-08-BOOK
+  challenge: ACT-OD26-08-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-08-MOVE
+  challenge: ACT-OD26-08-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-09-P
+  challenge: ACT-OD26-09-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-09-BUILD
+  challenge: ACT-OD26-09-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-09-EN
+  challenge: ACT-OD26-09-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-09-BOOK
+  challenge: ACT-OD26-09-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-09-MOVE
+  challenge: ACT-OD26-09-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-10-P
+  challenge: ACT-OD26-10-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-10-BUILD
+  challenge: ACT-OD26-10-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-10-EN
+  challenge: ACT-OD26-10-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-10-BOOK
+  challenge: ACT-OD26-10-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-10-MOVE
+  challenge: ACT-OD26-10-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-11-P
+  challenge: ACT-OD26-11-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-11-BUILD
+  challenge: ACT-OD26-11-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-11-EN
+  challenge: ACT-OD26-11-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-11-BOOK
+  challenge: ACT-OD26-11-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-11-MOVE
+  challenge: ACT-OD26-11-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-12-P
+  challenge: ACT-OD26-12-P
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-12-BUILD
+  challenge: ACT-OD26-12-BUILD
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-12-EN
+  challenge: ACT-OD26-12-EN
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-12-BOOK
+  challenge: ACT-OD26-12-BOOK
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
+- id: proposal-ACT-OD26-12-MOVE
+  challenge: ACT-OD26-12-MOVE
+  date: '2026-11-12'
+  status: proposed
+  source: mentor
+  note:
+    fr: "Épreuve du protocole de 12 semaines proposée. Aucun progrès, résultat ou engagement présumé ; seul le bilan utilisateur confirme un accomplissement."
+    en: "Proposed trial in the 12-week protocol. No progress, result or commitment assumed; only the user's actual report confirms completion."
