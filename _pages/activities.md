@@ -8,7 +8,7 @@ sitemap: false
 excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et progresser."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=6">
+<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=7">
 
 <div class="activities-app" id="activities-app" data-lang="fr">
   <header class="act-hero">
@@ -66,6 +66,7 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
         </div>
       </details>
     </div>
+    <label class="act-period-toggle"><input type="checkbox" id="act-all-periods"><span data-copy="allPeriods">Voir aussi les périodes passées et futures</span></label>
     <p class="act-cadence" id="act-cadence"></p>
   </div>
 
@@ -77,13 +78,13 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
     <div>
       <span class="act-eyebrow" data-copy="yourturn">À TOI DE JOUER</span>
       <h2 id="act-report-heading" data-copy="reportTitle">Ton retour</h2>
-      <p data-copy="reportHelp">Choisis « Je le tente » sur un défi, puis copie ton bilan pour me l'envoyer dans notre conversation.</p>
-      <p class="act-local-hint" data-copy="localHint">Un choix ici reste un brouillon sur cet appareil : rien n'est envoyé ou publié automatiquement.</p>
+      <p data-copy="reportHelp">À la fin de la période, coche uniquement les défis réalisés. Copie ensuite le bilan pour me l'envoyer ici.</p>
+      <p class="act-local-hint" data-copy="localHint">Les coches sont locales : elles ne sont pas publiées avant l'envoi de ton bilan dans notre conversation.</p>
     </div>
     <div>
       <label for="act-report-text" data-copy="reportLabel">Bilan prêt à transmettre</label>
       <textarea id="act-report-text" rows="5" readonly></textarea>
-      <button type="button" id="act-copy-report" class="act-primary" data-copy="copy">Copier le bilan</button>
+      <button type="button" id="act-copy-report" class="act-primary" data-copy="copy">Copier mes réalisations</button>
       <p id="act-notice" class="act-notice" role="status" aria-live="polite"></p>
     </div>
   </section>
@@ -114,4 +115,4 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
   </noscript>
 </div>
 <script id="activities-data" type="application/json">{{ site.data.activities | jsonify | replace: '<', '\u003c' }}</script>
-<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=6"></script>
+<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=7"></script>
