@@ -13863,3 +13863,443 @@
   - fitness-goal
   parents:
   - ACT-202611-Y2
+- id: ACT-OD26-01-BOSS
+  horizon: week
+  category: build
+  period: 2026-W46
+  period_start: '2026-11-09'
+  issued: '2026-11-12'
+  due: '2026-11-15'
+  difficulty: ambitious
+  series: odyssee
+  level: 1
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : FAIRE TESTER TON SITE À TROIS VRAIES PERSONNES"
+    en: "BOSS: PUT YOUR SITE BEFORE THREE REAL USERS"
+  effort:
+    fr: "3.5 h · exploit supplémentaire, facultatif"
+    en: "3.5 h · extra boss mission, optional"
+  action:
+    fr: "Envoie un lien vers un outil existant de ton blog à trois volontaires, demande à chacun de résoudre une tâche définie en moins de cinq minutes, note les blocages sans enregistrer leurs données privées, puis corrige un problème réel."
+    en: "Give three willing testers a link to an existing blog tool, ask each to finish one defined task in under five minutes, document friction without private personal data and fix one genuine issue."
+  why:
+    fr: "Épreuve de terrain au niveau 1 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 1: ship something outside ordinary practice."
+  done_when:
+    fr: "Trois parcours observés et chronométrés, au moins trois problèmes identifiés et un correctif vérifié sur le site."
+    en: "Three timed observed user flows, at least three documented issues and one verified fix shipped."
+  measure:
+    fr: "3 tests ; temps médian ; 3 irritants ; 1 correctif livré."
+    en: "Three tests; median duration; three issues; one shipped fix."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y12
+- id: ACT-OD26-02-BOSS
+  horizon: week
+  category: community
+  period: 2026-W47
+  period_start: '2026-11-16'
+  issued: '2026-11-12'
+  due: '2026-11-22'
+  difficulty: ambitious
+  series: odyssee
+  level: 2
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : FAIRE RÉUSSIR UN PROBLÈME DE BAYES À DEUX NOVICES"
+    en: "BOSS: HELP TWO NEWCOMERS SOLVE A BAYES PROBLEM"
+  effort:
+    fr: "3 h · exploit supplémentaire, facultatif"
+    en: "3 h · extra boss mission, optional"
+  action:
+    fr: "Prépare un atelier de 15 minutes avec un problème de Bayes original, anime-le devant deux volontaires, pose trois questions de vérification chacun sans donner la réponse et corrige ce qui bloque la compréhension."
+    en: "Prepare a 15-minute workshop around an original Bayes puzzle, teach two willing newcomers, ask each three comprehension questions without revealing answers and adapt based on difficulties."
+  why:
+    fr: "Épreuve de terrain au niveau 2 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 2: ship something outside ordinary practice."
+  done_when:
+    fr: "Deux participants réels, six réponses enregistrées comme correctes ou non, et une version améliorée de ta démonstration."
+    en: "Two real learners, six marked understanding checks and an improved version of your teaching demonstration."
+  measure:
+    fr: "2 personnes ; questions comprises /6 ; avant/après de l'explication."
+    en: "Two people; correct checks /6; before/after teaching improvement."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y11
+- id: ACT-OD26-03-BOSS
+  horizon: week
+  category: build
+  period: 2026-W48
+  period_start: '2026-11-23'
+  issued: '2026-11-12'
+  due: '2026-11-29'
+  difficulty: ambitious
+  series: odyssee
+  level: 3
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : ENVOYER TON PREMIER CORRECTIF OPEN SOURCE"
+    en: "BOSS: SUBMIT YOUR FIRST REAL OPEN-SOURCE FIX"
+  effort:
+    fr: "4.5 h · exploit supplémentaire, facultatif"
+    en: "4.5 h · extra boss mission, optional"
+  action:
+    fr: "Trouve une petite issue accessible de documentation ou de test dans un vrai dépôt mathématique/Python, reproduis un défaut, écris un test ou exemple correctif et soumets une proposition conforme aux règles du dépôt. Pas de code d'employeur."
+    en: "Find a small documentation or testing issue in a real math/Python repository, reproduce the issue, add a test or corrective example and submit a proposal following the project's rules. Never use employer code."
+  why:
+    fr: "Épreuve de terrain au niveau 3 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 3: ship something outside ordinary practice."
+  done_when:
+    fr: "Un lien public vers une issue ou PR réellement soumise, avec cas reproductible et tests ; l'acceptation externe n'est pas exigée."
+    en: "A real submitted public issue or PR with a reproducible case and tests; external acceptance is not required."
+  measure:
+    fr: "1 issue ou PR envoyée ; 1 reproduction ; tests documentés."
+    en: "One submitted issue or PR; reproducible case; documented tests."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - builder
+  parents:
+  - ACT-202611-Y8
+- id: ACT-OD26-04-BOSS
+  horizon: week
+  category: speaking
+  period: 2026-W49
+  period_start: '2026-11-30'
+  issued: '2026-11-12'
+  due: '2026-12-06'
+  difficulty: ambitious
+  series: odyssee
+  level: 4
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : TON EXPOSÉ DE 12 MINUTES SOUS LE FEU DES QUESTIONS"
+    en: "BOSS: YOUR TWELVE-MINUTE TALK UNDER QUESTIONING"
+  effort:
+    fr: "3.5 h · exploit supplémentaire, facultatif"
+    en: "3.5 h · extra boss mission, optional"
+  action:
+    fr: "Prépare un exposé de 12 minutes en anglais sur un résultat de probabilités, donne-le réellement devant au moins deux personnes volontaires, et demande à chacune deux objections. Note celles auxquelles tu ne sais pas répondre."
+    en: "Prepare a 12-minute English probability talk and deliver it to at least two willing listeners; ask each for two objections. Record the ones you cannot answer."
+  why:
+    fr: "Épreuve de terrain au niveau 4 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 4: ship something outside ordinary practice."
+  done_when:
+    fr: "Un exposé réellement donné, quatre objections enregistrées et deux corrections de ton argumentaire."
+    en: "One delivered talk, four documented objections and two improvements to your argument."
+  measure:
+    fr: "12 min ; 2 auditeurs ; 4 objections ; 2 corrections."
+    en: "Twelve minutes; two listeners; four objections; two fixes."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - talk
+  parents:
+  - ACT-202611-Y5
+- id: ACT-OD26-05-BOSS
+  horizon: week
+  category: research
+  period: 2026-W50
+  period_start: '2026-12-07'
+  issued: '2026-11-12'
+  due: '2026-12-13'
+  difficulty: ambitious
+  series: odyssee
+  level: 5
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : SIMULER 5 000 RISQUES DE CATASTROPHE SANS DONNÉES EMPLOYEUR"
+    en: "BOSS: SIMULATE 5,000 CATASTROPHE EXPOSURES WITHOUT PRIVATE DATA"
+  effort:
+    fr: "6 h · exploit supplémentaire, facultatif"
+    en: "6 h · extra boss mission, optional"
+  action:
+    fr: "Construis 5 000 risques fictifs avec valeurs, localisations synthétiques et intensité de catastrophe, puis calcule pertes attendues, distribution agrégée et intervalle d'incertitude. Publie code et deux figures avec limites méthodologiques."
+    en: "Build 5,000 synthetic exposures with values, fictitious coordinates and catastrophe intensity, then estimate expected losses, aggregate distribution and uncertainty. Publish code and two charts with methodological limitations."
+  why:
+    fr: "Épreuve de terrain au niveau 5 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 5: ship something outside ordinary practice."
+  done_when:
+    fr: "Un notebook reproductible sur 5 000 risques fictifs, deux figures exactes et un paragraphe expliquant ce que ce modèle ne sait pas mesurer."
+    en: "A reproducible 5,000-exposure notebook, two accurate plots and a paragraph on what the model cannot measure."
+  measure:
+    fr: "5 000 lignes ; 2 graphiques ; 1 intervalle d'incertitude ; 1 limite."
+    en: "Five thousand rows; two charts; one uncertainty interval; one limitation."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-OD26-06-BOSS
+  horizon: week
+  category: research
+  period: 2026-W51
+  period_start: '2026-12-14'
+  issued: '2026-11-12'
+  due: '2026-12-20'
+  difficulty: ambitious
+  series: odyssee
+  level: 6
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : FORMALISER ET FAIRE RELIRE UNE VRAIE PREUVE LEAN"
+    en: "BOSS: FORMALIZE AND SEEK REVIEW OF A REAL LEAN PROOF"
+  effort:
+    fr: "5 h · exploit supplémentaire, facultatif"
+    en: "5 h · extra boss mission, optional"
+  action:
+    fr: "Formalise dans Lean un lemme non trivial de probabilité discrète ou d'algèbre, fais compiler le fichier proprement, puis soumets une question ou une proposition technique précise à la communauté mathlib selon ses consignes."
+    en: "Formalize a nontrivial discrete-probability or algebra lemma in Lean, compile cleanly, then submit a focused technical question or contribution proposal following mathlib guidelines."
+  why:
+    fr: "Épreuve de terrain au niveau 6 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 6: ship something outside ordinary practice."
+  done_when:
+    fr: "Un fichier Lean qui compile, un test de preuve et un lien vers une vraie demande de revue ou contribution communautaire."
+    en: "A compiling Lean file, checked proof and a link to a real review request or community contribution."
+  measure:
+    fr: "1 lemme compilé ; 0 sorry ; 1 demande de revue envoyée."
+    en: "One compiling lemma; zero sorry; one submitted review request."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y8
+- id: ACT-OD26-07-BOSS
+  horizon: week
+  category: outdoors
+  period: 2026-W52
+  period_start: '2026-12-21'
+  issued: '2026-11-12'
+  due: '2026-12-27'
+  difficulty: ambitious
+  series: odyssee
+  level: 7
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : UNE EXPÉDITION URBAINE DOCUMENTÉE À MONTRÉAL"
+    en: "BOSS: A DOCUMENTED MONTREAL URBAN EXPEDITION"
+  effort:
+    fr: "3.5 h · exploit supplémentaire, facultatif"
+    en: "3.5 h · extra boss mission, optional"
+  action:
+    fr: "Prépare un itinéraire piéton original dans un secteur public sûr, vérifie accès, météo et retours, puis réalise une promenade adaptée pour produire douze observations ou photos originales et une carte annotée. N'effectue pas la sortie si les conditions sont dangereuses."
+    en: "Design an original walking route through safe public Montreal spaces, check access, weather and return, then complete a suitable walk producing twelve original observations or photos and an annotated route map. Do not go if conditions are unsafe."
+  why:
+    fr: "Épreuve de terrain au niveau 7 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 7: ship something outside ordinary practice."
+  done_when:
+    fr: "Un itinéraire réellement parcouru en sécurité, douze observations personnelles et une carte légendée ; en cas de conditions défavorables, reporter sans déclarer la marche faite."
+    en: "A safely completed real route, twelve original observations and a labeled map; defer rather than claim an unsafe outing."
+  measure:
+    fr: "1 itinéraire réel ; 12 observations ; 1 carte ; retour sûr."
+    en: "One actual route; twelve observations; one map; safe return."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y7
+- id: ACT-OD26-08-BOSS
+  horizon: week
+  category: research
+  period: 2026-W53
+  period_start: '2026-12-28'
+  issued: '2026-11-12'
+  due: '2027-01-03'
+  difficulty: ambitious
+  series: odyssee
+  level: 8
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : UNE NOTE ACTUARIELLE DE 1 200 MOTS ET TROIS FIGURES"
+    en: "BOSS: A 1,200-WORD ACTUARIAL NOTE WITH THREE CHARTS"
+  effort:
+    fr: "6 h · exploit supplémentaire, facultatif"
+    en: "6 h · extra boss mission, optional"
+  action:
+    fr: "À partir de données ouvertes ou simulées, produis une note de recherche de 1 200 mots sur la fréquence ou le risque catastrophe : question, hypothèses, méthode, trois graphiques, limites et références. Aucun chiffre interne de ton employeur."
+    en: "Using open or synthetic data, write a 1,200-word research note on claim frequency or catastrophe risk: question, assumptions, method, three charts, limitations and references. No internal employer data."
+  why:
+    fr: "Épreuve de terrain au niveau 8 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 8: ship something outside ordinary practice."
+  done_when:
+    fr: "Une note de 1 200 mots, trois graphiques reproductibles et au moins trois références vérifiées."
+    en: "A 1,200-word note, three reproducible plots and at least three verified references."
+  measure:
+    fr: "1 200 mots ; 3 figures ; 3 références ; 1 dépôt reproductible."
+    en: "1,200 words; three charts; three sources; one reproducible repo."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y1
+- id: ACT-OD26-09-BOSS
+  horizon: week
+  category: math
+  period: 2027-W01
+  period_start: '2027-01-04'
+  issued: '2026-11-12'
+  due: '2027-01-10'
+  difficulty: ambitious
+  series: odyssee
+  level: 9
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : NEUF ERREURS P CORRIGÉES 72 H PLUS TARD"
+    en: "BOSS: NINE EXAM P ERRORS REPAIRED AFTER 72 HOURS"
+  effort:
+    fr: "2.5 h · exploit supplémentaire, facultatif"
+    en: "2.5 h · extra boss mission, optional"
+  action:
+    fr: "Sélectionne neuf erreurs récurrentes de ton journal P, écris la bonne méthode sans corrigé, puis reviens après 72 heures et résous neuf variantes inédites en 54 minutes sans aide. C'est une épreuve de rétention, pas de mémorisation."
+    en: "Select nine recurring P mistakes, write the correct approach without the solution key, then after 72 hours solve nine new variants in 54 minutes unaided. This tests retention, not memorization."
+  why:
+    fr: "Épreuve de terrain au niveau 9 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 9: ship something outside ordinary practice."
+  done_when:
+    fr: "Neuf variantes originales tentées sous 54 minutes et résultat /9 avec analyse des erreurs restantes."
+    en: "Nine original variants attempted within 54 minutes and a /9 score with remaining error analysis."
+  measure:
+    fr: "Variants correctes /9 ; temps ≤54min ; erreurs récurrentes."
+    en: "Correct variants /9; time ≤54min; recurring errors."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - acas
+  parents:
+  - ACT-202611-Y4
+- id: ACT-OD26-11-BOSS
+  horizon: week
+  category: career
+  period: 2027-W03
+  period_start: '2027-01-18'
+  issued: '2026-11-12'
+  due: '2027-01-24'
+  difficulty: ambitious
+  series: odyssee
+  level: 11
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS : SOUMETTRE UNE VRAIE QUESTION DE RECHERCHE À CRITIQUE"
+    en: "BOSS: SUBMIT A REAL RESEARCH QUESTION FOR CRITIQUE"
+  effort:
+    fr: "5 h · exploit supplémentaire, facultatif"
+    en: "5 h · extra boss mission, optional"
+  action:
+    fr: "Lis deux articles reliés à ton projet GLM, rédige un projet de recherche de deux pages avec hypothèse, protocole et deux difficultés identifiées, puis adresse une demande de critique polie et précise à un chercheur ou pair compétent."
+    en: "Read two related GLM papers, write a two-page research proposal with hypothesis, protocol and two risks, then send a respectful specific critique request to a suitable researcher or peer."
+  why:
+    fr: "Épreuve de terrain au niveau 11 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 11: ship something outside ordinary practice."
+  done_when:
+    fr: "Un document de deux pages fondé sur deux lectures réelles et une demande de critique effectivement envoyée ; aucune réponse n'est présumée."
+    en: "A two-page proposal grounded in two actual papers and one genuinely sent review request; no reply presumed."
+  measure:
+    fr: "2 pages ; 2 lectures ; 1 demande envoyée ; 2 limites explicites."
+    en: "Two pages; two papers; one request sent; two explicit limits."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - research
+  parents:
+  - ACT-202611-Y11
+- id: ACT-OD26-12-BOSS
+  horizon: week
+  category: community
+  period: 2027-W04
+  period_start: '2027-01-25'
+  issued: '2026-11-12'
+  due: '2027-01-31'
+  difficulty: ambitious
+  series: odyssee
+  level: 12
+  axis: terrain
+  boss: true
+  title:
+    fr: "BOSS FINAL : TROIS UTILISATEURS, UN LAB, UNE AMÉLIORATION PUBLIÉE"
+    en: "FINAL BOSS: THREE USERS, ONE LAB, ONE SHIPPED IMPROVEMENT"
+  effort:
+    fr: "6 h · exploit supplémentaire, facultatif"
+    en: "6 h · extra boss mission, optional"
+  action:
+    fr: "Invite trois volontaires à exécuter ton laboratoire de risques depuis un guide, observe leur capacité à reproduire les deux graphiques, note leurs difficultés, corrige les trois problèmes les plus importants et publie une note de version finale."
+    en: "Invite three volunteers to run your risk lab from documentation, observe whether they reproduce both charts, record difficulties, fix the top three problems and publish a final release note."
+  why:
+    fr: "Épreuve de terrain au niveau 12 : produire un résultat réel au-delà des entraînements habituels."
+    en: "Real-world boss at level 12: ship something outside ordinary practice."
+  done_when:
+    fr: "Trois tests réellement conduits, six reproductions de figure tentées, trois problèmes traités et v1.1 publiée. En cas de volontaires indisponibles, documente honnêtement l'avancement sans cocher un test inexistant."
+    en: "Three real tests, six chart reproduction attempts, three addressed issues and a published v1.1. If testers are unavailable, honestly document progress rather than claim nonexistent tests."
+  measure:
+    fr: "3 utilisateurs ; graphiques reproduits /6 ; 3 correctifs ; lien v1.1."
+    en: "Three users; charts reproduced /6; three fixes; v1.1 URL."
+  minimum:
+    fr: "En cas d'obstacle externe ou de sécurité, documente la tentative et adapte le plan sans prétendre avoir terminé les éléments non réalisés."
+    en: "If external circumstances or safety prevent completion, document the attempt and adapt without claiming unfinished outcomes."
+  stretch:
+    fr: "Obtiens une critique vérifiable et publie ce que tu as effectivement amélioré, sans surestimer les résultats."
+    en: "Seek verifiable feedback and publish the improvements you actually made without overclaiming."
+  targets:
+  - explore
+  parents:
+  - ACT-202611-Y12
