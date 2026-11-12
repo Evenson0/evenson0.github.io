@@ -19,11 +19,12 @@
     });
     return result;
   }
-  function visibleChallenges(data, horizon, status, query, lang, category = 'all') {
+  function visibleChallenges(data, horizon, status, query, lang, category = 'all', periodWindow = 'all', referenceDate = '') {
     const term = query.trim().toLocaleLowerCase();
     return data.challenges.filter(challenge => {
       const current = statusOf(challenge.id, data.events);
-      return (horizon === 'all' || challenge.horizon === horizon) &&
+      return (periodWindow !== 'current' || (challenge.period_start <= referenceDate && challenge.due >= referenceDate)) &&
+        (horizon === 'all' || challenge.horizon === horizon) &&
         (category === 'all' || challenge.category === category) &&
         (status === 'all' || (status === 'open' ? !CLOSED.has(current) : current === status)) &&
         (!term || [challenge.id, challenge.title[lang], challenge.action[lang]].join(' ').toLocaleLowerCase().includes(term));
@@ -58,64 +59,66 @@
   }
   const COPY = {
     fr: {
+      markDone: '✓ Je l’ai réalisé', alreadyDone: '✓ Déjà enregistré', optionalNote: 'Ajouter une note (facultatif)', allPeriods: 'Voir aussi les périodes passées et futures',
       catalogChallenges: 'défis', catalogHorizons: 'horizons', catalogDomains: 'domaines', catalogSources: 'inspirations',
       inspirationTitle: 'Ils ont osé avant toi : les inspirations', inspirationIntro: 'Des parcours vérifiables pour inventer tes propres défis, sans chercher à copier une vie entière.',
       axisMind: 'Esprit', axisBody: 'Corps', axisCourage: 'Courage', axisCreation: 'Création',
-      yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', showWeekAll: 'Voir toutes les missions de la semaine', showWeekLess: 'Réduire la sélection', weeklyFocus: 'Missions de la semaine', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Un vaste choix pour exercer ton courage, ton esprit et ta créativité. Choisis une ou deux missions, pas toute la liste.', exploreHint: 'Explore à ton rythme : fais ton choix parmi les horizons et les domaines.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
+      yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', showWeekAll: 'Voir toutes les missions de la semaine', showWeekLess: 'Réduire la sélection', weeklyFocus: 'Missions de la semaine', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Tu peux tenter tous les défis qui t’inspirent. Dimanche, coche uniquement ceux que tu as réellement terminés.', exploreHint: 'Retrouve les défis de la période en cours, ou affiche les périodes passées et futures.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
       eyebrow: 'ACTIVITIES · PROTOCOLE D’AUDACE', hero: 'Deviens capable de ce qui te paraît impossible aujourd’hui.', promise: 'Des exploits qui comptent, pas des points à collectionner.',
       mentor: 'LE MOT DU MENTOR', load: 'Les défis réutilisent les séances de Becoming. Les grands horizons se construisent avec les petites actions.',
       challenges: 'Les défis', journal: 'Le journal', filter: 'État', search: 'Rechercher', yourturn: 'À TOI DE JOUER',
-      reportTitle: 'Ton retour', reportHelp: 'Clique sur « Je le tente » puis copie ton bilan pour me l’envoyer dans notre conversation.',
-      localHint: 'Tes choix restent des brouillons sur cet appareil : rien n’est envoyé ou publié automatiquement.',
-      reportLabel: 'Bilan à transmettre', copy: 'Copier le bilan', methodTitle: 'Comment ça marche ?',
-      rule1: 'Le catalogue offre beaucoup de choix. Choisis une mission majeure et, si tu le souhaites, une deuxième mission complémentaire.',
-      rule2: 'Les défis hebdomadaires nourrissent les grandes ambitions ; un même travail ne compte pas deux fois.',
-      rule3: 'Tu décides. Un refus ou un report reste une décision utile. Une échéance dépassée appelle un bilan, jamais un échec automatique.',
-      rule4: 'L’historique conserve les propositions, décisions et leçons. Ton récit suffit ; aucune preuve publique n’est exigée.',
+      reportTitle: 'Ton retour', reportHelp: 'En fin de semaine ou de période, coche seulement les défis réellement accomplis, puis copie le bilan dans notre conversation.',
+      localHint: 'Tes coches sont sauvegardées sur cet appareil, pas sur GitHub. Envoie le bilan ici pour que je mette à jour le carnet public.',
+      reportLabel: 'Bilan à transmettre', copy: 'Copier mes réalisations', methodTitle: 'Comment ça marche ?',
+      rule1: 'Aucune inscription préalable. Essaie les défis qui t’attirent, sans t’obliger à tous les terminer.',
+      rule2: 'Le dimanche, coche uniquement les défis achevés, y compris ceux des horizons plus longs si tu les as terminés.',
+      rule3: 'Les défis non cochés restent disponibles ; ils ne deviennent ni des échecs ni des obligations reportées.',
+      rule4: 'Copie le bilan dans notre conversation pour l’enregistrer dans l’historique public et préparer la période suivante.',
       listLink: 'Liste 100 ↗', memoriesLink: 'Memories ↗', all: 'Tous les horizons', allStates: 'Tous les états', open: 'À suivre',
       proposed: 'Proposé', accepted: 'Accepté', in_progress: 'En cours', completed: 'Réalisé', declined: 'Refusé', deferred: 'Reporté', stopped: 'Arrêté',
       easy: 'Accessible', focused: 'Approfondissement', stretch: 'Sortie de confort', ambitious: 'Ambitieux',
       proposedCount: 'propositions ouvertes', activeCount: 'défis engagés', doneCount: 'réalisations racontées',
-      allCadence: 'Des défis sur plusieurs horizons. Aucun n’est obligatoire : choisis ce qui te motive.',
+      allCadence: 'Chaque horizon a sa propre période. Les réalisations sont validées à la fin de celle-ci.',
       results: 'défi(s)', entries: 'entrée(s)', due: 'Cible', review: 'À revoir ensemble', criterion: 'Le défi est réussi si…', details: 'Variantes et détails',
       why: 'Ce que cela construit', minimum: 'Version courte', stretchLabel: 'Pour aller plus loin', toward: 'Un pas vers',
-      parent: 'Fait avancer', reply: 'Faire un bilan', decision: 'Ta décision', choose: 'Choisir…', noteLabel: 'Ton retour (facultatif)',
-      notePlaceholder: 'Ce que tu as fait, découvert ou décidé. Tu peux aussi proposer une autre date.', clear: 'Effacer ce brouillon',
+      parent: 'Fait avancer', reply: 'Ajouter une note', decision: 'Ta décision', choose: 'Choisir…', noteLabel: 'Détail de la réalisation (facultatif)',
+      notePlaceholder: 'Une phrase sur la réalisation (facultatif). Ne partage pas de données privées.', clear: 'Effacer ce brouillon',
       draft: 'Brouillon local · à transmettre', empty: 'Aucun défi pour ces filtres. Essaie un autre horizon ou affiche tous les états.',
-      noHistory: 'Aucune entrée pour ces filtres.', noReport: 'Tes réponses apparaîtront ici. Tu peux aussi me répondre directement dans la conversation.',
+      noHistory: 'Aucune entrée pour ces filtres.', noReport: 'Aucune réalisation cochée pour le moment. À la fin de la période, sélectionne ce que tu as fait.',
       noteOnly: 'Retour sans changement d’état', copied: 'Bilan copié. Colle-le dans notre conversation pour mettre à jour l’historique.',
-      copyFallback: 'Sélectionne le texte du bilan et copie-le avec Ctrl+C ou Cmd+C.', noDrafts: 'Choisis d’abord un défi ou écris une note.',
+      copyFallback: 'Sélectionne le texte du bilan et copie-le avec Ctrl+C ou Cmd+C.', noDrafts: 'Coche d’abord au moins un défi réalisé.',
       storageError: 'La sauvegarde locale est indisponible. Copie ton bilan avant de quitter la page.', saved: 'Brouillon conservé sur cet appareil.',
       sourceMentor: 'Proposition du mentor', sourceUser: 'Retour d’Evenson', noCompletion: 'Les décisions partagées sont conservées ici, sans résultat inventé.'
     },
     en: {
+      markDone: '✓ I completed it', alreadyDone: '✓ Already recorded', optionalNote: 'Add a note (optional)', allPeriods: 'Also show past and future periods',
       catalogChallenges: 'challenges', catalogHorizons: 'horizons', catalogDomains: 'domains', catalogSources: 'inspirations',
       inspirationTitle: 'They dared: sources of inspiration', inspirationIntro: 'Verifiable journeys that inspire your own challenges, without trying to copy an entire life.',
       axisMind: 'Mind', axisBody: 'Body', axisCourage: 'Courage', axisCreation: 'Creation',
-      yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', showWeekAll: 'Show all weekly missions', showWeekLess: 'Show fewer missions', weeklyFocus: 'This week’s missions', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'A rich menu for courage, learning and creation. Choose one or two missions, not all of them.', exploreHint: 'Explore at your own pace: choose a time horizon and theme.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
+      yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', showWeekAll: 'Show all weekly missions', showWeekLess: 'Show fewer missions', weeklyFocus: 'This week’s missions', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'Try any challenges that inspire you. On Sunday, tick only the ones you truly completed.', exploreHint: 'Browse the current period, or show past and future periods when needed.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
       eyebrow: 'ACTIVITIES · THE COURAGE PROTOCOL', hero: 'Become capable of what seems impossible today.', promise: 'Achievements that matter, not points to collect.',
       mentor: 'FROM YOUR MENTOR', load: 'Challenges reuse Becoming sessions. Longer horizons grow from small actions.',
       challenges: 'Challenges', journal: 'Journal', filter: 'Status', search: 'Search', yourturn: 'YOUR TURN',
-      reportTitle: 'Your check-in', reportHelp: 'Choose “I’ll try it”, then copy your check-in into our conversation.',
-      localHint: 'Choices remain drafts on this device: nothing is sent or published automatically.',
-      reportLabel: 'Check-in to share', copy: 'Copy check-in', methodTitle: 'How it works',
-      rule1: 'The catalog offers many choices. Take on one major mission and optionally one complementary mission.',
-      rule2: 'Weekly missions build toward bigger goals; the same effort is never counted twice.',
-      rule3: 'You decide. Declining or deferring is a useful decision. A passed date calls for a review, never an automatic failure.',
-      rule4: 'The history keeps proposals, decisions and lessons. Your account is enough; public evidence is never required.',
+      reportTitle: 'Your check-in', reportHelp: 'At the end of a week or period, tick only completed challenges and paste the copied summary into our conversation.',
+      localHint: 'Checkmarks are saved on this device, not to GitHub. Share the summary here to update the public journal.',
+      reportLabel: 'Check-in to share', copy: 'Copy completed challenges', methodTitle: 'How it works',
+      rule1: 'No prior commitment required. Try what interests you without having to finish everything.',
+      rule2: 'On Sunday, tick completed challenges, including longer-term goals when they are truly finished.',
+      rule3: 'Unchecked challenges remain available; they are neither failures nor mandatory carryovers.',
+      rule4: 'Paste the summary into our conversation so the public journal can be updated and the next period prepared.',
       listLink: 'List 100 ↗', memoriesLink: 'Memories ↗', all: 'All horizons', allStates: 'All statuses', open: 'To follow up',
       proposed: 'Proposed', accepted: 'Accepted', in_progress: 'In progress', completed: 'Completed', declined: 'Declined', deferred: 'Deferred', stopped: 'Stopped',
       easy: 'Accessible', focused: 'Focused work', stretch: 'Outside your comfort zone', ambitious: 'Ambitious',
       proposedCount: 'open proposals', activeCount: 'engaged challenges', doneCount: 'reported completions',
-      allCadence: 'Challenges across several horizons. None are mandatory: choose what motivates you.',
+      allCadence: 'Each horizon has its own timeframe. Completed work is reviewed at period-end.',
       results: 'challenge(s)', entries: 'entry/entries', due: 'Target', review: 'Review together', criterion: 'Success means…', details: 'Options and details',
       why: 'What this builds', minimum: 'Short version', stretchLabel: 'Go further', toward: 'A step toward',
-      parent: 'Helps advance', reply: 'Add a check-in', decision: 'Your decision', choose: 'Choose…', noteLabel: 'Your reflection (optional)',
-      notePlaceholder: 'What you did, discovered or decided. You can also suggest a different date.', clear: 'Clear this draft',
+      parent: 'Helps advance', reply: 'Add a note', decision: 'Your decision', choose: 'Choose…', noteLabel: 'Completion detail (optional)',
+      notePlaceholder: 'A brief completion note (optional). Do not include private data.', clear: 'Clear this draft',
       draft: 'Local draft · ready to share', empty: 'No challenges match these filters. Try another horizon or display all statuses.',
-      noHistory: 'No entries match these filters.', noReport: 'Your responses will appear here. You can also reply directly in our conversation.',
+      noHistory: 'No entries match these filters.', noReport: 'Nothing marked complete yet. At the end of the period, tick what you have done.',
       noteOnly: 'Reflection without a status change', copied: 'Check-in copied. Paste it into our conversation to update the history.',
-      copyFallback: 'Select the check-in text and copy it with Ctrl+C or Cmd+C.', noDrafts: 'Choose a challenge or write a note first.',
+      copyFallback: 'Select the check-in text and copy it with Ctrl+C or Cmd+C.', noDrafts: 'First tick at least one completed challenge.',
       storageError: 'Local saving is unavailable. Copy your check-in before leaving the page.', saved: 'Draft saved on this device.',
       sourceMentor: 'Mentor proposal', sourceUser: 'Evenson’s report', noCompletion: 'Shared decisions are kept here, without invented outcomes.'
     }
@@ -128,7 +131,7 @@
   let lang = 'fr';
   try { lang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('evenson.site.language') || document.documentElement.dataset.siteLang || 'fr'; } catch (_) {}
   if (!COPY[lang]) lang = 'fr';
-  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false, shownCount = 12, showWeekAll = false;
+  let horizon = 'all', status = 'all', query = '', category = 'all', view = 'challenges', showAllHistory = false, shownCount = 12, showWeekAll = false, showAllPeriods = false;
   const byId = Object.fromEntries(data.challenges.map(c => [c.id, c]));
   const targets = Object.fromEntries(data.config.targets.map(t => [t.id, t]));
   const categories = Object.fromEntries((data.config.categories || []).map(c => [c.id, c]));
@@ -296,6 +299,7 @@
     }
     $('act-view-hint').textContent = t(view === 'challenges' ? 'weekHint' : view === 'explore' ? 'exploreHint' : 'journalHint');
     $('act-discovery-controls').hidden = view !== 'explore';
+    $('act-all-periods').checked = showAllPeriods;
 
     const horizons = $('act-horizons');
     horizons.replaceChildren();
@@ -343,7 +347,7 @@
       $('act-results-count').textContent = t('weeklyFocus') + ' · ' + selection.length + ' ' + t('results');
     } else if (view === 'explore') {
       const rank = {week: 0, month: 1, quarter: 2, season: 3, halfyear: 4, year: 5};
-      const selected = visibleChallenges(data, horizon, status, query, lang, category).sort((a, b) =>
+      const selected = visibleChallenges(data, horizon, status, query, lang, category, showAllPeriods ? 'all' : 'current', today()).sort((a, b) =>
         rank[a.horizon] - rank[b.horizon] || a.due.localeCompare(b.due));
       selected.slice(0, shownCount).forEach(c => cards.append(renderCard(c)));
       if (selected.length > shownCount) cards.append(button(t('moreChallenges'), () => { shownCount += 12; render(); }, 'act-load-more'));
@@ -384,6 +388,7 @@
     $('act-search').value = ''; render();
     $('act-discovery-controls').scrollIntoView({block: 'start', behavior: 'smooth'});
   });
+  $('act-all-periods').addEventListener('change', event => { showAllPeriods = event.target.checked; shownCount = 12; render(); });
   $('act-status-filter').addEventListener('change', event => { status = event.target.value; shownCount = 12; render(); });
   $('act-category-filter').addEventListener('change', event => { category = event.target.value; shownCount = 12; render(); });
   $('act-search').addEventListener('input', event => { query = event.target.value; shownCount = 12; render(); });
