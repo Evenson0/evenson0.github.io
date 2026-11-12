@@ -8,7 +8,7 @@ sitemap: false
 excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et progresser."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=7">
+<link rel="stylesheet" href="{{ '/assets/css/activities.css' | relative_url }}?v=8">
 
 <div class="activities-app" id="activities-app" data-lang="fr">
   <header class="act-hero">
@@ -19,16 +19,16 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
         <button type="button" data-act-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
-    <h2 data-copy="hero">Deviens capable de ce qui te paraît impossible aujourd'hui.</h2>
+    <h1 data-copy="hero">Deviens capable de ce qui te paraît impossible aujourd'hui.</h1>
     <p id="act-intro">Choisis un défi, tente-le et garde une trace de ce que tu as appris.</p>
     <p class="act-promise" data-copy="promise">Des exploits qui comptent, pas des points à collectionner.</p>
     <div class="act-training-axes" aria-label="Axes de progression"><span data-copy="axisMind">Esprit</span><span data-copy="axisBody">Corps</span><span data-copy="axisCourage">Courage</span><span data-copy="axisCreation">Création</span></div>
   </header>
 
-  <aside class="act-mentor" aria-labelledby="act-mentor-title">
-    <span class="act-eyebrow" id="act-mentor-title" data-copy="mentor">LE MOT DU MENTOR</span>
+  <details class="act-mentor" aria-labelledby="act-mentor-title">
+    <summary class="act-eyebrow" id="act-mentor-title" data-copy="mentor">LE MOT DU MENTOR</summary>
     <p id="act-mentor-note"></p>
-  </aside>
+  </details>
 
   <section class="act-annual-vision" aria-labelledby="act-year-heading">
     <div>
@@ -115,4 +115,4 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
   </noscript>
 </div>
 <script id="activities-data" type="application/json">{{ site.data.activities | jsonify | replace: '<', '\u003c' }}</script>
-<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=7"></script>
+<script defer src="{{ '/assets/js/activities.js' | relative_url }}?v=8"></script>
