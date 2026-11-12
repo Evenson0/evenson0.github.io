@@ -246,3 +246,51 @@ html[data-theme="dark"] .activities-app { --act-accent: #81debf; }
   .act-hero h1 { line-height: 1.22; }
   .act-hero .act-promise { margin-top: .3rem; }
 }
+
+/* Measured Odyssey program: compact 12-stage ladder and evidence-first trial cards. */
+.act-odyssey {
+  margin: .75rem 0 1.2rem; padding: .95rem 1.1rem;
+  border-radius: 13px; border: 1px solid var(--act-soft-line);
+  background: var(--act-panel);
+}
+.act-odyssey-head {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: .5rem 1rem; flex-wrap: wrap;
+}
+.act-odyssey-head .act-eyebrow { letter-spacing: .045em; font-size: .73rem; }
+.act-odyssey-head p { margin: .28rem 0 0; font-size: .8rem; line-height: 1.4; color: var(--act-muted); }
+.act-odyssey-head .act-odyssey-progress { font-size: .73rem; font-weight: 650; max-width: 370px; }
+.act-odyssey-ladder {
+  display: grid; grid-template-columns: repeat(12, minmax(0,1fr));
+  gap: .3rem; margin-top: .75rem;
+}
+.act-step {
+  border: 1px solid var(--act-line); border-radius: 6px;
+  padding: .27rem 0; text-align: center; font: 650 .7rem/1.5 Monaco, Consolas, monospace;
+  color: var(--act-muted); background: var(--act-bg);
+}
+.act-step.is-active {
+  color: var(--act-bg); background: var(--act-accent);
+  border-color: var(--act-accent);
+}
+.act-step.is-future { opacity: .52; }
+.act-step.has-confirmed:not(.is-active) { border-color: var(--act-accent); color: var(--act-accent); }
+.act-step.has-local:not(.is-active) { outline: 1px dashed var(--act-accent); outline-offset: -3px; }
+.act-level {
+  font: 700 .65rem/1.45 Monaco, Consolas, monospace; color: var(--act-accent);
+  border: 1px solid var(--act-line); border-radius: 999px; padding: .2rem .48rem;
+}
+.act-card .act-measure {
+  background: var(--act-panel); border: 1px solid var(--act-soft-line);
+  border-radius: 9px; padding: .75rem .85rem; line-height: 1.5;
+  color: var(--act-ink); margin: .15rem 0 .75rem;
+}
+.act-measure strong {
+  display: block; color: var(--act-accent); font: 700 .68rem/1.55 Monaco, Consolas, monospace;
+  letter-spacing: .035em; margin-bottom: .25rem;
+}
+@media (max-width: 720px) {
+  .act-odyssey { padding: .75rem .85rem; }
+  .act-odyssey-ladder { gap: .15rem; }
+  .act-step { font-size: .62rem; padding: .18rem 0; }
+}
