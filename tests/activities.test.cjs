@@ -1,63 +1,81 @@
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const model = require('../assets/js/activities.js');
+
 const data = {
   challenges: [
-    {id:'W1', category:'math', horizon:'week', due:'2020-01-01', title:{fr:'Un défi P',en:'A P challenge'},action:{fr:'Expliquer',en:'Explain'}},
-    {id:'Y1', category:'writing', horizon:'year', title:{fr:'Écrire',en:'Write'},action:{fr:'Un article',en:'A paper'}}
+    {id:'W1',category:'math',horizon:'week',period_start:'2026-11-09',due:'2026-11-15',title:{fr:'Un défi P',en:'An Exam P challenge'},action:{fr:'Expliquer',en:'Explain'}},
+    {id:'M1',category:'build',horizon:'month',period_start:'2026-11-01',due:'2026-11-30',title:{fr:'Une application',en:'An app'},action:{fr:'Créer',en:'Create'}},
+    {id:'Y1',category:'writing',horizon:'year',period_start:'2026-11-03',due:'2027-11-02',title:{fr:'Écrire',en:'Write'},action:{fr:'Un livre',en:'A book'}},
+    {id:'LATER',category:'math',horizon:'week',period_start:'2026-11-16',due:'2026-11-22',title:{fr:'Un autre défi',en:'Another challenge'},action:{fr:'Tester',en:'Test'}}
   ],
-  events: [{challenge:'W1',status:'proposed'}, {challenge:'Y1',status:'proposed'}, {challenge:'Y1',status:'accepted'}]
+  events: [
+    {challenge:'W1',status:'proposed'},
+    {challenge:'M1',status:'proposed'},
+    {challenge:'Y1',status:'proposed'},
+    {challenge:'LATER',status:'proposed'}
+  ]
 };
-test('Dates and local responses never invent published completion', () => {
-  const drafts = {W1:{status:'completed',note:'Done locally'}};
-  assert.equal(model.statusOf('W1', data.events),'proposed');
-  assert.equal(model.statusOf('Y1', data.events),'accepted');
-  assert.equal(model.buildReport(data,drafts,{completed:'Réalisé'},'fr','2026-11-03').includes('Réalisé'),true);
+
+test('Proposals and dates never invent published completion', () => {
+  const drafts = {W1:{status:'completed',note:'Terminé'}};
+  assert.equal(model.statusOf('W1',data.events),'proposed');
+  assert.ok(model.buildReport(data,drafts,{completed:'Réalisé'},'fr','2026-11-15').includes('Réalisé'));
   assert.equal(model.statusOf('W1',data.events),'proposed');
 });
-test('Drafts reject unknown IDs and invalid states and bound note length', () => {
-  const result = model.cleanDrafts({W1:{status:'invented',note:'x'.repeat(1500)},Y1:{status:'declined',note:'Non'},unknown:{status:'completed',note:'bad'}},data.challenges);
-  assert.deepEqual(Object.keys(result),['W1','Y1']);
-  assert.equal(result.W1.status,''); assert.equal(result.W1.note.length,1200);
-  assert.equal(result.Y1.status,'declined');
-  assert.equal(Object.keys(model.cleanDrafts([],data.challenges)).length,0);
-});
-test('History remains accessible after declines and deferrals', () => {
-  const copy = {...data,events:[...data.events,{challenge:'W1',status:'declined'}]};
-  assert.equal(model.visibleChallenges(copy,'all','open','','fr').length,1);
-  assert.equal(model.visibleChallenges(copy,'week','all','','fr')[0].id,'W1');
-  assert.equal(model.statusOf('W1',copy.events),'declined');
-  assert.equal(model.statusOf('W1',[...copy.events,{challenge:'W1',status:'deferred'}]),'deferred');
-});
-test('Horizon, status and bilingual search combine without changing history', () => {
-  assert.equal(model.visibleChallenges(data,'year','accepted','paper','en')[0].id,'Y1');
-  assert.equal(model.visibleChallenges(data,'week','accepted','','fr').length,0);
-  assert.equal(model.visibleChallenges(data,'all','all','DÉFI','fr')[0].id,'W1');
-});
-test('Reports preserve user text and include notes without a decision', () => {
-  const text = '<script>example</script>\nUne difficulté';
-  const result = model.buildReport(data,{W1:{status:'',note:text}},{noteOnly:'Retour libre'},'fr','2026-11-03');
-  assert.ok(result.includes('W1 — Un défi P\nRetour libre\n'+text));
-  assert.equal(model.buildReport(data,{}, {},'fr','2026-11-03'),'');
+
+test('Local drafts accept only explicitly completed challenges', () => {
+  const raw = {
+    W1:{status:'completed',note:'x'.repeat(1300)},
+    M1:{status:'accepted',note:'Je vais le faire'},
+    Y1:{status:'',note:'Note seule'},
+    LATER:{status:'invented',note:'Non'},
+    unknown:{status:'completed',note:'Ignore'}
+  };
+  const result=model.cleanDrafts(raw,data.challenges);
+  assert.deepEqual(Object.keys(result),['W1']);
+  assert.equal(result.W1.note.length,1200);
+  assert.deepEqual(Object.keys(model.cleanDrafts([],data.challenges)),[]);
 });
 
-test('Category filtering stays optional and composes with horizons', () => {
-  assert.equal(model.visibleChallenges(data,'all','all','','fr','math').length,1);
-  assert.equal(model.visibleChallenges(data,'all','all','','fr','writing')[0].id,'Y1');
-  assert.equal(model.visibleChallenges(data,'week','all','','fr','writing').length,0);
-  assert.equal(model.visibleChallenges(data,'all','all','','fr').length,2);
+test('Report contains only checked completions, not intentions or published successes', () => {
+  const d={W1:{status:'completed',note:'Ma note'},M1:{status:'accepted',note:'À faire'},Y1:{status:'completed',note:''}};
+  const report=model.buildReport(data,d,{completed:'Réalisé'},'fr','2026-11-15');
+  assert.ok(report.includes('W1 — Un défi P\nRéalisé\nMa note'));
+  assert.ok(report.includes('Y1 — Écrire\nRéalisé'));
+  assert.ok(!report.includes('M1'));
+  const published={...data,events:[...data.events,{challenge:'W1',status:'completed'}]};
+  assert.ok(!model.buildReport(published,d,{completed:'Réalisé'},'fr','2026-11-15').includes('W1'));
+  assert.equal(model.buildReport(data,{}, {completed:'Réalisé'},'fr','2026-11-15'),'');
 });
 
-test('Current-week selection ignores later weeks already announced', () => {
+test('Horizon, published status, category and bilingual search remain combinable', () => {
+  const accepted={...data,events:[...data.events,{challenge:'Y1',status:'accepted'}]};
+  assert.deepEqual(model.visibleChallenges(accepted,'year','accepted','book','en').map(c=>c.id),['Y1']);
+  assert.deepEqual(model.visibleChallenges(accepted,'week','accepted','','fr').map(c=>c.id),[]);
+  assert.deepEqual(model.visibleChallenges(data,'all','all','DÉFI','fr').map(c=>c.id),['W1','LATER']);
+  assert.deepEqual(model.visibleChallenges(data,'all','all','','fr','math').map(c=>c.id),['W1','LATER']);
+});
+
+test('Current period includes week, month and year but not next week', () => {
+  const current=model.visibleChallenges(data,'all','all','','fr','all','current','2026-11-12').map(c=>c.id);
+  assert.deepEqual(current,['W1','M1','Y1']);
+  const nextWeek=model.visibleChallenges(data,'week','all','','fr','all','current','2026-11-18').map(c=>c.id);
+  assert.deepEqual(nextWeek,['LATER']);
+  assert.equal(model.visibleChallenges(data,'month','all','','fr','build','current','2026-12-01').length,0);
+  assert.equal(model.visibleChallenges(data,'all','all','','fr','all','all','2026-11-12').length,4);
+});
+
+test('Weekly view chooses the most recent started week without exposing future weeks', () => {
   const challenges = [
-    {id: 'wk45-a', horizon: 'week', period_start: '2026-11-02'},
-    {id: 'wk45-b', horizon: 'week', period_start: '2026-11-02'},
-    {id: 'wk46', horizon: 'week', period_start: '2026-11-09'},
-    {id: 'wk47', horizon: 'week', period_start: '2026-11-16'},
-    {id: 'year', horizon: 'year', period_start: '2026-11-03'}
+    {id:'old',horizon:'week',period_start:'2026-11-02'},
+    {id:'current1',horizon:'week',period_start:'2026-11-09'},
+    {id:'current2',horizon:'week',period_start:'2026-11-09'},
+    {id:'future',horizon:'week',period_start:'2026-11-16'}
   ];
-  assert.deepEqual(model.latestWeeklyChallenges(challenges, '2026-11-03').map(c => c.id), ['wk45-a', 'wk45-b']);
-  assert.deepEqual(model.latestWeeklyChallenges(challenges, '2026-11-10').map(c => c.id), ['wk46']);
-  assert.deepEqual(model.latestWeeklyChallenges(challenges, '2026-11-01'), []);
-  assert.deepEqual(model.latestWeeklyChallenges(challenges, '2026-11-24').map(c => c.id), ['wk47']);
+  assert.deepEqual(model.latestWeeklyChallenges(challenges,'2026-11-08').map(c=>c.id),['old']);
+  assert.deepEqual(model.latestWeeklyChallenges(challenges,'2026-11-12').map(c=>c.id),['current1','current2']);
+  assert.deepEqual(model.latestWeeklyChallenges(challenges,'2026-11-15').map(c=>c.id),['current1','current2']);
+  assert.deepEqual(model.latestWeeklyChallenges(challenges,'2026-11-16').map(c=>c.id),['future']);
+  assert.deepEqual(model.latestWeeklyChallenges(challenges,'2026-11-01'),[]);
 });
