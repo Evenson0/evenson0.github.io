@@ -382,8 +382,8 @@
 
     if (view === 'challenges') {
       const selection = latestWeeklyChallenges(data.challenges, today());
-      selection.slice(0, showWeekAll ? selection.length : 4).forEach(c => cards.append(renderCard(c)));
-      if (selection.length > 4) {
+      selection.slice(0, showWeekAll ? selection.length : 5).forEach(c => cards.append(renderCard(c)));
+      if (selection.length > 5) {
         cards.append(button(t(showWeekAll ? 'showWeekLess' : 'showWeekAll') + ' (' + selection.length + ')', () => {
           showWeekAll = !showWeekAll;
           render();
