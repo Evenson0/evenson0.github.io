@@ -207,3 +207,26 @@ html[data-theme="dark"] .activities-app { --act-accent: #81debf; }
 }
 
 .act-annual-vision .act-stats { margin: .55rem 0 0; color: var(--act-accent); font: 600 .72rem/1.6 Monaco, Consolas, monospace; }
+
+/* Finish-first flow: one accessible checkmark, no prior commitment step. */
+.act-completion-toggle {
+  display: flex; align-items: center; gap: .75rem;
+  min-height: 48px; padding: .7rem 1rem; margin: .15rem 0 .55rem;
+  border: 1px solid var(--act-line); border-radius: 11px;
+  background: var(--act-panel); cursor: pointer;
+  font-weight: 700; font-size: .88rem;
+}
+.act-completion-toggle input {
+  appearance: auto; width: 1.25rem; height: 1.25rem; flex: 0 0 1.25rem;
+  margin: 0; accent-color: var(--act-accent);
+}
+.act-completion-toggle.is-checked { border-color: var(--act-accent); background: var(--act-accent-soft); }
+.act-completion-toggle input:focus-visible { outline: 3px solid var(--act-accent); outline-offset: 3px; }
+.act-completion-toggle:has(input:disabled) { cursor: default; opacity: .82; }
+.act-period-toggle {
+  display: flex; align-items: center; gap: .6rem; width: fit-content;
+  margin: .85rem 0 .3rem; cursor: pointer;
+  color: var(--act-ink); font-size: .83rem;
+}
+.act-period-toggle input { width: 1rem; height: 1rem; margin: 0; accent-color: var(--act-accent); }
+.act-period-toggle span { line-height: 1.4; }
