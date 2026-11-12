@@ -31,7 +31,7 @@
     });
   }
   function latestWeeklyChallenges(challenges, date) {
-    const eligible = challenges.filter(c => c.horizon === 'week' && c.period_start <= date);
+    const eligible = challenges.filter(c => c.horizon === 'week' && c.period_start <= date && (!c.due || c.due >= date));
     if (!eligible.length) return [];
     const current = eligible.reduce((max, c) => c.period_start > max ? c.period_start : max, '');
     return eligible.filter(c => c.period_start === current);
@@ -139,7 +139,13 @@
   const $ = id => document.getElementById(id);
   const t = key => COPY[lang][key] || key;
   const loc = value => value[lang] || value.fr;
-  const today = () => new Intl.DateTimeFormat('en-CA', {timeZone: data.config.timezone, year: 'numeric', month: '2-digit', day: '2-digit'}).format(new Date());
+  const today = () => {
+    const parts = new Intl.DateTimeFormat('en-CA', {
+      timeZone: data.config.timezone, year: 'numeric', month: '2-digit', day: '2-digit'
+    }).formatToParts(new Date());
+    const value = Object.fromEntries(parts.map(p => [p.type, p.value]));
+    return value.year + '-' + value.month + '-' + value.day;
+  };
   const displayDate = value => new Intl.DateTimeFormat(lang === 'fr' ? 'fr-CA' : 'en-CA', {year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'}).format(new Date(value + 'T12:00:00Z'));
   function el(tag, cls, text) {
     const node = document.createElement(tag);
