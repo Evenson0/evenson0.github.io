@@ -51,6 +51,25 @@ def main():
         assert c['targets'] and all(t in targets for t in c['targets'])
         assert all(p in ids and p != c['id'] for p in c['parents'])
         counts[c['horizon'], c['period']] += 1
+        if c.get('series') == 'odyssee':
+            assert c['horizon'] == 'week' and c['difficulty'] == 'ambitious'
+            assert isinstance(c.get('level'), int) and 1 <= c['level'] <= 12
+            assert c.get('axis') in {'precision', 'fabrication', 'expression', 'creation', 'endurance', 'terrain'}
+            bilingual(c['measure'])
+            assert c['id'].startswith('ACT-OD26-'), 'Invalid Odyssey ID'
+            if c.get('boss'):
+                assert c['axis'] == 'terrain', 'A boss must be a real-world trial'
+    odyssey = [c for c in challenges if c.get('series') == 'odyssee']
+    assert len(odyssey) == 71, 'Twelve-week Odyssey must contain 60 skill trials and 11 bosses'
+    for level in range(1, 13):
+        batch = [c for c in odyssey if c['level'] == level]
+        skills = [c for c in batch if not c.get('boss')]
+        assert len(skills) == 5, f'Level {level} needs five skill trials'
+        assert {c['axis'] for c in skills} == {'precision', 'fabrication', 'expression', 'creation', 'endurance'}
+        boss = [c for c in batch if c.get('boss')]
+        assert len(boss) == (0 if level == 10 else 1), f'Incorrect boss count at level {level}'
+        assert len({c['period'] for c in batch}) == 1, 'Level must use one week'
+        assert len({c['period_start'] for c in batch}) == 1
     assert all(n <= horizons[h]['quota'] for (h, _), n in counts.items()), 'Period quota exceeded'
     for inspiration in inspirations:
         assert inspiration['connects'] and all(ref in ids for ref in inspiration['connects']), 'Invalid inspiration challenge reference'
@@ -75,6 +94,6 @@ def main():
         elif event['status'] != 'proposed':
             assert event['source'] == 'user', 'Decisions and outcomes must come from the user'
     assert proposed == ids, 'Every challenge needs a proposal event'
-    print(f'Activities valid: {len(challenges)} challenges, {len(events)} events, {len(inspirations)} inspiration sources; translations and references present.')
+    print(f'Activities valid: {len(challenges)} challenges, {len(events)} events, {len(odyssey)} measurable Odyssey trials, {len(inspirations)} sources; references present.')
 
 if __name__ == '__main__': main()
