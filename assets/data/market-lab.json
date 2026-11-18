@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-11-17T20:59:24.110532+00:00",
+  "updated_at": "2026-11-18T02:55:40.918606+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7334.1099,
-        "change_pct": -1.112,
+        "price": 7340.5298,
+        "change_pct": -1.026,
         "low_52w": 6343.7202,
         "high_52w": 7818.9302
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 24307.5195,
-        "change_pct": -0.825,
+        "price": 24328.3828,
+        "change_pct": -0.74,
         "low_52w": 20794.6406,
         "high_52w": 27599.7891
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 50716.1992,
-        "change_pct": -1.728,
+        "price": 50759.4219,
+        "change_pct": -1.645,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 35322.1797,
-        "change_pct": -1.12,
+        "price": 35315.3008,
+        "change_pct": -1.139,
         "low_52w": 29906.5996,
         "high_52w": 36957.6016
       },
@@ -45,15 +45,15 @@
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2704.6135,
-        "change_pct": -1.397,
+        "price": 2701.8706,
+        "change_pct": -1.497,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10689.8701,
+        "price": 10689.9004,
         "change_pct": -1.762,
         "low_52w": 9507.4004,
         "high_52w": 10910.5996
@@ -61,8 +61,8 @@
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 59662.0195,
-        "change_pct": -2.421,
+        "price": 58696.5391,
+        "change_pct": -0.278,
         "low_52w": 48537.6992,
         "high_52w": 72366.3438
       }
@@ -71,48 +71,48 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 351.62,
-        "change_pct": -0.329,
+        "price": 351.91,
+        "change_pct": -0.247,
         "low_52w": 246.63,
         "high_52w": 356.27
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 505.725,
-        "change_pct": -2.368,
+        "price": 506.24,
+        "change_pct": -2.268,
         "low_52w": 352.83,
         "high_52w": 555.8
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 154.975,
-        "change_pct": -0.746,
-        "low_52w": 154.975,
+        "price": 155.46,
+        "change_pct": -0.436,
+        "low_52w": 155.46,
         "high_52w": 239.24
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 257.63,
-        "change_pct": -0.047,
+        "price": 257.89,
+        "change_pct": 0.054,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 280.93,
-        "change_pct": -1.666,
+        "price": 280.99,
+        "change_pct": -1.645,
         "low_52w": 206.93,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 202.82,
-        "change_pct": -4.072,
+        "price": 202.83,
+        "change_pct": -4.068,
         "low_52w": 130.71,
         "high_52w": 252.53
       },
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4293,
-        "change_pct": 0.172,
+        "price": 1.4308,
+        "change_pct": 0.073,
         "low_52w": 1.3492,
-        "high_52w": 1.4293
+        "high_52w": 1.4308
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.101,
-        "change_pct": -0.139,
-        "low_52w": 1.101,
+        "price": 1.0995,
+        "change_pct": -0.029,
+        "low_52w": 1.0995,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.321,
-        "change_pct": -0.046,
+        "price": 1.3204,
+        "change_pct": 0.144,
         "low_52w": 1.3062,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.333,
-        "change_pct": -0.28,
+        "price": 159.328,
+        "change_pct": -0.122,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 3850.8999,
-        "change_pct": -0.055,
-        "low_52w": 3850.8999,
+        "price": 3800.6001,
+        "change_pct": -1.36,
+        "low_52w": 3800.6001,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 85.64,
-        "change_pct": -0.093,
+        "price": 85.12,
+        "change_pct": -0.7,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.186,
-        "change_pct": 2.05,
+        "price": 3.181,
+        "change_pct": 1.89,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 5.9725,
-        "change_pct": -0.417,
+        "price": 5.925,
+        "change_pct": -1.209,
         "low_52w": 4.9595,
         "high_52w": 6.8035
       }
@@ -262,31 +262,38 @@
       "time": "Latest"
     },
     {
-      "title": "Update: US Equity Indexes Slump as Investors Lighten Up Ahead of Nvidia's Fiscal Q3 Results",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-slump-investors-205101076.html",
+      "title": "Dow Jones Futures: Techs Rise After Nvidia Beats, Says This On Jensen Huang; Target, Anthropic IPO Ahead",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-earnings-target-anthropic-ipo/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "5 Oil and Gas Stocks That Crushed Third-Quarter Earnings Estimates",
+      "link": "https://finance.yahoo.com/energy/articles/5-oil-gas-stocks-crushed-010000263.html",
+      "publisher": "Oilprice.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Wall Street ends lower ahead of Nvidia results, focus turns to Anthropic debut",
+      "link": "https://finance.yahoo.com/news/us-stock-futures-slip-ahead-105311659.html",
+      "publisher": "Reuters",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Review & Preview: Bad Time for a Selloff",
+      "link": "https://www.barrons.com/articles/stockstoday-market-selloff-before-nvidia-earnings-4889cb4c?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Tumbles to Six-Week Low As All Sectors Decline; Investors Assess Canadian Housing Data",
+      "link": "https://finance.yahoo.com/real-estate/articles/tsx-closer-index-tumbles-six-212629123.html",
       "publisher": "MT Newswires",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Morgan Stanley sends strong signal on where stocks are headed",
-      "link": "https://www.thestreet.com/investing/stocks/morgan-stanley-maximum-overweight-position-sp-500-stocks",
-      "publisher": "TheStreet",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Why Santacruz Silver Mining Stock Is Rocketing Higher Today",
-      "link": "https://www.fool.com/investing/2026/11/17/why-santacruz-silver-mining-stock-is-rocketing-higher-today/",
-      "publisher": "Motley Fool",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Berkshire Hathaway Is Up 18% in Its First Year Without Buffett as CEO. Can BRK.B Stock Hit $700 by 2027?",
-      "link": "https://247wallst.com/investing/2026/11/17/berkshire-hathaway-is-up-18-in-its-first-year-without-buffett-as-ceo-can-brk-b-stock-hit-700-by-2027/",
-      "publisher": "24/7 Wall St.",
-      "related": "^GSPC",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -323,55 +330,48 @@
       "publisher": "Investing.com",
       "related": "^GSPTSE",
       "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: The Index Closes Down 23 Points as Base Metals, Technology Stocks Drag",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-closes-down-211723440.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
     }
   ],
   "earnings": [
     {
       "symbol": "AAPL",
       "name": "Apple",
-      "when": "Watch",
+      "when": "Jan 28",
       "note": "Upcoming earnings and investor materials",
       "link": "https://finance.yahoo.com/quote/AAPL/"
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "when": "Watch",
+      "when": "Jan 27",
       "note": "Upcoming earnings and investor materials",
       "link": "https://finance.yahoo.com/quote/MSFT/"
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "when": "Watch",
+      "when": "Nov 17",
       "note": "Upcoming earnings and investor materials",
       "link": "https://finance.yahoo.com/quote/NVDA/"
     },
     {
       "symbol": "AMZN",
       "name": "Amazon",
-      "when": "Watch",
+      "when": "Oct 29",
       "note": "Upcoming earnings and investor materials",
       "link": "https://finance.yahoo.com/quote/AMZN/"
     },
     {
       "symbol": "RY.TO",
       "name": "Royal Bank",
-      "when": "Watch",
+      "when": "Dec 03",
       "note": "Upcoming earnings and investor materials",
       "link": "https://finance.yahoo.com/quote/RY.TO/"
     },
     {
       "symbol": "SHOP.TO",
       "name": "Shopify",
-      "when": "Watch",
+      "when": "Nov 03",
       "note": "Upcoming earnings and investor materials",
       "link": "https://finance.yahoo.com/quote/SHOP.TO/"
     }
