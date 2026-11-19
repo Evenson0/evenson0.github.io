@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-11-19T02:01:35.909118+00:00",
+  "updated_at": "2026-11-19T20:41:54.452485+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7323.6299,
-        "change_pct": -0.23,
+        "price": 7186.8101,
+        "change_pct": -1.868,
         "low_52w": 6343.7202,
         "high_52w": 7818.9302
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 24429.8848,
-        "change_pct": 0.417,
+        "price": 23934.1777,
+        "change_pct": -2.029,
         "low_52w": 20794.6406,
         "high_52w": 27599.7891
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 50198.1719,
-        "change_pct": -1.106,
+        "price": 49160.8398,
+        "change_pct": -2.066,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 34578.0508,
-        "change_pct": -2.088,
+        "price": 34025.0391,
+        "change_pct": -1.599,
         "low_52w": 29906.5996,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 52.23,
-        "change_pct": -2.154,
+        "price": 51.44,
+        "change_pct": -1.513,
         "low_52w": 44.51,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2714.3057,
-        "change_pct": 0.46,
+        "price": 2664.0745,
+        "change_pct": -1.851,
         "low_52w": 2305.1101,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10689.9004,
-        "change_pct": -1.762,
+        "price": 10452.6797,
+        "change_pct": -0.934,
         "low_52w": 9507.4004,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 59012.75,
-        "change_pct": 0.259,
+        "price": 59024.2812,
+        "change_pct": 0.278,
         "low_52w": 48537.6992,
         "high_52w": 72366.3438
       }
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 351.91,
-        "change_pct": -0.247,
+        "price": 348.95,
+        "change_pct": -0.993,
         "low_52w": 246.63,
         "high_52w": 356.27
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 506.24,
-        "change_pct": -2.268,
+        "price": 500.475,
+        "change_pct": -1.538,
         "low_52w": 352.83,
         "high_52w": 555.8
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 155.46,
-        "change_pct": -0.436,
-        "low_52w": 155.46,
+        "price": 147.385,
+        "change_pct": -2.368,
+        "low_52w": 147.385,
         "high_52w": 239.24
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 257.89,
-        "change_pct": 0.054,
+        "price": 258.01,
+        "change_pct": -3.634,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 272.26,
-        "change_pct": -3.107,
+        "price": 268.83,
+        "change_pct": -1.26,
         "low_52w": 207.98,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 199.78,
-        "change_pct": -1.504,
+        "price": 189.77,
+        "change_pct": -5.011,
         "low_52w": 130.71,
         "high_52w": 252.53
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 179.36,
-        "change_pct": -0.654,
+        "price": 178.57,
+        "change_pct": -0.44,
         "low_52w": 128.08,
         "high_52w": 183.92
       }
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 4.145,
-        "change_pct": 0.169,
+        "price": 4.147,
+        "change_pct": 0.048,
         "low_52w": 3.507,
-        "high_52w": 4.145
+        "high_52w": 4.147
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.884,
-        "change_pct": -0.327,
+        "price": 4.866,
+        "change_pct": -0.369,
         "low_52w": 3.512,
         "high_52w": 5.089
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 5.066,
-        "change_pct": -0.725,
+        "price": 5.052,
+        "change_pct": -0.276,
         "low_52w": 3.962,
         "high_52w": 5.311
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.412,
-        "change_pct": -0.843,
+        "price": 5.401,
+        "change_pct": -0.203,
         "low_52w": 4.633,
         "high_52w": 5.665
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4338,
-        "change_pct": 0.269,
+        "price": 1.4342,
+        "change_pct": 0.299,
         "low_52w": 1.3492,
-        "high_52w": 1.4338
+        "high_52w": 1.4342
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.0973,
-        "change_pct": -0.178,
-        "low_52w": 1.0973,
+        "price": 1.0978,
+        "change_pct": -0.134,
+        "low_52w": 1.0978,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3142,
-        "change_pct": -0.478,
+        "price": 1.3099,
+        "change_pct": -0.804,
         "low_52w": 1.3062,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.387,
-        "change_pct": -0.073,
+        "price": 159.691,
+        "change_pct": 0.117,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 3753.7,
-        "change_pct": -2.86,
-        "low_52w": 3753.7,
+        "price": 3667.3999,
+        "change_pct": -1.991,
+        "low_52w": 3667.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 82.7,
-        "change_pct": -3.848,
+        "price": 82.89,
+        "change_pct": -0.444,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.374,
-        "change_pct": 5.175,
+        "price": 3.262,
+        "change_pct": -3.262,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 5.699,
-        "change_pct": -4.635,
+        "price": 5.615,
+        "change_pct": -0.786,
         "low_52w": 4.9595,
         "high_52w": 6.8035
       }
@@ -231,62 +231,69 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 4.145
+      "value": 4.147
     },
     {
       "term": "5Y",
-      "value": 4.884
+      "value": 4.866
     },
     {
       "term": "10Y",
-      "value": 5.066
+      "value": 5.052
     },
     {
       "term": "30Y",
-      "value": 5.412
+      "value": 5.401
     }
   ],
   "news": [
     {
-      "title": "Dow Jones Futures Rise; Anthropic IPO Prices High, Palo Alto And Everpure Rally On Earnings",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-anthropic-ipo-prices-palo-alto-everpure-nvidia-target-unitedhealth-fed-waller-shock/?src=A00220&yptr=yahoo",
+      "title": "Novartis Says AI Is Speeding Drug Discovery and Trials, but Clinical Payoff Remains Unproven",
+      "link": "https://www.marketbeat.com/instant-alerts/event-novartis-says-ai-is-speeding-drug-discovery-and-trials-but-clinical-payoff-remains-unproven-2026-11-19/?utm_source=yahoofinance&utm_medium=yahoofinance",
+      "publisher": "MarketBeat",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Inside David Einhorn’s Portfolio: Every Move He Made in the Third Quarter",
+      "link": "https://www.tikr.com/blog/inside-david-einhorns-portfolio-every-move-he-made-in-the-third-quarter?ref=yahoofinance&tlnk=yf-261119-r5m89w85",
+      "publisher": "TIKR",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Stock Market Today: Anthropic Up 14% From IPO Price, But AMD, Chip Stocks Slide Fast (Live Coverage)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-walmart-earnings-anthropic-ipo/?src=A00220&yptr=yahoo",
       "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Review & Preview: Anthropic’s Moment",
-      "link": "https://www.barrons.com/articles/stocks-today-anthropic-ipo-680866ae?siteid=yhoof2&yptr=yahoo",
+      "title": "It’s Getting More and More Volatile for Stocks",
+      "link": "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/it-s-getting-more-and-more-volatile-for-stocks-ROSooZcFbkLpYiu56lWF?siteid=yhoof2&yptr=yahoo",
       "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "GE Vernova Down 24%: What Would Its CEO Say?",
-      "link": "https://www.trefis.com/stock/gev/articles/625753/ge-vernova-down-24-what-would-its-ceo-say/2026-11-18",
-      "publisher": "Trefis",
+      "title": "Update: US Equity Indexes Drop After Anthropic's Nasdaq Debut, Crude Oil Climbs",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-drop-anthropic-192433303.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "‘Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate — or ride out the storm?",
-      "link": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6",
-      "publisher": "MarketWatch",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "Is Alphabet Stock a Buy Right Now?",
-      "link": "https://www.fool.com/investing/2026/11/18/is-alphabet-stock-a-buy-right-now/",
+      "title": "Why SpaceX Stock Is Down Today",
+      "link": "https://www.fool.com/investing/2026/11/19/why-spacex-stock-is-down-today/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "What Explains Natera Stock's Nearly 10% Drop?",
-      "link": "https://www.trefis.com/stock/ntra/articles/625786/what-explains-natera-stocks-nearly-10-drop/2026-11-18",
-      "publisher": "Trefis",
-      "related": "^GSPC",
+      "title": "S&P/TSX Composite Index Falls to More Than Five-Month Low",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/p-tsx-composite-index-falls-153017493.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "TSX futures edge lower ahead of Nvidia earnings poised to test AI trade",
       "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-edge-lower-ahead-140609784.html",
       "publisher": "Investing.com",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX Closer: Index Drops 380 Points as Metal And Energy Stocks Slide",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-drops-380-212815241.html",
-      "publisher": "MT Newswires",
       "related": "^GSPTSE",
       "time": "Latest"
     }
