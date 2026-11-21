@@ -1,60 +1,60 @@
 {
-  "updated_at": "2026-11-20T20:26:25.985448+00:00",
+  "updated_at": "2026-11-21T01:47:49.171795+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 6940.4302,
-        "change_pct": -3.28,
+        "price": 6910.3901,
+        "change_pct": -3.699,
         "low_52w": 6343.7202,
         "high_52w": 7818.9302
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 22711.3945,
-        "change_pct": -4.89,
+        "price": 22617.7324,
+        "change_pct": -5.283,
         "low_52w": 20794.6406,
         "high_52w": 27599.7891
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 48350.8398,
-        "change_pct": -1.52,
+        "price": 48147.3281,
+        "change_pct": -1.934,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 33325.8516,
-        "change_pct": -2.065,
+        "price": 33189.8516,
+        "change_pct": -2.465,
         "low_52w": 29906.5996,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 50.5,
-        "change_pct": -1.846,
+        "price": 50.32,
+        "change_pct": -2.196,
         "low_52w": 44.51,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2592.2383,
-        "change_pct": -2.368,
-        "low_52w": 2305.1101,
+        "price": 2581.7896,
+        "change_pct": -2.761,
+        "low_52w": 2369.5901,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10346.3398,
-        "change_pct": -1.018,
+        "price": 10452.7002,
+        "change_pct": -0.934,
         "low_52w": 9527.7002,
         "high_52w": 10910.5996
       },
@@ -71,56 +71,56 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 343.45,
-        "change_pct": -1.649,
+        "price": 349.21,
+        "change_pct": -0.919,
         "low_52w": 246.63,
         "high_52w": 356.27
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 484.5,
-        "change_pct": -2.769,
+        "price": 498.3,
+        "change_pct": -1.965,
         "low_52w": 352.83,
         "high_52w": 555.8
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 127.99,
-        "change_pct": -12.324,
-        "low_52w": 127.99,
+        "price": 145.98,
+        "change_pct": -3.299,
+        "low_52w": 145.98,
         "high_52w": 239.24
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 247.38,
-        "change_pct": -3.882,
+        "price": 257.37,
+        "change_pct": -3.873,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 264.84,
-        "change_pct": -1.711,
+        "price": 263.05,
+        "change_pct": -2.375,
         "low_52w": 207.98,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 177.47,
-        "change_pct": -6.274,
+        "price": 177.09,
+        "change_pct": -6.475,
         "low_52w": 130.71,
         "high_52w": 252.53
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 176.34,
-        "change_pct": -1.299,
+        "price": 175.38,
+        "change_pct": -1.836,
         "low_52w": 128.08,
         "high_52w": 183.92
       }
@@ -163,10 +163,10 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4335,
-        "change_pct": 0.031,
+        "price": 1.4344,
+        "change_pct": 0.089,
         "low_52w": 1.3492,
-        "high_52w": 1.4335
+        "high_52w": 1.4344
       },
       {
         "symbol": "EURUSD=X",
@@ -179,16 +179,16 @@
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3085,
-        "change_pct": -0.471,
+        "price": 1.3086,
+        "change_pct": -0.458,
         "low_52w": 1.3062,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 158.503,
-        "change_pct": -0.551,
+        "price": 159.707,
+        "change_pct": 0.205,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 3517.3999,
-        "change_pct": -4.561,
-        "low_52w": 3517.3999,
+        "price": 3539.0,
+        "change_pct": -3.975,
+        "low_52w": 3539.0,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 83.26,
-        "change_pct": 0.06,
+        "price": 83.62,
+        "change_pct": 0.493,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.751,
-        "change_pct": 14.78,
+        "price": 3.791,
+        "change_pct": 16.004,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 5.463,
-        "change_pct": -2.88,
+        "price": 5.465,
+        "change_pct": -2.844,
         "low_52w": 4.9595,
         "high_52w": 6.8035
       }
@@ -248,7 +248,7 @@
   ],
   "news": [
     {
-      "title": "Chips are crashing like it's 2008 as the Nasdaq 100 nears a bear market",
+      "title": "Chips suffer worst week since 2001 as the Nasdaq nears a bear market",
       "link": "https://finance.yahoo.com/markets/article/chips-are-crashing-like-its-2008-as-the-nasdaq-100-nears-a-bear-market-192805534.html",
       "publisher": "Yahoo Finance",
       "related": "^GSPC",
@@ -262,31 +262,38 @@
       "time": "Latest"
     },
     {
-      "title": "American Express (AXP) Is Growing Revenue by More Than 10%, but Its Stock Is 25% Cheaper: Is Wall Street Missing an Opportunity?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/american-express-axp-growing-revenue-201629481.html",
-      "publisher": "Insider Monkey",
+      "title": "Nasdaq 100 Ends Worst Week Since 2020, S&P 500 In Correction Territory As AI Rout Sours Sentiment —   ANT, NVDA, TTWO, ZS, CRWD In Focus",
+      "link": "https://stocktwits.com/news-articles/markets/equity/nasdaq-100-ends-worst-week-since-2020-s-and-p-500-in-correction-territory-as-ai-rout-sours-sentiment-ant-nvda-ttwo-zs-crwd-in-focus/cNbm3xQR91W",
+      "publisher": "Stocktwits",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Intercontinental Exchange (ICE) Is Growing Revenue by 10%+, Yet Its Stock Is Down 25%: Is a Rebound Ahead?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/intercontinental-exchange-ice-growing-revenue-201528117.html",
-      "publisher": "Insider Monkey",
-      "related": "^GSPC",
-      "time": "Latest"
-    },
-    {
-      "title": "The Stock Market Is Flashing a Warning Seen Just 6 Times in 156 Years, and History Is Clear What Comes Next for Stocks",
-      "link": "https://www.fool.com/investing/2026/11/20/the-stock-market-is-flashing-a-warning-seen-just-6-times-in-156-years-and-history-is-clear-what-comes-next-for-stocks/",
+      "title": "Report: Goldman Sachs Predicts the S&P 500 Will Gain 26% in 12 Months",
+      "link": "https://www.fool.com/investing/2026/11/20/report-goldman-sachs-predicts-the-s-and-p-500-will-gain-26-in-12-months/",
       "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nvidia, Nasdaq Slide Deepens After Report of SEC Accounting Probe",
-      "link": "https://www.barrons.com/livecoverage/stock-market-news-today-112026/card/nvidia-nasdaq-slide-deepen-after-report-of-sec-accounting-probe-TOUogVLruSMvrJaVthCU?siteid=yhoof2&yptr=yahoo",
+      "title": "6 reasons stocks are falling, and what you should do about it",
+      "link": "https://www.cbsnews.com/news/why-stocks-are-falling-ai-fears/",
+      "publisher": "CBS News",
+      "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "Review & Preview: Hype Halted",
+      "link": "https://www.barrons.com/articles/stocks-today-indexes-enter-correction-tech-downturn-12e9de94?siteid=yhoof2&yptr=yahoo",
       "publisher": "Barrons.com",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Plunges to Seven-Month Low as Technology And Base Metal Sector Stocks Tumble",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-plunges-seven-213902176.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -321,13 +328,6 @@
       "title": "TSX Closer: Index Plunges 2.1% to Five-Month Low as Metals And Energy Stocks Slide",
       "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-plunges-2-213608800.html",
       "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX plunges 737 points as gold and oil selloff hits Canadian stocks",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-slip-amid-lower-133209570.html",
-      "publisher": "Investing.com",
       "related": "^GSPTSE",
       "time": "Latest"
     }
