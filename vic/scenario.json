@@ -1,0 +1,191 @@
+{
+  "id": "balanced-market-20y",
+  "horizonYears": 20,
+  "marketSize": 10000000,
+  "baseExpenseRatio": 0.18,
+  "fixedExpense": 450000,
+  "capitalRequirementRatio": 0.25,
+  "annualDebtInterestRate": 0.05,
+  "years": [
+    {
+      "year": 1,
+      "frequency": 0.13,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0
+    },
+    {
+      "year": 2,
+      "frequency": 0.14,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.04,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 3,
+      "frequency": 0.15,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.05,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 4,
+      "frequency": 0.14,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.04,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 5,
+      "frequency": 0.145,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.06,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.06
+    },
+    {
+      "year": 6,
+      "frequency": 0.135,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 7,
+      "frequency": 0.14,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 8,
+      "frequency": 0.16,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.07,
+      "catastropheFactor": 1.2,
+      "competitorRateChange": -0.04
+    },
+    {
+      "year": 9,
+      "frequency": 0.13,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.02,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 10,
+      "frequency": 0.14,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 11,
+      "frequency": 0.135,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.04,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 12,
+      "frequency": 0.14,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 13,
+      "frequency": 0.18,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.06,
+      "catastropheFactor": 1.65,
+      "competitorRateChange": 0.06
+    },
+    {
+      "year": 14,
+      "frequency": 0.14,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 15,
+      "frequency": 0.135,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 16,
+      "frequency": 0.14,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 17,
+      "frequency": 0.145,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.05,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 18,
+      "frequency": 0.16,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.05,
+      "catastropheFactor": 1.2,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 19,
+      "frequency": 0.135,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    },
+    {
+      "year": 20,
+      "frequency": 0.14,
+      "averageClaimSize": 5200,
+      "claimsInflation": 0.03,
+      "catastropheFactor": 1,
+      "competitorRateChange": 0.03
+    }
+  ],
+  "startingConfigurations": {
+    "debt": {
+      "startingCapital": 2000000,
+      "loan": 3000000,
+      "insureds": 2500,
+      "premium": 1180,
+      "marketSize": 10000000,
+      "competitor": 1250,
+      "marketing": 350000
+    },
+    "free": {
+      "startingCapital": 1500000,
+      "loan": 0,
+      "insureds": 1200,
+      "premium": 1250,
+      "marketSize": 10000000,
+      "competitor": 1250,
+      "marketing": 150000
+    }
+  }
+}
