@@ -34,7 +34,7 @@ import {dictionaries} from './i18n.js';
  }
  function pricingPanel(){return panel('pricing',`<p>${t('rateNote')}</p><div class="actions">${[[-3,'rateDown'],[0,'rateStable'],[5,'rateUp']].map(([v,k])=>`<button data-rate="${v}" class="${state.decisions.rate===v?'selected':''}">${t(k)}</button>`).join('')}</div><div class="fields">${field('rate','rate',state.decisions.rate,-50,100,.5)}${field('strict','strictness',state.decisions.strictness,0,100,1)}</div>`);}
  function marketingPanel(){return panel('marketingNav',`<p>${t('marketNote')}</p><div class="fields">${field('marketing','marketing',state.decisions.marketing,0,1e9,1000)}<label class="field"><span>${t('focus')}</span><select data-group="decision" data-key="focus">${[['general','general'],['growth','growthFocus'],['retention','retentionFocus']].map(([v,k])=>`<option value="${v}" ${state.decisions.focus===v?'selected':''}>${t(k)}</option>`).join('')}</select></label></div>`);}
- function forecast(q){return panel('preview',`<p>${t('previewNote')}</p><div class="list">${line('forecastPremium',money(q.premium))}${line('forecastCompetitor',money(q.competitor))}${line('leads',num(q.leads))}${line('conversion',pct(q.conversion))}${line('new',num(q.acquired))}${line('lost',num(q.lost))}${line('retention',pct(q.retention))}${line('insureds',num(q.insureds))}</div>`);}
+ function forecast(q){return panel('preview',`<p>${t('previewNote')}</p><div class="list">${line('forecastPremium',money(q.premium))}${line('forecastCompetitor',money(q.competitor))}${line('leads',num(q.leads))}${line('conversion',pct(q.conversion))}${line('new',num(q.acquired))}${line('lost',num(q.lost))}${line('retention',pct(q.retention))}${line('insureds',num(q.insureds))}</div>`).replace('<section class="panel">','<section class="panel" id="commercialForecast">');}
  function metrics(r){
  const equity=state.assets-state.debt, required=r?.required??Math.max(1,state.insureds*state.premium*state.scenario.capitalRequirementRatio), solvency=equity/required;
  return `<div class="kpis">${kpi('capital',money(equity),equity>0?'positive':'negative')}${kpi('solvency',pct(solvency),solvency>=1?'positive':'negative')}${kpi('insureds',num(state.insureds))}${kpi('share',pct(state.insureds/state.marketSize))}${kpi('combined',pct(r?.combined),r?.combined>1?'negative':'')}${kpi('net',money(r?.net),r?.net<0?'negative':'')}${kpi('earned',money(r?.earned))}${kpi('claims',money(r?.claims))}${kpi('written',money(r?.written))}${kpi('lossRatio',pct(r?.lossRatio))}${kpi('expenseRatio',pct(r?.expenseRatio))}${kpi('underwriting',money(r?.underwriting))}${kpi('new',num(r?.acquired))}${kpi('lost',num(r?.lost))}${kpi('count',num(r?.count))}${kpi('trust',num(state.company.trust,0)+'/100')}</div>`;
@@ -74,12 +74,13 @@ import {dictionaries} from './i18n.js';
  root.addEventListener('change',async e=>{
  const el=e.target;if(el.id==='scenarioFile'&&el.files[0]){try{state.scenario=validateScenario(JSON.parse(await el.files[0].text()));error='';update()}catch{error=t('invalidScenario');render()}return}
  const g=el.dataset.group,k=el.dataset.key;if(!state||!g||g==='config')return;
- if(g==='override'){if(el.value!==''&&!el.checkValidity()){el.reportValidity();return}const o=state.overrides[state.year]??={};if(el.value==='')delete o[k];else o[k]=Number(el.value)/(k==='claimsInflation'?100:1);update();return}
+ if(g==='override'){if(el.value!==''&&!el.checkValidity()){el.reportValidity();return}const o=state.overrides[state.year]??={};if(el.value==='')delete o[k];else o[k]=Number(el.value)/(k==='claimsInflation'?100:1);saveOK=storage.save(state);return}
  if(!el.checkValidity()){el.reportValidity();return}
  const val=el.tagName==='SELECT'?el.value:Number(el.value);
  if(g==='decision')state.decisions[k]=val;
  if(g==='objective')state.objectives[k]=val;
- update();
+ saveOK=storage.save(state);
+ if(g==='decision'&&state.status==='active'){const forecastNode=root.querySelector('#commercialForecast');if(forecastNode)forecastNode.outerHTML=forecast(preview(state));root.querySelectorAll('[data-rate]').forEach(b=>b.classList.toggle('selected',Number(b.dataset.rate)===state.decisions.rate));}
  });
  root.addEventListener('submit',e=>{if(e.target.id!=='startForm')return;e.preventDefault();const c=config,keys=['startingCapital','loan','insureds','premium','marketSize','competitor','marketing'];if(!c.name.trim()||keys.some(k=>!Number.isFinite(c[k])||c[k]<0)||c.startingCapital<=0||c.premium<=0||c.competitor<=0||c.insureds<1||c.insureds>c.marketSize||(c.mode==='debt'&&c.loan<=0)){error=t('invalidConfig');render();return}state=init({...c,loan:c.mode==='free'?0:c.loan},scenario,language,globalThis.crypto?.randomUUID?.()||'vic-'+Date.now());error='';update()});
  fetch('./scenario.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(s=>{scenario=validateScenario(s);if(!state)setup('free');render()}).catch(()=>{root.textContent='VIC OS — Scenario unavailable / Scénario indisponible.'});
