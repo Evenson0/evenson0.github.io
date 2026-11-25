@@ -1,0 +1,2 @@
+const KEY='vic.os.save.v1', LANG='vic.os.lang';
+export const storage={load(){try{const s=JSON.parse(localStorage.getItem(KEY));return s?.version===1&&s.companyId&&Array.isArray(s.history)?s:null}catch{return null}},save(s){try{localStorage.setItem(KEY,JSON.stringify(s));return true}catch{return false}},clear(){try{localStorage.removeItem(KEY)}catch{}},language(){try{return localStorage.getItem(LANG)==='fr'?'fr':'en'}catch{return 'en'}},setLanguage(l){try{localStorage.setItem(LANG,l)}catch{}}};
