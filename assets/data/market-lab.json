@@ -1,68 +1,68 @@
 {
-  "updated_at": "2026-11-24T22:30:06.566236+00:00",
+  "updated_at": "2026-11-25T21:45:09.953194+00:00",
   "assets": {
     "Indices": [
       {
         "symbol": "^GSPC",
         "name": "S&P 500",
-        "price": 7201.0898,
-        "change_pct": -0.499,
+        "price": 7182.7798,
+        "change_pct": -0.254,
         "low_52w": 6343.7202,
         "high_52w": 7818.9302
       },
       {
         "symbol": "^IXIC",
         "name": "Nasdaq Composite",
-        "price": 23733.5352,
-        "change_pct": -1.478,
+        "price": 23585.8027,
+        "change_pct": -0.622,
         "low_52w": 20794.6406,
         "high_52w": 27599.7891
       },
       {
         "symbol": "^DJI",
         "name": "Dow Jones",
-        "price": 50018.6992,
-        "change_pct": 0.854,
+        "price": 50182.9492,
+        "change_pct": 0.328,
         "low_52w": 45166.6406,
         "high_52w": 54349.1211
       },
       {
         "symbol": "^GSPTSE",
         "name": "S&P/TSX Composite",
-        "price": 33962.3008,
-        "change_pct": -0.352,
-        "low_52w": 30604.4004,
+        "price": 34179.9883,
+        "change_pct": 0.641,
+        "low_52w": 30900.6992,
         "high_52w": 36957.6016
       },
       {
         "symbol": "XIU.TO",
         "name": "S&P/TSX 60 ETF",
-        "price": 51.44,
-        "change_pct": -0.31,
-        "low_52w": 45.37,
+        "price": 51.3,
+        "change_pct": -0.272,
+        "low_52w": 45.86,
         "high_52w": 54.9
       },
       {
         "symbol": "^RUT",
         "name": "Russell 2000",
-        "price": 2684.9419,
-        "change_pct": 0.572,
+        "price": 2704.061,
+        "change_pct": 0.712,
         "low_52w": 2414.01,
         "high_52w": 3068.4199
       },
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10467.0703,
-        "change_pct": -0.131,
-        "low_52w": 9534.9004,
+        "price": 10426.9404,
+        "change_pct": -0.384,
+        "low_52w": 9609.5,
         "high_52w": 10910.5996
       },
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 56436.6484,
-        "change_pct": -5.059,
+        "price": 58644.6289,
+        "change_pct": 3.912,
         "low_52w": 48659.5195,
         "high_52w": 72366.3438
       }
@@ -71,57 +71,57 @@
       {
         "symbol": "AAPL",
         "name": "Apple",
-        "price": 354.07,
-        "change_pct": 1.429,
+        "price": 355.58,
+        "change_pct": 0.426,
         "low_52w": 246.63,
         "high_52w": 356.27
       },
       {
         "symbol": "MSFT",
         "name": "Microsoft",
-        "price": 496.13,
-        "change_pct": 0.737,
+        "price": 489.93,
+        "change_pct": -1.25,
         "low_52w": 352.83,
         "high_52w": 555.8
       },
       {
         "symbol": "NVDA",
         "name": "NVIDIA",
-        "price": 155.38,
-        "change_pct": -5.859,
+        "price": 149.3,
+        "change_pct": -3.913,
         "low_52w": 125.53,
         "high_52w": 239.24
       },
       {
         "symbol": "AMZN",
         "name": "Amazon",
-        "price": 252.29,
-        "change_pct": -1.214,
+        "price": 244.43,
+        "change_pct": -3.115,
         "low_52w": 198.79,
         "high_52w": 284.02
       },
       {
         "symbol": "RY.TO",
         "name": "Royal Bank",
-        "price": 269.64,
-        "change_pct": -0.24,
-        "low_52w": 211.39,
+        "price": 269.26,
+        "change_pct": -0.141,
+        "low_52w": 214.09,
         "high_52w": 305.74
       },
       {
         "symbol": "SHOP.TO",
         "name": "Shopify",
-        "price": 188.85,
-        "change_pct": -2.13,
+        "price": 189.67,
+        "change_pct": 0.434,
         "low_52w": 130.71,
         "high_52w": 252.53
       },
       {
         "symbol": "CNR.TO",
         "name": "Canadian National",
-        "price": 178.91,
-        "change_pct": 0.528,
-        "low_52w": 128.08,
+        "price": 179.66,
+        "change_pct": 0.419,
+        "low_52w": 130.69,
         "high_52w": 183.92
       }
     ],
@@ -129,32 +129,32 @@
       {
         "symbol": "^IRX",
         "name": "US 13-week yield",
-        "price": 4.168,
-        "change_pct": 0.506,
+        "price": 4.155,
+        "change_pct": -0.312,
         "low_52w": 3.507,
         "high_52w": 4.168
       },
       {
         "symbol": "^FVX",
         "name": "US 5-year yield",
-        "price": 4.712,
-        "change_pct": -0.338,
+        "price": 4.66,
+        "change_pct": -1.104,
         "low_52w": 3.512,
         "high_52w": 5.089
       },
       {
         "symbol": "^TNX",
         "name": "US 10-year yield",
-        "price": 4.904,
-        "change_pct": -0.285,
+        "price": 4.848,
+        "change_pct": -1.142,
         "low_52w": 3.962,
         "high_52w": 5.311
       },
       {
         "symbol": "^TYX",
         "name": "US 30-year yield",
-        "price": 5.292,
-        "change_pct": -0.038,
+        "price": 5.235,
+        "change_pct": -1.077,
         "low_52w": 4.633,
         "high_52w": 5.665
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4266,
-        "change_pct": -0.508,
+        "price": 1.4214,
+        "change_pct": -1.053,
         "low_52w": 1.3492,
-        "high_52w": 1.4344
+        "high_52w": 1.4365
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.0966,
-        "change_pct": -0.049,
-        "low_52w": 1.0966,
+        "price": 1.0978,
+        "change_pct": 0.642,
+        "low_52w": 1.0908,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3111,
-        "change_pct": 0.128,
-        "low_52w": 1.3086,
+        "price": 1.3117,
+        "change_pct": 0.634,
+        "low_52w": 1.3035,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.26,
-        "change_pct": 0.207,
+        "price": 159.193,
+        "change_pct": 0.116,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,33 +197,33 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 3555.1001,
-        "change_pct": -2.637,
+        "price": 3602.8,
+        "change_pct": 1.148,
         "low_52w": 3515.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 81.69,
-        "change_pct": 1.896,
+        "price": 84.12,
+        "change_pct": 2.523,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.67,
-        "change_pct": 15.264,
+        "price": 3.685,
+        "change_pct": 10.894,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 5.4845,
-        "change_pct": -2.532,
-        "low_52w": 4.962,
+        "price": 5.4755,
+        "change_pct": 2.107,
+        "low_52w": 4.9995,
         "high_52w": 6.8035
       }
     ]
@@ -231,62 +231,76 @@
   "yield_curve": [
     {
       "term": "3M",
-      "value": 4.168
+      "value": 4.155
     },
     {
       "term": "5Y",
-      "value": 4.712
+      "value": 4.66
     },
     {
       "term": "10Y",
-      "value": 4.904
+      "value": 4.848
     },
     {
       "term": "30Y",
-      "value": 5.292
+      "value": 5.235
     }
   ],
   "news": [
     {
-      "title": "Wall Street's 2027 earnings hopes may be dead on arrival unless the Fed blinks in December",
-      "link": "https://finance.yahoo.com/markets/article/wall-streets-2027-earnings-hopes-may-be-dead-on-arrival-unless-the-fed-blinks-in-december-174154719.html",
-      "publisher": "Yahoo Finance",
+      "title": "Update: US Equity Indexes Mixed, Treasury Yields Drop as Investors Rotate Out of Chipmakers While Assessing Trade Tariffs",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-treasury-213222387.html",
+      "publisher": "MT Newswires",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today, Nov. 24: Hecla Mining Slides as Silver Prices Fall on Rate-Hike Worries",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/11/24/stock-market-today-nov-24-hecla-mining-slides-as-silver-prices-fall-on-rate-hike-worries/",
-      "publisher": "Motley Fool",
+      "title": "Nasdaq Plunges 4.6% Before Dramatic Rebound. Wall Street Faces A Triple Threat From AI, Inflation And Trump Tariffs.",
+      "link": "https://www.ibtimes.com/us-stocks-recover-ai-inflation-tariff-selloff-3810199",
+      "publisher": "International Business Times",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Dow Jones Futures: Nvidia, Anthropic Lead AI Retreat But Many Sectors Strong; Fed Inflation Data Due",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-anthropic-ai-retreat-fed-inflation-data/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "Is the market experiencing a 'dead cat' bounce?",
+      "link": "https://finance.yahoo.com/video/is-the-market-experiencing-a-dead-cat-bounce-212704552.html",
+      "publisher": "Yahoo Finance Video",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Stock Market Today, Nov. 24: Tech Sell-Off Drags Nasdaq as Dow Gains on Value Rotation",
-      "link": "https://www.fool.com/coverage/stock-market-today/2026/11/24/stock-market-today-nov-24-tech-sell-off-drags-nasdaq-as-dow-gains-on-value-rotation/",
-      "publisher": "Motley Fool",
+      "title": "Alumis (ALMS): 532.60% Analyst Upside, but Can It Find the Partner It Needs?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/alumis-alms-532-60-analyst-212534951.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Morning Movers: Dick’s Sporting and Dollar Tree gain following quarterly reports",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/morning-movers-dick-sporting-dollar-220046732.html",
-      "publisher": "TipRanks",
+      "title": "Lumen (LUMN) Has Over $13.5 Billion in Connectivity Deals. Why Is It Still Below $5?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/lumen-lumn-over-13-5-212514028.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nasdaq, S&P 500 slip following Monday's Nvidia-fueled rally",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-dip-chip-105355594.html",
-      "publisher": "Reuters",
+      "title": "Dauch (DCH) Trades at Just 4× Estimated 2027 Earnings. What’s Holding It Back?",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dauch-dch-trades-just-4-212450568.html",
+      "publisher": "Insider Monkey",
       "related": "^GSPC",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX Closer: Index Rebounds From Tuesday's Losses as Base Metals And Energy Stocks Advance",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/tsx-closer-index-rebounds-tuesday-212956748.html",
+      "publisher": "MT Newswires",
+      "related": "^GSPTSE",
+      "time": "Latest"
+    },
+    {
+      "title": "TSX futures slip amid deepening tech selloff, U.S. tariff reports",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-slip-amid-deepening-135409021.html",
+      "publisher": "Investing.com",
+      "related": "^GSPTSE",
       "time": "Latest"
     },
     {
@@ -314,20 +328,6 @@
       "title": "Canadian Stocks Recover as Huang’s Return Fuels Metals, Tech",
       "link": "https://finance.yahoo.com/markets/stocks/articles/canadian-stocks-recover-huang-return-155034396.html",
       "publisher": "Bloomberg",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "S&P/TSX Composite Index Rises Sharply As Base Metals and Information Technology Sectors Jump",
-      "link": "https://finance.yahoo.com/markets/world-indices/articles/p-tsx-composite-index-rises-152558183.html",
-      "publisher": "MT Newswires",
-      "related": "^GSPTSE",
-      "time": "Latest"
-    },
-    {
-      "title": "TSX notches best day since November 2023 as base metals, tech lift sentiment",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-rise-wall-street-133418863.html",
-      "publisher": "Investing.com",
       "related": "^GSPTSE",
       "time": "Latest"
     }
