@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T21:45:09.953194+00:00",
+  "updated_at": "2026-11-26T03:48:11.381741+00:00",
   "assets": {
     "Indices": [
       {
@@ -53,7 +53,7 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10426.9404,
+        "price": 10426.9004,
         "change_pct": -0.384,
         "low_52w": 9609.5,
         "high_52w": 10910.5996
@@ -61,9 +61,9 @@
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 58644.6289,
-        "change_pct": 3.912,
-        "low_52w": 48659.5195,
+        "price": 57831.8516,
+        "change_pct": 1.439,
+        "low_52w": 49001.5,
         "high_52w": 72366.3438
       }
     ],
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4214,
-        "change_pct": -1.053,
+        "price": 1.422,
+        "change_pct": -0.369,
         "low_52w": 1.3492,
         "high_52w": 1.4365
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.0978,
-        "change_pct": 0.642,
+        "price": 1.0961,
+        "change_pct": -0.009,
         "low_52w": 1.0908,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3117,
-        "change_pct": 0.634,
+        "price": 1.3098,
+        "change_pct": -0.102,
         "low_52w": 1.3035,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.193,
-        "change_pct": 0.116,
+        "price": 159.198,
+        "change_pct": -0.04,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 3602.8,
-        "change_pct": 1.148,
+        "price": 3604.7,
+        "change_pct": 1.202,
         "low_52w": 3515.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.12,
-        "change_pct": 2.523,
+        "price": 84.34,
+        "change_pct": 2.791,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.685,
-        "change_pct": 10.894,
+        "price": 3.681,
+        "change_pct": 10.773,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 5.4755,
-        "change_pct": 2.107,
+        "price": 5.4905,
+        "change_pct": 2.387,
         "low_52w": 4.9995,
         "high_52w": 6.8035
       }
@@ -248,44 +248,44 @@
   ],
   "news": [
     {
-      "title": "Update: US Equity Indexes Mixed, Treasury Yields Drop as Investors Rotate Out of Chipmakers While Assessing Trade Tariffs",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-treasury-213222387.html",
-      "publisher": "MT Newswires",
+      "title": "Dow Jones Futures Rise; Market Goes On Wild Ride As Nasdaq Slashes Losses",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nasdaq Plunges 4.6% Before Dramatic Rebound. Wall Street Faces A Triple Threat From AI, Inflation And Trump Tariffs.",
-      "link": "https://www.ibtimes.com/us-stocks-recover-ai-inflation-tariff-selloff-3810199",
-      "publisher": "International Business Times",
+      "title": "Stocks rally in Asia, unrocked by US tariffs",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/asia-shares-bounce-ai-tariffs-013452194.html",
+      "publisher": "Reuters",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Is the market experiencing a 'dead cat' bounce?",
-      "link": "https://finance.yahoo.com/video/is-the-market-experiencing-a-dead-cat-bounce-212704552.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "Dow, S&P 500, Nasdaq Futures Edge Higher As Tech Rebounds After Selloff: DIS, VRTX, DE, CHTR In Focus",
+      "link": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-nasdaq-futures-edge-higher-as-tech-rebounds-after-selloff-dis-vrtx-de-chtr-in-focus/cNbxeL0R9ZE",
+      "publisher": "Stocktwits",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Alumis (ALMS): 532.60% Analyst Upside, but Can It Find the Partner It Needs?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/alumis-alms-532-60-analyst-212534951.html",
-      "publisher": "Insider Monkey",
+      "title": "Goldman Sachs lays out three signals stock investors should watch",
+      "link": "https://www.thestreet.com/investing/stocks/goldman-sachs-lays-out-three-signals-stock-investors-should-watch",
+      "publisher": "TheStreet",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Lumen (LUMN) Has Over $13.5 Billion in Connectivity Deals. Why Is It Still Below $5?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/lumen-lumn-over-13-5-212514028.html",
-      "publisher": "Insider Monkey",
+      "title": "Review & Preview: A Thanksgiving Reprieve",
+      "link": "https://www.barrons.com/articles/stocks-today-anthropic-gains-before-thanksgiving-f76f9d89?siteid=yhoof2&yptr=yahoo",
+      "publisher": "Barrons.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Dauch (DCH) Trades at Just 4× Estimated 2027 Earnings. What’s Holding It Back?",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/dauch-dch-trades-just-4-212450568.html",
-      "publisher": "Insider Monkey",
+      "title": "Vertex Pharmaceuticals Has Turned $10,000 Into $61,660 Over 10 Years. Here's What Could Come Next",
+      "link": "https://www.fool.com/investing/2026/11/25/vertex-pharmaceuticals-has-turned-10000-into-x-ove/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
