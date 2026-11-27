@@ -19,7 +19,7 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
         <button type="button" data-act-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
-    <h1 data-copy="hero">12 semaines. Des résultats, pas des intentions.</h1>
+    <h1 data-copy="hero">9 semaines. Des résultats, pas des intentions.</h1>
     <p id="act-intro">Choisis un défi, tente-le et garde une trace de ce que tu as appris.</p>
     <p class="act-promise" data-copy="promise">Des exploits qui comptent, pas des points à collectionner.</p>
     <div class="act-training-axes" aria-label="Axes de progression"><span data-copy="axisMind">Esprit</span><span data-copy="axisBody">Corps</span><span data-copy="axisCourage">Courage</span><span data-copy="axisCreation">Création</span></div>
@@ -32,7 +32,7 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
 
   <section class="act-annual-vision" aria-labelledby="act-year-heading">
     <div>
-      <p class="act-eyebrow">OBJECTIF · NOVEMBRE 2026 — NOVEMBRE 2027</p>
+      <p class="act-eyebrow">OBJECTIF · 30 NOVEMBRE 2026 — 29 NOVEMBRE 2027</p>
       <h3 id="act-year-heading">365 jours pour réaliser des premières</h3>
       <p id="act-year-subtitle">Des ambitions audacieuses, des choix libres, des progrès réels.</p>
       <p class="act-stats" id="act-stats"></p>
@@ -40,15 +40,15 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
     <button type="button" id="act-year-cta" class="act-primary">Explorer mes grandes ambitions</button>
   </section>
 
-  <section class="act-odyssey" aria-label="Progression sur douze semaines">
+  <section class="act-odyssey" aria-label="Progression sur neuf semaines">
     <div class="act-odyssey-head">
       <div>
-        <span class="act-eyebrow" data-copy="odysseyTitle" id="act-odyssey-title">12 SEMAINES · 5 ÉPREUVES PAR SEMAINE</span>
+        <span class="act-eyebrow" data-copy="odysseyTitle" id="act-odyssey-title">9 SEMAINES · 5 ÉPREUVES PAR SEMAINE</span>
         <p id="act-odyssey-intro">Des résultats mesurables, pas des tâches vagues.</p>
       </div>
       <p class="act-odyssey-progress" id="act-odyssey-progress" aria-live="polite"></p>
     </div>
-    <div class="act-odyssey-ladder" id="act-odyssey-ladder" role="img" aria-label="Progression des douze semaines"></div>
+    <div class="act-odyssey-ladder" id="act-odyssey-ladder" role="img" aria-label="Progression des neuf semaines"></div>
   </section>
 
   <nav class="act-views" aria-label="Parcourir Activities">
@@ -116,7 +116,7 @@ excerpt: "Un carnet de défis qui me pousse à créer, découvrir, bouger et pro
       <li data-copy="rule4">Le carnet garde les décisions et les leçons. Toi seul valides tes réalisations.</li>
     </ol>
     <div class="act-links">
-      <a href="https://github.com/Evenson0/evenson0.github.io/blob/master/ODYSSEE.md" target="_blank" rel="noopener noreferrer">Programme 12 semaines</a>
+      <a href="https://github.com/Evenson0/evenson0.github.io/blob/master/ODYSSEE.md" target="_blank" rel="noopener noreferrer">Programme 9 semaines</a>
       <a href="{{ '/becoming/' | relative_url }}">Becoming</a>
       <a href="{{ '/list-100/' | relative_url }}" data-copy="listLink">Liste 100</a>
       <a href="{{ '/memories/' | relative_url }}" data-copy="memoriesLink">Memories</a>
