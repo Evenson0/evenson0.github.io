@@ -1,11 +1,11 @@
 ---
 title: Exam P · January 16 · Explainability in P&C Pricing
 title_fr: Examen P · 16 janvier · Explicabilité en tarification IARD
-cycle: foundations-01
+cycle: superseded-foundations-plan
 cycle_week: 11
 start_date: 2027-01-11
 end_date: 2027-01-17
-status: planned
+status: archived
 active:
 - actuarial-exam-1
 - research-program-interpretability
