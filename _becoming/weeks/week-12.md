@@ -1,11 +1,11 @@
 ---
 title: P Post-exam Review · Fairness in P&C Pricing
 title_fr: Bilan après P · Équité en tarification IARD
-cycle: foundations-01
+cycle: superseded-foundations-plan
 cycle_week: 12
 start_date: 2027-01-18
 end_date: 2027-01-24
-status: planned
+status: archived
 active:
 - actuarial-exam-1
 - research-actuarial-calibration-fairness
