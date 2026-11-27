@@ -1,5 +1,10 @@
 # ODYSSÉE — 12 semaines pour prouver le progrès
 
+## CALENDRIER ACTUEL — 27 novembre 2026
+
+Le programme **redémarre le lundi 30 novembre 2026**, pour **9 niveaux**, jusqu'au dimanche 31 janvier 2027. L'examen P est le **samedi 16 janvier 2027**, au niveau **7** (11–17 janvier). Les niveaux 8 et 9 (18–31 janvier) portent sur l'après-examen et la recherche actuarielle. Les anciens niveaux 7–9 sont préservés comme archives `odyssee-archive`; les anciens niveaux 10–12 deviennent les niveaux actifs 7–9. Les niveaux 1–6 sont décalés de 21 jours. La table historique de douze niveaux ci-dessous reste une référence éditoriale **obsolète pour les dates et la numérotation** : utiliser les métadonnées de `_data/activities/challenges.yml` comme source actuelle. Aucune réussite ni résultat d'examen ne sont présumés.
+
+
 **Programme :** lundi 9 novembre 2026 au dimanche 31 janvier 2027.  
 **Page publique :** https://evenson0.github.io/activities/  
 **Statut :** 71 épreuves *proposées*, aucune réalisation présumée. Les 60 épreuves de compétence et 11 épreuves de terrain facultatives sont intégrées dans `_data/activities/challenges.yml`, avec `series: odyssee`, `level`, `axis`, `measure`. L'historique antérieur est conservé : il n'est pas supprimé mais apparaît dans les archives.
