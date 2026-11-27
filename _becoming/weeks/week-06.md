@@ -1,25 +1,26 @@
 ---
-title: P Exam Mode · GLM Validation
-title_fr: Mode examen P · Validation d'un GLM
+title: P Simulations · GLM, GAM, and ANAM
+title_fr: Simulations P · GLM, GAM et ANAM
 cycle: foundations-01
 cycle_week: 6
-start_date: 2026-12-07
-end_date: 2026-12-13
+start_date: 2027-01-04
+end_date: 2027-01-10
 status: planned
 active:
 - actuarial-exam-1
-- research-actuarial-glm-validation
+- research-pricing-flexible-models
 - physical-training-consistency
 maintenance:
 - english-conversation-practice
-- lean-theorem-proving
+- lean-library-navigation
+- writing-literary-essay
 quests:
 - domain: actuarial
   node: actuarial-exam-1
-  task: 'Exam P priority: Cumulative probability practice and the two weakest areas in the error log. Correct each
-    set and update the error log.'
-  task_fr: 'Priorité P : Pratique cumulative des probabilités et deux principales faiblesses du journal d’erreurs.
-    Corriger chaque série et mettre à jour le journal d’erreurs.'
+  task: 'Exam P priority: Exam simulations, detailed corrections and final weak areas. Correct each set and update
+    the error log.'
+  task_fr: 'Priorité P : Simulations d’examen, corrections détaillées et dernières faiblesses. Corriger chaque série
+    et mettre à jour le journal d’erreurs.'
   completion:
   - Complete focused and cumulative practice
   - Correct errors and reattempt them without solutions
@@ -29,55 +30,65 @@ quests:
   - Corriger les erreurs et refaire les exercices sans solution
   - Faire le bilan et choisir les prochaines faiblesses à travailler
 - domain: research
-  node: research-actuarial-glm-validation
-  task: Read Goldburd pages 75–85 and write a concise note on validation, diagnostics, and model reliability.
-  task_fr: Lire les pages 75 à 85 de Goldburd et rédiger une note concise sur la validation, les diagnostics et
-    la fiabilité des modèles.
+  node: research-pricing-flexible-models
+  task: Build a small reproducible comparison between a GLM and a more flexible additive model, and include ANAM
+    only if the implementation is ready.
+  task_fr: Construire une petite comparaison reproductible entre un GLM et un modèle additif plus flexible, et inclure
+    ANAM uniquement si l'implémentation est prête.
   completion:
-  - Read Goldburd pages 75–85
-  - Understand validation objectives
-  - Identify useful diagnostic tools
-  - Understand why in-sample fit is insufficient
-  - Identify signs of model instability
-  - Connect validation to insurance pricing practice
-  - Write one concise technical note
+  - Use one common dataset
+  - Fit a GLM baseline
+  - Fit one flexible additive model
+  - Use comparable evaluation metrics
+  - Compare predictive behavior
+  - Compare learned structure
+  - Compare interpretability
+  - Record where complexity improves the model
+  - Record where complexity adds little value
+  - Keep the work reproducible
   completion_fr:
-  - Lire les pages 75 à 85 de Goldburd
-  - Comprendre les objectifs de validation
-  - Identifier les outils de diagnostic utiles
-  - Comprendre pourquoi l'ajustement sur les données d'entraînement ne suffit pas
-  - Identifier les signes d'instabilité d'un modèle
-  - Relier la validation à la pratique de tarification en assurance
-  - Rédiger une note technique concise
+  - Utiliser un même jeu de données
+  - Ajuster un GLM de référence
+  - Ajuster un modèle additif plus flexible
+  - Utiliser des mesures d'évaluation comparables
+  - Comparer le comportement prédictif
+  - Comparer les structures apprises
+  - Comparer l'interprétabilité
+  - Noter où la complexité améliore le modèle
+  - Noter où la complexité apporte peu de valeur
+  - Garder le travail reproductible
+- domain: writing
+  node: writing-literary-essay
+  task: If the selected literary book is finished, begin an 800–1,200 word literary essay; otherwise continue reading
+    without forcing the essay.
+  task_fr: Si le livre choisi est terminé, commencer un essai littéraire de 800 à 1 200 mots ; sinon poursuivre
+    la lecture sans forcer l'essai.
 - domain: lean
-  node: lean-theorem-proving
-  task: Spend one focused session repairing, simplifying, or improving a Lean proof already written.
-  task_fr: Consacrer une séance ciblée à corriger, simplifier ou améliorer une preuve Lean déjà écrite.
+  node: lean-library-navigation
+  task: Learn to search mathlib and reuse existing lemmas in one small proof.
+  task_fr: Apprendre à chercher dans mathlib et réutiliser des lemmes existants dans une petite preuve.
 - domain: english
   node: english-conversation-practice
-  task: Complete one English conversation and explain covariance or correlation without relying only on formulas.
-  task_fr: Compléter une conversation en anglais et expliquer la covariance ou la corrélation sans dépendre uniquement
-    des formules.
+  task: Complete one English conversation structured like a professional meeting.
+  task_fr: Compléter une conversation en anglais structurée comme une réunion professionnelle.
 - domain: physical
   node: physical-training-consistency
-  task: Continue the current physical protocol while monitoring cumulative fatigue and recovery.
-  task_fr: Poursuivre le protocole physique actuel tout en surveillant la fatigue cumulative et la récupération.
+  task: Continue the normal physical protocol while balancing P preparation and recovery.
+  task_fr: Poursuivre le protocole physique normal en équilibrant préparation P et récupération.
   completion:
-  - Morning routine followed consistently
-  - Strength schedule followed
-  - Daily movement target pursued
-  - Evening routine followed consistently
-  - Cumulative fatigue reviewed
-  - Recovery problems recorded if they appear
+  - Maintain normal morning routine
+  - Maintain normal strength schedule
+  - Continue daily movement target
+  - Maintain normal evening routine
+  - Review recovery during P preparation
   completion_fr:
-  - Routine du matin suivie régulièrement
-  - Programme de musculation suivi
-  - Objectif de mouvement quotidien poursuivi
-  - Routine du soir suivie régulièrement
-  - Fatigue cumulative revue
-  - Problèmes de récupération notés s'ils apparaissent
+  - Maintenir la routine normale du matin
+  - Maintenir le programme normal de musculation
+  - Poursuivre l'objectif de mouvement quotidien
+  - Maintenir la routine normale du soir
+  - Revoir la récupération pendant la préparation P
 days:
-- date: 2026-12-07
+- date: 2027-01-04
   weekday: monday
   title: Actuarial focus · Monday
   title_fr: Priorité actuarielle · Lundi
@@ -85,16 +96,14 @@ days:
   - domain: actuarial
     node: actuarial-exam-1
     time: 60–90 min
-    text: Review the prior error log and work on the first priority. Cumulative probability practice and the two
-      weakest areas in the error log.
-    text_fr: Revoir le journal d’erreurs et travailler la première priorité. Pratique cumulative des probabilités
-      et deux principales faiblesses du journal d’erreurs.
-  - domain: research
-    node: research-actuarial-glm-validation
-    time: 30–45 min
-    text: Read Goldburd pages 75–78 and identify the main purposes of model validation.
-    text_fr: Lire les pages 75 à 78 de Goldburd et identifier les principaux objectifs de validation d'un modèle.
-- date: 2026-12-08
+    text: Review the prior error log and work on the first priority. Exam simulations, detailed corrections and
+      final weak areas.
+    text_fr: Revoir le journal d’erreurs et travailler la première priorité. Simulations d’examen, corrections détaillées
+      et dernières faiblesses.
+  - time: 15 min
+    text: Define the main P objective for the period leading to the January 16 exam.
+    text_fr: Définir l'objectif principal P pour la période menant à l'examen du 16 janvier.
+- date: 2027-01-05
   weekday: tuesday
   title: Actuarial focus · Tuesday
   title_fr: Priorité actuarielle · Mardi
@@ -102,16 +111,11 @@ days:
   - domain: actuarial
     node: actuarial-exam-1
     time: 60–90 min
-    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Cumulative probability practice
-      and the two weakest areas in the error log.'
-    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Pratique
-      cumulative des probabilités et deux principales faiblesses du journal d’erreurs.'
-  - domain: research
-    node: research-actuarial-glm-validation
-    time: 30–45 min
-    text: Read Goldburd pages 79–82 and take notes on diagnostics and model reliability.
-    text_fr: Lire les pages 79 à 82 de Goldburd et prendre des notes sur les diagnostics et la fiabilité du modèle.
-- date: 2026-12-09
+    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Exam simulations, detailed
+      corrections and final weak areas.'
+    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Simulations
+      d’examen, corrections détaillées et dernières faiblesses.'
+- date: 2027-01-06
   weekday: wednesday
   title: Actuarial focus · Wednesday
   title_fr: Priorité actuarielle · Mercredi
@@ -126,7 +130,12 @@ days:
     time: 30 min
     text: Reattempt prior errors without looking at solutions.
     text_fr: Refaire les erreurs antérieures sans consulter les solutions.
-- date: 2026-12-10
+  - domain: writing
+    node: writing-literary-essay
+    time: 30 min
+    text: Continue the selected literary book or outline the literary essay if the book is finished.
+    text_fr: Poursuivre le livre choisi ou préparer le plan de l'essai littéraire si le livre est terminé.
+- date: 2027-01-07
   weekday: thursday
   title: Actuarial focus · Thursday
   title_fr: Priorité actuarielle · Jeudi
@@ -134,21 +143,21 @@ days:
   - domain: actuarial
     node: actuarial-exam-1
     time: 60–90 min
-    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Cumulative probability practice
-      and the two weakest areas in the error log.'
-    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Pratique
-      cumulative des probabilités et deux principales faiblesses du journal d’erreurs.'
+    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Exam simulations, detailed
+      corrections and final weak areas.'
+    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Simulations
+      d’examen, corrections détaillées et dernières faiblesses.'
   - domain: research
-    node: research-actuarial-glm-validation
-    time: 30–45 min
-    text: Read Goldburd pages 83–85 and identify signs of model instability.
-    text_fr: Lire les pages 83 à 85 de Goldburd et identifier les signes d'instabilité d'un modèle.
+    node: research-pricing-flexible-models
+    time: 45–60 min
+    text: Prepare the common dataset and fit the GLM baseline for the flexible-model comparison.
+    text_fr: Préparer le jeu de données commun et ajuster le GLM de référence pour la comparaison des modèles flexibles.
   - domain: lean
-    node: lean-theorem-proving
+    node: lean-library-navigation
     time: 30–45 min
-    text: Repair or simplify one Lean proof already written.
-    text_fr: Corriger ou simplifier une preuve Lean déjà écrite.
-- date: 2026-12-11
+    text: Practice finding useful lemmas in mathlib for one small proof.
+    text_fr: S'entraîner à trouver des lemmes utiles dans mathlib pour une petite preuve.
+- date: 2027-01-08
   weekday: friday
   title: Actuarial focus · Friday
   title_fr: Priorité actuarielle · Vendredi
@@ -159,12 +168,11 @@ days:
     text: Work on the weakest P topic and write a short explanation of the recurring mistakes.
     text_fr: Travailler le thème P le plus faible et expliquer brièvement les erreurs récurrentes.
   - domain: research
-    node: research-actuarial-glm-validation
+    node: research-pricing-flexible-models
     time: 45–60 min
-    text: Draft the technical note on validation, diagnostics, stability, and insurance-pricing relevance.
-    text_fr: Rédiger la première version de la note technique sur la validation, les diagnostics, la stabilité et
-      leur pertinence en tarification d'assurance.
-- date: 2026-12-12
+    text: Fit one flexible additive model using the same dataset and target as the GLM.
+    text_fr: Ajuster un modèle additif flexible avec le même jeu de données et la même cible que le GLM.
+- date: 2027-01-09
   weekday: saturday
   title: Actuarial focus · Saturday
   title_fr: Priorité actuarielle · Samedi
@@ -179,10 +187,9 @@ days:
   - domain: english
     node: english-conversation-practice
     time: 60 min
-    text: Complete one English conversation and explain covariance, correlation, and independence in plain language.
-    text_fr: Compléter une conversation en anglais et expliquer la covariance, la corrélation et l'indépendance
-      en langage simple.
-- date: 2026-12-13
+    text: Complete an English conversation structured like a professional meeting.
+    text_fr: Compléter une conversation en anglais structurée comme une réunion professionnelle.
+- date: 2027-01-10
   weekday: sunday
   title: Actuarial focus · Sunday
   title_fr: Priorité actuarielle · Dimanche
@@ -194,18 +201,26 @@ days:
     text_fr: Corriger le travail du samedi, refaire les exercices manqués et mettre à jour le journal d’erreurs
       P.
   - domain: research
-    node: research-actuarial-glm-validation
-    time: 45 min
-    text: Clean and finalize the GLM validation note.
-    text_fr: Nettoyer et finaliser la note sur la validation des GLM.
+    node: research-pricing-flexible-models
+    time: 60 min
+    text: Compare the GLM and flexible additive model using common metrics and record where flexibility actually
+      helps.
+    text_fr: Comparer le GLM et le modèle additif flexible avec des mesures communes et noter où la flexibilité
+      apporte réellement quelque chose.
+  - domain: writing
+    node: writing-literary-essay
+    time: 30–45 min
+    text: Continue the literary book or begin the first 300–500 words of the essay if ready.
+    text_fr: Poursuivre le livre littéraire ou commencer les 300 à 500 premiers mots de l'essai si le moment est
+      venu.
   - domain: physical
     node: physical-training-consistency
     time: 15 min
-    text: Review fatigue, recovery, and whether the current physical workload remains sustainable.
-    text_fr: Revoir la fatigue, la récupération et vérifier si la charge physique actuelle reste soutenable.
+    text: Review physical consistency and recovery alongside P preparation.
+    text_fr: Revoir la régularité physique et la récupération pendant la préparation P.
   - time: 15–20 min
-    text: Complete the Becoming weekly review and prepare Week 07.
-    text_fr: Compléter la revue hebdomadaire Becoming et préparer la semaine 07.
+    text: Complete the Becoming weekly review and prepare Week 11.
+    text_fr: Compléter la revue hebdomadaire Becoming et préparer la semaine 11.
 completed: []
 ---
 
