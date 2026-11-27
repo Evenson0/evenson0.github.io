@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T21:38:17.227377+00:00",
+  "updated_at": "2026-11-27T03:48:42.937212+00:00",
   "assets": {
     "Indices": [
       {
@@ -61,8 +61,8 @@
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 57011.6211,
-        "change_pct": -2.785,
+        "price": 58559.5781,
+        "change_pct": 1.844,
         "low_52w": 49001.5,
         "high_52w": 72366.3438
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4249,
-        "change_pct": -0.167,
+        "price": 1.4239,
+        "change_pct": 0.166,
         "low_52w": 1.3492,
         "high_52w": 1.4365
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.0972,
-        "change_pct": 0.09,
+        "price": 1.0982,
+        "change_pct": 0.107,
         "low_52w": 1.0908,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3107,
-        "change_pct": -0.038,
+        "price": 1.3122,
+        "change_pct": 0.068,
         "low_52w": 1.3035,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.279,
-        "change_pct": 0.011,
+        "price": 159.224,
+        "change_pct": 0.006,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -197,32 +197,32 @@
       {
         "symbol": "GC=F",
         "name": "Gold",
-        "price": 3593.3999,
-        "change_pct": 1.629,
+        "price": 3654.8,
+        "change_pct": 3.366,
         "low_52w": 3515.3999,
         "high_52w": 5318.3999
       },
       {
         "symbol": "CL=F",
         "name": "WTI Crude",
-        "price": 84.91,
-        "change_pct": 1.47,
+        "price": 85.69,
+        "change_pct": 2.402,
         "low_52w": 55.27,
         "high_52w": 112.95
       },
       {
         "symbol": "NG=F",
         "name": "Natural Gas",
-        "price": 3.599,
-        "change_pct": 10.095,
+        "price": 3.6,
+        "change_pct": 10.125,
         "low_52w": 2.523,
         "high_52w": 7.46
       },
       {
         "symbol": "HG=F",
         "name": "Copper",
-        "price": 5.4335,
-        "change_pct": 1.894,
+        "price": 5.648,
+        "change_pct": 5.917,
         "low_52w": 5.1045,
         "high_52w": 6.8035
       }
@@ -248,44 +248,44 @@
   ],
   "news": [
     {
-      "title": "Disney Stock Just Closed at Its Highest Level Since April 2022",
-      "link": "https://247wallst.com/investing/2026/11/26/disney-stock-just-closed-at-its-highest-level-since-april-2022/",
-      "publisher": "24/7 Wall St.",
+      "title": "Stocks Are Plunging Right Now. Here's What History Says Investors Should Do.",
+      "link": "https://www.fool.com/investing/2026/11/26/stocks-are-plunging-right-now-heres-what-history-s/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Jim Cramer sends strong words to stock market investors",
-      "link": "https://www.thestreet.com/investing/stocks/jim-cramer-sends-strong-words-to-stock-market-investors",
-      "publisher": "TheStreet",
+      "title": "Asian Markets Mostly Higher as Sentiment Stabilizes",
+      "link": "https://www.wsj.com/finance/asian-markets-mostly-higher-as-sentiment-stabilizes-8f998c4d?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Is Bitcoin a Good Investment for Building Wealth After a 50% Drop?",
-      "link": "https://247wallst.com/investing/cryptocurrency/2026/11/26/is-bitcoin-a-good-investment-for-building-wealth-after-a-50-drop/",
-      "publisher": "24/7 Wall St.",
+      "title": "Shares find footing after bruising month, dollar set for third monthly gain",
+      "link": "https://finance.yahoo.com/markets/articles/shares-footing-bruising-month-dollar-020059656.html",
+      "publisher": "Reuters",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Wall Street Sees Upside in AstraZeneca PLC (AZN) as Shares Retreat",
-      "link": "https://finance.yahoo.com/healthcare/articles/wall-street-sees-upside-astrazeneca-203743976.html",
-      "publisher": "Insider Monkey",
+      "title": "Dow Jones Futures Rise; Look For This Bullish Market Signal On Black Friday",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&yptr=yahoo",
+      "publisher": "Investor's Business Daily",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Intuitive Surgical, Inc. (ISRG)’s Recurring Revenue and da Vinci 5 Platform Support Its 2027 Outlook",
-      "link": "https://finance.yahoo.com/healthcare/articles/intuitive-surgical-inc-isrg-recurring-203717231.html",
-      "publisher": "Insider Monkey",
+      "title": "U.S. stock futures rise sharply; Nasdaq up 1.7% in holiday-thinned trade",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-rise-holiday-003122658.html",
+      "publisher": "Investing.com",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "AbbVie Inc. (ABBV) Is Moving Beyond Humira. Is ABBV Stock a Buy for 2027?",
-      "link": "https://finance.yahoo.com/healthcare/articles/abbvie-inc-abbv-moving-beyond-203655398.html",
-      "publisher": "Insider Monkey",
+      "title": "Prediction: These 3 Consumer Stocks Will Beat the S&P 500 Over the Next 10 Years",
+      "link": "https://www.fool.com/investing/2026/11/26/prediction-these-3-consumer-stocks-will-beat-the-sp-500-over-the-next-10-years/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
@@ -297,7 +297,7 @@
       "time": "Latest"
     },
     {
-      "title": "TSX climbs nearly 1% on boost from battery metal stocks, labor market data",
+      "title": "TSX ends higher after whipsaw session, helped by battery metal stocks & labor data",
       "link": "https://finance.yahoo.com/markets/stocks/articles/canada-tsx-futures-flat-holiday-124054807.html",
       "publisher": "Investing.com",
       "related": "^GSPTSE",
