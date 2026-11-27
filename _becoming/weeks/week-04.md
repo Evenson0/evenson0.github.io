@@ -1,28 +1,27 @@
 ---
-title: Multivariate Probability · GLM Model Form
-title_fr: Probabilité multivariée · Forme d'un GLM
+title: Probability Consolidation · GLM Reproduction (Optional)
+title_fr: Consolidation des probabilités · Reproduction GLM (facultative)
 cycle: foundations-01
 cycle_week: 4
-start_date: 2026-11-23
-end_date: 2026-11-29
+start_date: 2026-12-21
+end_date: 2026-12-27
 status: planned
 active:
 - actuarial-exam-1
-- research-actuarial-glm-model-form
+- research-actuarial-glm-reproduction
 - physical-training-consistency
 maintenance:
 - english-conversation-practice
-- lean-theorem-proving
-- mathematics-proof-writing
+- lean-mathematics-in-lean
+- writing-reading-practice
 user_inputs:
   literary_book: À choisir / To be selected
-  finance_book: The Intelligent Investor
 quests:
 - domain: actuarial
   node: actuarial-exam-1
-  task: 'Exam P priority: Joint, marginal and conditional distributions; covariance and independence. Correct each
-    set and update the error log.'
-  task_fr: 'Priorité P : Lois conjointes, marginales et conditionnelles ; covariance et indépendance. Corriger chaque
+  task: 'Exam P priority: Mixed probability problems, solution selection and time management. Correct each set and
+    update the error log.'
+  task_fr: 'Priorité P : Problèmes mixtes de probabilités, choix des méthodes et gestion du temps. Corriger chaque
     série et mettre à jour le journal d’erreurs.'
   completion:
   - Complete focused and cumulative practice
@@ -33,86 +32,88 @@ quests:
   - Corriger les erreurs et refaire les exercices sans solution
   - Faire le bilan et choisir les prochaines faiblesses à travailler
 - domain: research
-  node: research-actuarial-glm-model-form
-  task: 'Read Goldburd pages 43–61 and write a technical note on insurance GLM model form.
+  node: research-actuarial-glm-reproduction
+  task: 'Optional: Finish Goldburd pages 86–104 and build the first complete reproducible version of the insurance
+    GLM project.
 
     '
-  task_fr: 'Lire les pages 43 à 61 de Goldburd et rédiger une note technique sur la forme des GLM en assurance.
+  task_fr: 'Facultatif : Terminer les pages 86 à 104 de Goldburd et construire la première version complète et reproductible
+    du projet GLM d''assurance.
 
     '
   completion:
-  - Understand target-variable choice
-  - Understand distribution choice
-  - Review variable selection
-  - Understand nonlinear transformations
-  - Understand splines
-  - Understand categorical grouping
-  - Understand interactions
-  - Write one technical note connecting the concepts
+  - Finish Goldburd pages 86–104
+  - Review model documentation
+  - Select or finalize the dataset
+  - Define the target variable
+  - Define predictors
+  - Document preprocessing
+  - Fit the baseline GLM
+  - Produce basic diagnostics
+  - Begin validation
+  - Keep the notebook reproducible
+  - Record unresolved technical questions
   completion_fr:
-  - Comprendre le choix de la variable cible
-  - Comprendre le choix de la distribution
-  - Revoir la sélection des variables
-  - Comprendre les transformations non linéaires
-  - Comprendre les splines
-  - Comprendre le regroupement des catégories
-  - Comprendre les interactions
-  - Rédiger une note technique reliant les concepts
-- domain: mathematics
-  node: mathematics-proof-writing
-  task: 'Write one complete nontrivial mathematical proof with explicit assumptions, logical steps, and conclusion.
+  - Terminer les pages 86 à 104 de Goldburd
+  - Revoir la documentation du modèle
+  - Sélectionner ou finaliser les données
+  - Définir la variable cible
+  - Définir les prédicteurs
+  - Documenter le prétraitement
+  - Ajuster le GLM de référence
+  - Produire des diagnostics de base
+  - Commencer la validation
+  - Garder le notebook reproductible
+  - Noter les questions techniques non résolues
+- domain: writing
+  node: writing-reading-practice
+  task: 'Optional: Revisit selected passages of the selected literary book; if unfinished, continue without a catch-up
+    quota while keeping P primary.
 
     '
-  task_fr: 'Rédiger une démonstration mathématique complète non triviale avec hypothèses, étapes logiques et conclusion
-    explicites.
+  task_fr: 'Facultatif : Revenir sur quelques passages du livre choisi ; si le livre est inachevé, poursuivre sans
+    quota de rattrapage en gardant P prioritaire.
 
     '
 - domain: lean
-  node: lean-theorem-proving
-  task: Study quantifiers and equality and formalize one proof using them.
-  task_fr: Étudier les quantificateurs et l'égalité et formaliser une preuve les utilisant.
-- domain: english
-  node: english-conversation-practice
-  task: 'Complete one English conversation and explain one actuarial or probability concept clearly.
+  node: lean-mathematics-in-lean
+  task: 'Optional: Begin Mathematics in Lean Chapter 2 and complete one small calculation proof.
 
     '
-  task_fr: 'Compléter une conversation en anglais et expliquer clairement un concept actuariel ou probabiliste.
+  task_fr: 'Facultatif : Commencer le chapitre 2 de Mathematics in Lean et compléter une petite preuve de calcul.
+
+    '
+- domain: english
+  node: english-conversation-practice
+  task: 'Optional: Complete one English conversation focused partly on professional introductions and work-related
+    conversation.
+
+    '
+  task_fr: 'Facultatif : Compléter une conversation en anglais portant en partie sur les présentations professionnelles
+    et les conversations liées au travail.
 
     '
 - domain: physical
   node: physical-training-consistency
-  task: 'Continue the current physical protocol and monitor whether the routine remains sustainable.
-
-    '
-  task_fr: 'Poursuivre le protocole physique actuel et vérifier que la routine reste soutenable.
-
-    '
+  task: Continue the current physical protocol without increasing training volume as Exam P approaches.
+  task_fr: Poursuivre le protocole physique actuel sans augmenter le volume d'entraînement à l'approche de l'examen
+    P.
   completion:
   - Morning routine followed consistently
   - Strength schedule followed
   - Daily movement target pursued
   - Evening routine followed consistently
-  - Recovery and fatigue reviewed at the end of the week
+  - Recovery reviewed
+  - No unnecessary increase in training volume
   completion_fr:
   - Routine du matin suivie régulièrement
   - Programme de musculation suivi
   - Objectif de mouvement quotidien poursuivi
   - Routine du soir suivie régulièrement
-  - Récupération et fatigue revues à la fin de la semaine
-- domain: writing
-  node: writing-reading-practice
-  task: 'Read portions 22–28 of 31 equal page portions of The Intelligent Investor. Start November 2 and finish
-    December 2, including the commentary and appendices you intend to read. Divide the chosen page range into 31;
-    take brief notes within the reading session.
-
-    '
-  task_fr: 'Lire les portions 22 à 28 sur 31 portions égales de L’Investisseur intelligent. Commencer le 2 novembre
-    et terminer le 2 décembre, commentaires et annexes à lire compris. Diviser la plage de pages choisie par 31
-    ; intégrer les notes brèves à la lecture.
-
-    '
+  - Récupération revue
+  - Aucune augmentation inutile du volume d'entraînement
 days:
-- date: 2026-11-23
+- date: 2026-12-21
   weekday: monday
   title: Actuarial focus · Monday
   title_fr: Priorité actuarielle · Lundi
@@ -120,41 +121,33 @@ days:
   - domain: actuarial
     node: actuarial-exam-1
     time: 60–90 min
-    text: Review the prior error log and work on the first priority. Joint, marginal and conditional distributions;
-      covariance and independence.
-    text_fr: Revoir le journal d’erreurs et travailler la première priorité. Lois conjointes, marginales et conditionnelles
-      ; covariance et indépendance.
+    text: Review the prior error log and work on the first priority. Mixed probability problems, solution selection
+      and time management.
+    text_fr: Revoir le journal d’erreurs et travailler la première priorité. Problèmes mixtes de probabilités, choix
+      des méthodes et gestion du temps.
   - domain: research
-    node: research-actuarial-glm-model-form
+    node: research-actuarial-glm-reproduction
     time: 30–45 min
-    text: 'Read Goldburd pages 43–47 and identify the main model-form decisions.
+    text: 'Optional, only if P preparation is on schedule: Read Goldburd pages 86–91 and identify the remaining
+      concepts needed for the reproduction.
 
       '
-    text_fr: 'Lire les pages 43 à 47 de Goldburd et identifier les principales décisions concernant la forme du
-      modèle.
-
-      '
-  - domain: mathematics
-    node: mathematics-proof-writing
-    time: 20–30 min
-    text: 'Select the mathematical statement that will be proved this week and write the assumptions clearly.
-
-      '
-    text_fr: 'Choisir l''énoncé mathématique qui sera démontré cette semaine et écrire clairement les hypothèses.
+    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Lire les pages 86 à 91 de Goldburd et identifier
+      les derniers concepts nécessaires à la reproduction.
 
       '
   - domain: writing
     node: writing-reading-practice
-    time: According to edition / Selon édition
-    text: 'Read portion 22/31 of The Intelligent Investor; cumulative target 22/31 of the chosen page range. Keep
-      notes brief.
+    time: 25–30 min
+    text: 'Optional, only if P preparation is on schedule: Revisit a passage already read in the selected literary
+      book, or continue if unfinished.
 
       '
-    text_fr: 'Lire la portion 22/31 de L’Investisseur intelligent ; cible cumulée 22/31 de la plage de pages choisie.
-      Garder les notes brèves.
+    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Revenir sur un passage déjà lu du livre choisi,
+      ou poursuivre si le livre n’est pas terminé.
 
       '
-- date: 2026-11-24
+- date: 2026-12-22
   weekday: tuesday
   title: Actuarial focus · Tuesday
   title_fr: Priorité actuarielle · Mardi
@@ -162,31 +155,31 @@ days:
   - domain: actuarial
     node: actuarial-exam-1
     time: 60–90 min
-    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Joint, marginal and conditional
-      distributions; covariance and independence.'
-    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Lois
-      conjointes, marginales et conditionnelles ; covariance et indépendance.'
+    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Mixed probability problems,
+      solution selection and time management.'
+    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Problèmes
+      mixtes de probabilités, choix des méthodes et gestion du temps.'
   - domain: research
-    node: research-actuarial-glm-model-form
+    node: research-actuarial-glm-reproduction
     time: 30–45 min
-    text: 'Read Goldburd pages 48–52 and take notes on distribution and variable choices.
+    text: 'Optional, only if P preparation is on schedule: Read Goldburd pages 92–97 and update the reproduction
+      plan.
 
       '
-    text_fr: 'Lire les pages 48 à 52 de Goldburd et prendre des notes sur le choix des distributions et des variables.
+    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Lire les pages 92 à 97 de Goldburd et mettre
+      à jour le plan de reproduction.
 
       '
   - domain: writing
     node: writing-reading-practice
-    time: According to edition / Selon édition
-    text: 'Read portion 23/31 of The Intelligent Investor; cumulative target 23/31 of the chosen page range. Keep
-      notes brief.
+    time: 25–30 min
+    text: 'Optional, only if P preparation is on schedule: Continue literary reading.
 
       '
-    text_fr: 'Lire la portion 23/31 de L’Investisseur intelligent ; cible cumulée 23/31 de la plage de pages choisie.
-      Garder les notes brèves.
+    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Poursuivre la lecture littéraire.
 
       '
-- date: 2026-11-25
+- date: 2026-12-23
   weekday: wednesday
   title: Actuarial focus · Wednesday
   title_fr: Priorité actuarielle · Mercredi
@@ -201,23 +194,18 @@ days:
     time: 30 min
     text: Reattempt prior errors without looking at solutions.
     text_fr: Refaire les erreurs antérieures sans consulter les solutions.
-  - domain: mathematics
-    node: mathematics-proof-writing
-    time: 30 min
-    text: Draft the main logical structure of the week's proof.
-    text_fr: Rédiger la structure logique principale de la démonstration de la semaine.
-  - domain: writing
-    node: writing-reading-practice
-    time: According to edition / Selon édition
-    text: 'Read portion 24/31 of The Intelligent Investor; cumulative target 24/31 of the chosen page range. Keep
-      notes brief.
+  - domain: research
+    node: research-actuarial-glm-reproduction
+    time: 20–30 min
+    text: 'Optional, only if P preparation is on schedule: Finalize the dataset, target, and predictors for the
+      GLM reproduction.
 
       '
-    text_fr: 'Lire la portion 24/31 de L’Investisseur intelligent ; cible cumulée 24/31 de la plage de pages choisie.
-      Garder les notes brèves.
+    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Finaliser les données, la variable cible et
+      les prédicteurs de la reproduction GLM.
 
       '
-- date: 2026-11-26
+- date: 2026-12-24
   weekday: thursday
   title: Actuarial focus · Thursday
   title_fr: Priorité actuarielle · Jeudi
@@ -225,37 +213,32 @@ days:
   - domain: actuarial
     node: actuarial-exam-1
     time: 60–90 min
-    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Joint, marginal and conditional
-      distributions; covariance and independence.'
-    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Lois
-      conjointes, marginales et conditionnelles ; covariance et indépendance.'
+    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Mixed probability problems,
+      solution selection and time management.'
+    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Problèmes
+      mixtes de probabilités, choix des méthodes et gestion du temps.'
   - domain: research
-    node: research-actuarial-glm-model-form
-    time: 45–60 min
-    text: 'Read Goldburd pages 53–57 and summarize nonlinear transformations, splines, and categorical grouping.
+    node: research-actuarial-glm-reproduction
+    time: 60–75 min
+    text: 'Optional, only if P preparation is on schedule: Read Goldburd pages 98–104, build the preprocessing pipeline,
+      and fit the baseline GLM.
 
       '
-    text_fr: 'Lire les pages 53 à 57 de Goldburd et résumer les transformations non linéaires, les splines et le
-      regroupement des catégories.
+    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Lire les pages 98 à 104 de Goldburd, construire
+      le pipeline de prétraitement et ajuster le GLM de référence.
 
       '
   - domain: lean
-    node: lean-theorem-proving
+    node: lean-mathematics-in-lean
     time: 30–45 min
-    text: Study quantifiers and equality through small Lean examples.
-    text_fr: Étudier les quantificateurs et l'égalité à travers de petits exemples Lean.
-  - domain: writing
-    node: writing-reading-practice
-    time: According to edition / Selon édition
-    text: 'Read portion 25/31 of The Intelligent Investor; cumulative target 25/31 of the chosen page range. Keep
-      notes brief.
+    text: 'Optional, only if P preparation is on schedule: Begin Mathematics in Lean Chapter 2.
 
       '
-    text_fr: 'Lire la portion 25/31 de L’Investisseur intelligent ; cible cumulée 25/31 de la plage de pages choisie.
-      Garder les notes brèves.
+    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Commencer le chapitre 2 de Mathematics in
+      Lean.
 
       '
-- date: 2026-11-27
+- date: 2026-12-25
   weekday: friday
   title: Actuarial focus · Friday
   title_fr: Priorité actuarielle · Vendredi
@@ -266,32 +249,16 @@ days:
     text: Work on the weakest P topic and write a short explanation of the recurring mistakes.
     text_fr: Travailler le thème P le plus faible et expliquer brièvement les erreurs récurrentes.
   - domain: research
-    node: research-actuarial-glm-model-form
+    node: research-actuarial-glm-reproduction
     time: 45–60 min
-    text: 'Read Goldburd pages 58–61 and complete notes on interactions and model-form choices.
+    text: 'Optional, only if P preparation is on schedule: Produce basic diagnostics and begin model validation.
 
       '
-    text_fr: 'Lire les pages 58 à 61 de Goldburd et compléter les notes sur les interactions et les choix de forme
-      du modèle.
+    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Produire les diagnostics de base et commencer
+      la validation du modèle.
 
       '
-  - domain: mathematics
-    node: mathematics-proof-writing
-    time: 45–60 min
-    text: Write the first complete version of the mathematical proof.
-    text_fr: Rédiger la première version complète de la démonstration mathématique.
-  - domain: writing
-    node: writing-reading-practice
-    time: According to edition / Selon édition
-    text: 'Read portion 26/31 of The Intelligent Investor; cumulative target 26/31 of the chosen page range. Keep
-      notes brief.
-
-      '
-    text_fr: 'Lire la portion 26/31 de L’Investisseur intelligent ; cible cumulée 26/31 de la plage de pages choisie.
-      Garder les notes brèves.
-
-      '
-- date: 2026-11-28
+- date: 2026-12-26
   weekday: saturday
   title: Actuarial focus · Saturday
   title_fr: Priorité actuarielle · Samedi
@@ -301,28 +268,7 @@ days:
     time: 75–90 min
     text: Complete a timed mixed P set and record uncertain answers as well as errors.
     text_fr: Faire une série P mixte chronométrée et noter les réponses incertaines ainsi que les erreurs.
-  - domain: english
-    node: english-conversation-practice
-    time: 60 min
-    text: 'Complete one English conversation and explain one probability concept without relying on formulas alone.
-
-      '
-    text_fr: 'Compléter une conversation en anglais et expliquer un concept de probabilité sans dépendre uniquement
-      des formules.
-
-      '
-  - domain: writing
-    node: writing-reading-practice
-    time: According to edition / Selon édition
-    text: 'Read portion 27/31 of The Intelligent Investor; cumulative target 27/31 of the chosen page range. Keep
-      notes brief.
-
-      '
-    text_fr: 'Lire la portion 27/31 de L’Investisseur intelligent ; cible cumulée 27/31 de la plage de pages choisie.
-      Garder les notes brèves.
-
-      '
-- date: 2026-11-29
+- date: 2026-12-27
   weekday: sunday
   title: Actuarial focus · Sunday
   title_fr: Priorité actuarielle · Dimanche
@@ -333,39 +279,6 @@ days:
     text: Correct Saturday’s work, reattempt missed problems and update the P error log.
     text_fr: Corriger le travail du samedi, refaire les exercices manqués et mettre à jour le journal d’erreurs
       P.
-  - domain: research
-    node: research-actuarial-glm-model-form
-    time: 45–60 min
-    text: Write and clean the technical note on insurance GLM model form.
-    text_fr: Rédiger et nettoyer la note technique sur la forme des GLM en assurance.
-  - domain: mathematics
-    node: mathematics-proof-writing
-    time: 45 min
-    text: 'Revise the mathematical proof for clarity, completeness, and logical precision.
-
-      '
-    text_fr: 'Réviser la démonstration mathématique pour améliorer sa clarté, sa complétude et sa précision logique.
-
-      '
-  - domain: lean
-    node: lean-theorem-proving
-    time: 30–45 min
-    text: Formalize one small proof using quantifiers or equality.
-    text_fr: Formaliser une petite preuve utilisant les quantificateurs ou l'égalité.
-  - time: 15–20 min
-    text: Complete the Becoming weekly review and prepare Week 05.
-    text_fr: Compléter la revue hebdomadaire Becoming et préparer la semaine 05.
-  - domain: writing
-    node: writing-reading-practice
-    time: According to edition / Selon édition
-    text: 'Read portion 28/31 of The Intelligent Investor; cumulative target 28/31 of the chosen page range. Keep
-      notes brief.
-
-      '
-    text_fr: 'Lire la portion 28/31 de L’Investisseur intelligent ; cible cumulée 28/31 de la plage de pages choisie.
-      Garder les notes brèves.
-
-      '
 completed: []
 ---
 
