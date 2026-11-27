@@ -3,8 +3,8 @@ title: P Diagnostic · Insurance GLM · Physical System
 title_fr: Diagnostic P · GLM en assurance · Système physique
 cycle: foundations-01
 cycle_week: 1
-start_date: 2026-11-02
-end_date: 2026-11-08
+start_date: 2026-11-30
+end_date: 2026-12-06
 status: planned
 active:
 - actuarial-exam-1
@@ -81,24 +81,24 @@ quests:
   - Processus physique de la semaine revu
 - domain: writing
   node: writing-reading-practice
-  task: 'Read Adieu from November 2 to November 8: one seventh of the story each day.
+  task: 'Read Adieu from November 30 to December 6: one seventh of the story each day.
 
     '
-  task_fr: 'Lire Adieu du 2 au 8 novembre : un septième du récit par jour.
+  task_fr: 'Lire Adieu du 2 au 6 décembre : un septième du récit par jour.
 
     '
 - domain: writing
   node: writing-reading-practice
-  task: 'Read portions 1–7 of 31 equal page portions of The Intelligent Investor. Start November 2 and finish December
+  task: 'Read portions 1–7 of 31 equal page portions of The Intelligent Investor. Start November 30 and finish December
     2, including the commentary and appendices you intend to read.
 
     '
-  task_fr: 'Lire les portions 1 à 7 sur 31 portions égales de L’Investisseur intelligent. Commencer le 2 novembre
+  task_fr: 'Lire les portions 1 à 7 sur 31 portions égales de L’Investisseur intelligent. Commencer le 30 novembre
     et terminer le 2 décembre, commentaires et annexes à lire compris.
 
     '
 days:
-- date: 2026-11-02
+- date: 2026-11-30
   weekday: monday
   title: Establish the baseline
   title_fr: Établir le point de départ
@@ -121,10 +121,10 @@ days:
   - domain: writing
     node: writing-reading-practice
     time: According to edition / Selon édition
-    text: 'Read portion 1/7 of Adieu. Target cumulative progress: 1/7 of the story; finish on November 8.
+    text: 'Read portion 1/7 of Adieu. Target cumulative progress: 1/7 of the story; finish on December 6.
 
       '
-    text_fr: 'Lire la portion 1/7 de Adieu. Cible cumulée : 1/7 du roman ; terminer le 8 novembre.
+    text_fr: 'Lire la portion 1/7 de Adieu. Cible cumulée : 1/7 du roman ; terminer le 6 décembre.
 
       '
   - domain: writing
@@ -138,7 +138,7 @@ days:
       Garder les notes brèves.
 
       '
-- date: 2026-11-03
+- date: 2026-12-01
   weekday: tuesday
   title: Probability foundations
   title_fr: Fondements de la probabilité
@@ -158,10 +158,10 @@ days:
   - domain: writing
     node: writing-reading-practice
     time: According to edition / Selon édition
-    text: 'Read portion 2/7 of Adieu. Target cumulative progress: 2/7 of the story; finish on November 8.
+    text: 'Read portion 2/7 of Adieu. Target cumulative progress: 2/7 of the story; finish on December 6.
 
       '
-    text_fr: 'Lire la portion 2/7 de Adieu. Cible cumulée : 2/7 du roman ; terminer le 8 novembre.
+    text_fr: 'Lire la portion 2/7 de Adieu. Cible cumulée : 2/7 du roman ; terminer le 6 décembre.
 
       '
   - domain: writing
@@ -175,7 +175,7 @@ days:
       Garder les notes brèves.
 
       '
-- date: 2026-11-04
+- date: 2026-12-02
   weekday: wednesday
   title: Conditional probability
   title_fr: Probabilité conditionnelle
@@ -193,10 +193,10 @@ days:
   - domain: writing
     node: writing-reading-practice
     time: According to edition / Selon édition
-    text: 'Read portion 3/7 of Adieu. Target cumulative progress: 3/7 of the story; finish on November 8.
+    text: 'Read portion 3/7 of Adieu. Target cumulative progress: 3/7 of the story; finish on December 6.
 
       '
-    text_fr: 'Lire la portion 3/7 de Adieu. Cible cumulée : 3/7 du roman ; terminer le 8 novembre.
+    text_fr: 'Lire la portion 3/7 de Adieu. Cible cumulée : 3/7 du roman ; terminer le 6 décembre.
 
       '
   - domain: writing
@@ -210,7 +210,7 @@ days:
       Garder les notes brèves.
 
       '
-- date: 2026-11-05
+- date: 2026-12-03
   weekday: thursday
   title: Produce something
   title_fr: Produire quelque chose
@@ -234,10 +234,10 @@ days:
   - domain: writing
     node: writing-reading-practice
     time: According to edition / Selon édition
-    text: 'Read portion 4/7 of Adieu. Target cumulative progress: 4/7 of the story; finish on November 8.
+    text: 'Read portion 4/7 of Adieu. Target cumulative progress: 4/7 of the story; finish on December 6.
 
       '
-    text_fr: 'Lire la portion 4/7 de Adieu. Cible cumulée : 4/7 du roman ; terminer le 8 novembre.
+    text_fr: 'Lire la portion 4/7 de Adieu. Cible cumulée : 4/7 du roman ; terminer le 6 décembre.
 
       '
   - domain: writing
@@ -251,7 +251,7 @@ days:
       Garder les notes brèves.
 
       '
-- date: 2026-11-06
+- date: 2026-12-04
   weekday: friday
   title: Connect the concepts
   title_fr: Relier les concepts
@@ -269,10 +269,10 @@ days:
   - domain: writing
     node: writing-reading-practice
     time: According to edition / Selon édition
-    text: 'Read portion 5/7 of Adieu. Target cumulative progress: 5/7 of the story; finish on November 8.
+    text: 'Read portion 5/7 of Adieu. Target cumulative progress: 5/7 of the story; finish on December 6.
 
       '
-    text_fr: 'Lire la portion 5/7 de Adieu. Cible cumulée : 5/7 du roman ; terminer le 8 novembre.
+    text_fr: 'Lire la portion 5/7 de Adieu. Cible cumulée : 5/7 du roman ; terminer le 6 décembre.
 
       '
   - domain: writing
@@ -286,7 +286,7 @@ days:
       Garder les notes brèves.
 
       '
-- date: 2026-11-07
+- date: 2026-12-05
   weekday: saturday
   title: Optional day — no catch-up debt
   title_fr: Journée facultative — sans dette de rattrapage
@@ -308,11 +308,11 @@ days:
     node: writing-reading-practice
     time: According to edition / Selon édition
     text: 'Optional, only if available; no catch-up required. Read portion 6/7 of Adieu. Target cumulative progress:
-      6/7 of the story; finish on November 8.
+      6/7 of the story; finish on December 6.
 
       '
     text_fr: 'Facultatif, selon la disponibilité ; aucun rattrapage requis. Lire la portion 6/7 de Adieu. Cible
-      cumulée : 6/7 du roman ; terminer le 8 novembre.
+      cumulée : 6/7 du roman ; terminer le 6 décembre.
 
       '
   - domain: writing
@@ -326,7 +326,7 @@ days:
       intelligent ; cible cumulée 6/31 de la plage de pages choisie. Garder les notes brèves.
 
       '
-- date: 2026-11-08
+- date: 2026-12-06
   weekday: sunday
   title: Consolidate and review
   title_fr: Consolider et revoir
@@ -358,10 +358,10 @@ days:
   - domain: writing
     node: writing-reading-practice
     time: According to edition / Selon édition
-    text: 'Read portion 7/7 of Adieu. Target cumulative progress: 7/7 of the story; finish on November 8.
+    text: 'Read portion 7/7 of Adieu. Target cumulative progress: 7/7 of the story; finish on December 6.
 
       '
-    text_fr: 'Lire la portion 7/7 de Adieu. Cible cumulée : 7/7 du roman ; terminer le 8 novembre.
+    text_fr: 'Lire la portion 7/7 de Adieu. Cible cumulée : 7/7 du roman ; terminer le 6 décembre.
 
       '
   - domain: writing
