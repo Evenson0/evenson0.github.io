@@ -1,5 +1,10 @@
 # Activities — mentoring and history
 
+## ACTIVE ODYSSEY OVERRIDE — November 27, 2026
+
+The **current challenge/Odyssée starts Monday November 30, 2026** and has **9 weekly levels through January 31, 2027**. The new levels 1–6 are the previous first six trials rescheduled to November 30–January 10. The former levels 10–12 are now active levels 7–9 (January 11–31), preserving the Exam P week **January 11–17**, exam on **January 16**, followed by the two research/GLM weeks. The original levels 7–9 are retained as `series: odyssee-archive`, not active steps. Historical proposal events and dates remain unchanged and no completion is presumed. The annual horizon now starts November 30, 2026. Older statements below about a 12-week program starting November 9 are superseded. Keep the 9-level ladder and do not recreate the old schedule during weekly reviews.
+
+
 Activities (`/activities/`) connects concrete challenges to Becoming and List 100. It is a personal record of choices, attempts and lessons, not a second achievement validator. The section is hidden from the header menu but remains accessible through its direct URL, like List 100 and Memories.
 
 ## Nouveau parcours Odyssée : 12 semaines d'épreuves mesurables
