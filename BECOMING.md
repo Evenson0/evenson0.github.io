@@ -1,5 +1,10 @@
 # Becoming
 
+## CURRENT SCHEDULE OVERRIDE — November 27, 2026
+
+The active `foundations-01` cycle **starts Monday, November 30, 2026 and ends Sunday, January 24, 2027** (8 weeks). The previously published November 2–January 24 twelve-week wording below is superseded. Current week files are `week-01` through `week-08`; `week-09` through `week-12` have `cycle: superseded-foundations-plan` and must not be shown in the active rail. Exam P is **Saturday, January 16, 2027, week 7**; week 8 is post-exam reflection. Do not infer an exam result or any earlier progress. Preserve old history. Current schedule starts with a fresh diagnostic November 30; no catch-up debt.
+
+
 `/becoming/` is a long-term, evidence-based progression system.
 
 It connects three levels of planning:
