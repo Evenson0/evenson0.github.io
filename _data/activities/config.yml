@@ -1,18 +1,18 @@
 version: 1
-launched: '2026-11-03'
+launched: '2026-11-30'
 timezone: America/Toronto
 intro:
-  fr: "Le protocole 12 semaines te propose 5 épreuves chiffrées et 1 boss de terrain facultatif. Produis un livrable, note la vraie mesure, puis coche uniquement ce qui est achevé. Les anciens défis restent en archives."
-  en: "The twelve-week protocol offers five measured trials and an optional real-world boss. Ship a result, record the actual metric and check off only completed work. Older challenges remain in the archive."
+  fr: "Le protocole 9 semaines te propose 5 épreuves chiffrées et 1 boss de terrain facultatif. Produis un livrable, note la vraie mesure, puis coche uniquement ce qui est achevé. Les anciens défis restent en archives."
+  en: "The nine-week protocol offers five measured trials and an optional real-world boss. Ship a result, record the actual metric and check off only completed work. Older challenges remain in the archive."
 annual_vision:
-  start: '2026-11-03'
-  end: '2027-11-02'
+  start: '2026-11-30'
+  end: '2027-11-29'
   max_focus: 3
   headline: {fr: "365 jours pour devenir quelqu'un que tu n'as jamais été", en: "365 days to do what you have never done"}
   subtitle: {fr: "Des ambitions audacieuses, des bilans sincères, des progrès réels.", en: "Bold ambitions, candid check-ins, real progress."}
 mentor_note:
-  fr: "Nouveau protocole : 12 semaines, cinq épreuves progressives et un boss facultatif par semaine jusqu'au 31 janvier 2027. Chaque épreuve fixe une production contrôlable, une mesure précise et un critère de réussite. Les premiers essais servent de points de départ : seules tes vraies notes et mesures peuvent démontrer une amélioration. La semaine de P (11–17 janvier) est allégée. Les 347 anciens défis restent accessibles dans les archives ; aucun n'est un échec faute de coche."
-  en: "New protocol: 12 weeks with five progressive trials and an optional boss each week through January 31, 2027. Each trial sets a verifiable output, precise metric and pass condition. Initial attempts establish baselines; only your own recorded measurements can demonstrate improvement. Exam P week (January 11–17) is lighter. The 347 previous proposals remain accessible in the archive; unchecked work is never a failure."
+  fr: "Nouveau protocole : 9 semaines, cinq épreuves progressives et un boss facultatif par semaine jusqu'au 31 janvier 2027. Chaque épreuve fixe une production contrôlable, une mesure précise et un critère de réussite. Les premières épreuves démarrent le 30 novembre : seules tes vraies notes et mesures peuvent démontrer une amélioration. La semaine de P (11–17 janvier) est allégée. Les 347 anciens défis restent accessibles dans les archives ; aucun n'est un échec faute de coche."
+  en: "New protocol: 9 weeks with five progressive trials and an optional boss each week through January 31, 2027. Each trial sets a verifiable output, precise metric and pass condition. Initial trials start on November 30; only your own recorded measurements can demonstrate improvement. Exam P week (January 11–17) is lighter. The 347 previous proposals remain accessible in the archive; unchecked work is never a failure."
 horizons:
 - id: week
   label:
