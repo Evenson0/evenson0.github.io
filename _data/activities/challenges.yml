@@ -11526,10 +11526,10 @@
 - id: ACT-OD26-01-P
   horizon: week
   category: math
-  period: 2026-W46
-  period_start: '2026-11-09'
+  period: 2026-W49
+  period_start: '2026-11-30'
   issued: '2026-11-12'
-  due: '2026-11-15'
+  due: '2026-12-06'
   difficulty: ambitious
   series: odyssee
   level: 1
@@ -11544,8 +11544,8 @@
     fr: "Choisis 15 questions distinctes dans les exercices publics SOA P, couvre au moins 3 thèmes, mets 90 minutes au chrono, sans notes ni aide. Corrige ensuite les 15 réponses et classe chaque erreur : concept, algèbre, lecture ou gestion du temps."
     en: "Select 15 distinct public SOA P sample problems from at least 3 topics. Work 90 minutes timed with no notes or help. Review all 15 and tag each error as concept, algebra, reading or timing."
   why:
-    fr: "Semaine 1/12 : progression mesurable sur établir ton niveau p : 15 questions sans filet."
-    en: "Week 1/12: measurable progression toward establish your p baseline: 15 unaided questions."
+    fr: "Semaine 1/9 : progression mesurable sur établir ton niveau p : 15 questions sans filet."
+    en: "Week 1/9: measurable progression toward establish your p baseline: 15 unaided questions."
   done_when:
     fr: "15 tentatives chronométrées et une fiche indiquant bonnes réponses /15, minutes utilisées, sujets et causes de toutes les erreurs."
     en: "15 timed attempts with a score /15, elapsed minutes, topics and an error cause for every mistake."
@@ -11565,10 +11565,10 @@
 - id: ACT-OD26-01-BUILD
   horizon: week
   category: build
-  period: 2026-W46
-  period_start: '2026-11-09'
+  period: 2026-W49
+  period_start: '2026-11-30'
   issued: '2026-11-12'
-  due: '2026-11-15'
+  due: '2026-12-06'
   difficulty: ambitious
   series: odyssee
   level: 1
@@ -11583,8 +11583,8 @@
     fr: "Sur ton blog, construis une petite page P originale : une question probabiliste nouvelle, saisie utilisateur, correction calculée et un cas limite testé. Ajoute 3 tests automatisés et conserve le commit."
     en: "Build one original Exam P web page on your blog: one new probability problem, user input, computed feedback and a tested edge case. Add 3 automated tests and save the commit."
   why:
-    fr: "Semaine 1/12 : progression mesurable sur mettre en ligne une page qui résout un vrai problème."
-    en: "Week 1/12: measurable progression toward ship a page that solves one real problem."
+    fr: "Semaine 1/9 : progression mesurable sur mettre en ligne une page qui résout un vrai problème."
+    en: "Week 1/9: measurable progression toward ship a page that solves one real problem."
   done_when:
     fr: "Une page exécutable sur mobile, un lien de commit et 3 tests qui réussissent."
     en: "A phone-usable page, commit URL and 3 passing tests."
@@ -11604,10 +11604,10 @@
 - id: ACT-OD26-01-EN
   horizon: week
   category: speaking
-  period: 2026-W46
-  period_start: '2026-11-09'
+  period: 2026-W49
+  period_start: '2026-11-30'
   issued: '2026-11-12'
-  due: '2026-11-15'
+  due: '2026-12-06'
   difficulty: ambitious
   series: odyssee
   level: 1
@@ -11622,8 +11622,8 @@
     fr: "Enregistre en privé 3 minutes continues en anglais expliquant une probabilité conditionnelle avec un exemple chiffré. Une seule prise ; réécoute et compte les pauses de plus de 3 secondes et les passages au français."
     en: "Privately record 3 continuous minutes in English explaining conditional probability with a numerical example. One take; replay and count pauses longer than 3 seconds and switches to French."
   why:
-    fr: "Semaine 1/12 : progression mesurable sur enregistrer 3 minutes d'anglais sans script."
-    en: "Week 1/12: measurable progression toward record 3 minutes of unscripted english."
+    fr: "Semaine 1/9 : progression mesurable sur enregistrer 3 minutes d'anglais sans script."
+    en: "Week 1/9: measurable progression toward record 3 minutes of unscripted english."
   done_when:
     fr: "Un fichier audio privé de 3 min et une fiche avec nombre de pauses et passages au français. Aucune publication imposée."
     en: "A private 3-minute recording and counts of pauses and switches to French. No public sharing required."
@@ -11643,10 +11643,10 @@
 - id: ACT-OD26-01-BOOK
   horizon: week
   category: writing
-  period: 2026-W46
-  period_start: '2026-11-09'
+  period: 2026-W49
+  period_start: '2026-11-30'
   issued: '2026-11-12'
-  due: '2026-11-15'
+  due: '2026-12-06'
   difficulty: ambitious
   series: odyssee
   level: 1
@@ -11661,8 +11661,8 @@
     fr: "Écris sans IA 600 mots d'une scène ou d'un chapitre de ton futur livre : début, tension et décision irréversible. Relis seul et retire 10 % des phrases faibles sans perdre le sens. Conserve les deux versions."
     en: "Write 600 no-AI words for a scene or chapter of your future book: opening, tension and an irreversible choice. Self-edit by removing 10% of weak wording without losing meaning. Keep both versions."
   why:
-    fr: "Semaine 1/12 : progression mesurable sur écrire 600 mots signés sans une ligne d'ia."
-    en: "Week 1/12: measurable progression toward write 600 self-authored words without ai."
+    fr: "Semaine 1/9 : progression mesurable sur écrire 600 mots signés sans une ligne d'ia."
+    en: "Week 1/9: measurable progression toward write 600 self-authored words without ai."
   done_when:
     fr: "Un texte original de 600 mots avant révision et deux versions datées, gardées privées si tu préfères."
     en: "An original 600-word draft and two dated versions, private if preferred."
@@ -11682,10 +11682,10 @@
 - id: ACT-OD26-01-MOVE
   horizon: week
   category: fitness
-  period: 2026-W46
-  period_start: '2026-11-09'
+  period: 2026-W49
+  period_start: '2026-11-30'
   issued: '2026-11-12'
-  due: '2026-11-15'
+  due: '2026-12-06'
   difficulty: ambitious
   series: odyssee
   level: 1
@@ -11700,8 +11700,8 @@
     fr: "Sur un parcours sûr ou un tapis, réalise 20 minutes de course-marche à allure confortable après échauffement, en alternant si besoin. Note distance, durée, ressenti d'effort 1–10 et récupération le lendemain. Ne force pas une vitesse."
     en: "On a safe route or treadmill, complete 20 minutes of comfortable run-walk after warming up, taking walking breaks as needed. Record distance, duration, effort 1–10 and next-day recovery. Do not force pace."
   why:
-    fr: "Semaine 1/12 : progression mesurable sur établir une base d'endurance mesurée."
-    en: "Week 1/12: measurable progression toward measure your endurance starting point."
+    fr: "Semaine 1/9 : progression mesurable sur établir une base d'endurance mesurée."
+    en: "Week 1/9: measurable progression toward measure your endurance starting point."
   done_when:
     fr: "Une sortie adaptée de 20 minutes et des mesures privées de distance, effort et récupération ; si la course n'est pas adaptée, marche et documente la base."
     en: "A suitable 20-minute outing with private distance, effort and recovery measures; walk if running is unsuitable."
@@ -11721,10 +11721,10 @@
 - id: ACT-OD26-02-P
   horizon: week
   category: math
-  period: 2026-W47
-  period_start: '2026-11-16'
+  period: 2026-W50
+  period_start: '2026-12-07'
   issued: '2026-11-12'
-  due: '2026-11-22'
+  due: '2026-12-13'
   difficulty: ambitious
   series: odyssee
   level: 2
@@ -11739,8 +11739,8 @@
     fr: "À partir des faiblesses de la semaine précédente, prends 20 questions publiques SOA, dont au moins 10 sur tes deux thèmes les plus faibles. Chronomètre 110 minutes, puis corrige et refais sans aide 5 erreurs après un jour."
     en: "Using last week's weaknesses, take 20 public SOA questions, at least 10 from your two weakest topics. Time 110 minutes, then review and independently redo 5 misses on a later day."
   why:
-    fr: "Semaine 2/12 : progression mesurable sur 20 questions p ciblées en 110 minutes."
-    en: "Week 2/12: measurable progression toward 20 targeted p problems in 110 minutes."
+    fr: "Semaine 2/9 : progression mesurable sur 20 questions p ciblées en 110 minutes."
+    en: "Week 2/9: measurable progression toward 20 targeted p problems in 110 minutes."
   done_when:
     fr: "20 réponses notées /20, un tableau des erreurs et 5 résolutions répétées sans corrigé."
     en: "20 scored answers /20, an error table and 5 independently redone solutions."
@@ -11760,10 +11760,10 @@
 - id: ACT-OD26-02-BUILD
   horizon: week
   category: build
-  period: 2026-W47
-  period_start: '2026-11-16'
+  period: 2026-W50
+  period_start: '2026-12-07'
   issued: '2026-11-12'
-  due: '2026-11-22'
+  due: '2026-12-13'
   difficulty: ambitious
   series: odyssee
   level: 2
@@ -11778,8 +11778,8 @@
     fr: "Étends ton outil P à 5 exercices originaux indépendants. Chaque exercice doit accepter une réponse, afficher l'explication correcte et être testable sur téléphone. Écris au moins 8 tests."
     en: "Expand your P tool to 5 independent original problems. Each accepts an answer, shows a correct explanation and works on a phone. Write at least 8 tests."
   why:
-    fr: "Semaine 2/12 : progression mesurable sur passer d'un démo à 5 exercices interactifs."
-    en: "Week 2/12: measurable progression toward expand a demo to 5 interactive problems."
+    fr: "Semaine 2/9 : progression mesurable sur passer d'un démo à 5 exercices interactifs."
+    en: "Week 2/9: measurable progression toward expand a demo to 5 interactive problems."
   done_when:
     fr: "5 exercices réellement utilisables, 8 tests réussis et un commit documenté."
     en: "5 actually usable problems, 8 passing tests and a documented commit."
@@ -11799,10 +11799,10 @@
 - id: ACT-OD26-02-EN
   horizon: week
   category: speaking
-  period: 2026-W47
-  period_start: '2026-11-16'
+  period: 2026-W50
+  period_start: '2026-12-07'
   issued: '2026-11-12'
-  due: '2026-11-22'
+  due: '2026-12-13'
   difficulty: ambitious
   series: odyssee
   level: 2
@@ -11817,8 +11817,8 @@
     fr: "Enregistre en anglais, sans script, une explication de Bayes et d'un faux positif avec des nombres. Une seule prise de 5 minutes ; transcris toi-même dix phrases puis corrige les fautes grammaticales repérées."
     en: "Record an unscripted English explanation of Bayes and false positives with numbers. One 5-minute take; transcribe ten sentences yourself and correct the grammar you find."
   why:
-    fr: "Semaine 2/12 : progression mesurable sur 5 minutes : expliquer bayes sans français."
-    en: "Week 2/12: measurable progression toward 5 minutes: explain bayes without french."
+    fr: "Semaine 2/9 : progression mesurable sur 5 minutes : expliquer bayes sans français."
+    en: "Week 2/9: measurable progression toward 5 minutes: explain bayes without french."
   done_when:
     fr: "Audio privé de 5 minutes, dix phrases transcrites et erreurs repérées."
     en: "A private 5-minute recording, ten transcribed sentences and documented errors."
@@ -11838,10 +11838,10 @@
 - id: ACT-OD26-02-BOOK
   horizon: week
   category: writing
-  period: 2026-W47
-  period_start: '2026-11-16'
+  period: 2026-W50
+  period_start: '2026-12-07'
   issued: '2026-11-12'
-  due: '2026-11-22'
+  due: '2026-12-13'
   difficulty: ambitious
   series: odyssee
   level: 2
@@ -11856,8 +11856,8 @@
     fr: "Rédige 900 mots originaux sans IA poursuivant ton texte de la semaine 1. Ajoute une décision et une conséquence concrètes ; réécris l'introduction une fois sans assistance et conserve les deux versions."
     en: "Write 900 original no-AI words continuing the previous week's work. Add a concrete choice and consequence; independently rewrite the opening once and keep both versions."
   why:
-    fr: "Semaine 2/12 : progression mesurable sur 900 mots : un chapitre avec une vraie fin."
-    en: "Week 2/12: measurable progression toward 900 words: a chapter with a real ending."
+    fr: "Semaine 2/9 : progression mesurable sur 900 mots : un chapitre avec une vraie fin."
+    en: "Week 2/9: measurable progression toward 900 words: a chapter with a real ending."
   done_when:
     fr: "900 nouveaux mots rédigés par toi ; chapitre continu et introduction révisée."
     en: "900 new self-authored words; a continuous chapter with a revised opening."
@@ -11877,10 +11877,10 @@
 - id: ACT-OD26-02-MOVE
   horizon: week
   category: fitness
-  period: 2026-W47
-  period_start: '2026-11-16'
+  period: 2026-W50
+  period_start: '2026-12-07'
   issued: '2026-11-12'
-  due: '2026-11-22'
+  due: '2026-12-13'
   difficulty: ambitious
   series: odyssee
   level: 2
@@ -11895,8 +11895,8 @@
     fr: "Si ta première séance a été bien tolérée, effectue deux séances de course-marche faciles de 20–25 minutes séparées par récupération. Compare distance et effort à durée semblable ; sinon répète ou réduis sans forcer."
     en: "If the first outing was tolerated, complete two easy 20–25 minute run-walk sessions with recovery between. Compare distance and effort at comparable duration; otherwise repeat or reduce safely."
   why:
-    fr: "Semaine 2/12 : progression mesurable sur deux séances d'endurance avec récupération."
-    en: "Week 2/12: measurable progression toward two endurance sessions with recovery."
+    fr: "Semaine 2/9 : progression mesurable sur deux séances d'endurance avec récupération."
+    en: "Week 2/9: measurable progression toward two endurance sessions with recovery."
   done_when:
     fr: "Deux séances adaptées enregistrées (ou un ajustement de récupération justifié) et comparaison à la base initiale."
     en: "Two suitable logged sessions (or a justified recovery adjustment) compared against baseline."
@@ -11916,10 +11916,10 @@
 - id: ACT-OD26-03-P
   horizon: week
   category: math
-  period: 2026-W48
-  period_start: '2026-11-23'
+  period: 2026-W51
+  period_start: '2026-12-14'
   issued: '2026-11-12'
-  due: '2026-11-29'
+  due: '2026-12-20'
   difficulty: ambitious
   series: odyssee
   level: 3
@@ -11934,8 +11934,8 @@
     fr: "Fais 25 questions SOA publiques en 140 minutes en mélangeant tous les thèmes ; reprends 10 anciennes questions ratées, espacées d'au moins 48 h, sans consulter les réponses avant."
     en: "Complete 25 public SOA questions in 140 minutes across topics; redo 10 previously missed questions after at least 48 hours without looking up answers."
   why:
-    fr: "Semaine 3/12 : progression mesurable sur 25 questions p et 10 erreurs éliminées."
-    en: "Week 3/12: measurable progression toward 25 p problems and 10 errors repaired."
+    fr: "Semaine 3/9 : progression mesurable sur 25 questions p et 10 erreurs éliminées."
+    en: "Week 3/9: measurable progression toward 25 p problems and 10 errors repaired."
   done_when:
     fr: "Score /25, journal détaillé des mauvaises réponses et 10 répétitions notées /10."
     en: "Score /25, detailed miss log and ten scored independent recalls /10."
@@ -11955,10 +11955,10 @@
 - id: ACT-OD26-03-BUILD
   horizon: week
   category: build
-  period: 2026-W48
-  period_start: '2026-11-23'
+  period: 2026-W51
+  period_start: '2026-12-14'
   issued: '2026-11-12'
-  due: '2026-11-29'
+  due: '2026-12-20'
   difficulty: ambitious
   series: odyssee
   level: 3
@@ -11973,8 +11973,8 @@
     fr: "Ajoute à ton outil un chronomètre, cinq exercices affichés dans un ordre variable et un état local restauré après rechargement. Vérifie au moins 12 cas de test, dont fermeture/reprise."
     en: "Add a timer, five problems in randomized order and local resume after reload. Test at least 12 cases including closing and resuming."
   why:
-    fr: "Semaine 3/12 : progression mesurable sur créer un mode examen qui survit au rechargement."
-    en: "Week 3/12: measurable progression toward build an exam mode that survives reload."
+    fr: "Semaine 3/9 : progression mesurable sur créer un mode examen qui survit au rechargement."
+    en: "Week 3/9: measurable progression toward build an exam mode that survives reload."
   done_when:
     fr: "Mode examen utilisable en mobile, sauvegarde/restauration testée et 12 tests verts."
     en: "A mobile-usable exam mode, tested save/resume and 12 passing tests."
@@ -11994,10 +11994,10 @@
 - id: ACT-OD26-03-EN
   horizon: week
   category: speaking
-  period: 2026-W48
-  period_start: '2026-11-23'
+  period: 2026-W51
+  period_start: '2026-12-14'
   issued: '2026-11-12'
-  due: '2026-11-29'
+  due: '2026-12-20'
   difficulty: ambitious
   series: odyssee
   level: 3
@@ -12012,8 +12012,8 @@
     fr: "Enregistre un exposé anglais de 6 minutes sans texte sur fréquence Poisson et limites. Prépare à l'avance trois questions critiques sur des cartes et réponds-y à voix haute en 90 secondes chacune après l'exposé."
     en: "Record a 6-minute unscripted English explanation of Poisson frequency and limitations. Prepare three critical question cards beforehand and answer each aloud in 90 seconds after your talk."
   why:
-    fr: "Semaine 3/12 : progression mesurable sur 6 minutes : défendre un choix de modèle."
-    en: "Week 3/12: measurable progression toward 6 minutes: defend a model choice."
+    fr: "Semaine 3/9 : progression mesurable sur 6 minutes : défendre un choix de modèle."
+    en: "Week 3/9: measurable progression toward 6 minutes: defend a model choice."
   done_when:
     fr: "Une présentation privée de 6 minutes, trois réponses enregistrées et décompte des pauses."
     en: "A private 6-minute presentation, three recorded answers and pause counts."
@@ -12033,10 +12033,10 @@
 - id: ACT-OD26-03-BOOK
   horizon: week
   category: writing
-  period: 2026-W48
-  period_start: '2026-11-23'
+  period: 2026-W51
+  period_start: '2026-12-14'
   issued: '2026-11-12'
-  due: '2026-11-29'
+  due: '2026-12-20'
   difficulty: ambitious
   series: odyssee
   level: 3
@@ -12051,8 +12051,8 @@
     fr: "Écris 1 100 mots de ton essai ou livre sans IA. Si essai : donne à l'objection la plus forte au moins 300 mots. Si fiction : écris la scène où le plan du protagoniste échoue et change la suite."
     en: "Write 1,100 no-AI words of your book or essay. For nonfiction give the strongest counterargument at least 300 words; for fiction write the scene where the protagonist's plan fails and changes what follows."
   why:
-    fr: "Semaine 3/12 : progression mesurable sur 1 100 mots : écrire l'objection qui détruit ta thèse."
-    en: "Week 3/12: measurable progression toward 1,100 words: write the objection that challenges your thesis."
+    fr: "Semaine 3/9 : progression mesurable sur 1 100 mots : écrire l'objection qui détruit ta thèse."
+    en: "Week 3/9: measurable progression toward 1,100 words: write the objection that challenges your thesis."
   done_when:
     fr: "1 100 mots nouveaux avec une objection ou un retournement concret qui modifie le manuscrit."
     en: "1,100 new words including a concrete objection or reversal that changes the manuscript."
@@ -12072,10 +12072,10 @@
 - id: ACT-OD26-03-MOVE
   horizon: week
   category: fitness
-  period: 2026-W48
-  period_start: '2026-11-23'
+  period: 2026-W51
+  period_start: '2026-12-14'
   issued: '2026-11-12'
-  due: '2026-11-29'
+  due: '2026-12-20'
   difficulty: ambitious
   series: odyssee
   level: 3
@@ -12090,8 +12090,8 @@
     fr: "Effectue deux séances adaptées d'environ 25 minutes, avec récupération. Sur le même parcours qu'en semaine 1 si possible, relève distance et effort 1–10 ; progression seulement si confortable."
     en: "Complete two suitable ~25-minute sessions with recovery. On the same route as week 1 if possible, log distance and effort 1–10; progress only if comfortable."
   why:
-    fr: "Semaine 3/12 : progression mesurable sur refaire 25 minutes et comparer l'effort."
-    en: "Week 3/12: measurable progression toward repeat 25 minutes and compare effort."
+    fr: "Semaine 3/9 : progression mesurable sur refaire 25 minutes et comparer l'effort."
+    en: "Week 3/9: measurable progression toward repeat 25 minutes and compare effort."
   done_when:
     fr: "Deux séances ou adaptation justifiée, et une comparaison écrite base/semaine 3 sans objectif de vitesse."
     en: "Two sessions or justified adjustment, plus a written baseline-vs-week-3 comparison without pace target."
@@ -12111,10 +12111,10 @@
 - id: ACT-OD26-04-P
   horizon: week
   category: math
-  period: 2026-W49
-  period_start: '2026-11-30'
+  period: 2026-W52
+  period_start: '2026-12-21'
   issued: '2026-11-12'
-  due: '2026-12-06'
+  due: '2026-12-27'
   difficulty: ambitious
   series: odyssee
   level: 4
@@ -12129,8 +12129,8 @@
     fr: "Effectue une simulation complète P sur ressources publiques autorisées, en respectant la durée du format officiel de ta session ; conserve score, temps et un tableau de chaque erreur. Reprends les 8 plus coûteuses sans corrigé le lendemain."
     en: "Take a full P mock using permitted public resources, respecting the official timing for your sitting. Record score, time and every missed item's cause. Redo eight costly errors unaided the next day."
   why:
-    fr: "Semaine 4/12 : progression mesurable sur premier examen p blanc complet."
-    en: "Week 4/12: measurable progression toward first full exam p mock."
+    fr: "Semaine 4/9 : progression mesurable sur premier examen p blanc complet."
+    en: "Week 4/9: measurable progression toward first full exam p mock."
   done_when:
     fr: "Une simulation complète datée et 8 résolutions corrigées, avec tableau de la performance par thème."
     en: "One dated full mock plus eight corrected solutions and a topic-by-topic performance table."
@@ -12150,10 +12150,10 @@
 - id: ACT-OD26-04-BUILD
   horizon: week
   category: build
-  period: 2026-W49
-  period_start: '2026-11-30'
+  period: 2026-W52
+  period_start: '2026-12-21'
   issued: '2026-11-12'
-  due: '2026-12-06'
+  due: '2026-12-27'
   difficulty: ambitious
   series: odyssee
   level: 4
@@ -12168,8 +12168,8 @@
     fr: "Publie 10 exercices originaux avec solutions générées/testées, navigation mobile, reprise de session et au moins 15 tests automatisés. Fais faire un parcours à un volontaire et note 3 problèmes."
     en: "Publish 10 original problems with tested/generated solutions, mobile navigation, resumed sessions and at least 15 automated tests. Ask one volunteer to try a flow and record 3 issues."
   why:
-    fr: "Semaine 4/12 : progression mesurable sur publier la version 0.1 de l'atelier p."
-    en: "Week 4/12: measurable progression toward publish version 0.1 of the p lab."
+    fr: "Semaine 4/9 : progression mesurable sur publier la version 0.1 de l'atelier p."
+    en: "Week 4/9: measurable progression toward publish version 0.1 of the p lab."
   done_when:
     fr: "URL v0.1, 10 exercices, 15 tests verts et compte rendu de 1 test utilisateur réel (si volontaire disponible)."
     en: "A v0.1 URL, ten problems, 15 passing tests and a report from one real user test (if a volunteer is available)."
@@ -12189,10 +12189,10 @@
 - id: ACT-OD26-04-EN
   horizon: week
   category: speaking
-  period: 2026-W49
-  period_start: '2026-11-30'
+  period: 2026-W52
+  period_start: '2026-12-21'
   issued: '2026-11-12'
-  due: '2026-12-06'
+  due: '2026-12-27'
   difficulty: ambitious
   series: odyssee
   level: 4
@@ -12207,8 +12207,8 @@
     fr: "Présente ton prototype pendant 7 minutes en anglais à une personne volontaire, téléphone ou navigateur ouvert, puis demande au moins deux objections précises. Si personne disponible, enregistre une démonstration avec 2 objections préparées."
     en: "Present your prototype in English for 7 minutes to a willing person, app open, then request at least two specific objections. If no one is available, record a demo addressing two prewritten objections."
   why:
-    fr: "Semaine 4/12 : progression mesurable sur 7 minutes : expose ton outil en anglais à une personne."
-    en: "Week 4/12: measurable progression toward 7 minutes: demo your tool in english to someone."
+    fr: "Semaine 4/9 : progression mesurable sur 7 minutes : expose ton outil en anglais à une personne."
+    en: "Week 4/9: measurable progression toward 7 minutes: demo your tool in english to someone."
   done_when:
     fr: "Une démonstration enregistrée ou réalisée en direct, deux objections traitées et une liste d'améliorations."
     en: "A recorded or live demo with two objections answered and an improvement list."
@@ -12228,10 +12228,10 @@
 - id: ACT-OD26-04-BOOK
   horizon: week
   category: writing
-  period: 2026-W49
-  period_start: '2026-11-30'
+  period: 2026-W52
+  period_start: '2026-12-21'
   issued: '2026-11-12'
-  due: '2026-12-06'
+  due: '2026-12-27'
   difficulty: ambitious
   series: odyssee
   level: 4
@@ -12246,8 +12246,8 @@
     fr: "Écris 1 200 nouveaux mots sans IA. Choisis ensuite les 500 mots les moins réussis de ton manuscrit, réécris-les seul et conserve avant/après pour comparer cohérence et précision."
     en: "Write 1,200 new no-AI words. Then pick the weakest 500 words of the manuscript, rewrite them independently and preserve before/after for comparison."
   why:
-    fr: "Semaine 4/12 : progression mesurable sur 1 200 mots + une réécriture qui améliore le texte."
-    en: "Week 4/12: measurable progression toward 1,200 words plus a substantive revision."
+    fr: "Semaine 4/9 : progression mesurable sur 1 200 mots + une réécriture qui améliore le texte."
+    en: "Week 4/9: measurable progression toward 1,200 words plus a substantive revision."
   done_when:
     fr: "1 200 nouveaux mots et un segment réécrit de 500 mots avec deux versions datées."
     en: "1,200 new words and a rewritten 500-word passage with dated before/after copies."
@@ -12267,10 +12267,10 @@
 - id: ACT-OD26-04-MOVE
   horizon: week
   category: fitness
-  period: 2026-W49
-  period_start: '2026-11-30'
+  period: 2026-W52
+  period_start: '2026-12-21'
   issued: '2026-11-12'
-  due: '2026-12-06'
+  due: '2026-12-27'
   difficulty: ambitious
   series: odyssee
   level: 4
@@ -12285,8 +12285,8 @@
     fr: "Si les semaines précédentes ont été bien tolérées, tente 2 × 30 minutes course-marche faciles dans la semaine avec récupération ; sinon conserve l'étape antérieure. Note distance, effort et récupération."
     en: "If earlier weeks went well, try two easy 30-minute run-walk sessions with recovery; otherwise maintain the previous step. Record distance, effort and recovery."
   why:
-    fr: "Semaine 4/12 : progression mesurable sur 30 minutes d'endurance répétable."
-    en: "Week 4/12: measurable progression toward a repeatable 30-minute endurance session."
+    fr: "Semaine 4/9 : progression mesurable sur 30 minutes d'endurance répétable."
+    en: "Week 4/9: measurable progression toward a repeatable 30-minute endurance session."
   done_when:
     fr: "Deux séances adaptées avec durée et distance, ou un maintien justifié du niveau actuel."
     en: "Two suitable logged sessions with duration and distance, or a justified decision to maintain the current level."
@@ -12306,10 +12306,10 @@
 - id: ACT-OD26-05-P
   horizon: week
   category: math
-  period: 2026-W50
-  period_start: '2026-12-07'
+  period: 2026-W53
+  period_start: '2026-12-28'
   issued: '2026-11-12'
-  due: '2026-12-13'
+  due: '2027-01-03'
   difficulty: ambitious
   series: odyssee
   level: 5
@@ -12324,8 +12324,8 @@
     fr: "Fais un second blanc P sur une série différente de questions publiques avec le même temps officiel. Compare les erreurs par concept au premier blanc, et refais 10 anciennes erreurs sans aide. Ne compare pas naïvement deux scores d'épreuves de difficultés différentes."
     en: "Take a second official-format P mock using different public questions at the same time allowance. Compare conceptual error types with the first mock and redo ten past errors independently. Do not equate scores across unequal mock difficulty."
   why:
-    fr: "Semaine 5/12 : progression mesurable sur deuxième blanc p : chasser les erreurs récurrentes."
-    en: "Week 5/12: measurable progression toward second p mock: target recurring errors."
+    fr: "Semaine 5/9 : progression mesurable sur deuxième blanc p : chasser les erreurs récurrentes."
+    en: "Week 5/9: measurable progression toward second p mock: target recurring errors."
   done_when:
     fr: "Un second blanc daté, dix rappels /10, et un tableau montrant quelles catégories d'erreurs persistent."
     en: "A dated second mock, ten recalls /10 and a table showing persistent error categories."
@@ -12345,10 +12345,10 @@
 - id: ACT-OD26-05-BUILD
   horizon: week
   category: build
-  period: 2026-W50
-  period_start: '2026-12-07'
+  period: 2026-W53
+  period_start: '2026-12-28'
   issued: '2026-11-12'
-  due: '2026-12-13'
+  due: '2027-01-03'
   difficulty: ambitious
   series: odyssee
   level: 5
@@ -12363,8 +12363,8 @@
     fr: "Crée 20 tests automatisés dont au moins 5 cas limites : réponse vide, borne impossible, probabilité 0/1, rechargement et format malformé. Corrige les bogues découverts et documente la cause de trois d'entre eux."
     en: "Create 20 automated tests including at least five edge cases: empty answer, impossible boundary, probability 0/1, reload and malformed input. Fix discovered bugs and document root causes for three."
   why:
-    fr: "Semaine 5/12 : progression mesurable sur des tests qui cassent ton application p."
-    en: "Week 5/12: measurable progression toward break your p app with tests."
+    fr: "Semaine 5/9 : progression mesurable sur des tests qui cassent ton application p."
+    en: "Week 5/9: measurable progression toward break your p app with tests."
   done_when:
     fr: "20 tests verts et trois bogues corrigés ou cas vérifiés sans bogue, avec journal."
     en: "20 passing tests and three fixed bugs or verified non-bugs with a log."
@@ -12384,10 +12384,10 @@
 - id: ACT-OD26-05-EN
   horizon: week
   category: speaking
-  period: 2026-W50
-  period_start: '2026-12-07'
+  period: 2026-W53
+  period_start: '2026-12-28'
   issued: '2026-11-12'
-  due: '2026-12-13'
+  due: '2027-01-03'
   difficulty: ambitious
   series: odyssee
   level: 5
@@ -12402,8 +12402,8 @@
     fr: "Enregistre 8 minutes en anglais sur un résultat mathématique que tu sais démontrer. Après le discours, tire au hasard trois cartes questions et réponds dans une limite de 90 secondes par question."
     en: "Record 8 minutes in English on a math result you can prove. Afterward randomly draw three question cards and answer within 90 seconds each."
   why:
-    fr: "Semaine 5/12 : progression mesurable sur 8 minutes : expliquer un résultat sous questions."
-    en: "Week 5/12: measurable progression toward 8 minutes: explain a result under questioning."
+    fr: "Semaine 5/9 : progression mesurable sur 8 minutes : expliquer un résultat sous questions."
+    en: "Week 5/9: measurable progression toward 8 minutes: explain a result under questioning."
   done_when:
     fr: "Un exposé de 8 min et trois réponses limitées au chrono, avec une évaluation des pauses et imprécisions."
     en: "An 8-minute talk and three timed replies with pause and imprecision assessment."
@@ -12423,10 +12423,10 @@
 - id: ACT-OD26-05-BOOK
   horizon: week
   category: writing
-  period: 2026-W50
-  period_start: '2026-12-07'
+  period: 2026-W53
+  period_start: '2026-12-28'
   issued: '2026-11-12'
-  due: '2026-12-13'
+  due: '2027-01-03'
   difficulty: ambitious
   series: odyssee
   level: 5
@@ -12441,8 +12441,8 @@
     fr: "Rédige 1 500 mots sans IA, puis donne un chapitre à une personne de confiance en lui demandant 3 critiques concrètes de clarté, structure et force. Si aucun retour, écris toi-même les 3 objections."
     en: "Write 1,500 no-AI words, then ask a trusted reader for three concrete critiques on clarity, structure and force. If feedback is unavailable, write your own three objections."
   why:
-    fr: "Semaine 5/12 : progression mesurable sur 1 500 mots : le chapitre qui résiste à la critique."
-    en: "Week 5/12: measurable progression toward 1,500 words: a chapter that can take criticism."
+    fr: "Semaine 5/9 : progression mesurable sur 1 500 mots : le chapitre qui résiste à la critique."
+    en: "Week 5/9: measurable progression toward 1,500 words: a chapter that can take criticism."
   done_when:
     fr: "1 500 nouveaux mots, un chapitre autonome, et trois critiques réelles ou auto-objections documentées."
     en: "1,500 new words, a self-contained chapter and three documented outside or self-generated criticisms."
@@ -12462,10 +12462,10 @@
 - id: ACT-OD26-05-MOVE
   horizon: week
   category: fitness
-  period: 2026-W50
-  period_start: '2026-12-07'
+  period: 2026-W53
+  period_start: '2026-12-28'
   issued: '2026-11-12'
-  due: '2026-12-13'
+  due: '2027-01-03'
   difficulty: ambitious
   series: odyssee
   level: 5
@@ -12480,8 +12480,8 @@
     fr: "Répète une sortie sur un parcours mesuré semblable à la semaine 1, puis ajoute une deuxième séance facile adaptée. Compare vitesse seulement à effort comparable ; privilégie respiration confortable et récupération."
     en: "Repeat a measured route similar to week 1, then add another suitable easy session. Compare pace only at similar effort; prioritize comfortable breathing and recovery."
   why:
-    fr: "Semaine 5/12 : progression mesurable sur comparer la même distance à un effort plus stable."
-    en: "Week 5/12: measurable progression toward compare the same route at a steadier effort."
+    fr: "Semaine 5/9 : progression mesurable sur comparer la même distance à un effort plus stable."
+    en: "Week 5/9: measurable progression toward compare the same route at a steadier effort."
   done_when:
     fr: "Deux séances appropriées et un tableau S1/S5 : durée, distance, effort, récupération."
     en: "Two appropriate sessions plus a W1/W5 table: time, distance, effort and recovery."
@@ -12501,10 +12501,10 @@
 - id: ACT-OD26-06-P
   horizon: week
   category: math
-  period: 2026-W51
-  period_start: '2026-12-14'
+  period: 2027-W02
+  period_start: '2027-01-04'
   issued: '2026-11-12'
-  due: '2026-12-20'
+  due: '2027-01-10'
   difficulty: ambitious
   series: odyssee
   level: 6
@@ -12519,8 +12519,8 @@
     fr: "Passe un blanc de format officiel sur questions publiques. Identifie 12 erreurs ou hésitations importantes, puis recrée 12 exemples analogues originaux et résous-les sans aide, sans recopier les énoncés SOA."
     en: "Complete an official-format mock on public questions. Identify 12 major errors or hesitations; then invent 12 analogous original examples and solve independently, without copying SOA question text."
   why:
-    fr: "Semaine 6/12 : progression mesurable sur blanc p + vérification des 12 plus grandes lacunes."
-    en: "Week 6/12: measurable progression toward p mock plus 12 most serious gaps."
+    fr: "Semaine 6/9 : progression mesurable sur blanc p + vérification des 12 plus grandes lacunes."
+    en: "Week 6/9: measurable progression toward p mock plus 12 most serious gaps."
   done_when:
     fr: "Un blanc noté et 12 problèmes analogues originaux avec corrigés contrôlés."
     en: "A scored mock and 12 original analogous problems with checked solutions."
@@ -12540,10 +12540,10 @@
 - id: ACT-OD26-06-BUILD
   horizon: week
   category: build
-  period: 2026-W51
-  period_start: '2026-12-14'
+  period: 2027-W02
+  period_start: '2027-01-04'
   issued: '2026-11-12'
-  due: '2026-12-20'
+  due: '2027-01-10'
   difficulty: ambitious
   series: odyssee
   level: 6
@@ -12558,8 +12558,8 @@
     fr: "Ajoute un tableau d'erreurs (thème, fréquence, dernier essai) à ton outil P sans collecter d'informations personnelles. Organise deux tests volontaires de dix minutes ; classe 5 irritants et corrige les 2 premiers."
     en: "Add an error dashboard (topic, frequency, last attempt) to your P tool without gathering personal information. Arrange two voluntary ten-minute tests, rank five pain points and fix the top two."
   why:
-    fr: "Semaine 6/12 : progression mesurable sur faire tester ta v0.2 par 2 personnes."
-    en: "Week 6/12: measurable progression toward have two people test version 0.2."
+    fr: "Semaine 6/9 : progression mesurable sur faire tester ta v0.2 par 2 personnes."
+    en: "Week 6/9: measurable progression toward have two people test version 0.2."
   done_when:
     fr: "Une v0.2 testable, deux essais utilisateurs réels ou invitations documentées, et 2 corrections validées."
     en: "A testable v0.2, two real user tests or documented invitations, and two verified fixes."
@@ -12579,10 +12579,10 @@
 - id: ACT-OD26-06-EN
   horizon: week
   category: speaking
-  period: 2026-W51
-  period_start: '2026-12-14'
+  period: 2027-W02
+  period_start: '2027-01-04'
   issued: '2026-11-12'
-  due: '2026-12-20'
+  due: '2027-01-10'
   difficulty: ambitious
   series: odyssee
   level: 6
@@ -12597,8 +12597,8 @@
     fr: "Présente en anglais en 9 minutes le fonctionnement, les tests et deux limites de ton outil, puis prends quatre questions, dont une sur un cas limite. Enregistre ou demande une critique volontaire."
     en: "Present your tool's logic, tests and two limitations in English in 9 minutes, then take four questions, including one about an edge case. Record privately or invite a voluntary critique."
   why:
-    fr: "Semaine 6/12 : progression mesurable sur 9 minutes : soutenance anglaise d'un algorithme."
-    en: "Week 6/12: measurable progression toward 9 minutes: defend an algorithm in english."
+    fr: "Semaine 6/9 : progression mesurable sur 9 minutes : soutenance anglaise d'un algorithme."
+    en: "Week 6/9: measurable progression toward 9 minutes: defend an algorithm in english."
   done_when:
     fr: "Une soutenance de 9 min, quatre questions traitées et un relevé des erreurs techniques d'explication."
     en: "A 9-minute defense, four answered questions and a log of technical explanation mistakes."
@@ -12618,10 +12618,10 @@
 - id: ACT-OD26-06-BOOK
   horizon: week
   category: writing
-  period: 2026-W51
-  period_start: '2026-12-14'
+  period: 2027-W02
+  period_start: '2027-01-04'
   issued: '2026-11-12'
-  due: '2026-12-20'
+  due: '2027-01-10'
   difficulty: ambitious
   series: odyssee
   level: 6
@@ -12636,8 +12636,8 @@
     fr: "Écris 1 700 mots nouveaux sans IA, assemble les fragments écrits depuis novembre en une partie ordonnée, puis supprime au moins trois contradictions ou ruptures de continuité."
     en: "Write 1,700 new no-AI words, assemble drafts since November into an ordered section, and remove at least three contradictions or continuity breaks."
   why:
-    fr: "Semaine 6/12 : progression mesurable sur 1 700 mots : construire la première partie du livre."
-    en: "Week 6/12: measurable progression toward 1,700 words: build the first part of the book."
+    fr: "Semaine 6/9 : progression mesurable sur 1 700 mots : construire la première partie du livre."
+    en: "Week 6/9: measurable progression toward 1,700 words: build the first part of the book."
   done_when:
     fr: "Un manuscrit partiel ordonné, 1 700 nouveaux mots, trois incohérences corrigées."
     en: "An ordered partial manuscript, 1,700 new words and three fixed inconsistencies."
@@ -12657,10 +12657,10 @@
 - id: ACT-OD26-06-MOVE
   horizon: week
   category: fitness
-  period: 2026-W51
-  period_start: '2026-12-14'
+  period: 2027-W02
+  period_start: '2027-01-04'
   issued: '2026-11-12'
-  due: '2026-12-20'
+  due: '2027-01-10'
   difficulty: ambitious
   series: odyssee
   level: 6
@@ -12675,8 +12675,8 @@
     fr: "Répète deux sorties faciles de durée adaptée, sans accroître la distance si tu observes douleurs ou récupération lente. Note pour chacune temps, distance et effort, puis choisis de maintenir ou réduire la charge."
     en: "Repeat two suitably easy outings, without increasing distance if pain or slow recovery occurs. Log time, distance and effort for each, then choose to maintain or reduce load."
   why:
-    fr: "Semaine 6/12 : progression mesurable sur deux sorties faciles et un bilan de récupération."
-    en: "Week 6/12: measurable progression toward two easy outings and a recovery review."
+    fr: "Semaine 6/9 : progression mesurable sur deux sorties faciles et un bilan de récupération."
+    en: "Week 6/9: measurable progression toward two easy outings and a recovery review."
   done_when:
     fr: "Deux sorties adaptées et une décision documentée sur la progression ou la récupération."
     en: "Two suitable outings and a documented decision on progression or recovery."
@@ -12701,7 +12701,7 @@
   issued: '2026-11-12'
   due: '2026-12-27'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 7
   axis: precision
   title:
@@ -12740,7 +12740,7 @@
   issued: '2026-11-12'
   due: '2026-12-27'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 7
   axis: fabrication
   title:
@@ -12779,7 +12779,7 @@
   issued: '2026-11-12'
   due: '2026-12-27'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 7
   axis: expression
   title:
@@ -12818,7 +12818,7 @@
   issued: '2026-11-12'
   due: '2026-12-27'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 7
   axis: creation
   title:
@@ -12857,7 +12857,7 @@
   issued: '2026-11-12'
   due: '2026-12-27'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 7
   axis: endurance
   title:
@@ -12896,7 +12896,7 @@
   issued: '2026-11-12'
   due: '2027-01-03'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 8
   axis: precision
   title:
@@ -12935,7 +12935,7 @@
   issued: '2026-11-12'
   due: '2027-01-03'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 8
   axis: fabrication
   title:
@@ -12974,7 +12974,7 @@
   issued: '2026-11-12'
   due: '2027-01-03'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 8
   axis: expression
   title:
@@ -13013,7 +13013,7 @@
   issued: '2026-11-12'
   due: '2027-01-03'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 8
   axis: creation
   title:
@@ -13052,7 +13052,7 @@
   issued: '2026-11-12'
   due: '2027-01-03'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 8
   axis: endurance
   title:
@@ -13091,7 +13091,7 @@
   issued: '2026-11-12'
   due: '2027-01-10'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 9
   axis: precision
   title:
@@ -13130,7 +13130,7 @@
   issued: '2026-11-12'
   due: '2027-01-10'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 9
   axis: fabrication
   title:
@@ -13169,7 +13169,7 @@
   issued: '2026-11-12'
   due: '2027-01-10'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 9
   axis: expression
   title:
@@ -13208,7 +13208,7 @@
   issued: '2026-11-12'
   due: '2027-01-10'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 9
   axis: creation
   title:
@@ -13247,7 +13247,7 @@
   issued: '2026-11-12'
   due: '2027-01-10'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 9
   axis: endurance
   title:
@@ -13281,13 +13281,13 @@
 - id: ACT-OD26-10-P
   horizon: week
   category: math
-  period: 2027-W02
+  period: 2027-W03
   period_start: '2027-01-11'
   issued: '2026-11-12'
   due: '2027-01-17'
   difficulty: ambitious
   series: odyssee
-  level: 10
+  level: 7
   axis: precision
   title:
     fr: "EXAM P : SUIVRE LE PLAN ET FAIRE UN BILAN FACTUEL"
@@ -13299,8 +13299,8 @@
     fr: "Si la session P du 16 janvier est bien confirmée, effectue seulement les révisions prévues avant et présente-toi à l'épreuve avec ta stratégie de temps. Après la session, rédige 5 observations factuelles sur la gestion de l'épreuve, sans citer de question confidentielle et sans inventer le résultat."
     en: "If the January 16 P sitting is confirmed, do only planned taper review and follow your timing strategy at the exam. Afterward write five factual observations about exam management, revealing no confidential question and inventing no result."
   why:
-    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 10/12: a scored trial and verifiable result."
+    fr: "Semaine 7/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/9: a scored trial and verifiable result."
   done_when:
     fr: "Séance P effectivement présentée (si maintenue) et cinq observations de stratégie sans contenu d'examen ; si date modifiée, signaler le report sans cocher l'épreuve."
     en: "The actual P sitting attended (if scheduled) and five strategy observations without exam content; if rescheduled, report deferral instead of marking completion."
@@ -13320,13 +13320,13 @@
 - id: ACT-OD26-10-BUILD
   horizon: week
   category: build
-  period: 2027-W02
+  period: 2027-W03
   period_start: '2027-01-11'
   issued: '2026-11-12'
   due: '2027-01-17'
   difficulty: ambitious
   series: odyssee
-  level: 10
+  level: 7
   axis: fabrication
   title:
     fr: "OPTIONNEL : NE PAS CODER PENDANT P"
@@ -13338,8 +13338,8 @@
     fr: "Gèle le développement de l'app cette semaine. Conserve une liste de trois améliorations éventuelles pour après l'examen ; ne touche au code que pour une panne bloquante."
     en: "Freeze development this week. Keep a list of three future improvements and touch code only for a critical issue."
   why:
-    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 10/12: a scored trial and verifiable result."
+    fr: "Semaine 7/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/9: a scored trial and verifiable result."
   done_when:
     fr: "Une liste de trois idées datée, sans chantier concurrent lancé avant P."
     en: "A dated list of three ideas, with no competing coding project launched before P."
@@ -13359,13 +13359,13 @@
 - id: ACT-OD26-10-EN
   horizon: week
   category: speaking
-  period: 2027-W02
+  period: 2027-W03
   period_start: '2027-01-11'
   issued: '2026-11-12'
   due: '2027-01-17'
   difficulty: ambitious
   series: odyssee
-  level: 10
+  level: 7
   axis: expression
   title:
     fr: "OPTIONNEL : 3 MINUTES DE RETOUR EN ANGLAIS"
@@ -13377,8 +13377,8 @@
     fr: "Après la date de l'examen, si tu le souhaites, enregistre trois minutes d'anglais sur ce que la préparation t'a appris, sans mentionner de questions secrètes. Un seul essai suffit."
     en: "After exam day, if you wish, record three English minutes on what preparing taught you, with no secret exam content. One take is enough."
   why:
-    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 10/12: a scored trial and verifiable result."
+    fr: "Semaine 7/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/9: a scored trial and verifiable result."
   done_when:
     fr: "Une courte prise privée de trois minutes seulement si l'énergie le permet."
     en: "A short private three-minute clip only if energy permits."
@@ -13398,13 +13398,13 @@
 - id: ACT-OD26-10-BOOK
   horizon: week
   category: writing
-  period: 2027-W02
+  period: 2027-W03
   period_start: '2027-01-11'
   issued: '2026-11-12'
   due: '2027-01-17'
   difficulty: ambitious
   series: odyssee
-  level: 10
+  level: 7
   axis: creation
   title:
     fr: "OPTIONNEL : UNE PAGE DE JOURNAL SANS IA"
@@ -13416,8 +13416,8 @@
     fr: "Si disponible après P, écris une page personnelle (300 mots) sans IA sur ce que tu as découvert dans ta façon d'apprendre. Ne prétends pas connaître ton résultat."
     en: "If time allows after P, write a private 300-word no-AI reflection on what you discovered about how you learn. Do not claim to know your result."
   why:
-    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 10/12: a scored trial and verifiable result."
+    fr: "Semaine 7/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/9: a scored trial and verifiable result."
   done_when:
     fr: "300 mots personnels si tu as envie de ce bilan, sans pression de publication."
     en: "Three hundred personal words if you want the reflection, with no publication pressure."
@@ -13437,13 +13437,13 @@
 - id: ACT-OD26-10-MOVE
   horizon: week
   category: fitness
-  period: 2027-W02
+  period: 2027-W03
   period_start: '2027-01-11'
   issued: '2026-11-12'
   due: '2027-01-17'
   difficulty: ambitious
   series: odyssee
-  level: 10
+  level: 7
   axis: endurance
   title:
     fr: "OPTIONNEL : UNE MARCHE DE RÉCUPÉRATION"
@@ -13455,8 +13455,8 @@
     fr: "Choisis une marche courte confortable si tu le souhaites, avec repos et hydratation adaptés, sans objectif de vitesse ou de distance. L'absence de sortie n'est pas un échec."
     en: "Choose a short comfortable walk if desired with suitable rest and hydration, with no speed or distance target. Skipping it is not failure."
   why:
-    fr: "Semaine 10/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 10/12: a scored trial and verifiable result."
+    fr: "Semaine 7/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 7/9: a scored trial and verifiable result."
   done_when:
     fr: "Une marche douce réellement effectuée, uniquement si souhaitée."
     en: "A gentle walk actually completed only if wanted."
@@ -13476,13 +13476,13 @@
 - id: ACT-OD26-11-P
   horizon: week
   category: math
-  period: 2027-W03
+  period: 2027-W04
   period_start: '2027-01-18'
   issued: '2026-11-12'
   due: '2027-01-24'
   difficulty: ambitious
   series: odyssee
-  level: 11
+  level: 8
   axis: precision
   title:
     fr: "CONSTRUIRE UN GLM POISSON SUR DONNÉES SIMULÉES"
@@ -13494,8 +13494,8 @@
     fr: "Génère 1 000 contrats synthétiques avec exposition et sinistres, choisis une vraie relation fréquence/exposition, ajuste un GLM Poisson avec offset et reproduis manuellement le calcul de vraisemblance sur 5 contrats."
     en: "Generate 1,000 synthetic policies with exposures and claim counts, fit a Poisson GLM with exposure offset and manually reproduce likelihood calculations on five records."
   why:
-    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 11/12: a scored trial and verifiable result."
+    fr: "Semaine 8/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/9: a scored trial and verifiable result."
   done_when:
     fr: "Un notebook reproductible avec graine fixe, tableau de 1 000 contrats, offset vérifié et 5 calculs manuels cohérents."
     en: "A reproducible seeded notebook with 1,000 policies, verified offset and five matching manual calculations."
@@ -13515,13 +13515,13 @@
 - id: ACT-OD26-11-BUILD
   horizon: week
   category: build
-  period: 2027-W03
+  period: 2027-W04
   period_start: '2027-01-18'
   issued: '2026-11-12'
   due: '2027-01-24'
   difficulty: ambitious
   series: odyssee
-  level: 11
+  level: 8
   axis: fabrication
   title:
     fr: "PUBLIER UNE EXPÉRIENCE GLM REPRODUCTIBLE"
@@ -13533,8 +13533,8 @@
     fr: "Transforme le notebook de probabilité/frequence en dépôt indépendant : requirements ou environnement, README, commande unique pour régénérer 2 graphiques et 10 tests automatisés sur données synthétiques."
     en: "Turn the probability/frequency notebook into a self-contained repository: dependencies, README, one command regenerating two charts and ten automated tests on synthetic data."
   why:
-    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 11/12: a scored trial and verifiable result."
+    fr: "Semaine 8/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/9: a scored trial and verifiable result."
   done_when:
     fr: "Dépôt partageable sans données employeur, 2 graphiques reconstruits par commande et 10 tests verts."
     en: "A shareable repo without employer data, two reproducible charts and ten passing tests."
@@ -13554,13 +13554,13 @@
 - id: ACT-OD26-11-EN
   horizon: week
   category: speaking
-  period: 2027-W03
+  period: 2027-W04
   period_start: '2027-01-18'
   issued: '2026-11-12'
   due: '2027-01-24'
   difficulty: ambitious
   series: odyssee
-  level: 11
+  level: 8
   axis: expression
   title:
     fr: "10 MINUTES : DÉFENDRE LE GLM FACE À 4 OBJECTIONS"
@@ -13572,8 +13572,8 @@
     fr: "Expose en anglais pendant dix minutes l'offset, le choix de loi et deux limites de ta simulation ; réponds à 4 questions difficiles préparées par une personne volontaire ou tirées au hasard de cartes."
     en: "Explain offset, distribution choice and two simulation limitations in English for ten minutes; answer four tough questions from a willing reviewer or shuffled cards."
   why:
-    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 11/12: a scored trial and verifiable result."
+    fr: "Semaine 8/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/9: a scored trial and verifiable result."
   done_when:
     fr: "Dix minutes en anglais avec quatre réponses précises et une auto-évaluation des corrections à apporter."
     en: "Ten English minutes with four accurate replies and a self-review of required corrections."
@@ -13593,13 +13593,13 @@
 - id: ACT-OD26-11-BOOK
   horizon: week
   category: writing
-  period: 2027-W03
+  period: 2027-W04
   period_start: '2027-01-18'
   issued: '2026-11-12'
   due: '2027-01-24'
   difficulty: ambitious
   series: odyssee
-  level: 11
+  level: 8
   axis: creation
   title:
     fr: "1 200 MOTS : RETROUVER LE LIVRE APRÈS P"
@@ -13611,8 +13611,8 @@
     fr: "Ajoute 1 200 mots nouveaux sans IA à ton manuscrit, puis relis le plan de la première partie et corrige deux contradictions ou transitions faibles."
     en: "Add 1,200 new no-AI words to the manuscript, then review the first part's outline and fix two contradictions or weak transitions."
   why:
-    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 11/12: a scored trial and verifiable result."
+    fr: "Semaine 8/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/9: a scored trial and verifiable result."
   done_when:
     fr: "1 200 mots nouveaux et deux transitions documentées comme améliorées."
     en: "1,200 new words and two documented improved transitions."
@@ -13632,13 +13632,13 @@
 - id: ACT-OD26-11-MOVE
   horizon: week
   category: fitness
-  period: 2027-W03
+  period: 2027-W04
   period_start: '2027-01-18'
   issued: '2026-11-12'
   due: '2027-01-24'
   difficulty: ambitious
   series: odyssee
-  level: 11
+  level: 8
   axis: endurance
   title:
     fr: "REPRENDRE UNE ROUTINE AÉROBIE APRÈS L'EXAMEN"
@@ -13650,8 +13650,8 @@
     fr: "Si repos et récupération sont adéquats, organise deux séances faciles de marche/course-marche de 25–35 minutes, avec jours de repos et mesures comparables au niveau de décembre."
     en: "With suitable rest and recovery, arrange two easy 25–35 minute walk/run-walk sessions with rest days and measures comparable to December."
   why:
-    fr: "Semaine 11/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 11/12: a scored trial and verifiable result."
+    fr: "Semaine 8/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 8/9: a scored trial and verifiable result."
   done_when:
     fr: "Deux séances adaptées et un tableau de reprise sans accélération forcée."
     en: "Two suitable sessions and a return-to-training log without forced progression."
@@ -13671,13 +13671,13 @@
 - id: ACT-OD26-12-P
   horizon: week
   category: math
-  period: 2027-W04
+  period: 2027-W05
   period_start: '2027-01-25'
   issued: '2026-11-12'
   due: '2027-01-31'
   difficulty: ambitious
   series: odyssee
-  level: 12
+  level: 9
   axis: precision
   title:
     fr: "COMPARER DEUX MODÈLES DE FRÉQUENCE HORS ÉCHANTILLON"
@@ -13689,8 +13689,8 @@
     fr: "Sur les 1 000 contrats synthétiques, sépare entraînement et validation avec une graine fixe. Compare le GLM Poisson à une alternative justifiée, rapporte deux métriques de prédiction et une limite identifiée."
     en: "On the 1,000 synthetic policies, use a fixed-seed train/validation split. Compare Poisson GLM with a justified alternative, report two predictive metrics and one identified limitation."
   why:
-    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 12/12: a scored trial and verifiable result."
+    fr: "Semaine 9/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/9: a scored trial and verifiable result."
   done_when:
     fr: "Un tableau comparatif reproductible avec deux métriques de validation, code et critique de méthode."
     en: "A reproducible comparison table with two holdout metrics, code and methodological critique."
@@ -13710,13 +13710,13 @@
 - id: ACT-OD26-12-BUILD
   horizon: week
   category: build
-  period: 2027-W04
+  period: 2027-W05
   period_start: '2027-01-25'
   issued: '2026-11-12'
   due: '2027-01-31'
   difficulty: ambitious
   series: odyssee
-  level: 12
+  level: 9
   axis: fabrication
   title:
     fr: "LANCER UNE V1.0 DE TON LABORATOIRE DE RISQUE"
@@ -13728,8 +13728,8 @@
     fr: "Regroupe simulation, estimation et graphiques du mini-projet dans une version exécutable depuis un environnement neuf. Ajoute 15 tests et un guide d'installation testé en repartant de zéro."
     en: "Package simulation, fitting and plots into a version runnable from a fresh environment. Add 15 tests and installation instructions verified from scratch."
   why:
-    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 12/12: a scored trial and verifiable result."
+    fr: "Semaine 9/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/9: a scored trial and verifiable result."
   done_when:
     fr: "Une v1.0 partageable, une commande de lancement, 15 tests verts et 3 étapes documentées pour reproduire les figures."
     en: "A shareable v1.0, one run command, 15 passing tests and documented figure-reproduction steps."
@@ -13749,13 +13749,13 @@
 - id: ACT-OD26-12-EN
   horizon: week
   category: speaking
-  period: 2027-W04
+  period: 2027-W05
   period_start: '2027-01-25'
   issued: '2026-11-12'
   due: '2027-01-31'
   difficulty: ambitious
   series: odyssee
-  level: 12
+  level: 9
   axis: expression
   title:
     fr: "12 MINUTES : MICRO-SOUTENANCE SCIENTIFIQUE EN ANGLAIS"
@@ -13767,8 +13767,8 @@
     fr: "Présente ton étude GLM en anglais pendant douze minutes sans lire de texte : hypothèse, données synthétiques, résultats, deux limites. Ajoute cinq questions de revue traitées oralement et évalue les erreurs."
     en: "Give a twelve-minute unscripted English defense of your GLM study: hypothesis, synthetic data, results, two limitations. Answer five review questions aloud and assess errors."
   why:
-    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 12/12: a scored trial and verifiable result."
+    fr: "Semaine 9/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/9: a scored trial and verifiable result."
   done_when:
     fr: "Douze minutes de soutenance, cinq réponses et une grille de qualité avec exactitude des notions et hésitations."
     en: "A twelve-minute defense, five answers and a rubric for concept accuracy and hesitation."
@@ -13788,13 +13788,13 @@
 - id: ACT-OD26-12-BOOK
   horizon: week
   category: writing
-  period: 2027-W04
+  period: 2027-W05
   period_start: '2027-01-25'
   issued: '2026-11-12'
   due: '2027-01-31'
   difficulty: ambitious
   series: odyssee
-  level: 12
+  level: 9
   axis: creation
   title:
     fr: "1 500 MOTS ET BILAN DE 12 SEMAINES DE MANUSCRIT"
@@ -13806,8 +13806,8 @@
     fr: "Ajoute 1 500 mots sans IA, assemble les 12 semaines en un manuscrit suivi, compte les mots réellement utilisables après révision, identifie 3 faiblesses structurales et définis le chapitre suivant."
     en: "Add 1,500 no-AI words, assemble the twelve weeks into a continuous manuscript, count words still usable after editing, identify three structural weaknesses and outline the next chapter."
   why:
-    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 12/12: a scored trial and verifiable result."
+    fr: "Semaine 9/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/9: a scored trial and verifiable result."
   done_when:
     fr: "Un manuscrit ordonné de mots réellement écrits, 1 500 mots nouveaux, 3 faiblesses précises et 1 prochain chapitre cadré."
     en: "An ordered manuscript of genuinely authored words, 1,500 new words, three specific gaps and a next-chapter plan."
@@ -13827,13 +13827,13 @@
 - id: ACT-OD26-12-MOVE
   horizon: week
   category: fitness
-  period: 2027-W04
+  period: 2027-W05
   period_start: '2027-01-25'
   issued: '2026-11-12'
   due: '2027-01-31'
   difficulty: ambitious
   series: odyssee
-  level: 12
+  level: 9
   axis: endurance
   title:
     fr: "12 SEMAINES : MESURER LES GAINS SANS FAUSSER LES CHIFFRES"
@@ -13845,8 +13845,8 @@
     fr: "Sur une sortie sûre de 20 minutes comparable à la semaine 1, note distance et effort, puis compare trois mesures conservées (S1, S8, S12). Explique différences de météo, parcours et récupération. Si non prêt, utilise une marche équivalente."
     en: "On a safe 20-minute outing comparable to week one, record distance and effort and compare three actual measures (W1, W8, W12). Explain weather, terrain and recovery differences. If not ready, use a comparable walk."
   why:
-    fr: "Semaine 12/12 : une épreuve chiffrée et un résultat vérifiable."
-    en: "Week 12/12: a scored trial and verifiable result."
+    fr: "Semaine 9/9 : une épreuve chiffrée et un résultat vérifiable."
+    en: "Week 9/9: a scored trial and verifiable result."
   done_when:
     fr: "Trois points datés (ou ceux réellement disponibles) et une analyse sincère de distance, effort et récupération, sans prétendre à un progrès non mesuré."
     en: "Three dated points (or those actually available) and a candid comparison of distance, effort and recovery, without invented gains."
@@ -13866,10 +13866,10 @@
 - id: ACT-OD26-01-BOSS
   horizon: week
   category: build
-  period: 2026-W46
-  period_start: '2026-11-09'
+  period: 2026-W49
+  period_start: '2026-11-30'
   issued: '2026-11-12'
-  due: '2026-11-15'
+  due: '2026-12-06'
   difficulty: ambitious
   series: odyssee
   level: 1
@@ -13906,10 +13906,10 @@
 - id: ACT-OD26-02-BOSS
   horizon: week
   category: community
-  period: 2026-W47
-  period_start: '2026-11-16'
+  period: 2026-W50
+  period_start: '2026-12-07'
   issued: '2026-11-12'
-  due: '2026-11-22'
+  due: '2026-12-13'
   difficulty: ambitious
   series: odyssee
   level: 2
@@ -13946,10 +13946,10 @@
 - id: ACT-OD26-03-BOSS
   horizon: week
   category: build
-  period: 2026-W48
-  period_start: '2026-11-23'
+  period: 2026-W51
+  period_start: '2026-12-14'
   issued: '2026-11-12'
-  due: '2026-11-29'
+  due: '2026-12-20'
   difficulty: ambitious
   series: odyssee
   level: 3
@@ -13986,10 +13986,10 @@
 - id: ACT-OD26-04-BOSS
   horizon: week
   category: speaking
-  period: 2026-W49
-  period_start: '2026-11-30'
+  period: 2026-W52
+  period_start: '2026-12-21'
   issued: '2026-11-12'
-  due: '2026-12-06'
+  due: '2026-12-27'
   difficulty: ambitious
   series: odyssee
   level: 4
@@ -14026,10 +14026,10 @@
 - id: ACT-OD26-05-BOSS
   horizon: week
   category: research
-  period: 2026-W50
-  period_start: '2026-12-07'
+  period: 2026-W53
+  period_start: '2026-12-28'
   issued: '2026-11-12'
-  due: '2026-12-13'
+  due: '2027-01-03'
   difficulty: ambitious
   series: odyssee
   level: 5
@@ -14066,10 +14066,10 @@
 - id: ACT-OD26-06-BOSS
   horizon: week
   category: research
-  period: 2026-W51
-  period_start: '2026-12-14'
+  period: 2027-W02
+  period_start: '2027-01-04'
   issued: '2026-11-12'
-  due: '2026-12-20'
+  due: '2027-01-10'
   difficulty: ambitious
   series: odyssee
   level: 6
@@ -14111,7 +14111,7 @@
   issued: '2026-11-12'
   due: '2026-12-27'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 7
   axis: terrain
   boss: true
@@ -14151,7 +14151,7 @@
   issued: '2026-11-12'
   due: '2027-01-03'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 8
   axis: terrain
   boss: true
@@ -14191,7 +14191,7 @@
   issued: '2026-11-12'
   due: '2027-01-10'
   difficulty: ambitious
-  series: odyssee
+  series: odyssee-archive
   level: 9
   axis: terrain
   boss: true
@@ -14226,13 +14226,13 @@
 - id: ACT-OD26-11-BOSS
   horizon: week
   category: career
-  period: 2027-W03
+  period: 2027-W04
   period_start: '2027-01-18'
   issued: '2026-11-12'
   due: '2027-01-24'
   difficulty: ambitious
   series: odyssee
-  level: 11
+  level: 8
   axis: terrain
   boss: true
   title:
@@ -14266,13 +14266,13 @@
 - id: ACT-OD26-12-BOSS
   horizon: week
   category: community
-  period: 2027-W04
+  period: 2027-W05
   period_start: '2027-01-25'
   issued: '2026-11-12'
   due: '2027-01-31'
   difficulty: ambitious
   series: odyssee
-  level: 12
+  level: 9
   axis: terrain
   boss: true
   title:
