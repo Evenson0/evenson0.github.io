@@ -1,11 +1,11 @@
 ---
 title: P Timed Practice · ANAM Maintenance
 title_fr: Pratique chronométrée P · Entretien ANAM
-cycle: foundations-01
+cycle: superseded-foundations-plan
 cycle_week: 9
 start_date: 2026-12-28
 end_date: 2027-01-03
-status: planned
+status: archived
 active:
 - actuarial-exam-1
 - physical-training-consistency
