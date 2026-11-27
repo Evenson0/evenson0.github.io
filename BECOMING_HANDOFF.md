@@ -1,5 +1,10 @@
 # Becoming - état du projet et consignes de reprise
 
+## CALENDRIER ACTIF — 27 novembre 2026
+
+**Becoming redémarre le lundi 30 novembre 2026.** Le cycle `foundations-01` comprend maintenant 8 semaines (30 novembre 2026 au 24 janvier 2027). Seuls `week-01.md` à `week-08.md` sont actifs. `week-09.md` à `week-12.md` appartiennent au plan remplacé, sont archivés et ne doivent pas être restaurés automatiquement. **Examen P : samedi 16 janvier 2027, semaine 7.** Semaine 8 : bilan après examen, sans supposer résultat ni réussite. Les anciennes descriptions de cycle à 12 semaines plus bas sont historiques et remplacées par cette consigne. Aucune tâche antérieure n'est supposée accomplie et aucun rattrapage n'est exigé.
+
+
 Dernière mise à jour : 2 novembre 2026.
 
 ## 1. Règle de reprise
