@@ -32,7 +32,9 @@
     });
   }
   function latestWeeklyChallenges(challenges, date) {
-    const eligible = challenges.filter(c => c.horizon === 'week' && c.period_start <= date && (!c.due || c.due >= date));
+    const restart = challenges.filter(c => c.series === 'odyssee').map(c => c.period_start).sort()[0];
+    if (restart && date < restart) return [];
+    const eligible = challenges.filter(c => c.series !== 'odyssee-archive' && c.horizon === 'week' && c.period_start <= date && (!c.due || c.due >= date));
     if (!eligible.length) return [];
     const current = eligible.reduce((max, c) => c.period_start > max ? c.period_start : max, '');
     const weekly = eligible.filter(c => c.period_start === current);
@@ -69,7 +71,7 @@
       inspirationTitle: 'Ils ont osé avant toi : les inspirations', inspirationIntro: 'Des parcours vérifiables pour inventer tes propres défis, sans chercher à copier une vie entière.',
       axisMind: 'Esprit', axisBody: 'Corps', axisCourage: 'Courage', axisCreation: 'Création',
       yearCta: 'Explorer mes grandes ambitions', moreChallenges: 'Afficher 12 défis de plus', showWeekAll: 'Voir toutes les missions de la semaine', showWeekLess: 'Réduire la sélection', weeklyFocus: 'Missions de la semaine', annualLead: 'Une année extraordinaire n’exige pas de tout faire : choisis 2 ou 3 grandes quêtes.', weekTab: 'Cette semaine', exploreTab: 'Explorer les défis', domain: 'Domaine', allDomains: 'Tous les domaines', moreFilters: 'Recherche et filtres', weekHint: 'Chaque épreuve a une durée, un résultat précis et une mesure. Note tes chiffres réels ; dimanche, coche ce qui est réellement livré.', exploreHint: 'Par défaut : protocole mesurable et grands objectifs. Les anciennes idées restent accessibles en archives.', journalHint: 'Ton histoire conserve les tentatives, les choix et les leçons.', tryIt: 'Je le tente', editChoice: 'Modifier mon choix', draftAction: 'Choix local · pense à copier ton bilan', moreHistory: 'Voir tout l’historique', lessHistory: 'Afficher moins',
-      eyebrow: 'ACTIVITIES · PROTOCOLE D’AUDACE', hero: '12 semaines. Des résultats, pas des intentions.', promise: 'Des exploits qui comptent, pas des points à collectionner.',
+      eyebrow: 'ACTIVITIES · PROTOCOLE D’AUDACE', hero: '9 semaines. Des résultats, pas des intentions.', promise: 'Des exploits qui comptent, pas des points à collectionner.',
       mentor: 'LE MOT DU MENTOR', load: 'Les défis réutilisent les séances de Becoming. Les grands horizons se construisent avec les petites actions.',
       challenges: 'Les défis', journal: 'Le journal', filter: 'État', search: 'Rechercher', yourturn: 'À TOI DE JOUER',
       reportTitle: 'Ton retour', reportHelp: 'En fin de semaine ou de période, coche seulement les défis réellement accomplis, puis copie le bilan dans notre conversation.',
@@ -197,7 +199,7 @@
       el('span', 'act-topic', cat ? loc(cat.label) : c.category),
       el('span', 'act-period', horizonLabels[c.horizon] ? loc(horizonLabels[c.horizon].label) : c.horizon)
     );
-    if (c.series === 'odyssee') top.append(el('span', 'act-level', t('tierLabel') + ' ' + String(c.level).padStart(2, '0') + '/12'));
+    if (c.series === 'odyssee') top.append(el('span', 'act-level', t('tierLabel') + ' ' + String(c.level).padStart(2, '0') + '/9'));
     if (c.boss) top.append(el('span', 'act-boss-label', t('bossLabel')));
     const title = el('h3', '', loc(c.title));
     title.id = c.id + '-title';
