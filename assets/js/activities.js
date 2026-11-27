@@ -63,7 +63,7 @@
   const COPY = {
     fr: {
       bossLabel: 'BOSS DE TERRAIN · FACULTATIF',
-      odysseyTitle: '12 SEMAINES · 5 ÉPREUVES + 1 BOSS', odysseyIntro: 'Cinq entraînements mesurables et une épreuve de terrain facultative. Semaine P allégée.', odysseyCurrent: 'Niveau en cours', odysseyDonePublic: 'validées dans le carnet', odysseyDoneLocal: 'cochées sur cet appareil', odysseyFuture: 'prévu', odysseyWeek: 'Semaine', legacyToggle: 'Voir les anciens défis hebdomadaires', measureLabel: 'MESURE À NOTER', tierLabel: 'NIVEAU',
+      odysseyTitle: '9 SEMAINES · 5 ÉPREUVES + 1 BOSS', odysseyIntro: 'Cinq entraînements mesurables et une épreuve de terrain facultative. Semaine P allégée.', odysseyCurrent: 'Niveau en cours', odysseyDonePublic: 'validées dans le carnet', odysseyDoneLocal: 'cochées sur cet appareil', odysseyFuture: 'prévu', odysseyWeek: 'Semaine', legacyToggle: 'Voir les anciens défis hebdomadaires', measureLabel: 'MESURE À NOTER', tierLabel: 'NIVEAU',
       markDone: '✓ Je l’ai réalisé', alreadyDone: '✓ Déjà enregistré', optionalNote: 'Ajouter une note (facultatif)', allPeriods: 'Voir aussi les périodes passées et futures',
       catalogChallenges: 'défis', catalogHorizons: 'horizons', catalogDomains: 'domaines', catalogSources: 'inspirations',
       inspirationTitle: 'Ils ont osé avant toi : les inspirations', inspirationIntro: 'Des parcours vérifiables pour inventer tes propres défis, sans chercher à copier une vie entière.',
@@ -97,7 +97,7 @@
     },
     en: {
       bossLabel: 'REAL-WORLD BOSS · OPTIONAL',
-      odysseyTitle: '12 WEEKS · 5 TRIALS + 1 BOSS', odysseyIntro: 'Five measurable training trials and an optional real-world boss. Exam P week is lighter.', odysseyCurrent: 'Current level', odysseyDonePublic: 'confirmed in journal', odysseyDoneLocal: 'checked on this device', odysseyFuture: 'planned', odysseyWeek: 'Week', legacyToggle: 'Show the earlier weekly challenges', measureLabel: 'MEASURE TO RECORD', tierLabel: 'LEVEL',
+      odysseyTitle: '9 WEEKS · 5 TRIALS + 1 BOSS', odysseyIntro: 'Five measurable training trials and an optional real-world boss. Exam P week is lighter.', odysseyCurrent: 'Current level', odysseyDonePublic: 'confirmed in journal', odysseyDoneLocal: 'checked on this device', odysseyFuture: 'planned', odysseyWeek: 'Week', legacyToggle: 'Show the earlier weekly challenges', measureLabel: 'MEASURE TO RECORD', tierLabel: 'LEVEL',
       markDone: '✓ I completed it', alreadyDone: '✓ Already recorded', optionalNote: 'Add a note (optional)', allPeriods: 'Also show past and future periods',
       catalogChallenges: 'challenges', catalogHorizons: 'horizons', catalogDomains: 'domains', catalogSources: 'inspirations',
       inspirationTitle: 'They dared: sources of inspiration', inspirationIntro: 'Verifiable journeys that inspire your own challenges, without trying to copy an entire life.',
@@ -296,7 +296,7 @@
     $('act-year-heading').textContent = loc(data.config.annual_vision.headline);
     $('act-year-subtitle').textContent = loc(data.config.annual_vision.subtitle);
     const program = data.challenges.filter(c => c.series === 'odyssee');
-    const levels = Array.from({length: 12}, (_, i) => {
+    const levels = Array.from({length: 9}, (_, i) => {
       const trials = program.filter(c => c.level === i + 1);
       return {level: i + 1, trials, start: trials[0]?.period_start || '', end: trials[0]?.due || ''};
     });
@@ -320,7 +320,7 @@
     if (activeLevel) {
       const confirmed = activeLevel.trials.filter(c => statusOf(c.id, data.events) === 'completed').length;
       const local = activeLevel.trials.filter(c => statusOf(c.id, data.events) !== 'completed' && drafts[c.id]?.status === 'completed').length;
-      $('act-odyssey-progress').textContent = t('odysseyCurrent') + ' ' + activeLevel.level + '/12 · ' + confirmed + '/' + activeLevel.trials.length + ' ' + t('odysseyDonePublic') + ' · ' + local + '/' + activeLevel.trials.length + ' ' + t('odysseyDoneLocal');
+      $('act-odyssey-progress').textContent = t('odysseyCurrent') + ' ' + activeLevel.level + '/9 · ' + confirmed + '/' + activeLevel.trials.length + ' ' + t('odysseyDonePublic') + ' · ' + local + '/' + activeLevel.trials.length + ' ' + t('odysseyDoneLocal');
     } else {
       $('act-odyssey-progress').textContent = '';
     }
