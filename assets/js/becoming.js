@@ -344,6 +344,7 @@
     (data.weeks || [])
       .filter(
         week =>
+          week.cycle === data.cycles?.current_cycle &&
           week.cycle_week &&
           week.start_date &&
           week.end_date
