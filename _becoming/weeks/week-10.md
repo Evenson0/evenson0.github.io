@@ -1,11 +1,11 @@
 ---
 title: P Simulations · GLM, GAM, and ANAM
 title_fr: Simulations P · GLM, GAM et ANAM
-cycle: foundations-01
+cycle: superseded-foundations-plan
 cycle_week: 10
 start_date: 2027-01-04
 end_date: 2027-01-10
-status: planned
+status: archived
 active:
 - actuarial-exam-1
 - research-pricing-flexible-models
