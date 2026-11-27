@@ -23,7 +23,8 @@
     const term = query.trim().toLocaleLowerCase();
     return data.challenges.filter(challenge => {
       const current = statusOf(challenge.id, data.events);
-      return (includeLegacy || challenge.horizon !== 'week' || challenge.series === 'odyssee') &&
+      return (includeLegacy || challenge.series !== 'odyssee-archive') &&
+        (includeLegacy || challenge.horizon !== 'week' || challenge.series === 'odyssee') &&
         (periodWindow !== 'current' || (challenge.period_start <= referenceDate && challenge.due >= referenceDate)) &&
         (horizon === 'all' || challenge.horizon === horizon) &&
         (category === 'all' || challenge.category === category) &&
@@ -105,7 +106,7 @@
       inspirationTitle: 'They dared: sources of inspiration', inspirationIntro: 'Verifiable journeys that inspire your own challenges, without trying to copy an entire life.',
       axisMind: 'Mind', axisBody: 'Body', axisCourage: 'Courage', axisCreation: 'Creation',
       yearCta: 'Explore my biggest ambitions', moreChallenges: 'Show 12 more challenges', showWeekAll: 'Show all weekly missions', showWeekLess: 'Show fewer missions', weeklyFocus: 'This week’s missions', annualLead: 'An extraordinary year does not require doing everything: choose 2 or 3 major quests.', weekTab: 'This week', exploreTab: 'Explore challenges', domain: 'Category', allDomains: 'All categories', moreFilters: 'Search and filters', weekHint: 'Each trial has a timeframe, deliverable and metric. Record actual results; on Sunday tick only what you truly shipped.', exploreHint: 'By default: measurable trials and long-term goals. Earlier ideas remain in the archive.', journalHint: 'Your story keeps attempts, choices and lessons.', tryIt: 'I’ll try it', editChoice: 'Edit my choice', draftAction: 'Local choice · remember to copy your check-in', moreHistory: 'View full history', lessHistory: 'Show less',
-      eyebrow: 'ACTIVITIES · THE COURAGE PROTOCOL', hero: 'Twelve weeks. Outcomes, not intentions.', promise: 'Achievements that matter, not points to collect.',
+      eyebrow: 'ACTIVITIES · THE COURAGE PROTOCOL', hero: 'Nine weeks. Outcomes, not intentions.', promise: 'Achievements that matter, not points to collect.',
       mentor: 'FROM YOUR MENTOR', load: 'Challenges reuse Becoming sessions. Longer horizons grow from small actions.',
       challenges: 'Challenges', journal: 'Journal', filter: 'Status', search: 'Search', yourturn: 'YOUR TURN',
       reportTitle: 'Your check-in', reportHelp: 'At the end of a week or period, tick only completed challenges and paste the copied summary into our conversation.',
