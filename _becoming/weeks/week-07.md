@@ -1,284 +1,211 @@
 ---
-title: Probability Consolidation · GLM Reproduction (Optional)
-title_fr: Consolidation des probabilités · Reproduction GLM (facultative)
+title: Exam P · January 16 · Explainability in P&C Pricing
+title_fr: Examen P · 16 janvier · Explicabilité en tarification IARD
 cycle: foundations-01
 cycle_week: 7
-start_date: 2026-12-14
-end_date: 2026-12-20
+start_date: 2027-01-11
+end_date: 2027-01-17
 status: planned
 active:
 - actuarial-exam-1
-- research-actuarial-glm-reproduction
+- research-program-interpretability
 - physical-training-consistency
 maintenance:
 - english-conversation-practice
-- lean-mathematics-in-lean
-- writing-reading-practice
-user_inputs:
-  literary_book: À choisir / To be selected
+- lean-guidelines
+- writing-literary-essay
 quests:
 - domain: actuarial
   node: actuarial-exam-1
-  task: 'Exam P priority: Mixed probability problems, solution selection and time management. Correct each set and
-    update the error log.'
-  task_fr: 'Priorité P : Problèmes mixtes de probabilités, choix des méthodes et gestion du temps. Corriger chaque
-    série et mettre à jour le journal d’erreurs.'
-  completion:
-  - Complete focused and cumulative practice
-  - Correct errors and reattempt them without solutions
-  - Review the week and select the next weak areas
-  completion_fr:
-  - Compléter des exercices ciblés et cumulatifs
-  - Corriger les erreurs et refaire les exercices sans solution
-  - Faire le bilan et choisir les prochaines faiblesses à travailler
+  task: Use light final review and sit Exam P on January 16, 2027. Record a short post-exam review without assuming
+    a result.
+  task_fr: Faire une révision finale légère et passer P le 16 janvier 2027. Rédiger un bref bilan sans supposer
+    le résultat.
 - domain: research
-  node: research-actuarial-glm-reproduction
-  task: 'Optional: Finish Goldburd pages 86–104 and build the first complete reproducible version of the insurance
-    GLM project.
-
-    '
-  task_fr: 'Facultatif : Terminer les pages 86 à 104 de Goldburd et construire la première version complète et reproductible
-    du projet GLM d''assurance.
-
-    '
+  node: research-program-interpretability
+  task: Read Kuo and Lupton on explainability in insurance pricing and compare their framework with GLM, flexible
+    additive models, and ANAM.
+  task_fr: Lire Kuo et Lupton sur l'explicabilité en tarification d'assurance et comparer leur cadre aux GLM, aux
+    modèles additifs flexibles et à ANAM.
   completion:
-  - Finish Goldburd pages 86–104
-  - Review model documentation
-  - Select or finalize the dataset
-  - Define the target variable
-  - Define predictors
-  - Document preprocessing
-  - Fit the baseline GLM
-  - Produce basic diagnostics
-  - Begin validation
-  - Keep the notebook reproducible
-  - Record unresolved technical questions
+  - Read the paper
+  - Summarize the explainability framework
+  - Distinguish intrinsic and post-hoc explanations
+  - Connect the framework to GLMs
+  - Connect the framework to flexible additive models
+  - Connect the framework to ANAM
+  - Identify practical implications for P&C pricing
+  - Generate at least three research questions
+  - Write one concise comparison note
   completion_fr:
-  - Terminer les pages 86 à 104 de Goldburd
-  - Revoir la documentation du modèle
-  - Sélectionner ou finaliser les données
-  - Définir la variable cible
-  - Définir les prédicteurs
-  - Documenter le prétraitement
-  - Ajuster le GLM de référence
-  - Produire des diagnostics de base
-  - Commencer la validation
-  - Garder le notebook reproductible
-  - Noter les questions techniques non résolues
+  - Lire l'article
+  - Résumer le cadre d'explicabilité
+  - Distinguer les explications intrinsèques et post-hoc
+  - Relier le cadre aux GLM
+  - Relier le cadre aux modèles additifs flexibles
+  - Relier le cadre à ANAM
+  - Identifier les implications pratiques pour la tarification IARD
+  - Générer au moins trois questions de recherche
+  - Rédiger une note comparative concise
 - domain: writing
-  node: writing-reading-practice
-  task: 'Optional: Revisit selected passages of the selected literary book; if unfinished, continue without a catch-up
-    quota while keeping P primary.
-
-    '
-  task_fr: 'Facultatif : Revenir sur quelques passages du livre choisi ; si le livre est inachevé, poursuivre sans
-    quota de rattrapage en gardant P prioritaire.
-
-    '
+  node: writing-literary-essay
+  task: Continue or revise the literary essay if it exists; otherwise continue the current literary reading without
+    forcing an essay prematurely.
+  task_fr: Poursuivre ou réviser l'essai littéraire s'il existe ; sinon continuer la lecture littéraire en cours
+    sans forcer prématurément un essai.
 - domain: lean
-  node: lean-mathematics-in-lean
-  task: 'Optional: Begin Mathematics in Lean Chapter 2 and complete one small calculation proof.
-
-    '
-  task_fr: 'Facultatif : Commencer le chapitre 2 de Mathematics in Lean et compléter une petite preuve de calcul.
-
-    '
+  node: lean-guidelines
+  task: Read the current mathlib contribution guidelines and identify one realistically small contribution candidate.
+  task_fr: Lire les règles actuelles de contribution à mathlib et identifier une contribution réalistement petite.
 - domain: english
   node: english-conversation-practice
-  task: 'Optional: Complete one English conversation focused partly on professional introductions and work-related
-    conversation.
-
-    '
-  task_fr: 'Facultatif : Compléter une conversation en anglais portant en partie sur les présentations professionnelles
-    et les conversations liées au travail.
-
-    '
+  task: Complete one English conversation centered on explaining research and responding to critical questions.
+  task_fr: Compléter une conversation en anglais centrée sur l'explication du travail de recherche et la réponse
+    à des questions critiques.
 - domain: physical
   node: physical-training-consistency
-  task: Continue the current physical protocol without increasing training volume as Exam P approaches.
-  task_fr: Poursuivre le protocole physique actuel sans augmenter le volume d'entraînement à l'approche de l'examen
-    P.
+  task: Continue the normal physical protocol while preserving enough recovery for the final P review.
+  task_fr: Poursuivre le protocole physique normal tout en préservant suffisamment de récupération pour la révision finale de P.
   completion:
-  - Morning routine followed consistently
+  - Morning routine followed
   - Strength schedule followed
   - Daily movement target pursued
-  - Evening routine followed consistently
+  - Evening routine followed
   - Recovery reviewed
-  - No unnecessary increase in training volume
+  - Training volume not increased unnecessarily
   completion_fr:
-  - Routine du matin suivie régulièrement
+  - Routine du matin suivie
   - Programme de musculation suivi
   - Objectif de mouvement quotidien poursuivi
-  - Routine du soir suivie régulièrement
+  - Routine du soir suivie
   - Récupération revue
-  - Aucune augmentation inutile du volume d'entraînement
+  - Volume d'entraînement non augmenté inutilement
 days:
-- date: 2026-12-14
+- date: 2027-01-11
   weekday: monday
   title: Actuarial focus · Monday
   title_fr: Priorité actuarielle · Lundi
   tasks:
   - domain: actuarial
     node: actuarial-exam-1
-    time: 60–90 min
-    text: Review the prior error log and work on the first priority. Mixed probability problems, solution selection
-      and time management.
-    text_fr: Revoir le journal d’erreurs et travailler la première priorité. Problèmes mixtes de probabilités, choix
-      des méthodes et gestion du temps.
+    time: 60 min
+    text: Review the two remaining P weaknesses; no new chapter.
+    text_fr: Revoir les deux faiblesses P restantes ; aucun nouveau chapitre.
   - domain: research
-    node: research-actuarial-glm-reproduction
+    node: research-program-interpretability
     time: 30–45 min
-    text: 'Optional, only if P preparation is on schedule: Read Goldburd pages 86–91 and identify the remaining
-      concepts needed for the reproduction.
-
-      '
-    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Lire les pages 86 à 91 de Goldburd et identifier
-      les derniers concepts nécessaires à la reproduction.
-
-      '
-  - domain: writing
-    node: writing-reading-practice
-    time: 25–30 min
-    text: 'Optional, only if P preparation is on schedule: Revisit a passage already read in the selected literary
-      book, or continue if unfinished.
-
-      '
-    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Revenir sur un passage déjà lu du livre choisi,
-      ou poursuivre si le livre n’est pas terminé.
-
-      '
-- date: 2026-12-15
+    text: Begin Kuo and Lupton and identify the central explainability problem in insurance pricing.
+    text_fr: Commencer Kuo et Lupton et identifier le problème central d'explicabilité en tarification d'assurance.
+- date: 2027-01-12
   weekday: tuesday
   title: Actuarial focus · Tuesday
   title_fr: Priorité actuarielle · Mardi
   tasks:
   - domain: actuarial
     node: actuarial-exam-1
-    time: 60–90 min
-    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Mixed probability problems,
-      solution selection and time management.'
-    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Problèmes
-      mixtes de probabilités, choix des méthodes et gestion du temps.'
-  - domain: research
-    node: research-actuarial-glm-reproduction
-    time: 30–45 min
-    text: 'Optional, only if P preparation is on schedule: Read Goldburd pages 92–97 and update the reproduction
-      plan.
-
-      '
-    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Lire les pages 92 à 97 de Goldburd et mettre
-      à jour le plan de reproduction.
-
-      '
+    time: 60 min
+    text: Complete one short mixed P set and review the solutions.
+    text_fr: Faire une courte série P mixte et revoir les solutions.
   - domain: writing
-    node: writing-reading-practice
-    time: 25–30 min
-    text: 'Optional, only if P preparation is on schedule: Continue literary reading.
-
-      '
-    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Poursuivre la lecture littéraire.
-
-      '
-- date: 2026-12-16
+    node: writing-literary-essay
+    time: 30 min
+    text: Continue literary reading or revise the existing essay.
+    text_fr: Poursuivre la lecture littéraire ou réviser l'essai existant.
+- date: 2027-01-13
   weekday: wednesday
   title: Actuarial focus · Wednesday
   title_fr: Priorité actuarielle · Mercredi
   tasks:
   - domain: actuarial
     node: actuarial-exam-1
-    time: 60–90 min
-    text: Complete a cumulative P set combining this week’s topic with earlier material.
-    text_fr: Faire une série P cumulative combinant le thème de la semaine et les acquis précédents.
-  - domain: actuarial
-    node: actuarial-exam-1
-    time: 30 min
-    text: Reattempt prior errors without looking at solutions.
-    text_fr: Refaire les erreurs antérieures sans consulter les solutions.
+    time: 45–60 min
+    text: Reattempt recurring errors and review your formula notes.
+    text_fr: Refaire les erreurs récurrentes et revoir les fiches de formules.
   - domain: research
-    node: research-actuarial-glm-reproduction
-    time: 20–30 min
-    text: 'Optional, only if P preparation is on schedule: Finalize the dataset, target, and predictors for the
-      GLM reproduction.
-
-      '
-    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Finaliser les données, la variable cible et
-      les prédicteurs de la reproduction GLM.
-
-      '
-- date: 2026-12-17
+    node: research-program-interpretability
+    time: 30–45 min
+    text: Continue Kuo and Lupton and distinguish intrinsic from post-hoc explanations.
+    text_fr: Poursuivre Kuo et Lupton et distinguer les explications intrinsèques des explications post-hoc.
+- date: 2027-01-14
   weekday: thursday
   title: Actuarial focus · Thursday
   title_fr: Priorité actuarielle · Jeudi
   tasks:
   - domain: actuarial
     node: actuarial-exam-1
-    time: 60–90 min
-    text: 'Solve focused P problems, explain the method and correct all errors. Topic: Mixed probability problems,
-      solution selection and time management.'
-    text_fr: 'Résoudre des exercices P ciblés, expliquer la méthode et corriger toutes les erreurs. Thème : Problèmes
-      mixtes de probabilités, choix des méthodes et gestion du temps.'
-  - domain: research
-    node: research-actuarial-glm-reproduction
-    time: 60–75 min
-    text: 'Optional, only if P preparation is on schedule: Read Goldburd pages 98–104, build the preprocessing pipeline,
-      and fit the baseline GLM.
-
-      '
-    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Lire les pages 98 à 104 de Goldburd, construire
-      le pipeline de prétraitement et ajuster le GLM de référence.
-
-      '
-  - domain: lean
-    node: lean-mathematics-in-lean
     time: 30–45 min
-    text: 'Optional, only if P preparation is on schedule: Begin Mathematics in Lean Chapter 2.
-
-      '
-    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Commencer le chapitre 2 de Mathematics in
-      Lean.
-
-      '
-- date: 2026-12-18
+    text: Light P review; check appointment details, identification and travel arrangements.
+    text_fr: Révision P légère ; vérifier le rendez-vous, la pièce d’identité et le trajet.
+  - domain: lean
+    node: lean-guidelines
+    time: 30–45 min
+    text: Read the mathlib contribution guidelines and note the requirements for a small contribution.
+    text_fr: Lire les règles de contribution à mathlib et noter les exigences pour une petite contribution.
+- date: 2027-01-15
   weekday: friday
   title: Actuarial focus · Friday
   title_fr: Priorité actuarielle · Vendredi
   tasks:
   - domain: actuarial
     node: actuarial-exam-1
-    time: 60–90 min
-    text: Work on the weakest P topic and write a short explanation of the recurring mistakes.
-    text_fr: Travailler le thème P le plus faible et expliquer brièvement les erreurs récurrentes.
+    time: 20–30 min
+    text: Brief formula review, then rest; no mock exam or catch-up work.
+    text_fr: Bref rappel des formules, puis repos ; aucune simulation ni rattrapage.
   - domain: research
-    node: research-actuarial-glm-reproduction
+    node: research-program-interpretability
     time: 45–60 min
-    text: 'Optional, only if P preparation is on schedule: Produce basic diagnostics and begin model validation.
-
-      '
-    text_fr: 'Facultatif, uniquement si la préparation P est à jour : Produire les diagnostics de base et commencer
-      la validation du modèle.
-
-      '
-- date: 2026-12-19
+    text: Compare the explainability framework with GLM, flexible additive models, and ANAM.
+    text_fr: Comparer le cadre d'explicabilité aux GLM, aux modèles additifs flexibles et à ANAM.
+  - domain: writing
+    node: writing-literary-essay
+    time: 30 min
+    text: Continue the literary work without allowing it to displace P.
+    text_fr: Poursuivre le travail littéraire sans lui permettre de prendre la place de P.
+- date: 2027-01-16
   weekday: saturday
-  title: Actuarial focus · Saturday
-  title_fr: Priorité actuarielle · Samedi
+  title: Exam P
+  title_fr: Examen P
   tasks:
   - domain: actuarial
     node: actuarial-exam-1
-    time: 75–90 min
-    text: Complete a timed mixed P set and record uncertain answers as well as errors.
-    text_fr: Faire une série P mixte chronométrée et noter les réponses incertaines ainsi que les erreurs.
-- date: 2026-12-20
+    time: Exam appointment / Rendez-vous d’examen
+    text: Sit Exam P on January 16, 2027.
+    text_fr: Passer l’examen P le 16 janvier 2027.
+  - domain: english
+    node: english-conversation-practice
+    time: 60 min
+    text: Optional, only if available; no catch-up required. Discuss the explainability research in English and
+      respond to critical follow-up questions.
+    text_fr: Facultatif, selon la disponibilité ; aucun rattrapage requis. Discuter de la recherche sur l'explicabilité
+      en anglais et répondre à des questions critiques de suivi.
+- date: 2027-01-17
   weekday: sunday
   title: Actuarial focus · Sunday
   title_fr: Priorité actuarielle · Dimanche
   tasks:
   - domain: actuarial
     node: actuarial-exam-1
-    time: 90 min
-    text: Correct Saturday’s work, reattempt missed problems and update the P error log.
-    text_fr: Corriger le travail du samedi, refaire les exercices manqués et mettre à jour le journal d’erreurs
-      P.
+    time: 15 min
+    text: Record a short P debrief without assuming a result.
+    text_fr: Noter un bref bilan P sans supposer le résultat.
+  - domain: research
+    node: research-program-interpretability
+    time: 45–60 min
+    text: Finish the explainability comparison note and write at least three research questions.
+    text_fr: Terminer la note comparative sur l'explicabilité et écrire au moins trois questions de recherche.
+  - domain: lean
+    node: lean-guidelines
+    time: 30 min
+    text: Identify one realistically small mathlib contribution candidate.
+    text_fr: Identifier une contribution mathlib réalistement petite.
+  - domain: physical
+    node: physical-training-consistency
+    time: 15 min
+    text: Review physical consistency and recovery alongside the final P review.
+    text_fr: Revoir la régularité physique et la récupération parallèlement à la révision finale de P.
+  - time: 15–20 min
+    text: Complete the Becoming weekly review and prepare Week 12.
+    text_fr: Compléter la revue hebdomadaire Becoming et préparer la semaine 12.
 completed: []
 ---
 
