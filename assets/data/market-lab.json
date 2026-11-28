@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T21:22:19.365337+00:00",
+  "updated_at": "2026-11-28T03:33:35.593849+00:00",
   "assets": {
     "Indices": [
       {
@@ -53,7 +53,7 @@
       {
         "symbol": "^FTSE",
         "name": "FTSE 100",
-        "price": 10698.8096,
+        "price": 10698.7998,
         "change_pct": 0.844,
         "low_52w": 9642.0,
         "high_52w": 10910.5996
@@ -61,8 +61,8 @@
       {
         "symbol": "^N225",
         "name": "Nikkei 225",
-        "price": 57499.1602,
-        "change_pct": 0.855,
+        "price": 58711.1094,
+        "change_pct": 2.108,
         "low_52w": 49001.5,
         "high_52w": 72366.3438
       }
@@ -163,32 +163,32 @@
       {
         "symbol": "CAD=X",
         "name": "USD / CAD",
-        "price": 1.4247,
-        "change_pct": 0.218,
+        "price": 1.4248,
+        "change_pct": 0.019,
         "low_52w": 1.3492,
         "high_52w": 1.4365
       },
       {
         "symbol": "EURUSD=X",
         "name": "EUR / USD",
-        "price": 1.0937,
-        "change_pct": -0.299,
+        "price": 1.0972,
+        "change_pct": 0.019,
         "low_52w": 1.0908,
         "high_52w": 1.2018
       },
       {
         "symbol": "GBPUSD=X",
         "name": "GBP / USD",
-        "price": 1.3095,
-        "change_pct": -0.139,
+        "price": 1.3107,
+        "change_pct": -0.043,
         "low_52w": 1.3035,
         "high_52w": 1.3825
       },
       {
         "symbol": "JPY=X",
         "name": "USD / JPY",
-        "price": 159.578,
-        "change_pct": 0.228,
+        "price": 159.281,
+        "change_pct": 0.041,
         "low_52w": 152.453,
         "high_52w": 163.864
       }
@@ -248,44 +248,44 @@
   ],
   "news": [
     {
-      "title": "Stocks snap from a $6 trillion washout to a $3.5 trillion surge as Nvidia, Micron, and SpaceX bounce back",
-      "link": "https://finance.yahoo.com/markets/article/stocks-snap-from-a-6-trillion-washout-to-a-3-trillion-surge-as-nvidia-micron-and-spacex-bounce-back-151218930.html",
-      "publisher": "Yahoo Finance",
+      "title": "Nvidia Stock Has Swung 5% or More in a Single Day 5 Times in November. Here's How Big a Position I Think Makes Sense.",
+      "link": "https://www.fool.com/investing/2026/11/27/nvidia-stock-has-swung-5-or-more-in-a-single-day-5-times-in-november-here-s-how-big-a-position-i-think-makes-sense/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Dow Jones Futures: Stock Market Makes Bullish Move, Tesla Leads 7 New Buys; Nvidia's Jensen Huang Heads To Capitol Hill",
-      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-bullish-move-tesla-new-buys-nvidia-ceo-jensen-huang-congress/?src=A00220&yptr=yahoo",
-      "publisher": "Investor's Business Daily",
+      "title": "The Federal Reserve sends a troubling signal to S&P 500 investors",
+      "link": "https://www.thestreet.com/investing/stocks/the-federal-reserve-sends-a-troubling-signal-to-sp-500-investors",
+      "publisher": "TheStreet",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Nasdaq Leads Market Rebound as Treasury Yields Hit 5.29% at the Long End",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-leads-market-rebound-treasury-195242969.html",
-      "publisher": "GuruFocus.com",
+      "title": "Americans Are More Exposed to the Stock Market Than Ever Before",
+      "link": "https://www.wsj.com/finance/stocks/us-stock-market-wealth-0caf5bac?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "What Is The One Risk Facing Visa Stock Now?",
-      "link": "https://www.trefis.com/stock/v/articles/629359/what-is-the-one-risk-facing-visa-stock-now/2026-11-27",
-      "publisher": "Trefis",
+      "title": "Vanguard's Growth ETF Has 3 Stocks Making Up More Than a Third of It. Only 1 Has Held Up in the Tech Sell-Off.",
+      "link": "https://www.fool.com/investing/2026/11/27/vanguard-s-growth-etf-has-3-stocks-making-up-more-than-a-third-of-it-only-1-has-held-up-in-the-tech-sell-off/",
+      "publisher": "Motley Fool",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Update: Equities Climb as Dow Posts Biggest Weekly Jump Since October 2022",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/equities-climb-dow-posts-biggest-192733253.html",
-      "publisher": "MT Newswires",
+      "title": "S&P 500, Nasdaq End Best Week In Over A Year As AI Optimism Makes Comeback — VZ, ANT, ADBE, TSLA In Focus",
+      "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-end-best-week-in-over-a-year-as-ai-optimism-makes-comeback/cNb6EtcR9VK",
+      "publisher": "Stocktwits",
       "related": "^GSPC",
       "time": "Latest"
     },
     {
-      "title": "Don't have time to shop Black Friday? AI will do it for you",
-      "link": "https://finance.yahoo.com/video/dont-have-time-to-shop-black-friday-ai-will-do-it-for-you-191803633.html",
-      "publisher": "Yahoo Finance Video",
+      "title": "Tech Stocks Jump as Investors Take a Break From AI Jitters",
+      "link": "https://www.wsj.com/finance/stocks/stocks-poised-to-end-week-strong-as-investors-take-break-from-ai-jitters-ce6b2846?siteid=yhoof2&yptr=yahoo",
+      "publisher": "The Wall Street Journal",
       "related": "^GSPC",
       "time": "Latest"
     },
